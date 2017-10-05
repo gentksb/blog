@@ -76,16 +76,13 @@ X-Guardを買う最も高いモチベーションだったグラベルクリテ�
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
       <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DOZESKK/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">IRC tire IRC FORMULA PRO TUBELESS X-Guard 190132 HP-92 700X25c ブラック</a></p> 
-      
       <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
         posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 17.09.15
       </div>
     </div>
-    
     <div class="amazlet-detail">
       IRC tire <br /> 売り上げランキング: 128,168
     </div>
-    
     <div class="amazlet-sub-info" style="float: left;">
       <div class="amazlet-link" style="margin-top: 5px;">
         <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DOZESKK/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">Amazon.co.jpで詳細を見る</a>

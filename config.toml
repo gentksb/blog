@@ -1,0 +1,20 @@
+#website setting
+title = "幻想サイクル"
+baseURL = "http://blog.gensobunya.net/"
+languageCode = "ja-jp"
+canonifyURLs = false
+relativeURLs = true
+theme = "mainroad"
+googleAnalytics = "UA-72162915-1"
+
+#system
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+hasCJKLanguage = true
+defaultLayout = "post"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
