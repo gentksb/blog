@@ -1,0 +1,87 @@
+---
+title: 11s化計画　NOVATEC JETFLY
+author: admin
+type: post
+date: 2013-10-15T04:21:00+00:00
+url: /2013/10/11snovatec-jetfly.html
+blogger_bid:
+  - 443169423969093484
+blogger_blog:
+  - blog.gensobunya.net
+blogger_id:
+  - 7785519395968781264
+blogger_author:
+  - 05415749641252153199
+blogger_permalink:
+  - /2013/10/11snovatec-jetfly.html
+blogger_thumbnail:
+  - http://1.bp.blogspot.com/-j5bh8npjPh4/Ul1AJDrebhI/AAAAAAAALN0/HgL4BJvd5Dk/s1600/BWXIUoJCEAAl97d.jpg
+categories:
+  - 未分類
+tags:
+  - インプレ
+  - ロード
+
+---
+9070がほしい
+  
+9070がほしい
+  
+9070がほしい
+
+冬ボは出る。内装？フレームに適当に穴開けるわ。
+  
+ただ9000ホイールを一緒に買うほどの財力はない…
+  
+手持ちの中華は10sまで…
+
+コスパよくてそこそこエアロでできればチューブレス履けるホイールが…
+
+あった
+
+<div style="text-align: center;">
+  NOVATEC JETFLY
+</div>
+
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+
+
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="https://blog.gensobunya.net/wp-content/uploads/2013/10/BWXIUoJCEAAl97d-1024x575.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/10/BWXIUoJCEAAl97d-1024x575.jpg" height="358" width="640" /></a>
+</div>
+
+11s対応、チューブレスレディ、32mmリム、公称1435ｇ
+
+GP4000Sとビットリアの緑チューブ、6700スプロケを嵌めた上体で前後2400gでしたね…
+  
+220\*2+80\*2+205=…
+
+見なかったことにしましょう、公称です公称。リムテープとか入れてないでしょう。
+
+
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="https://blog.gensobunya.net/wp-content/uploads/2013/10/BWXhenkCIAEeGMK-1024x575.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/10/BWXhenkCIAEeGMK-1024x575.jpg" height="358" width="640" /></a>
+</div>
+
+見た目そこそこ！
+
+チューブレス化にはNoTubesのリムテープとチューブレスバルブが必要みたいなので、今のタイヤを摩耗させきったら試していきます。
+
+アトハ電動コンポヲカウダケデスネ？
+
+
+
+<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
+
+<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
+  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
+  
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0056151430743709"
+     data-ad-slot="4152578227"
+     data-ad-format="auto"></ins>
+</div>
