@@ -40,7 +40,7 @@ tags:
 ### 拍子抜け
 
 やる気出してページを開いたらすごく簡単なメニューが出てきた…
-  
+
 2日目はちょっと歯ごたえありそうだけど3日目と4日目はまた簡単なメニュー。
 
 ひとまず6週間やりきることが目標なので音楽聴きながら50分回す。
@@ -52,7 +52,7 @@ tags:
 ケイデンス維持とペダリングを綺麗に意識しながら音楽聞いていたら汗もほとんどかかずにあっさり終了。
 
 ワークアウト中は自分の目の前に画面が浮かぶ演出が入る。
-  
+
 しかもきっちりパワー値まで反映されていてムダに手が込んでいるなーと。
 
 それくらいしか考えていなかった。
@@ -61,39 +61,28 @@ tags:
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000" src="https://images-fe.ssl-images-amazon.com/images/I/41MImoh-wkL._SL160_.jpg" style="border: none;" /></a>
   </div>
-  
+
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p>
 
 <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
 </div>
 
-    
+
 <div class="amazlet-detail">
 SUUNTO(スント) (2011-11-14)<br /> 売り上げランキング: 46,667
 
-    
+
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
 </div>
 
   </div>
-  
+
   <div class="amazlet-footer" style="clear: left;">
   </div>
 </div>
 
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
-</div>

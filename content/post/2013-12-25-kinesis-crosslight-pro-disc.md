@@ -27,23 +27,23 @@ tags:
 </div>
 
 湘南CXにHORNETで参加したものの、平地で完全に置いて行かれる…
-  
+
 シクロクロスほしいなぁということで知人数名のものに試乗させてもらいました。
 
 Lynskeyのチタンディスク、TCX SLR、ふつーのアルミなどなど
-  
+
 簡単に言うと
 
 チタンディスク…すごいしなやかで乗りやすい、ブレーキがコントローラブル
-  
+
 TCX SLR…ブレーキかなり効く、すげー進む
-  
+
 ミニVアルミシクロ…めっちゃ止まる
-  
+
 普通のアルミカンチ…悪くない
 
 ただ、ツーリング車でカンチ、TTでVブレーキの調整めんどくささを切に感じていたのでディスクがいいなぁと思っていたんですね。
-  
+
 なんか安いもの落ちてないかなぁと。
 
 とある方は言っていました
@@ -56,14 +56,3 @@ TCX SLR…ブレーキかなり効く、すげー進む
 
 届くの楽しみだなぁ
 
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
-</div>

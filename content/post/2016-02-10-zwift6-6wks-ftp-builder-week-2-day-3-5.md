@@ -33,7 +33,7 @@ tags:
 ### Week 2 Day 3rd
 
 すっかり更新をサボってしまったので一気に3日分を。
-  
+
 第2週3日目はすっかりお馴染みのFoundation。もう特筆するところないですね…
 
 シクロクロス東京が近いのでラントレを夜の日課に混ぜてるが、自転車が本業の脚には負荷が高いので翌日もバイク追い込むというわけには行かない分、丁度いい負荷とも言える。
@@ -47,11 +47,11 @@ tags:
 </div>
 
 先週も出てきたテンポ走…だけどなんかメニュー量が多い！
-  
+
 ワークアウト時間は今までで最長の82分。
 
 200Wオーバーの時間も多いし、見ただけで過去最高負荷となることが伝わってくる。
-  
+
 いきなり210W\*4min\*4とか入ってるし…
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -59,7 +59,7 @@ tags:
 </div>
 
 キツイと思ったら、思ってたより休憩が長かったでござる。
-  
+
 薄々感づいてはいたものの、やっぱり初心者用のメニューっぽい。
 
 ローラーはローラーなので、1時間越えると尻が痛くなる。
@@ -73,46 +73,46 @@ tags:
 </div>
 
 先週は休みだった5日目ですが、2週目はメニューあり。
-  
+
 とはいえ完全にポタリング。Foundationに輪をかけて楽になったメニュー。
 
 ### ウェア解禁コード
 
 お気づきの方がいるかもしれませんが、アバターの着ているウェアが途中から変わっています。
-  
+
 ギア類は経験値を溜めてレベルアップしないといけないのですが、ウェア類はプロモコード入力で解禁されます。
 
 ゲーム画面で「P」を押すとプロモコード入力画面になりますので、各種プロモコードを入力するとジャージがゲットできます。
 
 プロモコードは以下のフォーラムで有志が共有しています。
-  
+
 <http://www.titaniumgeek.com/cycling/zwift-promo-code-2/>
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41MImoh-wkL._SL160_.jpg" alt="SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000" style="border: none;" /></a>
   </div>
-  
+
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p>
 
 <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.02.27
 </div>
 
-    
+
 <div class="amazlet-detail">
 SUUNTO(スント) (2011-11-14)<br />売り上げランキング: 46,667
 
-    
+
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
 </div>
 
   </div>
-  
+
   <div class="amazlet-footer" style="clear: left">
   </div>
 </div>
@@ -121,39 +121,28 @@ SUUNTO(スント) (2011-11-14)<br />売り上げランキング: 46,667
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4583103778/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51xxkXLrcrL._SL160_.jpg" alt="バイシクルトレーニングブック" style="border: none;" /></a>
   </div>
-  
+
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4583103778/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">バイシクルトレーニングブック</a></p> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4583103778/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">バイシクルトレーニングブック</a></p>
 
 <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-    
+
 <div class="amazlet-detail">
 竹谷 賢二 <br />ベースボールマガジン社 <br />売り上げランキング: 117,976
 
-    
+
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4583103778/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
 </div>
 
   </div>
-  
+
   <div class="amazlet-footer" style="clear: left">
   </div>
 </div>
 
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
-</div>

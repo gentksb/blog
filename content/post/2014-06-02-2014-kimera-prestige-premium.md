@@ -116,185 +116,173 @@ tags:
 </div>
 
 <div>
-  2014のキメラはバッテリー内蔵が前提であるうえ、ブレーキもダイレクトマウントで新規購入が必要なので、「縁がないかなぁ」なんて考えていた。<br /> 試乗でTCR AdvancedSLを越える乗り味のフレームに同価格帯では今まで出会わなかったこともある。</p> 
-  
+  2014のキメラはバッテリー内蔵が前提であるうえ、ブレーキもダイレクトマウントで新規購入が必要なので、「縁がないかなぁ」なんて考えていた。<br /> 試乗でTCR AdvancedSLを越える乗り味のフレームに同価格帯では今まで出会わなかったこともある。</p>
+
   <p>
     <a href="http://www.uci.ch/includes/asp/getTarget.asp?type=FILE&id=NjczMDE" target="_blank" rel="noopener">CANYONからAeroadがモデルチェンジしてAeroad CF SLXになるというんでそっちがかなり気になっていた。FUJIからもTRANSONICという新型も出るらしいし。</a><br /> エアロロードで剛性高くてDi2内装で安いならいいよな～思ってました。<br /> この2メーカーはチェーンステー裏かBB裏にバッテリーマウントするし。
   </p>
-  
+
   <div>
     そんな中で「異次元だからマジオススメ」と唆されて
   </div>
-  
+
   <div>
     <a href="http://www.nicole-eurocycle.co.jp/" target="_blank" rel="noopener">アルパカサイクル</a> の試乗会に誘われてやってきた。
   </div>
-  
+
   <div>
      
   </div>
-  
+
   <p>
     &nbsp;
   </p>
-  
+
   <div class="separator" style="clear: both; text-align: center;">
     <a style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;" href="https://blog.gensobunya.net/wp-content/uploads/2014/06/IMG_20140531_124412-1024x758.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2014/06/IMG_20140531_124412-1024x758.jpg" width="320" height="236" border="0" /></a>
   </div>
-  
+
   <p>
      ひとまず見た目。<br /> 剛性バカのKOGAらしくマッチョなチューブ。<br /> そしてカタログ写真ではわからないヘッド付近のキメラマーク。
   </p>
-  
+
   <p>
     デザインはかなりGOOD
   </p>
-  
+
   <div class="separator" style="clear: both; text-align: center;">
     <a style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" href="https://blog.gensobunya.net/wp-content/uploads/2014/06/IMG_20140531_124421-1024x758.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2014/06/IMG_20140531_124421-1024x758.jpg" width="320" height="236" border="0" /></a>
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     Premiumから乗ってみる。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     コンポは68アルテにRS31。空気圧はちょっと低めで6.5気圧くらいかな、タイヤはシュワルベのRUGANOだった。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     乗ったらすぐわかる。乗り心地がとてもいい。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     空気圧のせいかと思ってちょっと高めの段差を乗り越えてみるけどリアの衝撃が明らかに少ない。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     ブレーキをBB下にすることでシートステーに仕事をさせているんだろうけど、予想以上の振動吸収性。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     かといってふにゃふにゃではない。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     友人の前モデルに乗らせてもらった時のような大きな乗り物に乗っている感覚はないものの、安定感はかなり高い。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     パーッとスプリントしてみると、脚に跳ね返ってくる感覚がほとんど無いにもかかわらず、加速は一線級。基準にしていたTCR系並に走る。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     ダイレクトマウントの出来はかなりよくて、2本ボルトだからかガッシリとしたアーム剛性がある効き方。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     めっちゃ加速するのに乗り心地は良くて脚にも来ない。完璧なのか？と思わせる。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     お次はPrestige。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     懐かしの57系コンポに（ブレーキは5810）ホイールは7900C35CL。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     フロントの振動吸収性がPremiumより良い感じ。他はほとんど性格が同じ。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     加速が本当に少し鈍かったり少し脚に来たりするのは重量とか5本クランクのせいか？
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     スプリンター的にも加速感問題なし。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     街中なので高速ダウンヒルは試せないが、KOGAだし剛性大丈夫でしょう。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     デメリットはやはり規格面にある感じ。シマノとのイイ関係のせいか最新規格目白押しである。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     某所で内蔵バッテリーとダイレクトマウントブレーキ(9010)前後を買ったら4万弱…
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     手元に残るパーツとはいえ結構かかる。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     フレームの性能としては、次世代に進んだと思わせるレベルのフレーム。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     誰にでも合うのでは？と思わせてくれる。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     メンテ性やシマノでしか使えない規格の相性はトレードオフかな。
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
      
   </div>
-  
+
   <div class="separator" style="clear: both; text-align: left;">
     買ってしまいたい感じがあるフレームだった。
   </div>
-</div>
-
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
 </div>

@@ -42,39 +42,28 @@ categories:
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H11H63K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41i4%2BMqFJML._SL160_.jpg" alt="シマノ SHIMANO ULTEGRA 6870 Di2 Set 外装バッテリー・外装仕様(SM-JC40)" style="border: none;" /></a>
   </div>
-  
+
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H11H63K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">シマノ SHIMANO ULTEGRA 6870 Di2 Set 外装バッテリー・外装仕様(SM-JC40)</a></p> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H11H63K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">シマノ SHIMANO ULTEGRA 6870 Di2 Set 外装バッテリー・外装仕様(SM-JC40)</a></p>
 
 <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.22
 </div>
 
-    
+
 <div class="amazlet-detail">
 SHIMANO (シマノ) <br />売り上げランキング: 222,821
 
-    
+
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H11H63K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
 </div>
 
   </div>
-  
+
   <div class="amazlet-footer" style="clear: left">
   </div>
 </div>
 
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
-</div>

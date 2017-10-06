@@ -30,27 +30,15 @@ tags:
 フロントに装着していたATOM tubelessがいい加減古くなったので交換しました。
 
 乗るのはまだですがとりあえずはめやすい
-  
+
 片側のビードを嵌めて、もう片方を嵌めていって入らなくなった所でビードを入れ替えて…
-  
+
 そうしたらもうスルスルっと装着完了！速すぎる！
-  
+
 GP4000Sをレバーでグイグイやるより楽ちんだｗ
 
 FUSION2が出た頃からロードチューブレス使ってるけど進化がわかりますね…
-  
+
 軽さも250gと十分すぎるのであとは乗り心地次第でメインになりそう
 
 MAXXISのRadiale TLも乗ってみたいんですが実売だとちょっと高価でアレ
-
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
-</div>

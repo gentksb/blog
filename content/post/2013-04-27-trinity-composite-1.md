@@ -23,15 +23,15 @@ tags:
 
 ---
 安かったし金が入ったので買った。
-  
+
 特に後悔はしていない。
 
 などと容疑者は供述しており…
 
 買っちゃいました、TTバイク。
-  
+
 レースも平地派だし、痛チャリにするときもディスク似合うし、問題ないよ、ね？
-  
+
 TTレースとかイベント遠征とかトライアスロンに使う予定。
 
 **購入前**の写真がこちら
@@ -41,7 +41,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 </div>
 
 いいね！かこいいね！
-  
+
 **購入後**の写真がこちら
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -49,23 +49,23 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 </div>
 
 迫り来る現実
-  
+
 どうしようもない。
 
 予定としては
-  
+
 ・後輪ディスク←RENN購入済
-  
+
 ・前輪ディープ
-  
+
 ・ロードのROTORクランク移植
-  
+
 ・アルテDi2で10s電動化
 
 …現状のコンポが全部要りませんので売りました。
-  
+
 あとこんなんも買いました。ISMのADAMO ROAD、パッドマシマシです。
-  
+
 前乗りにすごく良さそうだしね！
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -88,19 +88,8 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 </div>
 
 真ん中上部の穴からはFDケーブルが、左はRDケーブルが通っていました。
-  
+
 おそらくE-tubeを左上部の穴から出して下部のそれぞれの穴に通していくことになると思うのですが、これジャンクションはどこへ…？
-  
+
 どなたかお優しい方教えて…
 
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
-</div>

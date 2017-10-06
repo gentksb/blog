@@ -31,29 +31,18 @@ tags:
 </div>
 
 パーツ類はほぼBlastからの移植。
-  
+
 変更点はZEEクランクを利用してフロントシングルにしたのみです。
-  
+
 フォークはコスパに定評があるSRサンツアーのEPICONをチョイス。ほんとはフォークも一緒に譲ってもらったんですが、エア保持ができないほどガタがきていたので…
 
 当然ですがXC寄りのBlastより重くなって11kg半ばというところ。
-  
+
 その代わりジオメトリも相まって下りの安定感は抜群です。
 
 今年のCXは何レースかこいつで走りましたがそれなりに走ってくれます。平地と登りでは当然のようにシクロクロスバイクに置いて行かれますが…
 
 2014年は王滝にも出場予定なのでもっとガンガン山を走って行きたいですね
-  
+
 コイルサスと違ってエアサスは効きを簡単に調節できるので自分好みにできて満足です。激下りだと今までフルボトムしてましたし…
 
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
-</div>

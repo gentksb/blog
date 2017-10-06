@@ -38,7 +38,7 @@ tags:
 </h3>
 
 パワーメーターを持っている人は、当然パワートレーニングの存在も知っている。
-  
+
 一般的なパワートレーニングをやろうと思うと下記の工程が必要になる。
 
   1. メニューの情報を手に入れる
@@ -49,7 +49,7 @@ tags:
   6. パワーと時間をモニタリングして負荷を調整する（ワークアウト本番）
 
 正直に言うと、1人で全部やるのは面倒くさい。
-  
+
 自分は「2」しかやっていなかった。（ログからGarminConnectが20分平均を出してくれただけ）
 
 特に実走行中にパワーをモニタリングしながら調整するのは事実上不可能と言ってもいい。
@@ -79,7 +79,7 @@ Zwiftの導入については以前の記事を参照。
 実走行とローラーだとパワーの出やすさも変わるそうなので、ローラー上の基準を作るのが目的。
 
 冒頭の画像の通り、FTP tests>FTP test(shorter)を選択してコースイン。
-  
+
 現在のFTPがわかっていれば、右のつまみで変更するとウォームアップ時のパワーが自分のFTPに応じたものとなる。247Wにしてコースイン。
 
 精神的な変数を最小限にするため、コースはフラットなものを選択した。
@@ -89,7 +89,7 @@ Zwiftの導入については以前の記事を参照。
 </div>
 
 左にこれからのメニュー、中央には現在のパワーと目標ワットが表示される。
-  
+
 いちいちFTP計測のアップ作法を覚えなくとも、Zwiftが勝手に指示してくる。
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -101,7 +101,7 @@ Zwiftの導入については以前の記事を参照。
 </div>
 
 パワーが足りないと「More POWER!」、パワー出しすぎだと「Reduce POWER」と煽りが入る。
-  
+
 人間は今やることに集中すればOK。
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -109,7 +109,7 @@ Zwiftの導入については以前の記事を参照。
 </div>
 
 メニューをちゃんとクリアすると左側のリストに★が入る。
-  
+
 課題が入れ替わる場合、コースにも視覚的に表示される。
 
 筋肉を暖めたら6分レストしてスタート。
@@ -129,7 +129,7 @@ Zwiftの導入については以前の記事を参照。
 </div>
 
 5分経過、「調子はどう？」。
-  
+
 疲れました
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -151,7 +151,7 @@ Zwiftの導入については以前の記事を参照。
 </div>
 
 ハイ終了～。20分平均パワーに係数を掛けるところまで勝手にやってくれます。
-  
+
 実走から算出したFTPより低いですね…
 
 20分平均パワーはライド完了画面で確認できます。
@@ -167,7 +167,7 @@ Zwiftの導入については以前の記事を参照。
 何はともあれ、パワートレーニングの「メニュー作成」「モニタリング」「パワー切り替え通知」「叱咤激励（おまけ）」までやってくれると、人間は指示通り動くだけで良くなるので非常に労力が削減できる。
 
 月額10ドルでこのサービス、結構お得である。
-  
+
 次からは6wks FTP builderを一通りやってみる予定。
 
 
@@ -176,27 +176,27 @@ Zwiftの導入については以前の記事を参照。
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B015GX9IS0/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/419BWJC8IYL._SL160_.jpg" alt="タバタ式トレーニング (ＳＰＡ！ＢＯＯＫＳ)" style="border: none;" /></a>
   </div>
-  
+
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B015GX9IS0/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">タバタ式トレーニング (ＳＰＡ！ＢＯＯＫＳ)</a></p> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B015GX9IS0/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">タバタ式トレーニング (ＳＰＡ！ＢＯＯＫＳ)</a></p>
 
 <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-    
+
 <div class="amazlet-detail">
 扶桑社 (2015-09-18)<br />売り上げランキング: 2,873
 
-    
+
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B015GX9IS0/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
 </div>
 
   </div>
-  
+
   <div class="amazlet-footer" style="clear: left">
   </div>
 </div>
@@ -205,39 +205,27 @@ Zwiftの導入については以前の記事を参照。
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41D54LlaK3L._SL160_.jpg" alt="パワー・トレーニング・バイブル" style="border: none;" /></a>
   </div>
-  
+
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">パワー・トレーニング・バイブル</a></p> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">パワー・トレーニング・バイブル</a></p>
 
 <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-    
+
 <div class="amazlet-detail">
 ハンター・アレン アンドリュー・コーガン <br />OVERLANDER <br />売り上げランキング: 9,807
 
-    
+
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
 </div>
 
   </div>
-  
+
   <div class="amazlet-footer" style="clear: left">
   </div>
-</div>
-
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
 </div>

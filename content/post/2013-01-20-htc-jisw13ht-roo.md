@@ -23,7 +23,7 @@ tags:
 HTC Jを手に入れたのでroot取ったりROM突っ込んだりして遊ぶことにしました。
 
 まずはroot環境構築から。
-  
+
 幸い、HTCの機種には@fnojiさん作成の[HTC速報][1]があるため、情報には困りません。
 
 http://htcsoku.info/htcsokudev/2012device/valentewx/root/
@@ -91,19 +91,4 @@ rootedのシステムバックアップを取ってどうなるのかという�
 香港版のROMを焼いてrootedするところまではうまくいきました。
 
 次の記事はS-offとW-CDMA化です
-
-
-
-<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
-
-<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px;">
-  <!-- gensou-cycle_banner2_AdSense3_1x1_as -->
-  
-  <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0056151430743709"
-     data-ad-slot="4152578227"
-     data-ad-format="auto"></ins>
-</div>
-
  [1]: http://htcsoku.info/
