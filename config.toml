@@ -19,6 +19,7 @@ defaultLayout = "post"
 #category = "categories"
 tag = "tags"
 
+#START mainroad setting
 [Params]
     subtitle = "シクロクロスとロードバイク、時々MTBと同人誌" # Subtitle of your site. Used in site header
     description = "シクロクロスとロードバイク、時々MTBと同人誌" # Description of your site. Used in meta description
