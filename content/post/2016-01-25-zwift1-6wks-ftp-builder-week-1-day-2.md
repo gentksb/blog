@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-pGRE-Vj-L1Y/VqYWisWoKqI/AAAAAAABICo/TnMfESfM10A/s1600/2016-01-25_2027460.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2027460.jpg" /></a>
+  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2027460.jpg" />
 </div>
 
 ### Strength(笑)
@@ -40,7 +40,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://1.bp.blogspot.com/-oleO0qIgz38/VqYWi4UXdgI/AAAAAAABICk/PesupKbKKTw/s1600/2016-01-25_2049512.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2049512.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2049512.jpg" width="640" />
 </div>
 
 それでも変化があると中々飽きないもので、赤いゲートは踏む気にさせてくれる。
@@ -48,7 +48,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://1.bp.blogspot.com/-0HIKv9qxrpY/VqYWjQAtQNI/AAAAAAABICw/S6s8UI8gyZQ/s1600/2016-01-25_2115264.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2115264.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2115264.jpg" width="640" />
 </div>
 
 踏みすぎて失敗判定を食らった。

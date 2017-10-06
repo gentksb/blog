@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-g4k9h63RKRo/Vqiv1tZSFzI/AAAAAAABIR4/Kp0LaL4PATM/s1600/2016-01-27_1854110.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="348" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-27_1854110.jpg" width="640" /></a>
+  <img border="0" height="348" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-27_1854110.jpg" width="640" />
 </div>
 
 ### 1週間目、終了
@@ -40,7 +40,7 @@ Zwiftのweek workoutは5日で1週間とカウントしている。そして1週
 金曜は飲み会だからレストです！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-a--XN3y0QkY/VqiwjE11lEI/AAAAAAABISA/0koTCeGz5cE/s1600/2016-01-27_1903322.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="348" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-27_1903322.jpg" width="640" /></a>
+  <img border="0" height="348" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-27_1903322.jpg" width="640" />
 </div>
 
 Viewはこのカメラモトから撮っているかのような角度が好み。

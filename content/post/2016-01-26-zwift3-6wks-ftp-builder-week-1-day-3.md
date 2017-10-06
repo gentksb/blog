@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-eGhI6glSYCo/VqdYbsd9n9I/AAAAAAABINQ/n-FS-jEDYHY/s1600/2016-01-26_1843030.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-26_1843030.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-26_1843030.jpg" width="640" />
 </div>
 
 
@@ -38,7 +38,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-B_pAjGgHer0/VqdYs2gRmFI/AAAAAAABINc/mKCbtNZJZFc/s1600/2016-01-26_1920052.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-26_1920052.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-26_1920052.jpg" width="640" />
 </div>
 
 ワークアウト野郎多すぎ問題。他人のW数も見れるのね。

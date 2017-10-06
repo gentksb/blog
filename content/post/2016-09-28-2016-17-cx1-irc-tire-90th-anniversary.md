@@ -32,7 +32,7 @@ tags:
 ### シクロクロスシーズンがやってきた
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://2.bp.blogspot.com/-kA7tmt1faAc/V-uhGKJsd6I/AAAAAAABQdg/O3CG-i7tY5AqGSW0J_PddJXU5iEneIhSgCEw/s1600/DSC_0182.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="https://blog.gensobunya.net/wp-content/uploads/2016/09/DSC_0182.jpg" width="226" /></a>
+  <img border="0" height="400" src="https://blog.gensobunya.net/wp-content/uploads/2016/09/DSC_0182.jpg" width="226" />
 </div>
 
 　待ちに待ったシクロクロスシーズンの到来。
@@ -52,7 +52,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://2.bp.blogspot.com/-38Lc5E4vbtw/V-uiiPDfxTI/AAAAAAABQd4/Wxi1d1wQsjgfejG85NpySbXqI091U-2ZgCLcB/s1600/14492564_1277058882326628_6391066786897352657_n.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="https://blog.gensobunya.net/wp-content/uploads/2016/09/14492564_1277058882326628_6391066786897352657_n.jpg" width="640" /></a>
+  <img border="0" height="426" src="https://blog.gensobunya.net/wp-content/uploads/2016/09/14492564_1277058882326628_6391066786897352657_n.jpg" width="640" />
 </div>
 
 　C2とSSは最後の2レースだったので、他のカテゴリーを応援したりブチョーコーヒーの食べ物に舌鼓を打ちながら昼寝やアップを織り交ぜながら長い長い待機。
@@ -86,7 +86,7 @@ tags:
 　TCXのジオメトリがいいのか、ギア比の問題なのかわからないがSSのほうがスムーズに曲がれているので、コーナーではブレーキやらギアの前にラインを気にしたほうが良いらしいことがわかってきたので次戦に活かしたい。あと泥だとシラクノーマルよりサンドのほうが進むことも発覚（SSは前後シラクサンド）。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://3.bp.blogspot.com/-RbGju_ffAyk/V-umgg1JidI/AAAAAAABQeM/M7iFW8QOTr0bjrvaCSQh2SUcCX3krTNdgCLcB/s1600/29945540765_a498054b1d_k.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="https://blog.gensobunya.net/wp-content/uploads/2016/09/29945540765_a498054b1d_k.jpg" width="640" /></a>
+  <img border="0" height="426" src="https://blog.gensobunya.net/wp-content/uploads/2016/09/29945540765_a498054b1d_k.jpg" width="640" />
 </div>
 
 結果は散々だったものの、最高に楽しいレースの運営だった。

@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://2.bp.blogspot.com/-rtfcXbySEGs/V2TZF36rQaI/AAAAAAABM5c/6lauRWVLADIdEaydlrOjV3YAT5YtYa6aQCLcB/s1600/%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2583%25E3%2583%2597%25E3%2583%259C%25E3%2583%25BC%25E3%2583%258901.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg" width="640" /></a>
+  <img border="0" height="358" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg" width="640" />
 </div>
 
 ### 走るだけで最高グレードの完成車が！
@@ -40,7 +40,7 @@ Zwiftのバーチャルコースである、Watopiaの全ルートを順行・�
 コースは複数分岐しているので、一筆書きの要領で全コースを走ると走行ログがプレッツェル（お菓子の名前）のようになることが由来だと思われる。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://2.bp.blogspot.com/-a0Jb8augvAM/V2TcCFPWI-I/AAAAAAABM6A/ntNdSu3b5o0o3ZzYSH-0PvSkGj3uRGONQCLcB/s1600/%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2597%25E3%2583%2581%25E3%2583%25A3.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/E382ADE383A3E38397E38381E383A3.png" width="266" /></a>
+
 </div>
 
 実際のログは上記のとおりだが、ギリギリでそう見えなくもない。
@@ -68,7 +68,7 @@ Zwiftのバーチャルコースである、Watopiaの全ルートを順行・�
 ワークアウトとは違って、ログアウトさえしなければいくらでも休憩できるので耐えぬく精神力さえあれば完走はそう難しくはない。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://4.bp.blogspot.com/-oKLboKZOdfE/V2TbEZAGduI/AAAAAAABM50/moZVS5bideYbNK35fO_xOQkXNDhgtm80gCLcB/s1600/2016-06-18_1343425.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/2016-06-18_1343425.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/2016-06-18_1343425.jpg" width="640" />
 </div>
 
 ゴールすると、権利を得た旨の表示が出てくる。

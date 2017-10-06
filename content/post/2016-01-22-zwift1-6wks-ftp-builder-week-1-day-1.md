@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-MUmwL-R8X3g/VqIbMWnqYbI/AAAAAAABHwo/nloN7-BrymU/s1600/%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2597%25E3%2583%2581%25E3%2583%25A3.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="364" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/E382ADE383A3E38397E38381E383A3.png" width="640" /></a>
+  <img border="0" height="364" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/E382ADE383A3E38397E38381E383A3.png" width="640" />
 </div>
 
 本記事は下記の続きです。
@@ -46,7 +46,7 @@ tags:
 ひとまず6週間やりきることが目標なので音楽聴きながら50分回す。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-YBRQ9lLPzHw/VqIcOAxdCOI/AAAAAAABHw4/rGlP4PFqJwU/s1600/2016-01-22_2048172.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-22_2048172.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-22_2048172.jpg" width="640" />
 </div>
 
 ケイデンス維持とペダリングを綺麗に意識しながら音楽聞いていたら汗もほとんどかかずにあっさり終了。

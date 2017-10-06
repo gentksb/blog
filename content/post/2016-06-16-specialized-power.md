@@ -68,7 +68,7 @@ tags:
 ### 特徴
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://2.bp.blogspot.com/-h2IeZFcDLBA/V2K6t1iLy1I/AAAAAAABM30/vFbMCMp5F24BFQ1wOYJF6lEvqxtmMuaWQCKgB/s1600/DSC_7644.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/DSC_7644.jpg" width="640" /></a>
+  <img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/DSC_7644.jpg" width="640" />
 </div>
 
 このサドル最大の特徴はノーズの短さ。

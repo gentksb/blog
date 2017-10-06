@@ -29,7 +29,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://1.bp.blogspot.com/-5S_zz5a-JFo/UPvVyjNfKnI/AAAAAAAAKs4/POuf3nOWO9o/s1600/DSC_1276.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1276-1024x576.jpg" width="320" /></a>
+  <img border="0" height="180" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1276-1024x576.jpg" width="320" />
 </div>
 
 ROTOR 3DとQ-rings Aero(50/36T)です！
@@ -47,7 +47,7 @@ Q-ringsと3Dクランクに関しては、互換性や変速性能等々、安�
 さっそくチェーンリング込の重量を
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-ISWo2zkmlUc/UPvVy5QnMwI/AAAAAAAAKs8/NhJ-J1ADQtc/s1600/DSC_1280.JPG" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1280-576x1024.jpg" width="179" /></a><a href="http://4.bp.blogspot.com/-VxCMwBgFJFU/UPvVyptbofI/AAAAAAAAKtA/6lbFx7t6Ick/s1600/DSC_1279.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1279-1024x576.jpg" width="400" /></a>
+  <img border="0" height="225" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1279-1024x576.jpg" width="400" />
 </div>
 
 デジタル秤なんてものはない！見切れているので完成図は左で。
@@ -66,7 +66,7 @@ BBありで689gのFC-9000と比べると軽量化マニアの人にはあまり�
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-ElTC0jHeIRY/UPvVz8rmOQI/AAAAAAAAKtQ/QOn2JKIHhhQ/s1600/DSC_1283.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1283-1024x576.jpg" width="400" /></a>
+  <img border="0" height="225" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1283-1024x576.jpg" width="400" />
 </div>
 
 肝心のインプレですが…

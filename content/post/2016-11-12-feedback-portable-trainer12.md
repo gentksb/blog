@@ -32,7 +32,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://2.bp.blogspot.com/-kKNX7s2aXIo/WCb04RMHtQI/AAAAAAABR_A/G_rCEBiXFRUiz_padG6NBC2YFWd6BnxbwCLcB/s1600/DSC_0346.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0346.jpg" width="640" height="362" border="0" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0346.jpg" width="640" height="362" border="0" />
 </div>
 
 &nbsp;
@@ -44,27 +44,27 @@ Omniumu Trainerを持っていたが、シクロクロスのフォーク多様�
 公称では、9mmクイック/100x12mmTA/100x15mmTA/110x15mmTAに対応しているので、DHバイク以外ならなんでも使える超万能ローラーとなる…はずだった。
 
 問題の発覚は、ロードバイクをTCR ADVANCED PRO DISCに乗り換えてシェイクダウンも終え、意気揚々とZwiftを始めようと思った時。
-  
+
 12mmスルーアクスル仕様への組み換えは、9mmクイック用に使っているインナースペーサーを（下図）を冒頭の銀色スペーサーへ置き換えること。
 
 これで15mmスルーアクスルと同じハブ外径で（ココ重要）中のスペースが12mm軸となる。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://4.bp.blogspot.com/-RfiL_w_brtw/WCb0r5edtPI/AAAAAAABR-k/AGSek5FEvf8YI3YEJ5ePDVB_mlYx476uACEw/s1600/DSC_0347.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0347.jpg" width="640" height="362" border="0" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0347.jpg" width="640" height="362" border="0" />
 </div>
 
 しかし、アクスルが通らない。
-  
+
 銀色のスペーサーの精度が悪くて12mｍ軸が通らないのかと思ったが、単体ではアクスルがちゃんと貫通する。
 
 アダプタ部分だけをフォークに当ててみてよーく観察したら問題が発覚。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://2.bp.blogspot.com/-ODlYFldFF14/WCb0rPiIMfI/AAAAAAABR-g/0ZKFhBwcKUM4ZxT6O31XgMcXxWxB9jRRQCEw/s1600/DSC_0345.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0345.jpg" width="640" height="362" border="0" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0345.jpg" width="640" height="362" border="0" />
 </div>
 
 …芯がズレてる！！！！
-  
+
 これじゃアクスル通るはずありませんね。
 
 15mmアクスル用の状態でシャフトを通すことはできるけれど、本来アクスルとフォークが接する部分ではない箇所に力がかかるので使用はとりやめ。
@@ -80,11 +80,11 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 これによってGIANTとFeedBackどちらに話をもっていくかが変わってくる。
 
 ウンウン唸りながら、ディスクロード先進地域の欧米にノウハウが無いかググりまくる。
-  
+
 そうしたら<a href="https://www.feedbacksports.com/shop/end-cap-kit-12mm-thru-axle/" target="_blank" rel="noopener">こんなページ</a>が…
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://1.bp.blogspot.com/-mP5stCJQAhY/WCb4px9Y7JI/AAAAAAABR_Y/OMSOpySqm5syohE9zw1lWB-M2cZd9QJJwCLcB/s1600/1.PNG"><img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/1.png" width="640" height="392" border="0" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/1.png" width="640" height="392" border="0" />
 </div>
 
 &nbsp;
@@ -102,11 +102,11 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 &nbsp;
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://3.bp.blogspot.com/-UIim71Ricmc/WCb4wEmv9qI/AAAAAAABR_c/8LWiqc3kOMMp_nW4sI1B5EStLE7zfJtZgCLcB/s1600/%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2597%25E3%2583%2581%25E3%2583%25A31.PNG"><img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/E382ADE383A3E38397E38381E383A31.png" width="640" height="252" border="0" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/E382ADE383A3E38397E38381E383A31.png" width="640" height="252" border="0" />
 </div>
 
 こいつ…シレッと対策品出してやがる！！！！！！！！
-  
+
 （当初の棒みたいな12mmスペーサーも複数言語説明書に記載してある公式品です）
 
 このページを見つけた5分後に
@@ -114,21 +114,21 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 「Heyフィードバックさん、12mmTA対応って書いてあるから買ったPortableTrainerなんだけど俺のTCRで付属してたアダプタ使ってもうまく取り付けできないんですよ。んでWEBサイトよく見たらこんなパーツ出してるじゃねーか、適当なアダプタ作っちゃったのわかってるならさっさと代替品としてそれよこせや、もちろん保証期間内だからタダだよな？（意訳）」
 
 というメールを発射。
-  
+
 翌日には「オッケー分かった分かった、台湾から代理店経由で送るよ、よろしくな」という返信を頂いたので一件落着。対応は速い、素晴らしい。
 
 届いたパーツがこちら。キレイなシルバー。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://4.bp.blogspot.com/-2ka3FJKjEvY/WCb0qlqKhAI/AAAAAAABR_Q/swY-n2mpCQAvuPNQ4az7cfaLzQ5E4owpACEw/s1600/DSC_0379.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0379.jpg" width="640" height="362" border="0" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0379.jpg" width="640" height="362" border="0" />
 </div>
 
 取り付けもバッチリ、付属の12mmアクスルで完了した。
-  
+
 滑らかに入っていく精度は流石の一言（GIANTもFeedbackも）
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://2.bp.blogspot.com/-Ui6MqOGcATc/WCb0sVy9tZI/AAAAAAABR_Q/-u3bNgG_EnMiVLo3hzW37KoCgGbK-C-hgCEw/s1600/DSC_0380.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0380.jpg" width="640" height="362" border="0" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0380.jpg" width="640" height="362" border="0" />
 </div>
 
 というわけで12mmスルーアクスル（最近のCXやディスクロード）でPortableTrainerを使う際は気をつけましょう。
@@ -136,42 +136,42 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 15mmモードで無理矢理運用すると、フォーク先端の穴下部に荷重がかかるので下手したらフォークが逝くかもしれない…泣くに泣けないのでちゃんと対策品を使いましょうね。
 
 【追記】
-  
+
 この製品、最近になって(12mmアクスルが普及するにあたって)問題点が発覚したので、部品は順次ランニングチェンジしているそうです。
 
 このアダプタは既存ユーザーにはUS、US以外を問わず順次無料配布されるそうです。
-  
+
 この件をTwitterに投稿してたら丁寧にセールスマネージャーより補足がきました。
 
 その他の問題についてもまずは代理店に相談すれば問題点には迅速に対応するとのこと。
-  
+
 安心のアフターサービスですね。
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink"><img style="border: none;" src="https://images-fe.ssl-images-amazon.com/images/I/314zu5iB-rL._SL160_.jpg" alt="（TNI/ティーエヌアイ)（自転車用パーツ）エボリューション フロントディスクハブ用 12mmスルーアクスル変換アダプター(2016～)" /></a>
   </div>
-  
+
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">（TNI/ティーエヌアイ)（自転車用パーツ）エボリューション フロントディスクハブ用 12mmスルーアクスル変換アダプター(2016～)</a></p> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">（TNI/ティーエヌアイ)（自転車用パーツ）エボリューション フロントディスクハブ用 12mmスルーアクスル変換アダプター(2016～)</a></p>
 
 <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
   posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 16.11.12
 </div>
 
-    
+
 <div class="amazlet-detail">
 TNI(ティーエヌアイ) <br /> 売り上げランキング: 219,657
 
-    
+
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">Amazon.co.jpで詳細を見る</a>
 </div>
 
   </div>
-  
+
   <div class="amazlet-footer" style="clear: left;">
      
   </div>

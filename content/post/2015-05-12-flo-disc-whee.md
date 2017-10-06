@@ -28,7 +28,7 @@ tags:
 [結構前に届いた][1]FLO discをようやく本気で踏む機会がやってきたのでインプレらしきものをメモ。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-XjysU2N7BvI/VVH02fK9dkI/AAAAAAAAZbU/JY9j133cXfs/s1600/11249628_461571047326612_907510443294497243_o.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="480" src="https://blog.gensobunya.net/wp-content/uploads/2015/05/11249628_461571047326612_907510443294497243_o.jpg" width="640" /></a>
+  <img border="0" height="480" src="https://blog.gensobunya.net/wp-content/uploads/2015/05/11249628_461571047326612_907510443294497243_o.jpg" width="640" />
 </div>
 
 5/11の超強風の中、埼玉TTで20km走ってきた。それ以前にシェイクダウンとして都内を40kmほど軽く。

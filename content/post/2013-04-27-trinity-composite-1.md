@@ -37,7 +37,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 **購入前**の写真がこちら
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-pM9r_B8UkdQ/UXvMBM2iFRI/AAAAAAAAK7Q/pjgowvkRyNg/s1600/DSC_1455.JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1455.jpg" height="225" width="400" /></a>
+  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1455.jpg" height="225" width="400" />
 </div>
 
 いいね！かこいいね！
@@ -45,7 +45,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 **購入後**の写真がこちら
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-7xB16XFlpCU/UXvMB4U924I/AAAAAAAAK7Y/GyL9GqXTNYQ/s1600/DSC_1500.JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1500.jpg" height="225" width="400" /></a>
+  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1500.jpg" height="225" width="400" />
 </div>
 
 迫り来る現実
@@ -69,7 +69,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 前乗りにすごく良さそうだしね！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://1.bp.blogspot.com/-q8PtzCh3Bgw/UXvMEmJRDpI/AAAAAAAAK7w/on8pv7Jqvus/s1600/DSC_1530.JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1530.jpg" height="320" width="180" /></a>
+  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1530.jpg" height="320" width="180" />
 </div>
 
 これからがんばってカスタムしていきます。
@@ -84,7 +84,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 ところでDi2のケーブルルーティングを確認しようとBB裏を確認したらこんな具合でした
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-D8JiOxKDfuY/UXvMDovAhgI/AAAAAAAAK7o/tlYsUG7PM-Y/s1600/DSC_1518.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1518.jpg" height="400" width="225" /></a>
+  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1518.jpg" height="400" width="225" />
 </div>
 
 真ん中上部の穴からはFDケーブルが、左はRDケーブルが通っていました。

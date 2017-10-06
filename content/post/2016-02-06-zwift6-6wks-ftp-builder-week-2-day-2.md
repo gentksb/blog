@@ -23,7 +23,7 @@ tags:
   - トレーニング
 
 ---
-<a href="https://3.bp.blogspot.com/--jaSK3r43k8/VrU-jBzszbI/AAAAAAABIkI/wHD7oU-p-hg/s1600/2016-02-03_1929002.jpg" imageanchor="1"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-03_1929002.jpg" /></a>
+<img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-03_1929002.jpg" />
 
 
 

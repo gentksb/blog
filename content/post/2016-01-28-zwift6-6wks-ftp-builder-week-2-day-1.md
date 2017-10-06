@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-RWDm9ZsNiiA/Vqn7p4_ZlxI/AAAAAAABIVE/Opra8qwPaJY/s1600/2016-01-28_1835310.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-28_1835310.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-28_1835310.jpg" width="640" />
 </div>
 
 

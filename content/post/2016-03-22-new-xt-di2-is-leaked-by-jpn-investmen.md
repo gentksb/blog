@@ -21,7 +21,7 @@ categories:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://1.bp.blogspot.com/-Vcy8ntV6pAw/VvEL-h0mMkI/AAAAAAABK8Y/3HZsX5495LASDsjPbRvyUCdfkyPIOE3Wg/s1600/Screenshot_2016-03-22-15-05-54.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/03/Screenshot_2016-03-22-15-05-54.png" width="180" /></a>
+
 </div>
 
 

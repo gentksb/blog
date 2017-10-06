@@ -27,7 +27,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-EJqyzwceWsU/VqC1iI0U_sI/AAAAAAABHs8/vUgwBTgyvfI/s1600/%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2597%25E3%2583%2581%25E3%2583%25A3.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/E382ADE383A3E38397E38381E383A3-1.png" /></a>
+  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/E382ADE383A3E38397E38381E383A3-1.png" />
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
@@ -85,7 +85,7 @@ Zwiftの導入については以前の記事を参照。
 精神的な変数を最小限にするため、コースはフラットなものを選択した。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://1.bp.blogspot.com/-N2NlZ8Lq8Dg/VqC1n82jYyI/AAAAAAABHtc/X8mpt7ENH94/s1600/2016-01-21_1841020.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1841020.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1841020.jpg" width="640" />
 </div>
 
 左にこれからのメニュー、中央には現在のパワーと目標ワットが表示される。
@@ -93,11 +93,11 @@ Zwiftの導入については以前の記事を参照。
 いちいちFTP計測のアップ作法を覚えなくとも、Zwiftが勝手に指示してくる。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-IJEc6ILqTk4/VqC1oTDZE1I/AAAAAAABHvA/pOsSe5NTFhU/s1600/2016-01-21_1850202.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1850202.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1850202.jpg" width="640" />
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-5VfA_JJoMXM/VqC1oaCpxGI/AAAAAAABHt0/iw-ZmBwcSt4/s1600/2016-01-21_1853183.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1853183.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1853183.jpg" width="640" />
 </div>
 
 パワーが足りないと「More POWER!」、パワー出しすぎだと「Reduce POWER」と煽りが入る。
@@ -105,7 +105,7 @@ Zwiftの導入については以前の記事を参照。
 人間は今やることに集中すればOK。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-qPlSsyZBA64/VqC1oluvvFI/AAAAAAABHtw/kQDs9QVEKfA/s1600/2016-01-21_1856064.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1856064.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1856064.jpg" width="640" />
 </div>
 
 メニューをちゃんとクリアすると左側のリストに★が入る。
@@ -115,7 +115,7 @@ Zwiftの導入については以前の記事を参照。
 筋肉を暖めたら6分レストしてスタート。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://1.bp.blogspot.com/-P-QBR3fmv8c/VqC1pJ3UijI/AAAAAAABHu8/GUSsrx7K2P8/s1600/2016-01-21_1904336.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1904336.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1904336.jpg" width="640" />
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -125,7 +125,7 @@ Zwiftの導入については以前の記事を参照。
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-jycMR9lC1x8/VqC1pXviaMI/AAAAAAABHuE/pKUCfs3aInQ/s1600/2016-01-21_1909167.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1909167.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1909167.jpg" width="640" />
 </div>
 
 5分経過、「調子はどう？」。
@@ -133,7 +133,7 @@ Zwiftの導入については以前の記事を参照。
 疲れました
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://1.bp.blogspot.com/-SLfqxnenyw8/VqC1p-a-eVI/AAAAAAABHuY/hqwqpEYme18/s1600/2016-01-21_1920219.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1920219.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_1920219.jpg" width="640" />
 </div>
 
 残り4分、下の部分にパワー分布が出ている。オレンジがFTP+10%くらい？黄色がFTPゾーン、緑がFTP-20%くらい。タレてるのがまるわかり。
@@ -141,13 +141,13 @@ Zwiftの導入については以前の記事を参照。
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-dUvOaLzQyHI/VqC1qwyji5I/AAAAAAABHuo/as0SkTe-aWw/s1600/2016-01-21_19234411.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_19234411.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_19234411.jpg" width="640" />
 </div>
 
 最後の方は画面がホワイトアウトしかける演出、こんなんしなくても死にそうです。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-STa9AFenO2g/VqC1rBJ2soI/AAAAAAABHus/QYBA4tLYeTs/s1600/2016-01-21_19242012.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_19242012.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_19242012.jpg" width="640" />
 </div>
 
 ハイ終了～。20分平均パワーに係数を掛けるところまで勝手にやってくれます。
@@ -157,7 +157,7 @@ Zwiftの導入については以前の記事を参照。
 20分平均パワーはライド完了画面で確認できます。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-ii1xXpt_pi0/VqC1rjWBzKI/AAAAAAABHu0/eHtF6XHg6QY/s1600/2016-01-21_19300414.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_19300414.jpg" width="640" /></a>
+  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-21_19300414.jpg" width="640" />
 </div>
 
 今回のテストはZwift上のベストパワーでもなかったようだ…

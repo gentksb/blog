@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-a6zFRmfflG8/VqYnsH_QtjI/AAAAAAABIGA/2_huv24f1Sc/s1600/Screenshot_2016-01-25-22-44-41.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/Screenshot_2016-01-25-22-44-41.png" width="180" /></a>
+  <img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/Screenshot_2016-01-25-22-44-41.png" width="180" />
 </div>
 
 
@@ -102,7 +102,7 @@ Android、iOSどちらでもOKです。
 #### 最初の画面
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-qxNjDAMvszw/VqdYNGZaltI/AAAAAAABINI/Udi5J0xPuME/s1600/Screenshot_2016-01-26-18-42-25.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/Screenshot_2016-01-26-18-42-25.png" width="180" /></a>
+  <img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/Screenshot_2016-01-26-18-42-25.png" width="180" />
 </div>
 
 矢印長押…Uターン
@@ -114,7 +114,7 @@ Android、iOSどちらでもOKです。
 #### ACTIONS
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://2.bp.blogspot.com/-i8jEWxXnCr8/VqYjufPxHaI/AAAAAAABIFI/fSWOODQuw8k/s1600/Screenshot_2016-01-25-21-18-57.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/Screenshot_2016-01-25-21-18-57.png" width="180" /></a><br /> <a href="http://1.bp.blogspot.com/-Z896fRdy9eg/VqYoUu1e1tI/AAAAAAABIGM/sBU0DqagAKE/s1600/Screenshot_2016-01-22-20-00-17.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/Screenshot_2016-01-22-20-00-17.png" width="180" /></a>
+  <img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/Screenshot_2016-01-22-20-00-17.png" width="180" />
 </div>
 
 左は分岐選択エリア、右はそれ以外での画面です。

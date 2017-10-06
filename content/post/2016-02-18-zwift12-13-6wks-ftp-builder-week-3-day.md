@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://2.bp.blogspot.com/-WIsNaYY-LsY/VsXASwEsuAI/AAAAAAABJ0o/wLWiQfd-rO8/s1600/2016-02-17_1909510.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-17_1909510.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-17_1909510.jpg" width="640" />
 </div>
 
 
@@ -42,7 +42,7 @@ OmniumTrainerだとアウタートップでも指示通りの40RPMにはなら�
 ### プロとの邂逅
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://4.bp.blogspot.com/-lKSzrBeSx6k/VsXBPYx9NuI/AAAAAAABJ1E/J_lIjSsZlj4/s1600/DSC_7121.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/DSC_7121.jpg" width="640" /></a>
+  <img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/DSC_7121.jpg" width="640" />
 </div>
 
 Day3のFoundation始めたら、プロロードレーサーのワレン・バルギルを発見。

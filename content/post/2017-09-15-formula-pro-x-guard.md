@@ -21,7 +21,7 @@ categories:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://1.bp.blogspot.com/-p4-OG3h6cS0/Wbu4lk3he_I/AAAAAAAB_Is/jXM8CojRLe8FFW5zohbADtUZU941ws_GACKgBGAs/s1600/P_20170915_202018.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170915_202018.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170915_202018.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 &nbsp;
@@ -33,15 +33,15 @@ categories:
 こいつはモデルチェンジ前25cなのに27mm近く膨らむというタイヤだったが、新型はそうでもないということで25cをチョイスした。おそらくTCRのクリアランスは28cタイヤが限界だと思うのでやや安全策。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a style="margin-left: 1em; margin-right: 1em;" href="https://2.bp.blogspot.com/-G9bIIbHrXVQ/Wbu5aljM5RI/AAAAAAAB_Z8/KQ1a623F_Ho5OJFkHgcbEjrapabiJVUYQCKgBGAs/s1600/P_20170915_202058.jpg"><img src="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170915_202058.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" /></a>
+  <img src="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170915_202058.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 新型、25mmもありませんでした…
-  
+
 秋のグラベルクリテはパンクせず保って欲しい…
 
 前回使った<a href="http://amzn.to/2ycgwTI" target="_blank" rel="noopener">Formula Pro RBCC 23c</a>に比べてビードがかなり固く。装着には比較的難儀した。
-  
+
 IRCチューブレスの中で一番簡単に装着できる<a href="http://amzn.to/2ybpjFz" target="_blank" rel="noopener">SERAC CX</a>シリーズの硬さを1とするとRBCCは3、こいつは10といったところ。
 
 それでも何日もかかるということはなく、30分あれば前後交換出来る程度だが前腕が棒のようになったので楽に装着をしつつ、エアボリュームを稼ぐために次回は<a href="http://amzn.to/2ybj057" target="_blank" rel="noopener">RBCCの28c</a>をチョイスしようと思う。
@@ -72,10 +72,10 @@ X-Guardを買う最も高いモチベーションだったグラベルクリテ�
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DOZESKK/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink"><img style="border: none;" src="https://images-fe.ssl-images-amazon.com/images/I/316-RzfNA0L._SL160_.jpg" alt="IRC tire IRC FORMULA PRO TUBELESS X-Guard 190132 HP-92 700X25c ブラック" /></a>
   </div>
-  
+
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DOZESKK/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">IRC tire IRC FORMULA PRO TUBELESS X-Guard 190132 HP-92 700X25c ブラック</a></p> 
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DOZESKK/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">IRC tire IRC FORMULA PRO TUBELESS X-Guard 190132 HP-92 700X25c ブラック</a></p>
 <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
   posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 17.09.15
 </div>
@@ -89,7 +89,7 @@ IRC tire <br /> 売り上げランキング: 128,168
 </div>
 
   </div>
-  
+
   <div class="amazlet-footer" style="clear: left;">
      
   </div>

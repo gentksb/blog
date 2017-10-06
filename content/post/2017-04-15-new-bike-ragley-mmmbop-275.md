@@ -44,7 +44,7 @@ tags:
 ヘッドが寝ていて、150mmフォークが適正と下り向きのAM HT。タイヤもリアは2.4インチまで許容できるので楽しく下れるフレームになっているはず。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://3.bp.blogspot.com/-eaR9CyQnNvw/WO4wm7dKq2I/AAAAAAABWc4/wfBIe_y_80MrgqnGMZjVk_4INi1D2s2XgCKgB/s1600/DSC_0871.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0871.jpg" width="640" /></a>
+  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0871.jpg" width="640" />
 </div>
 
 コンポはSLXとDeore10s。36-11-36という男ギア比。
@@ -54,7 +54,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://3.bp.blogspot.com/-5tiXIoTxTUI/WPG4gtBIG5I/AAAAAAABWe8/6Cron2nd6DsyznYYCDRC-7wQmv4v4k1NQCKgB/s1600/DSC_0879.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0879.jpg" width="640" /></a>
+  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0879.jpg" width="640" />
 </div>
 
 ドロッパーポストと[ESIグリップ][1]は初経験。

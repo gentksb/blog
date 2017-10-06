@@ -39,7 +39,7 @@ tags:
 まずタイヤとチューブを外して純正のリムテープを外します。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-UNQsK4jKgKk/UrG6zqyd4eI/AAAAAAAALU4/zybwNWl-yF8/s1600/DSC_4671.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blog.gensobunya.net/wp-content/uploads/2013/12/DSC_4671-575x1024.jpg" width="358" /></a>
+  <img border="0" height="640" src="https://blog.gensobunya.net/wp-content/uploads/2013/12/DSC_4671-575x1024.jpg" width="358" />
 </div>
 
 ちょっとこれはひどくないですか…？よくパンクしなかったものだ
@@ -51,7 +51,7 @@ tags:
 リムテープの下、直接ホイールに貼られているシールを発見
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://3.bp.blogspot.com/-RudQ7T6IMDk/UrG6zZiuP-I/AAAAAAAALU0/hzsK4R5eatg/s1600/DSC_4673.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="https://blog.gensobunya.net/wp-content/uploads/2013/12/DSC_4673-1024x575.jpg" width="640" /></a>
+  <img border="0" height="358" src="https://blog.gensobunya.net/wp-content/uploads/2013/12/DSC_4673-1024x575.jpg" width="640" />
 </div>
 
 809…？621…？
@@ -61,13 +61,13 @@ tags:
 測ってみます（上海問屋で売ってた精度10gという適当な秤です）
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://1.bp.blogspot.com/-jKskxxaQfVo/UrG6zF2hRQI/AAAAAAAALUw/R9Ka4YLyWco/s1600/DSC_4674.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="179" src="https://blog.gensobunya.net/wp-content/uploads/2013/12/DSC_4674-1024x575.jpg" width="320" /></a>
+  <img border="0" height="179" src="https://blog.gensobunya.net/wp-content/uploads/2013/12/DSC_4674-1024x575.jpg" width="320" />
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://4.bp.blogspot.com/-K2suvciqFV0/UrG60wLeU1I/AAAAAAAALVE/cpDW2zDn54I/s1600/DSC_4675.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="179" src="https://blog.gensobunya.net/wp-content/uploads/2013/12/DSC_4675-1024x575.jpg" width="320" /></a>
+  <img border="0" height="179" src="https://blog.gensobunya.net/wp-content/uploads/2013/12/DSC_4675-1024x575.jpg" width="320" />
 </div>
 
 1450g…精度の悪い秤なのですが少なくともC24TLが1505gであることを考えるとかなりいい感じの重量です。買ってよかった。

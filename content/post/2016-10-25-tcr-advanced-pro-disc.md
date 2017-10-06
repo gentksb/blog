@@ -24,7 +24,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://3.bp.blogspot.com/-BwaXImvd84c/WA9Dbqk97lI/AAAAAAABRAI/6Psw5qkAQ3IRSeQagNu37Yaiu6FbqSqMQCLcB/s1600/DSC_0311.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/10/DSC_0311.jpg" width="640" /></a>
+  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/10/DSC_0311.jpg" width="640" />
 </div>
 
 ###
@@ -95,7 +95,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="https://3.bp.blogspot.com/-iI3p-YG10gY/WA9FwDiJ7GI/AAAAAAABRAg/tlaVXGiFvvwduRVWS7J_fpbABbf8PtNfACLcB/s1600/DSC_0312.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/10/DSC_0312.jpg" width="181" /></a>
+    <img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/10/DSC_0312.jpg" width="181" />
   </div>
 
   <p>

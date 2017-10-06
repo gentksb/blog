@@ -25,7 +25,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://3.bp.blogspot.com/-_krjWPGnrDI/Vrsvy11rrEI/AAAAAAABItE/PI3iR13HeJY/s1600/2016-02-06_1144120.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-06_1144120.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-06_1144120.jpg" width="640" />
 </div>
 
 
@@ -43,7 +43,7 @@ tags:
 ### Week 2 Day 4th &#8211; Tempo
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://4.bp.blogspot.com/-6FAeTeFTNUk/VrswaStlxlI/AAAAAAABItQ/KV0xclF1EZU/s1600/2016-02-09_1906350.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-09_1906350.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-09_1906350.jpg" width="640" />
 </div>
 
 先週も出てきたテンポ走…だけどなんかメニュー量が多い！
@@ -55,7 +55,7 @@ tags:
 いきなり210W\*4min\*4とか入ってるし…
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://3.bp.blogspot.com/-aOG7ZfDoazs/Vrswx3zT1OI/AAAAAAABItY/DELkJGpnJms/s1600/2016-02-09_1922071.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-09_1922071.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-09_1922071.jpg" width="640" />
 </div>
 
 キツイと思ったら、思ってたより休憩が長かったでござる。
@@ -69,7 +69,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://3.bp.blogspot.com/-2yV-wYTEf4s/VrsxoQc295I/AAAAAAABIto/UWhoxIsLFb4/s1600/2016-02-10_2000330.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-10_2000330.jpg" width="640" /></a>
+  <img border="0" height="352" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-10_2000330.jpg" width="640" />
 </div>
 
 先週は休みだった5日目ですが、2週目はメニューあり。
