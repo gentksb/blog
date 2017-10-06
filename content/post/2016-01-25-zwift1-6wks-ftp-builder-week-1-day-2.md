@@ -72,22 +72,22 @@ tags:
   
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-        posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p> 
+
+<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
+  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
+</div>
+
     
-    <div class="amazlet-detail">
-      SUUNTO(スント) (2011-11-14)<br /> 売り上げランキング: 46,667
-    </div>
+<div class="amazlet-detail">
+SUUNTO(スント) (2011-11-14)<br /> 売り上げランキング: 46,667
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px;">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px;">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left;">
@@ -101,22 +101,22 @@ tags:
   
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01826VY6M/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">トレーニングマット</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-        posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01826VY6M/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">トレーニングマット</a></p> 
+
+<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
+  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
+</div>
+
     
-    <div class="amazlet-detail">
-      takizawa <br /> 売り上げランキング: 25,061
-    </div>
+<div class="amazlet-detail">
+takizawa <br /> 売り上げランキング: 25,061
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px;">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01826VY6M/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px;">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01826VY6M/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left;">
@@ -130,22 +130,22 @@ tags:
   
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000O38Z2I/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">MINOURA(ミノウラ) セフティーネット</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-        posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000O38Z2I/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">MINOURA(ミノウラ) セフティーネット</a></p> 
+
+<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
+  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
+</div>
+
     
-    <div class="amazlet-detail">
-      MINOURA(ミノウラ) <br /> 売り上げランキング: 15,311
-    </div>
+<div class="amazlet-detail">
+MINOURA(ミノウラ) <br /> 売り上げランキング: 15,311
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px;">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000O38Z2I/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px;">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000O38Z2I/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left;">

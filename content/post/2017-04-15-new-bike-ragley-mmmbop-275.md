@@ -68,22 +68,22 @@ tags:
   
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B003RLLQUM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ESI grips(イーエスアイ グリップス) MTB グリップ Chunky Grips CESGRCHGR グリーン 外径32mm x 長さ130mm</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-        posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.15
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B003RLLQUM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ESI grips(イーエスアイ グリップス) MTB グリップ Chunky Grips CESGRCHGR グリーン 外径32mm x 長さ130mm</a></p> 
+
+<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
+  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.15
+</div>
+
     
-    <div class="amazlet-detail">
-      Extreme Steering(エクストリームステアリング) <br /> 売り上げランキング: 127,215
-    </div>
+<div class="amazlet-detail">
+Extreme Steering(エクストリームステアリング) <br /> 売り上げランキング: 127,215
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px;">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B003RLLQUM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px;">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B003RLLQUM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left;">

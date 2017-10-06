@@ -42,22 +42,22 @@ Zwift側でリアルタイムパワー値が3秒平均になったせいで、10
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.02.27
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.02.27
+</div>
+
     
-    <div class="amazlet-detail">
-      SUUNTO(スント) (2011-11-14)<br />売り上げランキング: 46,667
-    </div>
+<div class="amazlet-detail">
+SUUNTO(スント) (2011-11-14)<br />売り上げランキング: 46,667
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">
@@ -71,22 +71,22 @@ Zwift側でリアルタイムパワー値が3秒平均になったせいで、10
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4528011646/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">レースに勝つための最強ロードバイクトレーニング</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4528011646/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">レースに勝つための最強ロードバイクトレーニング</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
+</div>
+
     
-    <div class="amazlet-detail">
-      高岡 亮寛 <br />日東書院本社 <br />売り上げランキング: 92,676
-    </div>
+<div class="amazlet-detail">
+高岡 亮寛 <br />日東書院本社 <br />売り上げランキング: 92,676
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4528011646/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4528011646/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">

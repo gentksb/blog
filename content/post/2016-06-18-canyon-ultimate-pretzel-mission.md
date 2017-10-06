@@ -84,22 +84,22 @@ Zwiftのバーチャルコースである、Watopiaの全ルートを順行・�
   
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00JJH2ISW/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ALINCO(アルインコ) フィットネスバイク・自転車用サドルカバー AFB001</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-        posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.06.19
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00JJH2ISW/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ALINCO(アルインコ) フィットネスバイク・自転車用サドルカバー AFB001</a></p> 
+
+<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
+  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.06.19
+</div>
+
     
-    <div class="amazlet-detail">
-      ALINCO(アルインコ) (2014-04-08)<br /> 売り上げランキング: 79
-    </div>
+<div class="amazlet-detail">
+ALINCO(アルインコ) (2014-04-08)<br /> 売り上げランキング: 79
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px;">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00JJH2ISW/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px;">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00JJH2ISW/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left;">

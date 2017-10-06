@@ -45,22 +45,22 @@ categories:
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H11H63K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">シマノ SHIMANO ULTEGRA 6870 Di2 Set 外装バッテリー・外装仕様(SM-JC40)</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.22
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H11H63K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">シマノ SHIMANO ULTEGRA 6870 Di2 Set 外装バッテリー・外装仕様(SM-JC40)</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.22
+</div>
+
     
-    <div class="amazlet-detail">
-      SHIMANO (シマノ) <br />売り上げランキング: 222,821
-    </div>
+<div class="amazlet-detail">
+SHIMANO (シマノ) <br />売り上げランキング: 222,821
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H11H63K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H11H63K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">

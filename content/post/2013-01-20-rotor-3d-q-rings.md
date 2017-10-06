@@ -122,22 +122,22 @@ Q-rings使用者でもインナー真円にする人がいるようですがな�
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00LSH9PG4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">RIDEA(リデア) MS-GN-W2TLS-SH90　Power Ring W2TLS 4arms</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.30
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00LSH9PG4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">RIDEA(リデア) MS-GN-W2TLS-SH90　Power Ring W2TLS 4arms</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.30
+</div>
+
     
-    <div class="amazlet-detail">
-      RIDEA(リデア) <br />売り上げランキング: 122,547
-    </div>
+<div class="amazlet-detail">
+RIDEA(リデア) <br />売り上げランキング: 122,547
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00LSH9PG4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00LSH9PG4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">
@@ -151,22 +151,22 @@ Q-rings使用者でもインナー真円にする人がいるようですがな�
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00SS8YPGG/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ROTOR ローター 3D24 CRANKS ROAD 165mm 110PCD クランク</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.30
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00SS8YPGG/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ROTOR ローター 3D24 CRANKS ROAD 165mm 110PCD クランク</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.30
+</div>
+
     
-    <div class="amazlet-detail">
-      ROTOR <br />売り上げランキング: 167,593
-    </div>
+<div class="amazlet-detail">
+ROTOR <br />売り上げランキング: 167,593
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00SS8YPGG/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00SS8YPGG/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">

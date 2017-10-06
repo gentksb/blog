@@ -42,30 +42,30 @@ Zwiftはただ走るだけではなくチャットをしたり「RIDE ON!」（�
   
   <div class="appreach-info" style="margin: 10px;">
     <div id="appreach-appname">
-      Zwift Mobile Link
-    </div>
+Zwift Mobile Link
+
     
     <div id="appreach-developer" style="display: inline-block; font-size: 80%;">
-      開発元:<a href="https://itunes.apple.com/jp/developer/zwift-llc/id934083689?uo=4" id="appreach-developerurl" rel="nofollow" target="_blank">Zwift, LLC</a>
-    </div>
+開発元:<a href="https://itunes.apple.com/jp/developer/zwift-llc/id934083689?uo=4" id="appreach-developerurl" rel="nofollow" target="_blank">Zwift, LLC</a>
+
     
     <div id="appreach-price" style="display: inline-block; font-size: 80%;">
-      無料
-    </div>
+無料
+
     
     <div class="appreach-powered" style="display: inline-block; font-size: 80%;">
-      posted with <a href="http://nabettu.github.io/appreach/" rel="nofollow" target="_blank" title="アプリーチ">アプリーチ</a>
-    </div>
+posted with <a href="http://nabettu.github.io/appreach/" rel="nofollow" target="_blank" title="アプリーチ">アプリーチ</a>
+
     
     <div class="appreach-links" style="float: left;">
-      <div id="appreach-itunes-link" style="_display: inline; display: inline-block;">
-        <a href="https://itunes.apple.com/jp/app/zwift-mobile-link/id934083691?mt=8&uo=4&at=11lHd9" id="appreach-itunes" rel="nofollow" target="_blank"><br /> <img src="http://nabettu.github.io/appreach/img/itune_en.png" style="height: 40px;" /><br /> </a>
-      </div>
-      
-      <div id="appreach-gplay-link" style="_display: inline; display: inline-block;">
-        <a href="https://play.google.com/store/apps/details?id=com.zwift.android.prod" id="appreach-gplay" rel="nofollow" target="_blank"><br /> <img src="http://nabettu.github.io/appreach/img/gplay_en.png" style="height: 40px;" /><br /> </a>
-      </div>
-    </div>
+<div id="appreach-itunes-link" style="_display: inline; display: inline-block;">
+  <a href="https://itunes.apple.com/jp/app/zwift-mobile-link/id934083691?mt=8&uo=4&at=11lHd9" id="appreach-itunes" rel="nofollow" target="_blank"><br /> <img src="http://nabettu.github.io/appreach/img/itune_en.png" style="height: 40px;" /><br /> </a>
+</div>
+
+<div id="appreach-gplay-link" style="_display: inline; display: inline-block;">
+  <a href="https://play.google.com/store/apps/details?id=com.zwift.android.prod" id="appreach-gplay" rel="nofollow" target="_blank"><br /> <img src="http://nabettu.github.io/appreach/img/gplay_en.png" style="height: 40px;" /><br /> </a>
+</div>
+
   </div>
   
   <div class="appreach-footer" style="clear: left; margin-bottom: 10px;">
@@ -152,22 +152,22 @@ SNAPSHOT…スクリーンショット撮影（My documentZwiftへ保存）
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.02.27
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.02.27
+</div>
+
     
-    <div class="amazlet-detail">
-      SUUNTO(スント) (2011-11-14)<br />売り上げランキング: 46,667
-    </div>
+<div class="amazlet-detail">
+SUUNTO(スント) (2011-11-14)<br />売り上げランキング: 46,667
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">
@@ -181,22 +181,22 @@ SNAPSHOT…スクリーンショット撮影（My documentZwiftへ保存）
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00810V1IG/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">MINOURA(ミノウラ) スマートフォンホルダー [iH-400 STD] スタンダードサイズ 22.2mm/25.4mm/28.6mm</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00810V1IG/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">MINOURA(ミノウラ) スマートフォンホルダー [iH-400 STD] スタンダードサイズ 22.2mm/25.4mm/28.6mm</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
+</div>
+
     
-    <div class="amazlet-detail">
-      MINOURA(ミノウラ) (2012-06-07)<br />売り上げランキング: 1,386
-    </div>
+<div class="amazlet-detail">
+MINOURA(ミノウラ) (2012-06-07)<br />売り上げランキング: 1,386
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00810V1IG/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00810V1IG/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">

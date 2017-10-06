@@ -100,22 +100,22 @@ tags:
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BG93S/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">NoTubes Universal 44mm Tubeless Road Valve Stem 2本（AS0020）</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.06.19
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BG93S/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">NoTubes Universal 44mm Tubeless Road Valve Stem 2本（AS0020）</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.06.19
+</div>
+
     
-    <div class="amazlet-detail">
-      NoTubes <br />売り上げランキング: 20,216
-    </div>
+<div class="amazlet-detail">
+NoTubes <br />売り上げランキング: 20,216
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BG93S/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BG93S/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">

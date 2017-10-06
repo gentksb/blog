@@ -88,22 +88,22 @@ Prizmレンズはいいぞ。CXシーズンまでにTrailも購入したい。
   
   <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
     <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01BBJC0SI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(オークリー)OAKLEY Enhance Technical QD Tee.01 455621JP 01K jet black M</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-        posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.06.19
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01BBJC0SI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(オークリー)OAKLEY Enhance Technical QD Tee.01 455621JP 01K jet black M</a></p> 
+
+<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
+  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.06.19
+</div>
+
     
-    <div class="amazlet-detail">
-      OAKLEY (2016-02-01)
-    </div>
+<div class="amazlet-detail">
+OAKLEY (2016-02-01)
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px;">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01BBJC0SI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px;">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01BBJC0SI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left;">

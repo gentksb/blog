@@ -179,22 +179,22 @@ Zwiftの導入については以前の記事を参照。
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B015GX9IS0/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">タバタ式トレーニング (ＳＰＡ！ＢＯＯＫＳ)</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B015GX9IS0/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">タバタ式トレーニング (ＳＰＡ！ＢＯＯＫＳ)</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
+</div>
+
     
-    <div class="amazlet-detail">
-      扶桑社 (2015-09-18)<br />売り上げランキング: 2,873
-    </div>
+<div class="amazlet-detail">
+扶桑社 (2015-09-18)<br />売り上げランキング: 2,873
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B015GX9IS0/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B015GX9IS0/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">
@@ -208,22 +208,22 @@ Zwiftの導入については以前の記事を参照。
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">パワー・トレーニング・バイブル</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">パワー・トレーニング・バイブル</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
+</div>
+
     
-    <div class="amazlet-detail">
-      ハンター・アレン アンドリュー・コーガン <br />OVERLANDER <br />売り上げランキング: 9,807
-    </div>
+<div class="amazlet-detail">
+ハンター・アレン アンドリュー・コーガン <br />OVERLANDER <br />売り上げランキング: 9,807
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">

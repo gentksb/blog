@@ -88,22 +88,22 @@ tags:
   
   <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
     <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00VHJLCWS/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SHIMANO(シマノ) TL-BT03S ディスクブレーキ ブリーディングシンプルキット ファンネルブリードBL対応 Y8H498090</a></p> 
-      
-      <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-        posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.10.29
-      </div>
-    </div>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00VHJLCWS/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SHIMANO(シマノ) TL-BT03S ディスクブレーキ ブリーディングシンプルキット ファンネルブリードBL対応 Y8H498090</a></p> 
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.10.29
+</div>
+
     
-    <div class="amazlet-detail">
-      SHIMANO(シマノ)
-    </div>
+<div class="amazlet-detail">
+SHIMANO(シマノ)
+
     
-    <div class="amazlet-sub-info" style="float: left;">
-      <div class="amazlet-link" style="margin-top: 5px">
-        <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00VHJLCWS/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-      </div>
-    </div>
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00VHJLCWS/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
   </div>
   
   <div class="amazlet-footer" style="clear: left">
