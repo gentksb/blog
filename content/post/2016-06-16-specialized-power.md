@@ -34,7 +34,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://1.bp.blogspot.com/-DBc9IWor1rU/V2K61n4GEtI/AAAAAAABM3g/FXVUKtkzCBYRQvDaWnAtO11VI56d_hTWwCLcB/s1600/DSC_7658.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/DSC_7658.jpg" width="640" /></a>
+  <img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/DSC_7658.jpg" width="640" />
 </div>
 
 尻の座り具合は自転車乗りに取って永遠とテーマと言ってもいい。
@@ -90,7 +90,7 @@ tags:
 身長160cmの自分でも、クランク軸からの後退幅50mmを余裕でクリアする仕上がりとなった。上から見るとどれくらい短いかわかりやすい。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://1.bp.blogspot.com/-NmYtb-ttl5E/V2K6t9XktBI/AAAAAAABM30/ZouBTkZfjG44v9nNs8GGb_4_cv_Y2ofCACKgB/s1600/DSC_7643.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/DSC_7643.jpg" width="640" /></a>
+  <img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/DSC_7643.jpg" width="640" />
 </div>
 
 まだ室内利用のみのインプレとなるが、フルカーボンサドルに比べればパッドの厚みがあるので、後ろ乗りのポジションを取っている限りは快適性は上がるものと予想している。
