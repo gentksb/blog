@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2017-04-14T21:09:00+00:00
 url: /2017/04/new-bike-ragley-mmmbop-275.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 2052470568634757817
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2017/04/new-bike-ragley-mmmbop-275.html
-blogger_thumbnail:
-  - https://1.bp.blogspot.com/-bvgPltufWYc/WO4vCOb1N0I/AAAAAAABWcs/mahnk-DR0iwcGPpD7Vjj1nQFa0dweacLwCKgB/s640/DSC_0851.jpg
 categories:
   - 未分類
 tags:

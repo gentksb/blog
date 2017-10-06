@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-02-05T15:35:00+00:00
 url: /2016/02/zwift6-6wks-ftp-builder-week-2-day-2.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 7706149230430120419
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/02/zwift6-6wks-ftp-builder-week-2-day-2.html
-blogger_thumbnail:
-  - https://3.bp.blogspot.com/--jaSK3r43k8/VrU-jBzszbI/AAAAAAABIkI/wHD7oU-p-hg/s640/2016-02-03_1929002.jpg
 categories:
   - 未分類
 tags:

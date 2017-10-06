@@ -3,19 +3,7 @@ title: MTB 組み換え　DARTMOOR HORNET
 author: admin
 type: post
 date: 2014-01-24T05:49:00+00:00
-url: /2014/01/mtb-dartmoor-horne.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 4118661943684740048
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2014/01/mtb-dartmoor-hornet.html
-blogger_thumbnail:
-  - http://2.bp.blogspot.com/-TIyaxXC0T9s/UuJ6PNMO7NI/AAAAAAAALeE/-o9iwzWqLU8/s1600/IMG_20140118_152717.jpg
+url: /2014/01/mtb-dartmoor-hornet.html
 categories:
   - 未分類
 tags:

@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2013-04-27T04:09:00+00:00
 url: /2013/04/trinity-composite-1.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 6789704815800048066
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2013/04/trinity-composite-1.html
-blogger_thumbnail:
-  - http://2.bp.blogspot.com/-pM9r_B8UkdQ/UXvMBM2iFRI/AAAAAAAAK7Q/pjgowvkRyNg/s400/DSC_1455.JPG
 categories:
   - 未分類
 tags:

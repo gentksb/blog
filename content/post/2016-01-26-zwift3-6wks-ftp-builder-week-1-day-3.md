@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-01-26T02:33:00+00:00
 url: /2016/01/zwift3-6wks-ftp-builder-week-1-day-3.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 3140860607410041625
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/01/zwift3-6wks-ftp-builder-week-1-day-3.html
-blogger_thumbnail:
-  - http://2.bp.blogspot.com/-eGhI6glSYCo/VqdYbsd9n9I/AAAAAAABINQ/n-FS-jEDYHY/s640/2016-01-26_1843030.jpg
 categories:
   - 未分類
 tags:

@@ -4,16 +4,6 @@ author: admin
 type: post
 date: 2013-04-06T04:04:00+00:00
 url: /2013/04/new-ulterga-6800-leaked-11-speed.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 4563262194088573150
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2013/04/new-ulterga-6800-leaked-11-speed.html
 categories:
   - 未分類
 

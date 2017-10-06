@@ -3,19 +3,7 @@ title: flo disc wheelインプレ（レースと練習）
 author: admin
 type: post
 date: 2015-05-12T03:53:00+00:00
-url: /2015/05/flo-disc-whee.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 5395108651857182580
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2015/05/flo-disc-wheel.html
-blogger_thumbnail:
-  - http://3.bp.blogspot.com/-XjysU2N7BvI/VVH02fK9dkI/AAAAAAAAZbU/JY9j133cXfs/s640/11249628_461571047326612_907510443294497243_o.jpg
+url: /2015/05/flo-disc-wheel.html
 categories:
   - 未分類
 tags:

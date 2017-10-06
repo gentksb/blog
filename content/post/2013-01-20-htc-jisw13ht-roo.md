@@ -3,17 +3,7 @@ title: 'HTC J(ISW13HT) root&CWM'
 author: admin
 type: post
 date: 2013-01-20T02:19:00+00:00
-url: /2013/01/htc-jisw13ht-roo.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 6917140134796403118
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2013/01/htc-jisw13ht-root.html
+url: /2013/01/htc-jisw13ht-root.html
 categories:
   - 未分類
 tags:

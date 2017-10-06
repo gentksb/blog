@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2017-04-17T03:31:00+00:00
 url: /2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 3851057392969374171
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html
-blogger_thumbnail:
-  - https://2.bp.blogspot.com/-aCKcf3VFK0Y/WPSnVz6ufXI/AAAAAAABWiM/yn3MZTMvRQQszX8pXTQeOOCI-j2omSVsQCKgB/s640/DSC_0935.jpg
 custom_permalink:
   - 2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html
 categories:

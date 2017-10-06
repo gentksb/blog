@@ -4,20 +4,6 @@ author: admin
 type: post
 date: 2014-01-24T06:34:00+00:00
 url: /2014/01/crosslight-pro6.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 2797072156503996717
-blogger_author:
-  - 05415749641252153199
-blogger_comments:
-  - 4
-blogger_permalink:
-  - /2014/01/crosslight-pro6.html
-blogger_thumbnail:
-  - http://4.bp.blogspot.com/-NMhFQ0P01jI/UuJ60LXzu_I/AAAAAAAALeM/84DeZ3jOHnM/s1600/IMG_20140123_232028.jpg
 categories:
   - 未分類
 tags:

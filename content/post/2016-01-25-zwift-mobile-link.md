@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-01-25T05:03:00+00:00
 url: /2016/01/zwift-mobile-link.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 6651264029948452677
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/01/zwift-mobile-link.html
-blogger_thumbnail:
-  - http://3.bp.blogspot.com/-a6zFRmfflG8/VqYnsH_QtjI/AAAAAAABIGA/2_huv24f1Sc/s320/Screenshot_2016-01-25-22-44-41.png
 categories:
   - 未分類
 tags:

@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-03-22T00:11:00+00:00
 url: /2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 8969740558916699702
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/03/new-xt-di2-is-leaked-by-jpn-investment.html
-blogger_thumbnail:
-  - https://1.bp.blogspot.com/-Vcy8ntV6pAw/VvEL-h0mMkI/AAAAAAABK8Y/3HZsX5495LASDsjPbRvyUCdfkyPIOE3Wg/s320/Screenshot_2016-03-22-15-05-54.png
 categories:
   - 未分類
 

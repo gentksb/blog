@@ -4,20 +4,12 @@ author: admin
 type: post
 date: 2017-09-15T02:36:00+00:00
 url: /2017/09/formula-pro-x-guard.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 1159893897005127564
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2017/09/formula-pro-x-guard.html
-blogger_thumbnail:
-  - https://1.bp.blogspot.com/-p4-OG3h6cS0/Wbu4lk3he_I/AAAAAAAB_Is/jXM8CojRLe8FFW5zohbADtUZU941ws_GACKgBGAs/s640/P_20170915_202018.jpg
+thumbnail: /wp-content/uploads/2017/09/P_20170915_202018.jpg
 categories:
   - 未分類
+tags:
+  - ロード
+  - インプレ
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

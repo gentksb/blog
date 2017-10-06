@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-06-18T18:00:00+00:00
 url: /2016/06/oakley-radar-ev-prizm-road.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 3706311299411258791
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/06/oakley-radar-ev-prizm-road.html
-blogger_thumbnail:
-  - https://4.bp.blogspot.com/-N6txV6w8dK0/V2YH2kYIUrI/AAAAAAABM7Y/Tf_0q1_xkEEiOK-8uxtWTP2xS_rO6rRsgCLcB/s640/DSC_7627.JPG
 categories:
   - 未分類
 tags:

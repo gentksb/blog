@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-09-28T02:18:00+00:00
 url: /2016/09/2016-17-cx1-irc-tire-90th-anniversary.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 6802666132724669317
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/09/2016-17-cx1-irc-tire-90th-anniversary.html
-blogger_thumbnail:
-  - https://1.bp.blogspot.com/-hM-6yzHv-DA/V-uhGCb6jAI/AAAAAAABQdo/h_eKBXlOSJYfV2cATqJfGRzz59Q1WrC0ACLcB/s640/DSC_0187.jpg
 categories:
   - 未分類
 tags:

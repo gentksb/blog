@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2013-10-15T04:21:00+00:00
 url: /2013/10/11snovatec-jetfly.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 7785519395968781264
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2013/10/11snovatec-jetfly.html
-blogger_thumbnail:
-  - http://1.bp.blogspot.com/-j5bh8npjPh4/Ul1AJDrebhI/AAAAAAAALN0/HgL4BJvd5Dk/s1600/BWXIUoJCEAAl97d.jpg
 categories:
   - 未分類
 tags:

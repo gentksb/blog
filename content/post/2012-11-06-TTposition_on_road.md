@@ -3,19 +3,7 @@ title: ロードバイクでTTポジションを取る
 author: admin
 type: post
 date: 2012-11-06T00:18:00+00:00
-url: /2012/11/TTpositionOnRoad.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 5855120701401019706
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2012/11/tt.html
-blogger_thumbnail:
-  - http://4.bp.blogspot.com/-0MwaJBg2nEM/UJJa1HNFS3I/AAAAAAAAJDg/ly68GeFc3BU/s1600/DSC_1108.JPG
+url: /2012/11/TTposition_on_road.html
 categories:
   - 未分類
 tags:

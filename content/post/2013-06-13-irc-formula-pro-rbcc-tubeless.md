@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2013-06-13T04:09:00+00:00
 url: /2013/06/irc-formula-pro-rbcc-tubeless.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 2628194217711779245
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2013/06/irc-formula-pro-rbcc-tubeless.html
-blogger_thumbnail:
-  - http://2.bp.blogspot.com/-Oy5iBp9dnck/UbnDekg8MrI/AAAAAAAALBI/m82fxZaqW0c/s1600/DSC_0026.jpg
 categories:
   - 未分類
 tags:

@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2013-12-25T08:48:00+00:00
 url: /2013/12/kinesis-crosslight-pro-disc.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 6870042422710963715
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2013/12/kinesis-crosslight-pro-disc.html
-blogger_thumbnail:
-  - http://www.kinesisbikes.co.uk/wp-content/uploads/2011/09/Pro6_Black_Gallery.jpg
 categories:
   - 未分類
 tags:

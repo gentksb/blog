@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2014-06-02T04:23:00+00:00
 url: /2014/06/2014-kimera-prestige-premium.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 5981209514144941686
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2014/06/2014-kimera-prestige-premium.html
-blogger_thumbnail:
-  - http://2.bp.blogspot.com/-UvZNCDNUKwg/U4x3mp8hZcI/AAAAAAAALto/Myubk2oih-0/s1600/IMG_20140531_124412.jpg
 categories:
   - 未分類
 tags:

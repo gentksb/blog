@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-12-10T04:16:00+00:00
 url: /2016/12/maxxis-speed-terrane.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 2574789958845929104
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/12/maxxis-speed-terrane.html
-blogger_thumbnail:
-  - https://2.bp.blogspot.com/-uRYMzUFPOdI/WEv7nmJ0g4I/AAAAAAABSkM/sy1zhtGcJiUnTX7oBGwoeKOuLySmxmY6gCLcB/s640/DSC_0448.jpg
 categories:
   - 未分類
 tags:

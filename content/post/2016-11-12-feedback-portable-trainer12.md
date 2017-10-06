@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-11-12T02:21:00+00:00
 url: /2016/11/feedback-portable-trainer12mm.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 1493029210593207422
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/11/feedback-portable-trainer12mm.html
-blogger_thumbnail:
-  - https://2.bp.blogspot.com/-kKNX7s2aXIo/WCb04RMHtQI/AAAAAAABR_A/G_rCEBiXFRUiz_padG6NBC2YFWd6BnxbwCLcB/s640/DSC_0346.jpg
 custom_permalink:
   - 2016/11/feedback-portable-trainer12mm.html
 categories:

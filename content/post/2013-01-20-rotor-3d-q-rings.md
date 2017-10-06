@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2013-01-20T03:00:00+00:00
 url: /2013/01/rotor-3d-q-rings.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 7550895233342286391
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2013/01/rotor-3d-q-rings.html
-blogger_thumbnail:
-  - https://1.bp.blogspot.com/-5S_zz5a-JFo/UPvVyjNfKnI/AAAAAAAAKs4/POuf3nOWO9o/s1600/DSC_1276.JPG
 categories:
   - 未分類
 tags:

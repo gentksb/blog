@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-06-16T06:01:00+00:00
 url: /2016/06/specialized-power.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 6823971852290075399
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/06/specialized-power.html
-blogger_thumbnail:
-  - https://1.bp.blogspot.com/-DBc9IWor1rU/V2K61n4GEtI/AAAAAAABM3g/FXVUKtkzCBYRQvDaWnAtO11VI56d_hTWwCLcB/s640/DSC_7658.jpg
 categories:
   - 未分類
 tags:

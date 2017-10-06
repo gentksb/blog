@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2014-02-26T05:14:00+00:00
 url: /2014/02/serac-cxpiranha-2-cx.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 400164635954451818
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2014/02/serac-cxpiranha-2-cx.html
-blogger_thumbnail:
-  - http://4.bp.blogspot.com/_VwXcFgqW-uM/S_DK0D1NpvI/AAAAAAAAAtI/H-G2dpKwWYo/s1600/6700-5.JPG
 categories:
   - 未分類
 tags:

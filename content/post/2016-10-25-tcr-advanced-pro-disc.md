@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-10-25T02:49:00+00:00
 url: /2016/10/tcr-advanced-pro-disc.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 2024165523403597710
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/10/tcr-advanced-pro-disc.html
-blogger_thumbnail:
-  - https://3.bp.blogspot.com/-BwaXImvd84c/WA9Dbqk97lI/AAAAAAABRAI/6Psw5qkAQ3IRSeQagNu37Yaiu6FbqSqMQCLcB/s640/DSC_0311.jpg
 categories:
   - 未分類
 tags:

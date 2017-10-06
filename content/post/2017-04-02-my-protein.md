@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2017-04-02T04:17:00+00:00
 url: /2017/04/my-protein.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 5926725241760571049
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2017/04/my-protein.html
-blogger_thumbnail:
-  - https://4.bp.blogspot.com/-uDmeHdS6VjM/WOD1AcsQqXI/AAAAAAABWTo/A3zQjC6MmXYlcx0sywMwbvVSvD3AhJSGwCKgB/s640/DSC_0887.jpg
 categories:
   - 未分類
 tags:

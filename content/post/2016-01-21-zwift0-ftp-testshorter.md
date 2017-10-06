@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-01-21T03:20:00+00:00
 url: /2016/01/zwift0-ftp-testshorter.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 3518885045784757870
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/01/zwift0-ftp-testshorter.html
-blogger_thumbnail:
-  - http://3.bp.blogspot.com/-EJqyzwceWsU/VqC1iI0U_sI/AAAAAAABHs8/vUgwBTgyvfI/s640/%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2597%25E3%2583%2581%25E3%2583%25A3.PNG
 categories:
   - 未分類
 tags:

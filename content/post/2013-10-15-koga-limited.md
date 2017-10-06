@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2013-10-15T04:08:00+00:00
 url: /2013/10/koga-limited.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 6682620227238440302
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2013/10/koga-limited.html
-blogger_thumbnail:
-  - http://3.bp.blogspot.com/-H6sNtztDkI4/Ul08aa_nG0I/AAAAAAAALNk/u-r4iGjZfEA/s1600/BWhBf5NCYAAmlH4.jpg
 categories:
   - 未分類
 tags:

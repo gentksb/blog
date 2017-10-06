@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2016-06-17T20:26:00+00:00
 url: /2016/06/canyon-ultimate-pretzel-mission.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 6043501272647702245
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2016/06/canyon-ultimate-pretzel-mission.html
-blogger_thumbnail:
-  - https://2.bp.blogspot.com/-rtfcXbySEGs/V2TZF36rQaI/AAAAAAABM5c/6lauRWVLADIdEaydlrOjV3YAT5YtYa6aQCLcB/s640/%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2583%25E3%2583%2597%25E3%2583%259C%25E3%2583%25BC%25E3%2583%258901.jpg
 categories:
   - 未分類
 tags:

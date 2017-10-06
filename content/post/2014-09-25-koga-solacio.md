@@ -4,18 +4,6 @@ author: admin
 type: post
 date: 2014-09-25T01:37:00+00:00
 url: /2014/09/koga-solacio.html
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 892326752789885175
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /2014/09/koga-solacio.html
-blogger_thumbnail:
-  - http://3.bp.blogspot.com/-AAplDmDeTR0/VCPr6mrSeVI/AAAAAAAALyI/-leV7cfxsck/s1600/2014-09-21%2B10.09.30.jpg
 categories:
   - 未分類
 tags:
