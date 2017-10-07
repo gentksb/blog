@@ -15,6 +15,9 @@ buildDrafts = false
 hasCJKLanguage = true
 defaultLayout = "post"
 
+[Permalinks]
+post = "/post/:year/:month/:filename"
+
 [taxonomies]
 #category = "categories"
 tag = "tags"

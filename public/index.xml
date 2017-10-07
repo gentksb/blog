@@ -6,10 +6,28 @@
     <description>Recent content on 幻想サイクル</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 27 Sep 2017 11:26:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Oct 2017 21:18:23 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.gensobunya.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BloggerからWordpressに移行 - CDN,HTTPS編</title>
+      <link>http://blog.gensobunya.net/post/blggrtowp-2/</link>
+      <pubDate>Sat, 07 Oct 2017 21:18:23 +0900</pubDate>
+      
+      <guid>http://blog.gensobunya.net/post/blggrtowp-2/</guid>
+      <description>システム環境 1クリックデプロイでGCEにWordpessをインストールした時のインストール先は下記の通り。OSはDebian。 Wordpre</description>
+    </item>
+    
+    <item>
+      <title>BloggerやめてWordpressに移行したけど結局Hugoにした</title>
+      <link>http://blog.gensobunya.net/post/blgger-to-wp-to-hugo-1/</link>
+      <pubDate>Sat, 07 Oct 2017 12:52:17 +0900</pubDate>
+      
+      <guid>http://blog.gensobunya.net/post/blgger-to-wp-to-hugo-1/</guid>
+      <description>まずはBloggerをやめたかった かなり長い間Bloggerでブログを書いてきたのですが、最近不満が目立つようになってきました。主な点は下記</description>
+    </item>
     
     <item>
       <title>格安サイコンbryton Rider310を使ってみた</title>
@@ -404,7 +422,7 @@
       <pubDate>Tue, 31 May 2016 02:07:00 +0000</pubDate>
       
       <guid>http://blog.gensobunya.net/2016/05/zwift.html</guid>
-      <description>&amp;nbsp; &amp;nbsp; ワークアウトエディタ Zwiftのワークアウト機能では、自分でオリジナルメニューを作成することも出来る。 デフォルト状態で大量のメニューが用</description>
+      <description>ワークアウトエディタ Zwiftのワークアウト機能では、自分でオリジナルメニューを作成することも出来る。 デフォルト状態で大量のメニューが用意さ</description>
     </item>
     
     <item>
@@ -548,7 +566,7 @@
       <pubDate>Fri, 22 Jan 2016 03:12:00 +0000</pubDate>
       
       <guid>http://blog.gensobunya.net/2016/01/zwift1-6wks-ftp-builder-week-1-day-1.html</guid>
-      <description>本記事は下記の続きです。 Zwiftで始めるパワートレーニング0日目 &amp;#8211; FTP test(shorter) https://blog.gensobunya.net/2016/01/21/zwift0-ftp-testshorter.html 拍子抜け やる気出してページを開いたらすごく簡単なメニューが出てきた</description>
+      <description>本記事は下記の続きです。 Zwiftで始めるパワートレーニング0日目 &amp;#8211; FTP test(shorter) /2016/01/21/zwift0-ftp-testshorter.html 拍子抜け やる気出してページを開いたらすごく簡単なメニューが出てきた</description>
     </item>
     
     <item>
@@ -652,10 +670,10 @@
     
     <item>
       <title>Zwiftがすごくすごいので導入した</title>
-      <link>http://blog.gensobunya.net/2015/10/zwif-3.html</link>
+      <link>http://blog.gensobunya.net/2015/10/zwift-3.html</link>
       <pubDate>Thu, 01 Oct 2015 05:13:00 +0000</pubDate>
       
-      <guid>http://blog.gensobunya.net/2015/10/zwif-3.html</guid>
+      <guid>http://blog.gensobunya.net/2015/10/zwift-3.html</guid>
       <description>** 「Zwift知ってますか？」** ローラーのデータをPCに渡して、バーチャル空間で走行しているようにできるソフト。 インターネット経由で世界中</description>
     </item>
     
@@ -670,10 +688,10 @@
     
     <item>
       <title>flo disc wheelインプレ（レースと練習）</title>
-      <link>http://blog.gensobunya.net/2015/05/flo-disc-whee.html</link>
+      <link>http://blog.gensobunya.net/2015/05/flo-disc-wheel.html</link>
       <pubDate>Tue, 12 May 2015 03:53:00 +0000</pubDate>
       
-      <guid>http://blog.gensobunya.net/2015/05/flo-disc-whee.html</guid>
+      <guid>http://blog.gensobunya.net/2015/05/flo-disc-wheel.html</guid>
       <description>結構前に届いたFLO discをようやく本気で踏む機会がやってきたのでインプレらしきものをメモ。 5/11の超強風の中、埼玉TTで20km走って</description>
     </item>
     
@@ -913,10 +931,10 @@
     
     <item>
       <title>MTB 組み換え　DARTMOOR HORNET</title>
-      <link>http://blog.gensobunya.net/2014/01/mtb-dartmoor-horne.html</link>
+      <link>http://blog.gensobunya.net/2014/01/mtb-dartmoor-hornet.html</link>
       <pubDate>Fri, 24 Jan 2014 05:49:00 +0000</pubDate>
       
-      <guid>http://blog.gensobunya.net/2014/01/mtb-dartmoor-horne.html</guid>
+      <guid>http://blog.gensobunya.net/2014/01/mtb-dartmoor-hornet.html</guid>
       <description>友人のやんぼーからMTBフレームを譲ってもらったため、念願のAMHTの150mmフォーク仕様になりました。 パーツ類はほぼBlastからの移植</description>
     </item>
     
@@ -1138,10 +1156,10 @@
     
     <item>
       <title>HTC J(ISW13HT) root&amp;CWM</title>
-      <link>http://blog.gensobunya.net/2013/01/htc-jisw13ht-roo.html</link>
+      <link>http://blog.gensobunya.net/2013/01/htc-jisw13ht-root.html</link>
       <pubDate>Sun, 20 Jan 2013 02:19:00 +0000</pubDate>
       
-      <guid>http://blog.gensobunya.net/2013/01/htc-jisw13ht-roo.html</guid>
+      <guid>http://blog.gensobunya.net/2013/01/htc-jisw13ht-root.html</guid>
       <description>HTC Jを手に入れたのでroot取ったりROM突っ込んだりして遊ぶことにしました。 まずはroot環境構築から。 幸い、HTCの機種には@fnoji</description>
     </item>
     
@@ -1192,10 +1210,10 @@
     
     <item>
       <title>ロードバイクでTTポジションを取る</title>
-      <link>http://blog.gensobunya.net/2012/11/ttpositiononroad.html</link>
+      <link>http://blog.gensobunya.net/2012/11/ttposition_on_road.html</link>
       <pubDate>Tue, 06 Nov 2012 00:18:00 +0000</pubDate>
       
-      <guid>http://blog.gensobunya.net/2012/11/ttpositiononroad.html</guid>
+      <guid>http://blog.gensobunya.net/2012/11/ttposition_on_road.html</guid>
       <description>ロードバイクでTTポジション。取りたい時ありますよね？ エンデューロで先頭を引いていたり、一人旅になってしまった時。ツーリングで平坦な道を延々</description>
     </item>
     
@@ -1219,10 +1237,10 @@
     
     <item>
       <title>Paypalの本人認証について（追記</title>
-      <link>http://blog.gensobunya.net/2012/10/paypa.html</link>
+      <link>http://blog.gensobunya.net/2012/10/paypal.html</link>
       <pubDate>Tue, 16 Oct 2012 18:36:00 +0000</pubDate>
       
-      <guid>http://blog.gensobunya.net/2012/10/paypa.html</guid>
+      <guid>http://blog.gensobunya.net/2012/10/paypal.html</guid>
       <description>最近Paypalが身分証による本人認証をしないと、支払い上限を10万JPYに制限する変更を行いました。 この変更で「本人確認書類のアップロード</description>
     </item>
     

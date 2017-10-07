@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.gensobunya.net/post/blggrtowp-2/</loc>
+    <lastmod>2017-10-07T21:18:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.gensobunya.net/post/blgger-to-wp-to-hugo-1/</loc>
+    <lastmod>2017-10-07T12:52:17+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.gensobunya.net/2017/09/rider310review.html</loc>
     <lastmod>2017-09-27T11:26:26+00:00</lastmod>
   </url>
@@ -358,7 +368,7 @@
   </url>
   
   <url>
-    <loc>http://blog.gensobunya.net/2015/10/zwif-3.html</loc>
+    <loc>http://blog.gensobunya.net/2015/10/zwift-3.html</loc>
     <lastmod>2015-10-01T05:13:00+00:00</lastmod>
   </url>
   
@@ -368,7 +378,7 @@
   </url>
   
   <url>
-    <loc>http://blog.gensobunya.net/2015/05/flo-disc-whee.html</loc>
+    <loc>http://blog.gensobunya.net/2015/05/flo-disc-wheel.html</loc>
     <lastmod>2015-05-12T03:53:00+00:00</lastmod>
   </url>
   
@@ -503,7 +513,7 @@
   </url>
   
   <url>
-    <loc>http://blog.gensobunya.net/2014/01/mtb-dartmoor-horne.html</loc>
+    <loc>http://blog.gensobunya.net/2014/01/mtb-dartmoor-hornet.html</loc>
     <lastmod>2014-01-24T05:49:00+00:00</lastmod>
   </url>
   
@@ -628,7 +638,7 @@
   </url>
   
   <url>
-    <loc>http://blog.gensobunya.net/2013/01/htc-jisw13ht-roo.html</loc>
+    <loc>http://blog.gensobunya.net/2013/01/htc-jisw13ht-root.html</loc>
     <lastmod>2013-01-20T02:19:00+00:00</lastmod>
   </url>
   
@@ -658,7 +668,7 @@
   </url>
   
   <url>
-    <loc>http://blog.gensobunya.net/2012/11/ttpositiononroad.html</loc>
+    <loc>http://blog.gensobunya.net/2012/11/ttposition_on_road.html</loc>
     <lastmod>2012-11-06T00:18:00+00:00</lastmod>
   </url>
   
@@ -673,7 +683,7 @@
   </url>
   
   <url>
-    <loc>http://blog.gensobunya.net/2012/10/paypa.html</loc>
+    <loc>http://blog.gensobunya.net/2012/10/paypal.html</loc>
     <lastmod>2012-10-16T18:36:00+00:00</lastmod>
   </url>
   
@@ -698,6 +708,12 @@
   </url>
   
   <url>
+    <loc>http://blog.gensobunya.net/tags/code/</loc>
+    <lastmod>2017-10-07T21:18:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.gensobunya.net/tags/cx/</loc>
     <lastmod>2017-09-05T05:13:00+00:00</lastmod>
     <priority>0</priority>
@@ -711,13 +727,13 @@
   
   <url>
     <loc>http://blog.gensobunya.net/post/</loc>
-    <lastmod>2017-09-27T11:26:26+00:00</lastmod>
+    <lastmod>2017-10-07T21:18:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.gensobunya.net/tags/</loc>
-    <lastmod>2017-09-05T05:13:00+00:00</lastmod>
+    <lastmod>2017-10-07T21:18:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -777,13 +793,13 @@
   
   <url>
     <loc>http://blog.gensobunya.net/tags/%E3%83%AD%E3%83%BC%E3%83%89/</loc>
-    <lastmod>2017-07-07T02:35:00+00:00</lastmod>
+    <lastmod>2017-09-15T02:36:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.gensobunya.net/</loc>
-    <lastmod>2017-09-27T11:26:26+00:00</lastmod>
+    <lastmod>2017-10-07T21:18:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   

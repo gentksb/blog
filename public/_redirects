@@ -1,0 +1,11 @@
+http://gensobunya.netlify.com/*  https://blog.gensobunya.net/:splat  301!
+https://gensobunya.netlify.com/*  https://blog.gensobunya.net/:splat  301!
+http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
+
+# START paramater 301 redirect
+/*param1=:value1   /:splat  301!
+# END paramater 301 redirect
+
+# START page 301 redirect
+/:year/:month:/:date/:slug /:year/:month:/:slug 301!
+# END page 301 redirect

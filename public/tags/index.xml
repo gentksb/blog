@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 幻想サイクル</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 05 Sep 2017 05:13:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Oct 2017 21:18:23 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.gensobunya.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Code</title>
+      <link>http://blog.gensobunya.net/tags/code/</link>
+      <pubDate>Sat, 07 Oct 2017 21:18:23 +0900</pubDate>
+      
+      <guid>http://blog.gensobunya.net/tags/code/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Cx</title>
@@ -113,7 +122,7 @@
     <item>
       <title>ロード</title>
       <link>http://blog.gensobunya.net/tags/%E3%83%AD%E3%83%BC%E3%83%89/</link>
-      <pubDate>Fri, 07 Jul 2017 02:35:00 +0000</pubDate>
+      <pubDate>Fri, 15 Sep 2017 02:36:00 +0000</pubDate>
       
       <guid>http://blog.gensobunya.net/tags/%E3%83%AD%E3%83%BC%E3%83%89/</guid>
       <description></description>

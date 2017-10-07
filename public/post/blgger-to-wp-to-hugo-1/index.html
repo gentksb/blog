@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BloggerやめてWordpressに移行したけど結局Hugoにした</title>
+<meta name="description" content="シクロクロスとロードバイク、時々MTBと同人誌">
+<meta name="generator" content="Hugo 0.27.1" />
+<meta property="og:title" content="BloggerやめてWordpressに移行したけど結局Hugoにした" />
+<meta property="og:description" content="まずはBloggerをやめたかった かなり長い間Bloggerでブログを書いてきたのですが、最近不満が目立つようになってきました。主な点は下記" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.gensobunya.net/post/blgger-to-wp-to-hugo-1/" />
+
+
+
+<meta property="article:published_time" content="2017-10-07T12:52:17&#43;09:00"/>
+<meta property="article:modified_time" content="2017-10-07T12:52:17&#43;09:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="../../js/scripts.js"></script>
+<link rel="shortcut icon" href="../../favicon.ico">
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-72162915-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+<script async >window._epn = {campaign:5338191852};</script>
+<script async src="https://epnt.ebay.com/static/epn-smart-tools.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="../../" title="幻想サイクル" rel="home">
+						<h1 class="logo__title">幻想サイクル</h1>
+						<h2 class="logo__tagline">シクロクロスとロードバイク、時々MTBと同人誌</h2>
+					</a>
+				</div>
+			</div>
+			<hr class="divider">
+		</header>
+		<div class="wrapper clearfix">
+
+<main class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">BloggerやめてWordpressに移行したけど結局Hugoにした</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2017-10-07T12:52:17">2017-10-07</time>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			
+			
+
+
+<figure >
+    
+        <img src="../../img/hugo.PNG" />
+    
+    
+</figure>
+
+
+<h2 id="まずはbloggerをやめたかった">まずはBloggerをやめたかった</h2>
+
+<p>かなり長い間Bloggerでブログを書いてきたのですが、最近不満が目立つようになってきました。主な点は下記の2点。</p>
+
+<ul>
+<li>エディターが変なHTMLを生成する</li>
+<li>独自ドメインのHTTPS化ができない</li>
+</ul>
+
+<p>特に前者はうっかりすると改行を全て<code>&lt;div&gt;</code>タグで出力するというおぞましい仕様。</p>
+
+<p>HTTPS化は当のGoogleが検索順位を落としたり、世の中常時HTTPSの流れに乗りたいという意図。サービスの対応を待っているのも嫌になったので、サービスを乗り換えることにしました。</p>
+
+<h2 id="とりあえずwordpress">とりあえずWordpress</h2>
+
+<p>まずは手頃で慣れているサービスとしてWordPressを検討。要件は無料で独自ドメインSSLできること、性能がそこまで落ちないこと。</p>
+
+<p>GCPにも興味があって並行して調べていたところ、下記の通りGCE（EC2みたいなもの）でほぼ無料でWordpressが運用できることを知りました。</p>
+
+<blockquote>
+<p><a href="https://yukari-n.info/posts/gce-wordpress/">GCEでWordPressがほぼ無料運用できるようになったので改めてまとめる</a><br />
+<a href="https://yukari-n.info/posts/gce-wordpress/">https://yukari-n.info/posts/gce-wordpress/</a></p>
+</blockquote>
+
+<p>自分でサーバー運用するので、当然SSLも可能。
+興味のあったGCPサービスということもあってまずはこれで移行することに。</p>
+
+<p>ブログ以降が主な目的なので、勉強はそこそこにしてWordpressは<a href="https://console.cloud.google.com/launcher/details/click-to-deploy-images/wordpress">1クリックデプロイ</a>を利用してf1-microインスタンスに設置。無料枠を使うためにUSリージョンにするのを忘れない。</p>
+
+<p>インスタンスの性能がショボいので、最終的にはCDNを使ってほぼ全てのページをキャッシュして通信量・インスタンスの不具合を減らす方向に持っていきます。</p>
+
+<h2 id="gcpすごい">GCPすごい</h2>
+
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">GCEのすごいところ<br><br>ターミナルソフト←いらない<br>ユーザーの作成←いらない<br>sudo権限付与←いらない<br>ssh鍵の生成←いらない<br>ssh鍵の転送←いらない<br>GCP用sdkのインストール←いらない</p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/910320028464988160?ref_src=twsrc%5Etfw">September 20, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+まずはGCPの機能に感動。SSHするのにブラウザから1クリックで証明書を自動作成してインスタンスに登録してSSHできる…</p>
+
+<p>さすがにWEBアプリなのでちょっと遅いが、大抵の作業は事足りる上にAndroidのConsoleアプリからも同じことができる。
+環境構築いらないじゃん…という気持でしたが色々WordPressのファイルをいじらなければならないところがあるので、ローカル用にGCP SDKをインストールしてGitリポジトリをこれまたGCP上の「Google cloud repository」に作成。</p>
+
+<p>リポジトリの認証もGoogleアカウントで完結。なんて楽なんだすごいぞGCP。</p>
+
+<h2 id="データの移行">データの移行</h2>
+
+<p>データの移行には「<a href="https://ja.wordpress.org/plugins/blogger-importer-extended/">Blogger importer extended</a>」を使いました。
+使い方は下記の記事を参考に。自動で画像・タグ・記事内容・パーマリンクを取り込んでくれます。※</p>
+
+<blockquote>
+<p><a href="https://web-memo.fragmentnews.com/blogger-wordpress-279.html">blogger から WordPress への移行リダイレクトまで</a><br />
+<a href="https://web-memo.fragmentnews.com/blogger-wordpress-279.html">https://web-memo.fragmentnews.com/blogger-wordpress-279.html</a></p>
+</blockquote>
+
+<p>ただし、パーマリンクで取り込んでくれるのは一番最後のファイル名のみなので予めWordPress側のパーマリンクを&rdquo;/yyyy/mm/ファイル名.html&rdquo;に変更しておく必要があります。
+絶対リンクもWordPress設定のサイトURLに置き換えられるので、以降中にIPアドレスが設定されている場合、あとでまとめて置き換えることになります。<a href="https://ja.wordpress.org/plugins/search-regex/">Search Regex</a>を使えば一発で全記事のソースを置換できます。</p>
+
+<h3 id="パーマリンク不備">パーマリンク不備</h3>
+
+<p>あとから気がついたのですが、WordPressは同じファイル名になるポストのファイル名を勝手に書き換えます。
+Bloggerは全角文字のみのタイトル記事は全て「blog-post.html」になるため、自分のようにパーマリンクに気を使っていないと同じファイル名が大量に生成され、blog-post-3.htmlやblog-pos4.htmlという不完全な記事が生まれます。</p>
+
+<p>importer extendedのバグなのでしょうが、普通の記事も末尾の1文字が消えていたりすることがあるので、全部見直すハメになりました。つらい。</p>
+
+<p>さらにさらに、Bloggerはたまに/yyyy/mm/dd/postname.htmlというディレクトリ構成の記事もあることが発覚。
+こちらはどうしようもないので.htaccessに書いて対処することに。</p>
+
+<pre><code># START page 301 redirect
+&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !(^/wp.*/.*$)
+RewriteRule ^([0-9]{4})/([0-9]{2})/([0-9]{2})/(.*\.html)$ /$1/$2/$4 [R=301,L]
+&lt;/IfModule&gt;
+# END page 301 redirect
+</code></pre>
+
+<p>念のため管理画面やリソースは除外しています。
+ひとまずこれでコンテンツは移行完了。</p>
+
+<p>残りはCDNとSSL。
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4798137146/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51TXapj99DL._SL160_.jpg" alt="プログラマのためのGoogle Cloud Platform入門 サービスの全体像からクラウドネイティブアプリケーション構築まで" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4798137146/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">プログラマのためのGoogle Cloud Platform入門 サービスの全体像からクラウドネイティブアプリケーション構築まで</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 17.10.07</div></div><div class="amazlet-detail">阿佐 志保 中井 悦司 <br />翔泳社 <br />売り上げランキング: 12,847<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4798137146/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div></p>
+
+		</div>
+		<div class="clearfix">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
+	<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-0056151430743709"
+			data-ad-slot="4152578227"
+			data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+		<div class="clearfix">
+    
+    <div class="a2a_kit a2a_kit_size_64 a2a_default_style">
+        
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_google_plus"></a>
+        <a class="a2a_button_line"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_copy_link"></a>
+    </div>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    
+</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="../../tags/code/" rel="tag">Code</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="../../2017/09/rider310review.html" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">格安サイコンbryton Rider310を使ってみた</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="../../post/blggrtowp-2/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">BloggerからWordpressに移行 - CDN,HTTPS編</p></a>
+	</div>
+</nav>
+
+	
+</main>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="http://blog.gensobunya.net/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="../../post/blggrtowp-2/">BloggerからWordpressに移行 - CDN,HTTPS編</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../post/blgger-to-wp-to-hugo-1/">BloggerやめてWordpressに移行したけど結局Hugoにした</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../2017/09/rider310review.html">格安サイコンbryton Rider310を使ってみた</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../2017/09/formula-pro-x-guard.html">新型Formula Pro X-Guardにタイヤ交換</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../2017/09/tcx-slrdi2.html">新車（古い）TCX SLR油圧Di2で組み上げ</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+	
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/gen_sobunya" target="_blank">
+				<svg class="widget-social__link-icon icon-twitter" viewBox="0 0 384 312" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+	</div>
+</div>
+
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="../../tags/code" title="code">code (2)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/cx" title="cx">cx (37)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/mtb" title="mtb">mtb (15)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/tips" title="tips">tips (32)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/tt" title="tt">tt (5)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/zwift" title="zwift">zwift (18)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e3%82%a4%e3%83%b3%e3%83%97%e3%83%ac" title="インプレ">インプレ (48)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e3%82%ac%e3%82%b8%e3%82%a7%e3%83%83%e3%83%88" title="ガジェット">ガジェット (8)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e3%82%b3%e3%83%9f%e3%82%b1" title="コミケ">コミケ (4)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e3%83%84%e3%83%bc%e3%83%aa%e3%83%b3%e3%82%b0" title="ツーリング">ツーリング (14)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e3%83%88%e3%83%ac%e3%83%bc%e3%83%8b%e3%83%b3%e3%82%b0" title="トレーニング">トレーニング (19)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e3%83%ac%e3%83%bc%e3%82%b9" title="レース">レース (30)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e3%83%ad%e3%83%bc%e3%83%89" title="ロード">ロード (47)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e6%b5%b7%e5%a4%96%e9%80%9a%e8%b2%a9" title="海外通販">海外通販 (9)</a>
+		<a class="widget__link widget__link--taglist" href="../../tags/%e9%a3%af" title="飯">飯 (7)</a>
+	</div>
+</div>
+	
+<div class="widget">
+	<h4 class="widget__title">Ads</h4>
+	<div class="widget__content">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-0056151430743709"
+			 data-ad-slot="4877495829"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+</div>
+</aside>
+
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 幻想サイクル. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+</body>
+</html>
