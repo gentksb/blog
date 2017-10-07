@@ -16,7 +16,7 @@ hasCJKLanguage = true
 defaultLayout = "post"
 
 [Permalinks]
-post = "/:year/:month/:filename"
+post = "/:year:month/:filename"
 
 [taxonomies]
 #category = "categories"

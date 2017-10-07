@@ -13,10 +13,10 @@
     
     <item>
       <title>BloggerからWordpressに移行 - CDN,HTTPS編</title>
-      <link>http://blog.gensobunya.net/2017/10/blggrtowp-2/</link>
+      <link>http://blog.gensobunya.net/2017/10/blggrtowp-2.html</link>
       <pubDate>Sat, 07 Oct 2017 21:18:23 +0900</pubDate>
       
-      <guid>http://blog.gensobunya.net/2017/10/blggrtowp-2/</guid>
+      <guid>http://blog.gensobunya.net/2017/10/blggrtowp-2.html</guid>
       <description>システム環境 1クリックデプロイでGCEにWordpessをインストールした時のインストール先は下記の通り。OSはDebian。 Wordpre</description>
     </item>
     
