@@ -1,6 +1,6 @@
-http://gensobunya.netlify.com/*  https://blog.grnsobunya.net/:splat  301!
-https://gensobunya.netlify.com/*  http://blog.grnsobunya.net/:splat  301!
-http://blog.grnsobunya.net/*  301! https://blog.grnsobunya.net/:splat  301!
+http://gensobunya.netlify.com/*  https://blog.gensobunya.net/:splat  301!
+https://gensobunya.netlify.com/*  http://blog.gensobunya.net/:splat  301!
+http://blog.gensobunya.net/*  301! https://blog.gensobunya.net/:splat  301!
 
 # START paramater 301 redirect
 /*param1=:value1   /:splat  301!
