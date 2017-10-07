@@ -23,6 +23,7 @@
 		</header>
 		<div class="list__excerpt">
 			{{ .Summary }}
+			...<!--サマリーの末尾に...を追加-->
 		</div>
 		{{- if .Site.Params.readmore }}
 		{{- if .Truncated }}
