@@ -4,6 +4,7 @@ author: admin
 type: post
 date: 2013-06-13T04:09:00+00:00
 url: /2013/06/irc-formula-pro-rbcc-tubeless.html
+thumbnail: /wp-content/uploads/2013/06/DSC_0026-1024x575.jpg
 categories:
   - 未分類
 tags:

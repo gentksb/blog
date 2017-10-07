@@ -4,6 +4,7 @@ author: admin
 type: post
 date: 2015-05-12T03:53:00+00:00
 url: /2015/05/flo-disc-wheel.html
+thumbnail: /wp-content/uploads/2015/05/11249628_461571047326612_907510443294497243_o.jpg
 categories:
   - 未分類
 tags:

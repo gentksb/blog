@@ -4,6 +4,7 @@ author: admin
 type: post
 date: 2016-02-10T03:53:00+00:00
 url: /2016/02/zwift6-6wks-ftp-builder-week-2-day-3-5.html
+thumbnail: /wp-content/uploads/2016/02/2016-02-06_1144120.jpg
 categories:
   - 未分類
 tags:

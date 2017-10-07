@@ -4,6 +4,7 @@ author: admin
 type: post
 date: 2016-01-21T03:20:00+00:00
 url: /2016/01/zwift0-ftp-testshorter.html
+thumbnail: /wp-content/uploads/2016/01/E382ADE383A3E38397E38381E383A3-1.png
 categories:
   - 未分類
 tags:

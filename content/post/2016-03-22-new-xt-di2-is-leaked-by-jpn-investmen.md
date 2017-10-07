@@ -8,12 +8,6 @@ categories:
   - 未分類
 
 ---
-<div class="separator" style="clear: both; text-align: center;">
-
-</div>
-
-
-
 <blockquote class="tr_bq">
   <p>
     話題株ピックアップ【昼刊】：ジグソー、日本オラクル、任天堂、トヨタ<br /> <a href="http://news.finance.yahoo.co.jp/detail/20160322-00000124-stkms-stocks">http://news.finance.yahoo.co.jp/detail/20160322-00000124-stkms-stocks</a>

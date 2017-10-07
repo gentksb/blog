@@ -4,8 +4,7 @@ author: admin
 type: post
 date: 2016-11-12T02:21:00+00:00
 url: /2016/11/feedback-portable-trainer12mm.html
-custom_permalink:
-  - 2016/11/feedback-portable-trainer12mm.html
+thumbnail: /wp-content/uploads/2016/11/DSC_0346.jpg
 categories:
   - 未分類
 tags:

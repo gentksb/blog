@@ -4,6 +4,7 @@ author: admin
 type: post
 date: 2013-12-25T08:48:00+00:00
 url: /2013/12/kinesis-crosslight-pro-disc.html
+thumbnail: /wp-content/uploads/2011/09/Pro6_Black_Gallery.jpg
 categories:
   - 未分類
 tags:

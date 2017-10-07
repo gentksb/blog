@@ -4,6 +4,7 @@ author: admin
 type: post
 date: 2016-06-16T06:01:00+00:00
 url: /2016/06/specialized-power.html
+thumbnail: /wp-content/uploads/2016/06/DSC_7658.jpg
 categories:
   - 未分類
 tags:
@@ -11,16 +12,6 @@ tags:
   - ロード
 
 ---
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-
-
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="360" src="https://blog.gensobunya.net/wp-content/uploads/2016/06/DSC_7658.jpg" width="640" />
 </div>
