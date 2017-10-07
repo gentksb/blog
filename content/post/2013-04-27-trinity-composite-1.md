@@ -25,7 +25,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 **購入前**の写真がこちら
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1455.jpg" height="225" width="400" />
+  <img border="0" src="/wp-content/uploads/2013/04/DSC_1455.jpg" height="225" width="400" />
 </div>
 
 いいね！かこいいね！
@@ -33,7 +33,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 **購入後**の写真がこちら
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1500.jpg" height="225" width="400" />
+  <img border="0" src="/wp-content/uploads/2013/04/DSC_1500.jpg" height="225" width="400" />
 </div>
 
 迫り来る現実
@@ -57,7 +57,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 前乗りにすごく良さそうだしね！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1530.jpg" height="320" width="180" />
+  <img border="0" src="/wp-content/uploads/2013/04/DSC_1530.jpg" height="320" width="180" />
 </div>
 
 これからがんばってカスタムしていきます。
@@ -72,7 +72,7 @@ TTレースとかイベント遠征とかトライアスロンに使う予定。
 ところでDi2のケーブルルーティングを確認しようとBB裏を確認したらこんな具合でした
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/04/DSC_1518.jpg" height="400" width="225" />
+  <img border="0" src="/wp-content/uploads/2013/04/DSC_1518.jpg" height="400" width="225" />
 </div>
 
 真ん中上部の穴からはFDケーブルが、左はRDケーブルが通っていました。

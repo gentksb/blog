@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://blog.gensobunya.net/wp-content/uploads/2013/06/DSC_0026-1024x575.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2013/06/DSC_0026-1024x575.jpg" height="356" width="640" /></a>
+  <a href="/wp-content/uploads/2013/06/DSC_0026-1024x575.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2013/06/DSC_0026-1024x575.jpg" height="356" width="640" /></a>
 </div>
 
 フロントに装着していたATOM tubelessがいい加減古くなったので交換しました。

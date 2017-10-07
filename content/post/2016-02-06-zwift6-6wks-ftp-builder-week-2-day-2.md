@@ -12,7 +12,7 @@ tags:
   - トレーニング
 
 ---
-<img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2016/02/2016-02-03_1929002.jpg" />
+<img border="0" src="/wp-content/uploads/2016/02/2016-02-03_1929002.jpg" />
 
 
 

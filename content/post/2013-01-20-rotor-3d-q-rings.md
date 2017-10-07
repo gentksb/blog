@@ -17,7 +17,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="180" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1276-1024x576.jpg" width="320" />
+  <img border="0" height="180" src="/wp-content/uploads/2013/01/DSC_1276-1024x576.jpg" width="320" />
 </div>
 
 ROTOR 3DとQ-rings Aero(50/36T)です！
@@ -35,7 +35,7 @@ Q-ringsと3Dクランクに関しては、互換性や変速性能等々、安�
 さっそくチェーンリング込の重量を
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="225" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1279-1024x576.jpg" width="400" />
+  <img border="0" height="225" src="/wp-content/uploads/2013/01/DSC_1279-1024x576.jpg" width="400" />
 </div>
 
 デジタル秤なんてものはない！見切れているので完成図は左で。
@@ -54,7 +54,7 @@ BBありで689gのFC-9000と比べると軽量化マニアの人にはあまり�
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="225" src="https://blog.gensobunya.net/wp-content/uploads/2013/01/DSC_1283-1024x576.jpg" width="400" />
+  <img border="0" height="225" src="/wp-content/uploads/2013/01/DSC_1283-1024x576.jpg" width="400" />
 </div>
 
 肝心のインプレですが…

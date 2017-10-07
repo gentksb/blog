@@ -19,14 +19,14 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0346.jpg" width="640" height="362" border="0" />
+  <img src="/wp-content/uploads/2016/11/DSC_0346.jpg" width="640" height="362" border="0" />
 </div>
 
 &nbsp;
 
 ### 万能ローラー！のはずが…
 
-Omniumu Trainerを持っていたが、シクロクロスのフォーク多様化やディスクロードを見据えてFeedBack Sportsの<a href="https://blog.gensobunya.net/2016/07/blog-post.html" target="_blank" rel="noopener">Portable Trainerに乗り換えた</a>。
+Omniumu Trainerを持っていたが、シクロクロスのフォーク多様化やディスクロードを見据えてFeedBack Sportsの<a href="/2016/07/blog-post.html" target="_blank" rel="noopener">Portable Trainerに乗り換えた</a>。
 
 公称では、9mmクイック/100x12mmTA/100x15mmTA/110x15mmTAに対応しているので、DHバイク以外ならなんでも使える超万能ローラーとなる…はずだった。
 
@@ -37,7 +37,7 @@ Omniumu Trainerを持っていたが、シクロクロスのフォーク多様�
 これで15mmスルーアクスルと同じハブ外径で（ココ重要）中のスペースが12mm軸となる。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0347.jpg" width="640" height="362" border="0" />
+  <img src="/wp-content/uploads/2016/11/DSC_0347.jpg" width="640" height="362" border="0" />
 </div>
 
 しかし、アクスルが通らない。
@@ -47,7 +47,7 @@ Omniumu Trainerを持っていたが、シクロクロスのフォーク多様�
 アダプタ部分だけをフォークに当ててみてよーく観察したら問題が発覚。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0345.jpg" width="640" height="362" border="0" />
+  <img src="/wp-content/uploads/2016/11/DSC_0345.jpg" width="640" height="362" border="0" />
 </div>
 
 …芯がズレてる！！！！
@@ -71,7 +71,7 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 そうしたら<a href="https://www.feedbacksports.com/shop/end-cap-kit-12mm-thru-axle/" target="_blank" rel="noopener">こんなページ</a>が…
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/1.png" width="640" height="392" border="0" />
+  <img src="/wp-content/uploads/2016/11/1.png" width="640" height="392" border="0" />
 </div>
 
 &nbsp;
@@ -89,7 +89,7 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 &nbsp;
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/E382ADE383A3E38397E38381E383A31.png" width="640" height="252" border="0" />
+  <img src="/wp-content/uploads/2016/11/E382ADE383A3E38397E38381E383A31.png" width="640" height="252" border="0" />
 </div>
 
 こいつ…シレッと対策品出してやがる！！！！！！！！
@@ -107,7 +107,7 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 届いたパーツがこちら。キレイなシルバー。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0379.jpg" width="640" height="362" border="0" />
+  <img src="/wp-content/uploads/2016/11/DSC_0379.jpg" width="640" height="362" border="0" />
 </div>
 
 取り付けもバッチリ、付属の12mmアクスルで完了した。
@@ -115,7 +115,7 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 滑らかに入っていく精度は流石の一言（GIANTもFeedbackも）
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2016/11/DSC_0380.jpg" width="640" height="362" border="0" />
+  <img src="/wp-content/uploads/2016/11/DSC_0380.jpg" width="640" height="362" border="0" />
 </div>
 
 というわけで12mmスルーアクスル（最近のCXやディスクロード）でPortableTrainerを使う際は気をつけましょう。

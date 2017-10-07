@@ -14,13 +14,13 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/12/DSC_0453.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2016/12/DSC_0453.jpg" width="640" />
 </div>
 
 ###
 CX常設コースで思う存分試してきた、泥だけど。
 
-前日に<a href="https://blog.gensobunya.net/2016/12/maxxis-speed-terrane.html" target="_blank">GIYO GF-94Tでなんとかビードを上げた</a>Speed Terraneを早速試走してみた。
+前日に<a href="/2016/12/maxxis-speed-terrane.html" target="_blank">GIYO GF-94Tでなんとかビードを上げた</a>Speed Terraneを早速試走してみた。
 
 幸か不幸か全日本シクロクロス選手権の当日なので、他のレースは一切無い。
 
@@ -41,7 +41,7 @@ Speed Terraneの得意分野はドライコースや重い芝のコースなの�
 ### &#8220;泥でもサンドタイヤ信仰&#8221;
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/12/DSC_0461.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2016/12/DSC_0461.jpg" width="640" />
 </div>
 
 野辺山も意外とサンドタイヤで走れる。これは自分で検証した結果。

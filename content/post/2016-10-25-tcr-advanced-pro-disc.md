@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/10/DSC_0311.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2016/10/DSC_0311.jpg" width="640" />
 </div>
 
 ###
@@ -72,7 +72,7 @@ tags:
   </h3>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/10/DSC_0310.jpg" width="640" />
+    <img border="0" height="362" src="/wp-content/uploads/2016/10/DSC_0310.jpg" width="640" />
   </div>
 
   <p>
@@ -84,7 +84,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="320" src="https://blog.gensobunya.net/wp-content/uploads/2016/10/DSC_0312.jpg" width="181" />
+    <img border="0" height="320" src="/wp-content/uploads/2016/10/DSC_0312.jpg" width="181" />
   </div>
 
   <p>

@@ -13,19 +13,19 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170915_202018.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="/wp-content/uploads/2017/09/P_20170915_202018.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 &nbsp;
 
 ### もうパンクしたくないです…
 
-春のグラベルクリテで<a href="https://blog.gensobunya.net/2017/05/2017.html" target="_blank" rel="noopener">パンクの嵐に遭った</a>ことで基本のタイヤ幅を上げることに。ロードチューブレスに関しては安心と信頼のIRCから高耐久タイプ<a href="http://amzn.to/2fohzsh" target="_blank" rel="noopener">Formula Pro X-Guard</a>の25cをチョイス。
+春のグラベルクリテで<a href="/2017/05/2017.html" target="_blank" rel="noopener">パンクの嵐に遭った</a>ことで基本のタイヤ幅を上げることに。ロードチューブレスに関しては安心と信頼のIRCから高耐久タイプ<a href="http://amzn.to/2fohzsh" target="_blank" rel="noopener">Formula Pro X-Guard</a>の25cをチョイス。
 
 こいつはモデルチェンジ前25cなのに27mm近く膨らむというタイヤだったが、新型はそうでもないということで25cをチョイスした。おそらくTCRのクリアランスは28cタイヤが限界だと思うのでやや安全策。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170915_202058.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="/wp-content/uploads/2017/09/P_20170915_202058.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 新型、25mmもありませんでした…
@@ -42,7 +42,7 @@ IRCチューブレスの中で一番簡単に装着できる<a href="http://amzn
 
 ### 追記：グラベルクリテ秋の陣で実戦インプレ
 
-<img class="size-large wp-image-749" src="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170924_145058-1024x576.jpg" alt="" width="840" height="473" srcset="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170924_145058-1024x576.jpg 1024w, https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170924_145058-300x169.jpg 300w, https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170924_145058-768x432.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" />
+<img class="size-large wp-image-749" src="/wp-content/uploads/2017/09/P_20170924_145058-1024x576.jpg" alt="" width="840" height="473" srcset="/wp-content/uploads/2017/09/P_20170924_145058-1024x576.jpg 1024w, /wp-content/uploads/2017/09/P_20170924_145058-300x169.jpg 300w, /wp-content/uploads/2017/09/P_20170924_145058-768x432.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" />
 
 X-Guardを買う最も高いモチベーションだったグラベルクリテ秋の陣にいきなり投入。
 
@@ -52,7 +52,7 @@ X-Guardを買う最も高いモチベーションだったグラベルクリテ�
 
 一周800mほぼ全域グラベルのコースで、参加したのはインターミディエイトクラス（20周）。前回パンクの憂き目を見たが、今回はノーパンクで見事完走。最後に差されたものの3位をもぎ取ることができた。
 
-<img class="aligncenter size-large wp-image-750" src="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170924_122957-1024x576.jpg" alt="" width="840" height="473" srcset="https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170924_122957-1024x576.jpg 1024w, https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170924_122957-300x169.jpg 300w, https://blog.gensobunya.net/wp-content/uploads/2017/09/P_20170924_122957-768x432.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" />
+<img class="aligncenter size-large wp-image-750" src="/wp-content/uploads/2017/09/P_20170924_122957-1024x576.jpg" alt="" width="840" height="473" srcset="/wp-content/uploads/2017/09/P_20170924_122957-1024x576.jpg 1024w, /wp-content/uploads/2017/09/P_20170924_122957-300x169.jpg 300w, /wp-content/uploads/2017/09/P_20170924_122957-768x432.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" />
 
 数限りない小石を弾き飛ばしたが、タイヤは完全に無傷。素晴らしい耐久性だ。
 

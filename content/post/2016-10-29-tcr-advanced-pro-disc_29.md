@@ -13,12 +13,12 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/10/DSC_0322.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2016/10/DSC_0322.jpg" width="640" />
 </div>
 
 ### GIANTさんはとんでもないバイクを作っていきました
 
-<a href="https://blog.gensobunya.net/2016/10/tcr-advanced-pro-disc.html" target="_blank">前回の納車記事</a>の続きです。
+<a href="/2016/10/tcr-advanced-pro-disc.html" target="_blank">前回の納車記事</a>の続きです。
 
 箕面から高山に抜けるいつものコースでシェイクダウン。シクロワイヤードにインプレ記事の先を越された…
 

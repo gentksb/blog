@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2027460.jpg" />
+  <img border="0" src="/wp-content/uploads/2016/01/2016-01-25_2027460.jpg" />
 </div>
 
 ### Strength(笑)
@@ -29,7 +29,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2049512.jpg" width="640" />
+  <img border="0" height="350" src="/wp-content/uploads/2016/01/2016-01-25_2049512.jpg" width="640" />
 </div>
 
 それでも変化があると中々飽きないもので、赤いゲートは踏む気にさせてくれる。
@@ -37,7 +37,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-25_2115264.jpg" width="640" />
+  <img border="0" height="350" src="/wp-content/uploads/2016/01/2016-01-25_2115264.jpg" width="640" />
 </div>
 
 踏みすぎて失敗判定を食らった。
@@ -50,7 +50,7 @@ tags:
 
 <blockquote class="tr_bq">
   <p>
-    Zwiftで始めるパワートレーニング1日目 &#8211; 6wks FTP builder Week 1 Day 1<br /> <a href="https://blog.gensobunya.net/2016/01/22/zwift1-6wks-ftp-builder-week-1-day-1.html">https://blog.gensobunya.net/2016/01/22/zwift1-6wks-ftp-builder-week-1-day-1.html</a>
+    Zwiftで始めるパワートレーニング1日目 &#8211; 6wks FTP builder Week 1 Day 1<br /> <a href="/2016/01/22/zwift1-6wks-ftp-builder-week-1-day-1.html">/2016/01/22/zwift1-6wks-ftp-builder-week-1-day-1.html</a>
   </p>
 </blockquote>
 

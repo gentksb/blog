@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0887.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0887.jpg" width="640" />
 </div>
 
 
@@ -25,7 +25,7 @@ tags:
 
 上記リンクか、紹介コード「AJPC-R3」を使えば25％オフになるようですので是非是非。
 
-サイクリストにとってのプロテインの重要性については、<a href="https://blog.gensobunya.net/2016/02/blog-post.html" target="_blank">以前の記事</a>か<a href="http://genkibicycle.jp/" target="_blank">山本元喜選手のブログ</a>を参照して欲しい。
+サイクリストにとってのプロテインの重要性については、<a href="/2016/02/blog-post.html" target="_blank">以前の記事</a>か<a href="http://genkibicycle.jp/" target="_blank">山本元喜選手のブログ</a>を参照して欲しい。
 
 購入したのは、同サイト標準モデルのプロテインよりタンパク質含有率を高めた<a href="https://www.myprotein.jp/sports-nutrition/impact-whey-protein/10530943.html" target="_blank">IMPACT WHEY プロテイン</a>。ちょうどセール対象だったナチュラルバニラ味をチョイス。
 
@@ -34,7 +34,7 @@ tags:
 サイト上での100gあたりタンパク質は82gだったが、フレーバーごとに±10%変化があるとの表記。重要なところなので全部書いて欲しかったが…
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0888.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0888.jpg" width="640" />
 </div>
 
 実物の表記は100g中Proteinが86g！
@@ -45,7 +45,7 @@ tags:
 
 ### レビュー
 
-味はプロテインを飲むのに重要な要素。以前<a href="https://blog.gensobunya.net/2016/09/choice.html" target="_blank">プロテインの味に関する記事</a>も書いてます。
+味はプロテインを飲むのに重要な要素。以前<a href="/2016/09/choice.html" target="_blank">プロテインの味に関する記事</a>も書いてます。
 
 飲みきるために重要なモチベーションです。
 
@@ -86,7 +86,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0889.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0889.jpg" width="640" />
 </div>
 
 PBKじゃん！！！！！！！！！！！！！！！

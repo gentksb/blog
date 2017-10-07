@@ -29,7 +29,7 @@ tags:
 こちらがWH-6700のカットサンプル、中央のくぼみ付近に注目です。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://blog.gensobunya.net/wp-content/uploads/2014/02/6700-5.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="274" src="https://blog.gensobunya.net/wp-content/uploads/2014/02/6700-5.jpg" width="320" /></a>
+  <a href="/wp-content/uploads/2014/02/6700-5.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="274" src="/wp-content/uploads/2014/02/6700-5.jpg" width="320" /></a>
 </div>
 
 こちらがXTホイールの画像（<a href="http://blogs.yahoo.co.jp/guest_syu/10113189.html" target="_blank">拾い物</a>）

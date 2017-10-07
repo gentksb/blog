@@ -13,14 +13,14 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="364" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/E382ADE383A3E38397E38381E383A3.png" width="640" />
+  <img border="0" height="364" src="/wp-content/uploads/2016/01/E382ADE383A3E38397E38381E383A3.png" width="640" />
 </div>
 
 本記事は下記の続きです。
 
 <blockquote class="tr_bq">
   <p>
-    Zwiftで始めるパワートレーニング0日目 &#8211; FTP test(shorter)<br /> <a href="https://blog.gensobunya.net/2016/01/21/zwift0-ftp-testshorter.html">https://blog.gensobunya.net/2016/01/21/zwift0-ftp-testshorter.html</a>
+    Zwiftで始めるパワートレーニング0日目 &#8211; FTP test(shorter)<br /> <a href="/2016/01/21/zwift0-ftp-testshorter.html">/2016/01/21/zwift0-ftp-testshorter.html</a>
   </p>
 </blockquote>
 
@@ -35,7 +35,7 @@ tags:
 ひとまず6週間やりきることが目標なので音楽聴きながら50分回す。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="https://blog.gensobunya.net/wp-content/uploads/2016/01/2016-01-22_2048172.jpg" width="640" />
+  <img border="0" height="350" src="/wp-content/uploads/2016/01/2016-01-22_2048172.jpg" width="640" />
 </div>
 
 ケイデンス維持とペダリングを綺麗に意識しながら音楽聞いていたら汗もほとんどかかずにあっさり終了。

@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0935.jpg" width="640" height="362" border="0" />
+  <img src="/wp-content/uploads/2017/04/DSC_0935.jpg" width="640" height="362" border="0" />
 </div>
 
 組んだばかりのMTBを早速シェイクダウンへ、トレイルが近い家は良い。
@@ -29,7 +29,7 @@ tags:
 ### ESI Grips chunky
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2017/04/DSC_0942.jpg" width="640" height="362" border="0" />
+  <img src="/wp-content/uploads/2017/04/DSC_0942.jpg" width="640" height="362" border="0" />
 </div>
 
 グリップに悩んでいたところオススメされ、Ergonと悩みながら購入した一品。
@@ -101,7 +101,7 @@ MTB界における21世紀最大の発明らしい。
 ### その他
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="https://blog.gensobunya.net/wp-content/uploads/2017/04/TOG_Graph_51500254-cff3-456f-be17-8a1aca3badeb_grande.png" width="307" height="320" border="0" />
+  <img src="/wp-content/uploads/2017/04/TOG_Graph_51500254-cff3-456f-be17-8a1aca3badeb_grande.png" width="307" height="320" border="0" />
 </div>
 
 <a href="https://togs.com/" target="_blank" rel="noopener">TOGS</a>も使ってみた。ESIグリップの写真でよく見るとついているのがわかると思う。

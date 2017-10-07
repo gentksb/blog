@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/12/DSC_0448.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2016/12/DSC_0448.jpg" width="640" />
 </div>
 
 
@@ -110,7 +110,7 @@ GIANTのチューブレスタンクもいい感じのお値段だったのです
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="https://blog.gensobunya.net/wp-content/uploads/2016/12/DSC_0449.jpg" width="640" />
+  <img border="0" height="362" src="/wp-content/uploads/2016/12/DSC_0449.jpg" width="640" />
 </div>
 
 フラッシュチャージャーと違ってちゃんと表示がついてるのでわかりやすい。

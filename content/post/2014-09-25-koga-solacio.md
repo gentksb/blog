@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://blog.gensobunya.net/wp-content/uploads/2014/09/2014-09-2110.09.30-1024x575.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="https://blog.gensobunya.net/wp-content/uploads/2014/09/2014-09-2110.09.30-1024x575.jpg" width="640" /></a>
+  <a href="/wp-content/uploads/2014/09/2014-09-2110.09.30-1024x575.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="/wp-content/uploads/2014/09/2014-09-2110.09.30-1024x575.jpg" width="640" /></a>
 </div>
 
 AVEDIOのバッカス01からKOGAのsolacioに乗り換えました。

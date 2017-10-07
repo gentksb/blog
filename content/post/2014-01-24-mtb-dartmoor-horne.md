@@ -16,7 +16,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="https://blog.gensobunya.net/wp-content/uploads/2014/01/IMG_20140118_152717-1024x768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blog.gensobunya.net/wp-content/uploads/2014/01/IMG_20140118_152717-1024x768.jpg" height="480" width="640" /></a>
+  <a href="/wp-content/uploads/2014/01/IMG_20140118_152717-1024x768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140118_152717-1024x768.jpg" height="480" width="640" /></a>
 </div>
 
 パーツ類はほぼBlastからの移植。
