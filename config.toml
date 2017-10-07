@@ -46,5 +46,7 @@ tag = "tags"
     #social_linkedin = "username"
     #social_github = "username"
     #social_email = "example@example.com"
+
+    adsense = true #Enable "Adsense" widget. (original function by Gen)
 #END mainroad setting
 
