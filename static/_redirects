@@ -9,5 +9,5 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  302!
 # END paramater 301 redirect
 
 # START page 301 redirect
-/:year/:month:/:date/:slug /:year/:month:/:slug 301!
+/:year/:month/:date/:slug /:year/:month/:slug 301!
 # END page 301 redirect
