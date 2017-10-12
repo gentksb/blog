@@ -3,7 +3,7 @@ title = "幻想サイクル"
 baseURL = "http://blog.gensobunya.net/"
 languageCode = "ja-jp"
 canonifyURLs = false
-relativeURLs = true
+#relativeURLs = true
 theme = "mainroad"
 googleAnalytics = "UA-72162915-1"
 
