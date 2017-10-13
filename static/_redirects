@@ -14,7 +14,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  302!
 
 #tags
 /tag/* /tags/:splat 301!
-/:yaer/tags/* /tags:splat 301!
+/:yaer/tags/* /tags/:splat 301!
 
 #temp
 /2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html 301!
