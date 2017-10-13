@@ -1,6 +1,6 @@
 http://gensobunya.netlify.com/*  https://blog.gensobunya.net/:splat  301!
 https://gensobunya.netlify.com/*  https://blog.gensobunya.net/:splat  301!
-http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  302!
+http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 #Temp setting for solving SSL problem
 #https://blog.gensobunya.net/*  http://blog.gensobunya.net/:splat  302!
 
