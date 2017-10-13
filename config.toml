@@ -6,6 +6,7 @@ canonifyURLs = false
 #relativeURLs = true
 theme = "mainroad"
 googleAnalytics = "UA-72162915-1"
+enableRobotsTXT = true
 
 #system
 contentDir = "content"
