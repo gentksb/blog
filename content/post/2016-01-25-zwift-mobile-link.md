@@ -20,45 +20,40 @@ tags:
 
 ### スマホはZwiftコントローラー
 
+**この記事は古くなったので2017年の情報をもとに記事を書き直しました**
+**新しい記事は[こちら](/post/2017zwift-mobile-link.html)**
+
 Zwiftはただ走るだけではなくチャットをしたり「RIDE ON!」（要するにいいね！）したり、Watopia内なら分岐選択をしたりすることができます。
 
 キーボードやマウスでもなんとかできるのですが、ローラー乗りながら操作するのは面倒。
 
 そんな悩みは下記のアプリで解決。
 
-<div id="appreach-box" style="text-align: left;">
-  <img alt="Zwift Mobile Link" src="http://is5.mzstatic.com/image/thumb/Purple69/v4/34/2c/3b/342c3b33-134b-205f-c146-e7965ad6925e/source/512x512bb.jpg" id="appreach-image" style="border-radius: 10%; float: left; margin: 10px; max-width: 120px; width: 25%;" /><br /> </p>
-
-  <div class="appreach-info" style="margin: 10px;">
-    <div id="appreach-appname">
-Zwift Mobile Link
-
-
-    <div id="appreach-developer" style="display: inline-block; font-size: 80%;">
-開発元:<a href="https://itunes.apple.com/jp/developer/zwift-llc/id934083689?uo=4" id="appreach-developerurl" rel="nofollow" target="_blank">Zwift, LLC</a>
-
-
-    <div id="appreach-price" style="display: inline-block; font-size: 80%;">
-無料
-
-
-    <div class="appreach-powered" style="display: inline-block; font-size: 80%;">
-posted with <a href="http://nabettu.github.io/appreach/" rel="nofollow" target="_blank" title="アプリーチ">アプリーチ</a>
-
-
-    <div class="appreach-links" style="float: left;">
-<div id="appreach-itunes-link" style="_display: inline; display: inline-block;">
-  <a href="https://itunes.apple.com/jp/app/zwift-mobile-link/id934083691?mt=8&uo=4&at=11lHd9" id="appreach-itunes" rel="nofollow" target="_blank"><br /> <img src="http://nabettu.github.io/appreach/img/itune_en.png" style="height: 40px;" /><br /> </a>
+<div id="appreach-box" style="text-align:left;">
+<img id="appreach-image" src="//is2.mzstatic.com/image/thumb/Purple128/v4/f8/5a/bb/f85abb25-befa-5663-7d63-56d9f3788ad4/source/512x512bb.jpg" alt="Zwift Mobile Link" style="float:left; margin:10px; width:25%; max-width:120px; border-radius:10%;">
+<div class="appreach-info" style="margin: 10px;">
+<div id="appreach-appname">Zwift Mobile Link</div>
+<div id="appreach-developer" style="font-size:80%; display:inline-block; _display:inline;">
+開発元:<a id="appreach-developerurl" href="https://itunes.apple.com/jp/developer/zwift-inc/id934083689?uo=4" target="_blank" rel="nofollow">Zwift, Inc</a>
 </div>
-
-<div id="appreach-gplay-link" style="_display: inline; display: inline-block;">
-  <a href="https://play.google.com/store/apps/details?id=com.zwift.android.prod" id="appreach-gplay" rel="nofollow" target="_blank"><br /> <img src="http://nabettu.github.io/appreach/img/gplay_en.png" style="height: 40px;" /><br /> </a>
+<div id="appreach-price" style="font-size:80%; display:inline-block; _display:inline;">無料</div>
+<div class="appreach-powered" style="font-size:80%; display:inline-block; _display:inline;">
+posted with <a href="http://mama-hack.com/app-reach/" title="アプリーチ" target="_blank" rel="nofollow">アプリーチ</a>
 </div>
-
-  </div>
-
-  <div class="appreach-footer" style="clear: left; margin-bottom: 10px;">
-  </div>
+<div class="appreach-links" style="float: left;">
+<div id="appreach-itunes-link" style="display: inline-block; _display: inline;">
+<a id="appreach-itunes" href="https://itunes.apple.com/jp/app/zwift-mobile-link/id934083691?mt=8&amp;uo=4&amp;at=" target="_blank" rel="nofollow">
+<img src="https://nabettu.github.io/appreach/img/itune_ja.svg" style="height:40px;width:135px;">
+</a>
+</div>
+<div id="appreach-gplay-link" style="display:inline-block; _display:inline;">
+<a id="appreach-gplay" href="https://play.google.com/store/apps/details?id=com.zwift.android.prod" target="_blank" rel="nofollow">
+<img src="https://nabettu.github.io/appreach/img/gplay_ja.png" style="height:40px;width:134.5px;">
+</a>
+</div>
+</div>
+</div>
+<div class="appreach-footer" style="margin-bottom:10px; clear: left;"></div>
 </div>
 
 これがあればPCと同じネットワーク上にあるスマートフォン・タブレットからZwiftの各種操作を行うことが出来ます。
