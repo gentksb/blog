@@ -13,31 +13,19 @@ thumbnail: "/img/jungle.png"
 
 アプリへのリンクはこちら
 <div id="appreach-box" style="text-align:left;">
-<img id="appreach-image" src="//is2.mzstatic.com/image/thumb/Purple128/v4/f8/5a/bb/f85abb25-befa-5663-7d63-56d9f3788ad4/source/512x512bb.jpg" alt="Zwift Mobile Link" style="float:left; margin:10px; width:25%; max-width:120px; border-radius:10%;">
-<div class="appreach-info" style="margin: 10px;">
-<div id="appreach-appname">Zwift Mobile Link</div>
-<div id="appreach-developer" style="font-size:80%; display:inline-block; _display:inline;">
-開発元:<a id="appreach-developerurl" href="https://itunes.apple.com/jp/developer/zwift-inc/id934083689?uo=4" target="_blank" rel="nofollow">Zwift, Inc</a>
-</div>
-<div id="appreach-price" style="font-size:80%; display:inline-block; _display:inline;">無料</div>
-<div class="appreach-powered" style="font-size:80%; display:inline-block; _display:inline;">
-posted with <a href="http://mama-hack.com/app-reach/" title="アプリーチ" target="_blank" rel="nofollow">アプリーチ</a>
-</div>
-<div class="appreach-links" style="float: left;">
-<div id="appreach-itunes-link" style="display: inline-block; _display: inline;">
-<a id="appreach-itunes" href="https://itunes.apple.com/jp/app/zwift-mobile-link/id934083691?mt=8&amp;uo=4&amp;at=" target="_blank" rel="nofollow">
-<img src="https://nabettu.github.io/appreach/img/itune_ja.svg" style="height:40px;width:135px;">
-</a>
-</div>
-<div id="appreach-gplay-link" style="display:inline-block; _display:inline;">
-<a id="appreach-gplay" href="https://play.google.com/store/apps/details?id=com.zwift.android.prod" target="_blank" rel="nofollow">
-<img src="https://nabettu.github.io/appreach/img/gplay_ja.png" style="height:40px;width:134.5px;">
-</a>
-</div>
-</div>
+    <div class="appreach-links" style="float: left;">
+        <div id="appreach-itunes-link" style="display: inline-block; _display: inline;">
+        <a id="appreach-itunes" href="https://itunes.apple.com/jp/app/zwift-mobile-link/id934083691?mt=8&amp;uo=4&amp;at=" target="_blank" rel="nofollow">
+        <img src="https://nabettu.github.io/appreach/img/itune_ja.svg" style="height:40px;width:135px;">
+        </a>
+    </div>
+    <div id="appreach-gplay-link" style="display:inline-block; _display:inline;">
+    <a id="appreach-gplay" href="https://play.google.com/store/apps/details?id=com.zwift.android.prod" target="_blank" rel="nofollow">
+    <img src="https://nabettu.github.io/appreach/img/gplay_ja.png" style="height:40px;width:134.5px;">
+    </a>
+    </div>
 </div>
 <div class="appreach-footer" style="margin-bottom:10px; clear: left;"></div>
-</div>
 
 
 ## 最初の起動画面がMAPに
