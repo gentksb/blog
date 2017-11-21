@@ -86,6 +86,17 @@ Wiggleで安かった
 効果があるかは微妙だったが、手と同じく足も完全に無事だったのでいい仕事をしてくれたはず。ロードは冬場これだけでOK。
 
 
+#### mont-bell サイクルワッチキャップ
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001J2F2Z6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41aAODdvfpL._SL160_.jpg" alt="(モンベル)mont-bell サイクルワッチキャップ ブラック BK M 1130239" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001J2F2Z6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(モンベル)mont-bell サイクルワッチキャップ ブラック BK M 1130239</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 17.11.21</div></div><div class="amazlet-detail">mont-bell(モンベル) <br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001J2F2Z6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+頭と耳を保護。ある程度の気温になると耳だけでなく頭も防寒しないと頭痛の元となる。
+
+#### mont-bell スーパーメリノウール EXP.ネックゲーター
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00P0CYW02/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51zPoHnonvL._SL160_.jpg" alt="モンベル スーパーメリノウール ネックゲーター レッドブリック(RDBR) M/L(57-60cm)" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00P0CYW02/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">モンベル スーパーメリノウール ネックゲーター レッドブリック(RDBR) M/L(57-60cm)</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 17.11.21</div></div><div class="amazlet-detail">モンベル <br />売り上げランキング: 138,986<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00P0CYW02/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+ビビるくらい暖かいネックウォーマー。\
+今まで持っていた自転車用の薄いウォーマーがオモチャに思えるほど。暖かすぎて晴れている前半戦では使用しなかった。\
+
+後半、日が隠れて気温が低下したあとは常時装備。
+
 ## おまけ（小物）
 体が冷えて、[サーモスのケータイマグ](http://amzn.to/2zVigoj)に熱いココアを入れて持っていったところ7時間経っても熱いままで非常に助かった。\
 短縮コース発表前に用意した[エマージェンシーシート](http://amzn.to/2zVio7h)は使う機会がなくて本当に良かったと思う。それくらい過酷な環境だった。
