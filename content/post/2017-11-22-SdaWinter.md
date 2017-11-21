@@ -42,7 +42,7 @@ thumbnail: "img/winterotaki.JPG"
 
 
 ## 下半身
-{{<figure src="/img/legwarm.PNG">}}
+{{<figure src="/img/legwarm.JPG">}}
 ありあわせなので見た目が最高にひどい。\
 ビブニッカーとソックスだけだと生足が出てしまうので、単純にレッグウォーマーを追加。\
 膝が二重に冷えから守られるので結果として体のトラブルを防ぐことができた。
