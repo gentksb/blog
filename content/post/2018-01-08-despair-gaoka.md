@@ -47,3 +47,8 @@ thumbnail: "img/20180107_thm.jpg"
 
 次週はド平坦の堺だが、どうなることやら。
 
+### 機材
+Bike: TCX SLR('14) Ultegra Di2\
+Tyre: Maxxis SpeedTerrane 1.8Bar(F,R)\
+Wheel: (Front)SHIMANO XT M785,(Rear)PAX PROJECT 24mm TL
+
