@@ -26,6 +26,8 @@ SSの場合はライン取りがギアードと変わってくる。踏み直し
 
 来週はJCXを含む愛知牧場2連戦。残留を気にすることがない初年度の特権を活かしてJCXポイントを稼ぐ算段。
 
+Photo by [Toru Tanabe](https://flic.kr/p/JxfDce)
+
 ### 機材
 Bike: TCX SLR('14) Ultegra Di2\
 Tyre: Maxxis SpeedTerrane 1.9Bar(F,R)\
@@ -33,4 +35,4 @@ Wheel: (Front)SHIMANO XT M785,(Rear)PAX PROJECT 24mm TL
 
 Bike: TCX SLR SS\
 Tyre: IRC Serac CX TL(F),Maxxis SpeedTerrane(R)\
-Wheel: (Front)SHIMANO XT M785,(Rear)PAX PROJECT 24mm TL
+Wheel: Velocity A23 & PAZ original HUB
