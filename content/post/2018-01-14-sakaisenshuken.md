@@ -1,11 +1,11 @@
 ---
 title: "2017-18関西シクロクロス#7 堺レースレポート"
 date: 2018-01-14T19:01:49+09:00
-draft: true
+draft: false
 tags: ["CX", "RaceReport"]
-thumbnail: "トップ画像"
+thumbnail: "img/2018sakai.jpg"
 ---
-{{<figure src="トップ画像">}}
+{{<figure src="/img/2018sakai.jpg">}}
 ## 関西シクロクロス#8 堺
 ド平坦コースサカイセンシュケン。前週の希望が丘でC1でやっていける自信が怪しくなっていたので、この週だけ平日練習を増やしてみた。
 
