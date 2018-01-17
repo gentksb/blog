@@ -1178,3 +1178,7 @@ textarea {
 	min-height: 135px;
 }
 
+/*add to any align*/
+div.a2a_kit {
+	margin-top: 2em;
+}

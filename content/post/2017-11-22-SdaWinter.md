@@ -75,6 +75,8 @@ Wiggleで安かった
 アルミの熱反射を利用して靴下の内部温度を保つ。\
 非常に馬鹿っぽいけど(確か)Bikeradarでも紹介された実績のある手段。役には立ったものの、シューズ内がアルミホイルの残骸で汚くなるのでやめたほうがよかった。
 
+アルミホイルで断熱を考える場合、シューズとシューズカバーの間に設置するか、もしくは[エマージェンシーシート](http://amzn.to/2zVio7h)など破れない素材になっているものを活用したほうが良い。
+
 #### FOOTMAX シューズカバー
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OUY1470/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41Y-kcSWT4L._SL160_.jpg" alt="(フットマックス)FOOTMAX ロードバイクシューズカバー FXB016  ブラック S-M" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OUY1470/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(フットマックス)FOOTMAX ロードバイクシューズカバー FXB016  ブラック S-M</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 17.11.21</div></div><div class="amazlet-detail">FOOTMAX (2014-12-24)<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OUY1470/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 風を通しそうに見えて非常に分厚く、氷も泥も通すことはなかった。\
