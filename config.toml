@@ -49,6 +49,7 @@ tag = "tags"
     # Enable "Social" widget, if any of "social_*" set a value
     #social_facebook = "username"
     social_twitter = "gen_sobunya"
+    social_instagram = "gen_sobunya"
     #social_linkedin = "username"
     #social_github = "username"
     #social_email = "example@example.com"
