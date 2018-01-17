@@ -1168,3 +1168,13 @@ textarea {
 		display: none;
 	}
 }
+
+/*Amazlet box align*/
+.amazlet-box{
+	border-radius: 5px;
+	box-shadow: 0px 2px 5px #ccc;
+	padding: 1em 1em 0 1em;
+	max-width: 95%;
+	min-height: 135px;
+}
+
