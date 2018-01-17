@@ -805,6 +805,7 @@ img {
 	max-width: 100%;
 	width: auto\9; /* ie8 */
 	height: auto;
+	margin-bottom: 1em;
 	vertical-align: bottom;
 }
 
