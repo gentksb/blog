@@ -17,6 +17,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /:yaer/tags/* /tags/:splat 301!
 
 #temp
+/2014/03/blog-post_29.html 2014/03/blog-post_29-2.html 301!
 #/2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html 301!
 #/2017/03/blog-pos-5.html /2017/03/blog-post.html 301!
 #/2016/11/feedback-portable-trainer12.html /2016/11/feedback-portable-trainer12mm.html 301!
