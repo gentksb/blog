@@ -3,7 +3,7 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: false
 tags: ["", ""]
-thumbnail: "トップ画像"
+thumbnail: "img/"
 ---
-{{<figure src="トップ画像">}}
+{{<figure src="/img/">}}
 ## タイトル
