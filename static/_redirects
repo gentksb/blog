@@ -17,7 +17,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /:yaer/tags/* /tags/:splat 301!
 
 #feed
-/*/feed /:splat 301!
+/*/feed /:splat/index.xml 301!
 
 #temp
 /2014/03/blog-post_29.html /2014/03/blog-post_29-2.html 301!
