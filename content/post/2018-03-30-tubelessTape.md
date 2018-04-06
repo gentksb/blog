@@ -82,7 +82,8 @@ MTB向けに作られた製品だったので、ロードの空気圧に耐え�
 ものぐさな自分が最終的にたどり着いた製品がこいつ。\
 THICKと名乗るだけあって、分厚い上にロードの空気圧にもそこそこ耐える耐久性。2017年まではOnroad Tubeless Tapeと呼ばれていた。リムブレーキの発熱に耐える製品らしいので、オンロードはこちらを使ったほうがいいらしい。
 
-CXシーズンの後半はこれを投入したところ、4ヶ月経ってもタイヤ交換時にテープを替える必要性はなかった実績あり。
+CXシーズンの後半はこれを投入したところ、4ヶ月経ってもタイヤ交換時にテープを替える必要性はなかった実績あり。\
+中身は[ポリイミドテープ](https://amzn.to/2IzziZP)と思われる。
 
 
 ## シーラント性能
@@ -93,11 +94,15 @@ CXシーズンの後半はこれを投入したところ、4ヶ月経っても�
 特にTLRタイヤだとサイドにシーラントが定着してくれないと、サイドウォールから空気が抜けてくる。\
 泡になってタイヤ内側全体をコーティングしてくれる[Caffelatex](https://amzn.to/2IZgdRT)をおすすめしたい。特にロード系は外周の重さに効いてくるシーラントの量を減らしたいはずなので、なるべく少ない量で済ませたいのが自転車乗りの性。
 
-無印Notubesだと「多いな」と感じるりょうが必要になるCXタイヤでもCaffeLatexはそこそこの量で済む。\
+無印Notubesだと「多いな」と感じる量が必要になるCXタイヤでもCaffeLatexはそこそこの量で済む。\
 安い所を頑張って探そう。
+
+他に評判が良いのはNotubesの上位機種である[Race Sealant](https://amzn.to/2Ix0Yyu)や[Vittoriaのシーラント](https://amzn.to/2HfhDHq)
+
 
 ブログだと引用の都合上Amazonリンクが多いが、自転車関連品は自動設定された価格が異常に高くなっていることが目につくため、<a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=885145971" target="_blank" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=885145971" height="1" width="1" border="0">Wiggle</a>とか使ったほうが良さそう。
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00D2ICIJ8/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41P9ESDyRqL._SL160_.jpg" alt="NoTubes Tire Sealant /32 fl oz（ST0062）" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00D2ICIJ8/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">NoTubes Tire Sealant /32 fl oz（ST0062）</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.03.29</div></div><div class="amazlet-detail">NoTubes <br />売り上げランキング: 13,780<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00D2ICIJ8/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/416cXMLzStL._SL160_.jpg" alt="3M 耐熱性ポリイミドテープ 7413D 21mm幅x33m" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">3M 耐熱性ポリイミドテープ 7413D 21mm幅x33m</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.04.06</div></div><div class="amazlet-detail">3M(スリーエム) <br />売り上げランキング: 228,859<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+
 
 
