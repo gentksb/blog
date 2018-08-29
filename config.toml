@@ -1,6 +1,6 @@
 #website setting
 title = "幻想サイクル"
-baseURL = "http://blog.gensobunya.net/"
+baseURL = "https://blog.gensobunya.net/"
 languageCode = "ja-jp"
 canonifyURLs = false
 #relativeURLs = true
