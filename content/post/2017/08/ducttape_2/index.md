@@ -43,7 +43,7 @@ tags:
 ### 後輪も
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" data-original-height="900" data-original-width="1600" height="360" src="DSC_7836-1.jpg" width="640" />
+  <img border="0" data-original-height="900" data-original-width="1600" height="360" src="DSC_7836.jpg" width="640" />
 </div>
 
 <div>

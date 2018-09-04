@@ -201,12 +201,34 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2016/12/maxxis-speed-terrane.html /post/2016/12/maxxis-speed-terrane_view/ 301!
 /2016/12/maxxis-speed-terrane_11.html /post/2016/12/maxxis-speed-terrane_ride/ 301!
 
-/2017/01/* /post/2017/01/:splat/ 301!
-/2017/02/* /post/2017/02/:splat/ 301!
-/2017/03/* /post/2017/03/:splat/ 301!
-/2017/04/* /post/2017/04/:splat/ 301!
-/2017/05/* /post/2017/05/:splat/ 301!
-/2017/06/* /post/2017/06/:splat/ 301!
-/2017/07/* /post/2017/07/:splat/ 301!
-/2017/08/* /post/2017/08/:splat/ 301!
-/2017/09/* /post/2017/09/:splat/ 301!
+/2017/01/20169.html /post/2017/01/kns9sakai/ 301!
+
+/2017/02/cx.html /post/2017/02/cx_semislick/ 301!
+
+/2017/03/2017-2.html /post/2017/03/cx-end/ 301!
+/2017/03/blog-post.html /post/2017/03/discroad/ 301!
+/2017/03/sgx-ca500di2.html /post/2017/03/sgx-ca500_diy/ 301!
+
+/2017/04/my-protein.html /post/2017/04/myprotein/ 301!
+/2017/04/new-bike-ragley-mmmbop-275.html /post/2017/04/mmmbop275/ 301!
+/2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html /post/2017/04/goodmtbgears/ 301!
+/2017/04/blog-post.html /post/2017/04/discroadrace/ 301!
+/2017/04/blog-post_25.html /post/2017/04/spraut_layer/ 301!
+
+/2017/05/2017.html /post/2017/05/gravelcirt/ 301!
+/2017/05/sscx.html /post/2017/05/sscxtouring/ 301!
+/2017/05/blog-post.html /post/2017/05/akafukuice/ 301!
+/2017/05/2017-7.html /post/2017/05/sdaspring/ 301!
+
+/2017/06/cs-hg-800-11wh-rs770.html /post/2017/06/cs-hg-800-11wh-rs770/ 301!
+
+/2017/07/c92.html /post/2017/07/c92/ 301!
+/2017/07/blog-post.html /post/2017/07/longsleeve/ 301!
+
+/2017/08/blog-post.html /post/2017/08/ducttape_1/ 301!
+/2017/08/blog-post_18.html /post/2017/08/ducttape_2/ 301!
+/2017/08/blog-post_31.html /post/2017/08/ducttape_3/ 301!
+
+/2017/09/tcx-slrdi2.html /post/2017/09/tcx-slrdi2/ 301!
+/2017/09/rider310review.html /post/2017/09/rider310review/ 301!
+/2017/09/formula-pro-x-guard.html /post/2017/09/formula-pro-x-guard/ 301!
