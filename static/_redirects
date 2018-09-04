@@ -83,11 +83,16 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2013/10/11snovatec-jetfly.html /post/2013/10/novatec-jetfly/ 301!
 /2013/10/blog-post.html /post/2013/10/ita-chari/ 301!
 /2013/10/koga-limited.html /post/2013/10/koga-alimited/ 301!
-/2013/10/* /post/2013/10/:splat/ 301!
-/2013/10/* /post/2013/10/:splat/ 301!
+/2013/10/blog-post_29-3.html /post/2013/10/jc-saitamacrit/ 301!
 
-/2013/11/* /post/2013/11/:splat/ 301!
-/2013/12/* /post/2013/12/:splat/ 301!
+/2013/11/bar-fly20.html /post/2013/11/bar-fly2/ 301!
+/2013/11/trinity.html /post/2013/11/trinityel/ 301!
+
+/2013/12/9070.html /post/2013/12/9070/ 301!
+/2013/12/novatec-jetfly.html /post/2013/12/jetfly-tl/ 301!
+/2013/12/9070_21.html /post/2013/12/9070_2/ 301!
+/2013/12/kinesis-crosslight-pro-disc.html /post/2013/12/kinesis-crosslight/ 301!
+
 /2014/01/* /post/2014/01/:splat/ 301!
 /2014/02/* /post/2014/02/:splat/ 301!
 /2014/03/* /post/2014/03/:splat/ 301!
