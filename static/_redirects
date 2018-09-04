@@ -56,7 +56,9 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2012/11/jcrc.html /post/2012/11/jcrc/ 301!
 /2012/11/blog-post_29-4.html /post/2012/11/ancling/ 301!
 
-/2012/12/* /post/2012/12/:splat/ 301!
+/2012/12/r500.html /post/2012/12/r500/ 301!
+/2012/12/83.html /post/2012/12/c83/ 301!
+
 /2013/01/* /post/2013/01/:splat/ 301!
 /2013/02/* /post/2013/02/:splat/ 301!
 /2013/03/* /post/2013/03/:splat/ 301!
