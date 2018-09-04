@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-01-27T04:39:00+00:00
 #url: /2014/01/2013-14-3.html
-thumbnail: DSC_4739
+thumbnail: DSC_4739.jpg
 categories:
   - 未分類
 tags:

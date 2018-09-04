@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-01-24T06:34:00+00:00
 #url: /2014/01/crosslight-pro6.html
-thumbnail: IMG_20140123_232028
+thumbnail: IMG_20140123_232028.jpg
 categories:
   - 未分類
 tags:
