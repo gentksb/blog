@@ -63,7 +63,7 @@ TTバイクを組んだ翌年にこれは好機と今年はタイムトライア
 ### 埼玉TT
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="203493791_org.v1399977626" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="203493791_org.v1399977626" width="640" /></a>
+  <a href="203493791_org.v1399977626.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="203493791_org.v1399977626.jpg" width="640" /></a>
 </div>
 
 アルパカさんのアドバイスでロード（トライアスロン？）ぽかったポジションをTT用に改造。

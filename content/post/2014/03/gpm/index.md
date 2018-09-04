@@ -92,7 +92,7 @@ JE-3Aのレースはなぜか午後にセッティングされているので、
 優秀すぎるぞシマノ。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140304_213133-1" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140304_213133-1" height="320" width="240" /></a>
+  <a href="IMG_20140304_213133.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140304_213133.jpg" height="320" width="240" /></a>
 </div>
 
 中華サドル（偽スパイダー）は3レース＋わずかな練習を終えたところでご臨終となっていた、1600円だしこんなものだろう。オフシーズンはママチャリ化するのでそのまま使っていこうと思う。

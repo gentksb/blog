@@ -105,13 +105,20 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2014/02/blog-post.html /post/2014/02/cxtyre_choice/ 301!
 /2014/02/serac-cxpiranha-2-cx.html /post/2014/02/serac-piranha/ 301!
 
-/2014/03/* /post/2014/03/:splat/ 301!
-/2014/04/* /post/2014/04/:splat/ 301!
-/2014/05/* /post/2014/05/:splat/ 301!
-/2014/06/* /post/2014/06/:splat/ 301!
-/2014/07/* /post/2014/07/:splat/ 301!
-/2014/08/* /post/2014/08/:splat/ 301!
-/2014/09/* /post/2014/09/:splat/ 301!
+/2014/03/2014-gp-mistral-5.html /post/2014/03/gpm/ 301!
+/2014/03/blog-post.html /post/2014/03/pmseminer/ 301!
+/2014/03/blog-post_29-2.html /post/2014/03/fakespider/ 301!
+
+/2014/05/wh9000-c50-tu /post/2014/05/wh9000-c50-tu/ 301!
+/2014/05/2014-sda.html /post/2014/05/sdaspring/ 301!
+
+/2014/06/2014-kimera-prestige-premium.html /post/2014/06/kimera-prestige-premium/ 301!
+
+/2014/08/2014-2.html /post/2014/08/takizawasale/ 301!
+
+/2014/09/tt.html /post/2014/09/ttjapan/ 301!
+/2014/09/koga-solacio.html /post/2014/09/koga-solacio/ 301!
+
 /2014/10/* /post/2014/10/:splat/ 301!
 /2014/11/* /post/2014/11/:splat/ 301!
 /2014/12/* /post/2014/12/:splat/ 301!
