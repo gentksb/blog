@@ -179,8 +179,13 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2016/06/canyon-ultimate-pretzel-mission.html /post/2016/06/canyon_misssion/ 301!
 /2016/06/oakley-radar-ev-prizm-road.html /post/2016/06/prizmroad_ev/ 301!
 
-/2016/07/* /post/2016/07/:splat/ 301!
-/2016/08/* /post/2016/08/:splat/ 301!
+/2016/07/blog-post.html /post/2016/07/hybrid_trainer/ 301!
+
+/2016/08/blog-post.html /post/2016/08/bookmake/ 301!
+/2016/08/di2.html /post/2016/08/di2drill_1/ 301!
+/2016/08/di2_24.html /post/2016/08/di2drill_2/ 301!
+/2016/08/st-r785mtbcx.html /post/2016/08/st-r785mtbcx/ 301!
+
 /2016/09/* /post/2016/09/:splat/ 301!
 /2016/10/* /post/2016/10/:splat/ 301!
 /2016/11/* /post/2016/11/:splat/ 301!

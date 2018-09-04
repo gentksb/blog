@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-08-22T04:38:00+00:00
 #url: /2016/08/di2.html
-thumbnail: DSC_0072-1.jpg
+thumbnail: DSC_0072.jpg
 categories:
   - 未分類
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0072-1.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0072.jpg" width="640" />
 </div>
 
 
@@ -50,7 +50,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0100-1.jpg" width="640" />
+<img border="0" height="362" src="DSC_0100.jpg" width="640" />
 </div>
 
 
