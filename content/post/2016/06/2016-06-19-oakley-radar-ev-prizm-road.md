@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-06-18T18:00:00+00:00
 #url: /2016/06/oakley-radar-ev-prizm-road.html
-thumbnail: /wp-content/uploads/2016/06/DSC_7627.jpg
+thumbnail: DSC_7627.jpg
 categories:
   - 未分類
 tags:
@@ -15,7 +15,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="/wp-content/uploads/2016/06/DSC_7627.jpg" width="640" />
+  <img border="0" height="360" src="DSC_7627.jpg" width="640" />
 </div>
 
 
@@ -45,7 +45,7 @@ Prizm Trailは知人の物を借りて走ったことがあるので、Prizmレ�
 ### RADARとの比較
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="/wp-content/uploads/2016/06/DSC_7615.jpg" width="640" />
+  <img border="0" height="360" src="DSC_7615.jpg" width="640" />
 </div>
 
 こちらが今まで使っていたRADAR。

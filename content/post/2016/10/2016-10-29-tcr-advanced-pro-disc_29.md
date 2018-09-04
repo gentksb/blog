@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-10-29T01:57:00+00:00
 #url: /2016/10/tcr-advanced-pro-disc_29.html
-thumbnail: /wp-content/uploads/2016/10/DSC_0322.jpg
+thumbnail: DSC_0322.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2016/10/DSC_0322.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0322.jpg" width="640" />
 </div>
 
 ### GIANTさんはとんでもないバイクを作っていきました

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-02-18T04:08:00+00:00
 #url: /2016/02/zwift12-13-6wks-ftp-builder-week-3-day.html
-thumbnail: /wp-content/uploads/2016/02/2016-02-17_1909510.jpg
+thumbnail: 2016-02-17_1909510.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/02/2016-02-17_1909510.jpg" width="640" />
+  <img border="0" height="352" src="2016-02-17_1909510.jpg" width="640" />
 </div>
 
 
@@ -31,7 +31,7 @@ OmniumTrainerだとアウタートップでも指示通りの40RPMにはなら�
 ### プロとの邂逅
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="/wp-content/uploads/2016/02/DSC_7121.jpg" width="640" />
+  <img border="0" height="360" src="DSC_7121.jpg" width="640" />
 </div>
 
 Day3のFoundation始めたら、プロロードレーサーのワレン・バルギルを発見。

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-01-24T05:49:00+00:00
 #url: /2014/01/mtb-dartmoor-hornet.html
-thumbnail: /wp-content/uploads/2014/01/IMG_20140118_152717-1024x768.jpg
+thumbnail: IMG_20140118_152717
 categories:
   - 未分類
 tags:
@@ -16,7 +16,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140118_152717-1024x768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140118_152717-1024x768.jpg" height="480" width="640" /></a>
+  <a href="IMG_20140118_152717" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140118_152717" height="480" width="640" /></a>
 </div>
 
 パーツ類はほぼBlastからの移植。

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-02-10T03:53:00+00:00
 #url: /2016/02/zwift6-6wks-ftp-builder-week-2-day-3-5.html
-thumbnail: /wp-content/uploads/2016/02/2016-02-06_1144120.jpg
+thumbnail: 2016-02-06_1144120.jpg
 categories:
   - 未分類
 tags:
@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/02/2016-02-06_1144120.jpg" width="640" />
+  <img border="0" height="352" src="2016-02-06_1144120.jpg" width="640" />
 </div>
 
 
@@ -32,7 +32,7 @@ tags:
 ### Week 2 Day 4th &#8211; Tempo
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/02/2016-02-09_1906350.jpg" width="640" />
+  <img border="0" height="352" src="2016-02-09_1906350.jpg" width="640" />
 </div>
 
 先週も出てきたテンポ走…だけどなんかメニュー量が多い！
@@ -44,7 +44,7 @@ tags:
 いきなり210W\*4min\*4とか入ってるし…
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/02/2016-02-09_1922071.jpg" width="640" />
+  <img border="0" height="352" src="2016-02-09_1922071.jpg" width="640" />
 </div>
 
 キツイと思ったら、思ってたより休憩が長かったでござる。
@@ -58,7 +58,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/02/2016-02-10_2000330.jpg" width="640" />
+  <img border="0" height="352" src="2016-02-10_2000330.jpg" width="640" />
 </div>
 
 先週は休みだった5日目ですが、2週目はメニューあり。

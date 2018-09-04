@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-09-15T02:36:00+00:00
 #url: /2017/09/formula-pro-x-guard.html
-thumbnail: /wp-content/uploads/2017/09/P_20170915_202018.jpg
+thumbnail: P_20170915_202018.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="/wp-content/uploads/2017/09/P_20170915_202018.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="P_20170915_202018.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 &nbsp;
@@ -25,7 +25,7 @@ tags:
 こいつはモデルチェンジ前25cなのに27mm近く膨らむというタイヤだったが、新型はそうでもないということで25cをチョイスした。おそらくTCRのクリアランスは28cタイヤが限界だと思うのでやや安全策。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="/wp-content/uploads/2017/09/P_20170915_202058.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="P_20170915_202058.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 新型、25mmもありませんでした…
@@ -42,7 +42,7 @@ IRCチューブレスの中で一番簡単に装着できる<a href="http://amzn
 
 ### 追記：グラベルクリテ秋の陣で実戦インプレ
 
-<img class="size-large wp-image-749" src="/wp-content/uploads/2017/09/P_20170924_145058-1024x576.jpg" alt="" width="840" height="473" srcset="/wp-content/uploads/2017/09/P_20170924_145058-1024x576.jpg 1024w, /wp-content/uploads/2017/09/P_20170924_145058-300x169.jpg 300w, /wp-content/uploads/2017/09/P_20170924_145058-768x432.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" />
+<img class="size-large wp-image-749" src="P_20170924_145058" alt="" width="840" height="473" srcset="P_20170924_145058 1024w, P_20170924_145058 300w, P_20170924_145058 768w" sizes="(max-width: 840px) 100vw, 840px" />
 
 X-Guardを買う最も高いモチベーションだったグラベルクリテ秋の陣にいきなり投入。
 
@@ -52,7 +52,7 @@ X-Guardを買う最も高いモチベーションだったグラベルクリテ�
 
 一周800mほぼ全域グラベルのコースで、参加したのはインターミディエイトクラス（20周）。前回パンクの憂き目を見たが、今回はノーパンクで見事完走。最後に差されたものの3位をもぎ取ることができた。
 
-<img class="aligncenter size-large wp-image-750" src="/wp-content/uploads/2017/09/P_20170924_122957-1024x576.jpg" alt="" width="840" height="473" srcset="/wp-content/uploads/2017/09/P_20170924_122957-1024x576.jpg 1024w, /wp-content/uploads/2017/09/P_20170924_122957-300x169.jpg 300w, /wp-content/uploads/2017/09/P_20170924_122957-768x432.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" />
+<img class="aligncenter size-large wp-image-750" src="P_20170924_122957" alt="" width="840" height="473" srcset="P_20170924_122957 1024w, P_20170924_122957 300w, P_20170924_122957 768w" sizes="(max-width: 840px) 100vw, 840px" />
 
 数限りない小石を弾き飛ばしたが、タイヤは完全に無傷。素晴らしい耐久性だ。
 

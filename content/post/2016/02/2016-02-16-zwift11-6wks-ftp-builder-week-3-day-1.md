@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-02-16T03:17:00+00:00
 #url: /2016/02/zwift11-6wks-ftp-builder-week-3-day-1.html
-thumbnail: /wp-content/uploads/2016/02/2016-02-15_2000270.jpg
+thumbnail: 2016-02-15_2000270.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/02/2016-02-15_2000270.jpg" width="640" />
+  <img border="0" height="352" src="2016-02-15_2000270.jpg" width="640" />
 </div>
 
 

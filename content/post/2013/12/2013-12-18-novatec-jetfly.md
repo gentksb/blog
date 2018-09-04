@@ -27,7 +27,7 @@ tags:
 まずタイヤとチューブを外して純正のリムテープを外します。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="640" src="/wp-content/uploads/2013/12/DSC_4671-575x1024.jpg" width="358" />
+  <img border="0" height="640" src="DSC_4671" width="358" />
 </div>
 
 ちょっとこれはひどくないですか…？よくパンクしなかったものだ
@@ -39,7 +39,7 @@ tags:
 リムテープの下、直接ホイールに貼られているシールを発見
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="358" src="/wp-content/uploads/2013/12/DSC_4673-1024x575.jpg" width="640" />
+  <img border="0" height="358" src="DSC_4673" width="640" />
 </div>
 
 809…？621…？
@@ -49,13 +49,13 @@ tags:
 測ってみます（上海問屋で売ってた精度10gという適当な秤です）
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="179" src="/wp-content/uploads/2013/12/DSC_4674-1024x575.jpg" width="320" />
+  <img border="0" height="179" src="DSC_4674" width="320" />
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="179" src="/wp-content/uploads/2013/12/DSC_4675-1024x575.jpg" width="320" />
+  <img border="0" height="179" src="DSC_4675" width="320" />
 </div>
 
 1450g…精度の悪い秤なのですが少なくともC24TLが1505gであることを考えるとかなりいい感じの重量です。買ってよかった。

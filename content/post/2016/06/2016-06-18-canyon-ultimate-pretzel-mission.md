@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-06-17T20:26:00+00:00
 #url: /2016/06/canyon-ultimate-pretzel-mission.html
-thumbnail: /wp-content/uploads/2016/06/E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg
+thumbnail: E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="358" src="/wp-content/uploads/2016/06/E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg" width="640" />
+  <img border="0" height="358" src="E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg" width="640" />
 </div>
 
 ### 走るだけで最高グレードの完成車が！
@@ -41,7 +41,7 @@ Zwiftのバーチャルコースである、Watopiaの全ルートを順行・�
 ### 参加方法
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/06/2016-06-18_1056300.jpg" width="640" />
+  <img border="0" height="352" src="2016-06-18_1056300.jpg" width="640" />
 </div>
 
 ログイン後、ワークアウト選択画面の脇にチャレンジを選択する画面が出てくる。
@@ -57,7 +57,7 @@ Zwiftのバーチャルコースである、Watopiaの全ルートを順行・�
 ワークアウトとは違って、ログアウトさえしなければいくらでも休憩できるので耐えぬく精神力さえあれば完走はそう難しくはない。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/06/2016-06-18_1343425.jpg" width="640" />
+  <img border="0" height="352" src="2016-06-18_1343425.jpg" width="640" />
 </div>
 
 ゴールすると、権利を得た旨の表示が出てくる。

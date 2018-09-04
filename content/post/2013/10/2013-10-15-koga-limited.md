@@ -24,7 +24,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2013/10/BWhBf5NCYAAmlH4-1024x575.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2013/10/BWhBf5NCYAAmlH4-1024x575.jpg" height="358" width="640" /></a>
+  <a href="BWhBf5NCYAAmlH4" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="BWhBf5NCYAAmlH4" height="358" width="640" /></a>
 </div>
 
 このフレームは青のアルマイト塗装が非常に綺麗です。ロードバイクでは珍しいですね

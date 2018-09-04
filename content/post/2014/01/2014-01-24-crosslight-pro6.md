@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-01-24T06:34:00+00:00
 #url: /2014/01/crosslight-pro6.html
-thumbnail: /wp-content/uploads/2014/01/IMG_20140123_232028-1024x768.jpg
+thumbnail: IMG_20140123_232028
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140123_232028-1024x768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140123_232028-1024x768.jpg" height="480" width="640" /></a>
+  <a href="IMG_20140123_232028" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140123_232028" height="480" width="640" /></a>
 </div>
 
 更新サボっている間に組みあがりました。
@@ -29,13 +29,13 @@ PBKでセールになっていたのを衝動でポチっと購入。
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140110_231831-1024x768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140110_231831-1024x768.jpg" height="300" width="400" /></a>
+  <a href="IMG_20140110_231831" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140110_231831" height="300" width="400" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140110_231909-768x1024.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140110_231909-768x1024.jpg" height="400" width="300" /></a>
+  <a href="IMG_20140110_231909" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140110_231909" height="400" width="300" /></a>
 </div>
 
 フレーム単体と付属品。ヘッドパーツ多すぎないか！？と思うも後で理由が発覚します。
@@ -47,13 +47,13 @@ PBKでセールになっていたのを衝動でポチっと購入。
 トップチューブとチェーンステー。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140110_234237-1024x768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140110_234237-1024x768.jpg" height="480" width="640" /></a>
+  <a href="IMG_20140110_234237" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140110_234237" height="480" width="640" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140110_234313-768x1024.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140110_234313-768x1024.jpg" height="400" width="300" /></a>
+  <a href="IMG_20140110_234313" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140110_234313" height="400" width="300" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -88,7 +88,7 @@ PBKでセールになっていたのを衝動でポチっと購入。
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140111_191109-768x1024.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140111_191109-768x1024.jpg" height="320" width="240" /></a>
+  <a href="IMG_20140111_191109" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140111_191109" height="320" width="240" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -122,7 +122,7 @@ PBKでセールになっていたのを衝動でポチっと購入。
 最初はMTBとロードのリム幅違いではまらないのかと思いましたが、手持ちのJETFLYと比較してもそこまで変化ありません。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140113_183454-1024x768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140113_183454-1024x768.jpg" height="480" width="640" /></a>
+  <a href="IMG_20140113_183454" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140113_183454" height="480" width="640" /></a>
 </div>
 
 左がJETFLY＋Notubeテープ、右がMT66です。
@@ -162,7 +162,7 @@ MTBの経験で不整地行くのにフロント2枚いらないことは自明�
 適宜組み付けて完成！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/01/IMG_20140123_232028-1024x768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/wp-content/uploads/2014/01/IMG_20140123_232028-1024x768.jpg" height="480" width="640" /></a>
+  <a href="IMG_20140123_232028" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140123_232028" height="480" width="640" /></a>
 </div>
 
 明後日レースなのにまだシェイクダウンしていない…ぶっつけだ！

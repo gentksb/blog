@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-04-02T04:17:00+00:00
 #url: /2017/04/my-protein.html
-thumbnail: /wp-content/uploads/2017/04/DSC_0887.jpg
+thumbnail: DSC_0887.jpg
 categories:
   - 未分類
 tags:
@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0887.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0887.jpg" width="640" />
 </div>
 
 
@@ -34,7 +34,7 @@ tags:
 サイト上での100gあたりタンパク質は82gだったが、フレーバーごとに±10%変化があるとの表記。重要なところなので全部書いて欲しかったが…
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0888.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0888.jpg" width="640" />
 </div>
 
 実物の表記は100g中Proteinが86g！
@@ -86,7 +86,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0889.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0889.jpg" width="640" />
 </div>
 
 PBKじゃん！！！！！！！！！！！！！！！

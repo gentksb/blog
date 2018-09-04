@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-06-16T06:01:00+00:00
 #url: /2016/06/specialized-power.html
-thumbnail: /wp-content/uploads/2016/06/DSC_7658.jpg
+thumbnail: DSC_7658.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="/wp-content/uploads/2016/06/DSC_7658.jpg" width="640" />
+  <img border="0" height="360" src="DSC_7658.jpg" width="640" />
 </div>
 
 尻の座り具合は自転車乗りに取って永遠とテーマと言ってもいい。
@@ -47,7 +47,7 @@ tags:
 ### 特徴
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="/wp-content/uploads/2016/06/DSC_7644.jpg" width="640" />
+  <img border="0" height="360" src="DSC_7644.jpg" width="640" />
 </div>
 
 このサドル最大の特徴はノーズの短さ。
@@ -69,7 +69,7 @@ tags:
 身長160cmの自分でも、クランク軸からの後退幅50mmを余裕でクリアする仕上がりとなった。上から見るとどれくらい短いかわかりやすい。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="/wp-content/uploads/2016/06/DSC_7643.jpg" width="640" />
+  <img border="0" height="360" src="DSC_7643.jpg" width="640" />
 </div>
 
 まだ室内利用のみのインプレとなるが、フルカーボンサドルに比べればパッドの厚みがあるので、後ろ乗りのポジションを取っている限りは快適性は上がるものと予想している。

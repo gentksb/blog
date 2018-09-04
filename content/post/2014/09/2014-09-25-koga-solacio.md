@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-09-25T01:37:00+00:00
 #url: /2014/09/koga-solacio.html
-thumbnail: /wp-content/uploads/2014/09/2014-09-2110.09.30-1024x575.jpg
+thumbnail: 2014-09-2110.09.30
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="/wp-content/uploads/2014/09/2014-09-2110.09.30-1024x575.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="/wp-content/uploads/2014/09/2014-09-2110.09.30-1024x575.jpg" width="640" /></a>
+  <a href="2014-09-2110.09.30" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="2014-09-2110.09.30" width="640" /></a>
 </div>
 
 AVEDIOのバッカス01からKOGAのsolacioに乗り換えました。

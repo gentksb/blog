@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-01-25T05:03:00+00:00
 #url: /2016/01/zwift-mobile-link.html
-thumbnail: /wp-content/uploads/2016/01/Screenshot_2016-01-25-22-44-41.png
+thumbnail: Screenshot_2016-01-25-22-44-41.png
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="320" src="/wp-content/uploads/2016/01/Screenshot_2016-01-25-22-44-41.png" width="180" />
+  <img border="0" height="320" src="Screenshot_2016-01-25-22-44-41.png" width="180" />
 </div>
 
 
@@ -74,7 +74,7 @@ Android、iOSどちらでもOKです。
 #### 最初の画面
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="320" src="/wp-content/uploads/2016/01/Screenshot_2016-01-26-18-42-25.png" width="180" />
+  <img border="0" height="320" src="Screenshot_2016-01-26-18-42-25.png" width="180" />
 </div>
 
 矢印長押…Uターン
@@ -86,7 +86,7 @@ Android、iOSどちらでもOKです。
 #### ACTIONS
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="320" src="/wp-content/uploads/2016/01/Screenshot_2016-01-22-20-00-17.png" width="180" />
+  <img border="0" height="320" src="Screenshot_2016-01-22-20-00-17.png" width="180" />
 </div>
 
 左は分岐選択エリア、右はそれ以外での画面です。

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-04-14T21:09:00+00:00
 #url: /2017/04/new-bike-ragley-mmmbop-275.html
-thumbnail: /wp-content/uploads/2017/04/DSC_0851.jpg
+thumbnail: DSC_0851.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0851.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0851.jpg" width="640" />
 </div>
 
 
@@ -33,7 +33,7 @@ tags:
 ヘッドが寝ていて、150mmフォークが適正と下り向きのAM HT。タイヤもリアは2.4インチまで許容できるので楽しく下れるフレームになっているはず。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0871.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0871.jpg" width="640" />
 </div>
 
 コンポはSLXとDeore10s。36-11-36という男ギア比。
@@ -43,7 +43,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2017/04/DSC_0879.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0879.jpg" width="640" />
 </div>
 
 ドロッパーポストと[ESIグリップ][1]は初経験。

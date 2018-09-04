@@ -55,7 +55,7 @@ author: gen
 type: post
 date: 2017-09-27T11:26:26+00:00
 #url: /2017/09/rider310review.html
-thumbnail: /wp-content/uploads/2017/09/DSC_7899-300x169.jpg
+thumbnail: DSC_7899
 categories:
   - 未分類
 tags:

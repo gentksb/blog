@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-12-10T04:16:00+00:00
 #url: /2016/12/maxxis-speed-terrane.html
-thumbnail: /wp-content/uploads/2016/12/DSC_0448.jpg
+thumbnail: DSC_0448.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2016/12/DSC_0448.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0448.jpg" width="640" />
 </div>
 
 
@@ -110,7 +110,7 @@ GIANTのチューブレスタンクもいい感じのお値段だったのです
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="/wp-content/uploads/2016/12/DSC_0449.jpg" width="640" />
+  <img border="0" height="362" src="DSC_0449.jpg" width="640" />
 </div>
 
 フラッシュチャージャーと違ってちゃんと表示がついてるのでわかりやすい。

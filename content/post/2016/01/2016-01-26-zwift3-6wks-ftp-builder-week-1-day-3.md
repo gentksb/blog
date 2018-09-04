@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-01-26T02:33:00+00:00
 #url: /2016/01/zwift3-6wks-ftp-builder-week-1-day-3.html
-thubmnail: /wp-content/uploads/2016/01/2016-01-26_1843030.jpg
+thubmnail: 2016-01-26_1843030.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="/wp-content/uploads/2016/01/2016-01-26_1843030.jpg" width="640" />
+  <img border="0" height="350" src="2016-01-26_1843030.jpg" width="640" />
 </div>
 
 
@@ -27,7 +27,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="/wp-content/uploads/2016/01/2016-01-26_1920052.jpg" width="640" />
+  <img border="0" height="352" src="2016-01-26_1920052.jpg" width="640" />
 </div>
 
 ワークアウト野郎多すぎ問題。他人のW数も見れるのね。

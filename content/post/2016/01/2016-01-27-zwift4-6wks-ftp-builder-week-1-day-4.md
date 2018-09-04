@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-01-27T03:01:00+00:00
 #url: /2016/01/zwift4-6wks-ftp-builder-week-1-day-4.html
-thumbnail: /wp-content/uploads/2016/01/2016-01-27_1854110.jpg
+thumbnail: 2016-01-27_1854110.jpg
 categories:
   - 未分類
 tags:
@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="348" src="/wp-content/uploads/2016/01/2016-01-27_1854110.jpg" width="640" />
+  <img border="0" height="348" src="2016-01-27_1854110.jpg" width="640" />
 </div>
 
 ### 1週間目、終了
@@ -29,7 +29,7 @@ Zwiftのweek workoutは5日で1週間とカウントしている。そして1週
 金曜は飲み会だからレストです！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="348" src="/wp-content/uploads/2016/01/2016-01-27_1903322.jpg" width="640" />
+  <img border="0" height="348" src="2016-01-27_1903322.jpg" width="640" />
 </div>
 
 Viewはこのカメラモトから撮っているかのような角度が好み。
