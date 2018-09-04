@@ -3,7 +3,7 @@ title: "2017-18関西シクロクロス#8 堺レースレポート"
 date: 2018-01-14T19:01:49+09:00
 draft: false
 tags: ["CX", "RaceReport"]
-thumbnail: "img/2018sakai.jpg"
+thumbnail: 2018sakai.jpg
 ---
 {{<figure src="/img/2018sakai.jpg">}}
 ## 関西シクロクロス#8 堺

@@ -3,7 +3,7 @@ title: "2017秋版Zwift Mobile Link解説"
 date: 2017-10-27T19:45:21+09:00
 draft: false
 tags: ["zwift", "インプレ"]
-thumbnail: "/img/jungle.png"
+thumbnail: jungle.png
 ---
 {{<figure src="/img/jungle.png">}}
 ## Zwiftがずいぶん変わりました

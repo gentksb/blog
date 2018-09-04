@@ -3,7 +3,7 @@ title: "Airbone ZT-A15インプレ"
 date: 2018-08-01T20:08:39+09:00
 draft: false
 tags: ["MTB", "CX","Road","TIPS"]
-thumbnail: "img/DSC_1434.jpg"
+thumbnail: DSC_1434.jpg
 ---
 {{<figure src="/img/DSC_1434.jpg">}}
 ## ヒラメからの移行

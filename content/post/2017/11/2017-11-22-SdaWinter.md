@@ -3,7 +3,7 @@ title: "2017冬王滝でも凍えない装備"
 date: 2017-11-21T21:21:56+09:00
 draft: false
 tags: ["MTB","TIPS","インプレ"]
-thumbnail: "img/winterotaki.JPG"
+thumbnail: winterotaki.jpg
 ---
 {{<figure src="/img/winterotaki.JPG">}}
 ## 伝説の2017冬王滝

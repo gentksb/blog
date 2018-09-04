@@ -3,7 +3,7 @@ title: "BloggerからWordpressに移行 - CDN,HTTPS編"
 date: 2017-10-07T21:18:23+09:00
 draft: false
 tags: ["code"]
-thumbnail: "/img/webterminal.PNG"
+thumbnail: webterminal.png
 #url: "/2017/10/blggrtowp-2.html"
 ---
 {{<figure src="/img/webterminal.PNG">}}

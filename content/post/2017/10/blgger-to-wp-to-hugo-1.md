@@ -3,7 +3,7 @@ title: "BloggerやめてWordpressに移行したけど結局Hugoにした"
 date: 2017-10-07T12:52:17+09:00
 draft: false
 tags: ["Code"]
-thumbnail: "/img/hugo.PNG"
+thumbnail: hugo.png
 #url: "/2017/10/blgger-to-wp-to-hugo-1"
 ---
 {{<figure src="/img/hugo.PNG">}}

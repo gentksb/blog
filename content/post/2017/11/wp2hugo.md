@@ -3,7 +3,7 @@ title: "WP+GCEからHugo+Netlifyへの移行"
 date: 2017-10-11T19:00:21+09:00
 draft: false
 tags: ["code"]
-thumbnail: "/img/hugo.PNG"
+thumbnail: hugo.png
 ---
 {{<figure src="/img/hugo.PNG">}}
 ## 静的サイトジェネレーターへの移行
