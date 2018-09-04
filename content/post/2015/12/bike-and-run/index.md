@@ -1,5 +1,5 @@
 ---
-title: 鍛え直し
+title: 自転車乗りのラントレと靴のニオイ対策
 author: admin
 type: post
 date: 2015-12-28T15:15:00+00:00

@@ -141,7 +141,7 @@ Dongguan Lontion Industrial Co., Ltd. <br /> 売り上げランキング: 925
 自動的にコースインするので、あとはペダルを漕げば勝手にパワーに応じた速度で走り出す。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="2015-10-01_2209230-1.jpg" width="640" />
+  <img border="0" height="350" src="2015-10-01_2209230.jpg" width="640" />
 </div>
 
 実際の画面はこんな感じ。

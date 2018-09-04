@@ -1,5 +1,5 @@
 ---
-title: SAVASミルク　グレープフルーツ風味
+title: SAVASミルク グレープフルーツ風味
 author: admin
 type: post
 date: 2015-07-13T05:26:00+00:00
