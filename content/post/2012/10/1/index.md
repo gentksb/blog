@@ -12,6 +12,7 @@ tags:
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="360" src="DSC_0664.jpg" width="640" />
 </div>
+<!--BUILD TEST-->
 まずはメインで使っているロードバイクから。
 <a href="http://www.avedio.net/" target="_blank">AVEDIO</a>のBacchus01(2011モデル)です。
 コンポは5700で統一、サドルはスペシャのTOUPE Expert。フロントホイールはWH-7850SLでやたら目立っているリアホイールは中華の60mmホイールとなっています。
