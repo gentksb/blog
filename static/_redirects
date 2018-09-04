@@ -233,8 +233,11 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2017/09/rider310review.html /post/2017/09/rider310review/ 301!
 /2017/09/formula-pro-x-guard.html /post/2017/09/formula-pro-x-guard/ 301!
 
-/2017/10/* /post/2017/10/:splat/ 301!
-/2017/11/* /post/2017/11/:splat/ 301!
+/2017/10/blgger-to-wp-to-hugo-1 /post/2017/10/blgger-to-wp-to-hugo-1/ 301!
+/2017/10/blggrtowp-2.html /post/2017/10/blggrtowp-2/ 301!
+/201710/wp2hugo.html /post/2017/10/wp2hugo/ 301!
+
+/201711/2017-11-22-sdawinter.html /post/2017/11/SdaWinter/ 301!
 /2017/12/* /post/2017/12/:splat/ 301!
 
 /2018/01/* /post/2018/01/:splat/ 301!
