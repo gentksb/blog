@@ -15,7 +15,7 @@ publishDir = "public"
 buildDrafts = false
 hasCJKLanguage = true
 defaultLayout = "post"
-uglyurls = true
+#uglyurls = true
 
 
 [Permalinks]
