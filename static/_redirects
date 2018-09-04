@@ -26,13 +26,13 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2013/01/blog-pos-21.html /post/2013/01/shonancx/ 301!
 /2013/10/blog-pos-19.html /post/2013/10/ita-chari/ 301!
 /2013/10/blog-post_29.html /post/2013/10/ita-chari/ 301!
+/2014/03/blog-post_29.html /post/2014/03/fakespider/ 301!
+/2014/03/blog-pos-17.html /post/2014/03/pmseminer/ 301!
+/2014/06/2014-kimera-prestige-premiu.html /post/2014/06/kimera-prestige-premium/ 301!
+/2014/10/blog-pos-16.html /post/2014/10/jccx/ 301!
+/2014/11/cx.html /post/2014/11/cx-chainring/ 301!
+/2014/12/blog-pos-15.html /post/2014/12/cxentry/ 301!
 
-/2014/03/blog-post_29.html /post/2014/03/blog-post_29-2/ 301!
-/2014/03/blog-pos-17.html /post/2014/03/blog-post/ 301!
-/2014/06/2014-kimera-prestige-premiu.html /post/2014/06/2014-kimera-prestige-premium/ 301!
-/2014/10/blog-pos-16.html /post/2014/10/blog-post/ 301!
-/2014/11/cx.html /post/2014/11/cx-3/ 301!
-/2014/12/blog-pos-15.html /post/2014/12/blog-post/ 301!
 /2016/02/blog-pos-12.html /post/2016/02/blog-post/ 301!
 /2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html /post/2016/03/new-xt-di2-is-leaked-by-jpn-investment/ 301!
 /2016/04/blog-pos-11.html /post/2016/04/blog-post/ 301!
@@ -119,9 +119,14 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2014/09/tt.html /post/2014/09/ttjapan/ 301!
 /2014/09/koga-solacio.html /post/2014/09/koga-solacio/ 301!
 
-/2014/10/* /post/2014/10/:splat/ 301!
-/2014/11/* /post/2014/11/:splat/ 301!
-/2014/12/* /post/2014/12/:splat/ 301!
+/2014/10/blog-post.html /post/2014/10/jccx/ 301!
+
+/2014/11/cx-3.html /post/2014/11/cx-chainring/ 301!
+/2014/11/4.html /post/2014/11/bikelore4/ 301!
+
+/2014/12/blog-post.html /post/2014/12/cx-entry/ 301!
+/2014/12/flo-disc.html /post/2014/12/flo-disc/ 301!
+
 /2015/01/* /post/2015/01/:splat/ 301!
 /2015/02/* /post/2015/02/:splat/ 301!
 /2015/03/* /post/2015/03/:splat/ 301!
