@@ -18,7 +18,6 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /*/feed /:splat/index.xml 301!
 
 #page redirects
-#ここのリダイレクト先を要修正
 /2012/10/blog-pos-23.html /post/2012/10/blog-post/ 301!
 /2012/11/blog-pos-22.html /post/2012/11/romin-pro/ 301!
 /2012/11/tt.html /post/2012/11/TTposition_on_road/ 301!
@@ -33,11 +32,12 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2014/11/cx.html /post/2014/11/cx-chainring/ 301!
 /2014/12/blog-pos-15.html /post/2014/12/cxentry/ 301!
 /2016/02/blog-pos-12.html /post/2016/02/cycling-protein/ 301!
+/2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html /post/2016/03/xtdi2leak/ 301!
+/2016/04/blog-pos-11.html /post/2016/04/fasthealing/ 301!
+/2016/05/zwif.html /post/2016/05/zwft_orig_workout/ 301!
+/2016/11/feedback-portable-trainer12.html /post/2016/11/fdbk-trainer-12mm/ 301!
 
-/2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html /post/2016/03/new-xt-di2-is-leaked-by-jpn-investment/ 301!
-/2016/04/blog-pos-11.html /post/2016/04/blog-post/ 301!
-/2016/05/zwif.html /post/2016/05/zwift/ 301!
-/2016/11/feedback-portable-trainer12.html /post/2016/11/feedback-portable-trainer12mm/ 301!
+#ここのリダイレクト先を要修正
 /2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /post/2017/04/mtbesi-grips-brand-x-ascend-dropper-post/ 301!
 /2017/03/blog-pos-5.html /post/2017/03/blog-post/ 301!
 /2017/05/blog-pos-3.html /post/2017/05/blog-post/ 301!
@@ -186,10 +186,21 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2016/08/di2_24.html /post/2016/08/di2drill_2/ 301!
 /2016/08/st-r785mtbcx.html /post/2016/08/st-r785mtbcx/ 301!
 
-/2016/09/* /post/2016/09/:splat/ 301!
-/2016/10/* /post/2016/10/:splat/ 301!
-/2016/11/* /post/2016/11/:splat/ 301!
-/2016/12/* /post/2016/12/:splat/ 301!
+/2016/09/choice.html /post/2016/09/choice/ 301!
+/2016/09/irc.html /post/2016/09/ircroadrbcc/ 301!
+/2016/09/2016-17-cx1-irc-tire-90th-anniversary.html /post/2016/09/irc90thcup/ 301!
+
+/2016/10/tcr-advanced-pro-disc.html /post/2016/10/tcr-advanced-pro-disc/ 301!
+/2016/10/blog-post.html /post/2016/10/tkg/ 301!
+/2016/10/tcr-advanced-pro-disc_29.html /post/2016/10/tcr-advanced-pro-disc_2nd/ 301!
+
+/2016/11/blog-post.html /post/2016/11/furusato-tax/ 301!
+/2016/11/feedback-portable-trainer12mm.html /post/2016/11/fdbk-trainer-12mm/ 301!
+/2016/11/blog-post_28.html /post/2016/11/cxlife/ 301!
+
+/2016/12/maxxis-speed-terrane.html /post/2016/12/maxxis-speed-terrane_view/ 301!
+/2016/12/maxxis-speed-terrane_11.html /post/2016/12/maxxis-speed-terrane_ride/ 301!
+
 /2017/01/* /post/2017/01/:splat/ 301!
 /2017/02/* /post/2017/02/:splat/ 301!
 /2017/03/* /post/2017/03/:splat/ 301!
