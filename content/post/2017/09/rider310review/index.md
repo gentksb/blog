@@ -12,7 +12,7 @@ tags:
   - ガジェット
 
 ---
-<img class="wp-image-745 size-large alignnone" src="DSC_7899.jpg" alt="" width="840" height="473" srcset="DSC_7899 1024w, DSC_7899 300w, DSC_7899 768w" sizes="(max-width: 840px) 100vw, 840px" />
+<img class="wp-image-745 size-large alignnone" src="DSC_7899.jpg" alt="" width="840" height="473" />
 
 # 格安GPSサイコン代表選手
 
@@ -26,7 +26,7 @@ Edge25Jが王滝完走するだけの間、バッテリーが持たなかった�
 
 # インプレ
 
-<img class="aligncenter size-large wp-image-753" src="P_20170927_201256.jpg" alt="" width="840" height="473" srcset="P_20170927_201256 1024w, P_20170927_201256 300w, P_20170927_201256 768w" sizes="(max-width: 840px) 100vw, 840px" />
+<img class="aligncenter size-large wp-image-753" src="P_20170927_201256.jpg" alt="" width="840" height="473" />
 
 Languageから日本語を選ぶとあっさり日本語化が完了。画面設定は初期のものだが、自分でカスタマイズすることもできるし、GARMINの心拍計とのペアリングも素直にできた。操作は全て物理ボタンで完結するため、誤操作の心配ほぼなし。感圧式タッチパネルとかいう最悪の選択をしたパイオニアさんは反省してくれ。
 
