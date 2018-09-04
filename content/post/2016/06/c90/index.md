@@ -10,9 +10,6 @@ tags:
   - コミケ
 
 ---
-<div class="separator" style="clear: both; text-align: center;">
-
-</div>
 
 C90　日曜日（3日目）れー02b
 

@@ -169,9 +169,16 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2016/03/zwift.html /post/2016/03/zwift_env/ 301!
 /2016/03/new-xt-di2-is-leaked-by-jpn-investment.html /post/2016/03/xtdi2leak/ 301!
 
-/2016/04/* /post/2016/04/:splat/ 301!
-/2016/05/* /post/2016/05/:splat/ 301!
-/2016/06/* /post/2016/06/:splat/ 301!
+/2016/04/blog-post.html /post/2016/04/fasthealing/ 301!
+
+/2016/05/blog-post.html /post/2016/05/pre-fix/ 301!
+/2016/05/zwift.html /post/2016/05/zwft_orig_workout/ 301!
+
+/2016/06/c90.html /post/2016/06/c90/ 301!
+/2016/06/specialized-power.html /post/2016/06/spc_pwrsdl/ 301!
+/2016/06/canyon-ultimate-pretzel-mission.html /post/2016/06/canyon_misssion/ 301!
+/2016/06/oakley-radar-ev-prizm-road.html /post/2016/06/prizmroad_ev/ 301!
+
 /2016/07/* /post/2016/07/:splat/ 301!
 /2016/08/* /post/2016/08/:splat/ 301!
 /2016/09/* /post/2016/09/:splat/ 301!
