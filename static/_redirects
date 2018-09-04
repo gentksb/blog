@@ -238,13 +238,21 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /201710/wp2hugo.html /post/2017/10/wp2hugo/ 301!
 
 /201711/2017-11-22-sdawinter.html /post/2017/11/SdaWinter/ 301!
-/2017/12/* /post/2017/12/:splat/ 301!
+/201712/2017-12-18-googlehomewithzwift.html /post/2017/12/googlehomewithzwift/
 
-/2018/01/* /post/2018/01/:splat/ 301!
-/2018/02/* /post/2018/02/:splat/ 301!
-/2018/03/* /post/2018/03/:splat/ 301!
-/2018/04/* /post/2018/04/:splat/ 301!
-/2018/05/* /post/2018/05/:splat/ 301!
-/2018/06/* /post/2018/06/:splat/ 301!
-/2018/07/* /post/2018/07/:splat/ 301!
-/2018/08/* /post/2018/08/:splat/ 301!
+/201801/2018-01-03-c1up.html /post/2018/01/to_c1/ 301!
+/201801/2018-01-08-despair-gaoka.html /post/2018/01/despair-gaoka/ 301!
+/201801/2018-01-14-sakaisenshuken.html /post/2018/01/sakaisenshuken/ 301!
+/201801/2018-01-28-kurondoC1.html /post/2018/01/kurondoC1/ 301!
+/201801/2018-01-22-aiboku.html /post/2018/01/aiboku/ 301!
+
+/201802/2018-02-04-katsura.html /post/2018/02/katsura/ 301!
+/201802/2018-02-11-cxtokyo.html /post/2018/02/cxtokyo/ 301!
+/201802/2018-02-20-udontour.html /post/2018/02/udontour/ 301!
+/201802/2018-02-26-wnp.html /post/2018/02/wnp/ 301!
+
+/201803/2018-03-30-tubelessTape.html /post/2018/03/tubelessTape/ 301!
+/201806/2018-06-01-sda.html /post/2018/06/sdaspring/ 301!
+/201807/2018-07-12-cxtublar.html /post/2018/07/cxtublar/ 301!
+/201807/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!
+/201808/lezyne-or-airbone.html /post/2018/08/lezyne-or-airbone/ 301!
