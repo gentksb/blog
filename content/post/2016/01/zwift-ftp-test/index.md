@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-01-21T03:20:00+00:00
 #url: /2016/01/zwift0-ftp-testshorter.html
-thumbnail: E382ADE383A3E38397E38381E383A3-1.png
+thumbnail: E382ADE383A3E38397E38381E383A3.png
 categories:
   - 未分類
 tags:
@@ -16,7 +16,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="E382ADE383A3E38397E38381E383A3-1.png" />
+  <img border="0" src="E382ADE383A3E38397E38381E383A3.png" />
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">

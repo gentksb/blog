@@ -145,7 +145,20 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2015/12/tcx-slr-ss.html /post/2015/12/tcx-slr-ss/ 301!
 /2015/12/blog-post_29.html /post/2015/12/bike-and-run/ 301!
 
-/2016/01/* /post/2016/01/:splat/ 301!
+/2016/01/2015strava.html /post/2016/01/2015strava/ 301!
+/2016/01/blog-post_83.html /post/2016/01/hydrohealing/ 301!
+/2016/01/blog-post.html /post/2016/01/oil_massage/ 301!
+/2016/01/simmvno.html /post/2016/01/simmvno/ 301!
+/2016/01/sgx-ca500garmin.html /post/2016/01/sgx-ca500mount/ 301!
+/2016/01/blog-post_14.html /post/2016/01/tubeless_airleak/ 301!
+/2016/01/zwift-mobile-link.html /post/2016/01/zwift-mobile-link/ 301!
+/2016/01/zwift0-ftp-testshorter.html /post/2016/01/zwift-ftp-test/ 301!
+/2016/01/zwift1-6wks-ftp-builder-week-1-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-1/ 301!
+/2016/01/zwift1-6wks-ftp-builder-week-1-day-2.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-2/ 301!
+/2016/01/zwift1-6wks-ftp-builder-week-1-day-3.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-3/ 301!
+/2016/01/zwift1-6wks-ftp-builder-week-1-day-4.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-4/ 301!
+/2016/01/zwift1-6wks-ftp-builder-week-2-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-2-day-1/ 301!
+
 /2016/02/* /post/2016/02/:splat/ 301!
 /2016/03/* /post/2016/03/:splat/ 301!
 /2016/04/* /post/2016/04/:splat/ 301!

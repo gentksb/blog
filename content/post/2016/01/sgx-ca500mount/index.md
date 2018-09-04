@@ -82,7 +82,7 @@ tags:
 かなり厚みがあるのでエアロ効果は低くなったかもしれない（笑
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6950-1.jpg" width="640" />
+  <img border="0" height="360" src="DSC_6950.jpg" width="640" />
 </div>
 
 
