@@ -5,7 +5,7 @@ draft: false
 tags: ["Zwift", "TIPS"]
 thumbnail: homemini.jpg
 ---
-{{<figure src="/img/homemini.JPG" width="100%">}}
+{{<figure src="homemini.JPG" width="100%">}}
 ## もっと快適なローラー環境を求めて
 以前、[快適なZwift環境を求める記事](/2016/03/zwift.html)を書いたが、ここ数ヶ月でローラー界に革命が起こせるプロダクトが発売された。\
 その名はスマートスピーカー。「OK, Google」のアイツだ。

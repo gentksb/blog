@@ -6,7 +6,7 @@ tags: ["Code"]
 thumbnail: hugo.png
 #url: "/2017/10/blgger-to-wp-to-hugo-1"
 ---
-{{<figure src="/img/hugo.PNG">}}
+{{<figure src="hugo.png">}}
 
 ## まずはBloggerをやめたかった
 

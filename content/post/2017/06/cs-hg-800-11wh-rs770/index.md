@@ -13,7 +13,7 @@ tags:
   - 海外通販
 
 ---
-{{< figure src="/img/product_CS-R8000-S1-min.png">}}
+{{< figure src="product_CS-R8000-S1-min.png">}}
 
 R8000系アルテグラが発表された。
 

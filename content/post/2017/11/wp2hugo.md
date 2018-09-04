@@ -5,7 +5,7 @@ draft: false
 tags: ["code"]
 thumbnail: hugo.png
 ---
-{{<figure src="/img/hugo.PNG">}}
+{{<figure src="hugo.PNG">}}
 ## 静的サイトジェネレーターへの移行
 
 性能・HTTPS対応などなどについて無料IaaSとWordPressを越えるものを探していたところ、静的サイトジェネレーターという存在を発見。

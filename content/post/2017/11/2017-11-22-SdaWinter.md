@@ -5,7 +5,7 @@ draft: false
 tags: ["MTB","TIPS","インプレ"]
 thumbnail: winterotaki.jpg
 ---
-{{<figure src="/img/winterotaki.JPG">}}
+{{<figure src="winterotaki.JPG">}}
 ## 伝説の2017冬王滝
 
 秋王滝が台風で中止となり、急遽企画された11月冬王滝。\
@@ -20,7 +20,7 @@ thumbnail: winterotaki.jpg
 基本は「汗をかかない程度に温まる」ことを考えた。汗をかくと汗冷えで死んでしまう。
 
 ## 上半身
-{{<figure src="/img/wintermenu.JPG">}}
+{{<figure src="wintermenu.JPG">}}
 上記が今回利用した足まわり以外のウェアセット。
 一部存在感の強い品があるが、まずは上半身に着たものから紹介。
 
@@ -42,7 +42,7 @@ thumbnail: winterotaki.jpg
 
 
 ## 下半身
-{{<figure src="/img/legwarm.JPG">}}
+{{<figure src="legwarm.JPG">}}
 ありあわせなので見た目が最高にひどい。\
 ビブニッカーとソックスだけだと生足が出てしまうので、単純にレッグウォーマーを追加。\
 膝が二重に冷えから守られるので結果として体のトラブルを防ぐことができた。
