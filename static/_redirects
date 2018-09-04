@@ -1,8 +1,6 @@
 http://gensobunya.netlify.com/*  https://blog.gensobunya.net/:splat  301!
 https://gensobunya.netlify.com/*  https://blog.gensobunya.net/:splat  301!
 http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
-#Temp setting for solving SSL problem
-#https://blog.gensobunya.net/*  http://blog.gensobunya.net/:splat  302!
 
 # START paramater 301 redirect
 /*param1=:value1   /:splat  301!
@@ -14,32 +12,94 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 
 #tags
 /tag/* /tags/:splat 301!
-/:yaer/tags/* /tags/:splat 301!
+#/:year/tags/* /tags/:splat 301!
 
 #feed
 /*/feed /:splat/index.xml 301!
 
-#temp
-/2014/03/blog-post_29.html /2014/03/blog-post_29-2.html 301!
-/post/2017/10/blggrtowp-2/ /2017/10/blggrtowp-2.html 301!
-/2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html 301!
-/2017/03/blog-pos-5.html /2017/03/blog-post.html 301!
-/2016/11/feedback-portable-trainer12.html /2016/11/feedback-portable-trainer12mm.html 301!
-/2017/05/blog-pos-3.html /2017/05/blog-post.html 301!
-/2016/05/zwif.html /2016/05/zwift.html 301!
-/2016/02/blog-pos-12.html /2016/02/blog-post.html 301!
-/2016/04/blog-pos-11.html /2016/04/blog-post.html 301!
-/2013/10/blog-pos-19.html /2013/10/blog-post.html 301!
-/2014/06/2014-kimera-prestige-premiu.html /2014/06/2014-kimera-prestige-premium.html 301!
-/2014/11/cx.html /2014/11/cx-3.html 301!
-/2012/11/tt.html /2012/11/TTposition_on_road.html 301!
-/2014/10/blog-pos-16.html /2014/10/blog-post.html 301!
-/2014/03/blog-pos-17.html /2014/03/blog-post.html 301!
-/2014/12/blog-pos-15.html /2014/12/blog-post.html 301!
-/2017/04/blog-pos-4.html /2017/04/blog-post.html 301!
-/2013/02/blog-pos-20.html /2013/02/blog-post.html 301!
-/2012/11/blog-pos-22.html /2012/11/blog-post.html 301!
-/2013/01/blog-pos-21.html /2013/01/blog-post.html 301!
-/2012/10/blog-pos-23.html /2012/10/blog-post.html 301!
-/2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html /2016/03/new-xt-di2-is-leaked-by-jpn-investment.html 301!
-/2013/10/blog-post_29.html /2013/10/blog-post.html 301!
+#page redirects
+/2014/03/blog-post_29.html /post/2014/03/blog-post_29-2.html 301!
+/post/2017/10/blggrtowp-2/ /post/2017/10/blggrtowp-2.html 301!
+/2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /post/2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html 301!
+/2017/03/blog-pos-5.html /post/2017/03/blog-post.html 301!
+/2016/11/feedback-portable-trainer12.html /post/2016/11/feedback-portable-trainer12mm.html 301!
+/2017/05/blog-pos-3.html /post/2017/05/blog-post.html 301!
+/2016/05/zwif.html /post/2016/05/zwift.html 301!
+/2016/02/blog-pos-12.html /post/2016/02/blog-post.html 301!
+/2016/04/blog-pos-11.html /post/2016/04/blog-post.html 301!
+/2013/10/blog-pos-19.html /post/2013/10/blog-post.html 301!
+/2014/06/2014-kimera-prestige-premiu.html /post/2014/06/2014-kimera-prestige-premium.html 301!
+/2014/11/cx.html /post/2014/11/cx-3.html 301!
+/2012/11/tt.html /post/2012/11/TTposition_on_road.html 301!
+/2014/10/blog-pos-16.html /post/2014/10/blog-post.html 301!
+/2014/03/blog-pos-17.html /post/2014/03/blog-post.html 301!
+/2014/12/blog-pos-15.html /post/2014/12/blog-post.html 301!
+/2017/04/blog-pos-4.html /post/2017/04/blog-post.html 301!
+/2013/02/blog-pos-20.html /post/2013/02/blog-post.html 301!
+/2012/11/blog-pos-22.html /post/2012/11/blog-post.html 301!
+/2013/01/blog-pos-21.html /post/2013/01/blog-post.html 301!
+/2012/10/blog-pos-23.html /post/2012/10/blog-post.html 301!
+/2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html /post/2016/03/new-xt-di2-is-leaked-by-jpn-investment.html 301!
+/2013/10/blog-post_29.html /post/2013/10/blog-post.html 301!
+
+#201809_refine_redirect
+/2012/10/* /post/2012/10/:splat 301!
+/2012/11/* /post/2012/11/:splat 301!
+/2012/12/* /post/2012/12/:splat 301!
+/2013/01/* /post/2013/01/:splat 301!
+/2013/02/* /post/2013/02/:splat 301!
+/2013/03/* /post/2013/03/:splat 301!
+/2013/04/* /post/2013/04/:splat 301!
+/2013/05/* /post/2013/05/:splat 301!
+/2013/06/* /post/2013/06/:splat 301!
+/2013/07/* /post/2013/07/:splat 301!
+/2013/08/* /post/2013/08/:splat 301!
+/2013/09/* /post/2013/09/:splat 301!
+/2013/10/* /post/2013/10/:splat 301!
+/2013/11/* /post/2013/11/:splat 301!
+/2013/12/* /post/2013/12/:splat 301!
+/2014/01/* /post/2014/01/:splat 301!
+/2014/02/* /post/2014/02/:splat 301!
+/2014/03/* /post/2014/03/:splat 301!
+/2014/04/* /post/2014/04/:splat 301!
+/2014/05/* /post/2014/05/:splat 301!
+/2014/06/* /post/2014/06/:splat 301!
+/2014/07/* /post/2014/07/:splat 301!
+/2014/08/* /post/2014/08/:splat 301!
+/2014/09/* /post/2014/09/:splat 301!
+/2014/10/* /post/2014/10/:splat 301!
+/2014/11/* /post/2014/11/:splat 301!
+/2014/12/* /post/2014/12/:splat 301!
+/2015/01/* /post/2015/01/:splat 301!
+/2015/02/* /post/2015/02/:splat 301!
+/2015/03/* /post/2015/03/:splat 301!
+/2015/04/* /post/2015/04/:splat 301!
+/2015/05/* /post/2015/05/:splat 301!
+/2015/06/* /post/2015/06/:splat 301!
+/2015/07/* /post/2015/07/:splat 301!
+/2015/08/* /post/2015/08/:splat 301!
+/2015/09/* /post/2015/09/:splat 301!
+/2015/10/* /post/2015/10/:splat 301!
+/2015/11/* /post/2015/11/:splat 301!
+/2015/12/* /post/2015/12/:splat 301!
+/2016/01/* /post/2016/01/:splat 301!
+/2016/02/* /post/2016/02/:splat 301!
+/2016/03/* /post/2016/03/:splat 301!
+/2016/04/* /post/2016/04/:splat 301!
+/2016/05/* /post/2016/05/:splat 301!
+/2016/06/* /post/2016/06/:splat 301!
+/2016/07/* /post/2016/07/:splat 301!
+/2016/08/* /post/2016/08/:splat 301!
+/2016/09/* /post/2016/09/:splat 301!
+/2016/10/* /post/2016/10/:splat 301!
+/2016/11/* /post/2016/11/:splat 301!
+/2016/12/* /post/2016/12/:splat 301!
+/2017/01/* /post/2017/01/:splat 301!
+/2017/02/* /post/2017/02/:splat 301!
+/2017/03/* /post/2017/03/:splat 301!
+/2017/04/* /post/2017/04/:splat 301!
+/2017/05/* /post/2017/05/:splat 301!
+/2017/06/* /post/2017/06/:splat 301!
+/2017/07/* /post/2017/07/:splat 301!
+/2017/08/* /post/2017/08/:splat 301!
+/2017/09/* /post/2017/09/:splat 301!
