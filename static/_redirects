@@ -20,7 +20,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 #page redirects
 /2012/10/blog-pos-23.html /post/2012/10/blog-post/ 301!
 /2012/11/blog-pos-22.html /post/2012/11/romin-pro/ 301!
-/2012/11/tt.html /post/2012/11/TTposition_on_road/ 301!
+/2012/11/tt.html /post/2012/11/ttposition_on_road/ 301!
 /2013/02/blog-pos-20.html /post/2013/02/racetraining/ 301!
 /2013/01/blog-pos-21.html /post/2013/01/shonancx/ 301!
 /2013/10/blog-pos-19.html /post/2013/10/ita-chari/ 301!
@@ -38,10 +38,10 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2016/11/feedback-portable-trainer12.html /post/2016/11/fdbk-trainer-12mm/ 301!
 
 #ここのリダイレクト先を要修正
-/2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /post/2017/04/mtbesi-grips-brand-x-ascend-dropper-post/ 301!
-/2017/03/blog-pos-5.html /post/2017/03/blog-post/ 301!
-/2017/05/blog-pos-3.html /post/2017/05/blog-post/ 301!
-/2017/04/blog-pos-4.html /post/2017/04/blog-post/ 301!
+/2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /post/2017/04/goodmtbgears/ 301!
+/2017/03/blog-pos-5.html /post/2017/03/discroad/ 301!
+/2017/05/blog-pos-3.html /post/2017/05/akafukuice/ 301!
+/2017/04/blog-pos-4.html /post/2017/04/discroadrace/ 301!
 /post/2017/10/blggrtowp-2/ /post/2017/10/blggrtowp-2/ 301!
 
 
@@ -55,7 +55,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2012/11/blog-post_25-2.html /post/2012/11/2012seofes/ 301!
 /2012/11/blog-post.html /post/2012/11/romin-pro/ 301!
 /2012/11/blog-post_4.html /post/2012/11/cyclemode2012/ 301!
-/2012/11/TTposition_on_road.html /post/2012/11/TTposition_on_road/ 301!
+/2012/11/TTposition_on_road.html /post/2012/11/ttposition_on_road/ 301!
 /2012/11/jcrc.html /post/2012/11/jcrc/ 301!
 /2012/11/blog-post_29-4.html /post/2012/11/ancling/ 301!
 
@@ -237,13 +237,13 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2017/10/blggrtowp-2.html /post/2017/10/blggrtowp-2/ 301!
 /201710/wp2hugo.html /post/2017/10/wp2hugo/ 301!
 
-/201711/2017-11-22-sdawinter.html /post/2017/11/SdaWinter/ 301!
+/201711/2017-11-22-sdawinter.html /post/2017/11/sdawinter/ 301!
 /201712/2017-12-18-googlehomewithzwift.html /post/2017/12/googlehomewithzwift/
 
 /201801/2018-01-03-c1up.html /post/2018/01/to_c1/ 301!
 /201801/2018-01-08-despair-gaoka.html /post/2018/01/despair-gaoka/ 301!
 /201801/2018-01-14-sakaisenshuken.html /post/2018/01/sakaisenshuken/ 301!
-/201801/2018-01-28-kurondoC1.html /post/2018/01/kurondoC1/ 301!
+/201801/2018-01-28-kurondoC1.html /post/2018/01/kurondoc1/ 301!
 /201801/2018-01-22-aiboku.html /post/2018/01/aiboku/ 301!
 
 /201802/2018-02-04-katsura.html /post/2018/02/katsura/ 301!
@@ -251,7 +251,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /201802/2018-02-20-udontour.html /post/2018/02/udontour/ 301!
 /201802/2018-02-26-wnp.html /post/2018/02/wnp/ 301!
 
-/201803/2018-03-30-tubelessTape.html /post/2018/03/tubelessTape/ 301!
+/201803/2018-03-30-tubelessTape.html /post/2018/03/tubelesstape/ 301!
 /201806/2018-06-01-sda.html /post/2018/06/sdaspring/ 301!
 /201807/2018-07-12-cxtublar.html /post/2018/07/cxtublar/ 301!
 /201807/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!

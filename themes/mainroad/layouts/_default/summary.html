@@ -2,7 +2,7 @@
 	{{- if .Params.thumbnail }}
 	<figure class="list__thumbnail">
 		<a href="{{ .Permalink }}">
-			<img src="{{ replace .Dir "\\" "/" | safeHTML }}{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
+			<img src="/{{ replace .Dir "\\" "/" | safeHTML }}{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
 		</a>
 	</figure>
 	{{- end }}
