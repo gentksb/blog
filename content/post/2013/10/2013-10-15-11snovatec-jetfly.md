@@ -3,7 +3,7 @@ title: 11s化計画　NOVATEC JETFLY
 author: admin
 type: post
 date: 2013-10-15T04:21:00+00:00
-url: /2013/10/11snovatec-jetfly.html
+#url: /2013/10/11snovatec-jetfly.html
 categories:
   - 未分類
 tags:

@@ -3,7 +3,7 @@ title: Novatec JETFLY チューブレス化＆計量
 author: admin
 type: post
 date: 2013-12-18T13:37:00+00:00
-url: /2013/12/novatec-jetfly.html
+#url: /2013/12/novatec-jetfly.html
 categories:
   - 未分類
 tags:

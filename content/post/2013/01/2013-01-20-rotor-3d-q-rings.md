@@ -3,7 +3,7 @@ title: '無難な楕円、ROTOR 3D & Q-rings'
 author: admin
 type: post
 date: 2013-01-20T03:00:00+00:00
-url: /2013/01/rotor-3d-q-rings.html
+#url: /2013/01/rotor-3d-q-rings.html
 categories:
   - 未分類
 tags:

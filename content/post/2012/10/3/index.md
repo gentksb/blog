@@ -3,7 +3,7 @@ title: 愛車紹介その3（ツーリング）
 author: admin
 type: post
 date: 2012-10-16T02:34:00+00:00
-url: /post/2012/10/3.html
+#url: /2012/10/3.html
 categories:
   - 未分類
 tags:

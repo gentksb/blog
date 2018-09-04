@@ -3,7 +3,7 @@ title: Zwift Mobile Link（スマホアプリ）の使い方
 author: admin
 type: post
 date: 2016-01-25T05:03:00+00:00
-url: /2016/01/zwift-mobile-link.html
+#url: /2016/01/zwift-mobile-link.html
 thumbnail: /wp-content/uploads/2016/01/Screenshot_2016-01-25-22-44-41.png
 categories:
   - 未分類

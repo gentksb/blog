@@ -3,7 +3,7 @@ title: KOGA solacioに組み換え
 author: admin
 type: post
 date: 2014-09-25T01:37:00+00:00
-url: /2014/09/koga-solacio.html
+#url: /2014/09/koga-solacio.html
 thumbnail: /wp-content/uploads/2014/09/2014-09-2110.09.30-1024x575.jpg
 categories:
   - 未分類

@@ -3,7 +3,7 @@ title: Paypalの本人認証について（追記
 author: admin
 type: post
 date: 2012-10-16T18:36:00+00:00
-url: /post/2012/10/paypal.html
+#url: /2012/10/paypal.html
 categories:
   - 未分類
 tags:

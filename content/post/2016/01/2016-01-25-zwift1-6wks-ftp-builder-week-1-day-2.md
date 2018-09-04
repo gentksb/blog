@@ -3,7 +3,7 @@ title: Zwiftで始めるパワートレーニング2日目 – 6wks FTP builder 
 author: admin
 type: post
 date: 2016-01-25T03:44:00+00:00
-url: /2016/01/zwift1-6wks-ftp-builder-week-1-day-2.html
+#url: /2016/01/zwift1-6wks-ftp-builder-week-1-day-2.html
 thumbanil: /wp-content/uploads/2016/01/2016-01-25_2027460.jpg
 categories:
   - 未分類
