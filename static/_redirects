@@ -59,7 +59,11 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2012/12/r500.html /post/2012/12/r500/ 301!
 /2012/12/83.html /post/2012/12/c83/ 301!
 
-/2013/01/* /post/2013/01/:splat/ 301!
+/2013/01/htc-jisw13ht-root.html /post/2013/01/htc-jisw13ht-root/ 301!
+/2013/01/rotor-3d-q-rings.html /post/2013/01/rotor-3d-q-rings/ 301!
+/2013/01/htc-j-s-off.html /post/2013/01/htc-j-s-off/ 301!
+/2013/01/blog-post.html /post/2013/01/shonancx/ 301!
+
 /2013/02/* /post/2013/02/:splat/ 301!
 /2013/03/* /post/2013/03/:splat/ 301!
 /2013/04/* /post/2013/04/:splat/ 301!

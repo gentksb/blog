@@ -50,8 +50,7 @@ BBありで689gのFC-9000と比べると軽量化マニアの人にはあまり�
 
 エアロチェーンリングにカッティングシート貼りたくなりますね。そのうちやります
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+
 
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="225" src="DSC_1283" width="400" />
