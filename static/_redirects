@@ -18,6 +18,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /*/feed /:splat/index.xml 301!
 
 #page redirects
+#ここのリダイレクト先を要修正
 /2014/03/blog-post_29.html /post/2014/03/blog-post_29-2/ 301!
 /post/2017/10/blggrtowp-2/ /post/2017/10/blggrtowp-2/ 301!
 /2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /post/2017/04/mtbesi-grips-brand-x-ascend-dropper-post/ 301!
@@ -64,7 +65,9 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2013/01/htc-j-s-off.html /post/2013/01/htc-j-s-off/ 301!
 /2013/01/blog-post.html /post/2013/01/shonancx/ 301!
 
-/2013/02/* /post/2013/02/:splat/ 301!
+/2013/02/1st-day.html /post/2013/02/1st-day/ 301!
+/2013/02/blog-post.html /post/2013/02/racetraining/ 301!
+
 /2013/03/* /post/2013/03/:splat/ 301!
 /2013/04/* /post/2013/04/:splat/ 301!
 /2013/05/* /post/2013/05/:splat/ 301!
