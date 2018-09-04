@@ -6,18 +6,18 @@ tags: ["code"]
 thumbnail: webterminal.png
 #url: "/2017/10/blggrtowp-2.html"
 ---
-{{<figure src="webterminal.PNG">}}
+{{<figure src="webterminal.png">}}
 
 ## システム環境
 
 1クリックデプロイでGCEにWordpessをインストールした時のインストール先は下記の通り。OSはDebian。
 
 Wordpressは/var/www/html
-{{<figure src="wpdir.PNG">}}
+{{<figure src="wpdir.png">}}
 
 
 Apache2.4は/etc/apache2
-{{<figure src="apa2dir.PNG">}}
+{{<figure src="apa2dir.png">}}
 
 余談だが、WEBターミナルからログインする際に自動作成されたユーザーは当然のようにsudo権限が割り振られている、便利すぎる。
 
