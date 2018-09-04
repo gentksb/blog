@@ -90,7 +90,7 @@ Di2ケーブルはアウターのように剛性が高くないので、内部�
 ### 図解
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="無題.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="無題.png" height="242" width="320" /></a><a href="無題.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
+<a href="illust.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="illust.png" height="242" width="320" /></a><a href="illust.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
 </div>
 
 赤がDi2ケーブル、青がガイド代わりのアウターワイヤです。がんばれればそのうちBB下の穴からワイヤが出てきます。
