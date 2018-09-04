@@ -43,10 +43,11 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2013/10/blog-post_29.html /post/2013/10/blog-post/ 301!
 
 #201809_refine_redirect
-/2012/10/* /post/2012/10/:splat/ 301!
-/2012/10/* /post/2012/10/:splat/ 301!
-/2012/10/* /post/2012/10/:splat/ 301!
-/2012/10/* /post/2012/10/:splat/ 301!
+/2012/10/1.html /post/2012/10/1/ 301!
+/2012/10/2mtb.html /post/2012/10/2mtb/ 301!
+/2012/10/3.html /post/2012/10/3/ 301!
+/2012/10/blog-post.html /post/2012/10/blog-post/ 301!
+/2012/10/paypal.html /post/2012/10/paypal/ 301!
 
 /2012/11/* /post/2012/11/:splat/ 301!
 /2012/12/* /post/2012/12/:splat/ 301!
