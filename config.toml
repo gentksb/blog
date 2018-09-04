@@ -19,7 +19,7 @@ uglyurls = true
 
 
 [Permalinks]
-post = "/:year:month/:filename"
+#post = "/post/:year:month/:filename"
 
 [taxonomies]
 #category = "categories"

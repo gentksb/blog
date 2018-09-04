@@ -3,7 +3,7 @@ title: 愛車紹介その1（ロード）
 author: admin
 type: post
 date: 2012-10-16T02:08:00+00:00
-url: /post/2012/10/1.html
+#url: /post/2012/10/1.html
 categories:
   - 未分類
 tags:
