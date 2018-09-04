@@ -1,5 +1,5 @@
 ---
-title: 11s化計画　NOVATEC JETFLY
+title: 11s化計画NOVATEC JETFLY
 author: admin
 type: post
 date: 2013-10-15T04:21:00+00:00
@@ -37,7 +37,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="BWXIUoJCEAAl97d" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="BWXIUoJCEAAl97d" height="358" width="640" /></a>
+  <a href="BWXIUoJCEAAl97d.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="BWXIUoJCEAAl97d.jpg" height="358" width="640" /></a>
 </div>
 
 11s対応、チューブレスレディ、32mmリム、公称1435ｇ
@@ -51,7 +51,7 @@ GP4000Sとビットリアの緑チューブ、6700スプロケを嵌めた上体
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="BWXhenkCIAEeGMK" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="BWXhenkCIAEeGMK" height="358" width="640" /></a>
+  <a href="BWXhenkCIAEeGMK.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="BWXhenkCIAEeGMK.jpg" height="358" width="640" /></a>
 </div>
 
 見た目そこそこ！

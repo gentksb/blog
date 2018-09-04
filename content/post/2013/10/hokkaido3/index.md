@@ -20,7 +20,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4135" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4135" height="358" width="640" /></a>
+  <a href="DSC_4135.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4135.jpg" height="358" width="640" /></a>
 </div>
 
 &nbsp;こんなかんじの道が延々20km以上！
@@ -30,11 +30,11 @@ TTの大会開いたら人気が出そうなコースです
 　写真が少ないのはエアロポジションでテンション上がり続けていた影響で
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4137-1" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4137-1" height="358" width="640" /></a>
+  <a href="DSC_4137.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4137.jpg" height="358" width="640" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4136" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4136" height="358" width="640" /></a>
+  <a href="DSC_4136.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4136.jpg" height="358" width="640" /></a>
 </div>
 
 道の駅で鶏の半身揚げを食し、T-800に載せて頂いたりしました。

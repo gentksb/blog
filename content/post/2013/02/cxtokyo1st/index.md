@@ -88,7 +88,7 @@ MTBの特性を活かして砂浜を乗車して一気に差をつける！
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="858634_464707580251196_801901482_o" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="858634_464707580251196_801901482_o" height="480" width="640" /></a>
+  <a href="858634_464707580251196_801901482_o.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="858634_464707580251196_801901482_o.jpg" height="480" width="640" /></a>
 </div>
 
 スポンサー様の意向でビールかけ！

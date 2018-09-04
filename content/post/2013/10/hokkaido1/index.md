@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-10-12T04:23:00+00:00
 #url: /2013/10/blog-post_12.html
-thumbnail: DSC_0180
+thumbnail: DSC_0180.jpg
 categories:
   - 未分類
 tags:
@@ -21,7 +21,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0180" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0180" height="356" width="640" /></a>
+  <a href="DSC_0180.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0180.jpg" height="356" width="640" /></a>
 </div>
 
 なんせ北海道です。平坦な道がどどーん！TTバイク持ってくしかねえ！
@@ -33,7 +33,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="無題-1024x470.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="無題-1024x470.png" height="291" width="640" /></a>
+  <a href="1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="1.png" height="291" width="640" /></a>
 </div>
 
 HAHAHAHA、素敵な山岳コースじゃないか！
@@ -55,25 +55,25 @@ TTバイクだと縦剛性が高めでな上、前乗りで振動が上体に直
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0182" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0182" height="179" width="320" /></a>
+  <a href="DSC_0182.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0182.jpg" height="179" width="320" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0183" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0183" height="179" width="320" /></a>
+  <a href="DSC_0183.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0183.jpg" height="179" width="320" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0184" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0184" height="179" width="320" /></a>
+  <a href="DSC_0184.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0184.jpg" height="179" width="320" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0185" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0185" height="179" width="320" /></a>
+  <a href="DSC_0185.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0185.jpg" height="179" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">

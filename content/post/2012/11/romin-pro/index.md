@@ -19,7 +19,7 @@ tags:
 何が問題だったかというと…コイツです
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1114" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="DSC_1114" width="400" /></a>
+  <a href="DSC_1114.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="DSC_1114.jpg" width="400" /></a>
 </div>
 
 ようするにシートポストのヤグラとの相性ですね。

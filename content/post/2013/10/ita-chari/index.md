@@ -17,7 +17,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4209" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4209" height="320" width="179" /></a>
+  <a href="DSC_4209.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4209.jpg" height="320" width="179" /></a>
 </div>
 
 お久しぶりです。
@@ -31,7 +31,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4210" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4210" height="320" width="179" /></a>
+  <a href="DSC_4210.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4210.jpg" height="320" width="179" /></a>
 </div>
 
 なぜTRINITYにディスクを履かせたかというとこれがやりたかったからですよ～
@@ -39,7 +39,7 @@ tags:
 貼り付け初心者なので丁寧に
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4214" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="DSC_4214" height="179" width="320" /></a><a href="DSC_4213" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4213" height="320" width="179" /></a>
+  <a href="DSC_4214.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="DSC_4214.jpg" height="179" width="320" /></a><a href="DSC_4213.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4213.jpg" height="320" width="179" /></a>
 </div>
 
 &nbsp;①脱脂
@@ -47,7 +47,7 @@ tags:
 ②中性洗剤薄めて霧吹きでバシャー
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4215" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4215" height="179" width="320" /></a>
+  <a href="DSC_4215.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4215.jpg" height="179" width="320" /></a>
 </div>
 
 ③貼り付けて完成！定規で水抜きして仕上げして偏らないように上を向けて乾かします

@@ -34,7 +34,7 @@ tags:
 届きました
 
 <div class="separator" style="clear: both; text-align: left;">
-  <a href="DSC_1228" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1228" height="320" width="180" /></a>
+  <a href="DSC_1228.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1228.jpg" height="320" width="180" /></a>
 </div>
 
 

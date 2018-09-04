@@ -34,7 +34,7 @@ tags:
 シマノホイールの大きなメリットである防塵性防水性も落ちそうなので交換することにしました。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="320" src="DSC_1570" width="180" />
+  <img border="0" height="320" src="DSC_1570.jpg" width="180" />
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
@@ -42,13 +42,13 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="180" src="DSC_1571" width="320" />
+  <img border="0" height="180" src="DSC_1571.jpg" width="320" />
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="180" src="DSC_1572" width="320" />
+  <img border="0" height="180" src="DSC_1572.jpg" width="320" />
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">
