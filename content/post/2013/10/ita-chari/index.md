@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-10-15T04:09:00+00:00
 #url: /2013/10/blog-post.html
-thumbnail: DSC_4209
+thumbnail: DSC_4209.jpg
 categories:
   - 未分類
 tags:

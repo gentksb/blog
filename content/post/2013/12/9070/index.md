@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-12-16T04:03:00+00:00
 #url: /2013/12/9070.html
-thumbnail: DSC_4646
+thumbnail: DSC_4646.jpg
 categories:
   - 未分類
 tags:

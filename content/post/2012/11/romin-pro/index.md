@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2012-11-01T02:46:00+00:00
 #url: /post/2012/11/blog-post.html
-thumbnail: DSC_1114
+thumbnail: DSC_1114.jpg
 categories:
   - 未分類
 tags:
