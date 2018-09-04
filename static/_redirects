@@ -127,8 +127,9 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2014/12/blog-post.html /post/2014/12/cx-entry/ 301!
 /2014/12/flo-disc.html /post/2014/12/flo-disc/ 301!
 
-/2015/01/* /post/2015/01/:splat/ 301!
-/2015/02/* /post/2015/02/:splat/ 301!
+/2015/02/2014.html /post/2015/02/shonancx/ 301!
+/2015/02/2015.html /post/2015/02/cxtokyo/ 301!
+
 /2015/03/* /post/2015/03/:splat/ 301!
 /2015/04/* /post/2015/04/:splat/ 301!
 /2015/05/* /post/2015/05/:splat/ 301!
