@@ -1,0 +1,147 @@
+---
+title: '2016関西シクロクロス#9 堺レースレポート'
+author: admin
+type: post
+date: 2017-01-16T02:27:00+00:00
+#url: /2017/01/20169.html
+thumbnail: 32173597322_976d654bd0_k.jpg
+categories:
+  - 未分類
+tags:
+  - CX
+  - レース
+
+---
+<div class="separator" style="clear: both; text-align: center;">
+  <img border="0" height="426" src="./32173597322_976d654bd0_k.jpg" width="640" />
+</div>
+
+
+
+### お久しぶりのレースレポ
+
+
+> C1選手もすなる、日記といふものを、C2選手もしてみむとて、するなり
+
+普段レースレポートなんて書かないのですが今回は表彰台に乗ることができたので特別に。
+
+
+
+希望が丘の悪夢が蘇る記録的大寒波が襲うという予報のもと、出来る限りの準備をして雪の積もる自宅を出発。
+
+最初からスキーウェアでモッコモコの装備、靴カイロも入れてレース前の防寒は万全…
+
+前日設営組の「超強風」という報告も日曜はそこまでひどくなく、まぁまぁなんとかなるレベルの風だったので、コースを一周して砂区間のラインをじっくり観察することに。
+
+砂区間を含むフラットコースで、スピードを落とさないコーナーワークが求められるコース。関東だと湘南開成がほぼピッタリのイメージ。
+
+この日のC1はエリートとU23日本チャンピオンと竹之内悠がエントリーしていたので、勉強にはもってこいだった。
+
+最速ラインを観察して自分のスタートラインに立つ。
+
+C2のスタートは1名欠席のおかげで1列目。
+
+スタートで5番手に付けられたので序盤のガチャガチャを活かしてパックのトップへ。
+
+神戸大のミスターセカンドさん（仮称）が早々に抜け出して2位の自分がそれを追う展開。
+
+ド平坦の堺では、地脚の差がモロに出るのでじわじわ差が開いていく。
+
+追ってきた3番手も地脚が強く、一気に詰められるがCX慣れしていないのかミスが多いので、途中追い抜かれても終盤まで2番手を維持することに成功。
+
+残り2周で前に立たれたので直線で必死に食らいつき、少ないテクニカル区間でも引き離されないよう高速コーナーはラインをトレース、それ以外は最短ラインを選んで5秒以上離されないようにする。
+
+数周の観察で、砂区間で自分に分があることがわかっていたので最後の砂区間で一気に挽回する算段。
+
+計画通りの時間差で砂区間に入るも、最終周回だけ前の2番手が降りて猛ダッシュ！！！！
+
+その手があったかと膝を打ちながらそこから死ぬ気で踏むも、地脚の差は挽回できず\_(:3」∠)\_
+
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+
+<div class="separator" style="clear: both; text-align: center;">
+  <img border="0" height="426" src="./31512745093_09d23d5e39_k.jpg" width="640" />
+</div>
+
+テクニカルなコースなら追撃を押さえ込める気がするので、次はがんばるぞい。
+
+C1のバニホを勉強して自分も跳べるようになりたい
+
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+
+### 俺の防寒装備
+
+希望が丘で手と足の感覚がなくなるという経験をしたので、その反省を活かして末端の装備を変更してみた。
+
+
+
+足元には足用カイロ、手には台所用のゴム手袋を装備して臨む。
+
+<div class="amazlet-box" style="margin-bottom: 0px;">
+  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
+    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="ショーワグローブ 【パウダーフリー】No.881 ニトリスト・フィット 100枚入 ブルー Sサイズ 1函" src="https://images-fe.ssl-images-amazon.com/images/I/41GSVQ4PwQL._SL160_.jpg" style="border: none;" /></a>
+  </div>
+
+  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
+    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ショーワグローブ 【パウダーフリー】No.881 ニトリスト・フィット 100枚入 ブルー Sサイズ 1函</a></p>
+
+<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
+  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.01.16
+</div>
+
+
+<div class="amazlet-detail">
+ショーワグローブ <br /> 売り上げランキング: 37
+
+
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px;">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
+  </div>
+</div>
+</br>
+</br>
+</br>
+安物だがラテックス製なので、理論的には<a href="http://amzn.to/2iD1DEr" target="_blank">Velotoze</a>と同等の効果を得られるはずという目論見は大当たり。
+
+通常のグローブの上からこれを着用することで完全な防風を実現した上で、伸縮性のあるゴムのおかげでグリップ力や操作性も犠牲にしない。
+
+ちなみに足用カイロは役に立たなかった。防風が一番重要らしい。
+
+スキーウェアはかさばるので、モンベルの店頭のパーカーを品定めする日々が続いている…
+
+
+
+<div class="amazlet-box" style="margin-bottom: 0px;">
+  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
+    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="(モンベル)mont-bell パーマフロスト ライトダウンパーカ Men's 1101501 IKBL インクブルー L" src="https://images-fe.ssl-images-amazon.com/images/I/41eeHlqHg7L._SL160_.jpg" style="border: none;" /></a>
+  </div>
+
+  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
+    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(モンベル)mont-bell パーマフロスト ライトダウンパーカ Men&#8217;s 1101501 IKBL インクブルー L</a></p>
+
+<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
+  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.01.16
+</div>
+
+
+<div class="amazlet-detail">
+mont-bell（モンベル）
+
+
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px;">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
+  </div>
+
+  <div class="amazlet-footer" style="clear: left;">
+  </div>
+</div>

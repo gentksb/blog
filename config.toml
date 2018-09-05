@@ -15,11 +15,11 @@ publishDir = "public"
 buildDrafts = false
 hasCJKLanguage = true
 defaultLayout = "post"
-uglyurls = true
+#uglyurls = true
 
 
 [Permalinks]
-post = "/:year:month/:filename"
+#post = "/post/:year:month/:filename"
 
 [taxonomies]
 #category = "categories"

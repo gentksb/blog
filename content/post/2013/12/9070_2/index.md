@@ -1,0 +1,190 @@
+---
+title: 9070デュラエース組付け②
+author: admin
+type: post
+date: 2013-12-20T15:43:00+00:00
+#url: /2013/12/9070_21.html
+categories:
+  - 未分類
+tags:
+  - インプレ
+  - ロード
+
+---
+Di2組付け配線編その1です。
+
+<div>
+</div>
+
+<div>
+  終わりません。
+</div>
+
+<div>
+  注文ミスってE-tube足りないｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ
+</div>
+
+<div>
+</div>
+
+<div>
+  今回、フル9070＋スプリンタースイッチを組むために
+</div>
+
+<div>
+</div>
+
+<div>
+  ①ジャンクションA-B
+</div>
+
+<div>
+  ②ジャンクションB-RD
+</div>
+
+<div>
+  ③ジャンクションB-FD
+</div>
+
+<div>
+  ④ジャンクションB-バッテリー
+</div>
+
+<div>
+  ⑤ジャンクションA-STI1
+</div>
+
+<div>
+  ⑥ジャンクションA-STI2
+</div>
+
+<div>
+</div>
+
+<div>
+  以上のE-tubeが必要になるわけでしたが、購入したケーブルセットは4本しか
+</div>
+
+<div>
+  ケーブルが入っておらず、⑤⑥番に利用するものを買い忘れてましたｗｗ
+</div>
+
+<div>
+</div>
+
+<div>
+  ちなみにハンドル幅400mmを利用している時、300mmのケーブルではジャンクションAまで余裕がないので、バラで購入する人はもう少し長いものを購入したほうがいいと思います。
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div>
+  今回は組める部分だけ仮組します。
+</div>
+
+<div>
+  スプリンタースイッチからSTIへの接続は、微妙にコネクタ規格が違い、直にジャンクションへは取り付けられません。
+</div>
+
+<div>
+  これがもしできたら色々発想が膨らむんですが…
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="DSC_4690.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4690.jpg" height="640" width="358" /></a>
+</div>
+
+<div>
+</div>
+
+<div>
+  ジャンクションBを裏に取り付け、ケーブルを這わせていきます。
+</div>
+
+<div>
+  RD部分やハンドルへの遊び量を決め、ケーブルカバーを貼り付け固定。簡単です、面倒ですが。
+</div>
+
+<div>
+  ワックスをフレームに塗布している方はしっかりパークリで落としてから貼り付けましょう。
+</div>
+
+<div>
+</div>
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="DSC_4693.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4693.jpg" height="320" width="179" /></a>
+</div>
+
+
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="DSC_4694.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4694.jpg" height="320" width="179" /></a>
+</div>
+
+<div>
+</div>
+
+<div>
+  わかりやすくフラッシュを焚いたのですが、実際は黒同士なのでそこまで目立ちません
+</div>
+
+<div>
+</div>
+
+<div>
+  余った部分はジャンクションBの中に仕舞えるようになっています。折りたたむ際のRがきついので断線が怖いですが公式組付けなので多分平気でしょう…
+</div>
+
+<div>
+</div>
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="DSC_4692.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4692.jpg" height="358" width="640" /></a>
+</div>
+
+<div>
+</div>
+
+<div>
+  横から見るとこんな具合ですな。
+</div>
+
+<div>
+</div>
+
+<div>
+  タイヤとのクリアランスはしっかり確保してありますが、ぶっといカーボンフレームだと外装は厳しいかもしれません。
+</div>
+
+<div>
+  Di2は見た目の綺麗さからしても内装が正義ですね。
+</div>
+
+<div>
+</div>
+
+<div>
+  来週平日にならないとE-tubeが届かないので、今週末ロードはお休みです。
+</div>
+
+<div>
+  代わりにTTを組みます…ブレーキワイヤーとの格闘が待っています。
+</div>
+

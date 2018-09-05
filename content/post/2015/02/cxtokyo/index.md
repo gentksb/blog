@@ -1,0 +1,128 @@
+---
+title: 砂砂砂（シクロクロス東京2015 レースレポ）
+author: admin
+type: post
+date: 2015-02-12T06:16:00+00:00
+#url: /2015/02/2015.html
+categories:
+  - 未分類
+tags:
+  - CX
+  - レース
+
+---
+砂のスラロームはやめてください、死んでしまいます。
+
+お台場の砂場。昨年はエントリー峠の前に敗退。
+
+一昨年にMTBで出場してなんとなく砂の乗り方は掴んでいたので、直線ならなんとかなると思っていた。
+
+そう直線なら。
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="http://www.cyclocrosstokyo.com2015_course.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://www.cyclocrosstokyo.com2015_course.png" height="518" width="640" /></a>
+</div>
+
+まさかの砂浜に大量のコーナー。
+
+CX車で乗れるわけなし。
+
+それでも砂区間を諦めることは即敗北になるので、湘南海岸でみっちり砂トレをしてきた。
+
+お台場の砂より数段深くサラサラした湘南海岸は辛かったが、いい練習になった。
+
+C2のメンツをみると、ジュニアが別カテゴリになっていないため、世界選手権帰りの2名が堂々と名を連ねている。ついでになぜか宮澤さん…
+
+ひとまずエントリー競争を勝ち抜き1列目をゲットしたので、ホールショットを取ってランニングで引き離す方針。
+
+ジュニアカテゴリ4～5人はともかくとして、昇格ラインが3人ぽいので表彰台をあきらめて昇格を狙いに行くことに。
+
+試走した限りでは、直線の砂は乗れることがわかったので、ラインをしっかりチェック。
+
+
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="000016288768.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./000016288768.jpg" height="422" width="640" /></a>
+</div>
+
+
+
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+
+目論見通りホールショットを決める。
+
+砂区間のランニングに入る。
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="DPP6946_c.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DPP6946_c.jpg" height="426" width="640" /></a>
+</div>
+
+後ろに聖くんの存在を感じながら世界選で見たバイクぶん投げターンを真似してスタコラサッサとランで逃げる。（しかし自転車乗ったらすぐに捕まった）
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="DSC06226.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC06226.jpg" height="426" width="640" /></a>
+</div>
+
+シングルトラックも木を掴んでターンしたり色々遊べるレイアウトでした。
+
+砂浜はライン外れたら降りざるを得ないが、持ち方を工夫することでかなり速度が変わるようだった。
+
+自転車が沈まないようにサドルに手を添えて走っていたのだが、どうも最高速度が遅く、何人かにランで抜かれてしまう。
+
+両手でブラケットを握ったほうが、前傾になった分呼吸はやや厳しくなるがスピードが出せる。乗る練習ばかりして砂を走る練習を疎かにしていた…
+
+ラン区間が増えて、心拍数は前回走った時よりはるかに高い数値を叩き出す。
+
+血の味や胃液の味という懐かしい味も思い出すことができた。
+
+結果として12/57位。ファットバイクに抜かれたのはちょっとくやしい。
+
+2日目はひたすらビールとレースを楽しんだ。
+
+世界レベルの走りは本当にすごい。すごい以外の言葉が出てこない。
+
+ファットバイク無双するようなコースレイアウトはCXとしてどうなの？という議論もあるが
+
+エリートの走りの前には霞んでしまった、スキルがあれば良いと。
+
+それと、体を動かす基礎体力。ランニングはやっぱり運動の基本。
+
+2回ほど、砂浜での180度ターンを成功させてそのまま走り抜けられた周回があったが、
+
+乗りこなせた時の気分は最高だった。
+
+ラストラップで走りこなせたということは、集中力を高く保っていればこなせるレベルだったという証拠。安定したライディングスキルを出せるようにするのも課題として見えてきた。
+
+文句をいいつつ、とんでもない辛さを体験しつつも、来年も出るのだろう。
+
+今年のCXレースはあと2戦。
+
+<div class="amazlet-box" style="margin-bottom:0px;">
+  <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
+    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00QHS8BQE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41xEsNw4rxL._SL160_.jpg" alt="IRC シラク CX SAND 700×32C チューブレス シクロクロス用" style="border: none;" /></a>
+  </div>
+
+  <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
+    <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00QHS8BQE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">IRC シラク CX SAND 700×32C チューブレス シクロクロス用</a></p>
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
+</div>
+
+
+<div class="amazlet-detail">
+IRC <br />売り上げランキング: 22,421
+
+
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00QHS8BQE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
+  </div>
+
+  <div class="amazlet-footer" style="clear: left">
+  </div>
+</div>

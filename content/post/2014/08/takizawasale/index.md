@@ -1,0 +1,130 @@
+---
+title: 2014タキザワガレージセール＠浜松町
+author: admin
+type: post
+date: 2014-08-15T23:23:00+00:00
+#url: /2014/08/2014-2.html
+categories:
+  - 未分類
+
+---
+タキザワのガレージセールに行ってきました。
+
+<div>
+</div>
+
+<div>
+  お目当ては大物のロードフレーム。
+</div>
+
+<div>
+  バッカスは良いフレームですけどいかんせんDi2対応フレームでないので
+</div>
+
+<div>
+  バッテリーやらケーブルの取り回しがイマイチです。
+</div>
+
+<div>
+</div>
+
+<div>
+  それにそろそろカーボンロードに乗ってみたいというのもあって
+</div>
+
+<div>
+  30万ほど軍資金を用意して参戦。
+</div>
+
+<div>
+  条件は20万前後、剛性高めでシマノBB使えて（妥協してPF30）Di2内装。
+</div>
+
+<div>
+  バッテリーはできれば外付け。
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+<div>
+  タキザワ扱いだとLappiere Xelius EFI、デダチャイのSUPERSCURO RCに着目。
+</div>
+
+<div>
+  （出ないだろうけどBMC SLR01を狙って）
+</div>
+
+<div>
+  10時スタートなので9時位に着くよう出発、ダッシュに遅れて先に買われるという事態は避けたい…
+</div>
+
+<div>
+</div>
+
+<div>
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="IMG_20140816_094922.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_094922.jpg" height="360" width="640" /></a>
+  </div>
+
+  <p>
+    並びに来たら中が見えた。<br /> Lappiereのフレームが2つ、ゼリウスとディスク/カンチ兼用CXであることはわかった。<br /> この時点でフレームが少ないのと、明らかに自分サイズのフレームがないので完全に嫌な予感しかしない。
+  </p>
+
+  <p>
+    開場後、即フレームを見に行くも完全なる敗北。自分のサイズはほぼなかった。<br /> 頭を切り替えてセール品をとりあえず漁る。
+  </p>
+
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="IMG_20140816_101550.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_101550.jpg" height="360" width="640" /></a>
+  </div>
+
+  <p>
+    XSがこの値段なら即購入だった…
+  </p>
+
+  <p>
+    用具に関しても結構安いが、基本的に消耗品ばかり。<br /> シューズは充実の品揃えでした。
+  </p>
+
+  <p>
+    あとはEA90SLXが4万だったり、SHIV PROのRIVAL完成車が16万だったりとお値打ち品はそれなりにあった様子。<br /> 本気で大物を買い付けるなら前橋のガレージセールか、新年初売りじゃないとダメかも。
+  </p>
+
+  <p>
+    見る機会の少ないQUINTANA ROOとかもあった。<br /> これはカラーで売れ残ったんだろうな…
+  </p>
+
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="IMG_20140816_100344.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_100344.jpg" height="360" width="640" /></a>
+  </div>
+
+  <p>
+    そんな中、以下の写真の通りの戦果。
+  </p>
+
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="2014-08-1616.32.48" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="2014-08-1616.32.48" height="358" width="640" /></a>
+  </div>
+
+  <p>
+    TTサドルお試しにSIETRO（文の帽子もイメージして）<br /> Di2サテライトスイッチ（ほしいと思っていたし）<br /> チューブ（夏休みのツーリング用に）<br /> ＋おまけのスイムキャップ
+  </p>
+
+  <p>
+    TTのグレードアップもあると思えばなかなかの戦果？<br /> バーテープも赤を買っておけば良かったとちょっと後悔。
+  </p>
+
+  <p>
+    フレーム買う気満々だったので、実弾とテンションの行き場を失っている中、<br /> アートスポーツもガレージセールをやっているとの情報、即参戦！
+  </p>
+
+  <p>
+    …するも、特にロードフレームでめぼしいものはなかった。<br /> 都内のワイズも回ったものの空振り。残念。
+  </p>
+
+  <p>
+    LOOK675も要件を満たしていることが分かったのが収穫か？<br /> ロードフレーム探しの旅は続く…</div>
