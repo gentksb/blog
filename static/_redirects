@@ -17,31 +17,62 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 #feed
 /*/feed /:splat/index.xml 301!
 
-#page redirects
+#404 crawl page redirects
 /2012/10/blog-pos-23.html /post/2012/10/blog-post/ 301!
+/2012/10/paypa.html /post/2012/10/paypal/ 301!
 /2012/11/blog-pos-22.html /post/2012/11/romin-pro/ 301!
+/2012/11/06/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%82%A4%E3%82%AF%E3%81%A7tt%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%8F%96%E3%82%8B.html /post/2012/11/ttposition_on_road/ 301!
 /2012/11/tt.html /post/2012/11/ttposition_on_road/ 301!
+/2012/11/blog-post_25.html /post/2012/11/romin-pro/ 301!
+/2012/11/blog-post_29.html /post/2012/11/ancling/ 301!
+/2012/11/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%82%A4%E3%82%AF%E3%81%A7tt%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%8F%96%E3%82%8B.html /post/2012/11/ttposition_on_road/ 301!
 /2013/02/blog-pos-20.html /post/2013/02/racetraining/ 301!
 /2013/01/blog-pos-21.html /post/2013/01/shonancx/ 301!
+/2013/01/htc-jisw13ht-roo.html /post/2013/01/htc-jisw13ht-root/ 301!
+
+/2013/05/wh-7850s.html /post/2013/05/wh-7850fix/ 301!
 /2013/10/blog-pos-19.html /post/2013/10/ita-chari/ 301!
 /2013/10/blog-post_29.html /post/2013/10/ita-chari/ 301!
+/2014/01/24/mtb-dartmoor-horne.html /post/2014/01/dmhornet/ 301!
+/2014/01/mtb-dartmoor-horne.html /post/2014/01/dmhornet/ 301!
+/2014/02/blog-pos-18.html /post/2014/02/cxtyre_choice/ 301!
 /2014/03/blog-post_29.html /post/2014/03/fakespider/ 301!
 /2014/03/blog-pos-17.html /post/2014/03/pmseminer/ 301!
 /2014/06/2014-kimera-prestige-premiu.html /post/2014/06/kimera-prestige-premium/ 301!
+/2014/08/2014.html /post/2014/08/takizawasale/ 301!
+/2014/09/%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3tt%E3%83%AC%E3%83%BC%E3%82%B9-%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3.html /post/2014/09/ttjapan/ 301!
+/2014/09/%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%EF%BC%8Btt%E3%83%AC%E3%83%BC%E3%82%B9-%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3.html /post/2014/09/ttjapan/ 301!
 /2014/10/blog-pos-16.html /post/2014/10/jccx/ 301!
 /2014/11/cx.html /post/2014/11/cx-chainring/ 301!
 /2014/12/blog-pos-15.html /post/2014/12/cxentry/ 301!
+/2014/12/27/flo-disc.html /post/2014/12/flo-disc/ 301!
+/2015/05/12/flo-disc-whee.html /post/2015/05/flo-impression/ 301!
+/2015/05/flo-disc-whee.html /post/2015/05/flo-impression/ 301!
+/2015/10/zwift-3.html /post/2015/10/zwiftstart/ 301!
+/2015/10/zwif-3.html /post/2015/10/zwiftstart/ 301!
+/2015/12/blog-post.html /post/2015/12/bikestorage/ 301!
+/2016/01/blog-pos-13.html /post/2016/01/oil_massage/ 301!
+/2016/01/21/zwift0-ftp-testshorter.html /post/2016/01/zwift-ftp-test/ 301!
+/2016/01/22/zwift1-6wks-ftp-builder-week-1-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-1/ 301!
+/2016/01/25/zwift-mobile-link.html /post/2016/01/zwift-mobile-link/ 301!
 /2016/02/blog-pos-12.html /post/2016/02/cycling-protein/ 301!
+/2016/03/zwif-2.html /post/2016/03/zwift_env/ 301!
 /2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html /post/2016/03/xtdi2leak/ 301!
 /2016/04/blog-pos-11.html /post/2016/04/fasthealing/ 301!
 /2016/05/zwif.html /post/2016/05/zwft_orig_workout/ 301!
+/2016/05/blog-pos-10.html /post/2016/05/pre-fix/ 301!
+/2016/07/blog-pos-9.html /post/2016/07/hybrid_trainer/ 301!
+/2016/08/blog-pos-8.html /post/2016/08/bookmake/ 301!
+/2016/10/blog-pos-7.html /post/2016/10/tkg/ 301!
+/2016/11/blog-pos-6.html /post/2016/11/furusato-tax/ 301!
 /2016/11/feedback-portable-trainer12.html /post/2016/11/fdbk-trainer-12mm/ 301!
-
-#ここのリダイレクト先を要修正
+/2017/03/2017.html /post/2017/03/discroad/ 301!
 /2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /post/2017/04/goodmtbgears/ 301!
+/post/2017zwift-mobile-link.html /post/2017/10/2017zwift-mobile-link/ 301!
 /2017/03/blog-pos-5.html /post/2017/03/discroad/ 301!
 /2017/05/blog-pos-3.html /post/2017/05/akafukuice/ 301!
 /2017/04/blog-pos-4.html /post/2017/04/discroadrace/ 301!
+/2017/07/blog-pos-2.html /2017/07/blog-pos-2.html 301!
 /post/2017/10/blggrtowp-2/ /post/2017/10/blggrtowp-2/ 301!
 
 
@@ -236,6 +267,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2017/10/blgger-to-wp-to-hugo-1 /post/2017/10/blgger-to-wp-to-hugo-1/ 301!
 /2017/10/blggrtowp-2.html /post/2017/10/blggrtowp-2/ 301!
 /201710/wp2hugo.html /post/2017/10/wp2hugo/ 301!
+/201710/2017zwift-mobile-link.html /post/2017/10/2017zwift-mobile-link/ 301!
 
 /201711/2017-11-22-sdawinter.html /post/2017/11/sdawinter/ 301!
 /201712/2017-12-18-googlehomewithzwift.html /post/2017/12/googlehomewithzwift/
