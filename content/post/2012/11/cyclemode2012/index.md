@@ -36,14 +36,14 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_1128.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1128.jpg" height="180" width="320" /></a>
+    <a href="DSC_1128.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1128.jpg" height="180" width="320" /></a>
   </div>
 
   <p>
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_1131.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1131.jpg" height="180" width="320" /></a>
+    <a href="DSC_1131.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1131.jpg" height="180" width="320" /></a>
   </div>
 
   <p>
@@ -55,14 +55,14 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_1135.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1135.jpg" height="180" width="320" /></a>
+    <a href="DSC_1135.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1135.jpg" height="180" width="320" /></a>
   </div>
 
   <p>
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_1136.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1136.jpg" height="180" width="320" /></a>
+    <a href="DSC_1136.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1136.jpg" height="180" width="320" /></a>
   </div>
 
   <p>
@@ -76,7 +76,7 @@ tags:
 コントロールテックさんは相変わらずの変態パーツ群を出していました</p>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1137.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1137.jpg" height="180" width="320" /></a>
+  <a href="DSC_1137.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1137.jpg" height="180" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -87,7 +87,7 @@ tags:
 </p>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1139.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1139.jpg" height="180" width="320" /></a>
+  <a href="DSC_1139.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1139.jpg" height="180" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -98,14 +98,14 @@ tags:
 </p>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1142.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1142.jpg" height="180" width="320" /></a>
+  <a href="DSC_1142.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1142.jpg" height="180" width="320" /></a>
 </div>
 
 <p>
 </p>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1140.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1140.jpg" height="180" width="320" /></a>
+  <a href="DSC_1140.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1140.jpg" height="180" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -116,7 +116,7 @@ tags:
 </p>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1144.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1144.jpg" height="320" width="180" /></a>
+  <a href="DSC_1144.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1144.jpg" height="320" width="180" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -139,7 +139,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1147.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1147.jpg" height="180" width="320" /></a>
+  <a href="DSC_1147.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1147.jpg" height="180" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">

@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0187.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0187.jpg" width="640" />
 </div>
 
 
@@ -21,7 +21,7 @@ tags:
 ### シクロクロスシーズンがやってきた
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="400" src="DSC_0182.jpg" width="226" />
+  <img border="0" height="400" src="./DSC_0182.jpg" width="226" />
 </div>
 
 　待ちに待ったシクロクロスシーズンの到来。
@@ -41,7 +41,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="14492564_1277058882326628_6391066786897352657_n.jpg" width="640" />
+  <img border="0" height="426" src="./14492564_1277058882326628_6391066786897352657_n.jpg" width="640" />
 </div>
 
 　C2とSSは最後の2レースだったので、他のカテゴリーを応援したりブチョーコーヒーの食べ物に舌鼓を打ちながら昼寝やアップを織り交ぜながら長い長い待機。
@@ -65,7 +65,7 @@ tags:
 　グラウンド区間では気持ちよく走ることができたが、泥区間をトルクと気合で押し切るしかなかったため、疲れでジワジワ後退して10位でフィニッシュ。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="dsc_6601_29309652753_o.jpg" width="640" />
+  <img border="0" height="426" src="./dsc_6601_29309652753_o.jpg" width="640" />
 </div>
 
 　直後のSSクラススタート前に完全に出し切ってしまった形になったが、出ないのももったいないので無理を押して出場。先頭パックには全くついていけない。　
@@ -75,7 +75,7 @@ tags:
 　TCXのジオメトリがいいのか、ギア比の問題なのかわからないがSSのほうがスムーズに曲がれているので、コーナーではブレーキやらギアの前にラインを気にしたほうが良いらしいことがわかってきたので次戦に活かしたい。あと泥だとシラクノーマルよりサンドのほうが進むことも発覚（SSは前後シラクサンド）。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="29945540765_a498054b1d_k.jpg" width="640" />
+  <img border="0" height="426" src="./29945540765_a498054b1d_k.jpg" width="640" />
 </div>
 
 結果は散々だったものの、最高に楽しいレースの運営だった。

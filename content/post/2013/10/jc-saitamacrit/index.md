@@ -61,13 +61,13 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4222.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="DSC_4222.jpg" width="640" /></a>
+  <a href="DSC_4222.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4222.jpg" width="640" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4224.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="DSC_4224.jpg" width="320" /></a>
+  <a href="DSC_4224.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4224.jpg" width="320" /></a>
 </div>
 
 &nbsp;そしてオリオン通りにはこんなものが…
@@ -76,7 +76,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="DSC_4225.jpg" width="179" /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
+  <a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="./DSC_4225.jpg" width="179" /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
 </div>
 
 『赤く萌えろ！』
@@ -98,7 +98,7 @@ tags:
 翌朝は雨にもかかわらずオタクチャリが来るわ来るわ
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4230.jpg".jpg imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="356" src="DSC_4230.jpg" width="640" /></a>
+  <a href="DSC_4230.jpg".jpg imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4230.jpg" width="640" /></a>
 </div>
 
 雨は1mm予報だったからいけるとおもったんだ…この時は
@@ -113,7 +113,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4279.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="DSC_4279.jpg" width="320" /></a>
+  <a href="DSC_4279.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="./DSC_4279.jpg" width="320" /></a>
 </div>
 
 そして途中から豪雨。どうしてこうなった
@@ -128,7 +128,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4283.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="DSC_4283.jpg" width="320" /></a>
+  <a href="DSC_4283.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4283.jpg" width="320" /></a>
 </div>
 
 
@@ -172,7 +172,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="BXGYQbYCIAAUlKo.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="179" src="BXGYQbYCIAAUlKo.jpg" width="320" /></a>
+  <a href="BXGYQbYCIAAUlKo.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="179" src="./BXGYQbYCIAAUlKo.jpg" width="320" /></a>
 </div>
 
 <div>
@@ -214,7 +214,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4308.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="DSC_4308.jpg" width="640" /></a>
+    <a href="DSC_4308.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4308.jpg" width="640" /></a>
   </div>
 
   <p>
@@ -238,7 +238,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4309.jpg".jpg imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="DSC_4309.jpg" width="320" /></a>
+    <a href="DSC_4309.jpg".jpg imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4309.jpg" width="320" /></a>
   </div>
 
   <p>
@@ -252,7 +252,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4311.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="DSC_4311.jpg" width="320" /></a>
+    <a href="DSC_4311.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="./DSC_4311.jpg" width="320" /></a>
   </div>
 
   <p>
@@ -264,7 +264,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4312.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="DSC_4312.jpg" width="320" /></a>
+    <a href="DSC_4312.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4312.jpg" width="320" /></a>
   </div>
 
   <p>
@@ -272,7 +272,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="DSC_4313.jpg" width="320" /></a>
+    <a href="DSC_4313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="./DSC_4313.jpg" width="320" /></a>
   </div>
 
   <p>
@@ -286,7 +286,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4314.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="DSC_4314.jpg" width="179" /></a>
+    <a href="DSC_4314.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="./DSC_4314.jpg" width="179" /></a>
   </div>
 
   <p>
@@ -315,7 +315,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4337.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="DSC_4337.jpg" width="640" /></a>
+  <a href="DSC_4337.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="./DSC_4337.jpg" width="640" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -329,7 +329,7 @@ tags:
 </p>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4328.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="DSC_4328.jpg" width="640" /></a>
+  <a href="DSC_4328.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="./DSC_4328.jpg" width="640" /></a>
 </div>
 
 <p>

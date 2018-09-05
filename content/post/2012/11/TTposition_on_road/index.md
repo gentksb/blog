@@ -26,10 +26,10 @@ tags:
 
 <div>
   <div class="separator" style="clear: both; text-align: center;">
-<a href="DSC_1108.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="DSC_1108.jpg" height="320" width="180" /></a>
+<a href="DSC_1108.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="./DSC_1108.jpg" height="320" width="180" /></a>
   </div>
   <p>
-&nbsp;<a href="DSC_1109.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" src="DSC_1109.jpg" height="320" width="180" /></a>
+&nbsp;<a href="DSC_1109.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" src="./DSC_1109.jpg" height="320" width="180" /></a>
   </p>
 
 
@@ -38,7 +38,7 @@ tags:
 
 
   <div class="separator" style="clear: both; text-align: center;">
-<a href="DSC_1110.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="DSC_1110.jpg" height="320" width="180" /></a>
+<a href="DSC_1110.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="./DSC_1110.jpg" height="320" width="180" /></a>
   </div>
 
 

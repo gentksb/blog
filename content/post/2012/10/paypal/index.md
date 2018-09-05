@@ -20,20 +20,20 @@ tags:
 1, まずは**日本語版**のPaypalページにログイン、限度額を表示する
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="416" src="lightshot.png" width="640" />
+  <img border="0" height="416" src="./lightshot.png" width="640" />
 </div>
 
   2, 「支払い」 部分の「本人確認」ボタンをクリックするとアップロード画面にいけると思います。
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="480" src="lightshot1.png" width="640" />
+  <img border="0" height="480" src="./lightshot1.png" width="640" />
 </div>
 
 そうするとこんな画面に飛びます
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="368" src="Screenshot_1.png" width="640" />
+  <img border="0" height="368" src="./Screenshot_1.png" width="640" />
 </div>
 
 自分のステータスでは既に書類確認中になっていますが、まだの方はアップロードページに飛ぶリンクが存在します。

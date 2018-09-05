@@ -17,7 +17,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="180" src="DSC_1276.jpg" width="320" />
+  <img border="0" height="180" src="./DSC_1276.jpg" width="320" />
 </div>
 
 ROTOR 3DとQ-rings Aero(50/36T)です！
@@ -35,7 +35,7 @@ Q-ringsと3Dクランクに関しては、互換性や変速性能等々、安�
 さっそくチェーンリング込の重量を
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="225" src="DSC_1279.jpg" width="400" />
+  <img border="0" height="225" src="./DSC_1279.jpg" width="400" />
 </div>
 
 デジタル秤なんてものはない！見切れているので完成図は左で。
@@ -53,7 +53,7 @@ BBありで689gのFC-9000と比べると軽量化マニアの人にはあまり�
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="225" src="DSC_1283.jpg" width="400" />
+  <img border="0" height="225" src="./DSC_1283.jpg" width="400" />
 </div>
 
 肝心のインプレですが…

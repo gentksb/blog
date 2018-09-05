@@ -24,7 +24,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0142.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0142.jpg" width="640" />
 </div>
 
 
@@ -44,7 +44,7 @@ tags:
 美味くてタンパク質が効率的に摂れれば文句はないので。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0144.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0144.jpg" width="640" />
 </div>
 
 

@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6888.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6888.jpg" width="640" />
 </div>
 
 
@@ -130,7 +130,7 @@ SSCXで踏み倒したので、本来なら筋肉にかなりのダメージが�
 ### これ、効くぞ
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="400" src="DSC_6745.jpg" width="225" />
+  <img border="0" height="400" src="./DSC_6745.jpg" width="225" />
 </div>
 
 本格的な実感をしたのは<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00H4ZTOZ6/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00H4ZTOZ6&#038;linkCode=as2&#038;tag=gensobunya-22">Recovery</a>が先でした。
@@ -150,7 +150,7 @@ SSCXで踏み倒したので、本来なら筋肉にかなりのダメージが�
 ### もう階段なんて怖くない
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="IMG_20150112_091114.jpg" width="640" />
+  <img border="0" height="360" src="./IMG_20150112_091114.jpg" width="640" />
 </div>
 
 <a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B019FM9L94/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B019FM9L94&#038;linkCode=as2&#038;tag=gensobunya-22">for CX</a>の実感はついこの間、年末のJCX中井ステージ。
@@ -162,7 +162,7 @@ SSCXで踏み倒したので、本来なら筋肉にかなりのダメージが�
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6845.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6845.jpg" width="640" />
 </div>
 
 ちなみに、今年はキャンバー登り（ラン必須）も追加され、更なる人間力を試される事に。マジでいらないからそういうの…

@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7358.jpg" width="640" height="360" border="0" />
+  <img src="./DSC_7358.jpg" width="640" height="360" border="0" />
 </div>
 
 ※画像はイメージです
@@ -69,7 +69,7 @@ tags:
 #### ドレッシング
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="IMG_7569.jpg" width="640" height="426" border="0" />
+  <img src="./IMG_7569.jpg" width="640" height="426" border="0" />
 </div>
 
 <div>
@@ -89,7 +89,7 @@ tags:
 #### 当日の夕飯
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7360.jpg" width="640" height="360" border="0" />
+  <img src="./DSC_7360.jpg" width="640" height="360" border="0" />
 </div>
 
 いつも以上にエネルギーを摂りましょう。
@@ -137,7 +137,7 @@ tags:
 ### まとめ
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7383.jpg" width="640" height="360" border="0" />
+  <img src="./DSC_7383.jpg" width="640" height="360" border="0" />
 </div>
 
 上記の写真は怪我で1~2mm削れていた手の部分の1週間経過時です。

@@ -15,7 +15,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6950.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6950.jpg" width="640" />
 </div>
 
 
@@ -43,7 +43,7 @@ tags:
 ### パイオニア専用マウント→GARMINマウントへ変換する
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6947.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6947.jpg" width="640" />
 </div>
 
 この記事の本題。サイコンを変えても3台の自転車にひっついているサイコンマウントはGARMIN用のまま。
@@ -58,7 +58,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6948.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6948.jpg" width="640" />
 </div>
 
 このままだと、上下の爪に邪魔されてマウントに入らないので、ニッパーで爪を削り飛ばし、ヤスリで整える。
@@ -70,7 +70,7 @@ tags:
 下が加工後の状態。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6949.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6949.jpg" width="640" />
 </div>
 
 左右の爪だけの状態になっていることがお分かりいただけるかと思う。
@@ -82,7 +82,7 @@ tags:
 かなり厚みがあるのでエアロ効果は低くなったかもしれない（笑
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6950.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6950.jpg" width="640" />
 </div>
 
 

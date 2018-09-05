@@ -95,7 +95,7 @@ MTBを組んだけど本格的に乗らないのはもったいない！との�
 **＜補給食＞**
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_5147.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><b><img border="0" src="DSC_5147.jpg" height="320" width="179" /></b></a>
+  <a href="DSC_5147.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><b><img border="0" src="./DSC_5147.jpg" height="320" width="179" /></b></a>
 </div>
 
 **

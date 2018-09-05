@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4572.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4572.jpg" height="223" width="400" /></a>
+  <a href="DSC_4572.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4572.jpg" height="223" width="400" /></a>
 </div>
 
 BAR FLY2.0
@@ -32,7 +32,7 @@ BAR FLY2.0
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4578.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4578.jpg" height="358" width="640" /></a>
+  <a href="DSC_4578.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4578.jpg" height="358" width="640" /></a>
 </div>
 
 わかりにくいですがタイラップ2本で固定。
@@ -45,7 +45,7 @@ BAR FLY2.0
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4584.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4584.jpg" height="358" width="640" /></a>
+  <a href="DSC_4584.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4584.jpg" height="358" width="640" /></a>
 </div>
 
 こちらが装着状態。

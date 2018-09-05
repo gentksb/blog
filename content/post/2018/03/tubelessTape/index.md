@@ -76,7 +76,7 @@ MTB向けに作られた製品だったので、ロードの空気圧に耐え�
 
 ### GIANT TUBELESS TAPE (THICK)
 
-[{{<figure src="giant-tape.jpg" width="50%">}}](https://www.giant.co.jp/giant18/acc_datail.php?p_id=A0002218)
+[{{<figure src="./giant-tape.jpg" width="50%">}}](https://www.giant.co.jp/giant18/acc_datail.php?p_id=A0002218)
 [2018 Giant Bicycle [ TUBELESS TAPE ] ](https://www.giant.co.jp/giant18/acc_datail.php?p_id=A0002218)
 
 ものぐさな自分が最終的にたどり着いた製品がこいつ。\

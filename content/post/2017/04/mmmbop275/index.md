@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0851.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0851.jpg" width="640" />
 </div>
 
 
@@ -33,7 +33,7 @@ tags:
 ヘッドが寝ていて、150mmフォークが適正と下り向きのAM HT。タイヤもリアは2.4インチまで許容できるので楽しく下れるフレームになっているはず。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0871.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0871.jpg" width="640" />
 </div>
 
 コンポはSLXとDeore10s。36-11-36という男ギア比。
@@ -43,7 +43,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0879.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0879.jpg" width="640" />
 </div>
 
 ドロッパーポストと[ESIグリップ][1]は初経験。

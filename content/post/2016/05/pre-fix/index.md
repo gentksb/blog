@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_7419.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_7419.jpg" width="640" />
 </div>
 
 ### 故障

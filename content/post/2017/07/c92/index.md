@@ -29,7 +29,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" data-original-height="1600" data-original-width="1140" height="320" src="DD47GDkVoAEOn4e_orig.jpg" width="227" />
+<img border="0" data-original-height="1600" data-original-width="1140" height="320" src="./DD47GDkVoAEOn4e_orig.jpg" width="227" />
 </div>
 <div style="float:none;">
 <h3>銀輪練之概略</h3>

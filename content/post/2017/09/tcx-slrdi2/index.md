@@ -18,7 +18,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="P_20170904_194046.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./P_20170904_194046.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 &nbsp;
@@ -38,7 +38,7 @@ TCX SLR SSの具合がとても良いので、メインのCXバイクもTCXに�
 ### ポストマウント140mmローター
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7785.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./DSC_7785.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 今でこそディスクロードのおかげで140mmローターは当たり前ですが、こいつは数年前から140mm設定がデフォルト。フラットマウントなんて無い時代のフレームなので、「ポストマウントのブレーキキャリパーをアダプタ無しで装着すると140mm」という非常に珍しい仕様。
@@ -50,7 +50,7 @@ Amazonには<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前�
 ### リアのオイルライン・ケーブルライン
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7857.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./DSC_7857.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 <div>
@@ -64,13 +64,13 @@ Amazonには<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前�
 また、Di2の配線にも癖がある。昔ながらのチェーンステー下外装マウントがあるバイクなのだが、左側はオイルラインの通る道でもあり、Di2ケーブルとブレーキホースを同時に通すほどの穴は存在しないので、なんとかする必要があった。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7858.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./DSC_7858.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 こちらは、右チェーンステーからDi2ケーブルをバッテリーに繋いだ図。テープで貼り付けてもどうも格好が悪いので、最終的にはダウンチューブから出すようにしてみた。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="P_20170904_192021.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./P_20170904_192021.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 ケーブルはホースに絡ませている。
@@ -80,7 +80,7 @@ Amazonには<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前�
 &nbsp;
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="P_20170904_184647.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./P_20170904_184647.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 フロントシングルの場合、アウター側にチェーンリングを付けないとステーに干渉する。
@@ -90,7 +90,7 @@ Amazonには<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前�
 ### BB86
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="P_20170904_184136.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./P_20170904_184136.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -102,7 +102,7 @@ Amazonには<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前�
 ホームセンターで売っていそうなパーツと、ベアリングを組み合わせただけの工具だが、丁寧に並行を出したあとは意外なほどスルスルと装着できた。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7854.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./DSC_7854.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 内装しているDi2ケーブルがなるべく接触しないように、ダクトテープでフレーム内にしっかり逃している。

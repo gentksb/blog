@@ -24,7 +24,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="640" src="item.jpg" width="640" />
+  <img border="0" height="640" src="./item.jpg" width="640" />
 </div>
 
 どんなに不摂生を重ねていても、練習をサボっていようとも、

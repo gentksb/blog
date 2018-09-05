@@ -16,7 +16,7 @@ tags:
 ---
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_1118.jpg" width="640" height="362" border="0" data-original-height="906" data-original-width="1600" />
+  <img src="./DSC_1118.jpg" width="640" height="362" border="0" data-original-height="906" data-original-width="1600" />
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -42,7 +42,7 @@ tags:
 ### 高校野球に学ぶ暑さ対策
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="82cda2205c50bda27dff3e868d4a2cbc.jpg" width="342" height="400" border="0" data-original-height="1600" data-original-width="1373" />
+  <img src="./82cda2205c50bda27dff3e868d4a2cbc.jpg" width="342" height="400" border="0" data-original-height="1600" data-original-width="1373" />
 </div>
 
 日焼け止め以外で日焼け対策をするとなると、物理的に肌を覆うしかありません。
@@ -125,7 +125,7 @@ UNDER ARMOUR (2016-12-19)
 ### 走行
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_1119.jpg" width="226" height="400" border="0" data-original-height="1600" data-original-width="906" />
+  <img src="./DSC_1119.jpg" width="226" height="400" border="0" data-original-height="1600" data-original-width="906" />
 </div>
 
 実走実験は箕面と妙見山という山岳を含むコースで、帰りの河川敷も含めるとおおよそ気温 26 度～ 31 度という環境で実施しました。

@@ -33,7 +33,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="356" src="DSC_4906.jpg" width="640" />
+  <img border="0" height="356" src="./DSC_4906.jpg" width="640" />
 </div>
 
 前モデルより防水等級が上がったらしい、正式名称はSGY-PM910H。
@@ -43,7 +43,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="358" src="DSC_4907.jpg" width="640" />
+  <img border="0" height="358" src="./DSC_4907.jpg" width="640" />
 </div>
 
 ペダリング効率の算出式。
@@ -59,7 +59,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="358" src="DSC_4908.jpg" width="640" />
+  <img border="0" height="358" src="./DSC_4908.jpg" width="640" />
 </div>
 
 校正について。運用の話なので買ってからでいいですね…
@@ -73,7 +73,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="358" src="DSC_4909.jpg" width="640" />
+    <img border="0" height="358" src="./DSC_4909.jpg" width="640" />
   </div>
 
   <p>
@@ -92,11 +92,11 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="358" src="DSC_4910.jpg" width="640" />
+    <img border="0" height="358" src="./DSC_4910.jpg" width="640" />
   </div>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="358" src="DSC_4911.jpg" width="640" />
+    <img border="0" height="358" src="./DSC_4911.jpg" width="640" />
   </div>
 
   <p>
@@ -189,7 +189,7 @@ tags:
     </p>
 
     <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="320" src="DSC_4915.jpg" width="179" />
+<img border="0" height="320" src="./DSC_4915.jpg" width="179" />
 
 
     <p>

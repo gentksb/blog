@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20131228_103711.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="IMG_20131228_103711.jpg" width="480" /></a>
+  <a href="IMG_20131228_103711.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="./IMG_20131228_103711.jpg" width="480" /></a>
 </div>
 
 電動変速にしか無いメリットの一つ。
@@ -24,7 +24,7 @@ tags:
 お世辞にもクライマーではないので、スプリンタースイッチを9070化と共に導入。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20131228_103655.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="IMG_20131228_103655.jpg" width="240" /></a>
+  <a href="IMG_20131228_103655.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="./IMG_20131228_103655.jpg" width="240" /></a>
 </div>
 
 こんな工具をつかってバーテープに穴をあけます。こいつのせいでバーテープ巻の難易度が跳ね上がります。

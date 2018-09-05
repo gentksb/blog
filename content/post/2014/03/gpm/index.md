@@ -18,7 +18,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140302_101739.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140302_101739.jpg" height="480" width="640" /></a>
+  <a href="IMG_20140302_101739.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140302_101739.jpg" height="480" width="640" /></a>
 </div>
 
 「MTB持ってくればよかった…」
@@ -32,7 +32,7 @@ tags:
 ↓その結果がこちら↓
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140302_081135.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140302_081135.jpg" height="640" width="480" /></a>
+  <a href="IMG_20140302_081135.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140302_081135.jpg" height="640" width="480" /></a>
 </div>
 
 ちなみにこれ、結構頑張って洗ったあとです。
@@ -66,7 +66,7 @@ JE-3Aのレースはなぜか午後にセッティングされているので、
 レース現場ではまず泥だらけのシューズごと溝にどぼん。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140302_130640.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140302_130640.jpg" height="320" width="240" /></a>
+  <a href="IMG_20140302_130640.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140302_130640.jpg" height="320" width="240" /></a>
 </div>
 
 同じく溝にたまった雨水で自転車を洗いに洗い、帰宅。
@@ -82,7 +82,7 @@ JE-3Aのレースはなぜか午後にセッティングされているので、
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140304_215726.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140304_215726.jpg" height="320" width="240" /></a>
+  <a href="IMG_20140304_215726.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140304_215726.jpg" height="320" width="240" /></a>
 </div>
 
 泥をあらかた落とした後、シーズン最後なので軽くオーバーホール。
@@ -92,7 +92,7 @@ JE-3Aのレースはなぜか午後にセッティングされているので、
 優秀すぎるぞシマノ。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140304_213133.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140304_213133.jpg" height="320" width="240" /></a>
+  <a href="IMG_20140304_213133.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140304_213133.jpg" height="320" width="240" /></a>
 </div>
 
 中華サドル（偽スパイダー）は3レース＋わずかな練習を終えたところでご臨終となっていた、1600円だしこんなものだろう。オフシーズンはママチャリ化するのでそのまま使っていこうと思う。

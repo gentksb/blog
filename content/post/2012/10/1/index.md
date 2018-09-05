@@ -10,7 +10,7 @@ tags:
   - ロード
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_0664.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_0664.jpg" width="640" />
 </div>
 <!--BUILD TEST-->
 まずはメインで使っているロードバイクから。

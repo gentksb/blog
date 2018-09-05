@@ -20,7 +20,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0666.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0666.jpg" width="640" />
 </div>
 
 
@@ -46,13 +46,13 @@ tags:
 SGX-CA500のマウント下部には謎のネジ穴があったので、これを使う形で簡単にイメージ図を作る。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0533.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0533.jpg" width="640" />
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0531.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0531.jpg" width="640" />
 </div>
 
 
@@ -64,7 +64,7 @@ SGX-CA500のマウント下部には謎のネジ穴があったので、これ�
 ### 試作・完成
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0650.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0650.jpg" width="640" />
 </div>
 
 そんなこんなで施策したものがこちら。
@@ -76,7 +76,7 @@ SGX-CA500のマウント下部には謎のネジ穴があったので、これ�
 ただ、これだと装着用の爪が2~3回の取り外しで折れてしまったため、強度UPバージョンを作成して完成品とした。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0852.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0852.jpg" width="640" />
 </div>
 
 左が完成版。

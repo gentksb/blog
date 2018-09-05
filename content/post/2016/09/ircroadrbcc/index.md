@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0155.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0155.jpg" width="640" />
 </div>
 
 

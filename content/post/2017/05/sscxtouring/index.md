@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0980.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0980.jpg" width="640" />
 </div>
 
 
@@ -73,7 +73,7 @@ GWなので元々人の少ない北摂コースを選ぶことにしていたの
 自転車で塩分をカロリーを失っていることもあり、遠慮なく完飲。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_1000.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_1000.jpg" width="640" />
 </div>
 
 三方五湖はいわゆる汽水湖。
@@ -83,7 +83,7 @@ GWなので元々人の少ない北摂コースを選ぶことにしていたの
 GWということもありレインボーロードという有料道路は車やバイクがひっきりなしに通っていましたが、自転車は入れないので裏道をチョイス。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0992.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0992.jpg" width="640" />
 </div>
 
 近場の300m級の山から全体を見渡せるスポットがあるらしいが、SSで激坂登りは勘弁ということで次回に回す。
@@ -91,7 +91,7 @@ GWということもありレインボーロードという有料道路は車や
 ジェットスキーでも遊べるらしい。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0997.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0997.jpg" width="640" />
 </div>
 
 三方五湖を離れ、敦賀までの海岸線を流す。
@@ -101,19 +101,19 @@ GWということもありレインボーロードという有料道路は車や
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_1001.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_1001.jpg" width="640" />
 </div>
 
 海底まで見渡せる圧倒的な透明度！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0996.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0996.jpg" width="640" />
 </div>
 
 敦賀の手前ではR27がバイパスになるため、標識では県道で関峠を通るように指示されるが…
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_1002.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_1002.jpg" width="640" />
 </div>
 
 バイパス脇に回避道があり、バイパスの通る2kmトンネルを歩道で走ることが出来る。
@@ -121,7 +121,7 @@ GWということもありレインボーロードという有料道路は車や
 下りトンネルでかなりスピードが乗るうえに、緊急避難場所で急カーブを強いられるので走行には注意。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_1003.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_1003.jpg" width="640" />
 </div>
 
 銭湯でゆっくりした後、最後のお楽しみへ。
@@ -131,7 +131,7 @@ GWということもありレインボーロードという有料道路は車や
 肉厚でプリップリの刺身が頂ける。鯖の浜焼きと迷ったが、鯛のいいのが出ていると言われて刺身を選択！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_1005.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_1005.jpg" width="640" />
 </div>
 
 
@@ -161,7 +161,7 @@ GWということもありレインボーロードという有料道路は車や
 ### SSCXでオンロードツーリングできるのか？？？
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0981.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0981.jpg" width="640" />
 </div>
 
 結論から言うと、コースを上手く選択すればロードに匹敵するスピードで走れることがわかった。

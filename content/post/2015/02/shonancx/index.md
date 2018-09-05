@@ -20,7 +20,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="10750033_726704890775926_8167226097473679261_o.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="10750033_726704890775926_8167226097473679261_o.jpg" width="640" /></a>
+  <a href="10750033_726704890775926_8167226097473679261_o.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./10750033_726704890775926_8167226097473679261_o.jpg" width="640" /></a>
 </div>
 
 
@@ -44,7 +44,7 @@ tags:
 ### #2 開成（パンクDNF）
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="16070134796_1131e15b2d_o.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="422" src="16070134796_1131e15b2d_o.jpg" width="640" /></a>
+  <a href="16070134796_1131e15b2d_o.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="422" src="./16070134796_1131e15b2d_o.jpg" width="640" /></a>
 </div>
 
 平塚とは打って変わって晴天のフラットコース。
@@ -64,13 +64,13 @@ tags:
 ### #3 中井（5/22位）
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DPP6018_c.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="DPP6018_c.jpg" width="640" /></a>
+  <a href="DPP6018_c.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./DPP6018_c.jpg" width="640" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DPP6029_c.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="DPP6029_c.jpg" width="640" /></a>
+  <a href="DPP6029_c.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./DPP6029_c.jpg" width="640" /></a>
 </div>
 
 
@@ -105,7 +105,7 @@ tags:
 ### &nbsp;#4 開成（8/35位）
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DPP6401.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="DPP6401.jpg" width="640" /></a>
+  <a href="DPP6401.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./DPP6401.jpg" width="640" /></a>
 </div>
 
 最終戦はいつもの開成…ではなく、キャンバーをなくしたフラットコースにこれでもかとコーナーを詰め込んだレイアウト。

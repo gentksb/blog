@@ -33,7 +33,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140422_202758.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="472" src="IMG_20140422_202758.jpg" width="640" /></a>
+  <a href="IMG_20140422_202758.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="472" src="./IMG_20140422_202758.jpg" width="640" /></a>
 </div>
 
 こんにちは、全然売り切れてませんでしたね～

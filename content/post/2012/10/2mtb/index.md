@@ -11,7 +11,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_1046.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_1046.jpg" width="640" />
 </div>
 
 続いてはMTB。<a href="http://www.konaworld.jp/" target="_blank">KONA</a>のBlast(2011モデル)です。

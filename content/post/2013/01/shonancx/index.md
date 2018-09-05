@@ -27,13 +27,13 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1307.jpg".jpg imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="DSC_1307.jpg" height="180" width="320" /></a>
+  <a href="DSC_1307.jpg".jpg imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="./DSC_1307.jpg" height="180" width="320" /></a>
 </div>
 
 こーんな斜面を走らされたり
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1308.jpg".jpg imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="DSC_1308.jpg" height="180" width="320" /></a>
+  <a href="DSC_1308.jpg".jpg imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="./DSC_1308.jpg" height="180" width="320" /></a>
 </div>
 
 こーんな階段を登らされたり
@@ -49,7 +49,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1315.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="DSC_1315.jpg" height="180" width="320" /></a>
+  <a href="DSC_1315.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="./DSC_1315.jpg" height="180" width="320" /></a>
 </div>
 
 斜面で折り返したり
@@ -58,12 +58,12 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="DSC_1313.jpg" height="180" width="320" /></a><a href="DSC_1313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><br /></a><a href="DSC_1313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><br /></a>
+  <a href="DSC_1313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="./DSC_1313.jpg" height="180" width="320" /></a><a href="DSC_1313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><br /></a><a href="DSC_1313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><br /></a>
 </div>
 
 こんなダウンヒルをさせられたり
 
-<a href="DSC_1318.jpg" imageanchor="1" style="clear: left; display: inline !important; margin-bottom: 1em; margin-right: 1em; text-align: center;"><img border="0" src="DSC_1318.jpg" height="180" width="320" /></a>終いにもう1回登り下りがあったり
+<a href="DSC_1318.jpg" imageanchor="1" style="clear: left; display: inline !important; margin-bottom: 1em; margin-right: 1em; text-align: center;"><img border="0" src="./DSC_1318.jpg" height="180" width="320" /></a>終いにもう1回登り下りがあったり
 
 ダウンヒルはMTBでも一瞬躊躇するくらいの斜度でした…
 
@@ -84,7 +84,7 @@ tags:
 別クラスの写真ですがスタート直後の階段での様子。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1309.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1309.jpg" height="180" width="320" /></a>
+  <a href="DSC_1309.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1309.jpg" height="180" width="320" /></a>
 </div>
 
 その後一番最初の写真にある斜面を走る、ランニングで。
@@ -156,7 +156,7 @@ tags:
 C1の人たちの走りの異次元っぷりに驚愕しました。スロープ登りはもはや必須テクとなっており普通に皆さんラインを選んで登っていきます。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1320.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1320.jpg" height="225" width="400" /></a>
+  <a href="DSC_1320.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1320.jpg" height="225" width="400" /></a>
 </div>
 
 そして定番のバニホによるシケイン越え！

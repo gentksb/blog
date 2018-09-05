@@ -15,7 +15,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0629.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0629.jpg" width="640" />
 </div>
 
 ### セミスリックタイヤというスタイル
@@ -59,7 +59,7 @@ Speed terraneが出てくるまでの数年間、フロント：<a href="http://
 泥路面で全く進まず普段のシングル順位から程遠い結果に…
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="IMG_9411.jpg" width="640" />
+  <img border="0" height="426" src="./IMG_9411.jpg" width="640" />
 </div>
 
 ### 路面に対するタイヤ選択肢

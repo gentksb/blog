@@ -33,7 +33,7 @@ tags:
 ### ノーモア空気漏れ
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6962.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6962.jpg" width="640" />
 </div>
 
 簡単に言うと、タイヤを外してリムとタイヤを水洗いするだけ。
@@ -49,7 +49,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6964.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6964.jpg" width="640" />
 </div>
 
 **リムウォールの内側**を<a href="http://www.amazon.co.jp/gp/product/B002TKLMM4/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B002TKLMM4&linkCode=as2&tag=gensobunya-22" rel="nofollow">マイクロファイバータオル</a>
@@ -63,7 +63,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6963.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6963.jpg" width="640" />
 </div>
 
 自分の場合、タイヤのビード外側も念のため拭っている。ここも泥が固まってこびりつくので水を当てるだけでは取れない。

@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7833.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./DSC_7833.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 &nbsp;
@@ -55,7 +55,7 @@ tags:
 ### CXホイールをチューブレス化しよう！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7832.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./DSC_7832.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 今回ご用意しましたのはこちら、<a href="http://amzn.to/2vLbShE" target="_blank" rel="noopener">ニトムズ</a>の<a href="http://amzn.to/2vLtIRN" target="_blank" rel="noopener">気密・防水クロステープ 片面粘着 KZ-7</a>。
@@ -65,7 +65,7 @@ tags:
 こいつをVelocity A23リムに合うよう21mm幅に切り出す。高い強度を誇りながらカッターで簡単に切れ目が入り、手でちぎることも出来るという矛盾。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7833-1.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./DSC_7833-1.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 そして冒頭のようにリムに巻いていきます。
@@ -81,7 +81,7 @@ Notubesテープと違って穴が広がらないのでやや苦労する。
 一発でビードが上がる！空気抜けも…装着時点ではなし！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7834.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
+  <img src="./DSC_7834.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
 </div>
 
 フロントはしっかり施工できました。

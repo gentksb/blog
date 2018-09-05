@@ -16,7 +16,7 @@ tags:
 通学車兼旅行車に装備していたR500がとうとう逝去されました
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1222.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1222.jpg" height="180" width="320" /></a>
+  <a href="DSC_1222.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1222.jpg" height="180" width="320" /></a>
 </div>
 
 急に前輪が振れたな？と思ったらニップルの根本からスポークが折れてました…
@@ -34,18 +34,18 @@ tags:
 届きました
 
 <div class="separator" style="clear: both; text-align: left;">
-  <a href="DSC_1228.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1228.jpg" height="320" width="180" /></a>
+  <a href="DSC_1228.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1228.jpg" height="320" width="180" /></a>
 </div>
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1230.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1230.jpg" height="180" width="320" /></a>
+  <a href="DSC_1230.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1230.jpg" height="180" width="320" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_1229.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_1229.jpg" height="180" width="320" /></a>
+  <a href="DSC_1229.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_1229.jpg" height="180" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: left;">

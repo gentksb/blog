@@ -12,7 +12,7 @@ tags:
   - レース
 
 ---
-<img border="0" height="426" src="01_ui.jpg" width="640" />**ジャパンカップCX**
+<img border="0" height="426" src="./01_ui.jpg" width="640" />**ジャパンカップCX**
 
 前日夜に宇都宮入り。
 

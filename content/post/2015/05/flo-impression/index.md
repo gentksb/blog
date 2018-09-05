@@ -17,7 +17,7 @@ tags:
 [結構前に届いた][1]FLO discをようやく本気で踏む機会がやってきたのでインプレらしきものをメモ。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="480" src="11249628_461571047326612_907510443294497243_o.jpg" width="640" />
+  <img border="0" height="480" src="./11249628_461571047326612_907510443294497243_o.jpg" width="640" />
 </div>
 
 5/11の超強風の中、埼玉TTで20km走ってきた。それ以前にシェイクダウンとして都内を40kmほど軽く。

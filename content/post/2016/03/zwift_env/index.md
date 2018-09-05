@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7324.jpg" width="640" height="360" border="0" />
+  <img src="./DSC_7324.jpg" width="640" height="360" border="0" />
 </div>
 
 &nbsp;
@@ -46,7 +46,7 @@ tags:
 ### まずはデュアルディスプレイ
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7323.jpg" width="640" height="360" border="0" />
+  <img src="./DSC_7323.jpg" width="640" height="360" border="0" />
 </div>
 
 ローラーの前にディスプレイを移動する作業、面倒じゃないですか？
@@ -102,7 +102,7 @@ Mega-3c <br /> 売り上げランキング: 290
 ### 没入感を求めて
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_7325.jpg" width="640" height="360" border="0" />
+  <img src="./DSC_7325.jpg" width="640" height="360" border="0" />
 </div>
 
 自分はトップ画像の通り、基本的に没入感の高い「一人称視点」でZwiftをプレイしています。

@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="2016-02-17_1909510.jpg" width="640" />
+  <img border="0" height="352" src="./2016-02-17_1909510.jpg" width="640" />
 </div>
 
 
@@ -31,7 +31,7 @@ OmniumTrainerだとアウタートップでも指示通りの40RPMにはなら�
 ### プロとの邂逅
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_7121.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_7121.jpg" width="640" />
 </div>
 
 Day3のFoundation始めたら、プロロードレーサーのワレン・バルギルを発見。

@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="2016-01-26_1843030.jpg" width="640" />
+  <img border="0" height="350" src="./2016-01-26_1843030.jpg" width="640" />
 </div>
 
 
@@ -27,7 +27,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="2016-01-26_1920052.jpg" width="640" />
+  <img border="0" height="352" src="./2016-01-26_1920052.jpg" width="640" />
 </div>
 
 ワークアウト野郎多すぎ問題。他人のW数も見れるのね。

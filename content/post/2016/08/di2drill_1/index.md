@@ -12,7 +12,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0072.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0072.jpg" width="640" />
 </div>
 
 
@@ -37,7 +37,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="400" src="DSC_0054.jpg" width="226" />
+<img border="0" height="400" src="./DSC_0054.jpg" width="226" />
 </div>
 
 
@@ -50,7 +50,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0100.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0100.jpg" width="640" />
 </div>
 
 

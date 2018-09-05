@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="32173597322_976d654bd0_k.jpg" width="640" />
+  <img border="0" height="426" src="./32173597322_976d654bd0_k.jpg" width="640" />
 </div>
 
 
@@ -61,7 +61,7 @@ C2のスタートは1名欠席のおかげで1列目。
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="31512745093_09d23d5e39_k.jpg" width="640" />
+  <img border="0" height="426" src="./31512745093_09d23d5e39_k.jpg" width="640" />
 </div>
 
 テクニカルなコースなら追撃を押さえ込める気がするので、次はがんばるぞい。

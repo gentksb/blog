@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0453.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0453.jpg" width="640" />
 </div>
 
 ###
@@ -41,7 +41,7 @@ Speed Terraneの得意分野はドライコースや重い芝のコースなの�
 ### &#8220;泥でもサンドタイヤ信仰&#8221;
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0461.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0461.jpg" width="640" />
 </div>
 
 野辺山も意外とサンドタイヤで走れる。これは自分で検証した結果。

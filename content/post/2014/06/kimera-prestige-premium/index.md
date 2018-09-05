@@ -127,7 +127,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;" href="IMG_20140531_124412.jpg"><img src="IMG_20140531_124412.jpg" width="320" height="236" border="0" /></a>
+    <a style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;" href="IMG_20140531_124412.jpg"><img src="./IMG_20140531_124412.jpg" width="320" height="236" border="0" /></a>
   </div>
 
   <p>
@@ -139,7 +139,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" href="IMG_20140531_124421.jpg"><img src="IMG_20140531_124421.jpg" width="320" height="236" border="0" /></a>
+    <a style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" href="IMG_20140531_124421.jpg"><img src="./IMG_20140531_124421.jpg" width="320" height="236" border="0" /></a>
   </div>
 
   <div class="separator" style="clear: both; text-align: left;">

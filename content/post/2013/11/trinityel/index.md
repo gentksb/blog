@@ -52,11 +52,11 @@ RD,FD,バッテリのケーブルは楽なので先に行います。BB裏に比
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="DSC_0044.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_0044.jpg" height="179" width="320" /></a>
+<a href="DSC_0044.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0044.jpg" height="179" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="DSC_4574.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4574.jpg" height="179" width="320" /></a>
+<a href="DSC_4574.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4574.jpg" height="179" width="320" /></a>
 </div>
 
 
@@ -90,7 +90,7 @@ Di2ケーブルはアウターのように剛性が高くないので、内部�
 ### 図解
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="illust.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="illust.png" height="242" width="320" /></a><a href="illust.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
+<a href="illust.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="./illust.png" height="242" width="320" /></a><a href="illust.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
 </div>
 
 赤がDi2ケーブル、青がガイド代わりのアウターワイヤです。がんばれればそのうちBB下の穴からワイヤが出てきます。

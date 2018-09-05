@@ -15,7 +15,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0266.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0266.jpg" width="640" />
 </div>
 
 長い長い冬が終わり、ようやく桜が咲いたり散ったりする季節。

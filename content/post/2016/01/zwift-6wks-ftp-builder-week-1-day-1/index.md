@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="364" src="E382ADE383A3E38397E38381E383A3.png" width="640" />
+  <img border="0" height="364" src="./E382ADE383A3E38397E38381E383A3.png" width="640" />
 </div>
 
 本記事は下記の続きです。
@@ -35,7 +35,7 @@ tags:
 ひとまず6週間やりきることが目標なので音楽聴きながら50分回す。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="2016-01-22_2048172.jpg" width="640" />
+  <img border="0" height="350" src="./2016-01-22_2048172.jpg" width="640" />
 </div>
 
 ケイデンス維持とペダリングを綺麗に意識しながら音楽聞いていたら汗もほとんどかかずにあっさり終了。

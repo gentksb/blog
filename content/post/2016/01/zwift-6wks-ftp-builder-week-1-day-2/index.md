@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="2016-01-25_2027460.jpg" />
+  <img border="0" src="./2016-01-25_2027460.jpg" />
 </div>
 
 ### Strength(笑)
@@ -29,7 +29,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="2016-01-25_2049512.jpg" width="640" />
+  <img border="0" height="350" src="./2016-01-25_2049512.jpg" width="640" />
 </div>
 
 それでも変化があると中々飽きないもので、赤いゲートは踏む気にさせてくれる。
@@ -37,7 +37,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="2016-01-25_2115264.jpg" width="640" />
+  <img border="0" height="350" src="./2016-01-25_2115264.jpg" width="640" />
 </div>
 
 踏みすぎて失敗判定を食らった。

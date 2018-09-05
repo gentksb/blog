@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4739.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="DSC_4739.jpg" height="358" width="640" /></a>
+  <a href="DSC_4739.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4739.jpg" height="358" width="640" /></a>
 </div>
 
 毎度おなじみ湘南シクロクロス第3戦。

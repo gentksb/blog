@@ -14,7 +14,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="DSC_6690.jpg" />
+  <img border="0" src="./DSC_6690.jpg" />
 </div>
 
 ### IYH
@@ -48,7 +48,7 @@ SSCXのレーサーである、Adam CraigのPVも相まって、GIANTらしく�
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="DSC_6698.jpg" />
+  <img border="0" src="./DSC_6698.jpg" />
 </div>
 
 ハンドル/ステム：GIANT CONNECT OD2 80mm/TNi エルゴシャローエコ400mm（余り物）
@@ -69,7 +69,7 @@ SSCXのレーサーである、Adam CraigのPVも相まって、GIANTらしく�
 
 経験者のアドバイスも貰い、歯に厚みがあってフリーに食い込まないGussetのシングルコンバージョンキットを利用。
 
-<img border="0" height="400" src="DSC_6637.jpg" width="225" />
+<img border="0" height="400" src="./DSC_6637.jpg" width="225" />
 
 
 

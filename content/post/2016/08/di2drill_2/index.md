@@ -12,7 +12,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0068.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0068.jpg" width="640" />
 </div>
 
 
@@ -34,13 +34,13 @@ tags:
 なお、フレームの寿命を極端に縮める行為であることは間違いないので真似する人は自己責任でお願いします。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0069.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0069.jpg" width="640" />
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="DSC_0070.jpg" width="640" />
+  <img border="0" height="362" src="./DSC_0070.jpg" width="640" />
 </div>
 
 自転車は作業野が狭いので、ショート刃を購入。
@@ -60,25 +60,25 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0072.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0072.jpg" width="640" />
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0071.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0071.jpg" width="640" />
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0073.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0073.jpg" width="640" />
 </div>
 
 ### いざ貫通
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0074.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0074.jpg" width="640" />
 </div>
 
 
@@ -89,7 +89,7 @@ tags:
 意外とチューブは肉厚で、1mmほどの厚みがあった。
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0075.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0075.jpg" width="640" />
 </div>
 
 ダウンチューブの2箇所はチューブ直径が大きなこともあり、あまり滑らずに済んだ。
@@ -101,19 +101,19 @@ tags:
 このフレームが逝くときはずっとここから。
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0077.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0077.jpg" width="640" />
 </div>
 
 ちゃんとE-tubeが通る大きさになりました。
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0076.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0076.jpg" width="640" />
 </div>
 
 ### ケーブルとの格闘
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0100.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0100.jpg" width="640" />
 </div>
 
 山場の穴開けは終わったけれども、Di2内装における本当の戦いはこれからだ…！
@@ -122,7 +122,7 @@ tags:
 右下の作戦に従ってヘッドチューブから接続したジャンクションを投入するべく、まずはフォークを外す。
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0085.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0085.jpg" width="640" />
 </div>
 
 (´・ω・｀)＜穴、小さいんですけど
@@ -130,7 +130,7 @@ tags:
 (´・ω・｀)＜ジャンクションはいらないんですけど
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0088.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0088.jpg" width="640" />
 </div>
 
 
@@ -140,7 +140,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0091.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0091.jpg" width="640" />
 </div>
 
 
@@ -148,7 +148,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0092.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0092.jpg" width="640" />
 </div>
 
 
@@ -160,7 +160,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0094.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0094.jpg" width="640" />
 </div>
 
 
@@ -170,13 +170,13 @@ JISBBのフレームなので、BBを入れるのが大変でしたがBBの樹�
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0096.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0096.jpg" width="640" />
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="DSC_0099.jpg" width="640" />
+<img border="0" height="362" src="./DSC_0099.jpg" width="640" />
 </div>
 
 

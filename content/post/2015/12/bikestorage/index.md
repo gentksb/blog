@@ -16,7 +16,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6771.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6771.jpg" width="640" />
 </div>
 
 ### 間違いだらけの自転車部屋記事
@@ -50,7 +50,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="DSC_6761.jpg" width="640" />
+  <img border="0" height="360" src="./DSC_6761.jpg" width="640" />
 </div>
 
 内容物はこれだけ。
@@ -60,7 +60,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="320" src="DSC_6763.jpg" width="180" />
+  <img border="0" height="320" src="./DSC_6763.jpg" width="180" />
 </div>
 
 付属のネジは2&#215;4材でも使用可能な長さだった。
@@ -68,7 +68,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="320" src="DSC_6765.jpg" width="180" />
+  <img border="0" height="320" src="./DSC_6765.jpg" width="180" />
 </div>
 
 高さを決めてネジ止めするだけ。
@@ -76,7 +76,7 @@ tags:
 ネジ用のアンカーが付属していたが、ホワイトウッドが柔らかいためドリル不要でネジ止め可能だったので、利用しなかった。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="320" src="DSC_6770.jpg" width="180" />
+  <img border="0" height="320" src="./DSC_6770.jpg" width="180" />
 </div>
 
 こちらが配置結果。

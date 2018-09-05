@@ -17,7 +17,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_0584.jpg" width="640" height="362" border="0" />
+  <img src="./DSC_0584.jpg" width="640" height="362" border="0" />
 </div>
 
 &nbsp;
@@ -49,7 +49,7 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_0212.jpg" width="640" height="362" border="0" />
+  <img src="./DSC_0212.jpg" width="640" height="362" border="0" />
 </div>
 
 これが、最大の誤解なのだがブレーキシステムがリムブレーキからディスクブレーキに変わったところで制動力が変わったりはしない。
@@ -88,7 +88,7 @@ tags:
 ### 輪行装備が増える
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_0596.jpg" width="640" height="362" border="0" />
+  <img src="./DSC_0596.jpg" width="640" height="362" border="0" />
 </div>
 
 ディスクブレーキは油に弱い。ローターやパッドに油分がついてしまうと途端にブレーキが効かなくなってしまう。
@@ -153,7 +153,7 @@ tags:
 ### ホイールが！！！少ない！！！！！！
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="PHO_ERC_1100_DICUT_db_47_FW.png" width="202" height="320" border="0" />
+  <img src="./PHO_ERC_1100_DICUT_db_47_FW.png" width="202" height="320" border="0" />
 </div>
 
 12mmスルーアクスルホイールは、後から交換しようとすると本当に選択肢が少ない。
@@ -175,7 +175,7 @@ ZIPPやReynoldsはディスクブレーキモデルに力が入っているが�
 ### ハンドリング剛性の向上
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="DSC_0380.jpg" width="640" height="362" border="0" />
+  <img src="./DSC_0380.jpg" width="640" height="362" border="0" />
 </div>
 
 いい画像が無かった。

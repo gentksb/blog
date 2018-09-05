@@ -47,7 +47,7 @@ TTバイクを組んだ翌年にこれは好機と今年はタイムトライア
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="454" src="3.png" width="640" /></a>
+  <a href="3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="454" src="./3.png" width="640" /></a>
 </div>
 
 借り物のパワーメーターで一番パワーが出てる感じの位置をチェックして我流で設定。
@@ -63,7 +63,7 @@ TTバイクを組んだ翌年にこれは好機と今年はタイムトライア
 ### 埼玉TT
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="203493791_org.v1399977626.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="203493791_org.v1399977626.jpg" width="640" /></a>
+  <a href="203493791_org.v1399977626.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./203493791_org.v1399977626.jpg" width="640" /></a>
 </div>
 
 アルパカさんのアドバイスでロード（トライアスロン？）ぽかったポジションをTT用に改造。
@@ -75,7 +75,7 @@ TTバイクを組んだ翌年にこれは好機と今年はタイムトライア
 ### ハルヒルTT
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="15.png" width="280" /></a>
+  <a href="15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="./15.png" width="280" /></a>
 </div>
 
 調子乗ってかなりハンドルを下げた（ステム45度設定）
@@ -91,7 +91,7 @@ TTバイクを組んだ翌年にこれは好機と今年はタイムトライア
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="228" src="6.png" width="320" /></a>
+  <a href="6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="228" src="./6.png" width="320" /></a>
 </div>
 
 公式カメラマンが無能すぎてTTポジションを撮らない…
@@ -105,7 +105,7 @@ TTバイクを組んだ翌年にこれは好機と今年はタイムトライア
 ### TTJ 2ndステージ
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC05961.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="DSC05961.jpg" width="640" /></a>
+  <a href="DSC05961.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./DSC05961.jpg" width="640" /></a>
 </div>
 
 エアロヘルメットをさらなる本気ブツに変更。
@@ -121,7 +121,7 @@ TTバイクを組んだ翌年にこれは好機と今年はタイムトライア
 TTJ 3rdステージ
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="3-1.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="3-1.png" width="228" /></a>
+  <a href="3-1.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="./3-1.png" width="228" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">

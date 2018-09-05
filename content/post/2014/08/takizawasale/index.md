@@ -67,7 +67,7 @@ categories:
 
 <div>
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="IMG_20140816_094922.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140816_094922.jpg" height="360" width="640" /></a>
+    <a href="IMG_20140816_094922.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_094922.jpg" height="360" width="640" /></a>
   </div>
 
   <p>
@@ -79,7 +79,7 @@ categories:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="IMG_20140816_101550.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140816_101550.jpg" height="360" width="640" /></a>
+    <a href="IMG_20140816_101550.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_101550.jpg" height="360" width="640" /></a>
   </div>
 
   <p>
@@ -99,7 +99,7 @@ categories:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="IMG_20140816_100344.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140816_100344.jpg" height="360" width="640" /></a>
+    <a href="IMG_20140816_100344.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_100344.jpg" height="360" width="640" /></a>
   </div>
 
   <p>

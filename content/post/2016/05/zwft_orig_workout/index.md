@@ -14,7 +14,7 @@ tags:
 ---
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="Workout.png" width="640" height="360" border="0" />
+  <img src="./Workout.png" width="640" height="360" border="0" />
 </div>
 
 ### ワークアウトエディタ
@@ -34,7 +34,7 @@ Zwiftのワークアウト機能では、自分でオリジナルメニューを
 ### 操作説明
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="edit.png" width="640" height="364" border="0" />
+  <img src="./edit.png" width="640" height="364" border="0" />
 </div>
 
 操作は直感的でそこまで難しくはない。
@@ -52,17 +52,17 @@ Zwiftのワークアウト機能では、自分でオリジナルメニューを
 テキスト表示は表示開始時間と表示するメッセージの入力（制限がきつい）が可能。表示時間はいじれない模様。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="ftp2.png" width="320" height="283" border="0" />
+  <img src="./ftp2.png" width="320" height="283" border="0" />
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="ftp.png" width="320" height="116" border="0" />
+  <img src="./ftp.png" width="320" height="116" border="0" />
 </div>
 
 設定を変更しなければ、W数ベースをメニューを組むことになるが、**実は「自分のFTP比」でメニューが記録されている。**左下の&#8221;DISPLAY&#8221;のプルダウンでFTP%表示に変更可能。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <img src="ex.png" width="640" height="116" border="0" />
+  <img src="./ex.png" width="640" height="116" border="0" />
 </div>
 
 作ったワークアウトは &#8220;My documentZwiftWorkouts&#8221;内に.zwoでメニューごとに保存される。

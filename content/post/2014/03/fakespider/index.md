@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140122_223026.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140122_223026.jpg" height="240" width="320" /></a>
+  <a href="IMG_20140122_223026.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140122_223026.jpg" height="240" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -96,7 +96,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140304_213133.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="IMG_20140304_213133.jpg" height="320" width="240" /></a>
+  <a href="IMG_20140304_213133.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140304_213133.jpg" height="320" width="240" /></a>
 </div>
 
 
