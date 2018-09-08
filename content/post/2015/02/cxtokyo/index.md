@@ -19,10 +19,6 @@ tags:
 
 そう直線なら。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="http://www.cyclocrosstokyo.com2015_course.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://www.cyclocrosstokyo.com2015_course.png" height="518" width="640" /></a>
-</div>
-
 まさかの砂浜に大量のコーナー。
 
 CX車で乗れるわけなし。

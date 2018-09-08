@@ -44,7 +44,7 @@ tags:
 
 タイヤを外すときは、<a href="http://www.amazon.co.jp/gp/product/B007PLDRAC/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B007PLDRAC&linkCode=as2&tag=gensobunya-22" rel="nofollow">防寒テムレス</a>
 
-があると便利。裏起毛で暖かいのでレース会場で洗車する際にも役に立つ。そして滑り止めのおかげでレバーを使わずチューブレスタイヤを簡単に脱着できる。<img alt="" border="0" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B007PLDRAC" height="1" style="border: none !important; margin: 0px !important;" width="1" />
+があると便利。裏起毛で暖かいのでレース会場で洗車する際にも役に立つ。そして滑り止めのおかげでレバーを使わずチューブレスタイヤを簡単に脱着できる。<img alt="" border="0" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B007PLDRAC" height="1" style="border: none !important; margin: 0px !important;" width="1" />
 
 
 
@@ -54,7 +54,7 @@ tags:
 
 **リムウォールの内側**を<a href="http://www.amazon.co.jp/gp/product/B002TKLMM4/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B002TKLMM4&linkCode=as2&tag=gensobunya-22" rel="nofollow">マイクロファイバータオル</a>
 
-で拭ったところ。<img alt="" border="0" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B002TKLMM4" height="1" style="border: none !important; margin: 0px !important;" width="1" />
+で拭ったところ。<img alt="" border="0" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B002TKLMM4" height="1" style="border: none !important; margin: 0px !important;" width="1" />
 
 普通のウエスだとなかなか取りきれないので。
 

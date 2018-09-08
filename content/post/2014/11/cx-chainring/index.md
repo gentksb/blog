@@ -79,7 +79,7 @@ tags:
 #### RACE FACE
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104724&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" /></a>
+  <a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104724&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -90,7 +90,7 @@ MTB用だけかとおもいきやCX用も出してました。
 
 国内価格7kくらいだよ！というタレコミだけで購入決定するも、代理店に在庫なし入荷未定。
 
-しかたなく海外通販。当時は7kくらいだったけど今は<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104714&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104714" height="1" width="0" /></a>wiggleでも扱ってます。
+しかたなく海外通販。当時は7kくらいだったけど今は<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104714&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104714" height="1" width="0" /></a>wiggleでも扱ってます。
 
 カラーは黒のみ。
 

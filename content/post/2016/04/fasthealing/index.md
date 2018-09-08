@@ -34,15 +34,15 @@ tags:
 
 擦り傷は受傷後速やかに湿潤療法を開始することが重要なので、レースにはいつも下記の救急グッズを携行しています。
 
-  * [ズイコウ ハイドロコロイド包帯][1]<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00C4JYKIS" alt="" width="1" height="1" border="0" />
-  * [防水フィルムロール][2]<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B000FQ4YJC" alt="" width="1" height="1" border="0" />
-  * [救急テープ][3]<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00C18YEEM" alt="" width="1" height="1" border="0" />
+  * [ズイコウ ハイドロコロイド包帯][1]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00C4JYKIS" alt="" width="1" height="1" border="0" />
+  * [防水フィルムロール][2]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B000FQ4YJC" alt="" width="1" height="1" border="0" />
+  * [救急テープ][3]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00C18YEEM" alt="" width="1" height="1" border="0" />
   * ハサミ
-  * [ガーゼ][4]<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B000FQUZPY" alt="" width="1" height="1" border="0" />
+  * [ガーゼ][4]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B000FQUZPY" alt="" width="1" height="1" border="0" />
 
 最低限以上の内容と水場さえあれば、傷口からの液ダレを最小限にしつつ家までたどり着くことができます。
 
-湿潤療法グッズは[キズパワーパッド ジャンボサイズ][5]をはじめとして多数のメーカーから発売されていますが、自転車でよくある広範囲の擦過傷に対応しやすい[ズイコウ ハイドロコロイド包帯][1]を愛用しています。<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B001TDM0Q4" alt="" width="1" height="1" border="0" />
+湿潤療法グッズは[キズパワーパッド ジャンボサイズ][5]をはじめとして多数のメーカーから発売されていますが、自転車でよくある広範囲の擦過傷に対応しやすい[ズイコウ ハイドロコロイド包帯][1]を愛用しています。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B001TDM0Q4" alt="" width="1" height="1" border="0" />
 
 比較については以下の記事を参照。
 
@@ -118,7 +118,7 @@ tags:
 
 自分が使っているのは[バルクスポーツ ソイプロ][6]、
 
-[ディアナチュラのアミノマルチビタミン&ミネラル][7]です。クエン酸はたべられるものを適当にドラッグストアで。<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B004PEHCXU" alt="" width="1" height="1" border="0" /><img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B004EI6G8E" alt="" width="1" height="1" border="0" />
+[ディアナチュラのアミノマルチビタミン&ミネラル][7]です。クエン酸はたべられるものを適当にドラッグストアで。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B004PEHCXU" alt="" width="1" height="1" border="0" /><img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B004EI6G8E" alt="" width="1" height="1" border="0" />
 
 推奨されていませんがサプリメントについては1日の所要量の2倍摂っていました。
 

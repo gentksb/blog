@@ -55,7 +55,7 @@ tags:
 
 Zwiftをディスプレイモードで起動してサブモニタに移動すれば、メインモニタは固定したままでよくなります。
 
-PCとローラーが離れているなら、[EZCastの無線HDMIドングル][1]を使ってメイン画面と離れたモニタの画像をリンクすることも可能です。<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00IJBCAXC" alt="" width="1" height="1" border="0" />
+PCとローラーが離れているなら、[EZCastの無線HDMIドングル][1]を使ってメイン画面と離れたモニタの画像をリンクすることも可能です。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00IJBCAXC" alt="" width="1" height="1" border="0" />
 
 Zwiftは走行中のBGMがどうにも寂しいので、自分はメイン画面で好きな音楽を流してます。
 
@@ -63,7 +63,7 @@ Zwiftは走行中のBGMがどうにも寂しいので、自分はメイン画面
 
 を使っているので、持ち上げた状態でも比較的操作できます。
 
-<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00E19UYO8" alt="" width="1" height="1" border="0" />
+<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00E19UYO8" alt="" width="1" height="1" border="0" />
 
 &nbsp;
 
@@ -111,9 +111,9 @@ Mega-3c <br /> 売り上げランキング: 290
 
 オムニウムトレーナーで前輪が無いのも相まって、バイクモニター間の距離を1cmまで詰められました。
 
-モニターアームには大きく分けてネジ式とガスショック式があるのですが、コストパフォーマンスを考えて[グリーンハウスの2アーム4軸モデル][3]を購入しました。<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00NFELXSQ" alt="" width="1" height="1" border="0" />
+モニターアームには大きく分けてネジ式とガスショック式があるのですが、コストパフォーマンスを考えて[グリーンハウスの2アーム4軸モデル][3]を購入しました。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00NFELXSQ" alt="" width="1" height="1" border="0" />
 
-<img style="border: none !important; margin: 0px !important;" src="http://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00358RIRC" alt="" width="1" height="1" border="0" />
+<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00358RIRC" alt="" width="1" height="1" border="0" />
 
 最高級の[エルゴトロン][4]製アームには流石に手が出ませんでしたが、グリーンハウス製でもほぼ同じ機能（高さのみガスショック式・4軸）となっていたので妥協しました。
 
