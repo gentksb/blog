@@ -6,12 +6,11 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /*param1=:value1   /:splat  301!
 # END paramater 301 redirect
 
-# START page 301 redirect
-#/:year/:month/:date/:slug /:year/:month/:slug 301!
-# END page 301 redirect
-
 #tags
 /tag/* /tags/:splat 301!
+/category/* /tags/:splat 301!
+/categories/* /tags/:splat 301!
+/search/label/* /tags/:splat 301!
 #/:year/tags/* /tags/:splat 301!
 
 #feed
@@ -49,9 +48,11 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2015/05/12/flo-disc-whee.html /post/2015/05/flo-impression/ 301!
 /2015/05/flo-disc-whee.html /post/2015/05/flo-impression/ 301!
 /2015/10/zwift-3.html /post/2015/10/zwiftstart/ 301!
+/2015/10/01/zwif-3.html /post/2015/10/zwiftstart/ 301!
 /2015/10/zwif-3.html /post/2015/10/zwiftstart/ 301!
 /2015/12/blog-post.html /post/2015/12/bikestorage/ 301!
 /2016/01/blog-pos-13.html /post/2016/01/oil_massage/ 301!
+/2016/01/05/blog-post_83.html /post/2016/01/hydrohealing/ 301!
 /2016/01/21/zwift0-ftp-testshorter.html /post/2016/01/zwift-ftp-test/ 301!
 /2016/01/22/zwift1-6wks-ftp-builder-week-1-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-1/ 301!
 /2016/01/25/zwift-mobile-link.html /post/2016/01/zwift-mobile-link/ 301!
@@ -72,7 +73,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2017/03/blog-pos-5.html /post/2017/03/discroad/ 301!
 /2017/05/blog-pos-3.html /post/2017/05/akafukuice/ 301!
 /2017/04/blog-pos-4.html /post/2017/04/discroadrace/ 301!
-/2017/07/blog-pos-2.html /2017/07/blog-pos-2.html 301!
+/2017/07/blog-pos-2.html /post/2017/07/longsleeve/ 301!
 /post/2017/10/blggrtowp-2/ /post/2017/10/blggrtowp-2/ 301!
 
 
@@ -103,7 +104,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 
 /2013/03/ed2013-jcrc.html /post/2013/03/ed2013-jcrc/ 301!
 
-/2013/04/new-ulterga-6800-leaked-11-speed /post/2013/04/68leak/ 301!
+/2013/04/new-ulterga-6800-leaked-11-speed.html /post/2013/04/68leak/ 301!
 /2013/04/trinity-composite-1.html /post/2013/04/trinitycomp/ 301!
 
 /2013/05/wh-7850sl.html /post/2013/05/wh7850fix/ 301!
@@ -140,7 +141,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2014/03/blog-post.html /post/2014/03/pmseminer/ 301!
 /2014/03/blog-post_29-2.html /post/2014/03/fakespider/ 301!
 
-/2014/05/wh9000-c50-tu /post/2014/05/wh9000-c50-tu/ 301!
+/2014/05/wh9000-c50-tu.html /post/2014/05/wh9000-c50-tu/ 301!
 /2014/05/2014-sda.html /post/2014/05/sdaspring/ 301!
 
 /2014/06/2014-kimera-prestige-premium.html /post/2014/06/kimera-prestige-premium/ 301!
@@ -155,7 +156,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2014/11/cx-3.html /post/2014/11/cx-chainring/ 301!
 /2014/11/4.html /post/2014/11/bikelore4/ 301!
 
-/2014/12/blog-post.html /post/2014/12/cx-entry/ 301!
+/2014/12/blog-post.html /post/2014/12/cxentry/ 301!
 /2014/12/flo-disc.html /post/2014/12/flo-disc/ 301!
 
 /2015/02/2014.html /post/2015/02/shonancx/ 301!
@@ -186,16 +187,16 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2016/01/zwift0-ftp-testshorter.html /post/2016/01/zwift-ftp-test/ 301!
 /2016/01/zwift1-6wks-ftp-builder-week-1-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-1/ 301!
 /2016/01/zwift1-6wks-ftp-builder-week-1-day-2.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-2/ 301!
-/2016/01/zwift1-6wks-ftp-builder-week-1-day-3.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-3/ 301!
-/2016/01/zwift1-6wks-ftp-builder-week-1-day-4.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-4/ 301!
-/2016/01/zwift1-6wks-ftp-builder-week-2-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-2-day-1/ 301!
+/2016/01/zwift3-6wks-ftp-builder-week-1-day-3.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-3/ 301!
+/2016/01/zwift4-6wks-ftp-builder-week-1-day-4.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-4/ 301!
+/2016/01/zwift6-6wks-ftp-builder-week-2-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-2-day-1/ 301!
 
 /2016/02/zwift6-6wks-ftp-builder-week-2-day-2.html /post/2016/02/zwift-6wks-ftp-builder-week-2-day-2/ 301!
 /2016/02/zwift6-6wks-ftp-builder-week-2-day-3-5.html /post/2016/02/zwift-6wks-ftp-builder-week-2-day-3-5/ 301!
 /2016/02/zwift11-6wks-ftp-builder-week-3-day-1.html /post/2016/02/zwift-6wks-ftp-builder-week-3-day-1/ 301!
 /2016/02/zwift12-13-6wks-ftp-builder-week-3-day.html /post/2016/02/zwift-6wks-ftp-builder-week-3-day-2-3/ 301!
 /2016/02/blog-post.html /post/2016/02/cycling-protein/ 301!
-/2016/02/nasne.html* /post/2016/02/nase_roadradce/ 301!
+/2016/03/nasne.html* /post/2016/02/nase_roadradce/ 301!
 
 /2016/03/zwift.html /post/2016/03/zwift_env/ 301!
 /2016/03/new-xt-di2-is-leaked-by-jpn-investment.html /post/2016/03/xtdi2leak/ 301!
@@ -204,6 +205,8 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 
 /2016/05/blog-post.html /post/2016/05/pre-fix/ 301!
 /2016/05/zwift.html /post/2016/05/zwft_orig_workout/ 301!
+/zwift-oringinal /post/2016/05/zwft_orig_workout/ 301!
+/zwift-oringi /post/2016/05/zwft_orig_workout/ 301!
 
 /2016/06/c90.html /post/2016/06/c90/ 301!
 /2016/06/specialized-power.html /post/2016/06/spc_pwrsdl/ 301!
@@ -218,6 +221,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2016/08/st-r785mtbcx.html /post/2016/08/st-r785mtbcx/ 301!
 
 /2016/09/choice.html /post/2016/09/choice/ 301!
+/2013/06/irc-formula-pro-rbcc-tubeless.html /post/2016/09/ircroadrbcc/ 301!
 /2016/09/irc.html /post/2016/09/ircroadrbcc/ 301!
 /2016/09/2016-17-cx1-irc-tire-90th-anniversary.html /post/2016/09/irc90thcup/ 301!
 
@@ -266,8 +270,10 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 
 /2017/10/blgger-to-wp-to-hugo-1 /post/2017/10/blgger-to-wp-to-hugo-1/ 301!
 /2017/10/blggrtowp-2.html /post/2017/10/blggrtowp-2/ 301!
-/201710/wp2hugo.html /post/2017/10/wp2hugo/ 301!
+/201710/wp2hugo.html /post/2017/11/wp2hugo/ 301!
+/post/2017/10/wp2hugo/ /post/2017/11/wp2hugo/ 301!
 /201710/2017zwift-mobile-link.html /post/2017/10/2017zwift-mobile-link/ 301!
+/201710/ebay-siliconbartape.html /post/2017/10/ebay-siliconbartape/301!
 
 /201711/2017-11-22-sdawinter.html /post/2017/11/sdawinter/ 301!
 /201712/2017-12-18-googlehomewithzwift.html /post/2017/12/googlehomewithzwift/
@@ -276,6 +282,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /201801/2018-01-08-despair-gaoka.html /post/2018/01/despair-gaoka/ 301!
 /201801/2018-01-14-sakaisenshuken.html /post/2018/01/sakaisenshuken/ 301!
 /201801/2018-01-28-kurondoC1.html /post/2018/01/kurondoc1/ 301!
+/201801/2018-01-28-kurondoc1.html /post/2018/01/kurondoc1/ 301!
 /201801/2018-01-22-aiboku.html /post/2018/01/aiboku/ 301!
 
 /201802/2018-02-04-katsura.html /post/2018/02/katsura/ 301!
@@ -284,7 +291,9 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /201802/2018-02-26-wnp.html /post/2018/02/wnp/ 301!
 
 /201803/2018-03-30-tubelessTape.html /post/2018/03/tubelesstape/ 301!
+/201803/2018-03-30-tubelesstape.html /post/2018/03/tubelesstape/ 301!
 /201806/2018-06-01-sda.html /post/2018/06/sdaspring/ 301!
 /201807/2018-07-12-cxtublar.html /post/2018/07/cxtublar/ 301!
 /201807/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!
 /201808/lezyne-or-airbone.html /post/2018/08/lezyne-or-airbone/ 301!
+/201808/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!

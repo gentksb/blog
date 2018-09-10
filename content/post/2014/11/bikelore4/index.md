@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="2014-11-2207.02.38" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="2014-11-2207.02.38" width="640" /></a>
+  <a href="2014-11-2207.02.38" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="./2014-11-2207.02.38.jpg" width="640" /></a>
 </div>
 
 今年もバイクロアがやってきました。
@@ -179,7 +179,7 @@ MCも「ナイトレース招集でーす」とか言ってたし…
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="20141123-IMG_7310" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="20141123-IMG_7310" width="640" /></a>
+  <a href="20141123-IMG_7310" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./20141123-IMG_7310.jpg" width="640" /></a>
 </div>
 
 スタート直後から早々にコスプレ表彰狙いガチ勢が抜け出す。

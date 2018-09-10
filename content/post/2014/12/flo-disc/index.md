@@ -54,7 +54,7 @@ FLO discはスポークホイールにカウルを被せた構造となってい
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="2014-12-2719.38.16" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="400" src="2014-12-2719.38.16" width="225" /></a><a href="2014-12-2719.43.33" imageanchor="1" style="clear: right; display: inline !important; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="400" src="2014-12-2719.43.33" width="225" /></a><a href="2014-12-2719.38.16" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="2014-12-2719.38.16" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
+  <a href="2014-12-2719.38.16.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="400" src="2014-12-2719.38.16.jpg" width="225" /></a><a href="2014-12-2719.43.33.jpg" imageanchor="1" style="clear: right; display: inline !important; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="400" src="2014-12-2719.43.33.jpg" width="225" /></a><a href="2014-12-2719.38.16.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="2014-12-2719.38.16.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
 </div>
 
 パッと見はなかなか普通。
@@ -78,10 +78,10 @@ HEDのディスクホイールと似た形状をしている。
 カーボンホイール特有の剛性はなさそう。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="2014-12-2719.38.26" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="400" src="2014-12-2719.38.26" width="225" /></a>
+  <a href="2014-12-2719.38.26.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="400" src="2014-12-2719.38.26.jpg" width="225" /></a>
 </div>
 
-<a href="2014-12-2719.38.38" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" height="400" src="2014-12-2719.38.38" width="225" /></a>
+<a href="2014-12-2719.38.38.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" height="400" src="2014-12-2719.38.38.jpg" width="225" /></a>
 
 
 
@@ -92,7 +92,7 @@ HEDのディスクホイールと似た形状をしている。
 ディスクホイールでも重い部類であるが、アルミクリンチャーホイールとしては及第点？
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="2014-12-2719.48.29" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="2014-12-2719.48.29" width="320" /></a>
+  <a href="2014-12-2719.48.29.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="2014-12-2719.48.29.jpg" width="320" /></a>
 </div>
 
 

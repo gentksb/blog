@@ -13,7 +13,7 @@ tags:
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="2014-09-2110.09.30" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="2014-09-2110.09.30" width="640" /></a>
+  <a href="2014-09-2110.09.30.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="2014-09-2110.09.30.jpg" width="640" /></a>
 </div>
 
 AVEDIOのバッカス01からKOGAのsolacioに乗り換えました。

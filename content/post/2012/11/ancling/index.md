@@ -9,7 +9,7 @@ categories:
   - 未分類
 tags:
   - ロード
-draft: true
+draft: false
 ---
 セオフェスのブリジストンブースで、ポジションを見てくれるサービスがありました
 
