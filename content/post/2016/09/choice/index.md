@@ -12,7 +12,7 @@ tags:
   - 飯
 
 ---
-{{<figure src="./CHOICE-GOOOOOLDEN-WHEY007.jpg">}
+{{<figure src="./CHOICE-GOOOOOLDEN-WHEY007.jpg">}}
 
 
 ### 天然由来のプロテイン

@@ -29,13 +29,24 @@ CXシーズン前最後の楽しみを行うためにルートを検討して、
 
 {{<figure src="./DSC_1544.jpg">}}
 
-中華フレームバッグは既視感のあるカードと共に意外にも丁寧な外箱梱包をされていた。
+中華フレームバッグは既視感のあるカードと共に意外にも丁寧な外箱梱包をされていた。  
+装着しても想定通りしっかりダブルボトルOK！GIANTのXSサイズでこれは嬉しい。
+
+{{<figure src="./DSC_1545.jpg">}}
+
+前側につかないこともない。
+{{<figure src="./DSC_15456.jpg">}}
 
 
-王滝のために購入していたこちらを結局はツールボックス代わりにすることに。
+しかし幅が結構あって膝が結構擦れる。  
+今回は容量にも余裕があるので、王滝のために購入していたこちらを結局はツールボックス代わりにすることに。
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B06XPW1TTN/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51GyGn9WlEL._SL160_.jpg" alt="R250(アールニーゴーマル) フロントポーチ レギュラー ブラック WWW-L-FPOUCHR-BK ブラック レギュラー" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B06XPW1TTN/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">R250(アールニーゴーマル) フロントポーチ レギュラー ブラック WWW-L-FPOUCHR-BK ブラック レギュラー</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.09.11</div></div><div class="amazlet-detail">R250(アールニーゴーマル) <br />売り上げランキング: 8,437<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B06XPW1TTN/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
+
+サドルバッグはディスクブレーキということもあって余裕をもって安定する場所に装着できた。
+
+{{<figure src="./DSC_1548.jpg">}}
 
 ## 実走！
 
