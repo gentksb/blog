@@ -5,7 +5,7 @@ draft: false
 tags: ["CX", "インプレ"]
 thumbnail: "DSC_1550.jpg"
 ---
-{{<figure src="./DSC_1550.jpg>}}
+{{<figure src="./DSC_1550.jpg">}}
 
 ## スタートグリッドの防寒
 
