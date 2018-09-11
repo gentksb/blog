@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-03-12T04:19:00+00:00
 #url: /2016/03/nasne.html
-thumbnail:  https://images-fe.ssl-images-amazon.com/widgets/q?_encoding=UTF8&ASIN=B00UBS2OIC&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=gensobunya-.jpg
+thumbnail:  41kPTlyHj2L._SL250_.jpg
 categories:
   - 未分類
 tags:
@@ -17,58 +17,45 @@ tags:
 ### ロードレースシーズン開幕
 
 参加が主な活動となるシクロクロスシーズンから、TV観戦も主な活動になるロードレースシーズンに移行する季節になりました。
-
 ただ、生放送は深夜となり、何かと見逃すことが多いので、合法的に録画・出先視聴の環境を整える方法でも記しておこうかと思います。
 
 TVではなく、PCとスマートフォンがメインの視聴機器となります。
 
 ### nasneはいいぞ
 
-本記事は、Jsportsを「録画」「リモート視聴」することを目的とします。
-
+本記事は、Jsportsを「録画」「リモート視聴」することを目的とします。  
 外出先でも自宅で撮りためたロードレースを見たり、ストリーミング環境でライブ視聴を実現します。
 
-上記実現のためにキモとなるのが、SONY製のTVチューナー兼NAS「nasne」です。
-
-PS3のオプションみたいな扱いですが、単体で使用できます。
-
+上記実現のためにキモとなるのが、SONY製のTVチューナー兼NAS「nasne」です。PS3のオプションみたいな扱いですが、単体で使用できます。  
 自宅のルーターに接続することで、TV番組をネットワーク内と外出先で視聴可能にしてくれるスグレモノです。
 
-正直、この要件を満たすためならば、<a href="http://front.jsports-ondemand.com/" target="_blank">Jsportsオンデマンド</a>を利用するのが一番シンプルです。
-
+正直、この要件を満たすためならば、<a href="http://front.jsports-ondemand.com/" target="_blank">Jsportsオンデマンド</a>を利用するのが一番シンプルです。  
 ただ、モバイル回線ですと通信量の問題が出てきますし、固定回線でも混雑していると毎日ストリーミングが綺麗に流れるか微妙なラインですし、何より画質が低いという問題がつきまといます。
 
 なので衛星放送クオリティで可能な限りリアルタイムで視聴したいという人向けの記事です。
 
 ### 手順
 
-①nasneに入っているB-CASカードでスカパー！を契約する（もしくはスカパー！契約済みのB-CASカードをnasneに入れる）
-
-②PCに「PC TV with nasne」をインストールする（有料）
-
-③スマートフォンには「nasne access（一部機能有料）」をインストールする
+1. nasneに入っているB-CASカードでスカパー！を契約する（もしくはスカパー！契約済みのB-CASカードをnasneに入れる）
+1. PCに「PC TV with nasne」をインストールする（有料）
+1. スマートフォンには「nasne access（一部機能有料）」をインストールする
 
 nasneのセットアップについては割愛します。
 
 #### ①nasneに入っているB-CASカードでスカパー！を契約する
 
-まずは、Jsports1+2+3+4を契約します、ロードレース観戦の基本セットですね。
-
+まずは、Jsports1+2+3+4を契約します、ロードレース観戦の基本セットですね。  
 契約はB-CASカード単位なので、PCでもTVでも見たい方は複数契約か、chromecastとかでゴニョゴニョすることとなります。
 
 nasneに保存した動画を再生するためには、DLNAという機能を持ち、かつDTCP-IPに対応した動画再生ソフトを利用する必要があります。
-
 このままでは録画するだけで視聴できませんので②～③に続きます。
 
 #### ②PC TV with nasneをインストールする
 
 DTCP-IP対応のソフトはそこまでラインナップがない他、日本のガラパゴス規格ということも有りサードパーティ製だと相性問題が多発します。（昔泣かされました）
 
-予約録画やnasne内HDDからPCへの転送にも対応する<a href="http://www.sony.jp/playstation/store/products/nasne/pcnasne-dl/" target="_blank">PC TV with nasne</a>以外ほぼ選択する理由がありません。
-
-3000円ですが、14日間の試用期間があるのでまずはトライアルからでいいと思います。
-
-この時点でPCでのライブ視聴・録画・録画視聴が可能となります。
+予約録画やnasne内HDDからPCへの転送にも対応する<a href="http://www.sony.jp/playstation/store/products/nasne/pcnasne-dl/" target="_blank">PC TV with nasne</a>以外ほぼ選択する理由がありません。  
+3000円ですが、14日間の試用期間があるのでまずはトライアルからでいいと思います。この時点でPCでのライブ視聴・録画・録画視聴が可能となります。
 
 もちろん一般地上・BS波放送も同様に視聴可能です。
 
@@ -151,13 +138,8 @@ posted with <a href="https://nabettu.github.io/appreach/" rel="nofollow" target=
 
 ### 構成図
 
-文章だけで、ダラダラ書いてしまったので構成図だけ置いておきます。
-
+文章だけで、ダラダラ書いてしまったので構成図だけ置いておきます。  
 出てくる機器全てでnasneに録画・保存してある動画と、視聴可能な番組をストリーミング視聴できます。
-
-<div class="separator" style="clear: both; text-align: center;">
-
-</div>
 
 とても特殊な人向けの記事ですが、何人かには役に立つでしょう…
 
