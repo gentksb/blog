@@ -214,11 +214,13 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2016/06/oakley-radar-ev-prizm-road.html /post/2016/06/prizmroad_ev/ 301!
 
 /2016/07/blog-post.html /post/2016/07/hybrid_trainer/ 301!
+/post/2016/07/hybrid_trainer/2016-07-26-blog-pos-9/ /post/2016/07/hybrid_trainer/ 301!
 
 /2016/08/blog-post.html /post/2016/08/bookmake/ 301!
 /2016/08/di2.html /post/2016/08/di2drill_1/ 301!
 /2016/08/di2_24.html /post/2016/08/di2drill_2/ 301!
 /2016/08/st-r785mtbcx.html /post/2016/08/st-r785mtbcx/ 301!
+/post/2016/08/st-r785mtbcx/2016-08-30-st-r785mtbcx/ /post/2016/08/st-r785mtbcx/ 301!
 
 /2016/09/choice.html /post/2016/09/choice/ 301!
 /2013/06/irc-formula-pro-rbcc-tubeless.html /post/2016/09/ircroadrbcc/ 301!
@@ -281,9 +283,11 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /201801/2018-01-03-c1up.html /post/2018/01/to_c1/ 301!
 /201801/2018-01-08-despair-gaoka.html /post/2018/01/despair-gaoka/ 301!
 /201801/2018-01-14-sakaisenshuken.html /post/2018/01/sakaisenshuken/ 301!
-/201801/2018-01-28-kurondoC1.html /post/2018/01/kurondoc1/ 301!
-/201801/2018-01-28-kurondoc1.html /post/2018/01/kurondoc1/ 301!
+/201801/2018-01-28-kurondoC1.html /post/2018/01/kurondo/ 301!
+/201801/2018-01-28-kurondoc1.html /post/2018/01/kurondo/ 301!
+/post/2018/01/kurondoc1/ /post/2018/01/kurondo/ 301!
 /201801/2018-01-22-aiboku.html /post/2018/01/aiboku/ 301!
+
 
 /201802/2018-02-04-katsura.html /post/2018/02/katsura/ 301!
 /201802/2018-02-11-cxtokyo.html /post/2018/02/cxtokyo/ 301!
