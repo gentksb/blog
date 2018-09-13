@@ -74,7 +74,7 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2017/05/blog-pos-3.html /post/2017/05/akafukuice/ 301!
 /2017/04/blog-pos-4.html /post/2017/04/discroadrace/ 301!
 /2017/07/blog-pos-2.html /post/2017/07/longsleeve/ 301!
-/post/2017/10/blggrtowp-2/ /post/2017/10/blggrtowp-2/ 301!
+/post/2017/10/blggrtowp-2/ http://www.gensobunya.net/portfolio/blggrtowp-2/ 301!
 
 
 #201809_refine_redirect
@@ -270,11 +270,11 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /2017/09/rider310review.html /post/2017/09/rider310review/ 301!
 /2017/09/formula-pro-x-guard.html /post/2017/09/formula-pro-x-guard/ 301!
 
-/201710/wp2hugo/ /post/2017/11/wp2hugo/ 301!
-/2017/10/blgger-to-wp-to-hugo-1 /post/2017/10/blgger-to-wp-to-hugo-1/ 301!
-/2017/10/blggrtowp-2.html /post/2017/10/blggrtowp-2/ 301!
-/201710/wp2hugo.html /post/2017/11/wp2hugo/ 301!
-/post/2017/10/wp2hugo/ /post/2017/11/wp2hugo/ 301!
+/201710/wp2hugo/ http://www.gensobunya.net/portfolio/wp2hugo/  301!
+/2017/10/blgger-to-wp-to-hugo-1 http://www.gensobunya.net/portfolio/blgger-to-wp-to-hugo-1/ 301!
+/2017/10/blggrtowp-2.html http://www.gensobunya.net/portfolio/blggrtowp-2/ 301!
+/201710/wp2hugo.html http://www.gensobunya.net/portfolio/wp2hugo/  301!
+/post/2017/10/wp2hugo/ http://www.gensobunya.net/portfolio/wp2hugo/  301!
 /201710/2017zwift-mobile-link.html /post/2017/10/2017zwift-mobile-link/ 301!
 /201710/ebay-siliconbartape.html /post/2017/10/ebay-siliconbartape/301!
 
@@ -302,3 +302,8 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /201807/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!
 /201808/lezyne-or-airbone.html /post/2018/08/lezyne-or-airbone/ 301!
 /201808/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!
+
+#post migration
+/post/2017/10/blgger-to-wp-to-hugo-1/ http://www.gensobunya.net/portfolio/blgger-to-wp-to-hugo-1/ 301!
+/post/2017/10/blggrtowp-2/ http://www.gensobunya.net/portfolio/blggrtowp-2/ 301!
+/post/2017/11/wp2hugo/ http://www.gensobunya.net/portfolio/wp2hugo/ 301!
