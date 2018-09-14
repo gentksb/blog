@@ -1,5 +1,5 @@
 ---
-title: "CXチューブラータイヤ買っちった"
+title: "CXチューブラータイヤ(Dugast)のDIY装着レポート"
 date: 2018-07-11T20:06:09+09:00
 draft: false
 tags: ["CX", "Race","TIPS"]
