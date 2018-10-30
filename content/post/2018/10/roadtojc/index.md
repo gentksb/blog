@@ -11,11 +11,11 @@ thumbnail: "./hiroshima.jpg"
 せっかくC1に上がったのだし、今年は関西で全日本をやるし自分の履歴書に「シクロクロス全日本選手権出場」という項目を入れてみたかった。 
 当然実力が突然上がるわけもないので、MTBやロードシーズンが終わる前にエッサホイサと遠征してポイントを稼ぐ算段。我ながらセコい。
 
-全日本選手権の出場権利を得るためのJCFポイント≒JCXポイントとなっており、昨年と同じ基準ならJCFポイント100位以内が出場権利を得る。
+全日本選手権の出場権利を得るためにはJCFポイント≒JCXポイントを貯める必要があり、昨年と同じ基準ならJCFポイントランキング100位以内が出場権利を得る。
 JCXランキングはシーズンごとだが、JCFランキングは52週ローリングポイントで決まる。JCXはU23を含むがJCFは含まない。ややこしい。
 
-各対象レース(JCX)で50位以内に入らないと出走ポイントのみとなってしまうため、早期に開催され、なおかつ参加者が少ないと思われる、JCX #2広島・#3富士山・#4寒河江にフォーカス。 
-最大で7レースが算定対象となるため、この3レースで稼いだポイント＋他の4レース*5pt(出走pt)で100位内に入るという皮算用。最低80ptで可能性が出てきて、100ptあれば100位以内は堅いはず。
+各対象レース(JCX+全日本)で50位以内に入らないと出走ポイントのみとなってしまうため、早期に開催され、なおかつ参加者が少ないと思われる、JCX #2広島・#3富士山・#4寒河江にフォーカス。 
+最大で7レースが算定対象となるため、この3レースで稼いだポイント＋他の4レース*5pt(出走pt)で100位内に入るという皮算用。最低80ptで可能性が出てきて、100ptあれば100位以内は堅いはず。たしか昇格時に確認したラインはそのあたりだった。
 
 JCFサイトが過去URLをぞんざいに扱ったせいで昨年実績の1次資料が消滅している。おのれJCF。
 
@@ -65,6 +65,6 @@ JCXで数少ないフラットコース。
 まさかまさかの完走37位によって23+10ptというポイント稼ぎに成功。これで今年分が暫定65pt、昨年の愛知牧場を含めて70ptとなった。残りのJCX4レース出走で20pt追加して合計90pt手に入った算段。
 ゴツゴツとした路面に加え、石が大量に露出していることもありパンクトラブルでレースを終えた人がかなり多かったこと順位につながった。チューブラー1.5barほどだと10回以上はリム打ちしただろうか。それでもノーパンクなのはありがたい。
 
-いけるか！？全日本！？（今年の要項出ていないけど）
+いけるか！？全日本！？（今年の要項早く出してくださいお願いします）
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0060GI8DE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51eWvljgBdL._SL160_.jpg" alt="ビーレジェンド ホエイプロテイン ナチュラル 1Kg" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0060GI8DE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ビーレジェンド ホエイプロテイン ナチュラル 1Kg</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.10.30</div></div><div class="amazlet-detail">株式会社 RealStyle <br />売り上げランキング: 802<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0060GI8DE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
