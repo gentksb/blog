@@ -62,10 +62,10 @@ JCXで数少ないフラットコース。
 頭の中の皮算用では残り2周か1周の段階で切られるペースだったが、ピットのキクちゃんから「完走いけるかも！」というありがたいお言葉。 
 そこからアドレナリン全開で踏むも、最終周回足切りスポット直前の階段とシケインでふくらはぎがピキっと攣る。見たところ足切りは始まっていないので死ぬ気で脚を回してラストラップへ。
 
-まさかまさかの完走37位によって23+10ptというポイント稼ぎに成功。これで今年分が暫定65pt、昨年の愛知牧場を含めて70ptとなった。残りのJCX4レース出走で20pt追加して合計90pt手に入った算段。
+まさかまさかの完走37位によって23+10ptというポイント稼ぎに成功。これで今年分が暫定65pt、昨年の愛知牧場を含めて70ptとなった。残りのJCX~~4レース出走で20pt追加して合計90pt~~計算間違い：残り3レース85ptが限界。
 ゴツゴツとした路面に加え、石が大量に露出していることもありパンクトラブルでレースを終えた人がかなり多かったこと順位につながった。チューブラー1.5barほどだと10回以上はリム打ちしただろうか。それでもノーパンクなのはありがたい。
 
 いけるか！？全日本！？~~（今年の要項早く出してくださいお願いします）~~ 
-今年もランキング100位以内でした。
+今年もランキング100位以内が出場可能でした。
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0060GI8DE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51eWvljgBdL._SL160_.jpg" alt="ビーレジェンド ホエイプロテイン ナチュラル 1Kg" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0060GI8DE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ビーレジェンド ホエイプロテイン ナチュラル 1Kg</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.10.30</div></div><div class="amazlet-detail">株式会社 RealStyle <br />売り上げランキング: 802<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0060GI8DE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
