@@ -55,6 +55,6 @@ MTBグッズで今年最も良かったものがこれ。そこそこのお値�
 
 ## 2019買いたいもの
 
-謎のSS29erで通勤するのは疲れるし軽快感に書けるので、通勤用にピストとか組みたい。
+謎のSS29erで通勤するのは疲れるし軽快感に欠けるので、通勤用にピストとか組みたい。
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4883934896/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41Reg3zjD7L._SL160_.jpg" alt="ピスト&シングルスピードバイクメンテナンスブック" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4883934896/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ピスト&シングルスピードバイクメンテナンスブック</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.12.11</div></div><div class="amazlet-detail"><br />スタジオタッククリエイティブ <br />売り上げランキング: 491,079<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4883934896/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
