@@ -3,7 +3,6 @@ title: "CXチューブラーを意地でもテープで運用する"
 date: 2019-02-06T21:48:05+09:00
 draft: false
 tags: ["CX", "TIPS"]
-images: "seal.jpg" 
 thumbnail: "./seal.jpg"
 ---
 {{<figure src="./seal.jpg">}}
