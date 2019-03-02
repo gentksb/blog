@@ -307,3 +307,6 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /post/2017/10/blgger-to-wp-to-hugo-1/ http://www.gensobunya.net/portfolio/blgger-to-wp-to-hugo-1/ 301!
 /post/2017/10/blggrtowp-2/ http://www.gensobunya.net/portfolio/blggrtowp-2/ 301!
 /post/2017/11/wp2hugo/ http://www.gensobunya.net/portfolio/wp2hugo/ 301!
+
+#fix miss post
+/post/2019/01/boa_repair/ /post/2019/02/boa_repair/
