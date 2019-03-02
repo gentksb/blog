@@ -14,21 +14,14 @@ tags:
 ---
 ### チューブレスの宿命
 
-ロード・CX・MTBに関わらず、チューブレスタイヤユーザーを悩ませるのが空気漏れだ。
+ロード・CX・MTBに関わらず、チューブレスタイヤユーザーを悩ませるのが空気漏れだ。※パンクではない
 
-※パンクではない
-
-シーラントが入っていても、空気を入れて走った日に問題なくとも数日後には空気が抜けている悲しい現象。
-
+シーラントが入っていても、空気を入れて走った日に問題なくとも数日後には空気が抜けている悲しい現象。  
 特にCXだと、タイヤを使っていくごとに空気抜けのペースが早くなっていく。新しくタイヤを嵌めてビードを上げた時は空気が抜けづらい。だが、数レース経って気が付くとレース後の火曜日にタイヤがベコベコだったりする。
 
-こういったタイヤをレースで使うと、レース中にグリップ感が変わったり、ロングライドの途中で空気圧が下がったりと何かとよろしくない。
-
-しかも、シーラントを入れても改善しなかったりする。タイヤを外してもシーラントは残ってるし。
+こういったタイヤをレースで使うと、レース中にグリップ感が変わったり、ロングライドの途中で空気圧が下がったりと何かとよろしくない。しかも、シーラントを入れても改善しなかったりする。タイヤを外してもシーラントは残ってるし。
 
 タイヤの劣化と今までは諦めていたが、洗車の時にヒントを得て空気漏れが始まったタイヤを復活させるメンテ手順にたどり着いた。
-
-
 
 ### ノーモア空気漏れ
 
@@ -36,17 +29,13 @@ tags:
   <img border="0" height="360" src="./DSC_6962.jpg" width="640" />
 </div>
 
-簡単に言うと、タイヤを外してリムとタイヤを水洗いするだけ。
-
+簡単に言うと、タイヤを外してリムとタイヤを水洗いするだけ。  
 ビードとリムの密着する部分に泥やら草が結構詰まっているので、これを取り除くことで密着度を上げるのが目的。
 
-ここはインナーシールより外側なので、シーラントが回り込みづらくなっていると思われる。
-
+ここはインナーシールより外側なので、シーラントが回り込みづらくなっていると思われる。  
 タイヤを外すときは、<a href="http://www.amazon.co.jp/gp/product/B007PLDRAC/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B007PLDRAC&linkCode=as2&tag=gensobunya-22" rel="nofollow">防寒テムレス</a>
 
 があると便利。裏起毛で暖かいのでレース会場で洗車する際にも役に立つ。そして滑り止めのおかげでレバーを使わずチューブレスタイヤを簡単に脱着できる。<img alt="" border="0" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B007PLDRAC" height="1" style="border: none !important; margin: 0px !important;" width="1" />
-
-
 
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="360" src="./DSC_6964.jpg" width="640" />
@@ -56,77 +45,17 @@ tags:
 
 で拭ったところ。<img alt="" border="0" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B002TKLMM4" height="1" style="border: none !important; margin: 0px !important;" width="1" />
 
-普通のウエスだとなかなか取りきれないので。
-
+普通のウエスだとなかなか取りきれないので。  
 泥が固まっているので、水で流すだけでは取れない。
-
-
 
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="360" src="./DSC_6963.jpg" width="640" />
 </div>
 
-自分の場合、タイヤのビード外側も念のため拭っている。ここも泥が固まってこびりつくので水を当てるだけでは取れない。
-
-綺麗にした後、またシーラントを封入してビードを上げれば、空気圧が簡単に落ちることはなくなる。
-
-正直、リム掃除と嵌め直しのどちらが効いているかはわからない。
+自分の場合、タイヤのビード外側も念のため拭っている。ここも泥が固まってこびりつくので水を当てるだけでは取れない。綺麗にした後、またシーラントを封入してビードを上げれば、空気圧が簡単に落ちることはなくなる。正直、リム掃除と嵌め直しのどちらが効いているかはわからない。
 
 ひとまずこの対応で空気漏れ症状が収まるので満足している。チューブラーより手間はかかってない。きっと。
 
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007PLDRAC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41Tj6XfAFHL._SL160_.jpg" alt="ショーワグローブ 【防寒手袋】No282防寒テムレス Mサイズ 1双" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007PLDRAC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ショーワグローブ 【防寒手袋】No282防寒テムレス Mサイズ 1双</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.03.02</div></div><div class="amazlet-detail">ショーワグローブ(Showaglove) <br />売り上げランキング: 100<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007PLDRAC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
-
-<div class="amazlet-box" style="margin-bottom:0px;">
-  <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007PLDRAC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41rohPYYEvL._SL160_.jpg" alt="ショーワグローブ 【防寒手袋】No282防寒テムレス Mサイズ 1双" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
-    <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007PLDRAC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ショーワグローブ 【防寒手袋】No282防寒テムレス Mサイズ 1双</a></p>
-
-<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.02.27
-</div>
-
-<div class="amazlet-detail">
-ショーワグローブ <br />売り上げランキング: 157
-
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007PLDRAC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-  </div>
-
-  <div class="amazlet-footer" style="clear: left">
-  </div>
-</div>
-
-<div class="amazlet-box" style="margin-bottom:0px;">
-  <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B002TKLMM4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41l-5w4mCbL._SL160_.jpg" alt="レック 激落ちクロス マイクロファイバー 10枚入" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
-    <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B002TKLMM4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">レック 激落ちクロス マイクロファイバー 10枚入</a></p>
-
-<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.02.27
-</div>
-
-<div class="amazlet-detail">
-レック (LEC) <br />売り上げランキング: 25
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B002TKLMM4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left">
-  </div>
-</div>
-
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B002TKLMM4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41l-5w4mCbL._SL160_.jpg" alt="レック 激落ちクロス マイクロファイバー 10枚入" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B002TKLMM4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">レック 激落ちクロス マイクロファイバー 10枚入</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.03.02</div></div><div class="amazlet-detail">レック(Lec) <br />売り上げランキング: 12<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B002TKLMM4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
