@@ -19,17 +19,8 @@ tags:
   <img border="0" height="364" src="./2014-10-1113.41.48.jpg" width="640" />
 </div>
 
-ジャパンカップシクロクロス前にフロントをシングル化した。
-
-元々の目的は、ZEEクランクの採用でQファクターが広がりすぎたので
-
-ロードクランクで是正するため。
-
-ついでにチェーンガイドをフロントに付けていても、チェーンは落ちるときは落ちるし
-
-落ちた時の復帰が非常に遅くなるので、チェーンガイドいらずと噂のナローワイドチェーンリングを
-
-導入することにしてみた。
+ジャパンカップシクロクロス前にフロントをシングル化した。元々の目的は、ZEEクランクの採用でQファクターが広がりすぎたのでロードクランクで是正するため。  
+ついでにチェーンガイドをフロントに付けていても、チェーンは落ちるときは落ちるし落ちた時の復帰が非常に遅くなるので、チェーンガイドいらずと噂のナローワイドチェーンリングを導入することにしてみた。
 
 最終的にはRACEFACEのものを選んだわけだが、当初の選択肢は以下の通り。
 
@@ -37,12 +28,8 @@ tags:
 
 #### Wolftooth
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41K-gE6gZkL._SL160_.jpg" alt="ウルフトゥース(Wolf Tooth) シングルチェーンリング 5アーム シクロクロス用 drop-stop 42T/110mm" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ウルフトゥース(Wolf Tooth) シングルチェーンリング 5アーム シクロクロス用 drop-stop 42T/110mm</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.03.02</div></div><div class="amazlet-detail">ウルフトゥース(Wolf Tooth) <br />売り上げランキング: 170,318<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="https://cdn.shopify.com/s/files/1/0230/9291/products/Dropstop-110BCD-50T-Black-02_1024x1024.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://cdn.shopify.com/s/files/1/0230/9291/products/Dropstop-110BCD-50T-Black-02_1024x1024.jpg" height="317" width="320" /></a>
-</div>
 
 言わずと知れた老舗。
 
@@ -55,12 +42,6 @@ tags:
 現在ではSHIMANO4アーム対応版、かつチェーンライン補正付きとアップデートされている。
 
 #### Abusolute Black
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
 
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="212" src="./cyclocross_narrow_wide_cx_chainring_110bcd_2.jpg" width="320" />
@@ -94,12 +75,7 @@ MTB用だけかとおもいきやCX用も出してました。
 
 カラーは黒のみ。
 
-
-
-#### **Praxis Cyclocross Narrow / Wide Chainring**
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+#### Praxis Cyclocross Narrow / Wide Chainring
 
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="320" src="./E38380E382A6E383B3E383ADE383BCE38389.jpg" width="320" />
@@ -111,16 +87,13 @@ PCD110,130共に40/42T。
 
 #### ROTOR QCX1
 
-
-
 <div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="298" src="QCX1.img_assist_custom" width="320" />
+  <img border="0" height="298" src="qcx1.jpg" width="320" />
 </div>
 
 ※2016/1追記
 
-楕円×ナローワイドシングルチェーンリング！
-
+楕円×ナローワイドシングルチェーンリング！　　
 PCD110のみ、38T~44Tまで幅広くラインナップ。公式では対応クランクが指定されているので注意。
 
 #### FOURIERS&nbsp;NARROW-WIDE SINGLE FRONT CHAINRING
@@ -131,81 +104,41 @@ PCD110のみ、38T~44Tまで幅広くラインナップ。公式では対応ク�
 
 ※2016/1追加
 
-PCD110/130,38T~42Tをラインナップ。
-
+PCD110/130,38T~42Tをラインナップ。  
 歯の根本にある泥抜き穴が最大の特徴。効果があるかは未知数だけども…
 
-
-
 ### 使用感
-
-
 
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="364" src="./2014-10-1113.41.57.jpg" width="640" />
 </div>
 
-入手性と値段でRACEFACEのものを購入。
+入手性と値段でRACEFACEのものを購入。チェーンボルトはKCNCの6.5mmがちょうどいい感じでした。
 
-チェーンボルトはKCNCの6.5mmがちょうどいい感じでした。
+CNCのチェーンリングボルトが軟すぎて取り付け時に１つナメて怒り心頭に達するも1つくらい緩くてもなんとかなるでしょとの発想で無視。クランクはカラー的にROTOR 3Dとか使いたいところですがコストの問題で中古のR600を拾いました。
 
-CNCのチェーンリングボルトが軟すぎて取り付け時に１つナメて怒り心頭に達するも
-
-1つくらい緩くてもなんとかなるでしょとの発想で無視。
-
-クランクはカラー的にROTOR 3Dとか使いたいところですがコストの問題で
-
-中古のR600を拾いました。
-
-取り付けの注意点は特になし。アウター部分に取り付けできっと合ってるはず。
-
-FDもチェーンガイドも取っ払うと見た目が非常にすっきりしていい感じ。
-
+取り付けの注意点は特になし。アウター部分に取り付けできっと合ってるはず。FDもチェーンガイドも取っ払うと見た目が非常にすっきりしていい感じ。  
 ほんとにこれでチェーン落ちないのか？と不安になる見た目である。
 
 ### チェーン落ち
 
-3レース走って普通に走行している限りはチェーン落ち0でした。
+3レース走って普通に走行している限りはチェーン落ち0でした。ジャパンカップCX・茨城CX・STARLIGHT幕張の3戦で、外れたのは派手に前転してバイクをふっ飛ばした1回のみ。（幕張でした）
 
-ジャパンカップCX・茨城CX・STARLIGHT幕張の3戦で、外れたのは派手に前転して
-
-バイクをふっ飛ばした1回のみ。（幕張でした）
-
-ジャパンカップと茨城はフラットなのでテストとしては優しいコースでしたが、
-
-風雲たけし城を要する幕張の急勾配でも外れなかったので、チェーンリングの性能だと確信。
-
-<strike>湘南CX（開成公園）の下りで外れまくったZEEとは大違いだ！</strike>
+ジャパンカップと茨城はフラットなのでテストとしては優しいコースでしたが、風雲たけし城を要する幕張の急勾配でも外れなかったので、チェーンリングの性能だと確信。<strike>湘南CX（開成公園）の下りで外れまくったZEEとは大違いだ！</strike>
 
 
 
 ### ギア比
 
-フロント変速しなくていいので変速周りのトラブル軽減が見込めますが、
+フロント変速しなくていいので変速周りのトラブル軽減が見込めますが、CXによくある突発的にきつい上り勾配や下りに突入する時は一気にギアを変えられないのでそこの辺りは考えて変速する必要があります、トレードオフ。
 
-CXによくある突発的にきつい上り勾配や下りに突入する時は一気にギアを変えられないので
-
-そこの辺りは考えて変速する必要があります、トレードオフ。
-
-<div>
-  レースの終盤に思考力が落ちていてもリアだけならなんとかなる。
-</div>
-
-<div>
-</div>
-
-コースによってギア比を変える戦略もアリなフロントシングルですが、
-
-「フロント38Tにリア11-28Tで日本のコースで走れないところなどない」
-
-とのお言葉をスク水大先生より頂いたので従うことに。幸いまだ困っていません。
+レースの終盤に思考力が落ちていてもリアだけならなんとかなる。コースによってギア比を変える戦略もアリなフロントシングルですが、「フロント38Tにリア11-28Tで日本のコースで走れないところなどない」とのお言葉をスク水大先生より頂いたので従うことに。幸いまだ困っていません。
 
 フロントを大きくしたほうが僅かながらパワー効率はよいのでパワーあるひとはもうちょい大きいギアを選んでもいいかも？
 
 ### 最後に
 
-ロードもTTもDi2にしてたけどフロントシングルだとDi2欲が湧かない！！！！
-
+ロードもTTもDi2にしてたけどフロントシングルだとDi2欲が湧かない！！！！  
 素晴らしい！！！
 
 代わりに油圧ディスクブレーキ導入しようぜ！！！！
@@ -218,31 +151,4 @@ CXによくある突発的にきつい上り勾配や下りに突入する時は
 
 詳細は<a href="/2016/08/st-r785mtbcx.html" target="_blank">こちら</a>
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B017LERBCC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="Absoluteblack Narrow Wide Oval Single Chainring ナローワイド　オーバル　チェーンリング　32T  楕円" src="https://images-fe.ssl-images-amazon.com/images/I/41p3LkaMZGL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B017LERBCC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Absoluteblack Narrow Wide Oval Single Chainring ナローワイド　オーバル　チェーンリング　32T 楕円</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.03.21
-</div>
-
-
-<div class="amazlet-detail">
-ABSOLUTEBLACK <br /> 売り上げランキング: 414,644
-
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B017LERBCC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41K-gE6gZkL._SL160_.jpg" alt="ウルフトゥース(Wolf Tooth) シングルチェーンリング 5アーム シクロクロス用 drop-stop 42T/110mm" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ウルフトゥース(Wolf Tooth) シングルチェーンリング 5アーム シクロクロス用 drop-stop 42T/110mm</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.03.02</div></div><div class="amazlet-detail">ウルフトゥース(Wolf Tooth) <br />売り上げランキング: 170,318<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
