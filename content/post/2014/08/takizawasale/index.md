@@ -107,7 +107,7 @@ categories:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="2014-08-1616.32.48" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="2014-08-1616.32.48.jpg" height="358" width="640" /></a>
+    <a href="2014-08-1616.32.48.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="2014-08-1616.32.48.jpg" height="358" width="640" /></a>
   </div>
 
   <p>

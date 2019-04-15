@@ -107,7 +107,7 @@ Di2組付け配線編その1です。
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4690.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4690.jpg" height="640" width="358" /></a>
+  <a href="DSC_4690.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4690.jpg" height="640" width="358" /></a>
 </div>
 
 <div>

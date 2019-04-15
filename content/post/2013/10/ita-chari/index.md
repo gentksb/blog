@@ -17,7 +17,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4209.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4209.jpg" height="320" width="179" /></a>
+  <a href="DSC_4209.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4209.jpg" height="320" width="179" /></a>
 </div>
 
 お久しぶりです。
@@ -31,7 +31,7 @@ tags:
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4210.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4210.jpg" height="320" width="179" /></a>
+  <a href="DSC_4210.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4210.jpg" height="320" width="179" /></a>
 </div>
 
 なぜTRINITYにディスクを履かせたかというとこれがやりたかったからですよ～

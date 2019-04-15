@@ -23,7 +23,7 @@ thumbnail: 18katsura.jpg
 
 コッコさんを差そうとしたけど最終コーナーでインを取られあえなく沈没。3位のスク水さんにラップされながらのゴール…スク水さんシーズン優勝おめでとうと心のなかでつぶやきながらきつすぎて声が出ず。笑いながらラップされる変なやつになってしまった。
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/132570324@N04/39199981445/in/album-72157693072261715/" title="DSC_8076".jpg><img src="https://farm5.staticflickr.com/4625/39199981445_28e33427d9_c.jpg" width="800" height="534" alt="DSC_8076".jpg></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/132570324@N04/39199981445/in/album-72157693072261715/" title="DSC_8076"><img src="https://farm5.staticflickr.com/4625/39199981445_28e33427d9_c.jpg" width="800" height="534" alt="DSC_8076"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 
 ダメダメな雰囲気だったけど結果は意外にも残留圏内の65%を死守していた。\

@@ -98,7 +98,7 @@ tags:
 翌朝は雨にもかかわらずオタクチャリが来るわ来るわ
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4230.jpg".jpg imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4230.jpg" width="640" /></a>
+  <a href="DSC_4230.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4230.jpg" width="640" /></a>
 </div>
 
 雨は1mm予報だったからいけるとおもったんだ…この時は
@@ -214,7 +214,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4308.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4308.jpg" width="640" /></a>
+    <a href="DSC_4308.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4308.jpg" width="640" /></a>
   </div>
 
   <p>
@@ -238,7 +238,7 @@ tags:
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4309.jpg".jpg imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4309.jpg" width="320" /></a>
+    <a href="DSC_4309.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4309.jpg" width="320" /></a>
   </div>
 
   <p>

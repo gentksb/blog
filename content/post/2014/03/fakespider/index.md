@@ -28,12 +28,6 @@ tags:
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
   乗り心地はかなりイイ。ハンモックみたいな感じとはこれのことか。
 </div>
 
@@ -41,65 +35,10 @@ tags:
   ケツにも合ってるしGOOD
 </div>
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
 
 <div class="separator" style="clear: both; text-align: center;">
   CX4レース後（3ヶ月後）
 </div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140304_213133.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140304_213133.jpg" height="320" width="240" /></a>
-</div>
-
-
 
 <div style="text-align: center;">
   リアのレール固定部分からお亡くなりになられました。
@@ -118,27 +57,6 @@ tags:
 
 <div style="text-align: center;">
   色も多いのでカラーコーディネートにも使える。ケツに合えばなかなかいいのでは…
-</div>
-
-<div style="text-align: center;">
-</div>
-
-<div style="text-align: center;">
-</div>
-
-<div style="text-align: center;">
-</div>
-
-<div style="text-align: center;">
-</div>
-
-<div style="text-align: center;">
-</div>
-
-<div style="text-align: center;">
-</div>
-
-<div style="text-align: center;">
 </div>
 
 <div style="text-align: center;">

@@ -52,7 +52,7 @@ Bacchus01を9070に換装します。
 Di2のFD特有？のサポートボルトからフレームを保護する必要があるのですが、純正バンドなら保護用のメタルパッドも必要ありません。
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4650.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4650.jpg" height="358" width="640" /></a>
+  <a href="DSC_4650.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4650.jpg" height="358" width="640" /></a>
 </div>
 
 簡単に組み付けました。ここからがDi2の本番

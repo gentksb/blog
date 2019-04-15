@@ -55,25 +55,25 @@ TTバイクだと縦剛性が高めでな上、前乗りで振動が上体に直
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0182.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0182.jpg" height="179" width="320" /></a>
+  <a href="DSC_0182.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0182.jpg" height="179" width="320" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0183.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0183.jpg" height="179" width="320" /></a>
+  <a href="DSC_0183.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0183.jpg" height="179" width="320" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0184.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0184.jpg" height="179" width="320" /></a>
+  <a href="DSC_0184.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0184.jpg" height="179" width="320" /></a>
 </div>
 
 
 
 <div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_0185.jpg".jpg imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0185.jpg" height="179" width="320" /></a>
+  <a href="DSC_0185.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0185.jpg" height="179" width="320" /></a>
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">

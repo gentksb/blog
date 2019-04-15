@@ -45,7 +45,7 @@ thumbnail: 20180226_top.jpg
 林間セクションで抜かれることは想定済みの割り切りセッティングだと言い聞かせることに集中。
 
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/132570324@N04/39602252905/in/album-72157693881101785/" title="DSC_1016".jpg><img src="https://farm5.staticflickr.com/4603/39602252905_bb0e7a336a_c.jpg" width="800" height="534" alt="DSC_1016".jpg></a>>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/132570324@N04/39602252905/in/album-72157693881101785/" title="DSC_1016"><img src="https://farm5.staticflickr.com/4603/39602252905_bb0e7a336a_c.jpg" width="800" height="534" alt="DSC_1016"></a>>
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/maekawa0717/26604517168/in/album-72157693073170254/" title="DSC_8329.jpg"><img src="https://farm5.staticflickr.com/4653/26604517168_d6dd0afb8d_c.jpg" width="800" height="534" alt="DSC_8329.jpg"></a>
 
