@@ -120,7 +120,7 @@ tags:
   </p>
 
   <h3>
-    <br /><b>講演</b>
+    <b>講演</b>
   </h3>
 
   <p>
@@ -171,72 +171,69 @@ tags:
   </p>
 
   <p>
-    ペダリングをちょっと考えたことのあるレース派の人には何を今更～みたいな内容もありました<strike>が聴衆がパワーメーター未経験だったりレース参加してなかったりと「なぜ来た」というｹﾞﾌﾝｹﾞﾌﾝ</strike><br /> 話自体は興味深いものでした。</div>
+    ペダリングをちょっと考えたことのあるレース派の人には何を今更～みたいな内容もありました<strike>が聴衆がパワーメーター未経験だったりレース参加してなかったりと「なぜ来た」というｹﾞﾌﾝｹﾞﾌﾝ</strike><br /> 話自体は興味深いものでした。
+  </p>
 
-    <p>
-    </p>
-
-    <h3>
+  <h3>
 <b>体験・立ち話</b>
-    </h3>
+  </h3>
 
-    <p>
+  <p>
 機能としてはサイクルモードで試乗した時から変わっていなかったので割愛。
-    </p>
+  </p>
 
-    <p>
+  <p>
 多分シマノペダルが付いてるだろうと当たりをつけてシューズを持って行ったら大当たり、ビンディングで試せました。ただサドル高は出せなかった…<br /> ちょっと頑張って回していると250~300W/60~70%あたりを行ったり来たり。<br />
-    </p>
+  </p>
 
-    <div class="separator" style="clear: both; text-align: center;">
 <img border="0" height="320" src="./DSC_4915.jpg" width="179" />
 
 
-    <p>
+  <p>
 実物の裏側。プレートを使ったボルト留めになってます。
-    </p>
+  </p>
 
-    <p>
+  <p>
 取り付けが実物合わせなのは全く変わっていない様子。他人の話を横聞きするとBB386のフレームは厳しい事が多いとか。それとBB下ダイレクトマウントブレーキのフレームには使えないようです、MADONE全滅。（間違ってたらすいません）
-    </p>
+  </p>
 
-    <p>
+  <p>
 <strike>ちなみにベルキンが使ってるけどオルトレXRの市販フレームには付かないかもしれないらしい！！！！！！！！</strike>
-    </p>
+  </p>
 
-    <p>
+  <p>
 データの使い方について講演していた方と立ち話をしたところ、ペダリング効率はやはり走行中に見るものではなく（トレーニング強度の指標としてパワーだけ見ることはあるとして）ライドから戻った後、心拍や勾配、シチュエーションなどをログから考察して自分に足りない技術を把握するのに使うことが最も良いだろうとのこと。
-    </p>
+  </p>
 
-    <p>
+  <p>
 解析の無いパワーメーターは高いおもちゃです！ｗｗｗ
-    </p>
+  </p>
 
-    <p>
+  <p>
 前述した通り、ペダリング効率は絶対的な数値指標ではないですが、有意差が出るものではあるので走りを分析できる新しい要素として考えるのがいいだろうということです。
-    </p>
+  </p>
 
-    <p>
+  <p>
 また、クランク型とハブ型のW数は違って出るという話も聞けました。あと、チェーンを掃除すればパワータップの数値はでかく出る、つまり走りの効率が上がるらしいですよ！！！！！！！<br /> クランクの歪計測についても上下だけでなく左右も拾ってしまうのでは？と聞いたら「ソフト側で処理して補正している、らしい。」「一番金をかけてる部分らしく、詳細を教えてもらえないので噂レベル」とのことです。<br /> （前述のクランクとハブの差も補正してるかもしれないとか）
-    </p>
+  </p>
 
-    <p>
+  <p>
 結論としては、シマノ4アームクランクユーザーにとっては現状最も安い（多分）パワーメーターですのでもし自分が導入する際は第一候補になるでしょう。心拍ベースの解析すらやめた自分にはそもそも「高いおもちゃ」以外の何者でもなさそうですが…
-    </p>
+  </p>
 
-    <p>
+  <p>
 非真円ユーザーや一部フレームユーザーにはやさしくないものの、普通のANT＋サイコンでパワーや左右差は受信できるそうなのでEdgeユーザーにも優しい本体です。<br /> ブラケットの裏にDi2ジャンクションが付けばもっと良かったｗ
-    </p>
+  </p>
 
-    <p>
+  <p>
 逆にクランク型なので二台以上で使いまわすには向いていないようです。<br /> マグネットやBBユニットなどは単体販売するとのことですが取り付けはなるべく販売店で正しく行ってほしいとのこと。
-    </p>
+  </p>
 
-    <p>
+  <p>
 珍しくシマノ以外の国内パーツで注目を浴びているのでもっと頑張って欲しいですね！
-    </p>
+  </p>
 
-    <div class="amazlet-box" style="margin-bottom:0px;">
+<div class="amazlet-box" style="margin-bottom:0px;">
 <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41D54LlaK3L._SL160_.jpg" alt="パワー・トレーニング・バイブル" style="border: none;" /></a>
 </div>
@@ -245,7 +242,7 @@ tags:
   <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/490531500X/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">パワー・トレーニング・バイブル</a></p>
 
-    <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
 posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 
   </div>
@@ -265,7 +262,7 @@ posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">am
 </div>
 
 
-    <div class="amazlet-box" style="margin-bottom:0px;">
+<div class="amazlet-box" style="margin-bottom:0px;">
 <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4583103778/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51xxkXLrcrL._SL160_.jpg" alt="バイシクルトレーニングブック" style="border: none;" /></a>
 </div>
@@ -274,7 +271,7 @@ posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">am
   <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4583103778/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">バイシクルトレーニングブック</a></p>
 
-    <div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
 posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 
   </div>
