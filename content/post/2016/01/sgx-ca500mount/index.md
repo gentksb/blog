@@ -138,62 +138,6 @@ Edge510以降を利用している人ならわかると思うが、非常に便�
 専用サイトである<a href="https://cyclo-sphere.com/" target="_blank">シクロスフィア</a>の使い心地については後ほどレポートしようと思う。
 
 
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01874O84Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51YRe1czRUL._SL160_.jpg" alt="Pioneer(パイオニア) サイクルコンピューター Wifi ANT+対応 トレーニングメニュー・データ解析Webサービス付 SGX-CA500 SGX-CA500" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01874O84Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Pioneer(パイオニア) サイクルコンピューター Wifi ANT+対応 トレーニングメニュー・データ解析Webサービス付 SGX-CA500 SGX-CA500</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.04.15</div></div><div class="amazlet-detail">Pioneer(パイオニア) (2014-03-20)<br />売り上げランキング: 101,786<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01874O84Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-<div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01874O84Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="Pioneer パイオニア SGX-CA500 サイクルコンピューター" src="https://images-fe.ssl-images-amazon.com/images/I/41ap2H%2BTMcL._SL160_.jpg" style="border: none;" /></a>
-</div>
-
-<div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-<div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01874O84Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Pioneer パイオニア SGX-CA500 サイクルコンピューター</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
-</div>
-
-
-<div class="amazlet-detail">
-Pioneer <br /> 売り上げランキング: 57,696
-
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01874O84Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-</div>
-
-<div class="amazlet-footer" style="clear: left;">
-</div>
-</div>
-
-<div class="amazlet-box" style="margin-bottom: 0px;">
-<div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MUNVW52/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="REC-MOUNTST(レックマウント) サイクルコンピューター用アダプター パイオニア ペダリングモニター SGX-CA500 用[GM-SGX2]" src="https://images-fe.ssl-images-amazon.com/images/I/31hIVOeZ3NL._SL160_.jpg" style="border: none;" /></a>
-</div>
-
-<div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-<div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MUNVW52/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">REC-MOUNTST(レックマウント) サイクルコンピューター用アダプター パイオニア ペダリングモニター SGX-CA500 用[GM-SGX2]</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.02.27
-</div>
-
-
-<div class="amazlet-detail">
-レックマウント <br /> 売り上げランキング: 38,335
-
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MUNVW52/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-</div>
-
-<div class="amazlet-footer" style="clear: left;">
-</div>
-</div>
-
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MUNVW52/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/31Gb1usE1KL._SL160_.jpg" alt="REC-MOUNTST(レックマウント) サイクルコンピューター用アダプター パイオニア ペダリングモニター SGX-CA500 用[GM-SGX2]" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MUNVW52/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">REC-MOUNTST(レックマウント) サイクルコンピューター用アダプター パイオニア ペダリングモニター SGX-CA500 用[GM-SGX2]</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.04.15</div></div><div class="amazlet-detail">レックマウント <br />売り上げランキング: 200,411<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MUNVW52/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
