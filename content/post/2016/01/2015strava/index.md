@@ -2,6 +2,8 @@
 title: 2015年のStravaを振り返ろう
 author: admin
 type: post
+draft: true
+# リンク切れのためお蔵入り
 date: 2015-12-31T16:24:00+00:00
 #url: /2016/01/2015strava.html
 thumbnail: DSC_6882.jpg

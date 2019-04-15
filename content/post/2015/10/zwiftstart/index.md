@@ -50,7 +50,7 @@ tags:
 
 ただし、エリートのリアルトレーナー類やTacxのスマートトレーナーがあれば、自転車自体のセンサーは不要。PC連携が標準で可能なトレーナーの一部は、コースに応じて自動的に負荷も変えてくれるらしい。
 
-対応リスト：<https://support.zwift.com/hc/en-us/articles/203152565-Which-trainers-does-Zwift-support->
+対応リスト：<https://support.zwift.com/>
 
 USBドングルは結構厄介。
 
