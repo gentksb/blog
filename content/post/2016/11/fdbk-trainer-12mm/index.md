@@ -68,7 +68,7 @@ TCRの12mmスルーアクスル用ホイールと、ローラーのアダプタ�
 
 ウンウン唸りながら、ディスクロード先進地域の欧米にノウハウが無いかググりまくる。
 
-そうしたら<a href="https://www.feedbacksports.com/shop/end-cap-kit-12mm-thru-axle/" target="_blank" rel="noopener">こんなページ</a>が…
+そうしたら<a href="https://www.feedbacksports.com/product/end-cap-kit-12mm-thru-axle/" target="_blank" rel="noopener">こんなページ</a>が…
 
 <div class="separator" style="clear: both; text-align: center;">
   <img src="./1.png" width="640" height="392" border="0" />
