@@ -118,16 +118,9 @@ TTバイクを組んだ翌年にこれは好機と今年はタイムトライア
 
 最も効果のあるスーツを持っていないことに絶望を感じ始める。
 
-TTJ 3rdステージ
+### TTJ 3rdステージ
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="3-1.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="./3-1.png" width="228" /></a>
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-わかりにくいが、頭がすっぽり体の前に来るフォームが出来上がる。
+頭がすっぽり体の前に来るフォームが出来上がる。
 
 テクニカルな上雨が降るなか平均39.8km/hでクラス4位。
 
