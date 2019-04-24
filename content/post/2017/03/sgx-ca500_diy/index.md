@@ -11,9 +11,9 @@ tags:
   - CX
   - MTB
   - Zwift
-  - インプレ
-  - ツーリング
-  - ロード
+  - REVIEW
+  - TOURING
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

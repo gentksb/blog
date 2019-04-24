@@ -8,8 +8,8 @@ thumbnail: DSC_7899.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - ガジェット
+  - REVIEW
+  - GADGETS
 
 ---
 <img class="wp-image-745 size-large alignnone" src="./DSC_7899.jpg" alt="" width="840" height="473" />

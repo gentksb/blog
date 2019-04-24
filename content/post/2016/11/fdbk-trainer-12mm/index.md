@@ -10,8 +10,8 @@ categories:
 tags:
   - CX
   - TIPS
-  - トレーニング
-  - ロード
+  - WORKOUT
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -9,8 +9,8 @@ categories:
   - 未分類
 tags:
   - CX
-  - ガジェット
-  - レース
+  - GADGETS
+  - RACE
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

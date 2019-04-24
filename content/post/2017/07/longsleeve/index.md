@@ -10,8 +10,8 @@ custom_permalink:
 categories:
   - 未分類
 tags:
-  - インプレ
-  - トレーニング
+  - REVIEW
+  - WORKOUT
 
 ---
 

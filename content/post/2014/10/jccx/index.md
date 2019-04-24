@@ -9,7 +9,7 @@ categories:
   - 未分類
 tags:
   - CX
-  - レース
+  - RACE
 
 ---
 <img border="0" height="426" src="./01_ui.jpg" width="640" />**ジャパンカップCX**

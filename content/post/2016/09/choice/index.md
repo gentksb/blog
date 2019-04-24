@@ -8,8 +8,8 @@ thumbnail: CHOICE-GOOOOOLDEN-WHEY007.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - 飯
+  - REVIEW
+  - FOOD
 
 ---
 {{<figure src="./CHOICE-GOOOOOLDEN-WHEY007.jpg">}}

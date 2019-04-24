@@ -7,8 +7,8 @@ date: 2013-10-12T04:43:00+00:00
 categories:
   - 未分類
 tags:
-  - ツーリング
-  - ロード
+  - TOURING
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

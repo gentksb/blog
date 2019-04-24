@@ -8,8 +8,8 @@ thumbnail: DSC_0180.jpg
 categories:
   - 未分類
 tags:
-  - ツーリング
-  - ロード
+  - TOURING
+  - ROAD
 
 ---
 仕事の都合で半年ほど北海道へ行っておりました

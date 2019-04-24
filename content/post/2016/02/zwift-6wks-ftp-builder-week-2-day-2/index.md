@@ -9,7 +9,7 @@ categories:
   - 未分類
 tags:
   - Zwift
-  - トレーニング
+  - WORKOUT
 
 ---
 <img border="0" src="./2016-02-03_1929002.jpg" />

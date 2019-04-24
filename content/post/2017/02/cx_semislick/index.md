@@ -10,8 +10,8 @@ categories:
 tags:
   - CX
   - TIPS
-  - トレーニング
-  - レース
+  - WORKOUT
+  - RACE
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

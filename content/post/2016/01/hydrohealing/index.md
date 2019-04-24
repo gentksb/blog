@@ -8,7 +8,7 @@ categories:
   - 未分類
 tags:
   - TIPS
-  - インプレ
+  - REVIEW
 
 ---
 擦り傷には湿潤療法。

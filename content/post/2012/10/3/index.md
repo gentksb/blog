@@ -7,7 +7,7 @@ date: 2012-10-16T02:34:00+00:00
 categories:
   - 未分類
 tags:
-  - ツーリング
+  - TOURING
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

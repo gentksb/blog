@@ -10,8 +10,8 @@ categories:
 tags:
   - TIPS
   - Zwift
-  - インプレ
-  - ロード
+  - REVIEW
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

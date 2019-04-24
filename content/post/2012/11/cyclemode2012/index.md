@@ -8,7 +8,7 @@ categories:
   - 未分類
 tags:
   - MTB
-  - ロード
+  - ROAD
 
 ---
 サイクルモード行って来ました。

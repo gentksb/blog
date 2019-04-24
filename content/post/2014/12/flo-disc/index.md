@@ -8,8 +8,8 @@ categories:
   - 未分類
 tags:
   - TT
-  - インプレ
-  - 海外通販
+  - REVIEW
+  - EC
 
 ---
 ### 激安ディスクホイール現る

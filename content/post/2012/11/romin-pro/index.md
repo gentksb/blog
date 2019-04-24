@@ -8,8 +8,8 @@ thumbnail: DSC_1114.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - ロード
+  - REVIEW
+  - ROAD
 
 ---
 1ヶ月半前、ヨーロッパツーリングの際に安く手に入れていたサドルをようやく交換。

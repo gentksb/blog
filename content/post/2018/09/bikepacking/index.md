@@ -2,7 +2,7 @@
 title: "R250サドルバッグラージと小型中華フレームバッグ(MOREZONE)"
 date: 2018-09-12T20:24:44+09:00
 draft: false
-tags: ["ロード", "インプレ"]
+tags: ["ROAD", "REVIEW"]
 thumbnail: "./DSC_1545.jpg"
 ---
 {{<figure src="./DSC_1545.jpg">}}

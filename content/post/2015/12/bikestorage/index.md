@@ -9,7 +9,7 @@ categories:
   - 未分類
 tags:
   - TIPS
-  - インプレ
+  - REVIEW
 
 ---
 {{<figure src="./DSC_6771.jpg">}}

@@ -8,10 +8,10 @@ thumbnail: DSC_7627.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - ツーリング
-  - レース
-  - ロード
+  - REVIEW
+  - TOURING
+  - RACE
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

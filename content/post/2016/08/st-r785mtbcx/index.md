@@ -10,7 +10,7 @@ categories:
 tags:
   - CX
   - MTB
-  - インプレ
+  - REVIEW
 
 ---
 {{<figure src="./DSC_0117.jpg">}}

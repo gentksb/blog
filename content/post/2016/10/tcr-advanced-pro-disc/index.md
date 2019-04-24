@@ -8,8 +8,8 @@ thumbnail: DSC_0311.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - ロード
+  - REVIEW
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

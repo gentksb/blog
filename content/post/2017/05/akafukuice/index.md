@@ -8,9 +8,9 @@ thumbnail: DSC_1046.jpg
 categories:
   - 未分類
 tags:
-  - ツーリング
-  - ロード
-  - 飯
+  - TOURING
+  - ROAD
+  - FOOD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -9,7 +9,7 @@ categories:
   - 未分類
 tags:
   - Zwift
-  - ロード
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

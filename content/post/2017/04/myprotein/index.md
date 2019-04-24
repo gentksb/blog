@@ -8,9 +8,9 @@ thumbnail: DSC_0887.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - 海外通販
-  - 飯
+  - REVIEW
+  - EC
+  - FOOD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

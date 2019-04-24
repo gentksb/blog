@@ -8,7 +8,7 @@ thumbnail: DSC_7734.jpg
 categories:
   - 未分類
 tags:
-  - コミケ
+  - COMIKET
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

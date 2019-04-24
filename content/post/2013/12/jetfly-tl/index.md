@@ -8,8 +8,8 @@ categories:
   - 未分類
 tags:
   - TIPS
-  - インプレ
-  - ロード
+  - REVIEW
+  - ROAD
 
 ---
 9070が届いたついでに、暫定運用でGP4000Sを履かせていたJETFLYをチューブレス化します。  

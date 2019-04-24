@@ -9,7 +9,7 @@ categories:
 tags:
   - CX
   - TIPS
-  - インプレ
+  - REVIEW
 
 ---
 先日のレースでPiranha 2 CXをカットしてしまったのでIRCのSERAC CXチューブレスに交換しました（マッドじゃないほう）

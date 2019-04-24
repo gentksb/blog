@@ -9,8 +9,8 @@ categories:
   - 未分類
 tags:
   - CX
-  - ロード
-  - 海外通販
+  - ROAD
+  - EC
 
 ---
 {{< figure src="product_CS-R8000-S1-min.png">}}

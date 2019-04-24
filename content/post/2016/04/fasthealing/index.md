@@ -9,7 +9,7 @@ categories:
   - 未分類
 tags:
   - TIPS
-  - レース
+  - RACE
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

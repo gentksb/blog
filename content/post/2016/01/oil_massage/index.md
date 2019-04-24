@@ -10,7 +10,7 @@ categories:
 tags:
   - CX
   - TIPS
-  - インプレ
+  - REVIEW
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

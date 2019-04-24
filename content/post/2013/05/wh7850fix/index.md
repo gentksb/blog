@@ -8,7 +8,7 @@ thumbnail: DSC_1568.jpg
 categories:
   - 未分類
 tags:
-  - ロード
+  - ROAD
 
 ---
 <img border="0" height="360" src="./DSC_1568.jpg" width="640" />浜松まで餃子を食べにロングライドしていたある日…

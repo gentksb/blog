@@ -8,8 +8,8 @@ thumbnail: DSC_6028.jpg
 categories:
   - 未分類
 tags:
-  - レース
-  - 飯
+  - RACE
+  - FOOD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

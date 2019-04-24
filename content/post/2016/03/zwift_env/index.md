@@ -9,8 +9,8 @@ categories:
   - 未分類
 tags:
   - Zwift
-  - インプレ
-  - ガジェット
+  - REVIEW
+  - GADGETS
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

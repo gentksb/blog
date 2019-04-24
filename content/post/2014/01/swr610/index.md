@@ -9,8 +9,8 @@ categories:
   - 未分類
 tags:
   - TIPS
-  - インプレ
-  - ロード
+  - REVIEW
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

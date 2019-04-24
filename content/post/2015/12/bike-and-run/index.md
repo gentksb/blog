@@ -8,7 +8,7 @@ thumbnail: DSC_6856.jpg
 categories:
   - 未分類
 tags:
-  - トレーニング
+  - WORKOUT
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

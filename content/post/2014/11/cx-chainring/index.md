@@ -10,9 +10,9 @@ categories:
 tags:
   - CX
   - TIPS
-  - インプレ
-  - レース
-  - 海外通販
+  - REVIEW
+  - RACE
+  - EC
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

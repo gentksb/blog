@@ -8,8 +8,8 @@ thumbnail: DSC_7094.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - トレーニング
+  - REVIEW
+  - WORKOUT
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

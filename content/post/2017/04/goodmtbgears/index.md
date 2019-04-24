@@ -9,7 +9,7 @@ categories:
   - 未分類
 tags:
   - MTB
-  - インプレ
+  - REVIEW
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

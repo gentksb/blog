@@ -8,7 +8,7 @@ thumnail: 0.jpg
 categories:
   - 未分類
 tags:
-  - ロード
+  - ROAD
 draft: false
 ---
 セオフェスのブリジストンブースで、ポジションを見てくれるサービスがありました

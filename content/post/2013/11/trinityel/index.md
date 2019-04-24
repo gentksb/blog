@@ -8,7 +8,7 @@ categories:
   - 未分類
 tags:
   - TIPS
-  - ロード
+  - ROAD
 
 ---
 # 紐変速だったTRINITY compositeを電動化

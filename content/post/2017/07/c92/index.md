@@ -9,10 +9,10 @@ categories:
   - 未分類
 tags:
   - Zwift
-  - コミケ
-  - トレーニング
-  - レース
-  - ロード
+  - COMIKET
+  - WORKOUT
+  - RACE
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

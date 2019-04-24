@@ -8,10 +8,10 @@ thumbnail: DSC_0266.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - ツーリング
-  - トレーニング
-  - レース
+  - REVIEW
+  - TOURING
+  - WORKOUT
+  - RACE
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

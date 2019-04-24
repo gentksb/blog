@@ -9,8 +9,8 @@ categories:
   - 未分類
 tags:
   - TIPS
-  - インプレ
-  - 飯
+  - REVIEW
+  - FOOD
 
 ---
 湧いては消えるコンビニの紙パック飲料。

@@ -2,7 +2,7 @@
 title: "シリコンバーテープとシリコングリップが手放せない"
 date: 2017-10-11T22:47:35+09:00
 draft: false
-tags: ["インプレ", "ロード", "CX"]
+tags: ["REVIEW", "ROAD", "CX"]
 thumbnail: bartape.jpg
 ---
 {{<figure src="bartape.jpg">}}

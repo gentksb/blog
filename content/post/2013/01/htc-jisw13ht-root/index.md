@@ -7,7 +7,7 @@ date: 2013-01-20T02:19:00+00:00
 categories:
   - 未分類
 tags:
-  - ガジェット
+  - GADGETS
 draft: true
 ---
 HTC Jを手に入れたのでroot取ったりROM突っ込んだりして遊ぶことにしました。

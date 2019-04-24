@@ -10,7 +10,7 @@ categories:
 tags:
   - TIPS
   - Zwift
-  - トレーニング
+  - WORKOUT
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

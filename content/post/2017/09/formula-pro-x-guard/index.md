@@ -8,8 +8,8 @@ thumbnail: P_20170915_202018.jpg
 categories:
   - 未分類
 tags:
-  - ロード
-  - インプレ
+  - ROAD
+  - REVIEW
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -8,7 +8,7 @@ categories:
   - 未分類
 tags:
   - CX
-  - レース
+  - RACE
 
 ---
 今年のCXシーズン締めくくりは土浦で行われる茨城CX。

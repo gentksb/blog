@@ -9,7 +9,7 @@ categories:
   - 未分類
 tags:
   - CX
-  - 海外通販
+  - EC
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -11,10 +11,10 @@ tags:
   - CX
   - MTB
   - TT
-  - インプレ
-  - トレーニング
-  - レース
-  - ロード
+  - REVIEW
+  - WORKOUT
+  - RACE
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

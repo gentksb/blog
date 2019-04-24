@@ -7,7 +7,7 @@ date: 2016-06-11T02:33:00+00:00
 categories:
   - 未分類
 tags:
-  - コミケ
+  - COMIKET
 
 ---
 

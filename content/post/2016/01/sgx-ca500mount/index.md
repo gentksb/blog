@@ -9,9 +9,9 @@ categories:
   - 未分類
 tags:
   - Zwift
-  - インプレ
-  - ガジェット
-  - ロード
+  - REVIEW
+  - GADGETS
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

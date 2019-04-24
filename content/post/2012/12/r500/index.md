@@ -8,9 +8,9 @@ thumbnail: DSC_1222.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - ツーリング
-  - 海外通販
+  - REVIEW
+  - TOURING
+  - EC
 
 ---
 通学車兼旅行車に装備していたR500がとうとう逝去されました

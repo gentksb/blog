@@ -8,8 +8,8 @@ thumbnail: 2014-09-2110.09.30.jpg
 categories:
   - 未分類
 tags:
-  - インプレ
-  - ロード
+  - REVIEW
+  - ROAD
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

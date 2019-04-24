@@ -9,8 +9,8 @@ categories:
   - 未分類
 tags:
   - CX
-  - インプレ
-  - トレーニング
+  - REVIEW
+  - WORKOUT
 
 ---
 <div class="separator" style="clear: both; text-align: center;">
