@@ -1,3 +1,4 @@
 User-agent: *
 Disallow:*?q*
 Disallow:*?s*
+Disallow:/tags/*
