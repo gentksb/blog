@@ -1,10 +1,18 @@
 <article class="list__item post clearfix">
 	{{- if .Params.thumbnail }}
-	<figure class="list__thumbnail">
-		<a href="{{ .Permalink }}">
-			<img src="/{{ replace .Dir "\\" "/" | safeHTML }}{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
-		</a>
-	</figure>
+		{{- if .Params.netlifyThumbnailResize }}
+			<figure class="list__thumbnail">
+				<a href="{{ .Permalink }}">
+				<img src="/{{ replace .Dir "\\" "/" | safeHTML }}{{ .Params.thumbnail | relURL }}?nf_resize=fit&w=" alt="{{ .Title }}" />
+				</a>
+			</figure>
+		{{ else }}
+			<figure class="list__thumbnail">
+				<a href="{{ .Permalink }}">
+				<img src="/{{ replace .Dir "\\" "/" | safeHTML }}{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}" />
+				</a>
+			</figure>
+		{{ end }}
 	{{- end }}
 	<div class="list__content clearfix">
 		<header class="list__header">
