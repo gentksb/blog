@@ -41,7 +41,8 @@ postしたusernameを自動的に取得して、それぞれの人の記録を�
 
 >postしたusernameを自動的に取得して、それぞれの人の記録をトレンド含め表示してくれています。
 
-IFTTTのbotアカウントがpostするだけだとグラフ化の方のbotが正常に動いてくれません。自分のアカウントがpostしたことにしないと…
+IFTTTのbotアカウントがpostするだけだとグラフ化の方のbotが正常に動いてくれません。自分のアカウントがpostしたことにしないと…  
+ちなみにコードを書かなくてもMyfitnessPal経由でGARMIN CONNECTやSTRAVAに体重を連携できるので単体でも結構便利です。
 
 ## Slack APIを直接叩こう
 
