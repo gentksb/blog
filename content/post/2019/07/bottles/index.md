@@ -1,11 +1,11 @@
 ---
 title: "ダブルボトルとシングルボトル"
-date: 2019-07-11T20:59:52+09:00
-draft: true
+date: 2019-07-20T20:59:52+09:00
+draft: false
 tags: ["ROAD", "インプレ"]
-thumbnail: "./"
+thumbnail: "./IMG_20190720_105901.jpg"
 ---
-{{<figure src="./">}}
+{{<figure src="./IMG_20190720_105901.jpg">}}
 ## ツールボトルの功罪
 
 ツールボトルの容量は意外と大きいいので普段持ち歩いているこれらのツールをまるっと入れることができる。
@@ -31,3 +31,6 @@ thumbnail: "./"
 賢明な方にはおわかりと思うが、これを使って2ボトル体制でもとツールボトルからいちいち工具やパンク修理キットを取り出してサドルバッグに入れ替えるという地味にモチベーションを削る作業をなかったコトにしてくれるのだ！
 
 これで「1ボトル1ツールボトル」or「2ボトル1ツールボトル」のどちらかで走り出すことができるため、朝のちょっと迷う時間を削減して気持ちよくライドに出かけることができるようになった。
+
+
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B075ZPVWVL/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41PzzeEfg7L._SL160_.jpg" alt="R250(アールニーゴーマル) ツールケースサドルホルダー R25-L-CASEHOLDER" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B075ZPVWVL/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">R250(アールニーゴーマル) ツールケースサドルホルダー R25-L-CASEHOLDER</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.07.20</div></div><div class="amazlet-detail">R250(アールニーゴーマル) (2017-10-25)<br />売り上げランキング: 59,017<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B075ZPVWVL/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>

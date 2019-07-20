@@ -2,7 +2,7 @@
 title: "Withingsの体組成計を買って、GASでSlackの減量チャンネルにポストする"
 date: 2019-07-19T22:13:23+09:00
 draft: false
-tags: ["CODE", ""]
+tags: ["CODE"]
 thumbnail: "./IMG_20190718_180730.jpg"
 ---
 {{<figure src="./IMG_20190718_180730.jpg">}}
