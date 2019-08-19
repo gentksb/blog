@@ -8,7 +8,7 @@ thumbnail: "./vs_ca500.jpg"
 {{<figure src="./vs_ca500.jpg">}}
 ## そしてGARMINに戻る...
 
-[Pioneer](https://amzn.to/2Z1Co5i)や[Bryton](https://amzn.to/2YZczDe)に浮気していたけれども、結局WEBサービスの完成度の点でGARMINにまさるメーカーはなかった。  
+[Pioneer](https://amzn.to/2Z1Co5i)や[Bryton](https://amzn.to/2YZczDe)に浮気していたけれども、WEBサービスの完成度の点でGARMINにまさるメーカーはなかった。  
 結局精度よりもデータをどう使うかが大事なので…
 
 入力ベクトルデータは未だに上手く活用できる手段が考案されないし、シクロスフィアのUXは遷移が遅すぎて最低だしBrytonはそもそもStravaないとまともに機能しない。  
