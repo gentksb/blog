@@ -45,10 +45,6 @@ tags:
 ### 制動力は高くないが、レバーの引きは異次元の軽さに
 
 <div class="separator" style="clear: both; text-align: center;">
-   
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
   <img src="./DSC_0212.jpg" width="640" height="362" border="0" />
 </div>
 
