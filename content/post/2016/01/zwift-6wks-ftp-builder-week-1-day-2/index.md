@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-01-25T03:44:00+00:00
 #url: /2016/01/zwift1-6wks-ftp-builder-week-1-day-2.html
-thumbanil: 2016-01-25_2027460.jpg
+thumbnail: 2016-01-25_2027460.jpg
 categories:
   - 未分類
 tags:
