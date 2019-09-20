@@ -5,7 +5,7 @@ draft: false
 tags: ["CX", "RACEREPORT"]
 thumbnail: "./45096130694_67408ab69f_k.jpg"
 ---
-{{<figure src="./45096130694_67408ab69f_k.jpg">}}
+![image](./45096130694_67408ab69f_k.jpg)
 ## 2018-19スターライトクロス Men Elite 61/82
 
 全日本前の一大イベントである野辺山の前哨戦にあたるスターライトクロス。  

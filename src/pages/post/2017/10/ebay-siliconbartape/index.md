@@ -5,7 +5,7 @@ draft: false
 tags: ["REVIEW", "ROAD", "CX"]
 thumbnail: bartape.jpg
 ---
-{{<figure src="bartape.jpg">}}
+![image](bartape.jpg)
 
 ## シリコンバーテープ(グリップ)の魅力
 
@@ -30,9 +30,9 @@ thumbnail: bartape.jpg
 
 ダイヤ目の加工がされています。
 
-{{<figure src="tape.jpg">}}
+![image](tape.jpg)
 
-{{<figure src="bartape.jpg">}}
+![image](bartape.jpg)
 
 若干短くて、レバー裏に這わせることができませんでした…
 

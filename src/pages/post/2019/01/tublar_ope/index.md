@@ -5,7 +5,7 @@ draft: false
 tags: ["CX", "TIPS"]
 thumbnail: "./seal.jpg"
 ---
-{{<figure src="./seal.jpg">}}
+![image](./seal.jpg)
 ## リムセメント絶対使いたくないマン！
 
 チューブラーは使いたい、でも面倒なタイヤ貼りはしたくない…。

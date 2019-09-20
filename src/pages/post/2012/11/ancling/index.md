@@ -25,15 +25,15 @@ draft: false
 
 まずは元々のポジション
 
-{{<youtube mCF6Jow_W10>}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mCF6Jow_W10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 はい、アンクリングしてますねｗ
 
 以下サドルを5mm,10mmづつ下げた場合に続きます
 
-{{<youtube 6zyA2kDmxIM>}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6zyA2kDmxIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{{<youtube jFV3KVTCN9g>}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jFV3KVTCN9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 サドルの下降量が0mm→5mm→10mmとなるにしたがってアンクリングの度合いが減っていますね。
 

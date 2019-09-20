@@ -5,15 +5,15 @@ draft: false
 tags: ["CODE"]
 thumbnail: "./IMG_20190718_180730.jpg"
 ---
-{{<figure src="./IMG_20190718_180730.jpg">}}
+![image](./IMG_20190718_180730.jpg)
 ## ものぐさレコーディングダイエット
 
 減量できたことないけど、いろんな事を記録して可視化するのはいいこと。  
 そして、体重の崩壊を防ぐ仲間内Slackでは、このようにpostした体重と体脂肪率をグラフ化してくれるスクリプトがすでに動いています。
 
-{{<figure src="./weight.png">}}
+![image](./weight.png)
 
-{{<figure src="./fatpercentage.png">}}
+![image](./fatpercentage.png)
 
 postしたusernameを自動的に取得して、それぞれの人の記録をトレンド含め表示してくれています。  
 今までは、愛用していた[TANITAの体組成計](https://amzn.to/2Lv42AS)から手動でメモしていたのですが、いかんせん朝にメモ作業するのは結構面倒。目も疲れるし。
@@ -30,12 +30,12 @@ postしたusernameを自動的に取得して、それぞれの人の記録を�
 計測した内容は[Withings Health Mate](https://www.withings.com/jp/ja/health-mate)というWEBサービスにアップロードされ、モバイルアプリでも閲覧できます。  
 本体の設定はすべてモバイルアプリ経由なので楽ちん。このサービス自体がIFTTTに対応しているので、まずは直接IFTTTを使ってSlackに連携してみます。
 
-{{<figure src="./IFTTT_slack.PNG">}}
+![image](./IFTTT_slack.PNG)
 
 骨量や筋肉量、水分量も計測できるのですがAPIで取得できるのは「体重」「前回体重差」「体脂肪量」「前回体脂肪量差」「体脂肪率」「計測日時」の6点のみでした。  
 こちらのIFTTTアプレットの起動結果がこちら。
 
-{{<figure src="./IFTTT_post.PNG">}}
+![image](./IFTTT_post.PNG)
 
 連携はできましたが、一つ思い出してください。
 
@@ -49,7 +49,7 @@ IFTTTのbotアカウントがpostするだけだとグラフ化の方のbotが�
 [Slack APIの仕様](https://api.slack.com/methods/chat.postMessage)によると、`chat.postMessage`の`as_user`オプションを`true`にしてPOSTすればいいようです  
 IFTTTのオプションにはないので直接何かしらのスクリプトを起動することにします。
 
-{{<figure src="./diagram.png">}}
+![image](./diagram.png)
 
 どこで実行するかが問題ですが、データの受け皿を用意しつつ無料でスクリプトを動かせるとなると、やっぱりGoogle SpreadSheetとApps Scriptがシンプルで簡単です。
 tokenの取得やアプリの登録に関しては割愛します。
@@ -100,7 +100,7 @@ function postMeasureDataToSlack() {
 Slackグループの設定がありませんが、トークンがグループごとに発行されるのでそこで認識されています。  
 `"as_user": true`を設定したので、あたかも自分が発言したかのようにチャンネルにポストされます。
 
-{{<figure src="./post.PNG">}}
+![image](./post.PNG)
 
 仲間内で牽制し合うコミュニティではIFTTTよりこちらのほうがより便利かと思います。  
 他にも自動で有給連絡したり、`as_user`オプションの使い道は結構ありそうですね。

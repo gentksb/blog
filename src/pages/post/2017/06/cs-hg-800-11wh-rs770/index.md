@@ -13,7 +13,7 @@ tags:
   - EC
 
 ---
-{{< figure src="product_CS-R8000-S1-min.png">}}
+![image](./product_CS-R8000-S1-min.png)
 
 R8000系アルテグラが発表された。
 

@@ -5,7 +5,7 @@ draft: false
 tags: ["CX", "Training"]
 thumbnail: "./training.jpg"
 ---
-{{<figure src="./training.jpg">}}
+![image](./training.jpg)
 ## 試走でみんな何をやっているのか？
 
 朝試走、昼試走、どう走ってますか？ウォームアップ？コースの記憶？特定セクションの練習？タイヤの空気圧調整？「やりたいこと」はいっぱいある。

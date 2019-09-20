@@ -22,7 +22,7 @@ WiFi対応がマストで、GoogleHomeと簡単に連携できるのは大きく
 
 ### Dugast Smallbird & FarSports carbon wheel
 
-{{<figure src="./dugast_set.jpg">}}
+![image](./dugast_set.jpg)
 
 説明不要の飛び道具。
 
@@ -35,7 +35,7 @@ Dugastは直販かBike24が安いが、初期不良が多いので国内で買�
 
 ### フルジップウォームアップタイツ
 
-{{<figure src="./s-l1600.jpg">}}
+![image](./s-l1600.jpg)
 
 [TIGHTS WARM UP FULL ZIP BLACK CYCLOCROSS MTB RUNNING](https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575336615&campid=5338191852&mpre=https%3A%2F%2Fwww.ebay.com%2Fitm%2F162244070914%3F_sp%3Dp2488211.m41214.l9765%26_trkparms%3Ditemid%253A162244070914)
 

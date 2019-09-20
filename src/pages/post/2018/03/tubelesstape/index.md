@@ -5,7 +5,7 @@ draft: false
 tags: ["TIPS", "ROAD", "MTB", "CX"]
 thumbnail: "P_20170924_122957.jpg"
 ---
-{{<figure src="P_20170924_122957.jpg">}}
+![image](P_20170924_122957.jpg)
 ## チューブレスタイヤはいいぞ
 
 チューブレスタイヤのメリットはいまさら言うまでもない。\
@@ -15,7 +15,7 @@ thumbnail: "P_20170924_122957.jpg"
 
 ## チューブレスレディシステムはクソ
 
-{{<figure src="DSC_7836.jpg">}}
+![image](DSC_7836.jpg)
 
 チューブレスタイヤの欠点…それは走行性能以外の部分。
 タイヤは（組み合わせ次第で）嵌めづらいし、ビードは上がらないし、サイドカットしたらチューブを入れるしかなくなるがチューブを中へ入れるようにチューブレスタイヤはできていない。
@@ -76,7 +76,7 @@ MTB向けに作られた製品だったので、ロードの空気圧に耐え�
 
 ### GIANT TUBELESS TAPE (THICK)
 
-[{{<figure src="./giant-tape.jpg" width="50%">}}](https://www.giant.co.jp/giant18/acc_datail.php?p_id=A0002218)
+[![image](./giant-tape.jpg)](https://www.giant.co.jp/giant18/acc_datail.php?p_id=A0002218)
 [2018 Giant Bicycle [ TUBELESS TAPE ] ](https://www.giant.co.jp/giant18/acc_datail.php?p_id=A0002218)
 
 ものぐさな自分が最終的にたどり着いた製品がこいつ。\

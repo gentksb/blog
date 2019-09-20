@@ -11,14 +11,14 @@ thumbnail: dugast_set.jpg
 昨シーズン終わりに体感したチューブラーの世界が忘れられず…買ってしまいました。\
 全日本出場という目標に向けた武器、Dugast SmallBird！！！
 
-{{<figure src="dugast_set.jpg">}}
+![image](dugast_set.jpg)
 
 高級タイヤを壊したくはないので、耐パンク性UPのFlying-Doctorバージョンかつネオプレンコーティングを施したものを購入。
 毎回拭き掃除していればアクアシールいらず…らしい
 
 余談だが、箱はスニーカーでよく見るタイプの保管箱に詰められてきた。おそらく使いまわしであるところにハンドメイド感が溢れている（適当）
 
-{{<figure src="dugast.jpg">}}
+![image](dugast.jpg)
 
 ## ホイールもあわせてどうぞ
 
@@ -35,17 +35,17 @@ thumbnail: dugast_set.jpg
 [シクロクロスでも問題なく使えるという触れ込み](https://www.cyclowired.jp/lifenews/node/191669)のEffetto Mariposaの[チューブラーテープ](https://amzn.to/2u8o89K)を購入。
 そして圧倒的人気を誇る[ボンドG17](https://amzn.to/2JeDVs9)でフンドシの下処理を行う。
 
-{{<figure src="bonds.jpg">}}
+![image](bonds.jpg)
 
 
 とにかく水分の侵入が大敵。
 なるべく身近なもので対策していく。人によってはコーキング剤を使ったりしているが、それなりに汚れそうなのでボンドとヘラで塗り塗りする作戦。
 
-{{<figure src="hera.jpg">}}
+![image](hera.jpg)
 
 1回薄くフンドシに塗ったところで24h放置。
 
-{{<figure src="tyre_dry.jpg">}}
+![image](tyre_dry.jpg)
 
 
 ## 貼り付け
@@ -53,11 +53,11 @@ thumbnail: dugast_set.jpg
 1日乾かしたらEffetto Mariposaの[チューブラーテープ](https://amzn.to/2u8o89K)で貼り付けていく。\
 ホイールの中心にフンドシの縫い目を落とす溝があるので、そこも含めてしっかり密着させる。25mm幅のリムに25mm幅のテープなので本当にギリギリ。ついでに長さもギリギリ。
 
-{{<figure src="tape_left.jpg">}}
+![image](tape_left.jpg)
 
 仮嵌めして、丁寧にセンターを出して、ビニールテープを剥がして完成。空気を入れて1日以上放置。
 
-{{<figure src="tyre_complete.jpg">}}
+![image](tyre_complete.jpg)
 
 最後に隙間を[ボンドGクリア](https://amzn.to/2KQCPII)で埋めていく。\
 幅が広い上に厚みのあるテープなので、タイヤを貼った後も側面に粘着面が残ってしまっているので、念には念を入れてここからの浸水をボンドで防ぐ。

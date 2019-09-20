@@ -5,7 +5,7 @@ draft: false
 tags: ["CX", "RaceReport"]
 thumbnail: 2018sakai.jpg
 ---
-{{<figure src="2018sakai.jpg">}}
+![image](2018sakai.jpg)
 ## 関西シクロクロス#8 堺
 ド平坦コースサカイセンシュケン。前週の希望が丘でC1でやっていける自信が怪しくなっていたので、この週だけ平日練習を増やしてみた。
 

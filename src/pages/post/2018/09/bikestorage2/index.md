@@ -5,18 +5,17 @@ draft: false
 tags: ["TIPS", "MTB", "ROAD", "CX"]
 thumbnail: "DSC_1534.jpg"
 ---
-{{<figure src="./DSC_1534.jpg">}}
+![image](./DSC_1534.jpg)
 ## 2x4材とホームセンターグッズで収納を整える
 
 [以前作った](/post/2015/12/bikestorage/)2x4材のコンパクトな自転車収納を一歩進めてみた。追加購入したものは全てホームセンターで調達。
 
 **Before**
 
-{{<twitter 1038053972559376385>}}
-
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">1KはZ軸をうまく使っていけ <a href="https://t.co/9v5A6eZ6rU">pic.twitter.com/9v5A6eZ6rU</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1038053972559376385?ref_src=twsrc%5Etfw">September 7, 2018</a></blockquote>
 **After**
 
-{{<twitter 1038314568794034176>}}
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">完成した <a href="https://t.co/0bLydupCeH">pic.twitter.com/0bLydupCeH</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1038314568794034176?ref_src=twsrc%5Etfw">September 8, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ディアウォールを使って制作したものをそのまま流用したが、本当は[LABRICOのアジャスターボルト](https://amzn.to/2Cz3yWz)を使ったほうが調整幅が大きくて良い。
 
@@ -48,7 +47,7 @@ thumbnail: "DSC_1534.jpg"
 あとは、ホイールフックはカーボンホイールでも良いようにラバー付きのものを選んだ程度。場所が余ったのでフックを使って心拍ベルトも飾っておいた。  
 棚も軽量で日常的に付け外ししたり使ったりするものを優先的に配置。
 
-{{<figure src="./DSC_1537.jpg">}}
+![image](./DSC_1537.jpg)
 
 ## 縦置きか？横置きか？
 

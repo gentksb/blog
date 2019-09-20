@@ -5,7 +5,7 @@ draft: false
 tags: ["MTB", "Race"]
 thumbnail: 20180601sdaspring.jpg
 ---
-{{<figure src="20180601sdaspring.jpg">}}
+![image](20180601sdaspring.jpg)
 ## 2018春王滝、持ち物の工夫
 
 今年の春王滝はコース変更によって難易度が下がったので、6時間半を切るタイムで完走できた。

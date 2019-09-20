@@ -5,7 +5,7 @@ draft: false
 tags: ["TIPS", "ROAD"]
 thumbnail: "./framebag.jpg"
 ---
-{{<figure src="./framebag.jpg">}}
+![image](./framebag.jpg)
 ## チビの味方R250
 
 欧米人の「小柄な方向け」は信用できない。なぜなら170cm程度の小柄を想定しているから…（[代表例](http://www.tkcproductions.jp/?pid=102454600)）
@@ -15,7 +15,7 @@ thumbnail: "./framebag.jpg"
 
 ## R250防水ドラム型フロントバッグ
 
-{{<figure src="./frontbag.jpg">}}
+![image](./frontbag.jpg)
 
 新モデルの円柱型防水ハンドルバッグ。幅25cmはともかく、直径10cmが非常に秀逸。 
 サイズが小さいとハンドルからタイヤも近いので、これくらいのサイズだとタイヤへの接触がまずありえないという安心感があります。  
@@ -31,7 +31,7 @@ thumbnail: "./framebag.jpg"
 
 ## R250防水フレームインナーバッグ レギュラー
 
-{{<figure src="withwaterbottole.jpg">}}
+![image](withwaterbottole.jpg)
 
 R250の小サイズバッグと言えばこれを思い浮かべる人も多いのでは？  
 他に類を見ない細型フレームバッグの防水版。[もともとのモデル](https://amzn.to/2U2Mzzc)より細身に見えるが、サイズは一緒とのこと。生地が防水の分ちょっと硬め。

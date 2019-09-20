@@ -12,7 +12,7 @@ tags:
   - REVIEW
 
 ---
-{{<figure src="./DSC_6771.jpg">}}
+![image](./DSC_6771.jpg)
 
 ## 間違いだらけの自転車部屋記事
 
@@ -35,21 +35,21 @@ tags:
 圧迫感の解消には、専有する床面積を下げることが重要との結論に至ったが、そのためには縦置きが必須。  
 世界最小スタンドの<a href="http://www.amazon.co.jp/gp/product/B01119G72S/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B01119G72S&linkCode=as2&tag=gensobunya-22" rel="nofollow">CLUGS</a>を使ってみることにした。
 
-{{<figure src="./DSC_6761.jpg">}}
+![image](./DSC_6761.jpg)
 
 内容物はこれだけ。  
 木ネジも同梱なので必要工具はドライバーのみ。
 
-{{<figure src="./DSC_6763.jpg">}}
+![image](./DSC_6763.jpg)
 
 付属のネジは2&#215;4材でも使用可能な長さだった。
 
-{{<figure src="./DSC_6765.jpg">}}
+![image](./DSC_6765.jpg)
 
 高さを決めてネジ止めするだけ。  
 ネジ用のアンカーが付属していたが、ホワイトウッドが柔らかいためドリル不要でネジ止め可能だったので、利用しなかった。
 
-{{<figure src="./DSC_6770.jpg">}}
+![image](./DSC_6770.jpg)
 
 こちらが配置結果。[MINOURAバイクピット](https://amzn.to/2N1CPqn)と組み合わせることで、ハンドルの高さを互い違いに変えることで大幅に横幅を削減できた。  
 

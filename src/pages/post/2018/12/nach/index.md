@@ -5,7 +5,7 @@ draft: false
 tags: ["CX", "RACE"]
 thumbnail: "./kazuma.jpg"
 ---
-{{<figure src="./kazuma.jpg">}}
+![image](./kazuma.jpg)
 
 今年の目標は全日本出場と決めていた。
 
@@ -13,7 +13,7 @@ thumbnail: "./kazuma.jpg"
 
 ## シングルスピード
 
-{{<figure src="./kikuzo.jpg">}}
+![image](./kikuzo.jpg)
 
 人生でこの先走るかどうかもわからない全日本選手権、せっかくならとことん楽しもうとシングルスピードにもエントリー。
 

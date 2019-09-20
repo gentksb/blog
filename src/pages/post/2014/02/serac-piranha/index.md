@@ -28,11 +28,11 @@ tags:
 
 こちらがWH-6700のカットサンプル、中央のくぼみ付近に注目です。
 
-{{<figure src="./6700-5.jpg">}}
+![image](./6700-5.jpg)
 
 こちらがXTホイールの画像（<a href="http://blogs.yahoo.co.jp/guest_syu/10113189.html" target="_blank">拾い物</a>）
 
-{{<figure src="./img_0.jpg">}}
+![image](./img_0.jpg)
 
 お分かりいただけただろうか…中央の凹み部周辺の出っ張りがMTBホイールだと高いのである…
 

@@ -5,7 +5,7 @@ draft: false
 tags: ["zwift", "REVIEW"]
 thumbnail: jungle.png
 ---
-{{<figure src="jungle.png">}}
+![image](jungle.png)
 ## Zwiftがずいぶん変わりました
 
 2017夏にコース追加、アプリの昨日大幅追加とかなりアップデートがありましたZwift界隈。
@@ -30,7 +30,7 @@ thumbnail: jungle.png
 
 ## 最初の起動画面がMAPに
 
-{{<figure src="Screenshot_20171028-222532.png">}}
+![image](Screenshot_20171028-222532.png)
 
 新たにMAPページが追加され、今までZwift本体画面でしか確認できなかった現在位置の確認ができるようになりました。\
 
@@ -42,11 +42,11 @@ thumbnail: jungle.png
 
 非ライド時の画面も、直近のイベントやフォロワーの情報を表示するようになっていて、ソーシャル機能を強化しています。
 
-{{<figure src="Screenshot_20171028-222405.png">}}
+![image](Screenshot_20171028-222405.png)
 \
 \
 ## おまけ：新コースラッシュ！！
-{{<figure src="jungle.png">}}
+![image](jungle.png)
 
 我らがWatopiaにコース大量追加！\
 Volcanoコースに短距離クライムが追加され、ジャングルコースも新たに追加された模様。
