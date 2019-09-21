@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-05-12T01:29:00+00:00
 #url: /2013/05/wh-7850sl.html
-thumbnail: DSC_1568.jpg
+featuredImage: DSC_1568.jpg
 categories:
   - 未分類
 tags:

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-06-11T05:04:00+00:00
 #url: /2017/06/cs-hg-800-11wh-rs770.html
-thumbnail: product_CS-R8000-S1-min.png
+featuredImage: product_CS-R8000-S1-min.png
 categories:
   - 未分類
 tags:

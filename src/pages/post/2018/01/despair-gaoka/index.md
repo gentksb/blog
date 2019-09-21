@@ -3,7 +3,7 @@ title: "2017-18関西シクロクロス#7 希望が丘レースレポート"
 date: 2018-01-08T19:20:55+09:00
 draft: false
 tags: ["CX", "RaceReport"]
-thumbnail: 20180107_thm.jpg
+featuredImage: 20180107_thm.jpg
 ---
 ![image](20180107_thm.jpg)
 ## レースレポート始めます

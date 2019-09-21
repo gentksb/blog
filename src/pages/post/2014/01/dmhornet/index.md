@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-01-24T05:49:00+00:00
 #url: /2014/01/mtb-dartmoor-hornet.html
-thumbnail: IMG_20140118_152717.jpg
+featuredImage: IMG_20140118_152717.jpg
 categories:
   - 未分類
 tags:

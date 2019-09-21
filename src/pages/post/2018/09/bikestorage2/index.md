@@ -3,7 +3,7 @@ title: "2x4材で自転車用品を省スペース収納"
 date: 2018-09-08T16:04:19+09:00
 draft: false
 tags: ["TIPS", "MTB", "ROAD", "CX"]
-thumbnail: "DSC_1534.jpg"
+featuredImage: "DSC_1534.jpg"
 ---
 ![image](./DSC_1534.jpg)
 ## 2x4材とホームセンターグッズで収納を整える

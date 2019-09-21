@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-08-30T04:00:00+00:00
 #url: /2016/08/st-r785mtbcx.html
-thumbnail: DSC_0117.jpg
+featuredImage: DSC_0117.jpg
 categories:
   - 未分類
 tags:

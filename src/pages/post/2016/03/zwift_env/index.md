@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-03-20T17:39:00+00:00
 #url: /2016/03/zwift.html
-thumbnail: DSC_7324.jpg
+featuredImage: DSC_7324.jpg
 categories:
   - 未分類
 tags:

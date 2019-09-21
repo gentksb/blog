@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-09-15T02:36:00+00:00
 #url: /2017/09/formula-pro-x-guard.html
-thumbnail: P_20170915_202018.jpg
+featuredImage: P_20170915_202018.jpg
 categories:
   - 未分類
 tags:

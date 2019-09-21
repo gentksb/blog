@@ -3,7 +3,7 @@ title: "試走の妙"
 date: 2018-12-24T21:03:24+09:00
 draft: false
 tags: ["CX", "Training"]
-thumbnail: "./training.jpg"
+featuredImage: "./training.jpg"
 ---
 ![image](./training.jpg)
 ## 試走でみんな何をやっているのか？

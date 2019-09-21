@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-01-24T06:49:00+00:00
 #url: /2014/01/sw-r610-di2.html
-thumbnail: IMG_20131228_103711.jpg
+featuredImage: IMG_20131228_103711.jpg
 categories:
   - 未分類
 tags:

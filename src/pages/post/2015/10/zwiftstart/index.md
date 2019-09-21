@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2015-10-01T05:13:00+00:00
 #url: /2015/10/zwift.html
-thumbnail: 2015-10-01_2209230.jpg
+featuredImage: 2015-10-01_2209230.jpg
 categories:
   - 未分類
 tags:

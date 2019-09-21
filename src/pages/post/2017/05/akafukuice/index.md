@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-05-16T05:43:00+00:00
 #url: /2017/05/blog-post.html
-thumbnail: DSC_1046.jpg
+featuredImage: DSC_1046.jpg
 categories:
   - 未分類
 tags:

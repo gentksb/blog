@@ -3,7 +3,7 @@ title: "ダブルボトルとシングルボトル"
 date: 2019-07-20T20:59:52+09:00
 draft: false
 tags: ["ROAD", "インプレ"]
-thumbnail: "./IMG_20190720_105901.jpg"
+featuredImage: "./IMG_20190720_105901.jpg"
 ---
 ![image](./IMG_20190720_105901.jpg)
 ## ツールボトルの功罪

@@ -3,7 +3,7 @@ title: "ETC製シクロクロスウォームアップタイツ"
 date: 2018-09-11T20:07:08+09:00
 draft: false
 tags: ["CX", "REVIEW"]
-thumbnail: "DSC_1550.jpg"
+featuredImage: "DSC_1550.jpg"
 ---
 ![image](./DSC_1550.jpg)
 

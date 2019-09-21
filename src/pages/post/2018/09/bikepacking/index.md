@@ -3,7 +3,7 @@ title: "R250サドルバッグラージと小型中華フレームバッグ(MORE
 date: 2018-09-12T20:24:44+09:00
 draft: false
 tags: ["ROAD", "REVIEW"]
-thumbnail: "./DSC_1545.jpg"
+featuredImage: "./DSC_1545.jpg"
 ---
 ![image](./DSC_1545.jpg)
 

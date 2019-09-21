@@ -3,7 +3,7 @@ title: "GIANT SLR1 discホイールのベアリング交換"
 date: 2019-03-13T21:25:02+09:00
 draft: false
 tags: ["TIPS"]
-thumbnail: "./pressin.jpg"
+featuredImage: "./pressin.jpg"
 ---
 ![image](./pressin.jpg)
 ## ハブ、ゴリゴリ

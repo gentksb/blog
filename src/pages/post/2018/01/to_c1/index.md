@@ -3,7 +3,7 @@ title: "C1昇格＆新年のご挨拶"
 date: 2018-01-03T19:12:56+09:00
 draft: false
 tags: ["CX"]
-thumbnail: 2018new.jpg
+featuredImage: 2018new.jpg
 ---
 ![image](2018new.jpg)
 ## あけましておめでとうございます

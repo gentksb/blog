@@ -3,7 +3,7 @@ title: "2018春王滝反省会"
 date: 2018-06-01T18:47:38+09:00
 draft: false
 tags: ["MTB", "Race"]
-thumbnail: 20180601sdaspring.jpg
+featuredImage: 20180601sdaspring.jpg
 ---
 ![image](20180601sdaspring.jpg)
 ## 2018春王滝、持ち物の工夫

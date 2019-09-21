@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-09-28T02:18:00+00:00
 #url: /2016/09/2016-17-cx1-irc-tire-90th-anniversary.html
-thumbnail: DSC_0187.jpg
+featuredImage: DSC_0187.jpg
 categories:
   - 未分類
 tags:

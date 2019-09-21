@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-08-24T02:36:00+00:00
 #url: /2016/08/di2_24.html
-thumbnail: DSC_0068.jpg
+featuredImage: DSC_0068.jpg
 categories:
   - 未分類
 tags:

@@ -3,7 +3,7 @@ title: "CXチューブラーを意地でもテープで運用する"
 date: 2019-02-06T21:48:05+09:00
 draft: false
 tags: ["CX", "TIPS"]
-thumbnail: "./seal.jpg"
+featuredImage: "./seal.jpg"
 ---
 ![image](./seal.jpg)
 ## リムセメント絶対使いたくないマン！

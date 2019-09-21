@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-03-06T05:18:00+00:00
 #url: /2014/03/2014-gp-mistral-5.html
-thumbnail: IMG_20140302_101739.jpg
+featuredImage: IMG_20140302_101739.jpg
 categories:
   - 未分類
 tags:

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2015-07-13T05:26:00+00:00
 #url: /2015/07/savas.html
-thumbnail: item.jpg
+featuredImage: item.jpg
 categories:
   - 未分類
 tags:

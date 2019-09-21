@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-05-06T01:42:00+00:00
 #url: /2017/05/sscx.html
-thumbnail: DSC_0980.jpg
+featuredImage: DSC_0980.jpg
 categories:
   - 未分類
 tags:

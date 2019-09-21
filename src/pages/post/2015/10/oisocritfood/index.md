@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2015-10-23T03:14:00+00:00
 #url: /2015/10/2.html
-thumbnail: DSC_6028.jpg
+featuredImage: DSC_6028.jpg
 categories:
   - 未分類
 tags:

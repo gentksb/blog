@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2012-12-17T01:59:00+00:00
 #url: /post/2012/12/r500.html
-thumbnail: DSC_1222.jpg
+featuredImage: DSC_1222.jpg
 categories:
   - 未分類
 tags:

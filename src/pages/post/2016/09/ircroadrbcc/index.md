@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-09-14T02:25:00+00:00
 #url: /2016/09/irc.html
-thumbnail: DSC_0155.jpg
+featuredImage: DSC_0155.jpg
 categories:
   - 未分類
 tags:

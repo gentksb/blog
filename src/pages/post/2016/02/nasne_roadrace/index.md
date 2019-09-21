@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-03-12T04:19:00+00:00
 #url: /2016/03/nasne.html
-thumbnail:  41kPTlyHj2L._SL250_.jpg
+featuredImage:  41kPTlyHj2L._SL250_.jpg
 categories:
   - 未分類
 tags:

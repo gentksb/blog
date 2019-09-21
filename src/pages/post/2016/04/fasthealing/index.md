@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-04-04T04:36:00+00:00
 #url: /2016/04/blog-post.html
-thumbnail: DSC_7358.jpg
+featuredImage: DSC_7358.jpg
 categories:
   - 未分類
 tags:

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-11-13T04:12:00+00:00
 #url: /2014/11/cx-3.html
-thumbnail: 2014-10-1113.41.48.jpg
+featuredImage: 2014-10-1113.41.48.jpg
 categories:
   - 未分類
 tags:

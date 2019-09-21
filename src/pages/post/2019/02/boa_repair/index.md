@@ -3,7 +3,7 @@ title: "BOAダイアルは壊れても基本的に無料で修理できる話"
 date: 2019-02-19T22:13:47+09:00
 draft: false
 tags: ["CX", "ROAD","MTB","TIPS"]
-thumbnail: "./overview.jpg"
+featuredImage: "./overview.jpg"
 ---
 ![image](./overview.jpg)
 ## 前橋CXで名誉の破損

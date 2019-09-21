@@ -3,17 +3,6 @@ title: Zwiftワークアウトファイル配布ページ
 author: admin
 type: page
 date: 2016-06-03T04:32:00+00:00
-blogger_bid:
-  - 443169423969093484
-blogger_blog:
-  - blog.gensobunya.net
-blogger_id:
-  - 4195388477043690894
-blogger_author:
-  - 05415749641252153199
-blogger_permalink:
-  - /p/zwift-oringi.html
-
 ---
 GoogleDrive上にアップロードしています
 

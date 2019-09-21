@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-02-27T01:01:00+00:00
 #url: /2016/02/blog-post.html
-thumbnail: DSC_7094.jpg
+featuredImage: DSC_7094.jpg
 categories:
   - 未分類
 tags:

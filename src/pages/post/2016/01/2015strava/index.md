@@ -6,7 +6,7 @@ draft: true
 # リンク切れのためお蔵入り
 date: 2015-12-31T16:24:00+00:00
 #url: /2016/01/2015strava.html
-thumbnail: DSC_6882.jpg
+featuredImage: DSC_6882.jpg
 categories:
   - 未分類
 tags:

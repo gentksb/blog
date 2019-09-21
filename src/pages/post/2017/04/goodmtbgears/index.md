@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-04-17T03:31:00+00:00
 #url: /2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html
-thumbnail: DSC_0935.jpg
+featuredImage: DSC_0935.jpg
 categories:
   - 未分類
 tags:

@@ -3,7 +3,7 @@ title: "2018年ベストバイ"
 date: 2018-12-11T18:59:51+09:00
 draft: false
 tags: ["TIPS"]
-thumbnail: "./dugast_set.jpg"
+featuredImage: "./dugast_set.jpg"
 ---
 
 ## 2018年ベストバイグッズ

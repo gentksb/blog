@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2015-12-28T15:15:00+00:00
 #url: /2015/12/blog-post_29.html
-thumbnail: DSC_6856.jpg
+featuredImage: DSC_6856.jpg
 categories:
   - 未分類
 tags:

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-08-31T05:05:00+00:00
 #url: /2017/08/blog-post_31.html
-thumbnail: DSC_7836.jpg
+featuredImage: DSC_7836.jpg
 categories:
   - 未分類
 

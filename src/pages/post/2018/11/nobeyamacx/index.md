@@ -3,7 +3,7 @@ title: "2018 Rapha Supercross Nobeyamaレポート & 全日本出場権利ゲッ
 date: 2018-11-20T20:32:14+09:00
 draft: false
 tags: ["CX", "RACE"]
-thumbnail: "./nobeyama.jpg"
+featuredImage: "./nobeyama.jpg"
 ---
 ![image](./nobeyama.jpg)
 ## 2018 Rapha Supercross Nobeyama

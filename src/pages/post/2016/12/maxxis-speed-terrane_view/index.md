@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-12-10T04:16:00+00:00
 #url: /2016/12/maxxis-speed-terrane.html
-thumbnail: DSC_0448.jpg
+featuredImage: DSC_0448.jpg
 categories:
   - 未分類
 tags:
