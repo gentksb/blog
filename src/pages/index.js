@@ -1,10 +1,18 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Image from 'gatsby-image';
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import styled from "styled-components"
+
+const ThumbnailBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,7 +23,6 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -35,13 +42,17 @@ class BlogIndex extends React.Component {
               <section>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
+                    __html: node.excerpt,
                   }}
                 />
               </section>
+              <ThumbnailBox>
+                {node.frontmatter.featuredImage==null ? "" : <Image fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />}
+              </ThumbnailBox>
             </article>
           )
         })}
+        <Bio />
       </Layout>
     )
   }
@@ -50,26 +61,33 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
+{
+  site {
+    siteMetadata {
+      title
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
+  }
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    edges {
+      node {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 600, quality: 80) {
+                src
+              }
+            }
+            publicURL
           }
         }
       }
     }
   }
+}
 `

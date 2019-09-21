@@ -8,13 +8,23 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
+
+const SocialLogo = styled.img`
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+`
+const ImageLink = styled.a`
+  box-shadow: none;
+  `
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-icon.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -26,6 +36,8 @@ const Bio = () => {
           author
           social {
             twitter
+            github
+            instagram
           }
         }
       }
@@ -54,12 +66,17 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        Written by <strong>{author}</strong>
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        <ImageLink href={`https://twitter.com/${social.twitter}`}>
+          <SocialLogo src="/social_icons/Twitter.png" alt="Twitter logo" width="25"/>
+        </ImageLink>
+        <ImageLink href={`https://github.com/${social.github}`}>
+          <SocialLogo src="/social_icons/Github.png" alt="Github logo" width="25"/>
+        </ImageLink>
+        <ImageLink href={`https://www.instagram.com/${social.instagram}`}>
+          <SocialLogo src="/social_icons/instagram.png" alt="instagram logo" width="25"/>
+        </ImageLink>
       </p>
     </div>
   )

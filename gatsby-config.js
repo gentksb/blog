@@ -2,10 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `幻想サイクル`,
     author: `Gen`,
-    description: `シクロクロスとロードバイク・MTB、時々ガジェット`,
+    description: `Bicycle life`,
     siteUrl: `https://blog.gensobunya.net/`,
     social: {
       twitter: `gen_sobunya`,
+      github: `gentksb`,
+      instagram: `gen_sobunya`,
     },
   },
   plugins: [
@@ -30,7 +32,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 800,
             },
           },
           {
@@ -45,6 +47,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
