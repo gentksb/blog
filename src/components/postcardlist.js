@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { rhythm } from "../utils/typography"
 import Thumbnail from "../components/thumbnail"
 import styled from "styled-components"
 
@@ -13,18 +12,20 @@ const PostCardList = ({ nodes }) => {
         <article key={node.fields.slug}>
           <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
             <HeaderBox>
-              <PostTitle>{title}</PostTitle>
+              <TitleBox>
+                <PostTitle>{title}</PostTitle>
+              </TitleBox>
               <DateBox>
                 <small>{node.frontmatter.date}</small>
               </DateBox>
-              <ThumbnailWrapper>
+              <ThumbnailBox>
                 <Thumbnail
                   filename={node.frontmatter.featuredImage.base}
                   alt=""
                 />
-              </ThumbnailWrapper>
+              </ThumbnailBox>
             </HeaderBox>
-            <SectionWrapper>
+            <SectionBox>
               <section>
                 <PostDescription
                   dangerouslySetInnerHTML={{
@@ -33,7 +34,7 @@ const PostCardList = ({ nodes }) => {
                 />
                 (続きを読む)
               </section>
-            </SectionWrapper>
+            </SectionBox>
           </Link>
         </article>
       </ArticleContainer>
@@ -41,19 +42,25 @@ const PostCardList = ({ nodes }) => {
   })
 }
 
-const ArticleContainer = styled.div``
-const HeaderBox = styled.header``
-const PostTitle = styled.h3`
-  marginbottom: ${rhythm(1 / 4)};
+const ArticleContainer = styled.div`
+padding:0px;
 `
+const HeaderBox = styled.header`
+padding:0px
+`
+const TitleBox = styled.div``
+
 const DateBox = styled.div`
   margin: 0;
   text-align: right;
 `
-const ThumbnailWrapper = styled.div``
-const SectionWrapper = styled.div``
+const ThumbnailBox = styled.div``
+const SectionBox = styled.div``
 const PostDescription = styled.p`
   text-decoration: none;
   color: #000000;
+`
+const PostTitle = styled.h3`
+  margin-bottom: 0.5em;
 `
 export default PostCardList
