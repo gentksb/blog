@@ -11,12 +11,20 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const edges = data.allMarkdownRemark.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <PostCardList nodes={posts} />
+        {
+          edges.map(({ node }) => (
+            <div key={node.id}>
+              <h3>{node.frontmatter.title}</h3>
+              <p>{node.frontmatter.date}</p>
+              <p>{node.excerpt}</p>
+            </div>
+          ))
+        }
         <Bio />
       </Layout>
     )
