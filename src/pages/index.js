@@ -5,7 +5,6 @@ import { graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCardList from "../components/postcardlist"
 
 class BlogIndex extends React.Component {
   render() {
