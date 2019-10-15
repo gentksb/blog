@@ -20,11 +20,13 @@ class BlogIndex extends React.Component {
             <div key={node.id}>
               <Link to={node.fields.slug}>
                 <h3>{node.frontmatter.title}</h3>
-                <Img
-                alt={`${node.frontmatter.title} cover image`}
-                style={{ height: '100%' }}
-                fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-              />
+                {node.frontmatter.featuredImage != null && 
+                  <Img
+                  alt={`${node.frontmatter.title} cover image`}
+                  style={{ height: '100%' }}
+                  fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                />
+                }
               </Link>
               <p>{node.frontmatter.date}</p>
               <p>{node.excerpt}</p>
@@ -46,7 +48,7 @@ export const pageQuery = graphql`
       title
     }
   }
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, limit: 10) {
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
     edges {
       node {
         excerpt
