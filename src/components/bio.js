@@ -69,13 +69,13 @@ const Bio = () => {
         Written by <strong>{author}</strong>
         {` `}
         <ImageLink href={`https://twitter.com/${social.twitter}`}>
-          <SocialLogo src="/social_icons/Twitter.png" alt="Twitter logo" width="25" />
+          <SocialLogo src="/social_icons/Twitter.png" alt="Twitter logo" width="25"/>
         </ImageLink>
         <ImageLink href={`https://github.com/${social.github}`}>
-          <SocialLogo src="/social_icons/Github.png" alt="Github logo" width="25" />
+          <SocialLogo src="/social_icons/Github.png" alt="Github logo" width="25"/>
         </ImageLink>
         <ImageLink href={`https://www.instagram.com/${social.instagram}`}>
-          <SocialLogo src="/social_icons/instagram.png" alt="instagram logo" width="25" />
+          <SocialLogo src="/social_icons/instagram.png" alt="instagram logo" width="25"/>
         </ImageLink>
       </p>
     </div>
