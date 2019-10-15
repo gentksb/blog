@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Pagination from "../components/pagination"
 
 class BlogIndex extends React.Component {
   render() {
@@ -35,6 +36,7 @@ class BlogIndex extends React.Component {
             </div>
           ))
         }
+        <Pagination props={this.props} />
         <Bio />
       </Layout>
     )
@@ -44,13 +46,17 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-{
+query ($skip: Int!, $limit: Int!) {
   site {
     siteMetadata {
       title
     }
   }
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+  allMarkdownRemark(
+    sort: {fields: [frontmatter___date], order: DESC}
+    skip: $skip
+    limit: $limit
+    ) {
     edges {
       node {
         excerpt
