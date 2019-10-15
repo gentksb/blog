@@ -1,5 +1,5 @@
 import React from "react"
-import { Link,graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Img from 'gatsby-image';
 
 import Bio from "../components/bio"
@@ -20,14 +20,14 @@ class BlogIndex extends React.Component {
             <div key={node.id}>
               <Link to={node.fields.slug}>
                 <h3>{node.frontmatter.title}</h3>
-                {node.frontmatter.cover != null ? 
+                {node.frontmatter.cover != null ?
                   <Img
-                  alt={`${node.frontmatter.title} cover image`}
-                  style={{ height: '100%' }}
-                  fluid={node.frontmatter.cover.childImageSharp.fluid}
-                />
-                :
-                <img src="/dummy.jpg" alt="no cover" />
+                    alt={`${node.frontmatter.title} cover image`}
+                    style={{ height: '100%' }}
+                    fluid={node.frontmatter.cover.childImageSharp.fluid}
+                  />
+                  :
+                  <img src="/dummy.jpg" alt="no cover" />
                 }
               </Link>
               <p>{node.frontmatter.date}</p>
