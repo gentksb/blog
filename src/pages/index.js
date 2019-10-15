@@ -1,6 +1,6 @@
 import React from "react"
-import { graphql } from "gatsby"
-
+import { Link,graphql } from "gatsby"
+import Img from 'gatsby-image';
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -18,7 +18,14 @@ class BlogIndex extends React.Component {
         {
           edges.map(({ node }) => (
             <div key={node.id}>
-              <h3>{node.frontmatter.title}</h3>
+              <Link to={node.fields.slug}>
+                <h3>{node.frontmatter.title}</h3>
+                <Img
+                alt={`${node.frontmatter.title} cover image`}
+                style={{ height: '100%' }}
+                fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+              />
+              </Link>
               <p>{node.frontmatter.date}</p>
               <p>{node.excerpt}</p>
             </div>
@@ -39,7 +46,7 @@ export const pageQuery = graphql`
       title
     }
   }
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, limit: 5) {
+  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, limit: 10) {
     edges {
       node {
         excerpt
@@ -51,6 +58,20 @@ export const pageQuery = graphql`
           title
           featuredImage {
             base
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                originalName
+                srcWebp
+                srcSetWebp
+                srcSet
+                src
+                sizes
+                aspectRatio
+                presentationWidth
+                presentationHeight
+                originalImg
+              }
+            }
           }
           tags
         }
@@ -58,5 +79,4 @@ export const pageQuery = graphql`
     }
   }
 }
-
 `
