@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-06-16T06:01:00+00:00
 #url: /2016/06/specialized-power.html
-featuredImage: DSC_7658.jpg
+cover: DSC_7658.jpg
 categories:
   - 未分類
 tags:

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-10-25T02:49:00+00:00
 #url: /2016/10/tcr-advanced-pro-disc.html
-featuredImage: DSC_0311.jpg
+cover: DSC_0311.jpg
 categories:
   - 未分類
 tags:

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-07-07T02:35:00+00:00
 #url: /2017/07/c92.html
-featuredImage: DD47GDkVoAEOn4e_orig.jpg
+cover: DD47GDkVoAEOn4e_orig.jpg
 categories:
   - 未分類
 tags:

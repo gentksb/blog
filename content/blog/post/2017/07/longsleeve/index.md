@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-07-17T04:17:00+00:00
 #url: /2017/07/blog-post.html
-featuredImage: DSC_1118.jpg
+cover: DSC_1118.jpg
 custom_permalink:
   - 2017/07/blog-post.html
 categories:

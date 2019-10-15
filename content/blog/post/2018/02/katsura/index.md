@@ -3,7 +3,7 @@ title: "2017-18関西シクロクロス最終戦 桂川レースレポート"
 date: 2018-02-06T23:32:02+09:00
 draft: false
 tags: ["CX", "RaceReport"]
-featuredImage: 18katsura.jpg
+cover: 18katsura.jpg
 ---
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/132570324@N04/25227062527/in/album-72157693072261715/" title="DSC_7891.jpg"><img src="https://farm5.staticflickr.com/4606/25227062527_7211e5c5f7_c.jpg" width="800" height="534" alt="DSC_7891.jpg"></a></script>
 

@@ -3,7 +3,7 @@ title: "東海CX#8 ワールドネイチャープラザレースレポート"
 date: 2018-02-28T19:19:18+09:00
 draft: false
 tags: ["Racereport", "CX"]
-featuredImage: 20180226_top.jpg
+cover: 20180226_top.jpg
 ---
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/maekawa0717/40475491811/in/album-72157693073170254/" title="DSC_8261.jpg"><img src="https://farm5.staticflickr.com/4697/40475491811_508c6f6222_c.jpg" width="800" height="490" alt="DSC_8261.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 

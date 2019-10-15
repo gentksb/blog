@@ -3,7 +3,7 @@ title: "R250防水ドラム型フロントバッグ・フレームインナー�
 date: 2019-04-07T21:55:51+09:00
 draft: false
 tags: ["TIPS", "ROAD"]
-featuredImage: "./framebag.jpg"
+cover: "./framebag.jpg"
 ---
 ![image](./framebag.jpg)
 ## チビの味方R250

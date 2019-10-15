@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-10-15T03:46:00+00:00
 #url: /2014/10/blog-post.html
-featuredImage: 01_ui.jpg
+cover: 01_ui.jpg
 categories:
   - 未分類
 tags:

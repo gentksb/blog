@@ -3,7 +3,7 @@ title: "中華チタンボトルケージを本物か検証してみた"
 date: 2019-03-02T18:48:28+09:00
 draft: false
 tags: ["TIPS"]
-featuredImage: "./istitan.jpg"
+cover: "./istitan.jpg"
 ---
 ![image](./istitan.jpg)
 ## ボトルケージはちょっとくらい信頼性が低くても…

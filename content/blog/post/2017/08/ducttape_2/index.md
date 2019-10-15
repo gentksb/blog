@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-08-17T06:18:00+00:00
 #url: /2017/08/blog-post_18.html
-featuredImage: DSC_7835.jpg
+cover: DSC_7835.jpg
 categories:
   - 未分類
 tags:

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-01-02T04:14:00+00:00
 #url: /2016/01/blog-post.html
-featuredImage: DSC_6888.jpg
+cover: DSC_6888.jpg
 categories:
   - 未分類
 tags:

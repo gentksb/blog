@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-04-21T03:41:00+00:00
 #url: /2017/04/blog-post.html
-featuredImage: courseThumb.png
+cover: courseThumb.png
 categories:
   - 未分類
 

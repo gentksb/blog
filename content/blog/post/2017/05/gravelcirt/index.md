@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-05-05T19:22:00+00:00
 #url: /2017/05/2017.html
-featuredImage: DSC_0978.jpg
+cover: DSC_0978.jpg
 categories:
   - 未分類
 tags:

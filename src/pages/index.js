@@ -20,11 +20,11 @@ class BlogIndex extends React.Component {
             <div key={node.id}>
               <Link to={node.fields.slug}>
                 <h3>{node.frontmatter.title}</h3>
-                {node.frontmatter.featuredImage != null ? 
+                {node.frontmatter.cover != null ? 
                   <Img
                   alt={`${node.frontmatter.title} cover image`}
                   style={{ height: '100%' }}
-                  fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                  fluid={node.frontmatter.cover.childImageSharp.fluid}
                 />
                 :
                 <img src="/dummy.jpg" alt="no cover" />
@@ -60,7 +60,7 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
-          featuredImage {
+          cover {
             base
             childImageSharp {
               fluid(maxWidth: 1080) {

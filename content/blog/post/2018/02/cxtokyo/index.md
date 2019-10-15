@@ -3,7 +3,7 @@ title: "2018シクロクロス東京レースレポート"
 date: 2018-02-13T19:24:59+09:00
 draft: false
 tags: ["CX", "RaceReport"]
-featuredImage: 2018cxtokyo.jpg
+cover: 2018cxtokyo.jpg
 ---
 ![image](2018cxtokyo.jpg)
 ## 2018シクロクロス東京レースレポート

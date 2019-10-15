@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-04-25T03:14:00+00:00
 #url: /2017/04/blog-post_25.html
-featuredImage: DSC_0266.jpg
+cover: DSC_0266.jpg
 categories:
   - 未分類
 tags:

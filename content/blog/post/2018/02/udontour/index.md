@@ -3,7 +3,7 @@ title: "ヒルクライム込み高松うどんツーリング"
 date: 2018-02-21T21:03:31+09:00
 draft: false
 tags: ["Road"]
-featuredImage: DSC_0694.jpg
+cover: DSC_0694.jpg
 ---
 ![image](DSC_0694.jpg)
 ## 休息の週

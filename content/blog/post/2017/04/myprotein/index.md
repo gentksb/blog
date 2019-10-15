@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2017-04-02T04:17:00+00:00
 #url: /2017/04/my-protein.html
-featuredImage: DSC_0887.jpg
+cover: DSC_0887.jpg
 categories:
   - 未分類
 tags:

@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-11-30T04:10:00+00:00
 #url: /2013/11/bar-fly20.html
-featuredImage: DSC_4572.jpg
+cover: DSC_4572.jpg
 categories:
   - 未分類
 tags:

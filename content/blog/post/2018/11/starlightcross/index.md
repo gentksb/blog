@@ -3,7 +3,7 @@ title: "2018-19スターライトクロス　レースレポート"
 date: 2018-11-11T19:28:05+09:00
 draft: false
 tags: ["CX", "RACEREPORT"]
-featuredImage: "./45096130694_67408ab69f_k.jpg"
+cover: "./45096130694_67408ab69f_k.jpg"
 ---
 ![image](./45096130694_67408ab69f_k.jpg)
 ## 2018-19スターライトクロス Men Elite 61/82

@@ -3,7 +3,7 @@ title: "全日本への道 JCXシリーズ3連戦レースレポート"
 date: 2018-10-30T18:40:53+09:00
 draft: false
 tags: ["CX"]
-featuredImage: "./hiroshima.jpg"
+cover: "./hiroshima.jpg"
 ---
 
 ## 取り柄のないライダーでも全日本に出たい！

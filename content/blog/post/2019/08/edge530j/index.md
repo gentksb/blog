@@ -3,7 +3,7 @@ title: "Edge530買いました"
 date: 2019-08-19T21:24:19+09:00
 draft: false
 tags: ["ROAD"]
-featuredImage: "./vs_ca500.jpg"
+cover: "./vs_ca500.jpg"
 ---
 ![image](./vs_ca500.jpg)
 ## そしてGARMINに戻る...

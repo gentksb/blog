@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-08-18T02:42:00+00:00
 #url: /2016/08/blog-post.html
-featuredImage: DSC_7734.jpg
+cover: DSC_7734.jpg
 categories:
   - 未分類
 tags:

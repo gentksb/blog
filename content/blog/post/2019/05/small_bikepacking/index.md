@@ -3,7 +3,7 @@ title: "ロードで快走宿泊ツーリング"
 date: 2019-05-14T19:39:11+09:00
 draft: false
 tags: ["TIPS","ROAD"]
-featuredImage: "./real.jpg"
+cover: "./real.jpg"
 ---
 ![image](./real.jpg)
 ## 小柄な人の自転車にも装着できます（できない）

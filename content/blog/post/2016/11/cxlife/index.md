@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-11-28T01:31:00+00:00
 #url: /2016/11/blog-post_28.html
-featuredImage: DSC_0418.jpg
+cover: DSC_0418.jpg
 categories:
   - 未分類
 tags:

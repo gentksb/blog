@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-07-26T01:11:00+00:00
 #url: /2016/07/blog-post.html
-featuredImage: DSC_6483.jpg
+cover: DSC_6483.jpg
 categories:
   - 未分類
 tags:

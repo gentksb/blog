@@ -3,7 +3,7 @@ title: "Google Homeでハンズフリーローラー生活！"
 date: 2017-12-18T20:10:27+09:00
 draft: false
 tags: ["Zwift", "TIPS"]
-featuredImage: homemini.jpg
+cover: homemini.jpg
 ---
 ![image](./homemini.jpg" width="100%)
 ## もっと快適なローラー環境を求めて

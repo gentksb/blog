@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-08-22T04:38:00+00:00
 #url: /2016/08/di2.html
-featuredImage: DSC_0072.jpg
+cover: DSC_0072.jpg
 categories:
   - 未分類
 tags:

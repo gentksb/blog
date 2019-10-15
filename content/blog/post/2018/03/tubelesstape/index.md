@@ -3,7 +3,7 @@ title: "チューブレスレディとチューブレステープを巡る終わ
 date: 2018-03-25T13:54:01+09:00
 draft: false
 tags: ["TIPS", "ROAD", "MTB", "CX"]
-featuredImage: "P_20170924_122957.jpg"
+cover: "P_20170924_122957.jpg"
 ---
 ![image](P_20170924_122957.jpg)
 ## チューブレスタイヤはいいぞ

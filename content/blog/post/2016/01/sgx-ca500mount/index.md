@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-01-09T01:08:00+00:00
 #url: /2016/01/sgx-ca500garmin.html
-featuredImage: DSC_6950.jpg
+cover: DSC_6950.jpg
 categories:
   - 未分類
 tags:

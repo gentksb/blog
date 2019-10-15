@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2016-01-06T02:00:00+00:00
 #url: /2016/01/simmvno.html
-featuredImage: DSC_6941.jpg
+cover: DSC_6941.jpg
 categories:
   - 未分類
 tags:

@@ -3,7 +3,7 @@ title: "2018シクロクロス全日本選手権男子エリート＆シング�
 date: 2018-12-10T19:35:17+09:00
 draft: false
 tags: ["CX", "RACE"]
-featuredImage: "./kazuma.jpg"
+cover: "./kazuma.jpg"
 ---
 ![image](./kazuma.jpg)
 

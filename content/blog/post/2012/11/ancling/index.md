@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2012-11-28T21:50:00+00:00
 #url: /post/2012/11/blog-post_29-4.html
-featuredImage: 0.jpg
+cover: 0.jpg
 categories:
   - 未分類
 tags:

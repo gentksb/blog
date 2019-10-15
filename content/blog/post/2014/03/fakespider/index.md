@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-03-29T02:49:00+00:00
 #url: /2014/03/blog-post_29-2.html
-featuredImage:  IMG_20140122_2230.jpg
+cover:  IMG_20140122_2230.jpg
 categories:
   - 未分類
 tags:

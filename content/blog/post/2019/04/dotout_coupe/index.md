@@ -3,7 +3,7 @@ title: "DOTOUT COUPÉ最速インプレ"
 date: 2019-04-07T21:25:28+09:00
 draft: false
 tags: ["ROAD", "CX"]
-featuredImage: "./IMG_20190407_213033.jpg"
+cover: "./IMG_20190407_213033.jpg"
 ---
 ![image](./IMG_20190407_213033.jpg)
 ## リーズナブルでシンプルなセミエアロヘルメット
