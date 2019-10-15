@@ -20,12 +20,14 @@ class BlogIndex extends React.Component {
             <div key={node.id}>
               <Link to={node.fields.slug}>
                 <h3>{node.frontmatter.title}</h3>
-                {node.frontmatter.featuredImage != null && 
+                {node.frontmatter.featuredImage != null ? 
                   <Img
                   alt={`${node.frontmatter.title} cover image`}
                   style={{ height: '100%' }}
                   fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
                 />
+                :
+                <img src="/dummy.jpg" alt="no cover" />
                 }
               </Link>
               <p>{node.frontmatter.date}</p>
