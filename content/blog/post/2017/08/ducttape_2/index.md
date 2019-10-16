@@ -6,11 +6,7 @@ date: 2017-08-17T06:18:00+00:00
 
 cover: DSC_7835.jpg
 
-tags:
-  - CX
-  - MTB
-  - TIPS
-  - REVIEW
+tags: ["CX","MTB","TIPS","REVIEW"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,9 +6,7 @@ date: 2016-01-21T03:20:00+00:00
 
 cover: E382ADE383A3E38397E38381E383A3.png
 
-tags:
-  - Zwift
-  - WORKOUT
+tags: ["Zwift","WORKOUT"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

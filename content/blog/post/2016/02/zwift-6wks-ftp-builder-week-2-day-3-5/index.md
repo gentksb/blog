@@ -6,10 +6,7 @@ date: 2016-02-10T03:53:00+00:00
 
 cover: 2016-02-06_1144120.jpg
 
-tags:
-  - TIPS
-  - Zwift
-  - WORKOUT
+tags: ["TIPS","Zwift","WORKOUT"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

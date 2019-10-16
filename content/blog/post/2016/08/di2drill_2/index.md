@@ -6,8 +6,7 @@ date: 2016-08-24T02:36:00+00:00
 
 cover: DSC_0068.jpg
 
-tags:
-  - CX
+tags: ["CX"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,8 +6,7 @@ date: 2016-08-18T02:42:00+00:00
 
 cover: DSC_7734.jpg
 
-tags:
-  - COMIKET
+tags: ["COMIKET"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,10 +6,7 @@ date: 2016-03-20T17:39:00+00:00
 
 cover: DSC_7324.jpg
 
-tags:
-  - Zwift
-  - REVIEW
-  - GADGETS
+tags: ["Zwift","REVIEW","GADGETS"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,9 +6,7 @@ date: 2017-09-15T02:36:00+00:00
 
 cover: P_20170915_202018.jpg
 
-tags:
-  - ROAD
-  - REVIEW
+tags: ["ROAD","REVIEW"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -5,9 +5,7 @@ type: post
 date: 2014-06-02T04:23:00+00:00
 
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 <div>

@@ -5,9 +5,7 @@ type: post
 date: 2015-02-12T05:43:00+00:00
 
 
-tags:
-  - CX
-  - RACE
+tags: ["CX","RACE"]
 
 ---
 気がついたら4戦終わってしまっていた。

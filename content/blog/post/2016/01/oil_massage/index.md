@@ -6,10 +6,7 @@ date: 2016-01-02T04:14:00+00:00
 
 cover: DSC_6888.jpg
 
-tags:
-  - CX
-  - TIPS
-  - REVIEW
+tags: ["CX","TIPS","REVIEW"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,9 +6,7 @@ date: 2017-08-08T04:39:00+00:00
 
 cover: DSC_7833.jpg
 
-tags:
-  - CX
-  - MTB
+tags: ["CX","MTB"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

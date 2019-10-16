@@ -5,9 +5,7 @@ type: post
 date: 2013-02-11T04:26:00+00:00
 
 
-tags:
-  - MTB
-  - RACE
+tags: ["MTB","RACE"]
 
 ---
 シクロクロス東京にスポーツクラス（AJOCCでいうC3）に参戦してきましたよー

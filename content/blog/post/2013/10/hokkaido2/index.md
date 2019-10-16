@@ -5,9 +5,7 @@ type: post
 date: 2013-10-12T04:29:00+00:00
 
 
-tags:
-  - TOURING
-  - ROAD
+tags: ["TOURING","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: left;">

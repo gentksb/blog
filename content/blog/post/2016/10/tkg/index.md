@@ -6,9 +6,7 @@ date: 2016-10-26T01:44:00+00:00
 
 cover: DSC_0268.jpg
 
-tags:
-  - TOURING
-  - FOOD
+tags: ["TOURING","FOOD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

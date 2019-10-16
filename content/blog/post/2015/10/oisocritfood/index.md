@@ -6,9 +6,7 @@ date: 2015-10-23T03:14:00+00:00
 
 cover: DSC_6028.jpg
 
-tags:
-  - RACE
-  - FOOD
+tags: ["RACE","FOOD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

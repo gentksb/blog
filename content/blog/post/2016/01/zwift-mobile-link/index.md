@@ -6,9 +6,7 @@ date: 2016-01-25T05:03:00+00:00
 
 cover: Screenshot_2016-01-25-22-44-41.png
 
-tags:
-  - TIPS
-  - Zwift
+tags: ["TIPS","Zwift"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

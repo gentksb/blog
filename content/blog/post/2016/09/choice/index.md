@@ -6,9 +6,7 @@ date: 2016-09-10T02:51:00+00:00
 
 cover: CHOICE-GOOOOOLDEN-WHEY007.jpg
 
-tags:
-  - REVIEW
-  - FOOD
+tags: ["REVIEW","FOOD"]
 
 ---
 ![image](./CHOICE-GOOOOOLDEN-WHEY007.jpg)

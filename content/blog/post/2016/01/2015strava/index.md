@@ -8,8 +8,7 @@ date: 2015-12-31T16:24:00+00:00
 
 cover: DSC_6882.jpg
 
-tags:
-  - TIPS
+tags: ["TIPS"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

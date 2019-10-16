@@ -6,9 +6,7 @@ date: 2016-01-25T03:44:00+00:00
 
 cover: 2016-01-25_2027460.jpg
 
-tags:
-  - Zwift
-  - TOURING
+tags: ["Zwift","TOURING"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,9 +6,7 @@ date: 2017-04-17T03:31:00+00:00
 
 cover: DSC_0935.jpg
 
-tags:
-  - MTB
-  - REVIEW
+tags: ["MTB","REVIEW"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

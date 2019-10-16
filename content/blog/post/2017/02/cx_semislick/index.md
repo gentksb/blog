@@ -6,11 +6,7 @@ date: 2017-02-14T05:31:00+00:00
 
 cover: DSC_0629.jpg
 
-tags:
-  - CX
-  - TIPS
-  - WORKOUT
-  - RACE
+tags: ["CX","TIPS","WORKOUT","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

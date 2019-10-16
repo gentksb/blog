@@ -6,9 +6,7 @@ date: 2016-12-10T04:16:00+00:00
 
 cover: DSC_0448.jpg
 
-tags:
-  - CX
-  - REVIEW
+tags: ["CX","REVIEW"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

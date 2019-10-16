@@ -6,10 +6,7 @@ date: 2017-06-11T05:04:00+00:00
 
 cover: product_CS-R8000-S1-min.png
 
-tags:
-  - CX
-  - ROAD
-  - EC
+tags: ["CX","ROAD","EC"]
 
 ---
 ![image](./product_CS-R8000-S1-min.png)

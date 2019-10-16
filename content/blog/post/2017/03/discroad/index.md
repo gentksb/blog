@@ -6,9 +6,7 @@ date: 2017-03-24T06:39:00+00:00
 
 cover: DSC_0584.jpg
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

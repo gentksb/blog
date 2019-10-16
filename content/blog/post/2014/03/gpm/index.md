@@ -6,9 +6,7 @@ date: 2014-03-06T05:18:00+00:00
 
 cover: IMG_20140302_101739.jpg
 
-tags:
-  - CX
-  - RACE
+tags: ["CX","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

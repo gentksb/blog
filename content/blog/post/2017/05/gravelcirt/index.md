@@ -6,9 +6,7 @@ date: 2017-05-05T19:22:00+00:00
 
 cover: DSC_0978.jpg
 
-tags:
-  - CX
-  - ROAD
+tags: ["CX","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

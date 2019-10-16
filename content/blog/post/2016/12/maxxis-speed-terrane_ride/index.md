@@ -6,10 +6,7 @@ date: 2016-12-11T02:31:00+00:00
 
 cover: DSC_0453.jpg
 
-tags:
-  - CX
-  - REVIEW
-  - WORKOUT
+tags: ["CX","REVIEW","WORKOUT"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

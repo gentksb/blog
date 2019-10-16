@@ -6,9 +6,7 @@ date: 2016-09-28T02:18:00+00:00
 
 cover: DSC_0187.jpg
 
-tags:
-  - CX
-  - RACE
+tags: ["CX","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

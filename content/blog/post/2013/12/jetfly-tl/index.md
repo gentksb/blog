@@ -5,10 +5,7 @@ type: post
 date: 2013-12-18T13:37:00+00:00
 
 
-tags:
-  - TIPS
-  - REVIEW
-  - ROAD
+tags: ["TIPS","REVIEW","ROAD"]
 
 ---
 9070が届いたついでに、暫定運用でGP4000Sを履かせていたJETFLYをチューブレス化します。  

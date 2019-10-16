@@ -5,9 +5,7 @@ type: post
 date: 2012-11-03T07:16:00+00:00
 
 
-tags:
-  - MTB
-  - ROAD
+tags: ["MTB","ROAD"]
 
 ---
 サイクルモード行って来ました。

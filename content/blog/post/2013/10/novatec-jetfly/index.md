@@ -5,9 +5,7 @@ type: post
 date: 2013-10-15T04:21:00+00:00
 
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 9070がほしい

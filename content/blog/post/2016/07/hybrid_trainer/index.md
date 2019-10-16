@@ -6,14 +6,7 @@ date: 2016-07-26T01:11:00+00:00
 
 cover: DSC_6483.jpg
 
-tags:
-  - CX
-  - MTB
-  - TT
-  - REVIEW
-  - WORKOUT
-  - RACE
-  - ROAD
+tags: ["CX","MTB","TT","REVIEW","WORKOUT","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

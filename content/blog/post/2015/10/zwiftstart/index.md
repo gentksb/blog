@@ -6,11 +6,7 @@ date: 2015-10-01T05:13:00+00:00
 
 cover: 2015-10-01_2209230.jpg
 
-tags:
-  - TIPS
-  - Zwift
-  - REVIEW
-  - ROAD
+tags: ["TIPS","Zwift","REVIEW","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

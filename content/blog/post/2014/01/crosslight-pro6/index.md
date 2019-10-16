@@ -6,9 +6,7 @@ date: 2014-01-24T06:34:00+00:00
 
 cover: IMG_20140123_232028.jpg
 
-tags:
-  - CX
-  - REVIEW
+tags: ["CX","REVIEW"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,9 +6,7 @@ date: 2016-02-27T01:01:00+00:00
 
 cover: DSC_7094.jpg
 
-tags:
-  - REVIEW
-  - WORKOUT
+tags: ["REVIEW","WORKOUT"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

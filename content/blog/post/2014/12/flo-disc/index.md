@@ -5,10 +5,7 @@ type: post
 date: 2014-12-27T02:20:00+00:00
 
 
-tags:
-  - TT
-  - REVIEW
-  - EC
+tags: ["TT","REVIEW","EC"]
 
 ---
 ### 激安ディスクホイール現る

@@ -6,13 +6,7 @@ date: 2017-03-25T02:03:00+00:00
 
 cover: DSC_0666.jpg
 
-tags:
-  - CX
-  - MTB
-  - Zwift
-  - REVIEW
-  - TOURING
-  - ROAD
+tags: ["CX","MTB","Zwift","REVIEW","TOURING"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

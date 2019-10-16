@@ -6,9 +6,7 @@ date: 2016-03-12T04:19:00+00:00
 
 cover:  41kPTlyHj2L._SL250_.jpg
 
-tags:
-  - TIPS
-  - GADGETS
+tags: ["TIPS","GADGETS"]
 
 ---
 [<img border="0" src="https://images-fe.ssl-images-amazon.com/images/I/41kPTlyHj2L._SL250_.jpg" height="303" width="400" />][1]<img alt="" border="0" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00UBS2OIC" height="1" style="border: none !important; margin: 0px !important;" width="1" />

@@ -6,9 +6,7 @@ date: 2016-09-14T02:25:00+00:00
 
 cover: DSC_0155.jpg
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

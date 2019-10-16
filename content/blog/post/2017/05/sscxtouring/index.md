@@ -6,9 +6,7 @@ date: 2017-05-06T01:42:00+00:00
 
 cover: DSC_0980.jpg
 
-tags:
-  - CX
-  - TOURING
+tags: ["CX","TOURING"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

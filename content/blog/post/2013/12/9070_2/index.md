@@ -5,9 +5,7 @@ type: post
 date: 2013-12-20T15:43:00+00:00
 
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 Di2組付け配線編その1です。

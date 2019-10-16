@@ -5,9 +5,7 @@ type: post
 date: 2016-11-10T02:52:00+00:00
 
 
-tags:
-  - TIPS
-  - TOURING
+tags: ["TIPS","TOURING"]
 
 ---
 

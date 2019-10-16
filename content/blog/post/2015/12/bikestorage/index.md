@@ -6,9 +6,7 @@ date: 2015-12-06T05:16:00+00:00
 
 cover: DSC_6771.jpg
 
-tags:
-  - TIPS
-  - REVIEW
+tags: ["TIPS","REVIEW"]
 
 ---
 ![image](./DSC_6771.jpg)

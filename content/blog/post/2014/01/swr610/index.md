@@ -6,10 +6,7 @@ date: 2014-01-24T06:49:00+00:00
 
 cover: IMG_20131228_103711.jpg
 
-tags:
-  - TIPS
-  - REVIEW
-  - ROAD
+tags: ["TIPS","REVIEW","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

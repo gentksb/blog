@@ -6,10 +6,7 @@ date: 2017-05-16T05:43:00+00:00
 
 cover: DSC_1046.jpg
 
-tags:
-  - TOURING
-  - ROAD
-  - FOOD
+tags: ["TOURING","ROAD","FOOD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

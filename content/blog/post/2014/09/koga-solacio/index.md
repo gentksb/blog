@@ -6,9 +6,7 @@ date: 2014-09-25T01:37:00+00:00
 
 cover: 2014-09-2110.09.30.jpg
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

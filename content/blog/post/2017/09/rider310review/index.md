@@ -6,9 +6,7 @@ date: 2017-09-27T11:26:26+00:00
 
 cover: DSC_7899.jpg
 
-tags:
-  - REVIEW
-  - GADGETS
+tags: ["REVIEW","GADGETS"]
 
 ---
 <img class="wp-image-745 size-large alignnone" src="./DSC_7899.jpg" alt="" width="840" height="473" />

@@ -6,10 +6,7 @@ date: 2015-07-13T05:26:00+00:00
 
 cover: item.jpg
 
-tags:
-  - TIPS
-  - REVIEW
-  - FOOD
+tags: ["TIPS","REVIEW","FOOD"]
 
 ---
 湧いては消えるコンビニの紙パック飲料。

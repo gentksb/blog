@@ -6,9 +6,7 @@ date: 2014-11-27T06:17:00+00:00
 
 cover: 2014-11-2207.02.38.jpg
 
-tags:
-  - CX
-  - RACE
+tags: ["CX","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

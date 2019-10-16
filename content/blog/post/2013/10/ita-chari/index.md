@@ -6,8 +6,7 @@ date: 2013-10-15T04:09:00+00:00
 
 cover: DSC_4209.jpg
 
-tags:
-  - ROAD
+tags: ["ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -5,10 +5,7 @@ type: post
 date: 2016-01-13T17:28:00+00:00
 
 
-tags:
-  - CX
-  - TIPS
-  - ROAD
+tags: ["CX","TIPS","ROAD"]
 
 ---
 ### チューブレスの宿命

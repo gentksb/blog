@@ -6,11 +6,7 @@ date: 2017-04-25T03:14:00+00:00
 
 cover: DSC_0266.jpg
 
-tags:
-  - REVIEW
-  - TOURING
-  - WORKOUT
-  - RACE
+tags: ["REVIEW","TOURING","WORKOUT","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

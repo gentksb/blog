@@ -5,8 +5,7 @@ type: post
 date: 2013-01-20T02:19:00+00:00
 
 
-tags:
-  - GADGETS
+tags: ["GADGETS"]
 draft: true
 ---
 HTC Jを手に入れたのでroot取ったりROM突っ込んだりして遊ぶことにしました。

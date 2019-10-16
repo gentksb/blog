@@ -5,8 +5,7 @@ type: post
 date: 2013-01-25T05:55:00+00:00
 
 
-tags:
-  - GADGETS
+tags: ["GADGETS"]
 draft: true
 ---
 参考

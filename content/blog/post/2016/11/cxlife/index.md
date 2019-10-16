@@ -6,10 +6,7 @@ date: 2016-11-28T01:31:00+00:00
 
 cover: DSC_0418.jpg
 
-tags:
-  - CX
-  - GADGETS
-  - RACE
+tags: ["CX","GADGETS","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

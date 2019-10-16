@@ -5,9 +5,7 @@ type: post
 date: 2013-11-30T03:51:00+00:00
 
 
-tags:
-  - TIPS
-  - ROAD
+tags: ["TIPS","ROAD"]
 
 ---
 # 紐変速だったTRINITY compositeを電動化

@@ -6,9 +6,7 @@ date: 2016-06-16T06:01:00+00:00
 
 cover: DSC_7658.jpg
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

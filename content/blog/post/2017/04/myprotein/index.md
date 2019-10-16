@@ -6,10 +6,7 @@ date: 2017-04-02T04:17:00+00:00
 
 cover: DSC_0887.jpg
 
-tags:
-  - REVIEW
-  - EC
-  - FOOD
+tags: ["REVIEW","EC","FOOD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

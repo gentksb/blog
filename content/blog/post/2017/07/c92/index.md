@@ -6,12 +6,7 @@ date: 2017-07-07T02:35:00+00:00
 
 cover: DD47GDkVoAEOn4e_orig.jpg
 
-tags:
-  - Zwift
-  - COMIKET
-  - WORKOUT
-  - RACE
-  - ROAD
+tags: ["Zwift","COMIKET","WORKOUT","RACE","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

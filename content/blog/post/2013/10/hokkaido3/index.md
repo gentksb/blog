@@ -5,9 +5,7 @@ type: post
 date: 2013-10-12T04:35:00+00:00
 
 
-tags:
-  - TOURING
-  - ROAD
+tags: ["TOURING","ROAD"]
 
 ---
 「先生、平地を走りたいです…」

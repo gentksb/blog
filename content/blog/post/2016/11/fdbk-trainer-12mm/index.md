@@ -6,11 +6,7 @@ date: 2016-11-12T02:21:00+00:00
 
 cover: DSC_0346.jpg
 
-tags:
-  - CX
-  - TIPS
-  - WORKOUT
-  - ROAD
+tags: ["CX","TIPS","WORKOUT","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -5,9 +5,7 @@ type: post
 date: 2016-01-05T05:24:00+00:00
 
 
-tags:
-  - TIPS
-  - REVIEW
+tags: ["TIPS","REVIEW"]
 
 ---
 擦り傷には湿潤療法。

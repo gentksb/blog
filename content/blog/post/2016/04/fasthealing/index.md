@@ -6,9 +6,7 @@ date: 2016-04-04T04:36:00+00:00
 
 cover: DSC_7358.jpg
 
-tags:
-  - TIPS
-  - RACE
+tags: ["TIPS","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

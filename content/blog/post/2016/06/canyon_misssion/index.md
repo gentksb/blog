@@ -6,9 +6,7 @@ date: 2016-06-17T20:26:00+00:00
 
 cover: E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg
 
-tags:
-  - Zwift
-  - ROAD
+tags: ["Zwift","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

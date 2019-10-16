@@ -6,9 +6,7 @@ date: 2016-01-06T02:00:00+00:00
 
 cover: DSC_6941.jpg
 
-tags:
-  - TIPS
-  - GADGETS
+tags: ["TIPS","GADGETS"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,9 +6,7 @@ date: 2016-01-27T03:01:00+00:00
 
 cover: 2016-01-27_1854110.jpg
 
-tags:
-  - Zwift
-  - WORKOUT
+tags: ["Zwift","WORKOUT"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

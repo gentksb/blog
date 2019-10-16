@@ -5,9 +5,7 @@ type: post
 date: 2013-10-15T04:08:00+00:00
 
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 この三連休にアルｐ…ニコルユーロサイクル駒沢でKOGAのA-limitedの日本最速試乗（自称）を行っていたので衝動的に試乗してきました。

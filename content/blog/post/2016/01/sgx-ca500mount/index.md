@@ -6,11 +6,7 @@ date: 2016-01-09T01:08:00+00:00
 
 cover: DSC_6950.jpg
 
-tags:
-  - Zwift
-  - REVIEW
-  - GADGETS
-  - ROAD
+tags: ["Zwift","REVIEW","GADGETS","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

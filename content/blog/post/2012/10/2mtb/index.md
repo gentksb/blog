@@ -5,8 +5,7 @@ type: post
 date: 2012-10-16T02:21:00+00:00
 
 
-tags:
-  - MTB
+tags: ["MTB"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

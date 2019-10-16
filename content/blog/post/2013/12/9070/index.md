@@ -6,10 +6,7 @@ date: 2013-12-16T04:03:00+00:00
 
 cover: DSC_4646.jpg
 
-tags:
-  - TIPS
-  - REVIEW
-  - ROAD
+tags: ["TIPS","REVIEW","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

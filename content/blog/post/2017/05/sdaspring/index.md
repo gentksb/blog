@@ -6,9 +6,7 @@ date: 2017-05-25T04:19:00+00:00
 
 cover: DSC_1053.jpg
 
-tags:
-  - MTB
-  - RACE
+tags: ["MTB","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

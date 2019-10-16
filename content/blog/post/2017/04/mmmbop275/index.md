@@ -6,9 +6,7 @@ date: 2017-04-14T21:09:00+00:00
 
 cover: DSC_0851.jpg
 
-tags:
-  - MTB
-  - REVIEW
+tags: ["MTB","REVIEW"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

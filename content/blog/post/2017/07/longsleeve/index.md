@@ -8,9 +8,7 @@ cover: DSC_1118.jpg
 custom_permalink:
   - 2017/07/blog-post.html
 
-tags:
-  - REVIEW
-  - WORKOUT
+tags: ["REVIEW","WORKOUT"]
 
 ---
 

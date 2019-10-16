@@ -6,9 +6,7 @@ date: 2016-10-25T02:49:00+00:00
 
 cover: DSC_0311.jpg
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

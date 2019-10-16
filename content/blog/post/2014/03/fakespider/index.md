@@ -6,9 +6,7 @@ date: 2014-03-29T02:49:00+00:00
 
 cover:  IMG_20140122_2230.jpg
 
-tags:
-  - CX
-  - EC
+tags: ["CX","EC"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,10 +6,7 @@ date: 2013-11-30T04:10:00+00:00
 
 cover: DSC_4572.jpg
 
-tags:
-  - TIPS
-  - TT
-  - REVIEW
+tags: ["TIPS","TT","REVIEW"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -6,8 +6,7 @@ date: 2013-12-25T08:48:00+00:00
 
 #cover: Pro6_Black_Gallery.jpg
 
-tags:
-  - CX
+tags: ["CX"]
 
 ---
 

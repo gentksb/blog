@@ -6,12 +6,7 @@ date: 2014-11-13T04:12:00+00:00
 
 cover: 2014-10-1113.41.48.jpg
 
-tags:
-  - CX
-  - TIPS
-  - REVIEW
-  - RACE
-  - EC
+tags: ["CX","TIPS","REVIEW","RACE","EC"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

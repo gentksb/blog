@@ -6,9 +6,7 @@ date: 2017-09-05T05:13:00+00:00
 
 cover: P_20170904_194046.jpg
 
-tags:
-  - CX
-  - TIPS
+tags: ["CX","TIPS"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

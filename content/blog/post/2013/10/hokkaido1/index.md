@@ -6,9 +6,7 @@ date: 2013-10-12T04:23:00+00:00
 
 cover: DSC_0180.jpg
 
-tags:
-  - TOURING
-  - ROAD
+tags: ["TOURING","ROAD"]
 
 ---
 仕事の都合で半年ほど北海道へ行っておりました

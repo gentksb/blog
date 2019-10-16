@@ -6,9 +6,7 @@ date: 2014-01-27T04:39:00+00:00
 
 cover: DSC_4739.jpg
 
-tags:
-  - CX
-  - RACE
+tags: ["CX","RACE"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

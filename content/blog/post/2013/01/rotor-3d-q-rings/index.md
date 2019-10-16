@@ -5,10 +5,7 @@ type: post
 date: 2013-01-20T03:00:00+00:00
 
 
-tags:
-  - REVIEW
-  - ROAD
-  - EC
+tags: ["REVIEW","ROAD","EC"]
 
 ---
 新年早々、臨時収入があったので元日に勢いでIYH！

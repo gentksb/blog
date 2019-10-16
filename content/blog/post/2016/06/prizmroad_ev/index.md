@@ -6,11 +6,7 @@ date: 2016-06-18T18:00:00+00:00
 
 cover: DSC_7627.jpg
 
-tags:
-  - REVIEW
-  - TOURING
-  - RACE
-  - ROAD
+tags: ["REVIEW","TOURING","RACE","ROAD"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

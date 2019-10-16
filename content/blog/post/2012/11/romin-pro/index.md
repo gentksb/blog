@@ -6,9 +6,7 @@ date: 2012-11-01T02:46:00+00:00
 
 cover: DSC_1114.jpg
 
-tags:
-  - REVIEW
-  - ROAD
+tags: ["REVIEW","ROAD"]
 
 ---
 1ヶ月半前、ヨーロッパツーリングの際に安く手に入れていたサドルをようやく交換。

@@ -6,8 +6,7 @@ date: 2013-05-12T01:29:00+00:00
 
 cover: DSC_1568.jpg
 
-tags:
-  - ROAD
+tags: ["ROAD"]
 
 ---
 <img border="0" height="360" src="./DSC_1568.jpg" width="640" />浜松まで餃子を食べにロングライドしていたある日…

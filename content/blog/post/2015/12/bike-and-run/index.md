@@ -6,8 +6,7 @@ date: 2015-12-28T15:15:00+00:00
 
 cover: DSC_6856.jpg
 
-tags:
-  - WORKOUT
+tags: ["WORKOUT"]
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

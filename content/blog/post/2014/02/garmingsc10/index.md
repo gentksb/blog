@@ -5,8 +5,7 @@ type: post
 date: 2014-02-01T02:10:00+00:00
 
 
-tags:
-  - TIPS
+tags: ["TIPS"]
 
 ---
 もうずっと前からケイデンスを拾わなくなったGARMINのGSC10の修理を試みました。

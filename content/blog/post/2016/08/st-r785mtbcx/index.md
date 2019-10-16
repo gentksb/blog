@@ -6,10 +6,7 @@ date: 2016-08-30T04:00:00+00:00
 
 cover: DSC_0117.jpg
 
-tags:
-  - CX
-  - MTB
-  - REVIEW
+tags: ["CX","MTB","REVIEW"]
 
 ---
 ![image](./DSC_0117.jpg)
