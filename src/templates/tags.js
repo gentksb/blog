@@ -2,35 +2,26 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Components
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import PostList from "../components/postList"
+
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+    } tagged with "${tag}"`
 
   return (
-    <div>
-      <h1>{tagHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
-      <Link to="/tags">All tags</Link>
-    </div>
+    <Layout location={tag} title={tagHeader}>
+      <SEO title="All posts" />
+      <PostList props={edges} />
+      <Bio />
+    </Layout>
   )
 }
 
@@ -61,19 +52,43 @@ export default Tags
 
 export const pageQuery = graphql`
   query($tag: String) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(
-      limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
         node {
+          excerpt
           fields {
             slug
           }
           frontmatter {
+            date(formatString: "MMMM DD, YYYY")
             title
+            cover {
+              base
+              childImageSharp {
+                fluid(maxWidth: 1080) {
+                  originalName
+                  srcWebp
+                  srcSetWebp
+                  srcSet
+                  src
+                  sizes
+                  aspectRatio
+                  presentationWidth
+                  presentationHeight
+                  originalImg
+                }
+              }
+            }
+            tags
           }
         }
       }

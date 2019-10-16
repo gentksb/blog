@@ -1,11 +1,11 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
+import PostList from "../components/postList"
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,24 +16,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        {edges.map(({ node }) => (
-          <div key={node.id}>
-            <Link to={node.fields.slug}>
-              <h3>{node.frontmatter.title}</h3>
-              {node.frontmatter.cover != null ? (
-                <Img
-                  alt={`${node.frontmatter.title} cover image`}
-                  style={{ height: "100%" }}
-                  fluid={node.frontmatter.cover.childImageSharp.fluid}
-                />
-              ) : (
-                <img src="/dummy.jpg" alt="no cover" />
-              )}
-            </Link>
-            <p>{node.frontmatter.date}</p>
-            <p>{node.excerpt}</p>
-          </div>
-        ))}
+        <PostList props={edges} />
         <Pagination props={this.props} />
         <Bio />
       </Layout>
