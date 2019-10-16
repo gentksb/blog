@@ -3,10 +3,7 @@ title: 愛車紹介その2（MTB）
 author: admin
 type: post
 date: 2012-10-16T02:21:00+00:00
-
-
 tags: ["MTB"]
-
 ---
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="360" src="./DSC_1046.jpg" width="640" />
