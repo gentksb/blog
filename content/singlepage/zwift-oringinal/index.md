@@ -3,6 +3,7 @@ title: Zwiftワークアウトファイル配布ページ
 author: admin
 type: page
 date: 2016-06-03T04:32:00+00:00
+tags: ["Zwift"]
 ---
 GoogleDrive上にアップロードしています
 
