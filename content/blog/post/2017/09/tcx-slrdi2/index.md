@@ -3,10 +3,9 @@ title: 新車（古い）TCX SLR油圧Di2で組み上げ
 author: admin
 type: post
 date: 2017-09-05T05:13:00+00:00
-#url: /2017/09/tcx-slrdi2.html
+
 cover: P_20170904_194046.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - TIPS

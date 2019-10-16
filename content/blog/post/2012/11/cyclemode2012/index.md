@@ -3,9 +3,8 @@ title: サイクルモードでちょっと気になったモノ
 author: admin
 type: post
 date: 2012-11-03T07:16:00+00:00
-#url: /post/2012/11/blog-post_4.html
-categories:
-  - 未分類
+
+
 tags:
   - MTB
   - ROAD

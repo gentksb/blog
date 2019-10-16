@@ -3,12 +3,11 @@ title: 夏こそ長袖インナーを着ろ
 author: admin
 type: post
 date: 2017-07-17T04:17:00+00:00
-#url: /2017/07/blog-post.html
+
 cover: DSC_1118.jpg
 custom_permalink:
   - 2017/07/blog-post.html
-categories:
-  - 未分類
+
 tags:
   - REVIEW
   - WORKOUT

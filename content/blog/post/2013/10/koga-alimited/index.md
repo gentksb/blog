@@ -3,9 +3,8 @@ title: KOGA A-limited試乗記
 author: admin
 type: post
 date: 2013-10-15T04:08:00+00:00
-#url: /2013/10/koga-limited.html
-categories:
-  - 未分類
+
+
 tags:
   - REVIEW
   - ROAD

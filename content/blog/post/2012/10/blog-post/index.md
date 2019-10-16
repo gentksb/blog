@@ -3,10 +3,9 @@ title: ブログ始めました
 author: admin
 type: post
 date: 2012-10-16T01:52:00+00:00
-#url: /2012/10/blog-post.html
-categories:
-  - 未分類
 
+
+tags: ["Memo"]
 ---
 初めましての人もそうでない人もこんにちは
 

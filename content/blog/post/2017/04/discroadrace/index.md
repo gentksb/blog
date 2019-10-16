@@ -3,10 +3,9 @@ title: ディスクロードでサーキットエンデューロに参加して�
 author: admin
 type: post
 date: 2017-04-21T03:41:00+00:00
-#url: /2017/04/blog-post.html
+
 cover: courseThumb.png
-categories:
-  - 未分類
+
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -3,10 +3,9 @@ title: ロードバイク春秋レイヤリング
 author: admin
 type: post
 date: 2017-04-25T03:14:00+00:00
-#url: /2017/04/blog-post_25.html
+
 cover: DSC_0266.jpg
-categories:
-  - 未分類
+
 tags:
   - REVIEW
   - TOURING

@@ -3,9 +3,8 @@ title: GARMIN　スピードセンサーGSC10を修理しようとしてみる
 author: admin
 type: post
 date: 2014-02-01T02:10:00+00:00
-#url: /2014/02/garmingsc10.html
-categories:
-  - 未分類
+
+
 tags:
   - TIPS
 

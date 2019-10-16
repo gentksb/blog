@@ -4,9 +4,8 @@ author: admin
 type: post
 draft: true
 date: 2013-04-06T04:04:00+00:00
-#url: /2013/04/new-ulterga-6800-leaked-11-speed.html
-categories:
-  - 未分類
+
+
 
 ---
 <blockquote class="twitter-tweet" lang="ja">

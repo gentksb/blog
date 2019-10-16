@@ -3,9 +3,8 @@ title: チューブレスタイヤの空気漏れ対策
 author: admin
 type: post
 date: 2016-01-13T17:28:00+00:00
-#url: /2016/01/blog-post_14.html
-categories:
-  - 未分類
+
+
 tags:
   - CX
   - TIPS

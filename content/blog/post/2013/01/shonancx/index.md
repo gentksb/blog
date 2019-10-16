@@ -3,9 +3,8 @@ title: 湘南ベルマーレシクロクロス
 author: admin
 type: post
 date: 2013-01-27T00:45:00+00:00
-#url: /2013/01/blog-post.html
-categories:
-  - 未分類
+
+
 tags:
   - MTB
   - RACE

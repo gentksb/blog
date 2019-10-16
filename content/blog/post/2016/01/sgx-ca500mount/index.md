@@ -3,10 +3,9 @@ title: SGX-CA500を買ったのでGARMINマウントに装着できるように�
 author: admin
 type: post
 date: 2016-01-09T01:08:00+00:00
-#url: /2016/01/sgx-ca500garmin.html
+
 cover: DSC_6950.jpg
-categories:
-  - 未分類
+
 tags:
   - Zwift
   - REVIEW

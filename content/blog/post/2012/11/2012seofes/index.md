@@ -3,9 +3,8 @@ title: セオフェス、優勝
 author: admin
 type: post
 date: 2012-11-25T04:24:00+00:00
-#url: /post/2012/11/blog-post_25-2.html
-categories:
-  - 未分類
+
+
 tags:
   - RACE
   - ROAD

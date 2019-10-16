@@ -3,10 +3,9 @@ title: SGX-CA500にDi2ジャンクションを取り付けるマウントを自�
 author: admin
 type: post
 date: 2017-03-25T02:03:00+00:00
-#url: /2017/03/sgx-ca500di2.html
+
 cover: DSC_0666.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - MTB

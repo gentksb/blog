@@ -3,10 +3,9 @@ title: カーニバルだよ！バイクロア4レースレポ
 author: admin
 type: post
 date: 2014-11-27T06:17:00+00:00
-#url: /2014/11/4.html
+
 cover: 2014-11-2207.02.38.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - RACE

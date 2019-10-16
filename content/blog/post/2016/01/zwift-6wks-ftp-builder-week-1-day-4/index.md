@@ -3,10 +3,9 @@ title: Zwiftで始めるパワートレーニング4日目 – 6wks FTP builder 
 author: admin
 type: post
 date: 2016-01-27T03:01:00+00:00
-#url: /2016/01/zwift4-6wks-ftp-builder-week-1-day-4.html
+
 cover: 2016-01-27_1854110.jpg
-categories:
-  - 未分類
+
 tags:
   - Zwift
   - WORKOUT

@@ -3,9 +3,8 @@ title: HTC J S-OFF備忘録
 author: admin
 type: post
 date: 2013-01-25T05:55:00+00:00
-#url: /2013/01/htc-j-s-off.html
-categories:
-  - 未分類
+
+
 tags:
   - GADGETS
 draft: true

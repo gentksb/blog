@@ -3,9 +3,8 @@ title: シクロクロスシーズン終了。茨城CX
 author: admin
 type: post
 date: 2015-03-08T04:13:00+00:00
-#url: /2015/03/cx-2.html
-categories:
-  - 未分類
+
+
 tags:
   - CX
   - RACE

@@ -3,10 +3,9 @@ title: 「ディスクロード」のインプレッション
 author: admin
 type: post
 date: 2017-03-24T06:39:00+00:00
-#url: /2017/03/blog-post.html
+
 cover: DSC_0584.jpg
-categories:
-  - 未分類
+
 tags:
   - REVIEW
   - ROAD

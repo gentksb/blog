@@ -3,9 +3,8 @@ title: '宇都宮ジャパンカップ&さいたまクリテリウムbyツール
 author: admin
 type: post
 date: 2013-10-28T06:39:00+00:00
-#url: /2013/10/blog-post_29-3.html
-categories:
-  - 未分類
+
+
 tags:
   - RACE
   - ROAD

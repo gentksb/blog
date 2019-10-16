@@ -3,10 +3,9 @@ title: 格安サイコンbryton Rider310を使ってみた
 author: gen
 type: post
 date: 2017-09-27T11:26:26+00:00
-#url: /2017/09/rider310review.html
+
 cover: DSC_7899.jpg
-categories:
-  - 未分類
+
 tags:
   - REVIEW
   - GADGETS

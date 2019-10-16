@@ -3,10 +3,9 @@ title: Zwiftで始めるパワートレーニング12-13日目 – 6wks FTP buil
 author: admin
 type: post
 date: 2016-02-18T04:08:00+00:00
-#url: /2016/02/zwift12-13-6wks-ftp-builder-week-3-day.html
+
 cover: 2016-02-17_1909510.jpg
-categories:
-  - 未分類
+
 tags:
   - Zwift
   - WORKOUT

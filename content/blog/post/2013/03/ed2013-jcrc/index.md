@@ -3,9 +3,8 @@ title: E→D（2013 JCRCひたちなか）
 author: admin
 type: post
 date: 2013-03-05T14:40:00+00:00
-#url: /2013/03/ed2013-jcrc.html
-categories:
-  - 未分類
+
+
 tags:
   - RACE
   - ROAD

@@ -3,10 +3,9 @@ title: 2017春王滝 – 7時間切りへの道
 author: admin
 type: post
 date: 2017-05-25T04:19:00+00:00
-#url: /2017/05/2017-7.html
+
 cover: DSC_1053.jpg
-categories:
-  - 未分類
+
 tags:
   - MTB
   - RACE

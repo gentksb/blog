@@ -3,9 +3,8 @@ title: シクロクロスのタイヤ選択
 author: admin
 type: post
 date: 2014-02-23T02:32:00+00:00
-#url: /2014/02/blog-post.html
-categories:
-  - 未分類
+
+
 tags:
   - CX
   - TIPS

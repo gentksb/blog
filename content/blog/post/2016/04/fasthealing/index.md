@@ -3,10 +3,9 @@ title: 自転車の転倒・落車による擦過傷を迅速に治す方法（�
 author: admin
 type: post
 date: 2016-04-04T04:36:00+00:00
-#url: /2016/04/blog-post.html
+
 cover: DSC_7358.jpg
-categories:
-  - 未分類
+
 tags:
   - TIPS
   - RACE

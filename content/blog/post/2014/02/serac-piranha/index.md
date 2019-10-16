@@ -3,9 +3,8 @@ title: シクロクロスチューブレス　SERAC CX/Piranha 2 CX装着感比�
 author: admin
 type: post
 date: 2014-02-26T05:14:00+00:00
-#url: /2014/02/serac-cxpiranha-2-cx.html
-categories:
-  - 未分類
+
+
 tags:
   - CX
   - TIPS

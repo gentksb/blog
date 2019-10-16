@@ -3,10 +3,9 @@ title: SSCXで大阪～南丹～小浜～敦賀ツーリング
 author: admin
 type: post
 date: 2017-05-06T01:42:00+00:00
-#url: /2017/05/sscx.html
+
 cover: DSC_0980.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - TOURING

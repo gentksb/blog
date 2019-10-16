@@ -3,10 +3,9 @@ title: Zwiftで始めるパワートレーニング0日目 – FTP test(shorter)
 author: admin
 type: post
 date: 2016-01-21T03:20:00+00:00
-#url: /2016/01/zwift0-ftp-testshorter.html
+
 cover: E382ADE383A3E38397E38381E383A3.png
-categories:
-  - 未分類
+
 tags:
   - Zwift
   - WORKOUT

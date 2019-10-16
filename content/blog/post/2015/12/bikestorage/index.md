@@ -3,10 +3,9 @@ title: 自転車の省スペース収納
 author: admin
 type: post
 date: 2015-12-06T05:16:00+00:00
-#url: /2015/12/blog-pos-14.html
+
 cover: DSC_6771.jpg
-categories:
-  - 未分類
+
 tags:
   - TIPS
   - REVIEW

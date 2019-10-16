@@ -3,10 +3,9 @@ title: よりよいZwift環境を求めて
 author: admin
 type: post
 date: 2016-03-20T17:39:00+00:00
-#url: /2016/03/zwift.html
+
 cover: DSC_7324.jpg
-categories:
-  - 未分類
+
 tags:
   - Zwift
   - REVIEW

@@ -3,10 +3,9 @@ title: ST-R785にMTB用のブレーキで油圧CXを組んでみた
 author: admin
 type: post
 date: 2016-08-30T04:00:00+00:00
-#url: /2016/08/st-r785mtbcx.html
+
 cover: DSC_0117.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - MTB

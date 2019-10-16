@@ -3,10 +3,9 @@ title: 自転車同人誌制作覚書
 author: admin
 type: post
 date: 2016-08-18T02:42:00+00:00
-#url: /2016/08/blog-post.html
+
 cover: DSC_7734.jpg
-categories:
-  - 未分類
+
 tags:
   - COMIKET
 

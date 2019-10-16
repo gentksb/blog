@@ -3,9 +3,8 @@ title: いまさらな湘南シクロクロス　第1戦＆第2戦レポ
 author: admin
 type: post
 date: 2014-01-24T06:09:00+00:00
-#url: /2014/01/12.html
-categories:
-  - 未分類
+
+
 tags:
   - CX
   - MTB

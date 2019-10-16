@@ -3,9 +3,8 @@ title: 夏コミ（C90）受かりました
 author: admin
 type: post
 date: 2016-06-11T02:33:00+00:00
-#url: /2016/06/c90.html
-categories:
-  - 未分類
+
+
 tags:
   - COMIKET
 

@@ -3,10 +3,9 @@ title: CANYON Ultimate Pretzel Missionやってみた
 author: admin
 type: post
 date: 2016-06-17T20:26:00+00:00
-#url: /2016/06/canyon-ultimate-pretzel-mission.html
+
 cover: E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg
-categories:
-  - 未分類
+
 tags:
   - Zwift
   - ROAD

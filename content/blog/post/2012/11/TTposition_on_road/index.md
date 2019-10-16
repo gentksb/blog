@@ -3,9 +3,8 @@ title: ロードバイクでTTポジションを取る
 author: admin
 type: post
 date: 2012-11-06T00:18:00+00:00
-#url: /post/2012/11/TTposition_on_road.html
-categories:
-  - 未分類
+
+
 tags:
   - ROAD
 

@@ -3,10 +3,9 @@ title: Crosslight Pro6完成！チューブレスレディに苦労するの巻
 author: admin
 type: post
 date: 2014-01-24T06:34:00+00:00
-#url: /2014/01/crosslight-pro6.html
+
 cover: IMG_20140123_232028.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - REVIEW

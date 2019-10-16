@@ -3,9 +3,8 @@ title: 9070デュラエース組付け②
 author: admin
 type: post
 date: 2013-12-20T15:43:00+00:00
-#url: /2013/12/9070_21.html
-categories:
-  - 未分類
+
+
 tags:
   - REVIEW
   - ROAD

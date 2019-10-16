@@ -3,9 +3,8 @@ title: ものぐさな人のレース前練習
 author: admin
 type: post
 date: 2013-02-12T02:10:00+00:00
-#url: /2013/02/blog-post.html
-categories:
-  - 未分類
+
+
 tags:
   - RACE
 

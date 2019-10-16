@@ -3,10 +3,9 @@ title: 究極のたまごかけごはん
 author: admin
 type: post
 date: 2016-10-26T01:44:00+00:00
-#url: /2016/10/blog-post.html
+
 cover: DSC_0268.jpg
-categories:
-  - 未分類
+
 tags:
   - TOURING
   - FOOD

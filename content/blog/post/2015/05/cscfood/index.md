@@ -3,10 +3,9 @@ title: レースめし　その1：群馬CSC付近、たくみの里食堂
 author: admin
 type: post
 date: 2015-05-09T02:24:00+00:00
-#url: /2015/05/1csc.html
+
 cover: DSC_6154.jpg
-categories:
-  - 未分類
+
 tags:
   - ROAD
   - FOOD

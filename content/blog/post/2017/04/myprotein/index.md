@@ -3,10 +3,9 @@ title: MY PROTEINの激安ホエイプロテインを買ってみた
 author: admin
 type: post
 date: 2017-04-02T04:17:00+00:00
-#url: /2017/04/my-protein.html
+
 cover: DSC_0887.jpg
-categories:
-  - 未分類
+
 tags:
   - REVIEW
   - EC

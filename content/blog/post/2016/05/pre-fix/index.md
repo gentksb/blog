@@ -3,10 +3,9 @@ title: 故障の予兆
 author: admin
 type: post
 date: 2016-05-09T02:40:00+00:00
-#url: /2016/05/blog-post.html
+
 cover: DSC_7419.jpg
-categories:
-  - 未分類
+
 tags:
   - TIPS
   - WORKOUT

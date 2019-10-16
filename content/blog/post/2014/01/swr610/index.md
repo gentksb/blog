@@ -3,10 +3,9 @@ title: スイッチ増設のすゝめ ～ SW-R610 Di2スプリンタースイッ
 author: admin
 type: post
 date: 2014-01-24T06:49:00+00:00
-#url: /2014/01/sw-r610-di2.html
+
 cover: IMG_20131228_103711.jpg
-categories:
-  - 未分類
+
 tags:
   - TIPS
   - REVIEW

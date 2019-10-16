@@ -3,10 +3,9 @@ title: 自転車乗りのためのモバイル回線選び
 author: admin
 type: post
 date: 2016-01-06T02:00:00+00:00
-#url: /2016/01/simmvno.html
+
 cover: DSC_6941.jpg
-categories:
-  - 未分類
+
 tags:
   - TIPS
   - GADGETS

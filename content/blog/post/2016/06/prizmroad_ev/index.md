@@ -3,10 +3,9 @@ title: OAKLEY RADAR EV Prizm Roadインプレッション
 author: admin
 type: post
 date: 2016-06-18T18:00:00+00:00
-#url: /2016/06/oakley-radar-ev-prizm-road.html
+
 cover: DSC_7627.jpg
-categories:
-  - 未分類
+
 tags:
   - REVIEW
   - TOURING

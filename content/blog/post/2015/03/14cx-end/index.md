@@ -3,10 +3,8 @@ title: 2014-15　CXシーズン結果（リザルトと機材供養）
 author: admin
 type: post
 date: 2015-03-17T04:37:00+00:00
-#url: /2015/03/2014-15cx.html
-categories:
-- 未分類
 
+tags: ["MEMO"]
 ---
 シーズン総括。
 

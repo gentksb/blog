@@ -3,9 +3,8 @@ title: 愛車紹介その2（MTB）
 author: admin
 type: post
 date: 2012-10-16T02:21:00+00:00
-#url: /2012/10/2mtb.html
-categories:
-  - 未分類
+
+
 tags:
   - MTB
 

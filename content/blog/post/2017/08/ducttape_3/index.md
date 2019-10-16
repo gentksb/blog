@@ -3,10 +3,9 @@ title: ダクトテープでチューブレス化：結
 author: admin
 type: post
 date: 2017-08-31T05:05:00+00:00
-#url: /2017/08/blog-post_31.html
+
 cover: DSC_7836.jpg
-categories:
-  - 未分類
+
 
 ---
 <div class="separator" style="clear: both; text-align: center;">

@@ -3,10 +3,9 @@ title: 'New bike : Ragley Mmmbop 27.5′'
 author: admin
 type: post
 date: 2017-04-14T21:09:00+00:00
-#url: /2017/04/new-bike-ragley-mmmbop-275.html
+
 cover: DSC_0851.jpg
-categories:
-  - 未分類
+
 tags:
   - MTB
   - REVIEW

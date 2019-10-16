@@ -3,9 +3,8 @@ title: 試される大地レポ③
 author: admin
 type: post
 date: 2013-10-12T04:35:00+00:00
-#url: /2013/10/blog-post_1767.html
-categories:
-  - 未分類
+
+
 tags:
   - TOURING
   - ROAD

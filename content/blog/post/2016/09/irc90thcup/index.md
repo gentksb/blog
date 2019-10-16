@@ -3,10 +3,9 @@ title: '2016-17 東海CX#1 IRC TIRE 90th Anniversary Cup C2&SS'
 author: admin
 type: post
 date: 2016-09-28T02:18:00+00:00
-#url: /2016/09/2016-17-cx1-irc-tire-90th-anniversary.html
+
 cover: DSC_0187.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - RACE

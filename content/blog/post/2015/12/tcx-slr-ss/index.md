@@ -3,10 +3,9 @@ title: TCX SLR SS納車とインプレ
 author: admin
 type: post
 date: 2015-12-28T04:44:00+00:00
-#url: /2015/12/tcx-slr-ss.html
+
 cover: DSC_6690.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - TIPS

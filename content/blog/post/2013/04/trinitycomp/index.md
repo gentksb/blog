@@ -3,9 +3,8 @@ title: Trinity composite 1 購入記
 author: admin
 type: post
 date: 2013-04-27T04:09:00+00:00
-#url: /2013/04/trinity-composite-1.html
-categories:
-  - 未分類
+
+
 tags:
   - ROAD
 

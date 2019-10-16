@@ -3,10 +3,9 @@ title: Feedback Portable Trainerが実は12mmスルーアクスルについて�
 author: admin
 type: post
 date: 2016-11-12T02:21:00+00:00
-#url: /2016/11/feedback-portable-trainer12mm.html
+
 cover: DSC_0346.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - TIPS

@@ -3,9 +3,8 @@ title: パイオニアペダリングモニターのセミナーへ行ってき�
 author: admin
 type: post
 date: 2014-03-29T02:20:00+00:00
-#url: /2014/03/blog-post.html
-categories:
-  - 未分類
+
+
 tags:
   - TIPS
 

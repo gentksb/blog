@@ -3,10 +3,9 @@ title: 2017年シクロクロスシーズン総括
 author: admin
 type: post
 date: 2017-03-13T03:11:00+00:00
-#url: /2017/03/2017-2.html
+
 cover: DSC_0858.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - RACE

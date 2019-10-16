@@ -3,10 +3,9 @@ title: WH-7850SL破損の巻
 author: admin
 type: post
 date: 2013-05-12T01:29:00+00:00
-#url: /2013/05/wh-7850sl.html
+
 cover: DSC_1568.jpg
-categories:
-  - 未分類
+
 tags:
   - ROAD
 

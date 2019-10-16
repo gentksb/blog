@@ -3,9 +3,8 @@ title: 値上げに釣られてホイホイWH9000-C50-TU購入記
 author: admin
 type: post
 date: 2014-05-02T22:26:00+00:00
-#url: /2014/05/wh9000-c50-tu.html
-categories:
-  - 未分類
+
+
 tags:
   - REVIEW
   - ROAD

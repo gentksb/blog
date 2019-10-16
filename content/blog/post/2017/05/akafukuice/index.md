@@ -3,10 +3,9 @@ title: 赤福氷を求めて伊勢ツーリング
 author: admin
 type: post
 date: 2017-05-16T05:43:00+00:00
-#url: /2017/05/blog-post.html
+
 cover: DSC_1046.jpg
-categories:
-  - 未分類
+
 tags:
   - TOURING
   - ROAD

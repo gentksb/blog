@@ -3,10 +3,9 @@ title: '2016関西シクロクロス#9 堺レースレポート'
 author: admin
 type: post
 date: 2017-01-16T02:27:00+00:00
-#url: /2017/01/20169.html
+
 cover: 32173597322_976d654bd0_k.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - RACE

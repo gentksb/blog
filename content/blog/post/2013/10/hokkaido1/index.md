@@ -3,10 +3,9 @@ title: 試される大地レポ①
 author: admin
 type: post
 date: 2013-10-12T04:23:00+00:00
-#url: /2013/10/blog-post_12.html
+
 cover: DSC_0180.jpg
-categories:
-  - 未分類
+
 tags:
   - TOURING
   - ROAD

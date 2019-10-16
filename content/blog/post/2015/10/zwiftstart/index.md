@@ -3,10 +3,9 @@ title: Zwiftがすごくすごいので導入した
 author: admin
 type: post
 date: 2015-10-01T05:13:00+00:00
-#url: /2015/10/zwift.html
+
 cover: 2015-10-01_2209230.jpg
-categories:
-  - 未分類
+
 tags:
   - TIPS
   - Zwift

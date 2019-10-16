@@ -3,10 +3,9 @@ title: レースめし　その2：大磯クリテリウムと花水ラオシャ
 author: admin
 type: post
 date: 2015-10-23T03:14:00+00:00
-#url: /2015/10/2.html
+
 cover: DSC_6028.jpg
-categories:
-  - 未分類
+
 tags:
   - RACE
   - FOOD

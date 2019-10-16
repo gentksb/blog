@@ -3,9 +3,8 @@ title: New XT Di2 release is leaked by JPN investment bank
 author: admin
 type: post
 date: 2016-03-22T00:11:00+00:00
-#url: /2016/03/new-xt-di2-is-leaked-by-jpn-investment.html
-categories:
-  - 未分類
+
+
 
 ---
 <blockquote class="tr_bq">

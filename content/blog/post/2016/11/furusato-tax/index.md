@@ -3,9 +3,8 @@ title: 自転車乗りのふるさと納税
 author: admin
 type: post
 date: 2016-11-10T02:52:00+00:00
-#url: /2016/11/blog-post.html
-categories:
-  - 未分類
+
+
 tags:
   - TIPS
   - TOURING

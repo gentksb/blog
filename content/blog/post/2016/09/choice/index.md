@@ -3,10 +3,9 @@ title: CHOICEプロテインの試飲を試したら、プロテインが不味�
 author: admin
 type: post
 date: 2016-09-10T02:51:00+00:00
-#url: /2016/09/choice.html
+
 cover: CHOICE-GOOOOOLDEN-WHEY007.jpg
-categories:
-  - 未分類
+
 tags:
   - REVIEW
   - FOOD

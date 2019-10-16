@@ -3,10 +3,9 @@ title: Di2内装化（ドリルがう○る）実践編
 author: admin
 type: post
 date: 2016-08-24T02:36:00+00:00
-#url: /2016/08/di2_24.html
+
 cover: DSC_0068.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
 

@@ -3,9 +3,8 @@ title: TRINITY電動化への道
 author: admin
 type: post
 date: 2013-11-30T03:51:00+00:00
-#url: /2013/11/trinity.html
-categories:
-  - 未分類
+
+
 tags:
   - TIPS
   - ROAD

@@ -3,10 +3,9 @@ title: 夏コミ（C92）告知
 author: admin
 type: post
 date: 2017-07-07T02:35:00+00:00
-#url: /2017/07/c92.html
+
 cover: DD47GDkVoAEOn4e_orig.jpg
-categories:
-  - 未分類
+
 tags:
   - Zwift
   - COMIKET

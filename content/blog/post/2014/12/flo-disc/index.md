@@ -3,9 +3,8 @@ title: きっと日本初、flo discホイール到着しました(2015/02/13修
 author: admin
 type: post
 date: 2014-12-27T02:20:00+00:00
-#url: /2014/12/flo-disc.html
-categories:
-  - 未分類
+
+
 tags:
   - TT
   - REVIEW

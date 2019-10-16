@@ -3,10 +3,9 @@ title: CXセミスリックタイヤ考察
 author: admin
 type: post
 date: 2017-02-14T05:31:00+00:00
-#url: /2017/02/cx.html
+
 cover: DSC_0629.jpg
-categories:
-  - 未分類
+
 tags:
   - CX
   - TIPS
