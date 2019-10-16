@@ -2,7 +2,7 @@
 title: "白馬岩岳MTBコースへ行ってきた"
 date: 2018-08-07T19:45:25+09:00
 draft: false
-tags: ["MTB", ""]
+tags: ["MTB"]
 cover: DSC_1424.jpg
 ---
 ![image](DSC_1424.jpg)
