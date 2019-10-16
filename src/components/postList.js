@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
+import PostTag from "./postTag"
 
 const postList = ({ props }) => {
   return (
@@ -20,6 +21,7 @@ const postList = ({ props }) => {
         </Link>
         <p>{node.frontmatter.date}</p>
         <p>{node.excerpt}</p>
+        <PostTag tags={node.frontmatter.tags} />
       </div>
     ))
   )
