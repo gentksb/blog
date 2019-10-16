@@ -21,7 +21,12 @@ const postList = ({ props }) => {
         </Link>
         <p>{node.frontmatter.date}</p>
         <p>{node.excerpt}</p>
-        <PostTag tags={node.frontmatter.tags} />
+        {node.frontmatter.tags != null ? (
+          <PostTag tags={node.frontmatter.tags} />
+        ) : (
+            "No Tags"
+          )}
+
       </div>
     ))
   )

@@ -3,10 +3,7 @@ title: コミックマーケット83
 author: admin
 type: post
 date: 2012-12-27T23:07:00+00:00
-
-
 tags: ["COMIKET"]
-
 ---
 前日になりますが、C83では&nbsp;<a href="http://d09speed.blogspot.jp/2012/11/c8345a.html" target="_blank">イヌイヌゴヤ</a>様（土曜日 東ペ45-a）の新刊に寄稿しております。ちょっとだけ。
 

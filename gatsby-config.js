@@ -80,6 +80,7 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  categories: edge.node.frontmatter.tags,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
@@ -97,6 +98,7 @@ module.exports = {
                       frontmatter {
                         title
                         date
+                        tags
                       }
                     }
                   }
