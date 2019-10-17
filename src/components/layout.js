@@ -2,15 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { Typography, Container, CssBaseline } from '@material-ui/core'
-import { ThemeProvider as MaterialThemeProvider, StylesProvider } from "@material-ui/styles";
 import styled from "@emotion/styled";
+import { ThemeProvider as MaterialThemeProvider, StylesProvider } from "@material-ui/styles";
 import { ThemeProvider as EmotionThemeProvider } from "emotion-theming"
 import theme from '../config/theme'
 
 const BlogTitleLink = styled(Link)`
   box-shadow: none;
   text-decoration: none;
-  color: white;
+  color: ${props => props.theme.palette.text.primary};
 `
 const HeaderContainer = styled(Container)`
   background-color: ${props => props.theme.palette.primary.main};
