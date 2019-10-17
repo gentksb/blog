@@ -8,16 +8,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import styled from "styled-components"
-
-const SocialLogo = styled.img`
-  width: 25px;
-  height: 25px;
-  margin-left: 5px;
-`
-const ImageLink = styled.a`
-  box-shadow: none;
-`
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -64,27 +54,27 @@ const Bio = () => {
       <p>
         Written by <strong>{author}</strong>
         {` `}
-        <ImageLink href={`https://twitter.com/${social.twitter}`}>
-          <SocialLogo
+        <a href={`https://twitter.com/${social.twitter}`}>
+          <img
             src="/social_icons/Twitter.png"
             alt="Twitter logo"
             width="25"
           />
-        </ImageLink>
-        <ImageLink href={`https://github.com/${social.github}`}>
-          <SocialLogo
+        </a>
+        <a href={`https://github.com/${social.github}`}>
+          <img
             src="/social_icons/Github.png"
             alt="Github logo"
             width="25"
           />
-        </ImageLink>
-        <ImageLink href={`https://www.instagram.com/${social.instagram}`}>
-          <SocialLogo
+        </a>
+        <a href={`https://www.instagram.com/${social.instagram}`}>
+          <img
             src="/social_icons/instagram.png"
             alt="instagram logo"
             width="25"
           />
-        </ImageLink>
+        </a>
       </p>
     </div>
   )
