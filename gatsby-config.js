@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `幻想サイクル`,
     author: `Gen`,
-    description: `Bicycle life`,
-    siteUrl: `https://blog.gensobunya.net/`,
+    description: `gensobunya's bicycle life`,
+    url: `https://blog.gensobunya.net`,
+    image: "/image/logo.jpg",
     social: {
       twitter: `gen_sobunya`,
       github: `gentksb`,

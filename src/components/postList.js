@@ -16,7 +16,7 @@ const postList = ({ props }) => {
               fluid={node.frontmatter.cover.childImageSharp.fluid}
             />
           ) : (
-              <img src="/dummy.jpg" alt="no cover" />
+              <img src="/image/dummy.jpg" alt="no cover" />
             )}
         </Link>
         <p>{node.frontmatter.date}</p>
