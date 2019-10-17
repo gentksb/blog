@@ -50,7 +50,7 @@ export const pageQuery = graphql`
             cover {
               base
               childImageSharp {
-                fluid(maxWidth: 1080) {
+                fluid(maxWidth: 600) {
                   originalName
                   srcWebp
                   srcSetWebp
