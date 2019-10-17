@@ -8,16 +8,16 @@ import { ThemeProvider as EmotionThemeProvider } from "emotion-theming"
 import theme from '../config/theme'
 
 const BlogTitleLink = styled(Link)`
-  box-shadow: "none";
-  text-decoration: "none";
+  box-shadow: none;
+  text-decoration: none;
   color: white;
 `
 const HeaderContainer = styled(Container)`
   background-color: ${props => props.theme.palette.primary.main};
-  height: '10vh';
-  position: "relative";
-  margin-top: "0";
-  padding: "15px 0px 15px 0px";
+  height: 20vh;
+  position: relative;
+  margin-top: 0;
+  padding: 15px 0px 15px 0px;
 `
 
 class Layout extends React.Component {
