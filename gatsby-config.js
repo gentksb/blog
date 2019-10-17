@@ -53,6 +53,7 @@ module.exports = {
             },
           },
           `gatsby-plugin-material-ui`,
+          `gatsby-plugin-emotion`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],

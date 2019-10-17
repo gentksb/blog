@@ -1,14 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
+import { Typography, Container } from '@material-ui/core'
 import PostTag from "./postTag"
 
 const postList = ({ props }) => {
   return (
     props.map(({ node }) => (
-      <div key={node.id}>
+      <Container key={node.id}>
         <Link to={node.fields.slug}>
-          <h3>{node.frontmatter.title}</h3>
+          <Typography component="H2" variant="H3">{node.frontmatter.title}</Typography>
           {node.frontmatter.cover != null ? (
             <Img
               alt={`${node.frontmatter.title} cover image`}
@@ -26,8 +27,7 @@ const postList = ({ props }) => {
         ) : (
             "No Tags"
           )}
-
-      </div>
+      </Container>
     ))
   )
 }
