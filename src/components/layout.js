@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import { Typography, Container } from '@material-ui/core'
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -9,31 +11,27 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
+        <Container fixed>
+          <Typography component="h1" variant="h2" align="center" gutterBottom style={{
+            backgroundColor: '#cfe8fc',
+            height: '10vh'
+          }}>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </Typography>
+        </Container>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
+        <Typography component="h1" variant="h2" align="center" gutterBottom>
           <Link
             style={{
               boxShadow: `none`,
@@ -44,7 +42,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h3>
+        </Typography>
       )
     }
     return (

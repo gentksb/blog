@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@material-ui/core": "^4.5.1",
     "@material-ui/styles": "^4.5.0",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.15.20",
