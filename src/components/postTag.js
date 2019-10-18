@@ -1,14 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Chip, Container } from "@material-ui/core"
+import { LocalOffer } from '@material-ui/icons';
+import styled from "@emotion/styled"
+
+const TagChip = styled(Chip)`
+  margin-left:16px;
+  margin-bottom:1em;
+`
+const TagContainer = styled(Container)`
+  padding:0;
+`
 
 const postTag = ({ tags }) => {
-  return (
+
+  const tagArray = (
     tags.map((tag) => (
-      <div key={tag}><Link to={`/tags/${tag.toLowerCase()}`}>
-        {tag}
+      <Link to={`/tags/${tag.toLowerCase()}`}>
+        <TagChip key={tag} label={tag} color="primary" size="small" icon={<LocalOffer />} clickable />
       </Link>
-      </div>
     ))
+  )
+
+  return (
+    <TagContainer>
+      {tagArray}
+    </TagContainer>
   )
 }
 

@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 // import Img from "gatsby-image"
-import { Typography, Container, Card, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button } from '@material-ui/core'
+import { Typography, Container, Card, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button, Chip } from '@material-ui/core'
+import { LocalOffer } from '@material-ui/icons';
 import styled from "@emotion/styled";
 import PostTag from "./postTag"
 
@@ -27,7 +28,7 @@ const postList = ({ props }) => {
         {node.frontmatter.tags != null ? (
           <PostTag tags={node.frontmatter.tags} />
         ) : (
-            "No Tags"
+            <Chip label="No tags" size="small" icon={<LocalOffer />} />
           )}
         {node.frontmatter.cover != null ? (
           <CardMedia image={node.frontmatter.cover.childImageSharp.fluid.src} title={`${node.frontmatter.title} cover image`} style={{ paddingTop: '56.25%' }} />

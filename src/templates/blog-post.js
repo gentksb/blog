@@ -1,10 +1,13 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { Typography, Container, Card, CardHeader, CardContent, Chip } from '@material-ui/core'
+import { LocalOffer } from '@material-ui/icons';
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Share from "../components/share"
+import PostTag from "../components/postTag"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -15,57 +18,51 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} image={post.frontmatter.cover.childImageSharp.fluid.src} />
-        <article>
-          <header>
-            <h1
-              style={{
-                marginBottom: 0,
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
-            <p
-              style={{
-                display: `block`,
-              }}
-            >
-              {post.frontmatter.date}
-            </p>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
-          <footer>
-            <Share />
-            <Bio />
-          </footer>
-        </article>
+        <Container maxWidth="lg">
+          <Card component="article">
+            <CardHeader component="header" title={post.frontmatter.title} subheader={post.frontmatter.date} />
+            {post.frontmatter.tags != null ? (
+              <PostTag tags={post.frontmatter.tags} />
+            ) : (
+                <Chip label="No tags" size="small" icon={<LocalOffer />} />
+              )}
+            <CardContent>
+              <section dangerouslySetInnerHTML={{ __html: post.html }} />
+            </CardContent>
+            <hr />
+            <footer>
+              <Share />
+              <Bio />
+            </footer>
+          </Card>
 
-        <nav>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+          <nav>
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li>
+                {previous && (
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
                 </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
+                )}
+              </li>
+            </ul>
+          </nav>
+        </Container>
       </Layout>
     )
   }
@@ -83,18 +80,30 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(truncate: true)
       html
       frontmatter {
-        title
         date(formatString: "MMMM DD, YYYY")
+        title
         cover {
+          base
           childImageSharp {
-            fluid(maxHeight: 268, maxWidth: 268) {
+            fluid {
+              originalName
+              srcWebp
+              srcSetWebp
+              srcSet
               src
+              sizes
+              aspectRatio
+              presentationWidth
+              presentationHeight
+              originalImg
             }
           }
         }
+        tags
+        draft
       }
     }
   }

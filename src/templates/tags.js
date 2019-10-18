@@ -35,12 +35,12 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { draft: {eq: false},tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
         node {
-          excerpt
+          excerpt(truncate: true)
           fields {
             slug
           }
@@ -50,7 +50,7 @@ export const pageQuery = graphql`
             cover {
               base
               childImageSharp {
-                fluid(maxWidth: 1080) {
+                fluid {
                   originalName
                   srcWebp
                   srcSetWebp
@@ -65,6 +65,7 @@ export const pageQuery = graphql`
               }
             }
             tags
+            draft
           }
         }
       }
