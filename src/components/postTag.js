@@ -14,13 +14,16 @@ const TagContainer = styled(Container)`
 
 const postTag = ({ tags }) => {
 
-  const tagArray = (
-    tags.map((tag) => (
-      <Link to={`/tags/${tag.toLowerCase()}`}>
-        <TagChip key={tag} label={tag} color="primary" size="small" icon={<LocalOffer />} clickable />
-      </Link>
-    ))
-  )
+  const tagArray = (tags != null) ?
+    (
+      tags.map((tag) => (
+        <Link to={`/tags/${tag.toLowerCase()}`}>
+          <TagChip key={tag} label={tag} color="primary" size="small" icon={<LocalOffer />} clickable />
+        </Link>
+      ))
+    ) : (
+      <Chip label="No tags" size="small" icon={<LocalOffer />} />
+    )
 
   return (
     <TagContainer>
