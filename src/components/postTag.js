@@ -4,9 +4,10 @@ import { Link } from "gatsby"
 const postTag = ({ tags }) => {
   return (
     tags.map((tag) => (
-      <Link to={`/tags/${tag}`}>
-        <div>{tag}</div>
+      <div key={tag}><Link to={`/tags/${tag.toLowerCase()}`}>
+        {tag}
       </Link>
+      </div>
     ))
   )
 }
