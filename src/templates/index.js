@@ -37,10 +37,11 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       skip: $skip
       limit: $limit
+      filter: {frontmatter: {draft: {eq: false}}}
     ) {
       edges {
         node {
-          excerpt
+          excerpt(truncate: true)
           fields {
             slug
           }
@@ -50,7 +51,7 @@ export const pageQuery = graphql`
             cover {
               base
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid {
                   originalName
                   srcWebp
                   srcSetWebp
@@ -65,6 +66,7 @@ export const pageQuery = graphql`
               }
             }
             tags
+            draft
           }
         }
       }
