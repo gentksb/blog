@@ -27,7 +27,7 @@ class BlogPostTemplate extends React.Component {
                 <Chip label="No tags" size="small" icon={<LocalOffer />} />
               )}
             <CardContent>
-              <section dangerouslySetInnerHTML={{ __html: post.html }} />
+              <Typography variant="body1" component="section" dangerouslySetInnerHTML={{ __html: post.html }} />
             </CardContent>
             <hr />
             <footer>
