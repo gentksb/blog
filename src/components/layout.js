@@ -14,10 +14,14 @@ const BlogTitleLink = styled(Link)`
 `
 const HeaderContainer = styled(Container)`
   background-color: ${props => props.theme.palette.primary.main};
-  height: 20vh;
+  height: 15vh;
+  max-width: 100%;
   position: relative;
-  margin-top: 0;
+  margin: 0 0 0 0;
   padding: 15px 0px 15px 0px;
+`
+const BlogTitle = styled(Typography)`
+  
 `
 
 class Layout extends React.Component {
@@ -28,11 +32,11 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <Typography component="h1" variant="h2" align="center" gutterBottom>
+        <BlogTitle component="h1" variant="h2" align="center" gutterBottom>
           <BlogTitleLink to={`/`}>
             {title}
           </BlogTitleLink>
-        </Typography>
+        </BlogTitle>
       )
     } else {
       header = (
@@ -48,8 +52,8 @@ class Layout extends React.Component {
         <StylesProvider injectFirst>
           <MaterialThemeProvider theme={theme}>
             <EmotionThemeProvider theme={theme}>
-              <HeaderContainer fixed>
-                <header>{header}</header>
+              <HeaderContainer component="header" fixed>
+                {header}
               </HeaderContainer>
               <main>{children}</main>
               <footer>
