@@ -10,17 +10,17 @@ import {
 import { Container } from "@material-ui/core"
 import shareConfig from "../config/shareConfig"
 
-const sharebox = ({ props }) => {
+const sharebox = ({ post, location }) => {
 
   return (
     <Container>
-      <FacebookShareButton>
+      <FacebookShareButton url={location.href}>
         <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </FacebookShareButton>
-      <TwitterShareButton title={props.frontmatter.title}>
+      <TwitterShareButton url={location.href} title={post.frontmatter.title}>
         <TwitterIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </TwitterShareButton>
-      <LineShareButton>
+      <LineShareButton url={location.href}>
         <LineIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </LineShareButton>
     </Container>

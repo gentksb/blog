@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
             </CardContent>
             <hr />
             <footer>
-              <Share props={post} />
+              <Share post={post} location={this.props.location} />
               <Bio />
             </footer>
           </Card>
