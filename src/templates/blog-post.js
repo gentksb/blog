@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Typography, Container, Card, CardContent, Divider } from '@material-ui/core'
 
-
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -41,12 +40,9 @@ class BlogPostTemplate extends React.Component {
             {/* <Bio /> */}
           </Card>
 
-          {/* start Pext-Post & Prev-Post */}
-
           <nav>
             <PrevAndNextPost previous={previous} next={next} />
           </nav>
-          {/* end Pext-Post & Prev-Post */}
 
         </Container>
       </Layout>

@@ -9,18 +9,17 @@ import theme from '../config/theme'
 
 const BlogTitleLink = styled(Link)`
   text-decoration: none;
-  color: ${props => props.theme.palette.text.secondary};
+  color: ${props => props.theme.palette.text.white};
 `
 const HeaderContainer = styled(Container)`
-  background-color: ${props => props.theme.palette.primary.main};
+  background-color: #e60c00;
+  background-image: url("/image/diagmonds-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   height: 10vh;
   max-width: 100%;
   position: relative;
   margin: 0 0 0 0;
   padding: 15px 0px 15px 0px;
-`
-const BlogTitle = styled(Typography)`
-
 `
 
 class Layout extends React.Component {
@@ -31,11 +30,11 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <BlogTitle component="h1" variant="h3" align="center" gutterBottom>
+        <Typography component="h1" variant="h3" align="center" gutterBottom>
           <BlogTitleLink to={`/`}>
             {title}
           </BlogTitleLink>
-        </BlogTitle>
+        </Typography>
       )
     } else {
       header = (
