@@ -12,13 +12,13 @@ const TagContainer = styled(Container)`
   padding:0;
 `
 
-const postTag = ({ tags }) => {
+const PostTag = ({ tags }) => {
 
   const tagArray = (tags != null) ?
     (
       tags.map((tag) => (
-        <Link to={`/tags/${tag.toLowerCase()}`}>
-          <TagChip key={tag} label={tag} color="primary" size="small" icon={<LocalOffer />} clickable />
+        <Link to={`/tags/${tag.toLowerCase()}`} style={{ textDecoration: 'none' }}>
+          <TagChip key={tag} label={tag} color="primary" size="small" icon={<LocalOffer />} clickable style={{ textDecoration: `none` }} />
         </Link>
       ))
     ) : (
@@ -32,4 +32,4 @@ const postTag = ({ tags }) => {
   )
 }
 
-export default postTag
+export default PostTag

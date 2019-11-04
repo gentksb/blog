@@ -7,6 +7,8 @@ import PostTag from "./postTag"
 
 const PostContainer = styled(Container)`
 `
+const PostHeader = styled(CardHeader)`
+`
 const Postcard = styled(Card)`
   margin:20px;
 `
@@ -20,8 +22,8 @@ const postList = ({ props }) => {
     props.map(({ node }) => (
       <Postcard key={node.id}>
         <CardActionArea>
-          <Link to={node.fields.slug}>
-            <CardHeader title={node.frontmatter.title} subheader={node.frontmatter.date} />
+          <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
+            <PostHeader title={node.frontmatter.title} subheader={node.frontmatter.date} />
           </Link>
         </CardActionArea>
         <PostTag tags={node.frontmatter.tags} />
