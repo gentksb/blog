@@ -23,7 +23,7 @@ function SEO({ description, lang, meta, title, image }) {
               twitter
             }
             image
-            url
+            siteUrl
           }
         }
       }    
@@ -31,7 +31,7 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = site.siteMetadata.url + (image || site.siteMetadata.image)
+  const metaImage = site.siteMetadata.siteUrl + (image || site.siteMetadata.image)
 
   return (
     <Helmet

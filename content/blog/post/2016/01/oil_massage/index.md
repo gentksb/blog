@@ -3,35 +3,31 @@ title: オイルマッサージなんて宗教かプラシーボだと思って�
 author: admin
 type: post
 date: 2016-01-02T04:14:00+00:00
-
-cover: DSC_6888.jpg
-
-tags: ["CX","TIPS","REVIEW"]
-
+cover: "DSC_6745.jpg"
+tags: ["CX", "TIPS", "REVIEW"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="360" src="./DSC_6888.jpg" width="640" />
 </div>
 
-
-
-### 気のせいじゃない？
+### 気のせいじゃない
 
 スポーツオイルとかウォームアップクリームってありますよね。
 
 大抵「血流上昇！」とか「疲労軽減！」など、かなり胡散臭いワードとともに宣伝されてます。
 
-代表的ものは、スポーツバルム・イナーメアロマ・Raphaのクリーム/オイル類。
+代表的ものは、スポーツバルム・イナーメアロマ・Rapha のクリーム/オイル類。
 
-CX会場だと、レース前にせっせとこれらを脚に塗りこんでいる人がいます。
+CX 会場だと、レース前にせっせとこれらを脚に塗りこんでいる人がいます。
 
 自分は全く信じていなかったので、横目に見て何も思っておらず。
 
 この手のスポーツオイル？クリーム？はシャモアクリームしか使っていませんでした。
 
-むしろ、アソスシャモアや、プロテクトS1はわかりやすい摩擦低減という効果があったので、積極的に使っていました。
+むしろ、アソスシャモアや、プロテクト S1 はわかりやすい摩擦低減という効果があったので、積極的に使っていました。
 
-個人的には100kmを越えるライドでは必需品です。内股の炎症が明らかに抑えられます。
+個人的には 100km を越えるライドでは必需品です。内股の炎症が明らかに抑えられます。
 
 みんな買おう。
 
@@ -39,14 +35,13 @@ CX会場だと、レース前にせっせとこれらを脚に塗りこんでい
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01628WJ34/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/413qnIi-2qL._SL160_.jpg" alt="Protect J1 長時間持続型保護クリーム 80ml" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01628WJ34/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Protect J1 長時間持続型保護クリーム 80ml</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.04.15</div></div><div class="amazlet-detail">Earth Blue(アースブルー) (2015-10-23)<br />売り上げランキング: 2,261<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01628WJ34/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
-
 話を戻してウォームアップ・リカバリーオイルへ。
 
-今年の野辺山シクロクロスで、同室になった友人が使っていたのでイナーメのリカバリーオイルで1日目終了後にマッサージをしてもらいました。
+今年の野辺山シクロクロスで、同室になった友人が使っていたのでイナーメのリカバリーオイルで 1 日目終了後にマッサージをしてもらいました。
 
 翌日、「なんだか疲労が軽い気がする…」との感触。
 
-SSCXで踏み倒したので、本来なら筋肉にかなりのダメージがくるはずなのにそれほどでもない。それまでプラシーボだと思っていたのですが、なんとなく効果が感じられたのでイナーメのブースでその場で購入してみました。
+SSCX で踏み倒したので、本来なら筋肉にかなりのダメージがくるはずなのにそれほどでもない。それまでプラシーボだと思っていたのですが、なんとなく効果が感じられたのでイナーメのブースでその場で購入してみました。
 
 ### とりあえず買ってみた
 
@@ -60,7 +55,7 @@ SSCXで踏み倒したので、本来なら筋肉にかなりのダメージが�
 
 アップや風呂で汗をかいて毛穴が開いた時が最も効果があるとのこと。
 
-野辺山2日目にCXを使ったのですが、「うーん、心肺が先にやられない、ような、気がする…」という程度でよくわからず。その後も関西クロスで利用を続けましたが同じような感触。
+野辺山 2 日目に CX を使ったのですが、「うーん、心肺が先にやられない、ような、気がする…」という程度でよくわからず。その後も関西クロスで利用を続けましたが同じような感触。
 
 この時点ではまだ、「プラシーボなのでは…」との評価。
 
@@ -78,7 +73,7 @@ SSCXで踏み倒したので、本来なら筋肉にかなりのダメージが�
 
 本格的な実感をしたのは<a rel="nofollow" href="https://amzn.to/2XhMqtX">Recovery</a>が先でした。
 
-大阪転居のご挨拶にと箕面エリアを案内され、グルメライドのつもりが130km2500mという山岳ライドに。
+大阪転居のご挨拶にと箕面エリアを案内され、グルメライドのつもりが 130km2500m という山岳ライドに。
 
 山岳は苦手な上に、グルメのはずがアタックかかるし数日残ることも覚悟するレベルの強度でした…
 
@@ -96,13 +91,11 @@ SSCXで踏み倒したので、本来なら筋肉にかなりのダメージが�
   <img border="0" height="360" src="./IMG_20150112_091114.jpg" width="640" />
 </div>
 
-<a rel="nofollow" href="https://amzn.to/2UEbnmy">for CX</a>の実感はついこの間、年末のJCX中井ステージ。
+<a rel="nofollow" href="https://amzn.to/2UEbnmy">for CX</a>の実感はついこの間、年末の JCX 中井ステージ。
 
-この会場は、前年に80段近い階段で関東のCXerを悪夢のどん底に陥れたコース。
+この会場は、前年に 80 段近い階段で関東の CXer を悪夢のどん底に陥れたコース。
 
 心肺を容赦なく攻めてくるスタイル。
-
-
 
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="360" src="./DSC_6845.jpg" width="640" />
@@ -126,7 +119,7 @@ SSCXで踏み倒したので、本来なら筋肉にかなりのダメージが�
 
 ただ、効果は（自分が感じた限りでは）確実に存在します。
 
-1回買えば1～2年は持ちそうなので、疑いの目を持っている自分のような人でも1回ポチっても損ではないはず。香りはいいですし。
+1 回買えば 1 ～ 2 年は持ちそうなので、疑いの目を持っている自分のような人でも 1 回ポチっても損ではないはず。香りはいいですし。
 
 （年末年始でも発送してくれるらしいぞ！ポチろう！）
 
@@ -135,4 +128,3 @@ SSCXで踏み倒したので、本来なら筋肉にかなりのダメージが�
 スポーツバルムはしらんけど唐辛子の匂いがすごいことだけは知ってる。
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H4ZTQD6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41cvfc3VZnL._SL160_.jpg" alt="マッサージオイル リカバリーオイル【イナーメ・スポーツアロマ】Recovery 森林系の香り（ホホバオイル100%）レース後 運動後 就寝前 リラックス【正規品】30ml アロマ オイル" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H4ZTQD6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">マッサージオイル リカバリーオイル【イナーメ・スポーツアロマ】Recovery 森林系の香り（ホホバオイル100%）レース後 運動後 就寝前 リラックス【正規品】30ml アロマ オイル</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.04.15</div></div><div class="amazlet-detail">Dissetare <br />売り上げランキング: 16,448<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00H4ZTQD6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
-

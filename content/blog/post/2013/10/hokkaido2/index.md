@@ -3,11 +3,10 @@ title: 試される大地レポ②
 author: admin
 type: post
 date: 2013-10-12T04:29:00+00:00
-
-
-tags: ["TOURING","ROAD"]
-
+cover: "./DSC_0048.jpg"
+tags: ["TOURING", "ROAD"]
 ---
+
 <div class="separator" style="clear: both; text-align: left;">
 </div>
 
@@ -42,13 +41,9 @@ tags: ["TOURING","ROAD"]
   <a href="DSC_0054.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0054.jpg" height="179" width="320" /></a>
 </div>
 
-
-
 <div class="separator" style="clear: both; text-align: center;">
   <a href="DSC_0055.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0055.jpg" height="179" width="320" /></a>
 </div>
-
-
 
 <div class="separator" style="clear: both; text-align: center;">
   <a href="DSC_0056.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0056.jpg" height="179" width="320" /></a>
@@ -70,19 +65,13 @@ tags: ["TOURING","ROAD"]
 <div class="separator" style="clear: both; text-align: center;">
 </div>
 
-
-
 <div class="separator" style="clear: both; text-align: center;">
   <a href="DSC_0057.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0057.jpg" height="179" width="320" /></a>
 </div>
 
-
-
 <div class="separator" style="clear: both; text-align: center;">
   <a href="DSC_0058.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0058.jpg" height="179" width="320" /></a>
 </div>
-
-
 
 <div class="separator" style="clear: both; text-align: center;">
   <a href="DSC_0059.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_0059.jpg" height="179" width="320" /></a>
@@ -90,7 +79,6 @@ tags: ["TOURING","ROAD"]
 
 最後にトンネルを抜けてゴールです。定山渓に抜けられるので長い長い下り坂。
 
-ただ、よくて3%程度しか斜度がないのと、当日は向かい風だったので漕がないと進まない羽目に…
+ただ、よくて 3%程度しか斜度がないのと、当日は向かい風だったので漕がないと進まない羽目に…
 
 トレーニングに通いたいタイプの峠ですね
-

@@ -25,7 +25,7 @@ const postList = ({ props }) => {
           </Link>
         </CardActionArea>
         <PostTag tags={node.frontmatter.tags} />
-        <CardMedia image={node.frontmatter.cover.childImageSharp.fluid.src} title={`${node.frontmatter.title} cover image`} style={{ paddingTop: '56.25%' }} />
+        <CardMedia image={node.frontmatter.cover != null ? (node.frontmatter.cover.childImageSharp.fluid.src) : ("/image/dummy.jpg")} title={`${node.frontmatter.title} cover image`} style={{ paddingTop: '56.25%' }} />
         <CardContent>
           <PostExcerpt component="p">{node.excerpt}</PostExcerpt>
         </CardContent>

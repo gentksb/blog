@@ -3,7 +3,7 @@ module.exports = {
     title: `幻想サイクル`,
     author: `Gen`,
     description: `gensobunya's bicycle life`,
-    url: `https://blog.gensobunya.net`,
+    siteUrl: `https://blog.gensobunya.net`,
     image: "/image/logo.jpg",
     social: {
       twitter: `gen_sobunya`,
@@ -66,6 +66,12 @@ module.exports = {
       options: {
         trackingId: `UA-72162915-1`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/tags/*", "/page/*"],
+      }
     },
     {
       resolve: `gatsby-plugin-feed`,

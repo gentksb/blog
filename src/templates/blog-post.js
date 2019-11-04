@@ -14,18 +14,16 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const seoImage = post.frontmatter.cover != null ? (post.frontmatter.cover.childImageSharp.fluid.src) : ("/image/dummy.jpg")
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} image={post.frontmatter.cover.childImageSharp.fluid.src} />
+        <SEO title={post.frontmatter.title} description={post.excerpt} image={seoImage} />
         <Container maxWidth="lg">
           <Card component="article">
             <CardHeader component="header" title={post.frontmatter.title} subheader={post.frontmatter.date} />
-            {post.frontmatter.tags != null ? (
-              <PostTag tags={post.frontmatter.tags} />
-            ) : (
-                <Chip label="No tags" size="small" icon={<LocalOffer />} />
-              )}
+            {(<PostTag tags={post.frontmatter.tags} />) || (<Chip label="No tags" size="small" icon={<LocalOffer />} />
+            )}
             <CardContent>
               <Typography variant="body1" component="section" dangerouslySetInnerHTML={{ __html: post.html }} />
             </CardContent>
