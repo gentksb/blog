@@ -1,0 +1,130 @@
+---
+title: 値上げに釣られてホイホイWH9000-C50-TU購入記
+author: admin
+type: post
+date: 2014-05-02T22:26:00+00:00
+
+
+tags: ["REVIEW","ROAD"]
+
+---
+### IYH
+
+ご存知の通り、5/1出荷分からシマノホイールが値上げされました。
+
+値上げ幅が結構エグい感じで大きい物で25％UPとか…
+
+某激安通販では10万円以下のホイールが全滅とかいう噂も。
+
+手持ちのJETFLYは11s対応ですし前後で1450g程度ですしわざわざC24とか買う必要もなかったんですが…
+
+残業疲れの頭で
+
+「ゆくゆくはディープ欲しいし…とりあえずポチって在庫無かったら諦めってことにしよう」
+
+などという意味のわからない思考のもとC50TUをポチ。
+
+結果
+
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="IMG_20140422_202758.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="472" src="./IMG_20140422_202758.jpg" width="640" /></a>
+</div>
+
+こんにちは、全然売り切れてませんでしたね～
+
+タイヤ買ってないのでこちらも幅広リムに合うよう25cのPRO4をぽちっと。
+
+Continental信者なので普段はSprinterをチョイスするのですが、22cしかなかったので…
+
+ラテックスに不安を覚えつつも評判は良さ気なので使ってみます。
+
+### PRO4取り付け
+
+折りたたんでいないパッケージなので、配送の箱がやたらでかい。
+
+開けてみると、パッケージ時点でフンドシ部分が中心になっておらずセンター出しに苦労しそうな雰囲気がプンプン…
+
+案の定、テープ無しで嵌めてみると片側に寄っておりスキンカラーが片側からしか見えない状態。
+
+空気圧を上げてセンターを直しても空気を抜くと癖が付いているせいか元に戻ってしまう。Sprinterは嵌めただけでセンターほぼ出てたのにな…
+
+センター出した状態で一日置いて癖をマシな状態に戻してからテープ貼り開始。
+
+ビニールを剥がす際に空気圧落とすとどうしても少しセンターがズレてしまうのでビニール剥がしたあと空気圧上げ、タイヤだけにテープを密着させて無理やりセンターを出す。
+
+バイクに取り付けてみると、幅が広い分ブレーキの引きしろがほぼ無くなる状態に。
+
+レバーの遊びは大きく取るのが好みなのにここまでカツカツになるということは、人によってはワイヤー緩めないとそもそもホイールが入らない可能性もありますね…
+
+結局ブレーキ調整するので同じことかもしれませんが。
+
+重量は以下の通り。
+
+　9000C50+PRO4 25c：F990g,R1160g
+
+　JETFLY+RBCC23c：F950g,R1100g
+
+全体重量としては100g位前後で重くなりました。
+
+ただ、RBCC tubelessの23c→25cで片側40g重くなることを考えるとタイヤの重さが差のほとんどを占めており、ホイール自体の重量はほぼ変わらない計算。
+
+となると重いデュラハブを持つC50のほうが外周の重さは軽い可能性が？と思ったりしますがその分スポークが少ないので実際バラしてみないことにはわかりませんね。
+
+### 試走
+
+中原街道アップダウン＋ヤビツ1回
+
+踏み出しの感覚をそこまで変わらず。可もなく不可もなくといった重量なので想定通り。
+
+25cのPRO4は流石の乗り心地で全く文句なし。チューブレスから乗り換えても快適感ほぼ変わりません。
+
+ホイールとしては、ディープらしく下りやヒルクライム中の平坦ぽい区間で乗せたスピードを維持するのがとても楽。平坦も35km/h維持が楽々だったので効果はあるのかなと。
+
+また、想像以上に横剛性があるので、エアロ効果と合わせて下りが楽しいホイールということが発覚。
+
+ブレーキ面も滑らかで、レバーを握った時のフィードバックで高精度であることを伺わせてくれます。（中華はブレーキの効きとフィーリングがスイストップ黄色でもなかなか酷かった）
+
+JETFLYがリム継ぎ目でコツコツ来る残念リムだったのでレバーを引いた分だけぬるっと効いてくれるのはとてもいい感じ。
+
+特別軽い訳ではないので登り用！って人には全くオススメできませんがロングのお供とか高速レースには良さ気です。
+
+登坂で勝負の決まるレースはそもそも自分の勝てない奴なので高速レースに特化する目論見にはぴったりでした。
+
+欠点は輪行したくないってことかな。
+
+ENVE1.45を某所で組めば登れてスプリントできるホイールがほぼ同額で作れたかもしれないことは言わないお約束だ！
+
+
+
+<div class="amazlet-box" style="margin-bottom:0px;">
+  <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
+    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007Q62ALI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/31Z5-BtPYeL._SL160_.jpg" alt="TRUSCO 耐熱・耐寒・難燃 プレミアム ビニールテープ ブラック 19mm×20m TMPM1920BK" style="border: none;" /></a>
+  </div>
+
+  <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
+    <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007Q62ALI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">TRUSCO 耐熱・耐寒・難燃 プレミアム ビニールテープ ブラック 19mm×20m TMPM1920BK</a></p>
+
+<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
+  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
+</div>
+
+
+<div class="amazlet-detail">
+トラスコ中山(TRUSCO) <br />売り上げランキング: 40
+
+
+<div class="amazlet-sub-info" style="float: left;">
+<div class="amazlet-link" style="margin-top: 5px">
+  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007Q62ALI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
+</div>
+
+  </div>
+
+  <div class="amazlet-footer" style="clear: left">
+  </div>
+</div>
+

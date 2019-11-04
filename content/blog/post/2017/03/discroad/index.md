@@ -1,0 +1,214 @@
+---
+title: 「ディスクロード」のインプレッション
+author: admin
+type: post
+date: 2017-03-24T06:39:00+00:00
+
+cover: DSC_0584.jpg
+
+tags: ["REVIEW","ROAD"]
+
+---
+<div class="separator" style="clear: both; text-align: center;">
+   
+</div>
+
+<div class="separator" style="clear: both; text-align: center;">
+  <img src="./DSC_0584.jpg" width="640" height="362" border="0" />
+</div>
+
+&nbsp;
+
+### ディスクロード元年説
+
+昨年のロードシーズン終了後、ロードバイクをTCR ADVANCED PRO DISCに乗り換えた。
+
+ディスクロードは2015年あたりから少しづつ噂や先進的なモデルが現れていたが、2017年モデルになって「実質的な規格の統一」「レーシングバイクのディスクブレーキモデル登場」という大きな変化のある年になった。
+
+9100デュラエースの登場により、前後12mmスルーアクスル・フラットマウントブレーキがデファクトスタンダードとなり、ローター径はメーカーによってやや差がでるものの、140mmが基本になっている。
+
+※CANYONなど一部メーカーは160mmを完成車付属としている。
+
+とはいえ、競技への浸透はまだこれからとなっていて、UCIレースで試験的運用が続けられており、国内のレースでも何故かディスクロード&#8221;だけ&#8221;締め出しをくらうホビーレースが多々存在するため、サーキットエンデューロくらいしか出場できない。
+
+この辺は、なんとなく存在するディスクロードへの不信感が原因だと思うが、正直乗りこんでおらずイメージで語っている人が殆どだろう。
+
+今年は新型アルテグラが発売されることが確定されており、2018年モデルでディスクロードを検討している人もいるだろう。
+
+実際に乗っている身としては、この記事を書いている時点で、ディスクロードに対する間違ったイメージが世の中に浸透していると感じている。
+
+これからディスクロードに乗ろうとしている人のために、こ半年ほどでわかったことをつらつらと書いていこうと思う。
+
+### 制動力は高くないが、レバーの引きは異次元の軽さに
+
+<div class="separator" style="clear: both; text-align: center;">
+  <img src="./DSC_0212.jpg" width="640" height="362" border="0" />
+</div>
+
+これが、最大の誤解なのだがブレーキシステムがリムブレーキからディスクブレーキに変わったところで制動力が変わったりはしない。
+
+大事なことなので2回言うけれども、制動力は変わらない。正確にはブレーキのコントロール性は変わるけれども、最大制動力が変わることはない。
+
+9000デュラエースのブレーキからR785シリーズのディスクブレーキに変更したが、殆ど違和感なく使うことが出来た。
+
+そもそも、ブレーキの最大制動力はタイヤと地面の摩擦係数で決まる。ロードタイヤを使っている限り、リムブレーキでタイヤがロックする場面ではディスクブレーキでもタイヤはロックしてしまう。
+
+油圧なら、レバーを引くために力はいらず、微妙なタッチを出しやすいというだけ。
+
+握力がいらないほか、「ブレーキパッドとローターの摩擦力」が「リムのブレーキ面とブレーキシュー摩擦力」より大きい場合があるのでブレーキが効きやすいと勘違いしてしまう。
+
+むしろ、アルミリムのホイールと効きの良いパッドを使うと、140mmのディスクブレーキより制動距離が縮められる可能性すらある。ホイールを700cの仮想ブレーキローターとして考えればテコの原理でリムを制動させたほうが強い力を出せる。
+
+※実際には700mmローターを作ってもそうはならないがそれはまた別の話
+
+その代わり、ブレーキ面が濡れてしまうような局面ではディスクブレーキのほうが影響を受けづらい。
+
+リムは地面に近くて濡れやすい、ローターは地面から遠く、濡れにくいし異物も入り込みづらい。結果としてウェットな環境ではディスクブレーキのほうが制動力が安定する。（濡れたらディスクブレーキもそれなりに制動力が落ちるが、リムブレーキほどではない）
+
+ちなみに、ワイヤー引きのディスクブレーキはリムブレーキと同等かそれ以下のコントロール性しかないので、ディスクロードを買う場合に油圧は必須要件。
+
+そして、「急に制動力が立ち上がって危険」というのは完全な妄想なので気にしなくて良い。ロード用のオイルラインは剛性を下げてあるし、140mmローターにそんな制動力はない。
+
+リムブレーキだって力いっぱい引けば急に制動力が立ち上がると思うが、それはブレーキングが下手なだけであり、ブレーキシステムは関係ない。
+
+油圧レバーの引きの軽さはワイヤーでは決して到達できないレベルになる。
+
+力を入れたかどうかは関係なく、「引いた分だけ効く」ということを理解すれば200km以上走っても握力に困ることはない。
+
+ブレーキに握力が不要になるということは、非常に素晴らしい。
+
+
+### 輪行装備が増える
+
+<div class="separator" style="clear: both; text-align: center;">
+  <img src="./DSC_0596.jpg" width="640" height="362" border="0" />
+</div>
+
+ディスクブレーキは油に弱い。ローターやパッドに油分がついてしまうと途端にブレーキが効かなくなってしまう。
+
+フレームへの傷を気にしなくとも、大抵の輪行袋は油まみれなので、ローターを保護しないときっとひどいことになる。ローターカバーが必要。
+
+
+
+<div class="amazlet-box" style="margin-bottom: 0px;">
+  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
+    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001E7P5H6/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink"><img style="border: none;" src="https://images-fe.ssl-images-amazon.com/images/I/41ohvabPRIL._SL160_.jpg" alt="マルト(MARUTO) スプロケット&ディスクブレーキローターカバー RS-S570 シルバー" /></a>
+  </div>
+  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
+    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
+    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001E7P5H6/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">マルト(MARUTO) スプロケット&ディスクブレーキローターカバー RS-S570 シルバー</a></p>
+      <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 17.03.24
+      </div>
+      <div class="amazlet-detail">
+      マルト(MARUTO) (2012-03-09)<br /> 売り上げランキング: 210
+        <div class="amazlet-sub-info" style="float: left;">
+          <div class="amazlet-link" style="margin-top: 5px;">
+            <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001E7P5H6/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">Amazon.co.jpで詳細を見る</a>
+          </div>
+       </div>
+       <div class="amazlet-footer" style="clear: left;">
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+パッドのスペーサーも必要だと言われているが、実は付けなくてもピストンが出っぱなしになることはそうそうないので余り気にしなくても良い。
+
+代わりに、縦型輪行の人はスルーアクスル用のエンド金具を買う必要が出てくる。
+
+<div class="amazlet-box" style="margin-bottom: 0px;">
+  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
+    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01B380GJW/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink"><img style="border: none;" src="https://images-fe.ssl-images-amazon.com/images/I/51hjJnvdJBL._SL160_.jpg" alt="OSTRICH(オーストリッチ) エンドスタンド 12mm スルー用" /></a>
+  </div>
+  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
+    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
+      <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01B380GJW/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">OSTRICH(オーストリッチ) エンドスタンド 12mm スルー用</a></p>
+        <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 17.03.24
+        </div>
+        <div class="amazlet-detail">OSTRICH(オーストリッチ) <br /> 売り上げランキング: 34,725
+          <div class="amazlet-sub-info" style="float: left;">
+            <div class="amazlet-link" style="margin-top: 5px;">
+            <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01B380GJW/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">Amazon.co.jpで詳細を見る</a>
+          </div>
+        </div>
+        <div class="amazlet-footer" style="clear: left;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ただ、ディスクロードの輪行はデメリットばかりではなくメリットもある。
+
+スルーアクスルになったことで、ホイールのハブの突起が無くなるため、フレームや輪行袋へのダメージがかなり減る。ついでに否応なしにローターカバーを付けるため、背負っているときに突起が体に当たって痛い思いをすることは減るだろう。
+
+### ホイールが！！！少ない！！！！！！
+
+<div class="separator" style="clear: both; text-align: center;">
+  <img src="./PHO_ERC_1100_DICUT_db_47_FW.png" width="202" height="320" border="0" />
+</div>
+
+12mmスルーアクスルホイールは、後から交換しようとすると本当に選択肢が少ない。
+
+モデル自体は存在しているが、完成車付属品から交換するとなるとそれなりにグレードアップを望みたいもの。
+
+ZIPPやReynoldsはディスクブレーキモデルに力が入っているが、全てカーボンリムでそれなりにお高い。
+
+上から下までラインナップしているのは現状DT Swissのみ。知っての通り日本国内での入手は絶望的。自分はGIANTの完成車付属のカーボンTLホイールを使っているが、丸スポークのせいかどうにも下りでスピードが乗らない。とはいえそれなりに高いホイールなので思い切って交換できずにいる。
+
+スポーク数が最低24本必要になってしまう点も踏まえて、リムブレーキモデルに比べてホイールが熟成されていない点は否めない。
+
+幅広リムで空力を稼ぐアプローチが流行っているが、「28c前提！」みたいなグラベルモデルは現状日本の道路では必要ないので、もうちょっとなんとかなってほしい…
+
+とはいえ、DT swissの<a href="https://www.dtswiss.com/Wheels/Road-Wheels/R-23-Spline-db" target="_blank" rel="noopener">R23 spline</a>あたりはコスパに優れているため、アルミリムも少数ながら良いホイールがある。選択肢は少ない…が、油圧レバーもメリットはこれをカバーして余りあるレベルということは付け加えておく。
+
+入手性に関しては2017年からDTの代理店が変わったので改善があるかも？
+
+### ハンドリング剛性の向上
+
+<div class="separator" style="clear: both; text-align: center;">
+  <img src="./DSC_0380.jpg" width="640" height="362" border="0" />
+</div>
+
+いい画像が無かった。
+
+スルーアクスルによる一体化の恩恵なのか、ディスクブレーキ化による低重心化なのか、GIANT特有のOD2規格が効いているのかわからないが、下りのライン取りが恐ろしく安定する。
+
+狙ったラインにスッと乗って、一切のブレなく地面に吸い付くようなコーナリングができるようになった。
+
+走っていて非常に気持ちいい。
+
+それに加えて、リアバックの路面追従性も上がっている。これはBB下ダイレクトマウントのモデルもそうだが、シートステーの自由度が上がったことに起因していると思われる。
+
+乗り心地が良く、トラクションもかかりやすい。
+
+&nbsp;
+
+### 結論
+
+ロードバイクがディスクブレーキになったところで、レバーの引きの軽さ以外は拍子抜けするくらい変わらない感覚で使うことができている。
+
+各種アクセサリーをスルーアクスル対応にしたりする必要があるので、その点は注意。
+
+今年はR8000系アルテグラのお陰で2018年モデルに沢山のディスクロードモデルが出てくると思われるが、リムブレーキと比べて走行性能がそうそう変わるわけではないので興味があるなら買っても大きな問題は出ないだろう。
+
+逆に言えば、買い替えのタイミングでなければそう急いで移行しなければいけないタイプの製品ではないとも言える。
+
+ディスクロードを買うときは、せっかくだから油圧ブレーキに加えて電動変速の導入をおすすめする。
+
+定常的なメンテナンスがほぼ不要になり、チェーンとタイヤだけ気をつけていれば良くなり、走行距離次第では1シーズンノーメンテナンスという運用すら可能になる。
+
+最高のものぐさバイク完成である。
+
+ただし、スプリンタースイッチが使える油圧Di2レバーがないことには注意。
+
+ST-R785とST-R9170共に、スプリンタースイッチ用のポートは存在していない。似た変速感覚を再現するためにはSW-R9150を買う必要がある。
+
+メーカーの意向として、ディスクロードへの移行を促したいのはミエミエなので、そのうち「乗りかえないとまずい…」という局面も出てくるかもしれない。
+
+このエントリーを読んでいざ移行する際にそこまで身構える必要はないということだけ覚えて貰えれば幸い。
+
+&nbsp;
+
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B06VY5S3DN/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41dpOlmV1vL._SL160_.jpg" alt="ST-R9170 左右レバーセット ハイドローリック 付属/ホース(SM-BH90-JK-SS) ・オイル E-tubeポートX2" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B06VY5S3DN/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ST-R9170 左右レバーセット ハイドローリック 付属/ホース(SM-BH90-JK-SS) ・オイル E-tubeポートX2</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.03.13</div></div><div class="amazlet-detail">シマノ(SHIMANO) <br />売り上げランキング: 72,625<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B06VY5S3DN/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
