@@ -17,7 +17,7 @@ const PostTag = ({ tags }) => {
   const tagArray = (tags != null) ?
     (
       tags.map((tag) => (
-        <Link to={`/tags/${tag.toLowerCase()}`} style={{ textDecoration: 'none' }}>
+        <Link to={`/tags/${tag.toLowerCase()}`} style={{ textDecoration: 'none' }} key={tag}>
           <TagChip key={tag} label={tag} color="primary" size="small" icon={<LocalOffer />} clickable style={{ textDecoration: `none` }} />
         </Link>
       ))
