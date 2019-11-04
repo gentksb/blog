@@ -1,5 +1,5 @@
 const shareConfig = {
-  iconSize: 32,
+  iconSize: 48,
   isRoundIcon: true,
 }
 

@@ -37,6 +37,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
+        padding: `10px 10px 10px 10px`,
       }}
     >
       <Image
@@ -59,6 +60,9 @@ const Bio = () => {
             src="/social_icons/Twitter.png"
             alt="Twitter logo"
             width="25"
+            style={{
+              margin: `0px 0px 0px 10px`
+            }}
           />
         </a>
         <a href={`https://github.com/${social.github}`}>
@@ -66,6 +70,9 @@ const Bio = () => {
             src="/social_icons/Github.png"
             alt="Github logo"
             width="25"
+            style={{
+              margin: `0px 0px 0px 10px`
+            }}
           />
         </a>
         <a href={`https://www.instagram.com/${social.instagram}`}>
@@ -73,6 +80,9 @@ const Bio = () => {
             src="/social_icons/instagram.png"
             alt="instagram logo"
             width="25"
+            style={{
+              margin: `0px 0px 0px 10px`
+            }}
           />
         </a>
       </p>
