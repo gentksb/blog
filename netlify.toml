@@ -1,7 +1,7 @@
 [context.production]
-  command = "npm build"
+  command = "npm run build"
   publish = "/public"
 
 [context.branch-deploy]
-  command = "npm build"
+  command = "npm run build"
   publish = "/public"
