@@ -1,43 +1,40 @@
-import { Link } from "gatsby"
 import React from "react"
-import { Card, Grid, CardActionArea, CardContent } from '@material-ui/core'
+import { Link } from "gatsby"
 import { ArrowBackIos, ArrowForwardIos } from '@material-ui/icons'
+import { Card, CardContent, Grid, CardActionArea } from '@material-ui/core'
 
-const Pagination = ({ props }) => {
-  const { pageContext } = props
-  const { previousPagePath, nextPagePath } = pageContext
-
+const PrevAndNextPost = ({ previous, next }) => {
   return (
-    <Grid container spacing={1} justify="center">
-      <Grid item xs={5}>
+    <Grid container style={{ marginTop: `5px` }} spacing={1}>
+      <Grid item xs>
         <Card style={{ height: "100%" }}>
           <CardActionArea style={{ height: "100%" }}>
-            {nextPagePath ?
-              <Link to={nextPagePath}>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev" style={{ textDecoration: 'none' }}>
                 <CardContent>
                   <Grid container>
                     <Grid item xs={2}><ArrowBackIos /></Grid>
-                    <Grid item xs={10}>Older</Grid>
+                    <Grid item xs={10}>{previous.frontmatter.title}</Grid>
                   </Grid>
                 </CardContent>
               </Link>
-              : null}
+            )}
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={5} style={{ textAlign: "right" }}>
+      <Grid item xs style={{ textAlign: "right" }}>
         <Card style={{ height: "100%" }}>
           <CardActionArea style={{ height: "100%" }}>
-            {previousPagePath ?
-              <Link to={previousPagePath}>
+            {next && (
+              <Link to={next.fields.slug} rel="next" style={{ textDecoration: 'none' }}>
                 <CardContent>
                   <Grid container>
-                    <Grid item xs={10}>Newer</Grid>
+                    <Grid item xs={10}>{next.frontmatter.title}</Grid>
                     <Grid item xs={2}><ArrowForwardIos /></Grid>
                   </Grid>
                 </CardContent>
               </Link>
-              : null}
+            )}
           </CardActionArea>
         </Card>
       </Grid>
@@ -45,4 +42,4 @@ const Pagination = ({ props }) => {
   )
 }
 
-export default Pagination
+export default PrevAndNextPost

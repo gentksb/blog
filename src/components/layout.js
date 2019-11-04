@@ -39,7 +39,7 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <Typography component="h1" variant="h3" align="center" gutterBottom>
+        <Typography component="div" variant="h3" align="center" gutterBottom>
           <BlogTitleLink to={`/`}>
             {title}
           </BlogTitleLink>

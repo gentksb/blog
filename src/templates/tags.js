@@ -17,7 +17,7 @@ const Tags = ({ pageContext, data, location }) => {
 
   return (
     <Layout location={location} title={tagHeader}>
-      <SEO title="All posts" />
+      <SEO title="All posts" location={location} />
       <PostList props={edges} />
       <Bio />
     </Layout>

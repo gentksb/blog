@@ -9,6 +9,7 @@ import {
 } from "react-share";
 import shareConfig from "../config/shareConfig"
 import styled from "@emotion/styled"
+import { Share } from "@material-ui/icons"
 
 const sharebox = ({ post, location }) => {
 
@@ -27,6 +28,7 @@ const sharebox = ({ post, location }) => {
 
   return (
     <ShareBox className="social-share">
+      <Share />
       <FacebookShareButton url={location.href} className="sharebutton-box">
         <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </FacebookShareButton>
