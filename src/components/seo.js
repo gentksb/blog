@@ -67,7 +67,7 @@ function SEO({ description, lang, meta, title, image, location }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `blog`,
         },
         {
           name: `twitter:card`,
