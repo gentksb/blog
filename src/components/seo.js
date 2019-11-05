@@ -75,7 +75,7 @@ function SEO({ description, lang, meta, title, image, location }) {
         },
         {
           name: `twitter:site`,
-          content: site.siteMetadata.social.twitter,
+          content: `@${site.siteMetadata.social.twitter}`,
         }
       ].concat(meta)}
     />
