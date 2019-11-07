@@ -21,9 +21,9 @@ const postList = ({ props }) => {
   const postCards = (
     props.map(({ node }) => (
       <Postcard key={node.id}>
-        <CardActionArea>
+        <CardActionArea aria-label={node.frontmatter.title}>
           <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
-            <PostHeader title={node.frontmatter.title} subheader={node.frontmatter.date} />
+            <PostHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
           </Link>
         </CardActionArea>
         <PostTag tags={node.frontmatter.tags} />
@@ -33,7 +33,7 @@ const postList = ({ props }) => {
         </CardContent>
 
         <CardActions>
-          <ReadmoreButton color="secondary" href={node.fields.slug}>続きを読む</ReadmoreButton>
+          <ReadmoreButton color="secondary" href={node.fields.slug}>この記事を読む</ReadmoreButton>
         </CardActions>
       </Postcard>
     ))
