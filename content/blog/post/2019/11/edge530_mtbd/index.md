@@ -1,0 +1,79 @@
+---
+title: "Edge530のMTBダイナミクスを白馬岩岳で試してみた"
+date: 2019-11-07
+draft: false
+tags: ["MTB"]
+cover: "./hakubaiwatake.jpg"
+---
+
+![cover](./hakubaiwatake.jpg)
+
+## MTB ダイナミクスがすごい
+
+Edge530/830/1050 のあまり日本で語られない機能、「MTB ダイナミクス」。マーケット上仕方がないが、結論から言うとかなり面白い機能である。  
+本体のモーションセンサー（加速度？）によって MTB のジャンプ回数や、トレイルの難易度・走行のスムーズさを計測してくれるというもの。
+
+ジャンプはわかりやすいワードだが、その他に"グリッド","フロー"という指標を表示してくれる。  
+じっさいに走ったログと照らし合わせてどんな機能なのか紹介していく。
+
+ちなみに MTB ダイナミクスはアクティビティタイプを MTB にしないとロギングされないので注意。
+
+## MTB ダイナミクスの定義
+
+岩岳コースを６本ほど走った際のログがこちら
+
+![フロートグリッドのログ](./flow_grid.png)
+
+### フロー
+
+フローの定義は以下の通り。  
+そのまま読むと、ライドのスムーズさを表す指標。
+
+個人が別のコースを走った場合、フローが小さい方が快適なコース。複数人でフローを比較した場合低いほうがスムーズな上手い走りという解釈が妥当だろうか。
+
+> フローは、マウンテンバイクライドでスピードをどの程度維持できたかを測定します。ライド全体で登り降りやカーブの角度などの要因が考慮されます。フローチャートは次のように評価します。
+> スムーズ：0-1
+> 中強度：1-20
+> ラフ：20+
+> フローはトレイルでのライドパフォーマンスを分析するのに有用な指標です。たとえば、同じトレイルでの 2 回のライドのフロースコアを比較して、ライドのスムーズさが向上したり低下したエリアを探すことができます。
+>
+> **Garmin Connect でのフロー**
+> 全体のフロースコアは、Garmin デバイスで蓄積された平均スコアです。ライドでは、継続的にフローが算出されています。同期したとき、ライド全体のフロースコアチャートとライド全体の平均フロースコアを Garmin Connect で受信します。フロースコアが低いほど、ライドの変化に波がなかったことがわかります。スコアが高くなると、ライドでスピードの変化や停車があったことがわかります。
+
+### グリット
+
+その名の通り難易度。  
+こちらも加減速を考慮しているように見えるが、ライダー本人というよりコースの性質を GPS ログと合わせて計測している感じ。人による誤差をなくしたバージョンで、より客観的な指標になるようだ。
+
+> グリットは、マウンテンバイクライドの難易度を測定します。ライド全体で登り降りのスピードやカーブの角度などの要因が考慮されます。グリットチャートは次のように評価します。
+> イージー：0-20
+> 中強度：20-40
+> ハード：40+
+> 同じトレイルの場合、グリットスコアはライダー間でかなり共通性があるはずです。これは走行するさまざまなトレイルの難易度を比較するのに有用な指標になります。
+>
+> **Garmin Connect でのグリット**
+> 全体のグリットスコアは、Garmin デバイスで蓄積された合計です。ライドでは、継続的にグリットが算出されています。同期したとき、ライド全体でグリットスコアのチャートとその合計スコアを Garmin Connect で受信します。また、アクティビティマップでトレイルでのグリットレーティングを表示することもできます。ライドの難易度が高いほど、グリットスコアが高くなります。
+
+### ジャンプ
+
+![ジャンプログ](./jump.png)
+
+その名の通りジャンプを検知する。検知すると「ﾋﾟﾛｯ」と Edge がアラートを出すので小さな達成感を感じられる ← 重要  
+その他、滞空時間や距離・速度を記録している。
+
+ちなみにガレ場でもジャンプ検知したり、パンプトラックではジャンプ祭り（実際には地面を舐めている）だったりするので、信頼性はイマイチ。長時間飛んでいるログを抽出すればちょっとはマシなデータになると思われる。
+
+## 活用方法
+
+正直なところまだ活用方法はわからないし、数値的な妥当性もあまり見えてこないだろう。
+
+ただ、フロートジャンプに関しては全てマップ上で確認できる。
+
+![MTBダイナミクスマッピング](./mtbd_map.png)
+
+赤い部分が加減速の激しい部分で、黒いマークが付いている部分がジャンプ。  
+他人にどんなコースか紹介するときには使えるかもしれない。
+
+とりあえずログを取っているという事実や、ジャンプの検知音はライド中のいいアクセントになるので、Edge530 みんな買いましょう！
+
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41iLfIIuT6L._SL160_.jpg" alt="GARMIN(ガーミン) Edge 530 本体のみ GPSサイクルコンピューター（センサー類なし）" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">GARMIN(ガーミン) Edge 530 本体のみ GPSサイクルコンピューター（センサー類なし）</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.11.07</div></div><div class="amazlet-detail">GARMIN ガーミン <br />売り上げランキング: 57,796<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
