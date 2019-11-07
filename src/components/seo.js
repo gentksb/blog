@@ -67,27 +67,15 @@ function SEO({ description, lang, meta, title, image, location }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `blog`,
         },
         {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          name: `twitter:image`,
-          content: metaImage,
+          name: `twitter:site`,
+          content: `@${site.siteMetadata.social.twitter}`,
         }
       ].concat(meta)}
     />
