@@ -78,7 +78,9 @@ function SEO({ description, lang, meta, title, image, location }) {
           content: `@${site.siteMetadata.social.twitter}`,
         }
       ].concat(meta)}
-    />
+    >
+      <script data-ad-client="ca-pub-0056151430743709" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </Helmet>
   )
 }
 
