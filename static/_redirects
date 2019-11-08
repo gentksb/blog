@@ -310,3 +310,6 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 
 #fix miss post
 /post/2019/01/boa_repair/ /post/2019/02/boa_repair/
+
+#migrate code post
+/post/2019/07/withings2slack/ https://gensobunya-tech.hatenablog.com/entry/2019/07/19/000000
