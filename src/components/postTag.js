@@ -5,11 +5,11 @@ import { LocalOffer } from '@material-ui/icons';
 import styled from "@emotion/styled"
 
 const TagChip = styled(Chip)`
-  margin-left:16px;
-  margin-bottom:1em;
+  margin: auto auto auto 10px;
 `
 const TagContainer = styled(Container)`
   padding:0;
+  margin: 5px auto;
 `
 
 const PostTag = ({ tags }) => {
