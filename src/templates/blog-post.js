@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Typography, Container, Card, CardContent, Divider } from '@material-ui/core'
 
-// import Bio from "../components/bio"
+import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Share from "../components/share"
@@ -37,12 +37,13 @@ class BlogPostTemplate extends React.Component {
             </article>
             <Divider variant="middle" />
             <Share post={post} location={this.props.location} />
-            {/* <Bio /> */}
           </Card>
 
           <nav>
             <PrevAndNextPost previous={previous} next={next} />
           </nav>
+
+          <Bio />
 
         </Container>
       </Layout>
