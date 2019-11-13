@@ -39,7 +39,7 @@ const postList = ({ props }) => {
     ))
   )
   return (
-    <PostContainer maxWidth="sm">
+    <PostContainer maxWidth="md">
       {postCards}
     </PostContainer>
   )
