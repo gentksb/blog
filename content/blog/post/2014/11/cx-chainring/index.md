@@ -3,20 +3,18 @@ title: CX用ナローワイドチェーンリング＆フロントシングル�
 author: admin
 type: post
 date: 2014-11-13T04:12:00+00:00
-
 cover: 2014-10-1113.41.48.jpg
-
-tags: ["CX","TIPS","REVIEW","RACE","EC"]
-
+tags: ["CX", "TIPS", "REVIEW", "RACE", "EC"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="364" src="./2014-10-1113.41.48.jpg" width="640" />
 </div>
 
-ジャパンカップシクロクロス前にフロントをシングル化した。元々の目的は、ZEEクランクの採用でQファクターが広がりすぎたのでロードクランクで是正するため。  
+ジャパンカップシクロクロス前にフロントをシングル化した。元々の目的は、ZEE クランクの採用で Q ファクターが広がりすぎたのでロードクランクで是正するため。  
 ついでにチェーンガイドをフロントに付けていても、チェーンは落ちるときは落ちるし落ちた時の復帰が非常に遅くなるので、チェーンガイドいらずと噂のナローワイドチェーンリングを導入することにしてみた。
 
-最終的にはRACEFACEのものを選んだわけだが、当初の選択肢は以下の通り。
+最終的には RACEFACE のものを選んだわけだが、当初の選択肢は以下の通り。
 
 ### 比較
 
@@ -24,16 +22,15 @@ tags: ["CX","TIPS","REVIEW","RACE","EC"]
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41K-gE6gZkL._SL160_.jpg" alt="ウルフトゥース(Wolf Tooth) シングルチェーンリング 5アーム シクロクロス用 drop-stop 42T/110mm" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ウルフトゥース(Wolf Tooth) シングルチェーンリング 5アーム シクロクロス用 drop-stop 42T/110mm</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.03.02</div></div><div class="amazlet-detail">ウルフトゥース(Wolf Tooth) <br />売り上げランキング: 170,318<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00MYJ3MPU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
-
 言わずと知れた老舗。
 
-シクロクロス界でナローワイドといえばこいつ。（時点でSRAM CX1）
+シクロクロス界でナローワイドといえばこいつ。（時点で SRAM CX1）
 
-内外価格差がほとんどなく概ね12k円程度。
+内外価格差がほとんどなく概ね 12k 円程度。
 
-迷った中で唯一110PCDで36Tをラインナップしている。
+迷った中で唯一 110PCD で 36T をラインナップしている。
 
-現在ではSHIMANO4アーム対応版、かつチェーンライン補正付きとアップデートされている。
+現在では SHIMANO4 アーム対応版、かつチェーンライン補正付きとアップデートされている。
 
 #### Abusolute Black
 
@@ -41,15 +38,10 @@ tags: ["CX","TIPS","REVIEW","RACE","EC"]
   <img border="0" height="212" src="./cyclocross_narrow_wide_cx_chainring_110bcd_2.jpg" width="320" />
 </div>
 
-「CX　ナローワイドチェーンリング」でググったら出てきた。
-
-これでもかという切削痕、エロい。赤と黒のラインナップ有り。
-
-同じく12kくらい。某店で扱ってたけど在庫がわからないのでパス。
+「CX 　ナローワイドチェーンリング」でググったら出てきた。  
+これでもかという切削痕、エロい。赤と黒のラインナップ有り。同じく 12k くらい。某店で扱ってたけど在庫がわからないのでパス。
 
 公式サイトでも売ってるけどね…
-
-
 
 #### RACE FACE
 
@@ -61,11 +53,11 @@ tags: ["CX","TIPS","REVIEW","RACE","EC"]
   <a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104724&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="./FireShotCapture66-ProductDetails-RaceFace_-http___www.raceface.com_products_d.png" /></a>
 </div>
 
-MTB用だけかとおもいきやCX用も出してました。
+MTB 用だけかとおもいきや CX 用も出してました。
 
-国内価格7kくらいだよ！というタレコミだけで購入決定するも、代理店に在庫なし入荷未定。
+国内価格 7k くらいだよ！というタレコミだけで購入決定するも、代理店に在庫なし入荷未定。
 
-しかたなく海外通販。当時は7kくらいだったけど今は<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104714&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104714" height="1" width="0" /></a>wiggleでも扱ってます。
+しかたなく海外通販。当時は 7k くらいだったけど今は<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104714&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104714" height="1" width="0" /></a>wiggle でも扱ってます。
 
 カラーは黒のみ。
 
@@ -75,7 +67,7 @@ MTB用だけかとおもいきやCX用も出してました。
   <img border="0" height="320" src="./E38380E382A6E383B3E383ADE383BCE38389.jpg" width="320" />
 </div>
 
-PCD110,130共に40/42T。
+PCD110,130 共に 40/42T。
 
 <a href="http://www.trisports.jp/?q=catalog/node/7605" target="_blank">トライスポーツ取り扱い</a>なので在庫さえあれば入手性は良いはず。
 
@@ -85,10 +77,10 @@ PCD110,130共に40/42T。
   <img border="0" height="298" src="qcx1.jpg" width="320" />
 </div>
 
-※2016/1追記
+※2016/1 追記
 
-楕円×ナローワイドシングルチェーンリング！　　
-PCD110のみ、38T~44Tまで幅広くラインナップ。公式では対応クランクが指定されているので注意。
+楕円 × ナローワイドシングルチェーンリング！　　
+PCD110 のみ、38T~44T まで幅広くラインナップ。公式では対応クランクが指定されているので注意。
 
 #### FOURIERS&nbsp;NARROW-WIDE SINGLE FRONT CHAINRING
 
@@ -96,9 +88,9 @@ PCD110のみ、38T~44Tまで幅広くラインナップ。公式では対応ク�
   <img border="0" height="181" src="./1412295707.jpg" width="320" />
 </div>
 
-※2016/1追加
+※2016/1 追加
 
-PCD110/130,38T~42Tをラインナップ。  
+PCD110/130,38T~42T をラインナップ。  
 歯の根本にある泥抜き穴が最大の特徴。効果があるかは未知数だけども…
 
 ### 使用感
@@ -107,39 +99,37 @@ PCD110/130,38T~42Tをラインナップ。
   <img border="0" height="364" src="./2014-10-1113.41.57.jpg" width="640" />
 </div>
 
-入手性と値段でRACEFACEのものを購入。チェーンボルトはKCNCの6.5mmがちょうどいい感じでした。
+入手性と値段で RACEFACE のものを購入。チェーンボルトは KCNC の 6.5mm がちょうどいい感じでした。
 
-CNCのチェーンリングボルトが軟すぎて取り付け時に１つナメて怒り心頭に達するも1つくらい緩くてもなんとかなるでしょとの発想で無視。クランクはカラー的にROTOR 3Dとか使いたいところですがコストの問題で中古のR600を拾いました。
+CNC のチェーンリングボルトが軟すぎて取り付け時に１つナメて怒り心頭に達するも 1 つくらい緩くてもなんとかなるでしょとの発想で無視。クランクはカラー的に ROTOR 3D とか使いたいところですがコストの問題で中古の R600 を拾いました。
 
-取り付けの注意点は特になし。アウター部分に取り付けできっと合ってるはず。FDもチェーンガイドも取っ払うと見た目が非常にすっきりしていい感じ。  
+取り付けの注意点は特になし。アウター部分に取り付けできっと合ってるはず。FD もチェーンガイドも取っ払うと見た目が非常にすっきりしていい感じ。  
 ほんとにこれでチェーン落ちないのか？と不安になる見た目である。
 
 ### チェーン落ち
 
-3レース走って普通に走行している限りはチェーン落ち0でした。ジャパンカップCX・茨城CX・STARLIGHT幕張の3戦で、外れたのは派手に前転してバイクをふっ飛ばした1回のみ。（幕張でした）
+3 レース走って普通に走行している限りはチェーン落ち 0 でした。ジャパンカップ CX・茨城 CX・STARLIGHT 幕張の 3 戦で、外れたのは派手に前転してバイクをふっ飛ばした 1 回のみ。（幕張でした）
 
-ジャパンカップと茨城はフラットなのでテストとしては優しいコースでしたが、風雲たけし城を要する幕張の急勾配でも外れなかったので、チェーンリングの性能だと確信。<strike>湘南CX（開成公園）の下りで外れまくったZEEとは大違いだ！</strike>
-
-
+ジャパンカップと茨城はフラットなのでテストとしては優しいコースでしたが、風雲たけし城を要する幕張の急勾配でも外れなかったので、チェーンリングの性能だと確信。<strike>湘南 CX（開成公園）の下りで外れまくった ZEE とは大違いだ！</strike>
 
 ### ギア比
 
-フロント変速しなくていいので変速周りのトラブル軽減が見込めますが、CXによくある突発的にきつい上り勾配や下りに突入する時は一気にギアを変えられないのでそこの辺りは考えて変速する必要があります、トレードオフ。
+フロント変速しなくていいので変速周りのトラブル軽減が見込めますが、CX によくある突発的にきつい上り勾配や下りに突入する時は一気にギアを変えられないのでそこの辺りは考えて変速する必要があります、トレードオフ。
 
-レースの終盤に思考力が落ちていてもリアだけならなんとかなる。コースによってギア比を変える戦略もアリなフロントシングルですが、「フロント38Tにリア11-28Tで日本のコースで走れないところなどない」とのお言葉をスク水大先生より頂いたので従うことに。幸いまだ困っていません。
+レースの終盤に思考力が落ちていてもリアだけならなんとかなる。コースによってギア比を変える戦略もアリなフロントシングルですが、「フロント 38T にリア 11-28T で日本のコースで走れないところなどない」とのお言葉をスク水大先生より頂いたので従うことに。幸いまだ困っていません。
 
 フロントを大きくしたほうが僅かながらパワー効率はよいのでパワーあるひとはもうちょい大きいギアを選んでもいいかも？
 
 ### 最後に
 
-ロードもTTもDi2にしてたけどフロントシングルだとDi2欲が湧かない！！！！  
+ロードも TT も Di2 にしてたけどフロントシングルだと Di2 欲が湧かない！！！！  
 素晴らしい！！！
 
 代わりに油圧ディスクブレーキ導入しようぜ！！！！
 
 【2016/08/31】
 
-ごめんなさい、Di2にした上に油圧化しました。
+ごめんなさい、Di2 にした上に油圧化しました。
 
 機材欲には勝てなかったよ…
 
