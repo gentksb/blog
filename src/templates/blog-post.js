@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} image={seoImage} location={this.props.location} />
-        <Container>
+        <Container maxWidth="md">
           <BlogPostStyle />
           <Card>
             <article>
@@ -71,7 +71,7 @@ export const pageQuery = graphql`
         cover {
           base
           childImageSharp {
-          fluid {
+          fluid (maxHeight: 540, maxWidth: 960) {
           originalName
               srcWebp
         srcSetWebp

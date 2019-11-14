@@ -10,7 +10,6 @@ const PostContainer = styled(Container)`
 const PostHeader = styled(CardHeader)`
 `
 const Postcard = styled(Card)`
-  margin:20px;
 `
 const PostExcerpt = styled(Typography)`
 `
@@ -39,7 +38,7 @@ const postList = ({ props }) => {
     ))
   )
   return (
-    <PostContainer maxWidth="md">
+    <PostContainer>
       {postCards}
     </PostContainer>
   )
