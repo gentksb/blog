@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Top" location={this.props.location} />
-        <Grid container justify="center">
+        <Grid container justify="center" maxWidth="md">
           <Grid item>
             <PostList props={edges} />
             <Pagination props={this.props} />
