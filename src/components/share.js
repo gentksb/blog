@@ -18,7 +18,7 @@ const sharebox = ({ post, location }) => {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    margin: 5px 0px 5px 0px;
+    margin: 8px 0px 8px 0px;
 
     .sharebutton-box{
       display: flex;

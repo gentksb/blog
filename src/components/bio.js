@@ -37,7 +37,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        padding: `10px 10px 10px 10px`,
+        padding: `8px 8px 8px 8px`,
       }}
     >
       <Image
@@ -61,7 +61,7 @@ const Bio = () => {
             alt="Twitter logo"
             width="25"
             style={{
-              margin: `0px 0px 0px 10px`
+              margin: `0px 0px 0px 8px`
             }}
           />
         </a>
@@ -71,7 +71,7 @@ const Bio = () => {
             alt="Github logo"
             width="25"
             style={{
-              margin: `0px 0px 0px 10px`
+              margin: `0px 0px 0px 8px`
             }}
           />
         </a>
@@ -81,7 +81,7 @@ const Bio = () => {
             alt="instagram logo"
             width="25"
             style={{
-              margin: `0px 0px 0px 10px`
+              margin: `0px 0px 0px 8px`
             }}
           />
         </a>
