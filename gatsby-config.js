@@ -33,7 +33,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1080,
+              maxWidth: 960,
             },
           },
           {
@@ -52,13 +52,13 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
-          `gatsby-plugin-material-ui`,
-          `gatsby-plugin-emotion`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
     },
+    `gatsby-plugin-material-ui`,
+    `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

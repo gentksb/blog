@@ -10,10 +10,12 @@ const PostContainer = styled(Container)`
 const PostHeader = styled(CardHeader)`
 `
 const Postcard = styled(Card)`
+  margin-top: 16px;
 `
 const PostExcerpt = styled(Typography)`
 `
-const ReadmoreButton = styled(Button)`
+const ReadmoreButton = styled(CardActions)`
+  justify-content:flex-end;
 `
 
 const postList = ({ props }) => {
@@ -31,9 +33,9 @@ const postList = ({ props }) => {
           <PostExcerpt component="p">{node.excerpt}</PostExcerpt>
         </CardContent>
 
-        <CardActions>
-          <ReadmoreButton color="secondary" href={node.fields.slug}>この記事を読む</ReadmoreButton>
-        </CardActions>
+        <ReadmoreButton>
+          <Button color="secondary" href={node.fields.slug}>この記事を読む</Button>
+        </ReadmoreButton>
       </Postcard>
     ))
   )
