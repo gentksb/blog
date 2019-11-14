@@ -19,7 +19,7 @@ const HeaderContainer = styled(Container)`
   max-width: 100%;
   position: relative;
   margin: 0 0 0 0;
-  padding: 15px 0px 15px 0px;
+  padding: 16px 0px 16px 0px;
 `
 
 class Layout extends React.Component {

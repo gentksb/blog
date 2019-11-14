@@ -17,19 +17,19 @@ const BlogPostStyle = () =>
     /* Quote */
     blockquote {
       position: relative;
-      padding: 10px 15px 10px 60px;
+      padding: 8px 16px;
       background: #f5f5f5;
       color: #555;
       border-left: 4px solid ${theme.palette.secondary.main};
-      width: 80%;
-      margin: 60px auto;
+      width: 90%;
+      margin: 16px auto;
     }
 
     blockquote:before{
         display: inline-block;
         position: absolute;
-        top: 15px;
-        left: 15px;
+        top: 16px;
+        left: 16px;
         vertical-align: middle;
         /* content: "\f10d";
         font-family: FontAwesome; */
@@ -40,7 +40,7 @@ const BlogPostStyle = () =>
     
     blockquote p {
         padding: 0;
-        margin: 20px 0 10px;
+        margin: 16px 0 8px;
         font-size: 15px;
         line-height: 1.5;
     }
@@ -53,7 +53,7 @@ const BlogPostStyle = () =>
       line-height: 1.5;
       margin-top: 32px;
       margin-bottom: 32px !important;
-      padding: 26px 16px;
+      padding: 24px 16px;
       border: 1px solid #eee;
       position: relative;
     }

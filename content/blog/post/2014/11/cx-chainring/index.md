@@ -7,9 +7,7 @@ cover: 2014-10-1113.41.48.jpg
 tags: ["CX", "TIPS", "REVIEW", "RACE", "EC"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="364" src="./2014-10-1113.41.48.jpg" width="640" />
-</div>
+![cover](./2014-10-1113.41.48.jpg)
 
 ジャパンカップシクロクロス前にフロントをシングル化した。元々の目的は、ZEE クランクの採用で Q ファクターが広がりすぎたのでロードクランクで是正するため。  
 ついでにチェーンガイドをフロントに付けていても、チェーンは落ちるときは落ちるし落ちた時の復帰が非常に遅くなるので、チェーンガイドいらずと噂のナローワイドチェーンリングを導入することにしてみた。
@@ -24,19 +22,14 @@ tags: ["CX", "TIPS", "REVIEW", "RACE", "EC"]
 
 言わずと知れた老舗。
 
-シクロクロス界でナローワイドといえばこいつ。（時点で SRAM CX1）
-
-内外価格差がほとんどなく概ね 12k 円程度。
-
+シクロクロス界でナローワイドといえばこいつ。（時点で SRAM CX1）内外価格差がほとんどなく概ね 12k 円程度。  
 迷った中で唯一 110PCD で 36T をラインナップしている。
 
 現在では SHIMANO4 アーム対応版、かつチェーンライン補正付きとアップデートされている。
 
 #### Abusolute Black
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="212" src="./cyclocross_narrow_wide_cx_chainring_110bcd_2.jpg" width="320" />
-</div>
+![abusoluteBlack](./cyclocross_narrow_wide_cx_chainring_110bcd_2.jpg)
 
 「CX 　ナローワイドチェーンリング」でググったら出てきた。  
 これでもかという切削痕、エロい。赤と黒のラインナップ有り。同じく 12k くらい。某店で扱ってたけど在庫がわからないのでパス。
@@ -53,8 +46,7 @@ tags: ["CX", "TIPS", "REVIEW", "RACE", "EC"]
   <a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104724&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="./FireShotCapture66-ProductDetails-RaceFace_-http___www.raceface.com_products_d.png" /></a>
 </div>
 
-MTB 用だけかとおもいきや CX 用も出してました。
-
+MTB 用だけかとおもいきや CX 用も出してました。  
 国内価格 7k くらいだよ！というタレコミだけで購入決定するも、代理店に在庫なし入荷未定。
 
 しかたなく海外通販。当時は 7k くらいだったけど今は<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104714&vc_url=http%3A%2F%2Fwww.wiggle.jp%2Frace-face-%25E3%2582%25B7%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25AB-%25E3%2583%258A%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25BB%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%2589%25E3%2583%2581%25E3%2582%25A7%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%2F%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" target="_blank"><img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104714" height="1" width="0" /></a>wiggle でも扱ってます。
@@ -63,9 +55,7 @@ MTB 用だけかとおもいきや CX 用も出してました。
 
 #### Praxis Cyclocross Narrow / Wide Chainring
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="320" src="./E38380E382A6E383B3E383ADE383BCE38389.jpg" width="320" />
-</div>
+![Praxis](./E38380E382A6E383B3E383ADE383BCE38389.jpg)
 
 PCD110,130 共に 40/42T。
 
@@ -73,9 +63,7 @@ PCD110,130 共に 40/42T。
 
 #### ROTOR QCX1
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="298" src="qcx1.jpg" width="320" />
-</div>
+![QCX1](./qcx1.jpg)
 
 ※2016/1 追記
 
@@ -84,9 +72,7 @@ PCD110 のみ、38T~44T まで幅広くラインナップ。公式では対応�
 
 #### FOURIERS&nbsp;NARROW-WIDE SINGLE FRONT CHAINRING
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="181" src="./1412295707.jpg" width="320" />
-</div>
+![FOURIERS](./1412295707.jpg)
 
 ※2016/1 追加
 
@@ -95,9 +81,7 @@ PCD110/130,38T~42T をラインナップ。
 
 ### 使用感
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="364" src="./2014-10-1113.41.57.jpg" width="640" />
-</div>
+![used](./2014-10-1113.41.57.jpg)
 
 入手性と値段で RACEFACE のものを購入。チェーンボルトは KCNC の 6.5mm がちょうどいい感じでした。
 
@@ -110,7 +94,7 @@ CNC のチェーンリングボルトが軟すぎて取り付け時に１つナ�
 
 3 レース走って普通に走行している限りはチェーン落ち 0 でした。ジャパンカップ CX・茨城 CX・STARLIGHT 幕張の 3 戦で、外れたのは派手に前転してバイクをふっ飛ばした 1 回のみ。（幕張でした）
 
-ジャパンカップと茨城はフラットなのでテストとしては優しいコースでしたが、風雲たけし城を要する幕張の急勾配でも外れなかったので、チェーンリングの性能だと確信。<strike>湘南 CX（開成公園）の下りで外れまくった ZEE とは大違いだ！</strike>
+ジャパンカップと茨城はフラットなのでテストとしては優しいコースでしたが、風雲たけし城を要する幕張の急勾配でも外れなかったので、チェーンリングの性能だと確信。~湘南 CX（開成公園）の下りで外れまくった ZEE とは大違いだ！~
 
 ### ギア比
 
