@@ -19,7 +19,7 @@ cover: "DSC_1550.jpg"
 
 ebay愛してる。
 
-ETCというメーカーが[TIGHTS WARM UP FULL ZIP BLACK CYCLOCROSS MTB RUNNING](https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575336615&campid=5338191852&mpre=https%3A%2F%2Fwww.ebay.com%2Fitm%2F162244070914%3F_sp%3Dp2488211.m41214.l9765%26_trkparms%3Ditemid%253A162244070914)という名称で販売しているのを発見！
+ETCというメーカーが[TIGHTS WARM UP FULL ZIP BLACK CYCLOCROSS MTB RUNNING](https://ebay.us/jF0eQx)という名称で販売しているのを発見！
 
 ![image](./s-l1600.jpg)
 
