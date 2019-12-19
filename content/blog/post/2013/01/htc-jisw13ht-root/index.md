@@ -1,18 +1,17 @@
 ---
-title: 'HTC J(ISW13HT) root&CWM'
+title: "HTC J(ISW13HT) root&CWM"
 author: admin
 type: post
 date: 2013-01-20T02:19:00+00:00
-
-
 tags: ["GADGETS"]
 draft: true
 ---
-HTC Jを手に入れたのでroot取ったりROM突っ込んだりして遊ぶことにしました。
 
-まずはroot環境構築から。
+HTC J を手に入れたので root 取ったり ROM 突っ込んだりして遊ぶことにしました。
 
-幸い、HTCの機種には@fnojiさん作成の[HTC速報][1]があるため、情報には困りません。
+まずは root 環境構築から。
+
+幸い、HTC の機種には@fnoji さん作成の[HTC 速報][1]があるため、情報には困りません。
 
 http://htcsoku.info/htcsokudev/2012device/valentewx/root/
 
@@ -20,33 +19,33 @@ http://kesemoi.blog113.fc2.com/blog-entry-1148.html
 
 を参考に、本体のバージョンを最新にしてからツールにしたがって作業するだけ…と思っていたら思わぬ敵が。
 
-途中過程でHTCdevからブートローダーのアンロックコードを手に入れる必用があるのですが、このサイトが非常に重くて復旧するまで数日おあずけ(´・ω・｀)
+途中過程で HTCdev からブートローダーのアンロックコードを手に入れる必用があるのですが、このサイトが非常に重くて復旧するまで数日おあずけ(´・ω・｀)
 
 以下備忘録
 
-0. HTCdevのアカウント取得。
+0. HTCdev のアカウント取得。
 
-1. HTCJRootkit ver3.1内にあるsu.zipを本体のルートディレクトリに（本体側をストレージモードにしておく）
+1. HTCJRootkit ver3.1 内にある su.zip を本体のルートディレクトリに（本体側をストレージモードにしておく）
 
-2. runnme.bat起動、指示に従う。
+1. runnme.bat 起動、指示に従う。
 
-3. runnme2.bat起動、最初にもう一度復元をかけるので勢いでEnterを押さないこと。
+1. runnme2.bat 起動、最初にもう一度復元をかけるので勢いで Enter を押さないこと。
 
-runnme.batは閉じる
+runnme.bat は閉じる
 
-4. ScoopCID.bat起動、範囲選択は右クリ、コピーはEnterキー
+4. ScoopCID.bat 起動、範囲選択は右クリ、コピーは Enter キー
 
-5. HTCdevのBLUnlockのページから「other devices」を選択してStep9のところにキーを入れる
+5. HTCdev の BLUnlock のページから「other devices」を選択して Step9 のところにキーを入れる
 
-6.ScoopCID.batに戻って指示に従う。
+6.ScoopCID.bat に戻って指示に従う。
 
-7.runnme2.batに戻って指示に従う。
+7.runnme2.bat に戻って指示に従う。
 
-コードを手に入れてからは非常に簡単でした。公式でBLアンロックできるのはうれしいらしですね（よくわかっていない）
+コードを手に入れてからは非常に簡単でした。公式で BL アンロックできるのはうれしいらしですね（よくわかっていない）
 
-私のような素人にとっては、ソニー製端末におけるSEUSのような復旧アプリがないので自然と少し慎重にならざるを得ませんｗ
+私のような素人にとっては、ソニー製端末における SEUS のような復旧アプリがないので自然と少し慎重にならざるを得ませんｗ
 
-次はCWM、カスタムROMの導入
+次は CWM、カスタム ROM の導入
 
 参考サイトはこれら。
 
@@ -70,13 +69,13 @@ http://kura-nikki.jugem.jp/?eid=15
 
 3. Choose from ZIP
 
-実行前にICSの機能を使ってバックアップも取っています
+実行前に ICS の機能を使ってバックアップも取っています
 
 参考：http://degi.doorblog.jp/archives/20900398.html
 
-rootedのシステムバックアップを取ってどうなるのかという問題はさておき（いい子はroot取る前にバックアップしましょう）
+rooted のシステムバックアップを取ってどうなるのかという問題はさておき（いい子は root 取る前にバックアップしましょう）
 
-香港版のROMを焼いてrootedするところまではうまくいきました。
+香港版の ROM を焼いて rooted するところまではうまくいきました。
 
-次の記事はS-offとW-CDMA化です
- [1]: http://htcsoku.info/
+次の記事は S-off と W-CDMA 化です
+[1]: http://htcsoku.info/
