@@ -2,7 +2,7 @@
 title: "いかにして自転車オタクはシクロクロスに辿り着くか"
 date: 2019-12-19
 draft: false
-tags: ["AdventClender", "CX"]
+tags: ["AdventCalender", "CX"]
 cover: "./cover.jpg"
 ---
 
