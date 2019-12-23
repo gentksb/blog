@@ -3,10 +3,10 @@ title: "ベストではなくベターなホビーライダーの機材選び"
 date: 2019-12-23
 draft: false
 tags: ["AdventClender", "CX", "ROAD", "MTB"]
-cover: "./cover.jpg"
+cover: ""
 ---
 
-![cover](./cover.jpg)
+![cover](./DSC_7066.JPG)
 
 この記事は[ロードバイクアドベントカレンダー](https://adventar.org/calendars/4172)23 日目の記事です。
 
