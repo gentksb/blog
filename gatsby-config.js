@@ -12,7 +12,6 @@ module.exports = {
     },
   },
   plugins: [
-    "gatsby-plugin-lodash",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

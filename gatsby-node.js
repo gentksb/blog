@@ -1,7 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { paginate } = require("gatsby-awesome-pagination")
-const _ = require("lodash")
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -60,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Make tag pages
   tags.forEach(tag => {
     createPage({
-      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/tags/${tag.fieldValue.toLowerCase()}/`,
       component: path.resolve("./src/templates/tags.js"),
       context: {
         tag: tag.fieldValue,
