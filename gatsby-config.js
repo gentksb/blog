@@ -153,7 +153,6 @@ module.exports = {
         icon: `content/assets/profile-icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
   ],
 }
