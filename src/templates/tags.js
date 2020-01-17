@@ -2,6 +2,7 @@ import React from "react"
 
 // Components
 import { graphql } from "gatsby"
+import { Grid, Container } from "@material-ui/core"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,8 +19,14 @@ const Tags = ({ pageContext, data, location }) => {
   return (
     <Layout location={location} title={tagHeader}>
       <SEO title="All posts" location={location} />
-      <PostList props={edges} />
-      <Bio />
+      <Container maxWidth="md">
+        <Grid container justify="center">
+          <Grid item>
+            <PostList props={edges} />
+            <Bio />
+          </Grid>
+        </Grid>
+      </Container>
     </Layout>
   )
 }
