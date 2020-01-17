@@ -79,7 +79,8 @@ function SEO({ description, lang, meta, title, image, location }) {
         }
       ].concat(meta)}
     >
-      {/* <script data-ad-client="ca-pub-0056151430743709" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> */}
+      <link rel="preconnect" href="https://www.google-analytics.com" />
+      <link rel="preconnect" href="https://stats.g.doubleclick.net" />
     </Helmet>
   )
 }

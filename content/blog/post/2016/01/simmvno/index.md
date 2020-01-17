@@ -6,74 +6,64 @@ date: 2016-01-06T02:00:00+00:00
 
 cover: DSC_6941.jpg
 
-tags: ["TIPS","GADGETS"]
-
+tags: ["TIPS", "GADGETS"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="360" src="./DSC_6941.jpg" width="640" />
 </div>
 
-※本記事は2016/1/1時点の情報を元に記載しています
-
-
+※本記事は 2016/1/1 時点の情報を元に記載しています
 
 ### モバイル回線はライフライン
 
-そもそも、回線選びってなんだよ…という話ですが、docomo,au,softbankでエリアや回線に微妙な品質差があるのはご存知かと思います。「softbankは遅い」とか「docomoは混む」とかいうアレです。
+そもそも、回線選びってなんだよ…という話ですが、docomo,au,softbank でエリアや回線に微妙な品質差があるのはご存知かと思います。「softbank は遅い」とか「docomo は混む」とかいうアレです。
 
-　
+今日、観光地や都市圏で極々一般的な生活を営むのだったら回線品質は些細な差ですが、自転車を趣味にしている人の場合は**やたら峠に通ったり**、そもそも**舗装された道路のない場所**に行ったり、**ありえん田舎の宿に宿泊したり**と特殊な要件が目白押しです。
 
-　今日、観光地や都市圏で極々一般的な生活を営むのだったら回線品質は些細な差ですが、自転車を趣味にしている人の場合は**やたら峠に通ったり**、そもそも**舗装された道路のない場所**に行ったり、**ありえん田舎の宿に宿泊したり**と特殊な要件が目白押しです。
+救急車を呼んだり、家族と連絡を取ったり、急な仕事の連絡が…などの場合を考えるとどの会社を選ぶかどうかによってコストや使い勝手がかなり変わってきます。
 
-　救急車を呼んだり、家族と連絡を取ったり、急な仕事の連絡が…などの場合を考えるとどの会社を選ぶかどうかによってコストや使い勝手がかなり変わってきます。
-
-　最近話題の格安SIM（MVNO）も絡めてい普段から考えていることをまとめていきます。
+最近話題の格安 SIM（MVNO）も絡めてい普段から考えていることをまとめていきます。
 
 ### 自転車乗りはエリア重視？
 
-いきなりで申し訳ないのですが、エリア**&#8220;面積&#8221;**で考えた場合docomo以外の選択肢はありません（docomo系MVNO含む）。
+いきなりで申し訳ないのですが、エリア**&#8220;面積&#8221;**で考えた場合 docomo 以外の選択肢はありません（docomo 系 MVNO 含む）。
 
-　数年前は各社「人口カバー率」という指標を使って繋がりやすさをアピールしていましたが、人の住んでいなさそうなところに行くんだから意味はありません。
+数年前は各社「人口カバー率」という指標を使って繋がりやすさをアピールしていましたが、人の住んでいなさそうなところに行くんだから意味はありません。
 
 ※人口カバー率は当初市町村役所をエリアがカバーしていればその市町村の人数はエリアカバーしているという指標でした、最近は人口メッシュという方式に変わりましたが、人が住んでいる地域を前提にした指標であることに変わりはありません…
 
-　Swarmを使って峠でチェックインしたり、Twitterで「頂上なう（死語）」したい方はdocomo系一択となります、田舎の宿も同様です。
+Swarm を使って峠でチェックインしたり、Twitter で「頂上なう（死語）」したい方は docomo 系一択となります、田舎の宿も同様です。
 
-　自分は山奥で救急車を呼ぶ経験をしたこともあり、現在は<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00J8B7WWG/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00J8B7WWG&#038;linkCode=as2&#038;tag=gensobunya-22">IIJ&nbsp;mio</a>（docomo系MVNO）を利用しています。
+自分は山奥で救急車を呼ぶ経験をしたこともあり、現在は<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00J8B7WWG/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00J8B7WWG&#038;linkCode=as2&#038;tag=gensobunya-22">IIJ&nbsp;mio</a>（docomo 系 MVNO）を利用しています。
 
-### 街乗り中心なら都心速度とWifiスポット
+### 街乗り中心なら都心速度と Wifi スポット
 
-docomoの弱点は、都内などの超人口密集地帯で速度が落ちることです。
+docomo の弱点は、都内などの超人口密集地帯で速度が落ちることです。
 
-　自分は朝夕の品川駅や、イベント時の渋谷で通信できないことを経験しています。（2015年夏、現在は改善傾向）
+自分は朝夕の品川駅や、イベント時の渋谷で通信できないことを経験しています。（2015 年夏、現在は改善傾向）
 
-　
+三社の中で最もユーザー数が多いので、人が集中すると通信データ量が地域の回線キャパシティを越えてしまうことで起きる現象です。いわゆる「パケ詰まり」ですね。softbank なんかはここを結構頑張って改善しているようです。
 
-　三社の中で最もユーザー数が多いので、人が集中すると通信データ量が地域の回線キャパシティを越えてしまうことで起きる現象です。いわゆる「パケ詰まり」ですね。softbankなんかはここを結構頑張って改善しているようです。
+また、出先の写真をアップロードするなど通信量が気になるときは WiFi スポットを使うとモバイルデータ通信量を削減できることはご存知と思います。
 
-　また、出先の写真をアップロードするなど通信量が気になるときはWiFiスポットを使うとモバイルデータ通信量を削減できることはご存知と思います。
-
-　WiFiスポットについてもSoftbankが一番数が多いのですが、あまりに多すぎてアクセスポイント同士干渉していることもしばしば…また、WiFiスポットがあってもバックボーンとなっている回線が固定の光回線ではなくスマホと同じモバイル回線だったりします。
+WiFi スポットについても Softbank が一番数が多いのですが、あまりに多すぎてアクセスポイント同士干渉していることもしばしば…また、WiFi スポットがあってもバックボーンとなっている回線が固定の光回線ではなくスマホと同じモバイル回線だったりします。
 
 このパターンだと速度面では悪影響しかありません。
 
 ### 回線コスト
 
-最近は格安SIMという選択肢もあります。ただ、スマートフォン本体の入手経路が減ることや、サポートが最低限なのでリテラシーのある人向けです。
+最近は格安 SIM という選択肢もあります。ただ、スマートフォン本体の入手経路が減ることや、サポートが最低限なのでリテラシーのある人向けです。
 
-　サポートが欲しいけど回線代を安くしたい人は<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883913904" target="_blank"><img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883913904" height="1" width="1" />Y!mobile</a>をどうぞ。回線はSoftbankと同等ですので、プラン選び次第でかなり月額料金を安くできます。
+サポートが欲しいけど回線代を安くしたい人は<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883913904" target="_blank"><img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883913904" height="1" width="1" />Y!mobile</a>をどうぞ。回線は Softbank と同等ですので、プラン選び次第でかなり月額料金を安くできます。
 
-
-
-MVNO（格安SIM）事業者の提供するプランだともっと安くなります。
+MVNO（格安 SIM）事業者の提供するプランだともっと安くなります。
 
 詳しくは下へ。
 
+### そもそも MVNO って何
 
-
-### そもそもMVNOって何
-
-MVNO回線の仕組みから説明します。
+MVNO 回線の仕組みから説明します。
 
 下はスマートフォンがインターネットに繋がる仕組みを超簡単にした図です。
 
@@ -87,7 +77,7 @@ MVNO回線の仕組みから説明します。
 
 「人数が多くて通信できない～」という事象は基地局が一度に許容できる台数もしくは、基地局からデータセンター間の回線スピードの条件を越えることで起きます。
 
-格安SIMの場合、プロバイダ部分が別の会社になります。
+格安 SIM の場合、プロバイダ部分が別の会社になります。
 
 携帯会社のデータセンターと基地局は、借りている形となります。よって**エリアは借りている携帯会社と全く同等**となります。
 
@@ -95,35 +85,35 @@ MVNO回線の仕組みから説明します。
   <img border="0" height="330" src="./mvno.png" width="640" />
 </div>
 
-MVNOの場合、★部分の回線速度が通常の契約に比べ低速となります。
+MVNO の場合、★ 部分の回線速度が通常の契約に比べ低速となります。
 
 （ここの回線の太さがそのまま携帯会社の設備賃料になるため）
 
 その分、「低速モードなら月間上限無し」「一定速度に制限がかかるが月間上限なし」などのプランを提供している事業者もあり、各社工夫の見られる部分です。
 
-MVNOは設備の賃料の関係でほとんどがdocomoの設備を利用しています。（一部au）
+MVNO は設備の賃料の関係でほとんどが docomo の設備を利用しています。（一部 au）
 
-つまり、**エリアはdocomoと同等でスピードが落ちる**ということになります。
+つまり、**エリアは docomo と同等でスピードが落ちる**ということになります。
 
-### MVNO事業者の選び方
+### MVNO 事業者の選び方
 
-docomoのスマートフォンを持っている場合、SIMフリー化しなくても大抵のMVNO事業者のSIMカードを利用できます。
+docomo のスマートフォンを持っている場合、SIM フリー化しなくても大抵の MVNO 事業者の SIM カードを利用できます。
 
-auのスマートフォンをそのまま使いたい場合はmineoかUQ mobileのSIMカードが使えます。
+au のスマートフォンをそのまま使いたい場合は mineo か UQ mobile の SIM カードが使えます。
 
-※iPhoneも販売事業者によるチューニングがあるので同じです、softbankのスマートフォンはSIMフリー化すれば機種次第でdocomo系MVNO事業者を使えることがあります。長くなるのでググってください
+※iPhone も販売事業者によるチューニングがあるので同じです、softbank のスマートフォンは SIM フリー化すれば機種次第で docomo 系 MVNO 事業者を使えることがあります。長くなるのでググってください
 
 自分の持っているスマートフォンで利用できる事業者がわかったら、あとはプランの金額や内容で選びましょう。
 
-各社、通話が出来るプランとデータ通信のみのプランがあるので間違えないように。現在の電話番号を使いたい場合はMNPも可能です
+各社、通話が出来るプランとデータ通信のみのプランがあるので間違えないように。現在の電話番号を使いたい場合は MNP も可能です
 
 混雑具合によって出る速度に違いはありますが、将来のことはわからないので混雑具合で悩んでも仕方がありません。
 
-契約方法は、公式サイトでの申し込みと、<a href="http://www.amazon.co.jp/s/ref=as_li_ss_tl?_encoding=UTF8&camp=247&creative=7399&field-keywords=MVNO&linkCode=ur2&tag=gensobunya-22&url=search-alias%3Daps" target="_blank">Amazon</a>などでSIMカードを購入して後から開通させる2パターンが有ります。BIC SIM（IIJmio）はビックカメラ店頭でも申し込めますね。SIMカードのサイズを間違えないように。
+契約方法は、公式サイトでの申し込みと、<a href="http://www.amazon.co.jp/s/ref=as_li_ss_tl?_encoding=UTF8&camp=247&creative=7399&field-keywords=MVNO&linkCode=ur2&tag=gensobunya-22&url=search-alias%3Daps" target="_blank">Amazon</a>などで SIM カードを購入して後から開通させる 2 パターンが有ります。BIC SIM（IIJmio）はビックカメラ店頭でも申し込めますね。SIM カードのサイズを間違えないように。
 
-自分はネットワークの老舗事業者という点を重視して<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00J8B7WWG/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00J8B7WWG&#038;linkCode=as2&#038;tag=gensobunya-22">IIJ&nbsp;mio</a>を利用していますが、最近混んできたのか昼間は1Mbps出ないこともあります。
+自分はネットワークの老舗事業者という点を重視して<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00J8B7WWG/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00J8B7WWG&#038;linkCode=as2&#038;tag=gensobunya-22">IIJ&nbsp;mio</a>を利用していますが、最近混んできたのか昼間は 1Mbps 出ないこともあります。
 
-ただ、プラン変更やMNPなどの手続きがすべてオンラインで完結し、非常に使いやすいので気に入っています。
+ただ、プラン変更や MNP などの手続きがすべてオンラインで完結し、非常に使いやすいので気に入っています。
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -138,10 +128,8 @@ auのスマートフォンをそのまま使いたい場合はmineoかUQ mobile�
 posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
   <div class="amazlet-detail">
 IIJ (2014-03-29)<br />売り上げランキング: 117
-
 
   <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -154,15 +142,11 @@ IIJ (2014-03-29)<br />売り上げランキング: 117
   </div>
 </div>
 
-
-
 #### 安さ重視
 
-業界最安値を謳っているのは<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883913947" target="_blank"><img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883913947" height="0" width="0" />DMM.mobile</a>です。
+業界最安値を謳っているのは DMM.mobile です。
 
-IIJと同じクーポンシステム（200kbps低速モードなら月のデータ量が減らない）というシステムを用いています。TwitterとRSS読み込みなら200kbpsで十分です。
-
-
+IIJ と同じクーポンシステム（200kbps 低速モードなら月のデータ量が減らない）というシステムを用いています。Twitter と RSS 読み込みなら 200kbps で十分です。
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -177,10 +161,8 @@ IIJと同じクーポンシステム（200kbps低速モードなら月のデー�
 posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 DMM.com <br />売り上げランキング: 224
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -193,13 +175,9 @@ DMM.com <br />売り上げランキング: 224
   </div>
 </div>
 
-
-
 #### 低速使い放題
 
-<a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883913945" target="_blank">b-mobile</a>は2000円の無制限プランやおかわり自由プランなど、いろんなプランが有ります。上限を気にせず使いたいならこちら
-
-
+b-mobile は 2000 円の無制限プランやおかわり自由プランなど、いろんなプランが有ります。上限を気にせず使いたいならこちら
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -214,10 +192,8 @@ DMM.com <br />売り上げランキング: 224
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 日本通信 (2014-12-12)<br />売り上げランキング: 12,404
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -230,13 +206,9 @@ DMM.com <br />売り上げランキング: 224
   </div>
 </div>
 
+#### au のスマホ持ち
 
-
-#### auのスマホ持ち
-
-auのスマートフォンをお持ちの方は<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B016B4FGXE/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B016B4FGXE&#038;linkCode=as2&#038;tag=gensobunya-22">UQ mobile</a>か<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00UT26M0Q/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00UT26M0Q&#038;linkCode=as2&#038;tag=gensobunya-22">mineo</a>となります。mineoはdocomo回線のプランもあるので注意。
-
-
+au のスマートフォンをお持ちの方は<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B016B4FGXE/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B016B4FGXE&#038;linkCode=as2&#038;tag=gensobunya-22">UQ mobile</a>か<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00UT26M0Q/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00UT26M0Q&#038;linkCode=as2&#038;tag=gensobunya-22">mineo</a>となります。mineo は docomo 回線のプランもあるので注意。
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -251,10 +223,8 @@ auのスマートフォンをお持ちの方は<a rel="nofollow" href="http://ww
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 Uqmobile <br />売り上げランキング: 493
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -280,10 +250,8 @@ Uqmobile <br />売り上げランキング: 493
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 ケイ・オプティコム (2015-03-27)<br />売り上げランキング: 7
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -296,19 +264,12 @@ Uqmobile <br />売り上げランキング: 493
   </div>
 </div>
 
-
-
-
-
-
-
 ### 最後に
 
-MVNOを利用する場合、スマートフォン本体はMVNO事業者がセットで出していることが多くなっているので、選択肢が狭い以外は問題なくてに入るようになりました。
+MVNO を利用する場合、スマートフォン本体は MVNO 事業者がセットで出していることが多くなっているので、選択肢が狭い以外は問題なくてに入るようになりました。
 
-家電量販店で販売しているSIMフリー端末もありますし、普通にdocomoの白ロムを買ってもOKです。
+家電量販店で販売している SIM フリー端末もありますし、普通に docomo の白ロムを買っても OK です。
 
 トラブった際のサポートがそこまで手厚くないことを念頭において契約しましょう。
 
 ググれば周波数バンド以外の問題はおおよそ解決します。きっと。
-
