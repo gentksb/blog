@@ -81,6 +81,7 @@ function SEO({ description, lang, meta, title, image, location }) {
     >
       <link rel="preconnect" href="https://www.google-analytics.com" />
       <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+      <link rel="preconnect" href="https://aml.valuecommerce.com" />
     </Helmet>
   )
 }
