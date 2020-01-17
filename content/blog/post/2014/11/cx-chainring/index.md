@@ -36,20 +36,18 @@ tags: ["CX", "TIPS", "REVIEW", "RACE", "EC"]
 
 公式サイトでも売ってるけどね…
 
-#### RACE FACE
+#### RACEFACE
 
-<div class="separator" style="clear: both; text-align: center;">
- <img border="0" src="https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" />
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-<img border="0" src="./FireShotCapture66-ProductDetails-RaceFace_-http___www.raceface.com_products_d.png" />
-</div>
+<a href="https://amzn.to/362kOwE" taget="_blank">
+  <div class="separator" style="clear: both; text-align: center;">
+    <img border="0" src="./FireShotCapture66-ProductDetails-RaceFace_-http___www.raceface.com_products_d.png" />
+  </div>
+</a>
 
 MTB 用だけかとおもいきや CX 用も出してました。  
 国内価格 7k くらいだよ！というタレコミだけで購入決定するも、代理店に在庫なし入荷未定。
 
-しかたなく海外通販。当時は 7k くらいだったけど、2020/1 現在廃盤？
+しかたなく海外通販。当時は 7k くらいだったけど、2020/1 現在廃盤？[Amazon はまだ在庫あり](https://amzn.to/362kOwE)
 
 カラーは黒のみ。
 
