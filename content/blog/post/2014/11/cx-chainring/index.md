@@ -38,7 +38,7 @@ tags: ["CX", "TIPS", "REVIEW", "RACE", "EC"]
 
 #### RACEFACE
 
-<a href="https://www.chainreactioncycles.com/jp/ja/race-face-%E3%83%8A%E3%83%AD%E3%83%BC%E3%83%AF%E3%82%A4%E3%83%89%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%83%AA%E3%83%B3%E3%82%B0/rp-prod109723" taget="_blank">
+<a href="https://amzn.to/362kOwE" taget="_blank">
   <div class="separator" style="clear: both; text-align: center;">
     <img border="0" src="./FireShotCapture66-ProductDetails-RaceFace_-http___www.raceface.com_products_d.png" />
   </div>
@@ -47,7 +47,7 @@ tags: ["CX", "TIPS", "REVIEW", "RACE", "EC"]
 MTB 用だけかとおもいきや CX 用も出してました。  
 国内価格 7k くらいだよ！というタレコミだけで購入決定するも、代理店に在庫なし入荷未定。
 
-しかたなく海外通販。[5 アームは在庫が少なめ](https://www.chainreactioncycles.com/jp/ja/race-face-%E3%83%8A%E3%83%AD%E3%83%BC%E3%83%AF%E3%82%A4%E3%83%89%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%83%AA%E3%83%B3%E3%82%B0/rp-prod109723)になってて悲しい。
+しかたなく海外通販。当時は 7k くらいだったけど、2020/1 現在廃盤？[Amazon はまだ在庫あり](https://amzn.to/362kOwE)
 
 カラーは黒のみ。
 
