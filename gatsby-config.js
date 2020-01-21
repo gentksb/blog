@@ -4,7 +4,7 @@ module.exports = {
     author: `Gen`,
     description: `gensobunya's bicycle life`,
     siteUrl: `https://blog.gensobunya.net`,
-    image: "/image/logo.jpg",
+    image: `/image/logo.jpg`,
     social: {
       twitter: `gen_sobunya`,
       github: `gentksb`,
@@ -129,13 +129,13 @@ module.exports = {
                 }
               }
             `,
-            output: "/index.xml",
-            title: "幻想サイクル",
+            output: `/index.xml`,
+            title: `幻想サイクル`,
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
-            match: "^/blog/",
+            match: `^/blog/`,
           },
         ],
       },
