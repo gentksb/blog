@@ -17,291 +17,291 @@ http://blog.gensobunya.net/*  https://blog.gensobunya.net/:splat  301!
 /*/feed /:splat/index.xml 301!
 
 #404 crawl page redirects
-/2012/10/blog-pos-23.html /post/2012/10/blog-post/ 301!
-/2012/10/paypa.html /post/2012/10/paypal/ 301!
-/2012/11/blog-pos-22.html /post/2012/11/romin-pro/ 301!
-/2012/11/06/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%82%A4%E3%82%AF%E3%81%A7tt%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%8F%96%E3%82%8B.html /post/2012/11/ttposition_on_road/ 301!
-/2012/11/tt.html /post/2012/11/ttposition_on_road/ 301!
-/2012/11/blog-post_25.html /post/2012/11/romin-pro/ 301!
-/2012/11/blog-post_29.html /post/2012/11/ancling/ 301!
-/2012/11/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%82%A4%E3%82%AF%E3%81%A7tt%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%8F%96%E3%82%8B.html /post/2012/11/ttposition_on_road/ 301!
-/2013/02/blog-pos-20.html /post/2013/02/racetraining/ 301!
-/2013/01/blog-pos-21.html /post/2013/01/shonancx/ 301!
-/2013/01/htc-jisw13ht-roo.html /post/2013/01/htc-jisw13ht-root/ 301!
-
-/2013/05/wh-7850s.html /post/2013/05/wh7850fix/ 301!
-/2013/10/blog-pos-19.html /post/2013/10/ita-chari/ 301!
-/2013/10/blog-post_29.html /post/2013/10/ita-chari/ 301!
-/2014/01/24/mtb-dartmoor-horne.html /post/2014/01/dmhornet/ 301!
-/2014/01/mtb-dartmoor-horne.html /post/2014/01/dmhornet/ 301!
-/2014/02/blog-pos-18.html /post/2014/02/cxtyre_choice/ 301!
-/2014/03/blog-post_29.html /post/2014/03/fakespider/ 301!
-/2014/03/blog-pos-17.html /post/2014/03/pmseminer/ 301!
-/2014/06/2014-kimera-prestige-premiu.html /post/2014/06/kimera-prestige-premium/ 301!
-/2014/08/2014.html /post/2014/08/takizawasale/ 301!
-/2014/09/%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3tt%E3%83%AC%E3%83%BC%E3%82%B9-%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3.html /post/2014/09/ttjapan/ 301!
-/2014/09/%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%EF%BC%8Btt%E3%83%AC%E3%83%BC%E3%82%B9-%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3.html /post/2014/09/ttjapan/ 301!
-/2014/10/blog-pos-16.html /post/2014/10/jccx/ 301!
-/2014/11/cx.html /post/2014/11/cx-chainring/ 301!
-/2014/12/blog-pos-15.html /post/2014/12/cxentry/ 301!
-/2014/12/27/flo-disc.html /post/2014/12/flo-disc/ 301!
-/2015/05/12/flo-disc-whee.html /post/2015/05/flo-impression/ 301!
-/2015/05/flo-disc-whee.html /post/2015/05/flo-impression/ 301!
-/2015/10/zwift-3.html /post/2015/10/zwiftstart/ 301!
-/2015/10/01/zwif-3.html /post/2015/10/zwiftstart/ 301!
-/2015/10/zwif-3.html /post/2015/10/zwiftstart/ 301!
-/2015/12/blog-post.html /post/2015/12/bikestorage/ 301!
-/2016/01/blog-pos-13.html /post/2016/01/oil_massage/ 301!
-/2016/01/05/blog-post_83.html /post/2016/01/hydrohealing/ 301!
-/2016/01/21/zwift0-ftp-testshorter.html /post/2016/01/zwift-ftp-test/ 301!
-/2016/01/22/zwift1-6wks-ftp-builder-week-1-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-1/ 301!
-/2016/01/25/zwift-mobile-link.html /post/2016/01/zwift-mobile-link/ 301!
-/2016/02/blog-pos-12.html /post/2016/02/cycling-protein/ 301!
-/2016/03/zwif-2.html /post/2016/03/zwift_env/ 301!
-/2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html /post/2016/03/xtdi2leak/ 301!
-/2016/04/blog-pos-11.html /post/2016/04/fasthealing/ 301!
-/2016/05/zwif.html /post/2016/05/zwft_orig_workout/ 301!
-/2016/05/blog-pos-10.html /post/2016/05/pre-fix/ 301!
-/2016/07/blog-pos-9.html /post/2016/07/hybrid_trainer/ 301!
-/2016/08/blog-pos-8.html /post/2016/08/bookmake/ 301!
-/2016/10/blog-pos-7.html /post/2016/10/tkg/ 301!
-/2016/11/blog-pos-6.html /post/2016/11/furusato-tax/ 301!
-/2016/11/feedback-portable-trainer12.html /post/2016/11/fdbk-trainer-12mm/ 301!
-/2017/03/2017.html /post/2017/03/discroad/ 301!
-/2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /post/2017/04/goodmtbgears/ 301!
-/post/2017zwift-mobile-link.html /post/2017/10/2017zwift-mobile-link/ 301!
-/2017/03/blog-pos-5.html /post/2017/03/discroad/ 301!
-/2017/05/blog-pos-3.html /post/2017/05/akafukuice/ 301!
-/2017/04/blog-pos-4.html /post/2017/04/discroadrace/ 301!
-/2017/07/blog-pos-2.html /post/2017/07/longsleeve/ 301!
-/post/2017/10/blggrtowp-2/ http://www.gensobunya.net/portfolio/blggrtowp-2/ 301!
-
-
-#201809_refine_redirect
-/2012/10/1.html /post/2012/10/1/ 301!
-/2012/10/2mtb.html /post/2012/10/2mtb/ 301!
-/2012/10/3.html /post/2012/10/3/ 301!
-/2012/10/blog-post.html /post/2012/10/blog-post/ 301!
-/2012/10/paypal.html /post/2012/10/paypal/ 301!
-
-/2012/11/blog-post_25-2.html /post/2012/11/2012seofes/ 301!
-/2012/11/blog-post.html /post/2012/11/romin-pro/ 301!
-/2012/11/blog-post_4.html /post/2012/11/cyclemode2012/ 301!
-/2012/11/TTposition_on_road.html /post/2012/11/ttposition_on_road/ 301!
-/2012/11/jcrc.html /post/2012/11/jcrc/ 301!
-/2012/11/blog-post_29-4.html /post/2012/11/ancling/ 301!
-
-/2012/12/r500.html /post/2012/12/r500/ 301!
-/2012/12/83.html /post/2012/12/c83/ 301!
-
-/2013/01/htc-jisw13ht-root.html /post/2013/01/htc-jisw13ht-root/ 301!
-/2013/01/rotor-3d-q-rings.html /post/2013/01/rotor-3d-q-rings/ 301!
-/2013/01/htc-j-s-off.html /post/2013/01/htc-j-s-off/ 301!
-/2013/01/blog-post.html /post/2013/01/shonancx/ 301!
-
-/2013/02/1st-day.html /post/2013/02/1st-day/ 301!
-/2013/02/blog-post.html /post/2013/02/racetraining/ 301!
-
-/2013/03/ed2013-jcrc.html /post/2013/03/ed2013-jcrc/ 301!
-
-/2013/04/new-ulterga-6800-leaked-11-speed.html /post/2013/04/68leak/ 301!
-/2013/04/trinity-composite-1.html /post/2013/04/trinitycomp/ 301!
-
-/2013/05/wh-7850sl.html /post/2013/05/wh7850fix/ 301!
-
-/2013/10/blog-post_12.html /post/2013/10/hokkaido1/ 301!
-/2013/10/blog-post_1521.html /post/2013/10/hokkaido4/ 301!
-/2013/10/blog-post_1767.html /post/2013/10/hokkaido3/ 301!
-/2013/10/blog-post_1776.html /post/2013/10/hokkaido2/ 301!
-
-/2013/10/11snovatec-jetfly.html /post/2013/10/novatec-jetfly/ 301!
-/2013/10/blog-post.html /post/2013/10/ita-chari/ 301!
-/2013/10/koga-limited.html /post/2013/10/koga-alimited/ 301!
-/2013/10/blog-post_29-3.html /post/2013/10/jc-saitamacrit/ 301!
-
-/2013/11/bar-fly20.html /post/2013/11/bar-fly2/ 301!
-/2013/11/trinity.html /post/2013/11/trinityel/ 301!
-
-/2013/12/9070.html /post/2013/12/9070/ 301!
-/2013/12/novatec-jetfly.html /post/2013/12/jetfly-tl/ 301!
-/2013/12/9070_21.html /post/2013/12/9070_2/ 301!
-/2013/12/kinesis-crosslight-pro-disc.html /post/2013/12/kinesis-crosslight/ 301!
-
-/2014/01/2013-14-3.html /post/2014/01/shonancx3/ 301!
-/2014/01/sw-r610-di2.html /post/2014/01/swr610/ 301!
-/2014/01/12.html /post/2014/01/shonancx1-2/ 301!
-/2014/01/mtb-dartmoor-hornet.html /post/2014/01/dmhornet/ 301!
-/2014/01/crosslight-pro6.html /post/2014/01/crosslight-pro6/ 301!
-
-/2014/02/garmingsc10.html /post/2014/02/garmingsc10/ 301!
-/2014/02/blog-post.html /post/2014/02/cxtyre_choice/ 301!
-/2014/02/serac-cxpiranha-2-cx.html /post/2014/02/serac-piranha/ 301!
-
-/2014/03/2014-gp-mistral-5.html /post/2014/03/gpm/ 301!
-/2014/03/blog-post.html /post/2014/03/pmseminer/ 301!
-/2014/03/blog-post_29-2.html /post/2014/03/fakespider/ 301!
-
-/2014/05/wh9000-c50-tu.html /post/2014/05/wh9000-c50-tu/ 301!
-/2014/05/2014-sda.html /post/2014/05/sdaspring/ 301!
-
-/2014/06/2014-kimera-prestige-premium.html /post/2014/06/kimera-prestige-premium/ 301!
-
-/2014/08/2014-2.html /post/2014/08/takizawasale/ 301!
-
-/2014/09/tt.html /post/2014/09/ttjapan/ 301!
-/2014/09/koga-solacio.html /post/2014/09/koga-solacio/ 301!
-
-/2014/10/blog-post.html /post/2014/10/jccx/ 301!
-
-/2014/11/cx-3.html /post/2014/11/cx-chainring/ 301!
-/2014/11/4.html /post/2014/11/bikelore4/ 301!
-
-/2014/12/blog-post.html /post/2014/12/cxentry/ 301!
-/2014/12/flo-disc.html /post/2014/12/flo-disc/ 301!
-
-/2015/02/2014.html /post/2015/02/shonancx/ 301!
-/2015/02/2015.html /post/2015/02/cxtokyo/ 301!
-
-/2015/03/cx-2.html /post/2015/03/ibaraki/ 301!
-/2015/03/2014-15cx.html /post/2015/03/14cx-end/ 301!
-
-/2015/05/1csc.html /post/2015/05/cscfood/ 301!
-/2015/05/flo-disc-wheel.html /post/2015/05/flo-impression/ 301!
-
-/2015/07/savas.html /post/2015/07/savasmilk/ 301!
-
-/2015/10/zwift.html /post/2015/10/zwiftstart/ 301!
-/2015/10/2.html /post/2015/10/oisocritfood/ 301!
-
-/2015/12/blog-pos-14.html /post/2015/12/bikestorage/ 301!
-/2015/12/tcx-slr-ss.html /post/2015/12/tcx-slr-ss/ 301!
-/2015/12/blog-post_29.html /post/2015/12/bike-and-run/ 301!
-
-/2016/01/2015strava.html /post/2016/01/2015strava/ 301!
-/2016/01/blog-post_83.html /post/2016/01/hydrohealing/ 301!
-/2016/01/blog-post.html /post/2016/01/oil_massage/ 301!
-/2016/01/simmvno.html /post/2016/01/simmvno/ 301!
-/2016/01/sgx-ca500garmin.html /post/2016/01/sgx-ca500mount/ 301!
-/2016/01/blog-post_14.html /post/2016/01/tubeless_airleak/ 301!
-/2016/01/zwift-mobile-link.html /post/2016/01/zwift-mobile-link/ 301!
-/2016/01/zwift0-ftp-testshorter.html /post/2016/01/zwift-ftp-test/ 301!
-/2016/01/zwift1-6wks-ftp-builder-week-1-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-1/ 301!
-/2016/01/zwift1-6wks-ftp-builder-week-1-day-2.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-2/ 301!
-/2016/01/zwift3-6wks-ftp-builder-week-1-day-3.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-3/ 301!
-/2016/01/zwift4-6wks-ftp-builder-week-1-day-4.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-4/ 301!
-/2016/01/zwift6-6wks-ftp-builder-week-2-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-2-day-1/ 301!
-
-/2016/02/zwift6-6wks-ftp-builder-week-2-day-2.html /post/2016/02/zwift-6wks-ftp-builder-week-2-day-2/ 301!
-/2016/02/zwift6-6wks-ftp-builder-week-2-day-3-5.html /post/2016/02/zwift-6wks-ftp-builder-week-2-day-3-5/ 301!
-/2016/02/zwift11-6wks-ftp-builder-week-3-day-1.html /post/2016/02/zwift-6wks-ftp-builder-week-3-day-1/ 301!
-/2016/02/zwift12-13-6wks-ftp-builder-week-3-day.html /post/2016/02/zwift-6wks-ftp-builder-week-3-day-2-3/ 301!
-/2016/02/blog-post.html /post/2016/02/cycling-protein/ 301!
-/2016/03/nasne.html* /post/2016/02/nase_roadradce/ 301!
-
-/2016/03/zwift.html /post/2016/03/zwift_env/ 301!
-/2016/03/new-xt-di2-is-leaked-by-jpn-investment.html /post/2016/03/xtdi2leak/ 301!
-
-/2016/04/blog-post.html /post/2016/04/fasthealing/ 301!
-
-/2016/05/blog-post.html /post/2016/05/pre-fix/ 301!
-/2016/05/zwift.html /post/2016/05/zwft_orig_workout/ 301!
-/zwift-oringinal /post/2016/05/zwft_orig_workout/ 301!
-/zwift-oringi /post/2016/05/zwft_orig_workout/ 301!
-
-/2016/06/c90.html /post/2016/06/c90/ 301!
-/2016/06/specialized-power.html /post/2016/06/spc_pwrsdl/ 301!
-/2016/06/canyon-ultimate-pretzel-mission.html /post/2016/06/canyon_misssion/ 301!
-/2016/06/oakley-radar-ev-prizm-road.html /post/2016/06/prizmroad_ev/ 301!
-
-/2016/07/blog-post.html /post/2016/07/hybrid_trainer/ 301!
-/post/2016/07/hybrid_trainer/2016-07-26-blog-pos-9/ /post/2016/07/hybrid_trainer/ 301!
-
-/2016/08/blog-post.html /post/2016/08/bookmake/ 301!
-/2016/08/di2.html /post/2016/08/di2drill_1/ 301!
-/2016/08/di2_24.html /post/2016/08/di2drill_2/ 301!
-/2016/08/st-r785mtbcx.html /post/2016/08/st-r785mtbcx/ 301!
-/post/2016/08/st-r785mtbcx/2016-08-30-st-r785mtbcx/ /post/2016/08/st-r785mtbcx/ 301!
-
-/2016/09/choice.html /post/2016/09/choice/ 301!
-/2013/06/irc-formula-pro-rbcc-tubeless.html /post/2016/09/ircroadrbcc/ 301!
-/2016/09/irc.html /post/2016/09/ircroadrbcc/ 301!
-/2016/09/2016-17-cx1-irc-tire-90th-anniversary.html /post/2016/09/irc90thcup/ 301!
-
-/2016/10/tcr-advanced-pro-disc.html /post/2016/10/tcr-advanced-pro-disc/ 301!
-/2016/10/blog-post.html /post/2016/10/tkg/ 301!
-/2016/10/tcr-advanced-pro-disc_29.html /post/2016/10/tcr-advanced-pro-disc_2nd/ 301!
-
-/2016/11/blog-post.html /post/2016/11/furusato-tax/ 301!
-/2016/11/feedback-portable-trainer12mm.html /post/2016/11/fdbk-trainer-12mm/ 301!
-/2016/11/blog-post_28.html /post/2016/11/cxlife/ 301!
-
-/2016/12/maxxis-speed-terrane.html /post/2016/12/maxxis-speed-terrane_view/ 301!
-/2016/12/maxxis-speed-terrane_11.html /post/2016/12/maxxis-speed-terrane_ride/ 301!
-
-/2017/01/20169.html /post/2017/01/kns9sakai/ 301!
-
-/2017/02/cx.html /post/2017/02/cx_semislick/ 301!
-
-/2017/03/2017-2.html /post/2017/03/cx-end/ 301!
-/2017/03/blog-post.html /post/2017/03/discroad/ 301!
-/2017/03/sgx-ca500di2.html /post/2017/03/sgx-ca500_diy/ 301!
-
-/2017/04/my-protein.html /post/2017/04/myprotein/ 301!
-/2017/04/new-bike-ragley-mmmbop-275.html /post/2017/04/mmmbop275/ 301!
-/2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html /post/2017/04/goodmtbgears/ 301!
-/2017/04/blog-post.html /post/2017/04/discroadrace/ 301!
-/2017/04/blog-post_25.html /post/2017/04/spraut_layer/ 301!
-
-/2017/05/2017.html /post/2017/05/gravelcirt/ 301!
-/2017/05/sscx.html /post/2017/05/sscxtouring/ 301!
-/2017/05/blog-post.html /post/2017/05/akafukuice/ 301!
-/2017/05/2017-7.html /post/2017/05/sdaspring/ 301!
-
-/2017/06/cs-hg-800-11wh-rs770.html /post/2017/06/cs-hg-800-11wh-rs770/ 301!
-
-/2017/07/c92.html /post/2017/07/c92/ 301!
-/2017/07/blog-post.html /post/2017/07/longsleeve/ 301!
-
-/2017/08/blog-post.html /post/2017/08/ducttape_1/ 301!
-/2017/08/blog-post_18.html /post/2017/08/ducttape_2/ 301!
-/2017/08/blog-post_31.html /post/2017/08/ducttape_3/ 301!
-
-/2017/09/tcx-slrdi2.html /post/2017/09/tcx-slrdi2/ 301!
-/2017/09/rider310review.html /post/2017/09/rider310review/ 301!
-/2017/09/formula-pro-x-guard.html /post/2017/09/formula-pro-x-guard/ 301!
-
-/201710/wp2hugo/ http://www.gensobunya.net/portfolio/wp2hugo/  301!
-/2017/10/blgger-to-wp-to-hugo-1 http://www.gensobunya.net/portfolio/blgger-to-wp-to-hugo-1/ 301!
-/2017/10/blggrtowp-2.html http://www.gensobunya.net/portfolio/blggrtowp-2/ 301!
-/201710/wp2hugo.html http://www.gensobunya.net/portfolio/wp2hugo/  301!
-/post/2017/10/wp2hugo/ http://www.gensobunya.net/portfolio/wp2hugo/  301!
-/201710/2017zwift-mobile-link.html /post/2017/10/2017zwift-mobile-link/ 301!
-/201710/ebay-siliconbartape.html /post/2017/10/ebay-siliconbartape/301!
-
-/201711/2017-11-22-sdawinter.html /post/2017/11/sdawinter/ 301!
-/201712/2017-12-18-googlehomewithzwift.html /post/2017/12/googlehomewithzwift/
-
-/201801/2018-01-03-c1up.html /post/2018/01/to_c1/ 301!
-/201801/2018-01-08-despair-gaoka.html /post/2018/01/despair-gaoka/ 301!
-/201801/2018-01-14-sakaisenshuken.html /post/2018/01/sakaisenshuken/ 301!
-/201801/2018-01-28-kurondoC1.html /post/2018/01/kurondo/ 301!
-/201801/2018-01-28-kurondoc1.html /post/2018/01/kurondo/ 301!
-/post/2018/01/kurondoc1/ /post/2018/01/kurondo/ 301!
-/201801/2018-01-22-aiboku.html /post/2018/01/aiboku/ 301!
-
-
-/201802/2018-02-04-katsura.html /post/2018/02/katsura/ 301!
-/201802/2018-02-11-cxtokyo.html /post/2018/02/cxtokyo/ 301!
-/201802/2018-02-20-udontour.html /post/2018/02/udontour/ 301!
-/201802/2018-02-26-wnp.html /post/2018/02/wnp/ 301!
-
-/201803/2018-03-30-tubelessTape.html /post/2018/03/tubelesstape/ 301!
-/201803/2018-03-30-tubelesstape.html /post/2018/03/tubelesstape/ 301!
-/201806/2018-06-01-sda.html /post/2018/06/sdaspring/ 301!
-/201807/2018-07-12-cxtublar.html /post/2018/07/cxtublar/ 301!
-/201807/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!
-/201808/lezyne-or-airbone.html /post/2018/08/lezyne-or-airbone/ 301!
-/201808/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!
+#/2012/10/blog-pos-23.html /post/2012/10/blog-post/ 301!
+#/2012/10/paypa.html /post/2012/10/paypal/ 301!
+#/2012/11/blog-pos-22.html /post/2012/11/romin-pro/ 301!
+#/2012/11/06/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%82%A4%E3%82%AF%E3%81%A7tt%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%8F%96%E3%82%8B.html /post/2012/11/ttposition_on_road/ 301!
+#/2012/11/tt.html /post/2012/11/ttposition_on_road/ 301!
+#/2012/11/blog-post_25.html /post/2012/11/romin-pro/ 301!
+#/2012/11/blog-post_29.html /post/2012/11/ancling/ 301!
+#/2012/11/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%82%A4%E3%82%AF%E3%81%A7tt%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E5%8F%96%E3%82%8B.html /post/2012/11/ttposition_on_road/ 301!
+#/2013/02/blog-pos-20.html /post/2013/02/racetraining/ 301!
+#/2013/01/blog-pos-21.html /post/2013/01/shonancx/ 301!
+#/2013/01/htc-jisw13ht-roo.html /post/2013/01/htc-jisw13ht-root/ 301!
+#
+#/2013/05/wh-7850s.html /post/2013/05/wh7850fix/ 301!
+#/2013/10/blog-pos-19.html /post/2013/10/ita-chari/ 301!
+#/2013/10/blog-post_29.html /post/2013/10/ita-chari/ 301!
+#/2014/01/24/mtb-dartmoor-horne.html /post/2014/01/dmhornet/ 301!
+#/2014/01/mtb-dartmoor-horne.html /post/2014/01/dmhornet/ 301!
+#/2014/02/blog-pos-18.html /post/2014/02/cxtyre_choice/ 301!
+#/2014/03/blog-post_29.html /post/2014/03/fakespider/ 301!
+#/2014/03/blog-pos-17.html /post/2014/03/pmseminer/ 301!
+#/2014/06/2014-kimera-prestige-premiu.html /post/2014/06/kimera-prestige-premium/ 301!
+#/2014/08/2014.html /post/2014/08/takizawasale/ 301!
+#/2014/09/%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3tt%E3%83%AC%E3%83%BC%E3%82%B9-%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3.html /post/2014/09/ttjapan/ 301!
+#/2014/09/%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%AB%E3%82%B8%E3%83%A3%E3%83%91%E3%83%B3%EF%BC%8Btt%E3%83%AC%E3%83%BC%E3%82%B9-%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%B3.html /post/2014/09/ttjapan/ 301!
+#/2014/10/blog-pos-16.html /post/2014/10/jccx/ 301!
+#/2014/11/cx.html /post/2014/11/cx-chainring/ 301!
+#/2014/12/blog-pos-15.html /post/2014/12/cxentry/ 301!
+#/2014/12/27/flo-disc.html /post/2014/12/flo-disc/ 301!
+#/2015/05/12/flo-disc-whee.html /post/2015/05/flo-impression/ 301!
+#/2015/05/flo-disc-whee.html /post/2015/05/flo-impression/ 301!
+#/2015/10/zwift-3.html /post/2015/10/zwiftstart/ 301!
+#/2015/10/01/zwif-3.html /post/2015/10/zwiftstart/ 301!
+#/2015/10/zwif-3.html /post/2015/10/zwiftstart/ 301!
+#/2015/12/blog-post.html /post/2015/12/bikestorage/ 301!
+#/2016/01/blog-pos-13.html /post/2016/01/oil_massage/ 301!
+#/2016/01/05/blog-post_83.html /post/2016/01/hydrohealing/ 301!
+#/2016/01/21/zwift0-ftp-testshorter.html /post/2016/01/zwift-ftp-test/ 301!
+#/2016/01/22/zwift1-6wks-ftp-builder-week-1-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-1/ 301!
+#/2016/01/25/zwift-mobile-link.html /post/2016/01/zwift-mobile-link/ 301!
+#/2016/02/blog-pos-12.html /post/2016/02/cycling-protein/ 301!
+#/2016/03/zwif-2.html /post/2016/03/zwift_env/ 301!
+#/2016/03/new-xt-di2-is-leaked-by-jpn-investmen.html /post/2016/03/xtdi2leak/ 301!
+#/2016/04/blog-pos-11.html /post/2016/04/fasthealing/ 301!
+#/2016/05/zwif.html /post/2016/05/zwft_orig_workout/ 301!
+#/2016/05/blog-pos-10.html /post/2016/05/pre-fix/ 301!
+#/2016/07/blog-pos-9.html /post/2016/07/hybrid_trainer/ 301!
+#/2016/08/blog-pos-8.html /post/2016/08/bookmake/ 301!
+#/2016/10/blog-pos-7.html /post/2016/10/tkg/ 301!
+#/2016/11/blog-pos-6.html /post/2016/11/furusato-tax/ 301!
+#/2016/11/feedback-portable-trainer12.html /post/2016/11/fdbk-trainer-12mm/ 301!
+#/2017/03/2017.html /post/2017/03/discroad/ 301!
+#/2017/04/mtbesi-grips-brand-x-ascend-dropper-pos.html /post/2017/04/goodmtbgears/ 301!
+#/post/2017zwift-mobile-link.html /post/2017/10/2017zwift-mobile-link/ 301!
+#/2017/03/blog-pos-5.html /post/2017/03/discroad/ 301!
+#/2017/05/blog-pos-3.html /post/2017/05/akafukuice/ 301!
+#/2017/04/blog-pos-4.html /post/2017/04/discroadrace/ 301!
+#/2017/07/blog-pos-2.html /post/2017/07/longsleeve/ 301!
+#/post/2017/10/blggrtowp-2/ http://www.gensobunya.net/portfolio/blggrtowp-2/ 301!
+#
+#
+##201809_refine_redirect
+#/2012/10/1.html /post/2012/10/1/ 301!
+#/2012/10/2mtb.html /post/2012/10/2mtb/ 301!
+#/2012/10/3.html /post/2012/10/3/ 301!
+#/2012/10/blog-post.html /post/2012/10/blog-post/ 301!
+#/2012/10/paypal.html /post/2012/10/paypal/ 301!
+#
+#/2012/11/blog-post_25-2.html /post/2012/11/2012seofes/ 301!
+#/2012/11/blog-post.html /post/2012/11/romin-pro/ 301!
+#/2012/11/blog-post_4.html /post/2012/11/cyclemode2012/ 301!
+#/2012/11/TTposition_on_road.html /post/2012/11/ttposition_on_road/ 301!
+#/2012/11/jcrc.html /post/2012/11/jcrc/ 301!
+#/2012/11/blog-post_29-4.html /post/2012/11/ancling/ 301!
+#
+#/2012/12/r500.html /post/2012/12/r500/ 301!
+#/2012/12/83.html /post/2012/12/c83/ 301!
+#
+#/2013/01/htc-jisw13ht-root.html /post/2013/01/htc-jisw13ht-root/ 301!
+#/2013/01/rotor-3d-q-rings.html /post/2013/01/rotor-3d-q-rings/ 301!
+#/2013/01/htc-j-s-off.html /post/2013/01/htc-j-s-off/ 301!
+#/2013/01/blog-post.html /post/2013/01/shonancx/ 301!
+#
+#/2013/02/1st-day.html /post/2013/02/1st-day/ 301!
+#/2013/02/blog-post.html /post/2013/02/racetraining/ 301!
+#
+#/2013/03/ed2013-jcrc.html /post/2013/03/ed2013-jcrc/ 301!
+#
+#/2013/04/new-ulterga-6800-leaked-11-speed.html /post/2013/04/68leak/ 301!
+#/2013/04/trinity-composite-1.html /post/2013/04/trinitycomp/ 301!
+#
+#/2013/05/wh-7850sl.html /post/2013/05/wh7850fix/ 301!
+#
+#/2013/10/blog-post_12.html /post/2013/10/hokkaido1/ 301!
+#/2013/10/blog-post_1521.html /post/2013/10/hokkaido4/ 301!
+#/2013/10/blog-post_1767.html /post/2013/10/hokkaido3/ 301!
+#/2013/10/blog-post_1776.html /post/2013/10/hokkaido2/ 301!
+#
+#/2013/10/11snovatec-jetfly.html /post/2013/10/novatec-jetfly/ 301!
+#/2013/10/blog-post.html /post/2013/10/ita-chari/ 301!
+#/2013/10/koga-limited.html /post/2013/10/koga-alimited/ 301!
+#/2013/10/blog-post_29-3.html /post/2013/10/jc-saitamacrit/ 301!
+#
+#/2013/11/bar-fly20.html /post/2013/11/bar-fly2/ 301!
+#/2013/11/trinity.html /post/2013/11/trinityel/ 301!
+#
+#/2013/12/9070.html /post/2013/12/9070/ 301!
+#/2013/12/novatec-jetfly.html /post/2013/12/jetfly-tl/ 301!
+#/2013/12/9070_21.html /post/2013/12/9070_2/ 301!
+#/2013/12/kinesis-crosslight-pro-disc.html /post/2013/12/kinesis-crosslight/ 301!
+#
+#/2014/01/2013-14-3.html /post/2014/01/shonancx3/ 301!
+#/2014/01/sw-r610-di2.html /post/2014/01/swr610/ 301!
+#/2014/01/12.html /post/2014/01/shonancx1-2/ 301!
+#/2014/01/mtb-dartmoor-hornet.html /post/2014/01/dmhornet/ 301!
+#/2014/01/crosslight-pro6.html /post/2014/01/crosslight-pro6/ 301!
+#
+#/2014/02/garmingsc10.html /post/2014/02/garmingsc10/ 301!
+#/2014/02/blog-post.html /post/2014/02/cxtyre_choice/ 301!
+#/2014/02/serac-cxpiranha-2-cx.html /post/2014/02/serac-piranha/ 301!
+#
+#/2014/03/2014-gp-mistral-5.html /post/2014/03/gpm/ 301!
+#/2014/03/blog-post.html /post/2014/03/pmseminer/ 301!
+#/2014/03/blog-post_29-2.html /post/2014/03/fakespider/ 301!
+#
+#/2014/05/wh9000-c50-tu.html /post/2014/05/wh9000-c50-tu/ 301!
+#/2014/05/2014-sda.html /post/2014/05/sdaspring/ 301!
+#
+#/2014/06/2014-kimera-prestige-premium.html /post/2014/06/kimera-prestige-premium/ 301!
+#
+#/2014/08/2014-2.html /post/2014/08/takizawasale/ 301!
+#
+#/2014/09/tt.html /post/2014/09/ttjapan/ 301!
+#/2014/09/koga-solacio.html /post/2014/09/koga-solacio/ 301!
+#
+#/2014/10/blog-post.html /post/2014/10/jccx/ 301!
+#
+#/2014/11/cx-3.html /post/2014/11/cx-chainring/ 301!
+#/2014/11/4.html /post/2014/11/bikelore4/ 301!
+#
+#/2014/12/blog-post.html /post/2014/12/cxentry/ 301!
+#/2014/12/flo-disc.html /post/2014/12/flo-disc/ 301!
+#
+#/2015/02/2014.html /post/2015/02/shonancx/ 301!
+#/2015/02/2015.html /post/2015/02/cxtokyo/ 301!
+#
+#/2015/03/cx-2.html /post/2015/03/ibaraki/ 301!
+#/2015/03/2014-15cx.html /post/2015/03/14cx-end/ 301!
+#
+#/2015/05/1csc.html /post/2015/05/cscfood/ 301!
+#/2015/05/flo-disc-wheel.html /post/2015/05/flo-impression/ 301!
+#
+#/2015/07/savas.html /post/2015/07/savasmilk/ 301!
+#
+#/2015/10/zwift.html /post/2015/10/zwiftstart/ 301!
+#/2015/10/2.html /post/2015/10/oisocritfood/ 301!
+#
+#/2015/12/blog-pos-14.html /post/2015/12/bikestorage/ 301!
+#/2015/12/tcx-slr-ss.html /post/2015/12/tcx-slr-ss/ 301!
+#/2015/12/blog-post_29.html /post/2015/12/bike-and-run/ 301!
+#
+#/2016/01/2015strava.html /post/2016/01/2015strava/ 301!
+#/2016/01/blog-post_83.html /post/2016/01/hydrohealing/ 301!
+#/2016/01/blog-post.html /post/2016/01/oil_massage/ 301!
+#/2016/01/simmvno.html /post/2016/01/simmvno/ 301!
+#/2016/01/sgx-ca500garmin.html /post/2016/01/sgx-ca500mount/ 301!
+#/2016/01/blog-post_14.html /post/2016/01/tubeless_airleak/ 301!
+#/2016/01/zwift-mobile-link.html /post/2016/01/zwift-mobile-link/ 301!
+#/2016/01/zwift0-ftp-testshorter.html /post/2016/01/zwift-ftp-test/ 301!
+#/2016/01/zwift1-6wks-ftp-builder-week-1-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-1/ 301!
+#/2016/01/zwift1-6wks-ftp-builder-week-1-day-2.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-2/ 301!
+#/2016/01/zwift3-6wks-ftp-builder-week-1-day-3.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-3/ 301!
+#/2016/01/zwift4-6wks-ftp-builder-week-1-day-4.html /post/2016/01/zwift-6wks-ftp-builder-week-1-day-4/ 301!
+#/2016/01/zwift6-6wks-ftp-builder-week-2-day-1.html /post/2016/01/zwift-6wks-ftp-builder-week-2-day-1/ 301!
+#
+#/2016/02/zwift6-6wks-ftp-builder-week-2-day-2.html /post/2016/02/zwift-6wks-ftp-builder-week-2-day-2/ 301!
+#/2016/02/zwift6-6wks-ftp-builder-week-2-day-3-5.html /post/2016/02/zwift-6wks-ftp-builder-week-2-day-3-5/ 301!
+#/2016/02/zwift11-6wks-ftp-builder-week-3-day-1.html /post/2016/02/zwift-6wks-ftp-builder-week-3-day-1/ 301!
+#/2016/02/zwift12-13-6wks-ftp-builder-week-3-day.html /post/2016/02/zwift-6wks-ftp-builder-week-3-day-2-3/ 301!
+#/2016/02/blog-post.html /post/2016/02/cycling-protein/ 301!
+#/2016/03/nasne.html* /post/2016/02/nase_roadradce/ 301!
+#
+#/2016/03/zwift.html /post/2016/03/zwift_env/ 301!
+#/2016/03/new-xt-di2-is-leaked-by-jpn-investment.html /post/2016/03/xtdi2leak/ 301!
+#
+#/2016/04/blog-post.html /post/2016/04/fasthealing/ 301!
+#
+#/2016/05/blog-post.html /post/2016/05/pre-fix/ 301!
+#/2016/05/zwift.html /post/2016/05/zwft_orig_workout/ 301!
+#/zwift-oringinal /post/2016/05/zwft_orig_workout/ 301!
+#/zwift-oringi /post/2016/05/zwft_orig_workout/ 301!
+#
+#/2016/06/c90.html /post/2016/06/c90/ 301!
+#/2016/06/specialized-power.html /post/2016/06/spc_pwrsdl/ 301!
+#/2016/06/canyon-ultimate-pretzel-mission.html /post/2016/06/canyon_misssion/ 301!
+#/2016/06/oakley-radar-ev-prizm-road.html /post/2016/06/prizmroad_ev/ 301!
+#
+#/2016/07/blog-post.html /post/2016/07/hybrid_trainer/ 301!
+#/post/2016/07/hybrid_trainer/2016-07-26-blog-pos-9/ /post/2016/07/hybrid_trainer/ 301!
+#
+#/2016/08/blog-post.html /post/2016/08/bookmake/ 301!
+#/2016/08/di2.html /post/2016/08/di2drill_1/ 301!
+#/2016/08/di2_24.html /post/2016/08/di2drill_2/ 301!
+#/2016/08/st-r785mtbcx.html /post/2016/08/st-r785mtbcx/ 301!
+#/post/2016/08/st-r785mtbcx/2016-08-30-st-r785mtbcx/ /post/2016/08/st-r785mtbcx/ 301!
+#
+#/2016/09/choice.html /post/2016/09/choice/ 301!
+#/2013/06/irc-formula-pro-rbcc-tubeless.html /post/2016/09/ircroadrbcc/ 301!
+#/2016/09/irc.html /post/2016/09/ircroadrbcc/ 301!
+#/2016/09/2016-17-cx1-irc-tire-90th-anniversary.html /post/2016/09/irc90thcup/ 301!
+#
+#/2016/10/tcr-advanced-pro-disc.html /post/2016/10/tcr-advanced-pro-disc/ 301!
+#/2016/10/blog-post.html /post/2016/10/tkg/ 301!
+#/2016/10/tcr-advanced-pro-disc_29.html /post/2016/10/tcr-advanced-pro-disc_2nd/ 301!
+#
+#/2016/11/blog-post.html /post/2016/11/furusato-tax/ 301!
+#/2016/11/feedback-portable-trainer12mm.html /post/2016/11/fdbk-trainer-12mm/ 301!
+#/2016/11/blog-post_28.html /post/2016/11/cxlife/ 301!
+#
+#/2016/12/maxxis-speed-terrane.html /post/2016/12/maxxis-speed-terrane_view/ 301!
+#/2016/12/maxxis-speed-terrane_11.html /post/2016/12/maxxis-speed-terrane_ride/ 301!
+#
+#/2017/01/20169.html /post/2017/01/kns9sakai/ 301!
+#
+#/2017/02/cx.html /post/2017/02/cx_semislick/ 301!
+#
+#/2017/03/2017-2.html /post/2017/03/cx-end/ 301!
+#/2017/03/blog-post.html /post/2017/03/discroad/ 301!
+#/2017/03/sgx-ca500di2.html /post/2017/03/sgx-ca500_diy/ 301!
+#
+#/2017/04/my-protein.html /post/2017/04/myprotein/ 301!
+#/2017/04/new-bike-ragley-mmmbop-275.html /post/2017/04/mmmbop275/ 301!
+#/2017/04/mtbesi-grips-brand-x-ascend-dropper-post.html /post/2017/04/goodmtbgears/ 301!
+#/2017/04/blog-post.html /post/2017/04/discroadrace/ 301!
+#/2017/04/blog-post_25.html /post/2017/04/spraut_layer/ 301!
+#
+#/2017/05/2017.html /post/2017/05/gravelcirt/ 301!
+#/2017/05/sscx.html /post/2017/05/sscxtouring/ 301!
+#/2017/05/blog-post.html /post/2017/05/akafukuice/ 301!
+#/2017/05/2017-7.html /post/2017/05/sdaspring/ 301!
+#
+#/2017/06/cs-hg-800-11wh-rs770.html /post/2017/06/cs-hg-800-11wh-rs770/ 301!
+#
+#/2017/07/c92.html /post/2017/07/c92/ 301!
+#/2017/07/blog-post.html /post/2017/07/longsleeve/ 301!
+#
+#/2017/08/blog-post.html /post/2017/08/ducttape_1/ 301!
+#/2017/08/blog-post_18.html /post/2017/08/ducttape_2/ 301!
+#/2017/08/blog-post_31.html /post/2017/08/ducttape_3/ 301!
+#
+#/2017/09/tcx-slrdi2.html /post/2017/09/tcx-slrdi2/ 301!
+#/2017/09/rider310review.html /post/2017/09/rider310review/ 301!
+#/2017/09/formula-pro-x-guard.html /post/2017/09/formula-pro-x-guard/ 301!
+#
+#/201710/wp2hugo/ http://www.gensobunya.net/portfolio/wp2hugo/  301!
+#/2017/10/blgger-to-wp-to-hugo-1 http://www.gensobunya.net/portfolio/blgger-to-wp-to-hugo-1/ 301!
+#/2017/10/blggrtowp-2.html http://www.gensobunya.net/portfolio/blggrtowp-2/ 301!
+#/201710/wp2hugo.html http://www.gensobunya.net/portfolio/wp2hugo/  301!
+#/post/2017/10/wp2hugo/ http://www.gensobunya.net/portfolio/wp2hugo/  301!
+#/201710/2017zwift-mobile-link.html /post/2017/10/2017zwift-mobile-link/ 301!
+#/201710/ebay-siliconbartape.html /post/2017/10/ebay-siliconbartape/301!
+#
+#/201711/2017-11-22-sdawinter.html /post/2017/11/sdawinter/ 301!
+#/201712/2017-12-18-googlehomewithzwift.html /post/2017/12/googlehomewithzwift/
+#
+#/201801/2018-01-03-c1up.html /post/2018/01/to_c1/ 301!
+#/201801/2018-01-08-despair-gaoka.html /post/2018/01/despair-gaoka/ 301!
+#/201801/2018-01-14-sakaisenshuken.html /post/2018/01/sakaisenshuken/ 301!
+#/201801/2018-01-28-kurondoC1.html /post/2018/01/kurondo/ 301!
+#/201801/2018-01-28-kurondoc1.html /post/2018/01/kurondo/ 301!
+#/post/2018/01/kurondoc1/ /post/2018/01/kurondo/ 301!
+#/201801/2018-01-22-aiboku.html /post/2018/01/aiboku/ 301!
+#
+#
+#/201802/2018-02-04-katsura.html /post/2018/02/katsura/ 301!
+#/201802/2018-02-11-cxtokyo.html /post/2018/02/cxtokyo/ 301!
+#/201802/2018-02-20-udontour.html /post/2018/02/udontour/ 301!
+#/201802/2018-02-26-wnp.html /post/2018/02/wnp/ 301!
+#
+#/201803/2018-03-30-tubelessTape.html /post/2018/03/tubelesstape/ 301!
+#/201803/2018-03-30-tubelesstape.html /post/2018/03/tubelesstape/ 301!
+#/201806/2018-06-01-sda.html /post/2018/06/sdaspring/ 301!
+#/201807/2018-07-12-cxtublar.html /post/2018/07/cxtublar/ 301!
+#/201807/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!
+#/201808/lezyne-or-airbone.html /post/2018/08/lezyne-or-airbone/ 301!
+#/201808/2018-07-29-iwatake.html /post/2018/07/iwatake/ 301!
 
 #post migration
 /post/2017/10/blgger-to-wp-to-hugo-1/ http://www.gensobunya.net/portfolio/blgger-to-wp-to-hugo-1/ 301!
