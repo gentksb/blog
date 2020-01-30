@@ -5,10 +5,10 @@ const { paginate } = require("gatsby-awesome-pagination")
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const result = await graphql(
+  const postsQueryResult = await graphql(
     `
       {
-        postsRemark: allMarkdownRemark(
+        allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
           filter: {frontmatter: {draft: {ne: true}}}
         ) {
@@ -23,20 +23,25 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
-        tagsGroup: allMarkdownRemark {
-          group(field: frontmatter___tags) {
-            fieldValue
-          }
-        }
       }
     `
   )
 
-  if (result.errors) {
-    throw result.errors
+  const tagsQueryResult = await graphql(`
+  {
+    allMarkdownRemark {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+        }
+  }
+  `)
+
+  if (postsQueryResult.errors) {
+    throw postsQueryResult.errors
   }
 
-  const posts = result.data.postsRemark.edges
+  const posts = postsQueryResult.data.allMarkdownRemark.edges
 
   // Create blog posts pages.
   posts.forEach((post, index) => {
@@ -55,7 +60,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
   // Create Tag Page
   // Extract tag data from query
-  const tags = result.data.tagsGroup.group
+  const tags = tagsQueryResult.data.allMarkdownRemark.group
   // Make tag pages
   tags.forEach(tag => {
     createPage({
