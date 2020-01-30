@@ -13,6 +13,10 @@ const BlogPostStyle = () =>
       padding: 0.25em 0 0.5em 0.75em;
       border-left: 6px solid ${theme.palette.primary.main};
     }
+    p {
+      margin-bottom: 2em;
+      line-height: 1.7;
+    }
 
     /* Quote */
     blockquote {
