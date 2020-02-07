@@ -58,6 +58,7 @@ class Layout extends React.Component {
                 © {new Date().getFullYear()}, Built with
           {` `}
                 <a href="https://www.gatsbyjs.org">Gatsby</a>
+                <p>This website uses Cookie to ensure you get the best experience on this website.</p>
               </footer>
             </EmotionThemeProvider>
           </MaterialThemeProvider>
