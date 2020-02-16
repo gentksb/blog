@@ -59,12 +59,16 @@ ClimbPro でなくとも簡単な高低差は表示してくれる（要イン�
 
 バッテリー持ちは最高。６時間ほどのライドを 2 日連続で行って帰ってきてもまだ余力あり。毎日充電せずとも週末終わったら充電！くらいのペースでよさそう。
 
+#### 2020/2 追記
+
+バッテリーセーバーモードがすごい。バッテリー半分以下でスタートしても 7 時間程度のライド中安心して使っていられます。
+
+バッテリーセーバーモードの場合、アクティビティは記録しつつ、通常ライド中は画面が消えます。それでいて、ルートの通知や急カーブの警告・スマートフォン通知のときだけ画面点灯してお知らせしてくれます。むしろライドに集中できてロードに乗るときは常時バッテリーセーバーを使ったほうが良いかもしれないレベル！
+
 ## 総括
 
-正当進化した Edge という感じ。500 ～ 520 の間のアップデートより 520->530 のほうが機能的にアップデート幅が多かった（というよりこの間サイコンの機能的進化がバッテリーに偏重していた用に思える）ので、ここに来て「ライドのサポート」ツールとしてより進化したギアとしての印象がある。
+正当進化した Edge という感じ。500 ～ 520 の間のアップデートより 520->530 のほうが機能的にアップデート幅が多かった（というよりこの間サイコンの機能的進化がバッテリーに偏重していた用に思える）ので、ここに来て「ライドのサポート」ツールとしてより進化したギアとしての印象がある。**ついでだから充電端子を USB type-C にすれば完璧だったのに**
 
-**ついでだから充電端子を USB type-C にすれば完璧だったのに**
-
-MTB ダイナミクスはめちゃくちゃ期待しているので、トレイルとパークで試したらまたインプレしたい。
+MTB ダイナミクスはめちゃくちゃ期待しているので、トレイルとパークで試したらまたインプレしたい。→[白馬で試してみました](/post/2019/11/edge530_mtbd/)
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41iLfIIuT6L._SL160_.jpg" alt="GARMIN(ガーミン) Edge 530 本体のみ GPSサイクルコンピューター（センサー類なし）" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">GARMIN(ガーミン) Edge 530 本体のみ GPSサイクルコンピューター（センサー類なし）</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.08.19</div></div><div class="amazlet-detail">GARMIN ガーミン <br />売り上げランキング: 13,132<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
