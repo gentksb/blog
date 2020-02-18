@@ -42,7 +42,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: {eq: false},tags: { in: [$tag] } } }
+      filter: { frontmatter: { draft: {ne: true},tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
