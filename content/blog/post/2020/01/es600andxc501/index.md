@@ -2,7 +2,7 @@
 title: "ロードSPD PD-ES600とSH-XC501インプレッション"
 date: 2020-01-29
 draft: false
-tags: ["ROAD", "インプレ"]
+tags: ["ROAD", "REVIEW"]
 cover: "./cover.jpg"
 ---
 
