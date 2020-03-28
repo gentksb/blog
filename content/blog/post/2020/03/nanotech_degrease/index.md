@@ -1,0 +1,80 @@
+---
+title: "Muc-offのナノテッククリーナーをディグリーザーにしてみた"
+date: 2020-03-28
+draft: false
+tags: ["TIPS"]
+cover: "./overview.jpg"
+---
+
+![cover](./overview.jpg)
+
+[良いディグリーザーのレビュー](/post/2020/03/ghakinalpha/)をしたばかりだが、以前[シクロワイヤードのナノテッククリーナー紹介記事](https://www.cyclowired.jp/news/node/317325)で衝撃的な一文があった。
+
+> 詰め替え用は 4 倍濃縮されており、水で薄めるか、強力な脱脂剤として使用することができる。
+
+ディグリーザーとして使えることを全く知らなかったので、今回ロードバイクで試してみた。
+
+<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07T22FKHB/gensobunya-22/" name="amachazllink" target="_blank"><img src="https://m.media-amazon.com/images/I/51Ty9Dhwn2L._SL160_.jpg" alt="Muc-Off(マックオフ) 自転車クリーナー 4倍濃縮タイプ 500ML [Bike Cleaner Concentrate] 【日本正規品】" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07T22FKHB/gensobunya-22/" name="amachazllink" target="_blank">Muc-Off(マックオフ) 自転車クリーナー 4倍濃縮タイプ 500ML [Bike Cleaner Concentrate] 【日本正規品】</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://amachazl.com/browse/B07T22FKHB/gensobunya-22" title="Muc-Off(マックオフ) 自転車クリーナー 4倍濃縮タイプ 500ML [Bike Cleaner Concentrate] 【日本正規品】 - 甘茶蔓 (amachazl)" target="_blank">amachazl</a> at 2020.03.28</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07T22FKHB/gensobunya-22/" name="amachazllink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+
+## 洗浄前
+
+![洗浄前1](./dirty1.jpg)
+
+![洗浄前2](./dirty2.jpg)
+
+見ての通り、サイドプレートは綺麗だが内部には黒くなった砂利やら鉄粉やらがこびりついている。
+
+前回利用した[グゥーキンアルファ](https://amzn.to/2QSgPOK)はこういったものを一瞬で溶かし出してくれたが、果たして原液とはいえクリーナーで油汚れが落ちるものなのだろうか…
+
+## 洗浄
+
+![投入](./filling.jpg)
+
+まずはパークツールの[CM-5.3](https://amzn.to/2yfivLK)に原液を投入。ディグリーザーとしての使用なので、チェーンツールの公式 Fill ラインを守っていれてみる。
+
+非常に粘度が高く、ドロッとした感触。チェーンマシンをガラガラ回す。
+
+![洗浄2](./cleaning2.jpg)
+
+![洗浄3](./cleaning3.jpg)
+
+ピンク色の液体と泡がチェーンにまとわりついていく。粘度が高かっただけあって、サラサラと滴り落ちることはなくチェーンに洗浄剤がしっかり絡んでいる。
+
+ナノテッククリーナーのお作法に従い、浸透するまで待つ。
+
+![洗浄1](./cleaning1.jpg)
+
+もちろん完全に垂れないわけではないので、チェーンステーなどにクリーナーが落ちてくるが…垂れ落ちたクリーナーにかなり鉄粉が含まれている！これは期待大。
+
+3 分ほど待って、チェーンマシンで濯ぐ。全然落ちねえ…
+
+10 回ほどチェーンマシンを回したところでチェーンに泡が立たなくなったが、チェーンリングに残っているクリーナーがしつこいので直接水をかけて落とした。粘度が高いぶんだけ非常に濯ぎが手間だった。
+
+## 洗浄後
+
+![洗浄後1](./cleaned1.jpg)
+
+![洗浄後2](./cleaned2.jpg)
+
+洗浄後がこちら！チェーン内部の鉄粉やらはほぼ完璧に除去されている。鉄粉より細かい泥の粒子を綺麗に流し落とすだけのことはあり、こういった汚れには強い模様。
+
+ただ、チェーンリングの汚れはあまり落ちなかった。粒子と言うよりも汚れた油が主成分だからか？この点は[グゥーキンアルファ](https://amzn.to/2QSgPOK)に軍配。
+
+## コスト比較・性能比較
+
+汚れ落とし、濯ぎの面では完全に[グゥーキンアルファ](https://amzn.to/2QSgPOK)に軍配が上がるが、チェーン内の異物除去には[ナノテッククリーナー](https://amzn.to/2WQ5N04)も中々の実力を見せた。（半分くらいはチェーンマシンのおかげだが）
+
+前者は本日時点で 1000ml \1,758, 後者は 1000ml \3,564 である。ナノテッククリーナーは Wiggle で時々 1000 円位で売っていたりもするけれど…チェーンマシン 1 回あたりの使用量を 50ml, 刷毛塗布を 20ml とすると 1 回あたりのコストは以下の通り。
+
+- [グゥーキンアルファ](https://amzn.to/2QSgPOK)を刷毛で塗る：35 円
+- [グゥーキンアルファ](https://amzn.to/2QSgPOK)をチェーンマシンで使う：87.9 円
+- [ナノテッククリーナー](https://amzn.to/2WQ5N04)をチェーンマシンで使う：178.2 円
+- [ナノテッククリーナー](https://amzn.to/2WQ5N04)をチェーンマシンで使う(wiggle セール価格)：50 円
+
+手間を考えると[グゥーキンアルファ](https://amzn.to/2QSgPOK)の圧勝か？チェーンマシンで使えば前回記事よりきれいになる余地もあるし、スプロケも同時に掃除できる…
+
+ただ、1 本でなんでも賄えるという点を重視するなら、[ナノテッククリーナー](https://amzn.to/2WQ5N04)を wiggle/CRC セール時に買いだめするという手もありかもしれない。
+
+CRC ではパウチではなく[1 本ボトル](https://www.chainreactioncycles.com/jp/ja/muc-off-%E6%BF%83%E7%B8%AE%E3%83%90%E3%82%A4%E3%82%AF%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC-1l-/rp-prod106331)がまだ売っている。今回使ったのはこちら。原液のまま脱脂剤として利用可能と確かに書いてあった…完全に見落とし。
+
+<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B01LN1TYKQ/gensobunya-22/" name="amachazllink" target="_blank"><img src="https://m.media-amazon.com/images/I/41Th9kToV6L._SL160_.jpg" alt="Vipro&#39;s(ヴィプロス) Gherkin α(グゥーキンアルファ) 反応乳化型ハイブリッド洗浄剤(低臭タイプ) 1,000ml VS-035" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B01LN1TYKQ/gensobunya-22/" name="amachazllink" target="_blank">Vipro&#39;s(ヴィプロス) Gherkin α(グゥーキンアルファ) 反応乳化型ハイブリッド洗浄剤(低臭タイプ) 1,000ml VS-035</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://amachazl.com/browse/B01LN1TYKQ/gensobunya-22" title="Vipro&#39;s(ヴィプロス) Gherkin α(グゥーキンアルファ) 反応乳化型ハイブリッド洗浄剤(低臭タイプ) 1,000ml VS-035 - 甘茶蔓 (amachazl)" target="_blank">amachazl</a> at 2020.03.28</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B01LN1TYKQ/gensobunya-22/" name="amachazllink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
