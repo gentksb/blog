@@ -2,7 +2,7 @@
 title: "Muc-offのナノテッククリーナーをディグリーザーにしてみた"
 date: 2020-03-28
 draft: false
-tags: ["TIPS"]
+tags: ["REVIEW"]
 cover: "./overview.jpg"
 ---
 
