@@ -76,6 +76,10 @@ cover: "./healthcare_relation.png"
 
 ![withings](./withings.png)
 
+体重は[withings の body+](https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/)をを愛用しています。
+
+同期が Bluetooth 経由ではなく、Wifi 経由なので一度設定すれば一々スマホとのペアリングを待たなくても体重計に乗るだけで記録がどんどんアップロードされていくので非常にお手軽です。
+
 体重を記録するだけでなく、GARAMIN CONNECT や先ほど紹介した myfitnesspal に連携できる点がミソです。タニタなど国内メーカーはどうにもこの点が弱いので…IFTTT に対応してくれれば何でもできるんですが、どうにもイケてない…
 
 <div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/" name="amachazllink" target="_blank"><img src="https://m.media-amazon.com/images/I/31Pa4HV9JyL._SL160_.jpg" alt="Withings Body + フランス生まれのスマート体重計 ホワイト Wi-Fi/Bluetooth対応 体組成計 【日本正規代理店品】 WBS05-WHITE-ALL-JP" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/" name="amachazllink" target="_blank">Withings Body + フランス生まれのスマート体重計 ホワイト Wi-Fi/Bluetooth対応 体組成計 【日本正規代理店品】 WBS05-WHITE-ALL-JP</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://amachazl.com/browse/B071ZG8JP2/gensobunya-22" title="Withings Body + フランス生まれのスマート体重計 ホワイト Wi-Fi/Bluetooth対応 体組成計 【日本正規代理店品】 WBS05-WHITE-ALL-JP - 甘茶蔓 (amachazl)" target="_blank">amachazl</a> at 2020.03.29</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/" name="amachazllink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
