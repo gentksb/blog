@@ -102,6 +102,8 @@ Google fit への連携はあまり流行っていないので、有志が作成
 
 ![connect](./connect.png)
 
+![health sync](./healthsync.png)
+
 Zwift はいまお休みしているので入っていませんが、Withings の Health Mate からは直接 Zwift に体重を送って体重計に乗ったら Zwift の体重を更新することもできます！
 
 人力での入力は Myfitnesspal の食べた食品品目のみ！これをサボったとしても運動するときのデバイス ON と体重計に乗ることさえ忘れなければヘルスケア系のログを全て取ることができるようになりました。
