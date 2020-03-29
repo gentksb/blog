@@ -55,39 +55,29 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-          site {
-          siteMetadata {
-          title
-        author
-      }
-    }
-    markdownRemark(fields: {slug: {eq: $slug } }) {
-          id
-      excerpt(truncate: true)
-        html
-      frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-        title
-        cover {
-          base
-          childImageSharp {
-          fluid (maxHeight: 540, maxWidth: 960) {
-          originalName
-              srcWebp
-        srcSetWebp
-        srcSet
-        src
-        sizes
-        aspectRatio
-        presentationWidth
-        presentationHeight
-        originalImg
-      }
+    site {
+      siteMetadata {
+      title
+      author
     }
   }
-  tags
-  draft
-}
-}
+  markdownRemark(fields: {slug: {eq: $slug } }) {
+    id
+    excerpt(truncate: true)
+    html
+    frontmatter {
+      date(formatString: "MMMM DD, YYYY")
+      title
+      cover {
+        childImageSharp {
+          fluid {
+            src
+          }
+        }
+      }
+    tags 
+    draft
+    }
+  }
 }
 `

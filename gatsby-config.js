@@ -33,7 +33,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 960,
+              maxWidth: 800,
+              maxHeight: 450,
+              fit: `contain`,
+              linkImagesToOriginal: true,
+              loading: `lazy`,
+              disableBgImage: true,
             },
           },
           {
@@ -131,27 +136,11 @@ module.exports = {
             `,
             output: `/index.xml`,
             title: `幻想サイクル`,
-            // optional configuration to insert feed reference in pages:
-            // if `string` is used, it will be used to create RegExp and then test if pathname of
-            // current page satisfied this regular expression;
-            // if not provided or `undefined`, all pages will have feed reference inserted
             match: `^/blog/`,
           },
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `幻想サイクル`,
-    //     short_name: `幻想サイクル`,
-    //     start_url: `/`,
-    //     background_color: `#ffffff`,
-    //     theme_color: `#663399`,
-    //     display: `minimal-ui`,
-    //     icon: `content/assets/profile-icon.png`,
-    //   },
-    // },
     `gatsby-plugin-react-helmet`,
   ],
 }
