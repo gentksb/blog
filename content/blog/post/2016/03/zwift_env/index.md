@@ -6,54 +6,40 @@ date: 2016-03-20T17:39:00+00:00
 
 cover: DSC_7324.jpg
 
-tags: ["Zwift","REVIEW","GADGETS"]
-
+tags: ["Zwift", "REVIEW", "GADGETS"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7324.jpg" width="640" height="360" border="0" />
-</div>
 
-&nbsp;
+![./DSC_7324.jpg](./DSC_7324.jpg)
 
 ### MORE Zwift
 
-山岳コースも設定され、ますます熱くなるZwiftをもっと楽しむために。
+山岳コースも設定され、ますます熱くなる Zwift をもっと楽しむために。
 
 バーチャルライドにどうのめり込むか、バーチャルライドのメリットをどう活かすか。
 
 という話です。
 
-基本的なZwiftの設定については以下の記事を参照。
+基本的な Zwift の設定については以下の記事を参照。
 
-<blockquote class="tr_bq">
-  <p>
-    Zwiftがすごくすごくてヤバい<br /> <a href="/2015/10/01/zwif-3.html">/2015/10/01/zwif-3.html</a>
-  </p>
-</blockquote>
+> [Zwift がすごくすごくてヤバい](/post/2015/10/01/zwif-3.html)
 
-&nbsp;
+もう古いですが、当時のモバイルアプリ利用法
 
-<blockquote class="tr_bq">
-  <p>
-    Zwift Mobile linkの使い方<br /> <a href="/2016/01/25/zwift-mobile-link.html">/2016/01/25/zwift-mobile-link.html</a>
-  </p>
-</blockquote>
+> [Zwift Mobile link の使い方](/post/2016/01/25/zwift-mobile-link.html)
 
 ### まずはデュアルディスプレイ
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7323.jpg" width="640" height="360" border="0" />
-</div>
+![./DSC_7323.jpg](./DSC_7323.jpg)
 
 ローラーの前にディスプレイを移動する作業、面倒じゃないですか？
 
-思い切ってディスプレイをもう1枚買いましょう。
+思い切ってディスプレイをもう 1 枚買いましょう。
 
-Zwiftをディスプレイモードで起動してサブモニタに移動すれば、メインモニタは固定したままでよくなります。
+Zwift をディスプレイモードで起動してサブモニタに移動すれば、メインモニタは固定したままでよくなります。
 
-PCとローラーが離れているなら、[EZCastの無線HDMIドングル][1]を使ってメイン画面と離れたモニタの画像をリンクすることも可能です。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00IJBCAXC" alt="" width="1" height="1" border="0" />
+PC とローラーが離れているなら、[EZCast の無線 HDMI ドングル][1]を使ってメイン画面と離れたモニタの画像をリンクすることも可能です。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00IJBCAXC" alt="" width="1" height="1" border="0" />
 
-Zwiftは走行中のBGMがどうにも寂しいので、自分はメイン画面で好きな音楽を流してます。
+Zwift は走行中の BGM がどうにも寂しいので、自分はメイン画面で好きな音楽を流してます。
 
 [ワイヤレストラックボール][2]
 
@@ -76,10 +62,8 @@ Zwiftは走行中のBGMがどうにも寂しいので、自分はメイン画面
   posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 Mega-3c <br /> 売り上げランキング: 290
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -101,23 +85,23 @@ Mega-3c <br /> 売り上げランキング: 290
   <img src="./DSC_7325.jpg" width="640" height="360" border="0" />
 </div>
 
-自分はトップ画像の通り、基本的に没入感の高い「一人称視点」でZwiftをプレイしています。
+自分はトップ画像の通り、基本的に没入感の高い「一人称視点」で Zwift をプレイしています。
 
 斜度やパワーで景色が変わってくれるのですが、どうにもモニタが遠くて没入感に乏しい…そこでモニタとバイクを限界まで近づけるためにデュアルモニターアームを導入しました。
 
-オムニウムトレーナーで前輪が無いのも相まって、バイクモニター間の距離を1cmまで詰められました。
+オムニウムトレーナーで前輪が無いのも相まって、バイクモニター間の距離を 1cm まで詰められました。
 
-モニターアームには大きく分けてネジ式とガスショック式があるのですが、コストパフォーマンスを考えて[グリーンハウスの2アーム4軸モデル][3]を購入しました。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00NFELXSQ" alt="" width="1" height="1" border="0" />
+モニターアームには大きく分けてネジ式とガスショック式があるのですが、コストパフォーマンスを考えて[グリーンハウスの 2 アーム 4 軸モデル][3]を購入しました。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00NFELXSQ" alt="" width="1" height="1" border="0" />
 
 <img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00358RIRC" alt="" width="1" height="1" border="0" />
 
-最高級の[エルゴトロン][4]製アームには流石に手が出ませんでしたが、グリーンハウス製でもほぼ同じ機能（高さのみガスショック式・4軸）となっていたので妥協しました。
+最高級の[エルゴトロン][4]製アームには流石に手が出ませんでしたが、グリーンハウス製でもほぼ同じ機能（高さのみガスショック式・4 軸）となっていたので妥協しました。
 
 エルゴトロンのアームだともっと高級感に溢れた見た目と簡単な位置調整が出来るのでしょう…
 
-セットアップは6角レンチとドライバーだけで終わるので楽ちんです。
+セットアップは 6 角レンチとドライバーだけで終わるので楽ちんです。
 
-手持ちのモニタがVESAマウントに対応しているかだけ確認しましょう。（背面に4つネジ穴があるか）
+手持ちのモニタが VESA マウントに対応しているかだけ確認しましょう。（背面に 4 つネジ穴があるか）
 
 取り付けとガス圧調整が終わればあとは手だけで位置調整ができます。
 
@@ -138,10 +122,8 @@ Mega-3c <br /> 売り上げランキング: 290
   posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 グリーンハウス (2014-10-01)<br /> 売り上げランキング: 903
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -155,8 +137,7 @@ Mega-3c <br /> 売り上げランキング: 290
   </div>
 </div>
 
-
- [1]: http://www.amazon.co.jp/gp/product/B00IJBCAXC/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00IJBCAXC&linkCode=as2&tag=gensobunya-22
- [2]: http://www.amazon.co.jp/gp/product/B00E19UYO8/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00E19UYO8&linkCode=as2&tag=gensobunya-22
- [3]: http://www.amazon.co.jp/gp/product/B00NFELXSQ/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00NFELXSQ&linkCode=as2&tag=gensobunya-22
- [4]: http://www.amazon.co.jp/gp/product/B00358RIRC/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00358RIRC&linkCode=as2&tag=gensobunya-22
+[1]: http://www.amazon.co.jp/gp/product/B00IJBCAXC/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00IJBCAXC&linkCode=as2&tag=gensobunya-22
+[2]: http://www.amazon.co.jp/gp/product/B00E19UYO8/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00E19UYO8&linkCode=as2&tag=gensobunya-22
+[3]: http://www.amazon.co.jp/gp/product/B00NFELXSQ/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00NFELXSQ&linkCode=as2&tag=gensobunya-22
+[4]: http://www.amazon.co.jp/gp/product/B00358RIRC/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00358RIRC&linkCode=as2&tag=gensobunya-22
