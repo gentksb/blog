@@ -6,9 +6,9 @@ date: 2017-04-25T03:14:00+00:00
 
 cover: DSC_0266.jpg
 
-tags: ["REVIEW","TOURING","WORKOUT","RACE"]
-
+tags: ["REVIEW", "TOURING", "Workout", "RACE"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="362" src="./DSC_0266.jpg" width="640" />
 </div>
@@ -21,7 +21,7 @@ tags: ["REVIEW","TOURING","WORKOUT","RACE"]
 
 自分の場合、レッグウォーマーやアームウォーマーは締め付けが苦手なので極力使いたくない。よって下はフリースビブと夏ビブを使い分ける形になる。
 
-上は色々パターンがあって難しい。よく使う組み合わせは3パターンくらい。
+上は色々パターンがあって難しい。よく使う組み合わせは 3 パターンくらい。
 
 ブランドはほぼ全部チャンピオンシステム。
 
@@ -43,9 +43,7 @@ tags: ["REVIEW","TOURING","WORKOUT","RACE"]
 
 防風素材ではないぶん、下りは冷えてしまうがジレで体幹の冷えは防止するスタイル。
 
-ちょっとした峠や、強度の高いトレーニングにGOOD。
-
-
+ちょっとした峠や、強度の高いトレーニングに GOOD。
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -60,10 +58,8 @@ tags: ["REVIEW","TOURING","WORKOUT","RACE"]
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.25
 </div>
 
-
 <div class="amazlet-detail">
 CRAFT(クラフト)
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -80,7 +76,7 @@ CRAFT(クラフト)
 
 初夏や秋口のパターン。下りだけウィンドブレーカーで冷えを防止。
 
-渋峠や乗鞍のような長い下りがある場合もこれ。10km以下の下りなら腕が出ていても平気だが、標高が高かったり下りが長くなってくるとかなり腕だけでもかなり体温を持っていかれるので長袖のウィンドブレーカーがあったほうがいい。
+渋峠や乗鞍のような長い下りがある場合もこれ。10km 以下の下りなら腕が出ていても平気だが、標高が高かったり下りが長くなってくるとかなり腕だけでもかなり体温を持っていかれるので長袖のウィンドブレーカーがあったほうがいい。
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -95,10 +91,8 @@ CRAFT(クラフト)
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.25
 </div>
 
-
 <div class="amazlet-detail">
 outwet(アウトウェット) (2014-05-08)
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -111,8 +105,6 @@ outwet(アウトウェット) (2014-05-08)
   </div>
 </div>
 
-
-
 ### 夏インナー万能説
 
 こうしてみると、夏インナーばっかり使っている。
@@ -121,7 +113,7 @@ outwet(アウトウェット) (2014-05-08)
 
 今までインナーはずっと<a href="http://amzn.to/2pdIIBV" target="_blank">CRAFT</a>派だったが、昨年のジャパンカップ会場で<a href="http://amzn.to/2pdHOVM" target="_blank">OUTWET</a>のインナーを買ってみたが、なかなか具合がいい。
 
-CRAFTはペラペラで表面積が大きく、いかにも涼しそうだがOUTWETは少し厚めの記事。穴を大きく取ることで表面積を稼いでいる模様。厚い分耐久性も良さそう。
+CRAFT はペラペラで表面積が大きく、いかにも涼しそうだが OUTWET は少し厚めの記事。穴を大きく取ることで表面積を稼いでいる模様。厚い分耐久性も良さそう。
 
 伸縮性は共に申し分なく、体にピッタリフィットしてくれる。
 
@@ -142,10 +134,8 @@ CRAFTはペラペラで表面積が大きく、いかにも涼しそうだがOUT
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.25
 </div>
 
-
 <div class="amazlet-detail">
 finetrack(ファイントラック)
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

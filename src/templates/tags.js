@@ -1,25 +1,25 @@
 import React from "react"
-
-// Components
 import { graphql } from "gatsby"
 import { Grid } from "@material-ui/core"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostList from "../components/postList"
+import TagList from "../components/tagList"
 
 
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-    } tagged with "${tag}"`
+  const { edges } = data.allMarkdownRemark
+  const pageTitle = `Tag search : ${tag} | 幻想サイクル`
+  const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout location={location} title={tagHeader}>
-      <SEO title="All posts" location={location} />
+    <Layout location={location} title={siteTitle}>
+      <SEO title={pageTitle} location={location} />
       <Grid container justify="center">
         <Grid item>
+          <TagList targetTag={tag} />
           <PostList props={edges} />
         </Grid>
       </Grid>
@@ -44,6 +44,7 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt(truncate: true)
+          id
           fields {
             slug
           }
@@ -51,19 +52,10 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             cover {
-              base
               childImageSharp {
                 fluid {
-                  originalName
-                  srcWebp
-                  srcSetWebp
                   srcSet
                   src
-                  sizes
-                  aspectRatio
-                  presentationWidth
-                  presentationHeight
-                  originalImg
                 }
               }
             }

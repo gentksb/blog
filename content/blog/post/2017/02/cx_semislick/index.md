@@ -6,32 +6,30 @@ date: 2017-02-14T05:31:00+00:00
 
 cover: DSC_0629.jpg
 
-tags: ["CX","TIPS","WORKOUT","RACE"]
-
+tags: ["CX", "TIPS", "Workout", "RACE"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="362" src="./DSC_0629.jpg" width="640" />
 </div>
 
 ### セミスリックタイヤというスタイル
 
-どんな路面でもChallengeのシケインだけあれば十分というおじさん達がいる。
+どんな路面でも Challenge のシケインだけあれば十分というおじさん達がいる。
 
 この、「グリップはテクニックでカバー」というスタイルに憧れてセミスリックタイヤを使い続けています。
 
 現実問題、自分の場合は参加しているクラスに於いては地脚が足りないため、グリップを得るためにノブの高いタイヤを使っても、転がりの悪さに脚を使わされて最終的に遅くなってしまうということもあります。
 
-セミスリックタイヤで代表的なのは<a href="http://amzn.to/2lfp3BA" target="_blank">Challengeのシケイン</a>。
+セミスリックタイヤで代表的なのは<a href="http://amzn.to/2lfp3BA" target="_blank">Challenge のシケイン</a>。
 
 チューブレスの場合<a href="http://amzn.to/2l3TdWk" target="_blank">シラクサンド</a>や<a href="http://amzn.to/2lLjwQR" target="_blank">Maxxis Speed terrane</a>が当てはまります。
 
 チューブレスではスピードテレーンが発売されるまでサイドノブのあるセミスリックタイヤが無かったので、待ち望んだものがようやく今シーズン出てきました。
 
-
-
 ### セミスリックタイヤ功罪
 
-Speed terraneが出てくるまでの数年間、フロント：<a href="http://amzn.to/2kFSl94" target="_blank">Serac CX</a>, リア：<a href="http://amzn.to/2lfhsCK" target="_blank">Serac CX Sand</a>の組み合わせを愛用していました。
+Speed terrane が出てくるまでの数年間、フロント：<a href="http://amzn.to/2kFSl94" target="_blank">Serac CX</a>, リア：<a href="http://amzn.to/2lfhsCK" target="_blank">Serac CX Sand</a>の組み合わせを愛用していました。
 
 フロントはコーナーでグリップを稼ぎつつ漕ぎの軽さを稼ぐことが狙い。
 
@@ -43,7 +41,7 @@ Speed terraneが出てくるまでの数年間、フロント：<a href="http://
 
 </div>
 
-今年出てきたSpeed terraneはシケイン同様に高めのサイドノブがあるので、これら欠点を克服する希望の星、希望が丘や美山での練習を通じて濡れた路面でも十分なサイドグリップを引き出せます。
+今年出てきた Speed terrane はシケイン同様に高めのサイドノブがあるので、これら欠点を克服する希望の星、希望が丘や美山での練習を通じて濡れた路面でも十分なサイドグリップを引き出せます。
 
 セミスリックタイヤの共通した弱点は、漕ぎの軽さと引き換えにした縦のグリップの弱さ。
 
@@ -59,11 +57,9 @@ Speed terraneが出てくるまでの数年間、フロント：<a href="http://
 
 ### 路面に対するタイヤ選択肢
 
-今まではなんとな～く、IRCのタイヤラインナップに合わせて、サンド・ドライ・ウェットの区分をしていたのですが、ドライはハードパック（剥き出し地面）と芝路面で具合が変わりますし、ウェットも滑りやすいだけのヌメっとしただけの路面からドロドロになってタイヤが埋もれるまで実際の路面は様々で、1レースとして同じ路面ということはありません。
+今まではなんとな～く、IRC のタイヤラインナップに合わせて、サンド・ドライ・ウェットの区分をしていたのですが、ドライはハードパック（剥き出し地面）と芝路面で具合が変わりますし、ウェットも滑りやすいだけのヌメっとしただけの路面からドロドロになってタイヤが埋もれるまで実際の路面は様々で、1 レースとして同じ路面ということはありません。
 
 路面を「サンド」「ハードパック」「グラス（芝）」「ウェット」「マッド」まで区分すればなんとなく体系化できそうなので、これで今のタイヤ選択組み合わせを埋めてみます。
-
-
 
 <table style="border: solid 1px black;">
   <tr style="background-color: darkgrey; font-weight: bold;">
@@ -118,7 +114,7 @@ Serac CX Mud
 
 あまりにも雑すぎる表。
 
-これだけ長文を書いて最終的な結論がこれだとあまりにも酷いエントリーに見えるけれども、IRCオンリーの頃に比べればサイドノブの万能さがお分かりいただけるかと…
+これだけ長文を書いて最終的な結論がこれだとあまりにも酷いエントリーに見えるけれども、IRC オンリーの頃に比べればサイドノブの万能さがお分かりいただけるかと…
 
 <table style="border: solid 1px black;">
   <tr style="background-color: darkgrey; font-weight: bold;">
@@ -185,8 +181,6 @@ Serac CX Mud
 
 シクロクロス会場では天気に次ぐ無難な話題であるところのタイヤチョイス、個々人のスキルにもよると思うが「こんな人もいるんだなぁ」くらいでネタにしてもらえれば幸いです。
 
-
-
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="CHALLENGE(チャレンジ) シクロクロス シケイン33 TEAM EDITION チューブラー ブラック/コットン 33C" src="https://images-fe.ssl-images-amazon.com/images/I/41OIogqvHRL._SL160_.jpg" style="border: none;" /></a>
@@ -200,10 +194,8 @@ Serac CX Mud
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.02.14
 </div>
 
-
 <div class="amazlet-detail">
 CHALLENGE(チャレンジ) <br /> 売り上げランキング: 211,109
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

@@ -6,9 +6,9 @@ date: 2016-01-22T03:12:00+00:00
 
 cover: E382ADE383A3E38397E38381E383A3.png
 
-tags: ["Zwift","WORKOUT"]
-
+tags: ["Zwift", "Workout"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="364" src="./E382ADE383A3E38397E38381E383A3.png" width="640" />
 </div>
@@ -21,15 +21,13 @@ tags: ["Zwift","WORKOUT"]
   </p>
 </blockquote>
 
-
-
 ### 拍子抜け
 
 やる気出してページを開いたらすごく簡単なメニューが出てきた…
 
-2日目はちょっと歯ごたえありそうだけど3日目と4日目はまた簡単なメニュー。
+2 日目はちょっと歯ごたえありそうだけど 3 日目と 4 日目はまた簡単なメニュー。
 
-ひとまず6週間やりきることが目標なので音楽聴きながら50分回す。
+ひとまず 6 週間やりきることが目標なので音楽聴きながら 50 分回す。
 
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="350" src="./2016-01-22_2048172.jpg" width="640" />
@@ -44,4 +42,3 @@ tags: ["Zwift","WORKOUT"]
 それくらいしか考えていなかった。
 
 <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41fK2iycB4L._SL160_.jpg" alt="スント(SUUNTO) Bluetooth データ受信機 ムーブスティック ミニ USB [日本正規品 メーカー保証] SS016591000" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">スント(SUUNTO) Bluetooth データ受信機 ムーブスティック ミニ USB [日本正規品 メーカー保証] SS016591000</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.04.15</div></div><div class="amazlet-detail">スント(SUUNTO) (2011-11-14)<br />売り上げランキング: 216,369<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
-

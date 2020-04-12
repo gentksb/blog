@@ -8,6 +8,7 @@ import Share from "../components/share"
 import PostTag from "../components/postTag"
 import PrevAndNextPost from "../components/prevAndNextpost"
 import BlogPostStyle from "../styles/blog-post.style"
+import TagList from "../components/tagList"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -40,6 +41,7 @@ class BlogPostTemplate extends React.Component {
         <nav>
           <PrevAndNextPost previous={previous} next={next} />
         </nav>
+        <TagList />
       </Layout>
     )
   }
