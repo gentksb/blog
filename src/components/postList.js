@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 // import Img from "gatsby-image"
-import { Typography, Container, Card, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button } from '@material-ui/core'
+import { Typography, Grid, Card, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button } from '@material-ui/core'
 import styled from "@emotion/styled";
 import PostTag from "./postTag"
 
-const PostContainer = styled(Container)`
+const PostGrid = styled(Grid)`
 `
 const PostHeader = styled(CardHeader)`
 `
@@ -21,28 +21,30 @@ const ReadmoreButton = styled(CardActions)`
 const postList = ({ props }) => {
   const postCards = (
     props.map(({ node }) => (
-      <Postcard key={node.id}>
-        <CardActionArea aria-label={node.frontmatter.title}>
-          <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
-            <PostHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
-          </Link>
-        </CardActionArea>
-        <PostTag tags={node.frontmatter.tags} />
-        <CardMedia image={node.frontmatter.cover != null ? (node.frontmatter.cover.childImageSharp.fluid.src) : ("/image/dummy.jpg")} title={`${node.frontmatter.title} cover image`} style={{ paddingTop: '56.25%' }} />
-        <CardContent>
-          <PostExcerpt component="p">{node.excerpt}</PostExcerpt>
-        </CardContent>
+      <Grid item xs={12} md={6}>
+        <Postcard key={node.id}>
+          <CardActionArea aria-label={node.frontmatter.title}>
+            <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
+              <PostHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
+            </Link>
+          </CardActionArea>
+          <PostTag tags={node.frontmatter.tags} />
+          <CardMedia image={node.frontmatter.cover != null ? (node.frontmatter.cover.childImageSharp.fluid.src) : ("/image/dummy.jpg")} title={`${node.frontmatter.title} cover image`} style={{ paddingTop: '56.25%' }} />
+          <CardContent>
+            <PostExcerpt component="p">{node.excerpt}</PostExcerpt>
+          </CardContent>
 
-        <ReadmoreButton>
-          <Button color="secondary" href={node.fields.slug}>この記事を読む</Button>
-        </ReadmoreButton>
-      </Postcard>
+          <ReadmoreButton>
+            <Button color="secondary" href={node.fields.slug}>この記事を読む</Button>
+          </ReadmoreButton>
+        </Postcard>
+      </Grid>
     ))
   )
   return (
-    <PostContainer>
+    <PostGrid container spacing={2}>
       {postCards}
-    </PostContainer>
+    </PostGrid>
   )
 }
 

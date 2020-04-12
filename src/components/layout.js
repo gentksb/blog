@@ -52,7 +52,7 @@ const Layout = (props) => {
           <HeaderBar position="static">
             {header}
           </HeaderBar>
-          <Container maxWidth="md" component="main" style={{ margin: `8px auto` }}>
+          <Container maxWidth="lg" component="main" style={{ margin: `8px auto` }}>
             {children}
           </Container>
           <Footer />

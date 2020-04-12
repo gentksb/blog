@@ -5,8 +5,8 @@ import { Card, CardContent, Grid, CardActionArea } from '@material-ui/core'
 
 const PrevAndNextPost = ({ previous, next }) => {
   return (
-    <Grid container style={{ marginTop: `5px` }} spacing={1}>
-      <Grid item xs>
+    <Grid container style={{ marginTop: `8px` }} spacing={2}>
+      <Grid item xs={6}>
         <Card style={{ height: "100%" }}>
           <CardActionArea style={{ height: "100%" }}>
             {previous && (
@@ -22,7 +22,7 @@ const PrevAndNextPost = ({ previous, next }) => {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs style={{ textAlign: "right" }}>
+      <Grid item xs={6} style={{ textAlign: "right" }}>
         <Card style={{ height: "100%" }}>
           <CardActionArea style={{ height: "100%" }}>
             {next && (
