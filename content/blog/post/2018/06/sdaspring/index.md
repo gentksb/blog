@@ -2,7 +2,7 @@
 title: "2018春王滝反省会"
 date: 2018-06-01T18:47:38+09:00
 draft: false
-tags: ["MTB", "RACEREPORT"]
+tags: ["MTB", "RaceReport"]
 cover: 20180601sdaspring.jpg
 ---
 

@@ -6,7 +6,7 @@ date: 2016-05-09T02:40:00+00:00
 
 cover: DSC_7419.jpg
 
-tags: ["TIPS", "WORKOUT"]
+tags: ["TIPS", "Workout"]
 ---
 
 <div class="separator" style="clear: both; text-align: center;">

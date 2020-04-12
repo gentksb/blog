@@ -6,24 +6,22 @@ date: 2016-02-18T04:08:00+00:00
 
 cover: 2016-02-17_1909510.jpg
 
-tags: ["Zwift","WORKOUT"]
-
+tags: ["Zwift", "Workout"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="352" src="./2016-02-17_1909510.jpg" width="640" />
 </div>
 
-
-
 ### 気分転換
 
-docomoジャージにしてみました。
+docomo ジャージにしてみました。
 
-プロモコードはDocomojapan
+プロモコードは Docomojapan
 
-Strengthの10秒パワーは低ケイデンスだったことに今更気がついたので今回はちゃんとアウタートップで回してみた。
+Strength の 10 秒パワーは低ケイデンスだったことに今更気がついたので今回はちゃんとアウタートップで回してみた。
 
-OmniumTrainerだとアウタートップでも指示通りの40RPMにはならないなぁ。
+OmniumTrainer だとアウタートップでも指示通りの 40RPM にはならないなぁ。
 
 ### プロとの邂逅
 
@@ -31,7 +29,7 @@ OmniumTrainerだとアウタートップでも指示通りの40RPMにはなら�
   <img border="0" height="360" src="./DSC_7121.jpg" width="640" />
 </div>
 
-Day3のFoundation始めたら、プロロードレーサーのワレン・バルギルを発見。
+Day3 の Foundation 始めたら、プロロードレーサーのワレン・バルギルを発見。
 
 ワークアウト優先なので一緒には走らなかったけど、ファンサービスではなく結構いいペースで飛ばしている模様。
 
