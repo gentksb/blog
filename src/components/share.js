@@ -10,6 +10,7 @@ import {
 import shareConfig from "../config/shareConfig"
 import styled from "@emotion/styled"
 import { Share } from "@material-ui/icons"
+import { IconButton } from "@material-ui/core";
 
 const sharebox = ({ post, location }) => {
 
@@ -19,6 +20,7 @@ const sharebox = ({ post, location }) => {
     align-items: center;
     justify-content: flex-start;
     margin: 8px 0px 8px 0px;
+    padding: 16px;
 
     .sharebutton-box{
       display: flex;
@@ -26,16 +28,34 @@ const sharebox = ({ post, location }) => {
     }
   `
 
+
+
+  const kickShareApi = async () => {
+    const shareData = {
+      title: `${post.frontmatter.title}| 幻想サイクル`,
+      url: location.href,
+    }
+
+    try {
+      await navigator.share(shareData)
+      console.debug("Success sharing", shareData)
+    } catch (err) {
+      console.debug('Error: ' + err)
+    }
+  }
+
   return (
     <ShareBox className="social-share">
-      <Share />
+      <IconButton aria-label="share with other apps" onClick={() => { kickShareApi() }}>
+        <Share fontSize="large" />
+      </IconButton>
       <FacebookShareButton url={location.href} className="sharebutton-box">
         <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </FacebookShareButton>
-      <TwitterShareButton url={location.href} title={post.frontmatter.title + "| 幻想サイクル"} className="sharebutton-box">
+      <TwitterShareButton url={location.href} title={`${post.frontmatter.title}| 幻想サイクル`} className="sharebutton-box">
         <TwitterIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </TwitterShareButton>
-      <LineShareButton url={location.href} title={post.frontmatter.title + "| 幻想サイクル"} className="sharebutton-box">
+      <LineShareButton url={location.href} title={`${post.frontmatter.title}| 幻想サイクル`} className="sharebutton-box">
         <LineIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </LineShareButton>
     </ShareBox>

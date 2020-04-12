@@ -24,12 +24,13 @@ class BlogPostTemplate extends React.Component {
           <article>
             <CardContent>
               <header>
-                <Typography component="H1" variant="H1">{post.frontmatter.title}</Typography>
+                <Typography component="h1" variant="H1">{post.frontmatter.title}</Typography>
                 <time dateTime={post.frontmatter.date}>
                   <Typography component="div" variant="subtitle1">{post.frontmatter.date}</Typography>
                 </time>
                 <PostTag tags={post.frontmatter.tags} />
               </header>
+              <Divider variant="fullWidth" />
               <Typography variant="body1" component="section" dangerouslySetInnerHTML={{ __html: post.html }} />
             </CardContent>
           </article>
