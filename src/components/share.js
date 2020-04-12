@@ -29,7 +29,7 @@ const sharebox = ({ post, location }) => {
   `
 
 
-
+  //モバイル端末で標準の共有APIをコールする
   const kickShareApi = async () => {
     const shareData = {
       title: `${post.frontmatter.title}| 幻想サイクル`,
