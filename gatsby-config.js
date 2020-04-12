@@ -74,6 +74,7 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
@@ -142,6 +143,5 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-react-helmet`,
   ],
 }
