@@ -18,7 +18,7 @@ const Pagination = ({ props }) => {
         {nextPagePath ?
           <PaginationLink to={nextPagePath}>
             <Button variant="outlined" color="primary" startIcon={<ArrowBack />}>
-              Next Page
+              Older Posts
             </Button>
           </PaginationLink>
           : <Button variant="outlined" disabled startIcon={<ArrowBack />}>
