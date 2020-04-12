@@ -21,8 +21,8 @@ const ReadmoreButton = styled(CardActions)`
 const postList = ({ props }) => {
   const postCards = (
     props.map(({ node }) => (
-      <Grid item xs={12} md={6}>
-        <Postcard key={node.id}>
+      <Grid item xs={12} md={6} key={node.id}>
+        <Postcard>
           <CardActionArea aria-label={node.frontmatter.title}>
             <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
               <PostHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
