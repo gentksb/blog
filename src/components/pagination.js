@@ -1,53 +1,42 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Card, Grid, CardActionArea, CardContent, Container } from '@material-ui/core'
-import { ArrowBackIos, ArrowForwardIos } from '@material-ui/icons'
+import { Grid, Button } from '@material-ui/core'
+import { ArrowBack, ArrowForward } from '@material-ui/icons'
 import styled from "@emotion/styled";
 
 const Pagination = ({ props }) => {
   const { pageContext } = props
   const { previousPagePath, nextPagePath } = pageContext
-  const PrevNextContainer = styled(Container)`
-    margin-top:16px;
+
+  const PaginationLink = styled(Link)`
+  text-decoration:none;
   `
 
   return (
-    <PrevNextContainer>
-      <Grid container spacing={3} justify="center">
-        <Grid item xs={6}>
-          <Card style={{ height: "100%" }}>
-            <CardActionArea style={{ height: "100%" }}>
-              {nextPagePath ?
-                <Link to={nextPagePath}>
-                  <CardContent>
-                    <Grid container>
-                      <Grid item xs={2}><ArrowBackIos /></Grid>
-                      <Grid item xs={10}>Older</Grid>
-                    </Grid>
-                  </CardContent>
-                </Link>
-                : null}
-            </CardActionArea>
-          </Card>
-        </Grid>
-        <Grid item xs={6} style={{ textAlign: "right" }}>
-          <Card style={{ height: "100%" }}>
-            <CardActionArea style={{ height: "100%" }}>
-              {previousPagePath ?
-                <Link to={previousPagePath}>
-                  <CardContent>
-                    <Grid container>
-                      <Grid item xs={10}>Newer</Grid>
-                      <Grid item xs={2}><ArrowForwardIos /></Grid>
-                    </Grid>
-                  </CardContent>
-                </Link>
-                : null}
-            </CardActionArea>
-          </Card>
-        </Grid>
+    <Grid container spacing={2} justify="center">
+      <Grid item xs={6}>
+        {nextPagePath ?
+          <PaginationLink to={nextPagePath}>
+            <Button variant="outlined" color="primary" startIcon={<ArrowBack />}>
+              Older Posts
+            </Button>
+          </PaginationLink>
+          : <Button variant="outlined" disabled startIcon={<ArrowBack />}>
+            Older Posts
+            </Button>}
       </Grid>
-    </PrevNextContainer>
+      <Grid item xs={6} style={{ textAlign: "right" }}>
+        {previousPagePath ?
+          <PaginationLink to={previousPagePath}>
+            <Button variant="outlined" color="primary" endIcon={<ArrowForward />}>
+              Newer Posts
+            </Button>
+          </PaginationLink>
+          : <Button variant="outlined" disabled endIcon={<ArrowForward />}>
+            Newer Posts
+            </Button>}
+      </Grid>
+    </Grid>
   )
 }
 

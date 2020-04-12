@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Typography, Container, Card, CardContent, Divider } from '@material-ui/core'
+import { Typography, Card, CardContent, Divider } from '@material-ui/core'
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Share from "../components/share"
@@ -20,32 +19,27 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} image={seoImage} location={this.props.location} />
-        <Container maxWidth="md">
-          <BlogPostStyle />
-          <Card>
-            <article>
-              <CardContent>
-                <header>
-                  <Typography component="H1" variant="H1">{post.frontmatter.title}</Typography>
-                  <time dateTime={post.frontmatter.date}>
-                    <Typography component="div" variant="subtitle1">{post.frontmatter.date}</Typography>
-                  </time>
-                  <PostTag tags={post.frontmatter.tags} />
-                </header>
-                <Typography variant="body1" component="section" dangerouslySetInnerHTML={{ __html: post.html }} />
-              </CardContent>
-            </article>
-            <Divider variant="middle" />
-            <Share post={post} location={this.props.location} />
-          </Card>
-
-          <nav>
-            <PrevAndNextPost previous={previous} next={next} />
-          </nav>
-
-          <Bio />
-
-        </Container>
+        <BlogPostStyle />
+        <Card>
+          <article>
+            <CardContent>
+              <header>
+                <Typography component="h1" variant="inherit">{post.frontmatter.title}</Typography>
+                <time dateTime={post.frontmatter.date}>
+                  <Typography component="div" variant="subtitle1">{post.frontmatter.date}</Typography>
+                </time>
+                <PostTag tags={post.frontmatter.tags} />
+              </header>
+              <Divider variant="fullWidth" />
+              <Typography variant="body1" component="section" dangerouslySetInnerHTML={{ __html: post.html }} />
+            </CardContent>
+          </article>
+          <Divider variant="middle" />
+          <Share post={post} location={this.props.location} />
+        </Card>
+        <nav>
+          <PrevAndNextPost previous={previous} next={next} />
+        </nav>
       </Layout>
     )
   }

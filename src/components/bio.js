@@ -38,24 +38,26 @@ const Bio = () => {
       style={{
         display: `flex`,
         padding: `8px 8px 8px 8px`,
+        margin: `auto`
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
+      <a href="https://www.gensobunya.net/" target="_blank" rel="noopener noreferrer">
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt={author}
+          style={{
+            marginBottom: 0,
+            minWidth: 50,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `50%`,
+          }}
+        />
+      </a>
       <p>
-        Written by <strong>{author}</strong>
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
+        <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer">
           <img
             src="/social_icons/Twitter.png"
             alt="Twitter logo"
@@ -65,7 +67,7 @@ const Bio = () => {
             }}
           />
         </a>
-        <a href={`https://github.com/${social.github}`}>
+        <a href={`https://github.com/${social.github}`} target="_blank" rel="noopener noreferrer">
           <img
             src="/social_icons/Github.png"
             alt="Github logo"
@@ -75,7 +77,7 @@ const Bio = () => {
             }}
           />
         </a>
-        <a href={`https://www.instagram.com/${social.instagram}`}>
+        <a href={`https://www.instagram.com/${social.instagram}`} target="_blank" rel="noopener noreferrer">
           <img
             src="/social_icons/instagram.png"
             alt="instagram logo"

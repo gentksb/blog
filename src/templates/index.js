@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Grid, Container } from "@material-ui/core"
+import { Grid } from "@material-ui/core"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
@@ -17,15 +16,12 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Top" location={this.props.location} />
-        <Container maxWidth="md">
-          <Grid container justify="center">
-            <Grid item>
-              <PostList props={edges} />
-              <Pagination props={this.props} />
-              <Bio />
-            </Grid>
+        <Grid container justify="center">
+          <Grid item>
+            <PostList props={edges} />
+            <Pagination props={this.props} />
           </Grid>
-        </Container>
+        </Grid>
       </Layout>
     )
   }

@@ -1,17 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Typography, Container, CssBaseline } from '@material-ui/core'
+import { Typography, CssBaseline, AppBar, Container } from '@material-ui/core'
 import styled from "@emotion/styled";
-import { ThemeProvider as MaterialThemeProvider, StylesProvider } from "@material-ui/styles";
-import { ThemeProvider as EmotionThemeProvider } from "emotion-theming"
+import { ThemeProvider, StylesProvider, useTheme } from "@material-ui/core/styles";
+import Footer from "../components/footer"
 import theme from '../config/theme'
 
-const BlogTitleLink = styled(Link)`
+const Layout = (props) => {
+  const { location, title, children } = props
+  const rootPath = `${__PATH_PREFIX__}/`
+  const blogtheme = useTheme();
+
+  const BlogTitleLink = styled(Link)`
+  color: ${blogtheme.palette.common.white};
   text-decoration: none;
-  color: ${props => props.theme.palette.text.white};
 `
-const HeaderContainer = styled(Container)`
+  const HeaderBar = styled(AppBar)`
   background-color: #e60c00;
   background-image: url("/image/diagmonds-light.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -22,50 +27,40 @@ const HeaderContainer = styled(Container)`
   padding: 16px 0px 16px 0px;
 `
 
-class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
-
-    if (location.pathname === rootPath) {
-      header = (
-        <Typography component="h1" variant="h3" align="center" gutterBottom>
-          <BlogTitleLink to={`/`}>
-            {title}
-          </BlogTitleLink>
-        </Typography>
-      )
-    } else {
-      header = (
-        <Typography component="div" variant="h3" align="center" gutterBottom>
-          <BlogTitleLink to={`/`}>
-            {title}
-          </BlogTitleLink>
-        </Typography>
-      )
-    }
-    return (
-      <CssBaseline>
-        <StylesProvider injectFirst>
-          <MaterialThemeProvider theme={theme}>
-            <EmotionThemeProvider theme={theme}>
-              <HeaderContainer component="header" fixed>
-                {header}
-              </HeaderContainer>
-              <main>{children}</main>
-              <footer>
-                © {new Date().getFullYear()}, Built with
-          {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
-                <p>This website uses Cookie to ensure you get the best experience on this website.</p>
-              </footer>
-            </EmotionThemeProvider>
-          </MaterialThemeProvider>
-        </StylesProvider>
-      </CssBaseline>
+  let header
+  if (location.pathname === rootPath) {
+    header = (
+      <Typography component="h1" variant="h3" align="center" gutterBottom>
+        <BlogTitleLink to={`/`}>
+          {title}
+        </BlogTitleLink>
+      </Typography>
+    )
+  } else {
+    header = (
+      <Typography component="div" variant="h3" align="center" gutterBottom>
+        <BlogTitleLink to={`/`}>
+          {title}
+        </BlogTitleLink>
+      </Typography>
     )
   }
+  return (
+    <CssBaseline>
+      <StylesProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <HeaderBar position="static">
+            {header}
+          </HeaderBar>
+          <Container maxWidth="lg" component="main" style={{ margin: `8px auto` }}>
+            {children}
+          </Container>
+          <Footer />
+        </ThemeProvider>
+      </StylesProvider>
+    </CssBaseline>
+  )
 }
+
 
 export default Layout
