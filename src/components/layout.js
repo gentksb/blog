@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Typography, CssBaseline, AppBar } from '@material-ui/core'
+import { Typography, CssBaseline, AppBar, Container } from '@material-ui/core'
 import styled from "@emotion/styled";
 import { ThemeProvider, StylesProvider, useTheme } from "@material-ui/core/styles";
+import Footer from "../components/footer"
 import theme from '../config/theme'
 
 const Layout = (props) => {
@@ -51,13 +52,10 @@ const Layout = (props) => {
           <HeaderBar position="static">
             {header}
           </HeaderBar>
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-          {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-            <p>This website uses Cookie to ensure you get the best experience on this website.</p>
-          </footer>
+          <Container maxWidth="md" component="main" style={{ margin: `8px auto` }}>
+            {children}
+          </Container>
+          <Footer />
         </ThemeProvider>
       </StylesProvider>
     </CssBaseline>
