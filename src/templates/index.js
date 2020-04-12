@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
 import PostList from "../components/postList"
+import TagList from "../components/tagList"
 
 class BlogIndex extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class BlogIndex extends React.Component {
         <SEO title="Top" location={this.props.location} />
         <Grid container justify="center">
           <Grid item>
+            <TagList />
             <PostList props={edges} />
             <Pagination props={this.props} />
           </Grid>

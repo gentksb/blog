@@ -6,22 +6,22 @@ date: 2015-12-28T15:15:00+00:00
 
 cover: DSC_6856.jpg
 
-tags: ["WORKOUT"]
-
+tags: ["Workout"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="400" src="./DSC_6856.jpg" width="225" />
 </div>
 
-C2のシングルリザルトが定位置になってしまって、昇格まであと1人というところで逃し続けている。
+C2 のシングルリザルトが定位置になってしまって、昇格まであと 1 人というところで逃し続けている。
 
-JCX中井ではキッチリとペースを刻んで最後追い込んだのに差されて4位。
+JCX 中井ではキッチリとペースを刻んで最後追い込んだのに差されて 4 位。
 
 ペーシングとか技術ではなくベースの脚力や体力を改善しないといけないなと悟った。
 
 レースの後、そのままスポーツショップへ向かってランシューを新調。
 
-前のものが5年以上使ってボロボロであったため、クッション性が段違いにアップした。
+前のものが 5 年以上使ってボロボロであったため、クッション性が段違いにアップした。
 
 お台場に向けてランを強化していく。自転車乗るよりランをやったほうが体も絞れる。
 
@@ -34,8 +34,6 @@ JCX中井ではキッチリとペースを刻んで最後追い込んだのに�
 乾燥・消臭・除菌をこなしてくれる、オフィスで使う革靴もこれさえあれば臭いとおさらば。
 
 欠点は靴下と中敷きが白い粉が付着することだが、シミになるわけでもないしそもそも見えないので問題なし。
-
-
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -50,10 +48,8 @@ JCX中井ではキッチリとペースを刻んで最後追い込んだのに�
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 グランズレメディ <br />売り上げランキング: 22
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -79,10 +75,8 @@ JCX中井ではキッチリとペースを刻んで最後追い込んだのに�
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 ASICS <br />売り上げランキング: 3,739
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">

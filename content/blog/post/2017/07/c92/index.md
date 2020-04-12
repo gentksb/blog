@@ -6,21 +6,18 @@ date: 2017-07-07T02:35:00+00:00
 
 cover: DD47GDkVoAEOn4e_orig.jpg
 
-tags: ["Zwift","COMIKET","WORKOUT","RACE","ROAD"]
-
+tags: ["Zwift", "COMIKET", "Workout", "RACE", "ROAD"]
 ---
+
 <div class="separator" style="clear: both; text-align: center;">
 
 </div>
 
+### C92 受かりました
 
+二日目（土曜日）東-ポ 22b、いわゆる自転車島にて「なんとか技研」で参加します。
 
-### C92受かりました
-
-二日目（土曜日）東-ポ22b、いわゆる自転車島にて「なんとか技研」で参加します。
-
-下記の2冊のほかに、手が回れば関西飯ポタ本を出す可能性あり（低）
-
+下記の 2 冊のほかに、手が回れば関西飯ポタ本を出す可能性あり（低）
 
 <div class="separator" style="clear: both; text-align: center;">
 <img border="0" data-original-height="1600" data-original-width="1140" height="320" src="./DD47GDkVoAEOn4e_orig.jpg" width="227" />
@@ -30,7 +27,8 @@ tags: ["Zwift","COMIKET","WORKOUT","RACE","ROAD"]
 新刊。ナマケモノ対応のロードトレーニング入門書です。
 
 前半はトレーニングの基礎的な考え方と実走でできる「ちょいトレ」紹介。
-後半はZwiftによる可能な限り脳を使わないトレーニングについて書いています。
+後半は Zwift による可能な限り脳を使わないトレーニングについて書いています。
+
 </div>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -41,4 +39,5 @@ tags: ["Zwift","COMIKET","WORKOUT","RACE","ROAD"]
 既刊。文字通りのホビーレース入門書。
 
 手元と書店にあるぶんだけ持っていきます。
+
 </div>
