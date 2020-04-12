@@ -28,25 +28,25 @@ const sharebox = ({ post, location }) => {
     }
   `
 
-
   //モバイル端末で標準の共有APIをコールする
-  const kickShareApi = async () => {
-    const shareData = {
-      title: `${post.frontmatter.title}| 幻想サイクル`,
-      url: location.href,
-    }
-
+  const kickShareApi = async (shareData) => {
+    console.dir(shareData)
     try {
       await navigator.share(shareData)
-      console.debug("Success sharing", shareData)
+      console.info("Success sharing", shareData)
     } catch (err) {
-      console.debug('Error: ' + err)
+      console.error('Error: ' + err)
     }
   }
 
   return (
     <ShareBox className="social-share">
-      <IconButton aria-label="share with other apps" onClick={() => { kickShareApi() }}>
+      <IconButton aria-label="share with other apps" onClick={() => {
+        kickShareApi({
+          title: `${post.frontmatter.title}| 幻想サイクル`,
+          url: location.href,
+        })
+      }}>
         <Share fontSize="large" />
       </IconButton>
       <FacebookShareButton url={location.href} className="sharebutton-box">
@@ -58,7 +58,7 @@ const sharebox = ({ post, location }) => {
       <LineShareButton url={location.href} title={`${post.frontmatter.title}| 幻想サイクル`} className="sharebutton-box">
         <LineIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </LineShareButton>
-    </ShareBox>
+    </ShareBox >
   )
 }
 

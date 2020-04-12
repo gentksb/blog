@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
           <article>
             <CardContent>
               <header>
-                <Typography component="h1" variant="H1">{post.frontmatter.title}</Typography>
+                <Typography component="h1" variant="inherit">{post.frontmatter.title}</Typography>
                 <time dateTime={post.frontmatter.date}>
                   <Typography component="div" variant="subtitle1">{post.frontmatter.date}</Typography>
                 </time>
