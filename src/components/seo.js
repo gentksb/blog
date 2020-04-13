@@ -78,11 +78,7 @@ function SEO({ description, lang, meta, title, image, location }) {
           content: `@${site.siteMetadata.social.twitter}`,
         }
       ].concat(meta)}
-    >
-      <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
-      <link rel="preconnect" href="https://stats.g.doubleclick.net" crossorigin />
-      <link rel="preconnect" href="https://aml.valuecommerce.com" crossorigin />
-    </Helmet>
+    />
   )
 }
 
