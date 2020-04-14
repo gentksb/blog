@@ -13,19 +13,18 @@ const Layout = (props) => {
   const blogtheme = useTheme();
 
   const BlogTitleLink = styled(Link)`
-  color: ${blogtheme.palette.common.white};
-  text-decoration: none;
-`
+    color: ${blogtheme.palette.common.white};
+    text-decoration: none;
+  `
   const HeaderBar = styled(AppBar)`
-  background-color: #e60c00;
-  background-image: url("/image/diagmonds-light.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  height: 10vh;
-  max-width: 100%;
-  position: relative;
-  margin: 0 0 0 0;
-  padding: 16px 0px 16px 0px;
-`
+    background-color: "#2B0E00";
+    background-image: url("/image/brushed-alum-dark.png");
+    height: 10vh;
+    max-width: 100%;
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 16px 0px 16px 0px;
+  `
 
   let header
   if (location.pathname === rootPath) {
