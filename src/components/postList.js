@@ -6,6 +6,7 @@ import styled from "@emotion/styled";
 import PostTag from "./postTag"
 
 const PostGrid = styled(Grid)`
+
 `
 const PostHeader = styled(CardHeader)`
 `
@@ -35,7 +36,7 @@ const postList = ({ props }) => {
           </CardContent>
 
           <ReadmoreButton>
-            <Button color="secondary" href={node.fields.slug}>この記事を読む</Button>
+            <Button variant="contained" color="secondary" href={node.fields.slug} disableElevation >この記事を読む</Button>
           </ReadmoreButton>
         </Postcard>
       </Grid>
