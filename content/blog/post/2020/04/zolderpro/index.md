@@ -1,5 +1,5 @@
 ---
-title: "今年度のマシンBianchi Zolder Proが納車されました"
+title: "今年度のレース用シクロクロスバイクBianchi Zolder Proの納車インプレッション"
 date: 2020-04-28
 draft: false
 tags: ["REVIEW", "CX"]
