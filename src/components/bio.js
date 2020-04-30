@@ -52,7 +52,8 @@ const Bio = () => {
       style={{
         display: `flex`,
         padding: `8px 8px 8px 8px`,
-        margin: `auto`
+        margin: `auto`,
+        alignItems: `center`,
       }}
     >
       <a href="https://www.gensobunya.net/" target="_blank" rel="noopener noreferrer">
@@ -69,42 +70,39 @@ const Bio = () => {
           }}
         />
       </a>
-      <p>
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer">
-          <Image
-            fluid={data.twitterIcon.childImageSharp.fluid}
-            alt="Twitter"
-            style={{
-              width: `25px`,
-              margin: `0px 0px 0px 8px`,
-              display: `inline-block`,
-            }}
-          />
-        </a>
-        <a href={`https://github.com/${social.github}`} target="_blank" rel="noopener noreferrer">
-          <Image
-            fluid={data.githubIcon.childImageSharp.fluid}
-            alt="Github"
-            style={{
-              width: `25px`,
-              margin: `0px 0px 0px 8px`,
-              display: `inline-block`,
-            }}
-          />
-        </a>
-        <a href={`https://www.instagram.com/${social.instagram}`} target="_blank" rel="noopener noreferrer">
-          <Image
-            fluid={data.instaIcon.childImageSharp.fluid}
-            alt="Instagram"
-            style={{
-              width: `25px`,
-              margin: `0px 0px 0px 8px`,
-              display: `inline-block`,
-            }}
-          />
-        </a>
-      </p>
+      <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer">
+        <Image
+          fluid={data.twitterIcon.childImageSharp.fluid}
+          alt="Twitter"
+          style={{
+            width: `25px`,
+            margin: `0px 0px 0px 8px`,
+            display: `inline-block`,
+          }}
+        />
+      </a>
+      <a href={`https://github.com/${social.github}`} target="_blank" rel="noopener noreferrer">
+        <Image
+          fluid={data.githubIcon.childImageSharp.fluid}
+          alt="Github"
+          style={{
+            width: `25px`,
+            margin: `0px 0px 0px 8px`,
+            display: `inline-block`,
+          }}
+        />
+      </a>
+      <a href={`https://www.instagram.com/${social.instagram}`} target="_blank" rel="noopener noreferrer">
+        <Image
+          fluid={data.instaIcon.childImageSharp.fluid}
+          alt="Instagram"
+          style={{
+            width: `25px`,
+            margin: `0px 0px 0px 8px`,
+            display: `inline-block`,
+          }}
+        />
+      </a>
     </div>
   )
 }
