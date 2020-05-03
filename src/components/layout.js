@@ -27,6 +27,8 @@ const Layout = (props) => {
   `
 
   let header
+  let maxMainContentWidth
+
   if (location.pathname === rootPath) {
     header = (
       <Typography component="h1" variant="h3" align="center" gutterBottom>
@@ -35,6 +37,7 @@ const Layout = (props) => {
         </BlogTitleLink>
       </Typography>
     )
+    maxMainContentWidth = "lg"
   } else {
     header = (
       <Typography component="div" variant="h3" align="center" gutterBottom>
@@ -43,6 +46,7 @@ const Layout = (props) => {
         </BlogTitleLink>
       </Typography>
     )
+    maxMainContentWidth = "md"
   }
   return (
     <CssBaseline>
@@ -51,7 +55,7 @@ const Layout = (props) => {
           <HeaderBar position="static">
             {header}
           </HeaderBar>
-          <Container maxWidth="lg" component="main" style={{ margin: `8px auto` }}>
+          <Container maxWidth={maxMainContentWidth} component="main" style={{ margin: `8px auto` }}>
             {children}
           </Container>
           <Footer />
