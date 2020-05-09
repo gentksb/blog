@@ -113,22 +113,21 @@ MTB もギリギリサイドミラーより内側に収まっています。ロ�
 
 折りたたむとほとんど奥行きを取りません。室内駐車の人でもスペースには困らないと思います。ただし、バックする際は時速 4km 以下程度で移動するか障害物検知ブレーキをオフにしないとヒッチキャリアを障害物と検知し、自動ブレーキが作動してしまうので普段は外しています…
 
-### おまけ：ピンの交換
+### おまけ：ピンの加工
 
 ![良くないヒッチピン1](./def_pin1.jpg)
 
 ![良くないヒッチピン2](./def_pin2.jpg)
 
-Mazda3 のリア部分の形状と Kuat の純正ロックピンの相性が悪く、振動でキーシリンダーや曲がったピン部分がボディにあたってしまうので路面のギャップを通ったりするたびにテールカバー（樹脂）の部分にぶつかって精神衛生上よろしくないため、下記のようなストレートタイプのロックピンに交換しました。
+Mazda3 のリア部分の形状と Kuat の純正ロックピンの相性が悪く、振動でキーシリンダーや曲がったピン部分がボディにあたってしまうので路面のギャップを通ったりするたびにテールカバー（樹脂）の部分にぶつかって精神衛生上よろしくありません。
 
-安いノーブランド品もあったのですが、鍵穴のトラブルを避けたかったので同じヒッチキャリアメーカーの CURT 製品をチョイス。
+[Curt 純正のストレートタイプのロックピン](https://amzn.to/3ciDnAW)に交換すると解決する…のですが、Kuat のヒッチキャリアはガタ取りを内部で行う都合上、太いピンが通りません。
 
-![Curtの純正ピン](./straight_pin.jpg)
+そこで、ホームセンターのネジ先端キャップを購入して当たる部分だけガードしておきました。キーシリンダー側は水の侵入を防ぐゴムキャップがあるので、当たっても一応傷は避けられます。
 
-ピンの太さはメンバーもキャリアも適合していたのですが、穴の軸が合わずにこの太さだと装着時に通ってくれなかったので細いものを書い直しました
+![ゴムカバー](./gcover.jpg)
 
-今の御時世ではこのヒッチキャリアもなかなか出番がありませんが、特に MTB・CX を趣味にしている自転車乗りには是非ともおすすめしたい装備です。
-
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B01N2VVIXI/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/31b72IagXxL._SL200_.jpg" alt="CURT 正規品 カプラーロックピン 3-3/8インチスパン クロム メーカー保証付" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B01N2VVIXI/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">CURT 正規品 カプラーロックピン 3-3/8インチスパン クロム メーカー保証付</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="CURT 正規品 カプラーロックピン 3-3/8インチスパン クロム メーカー保証付" rel="nofollow" target="_blank">Amaquick</a> at 2020.04.23</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B01N2VVIXI/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+今の御時世ではこのヒッチキャリアもなかなか出番がありませんが、特に MTB・CX を趣味にしている自転車乗りには是非ともおすすめしたい装備です。  
+トランクマウントのキャリアのほうが、ヒッチと同じく燃費と全高を維持しつつ手軽ですが、揺れや傷に強くマウントも簡単なヒッチキャリアは投資する価値があります。
 
 <div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B00IUMN1VA/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/31+Ub1AwnUL._SL200_.jpg" alt="Terzo テルッツォ (by PIAA) サイクルキャリア 2台積み リア用 SARIS 折りたたみ収納可能 ブラック EC16BK" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B00IUMN1VA/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Terzo テルッツォ (by PIAA) サイクルキャリア 2台積み リア用 SARIS 折りたたみ収納可能 ブラック EC16BK</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="Terzo テルッツォ (by PIAA) サイクルキャリア 2台積み リア用 SARIS 折りたたみ収納可能 ブラック EC16BK" rel="nofollow" target="_blank">Amaquick</a> at 2020.04.23</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B00IUMN1VA/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
