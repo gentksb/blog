@@ -1,4 +1,5 @@
 {
+  "alias": ["blog.gensobunya.net"],
   "build": {
     "env": {
       "GATSBY_TELEMETRY_DISABLED": "1"
