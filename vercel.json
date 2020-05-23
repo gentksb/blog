@@ -129,11 +129,5 @@
       "source": "/post/2019/07/withings2slack/",
       "destination": "https://gensobunya-tech.hatenablog.com/entry/2019/07/19/000000"
     }
-  ],
-  "headers": [
-    {
-      "source": "/tags/(.*)",
-      "X-Robots-Tag": "noindex"
-    }
   ]
 }
