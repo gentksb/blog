@@ -9,7 +9,6 @@ import theme from '../config/theme'
 
 const Layout = (props) => {
   const { location, title, children } = props
-  const rootPath = `${__PATH_PREFIX__}/`
   const blogtheme = useTheme();
 
   const BlogTitleLink = styled(Link)`
@@ -29,16 +28,9 @@ const Layout = (props) => {
   let header
   let maxMainContentWidth
 
-  if (location.pathname === rootPath) {
-    header = (
-      <Typography component="h1" variant="h3" align="center" gutterBottom>
-        <BlogTitleLink to={`/`}>
-          {title}
-        </BlogTitleLink>
-      </Typography>
-    )
-    maxMainContentWidth = "lg"
-  } else {
+  const postpathRegExp = RegExp('^/post/.*')
+
+  if (postpathRegExp.test(location.pathname)) {
     header = (
       <Typography component="div" variant="h3" align="center" gutterBottom>
         <BlogTitleLink to={`/`}>
@@ -47,6 +39,15 @@ const Layout = (props) => {
       </Typography>
     )
     maxMainContentWidth = "md"
+  } else {
+    header = (
+      <Typography component="h1" variant="h3" align="center" gutterBottom>
+        <BlogTitleLink to={`/`}>
+          {title}
+        </BlogTitleLink>
+      </Typography>
+    )
+    maxMainContentWidth = "lg"
   }
   return (
     <CssBaseline>
