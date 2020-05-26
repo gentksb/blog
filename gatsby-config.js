@@ -60,15 +60,7 @@ module.exports = {
             },
           },
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `tomato`,
-        showSpinner: false,
       },
     },
     `gatsby-plugin-material-ui`,
