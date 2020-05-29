@@ -20,6 +20,7 @@
     "gatsby-plugin-emotion": "^4.3.2",
     "gatsby-plugin-feed": "^2.5.3",
     "gatsby-plugin-google-tagmanager": "^2.3.3",
+    "gatsby-plugin-lodash": "^3.3.2",
     "gatsby-plugin-manifest": "^2.4.9",
     "gatsby-plugin-material-ui": "^2.1.8",
     "gatsby-plugin-preconnect": "^1.1.48",
@@ -33,6 +34,7 @@
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-remark": "^2.8.13",
     "gatsby-transformer-sharp": "^2.5.3",
+    "lodash": "^4.17.15",
     "prismjs": "^1.20.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -44,6 +46,7 @@
     "typeface-roboto": "0.0.75"
   },
   "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.10",
     "prettier": "^2.0.5"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
