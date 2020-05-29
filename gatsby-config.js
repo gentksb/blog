@@ -75,11 +75,6 @@ module.exports = {
           "https://www.googletagmanager.com",
           "https://www.google-analytics.com",
           "https://aml.valuecommerce.com",
-          "https://pagead2.googlesyndication.com",
-          "https://stats.g.doubleclick.net",
-          "https://partner.googleadservices.com",
-          "https://static.doubleclick.net",
-
         ]
       }
     },
