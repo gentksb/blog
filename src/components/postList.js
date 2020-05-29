@@ -5,15 +5,8 @@ import { Typography, Grid, Card, CardHeader, CardMedia, CardContent, CardActions
 import styled from "@emotion/styled";
 import PostTag from "./postTag"
 
-const PostGrid = styled(Grid)`
-
-`
-const PostHeader = styled(CardHeader)`
-`
 const Postcard = styled(Card)`
   margin-top: 16px;
-`
-const PostExcerpt = styled(Typography)`
 `
 const ReadmoreButton = styled(CardActions)`
   justify-content:flex-end;
@@ -26,13 +19,13 @@ const postList = ({ props }) => {
         <Postcard>
           <CardActionArea aria-label={node.frontmatter.title}>
             <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
-              <PostHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
+              <CardHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
             </Link>
           </CardActionArea>
           <PostTag tags={node.frontmatter.tags} />
           <CardMedia image={node.frontmatter.cover != null ? (node.frontmatter.cover.childImageSharp.fluid.src) : ("/image/dummy.jpg")} title={`${node.frontmatter.title} cover image`} style={{ paddingTop: '56.25%' }} />
           <CardContent>
-            <PostExcerpt component="p">{node.excerpt}</PostExcerpt>
+            <Typography component="p">{node.excerpt}</Typography>
           </CardContent>
 
           <ReadmoreButton>
@@ -43,9 +36,9 @@ const postList = ({ props }) => {
     ))
   )
   return (
-    <PostGrid container spacing={2}>
+    <Grid container spacing={2}>
       {postCards}
-    </PostGrid>
+    </Grid>
   )
 }
 
