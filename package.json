@@ -22,7 +22,6 @@
     "gatsby-plugin-google-tagmanager": "^2.3.3",
     "gatsby-plugin-manifest": "^2.4.9",
     "gatsby-plugin-material-ui": "^2.1.8",
-    "gatsby-plugin-preact": "^4.0.0",
     "gatsby-plugin-preconnect": "^1.1.48",
     "gatsby-plugin-react-helmet": "^3.3.2",
     "gatsby-plugin-sharp": "^2.6.9",
