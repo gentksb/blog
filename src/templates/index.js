@@ -8,31 +8,30 @@ import Pagination from "../components/pagination"
 import PostList from "../components/postList"
 import TagList from "../components/tagList"
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const edges = data.allMarkdownRemark.edges
+const BlogIndex = (props) => {
+  const { data, location } = props
+  const siteTitle = data.site.siteMetadata.title
+  const edges = data.allMarkdownRemark.edges
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Top" location={this.props.location} />
-        <Grid container justify="center">
-          <Grid item>
-            <Hidden smDown>
-              <TagList />
-            </Hidden>
-            <PostList props={edges} />
-            <Pagination props={this.props} />
-            <Hidden mdUp>
-              <TagList />
-            </Hidden>
-          </Grid>
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="Top" location={location} />
+      <Grid container justify="center">
+        <Grid item>
+          <Hidden smDown>
+            <TagList />
+          </Hidden>
+          <PostList props={edges} />
+          <Pagination props={props} />
+          <Hidden mdUp>
+            <TagList />
+          </Hidden>
         </Grid>
-      </Layout>
-    )
-  }
+      </Grid>
+    </Layout>
+  )
 }
+
 
 export default BlogIndex
 

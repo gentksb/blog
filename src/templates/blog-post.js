@@ -10,41 +10,40 @@ import PrevAndNextPost from "../components/prevAndNextpost"
 import BlogPostStyle from "../styles/blog-post.style"
 import TagList from "../components/tagList"
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
-    const seoImage = post.frontmatter.cover != null ? (post.frontmatter.cover.childImageSharp.fluid.src) : ("/image/dummy.jpg")
+const BlogPostTemplate = (props) => {
+  const { pageContext, data, location } = props
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata.title
+  const { previous, next } = pageContext
+  const seoImage = post.frontmatter.cover != null ? (post.frontmatter.cover.childImageSharp.fluid.src) : ("/image/dummy.jpg")
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} image={seoImage} location={this.props.location} />
-        <BlogPostStyle />
-        <Card>
-          <article>
-            <CardContent>
-              <header>
-                <Typography component="h1" variant="inherit">{post.frontmatter.title}</Typography>
-                <time dateTime={post.frontmatter.date}>
-                  <Typography component="div" variant="subtitle1">{post.frontmatter.date}</Typography>
-                </time>
-                <PostTag tags={post.frontmatter.tags} />
-              </header>
-              <Divider variant="fullWidth" />
-              <Typography variant="body1" component="section" dangerouslySetInnerHTML={{ __html: post.html }} />
-            </CardContent>
-          </article>
-          <Divider variant="middle" />
-          <Share post={post} location={this.props.location} />
-        </Card>
-        <nav>
-          <PrevAndNextPost previous={previous} next={next} />
-        </nav>
-        <TagList />
-      </Layout>
-    )
-  }
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title={post.frontmatter.title} description={post.excerpt} image={seoImage} location={location} />
+      <BlogPostStyle />
+      <Card>
+        <article>
+          <CardContent>
+            <header>
+              <Typography component="h1" variant="inherit">{post.frontmatter.title}</Typography>
+              <time dateTime={post.frontmatter.date}>
+                <Typography component="div" variant="subtitle1">{post.frontmatter.date}</Typography>
+              </time>
+              <PostTag tags={post.frontmatter.tags} />
+            </header>
+            <Divider variant="fullWidth" />
+            <Typography variant="body1" component="section" dangerouslySetInnerHTML={{ __html: post.html }} />
+          </CardContent>
+        </article>
+        <Divider variant="middle" />
+        <Share post={post} location={location} />
+      </Card>
+      <nav>
+        <PrevAndNextPost previous={previous} next={next} />
+      </nav>
+      <TagList />
+    </Layout>
+  )
 }
 
 export default BlogPostTemplate
