@@ -13,10 +13,6 @@ tags: ["REVIEW", "Workout"]
 
 ![image](./DSC_1118.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-
-</div>
-
 ### 日焼けとの終わりなき戦い
 
 夏場は日焼けがつらいですね。ロードバイクのように長い時間屋外にいる競技では、一般的なウォータープルーフの日焼け止めでも流れ落ちてしまうので、基本的に日焼けは避けられません。

@@ -16,9 +16,7 @@ tags: ["TOURING", "ROAD"]
 
 ![image](DSC_0048.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  住宅街を抜けるとこーんなループ橋が
-</div>
+住宅街を抜けるとこーんなループ橋が
 
 ![image](DSC_0054.jpg)
 
@@ -26,9 +24,7 @@ tags: ["TOURING", "ROAD"]
 
 ![image](DSC_0056.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  それから自然の中をゴリゴリ登ります（7~12％くらい）
-</div>
+それから自然の中をゴリゴリ登ります（7~12％くらい）
 
 ![image](DSC_0057.jpg)
 

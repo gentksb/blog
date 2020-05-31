@@ -9,10 +9,6 @@ cover: DSC_0584.jpg
 tags: ["REVIEW", "ROAD"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-   
-</div>
-
 ![image](./DSC_0584.jpg)
 
 ### ディスクロード元年説

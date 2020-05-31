@@ -9,10 +9,6 @@ cover: DD47GDkVoAEOn4e_orig.jpg
 tags: ["Zwift", "COMIKET", "Workout", "RACE", "ROAD"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-
-</div>
-
 ### C92 受かりました
 
 二日目（土曜日）東-ポ 22b、いわゆる自転車島にて「なんとか技研」で参加します。
@@ -29,9 +25,6 @@ tags: ["Zwift", "COMIKET", "Workout", "RACE", "ROAD"]
 
 </div>
 
-<div class="separator" style="clear: both; text-align: center;">
-
-</div>
 <div style="float:none;">
 <h3>ホビーレースのすゝめ</h3>
 既刊。文字通りのホビーレース入門書。

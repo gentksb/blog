@@ -28,9 +28,7 @@ SGX-CA500 のマウント下部には謎のネジ穴があったので、これ�
 
 ![image](./DSC_0531.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  サイコン自体の取り外しを考慮するため、下のクリアランスを多めに取る。
-</div>
+サイコン自体の取り外しを考慮するため、下のクリアランスを多めに取る。
 
 ### 試作・完成
 

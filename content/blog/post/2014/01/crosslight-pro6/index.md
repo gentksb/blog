@@ -31,9 +31,7 @@ PBK でセールになっていたのを衝動でポチっと購入。
 
 ![image](IMG_20140110_234313.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  ひどい。
-</div>
+ひどい。
 
 <div class="separator" style="clear: both; text-align: left;">
 </div>
@@ -55,9 +53,7 @@ PBK でセールになっていたのを衝動でポチっと購入。
 
 ![image](IMG_20140111_191109.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  ホムセンで買ってきたパイプジョイントをガムテープで巻いただけの工具？
-</div>
+ホムセンで買ってきたパイプジョイントをガムテープで巻いただけの工具？
 
 <div class="separator" style="clear: both; text-align: left;">
 </div>

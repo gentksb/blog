@@ -11,25 +11,15 @@ tags: ["CX", "EC"]
 
 ![image](IMG_20140122_223026.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  CX用にAliExpressで色合せで偽スパイダーを買いました。
-</div>
+CX 用に AliExpress で色合せで偽スパイダーを買いました。
 
-<div class="separator" style="clear: both; text-align: center;">
-  1600円也
-</div>
+1600 円也
 
-<div class="separator" style="clear: both; text-align: center;">
-  乗り心地はかなりイイ。ハンモックみたいな感じとはこれのことか。
-</div>
+乗り心地はかなりイイ。ハンモックみたいな感じとはこれのことか。
 
-<div class="separator" style="clear: both; text-align: center;">
-  ケツにも合ってるしGOOD
-</div>
+ケツにも合ってるし GOOD
 
-<div class="separator" style="clear: both; text-align: center;">
-  CX4レース後（3ヶ月後）
-</div>
+CX4 レース後（3 ヶ月後）
 
 <div style="text-align: center;">
   リアのレール固定部分からお亡くなりになられました。

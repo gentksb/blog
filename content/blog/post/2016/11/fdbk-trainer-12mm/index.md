@@ -9,10 +9,6 @@ cover: DSC_0346.jpg
 tags: ["CX", "TIPS", "Workout", "ROAD"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-   
-</div>
-
 ![image](./DSC_0346.jpg)
 
 ### 万能ローラー！のはずが…
@@ -56,14 +52,6 @@ TCR の 12mm スルーアクスル用ホイールと、ローラーのアダプ�
 そうしたら<a href="https://www.feedbacksports.com/product/end-cap-kit-12mm-thru-axle/" target="_blank" rel="noopener">こんなページ</a>が…
 
 ![image](./1.png)
-
-<div class="separator" style="clear: both; text-align: center;">
-   
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-   
-</div>
 
 ん？
 
@@ -131,6 +119,5 @@ TNI(ティーエヌアイ) <br /> 売り上げランキング: 219,657
   </div>
 
   <div class="amazlet-footer" style="clear: left;">
-     
   </div>
 </div>

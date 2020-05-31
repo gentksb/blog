@@ -19,10 +19,6 @@ tags: ["TOURING", "ROAD", "FOOD"]
 
 ### 前半戦
 
-<div class="separator" style="clear: both; text-align: center;">
-
-</div>
-
 大阪北部からは約 160km。ルートラボ調べで 1500m UP とロングライドとしてはまぁまぁの負荷。
 
 柏原から檜原に抜け、R165>R369>R368 と繋いでいくコース。柏原から奈良に抜ける峠がそこそこキツイ…
@@ -40,10 +36,6 @@ R369 は曲がりくねっていないものの、長い直登の連続で心を
 ルートラボだと登りきればほとんど下り基調に見えるが、現実は厳しい。
 
 後半の山岳地帯は怒涛の登り返しが待っている。Strava の実測高度がこちら。
-
-<div class="separator" style="clear: both; text-align: center;">
-
-</div>
 
 中盤のハリネズミエリアがつらい。
 

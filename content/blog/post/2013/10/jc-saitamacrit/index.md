@@ -56,9 +56,7 @@ tags: ["RACE", "ROAD"]
 
 そしてオリオン通りにはこんなものが…
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="./DSC_4225.jpg" width="179" /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
-</div>
+<a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="./DSC_4225.jpg" width="179" /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
 
 『赤く萌えろ！』
 
@@ -229,9 +227,7 @@ tags: ["RACE", "ROAD"]
   しかしレース開始後すぐにモヤモヤにはさようなら
 </p>
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4337.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a>
-</div>
+<a href="DSC_4337.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a>
 
 ![image](DSC_4337.jpg)
 
