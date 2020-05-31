@@ -4,16 +4,15 @@ author: admin
 type: post
 date: 2016-01-13T17:28:00+00:00
 
-
-tags: ["CX","TIPS","ROAD"]
-
+tags: ["CX", "TIPS", "ROAD"]
 ---
+
 ### チューブレスの宿命
 
-ロード・CX・MTBに関わらず、チューブレスタイヤユーザーを悩ませるのが空気漏れだ。※パンクではない
+ロード・CX・MTB に関わらず、チューブレスタイヤユーザーを悩ませるのが空気漏れだ。※パンクではない
 
 シーラントが入っていても、空気を入れて走った日に問題なくとも数日後には空気が抜けている悲しい現象。  
-特にCXだと、タイヤを使っていくごとに空気抜けのペースが早くなっていく。新しくタイヤを嵌めてビードを上げた時は空気が抜けづらい。だが、数レース経って気が付くとレース後の火曜日にタイヤがベコベコだったりする。
+特に CX だと、タイヤを使っていくごとに空気抜けのペースが早くなっていく。新しくタイヤを嵌めてビードを上げた時は空気が抜けづらい。だが、数レース経って気が付くとレース後の火曜日にタイヤがベコベコだったりする。
 
 こういったタイヤをレースで使うと、レース中にグリップ感が変わったり、ロングライドの途中で空気圧が下がったりと何かとよろしくない。しかも、シーラントを入れても改善しなかったりする。タイヤを外してもシーラントは残ってるし。
 
@@ -21,9 +20,7 @@ tags: ["CX","TIPS","ROAD"]
 
 ### ノーモア空気漏れ
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_6962.jpg" width="640" />
-</div>
+![image](./DSC_6962.jpg)
 
 簡単に言うと、タイヤを外してリムとタイヤを水洗いするだけ。  
 ビードとリムの密着する部分に泥やら草が結構詰まっているので、これを取り除くことで密着度を上げるのが目的。
@@ -33,9 +30,7 @@ tags: ["CX","TIPS","ROAD"]
 
 があると便利。裏起毛で暖かいのでレース会場で洗車する際にも役に立つ。そして滑り止めのおかげでレバーを使わずチューブレスタイヤを簡単に脱着できる。<img alt="" border="0" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B007PLDRAC" height="1" style="border: none !important; margin: 0px !important;" width="1" />
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_6964.jpg" width="640" />
-</div>
+![image](./DSC_6964.jpg)
 
 **リムウォールの内側**を<a href="http://www.amazon.co.jp/gp/product/B002TKLMM4/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B002TKLMM4&linkCode=as2&tag=gensobunya-22" rel="nofollow">マイクロファイバータオル</a>
 
@@ -44,9 +39,7 @@ tags: ["CX","TIPS","ROAD"]
 普通のウエスだとなかなか取りきれないので。  
 泥が固まっているので、水で流すだけでは取れない。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_6963.jpg" width="640" />
-</div>
+![image](./DSC_6963.jpg)
 
 自分の場合、タイヤのビード外側も念のため拭っている。ここも泥が固まってこびりつくので水を当てるだけでは取れない。綺麗にした後、またシーラントを封入してビードを上げれば、空気圧が簡単に落ちることはなくなる。正直、リム掃除と嵌め直しのどちらが効いているかはわからない。
 

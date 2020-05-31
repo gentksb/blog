@@ -6,12 +6,12 @@ date: 2015-05-09T02:24:00+00:00
 
 cover: DSC_6154.jpg
 
-tags: ["ROAD","FOOD"]
-
+tags: ["ROAD", "FOOD"]
 ---
+
 レースレポなんて需要がないという事に気がついたので、機材と飯にフォーカスしていくことにしました。
 
-第一弾レース飯は陸の孤島こと群馬CSC。
+第一弾レース飯は陸の孤島こと群馬 CSC。
 
 赤谷湖付近まで降りてようやくコンビニがあり、温泉街の飯屋はほぼ無い上に夕方で店を閉めるというひどい環境。
 
@@ -21,24 +21,19 @@ tags: ["ROAD","FOOD"]
   <strong style="border: 0px; color: #4e595d; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;"><a href="https://www.facebook.com/pages/%E3%81%9F%E3%81%8F%E3%81%BF%E3%81%AE%E9%87%8C%E9%A3%9F%E5%A0%82/1374365642803533" style="border: 0px; color: #4e595d; cursor: pointer; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; vertical-align: baseline;">たくみの里食堂</a></strong>
 </h4>
 
+予約すれば 18:00 以降でも席を用意して頂けます。
 
-  予約すれば18:00以降でも席を用意して頂けます。
+地元の食材をふんだんに利用した定食がウリ。角煮や豚のしょうが焼き等、肉が豊富で
 
-  地元の食材をふんだんに利用した定食がウリ。角煮や豚のしょうが焼き等、肉が豊富で
+レース前後に最適です。ごはんもお代わり OK。
 
-  レース前後に最適です。ごはんもお代わりOK。
-
-  写真は豚の角煮定食。
-
+写真は豚の角煮定食。
 
 <div>
-  <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="360" src="./DSC_6154.jpg" width="640" />
-  </div>
+![image](360)
 
-日替わり小鉢はその日仕入れた食材で変わるとのこと。<br /> 味噌汁は具だくさん。隠れてる味噌だけでご飯1杯いける旨さ。
+日替わり小鉢はその日仕入れた食材で変わるとのこと。<br /> 味噌汁は具だくさん。隠れてる味噌だけでご飯 1 杯いける旨さ。
 
+角煮はもちろんトロットロでレース後の体に染みわたる。<br /> 各メニュー 1000 円前後。
 
-  角煮はもちろんトロットロでレース後の体に染みわたる。<br /> 各メニュー1000円前後。
-
-  デザートとして出来たてかりんとう饅頭を150円で頂けます。<br /> コンビニ飯で素泊まりするならこちらへどうぞ。
+デザートとして出来たてかりんとう饅頭を 150 円で頂けます。<br /> コンビニ飯で素泊まりするならこちらへどうぞ。

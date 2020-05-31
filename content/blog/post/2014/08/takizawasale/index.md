@@ -3,14 +3,9 @@ title: 2014タキザワガレージセール＠浜松町
 author: admin
 type: post
 date: 2014-08-15T23:23:00+00:00
-
-
-
 ---
-タキザワのガレージセールに行ってきました。
 
-<div>
-</div>
+タキザワのガレージセールに行ってきました。
 
 <div>
   お目当ては大物のロードフレーム。
@@ -22,9 +17,6 @@ date: 2014-08-15T23:23:00+00:00
 
 <div>
   バッテリーやらケーブルの取り回しがイマイチです。
-</div>
-
-<div>
 </div>
 
 <div>
@@ -44,12 +36,6 @@ date: 2014-08-15T23:23:00+00:00
 </div>
 
 <div>
-</div>
-
-<div>
-</div>
-
-<div>
   タキザワ扱いだとLappiere Xelius EFI、デダチャイのSUPERSCURO RCに着目。
 </div>
 
@@ -62,12 +48,7 @@ date: 2014-08-15T23:23:00+00:00
 </div>
 
 <div>
-</div>
-
-<div>
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="IMG_20140816_094922.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_094922.jpg" height="360" width="640" /></a>
-  </div>
+![image](IMG_20140816_094922.jpg)
 
   <p>
     並びに来たら中が見えた。<br /> Lappiereのフレームが2つ、ゼリウスとディスク/カンチ兼用CXであることはわかった。<br /> この時点でフレームが少ないのと、明らかに自分サイズのフレームがないので完全に嫌な予感しかしない。
@@ -77,9 +58,7 @@ date: 2014-08-15T23:23:00+00:00
     開場後、即フレームを見に行くも完全なる敗北。自分のサイズはほぼなかった。<br /> 頭を切り替えてセール品をとりあえず漁る。
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="IMG_20140816_101550.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_101550.jpg" height="360" width="640" /></a>
-  </div>
+![image](IMG_20140816_101550.jpg)
 
   <p>
     XSがこの値段なら即購入だった…
@@ -97,17 +76,13 @@ date: 2014-08-15T23:23:00+00:00
     見る機会の少ないQUINTANA ROOとかもあった。<br /> これはカラーで売れ残ったんだろうな…
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="IMG_20140816_100344.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140816_100344.jpg" height="360" width="640" /></a>
-  </div>
+![image](IMG_20140816_100344.jpg)
 
   <p>
     そんな中、以下の写真の通りの戦果。
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="2014-08-1616.32.48.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="2014-08-1616.32.48.jpg" height="358" width="640" /></a>
-  </div>
+![image](2014-08-1616.32.48.jpg)
 
   <p>
     TTサドルお試しにSIETRO（文の帽子もイメージして）<br /> Di2サテライトスイッチ（ほしいと思っていたし）<br /> チューブ（夏休みのツーリング用に）<br /> ＋おまけのスイムキャップ

@@ -1,49 +1,39 @@
 ---
-title: 'New bike : Ragley Mmmbop 27.5′'
+title: "New bike : Ragley Mmmbop 27.5′"
 author: admin
 type: post
 date: 2017-04-14T21:09:00+00:00
 
 cover: DSC_0851.jpg
 
-tags: ["MTB","REVIEW"]
-
+tags: ["MTB", "REVIEW"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0851.jpg" width="640" />
-</div>
 
+![image](./DSC_0851.jpg)
 
+### 3 度目の MTB
 
-### 3度目のMTB
+買っては乗らなくなり、売り払い、また買うという行為を繰り返していたがこんどこそ 3 度目の正直。
 
-買っては乗らなくなり、売り払い、また買うという行為を繰り返していたがこんどこそ3度目の正直。
+ディスクロード購入で、夏シーズンロードレースとほぼ無縁になったので王滝やシマノバイカーズで遊ぶための MTB を購入！
 
-ディスクロード購入で、夏シーズンロードレースとほぼ無縁になったので王滝やシマノバイカーズで遊ぶためのMTBを購入！
+友人が 27.5 のコンポ・フォーク・ホイールを処分したがっていたとのことなので、それらを全て引き取って対応するフレームだけ購入。
 
-友人が27.5のコンポ・フォーク・ホイールを処分したがっていたとのことなので、それらを全て引き取って対応するフレームだけ購入。
+遊ぶためのフレームなので、個性あるものをと探していたところ、Ragley bike（英）の Mmmbop27.5 を教えてもらって即決。ウルト ○ マンを彷彿とさせる銀色のフレーム！
 
-遊ぶためのフレームなので、個性あるものをと探していたところ、Ragley bike（英）のMmmbop27.5を教えてもらって即決。ウルト○マンを彷彿とさせる銀色のフレーム！
+規格的にも 12&#215;142 の非 Boost で、手持ちホイールと適合していたことも大きい。
 
-規格的にも12&#215;142の非Boostで、手持ちホイールと適合していたことも大きい。
+ヘッドが寝ていて、150mm フォークが適正と下り向きの AM HT。タイヤもリアは 2.4 インチまで許容できるので楽しく下れるフレームになっているはず。
 
-ヘッドが寝ていて、150mmフォークが適正と下り向きのAM HT。タイヤもリアは2.4インチまで許容できるので楽しく下れるフレームになっているはず。
+![image](./DSC_0871.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0871.jpg" width="640" />
-</div>
-
-コンポはSLXとDeore10s。36-11-36という男ギア比。
+コンポは SLX と Deore10s。36-11-36 という男ギア比。
 
 最終形がこちら。
 
+![image](./DSC_0879.jpg)
 
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0879.jpg" width="640" />
-</div>
-
-ドロッパーポストと[ESIグリップ][1]は初経験。
+ドロッパーポストと[ESI グリップ][1]は初経験。
 
 トレイルでシェイクダウンしたら感想を書いていきたい。
 
@@ -60,10 +50,8 @@ tags: ["MTB","REVIEW"]
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.15
 </div>
 
-
 <div class="amazlet-detail">
 Extreme Steering(エクストリームステアリング) <br /> 売り上げランキング: 127,215
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -76,4 +64,4 @@ Extreme Steering(エクストリームステアリング) <br /> 売り上げラ
   </div>
 </div>
 
- [1]: http://amzn.to/2pCgmQH
+[1]: http://amzn.to/2pCgmQH

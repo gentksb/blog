@@ -9,9 +9,7 @@ cover: 2016-01-26_1843030.jpg
 tags: ["Zwift", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-26_1843030.jpg" width="640" />
-</div>
+![image](./2016-01-26_1843030.jpg)
 
 ### Foundation
 
@@ -19,9 +17,7 @@ tags: ["Zwift", "Workout"]
 
 ペダルを PD-9000 +4mm に変更したのでポジション確認がてらダラダラと Twitter のタイムラインを眺めながら実施。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-01-26_1920052.jpg" width="640" />
-</div>
+![image](./2016-01-26_1920052.jpg)
 
 ワークアウト野郎多すぎ問題。他人の W 数も見れるのね。
 

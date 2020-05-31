@@ -9,12 +9,7 @@ cover: E382ADE383A3E38397E38381E383A3.png
 tags: ["Zwift", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="./E382ADE383A3E38397E38381E383A3.png" />
-</div>
+![image](./E382ADE383A3E38397E38381E383A3.png)
 
 <div class="separator" style="clear: both; text-align: left;">
 </div>
@@ -68,29 +63,21 @@ Zwift の導入については以前の記事を参照。
 
 精神的な変数を最小限にするため、コースはフラットなものを選択した。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-01-21_1841020.jpg" width="640" />
-</div>
+![image](./2016-01-21_1841020.jpg)
 
 左にこれからのメニュー、中央には現在のパワーと目標ワットが表示される。
 
 いちいち FTP 計測のアップ作法を覚えなくとも、Zwift が勝手に指示してくる。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_1850202.jpg" width="640" />
-</div>
+![image](./2016-01-21_1850202.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_1853183.jpg" width="640" />
-</div>
+![image](./2016-01-21_1853183.jpg)
 
 パワーが足りないと「More POWER!」、パワー出しすぎだと「Reduce POWER」と煽りが入る。
 
 人間は今やることに集中すれば OK。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_1856064.jpg" width="640" />
-</div>
+![image](./2016-01-21_1856064.jpg)
 
 メニューをちゃんとクリアすると左側のリストに ★ が入る。
 
@@ -98,39 +85,23 @@ Zwift の導入については以前の記事を参照。
 
 筋肉を暖めたら 6 分レストしてスタート。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_1904336.jpg" width="640" />
-</div>
+![image](./2016-01-21_1904336.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_1909167.jpg" width="640" />
-</div>
+![image](./2016-01-21_1909167.jpg)
 
 5 分経過、「調子はどう？」。
 
 疲れました
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_1920219.jpg" width="640" />
-</div>
+![image](./2016-01-21_1920219.jpg)
 
 残り 4 分、下の部分にパワー分布が出ている。オレンジが FTP+10%くらい？黄色が FTP ゾーン、緑が FTP-20%くらい。タレてるのがまるわかり。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_19234411.jpg" width="640" />
-</div>
+![image](./2016-01-21_19234411.jpg)
 
 最後の方は画面がホワイトアウトしかける演出、こんなんしなくても死にそうです。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_19242012.jpg" width="640" />
-</div>
+![image](./2016-01-21_19242012.jpg)
 
 ハイ終了～。20 分平均パワーに係数を掛けるところまで勝手にやってくれます。
 
@@ -138,9 +109,7 @@ Zwift の導入については以前の記事を参照。
 
 20 分平均パワーはライド完了画面で確認できます。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-21_19300414.jpg" width="640" />
-</div>
+![image](./2016-01-21_19300414.jpg)
 
 今回のテストは Zwift 上のベストパワーでもなかったようだ…
 

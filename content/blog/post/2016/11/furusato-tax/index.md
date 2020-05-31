@@ -4,9 +4,7 @@ author: admin
 type: post
 date: 2016-11-10T02:52:00+00:00
 
-
-tags: ["TIPS","TOURING"]
-
+tags: ["TIPS", "TOURING"]
 ---
 
 ### 年末の恒例行事といえば？
@@ -19,46 +17,33 @@ tags: ["TIPS","TOURING"]
 
 普段口にしない高級食材やクラフトビールに舌鼓を打つのも一興だが、自転車乗りを含むアウトドア趣味を持った人間には食べ物以外にもお得な返礼品が揃っているので、いくつか紹介したい。
 
-
-
 ### ペダル祭り
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="426" src="./CYGMAEzy1.jpg" width="640" />
-</div>
 
 まずは埼玉県所沢市の三ヶ島ペダル。
 
-地味なメーカーだが回転の良さと、工具無しで取り外すことができるEzyペダルには定評がある。
+地味なメーカーだが回転の良さと、工具無しで取り外すことができる Ezy ペダルには定評がある。
 
-寄付額は10000/15000/25000円で別れており、それぞれ<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001F2WTLU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">LAMBDA</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00ME93CG4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">PRIME SYLVAN TOURING</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OOII5CO/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">CYGMA Ezy</a>を返礼品としてもらうことが出来る。
+寄付額は 10000/15000/25000 円で別れており、それぞれ<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001F2WTLU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">LAMBDA</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00ME93CG4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">PRIME SYLVAN TOURING</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OOII5CO/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">CYGMA Ezy</a>を返礼品としてもらうことが出来る。
 
-特にシグマEzyは輪行時に威力を発揮するのでツーリング派は是非視野に入れて欲しい。
-
-
+特にシグマ Ezy は輪行時に威力を発揮するのでツーリング派は是非視野に入れて欲しい。
 
 ### モンベルポイント
 
-<div class="separator" style="clear: both; text-align: center;">
   <img border="0" height="108" src="./montbelllogo.jpg" width="640" />
-</div>
 
 ~~こいつがド本命。~~  
-2018/09/15追記：ふるさと納税規制の結果、交換できる自治体が消滅した。残念。
+2018/09/15 追記：ふるさと納税規制の結果、交換できる自治体が消滅した。残念。
 
-テントなどをもらえる納税もあるが、概ね寄付額の50％＋1年の会員権を返礼品としてもらうことができる。
+テントなどをもらえる納税もあるが、概ね寄付額の 50％＋ 1 年の会員権を返礼品としてもらうことができる。
 
 ありがとう<a href="http://www.furusato-tax.jp/japan/prefecture/20486" target="_blank">長野県小谷村</a>。
 
 モンベル購入できるでオススメ品は、なんといってもヘリノックスのキャンプ道具。  
 コンパクトで軽量で快適なので、レース会場では重宝する。
 
-その他、コーヒーを淹れるための<a href="http://amzn.to/2fEOgkt" target="_blank">ジェットボイル</a>などもこれを機会に買ってみたい。
-
-
+その他、コーヒーを淹れるための<a href="http://amzn.to/2fEOgkt" target="_blank">ジェットボイル</a>などもこれを機会に買って
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -73,10 +58,8 @@ tags: ["TIPS","TOURING"]
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.11.10
 </div>
 
-
 <div class="amazlet-detail">
 Helinox(ヘリノックス)
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -93,8 +76,6 @@ Helinox(ヘリノックス)
 
 ユニクロとは違い圧倒的な保温性と折りたたみ性能となっている上、ベストなので出走直前にストレス無く脱ぐことが出来る。
 
-
-
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00F68FLVO/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="(モンベル)mont-bell アウトドアウェア メンズ ライトアルパインダウン ベスト 1101432 BK ブラック M" src="https://images-fe.ssl-images-amazon.com/images/I/41coVkgQOqL._SL160_.jpg" style="border: none;" /></a>
@@ -108,10 +89,8 @@ Helinox(ヘリノックス)
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.11.10
 </div>
 
-
 <div class="amazlet-detail">
 mont-bell (2016-09-29)
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -125,12 +104,10 @@ mont-bell (2016-09-29)
 </div>
 
 御存知の通り、モンベルは自転車製品も充実している。  
-トゥーカバーなどの防風・防水製品類は本業の山岳ギアの性能が反映されていて非常にクオリティが高い。  
+トゥーカバーなどの防風・防水製品類は本業の山岳ギアの性能が反映されていて非常にクオリティが高い。
 
 最近流行りのバイクパッキングに最適なウルトラライトのキャンプギアも充実しているので、実によりどりみどりといった具合。  
 ふるさと納税の控除上限は決まっているので、各自しっかり調べた上でうまく活用して良い自転車ライフを送ろう。
-
-
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -145,10 +122,8 @@ mont-bell (2016-09-29)
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.11.10
 </div>
 
-
 <div class="amazlet-detail">
 mont-bell (2015-01-16)
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">

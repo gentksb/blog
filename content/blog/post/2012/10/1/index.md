@@ -7,13 +7,13 @@ cover: DSC_0664.jpg
 tags: ["ROAD"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_0664.jpg" width="640" />
-</div>
+![image](./DSC_0664.jpg)
+
 <!--BUILD TEST-->
+
 まずはメインで使っているロードバイクから。
-<a href="http://www.avedio.net/" target="_blank">AVEDIO</a>のBacchus01(2011モデル)です。
-コンポは5700で統一、サドルはスペシャのTOUPE Expert。フロントホイールはWH-7850SLでやたら目立っているリアホイールは中華の60mmホイールとなっています。
+<a href="http://www.avedio.net/" target="_blank">AVEDIO</a>の Bacchus01(2011 モデル)です。
+コンポは 5700 で統一、サドルはスペシャの TOUPE Expert。フロントホイールは WH-7850SL でやたら目立っているリアホイールは中華の 60mm ホイールとなっています。
 
 コスパのいいものを集めた結果こうなりました。中途半端な軽量性を追い求めてペダルをアルテグラのカーボンペダルにしたりしていますが・・・ｗ
 

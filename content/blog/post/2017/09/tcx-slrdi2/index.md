@@ -6,107 +6,72 @@ date: 2017-09-05T05:13:00+00:00
 
 cover: P_20170904_194046.jpg
 
-tags: ["CX","TIPS"]
-
+tags: ["CX", "TIPS"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-   
-</div>
 
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./P_20170904_194046.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
-</div>
-
-&nbsp;
+![image](./P_20170904_194046.jpg)
 
 ### 年式の古い新車
 
-TCX SLR SSの具合がとても良いので、メインのCXバイクもTCXに変更しました。
+TCX SLR SS の具合がとても良いので、メインの CX バイクも TCX に変更しました。
 
 中古で都合の良い出物があったので、そちらをポチッと。
 
-唯一フレームセットの設定があった2014モデルです。
+唯一フレームセットの設定があった 2014 モデルです。
 
-フロント15mmスルーは当時衝撃的でしたね。
+フロント 15mm スルーは当時衝撃的でしたね。
 
-勝利の方程式である油圧ディスク＋Di2で組み上げたところ、仕様上迷うところや想定外の作業があったので備忘も兼ねてメモ。
+勝利の方程式である油圧ディスク＋ Di2 で組み上げたところ、仕様上迷うところや想定外の作業があったので備忘も兼ねてメモ。
 
-### ポストマウント140mmローター
+### ポストマウント 140mm ローター
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7785.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
-</div>
+![image](./DSC_7785.jpg)
 
-今でこそディスクロードのおかげで140mmローターは当たり前ですが、こいつは数年前から140mm設定がデフォルト。フラットマウントなんて無い時代のフレームなので、「ポストマウントのブレーキキャリパーをアダプタ無しで装着すると140mm」という非常に珍しい仕様。
+今でこそディスクロードのおかげで 140mm ローターは当たり前ですが、こいつは数年前から 140mm 設定がデフォルト。フラットマウントなんて無い時代のフレームなので、「ポストマウントのブレーキキャリパーをアダプタ無しで装着すると 140mm」という非常に珍しい仕様。
 
-ここは知っていたので特に迷いなく最軽量クラスの[ASHIMA Ai2Rotor][1]をチョイス。64gという超軽量激安ローター。CXなので制動力はそこまで良くなくても気にしない。
+ここは知っていたので特に迷いなく最軽量クラスの[ASHIMA Ai2Rotor][1]をチョイス。64g という超軽量激安ローター。CX なので制動力はそこまで良くなくても気にしない。
 
-Amazonには<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前のモデル</a>が売ってますけど、[ebay][1]がおすすめ。
+Amazon には<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前のモデル</a>が売ってますけど、[ebay][1]がおすすめ。
 
 ### リアのオイルライン・ケーブルライン
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7857.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
-</div>
+![image](./DSC_7857.jpg)
 
-<div>
-   
-</div>
-
-リアのブレーキホースはダウンチューブに内蔵されたのち、BB下で1回出てチェーンステーに再度挿入される内装式。
+リアのブレーキホースはダウンチューブに内蔵されたのち、BB 下で 1 回出てチェーンステーに再度挿入される内装式。
 
 この挿入時だが、フィキシングボルトやバンジョーが付いているとフレームの穴を通ることができない。つまり外したブレーキについていた**ブレーキホースの再利用は不可能**だった。
 
-また、Di2の配線にも癖がある。昔ながらのチェーンステー下外装マウントがあるバイクなのだが、左側はオイルラインの通る道でもあり、Di2ケーブルとブレーキホースを同時に通すほどの穴は存在しないので、なんとかする必要があった。
+また、Di2 の配線にも癖がある。昔ながらのチェーンステー下外装マウントがあるバイクなのだが、左側はオイルラインの通る道でもあり、Di2 ケーブルとブレーキホースを同時に通すほどの穴は存在しないので、なんとかする必要があった。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7858.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
-</div>
+![image](./DSC_7858.jpg)
 
-こちらは、右チェーンステーからDi2ケーブルをバッテリーに繋いだ図。テープで貼り付けてもどうも格好が悪いので、最終的にはダウンチューブから出すようにしてみた。
+こちらは、右チェーンステーから Di2 ケーブルをバッテリーに繋いだ図。テープで貼り付けてもどうも格好が悪いので、最終的にはダウンチューブから出すようにしてみた。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./P_20170904_192021.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
-</div>
+![image](./P_20170904_192021.jpg)
 
 ケーブルはホースに絡ませている。
 
 ### チェーンリングクリアランス
 
-&nbsp;
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./P_20170904_184647.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
-</div>
+![image](./P_20170904_184647.jpg)
 
 フロントシングルの場合、アウター側にチェーンリングを付けないとステーに干渉する。
 
-因みに反対側のDi2バッテリーとクランクアームについてもクリアランスギリギリである。これはどうしようもないので放置、余り好きではないが、干渉への安心感という意味では内装バッテリーの方がおすすめできる。
+因みに反対側の Di2 バッテリーとクランクアームについてもクリアランスギリギリである。これはどうしようもないので放置、余り好きではないが、干渉への安心感という意味では内装バッテリーの方がおすすめできる。
 
 ### BB86
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./P_20170904_184136.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
-</div>
+![image](./P_20170904_184136.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-   
-</div>
-
-ホームメカニックを悩ませる圧入BBだが、今回は<a href="http://amzn.to/2vIiT38" target="_blank" rel="noopener">怪しい激安工具</a>を用いて組み上げてみた。
+ホームメカニックを悩ませる圧入 BB だが、今回は<a href="http://amzn.to/2vIiT38" target="_blank" rel="noopener">怪しい激安工具</a>を用いて組み上げてみた。
 
 ホームセンターで売っていそうなパーツと、ベアリングを組み合わせただけの工具だが、丁寧に並行を出したあとは意外なほどスルスルと装着できた。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7854.jpg" width="640" height="360" border="0" data-original-height="900" data-original-width="1600" />
-</div>
+![image](./DSC_7854.jpg)
 
-内装しているDi2ケーブルがなるべく接触しないように、ダクトテープでフレーム内にしっかり逃している。
+内装している Di2 ケーブルがなるべく接触しないように、ダクトテープでフレーム内にしっかり逃している。
 
-残りの特筆すべき点はOD2（1-1/4）コラムという点だが、これはステム規格だけなので大した影響はなし。
-
-&nbsp;
+残りの特筆すべき点は OD2（1-1/4）コラムという点だが、これはステム規格だけなので大した影響はなし。
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -135,4 +100,4 @@ Dovewill <br /> 売り上げランキング: 166,270
   </div>
 </div>
 
- [1]: http://www.ebay.com/itm/ASHIMA-Ai2-The-Worlds-Lightest-Stainless-Disc-Rotor-140mm-64g-ABE-/131992899865?epid=2058435442&hash=item1ebb63d119:g:U8AAAOSw44BYHFd1
+[1]: http://www.ebay.com/itm/ASHIMA-Ai2-The-Worlds-Lightest-Stainless-Disc-Rotor-140mm-64g-ABE-/131992899865?epid=2058435442&hash=item1ebb63d119:g:U8AAAOSw44BYHFd1

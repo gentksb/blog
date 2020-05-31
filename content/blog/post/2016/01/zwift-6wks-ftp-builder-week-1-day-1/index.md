@@ -9,9 +9,7 @@ cover: E382ADE383A3E38397E38381E383A3.png
 tags: ["Zwift", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="364" src="./E382ADE383A3E38397E38381E383A3.png" width="640" />
-</div>
+![image](./E382ADE383A3E38397E38381E383A3.png)
 
 本記事は下記の続きです。
 
@@ -29,9 +27,7 @@ tags: ["Zwift", "Workout"]
 
 ひとまず 6 週間やりきることが目標なので音楽聴きながら 50 分回す。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-22_2048172.jpg" width="640" />
-</div>
+![image](./2016-01-22_2048172.jpg)
 
 ケイデンス維持とペダリングを綺麗に意識しながら音楽聞いていたら汗もほとんどかかずにあっさり終了。
 

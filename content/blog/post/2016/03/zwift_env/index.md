@@ -47,8 +47,6 @@ Zwift は走行中の BGM がどうにも寂しいので、自分はメイン画
 
 <img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00E19UYO8" alt="" width="1" height="1" border="0" />
 
-&nbsp;
-
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00IJBCAXC/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink"><img style="border: none;" src="https://images-fe.ssl-images-amazon.com/images/I/41G2dud6i9L._SL160_.jpg" alt="EZCast iPush転送器 iOS、Android、 Windows、MAC OSシステム通用Wireless HDMIディスプレイDLNA, Google Miracast, EZAir (Airpaly)対応 HDMIドングル レシーバー 720/1080P対応" /></a>
@@ -77,13 +75,9 @@ Mega-3c <br /> 売り上げランキング: 290
   </div>
 </div>
 
-&nbsp;
-
 ### 没入感を求めて
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7325.jpg" width="640" height="360" border="0" />
-</div>
+![image](./DSC_7325.jpg)
 
 自分はトップ画像の通り、基本的に没入感の高い「一人称視点」で Zwift をプレイしています。
 
@@ -106,8 +100,6 @@ Mega-3c <br /> 売り上げランキング: 290
 取り付けとガス圧調整が終わればあとは手だけで位置調整ができます。
 
 机もかなり広くなるので特に何も目的がなくてもモニターアームはおすすめです。
-
-&nbsp;
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">

@@ -6,24 +6,20 @@ date: 2016-06-18T18:00:00+00:00
 
 cover: DSC_7627.jpg
 
-tags: ["REVIEW","TOURING","RACE","ROAD"]
-
+tags: ["REVIEW", "TOURING", "RACE", "ROAD"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_7627.jpg" width="640" />
-</div>
 
-
+![image](./DSC_7627.jpg)
 
 ### Prizm!
 
 たまたま安売りしているのを見かけたので衝動的に買ってしまった。
 
-今までのRADARは地味めのカラーだっただけに、ド派手な赤系ミラーレンズがかなりやんちゃに感じる。
+今までの RADAR は地味めのカラーだっただけに、ド派手な赤系ミラーレンズがかなりやんちゃに感じる。
 
-Prizm Trailは知人の物を借りて走ったことがあるので、Prizmレンズ自体の良さに異論はない。
+Prizm Trail は知人の物を借りて走ったことがあるので、Prizm レンズ自体の良さに異論はない。
 
-100kmのライドに持って行ったところ、このPrizm Roadも期待に沿った働きをしてくれた。
+100km のライドに持って行ったところ、この Prizm Road も期待に沿った働きをしてくれた。
 
 赤系のレンズの特徴である、コントラストを強調する効果が強く、かけるとかなり暗く感じるが、
 
@@ -33,37 +29,33 @@ Prizm Trailは知人の物を借りて走ったことがあるので、Prizmレ�
 
 脳が無意識に赤の逆色である緑色のフィルターをかけているらしく、外した瞬間は緑で景色が補正されたままとなってしまう。
 
-景色を楽しむライドの場合、Slateレンズなどの黒系レンズがオススメ。
+景色を楽しむライドの場合、Slate レンズなどの黒系レンズがオススメ。
 
-レースなら文句なくPrizmを使うべき。
+レースなら文句なく Prizm を使うべき。
 
-### RADARとの比較
+### RADAR との比較
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_7615.jpg" width="640" />
-</div>
+![image](./DSC_7615.jpg)
 
-こちらが今まで使っていたRADAR。
+こちらが今まで使っていた RADAR。
 
-同じRADARの名を冠しているがRADAR EVのフィット感は無印RADARとはかなり異なるものだった。
+同じ RADAR の名を冠しているが RADAR EV のフィット感は無印 RADAR とはかなり異なるものだった。
 
-まず、同じPathでもレンズがかなり大きい。自分の場合RADAR Pathだと頬にレンズは接触しないが、EVは下にレンズが張り出しているので顔の角度次第だが接触している状態が続く。
+まず、同じ Path でもレンズがかなり大きい。自分の場合 RADAR Path だと頬にレンズは接触しないが、EV は下にレンズが張り出しているので顔の角度次第だが接触している状態が続く。
 
-ノーズパッドは、どちらも大小付属しているが、EVは大を選んでもレンズが眼にかなり近い。
+ノーズパッドは、どちらも大小付属しているが、EV は大を選んでもレンズが眼にかなり近い。
 
-その分風の巻き込みはEVのほうが少なくなっている。
+その分風の巻き込みは EV のほうが少なくなっている。
 
-にも関わらず、小さなベンチレーションが開いているEVのほうが適当な量の空気の循環が起きて、蒸れず眼に当たらずのいい感じの状態を保ってくれる。
+にも関わらず、小さなベンチレーションが開いている EV のほうが適当な量の空気の循環が起きて、蒸れず眼に当たらずのいい感じの状態を保ってくれる。
 
-たまたま空気が循環するRADARと違って、RADAR EVは計算して穴を開けているようだ。
+たまたま空気が循環する RADAR と違って、RADAR EV は計算して穴を開けているようだ。
 
 ### まとめ
 
 同シリーズだがフィット感が変わるので、要試着。
 
-Prizmレンズはいいぞ。CXシーズンまでにTrailも購入したい。
-
-
+Prizm レンズはいいぞ。CX シーズンまでに Trail も購入したい。
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -78,10 +70,8 @@ Prizmレンズはいいぞ。CXシーズンまでにTrailも購入したい。
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.06.19
 </div>
 
-
 <div class="amazlet-detail">
 OAKLEY (2016-02-01)
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

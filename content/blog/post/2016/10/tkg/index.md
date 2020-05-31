@@ -6,14 +6,10 @@ date: 2016-10-26T01:44:00+00:00
 
 cover: DSC_0268.jpg
 
-tags: ["TOURING","FOOD"]
-
+tags: ["TOURING", "FOOD"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0268.jpg" width="640" />
-</div>
 
-
+![image](./DSC_0268.jpg)
 
 ### What&#8217;s your TKG style?
 
@@ -27,11 +23,7 @@ tags: ["TOURING","FOOD"]
 
 先日のツーリング時に「究極の卵かけご飯の作り方」なるものを学んだので紹介したい。
 
-
-
 ### 卵かけご飯専門
-
-
 
 会場は大阪北部の山を登り、京都に抜けたすぐそこにある「弁天の里」
 
@@ -43,39 +35,31 @@ tags: ["TOURING","FOOD"]
 
 だが、ご飯のおかわりは有料。商売上手である。
 
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0267.jpg" width="640" />
-</div>
-
-
+![image](./DSC_0267.jpg)
 
 <div style="text-align: center;">
   <b>卵かけご飯定食並（450円）＋唐揚げ（150円）</b>
 </div>
 
-唐揚げは別に無くてもいいので、450円でこの本格日本の朝ごはんが食べられる。
+唐揚げは別に無くてもいいので、450 円でこの本格日本の朝ごはんが食べられる。
 
 卵かけ放題で。
 
-我が家の場合、ジュース1杯で走り始めてここで朝食を取ればばっちりの距離なのでここを起点に山岳ツーリングを楽しめる。
+我が家の場合、ジュース 1 杯で走り始めてここで朝食を取ればばっちりの距離なのでここを起点に山岳ツーリングを楽しめる。
 
-### 究極TKGの作り方
+### 究極 TKG の作り方
 
 ここで支持されている作り方はこうだ。
 
-
-
-  1. 白身だけをご飯に投入して混ぜ合わせる
-  2. ご飯の真ん中をくぼませて黄身を入れる
-  3. 黄身を割り、お好みの醤油をかける
+1. 白身だけをご飯に投入して混ぜ合わせる
+2. ご飯の真ん中をくぼませて黄身を入れる
+3. 黄身を割り、お好みの醤油をかける
 
 以上である。
 
-重要なのは1の段階で、白身を綺麗に分離する必要があるが、料理の心得があれば特に問題はない。白いご飯に白身が絡み合い、さながら宝石のような輝きを持ったところの中央に新鮮で張りのある黄身を投入。
+重要なのは 1 の段階で、白身を綺麗に分離する必要があるが、料理の心得があれば特に問題はない。白いご飯に白身が絡み合い、さながら宝石のような輝きを持ったところの中央に新鮮で張りのある黄身を投入。
 
-すると冒頭のように魅力あふれるTKGの出来上がりというわけだ。
+すると冒頭のように魅力あふれる TKG の出来上がりというわけだ。
 
 順番で味が変わるかどうかは半信半疑だったが、食べた瞬間、怒涛のような黄身の風味が口の中に広がった。
 
@@ -88,8 +72,6 @@ tags: ["TOURING","FOOD"]
 ちなみに家で上記の作り方を再現しても、普通の卵かけご飯とは違った味になることを報告しておく。
 
 流石に新鮮高級卵と同じ味とはいかないが、ちょっとした工夫で朝ごはんが美味しくなるのであれば大歓迎だ。
-
-
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -104,10 +86,8 @@ tags: ["TOURING","FOOD"]
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.10.26
 </div>
 
-
 <div class="amazlet-detail">
 井ゲタ醤油 <br /> 売り上げランキング: 7,112
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

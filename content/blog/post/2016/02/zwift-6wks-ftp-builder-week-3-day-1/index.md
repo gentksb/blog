@@ -9,9 +9,7 @@ cover: 2016-02-15_2000270.jpg
 tags: ["Zwift", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-02-15_2000270.jpg" width="640" />
-</div>
+![image](./2016-02-15_2000270.jpg)
 
 ### 3 週間目スタート
 

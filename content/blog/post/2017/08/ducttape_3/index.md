@@ -5,34 +5,27 @@ type: post
 date: 2017-08-31T05:05:00+00:00
 
 cover: DSC_7836.jpg
-
-
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" data-original-height="900" data-original-width="1600" height="360" src="./DSC_7836.jpg" width="640" />
-</div>
+
+![image](./DSC_7836.jpg)
 
 なかなか空気漏れの収まらなかったバルブ付近だが、利用するシーラントを多くしたらあっさり空気抜けが許容範囲に収まった。写真はダメだったときのやつ。
 
 締まらない結末だがチューブレスレディなのでシーラントをケチってはいけないということだろう…
 
-ダクトテープは自転車の組み上げにも割りと使えるので1本あって損はしないと思う、安いし。
+ダクトテープは自転車の組み上げにも割りと使えるので 1 本あって損はしないと思う、安いし。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" data-original-height="900" data-original-width="1600" height="360" src="./DSC_7854.jpg" width="640" />
-</div>
+![image](./DSC_7854.jpg)
 
-やっぱりタイヤはIRCかな。聞くところによると、ロード系のチューブレス基準はBST-RとETRTOがあって、タイヤとリムの設計がずれているとうまくいかないことが多いらしい。
+やっぱりタイヤは IRC かな。聞くところによると、ロード系のチューブレス基準は BST-R と ETRTO があって、タイヤとリムの設計がずれているとうまくいかないことが多いらしい。
 
-MAVICからロードUSTが出てきたことだし、これを機に統一して欲しい…MTBもUSTの方が安心感あったし。
+MAVIC からロード UST が出てきたことだし、これを機に統一して欲しい…MTB も UST の方が安心感あったし。
 
-現実的にはチューブレスレディ規格とお付き合いしていかなければならないと思うので、今まで使っていたNotubesのシーラントをもっと良いものに変えることにした。
+現実的にはチューブレスレディ規格とお付き合いしていかなければならないと思うので、今まで使っていた Notubes のシーラントをもっと良いものに変えることにした。
 
-同じく<a href="http://amzn.to/2eshsPc" target="_blank">NotubesのRace Sealant</a>も検討したのだがせっかくだしいい噂のある<a href="http://amzn.to/2xP3z1x" target="_blank">Caffelatex</a>をチョイス。
+同じく<a href="http://amzn.to/2eshsPc" target="_blank">Notubes の Race Sealant</a>も検討したのだがせっかくだしいい噂のある<a href="http://amzn.to/2xP3z1x" target="_blank">Caffelatex</a>をチョイス。
 
-泡状になってサイドやリム側まで回り込んでくれるとの謳い文句。ついでにNotubesと違って中性らしいので、リムやテープへの攻撃性も低い。
-
-
+泡状になってサイドやリム側まで回り込んでくれるとの謳い文句。ついでに Notubes と違って中性らしいので、リムやテープへの攻撃性も低い。
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -60,8 +53,6 @@ MAVICからロードUSTが出てきたことだし、これを機に統一して
   </div>
 </div>
 
-
-
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01MRK8TB7/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="DT SWISS チューブレス バルブ 40mm(VLC05400)" src="https://images-fe.ssl-images-amazon.com/images/I/31ZqGrKP18L._SL160_.jpg" style="border: none;" /></a>
@@ -75,10 +66,8 @@ MAVICからロードUSTが出てきたことだし、これを機に統一して
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.08.31
 </div>
 
-
 <div class="amazlet-detail">
 DT SWISS <br /> 売り上げランキング: 135,907
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -90,8 +79,6 @@ DT SWISS <br /> 売り上げランキング: 135,907
   <div class="amazlet-footer" style="clear: left;">
   </div>
 </div>
-
-
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -106,10 +93,8 @@ DT SWISS <br /> 売り上げランキング: 135,907
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.08.31
 </div>
 
-
 <div class="amazlet-detail">
 EFFETO-MARIPOSA <br /> 売り上げランキング: 58,808
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

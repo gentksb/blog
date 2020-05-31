@@ -9,9 +9,7 @@ cover: DSC_0629.jpg
 tags: ["CX", "TIPS", "Workout", "RACE"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0629.jpg" width="640" />
-</div>
+![image](./DSC_0629.jpg)
 
 ### セミスリックタイヤというスタイル
 
@@ -51,9 +49,7 @@ Speed terrane が出てくるまでの数年間、フロント：<a href="http:/
 
 泥路面で全く進まず普段のシングル順位から程遠い結果に…
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="./IMG_9411.jpg" width="640" />
-</div>
+![image](./IMG_9411.jpg)
 
 ### 路面に対するタイヤ選択肢
 

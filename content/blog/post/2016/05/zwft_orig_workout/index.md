@@ -6,33 +6,28 @@ date: 2016-05-31T02:07:00+00:00
 
 cover: Workout.png
 
-tags: ["TIPS","Zwift"]
-
+tags: ["TIPS", "Zwift"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./Workout.png" width="640" height="360" border="0" />
-</div>
+![image](./Workout.png)
 
 ### ワークアウトエディタ
 
-Zwiftのワークアウト機能では、自分でオリジナルメニューを作成することも出来る。
+Zwift のワークアウト機能では、自分でオリジナルメニューを作成することも出来る。
 
-デフォルト状態で大量のメニューが用意されていることがZwiftの良いところなので、必ずしも使う必要はないのだが、自分でメニューを決めたいパワートレーニング上級者には嬉しい機能だ。
+デフォルト状態で大量のメニューが用意されていることが Zwift の良いところなので、必ずしも使う必要はないのだが、自分でメニューを決めたいパワートレーニング上級者には嬉しい機能だ。
 
 ワークアウトエディタで現状できることは以下の通り。
 
-  1. メニューのパワー値・時間・インターバルタイム・ケイデンス指定
-  2. ワークアウト中メッセージ表示
-  3. ウォームアップ・クールダウンの自動設定
-  4. ワークアウトファイルの書き出し
-  5. パワー値メニューのFTP比変換
+1. メニューのパワー値・時間・インターバルタイム・ケイデンス指定
+2. ワークアウト中メッセージ表示
+3. ウォームアップ・クールダウンの自動設定
+4. ワークアウトファイルの書き出し
+5. パワー値メニューの FTP 比変換
 
 ### 操作説明
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./edit.png" width="640" height="364" border="0" />
-</div>
+![image](./edit.png)
 
 操作は直感的でそこまで難しくはない。
 
@@ -48,37 +43,29 @@ Zwiftのワークアウト機能では、自分でオリジナルメニューを
 
 テキスト表示は表示開始時間と表示するメッセージの入力（制限がきつい）が可能。表示時間はいじれない模様。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./ftp2.png" width="320" height="283" border="0" />
-</div>
+![image](./ftp2.png)
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./ftp.png" width="320" height="116" border="0" />
-</div>
+![image](./ftp.png)
 
-設定を変更しなければ、W数ベースをメニューを組むことになるが、**実は「自分のFTP比」でメニューが記録されている。**左下の&#8221;DISPLAY&#8221;のプルダウンでFTP%表示に変更可能。
+設定を変更しなければ、W 数ベースをメニューを組むことになるが、**実は「自分の FTP 比」でメニューが記録されている。**左下の&#8221;DISPLAY&#8221;のプルダウンで FTP%表示に変更可能。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./ex.png" width="640" height="116" border="0" />
-</div>
+![image](./ex.png)
 
-作ったワークアウトは &#8220;My documentZwiftWorkouts&#8221;内に.zwoでメニューごとに保存される。
+作ったワークアウトは &#8220;My documentZwiftWorkouts&#8221;内に.zwo でメニューごとに保存される。
 
-他人が作ったzwoファイルでも、このフォルダ内に置けばZwift起動時に読み込んでくれるはず（試していない）。
+他人が作った zwo ファイルでも、このフォルダ内に置けば Zwift 起動時に読み込んでくれるはず（試していない）。
 
-前述の通り、FTP比で記録されているので、他人でも簡単に流用できる。
+前述の通り、FTP 比で記録されているので、他人でも簡単に流用できる。
 
 この機能を使えば、パワートレーニングに詳しい人が作ったメニューを仲間内で簡単に試せる。
 
-今回作ったTabataと、レース前のウォームアップメニューをアップロードしたので、好きに使ってみて欲しい。
+今回作った Tabata と、レース前のウォームアップメニューをアップロードしたので、好きに使ってみて欲しい。
 
 <blockquote class="tr_bq">
   <p>
     Zwift Workout File<br /> <a href="https://drive.google.com/open?id=0B0fDVdF8jC_UaWVrUGdUNEE3LVE">https://drive.google.com/open?id=0B0fDVdF8jC_UaWVrUGdUNEE3LVE</a>
   </p>
 </blockquote>
-
-&nbsp;
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -95,10 +82,8 @@ Zwiftのワークアウト機能では、自分でオリジナルメニューを
   posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 16.05.31
 </div>
 
-
 <div class="amazlet-detail">
 Garmin <br /> 売り上げランキング: 9,444
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -111,4 +96,3 @@ Garmin <br /> 売り上げランキング: 9,444
      
   </div>
 </div>
-

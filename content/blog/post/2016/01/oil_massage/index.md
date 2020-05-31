@@ -7,9 +7,7 @@ cover: "DSC_6745.jpg"
 tags: ["CX", "TIPS", "REVIEW"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_6888.jpg" width="640" />
-</div>
+![image](./DSC_6888.jpg)
 
 ### 気のせいじゃない
 
@@ -47,7 +45,7 @@ SSCX で踏み倒したので、本来なら筋肉にかなりのダメージが
 
 購入したのは「<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B019FM9L94/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B019FM9L94&#038;linkCode=as2&#038;tag=gensobunya-22">for CX</a>」と「<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00H4ZTOZ6/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00H4ZTOZ6&#038;linkCode=as2&#038;tag=gensobunya-22">Recovery</a>」。
 
-おまけで<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00H7WLTP4/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00H7WLTP4&#038;linkCode=as2&#038;tag=gensobunya-22">Recovery&nbsp;Yellow</a>も貰いました。
+おまけで<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00H7WLTP4/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00H7WLTP4&#038;linkCode=as2&#038;tag=gensobunya-22">Recovery Yellow</a>も貰いました。
 
 前者はレース前の血流増進＋呼吸を楽にする効果、後者は筋肉をほぐしてリラックスさせ、回復を促すというものです。
 
@@ -67,9 +65,7 @@ SSCX で踏み倒したので、本来なら筋肉にかなりのダメージが
 
 ### これ、効くぞ
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="400" src="./DSC_6745.jpg" width="225" />
-</div>
+![image](./DSC_6745.jpg)
 
 本格的な実感をしたのは<a rel="nofollow" href="https://amzn.to/2XhMqtX">Recovery</a>が先でした。
 
@@ -87,9 +83,7 @@ SSCX で踏み倒したので、本来なら筋肉にかなりのダメージが
 
 ### もう階段なんて怖くない
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./IMG_20150112_091114.jpg" width="640" />
-</div>
+![image](./IMG_20150112_091114.jpg)
 
 <a rel="nofollow" href="https://amzn.to/2UEbnmy">for CX</a>の実感はついこの間、年末の JCX 中井ステージ。
 
@@ -97,9 +91,7 @@ SSCX で踏み倒したので、本来なら筋肉にかなりのダメージが
 
 心肺を容赦なく攻めてくるスタイル。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_6845.jpg" width="640" />
-</div>
+![image](./DSC_6845.jpg)
 
 ちなみに、今年はキャンバー登り（ラン必須）も追加され、更なる人間力を試される事に。マジでいらないからそういうの…
 

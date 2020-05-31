@@ -9,9 +9,7 @@ cover: DSC_0935.jpg
 tags: ["MTB", "REVIEW"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_0935.jpg" width="640" height="362" border="0" />
-</div>
+![image](./DSC_0935.jpg)
 
 組んだばかりの MTB を早速シェイクダウンへ、トレイルが近い家は良い。
 
@@ -21,13 +19,9 @@ tags: ["MTB", "REVIEW"]
 
 王滝がメインスコープになるバイクなので、それにちなんだパーツを幾つか入れてみたなかで、当たりのパーツをメモ。どれも有名なので、今更インプレするまでもないかもしれないが…
 
-&nbsp;
-
 ### ESI Grips chunky
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_0942.jpg" width="640" height="362" border="0" />
-</div>
+![image](./DSC_0942.jpg)
 
 グリップに悩んでいたところオススメされ、Ergon と悩みながら購入した一品。
 
@@ -37,10 +31,6 @@ tags: ["MTB", "REVIEW"]
 
 ゴム製のグリップは放っておくと加水分解してベトベトになってしまうが、ESI グリップはシリコン製なのでそうはならない。カラーが多いのもポイント高い。
 
-<div>
-   
-</div>
-
 絶妙なグリップと振動吸収性で、以前の経験からカーボンハンドルの導入を迷っていた気持ちが雲散霧消。
 
 王滝のような長期戦で、後半の握力を奪いに来る微振動をほとんどカットしてくれる。
@@ -48,8 +38,6 @@ tags: ["MTB", "REVIEW"]
 ロックオンではないので、装着がクソ面倒だがそれだけの価値がある一品。
 
 最近は気持ちだけエルゴノミック形状になったバージョンが有るらしい。
-
-&nbsp;
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -95,9 +83,7 @@ MTB 界における 21 世紀最大の発明らしい。
 
 ### その他
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./TOG_Graph_51500254-cff3-456f-be17-8a1aca3badeb_grande.png" width="307" height="320" border="0" />
-</div>
+![image](./TOG_Graph_51500254-cff3-456f-be17-8a1aca3badeb_grande.png)
 
 <a href="https://togs.com/" target="_blank" rel="noopener">TOGS</a>も使ってみた。ESI グリップの写真でよく見るとついているのがわかると思う。
 

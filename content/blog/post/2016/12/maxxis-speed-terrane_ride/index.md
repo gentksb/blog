@@ -9,13 +9,9 @@ cover: DSC_0453.jpg
 tags: ["CX", "REVIEW", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0453.jpg" width="640" />
-</div>
+![image](./DSC_0453.jpg)
 
-###
-
-CX 常設コースで思う存分試してきた、泥だけど。
+## CX 常設コースで思う存分試してきた、泥だけど。
 
 前日に<a href="/2016/12/maxxis-speed-terrane.html" target="_blank">GIYO GF-94T でなんとかビードを上げた</a>Speed Terrane を早速試走してみた。
 
@@ -33,11 +29,9 @@ Speed Terrane の得意分野はドライコースや重い芝のコースなの
 
 泥なのでフロント 1.6BAR のリア 1.4BAR で挑む。
 
-### &#8220;泥でもサンドタイヤ信仰&#8221;
+## 泥でもサンドタイヤ信仰
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0461.jpg" width="640" />
-</div>
+![image](./DSC_0461.jpg)
 
 野辺山も意外とサンドタイヤで走れる。これは自分で検証した結果。
 

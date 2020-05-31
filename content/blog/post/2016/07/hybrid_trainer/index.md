@@ -9,11 +9,7 @@ cover: DSC_6483.jpg
 tags: ["CX", "MTB", "TT", "REVIEW", "Workout", "ROAD"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_6483.jpg" width="640" height="360" border="0" />
-</div>
-
-&nbsp;
+![image](./DSC_6483.jpg)
 
 ### ローラーの選択基準
 
@@ -22,8 +18,6 @@ tags: ["CX", "MTB", "TT", "REVIEW", "Workout", "ROAD"]
 昔は「脚力アップなら固定」「スキルアップに 3 本」で区分されていましたが、今はスマートローラーやハイブリッド型を始め、「トレーニングとしての＋ α」や「折りたたみやすさ」「自転車への負担の軽さ」「静かさ」なども評価軸に上がってきます。
 
 そして、昨今のディスクロード化や、シクロクロスの流行で新しく出てきた問題点がエンド幅です。リアハブ軸を固定する固定ローラーはもちろん、ダイレクトドライブ型やハイブリッド型でも問題になってきます。
-
-&nbsp;
 
 ### FEEDBACK Sports Portable trainer
 
@@ -43,11 +37,7 @@ tags: ["CX", "MTB", "TT", "REVIEW", "Workout", "ROAD"]
 
 [MINOURA ハイブリッドローラー][2]も検討しましたが、負荷装置の音が大きすぎることと、リモート操作ユニットのせいで持ち運びが煩雑になるのでボツとしました。
 
-&nbsp;
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7737.jpg" width="225" height="400" border="0" />
-</div>
+![image](./DSC_7737.jpg)
 
 <img src="./DSC_7739.jpg" width="225" height="400" border="0" />
 

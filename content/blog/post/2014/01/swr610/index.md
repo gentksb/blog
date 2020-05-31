@@ -6,34 +6,30 @@ date: 2014-01-24T06:49:00+00:00
 
 cover: IMG_20131228_103711.jpg
 
-tags: ["TIPS","REVIEW","ROAD"]
-
+tags: ["TIPS", "REVIEW", "ROAD"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20131228_103711.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="./IMG_20131228_103711.jpg" width="480" /></a>
-</div>
+
+![image](IMG_20131228_103711.jpg)
 
 電動変速にしか無いメリットの一つ。
 
 レバー以外での変速動作。
 
-お世辞にもクライマーではないので、スプリンタースイッチを9070化と共に導入。
+お世辞にもクライマーではないので、スプリンタースイッチを 9070 化と共に導入。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20131228_103655.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="./IMG_20131228_103655.jpg" width="240" /></a>
-</div>
+![image](IMG_20131228_103655.jpg)
 
 こんな工具をつかってバーテープに穴をあけます。こいつのせいでバーテープ巻の難易度が跳ね上がります。
 
-9070に組みかえしてから、何回かロングライドに使いました。
+9070 に組みかえしてから、何回かロングライドに使いました。
 
-結論から言うと、Di2なのに増設スイッチを使わないのは非常に勿体無いです。
+結論から言うと、Di2 なのに増設スイッチを使わないのは非常に勿体無いです。
 
 というか付けないならワイヤーのほうがいいと思います、価格的に。
 
 以下に、レースでのスプリント時以外のメリットを記します。
 
-**<u>メリット①　下り基調</u>**
+**<u>メリット ① 　下り基調</u>**
 
 下り基調だと、空気抵抗を減らすだけで相当楽にスピードをのせることが出来ます。
 
@@ -45,19 +41,17 @@ tags: ["TIPS","REVIEW","ROAD"]
 
 スプリンタースイッチのみでリアのアップダウンができます。レースしなくても役に立つんです。
 
-<u>**メリット②　巡行**</u>
+<u>**メリット ② 　巡行**</u>
 
 自分は、巡航時にブラケットを握るのではなく、ハンドルとブラケットカバーで出来ている平らな部分に手を置くだけのことが多いです。
 
 実は、レバーよりスプリンタースイッチのほうが近いのです。リアだけの変速がらくちんです。
 
-…書き上げてみましたが、正直大したことないように見えます。しかし、特に①は一度使うとやみつきです。
+…書き上げてみましたが、正直大したことないように見えます。しかし、特に ① は一度使うとやみつきです。
 
-シマノの電動レバーはクリック感に乏しいので、そこだけが不満（EPS見習え！）なのですがスプリンタースイッチはクリック感バッチリです。
+シマノの電動レバーはクリック感に乏しいので、そこだけが不満（EPS 見習え！）なのですがスプリンタースイッチはクリック感バッチリです。
 
-TTは電動一択ですが、ロードの電動変速もいいものですよ。というお話でした。
-
-
+TT は電動一択ですが、ロードの電動変速もいいものですよ。というお話でした。
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -72,10 +66,8 @@ TTは電動一択ですが、ロードの電動変速もいいものですよ。
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 3M (スリーエム) <br />売り上げランキング: 39
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -87,4 +79,3 @@ TTは電動一択ですが、ロードの電動変速もいいものですよ。
   <div class="amazlet-footer" style="clear: left">
   </div>
 </div>
-

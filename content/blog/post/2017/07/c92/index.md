@@ -19,10 +19,8 @@ tags: ["Zwift", "COMIKET", "Workout", "RACE", "ROAD"]
 
 下記の 2 冊のほかに、手が回れば関西飯ポタ本を出す可能性あり（低）
 
-<div class="separator" style="clear: both; text-align: center;">
-<img border="0" data-original-height="1600" data-original-width="1140" height="320" src="./DD47GDkVoAEOn4e_orig.jpg" width="227" />
-</div>
-<div style="float:none;">
+![image](./DD47GDkVoAEOn4e_orig.jpg)
+
 <h3>銀輪練之概略</h3>
 新刊。ナマケモノ対応のロードトレーニング入門書です。
 

@@ -13,11 +13,7 @@ tags: ["CX", "TIPS", "Workout", "ROAD"]
    
 </div>
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_0346.jpg" width="640" height="362" border="0" />
-</div>
-
-&nbsp;
+![image](./DSC_0346.jpg)
 
 ### 万能ローラー！のはずが…
 
@@ -31,9 +27,7 @@ Omniumu Trainer を持っていたが、シクロクロスのフォーク多様�
 
 これで 15mm スルーアクスルと同じハブ外径で（ココ重要）中のスペースが 12mm 軸となる。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_0347.jpg" width="640" height="362" border="0" />
-</div>
+![image](./DSC_0347.jpg)
 
 しかし、アクスルが通らない。
 
@@ -41,9 +35,7 @@ Omniumu Trainer を持っていたが、シクロクロスのフォーク多様�
 
 アダプタ部分だけをフォークに当ててみてよーく観察したら問題が発覚。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_0345.jpg" width="640" height="362" border="0" />
-</div>
+![image](./DSC_0345.jpg)
 
 …芯がズレてる！！！！
 
@@ -52,8 +44,6 @@ Omniumu Trainer を持っていたが、シクロクロスのフォーク多様�
 15mm アクスル用の状態でシャフトを通すことはできるけれど、本来アクスルとフォークが接する部分ではない箇所に力がかかるので使用はとりやめ。
 
 TCR の 12mm スルーアクスル用ホイールと、ローラーのアダプタを見比べて「15mm スルーアクスルと 12mm スルーアクスルはハブ側の外径が違う」ということがわかった。
-
-&nbsp;
 
 ### 悪いのはどっち？
 
@@ -65,11 +55,7 @@ TCR の 12mm スルーアクスル用ホイールと、ローラーのアダプ�
 
 そうしたら<a href="https://www.feedbacksports.com/product/end-cap-kit-12mm-thru-axle/" target="_blank" rel="noopener">こんなページ</a>が…
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./1.png" width="640" height="392" border="0" />
-</div>
-
-&nbsp;
+![image](./1.png)
 
 <div class="separator" style="clear: both; text-align: center;">
    
@@ -81,11 +67,7 @@ TCR の 12mm スルーアクスル用ホイールと、ローラーのアダプ�
 
 ん？
 
-&nbsp;
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./E382ADE383A3E38397E38381E383A31.png" width="640" height="252" border="0" />
-</div>
+![image](./E382ADE383A3E38397E38381E383A31.png)
 
 こいつ…シレッと対策品出してやがる！！！！！！！！
 
@@ -101,17 +83,13 @@ TCR の 12mm スルーアクスル用ホイールと、ローラーのアダプ�
 
 届いたパーツがこちら。キレイなシルバー。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_0379.jpg" width="640" height="362" border="0" />
-</div>
+![image](./DSC_0379.jpg)
 
 取り付けもバッチリ、付属の 12mm アクスルで完了した。
 
 滑らかに入っていく精度は流石の一言（GIANT も Feedback も）
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_0380.jpg" width="640" height="362" border="0" />
-</div>
+![image](./DSC_0380.jpg)
 
 というわけで 12mm スルーアクスル（最近の CX やディスクロード）で PortableTrainer を使う際は気をつけましょう。
 

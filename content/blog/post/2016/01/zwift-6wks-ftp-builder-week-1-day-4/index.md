@@ -9,9 +9,7 @@ cover: 2016-01-27_1854110.jpg
 tags: ["Zwift", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="348" src="./2016-01-27_1854110.jpg" width="640" />
-</div>
+![image](./2016-01-27_1854110.jpg)
 
 ### 1 週間目、終了
 
@@ -25,9 +23,7 @@ Zwift の week workout は 5 日で 1 週間とカウントしている。そし
 
 金曜は飲み会だからレストです！
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="348" src="./2016-01-27_1903322.jpg" width="640" />
-</div>
+![image](./2016-01-27_1903322.jpg)
 
 View はこのカメラモトから撮っているかのような角度が好み。
 

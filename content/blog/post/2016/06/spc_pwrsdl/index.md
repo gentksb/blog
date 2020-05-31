@@ -6,46 +6,40 @@ date: 2016-06-16T06:01:00+00:00
 
 cover: DSC_7658.jpg
 
-tags: ["REVIEW","ROAD"]
-
+tags: ["REVIEW", "ROAD"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_7658.jpg" width="640" />
-</div>
+
+![image](./DSC_7658.jpg)
 
 尻の座り具合は自転車乗りに取って永遠とテーマと言ってもいい。
 
-今までは、写真のパワーサドルと同じSPECIALIZEDのRomin Proを購入してサドル探しの度は一旦終わりを迎えたはずだった。
+今までは、写真のパワーサドルと同じ SPECIALIZED の Romin Pro を購入してサドル探しの度は一旦終わりを迎えたはずだった。
 
-しかし、4年の時を経たサドルは無残にもベースが割れてしまい、フローティング機構を備えてしまったのでこの度交換することになった。
+しかし、4 年の時を経たサドルは無残にもベースが割れてしまい、フローティング機構を備えてしまったのでこの度交換することになった。
 
-縁あって知人からPowerサドルの新品を譲り受けていたが、ようやく使う時が来たのでインプレしていこうと思う。
-
-
+縁あって知人から Power サドルの新品を譲り受けていたが、ようやく使う時が来たのでインプレしていこうと思う。
 
 ### 基本性能
 
-以前使っていたRominと同じく143mm幅を使っている。以前は143mmは中間サイズだったような気がするが今は最低サイズになっているらしい。
+以前使っていた Romin と同じく 143mm 幅を使っている。以前は 143mm は中間サイズだったような気がするが今は最低サイズになっているらしい。
 
 取り扱いショップには適正サドル幅を測る工具が売っているため、ぜひとも使ってから購入して欲しい。
 
 この幅を選択できるシステムと、中央の溝のためにスペシャのサドルを買っていると言ってもいい。
 
-中央の溝はRominに比べてかなり広くなっている。
+中央の溝は Romin に比べてかなり広くなっている。
 
-サドルの曲線具合はRominより少なく、どちらかというと同社フラット系サドルのToupeに近い。
+サドルの曲線具合は Romin より少なく、どちらかというと同社フラット系サドルの Toupe に近い。
 
 表面加工はまあ普通。マット調ですべり止めも適度に効いている。
 
-グレードはチタンレールのPower Expert。
+グレードはチタンレールの Power Expert。
 
-流石に重量はカーボンレールのRomin Proに一歩譲る。
+流石に重量はカーボンレールの Romin Pro に一歩譲る。
 
 ### 特徴
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_7644.jpg" width="640" />
-</div>
+![image](./DSC_7644.jpg)
 
 このサドル最大の特徴はノーズの短さ。
 
@@ -59,21 +53,17 @@ tags: ["REVIEW","ROAD"]
 
 パワーは…前乗り派ではないのでそこまで変化は無いような。
 
-また、前乗りにしても、ノーズが少ないのでUCI規定の50mm/0mm規定に引っかかりづらいこともレーサーとしては非常に大きい。
+また、前乗りにしても、ノーズが少ないので UCI 規定の 50mm/0mm 規定に引っかかりづらいこともレーサーとしては非常に大きい。
 
 ただ、自分は後ろ乗り派。ポジションが出るようにセッティングしたところ、レールの目盛を少しオーバーするところまでサドルを引いてやっとポジションが完成。危うくシートポストを買い直すところだった。
 
-身長160cmの自分でも、クランク軸からの後退幅50mmを余裕でクリアする仕上がりとなった。上から見るとどれくらい短いかわかりやすい。
+身長 160cm の自分でも、クランク軸からの後退幅 50mm を余裕でクリアする仕上がりとなった。上から見るとどれくらい短いかわかりやすい。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_7643.jpg" width="640" />
-</div>
+![image](./DSC_7643.jpg)
 
 まだ室内利用のみのインプレとなるが、フルカーボンサドルに比べればパッドの厚みがあるので、後ろ乗りのポジションを取っている限りは快適性は上がるものと予想している。
 
 前乗りしないとこのサドルの真価は引き出せないとは思うものの、後ろ乗りでも問題なく使えて一安心。
-
-
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -88,10 +78,8 @@ tags: ["REVIEW","ROAD"]
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.06.16
 </div>
 
-
 <div class="amazlet-detail">
 fabric(ファブリック) (2015-10-14)<br /> 売り上げランキング: 31,789
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -103,4 +91,3 @@ fabric(ファブリック) (2015-10-14)<br /> 売り上げランキング: 31,78
   <div class="amazlet-footer" style="clear: left;">
   </div>
 </div>
-

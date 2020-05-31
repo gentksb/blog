@@ -9,9 +9,7 @@ cover: 2016-02-17_1909510.jpg
 tags: ["Zwift", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-02-17_1909510.jpg" width="640" />
-</div>
+![image](./2016-02-17_1909510.jpg)
 
 ### 気分転換
 
@@ -25,9 +23,7 @@ OmniumTrainer だとアウタートップでも指示通りの 40RPM にはな�
 
 ### プロとの邂逅
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_7121.jpg" width="640" />
-</div>
+![image](./DSC_7121.jpg)
 
 Day3 の Foundation 始めたら、プロロードレーサーのワレン・バルギルを発見。
 

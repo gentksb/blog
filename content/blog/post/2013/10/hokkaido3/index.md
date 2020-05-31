@@ -13,23 +13,17 @@ tags: ["TOURING", "ROAD"]
 
 いわゆる広域農道で 20km くらい車通のすくない平地があるそうで…路面も GOOD
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4135.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4135.jpg" height="358" width="640" /></a>
-</div>
+![image](DSC_4135.jpg)
 
-&nbsp;こんなかんじの道が延々 20km 以上！
+こんなかんじの道が延々 20km 以上！
 
 TT の大会開いたら人気が出そうなコースです
 
 写真が少ないのはエアロポジションでテンション上がり続けていた影響で
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4137.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4137.jpg" height="358" width="640" /></a>
-</div>
+![image](DSC_4137.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4136.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4136.jpg" height="358" width="640" /></a>
-</div>
+![image](DSC_4136.jpg)
 
 道の駅で鶏の半身揚げを食し、T-800 に載せて頂いたりしました。
 

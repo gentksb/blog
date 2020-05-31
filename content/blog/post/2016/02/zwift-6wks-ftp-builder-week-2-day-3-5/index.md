@@ -9,9 +9,7 @@ cover: 2016-02-06_1144120.jpg
 tags: ["TIPS", "Zwift", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-02-06_1144120.jpg" width="640" />
-</div>
+![image](./2016-02-06_1144120.jpg)
 
 ### Week 2 Day 3rd
 
@@ -25,9 +23,7 @@ tags: ["TIPS", "Zwift", "Workout"]
 
 ### Week 2 Day 4th &#8211; Tempo
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-02-09_1906350.jpg" width="640" />
-</div>
+![image](./2016-02-09_1906350.jpg)
 
 先週も出てきたテンポ走…だけどなんかメニュー量が多い！
 
@@ -37,9 +33,7 @@ tags: ["TIPS", "Zwift", "Workout"]
 
 いきなり 210W\*4min\*4 とか入ってるし…
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-02-09_1922071.jpg" width="640" />
-</div>
+![image](./2016-02-09_1922071.jpg)
 
 キツイと思ったら、思ってたより休憩が長かったでござる。
 
@@ -49,9 +43,7 @@ tags: ["TIPS", "Zwift", "Workout"]
 
 ### Week 2 Day 5th &#8211; Option
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-02-10_2000330.jpg" width="640" />
-</div>
+![image](./2016-02-10_2000330.jpg)
 
 先週は休みだった 5 日目ですが、2 週目はメニューあり。
 

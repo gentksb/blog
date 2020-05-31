@@ -21,17 +21,13 @@ TT レースとかイベント遠征とかトライアスロンに使う予定�
 
 **購入前**の写真がこちら
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="./DSC_1455.jpg" height="225" width="400" />
-</div>
+![image](./DSC_1455.jpg)
 
 いいね！かこいいね！
 
 **購入後**の写真がこちら
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="./DSC_1500.jpg" height="225" width="400" />
-</div>
+![image](./DSC_1500.jpg)
 
 迫り来る現実
 
@@ -53,22 +49,15 @@ TT レースとかイベント遠征とかトライアスロンに使う予定�
 
 前乗りにすごく良さそうだしね！
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="./DSC_1530.jpg" height="320" width="180" />
-</div>
+![image](./DSC_1530.jpg)
 
 これからがんばってカスタムしていきます。
 
 ハンドル落差を少しでも演出するために平行ブレーキレバーのブルホーンハンドルも買おうかと。候補は Synop とか SVET ですねー
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
 ところで Di2 のケーブルルーティングを確認しようと BB 裏を確認したらこんな具合でした
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="./DSC_1518.jpg" height="400" width="225" />
-</div>
+![image](./DSC_1518.jpg)
 
 真ん中上部の穴からは FD ケーブルが、左は RD ケーブルが通っていました。
 

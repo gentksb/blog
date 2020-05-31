@@ -9,13 +9,9 @@ cover: 2015-10-01_2209230.jpg
 tags: ["TIPS", "Zwift", "REVIEW", "ROAD"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="./2015-10-01_2209230.jpg" />
-</div>
+![cover image](./2015-10-01_2209230.jpg)
 
-### \*\*
-
-「[Zwift][1]知ってますか？」\*\*
+## 「[Zwift][1]知ってますか？」
 
 ローラーのデータを PC に渡して、バーチャル空間で走行しているようにできるソフト。
 
@@ -25,7 +21,7 @@ tags: ["TIPS", "Zwift", "REVIEW", "ROAD"]
 
 登録したまま放っておいた覚えが合ったが、最近また身近なところで話を聞くようになったので思い切ってはじめて見ることに。
 
-### 必要なもの（ハードウェア）
+## 必要なもの（ハードウェア）
 
 ・PC
 
@@ -90,9 +86,7 @@ Dongguan Lontion Industrial Co., Ltd. <br /> 売り上げランキング: 925
 
 1 週間ほどして届いたブツがこちら。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_6558.jpg" width="640" />
-</div>
+![USB dongle](./DSC_6558.jpg)
 
 念のためドライバのオートインストールを切ってスキャンをしてからドライバをインストール。
 
@@ -108,18 +102,15 @@ Dongguan Lontion Industrial Co., Ltd. <br /> 売り上げランキング: 925
 
 ### 起動
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+![zwift image](./DSC_6560.jpg)
 
-<img border="0" height="640" src="./DSC_6560.jpg" width="360" />起動すると自動で ANT+レシーバーを認識。Strava みたいに標高や距離のチャレンジメニューがあるのでそれを選択。
+起動すると自動で ANT+レシーバーを認識。Strava みたいに標高や距離のチャレンジメニューがあるのでそれを選択。
 
 ただ、標準のバーチャルコースは 1 種類の模様。
 
 自動的にコースインするので、あとはペダルを漕げば勝手にパワーに応じた速度で走り出す。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2015-10-01_2209230.jpg" width="640" />
-</div>
+![zwift image](./2015-10-01_2209230.jpg)
 
 実際の画面はこんな感じ。
 

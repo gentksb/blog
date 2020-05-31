@@ -4,39 +4,38 @@ author: admin
 type: post
 date: 2014-12-27T02:20:00+00:00
 
-
-tags: ["TT","REVIEW","EC"]
-
+tags: ["TT", "REVIEW", "EC"]
 ---
+
 ### 激安ディスクホイール現る
 
 泣く子も黙る激安カーボンホイール通販 <a href="http://www.flocycling.com/" target="_blank">flo cycling</a>のディスクホイールを入手しました。
 
-本体599USD＋送料60USD＋消費税。
+本体 599USD ＋送料 60USD ＋消費税。
 
 <a href="http://rennmultisport.com/cgi-bin/store/commerce.cgi" target="_blank">RENN</a>とタメを張る激安っぷりである。
 
 商品ページはこちら
 
-[http://www.flocycling.com/wheels\_flo\_disc.php][1]
+[http://www.flocycling.com/wheels_flo_disc.php][1]
 
-RENNが発泡ウレタンにカーボンシートを被せた構造となっているのに対し、
+RENN が発泡ウレタンにカーボンシートを被せた構造となっているのに対し、
 
-FLO discはスポークホイールにカウルを被せた構造となっている。
+FLO disc はスポークホイールにカウルを被せた構造となっている。
 
 よって**振れ取りができる**。
 
-また、notubesのテープを使って**チューブレス化できる**。
+また、notubes のテープを使って**チューブレス化できる**。
 
 チューブレスタイヤは、現存するタイヤ構造の中で<strike>最も転がり抵抗が軽いため、</strike>
 
-<strike>TTにおけるメリットとなりえる（たぶん）</strike>
+<strike>TT におけるメリットとなりえる（たぶん）</strike>
 
-→高圧下では、ラテックスチューブ＋クリンチャーや軽量ブチルチューブ＋クリンチャーのほうが転がり抵抗を軽減できるようです（http://www.bicyclerollingresistance.com/specials/schwalbe-one-tubeless-clincher）
+→ [高圧下では、ラテックスチューブ＋クリンチャーや軽量ブチルチューブ＋クリンチャーのほうが転がり抵抗を軽減できるようです](http://www.bicyclerollingresistance.com/specials/schwalbe-one-tubeless-clincher)
 
-また、24.4mmリム幅となっており昨今の**幅広リムで25cタイヤと相性が良い**（はず）
+また、24.4mm リム幅となっており昨今の**幅広リムで 25c タイヤと相性が良い**（はず）
 
-**エアロ効果**はFLOが一番ウリにしている部分である。
+**エアロ効果**は FLO が一番ウリにしている部分である。
 
 ウネウネした形状が横風に効く（らしい）
 
@@ -44,22 +43,11 @@ FLO discはスポークホイールにカウルを被せた構造となってい
 
 ### ホイール形状
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+![image](2014-12-2719.38.16.jpg)
 
+パッと見はなかなか普通。HED のディスクホイールと似た形状をしている。ブレーキ面は黒いが、アルミクリンチャーリムである。
 
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="2014-12-2719.38.16.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="400" src="2014-12-2719.38.16.jpg" width="225" /></a><a href="2014-12-2719.43.33.jpg" imageanchor="1" style="clear: right; display: inline !important; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="400" src="2014-12-2719.43.33.jpg" width="225" /></a><a href="2014-12-2719.38.16.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="2014-12-2719.38.16.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
-</div>
-
-パッと見はなかなか普通。
-
-HEDのディスクホイールと似た形状をしている。
-
-　ブレーキ面は黒いが、アルミクリンチャーリムである。
-
-　前述の通り、公称でチューブレスレディ。
+前述の通り、公称でチューブレスレディ。
 
 ### ホイール構造
 
@@ -73,25 +61,17 @@ HEDのディスクホイールと似た形状をしている。
 
 カーボンホイール特有の剛性はなさそう。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="2014-12-2719.38.26.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="400" src="2014-12-2719.38.26.jpg" width="225" /></a>
-</div>
+![image](2014-12-2719.38.26.jpg)
 
-<a href="2014-12-2719.38.38.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" height="400" src="2014-12-2719.38.38.jpg" width="225" /></a>
-
-
+![image](2014-12-2719.38.38.jpg)
 
 ### 重量
 
-一応測ってみる。リムテープレス・10sスペーサー有りで1340g
+一応測ってみる。リムテープレス・10s スペーサー有りで 1340g
 
 ディスクホイールでも重い部類であるが、アルミクリンチャーホイールとしては及第点？
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="2014-12-2719.48.29.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="2014-12-2719.48.29.jpg" width="320" /></a>
-</div>
-
-
+![image](2014-12-2719.48.29.jpg)
 
 ### **楽器としての性能**
 
@@ -101,11 +81,9 @@ HEDのディスクホイールと似た形状をしている。
 
 中空構造のため、その点は期待できる。
 
-更に、flo discは構造上、別の使い方で音を鳴らすことも出来る。
+更に、flo disc は構造上、別の使い方で音を鳴らすことも出来る。
 
 何も聞かず動画を見てもらいたい。
-
-
 
 Good。
 
@@ -113,24 +91,20 @@ Good。
 
 速報のため、走行インプレは後日。
 
-**
-**
+\*\*
+\*\*
 
 ### **追記**
 
-同封品はクイック・Continentalの20-25cチューブ・リムテープである。
+同封品はクイック・Continental の 20-25c チューブ・リムテープである。
 
 メンテナンス方法については、発送後にハブの分解方法からスポークの調整方法までメールで展開されるため、心配無用であることを付け加えておく。
 
-
-
-#### 2015/02/13修正
+#### 2015/02/13 修正
 
 転がり抵抗に関する記述を修正
 
 インプレッション記事は[こちら][2]
-
-
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -145,10 +119,8 @@ Good。
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.06.25
 </div>
 
-
 <div class="amazlet-detail">
 Panaracer(パナレーサー) <br />売り上げランキング: 4,271
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -161,6 +133,5 @@ Panaracer(パナレーサー) <br />売り上げランキング: 4,271
   </div>
 </div>
 
-
- [1]: http://www.flocycling.com/wheels_flo_disc.php
- [2]: /2015/05/12/flo-disc-whee.html
+[1]: http://www.flocycling.com/wheels_flo_disc.php
+[2]: /2015/05/12/flo-disc-whee.html

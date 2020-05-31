@@ -6,12 +6,10 @@ date: 2015-10-23T03:14:00+00:00
 
 cover: DSC_6028.jpg
 
-tags: ["RACE","FOOD"]
-
+tags: ["RACE", "FOOD"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_6028.jpg" width="640" />
-</div>
+
+![image](./DSC_6028.jpg)
 
 最近、冬シーズンに開催されるクリテリウムが増えてきた。
 
@@ -20,17 +18,11 @@ tags: ["RACE","FOOD"]
 </div>
 
 <div>
-</div>
-
-<div>
   そして、神奈川ではWalkRideが主催しているのが大磯クリテリウムが存在している。
 </div>
 
 <div>
   こういったクリテリウムは郊外のなかでもかなり都心から遠い地域で行われていることもあり、昼飯に困ることも多い。
-</div>
-
-<div>
 </div>
 
 <div>
@@ -49,9 +41,8 @@ tags: ["RACE","FOOD"]
 
 
     <div>
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_0628.jpg" width="640" />
-</div>
+
+![image](./DSC_0628.jpg)
 
 <p>
   </div>
@@ -64,6 +55,7 @@ tags: ["RACE","FOOD"]
     酢と出汁の効いたシンプルなスープに細麺を投入、刻んだ玉ねぎを入れたものが最もシンプルなタンメン。価格も並盛りで400円以下と非常にリーズナブル。</p>
 
     <p>
+
 失ったエネルギーをここで補給して、自走の英気を養おう。</div>
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
@@ -79,10 +71,8 @@ tags: ["RACE","FOOD"]
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.11.19
 </div>
 
-
 <div class="amazlet-detail">
 日清フーズ <br /> 売り上げランキング: 30,229
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

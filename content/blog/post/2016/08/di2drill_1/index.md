@@ -7,64 +7,45 @@ date: 2016-08-22T04:38:00+00:00
 cover: DSC_0072.jpg
 
 tags: ["CX"]
-
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="362" src="./DSC_0072.jpg" width="640" />
-</div>
 
-
+![image](./DSC_0072.jpg)
 
 ### ワイヤー撲滅委員会
 
+ランニングコストの低減と絶対的な性能アップのため、手持ちのバイクを全て Di2（or SS）、油圧ブレーキ化するべく動き出しました。
+ロードは既に Di2、TCX は SS の油圧ブレーキ、Kinesis Crosslight はワイヤーディスク＋紐変速…
+ロードディスクは 2017 モデル TCR 待ちなので、まずは CX から近代化改修を実施することに。
 
-ランニングコストの低減と絶対的な性能アップのため、手持ちのバイクを全てDi2（or SS）、油圧ブレーキ化するべく動き出しました。
-ロードは既にDi2、TCXはSSの油圧ブレーキ、Kinesis Crosslightはワイヤーディスク＋紐変速…
-ロードディスクは2017モデルTCR待ちなので、まずはCXから近代化改修を実施することに。
-
-しかし、持っているCrosslight PRO6はDi2非対応。CXだと洗車やら障害物でケーブルが外れることが想定されるので、なるべくケーブルは内装にしておきたい…
+しかし、持っている Crosslight PRO6 は Di2 非対応。CX だと洗車やら障害物でケーブルが外れることが想定されるので、なるべくケーブルは内装にしておきたい…
 
 そうだ。ドリル、うならせよう。
 
 ### ひとまずプランニング
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+![image](./DSC_0054.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+まずは手持ちの CX をバラして内装のための穴をチェックする。
+クポイントは「ダウンチューブ →BB」「BB→ 右チェーンステー」の穴。
 
-<div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="400" src="./DSC_0054.jpg" width="226" />
-</div>
-
-
-まずは手持ちのCXをバラして内装のための穴をチェックする。
-クポイントは「ダウンチューブ→BB」「BB→右チェーンステー」の穴。
-
-確認したところ、ダウンチューブはそこその大きさ（ジャンクションBがギリギリ通るくらい）の穴が、右チェーンステーに向けてはE-tubeのコネクタがギリギリ通る大きさの穴があった。
+確認したところ、ダウンチューブはそこその大きさ（ジャンクション B がギリギリ通るくらい）の穴が、右チェーンステーに向けては E-tube のコネクタがギリギリ通る大きさの穴があった。
 
 そこで、下図のケーブル図面を引く。
 
+![image](./DSC_0100.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-<img border="0" height="362" src="./DSC_0100.jpg" width="640" />
-</div>
+フロントシングルの CX なのでシートチューブは今回出番なし。
 
+担ぎのしやすさや重心の最適化・メンテナンス性 UP のため外装バッテリーを前三角のなるべく下側に配置する。
 
-フロントシングルのCXなのでシートチューブは今回出番なし。
+BB のスペース内にジャンクションは配置できないので、ダウンチューブ側にいれることにする。
+BB が JIS のため、作業野が狭い上にケーブルを通す穴もかなり小さいことがわかっているので、ヘッドチューブから接続したジャンクションを放り込む方法で行くことに。定番ですね。
 
-担ぎのしやすさや重心の最適化・メンテナンス性UPのため外装バッテリーを前三角のなるべく下側に配置する。
-
-BBのスペース内にジャンクションは配置できないので、ダウンチューブ側にいれることにする。
-BBがJISのため、作業野が狭い上にケーブルを通す穴もかなり小さいことがわかっているので、ヘッドチューブから接続したジャンクションを放り込む方法で行くことに。定番ですね。
-
-STIはR785を調達し、TTバイクをバラしてRD-6770と各種Di2パーツをゲット。
-ブレーキはコスト上の問題で新SLXをチョイスして機材的な準備は万端。
-※シマノ油圧ディスクブレーキはロードもMTBも同じ引き量
+STI は R785 を調達し、TT バイクをバラして RD-6770 と各種 Di2 パーツをゲット。
+ブレーキはコスト上の問題で新 SLX をチョイスして機材的な準備は万端。
+※シマノ油圧ディスクブレーキはロードも MTB も同じ引き量
 
 プランはここまで。実践編に続く。
-
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
 <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -79,10 +60,8 @@ STIはR785を調達し、TTバイクをバラしてRD-6770と各種Di2パーツ�
 posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.08.22
 </div>
 
-
 <div class="amazlet-detail">
 リョービ <br /> 売り上げランキング: 87
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

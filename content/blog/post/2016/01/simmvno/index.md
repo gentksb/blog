@@ -9,9 +9,7 @@ cover: DSC_6941.jpg
 tags: ["TIPS", "GADGETS"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_6941.jpg" width="640" />
-</div>
+![image](./DSC_6941.jpg)
 
 ※本記事は 2016/1/1 時点の情報を元に記載しています
 
@@ -35,7 +33,7 @@ tags: ["TIPS", "GADGETS"]
 
 Swarm を使って峠でチェックインしたり、Twitter で「頂上なう（死語）」したい方は docomo 系一択となります、田舎の宿も同様です。
 
-自分は山奥で救急車を呼ぶ経験をしたこともあり、現在は<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00J8B7WWG/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00J8B7WWG&#038;linkCode=as2&#038;tag=gensobunya-22">IIJ&nbsp;mio</a>（docomo 系 MVNO）を利用しています。
+自分は山奥で救急車を呼ぶ経験をしたこともあり、現在は<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00J8B7WWG/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00J8B7WWG&#038;linkCode=as2&#038;tag=gensobunya-22">IIJ mio</a>（docomo 系 MVNO）を利用しています。
 
 ### 街乗り中心なら都心速度と Wifi スポット
 
@@ -67,9 +65,7 @@ MVNO 回線の仕組みから説明します。
 
 下はスマートフォンがインターネットに繋がる仕組みを超簡単にした図です。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="330" src="./gaiyou.png" width="640" />
-</div>
+![image](./gaiyou.png)
 
 基地局（アンテナ）の電波を掴んだ後は、すべて光ファイバーで繋がっています。
 
@@ -81,9 +77,7 @@ MVNO 回線の仕組みから説明します。
 
 携帯会社のデータセンターと基地局は、借りている形となります。よって**エリアは借りている携帯会社と全く同等**となります。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="330" src="./mvno.png" width="640" />
-</div>
+![image](./mvno.png)
 
 MVNO の場合、★ 部分の回線速度が通常の契約に比べ低速となります。
 
@@ -111,7 +105,7 @@ au のスマートフォンをそのまま使いたい場合は mineo か UQ mob
 
 契約方法は、公式サイトでの申し込みと、<a href="http://www.amazon.co.jp/s/ref=as_li_ss_tl?_encoding=UTF8&camp=247&creative=7399&field-keywords=MVNO&linkCode=ur2&tag=gensobunya-22&url=search-alias%3Daps" target="_blank">Amazon</a>などで SIM カードを購入して後から開通させる 2 パターンが有ります。BIC SIM（IIJmio）はビックカメラ店頭でも申し込めますね。SIM カードのサイズを間違えないように。
 
-自分はネットワークの老舗事業者という点を重視して<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00J8B7WWG/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00J8B7WWG&#038;linkCode=as2&#038;tag=gensobunya-22">IIJ&nbsp;mio</a>を利用していますが、最近混んできたのか昼間は 1Mbps 出ないこともあります。
+自分はネットワークの老舗事業者という点を重視して<a rel="nofollow" href="http://www.amazon.co.jp/gp/product/B00J8B7WWG/ref=as_li_ss_tl?ie=UTF8&#038;camp=247&#038;creative=7399&#038;creativeASIN=B00J8B7WWG&#038;linkCode=as2&#038;tag=gensobunya-22">IIJ mio</a>を利用していますが、最近混んできたのか昼間は 1Mbps 出ないこともあります。
 
 ただ、プラン変更や MNP などの手続きがすべてオンラインで完結し、非常に使いやすいので気に入っています。
 

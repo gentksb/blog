@@ -6,12 +6,10 @@ date: 2016-04-04T04:36:00+00:00
 
 cover: DSC_7358.jpg
 
-tags: ["TIPS","RACE"]
-
+tags: ["TIPS", "RACE"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7358.jpg" width="640" height="360" border="0" />
-</div>
+
+![image](./DSC_7358.jpg)
 
 ※画像はイメージです
 
@@ -19,7 +17,7 @@ tags: ["TIPS","RACE"]
 
 幸い受け身が上手く決まりひどい捻挫や骨折は無く済みましたが、かなりの範囲に擦過傷が…
 
-今までの経験値を総動員した結果、1週間で2mmほどの深さの手の平損傷を含む全身の擦り傷を治すことに成功したので、備忘がてら手順を記していきます。
+今までの経験値を総動員した結果、1 週間で 2mm ほどの深さの手の平損傷を含む全身の擦り傷を治すことに成功したので、備忘がてら手順を記していきます。
 
 ※医学的根拠があるか怪しい部分も多数あります
 
@@ -31,11 +29,11 @@ tags: ["TIPS","RACE"]
 
 擦り傷は受傷後速やかに湿潤療法を開始することが重要なので、レースにはいつも下記の救急グッズを携行しています。
 
-  * [ズイコウ ハイドロコロイド包帯][1]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00C4JYKIS" alt="" width="1" height="1" border="0" />
-  * [防水フィルムロール][2]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B000FQ4YJC" alt="" width="1" height="1" border="0" />
-  * [救急テープ][3]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00C18YEEM" alt="" width="1" height="1" border="0" />
-  * ハサミ
-  * [ガーゼ][4]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B000FQUZPY" alt="" width="1" height="1" border="0" />
+- [ズイコウ ハイドロコロイド包帯][1]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00C4JYKIS" alt="" width="1" height="1" border="0" />
+- [防水フィルムロール][2]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B000FQ4YJC" alt="" width="1" height="1" border="0" />
+- [救急テープ][3]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B00C18YEEM" alt="" width="1" height="1" border="0" />
+- ハサミ
+- [ガーゼ][4]<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B000FQUZPY" alt="" width="1" height="1" border="0" />
 
 最低限以上の内容と水場さえあれば、傷口からの液ダレを最小限にしつつ家までたどり着くことができます。
 
@@ -65,13 +63,7 @@ tags: ["TIPS","RACE"]
 
 #### ドレッシング
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./IMG_7569.jpg" width="640" height="426" border="0" />
-</div>
-
-<div>
-   
-</div>
+![image](./IMG_7569.jpg)
 
 要するに傷あてです。
 
@@ -85,9 +77,7 @@ tags: ["TIPS","RACE"]
 
 #### 当日の夕飯
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7360.jpg" width="640" height="360" border="0" />
-</div>
+![image](./DSC_7360.jpg)
 
 いつも以上にエネルギーを摂りましょう。
 
@@ -107,37 +97,35 @@ tags: ["TIPS","RACE"]
 
 #### 栄養
 
-皮膚の再生に必要な栄養素は、**タンパク質・亜鉛・ビタミンC・ビタミンE**です。
+皮膚の再生に必要な栄養素は、**タンパク質・亜鉛・ビタミン C・ビタミン E**です。
 
 加えて、**クエン酸**が回復を促進します。
 
-**通常の食事に加えて**、プロテイン飲みながら、マルチビタミン・マルチミネラルのサプリを飲んで、食品添加物のクエン酸を水に溶かして飲めばOK。毎晩このセットを忘れずに。
+**通常の食事に加えて**、プロテイン飲みながら、マルチビタミン・マルチミネラルのサプリを飲んで、食品添加物のクエン酸を水に溶かして飲めば OK。毎晩このセットを忘れずに。
 
 自分が使っているのは[バルクスポーツ ソイプロ][6]、
 
 [ディアナチュラのアミノマルチビタミン&ミネラル][7]です。クエン酸はたべられるものを適当にドラッグストアで。<img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B004PEHCXU" alt="" width="1" height="1" border="0" /><img style="border: none !important; margin: 0px !important;" src="https://ir-jp.amazon-adsystem.com/e/ir?t=gensobunya-22&l=as2&o=9&a=B004EI6G8E" alt="" width="1" height="1" border="0" />
 
-推奨されていませんがサプリメントについては1日の所要量の2倍摂っていました。
+推奨されていませんがサプリメントについては 1 日の所要量の 2 倍摂っていました。
 
-クエン酸は今回初投入ですが、予想外に回復を早めてくれたようで前回のCX落車よりかなり速いスピードで傷が治りました。
+クエン酸は今回初投入ですが、予想外に回復を早めてくれたようで前回の CX 落車よりかなり速いスピードで傷が治りました。
 
 #### ドレッシング材交換
 
-落ち着くまでは1日2回ほど交換しないと液が垂れてしまいます。仕事や学校の昼休みに一度傷の様子を確認して必要であれば交換します。
+落ち着くまでは 1 日 2 回ほど交換しないと液が垂れてしまいます。仕事や学校の昼休みに一度傷の様子を確認して必要であれば交換します。
 
 怪我の箇所が多いと時間もかかるので、多目的トイレのありがたみがわかるようになります。
 
-傷が回復して浅くなってきたら、交換頻度も2日に1回程度でよくなります。
+傷が回復して浅くなってきたら、交換頻度も 2 日に 1 回程度でよくなります。
 
 剥がした際に表面がヌルっとせず、薄皮で覆われていたら完治です。
 
 ### まとめ
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_7383.jpg" width="640" height="360" border="0" />
-</div>
+![image](./DSC_7383.jpg)
 
-上記の写真は怪我で1~2mm削れていた手の部分の1週間経過時です。
+上記の写真は怪我で 1~2mm 削れていた手の部分の 1 週間経過時です。
 
 もうハイドロコロイド包帯無しでも日常生活が送れるレベルまで回復しています。
 
@@ -145,11 +133,9 @@ tags: ["TIPS","RACE"]
 
 実際、私も治療中にレース出たことありますしね。
 
-実際の治るスピードには個人差が出るとは思いますが、20台も後半に差し掛かってからこの回復スピードなので、実践して頂く価値はあるかと思います。
+実際の治るスピードには個人差が出るとは思いますが、20 台も後半に差し掛かってからこの回復スピードなので、実践して頂く価値はあるかと思います。
 
 コケないのが一番ですがね！
-
-&nbsp;
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -164,10 +150,8 @@ tags: ["TIPS","RACE"]
   posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 16.04.04
 </div>
 
-
 <div class="amazlet-detail">
 瑞光メディカル <br /> 売り上げランキング: 992
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -194,10 +178,8 @@ tags: ["TIPS","RACE"]
   posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 16.04.04
 </div>
 
-
 <div class="amazlet-detail">
 日本ガーリック <br /> 売り上げランキング: 432
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -211,12 +193,10 @@ tags: ["TIPS","RACE"]
   </div>
 </div>
 
-
-
- [1]: http://www.amazon.co.jp/gp/product/B00C4JYKIS/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00C4JYKIS&linkCode=as2&tag=gensobunya-22
- [2]: http://www.amazon.co.jp/gp/product/B000FQ4YJC/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B000FQ4YJC&linkCode=as2&tag=gensobunya-22
- [3]: http://www.amazon.co.jp/gp/product/B00C18YEEM/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00C18YEEM&linkCode=as2&tag=gensobunya-22
- [4]: http://www.amazon.co.jp/gp/product/B000FQUZPY/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B000FQUZPY&linkCode=as2&tag=gensobunya-22
- [5]: http://www.amazon.co.jp/gp/product/B001TDM0Q4/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B001TDM0Q4&linkCode=as2&tag=gensobunya-22
- [6]: http://www.amazon.co.jp/gp/product/B004EI6G8E/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B004EI6G8E&linkCode=as2&tag=gensobunya-22
- [7]: http://www.amazon.co.jp/gp/product/B004PEHCXU/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B004PEHCXU&linkCode=as2&tag=gensobunya-22
+[1]: http://www.amazon.co.jp/gp/product/B00C4JYKIS/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00C4JYKIS&linkCode=as2&tag=gensobunya-22
+[2]: http://www.amazon.co.jp/gp/product/B000FQ4YJC/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B000FQ4YJC&linkCode=as2&tag=gensobunya-22
+[3]: http://www.amazon.co.jp/gp/product/B00C18YEEM/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B00C18YEEM&linkCode=as2&tag=gensobunya-22
+[4]: http://www.amazon.co.jp/gp/product/B000FQUZPY/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B000FQUZPY&linkCode=as2&tag=gensobunya-22
+[5]: http://www.amazon.co.jp/gp/product/B001TDM0Q4/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B001TDM0Q4&linkCode=as2&tag=gensobunya-22
+[6]: http://www.amazon.co.jp/gp/product/B004EI6G8E/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B004EI6G8E&linkCode=as2&tag=gensobunya-22
+[7]: http://www.amazon.co.jp/gp/product/B004PEHCXU/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B004PEHCXU&linkCode=as2&tag=gensobunya-22

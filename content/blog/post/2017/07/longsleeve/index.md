@@ -11,15 +11,11 @@ custom_permalink:
 tags: ["REVIEW", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_1118.jpg" width="640" height="362" border="0" data-original-height="906" data-original-width="1600" />
-</div>
+![image](./DSC_1118.jpg)
 
 <div class="separator" style="clear: both; text-align: center;">
 
 </div>
-
-&nbsp;
 
 ### 日焼けとの終わりなき戦い
 
@@ -33,13 +29,9 @@ tags: ["REVIEW", "Workout"]
 
 昔は日焼け止めなしでも活動できましたが、もういい歳なのでちゃんとこの問題に向き合うべく試行錯誤することにしました。
 
-&nbsp;
-
 ### 高校野球に学ぶ暑さ対策
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./82cda2205c50bda27dff3e868d4a2cbc.jpg" width="342" height="400" border="0" data-original-height="1600" data-original-width="1373" />
-</div>
+![image](./82cda2205c50bda27dff3e868d4a2cbc.jpg)
 
 日焼け止め以外で日焼け対策をするとなると、物理的に肌を覆うしかありません。
 
@@ -49,13 +41,9 @@ tags: ["REVIEW", "Workout"]
 
 甲子園のマウンドは 40 度以上にもなり、遮るものもないため日差しが強いのは言うまでもありません。そんな環境で野球のなかで最も運動量の多いピッチャーが長袖をチョイスしているということで、自転車でも使えるのではと思い、試してみることにしました。
 
-&nbsp;
-
 ### 商品選び
 
 実は、パールイズミが全く同じコンセプトの「夏用の長袖インナーウェア」を既に出していました。
-
-&nbsp;
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -120,9 +108,7 @@ UNDER ARMOUR (2016-12-19)
 
 ### 走行
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img src="./DSC_1119.jpg" width="226" height="400" border="0" data-original-height="1600" data-original-width="906" />
-</div>
+![image](./DSC_1119.jpg)
 
 実走実験は箕面と妙見山という山岳を含むコースで、帰りの河川敷も含めるとおおよそ気温 26 度～ 31 度という環境で実施しました。
 

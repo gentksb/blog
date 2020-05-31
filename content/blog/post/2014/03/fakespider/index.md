@@ -4,17 +4,12 @@ author: admin
 type: post
 date: 2014-03-29T02:49:00+00:00
 
-cover:  IMG_20140122_2230.jpg
+cover: IMG_20140122_2230.jpg
 
-tags: ["CX","EC"]
-
+tags: ["CX", "EC"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140122_223026.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140122_223026.jpg" height="240" width="320" /></a>
-</div>
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+![image](IMG_20140122_223026.jpg)
 
 <div class="separator" style="clear: both; text-align: center;">
   CX用にAliExpressで色合せで偽スパイダーを買いました。
@@ -31,7 +26,6 @@ tags: ["CX","EC"]
 <div class="separator" style="clear: both; text-align: center;">
   ケツにも合ってるしGOOD
 </div>
-
 
 <div class="separator" style="clear: both; text-align: center;">
   CX4レース後（3ヶ月後）

@@ -4,17 +4,16 @@ author: admin
 type: post
 date: 2014-02-01T02:10:00+00:00
 
-
 tags: ["TIPS"]
-
 ---
-もうずっと前からケイデンスを拾わなくなったGARMINのGSC10の修理を試みました。
+
+もうずっと前からケイデンスを拾わなくなった GARMIN の GSC10 の修理を試みました。
 
 可能性としては、高い順に
 
-①断線
+① 断線
 
-②ケイデンス拾うメカニズムの故障
+② ケイデンス拾うメカニズムの故障
 
 と考えます。
 
@@ -22,9 +21,7 @@ tags: ["TIPS"]
 
 いざマイナスドライバーとゴムハンマーでガシガシと
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="IMG_20140201_174124.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./IMG_20140201_174124.jpg" height="480" width="640" /></a>
-</div>
+![image](IMG_20140201_174124.jpg)
 
 開きました。
 
@@ -34,19 +31,17 @@ tags: ["TIPS"]
 
 …見当たりません
 
-先っぽの基板の内部に金属板が2枚あり、磁石を近づけるとくっついて回路が接続されて信号を送る仕組みになっているようです。
+先っぽの基板の内部に金属板が 2 枚あり、磁石を近づけるとくっついて回路が接続されて信号を送る仕組みになっているようです。
 
 磁石を近づけます。動きません。というか最初からくっついてますねこれ。
 
-電流流れっぱなし？のようでONOFFの信号が送れていないと。
+電流流れっぱなし？のようで ONOFF の信号が送れていないと。
 
 中の鉄板が磁性を帯びたのかなんなのかはわかりませんがこれでは修理しようがありません。
 
 破棄して新しいのをポチります。
 
 何故かアマゾンが安かった
-
-
 
 <div class="amazlet-box" style="margin-bottom:0px;">
   <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
@@ -61,10 +56,8 @@ tags: ["TIPS"]
   posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.03.21
 </div>
 
-
 <div class="amazlet-detail">
 GARMIN <br />売り上げランキング: 35,627
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px">
@@ -76,4 +69,3 @@ GARMIN <br />売り上げランキング: 35,627
   <div class="amazlet-footer" style="clear: left">
   </div>
 </div>
-

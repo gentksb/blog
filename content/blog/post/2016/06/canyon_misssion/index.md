@@ -6,22 +6,18 @@ date: 2016-06-17T20:26:00+00:00
 
 cover: E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg
 
-tags: ["Zwift","ROAD"]
-
+tags: ["Zwift", "ROAD"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="358" src="./E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg" width="640" />
-</div>
+
+![image](./E382AFE383AAE38383E38397E3839CE383BCE3838901.jpg)
 
 ### 走るだけで最高グレードの完成車が！
 
-<a href="https://www.facebook.com/gozwiftjp/videos/1560064750963064/" target="_blank">Zwiftで特定のコースを完走すればCanyonのUltimate CF SLX8.0が手に入る</a>と聞いて早速チャレンジしてみた。
+<a href="https://www.facebook.com/gozwiftjp/videos/1560064750963064/" target="_blank">Zwift で特定のコースを完走すれば Canyon の Ultimate CF SLX8.0 が手に入る</a>と聞いて早速チャレンジしてみた。
 
+### Pretzel とは？
 
-
-### Pretzelとは？
-
-Zwiftのバーチャルコースである、Watopiaの全ルートを順行・逆行全て走破する72kmのコース。
+Zwift のバーチャルコースである、Watopia の全ルートを順行・逆行全て走破する 72km のコース。
 
 コースは複数分岐しているので、一筆書きの要領で全コースを走ると走行ログがプレッツェル（お菓子の名前）のようになることが由来だと思われる。
 
@@ -31,31 +27,27 @@ Zwiftのバーチャルコースである、Watopiaの全ルートを順行・�
 
 実際のログは上記のとおりだが、ギリギリでそう見えなくもない。
 
-ちなみに、獲得標高はバーチャルとはいえ1300mを越えるハードなコース。
+ちなみに、獲得標高はバーチャルとはいえ 1300m を越えるハードなコース。
 
-2時間半くらいか？と当たりをつけたが結局2時間40分かかってしまった。
+2 時間半くらいか？と当たりをつけたが結局 2 時間 40 分かかってしまった。
 
 ### 参加方法
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-06-18_1056300.jpg" width="640" />
-</div>
+![image](./2016-06-18_1056300.jpg)
 
 ログイン後、ワークアウト選択画面の脇にチャレンジを選択する画面が出てくる。
 
-抽選に関する規定に同意すれば自動的にコースがセットされるのでそのままRIDE ON!
+抽選に関する規定に同意すれば自動的にコースがセットされるのでそのまま RIDE ON!
 
 ※当然世界選手権コースでは選択できないので注意
 
-ちなみに、チャレンジ中はZwift内でUltimateに乗ることができる。
+ちなみに、チャレンジ中は Zwift 内で Ultimate に乗ることができる。
 
 チャレンジの進捗状況は上部の経験値バーの下にゴールまでの割合を表示する部分があるので、残りの距離が視覚的にわかるようになっている。
 
 ワークアウトとは違って、ログアウトさえしなければいくらでも休憩できるので耐えぬく精神力さえあれば完走はそう難しくはない。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="352" src="./2016-06-18_1343425.jpg" width="640" />
-</div>
+![image](./2016-06-18_1343425.jpg)
 
 ゴールすると、権利を得た旨の表示が出てくる。
 
@@ -76,10 +68,8 @@ Zwiftのバーチャルコースである、Watopiaの全ルートを順行・�
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.06.19
 </div>
 
-
 <div class="amazlet-detail">
 ALINCO(アルインコ) (2014-04-08)<br /> 売り上げランキング: 79
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

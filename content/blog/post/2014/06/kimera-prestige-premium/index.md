@@ -1,23 +1,14 @@
 ---
-title: '2014モデル Kimera Prestige & Premium 試乗記'
+title: "2014モデル Kimera Prestige & Premium 試乗記"
 author: admin
 type: post
 date: 2014-06-02T04:23:00+00:00
 
-
-tags: ["REVIEW","ROAD"]
-
+tags: ["REVIEW", "ROAD"]
 ---
-<div>
-   
-</div>
 
 <div>
   レース用のフレーム選びは意外と難しい。
-</div>
-
-<div>
-   
 </div>
 
 <div>
@@ -26,10 +17,6 @@ tags: ["REVIEW","ROAD"]
 
 <div>
   ただし、低価格になってくると最も重要な剛性が落ちてくる。自称スプリンターでこれはいただけない。
-</div>
-
-<div>
-   
 </div>
 
 <div>
@@ -49,27 +36,11 @@ tags: ["REVIEW","ROAD"]
 </div>
 
 <div>
-   
-</div>
-
-<div>
   ついでにシマノ純正BBしか使えない宗教なので（メンテ嫌い）、圧入全盛期の中BB86しか選択肢に入らない。
 </div>
 
 <div>
-   
-</div>
-
-<div>
-   
-</div>
-
-<div>
   上記を考慮すると、そんなに選択肢は無くて
-</div>
-
-<div>
-   
 </div>
 
 <div>
@@ -90,10 +61,6 @@ tags: ["REVIEW","ROAD"]
 
 <div>
   ・Lapierre Xelius EFI
-</div>
-
-<div>
-   
 </div>
 
 <div>
@@ -120,12 +87,10 @@ tags: ["REVIEW","ROAD"]
   </div>
 
   <p>
-    &nbsp;
+     
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;" href="IMG_20140531_124412.jpg"><img src="./IMG_20140531_124412.jpg" width="320" height="236" border="0" /></a>
-  </div>
+![image](IMG_20140531_124412.jpg)
 
   <p>
      ひとまず見た目。<br /> 剛性バカのKOGAらしくマッチョなチューブ。<br /> そしてカタログ写真ではわからないヘッド付近のキメラマーク。
@@ -135,9 +100,7 @@ tags: ["REVIEW","ROAD"]
     デザインはかなりGOOD
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" href="IMG_20140531_124421.jpg"><img src="./IMG_20140531_124421.jpg" width="320" height="236" border="0" /></a>
-  </div>
+![image](IMG_20140531_124421.jpg)
 
   <div class="separator" style="clear: both; text-align: left;">
      

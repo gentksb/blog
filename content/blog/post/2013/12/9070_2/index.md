@@ -4,14 +4,10 @@ author: admin
 type: post
 date: 2013-12-20T15:43:00+00:00
 
-
-tags: ["REVIEW","ROAD"]
-
+tags: ["REVIEW", "ROAD"]
 ---
-Di2組付け配線編その1です。
 
-<div>
-</div>
+Di2 組付け配線編その 1 です。
 
 <div>
   終わりません。
@@ -22,13 +18,7 @@ Di2組付け配線編その1です。
 </div>
 
 <div>
-</div>
-
-<div>
   今回、フル9070＋スプリンタースイッチを組むために
-</div>
-
-<div>
 </div>
 
 <div>
@@ -56,9 +46,6 @@ Di2組付け配線編その1です。
 </div>
 
 <div>
-</div>
-
-<div>
   以上のE-tubeが必要になるわけでしたが、購入したケーブルセットは4本しか
 </div>
 
@@ -67,22 +54,7 @@ Di2組付け配線編その1です。
 </div>
 
 <div>
-</div>
-
-<div>
   ちなみにハンドル幅400mmを利用している時、300mmのケーブルではジャンクションAまで余裕がないので、バラで購入する人はもう少し長いものを購入したほうがいいと思います。
-</div>
-
-<div>
-</div>
-
-<div>
-</div>
-
-<div>
-</div>
-
-<div>
 </div>
 
 <div>
@@ -97,18 +69,7 @@ Di2組付け配線編その1です。
   これがもしできたら色々発想が膨らむんですが…
 </div>
 
-<div>
-</div>
-
-<div>
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4690.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4690.jpg" height="640" width="358" /></a>
-</div>
-
-<div>
-</div>
+![image](DSC_4690.jpg)
 
 <div>
   ジャンクションBを裏に取り付け、ケーブルを這わせていきます。
@@ -122,48 +83,22 @@ Di2組付け配線編その1です。
   ワックスをフレームに塗布している方はしっかりパークリで落としてから貼り付けましょう。
 </div>
 
-<div>
-</div>
+![image](DSC_4693.jpg)
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4693.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4693.jpg" height="320" width="179" /></a>
-</div>
-
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4694.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4694.jpg" height="320" width="179" /></a>
-</div>
-
-<div>
-</div>
+![image](DSC_4694.jpg)
 
 <div>
   わかりやすくフラッシュを焚いたのですが、実際は黒同士なのでそこまで目立ちません
 </div>
 
 <div>
-</div>
-
-<div>
   余った部分はジャンクションBの中に仕舞えるようになっています。折りたたむ際のRがきついので断線が怖いですが公式組付けなので多分平気でしょう…
 </div>
 
-<div>
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4692.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./DSC_4692.jpg" height="358" width="640" /></a>
-</div>
-
-<div>
-</div>
+![image](DSC_4692.jpg)
 
 <div>
   横から見るとこんな具合ですな。
-</div>
-
-<div>
 </div>
 
 <div>
@@ -175,13 +110,9 @@ Di2組付け配線編その1です。
 </div>
 
 <div>
-</div>
-
-<div>
   来週平日にならないとE-tubeが届かないので、今週末ロードはお休みです。
 </div>
 
 <div>
   代わりにTTを組みます…ブレーキワイヤーとの格闘が待っています。
 </div>
-

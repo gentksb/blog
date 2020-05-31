@@ -1,13 +1,12 @@
 ---
-title: '宇都宮ジャパンカップ&さいたまクリテリウムbyツール・ド・フランス'
+title: "宇都宮ジャパンカップ&さいたまクリテリウムbyツール・ド・フランス"
 author: admin
 type: post
 date: 2013-10-28T06:39:00+00:00
 
-
-tags: ["RACE","ROAD"]
-
+tags: ["RACE", "ROAD"]
 ---
+
 それぞれのイベントで記事を作ろうかと思ったけど色々比較したい点があったので一緒にします。
 
 <div>
@@ -16,9 +15,6 @@ tags: ["RACE","ROAD"]
 
 <div>
   11月もレースとサイクルモードで自転車漬けの模様…秋は自転車業界楽しい時期ですね
-</div>
-
-<div>
 </div>
 
 <div>
@@ -47,9 +43,6 @@ tags: ["RACE","ROAD"]
 </div>
 
 <div>
-</div>
-
-<div>
   言わずと知れた自転車もとい痛チャリの最大イベントでもあるジャパンカップ
 </div>
 
@@ -57,20 +50,11 @@ tags: ["RACE","ROAD"]
   某所の駐輪場はすでにこんな具合に
 </div>
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4222.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4222.jpg" width="640" /></a>
-</div>
+![image](DSC_4222.jpg)
 
+![image](DSC_4224.jpg)
 
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4224.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4224.jpg" width="320" /></a>
-</div>
-
-&nbsp;そしてオリオン通りにはこんなものが…
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+そしてオリオン通りにはこんなものが…
 
 <div class="separator" style="clear: both; text-align: center;">
   <a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="./DSC_4225.jpg" width="179" /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a><a href="DSC_4225.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
@@ -94,24 +78,15 @@ tags: ["RACE","ROAD"]
 
 翌朝は雨にもかかわらずオタクチャリが来るわ来るわ
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4230.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4230.jpg" width="640" /></a>
-</div>
+![image](DSC_4230.jpg)
 
-雨は1mm予報だったからいけるとおもったんだ…この時は
+雨は 1mm 予報だったからいけるとおもったんだ…この時は
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-&nbsp;プレスの方からもかなり認知されており国内外のジャーナリストから
+プレスの方からもかなり認知されており国内外のジャーナリストから
 
 かなり写真撮られてましたね、イタリア人ジャーナリストはビアンキとルッキーニちゃんがお気に入りの模様。
 
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4279.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="./DSC_4279.jpg" width="320" /></a>
-</div>
+![image](DSC_4279.jpg)
 
 そして途中から豪雨。どうしてこうなった
 
@@ -119,31 +94,10 @@ tags: ["RACE","ROAD"]
 
 ただひたすらバッソコール
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4283.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4283.jpg" width="320" /></a>
-</div>
-
-
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+![image](DSC_4283.jpg)
 
 <div>
   それでも選手は走り続ける、というかバッソさんめっちゃ笑顔（わかりにくいけど
-</div>
-
-<div>
-</div>
-
-<div>
-</div>
-
-<div>
 </div>
 
 <div>
@@ -155,12 +109,6 @@ tags: ["RACE","ROAD"]
 </div>
 
 <div>
-</div>
-
-<div>
-</div>
-
-<div>
   温まった後はみんみんの餃子を食べて帰宅。
 </div>
 
@@ -168,15 +116,7 @@ tags: ["RACE","ROAD"]
   翌日に泥だらけの自転車を入渠して終戦
 </div>
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="BXGYQbYCIAAUlKo.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="179" src="./BXGYQbYCIAAUlKo.jpg" width="320" /></a>
-</div>
-
-<div>
-</div>
-
-<div>
-</div>
+![image](BXGYQbYCIAAUlKo.jpg)
 
 <div>
   <h3>
@@ -197,9 +137,6 @@ tags: ["RACE","ROAD"]
 </div>
 
 <div>
-</div>
-
-<div>
   ですが、運良くそれてくれたので雨はJCほど強くはなりませんでしたね。
 </div>
 
@@ -210,9 +147,7 @@ tags: ["RACE","ROAD"]
 <div>
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4308.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="./DSC_4308.jpg" width="640" /></a>
-  </div>
+![image](DSC_4308.jpg)
 
   <p>
     まずはSSAにてブースを見て回る。<br /> サガンの実車を発見！　しかしこれ以外に撮るべきものがないぞ！自転車と関係ないブースがやたら多い印象。雨が止むまでｇｄｇｄしていました
@@ -234,12 +169,10 @@ tags: ["RACE","ROAD"]
     しかたないので次なる観戦ポイントスタート・ゴール地点へ<br /> いい場所ゲット！と思いきや
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4309.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4309.jpg" width="320" /></a>
-  </div>
+![image](DSC_4309.jpg)
 
   <p>
-    &nbsp;あ、そこプレスが来るんですか…<br /> そうですか…
+     あ、そこプレスが来るんですか…<br /> そうですか…
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
@@ -248,32 +181,26 @@ tags: ["RACE","ROAD"]
   <p>
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4311.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="./DSC_4311.jpg" width="320" /></a>
-  </div>
+![image](DSC_4311.jpg)
 
   <p>
-    &nbsp;仕方ないからアンダーパスを上から眺め…
+     仕方ないからアンダーパスを上から眺め…
   </p>
 
   <p>
     え？ここも観戦禁止？<br /> （アンダーパス覗き込める場所）
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4312.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="179" src="./DSC_4312.jpg" width="320" /></a>
-  </div>
+![image](DSC_4312.jpg)
 
   <p>
-    &nbsp;橋の上は…なんか布が
+     橋の上は…なんか布が
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4313.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="179" src="./DSC_4313.jpg" width="320" /></a>
-  </div>
+![image](DSC_4313.jpg)
 
   <p>
-    &nbsp;コーナ…え？ここもだめ？<br /> フェンスあるけど…はいそうですか
+     コーナ…え？ここもだめ？<br /> フェンスあるけど…はいそうですか
   </p>
 
   <div class="separator" style="clear: both; text-align: center;">
@@ -282,14 +209,12 @@ tags: ["RACE","ROAD"]
   <p>
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <a href="DSC_4314.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="320" src="./DSC_4314.jpg" width="179" /></a>
-  </div>
+![image](DSC_4314.jpg)
 
   <p>
-
 
     <div>
+
 少し遠くに…え？横断不可？<br /> パンフに書くか看板立てるかしてくれ…</p>
 
 <p>
@@ -305,29 +230,16 @@ tags: ["RACE","ROAD"]
 </p>
 
 <div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
   <a href="DSC_4337.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"></a>
 </div>
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4337.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="./DSC_4337.jpg" width="640" /></a>
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+![image](DSC_4337.jpg)
 
 <p>
-  &nbsp;アラシーロ！
+   アラシーロ！
 </p>
 
-<p>
-</p>
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DSC_4328.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="358" src="./DSC_4328.jpg" width="640" /></a>
-</div>
+![image](DSC_4328.jpg)
 
 <p>
   「（ワット管理しないとトレーナーうるさいんだよな…）」の構えを見せるフルーム

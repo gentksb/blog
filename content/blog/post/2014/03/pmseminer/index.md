@@ -4,13 +4,12 @@ author: admin
 type: post
 date: 2014-03-29T02:20:00+00:00
 
-
 tags: ["TIPS"]
-
 ---
+
 運良く当選したので蹴るのも悪いと思って参加してきました。
 
-詳細はこちら→<a href="http://pioneer-ginza.jp/event_report/2014/03/329.html" target="_blank">http://pioneer-ginza.jp/event_report/2014/03/329.html</a>
+詳細はこちら →<a href="http://pioneer-ginza.jp/event_report/2014/03/329.html" target="_blank">http://pioneer-ginza.jp/event_report/2014/03/329.html</a>
 
 珍しく長い記事です。
 
@@ -28,21 +27,13 @@ tags: ["TIPS"]
 
 ### **製品説明**
 
+![image](./DSC_4906.jpg)
 
+前モデルより防水等級が上がったらしい、正式名称は SGY-PM910H。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="356" src="./DSC_4906.jpg" width="640" />
-</div>
+製品自体はパワーメーターという呼称で、サイコンや WEB 解析サービスを併せて”ペダリングモニターシステム”となる模様。
 
-前モデルより防水等級が上がったらしい、正式名称はSGY-PM910H。
-
-製品自体はパワーメーターという呼称で、サイコンやWEB解析サービスを併せて”ペダリングモニターシステム”となる模様。
-
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="358" src="./DSC_4907.jpg" width="640" />
-</div>
+![image](./DSC_4907.jpg)
 
 ペダリング効率の算出式。
 
@@ -52,17 +43,11 @@ tags: ["TIPS"]
 
 念のため講演された方にも伺いましたが「すごく効率のいいペダリングだが身体的に効率が悪い」ということにならないようにねーとのこと。
 
-プロ選手でもこの「ペダリング効率」が低い人はいるようです。ただ引き足の重さを0にしているのは効率のいい人と共通だとかなんとか。
+プロ選手でもこの「ペダリング効率」が低い人はいるようです。ただ引き足の重さを 0 にしているのは効率のいい人と共通だとかなんとか。
 
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="358" src="./DSC_4908.jpg" width="640" />
-</div>
+![image](./DSC_4908.jpg)
 
 校正について。運用の話なので買ってからでいいですね…
-
-
 
 <div>
   自動で温度補正してくれるようです。</p>
@@ -70,9 +55,7 @@ tags: ["TIPS"]
   <p>
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="358" src="./DSC_4909.jpg" width="640" />
-  </div>
+![image](358)
 
   <p>
     サイコンについて。12時間駆動ですね…Edge500より短い。<br /> TT用ブラケットは嬉しいですが純正以外のチェーンリングだと正確性が保証できないとのことなので、非真円系のチェーンリングを使ってる人は別の手段を考えたほうがいいかもしれません。
@@ -89,13 +72,9 @@ tags: ["TIPS"]
   <p>
   </p>
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="358" src="./DSC_4910.jpg" width="640" />
-  </div>
+![image](358)
 
-  <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" height="358" src="./DSC_4911.jpg" width="640" />
-  </div>
+![image](358)
 
   <p>
     ログデータは独自形式ですが、解析サイト（シクロスフィア）にアップロードしたあとはFIT形式でDL可能なのでGARMINコネクトなどに登録可能です。そして何より…
@@ -186,7 +165,6 @@ tags: ["TIPS"]
 
 <img border="0" height="320" src="./DSC_4915.jpg" width="179" />
 
-
   <p>
 実物の裏側。プレートを使ったボルト留めになってます。
   </p>
@@ -259,7 +237,6 @@ posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">am
 <div class="amazlet-footer" style="clear: left">
 </div>
 
-
 <div class="amazlet-box" style="margin-bottom:0px;">
 <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
   <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4583103778/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51xxkXLrcrL._SL160_.jpg" alt="バイシクルトレーニングブック" style="border: none;" /></a>
@@ -287,5 +264,3 @@ posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">am
 
 <div class="amazlet-footer" style="clear: left">
 </div>
-
-

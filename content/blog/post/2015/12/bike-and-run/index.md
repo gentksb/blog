@@ -9,9 +9,7 @@ cover: DSC_6856.jpg
 tags: ["Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="400" src="./DSC_6856.jpg" width="225" />
-</div>
+![image](./DSC_6856.jpg)
 
 C2 のシングルリザルトが定位置になってしまって、昇格まであと 1 人というところで逃し続けている。
 
@@ -25,9 +23,7 @@ JCX 中井ではキッチリとペースを刻んで最後追い込んだのに�
 
 お台場に向けてランを強化していく。自転車乗るよりランをやったほうが体も絞れる。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="400" src="./DSC_6857.jpg" width="225" />
-</div>
+![image](./DSC_6857.jpg)
 
 ランシューに限らずシューズに欠かせないのがこいつ、「グランズレメディ」
 

@@ -9,9 +9,7 @@ cover: 2016-01-25_2027460.jpg
 tags: ["Zwift", "TOURING"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" src="./2016-01-25_2027460.jpg" />
-</div>
+![image](./2016-01-25_2027460.jpg)
 
 ### Strength(笑)
 
@@ -23,15 +21,11 @@ tags: ["Zwift", "TOURING"]
 
 走りだしたらほとんどレストだったけど…
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-25_2049512.jpg" width="640" />
-</div>
+![image](./2016-01-25_2049512.jpg)
 
 それでも変化があると中々飽きないもので、赤いゲートは踏む気にさせてくれる。
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="350" src="./2016-01-25_2115264.jpg" width="640" />
-</div>
+![image](./2016-01-25_2115264.jpg)
 
 踏みすぎて失敗判定を食らった。
 

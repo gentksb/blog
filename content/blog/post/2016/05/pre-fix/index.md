@@ -9,9 +9,7 @@ cover: DSC_7419.jpg
 tags: ["TIPS", "Workout"]
 ---
 
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="360" src="./DSC_7419.jpg" width="640" />
-</div>
+![image](./DSC_7419.jpg)
 
 ### 故障
 
@@ -33,9 +31,6 @@ tags: ["TIPS", "Workout"]
 
 <div class="separator" style="clear: both; text-align: center;">
 
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
 </div>
 
 これを見ると、2 月末当たりからパワーの左右差（平均パワーバランス）が悪化していることが一目瞭然。

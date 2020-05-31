@@ -1,28 +1,21 @@
 ---
-title: '2016関西シクロクロス#9 堺レースレポート'
+title: "2016関西シクロクロス#9 堺レースレポート"
 author: admin
 type: post
 date: 2017-01-16T02:27:00+00:00
 
 cover: 32173597322_976d654bd0_k.jpg
 
-tags: ["CX","RACE"]
-
+tags: ["CX", "RACE"]
 ---
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="./32173597322_976d654bd0_k.jpg" width="640" />
-</div>
 
-
+![image](./32173597322_976d654bd0_k.jpg)
 
 ### お久しぶりのレースレポ
 
-
-> C1選手もすなる、日記といふものを、C2選手もしてみむとて、するなり
+> C1 選手もすなる、日記といふものを、C2 選手もしてみむとて、するなり
 
 普段レースレポートなんて書かないのですが今回は表彰台に乗ることができたので特別に。
-
-
 
 希望が丘の悪夢が蘇る記録的大寒波が襲うという予報のもと、出来る限りの準備をして雪の積もる自宅を出発。
 
@@ -32,47 +25,37 @@ tags: ["CX","RACE"]
 
 砂区間を含むフラットコースで、スピードを落とさないコーナーワークが求められるコース。関東だと湘南開成がほぼピッタリのイメージ。
 
-この日のC1はエリートとU23日本チャンピオンと竹之内悠がエントリーしていたので、勉強にはもってこいだった。
+この日の C1 はエリートと U23 日本チャンピオンと竹之内悠がエントリーしていたので、勉強にはもってこいだった。
 
 最速ラインを観察して自分のスタートラインに立つ。
 
-C2のスタートは1名欠席のおかげで1列目。
+C2 のスタートは 1 名欠席のおかげで 1 列目。
 
-スタートで5番手に付けられたので序盤のガチャガチャを活かしてパックのトップへ。
+スタートで 5 番手に付けられたので序盤のガチャガチャを活かしてパックのトップへ。
 
-神戸大のミスターセカンドさん（仮称）が早々に抜け出して2位の自分がそれを追う展開。
+神戸大のミスターセカンドさん（仮称）が早々に抜け出して 2 位の自分がそれを追う展開。
 
 ド平坦の堺では、地脚の差がモロに出るのでじわじわ差が開いていく。
 
-追ってきた3番手も地脚が強く、一気に詰められるがCX慣れしていないのかミスが多いので、途中追い抜かれても終盤まで2番手を維持することに成功。
+追ってきた 3 番手も地脚が強く、一気に詰められるが CX 慣れしていないのかミスが多いので、途中追い抜かれても終盤まで 2 番手を維持することに成功。
 
-残り2周で前に立たれたので直線で必死に食らいつき、少ないテクニカル区間でも引き離されないよう高速コーナーはラインをトレース、それ以外は最短ラインを選んで5秒以上離されないようにする。
+残り 2 周で前に立たれたので直線で必死に食らいつき、少ないテクニカル区間でも引き離されないよう高速コーナーはラインをトレース、それ以外は最短ラインを選んで 5 秒以上離されないようにする。
 
 数周の観察で、砂区間で自分に分があることがわかっていたので最後の砂区間で一気に挽回する算段。
 
-計画通りの時間差で砂区間に入るも、最終周回だけ前の2番手が降りて猛ダッシュ！！！！
+計画通りの時間差で砂区間に入るも、最終周回だけ前の 2 番手が降りて猛ダッシュ！！！！
 
 その手があったかと膝を打ちながらそこから死ぬ気で踏むも、地脚の差は挽回できず\_(:3」∠)\_
 
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-<div class="separator" style="clear: both; text-align: center;">
-  <img border="0" height="426" src="./31512745093_09d23d5e39_k.jpg" width="640" />
-</div>
+![image](./31512745093_09d23d5e39_k.jpg)
 
 テクニカルなコースなら追撃を押さえ込める気がするので、次はがんばるぞい。
 
-C1のバニホを勉強して自分も跳べるようになりたい
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
+C1 のバニホを勉強して自分も跳べるようになりたい
 
 ### 俺の防寒装備
 
 希望が丘で手と足の感覚がなくなるという経験をしたので、その反省を活かして末端の装備を変更してみた。
-
-
 
 足元には足用カイロ、手には台所用のゴム手袋を装備して臨む。
 
@@ -89,10 +72,8 @@ C1のバニホを勉強して自分も跳べるようになりたい
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.01.16
 </div>
 
-
 <div class="amazlet-detail">
 ショーワグローブ <br /> 売り上げランキング: 37
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
@@ -112,8 +93,6 @@ C1のバニホを勉強して自分も跳べるようになりたい
 
 スキーウェアはかさばるので、モンベルの店頭のパーカーを品定めする日々が続いている…
 
-
-
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
     <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="(モンベル)mont-bell パーマフロスト ライトダウンパーカ Men's 1101501 IKBL インクブルー L" src="https://images-fe.ssl-images-amazon.com/images/I/41eeHlqHg7L._SL160_.jpg" style="border: none;" /></a>
@@ -127,10 +106,8 @@ C1のバニホを勉強して自分も跳べるようになりたい
   posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.01.16
 </div>
 
-
 <div class="amazlet-detail">
 mont-bell（モンベル）
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">

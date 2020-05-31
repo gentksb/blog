@@ -4,23 +4,14 @@ author: admin
 type: post
 date: 2015-02-12T05:43:00+00:00
 
-
-tags: ["CX","RACE"]
-
+tags: ["CX", "RACE"]
 ---
-気がついたら4戦終わってしまっていた。
 
+気がついたら 4 戦終わってしまっていた。
 
+### #1 平塚　(7/25 位)
 
-### #1 平塚　(7/25位)
-
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="10750033_726704890775926_8167226097473679261_o.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./10750033_726704890775926_8167226097473679261_o.jpg" width="640" /></a>
-</div>
-
-
+![image](10750033_726704890775926_8167226097473679261_o.jpg)
 
 <div style="text-align: right;">
   photo じーなか
@@ -36,13 +27,9 @@ tags: ["CX","RACE"]
 
 幸いにも大タレせずにゴール出来たので結果はそこそこだが、フラットなコーナーで切替すスキルの無さに悲しくなる。
 
+### #2 開成（パンク DNF）
 
-
-### #2 開成（パンクDNF）
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="16070134796_1131e15b2d_o.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="422" src="./16070134796_1131e15b2d_o.jpg" width="640" /></a>
-</div>
+![image](16070134796_1131e15b2d_o.jpg)
 
 平塚とは打って変わって晴天のフラットコース。
 
@@ -54,23 +41,15 @@ tags: ["CX","RACE"]
 
 硬い段差が何箇所かあることはわかっていたので、完全なる空気圧セッティングミス。
 
-おまけにスペアホイールも持っていなかったため、そのまま1周ランニングしてDNF。
+おまけにスペアホイールも持っていなかったため、そのまま 1 周ランニングして DNF。
 
-折角のホイール2セット体制も、持ってこなければ意味が無い。
+折角のホイール 2 セット体制も、持ってこなければ意味が無い。
 
-### #3 中井（5/22位）
+### #3 中井（5/22 位）
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DPP6018_c.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./DPP6018_c.jpg" width="640" /></a>
-</div>
+![image](DPP6018_c.jpg)
 
-
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DPP6029_c.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./DPP6029_c.jpg" width="640" /></a>
-</div>
-
-
+![image](DPP6029_c.jpg)
 
 <div style="text-align: right;">
   photo ryodoh
@@ -80,30 +59,23 @@ tags: ["CX","RACE"]
 
 主催者曰く、「今年は安全なコースにした」とのことでちょっと残念であったが、凶悪さは失われていなかった…
 
-平坦と激坂で脚と心肺を使わせた直後に現れる70段の階段。自転車だけ乗ってるとどうしようもないレイアウトである。
+平坦と激坂で脚と心肺を使わせた直後に現れる 70 段の階段。自転車だけ乗ってるとどうしようもないレイアウトである。
 
 スペアホイールはしっかりピットに持ち込んだし、空気圧も念入りに調整。
 
-早めに並んで1列目をゲットしてホールショットを決めることができた。
+早めに並んで 1 列目をゲットしてホールショットを決めることができた。
 
-現プロや元プロが多いメンツの中、昔取った杵柄と階段で一気に突き放し、1周半ほどトップを独走。
+現プロや元プロが多いメンツの中、昔取った杵柄と階段で一気に突き放し、1 周半ほどトップを独走。
 
 その後は中ダレして後退したが、後半巻き返して一般人（？）の中ではトップでフィニッシュ。
 
-階段でANCHORの人を抜いたけど下りきったあとのストレートでは全くかなわず。
+階段で ANCHOR の人を抜いたけど下りきったあとのストレートでは全くかなわず。
 
 お台場に向けてランニングの自信はついた…
 
+### #4 開成（8/35 位）
 
-
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-
-### &nbsp;#4 開成（8/35位）
-
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="DPP6401.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="426" src="./DPP6401.jpg" width="640" /></a>
-</div>
+![image](DPP6401.jpg)
 
 最終戦はいつもの開成…ではなく、キャンバーをなくしたフラットコースにこれでもかとコーナーを詰め込んだレイアウト。
 
@@ -111,9 +83,9 @@ tags: ["CX","RACE"]
 
 それでいてストレートも長いため、脚とテクを両方試される。
 
-コーナーが目算で30以上はあったため、得意の不整地ストレートよりもコーナーを重視すべきと判断。
+コーナーが目算で 30 以上はあったため、得意の不整地ストレートよりもコーナーを重視すべきと判断。
 
-前後マッドタイヤの上に空気圧も1.6BARほどの低さに設定して苦手意識のあるコーナーを攻め抜くことにした。
+前後マッドタイヤの上に空気圧も 1.6BAR ほどの低さに設定して苦手意識のあるコーナーを攻め抜くことにした。
 
 初戦の平塚以降練習したこともあって、コーナーでアドバンテージを稼ぐことに成功。
 
@@ -124,4 +96,3 @@ tags: ["CX","RACE"]
 しかし盆栽屋さんらの圧倒的直線に追いつけず。その前の高校生ズはいつもどおり遥か遠く。
 
 コンスタントにシングルリザルトはついてくるものの、昇格はまだまだ遠いと感じたシリーズ戦だった。コーナーテクを意識して冬を過ごしたので、次はまだ地脚を鍛える段階に来たのかもしれない。
-

@@ -38,11 +38,7 @@ tags: ["CX", "TIPS", "REVIEW", "RACE", "EC"]
 
 #### RACEFACE
 
-<a href="https://amzn.to/362kOwE" taget="_blank">
-  <div class="separator" style="clear: both; text-align: center;">
-    <img border="0" src="./FireShotCapture66-ProductDetails-RaceFace_-http___www.raceface.com_products_d.png" />
-  </div>
-</a>
+![image](./FireShotCapture66-ProductDetails-RaceFace_-http___www.raceface.com_products_d.png)
 
 MTB 用だけかとおもいきや CX 用も出してました。  
 国内価格 7k くらいだよ！というタレコミだけで購入決定するも、代理店に在庫なし入荷未定。
@@ -68,7 +64,7 @@ PCD110,130 共に 40/42T。
 楕円 × ナローワイドシングルチェーンリング！　　
 PCD110 のみ、38T~44T まで幅広くラインナップ。公式では対応クランクが指定されているので注意。
 
-#### FOURIERS&nbsp;NARROW-WIDE SINGLE FRONT CHAINRING
+#### FOURIERS NARROW-WIDE SINGLE FRONT CHAINRING
 
 ![FOURIERS](./1412295707.jpg)
 
