@@ -33,7 +33,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1280,
+              maxWidth: 1080,
               maxHeight: 720,
               fit: `contain`,
               background: `white`,
@@ -72,8 +72,7 @@ module.exports = {
       options: {
         domains: [
           "https://www.googletagmanager.com",
-          "https://www.google-analytics.com",
-          "https://aml.valuecommerce.com",
+          "https://www.google-analytics.com"
         ]
       }
     },
