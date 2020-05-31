@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Grid, Hidden } from "@material-ui/core"
+import { Grid } from "@material-ui/core"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,14 +18,9 @@ const BlogIndex = (props) => {
       <SEO title="Top" location={location} />
       <Grid container justify="center">
         <Grid item>
-          <Hidden smDown>
-            <TagList />
-          </Hidden>
           <PostList props={edges} />
           <Pagination props={props} />
-          <Hidden mdUp>
-            <TagList />
-          </Hidden>
+          <TagList />
         </Grid>
       </Grid>
     </Layout>
@@ -61,8 +56,7 @@ export const pageQuery = graphql`
             cover {
               childImageSharp {
                 fluid {
-                  src
-                  sizes
+                ...GatsbyImageSharpFluid
                 }
               }
             }
