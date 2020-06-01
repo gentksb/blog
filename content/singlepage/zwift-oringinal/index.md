@@ -5,7 +5,10 @@ type: page
 date: 2016-06-03T04:32:00+00:00
 tags: ["Zwift"]
 ---
-GoogleDrive上にアップロードしています
+
+GoogleDrive 上にアップロードしています
+
+actiontest2
 
 <blockquote class="tr_bq">
   <p>
@@ -45,7 +48,7 @@ GoogleDrive上にアップロードしています
   </ul>
 </blockquote>
 
-2016/06/03　Tabata 1.00→1.01 文章が重なる問題を修正しました
+2016/06/03 　 Tabata 1.00→1.01 文章が重なる問題を修正しました
 
 <div class="amazlet-box" style="margin-bottom: 0px;">
   <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
@@ -60,10 +63,8 @@ GoogleDrive上にアップロードしています
   posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 16.05.31
 </div>
 
-
 <div class="amazlet-detail">
 須田 晋太郎 <br /> 洋泉社 <br /> 売り上げランキング: 10,226
-
 
 <div class="amazlet-sub-info" style="float: left;">
 <div class="amazlet-link" style="margin-top: 5px;">
