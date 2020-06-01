@@ -64,7 +64,7 @@
     "develop": "gatsby clean && gatsby develop -o",
     "dev": "npm run develop",
     "format": "prettier --write \"**/*.{js,jsx,json}\"",
-    "start": "npm run develop",
+    "start": "gatsby serve",
     "serve": "gatsby build && gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },

@@ -11,6 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: npm install && npm install -g @lhci/cli
-      - run: npm run build
-      - run: lhci autorun --upload.target=temporary-public-storage
+
+      - name: npm install
+        run: npm install && npm install -g @lhci/cli
+
+      - name: build
+        run: npm run build
+
+      - name: Lighthouse audit CI
+        run: lhci autorun --config=./.lighthouseci/lighthouserc.json
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
