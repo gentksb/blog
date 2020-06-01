@@ -2,7 +2,6 @@
   "ci": {
     "collect": {
       "numberOfRuns": 3,
-      "staticDistDir": "./public",
       "isSinglePageApplication": true,
       "url": ["http://localhost/", "http://localhost/post/2019/08/edge530j/"]
     },
