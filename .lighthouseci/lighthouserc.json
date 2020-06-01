@@ -7,9 +7,7 @@
       "url": ["http://localhost/", "http://localhost/post/2019/08/edge530j/"]
     },
     "assert": {
-      "preset": "lighthouse:recommended",
       "assertions": {
-        "uses-webp-images": "off",
         "categories:performance": [
           "warn",
           {
