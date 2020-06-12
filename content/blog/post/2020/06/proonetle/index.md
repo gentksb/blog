@@ -3,7 +3,7 @@ title: "Schwalbe Pro one Tubeless easy 30c をTCRに装着したインプレ"
 date: 2020-06-03
 draft: false
 tags: ["REVIEW", "ROAD"]
-cover: "./rear_clearance.jpg)"
+cover: "./rear_clearance.jpg"
 ---
 
 周辺で、最近のロードチューブレスレディはいいぞという声がよく聞こえてきたので、今まで使っていた IRC の[Formula Pro TL RBCC](https://amzn.to/3eJaIWs)から SCHWALBE の[Pro One Tubeless Easy](https://www.amazon.co.jp/dp/B07WPV58SC/?tag=gensobunya-22)へ交換することにしました。
