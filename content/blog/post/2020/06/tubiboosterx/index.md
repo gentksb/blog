@@ -6,15 +6,15 @@ tags: ["REVIEW", "MTB", "ROAD", "CX"]
 cover: ".cover.jpg"
 ---
 
-これまで、チューブレスタイヤの装着用のインフレーターには色々使ってきました。
+これまで、チューブレスタイヤの装着用のインフレーターには色々使ってきましたが、中々決定版と言えるものがありませんでした。
 
-私は[LEZYNE CLASSIC FLOOR DRIVE](https://www.amazon.co.jp/dp/B0753CL283/?tag=gensobunya-22)の木製取手と、ヒラメヘッドの収まりの良さを非常に気に入っており、これを捨てきれずなんとかフロアポンプを活かしたままチューブレス運用をしています。
+私は[LEZYNE CLASSIC FLOOR DRIVE](https://www.amazon.co.jp/dp/B0753CL283/?tag=gensobunya-22)の木製取手と、[ヒラメ横カム](https://www.amazon.co.jp/dp/B01G1O3JBA/?tag=gensobunya-22)の収まりの良さを非常に気に入っており、これを捨てきれずなんとかフロアポンプを活かしたままチューブレス運用をしています。
 
 ビード上げ用の機材は「ビード上げ用の一体型ポンプ」「単体のインフレータータンク」の 2 通りの選択肢があります。
 
 前者では[GIYO(ジーヨ) GF-94T チューブレス対応 アルミフロアポンプ GF-94T](https://www.amazon.co.jp/dp/B01JG277DA/?tag=gensobunya-22)、後者では GIANT の[CONTROL TANK](https://www.giant.co.jp/giant20/acc_datail.php?p_id=A0000131)を使ったことがあり、最近は主に CONTROL TANK を使っています。
 
-CONTROL TANK は米式バルブでしか空気を入れられないという欠点があり、ヒラメヘッドを使った[CLASSIC FLOOR DRIVE](https://www.amazon.co.jp/dp/B0753CL283/?tag=gensobunya-22)では直接エアを充填できないので珍しい米仏変換アダプターを活用していました。
+CONTROL TANK は米式バルブでしか空気を入れられないという欠点があり、[ヒラメ横カム](https://www.amazon.co.jp/dp/B01G1O3JBA/?tag=gensobunya-22)を使った[CLASSIC FLOOR DRIVE](https://www.amazon.co.jp/dp/B0753CL283/?tag=gensobunya-22)では直接エアを充填できないので珍しい米仏変換アダプターを活用していました。
 
 それでも、安定して高圧を充填するにはヒラメヘッドの締め付けをかなり強くする必要があり、ストレスが強いのでずっと仏式バルブで充填でき、米仏どちらでもビード上げできるインフレーターを探していました。
 
