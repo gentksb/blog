@@ -3,7 +3,7 @@ title: "ヒラメヘッドと組み合わせられるチューブレスタンク
 date: 2020-06-12
 draft: false
 tags: ["REVIEW", "MTB", "ROAD", "CX"]
-cover: ".cover.jpg"
+cover: "./cover.jpg"
 ---
 
 これまで、チューブレスタイヤの装着用のインフレーターには色々使ってきましたが、中々決定版と言えるものがありませんでした。
