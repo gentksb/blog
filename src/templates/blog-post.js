@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Typography, Card, CardContent, Divider } from '@material-ui/core'
+import { Today } from '@material-ui/icons'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -25,10 +26,10 @@ const BlogPostTemplate = (props) => {
         <article>
           <CardContent>
             <header>
-              <Typography component="h1" variant="inherit">{post.frontmatter.title}</Typography>
               <time dateTime={post.frontmatter.date}>
-                <Typography component="div" variant="subtitle1">{post.frontmatter.date}</Typography>
+                <Typography component="div" variant="subtitle1" color="textSecondary"><Today fontSize="small" />{post.frontmatter.date}</Typography>
               </time>
+              <Typography component="h1" variant="h4">{post.frontmatter.title}</Typography>
               <PostTag tags={post.frontmatter.tags} />
             </header>
             <Divider variant="fullWidth" />
@@ -42,7 +43,7 @@ const BlogPostTemplate = (props) => {
         <PrevAndNextPost previous={previous} next={next} />
       </nav>
       <TagList />
-    </Layout>
+    </Layout >
   )
 }
 
