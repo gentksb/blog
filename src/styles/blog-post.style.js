@@ -18,7 +18,7 @@ const BlogPostStyle = () =>
       line-height: 1.7;
     }
     .gatsby-resp-image-image {
-      max-height: 960px;
+      max-height: 760px;
       object-fit: contain !important;
     }
     
