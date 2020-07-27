@@ -14,9 +14,10 @@ const BlogPostStyle = () =>
       border-left: 6px solid ${theme.palette.primary.main};
     }
     p {
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
       line-height: 1.7;
     }
+    
 
     /* Quote */
     blockquote {
