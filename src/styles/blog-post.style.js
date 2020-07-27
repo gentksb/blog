@@ -17,7 +17,8 @@ const BlogPostStyle = () =>
       margin-bottom: 1.5em;
       line-height: 1.7;
     }
-    .gatsby-resp-image-wrapper img {
+    .gatsby-resp-image-image {
+      max-height: 960px;
       object-fit: contain !important;
     }
     
