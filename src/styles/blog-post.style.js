@@ -17,6 +17,9 @@ const BlogPostStyle = () =>
       margin-bottom: 1.5em;
       line-height: 1.7;
     }
+    .gatsby-resp-image-wrapper img {
+      object-fit: contain !important;
+    }
     
 
     /* Quote */

@@ -33,10 +33,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1080,
               maxHeight: 720,
-              fit: `contain`,
-              background: `white`,
               linkImagesToOriginal: true,
               loading: `lazy`,
               disableBgImage: true,
@@ -45,7 +42,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: `margin-bottom: 1.0725rem;`,
             },
           },
           {
