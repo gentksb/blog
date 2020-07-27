@@ -33,7 +33,7 @@ const BlogPostTemplate = (props) => {
               <PostTag tags={post.frontmatter.tags} />
             </header>
             <Divider variant="fullWidth" />
-            <Typography variant="body1" component="section" dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Typography variant="body1" component="div" dangerouslySetInnerHTML={{ __html: post.html }} />
           </CardContent>
         </article>
         <Divider variant="middle" />
