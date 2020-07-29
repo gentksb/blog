@@ -148,7 +148,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-plugin-lodash`,
   ],
 }
