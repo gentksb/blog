@@ -1,7 +1,7 @@
 ---
 title: "ロードバイクを載せづらいMazda3にヒッチキャリアを付けた話"
 date: 2020-05-03
-draft: true
+draft: false
 tags: ["REVIEW", "TIPS", "RACE"]
 cover: "./cover.jpg"
 ---
@@ -75,7 +75,7 @@ Mazda3 はいわゆる C で牽引等ができる車格ではなく、ヒッチ�
 
 ## モデルチョイス
 
-ヒッチメンバーは Draw-tite の[#24984](https://www.draw-tite.com/products/trailer-hitches/class-i-1-1-4-hitch/class-i-trailer-hitch/WfzaCtfZMf25wM9znIGUwlD6ZzAUIKRT)を ebay で購入。[いいセラー](https://www.ebay.com/itm/233350888400)を見つけたので、ヒッチメンバーは送料込み 2 万円以下で調達できました。これの出現を待つ数週間が本当に辛かった。
+ヒッチメンバーは Draw-tite の[#24984](https://www.draw-tite.com/products/trailer-hitches/class-i-1-1-4-hitch/class-i-trailer-hitch/WfzaCtfZMf25wM9znIGUwlD6ZzAUIKRT)を ebay で購入。これの出現を待つ数週間が本当に辛かった。
 
 ヒッチキャリアは Mazda3 の車格を考慮して、最軽量クラスの[Kuat Sherpa2.0](https://www.kuatracks.com/product/sherpa-2-0/)を購入しました。フレームマウントではなくタイヤマウントのものが欲しかったので、少々値が張りましたがここをケチって自転車を落下させるより遥かにマシなので Jenson USA でセール時に購入しました。それでも送料込みで 480USD ほどでしたが…
 
