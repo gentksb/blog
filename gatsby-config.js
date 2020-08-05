@@ -38,7 +38,7 @@ module.exports = {
               maxWidth: 960,
               maxHeight: 760,
               fit: `inside`,
-              quality: 80,
+              quality: 60,
               withWebp: true,
               linkImagesToOriginal: true,
               loading: `lazy`,
