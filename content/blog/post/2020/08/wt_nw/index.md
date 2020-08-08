@@ -1,7 +1,7 @@
 ---
 title: "Wolftooth Drop-Stop をロードバイクに"
 date: 2020-08-08
-draft: true
+draft: false
 tags: ["ROAD"]
 cover: "./cover.jpg"
 ---
