@@ -16,7 +16,7 @@ cover: "./5353.png"
 
 ## Release note
 
-"Edge530 ASIA" は欧米版と違うソフトウェアっぽいのでバージョン番号も別に管理されています。
+"Edge530 ASIA" は欧米版と違うソフトウェアっぽいのでバージョン番号も別に管理されています。なぜか ASIA 版のほうがバージョンが上。
 
 https://www.garmin.co.jp/products/intosports/edge-530-bundle/#updateTab
 
