@@ -123,11 +123,10 @@ module.exports = {
             },
             query: `
               {
-                allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 20) {
+                allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 20, filter: {frontmatter: {draft: {ne: true}}}) {
                   edges {
                     node {
                       excerpt
-                      html
                       fields {
                         slug
                       }
