@@ -2,7 +2,7 @@
 title: "タンパク質も炭水化物も食べたいならコーラグミ"
 date: 2020-08-13
 draft: false
-tags: ["TIPS", "ROAD"]
+tags: ["TIPS", "ROAD", "MTB"]
 cover: "./colaup.jpg"
 ---
 
