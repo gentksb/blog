@@ -14,7 +14,7 @@ const Pagination = ({ props }) => {
 
   return (
     <Grid container spacing={2} justify="center">
-      <Grid item xs={6}>
+      <Grid item xs={6} style={{ textAlign: "left" }}>
         {nextPagePath ?
           <PaginationLink to={nextPagePath}>
             <Button variant="outlined" color="primary" startIcon={<ArrowBack />}>

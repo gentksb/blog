@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { Typography, Grid, Card, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button } from '@material-ui/core'
+import { Typography, Grid, Card, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button, Divider } from '@material-ui/core'
 import styled from "@emotion/styled";
 import PostTag from "./postTag"
 
@@ -28,6 +28,7 @@ const postList = ({ props }) => {
                 <CardHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
               </Link>
             </CardActionArea>
+            <Divider variant="middle" />
             <PostTag tags={node.frontmatter.tags} />
             {postCoverBox}
             <CardContent>
