@@ -56,7 +56,7 @@ const Layout = (props) => {
           <HeaderBar position="static">
             {header}
           </HeaderBar>
-          <Container maxWidth={maxMainContentWidth} component="main" style={{ margin: `8px auto` }}>
+          <Container maxWidth={maxMainContentWidth} component="main" style={{ margin: `8px auto`, padding: `0px 0px` }}>
             {children}
           </Container>
           <Footer />
