@@ -1,5 +1,5 @@
 ---
-title: "Maxxis AgressorのDDバージョンを使ってみた"
+title: "Maxxis AggressorのDDバージョンを使ってみた"
 date: 2020-08-22
 draft: false
 tags: ["MTB", "REVIEW"]
