@@ -18,7 +18,7 @@ cover: "./5353.png"
 
 "Edge530 ASIA" は欧米版と違うソフトウェアっぽいのでバージョン番号も別に管理されています。なぜか ASIA 版のほうがバージョンが上。
 
-https://www.garmin.co.jp/products/intosports/edge-530-bundle/#updateTab
+<https://www.garmin.co.jp/products/intosports/edge-530-bundle/#updateTab>
 
 > 1. 屋内ライドの改善\
 >    ・GPS が利用できない場合 WiFi または Bluetooth を使用して時刻を補正するように改善\

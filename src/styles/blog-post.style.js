@@ -54,6 +54,29 @@ const BlogPostStyle = () =>
         line-height: 1.5;
     }
 
+    /* テーブル */
+    article table {
+      overflow-x:auto;
+      width: auto;
+      border: 1px solid #555555;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    th {
+      color: #fff;
+      padding: 5px;
+      border-bottom: 1px solid #555555;
+      border-left: 1px solid #555555;
+      background: gray;
+      line-height: 120%;
+      text-align: center;
+    }
+    td {
+      padding: 5px;
+      border-bottom: 1px solid #555555;
+      border-left: 1px solid #555555;
+    }
+
     /* amazlet https://rough-log.com/3528 */
     .amazlet-box {
       color: #3e3e3e;
