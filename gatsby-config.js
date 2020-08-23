@@ -63,6 +63,16 @@ module.exports = {
             },
           },
           `gatsby-remark-copy-linked-files`,
+          {
+            resolve: "gatsby-remark-custom-blocks",
+            options: {
+              blocks: {
+                scrollableTable: {
+                  classes: "scrollable_table",
+                },
+              },
+            },
+          },
         ],
       },
     },
