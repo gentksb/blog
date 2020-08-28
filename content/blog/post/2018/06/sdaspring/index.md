@@ -24,7 +24,7 @@ SAVAS の補給食は数ある補給食の中でトップクラスに美味し�
 
 ### 追記
 
-[Bryton 用の格安マウント](http://s.click.aliexpress.com/e/bCpA5B7S)を AliExpress で購入した。これでステム上にサイコンを配置しながらトップチューブバッグのベルトをステムに通すことができる。
+[Bryton 用の格安マウント](https://www.aliexpress.com/af/bryton-mount.html?d=y&origin=n&SearchText=bryton+mount&catId=0&initiative_id=SB_20200828042828)を AliExpress で購入した。これでステム上にサイコンを配置しながらトップチューブバッグのベルトをステムに通すことができる。
 アウトフロントマウントはコケたときに折れることがあるらしいので不採用。
 
 ツールなどと合わせて約 1kg ほどを背中から削減。
