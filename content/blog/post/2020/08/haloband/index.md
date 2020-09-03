@@ -1,6 +1,6 @@
 ---
 title: "Halo BANDIT JPレビュー"
-date: 2020-08-22
+date: 2020-08-23
 draft: false
 tags: ["MTB", "ROAD", "CX", "REVIEW"]
 cover: "./cover.jpg"
