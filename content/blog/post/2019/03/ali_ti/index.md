@@ -14,7 +14,9 @@ cover: "./istitan.jpg"
 買い替え前も中華カーボンの製品を使っていましたが、ガバガバになってきたので交換を検討し、定期的に来るチタン欲を満たすためにチタンボトルケージを買うことに。
 ※大集団だと保持力が低いケージを使うのは考えものなので、レースを頻繁にやる場合はちゃんとしたものを使ったほうが無難
 
-せっかくだし、ボルトもチタンにするべく、[やや信頼性がありそうなセラー](https://titotitanium.aliexpress.com/store/1501109)からボルト単体も購入。
+せっかくだし、ボルトもチタンにするべく[ボルト単体](https://s.click.aliexpress.com/e/_dZ8icPu)も購入。謎のオイルスリックやゴールデンカラーが多いけど、普通にチタンカラーを買った。
+
+<a href="https://s.click.aliexpress.com/e/_dZ8icPu" target="_blank"><img src="https://ae01.alicdn.com/kf/HTB1M9eGm3mTBuNjy1Xbq6yMrVXar.jpg_80x80.jpg" /></a>
 
 そしてチタンは電位差で腐食してしまうので、ロックタイトのアンチシーズカッパーも購入。FINISH LINE のチタンプレップ割高だし…
 

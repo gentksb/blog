@@ -3,9 +3,7 @@ title: Zwiftがすごくすごいので導入した
 author: admin
 type: post
 date: 2015-10-01T05:13:00+00:00
-
 cover: 2015-10-01_2209230.jpg
-
 tags: ["TIPS", "Zwift", "REVIEW", "ROAD"]
 ---
 
@@ -23,15 +21,11 @@ tags: ["TIPS", "Zwift", "REVIEW", "ROAD"]
 
 ## 必要なもの（ハードウェア）
 
-・PC
-
-・ローラー
-
-・自転車
-
-・ANT+センサー
-
-・ANT+USB ドングル
+- PC
+- ローラー
+- 自転車
+- ANT+センサー (もしくは BT 互換のパワーメーターやスピードセンサー)
+- ANT+USB ドングル
 
 最低限これだけ必要だ。
 
@@ -45,44 +39,13 @@ USB ドングルは結構厄介。
 
 信頼できそうな製品での価格帯が低いものは Amazon で売っている[BC-ANT-USB][2]だが、本記事執筆時点では売り切れで 10 月中旬まで入荷は無いらしい。次点は[SUUNTO Movestick Mini USB][3]だった。
 
-流石にちょっと高いと感じたので、自分は Aliexpress の 1000 円ドングルを購入。
+流石にちょっと高いと感じたので、自分は Aliexpress の [1000 円ドングル](https://s.click.aliexpress.com/e/_BfiMUYCE)を購入。怪しさ満載。
 
-怪しさ満載。
-
-一応 Amazon でも売っていた。Wiggle でも安いのを売り始めたらしい。
+一応 Amazon でも売っていた。Wiggle や CRC でも[LifeLine ブランドの製品](https://www.chainreactioncycles.com/jp/ja/lifeline-ant-usb-%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF/rp-prod155468)を売り始めたらしい。
 
 <s>Aliexpress なら 10 ドルだけどな！！！</s>
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B019N9BBLK/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="ANT+ USBドングル [並行輸入品]" src="https://images-fe.ssl-images-amazon.com/images/I/41G6TQ-aspL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B019N9BBLK/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ANT+ USBドングル [並行輸入品]</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.11.29
-</div>
-
-<div class="amazlet-detail">
-Dongguan Lontion Industrial Co., Ltd. <br /> 売り上げランキング: 925
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B019N9BBLK/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
-
-<a href="https://www.wiggle.jp/lifeline-ant-usb-%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF/" rel="nofollow" target="_blank"><img border="0" height="1" src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" width="0" /><img border="0" src="https://www.wigglestatic.com/product-media/5360112225/LifeLine-ANT-USB-Stick-GPS-Cycle-Computers-LL-ANTUSB-M.jpg?w=200&h=200&a=7" height="200" width="200" /></a>
-
-<a href="https://www.wiggle.jp/lifeline-ant-usb-%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF/" rel="nofollow" target="_blank"><img border="0" height="1" src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" width="0" />LifeLine &#8211; ANT+ USB スティック &#8211; Wiggle</a>
+<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B0874R1DDY/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/41i0zmnV67L._SL200_.jpg" alt="NEWOKE CooSpo ANT+ USB ドングル USB送信機受信機 Zwift/Wahoo Kickr/TacXなど 対応互換（延長ワイヤー付き）" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B0874R1DDY/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">NEWOKE CooSpo ANT+ USB ドングル USB送信機受信機 Zwift/Wahoo Kickr/TacXなど 対応互換（延長ワイヤー付き）</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="NEWOKE CooSpo ANT+ USB ドングル USB送信機受信機 Zwift/Wahoo Kickr/TacXなど 対応互換（延長ワイヤー付き）" rel="nofollow" target="_blank">Amaquick</a> at 2020-09-05</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B0874R1DDY/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
 
 1 週間ほどして届いたブツがこちら。
 
@@ -138,32 +101,7 @@ Strava がリアルタイムで MMORPG 化した感じである。
 
 冬場のローラーはこれだけでかなり遊べそうだ。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000" src="https://images-fe.ssl-images-amazon.com/images/I/41MImoh-wkL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">SUUNTO(スント) Movestick Mini USB 【日本正規品】 S016591000</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.03.21
-</div>
-
-<div class="amazlet-detail">
-SUUNTO(スント) (2011-11-14)<br /> 売り上げランキング: 86,382
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0050GL5GM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B00CM381SQ/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/31HZc8neYmL._SL200_.jpg" alt="GARMIN(ガーミン) USB ANTスティックmini(FA910、610、410、405、50対応)【日本正規品】 105800" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B00CM381SQ/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">GARMIN(ガーミン) USB ANTスティックmini(FA910、610、410、405、50対応)【日本正規品】 105800</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="GARMIN(ガーミン) USB ANTスティックmini(FA910、610、410、405、50対応)【日本正規品】 105800" rel="nofollow" target="_blank">Amaquick</a> at 2020-09-05</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B00CM381SQ/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
 
 [1]: http://www.zwift.com/
 [2]: http://www.amazon.co.jp/gp/product/B008368QN6/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B008368QN6&linkCode=as2&tag=gensobunya-22
