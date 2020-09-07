@@ -6,4 +6,6 @@ This is gensobunya's bike blog repository.
 
 ## note
 
+GitHub -> Gatsby Cloud -> Vercel
+
 Hosted by [Vercel](https://vercel.com)
