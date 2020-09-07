@@ -4,8 +4,14 @@ This is gensobunya's bike blog repository.
 
 [Go to website](http://blog.gensobunya.net)
 
-## note
+## Build & Deploy Pipeline
 
-GitHub -> Gatsby Cloud -> Vercel
+### Build
 
-Hosted by [Vercel](https://vercel.com)
+[Gatsby Cloud](https://www.gatsbyjs.com/cloud/) with GitHub master branch trigger.
+
+### Deploy
+
+Hosting by [Vercel](https://vercel.com).
+
+TLS, Redirecting, Custom Domain and caching is managed by [Vercel](https://vercel.com)
