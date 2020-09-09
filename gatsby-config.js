@@ -1,5 +1,3 @@
-const { isWidthDown } = require("@material-ui/core")
-
 module.exports = {
   siteMetadata: {
     title: `幻想サイクル`,
@@ -36,14 +34,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 960,
-              maxHeight: 760,
-              fit: `inside`,
+              linkImagesToOriginal: true,
+              wrapperStyle: `margin-bottom: 16px;`,
               quality: 60,
               withWebp: true,
-              linkImagesToOriginal: true,
               loading: `lazy`,
-              disableBgImage: true,
-              wrapperStyle: `margin-bottom: 16px;`,
+              srcSetBreakpoints: [480],
+              maxHeight: 760,
+              fit: `inside`,
             },
           },
           {
