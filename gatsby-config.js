@@ -26,6 +26,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -37,7 +38,7 @@ module.exports = {
               linkImagesToOriginal: true,
               wrapperStyle: `margin-bottom: 16px;`,
               quality: 60,
-              withWebp: true,
+              // withWebp: true,
               loading: `lazy`,
               srcSetBreakpoints: [480],
               maxHeight: 760,
@@ -77,7 +78,6 @@ module.exports = {
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-preconnect",
