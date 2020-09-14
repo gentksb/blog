@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 
 import { Typography, CssBaseline, AppBar, Container } from '@material-ui/core'
@@ -10,6 +10,15 @@ import theme from '../config/theme'
 const Layout = (props) => {
   const { location, title, children } = props
   const blogtheme = useTheme();
+  useEffect(() => {
+    if (window.iframely) {
+      window.iframely.load()
+    }
+    // ツイート内容を埋め込みたい場合
+    if (window.twitter) {
+      window.twitter.widgets.load()
+    }
+  })
 
   const BlogTitleLink = styled(Link)`
     color: ${blogtheme.palette.common.white};
