@@ -78,7 +78,10 @@ function SEO({ description, lang, meta, title, image, location }) {
           content: `@${site.siteMetadata.social.twitter}`,
         }
       ].concat(meta)}
-    />
+    >
+      <script async src="https://cdn.iframe.ly/embed.js" />
+      <script async src="https://platform.twitter.com/widgets.js" />
+    </Helmet>
   )
 }
 
