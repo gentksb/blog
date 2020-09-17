@@ -36,10 +36,9 @@ module.exports = {
             options: {
               maxWidth: 960,
               wrapperStyle: `margin-bottom: 16px;`,
-              quality: 60,
+              quality: 80,
               withWebp: true,
               loading: `lazy`,
-              srcSetBreakpoints: [240, 480],
               maxHeight: 760,
               fit: `inside`,
             },
