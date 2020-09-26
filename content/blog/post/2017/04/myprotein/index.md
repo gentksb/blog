@@ -19,7 +19,7 @@ tags: ["REVIEW", "EC", "FOOD"]
 
 サイクリストにとってのプロテインの重要性については、<a href="/2016/02/blog-post.html" target="_blank">以前の記事</a>か<a href="http://genkibicycle.jp/" target="_blank">山本元喜選手のブログ</a>を参照して欲しい。
 
-購入したのは、同サイト標準モデルのプロテインよりタンパク質含有率を高めた<a href="https://www.myprotein.jp/sports-nutrition/impact-whey-protein/10530943.html" target="_blank">IMPACT WHEY プロテイン</a>。ちょうどセール対象だったナチュラルバニラ味をチョイス。
+購入したのは、同サイト標準モデルのプロテインよりタンパク質含有率を高めた<a href="https://www.myprotein.jp/sports-nutrition/impact-whey-protein/10530943.html" target="_blank">IMPACT WHEY プロテイン</a>。ちょうどセール対象だった[ナチュラルバニラ味](https://item.rakuten.co.jp/myprotein/10530943_5000_other/)をチョイス。
 
 ソイプロは 2kg で 6000 円程度かつ、タンパク質含有率 90%越えという高コストパフォーマンスだったが、こいつは 5kg で 9000 円程度だった。驚きの安さである。
 
