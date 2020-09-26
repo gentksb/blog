@@ -1,5 +1,5 @@
 ---
-title: "ELITE SUITE スマートローラー"
+title: "ELITE SUITO スマートローラー"
 date: 2020-09-26
 draft: false
 tags: ["ROAD", "REVIEW"]
