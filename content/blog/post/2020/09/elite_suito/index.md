@@ -1,5 +1,5 @@
 ---
-title: ELITE SUITE スマートローラー"
+title: "ELITE SUITE スマートローラー"
 date: 2020-09-26
 draft: false
 tags: ["ROAD", "REVIEW"]
@@ -46,7 +46,7 @@ Zwift と Elite のトレーニングプラン 1 か月分のトライアルが�
 
 漕ぎだしてまず感じたのは圧倒的な静かさ。
 
-自分が Feedback の[ポータブルトレーナー](https://www.chainreactioncycles.com/jp/rp-prod197492)以来のローラー購入で、かなり世代が空いているというのもあり、近年のローラーの進歩に驚かされた。
+自分が Feedback の[ポータブルトレーナー](https://www.chainreactioncycles.com/jp/rp-prod197492)以来のローラー購入で、かなり世代が空いているというのもあり、近年のローラーの進歩に驚かされた。脚の細さにやや不安を感じていたが、剛性感も問題なし。
 
 まずは Zwift Workout の Miracle をやってみたのだが、ERG モードがデフォルトで ON になっていたため、期せずして ERG モードのワークアウト体験をすることに。
 
@@ -60,3 +60,11 @@ Zwift 初期に「頭を使わなくてもパワトレができる！」とい�
 以上の理由もあり、スマホ側のコントローラーはほぼ必須。中華製品の[スマートフォンポケット付きスウェットガード](https://amzn.to/3j4nKR3)を使って手元でコントロールしている。
 
 ERG モードによるトルク変動は数秒～ 10 秒ほどのラグがあるので、1 分以内の出力変化があるタバタのようなトレーニングには不向き。場合に応じて使い分けが必要そうだった。
+
+## まとめ
+
+精密なパワーを求める人には向かないかもしれないが、それもパワーメーターリンクにより解決できるので、保管場所が限られている人向けのスマートローラーとしては価格もこなれていて非常に良いように感じた。
+
+問題は品薄で予約必須だったりすることか…
+
+<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://product.rakuten.co.jp/product/-/464575637a32aabb4f81e3afe3302921/" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/31JvVNoX-iL._SL200_.jpg" alt="ELITE(エリート) SUITO(スイート)(ダイレクトドライブ) シマノ 0191001 ホームトレーナー" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://product.rakuten.co.jp/product/-/464575637a32aabb4f81e3afe3302921/" name="amachazllink" rel="nofollow" target="_blank">ELITE(エリート) フィットネスバイク SUITO(スイート)(ダイレクトドライブ) シマノ 0191001 ホームトレーナー</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="ELITE(エリート) フィットネスバイク SUITO(スイート)(ダイレクトドライブ) シマノ 0191001 ホームトレーナー" rel="nofollow" target="_blank">Amaquick</a> at 2020-09-26</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://product.rakuten.co.jp/product/-/464575637a32aabb4f81e3afe3302921/" name="amachazllink" rel="nofollow" target="_blank">楽天で詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
