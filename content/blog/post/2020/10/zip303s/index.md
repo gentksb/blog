@@ -57,6 +57,14 @@ SLR1 はカーボンホイールなので重量に関してはアルミのディ
 
 新型 303 firecrest がこれよりいいホイールというのがちょっと信じられないくらいです。これよりいいホイール作れるんだ…
 
+なお、この日の空気圧設定は ZIPP のツールを利用して算出しました。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今日はZIPP様の言う通りにしてみる <a href="https://t.co/zGvgx5JEjk">pic.twitter.com/zGvgx5JEjk</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1312197246050398209?ref_src=twsrc%5Etfw">October 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+なんと前後 4 気圧以下！
+
+ちなみにこのホイールの最大空気圧は 5 気圧となっています。
+
 ## 欠点: ビード上げがとても大変
 
 走行性のはとんでもなく高いことがわかったのですが、それと引き換えに後輪のみビード上げに四苦八苦しました…
@@ -80,7 +88,18 @@ SLR1 はカーボンホイールなので重量に関してはアルミのディ
 
 自分の環境でも、ビードを丁寧に中央付近にそろえておいてホイールを浮かせた状態で(重要)インフレーターを使えばビードが何とか上がったので、これ以上は何も言いませんでしたが流石に次回はタイヤを交換する際は[安くて厚めのチューブレステープ](https://www.chainreactioncycles.com/jp/ja/lifeline-professional-%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96%E3%83%AC%E3%82%B9%E3%83%AA%E3%83%A0%E3%83%86%E3%83%BC%E3%83%97-10m/rp-prod175854)を追加で巻くなどして対応するとは思います。
 
-ZIPP のタイヤを使うといいよ！と言われたけど[Cyclowired のインプレ](https://www.cyclowired.jp/news/node/323522)ではインフレーターすら歯が立たなかったらしいですし…
+ZIPP のタイヤを使うといいよ！と言われたけど[Cyclowired のインプレ](https://www.cyclowired.jp/news/node/323522)ではインフレーターすら歯が立たなかったらしいですし…\
+ちなみに ZIPP 自身は推奨タイヤというものを出しておらず、フックレス構造に対応しているタイヤを使ってね！と言っています。
+
+[サポートページ](https://sram.zendesk.com/hc/en-us/articles/360050355593-What-tubeless-tires-are-compatible-with-Zipp-s-new-MY21-new-logo-303-S-and-303-Firecrest-disc-brake-wheels-)で、「タイヤメーカーがフックレスで使える」ことを明示したメーカーとして
+
+- Zipp - Tangente Speed RT25, R28, and the Tangente Course G40 gravel tire
+- Schwalbe
+- Rene Herse
+- Pirelli
+- Goodyear
+
+これら 5 社が挙げられています。シュワルベ以外のメジャーメーカーがないのは意外です。
 
 経験上、タイヤが太ければ太いほどビードは上げるのが簡単になるので、今年発表されたような「32c が入る！」といったロードバイクでは太めのタイヤと組み合わせた方がいいかもしれません。タイヤ装着が楽に越したことはないですし、チューブレスレディタイヤならば太くなっても重量ネガが目立ちづらいです。
 
