@@ -57,7 +57,7 @@ SLR1 はカーボンホイールなので重量に関してはアルミのディ
 
 新型 303 firecrest がこれよりいいホイールというのがちょっと信じられないくらいです。これよりいいホイール作れるんだ…
 
-なお、この日の空気圧設定は ZIPP のツールを利用して算出しました。
+なお、この日の空気圧設定は [ZIPP のツール](https://axs.sram.com/tirepressureguide)を利用して算出しました。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今日はZIPP様の言う通りにしてみる <a href="https://t.co/zGvgx5JEjk">pic.twitter.com/zGvgx5JEjk</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1312197246050398209?ref_src=twsrc%5Etfw">October 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
