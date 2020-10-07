@@ -72,7 +72,11 @@ SLR1 はカーボンホイールなので重量に関してはアルミのディ
 ロードチューブレスはもう 10 年近く使っているので、装着・ビード上げにはかなりの自信があったのですが……過去最大の苦しみを体験しました。（尚、フロントはフロアポンプであっさり上がったので製品公差によるものである可能性が高いです）
 
 シーラントは[Effetto mariposa caffelatex](https://www.chainreactioncycles.com/jp/ja/effetto-caffelatex-tubeless-fluid/rp-prod150131)を使い、リム内部には石鹸水を塗布して作業しています。
-インフレーターは TOPEAK の[tubibooster X](https://amzn.to/3nj5GF2)での経験です。
+インフレーターは TOPEAK の[tubibooster X](https://amzn.to/3nj5GF2)での経験です。[tubibooster X](https://amzn.to/3nj5GF2)のレビュー記事はこちら。
+
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;"><a href="https://blog.gensobunya.net/post/2020/06/tubiboosterx/" data-iframely-url="//cdn.iframe.ly/zfBhizG"></a></div></div>
+
+<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B07XHGM23B/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/31Wkj7swN9L._SL200_.jpg" alt="トピーク チュビブースター X チューブレス対応" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B07XHGM23B/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">トピーク チュビブースター X チューブレス対応</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="トピーク チュビブースター X チューブレス対応" rel="nofollow" target="_blank">Amaquick</a> at 2020-10-07</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B07XHGM23B/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
 
 1. 前のホイールで利用していた手持ちの Schwalbe PRO ONE TLE(現行モデル) 30c をフロアポンプで空気入れ
 2. 同タイヤをインフレーター（仏式）で空気入れ
