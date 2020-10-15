@@ -12,6 +12,4 @@ This is gensobunya's bike blog repository.
 
 ### Deploy
 
-Hosting by [Vercel](https://vercel.com).
-
-TLS, Redirecting, Custom Domain and caching is managed by [Vercel](https://vercel.com)
+Hosting at Firebase.
