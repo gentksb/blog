@@ -1,5 +1,5 @@
 ---
-title: "Aftershokz OpenmMove"
+title: "AfterShokz OpenMove"
 date: 2020-10-25
 draft: false
 tags: ["REVIEW"]
