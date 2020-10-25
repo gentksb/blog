@@ -1,6 +1,6 @@
 ---
 title: "Aftershokz OpenmMove"
-date: 2020-10-05
+date: 2020-10-25
 draft: false
 tags: ["REVIEW"]
 cover: "./cover.jpg"
