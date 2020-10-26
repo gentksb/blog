@@ -25,7 +25,7 @@ cover: "./seal.jpg"
 
 水分の侵入は主にスポーク穴から侵入した水分と、タイヤサイドからの侵入の二通りがある。
 
-まず、スポーク穴の方はスポークホールレスのホイールを使って解決する。ニッチ過ぎてほぼ市販されていないが、[PAXCYCLE](http://www.paxcycle.com/)や一部の AliExpress セラー([FARSports](https://www.aliexpress.com/store/all-wholesale-products/103713.html))で扱っている。さらに、防水効果のある接着剤である[ボンド G17](https://amzn.to/2JeDVs9)をタイヤのふんどしに予め塗布しておく。  
+まず、スポーク穴の方はスポークホールレスのホイールを使って解決する。ニッチ過ぎてほぼ市販されていないが、[PAXCYCLE](http://www.paxcycle.com/)や一部の AliExpress セラー([FARSports](https://www.aliexpress.com/store/all-wholesale-products/103713.html)で扱っている。さらに、防水効果のある接着剤である[ボンド G17](https://amzn.to/2JeDVs9)をタイヤのふんどしに予め塗布しておく。  
 Tufo のように、最初から黒いふんどしで若干の防水力があると推測されるものもあるが、念の為塗布しておく。
 
 ![防水…？](./tufo.jpg)
