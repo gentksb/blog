@@ -22,7 +22,7 @@ AliExpress でよくみる中華パワーメーター筆頭である XCADEY の�
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://s.click.aliexpress.com/e/_A4DPRH" data-iframely-url="//cdn.iframe.ly/BGkOUiP"></a></div></div>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 64.1333%; padding-top: 120px;"><a href="https://s.click.aliexpress.com/e/_9Qq8Xt" data-iframely-url="//cdn.iframe.ly/LCqRukR"></a></div></div>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://s.click.aliexpress.com/e/_9Qq8Xt" data-iframely-url="//cdn.iframe.ly/LCqRukR"></a></div></div>
 
 AliExpress のセラーには、公式に存在しない謎の右クランクメーターも。何故か両側 PM の最新版は自分が右側を買った後に AliExpress から姿を消し、しょっぱなから不穏。
 
