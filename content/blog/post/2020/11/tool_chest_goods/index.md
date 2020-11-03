@@ -1,10 +1,12 @@
 ---
 title: "ツールチェストで作業エリアすっきり化／ショーワグローブNo.370とAmazonギフトボックス"
-date: 2020-10-25
+date: 2020-11-06
 draft: false
 tags: ["REVIEW", "TOOLS"]
 cover: "./cover.jpg"
 ---
+
+## でかいツーボックスはいいぞ
 
 [ギフトボックス](https://www.amazon.co.jp/dp/B07RW4G3MF/)
 
