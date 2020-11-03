@@ -1,5 +1,5 @@
 ---
-title: "XCADEY X2Power Right-sideパワーメーターレビュー"
+title: "XCADEY 2XPower Right-sideパワーメーターレビュー"
 date: 2020-11-03
 draft: false
 tags: ["REVIEW", "ROAD"]
