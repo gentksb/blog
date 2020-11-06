@@ -1,6 +1,6 @@
 ---
 title: "mont-bell トレッキングベル サイレント"
-date: 2020-11-8
+date: 2020-11-06
 draft: false
 tags: ["REVIEW", "MTB"]
 cover: "./cover.jpg"
