@@ -1,9 +1,7 @@
-import React from "react"
-import { Global, css } from '@emotion/react'
+import { css } from '@emotion/react'
 import theme from '../config/theme'
 
-const BlogPostStyle : React.FunctionComponent = () =>
-  <Global styles={css`
+const BlogPostStyle = css`
     h2 {
       padding: 0.25em 0 0.25em 0.75em;
       border-left: 6px solid ${theme.palette.primary.main};
@@ -298,10 +296,6 @@ const BlogPostStyle : React.FunctionComponent = () =>
       overflow: hidden;
       white-space: nowrap;
     }
-
-
-
-  `}
-  />
+  `
 
 export default BlogPostStyle

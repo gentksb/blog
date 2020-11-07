@@ -45,7 +45,7 @@ const postList: React.FunctionComponent<Props> = ({ props }) => {
               <ReadmoreButton>
                 <Button variant="contained" color="secondary" href={node.fields.slug} disableElevation >この記事を読む</Button>
               </ReadmoreButton>
-             </Hidden>
+            </Hidden>
           </Postcard>
         </Grid>
       )

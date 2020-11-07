@@ -11,6 +11,7 @@ import PrevAndNextPost from "../components/prevAndNextpost"
 import BlogPostStyle from "../styles/blog-post.style"
 import TagList from "../components/tagList"
 import { BlogPostBySlugQuery,SitePageContext } from "../../types/graphql-types"
+import RelatedPosts from "../components/relatedPost"
 
 const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, SitePageContext>> = (props) => {
   const { pageContext, data, location } = props
@@ -21,6 +22,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
     post.frontmatter.cover != null
       ? post.frontmatter.cover.childImageSharp.fluid.src
       : "/image/dummy.jpg"
+  
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -30,7 +32,6 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
         image={seoImage}
         location={location}
       />
-      <BlogPostStyle />
       <Paper elevation={0}>
         <article>
           <CardContent>
@@ -55,6 +56,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
               variant="body1"
               component="div"
               dangerouslySetInnerHTML={{ __html: post.html }}
+              css = {BlogPostStyle}
             />
           </CardContent>
         </article>
@@ -64,6 +66,9 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
       <nav>
         <PrevAndNextPost previous={previous} next={next} />
       </nav>
+      <Divider variant="fullWidth" />
+      <Typography variant="h6" component="h2">最近の似た記事</Typography>
+      <RelatedPosts tag={post.frontmatter.tags[0]} />
       <TagList />
     </Layout>
   )

@@ -3399,6 +3399,14 @@ export type BioComponentQuery = { avatar?: Maybe<{ childImageSharp?: Maybe<{ flu
       & { social?: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
     )> }> };
 
+export type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type RecentPostQuery = { allMarkdownRemark: { edges: Array<{ node: (
+        Pick<MarkdownRemark, 'id'>
+        & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'tags'>>, fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>> }
+      ) }> } };
+
 export type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
