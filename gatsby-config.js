@@ -140,7 +140,7 @@ module.exports = {
               })
             },
             query: `
-              {
+              query RssFeed {
                 allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 20, filter: {frontmatter: {draft: {ne: true}}}) {
                   edges {
                     node {

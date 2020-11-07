@@ -29,7 +29,7 @@ const Tags = ({ pageContext, data, location }) => {
 export default Tags
 
 export const pageQuery = graphql`
-  query($tag: String) TagPage{
+  query TagPage($tag: String) {
     site {
       siteMetadata {
         title
@@ -37,7 +37,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: {ne: true},tags: { in: [$tag] } } }
+      filter: { frontmatter: { draft: { ne: true }, tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
