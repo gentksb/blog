@@ -15,7 +15,7 @@ import { BlogPostBySlugQuery,SitePageContext } from "../../types/graphql-types"
 const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, SitePageContext>> = (props) => {
   const { pageContext, data, location } = props
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = data.site.siteMetadata?.title
   const { previous, next } = pageContext
   const seoImage =
     post.frontmatter.cover != null
