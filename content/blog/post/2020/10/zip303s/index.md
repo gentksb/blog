@@ -12,9 +12,7 @@ cover: "./cover.jpg"
 
 フックレス＋幅広リムの[ZIPP303S](https://store.shopping.yahoo.co.jp/cyclick/zipp-wh-1027.html)を購入しました！
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://store.shopping.yahoo.co.jp/qbei/pi-810428.html" data-iframely-url="//cdn.iframe.ly/T5Vq7It"></a></div></div>
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://store.shopping.yahoo.co.jp/qbei/pi-810429.html" data-iframely-url="//cdn.iframe.ly/g7nDgxn"></a></div></div>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://dalr.valuecommerce.com/dck/4fc29ebd8a?pid=886313738&sid=3171302&aid=2821580&mid=2201292&ub=X6X0awAN6qVqSQSBwKhuqsCobtKGuw%3D%3D&rid=X6X0bAAAQG5qSQSBwKhvT8Cob10S6A&isec=5fa5f46c&vcurl=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html&ckref=https%3A%2F%2Fblog.gensobunya.net%2Fpost%2F2020%2F10%2Fzip303s%2F&pl=FGa44j1eJNlY5BSo9z4ofjb75PaK4Vpjt.gEngMQEjZr_WhXTA2s.XTVV26y8GGEDd5ihORoVyFGh8cmvSuCKzIlnY6xljQlpRDuVhtWJ55nudxf7_OLgiPFMJhHFW_jftckkCoqAkCoq0NUuAuyPB94UXuGlfUm0NUbNiqUU8jA2Q3wL6k03x0.5EwHXXTSHCSPmtd0wVYPIG_qvoPfybYb5EvYTrYesSp0Qn1cBCbpIvLG9mhORoViTmkSnqyjaY2KcsuUEIwvqRPibjURgyzZ4xUC56MnGWpwoNSUC53ZXnN87gq1VW29JdZdW.azPu_dYV6Hycfx9MsFrH3A0FWW5DtThw0VgN20NK1e3sdIdUA1z9dyKCp0iZ7L1W1kl1BNr5xj6Knrgy4TIvRSwQ5BSpFY5BNkOxQT13Nldj1DxuVOFIighLBPKXVA4.L9.gJ0Nc1lF4XV4L9.ZBcKXV41N9lFCUC68mlFCUC68mlF1meWL9.LK74XV4h_L9.TmkSnrSnjk3nLsx_itrrfs.Bs8&ih=WklQUDMwM1M&vo__ih=WklQUDMwM1M&vo__uri=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html" data-iframely-url="//cdn.iframe.ly/eyulHr4"></a></div></div>
 
 ## ディスクロードのホイール回想
 
@@ -113,4 +111,4 @@ ZIPP のタイヤを使うといいよ！と言われたけど[Cyclowired のイ
 
 グラベルロードでも使えるリム幅ですので、高速化を狙いたい人には特にお勧めできます。グラベルロード用のタイヤなら装着も比較的マシになるはずです。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://store.shopping.yahoo.co.jp/cyclick/zipp-wh-1027.html" data-iframely-url="//cdn.iframe.ly/eyulHr4"></a></div></div>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://dalr.valuecommerce.com/dck/4fc29ebd8a?pid=886313738&sid=3171302&aid=2821580&mid=2201292&ub=X6X0awAN6qVqSQSBwKhuqsCobtKGuw%3D%3D&rid=X6X0bAAAQG5qSQSBwKhvT8Cob10S6A&isec=5fa5f46c&vcurl=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html&ckref=https%3A%2F%2Fblog.gensobunya.net%2Fpost%2F2020%2F10%2Fzip303s%2F&pl=FGa44j1eJNlY5BSo9z4ofjb75PaK4Vpjt.gEngMQEjZr_WhXTA2s.XTVV26y8GGEDd5ihORoVyFGh8cmvSuCKzIlnY6xljQlpRDuVhtWJ55nudxf7_OLgiPFMJhHFW_jftckkCoqAkCoq0NUuAuyPB94UXuGlfUm0NUbNiqUU8jA2Q3wL6k03x0.5EwHXXTSHCSPmtd0wVYPIG_qvoPfybYb5EvYTrYesSp0Qn1cBCbpIvLG9mhORoViTmkSnqyjaY2KcsuUEIwvqRPibjURgyzZ4xUC56MnGWpwoNSUC53ZXnN87gq1VW29JdZdW.azPu_dYV6Hycfx9MsFrH3A0FWW5DtThw0VgN20NK1e3sdIdUA1z9dyKCp0iZ7L1W1kl1BNr5xj6Knrgy4TIvRSwQ5BSpFY5BNkOxQT13Nldj1DxuVOFIighLBPKXVA4.L9.gJ0Nc1lF4XV4L9.ZBcKXV41N9lFCUC68mlFCUC68mlF1meWL9.LK74XV4h_L9.TmkSnrSnjk3nLsx_itrrfs.Bs8&ih=WklQUDMwM1M&vo__ih=WklQUDMwM1M&vo__uri=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html" data-iframely-url="//cdn.iframe.ly/eyulHr4"></a></div></div>
