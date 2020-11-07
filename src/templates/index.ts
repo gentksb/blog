@@ -8,7 +8,7 @@ import Pagination from "../components/pagination"
 import PostList from "../components/postList"
 import TagList from "../components/tagList"
 
-const BlogIndex = (props) => {
+const BlogIndex: React.FunctionComponentElement<any> = (props) => {
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
   const edges = data.allMarkdownRemark.edges
@@ -27,11 +27,10 @@ const BlogIndex = (props) => {
   )
 }
 
-
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query($skip: Int!, $limit: Int!) {
+  query IndexPage($skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
@@ -41,7 +40,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       skip: $skip
       limit: $limit
-      filter: {frontmatter: {draft: {eq: false}}}
+      filter: { frontmatter: { draft: { eq: false } } }
     ) {
       edges {
         node {
@@ -56,7 +55,7 @@ export const pageQuery = graphql`
             cover {
               childImageSharp {
                 fluid {
-                ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

@@ -22,7 +22,7 @@ class NotFoundPage extends React.Component {
 export default NotFoundPage
 
 export const pageQuery = graphql`
-  query {
+  query 404Page {
     site {
       siteMetadata {
         title

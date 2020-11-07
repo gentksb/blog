@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 function SEO({ description, lang, meta, title, image, location }) {
   const { site } = useStaticQuery(
     graphql`
-      query SeoQuery{
+      query SeoComponent {
         site {
           siteMetadata {
             title
@@ -26,12 +26,13 @@ function SEO({ description, lang, meta, title, image, location }) {
             siteUrl
           }
         }
-      }    
+      }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = site.siteMetadata.siteUrl + (image || site.siteMetadata.image)
+  const metaImage =
+    site.siteMetadata.siteUrl + (image || site.siteMetadata.image)
 
   return (
     <Helmet
@@ -39,7 +40,11 @@ function SEO({ description, lang, meta, title, image, location }) {
         lang,
       }}
       title={title}
-      titleTemplate={location.pathname === "/" ? site.siteMetadata.title : `%s | ${site.siteMetadata.title}`}
+      titleTemplate={
+        location.pathname === "/"
+          ? site.siteMetadata.title
+          : `%s | ${site.siteMetadata.title}`
+      }
       meta={[
         {
           name: `description`,
@@ -51,7 +56,7 @@ function SEO({ description, lang, meta, title, image, location }) {
         },
         {
           property: `og:url`,
-          content: location.href
+          content: location.href,
         },
         {
           property: `og:title`,
@@ -76,7 +81,7 @@ function SEO({ description, lang, meta, title, image, location }) {
         {
           name: `twitter:site`,
           content: `@${site.siteMetadata.social.twitter}`,
-        }
+        },
       ].concat(meta)}
     >
       <script async src="https://cdn.iframe.ly/embed.js" />

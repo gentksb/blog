@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import PostList from "../components/postList"
 import TagList from "../components/tagList"
 
-
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges } = data.allMarkdownRemark
@@ -30,7 +29,7 @@ const Tags = ({ pageContext, data, location }) => {
 export default Tags
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query($tag: String) TagPage{
     site {
       siteMetadata {
         title

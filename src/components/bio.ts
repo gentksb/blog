@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
-    query BioQuery {
+    query BioComponent {
       avatar: file(absolutePath: { regex: "/profile-icon.png/" }) {
         childImageSharp {
           fluid(maxWidth: 50) {
@@ -12,23 +12,23 @@ const Bio = () => {
           }
         }
       }
-      githubIcon: file(absolutePath:{ regex: "/Github.png/" }) {
+      githubIcon: file(absolutePath: { regex: "/Github.png/" }) {
         childImageSharp {
-          fluid(maxWidth:50) {
+          fluid(maxWidth: 50) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      instaIcon: file(absolutePath:{ regex: "/Instagram.png/" }) {
+      instaIcon: file(absolutePath: { regex: "/Instagram.png/" }) {
         childImageSharp {
-          fluid(maxWidth:50) {
+          fluid(maxWidth: 50) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      twitterIcon: file(absolutePath:{ regex: "/Twitter.png/" }) {
+      twitterIcon: file(absolutePath: { regex: "/Twitter.png/" }) {
         childImageSharp {
-          fluid(maxWidth:50) {
+          fluid(maxWidth: 50) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -56,7 +56,11 @@ const Bio = () => {
         alignItems: `center`,
       }}
     >
-      <a href="https://www.gensobunya.net/" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.gensobunya.net/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Image
           fluid={data.avatar.childImageSharp.fluid}
           alt={author}
@@ -70,7 +74,11 @@ const Bio = () => {
           }}
         />
       </a>
-      <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noopener noreferrer">
+      <a
+        href={`https://twitter.com/${social.twitter}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Image
           fluid={data.twitterIcon.childImageSharp.fluid}
           alt="Twitter"
@@ -81,7 +89,11 @@ const Bio = () => {
           }}
         />
       </a>
-      <a href={`https://github.com/${social.github}`} target="_blank" rel="noopener noreferrer">
+      <a
+        href={`https://github.com/${social.github}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Image
           fluid={data.githubIcon.childImageSharp.fluid}
           alt="Github"
@@ -92,7 +104,11 @@ const Bio = () => {
           }}
         />
       </a>
-      <a href={`https://www.instagram.com/${social.instagram}`} target="_blank" rel="noopener noreferrer">
+      <a
+        href={`https://www.instagram.com/${social.instagram}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Image
           fluid={data.instaIcon.childImageSharp.fluid}
           alt="Instagram"
