@@ -1,13 +1,14 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { PageProps,graphql } from "gatsby"
 import { Grid } from "@material-ui/core"
+import { TagPageQuery,SitePageContext } from "../../types/graphql-types"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostList from "../components/postList"
 import TagList from "../components/tagList"
 
-const Tags = ({ pageContext, data, location }) => {
+const Tags : React.FunctionComponent<PageProps<TagPageQuery, SitePageContext>> = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges } = data.allMarkdownRemark
   const pageTitle = `Tag search : ${tag} | 幻想サイクル`

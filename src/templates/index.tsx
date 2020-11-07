@@ -1,6 +1,7 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { PageProps, graphql } from "gatsby"
 import { Grid } from "@material-ui/core"
+import { IndexPageQuery,SitePageContext } from '../../types/graphql-types'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,7 +9,7 @@ import Pagination from "../components/pagination"
 import PostList from "../components/postList"
 import TagList from "../components/tagList"
 
-const BlogIndex: React.FunctionComponent = (props) => {
+const BlogIndex: React.FunctionComponent<PageProps<IndexPageQuery, SitePageContext>> = (props) => {
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
   const edges = data.allMarkdownRemark.edges
@@ -19,7 +20,7 @@ const BlogIndex: React.FunctionComponent = (props) => {
       <Grid container justify="center">
         <Grid item>
           <PostList props={edges} />
-          <Pagination props={props} />
+          <Pagination props={props.pageContext} />
           <TagList />
         </Grid>
       </Grid>

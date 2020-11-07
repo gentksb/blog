@@ -12,7 +12,11 @@ const TagContainer = styled(Container)`
   margin: 8px auto;
 `
 
-const PostTag = ({ tags }) => {
+interface Props {
+  tags?: string[]
+}
+
+const PostTag: React.FunctionComponent<Props> = ({ tags }) => {
 
   const tagArray = (tags != null) ?
     (

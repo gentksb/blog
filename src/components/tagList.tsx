@@ -4,6 +4,8 @@ import { Chip, Container } from "@material-ui/core"
 import { LocalOffer } from "@material-ui/icons"
 import styled from "@emotion/styled"
 
+import { TagListQuery } from '../../types/graphql-types'
+
 const TagChip = styled(Chip)`
   margin: 8px 8px;
 `
@@ -11,9 +13,12 @@ const TagContainer = styled(Container)`
   padding: 0;
   margin: 8px auto;
 `
+interface Props {
+  targetTag?:string
+}
 
-const TagList = ({ targetTag }) => {
-  const data = useStaticQuery(graphql`
+const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
+  const data:TagListQuery = useStaticQuery(graphql`
     query TagList {
       allMarkdownRemark(filter: { frontmatter: { draft: { eq: false } } }) {
         group(field: frontmatter___tags) {

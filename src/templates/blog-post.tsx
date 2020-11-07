@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { PageProps,graphql } from "gatsby"
 import { Typography, Paper, CardContent, Divider } from "@material-ui/core"
 import { Today } from "@material-ui/icons"
 
@@ -10,8 +10,9 @@ import PostTag from "../components/postTag"
 import PrevAndNextPost from "../components/prevAndNextpost"
 import BlogPostStyle from "../styles/blog-post.style"
 import TagList from "../components/tagList"
+import { BlogPostBySlugQuery,SitePageContext } from "../../types/graphql-types"
 
-const BlogPostTemplate: React.FunctionComponent = (props) => {
+const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, SitePageContext>> = (props) => {
   const { pageContext, data, location } = props
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -58,7 +59,7 @@ const BlogPostTemplate: React.FunctionComponent = (props) => {
           </CardContent>
         </article>
         <Divider variant="middle" />
-        <Share post={post} location={location} />
+        <Share title={post.frontmatter.title} location={location} />
       </Paper>
       <nav>
         <PrevAndNextPost previous={previous} next={next} />

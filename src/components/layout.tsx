@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
+import { WindowLocation } from "@reach/router"
 
 import { Typography, CssBaseline, AppBar, Container } from "@material-ui/core"
 import styled from "@emotion/styled"
@@ -20,7 +21,14 @@ declare global {
   }
 }
 
-const Layout: React.FunctionComponent = (props) => {
+interface LocationState {
+  title: string
+  location: WindowLocation
+}
+
+interface Props extends LocationState {}
+
+const Layout: React.FunctionComponent<Props> = (props) => {
   const { location, title, children } = props
   const blogtheme = useTheme()
   useEffect(() => {

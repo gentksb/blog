@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import { Typography, Grid, Paper, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button, Divider } from '@material-ui/core'
 import styled from "@emotion/styled";
 import PostTag from "./postTag"
+import { IndexPageQuery } from '../../types/graphql-types'
 
 const Postcard = styled(Paper)`
   margin-top: 16px;
@@ -12,7 +13,12 @@ const ReadmoreButton = styled(CardActions)`
   justify-content:flex-end;
 `
 
-const postList = ({ props }) => {
+interface Props {
+  props : IndexPageQuery['allMarkdownRemark']['edges']
+}
+
+
+const postList: React.FunctionComponent<Props> = ({ props }) => {
 
   const postCards = (
     props.map(({ node }) => {
