@@ -13,6 +13,10 @@ const ReadmoreButton = styled(CardActions)`
   justify-content:flex-end;
 `
 
+const PostCardHeader = styled(CardHeader)`
+  padding: 0 16px;
+`
+
 interface Props {
   props : IndexPageQuery['allMarkdownRemark']['edges']
 }
@@ -31,7 +35,7 @@ const postList: React.FunctionComponent<Props> = ({ props }) => {
           <Postcard elevation={0} variant="outlined">
             <CardActionArea aria-label={node.frontmatter.title}>
               <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
-                <CardHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
+                <PostCardHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />
               </Link>
             </CardActionArea>
             <Divider variant="middle" />
