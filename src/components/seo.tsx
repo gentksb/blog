@@ -1,19 +1,29 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
+import { WindowLocation } from "@reach/router"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, image, location }) {
+interface LocationState {
+  title: string
+  image?: string
+  location: WindowLocation
+}
+
+interface MetaObject { name: string; content: any; property?: undefined; }
+
+interface SeoDefaultProps {
+  lang?: string
+  meta?: MetaObject[]
+  description?: string
+}
+
+interface Props extends LocationState, SeoDefaultProps {}
+
+const SEO : React.FunctionComponent<Props> = (props) => {
+  const { description, lang, meta, title, image, location } = props
   const { site } = useStaticQuery(
     graphql`
-      query SeoQuery{
+      query SeoComponent {
         site {
           siteMetadata {
             title
@@ -26,12 +36,13 @@ function SEO({ description, lang, meta, title, image, location }) {
             siteUrl
           }
         }
-      }    
+      }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = site.siteMetadata.siteUrl + (image || site.siteMetadata.image)
+  const metaImage =
+    site.siteMetadata.siteUrl + (image || site.siteMetadata.image)
 
   return (
     <Helmet
@@ -39,7 +50,11 @@ function SEO({ description, lang, meta, title, image, location }) {
         lang,
       }}
       title={title}
-      titleTemplate={location.pathname === "/" ? site.siteMetadata.title : `%s | ${site.siteMetadata.title}`}
+      titleTemplate={
+        location.pathname === "/"
+          ? site.siteMetadata.title
+          : `%s | ${site.siteMetadata.title}`
+      }
       meta={[
         {
           name: `description`,
@@ -51,7 +66,7 @@ function SEO({ description, lang, meta, title, image, location }) {
         },
         {
           property: `og:url`,
-          content: location.href
+          content: location.href,
         },
         {
           property: `og:title`,
@@ -76,7 +91,7 @@ function SEO({ description, lang, meta, title, image, location }) {
         {
           name: `twitter:site`,
           content: `@${site.siteMetadata.social.twitter}`,
-        }
+        },
       ].concat(meta)}
     >
       <script async src="https://cdn.iframe.ly/embed.js" />
@@ -85,17 +100,11 @@ function SEO({ description, lang, meta, title, image, location }) {
   )
 }
 
+
 SEO.defaultProps = {
   lang: `ja`,
   meta: [],
   description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

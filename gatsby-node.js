@@ -5,9 +5,8 @@ const { paginate } = require("gatsby-awesome-pagination")
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const postsQueryResult = await graphql(
-    `
-      {
+  const postsQueryResult = await graphql(`
+      query AllPostNode{
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
           filter: {frontmatter: {draft: {ne: true}}}
@@ -28,7 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
   )
 
   const tagsQueryResult = await graphql(`
-  {
+  query AllTagNode{
     allMarkdownRemark {
           group(field: frontmatter___tags) {
             fieldValue
@@ -50,7 +49,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.node.fields.slug,
-      component: path.resolve(`./src/templates/blog-post.js`),
+      component: path.resolve(`./src/templates/blog-post.tsx`),
       context: {
         slug: post.node.fields.slug,
         previous,
@@ -65,7 +64,7 @@ exports.createPages = async ({ graphql, actions }) => {
   tags.forEach(tag => {
     createPage({
       path: `/tags/${tag.fieldValue.toLowerCase()}/`,
-      component: path.resolve("./src/templates/tags.js"),
+      component: path.resolve("./src/templates/tags.tsx"),
       context: {
         tag: tag.fieldValue,
       },
@@ -80,7 +79,7 @@ exports.createPages = async ({ graphql, actions }) => {
       itemsPerPage: 10,
       itemsPerFirstPage: 6, // How many items you want per page
       pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/" : "/page"), // Creates pages like `/blog`, `/blog/2`, etc
-      component: path.resolve("./src/templates/index.js"), // Just like `createPage()`
+      component: path.resolve("./src/templates/index.tsx"), // Just like `createPage()`
     })
   }
   buildPagination(posts)

@@ -11,8 +11,14 @@ import shareConfig from "../config/shareConfig"
 import styled from "@emotion/styled"
 import { Share } from "@material-ui/icons"
 import { IconButton } from "@material-ui/core";
+import { WindowLocation } from "@reach/router"
 
-const sharebox = ({ post, location }) => {
+interface Props {
+  location? : WindowLocation
+  title? : string
+}
+
+const sharebox : React.FunctionComponent<Props> = ({ title, location }) => {
 
   const ShareBox = styled.div`
     display: flex;
@@ -43,7 +49,7 @@ const sharebox = ({ post, location }) => {
     <ShareBox className="social-share">
       <IconButton aria-label="share with other apps" onClick={() => {
         kickShareApi({
-          title: `${post.frontmatter.title}| 幻想サイクル`,
+          title: `${title}| 幻想サイクル`,
           url: location.href,
         })
       }}>
@@ -52,10 +58,10 @@ const sharebox = ({ post, location }) => {
       <FacebookShareButton url={location.href} className="sharebutton-box">
         <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </FacebookShareButton>
-      <TwitterShareButton url={location.href} title={`${post.frontmatter.title}| 幻想サイクル`} className="sharebutton-box">
+      <TwitterShareButton url={location.href} title={`${title}| 幻想サイクル`} className="sharebutton-box">
         <TwitterIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </TwitterShareButton>
-      <LineShareButton url={location.href} title={`${post.frontmatter.title}| 幻想サイクル`} className="sharebutton-box">
+      <LineShareButton url={location.href} title={`${title}| 幻想サイクル`} className="sharebutton-box">
         <LineIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </LineShareButton>
     </ShareBox >

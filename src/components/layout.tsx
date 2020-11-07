@@ -1,15 +1,36 @@
 import React, { useEffect } from "react"
 import { Link } from "gatsby"
+import { WindowLocation } from "@reach/router"
 
-import { Typography, CssBaseline, AppBar, Container } from '@material-ui/core'
-import styled from "@emotion/styled";
-import { ThemeProvider, StylesProvider, useTheme } from "@material-ui/core/styles";
+import { Typography, CssBaseline, AppBar, Container } from "@material-ui/core"
+import styled from "@emotion/styled"
+import {
+  ThemeProvider,
+  StylesProvider,
+  useTheme,
+} from "@material-ui/core/styles"
 import Footer from "../components/footer"
-import theme from '../config/theme'
+import theme from "../config/theme"
 
-const Layout = (props) => {
+declare global {
+  interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    iframely: any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    twitter: any
+  }
+}
+
+interface LocationState {
+  title: string
+  location: WindowLocation
+}
+
+interface Props extends LocationState {}
+
+const Layout: React.FunctionComponent<Props> = (props) => {
   const { location, title, children } = props
-  const blogtheme = useTheme();
+  const blogtheme = useTheme()
   useEffect(() => {
     if (window.iframely) {
       window.iframely.load()
@@ -37,23 +58,19 @@ const Layout = (props) => {
   let header
   let maxMainContentWidth
 
-  const postpathRegExp = RegExp('^/post/.*')
+  const postpathRegExp = RegExp("^/post/.*")
 
   if (postpathRegExp.test(location.pathname)) {
     header = (
       <Typography component="div" variant="h3" align="center" gutterBottom>
-        <BlogTitleLink to={`/`}>
-          {title}
-        </BlogTitleLink>
+        <BlogTitleLink to={`/`}>{title}</BlogTitleLink>
       </Typography>
     )
     maxMainContentWidth = "md"
   } else {
     header = (
       <Typography component="h1" variant="h3" align="center" gutterBottom>
-        <BlogTitleLink to={`/`}>
-          {title}
-        </BlogTitleLink>
+        <BlogTitleLink to={`/`}>{title}</BlogTitleLink>
       </Typography>
     )
     maxMainContentWidth = "lg"
@@ -62,10 +79,12 @@ const Layout = (props) => {
     <CssBaseline>
       <StylesProvider injectFirst>
         <ThemeProvider theme={theme}>
-          <HeaderBar position="static">
-            {header}
-          </HeaderBar>
-          <Container maxWidth={maxMainContentWidth} component="main" style={{ margin: `8px auto`, padding: `0px 0px` }}>
+          <HeaderBar position="static">{header}</HeaderBar>
+          <Container
+            maxWidth={maxMainContentWidth}
+            component="main"
+            style={{ margin: `8px auto`, padding: `0px 0px` }}
+          >
             {children}
           </Container>
           <Footer />
@@ -74,6 +93,5 @@ const Layout = (props) => {
     </CssBaseline>
   )
 }
-
 
 export default Layout

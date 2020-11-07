@@ -1,12 +1,16 @@
-import { Link } from "gatsby"
+import { PageProps, Link } from "gatsby"
 import React from "react"
 import { Grid, Button } from '@material-ui/core'
 import { ArrowBack, ArrowForward } from '@material-ui/icons'
 import styled from "@emotion/styled";
+import { SitePageContext } from '../../types/graphql-types'
 
-const Pagination = ({ props }) => {
-  const { pageContext } = props
-  const { previousPagePath, nextPagePath } = pageContext
+interface Props {
+  props : SitePageContext
+}
+
+const Pagination: React.FunctionComponent<Props> = ({ props }) => {
+  const { previousPagePath, nextPagePath } = props
 
   const PaginationLink = styled(Link)`
   text-decoration:none;

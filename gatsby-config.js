@@ -12,6 +12,20 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-material-ui`,
+    `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-plugin-graphql-codegen`,
+      options: {
+        fileName: `types/graphql-types.ts`,
+        documentPaths: [
+          "./src/**/*.{ts,tsx}",
+          "./node_modules/gatsby-*/**/*.js",
+        ],
+        codegenDelay: 200,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -73,8 +87,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-material-ui`,
-    `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
@@ -128,7 +140,7 @@ module.exports = {
               })
             },
             query: `
-              {
+              query RssFeed {
                 allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 20, filter: {frontmatter: {draft: {ne: true}}}) {
                   edges {
                     node {

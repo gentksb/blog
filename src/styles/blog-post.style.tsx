@@ -2,7 +2,7 @@ import React from "react"
 import { Global, css } from '@emotion/core'
 import theme from '../config/theme'
 
-const BlogPostStyle = () =>
+const BlogPostStyle : React.FunctionComponent = () =>
   <Global styles={css`
     h2 {
       padding: 0.25em 0 0.25em 0.75em;

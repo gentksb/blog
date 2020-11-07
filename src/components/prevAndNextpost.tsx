@@ -2,8 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 import { ArrowBackIos, ArrowForwardIos } from '@material-ui/icons'
 import { Grid, Button } from '@material-ui/core'
+import { SitePageContextNext, SitePageContextPrevious } from '../../types/graphql-types'
 
-const PrevAndNextPost = ({ previous, next }) => {
+interface Props {
+  previous?: SitePageContextPrevious
+  next?: SitePageContextNext
+}
+
+const PrevAndNextPost: React.FunctionComponent<Props> = ({ previous, next }) => {
   return (
     <Grid container style={{ marginTop: `8px` }} spacing={2}>
       <Grid item xs={6}>
