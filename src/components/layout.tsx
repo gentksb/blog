@@ -66,7 +66,7 @@ const Layout: React.FunctionComponent<Props> = (props) => {
         <BlogTitleLink to={`/`}>{title}</BlogTitleLink>
       </Typography>
     )
-    maxMainContentWidth = "md"
+    maxMainContentWidth = "sm"
   } else {
     header = (
       <Typography component="h1" variant="h3" align="center" gutterBottom>
