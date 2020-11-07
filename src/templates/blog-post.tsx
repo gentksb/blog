@@ -31,7 +31,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
         location={location}
       />
       <BlogPostStyle />
-      <Paper elevation={0} style={{ padding: '32px'}}>
+      <Paper elevation={0}>
         <article>
           <CardContent>
             <header>
