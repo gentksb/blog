@@ -50,7 +50,7 @@ const Layout: React.FunctionComponent<Props> = (props) => {
     max-width: 100%;
     position: relative;
     margin: 0 0 0 0;
-    padding: 16px 0px 16px 0px;
+    padding: 16px 0px 8px 0px;
   `
 
   type widthUnion = false | "sm" | "lg" | "xs" | "md" | "xl" | undefined
