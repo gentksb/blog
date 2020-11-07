@@ -12,6 +12,8 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-graphql-codegen`,
@@ -85,8 +87,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-material-ui`,
-    `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {

@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { Typography, Grid, Card, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button, Divider } from '@material-ui/core'
+import { Typography, Grid, Paper, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button, Divider } from '@material-ui/core'
 import styled from "@emotion/styled";
 import PostTag from "./postTag"
 
-const Postcard = styled(Card)`
+const Postcard = styled(Paper)`
   margin-top: 16px;
 `
 const ReadmoreButton = styled(CardActions)`
@@ -22,7 +22,7 @@ const postList = ({ props }) => {
 
       return (
         <Grid item xs={12} md={6} key={node.id}>
-          <Postcard>
+          <Postcard elevation={0} variant="outlined">
             <CardActionArea aria-label={node.frontmatter.title}>
               <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
                 <CardHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" />

@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Typography, Card, CardContent, Divider } from '@material-ui/core'
+import { Typography, Paper, CardContent, Divider } from '@material-ui/core'
 import { Today } from '@material-ui/icons'
 
 import Layout from "../components/layout"
@@ -22,7 +22,7 @@ const BlogPostTemplate = (props) => {
     <Layout location={location} title={siteTitle}>
       <SEO title={post.frontmatter.title} description={post.excerpt} image={seoImage} location={location} />
       <BlogPostStyle />
-      <Card>
+      <Paper elevation={0}>
         <article>
           <CardContent>
             <header>
@@ -38,7 +38,7 @@ const BlogPostTemplate = (props) => {
         </article>
         <Divider variant="middle" />
         <Share post={post} location={location} />
-      </Card>
+      </Paper>
       <nav>
         <PrevAndNextPost previous={previous} next={next} />
       </nav>
