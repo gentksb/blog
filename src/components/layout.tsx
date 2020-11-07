@@ -47,29 +47,29 @@ const Layout: React.FunctionComponent<Props> = (props) => {
   `
   const HeaderBar = styled(AppBar)`
     background-color: "#2B0E00";
-    background-image: url("/image/brushed-alum-dark.png");
-    height: 10vh;
     max-width: 100%;
     position: relative;
     margin: 0 0 0 0;
     padding: 16px 0px 16px 0px;
   `
 
-  let header
-  let maxMainContentWidth
+  type widthUnion = false | "sm" | "lg" | "xs" | "md" | "xl" | undefined
+
+  let header: React.ReactNode
+  let maxMainContentWidth: widthUnion
 
   const postpathRegExp = RegExp("^/post/.*")
 
   if (postpathRegExp.test(location.pathname)) {
     header = (
-      <Typography component="div" variant="h3" align="center" gutterBottom>
+      <Typography component="div" variant="h4" align="center" gutterBottom>
         <BlogTitleLink to={`/`}>{title}</BlogTitleLink>
       </Typography>
     )
     maxMainContentWidth = "sm"
   } else {
     header = (
-      <Typography component="h1" variant="h3" align="center" gutterBottom>
+      <Typography component="h1" variant="h4" align="center" gutterBottom>
         <BlogTitleLink to={`/`}>{title}</BlogTitleLink>
       </Typography>
     )
