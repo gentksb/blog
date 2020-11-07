@@ -8,7 +8,7 @@ import Pagination from "../components/pagination"
 import PostList from "../components/postList"
 import TagList from "../components/tagList"
 
-const BlogIndex: React.FunctionComponentElement<any> = (props) => {
+const BlogIndex: React.FunctionComponent = (props) => {
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
   const edges = data.allMarkdownRemark.edges

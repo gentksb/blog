@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { Link } from "gatsby"
 
 import { Typography, CssBaseline, AppBar, Container } from "@material-ui/core"
-import styled, { StyledComponent } from "@emotion/styled"
+import styled from "@emotion/styled"
 import {
   ThemeProvider,
   StylesProvider,
@@ -20,7 +20,7 @@ declare global {
   }
 }
 
-const Layout: React.FunctionComponentElement<> = (props) => {
+const Layout: React.FunctionComponent = (props) => {
   const { location, title, children } = props
   const blogtheme = useTheme()
   useEffect(() => {

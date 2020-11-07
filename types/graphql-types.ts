@@ -3250,6 +3250,75 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>;
 };
 
+export type BioComponentQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type BioComponentQuery = { avatar?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }>, githubIcon?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }>, instaIcon?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }>, twitterIcon?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }>, site?: Maybe<{ siteMetadata?: Maybe<(
+      Pick<SiteSiteMetadata, 'author'>
+      & { social?: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
+    )> }> };
+
+export type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type SeoComponentQuery = { site?: Maybe<{ siteMetadata?: Maybe<(
+      Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
+      & { social?: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
+    )> }> };
+
+export type TagListQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type TagListQuery = { allMarkdownRemark: { group: Array<Pick<MarkdownRemarkGroupConnection, 'fieldValue' | 'totalCount'>> } };
+
+export type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type NotFoundPageQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
+
+export type BlogPostBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+export type BlogPostBySlugQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title' | 'author'>> }>, markdownRemark?: Maybe<(
+    Pick<MarkdownRemark, 'id' | 'excerpt' | 'html'>
+    & { frontmatter?: Maybe<(
+      Pick<MarkdownRemarkFrontmatter, 'date' | 'title' | 'tags' | 'draft'>
+      & { cover?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<Pick<ImageSharpFluid, 'src'>> }> }> }
+    )> }
+  )> };
+
+export type IndexPageQueryVariables = Exact<{
+  skip: Scalars['Int'];
+  limit: Scalars['Int'];
+}>;
+
+
+export type IndexPageQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title'>> }>, allMarkdownRemark: { edges: Array<{ node: (
+        Pick<MarkdownRemark, 'excerpt' | 'id'>
+        & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<(
+          Pick<MarkdownRemarkFrontmatter, 'date' | 'title' | 'tags' | 'draft'>
+          & { cover?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
+        )> }
+      ) }> } };
+
+export type TagPageQueryVariables = Exact<{
+  tag?: Maybe<Scalars['String']>;
+}>;
+
+
+export type TagPageQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title'>> }>, allMarkdownRemark: (
+    Pick<MarkdownRemarkConnection, 'totalCount'>
+    & { edges: Array<{ node: (
+        Pick<MarkdownRemark, 'excerpt' | 'id'>
+        & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<(
+          Pick<MarkdownRemarkFrontmatter, 'date' | 'title' | 'tags' | 'draft'>
+          & { cover?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<Pick<ImageSharpFluid, 'srcSet' | 'src'>> }> }> }
+        )> }
+      ) }> }
+  ) };
+
 export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
 export type GatsbyImageSharpFixed_TracedSvgFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'>;
