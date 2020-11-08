@@ -45,7 +45,7 @@ DD バージョンのレビューを以前しましたが、流石にオンロ�
 
 <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fnukeproof-horizon-%25E3%2582%25AB%25E3%2583%25BC%25E3%2583%259C%25E3%2583%25B3%25E3%2583%25A9%25E3%2582%25A4%25E3%2582%25B6%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%2Frp-prod158768%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=886701002" height="1" width="0" border="0">Nukeproof Horizon カーボンライザーバー</a>は、今の MTB で現役稼働しています。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.625%; padding-top: 120px;"><a href="https://blog.gensobunya.net/post/2017/04/goodmtbgears/" data-iframely-url="//cdn.iframe.ly/CJ2g1wm"></a></div></div>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://blog.gensobunya.net/post/2017/04/goodmtbgears/" data-iframely-url="//cdn.iframe.ly/CJ2g1wm?iframe=card-small"></a></div></div>
 
 [ESI グリップ](https://amzn.to/38mSZ77)とカーボンハンドルの組み合わせで、DH コースをひたすらピストンしても手がしびれるという体験から開放されています。岩岳で 10 本下ったらしびれとは無関係に疲れ果てましたが、握力だけが抜けることはなかったくらい優秀！
 
