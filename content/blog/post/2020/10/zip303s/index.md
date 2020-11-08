@@ -1,5 +1,5 @@
 ---
-title: "ZIP303S 走行インプレ＆タイヤ装着所感"
+title: "ZIP303S 走行インプレ＆タイヤ装着所感＋303 Firecrestの試乗比較！"
 date: 2020-10-05
 draft: false
 tags: ["ROAD", "REVIEW"]
@@ -51,9 +51,9 @@ SLR1 はカーボンホイールなので重量に関してはアルミのディ
 
 エアロ効果もさることながら、路面抵抗も少なくなっているというのは体感できます。Strava の PR も平坦区間で総ナメですので、気のせいではなく速くなっています。感覚的には 1 人で走っているのに、少人数トレインくらいの巡行しやすさを感じます…すごい。
 
-軽くてエアロ性能がいいので、ちょっとした丘や本当に少し上っているような局面での失速がほとんどありません。
+軽くてエアロ性能がいいので、ちょっとした丘や本当に少し上っているような局面での失速がほとんどありません。しかも振動カットの効果が高く、本当に疲れない！
 
-新型 303 firecrest がこれよりいいホイールというのがちょっと信じられないくらいです。これよりいいホイール作れるんだ…
+新型 303 firecrest がこれよりいいホイールというのがちょっと信じられないくらいです。これよりいいホイール作れるんだ…（試乗できたので記事末尾に比較インプレ追記しました）
 
 なお、この日の空気圧設定は [ZIPP のツール](https://axs.sram.com/tirepressureguide)を利用して算出しました。
 
@@ -112,3 +112,32 @@ ZIPP のタイヤを使うといいよ！と言われたけど[Cyclowired のイ
 グラベルロードでも使えるリム幅ですので、高速化を狙いたい人には特にお勧めできます。グラベルロード用のタイヤなら装着も比較的マシになるはずです。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://dalr.valuecommerce.com/dck/4fc29ebd8a?pid=886313738&sid=3171302&aid=2821580&mid=2201292&ub=X6X0awAN6qVqSQSBwKhuqsCobtKGuw%3D%3D&rid=X6X0bAAAQG5qSQSBwKhvT8Cob10S6A&isec=5fa5f46c&vcurl=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html&ckref=https%3A%2F%2Fblog.gensobunya.net%2Fpost%2F2020%2F10%2Fzip303s%2F&pl=FGa44j1eJNlY5BSo9z4ofjb75PaK4Vpjt.gEngMQEjZr_WhXTA2s.XTVV26y8GGEDd5ihORoVyFGh8cmvSuCKzIlnY6xljQlpRDuVhtWJ55nudxf7_OLgiPFMJhHFW_jftckkCoqAkCoq0NUuAuyPB94UXuGlfUm0NUbNiqUU8jA2Q3wL6k03x0.5EwHXXTSHCSPmtd0wVYPIG_qvoPfybYb5EvYTrYesSp0Qn1cBCbpIvLG9mhORoViTmkSnqyjaY2KcsuUEIwvqRPibjURgyzZ4xUC56MnGWpwoNSUC53ZXnN87gq1VW29JdZdW.azPu_dYV6Hycfx9MsFrH3A0FWW5DtThw0VgN20NK1e3sdIdUA1z9dyKCp0iZ7L1W1kl1BNr5xj6Knrgy4TIvRSwQ5BSpFY5BNkOxQT13Nldj1DxuVOFIighLBPKXVA4.L9.gJ0Nc1lF4XV4L9.ZBcKXV41N9lFCUC68mlFCUC68mlF1meWL9.LK74XV4h_L9.TmkSnrSnjk3nLsx_itrrfs.Bs8&ih=WklQUDMwM1M&vo__ih=WklQUDMwM1M&vo__uri=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html" data-iframely-url="//cdn.iframe.ly/eyulHr4"></a></div></div>
+
+## 2020.11.8 追記 303Firecrest の試乗をしたので比較インプレ
+
+![Firecrest試乗](./303fc.jpg)
+
+ワイズロードの試乗会で [303 Firecrest](https://store.shopping.yahoo.co.jp/hobbyride/zipp-wh-1015.html) を自分の自転車で試す機会があったので、乗り比べてみました。タイヤは ZIPP の TANGENTE Tubless です。\
+店の近くにある練習で使い慣れた坂を使ったため、タイヤとホイールのみの変更での感想となります。
+
+### 平坦区間
+
+303S とあまり変わらず。若干の登りの際に失速する量が 303S よりも少ないかも？エアロと重量どっちかのおかげか。
+
+### ゼロ発進
+
+剛性感が 303S より高いので、気持ちよく加速していく。フリーの爪も 3 爪から 6 爪になったので掛かりが良い。
+
+### 登り・下り
+
+303S になったバネ感が消えシャキシャキと登ってくれる。
+
+### スプリント
+
+試していないが、登りの剛性感を見るに気持ちよく加速しそう（想像）
+
+### 総評
+
+303S → 303 Firecrest の変化はかなり乗り込んでいる場合にしか数値に現れなさそう。ロードレースで加減速を頻繁にする局面では明らかに 303FC のほうが有利だろうと想像はできる。とはいえ、フックレスチューブレスによる疲労の軽減は 303S でも十分恩恵を受けられます。
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://store.shopping.yahoo.co.jp/hobbyride/zipp-wh-1015.html" data-iframely-url="//cdn.iframe.ly/mFqkH6b"></a></div></div>
