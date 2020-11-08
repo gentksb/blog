@@ -697,6 +697,7 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___author'
   | 'childMarkdownRemark___frontmatter___type'
   | 'childMarkdownRemark___frontmatter___date'
+  | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___frontmatter___cover___sourceInstanceName'
   | 'childMarkdownRemark___frontmatter___cover___absolutePath'
   | 'childMarkdownRemark___frontmatter___cover___relativePath'
@@ -733,7 +734,6 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___cover___publicURL'
   | 'childMarkdownRemark___frontmatter___cover___id'
   | 'childMarkdownRemark___frontmatter___cover___children'
-  | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___frontmatter___draft'
   | 'childMarkdownRemark___frontmatter___custom_permalink'
   | 'childMarkdownRemark___excerpt'
@@ -1509,6 +1509,7 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___author'
   | 'frontmatter___type'
   | 'frontmatter___date'
+  | 'frontmatter___tags'
   | 'frontmatter___cover___sourceInstanceName'
   | 'frontmatter___cover___absolutePath'
   | 'frontmatter___cover___relativePath'
@@ -1570,7 +1571,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___cover___childMarkdownRemark___timeToRead'
   | 'frontmatter___cover___childMarkdownRemark___tableOfContents'
   | 'frontmatter___cover___childMarkdownRemark___children'
-  | 'frontmatter___tags'
   | 'frontmatter___draft'
   | 'frontmatter___custom_permalink'
   | 'excerpt'
@@ -1703,8 +1703,8 @@ export type MarkdownRemarkFrontmatter = {
   author?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
-  cover?: Maybe<File>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+  cover?: Maybe<File>;
   draft?: Maybe<Scalars['Boolean']>;
   custom_permalink?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
@@ -1722,8 +1722,8 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   author?: Maybe<StringQueryOperatorInput>;
   type?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
-  cover?: Maybe<FileFilterInput>;
   tags?: Maybe<StringQueryOperatorInput>;
+  cover?: Maybe<FileFilterInput>;
   draft?: Maybe<BooleanQueryOperatorInput>;
   custom_permalink?: Maybe<StringQueryOperatorInput>;
 };

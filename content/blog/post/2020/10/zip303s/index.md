@@ -12,7 +12,7 @@ cover: "./cover.jpg"
 
 フックレス＋幅広リムの[ZIPP303S](https://store.shopping.yahoo.co.jp/cyclick/zipp-wh-1027.html)を購入しました！
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://dalr.valuecommerce.com/dck/4fc29ebd8a?pid=886313738&sid=3171302&aid=2821580&mid=2201292&ub=X6X0awAN6qVqSQSBwKhuqsCobtKGuw%3D%3D&rid=X6X0bAAAQG5qSQSBwKhvT8Cob10S6A&isec=5fa5f46c&vcurl=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html&ckref=https%3A%2F%2Fblog.gensobunya.net%2Fpost%2F2020%2F10%2Fzip303s%2F&pl=FGa44j1eJNlY5BSo9z4ofjb75PaK4Vpjt.gEngMQEjZr_WhXTA2s.XTVV26y8GGEDd5ihORoVyFGh8cmvSuCKzIlnY6xljQlpRDuVhtWJ55nudxf7_OLgiPFMJhHFW_jftckkCoqAkCoq0NUuAuyPB94UXuGlfUm0NUbNiqUU8jA2Q3wL6k03x0.5EwHXXTSHCSPmtd0wVYPIG_qvoPfybYb5EvYTrYesSp0Qn1cBCbpIvLG9mhORoViTmkSnqyjaY2KcsuUEIwvqRPibjURgyzZ4xUC56MnGWpwoNSUC53ZXnN87gq1VW29JdZdW.azPu_dYV6Hycfx9MsFrH3A0FWW5DtThw0VgN20NK1e3sdIdUA1z9dyKCp0iZ7L1W1kl1BNr5xj6Knrgy4TIvRSwQ5BSpFY5BNkOxQT13Nldj1DxuVOFIighLBPKXVA4.L9.gJ0Nc1lF4XV4L9.ZBcKXV41N9lFCUC68mlFCUC68mlF1meWL9.LK74XV4h_L9.TmkSnrSnjk3nLsx_itrrfs.Bs8&ih=WklQUDMwM1M&vo__ih=WklQUDMwM1M&vo__uri=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html" data-iframely-url="//cdn.iframe.ly/eyulHr4"></a></div></div>
+<div data-vc_mylinkbox_id="886831364"></div>
 
 ## ディスクロードのホイール回想
 
@@ -111,7 +111,7 @@ ZIPP のタイヤを使うといいよ！と言われたけど[Cyclowired のイ
 
 グラベルロードでも使えるリム幅ですので、高速化を狙いたい人には特にお勧めできます。グラベルロード用のタイヤなら装着も比較的マシになるはずです。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://dalr.valuecommerce.com/dck/4fc29ebd8a?pid=886313738&sid=3171302&aid=2821580&mid=2201292&ub=X6X0awAN6qVqSQSBwKhuqsCobtKGuw%3D%3D&rid=X6X0bAAAQG5qSQSBwKhvT8Cob10S6A&isec=5fa5f46c&vcurl=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html&ckref=https%3A%2F%2Fblog.gensobunya.net%2Fpost%2F2020%2F10%2Fzip303s%2F&pl=FGa44j1eJNlY5BSo9z4ofjb75PaK4Vpjt.gEngMQEjZr_WhXTA2s.XTVV26y8GGEDd5ihORoVyFGh8cmvSuCKzIlnY6xljQlpRDuVhtWJ55nudxf7_OLgiPFMJhHFW_jftckkCoqAkCoq0NUuAuyPB94UXuGlfUm0NUbNiqUU8jA2Q3wL6k03x0.5EwHXXTSHCSPmtd0wVYPIG_qvoPfybYb5EvYTrYesSp0Qn1cBCbpIvLG9mhORoViTmkSnqyjaY2KcsuUEIwvqRPibjURgyzZ4xUC56MnGWpwoNSUC53ZXnN87gq1VW29JdZdW.azPu_dYV6Hycfx9MsFrH3A0FWW5DtThw0VgN20NK1e3sdIdUA1z9dyKCp0iZ7L1W1kl1BNr5xj6Knrgy4TIvRSwQ5BSpFY5BNkOxQT13Nldj1DxuVOFIighLBPKXVA4.L9.gJ0Nc1lF4XV4L9.ZBcKXV41N9lFCUC68mlFCUC68mlF1meWL9.LK74XV4h_L9.TmkSnrSnjk3nLsx_itrrfs.Bs8&ih=WklQUDMwM1M&vo__ih=WklQUDMwM1M&vo__uri=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcyclick%2Fzipp-wh-1027.html" data-iframely-url="//cdn.iframe.ly/eyulHr4"></a></div></div>
+<div data-vc_mylinkbox_id="886831364"></div>
 
 ## 2020.11.8 追記 303Firecrest の試乗をしたので比較インプレ
 
@@ -140,4 +140,4 @@ ZIPP のタイヤを使うといいよ！と言われたけど[Cyclowired のイ
 
 303S → 303 Firecrest の変化はかなり乗り込んでいる場合にしか数値に現れなさそう。ロードレースで加減速を頻繁にする局面では明らかに 303FC のほうが有利だろうと想像はできる。とはいえ、フックレスチューブレスによる疲労の軽減は 303S でも十分恩恵を受けられます。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://dalr.valuecommerce.com/dck/49fa1d938a?pid=886313738&sid=3171302&aid=2821580&mid=2201292&ub=X6eV1wAHLzJqSQSBwKhumMCobjE6rw%3D%3D&rid=X6eV1wAICz9qSQSBwKhvIsCob2R8gg&isec=5fa795d7&vcurl=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fhobbyride%2Fzipp-wh-1015.html&ckref=https%3A%2F%2Fblog.gensobunya.net%2Fpost%2F2020%2F10%2Fzip303s%2F&pl=.Ga44j1eJNlY5BSo9z4ofjb75PaK4Vpjt.gEngMQEjZr_WhXTA2s.XTVV26y8GGEDd5ihORoVyFGh8cmvSuCKzIlnY6xljQlpRDuVhtWJ55nudxf7_OLgiPFMJhHFW_jftckkCoqAkCoq0NUuAuyPB94UXuGlfUm0NUbNiqUU8jA2Q3wL6k03x0.5EwHXXTSHCSPmtd0wVYPIG_qvoPfybYb5EvYTrYesSp0Qn1cBCbpIvLG9mhORoViTmkSnqyjaY2KcsuUEIwvqRPibjURgyzZ4xUC56MnGWpwoNSUC53ZXnN87gq1VW2pApIqKo9jqidPNs0oje9zH_y3CoW1kJ7NGYiLy.kLB0Vg9WK1RJdrMmaUaHz9euVrH3A0FWNNW5BQYTrYetvqU1j8xiDyCY5DucGY5BNByhj01BNorW6TxFBc8rLLf5C9lF4XVA4.L9.gJ0Nc1lF1f4.H5J9lF1WB4Nc5jaYZtNc5jaYZtNc0OHxKXV4_H4Nc0QOKXV6gg6RxrRvw0BpiEOQiSxuy.D0S&ih=MzAzIEZpcmVjcmVzdA&vo__ih=MzAzIEZpcmVjcmVzdA&vo__uri=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fhobbyride%2Fzipp-wh-1015.html" data-iframely-url="//cdn.iframe.ly/mFqkH6b"></a></div></div>
+<div data-vc_mylinkbox_id="886831364"></div>
