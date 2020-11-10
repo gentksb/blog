@@ -22,11 +22,11 @@ cover: ""
 
 ## カーボンボトルケージ
 
-[![GARMINマウント](./gc.webp)](https://s.click.aliexpress.com/e/_9RgTTt)
+[![GARMINマウント](./bc.webp)](https://s.click.aliexpress.com/e/_9RgTTt)
 
 [Super Light 18g XXX Lite Full 3K Carbon Road/Mountian Bike Water Bottle Holder Cycling Bicycle Bottle Cage Matte Glossy](https://s.click.aliexpress.com/e/_9RgTTt)
 
-折れても死なないのでセーフ。ボトルケージに外れとかあるのか？と思われるかもしれないが、左右対称じゃなかったりやたら保持力が低かったりする。自分が使っていたころは 3 使って当たりの 2 つを使うというテニス選手みたいなことをしていた。現在はもう使っておらず GIANT のサイドプルボトルケージを使っている…
+折れても死なないのでセーフ。ボトルケージに外れとかあるのか？と思われるかもしれないが、左右対称じゃなかったりやたら保持力が低かったりする。自分が使っていたころは 3 つ買って、当たりの 2 つを使うというテニス選手みたいなことをしていた。現在はもう使っておらず GIANT のサイドプルボトルケージを使っている…
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://blog.gensobunya.net/post/2020/09/giant_airway_composite_side/" data-iframely-url="//cdn.iframe.ly/ch2JYQ8?iframe=card-small"></a></div></div>
 
