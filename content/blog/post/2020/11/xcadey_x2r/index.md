@@ -126,4 +126,6 @@ XCADEY のアプリをダウンロードして、クランクを回してパワ�
 
 11/11 は AliExpress で盛大なセールが開催される。SIGEYI の[スパイダー式](https://s.click.aliexpress.com/e/_A8c2uT)や Megane の[デュアル PM](https://s.click.aliexpress.com/e/_AlRWLp)がセールとなるので、覚悟と理解があればチャレンジしてみてはいかがだろうか？おすすめはしないけども。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://s.click.aliexpress.com/e/_A8c2uT" data-iframely-url="//cdn.iframe.ly/NelXeBU"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+[![SIGEYIスパイダー式](./SIGEYI_spider.webp)](https://s.click.aliexpress.com/e/_9JzEFV)
+
+[AXO SRM Power Meter Spider powermeter bicycle Crank spider Cadence for road mtb mountain bike SRAM ROTOR crankset power meter](https://s.click.aliexpress.com/e/_A8c2uT)
