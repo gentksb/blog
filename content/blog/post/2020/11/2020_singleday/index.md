@@ -20,6 +20,8 @@ cover: ""
 
 折れても死なないのでセーフ。カラーバリエーションが多いのが中華製品の特長で、フレームに合う一般的なブランドの製品がなかった人にはおすすめ。
 
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://s.click.aliexpress.com/e/_Adpju7" data-iframely-url="//cdn.iframe.ly/OPwtCnV"></a></div></div>
+
 ## カーボンボトルケージ
 
 [![GARMINマウント](./bc.webp)](https://s.click.aliexpress.com/e/_9RgTTt)
