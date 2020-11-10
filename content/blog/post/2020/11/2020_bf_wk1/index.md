@@ -53,7 +53,7 @@ DD バージョンのレビューを以前しましたが、流石にオンロ�
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fnukeproof-critical-enduro-%25E8%2582%2598%25E3%2582%25B9%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2596%2Frp-prod132014%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/CBLrlt7"></a></div></div>
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fnukeproof-critical-enduro-%25E8%2586%259D%25E3%2582%25B9%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2596%2Frp-prod132015%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/sfpn2kd"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fnukeproof-critical-enduro-%25E8%2586%259D%25E3%2582%25B9%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%2596%2Frp-prod132015%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/sfpn2kd"></a></div></div>
 
 DH コースや、岩だらけのトレイルで使ってるやつ。4000 円の割に出来が良い。
 
