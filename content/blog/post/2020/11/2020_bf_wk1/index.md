@@ -22,6 +22,8 @@ TLR 界の超新星。28c ～ 30c であればデファクトスタンダード�
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://blog.gensobunya.net/post/2020/06/proonetle/" data-iframely-url="//cdn.iframe.ly/xZNpMse?iframe=card-small"></a></div></div>
 
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fschwalbe-pro-one-evo-tubeless-folding-tyre%2Frp-prod193327%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates&vcpub=0.579678&vcid=y8EMeiSNLxxQnGMcUQ4hKMsd00DpeisnvkW4F2daXynKjyAMJetw2PFMUapmIfHThS50jHkU8KE&isec=1605012086" data-iframely-url="//cdn.iframe.ly/4OYfoTY"></a></div></div>
+
 ## dhb メリノ袖なしベースレイヤー
 
 [![dhb メリノ袖なしベースレイヤー](./dhb-Merino-Sleeveless-Base-Layer-M_150-Base-Layers-Black-NU0461TBCS-0.jpg)](https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fdhb-%25E3%2583%25A1%25E3%2583%25AA%25E3%2583%258E%25E8%25A2%2596%25E3%2581%25AA%25E3%2581%2597%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC-m-150-%2Frp-prod156765%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates)
