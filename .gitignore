@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-# Hugo default output directory
-/public
-/resources
-/.vscode
-
-## OS Files
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-node_modules
-.cache/*
-=======
 # Logs
 logs
 *.log
@@ -85,6 +70,7 @@ yarn-error.log
 
 #vscode
 .vscode
->>>>>>> gatsbyrize
 
 .vercel
+
+types/*
