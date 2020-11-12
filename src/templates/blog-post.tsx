@@ -66,7 +66,6 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
       <nav>
         <PrevAndNextPost previous={previous} next={next} />
       </nav>
-      <Divider variant="fullWidth" />
       <Typography variant="h6" component="h2">最近の似た記事</Typography>
       <RelatedPosts tag={post.frontmatter.tags[0]} />
       <TagList />
