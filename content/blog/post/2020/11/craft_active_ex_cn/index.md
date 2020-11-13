@@ -1,0 +1,46 @@
+---
+title: "冬用インナーウェア Craft Active Extreme CN ベースレイヤー"
+date: 2020-11-13
+draft: false
+tags: ["SALE", "REVIEW"]
+cover: "./cover.jpg"
+---
+
+急激に冷え込んできたので、冬インナーのレビューをする。
+
+## Craft Active Extreme CN ベースレイヤー
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fcraft-active-extreme-cn-%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%2Frp-prod176384%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/NYlc2cE"></a></div></div>
+
+ベースレイヤーが主力商品である Craft の冬用ベースレイヤー代表商品、の長袖バージョン。
+
+いかにも暖かそうな素材と、表面積を稼ぐための立体構造で汗を逃してくれる。写真の製品は旧モデルなので、タグが首の後ろについているが新モデルはではなくなっている模様。
+
+## ベースレイヤーで重要な「密着度」
+
+![全体](./shrink.jpg)
+
+この写真では、かなり縮んでいるように見えるが、非常に伸縮性の高い素材でできているので無理なく伸びて、肌にぴったりとくっついてくれる。
+
+ベースレイヤーで、じぶんが最も重視しているのがこの「密着度」。体の凹凸にぴったりとフィットすればするほど、汗の溜まり場がなくなり、ベースレイヤーの重要な役割である汗を蒸発させる機能が働きやすい。つまり、夏は不快な濡れを無くし、冬は汗冷えを防いでくれる。\
+大胸筋を鍛えていたりすると、腹の上の部分に汗がたまってしまいやすいが、この[Active Extreme](https://www.chainreactioncycles.com/jp/ja/craft-active-extreme-cn-%E3%83%99%E3%83%BC%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC/rp-prod176384)くらいになるとそのスペースを埋めてくれるので腹が冷えづらくて助かる。
+
+160cm 65kg の体系だと XS でピッタリだ。迷ったら小さめを選ぶことを上記の理由からおすすめする。
+
+## 手入れの手間
+
+盛大に毛玉がでているが、雑に洗濯乾燥機にかけて数年機能を失っていないので、耐久性も高いと言って良いだろう。この製品に限らないが、高機能ウェアに対して柔軟剤や漂白剤は NG なので気を付けてほしい。洗剤だけで洗おう。
+
+可能なら[スポーツウェア向けの洗剤](https://amzn.to/3eVGHE8)のほうが良いが、わざわざ買うのが面倒な人は[ナノックス](https://amzn.to/3kts3VJ)でも良い。（中性洗剤で上記の成分が入っていなければいい）
+
+<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B01MV3O3W6/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/31vbryfRs7L._SL200_.jpg" alt="ファイントラック finetrack オールウォッシュ　FCG0101 ONESIZE" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B01MV3O3W6/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">ファイントラック finetrack オールウォッシュ　FCG0101 ONESIZE</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="ファイントラック finetrack オールウォッシュ　FCG0101 ONESIZE" rel="nofollow" target="_blank">Amaquick</a> at 2020-11-13</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B01MV3O3W6/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+
+<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B08CH8YVJ8/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/51C8+rp3D3L._SL200_.jpg" alt="【大容量】トップ スーパーナノックス 蛍光剤・シリコーン無添加 高濃度 洗濯洗剤 液体 詰め替え 超特大1230g" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B08CH8YVJ8/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">【大容量】トップ スーパーナノックス 蛍光剤・シリコーン無添加 高濃度 洗濯洗剤 液体 詰め替え 超特大1230g</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="【大容量】トップ スーパーナノックス 蛍光剤・シリコーン無添加 高濃度 洗濯洗剤 液体 詰め替え 超特大1230g" rel="nofollow" target="_blank">Amaquick</a> at 2020-11-13</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B08CH8YVJ8/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+
+## ベンチマークになる冬用長袖インナー
+
+自分の場合、冬用インナーを試した際は「これより暖かいか、汗を逃がすか」を基準に判定している。
+
+とはいえ、CRC だとセールで 2000 円台という大盤振る舞いになるので、これ以外を買うことは滅多にないが…
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fcraft-active-extreme-cn-%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%2Frp-prod176384%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/NYlc2cE"></a></div></div>
