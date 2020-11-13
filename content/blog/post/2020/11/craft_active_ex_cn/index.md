@@ -10,7 +10,7 @@ cover: "./cover.jpg"
 
 ## Craft Active Extreme CN ベースレイヤー
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fcraft-active-extreme-cn-%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%2Frp-prod176384%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/NYlc2cE"></a></div></div>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fcraft-active-extreme-cn-%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%2Frp-prod176384%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/1aYXfFt"></a></div></div>
 
 ベースレイヤーが主力商品である Craft の冬用ベースレイヤー代表商品、の長袖バージョン。
 
