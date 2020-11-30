@@ -21,7 +21,7 @@ cover: "./cover.jpg"
   - Farsports CX TU + Michelin CX Mud (1.9Bar)
 - サブバイク 1
   - Ribble CX SL
-  - Challenge Grifo TU (1.9Bar)
+  - PAX AL TU + Challenge Grifo TU (1.9Bar)
 - サブバイク 2
   - PAX Project CXAL
   - IRC Serac CX (1.9Bar)
