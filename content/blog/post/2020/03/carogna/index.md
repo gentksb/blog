@@ -1,5 +1,5 @@
 ---
-title: "Carognaテープで2年間シクロクロスタイヤを使った結果"
+title: "エフェットマリポサCarognaテープで2年間シクロクロスタイヤを使った結果"
 date: 2020-03-02
 draft: false
 tags: ["CX"]
