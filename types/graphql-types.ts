@@ -3429,7 +3429,7 @@ export type BioComponentQuery = { avatar?: Maybe<{ childImageSharp?: Maybe<{ flu
 export type FooterComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type FooterComponentQuery = { blogmura?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> };
+export type FooterComponentQuery = { blogmura?: Maybe<Pick<File, 'publicURL'>> };
 
 export type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
