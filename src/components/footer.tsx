@@ -12,6 +12,9 @@ const Footer: React.FunctionComponent = () => (
         This website uses Cookie to ensure you get the best experience on this
         website.
       </p>
+      <a href="https://blogmura.com/profiles/11085449?p_cid=11085449">
+        <img src="https://blogparts.blogmura.com/parts_image/user/pv11085449.gif" alt="PVアクセスランキング にほんブログ村" />
+      </a>
     </Typography>
   </AppBar>
 )

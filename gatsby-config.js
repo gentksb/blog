@@ -40,6 +40,12 @@ module.exports = {
         name: `assets`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/gatsby-config.js`,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -52,9 +58,7 @@ module.exports = {
               wrapperStyle: `margin-bottom: 16px;`,
               quality: 80,
               withWebp: true,
-              loading: `lazy`,
-              maxHeight: 760,
-              fit: `inside`,
+              loading: `lazy`
             },
           },
           {

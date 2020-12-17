@@ -54,8 +54,7 @@ export const pageQuery = graphql`
             cover {
               childImageSharp {
                 fluid {
-                  srcSet
-                  src
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
