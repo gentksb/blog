@@ -3426,11 +3426,6 @@ export type BioComponentQuery = { avatar?: Maybe<{ childImageSharp?: Maybe<{ flu
       & { social?: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
     )> }> };
 
-export type FooterComponentQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type FooterComponentQuery = { blogmura?: Maybe<Pick<File, 'publicURL'>> };
-
 export type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
