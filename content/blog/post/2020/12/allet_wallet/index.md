@@ -1,5 +1,5 @@
 ---
-title: "`ライドも日常もいける超薄型財布 Allet Lether Coin walletレビュー"
+title: "ライドも日常もいける超薄型財布 Allet Lether Coin walletレビュー"
 date: 2020-12-05
 draft: false
 tags: ["REVIEW"]
