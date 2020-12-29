@@ -1989,6 +1989,7 @@ export type QuerySiteArgs = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
+  flags?: Maybe<SiteFlagsFilterInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
@@ -2129,6 +2130,7 @@ export type Site = Node & {
   siteMetadata?: Maybe<SiteSiteMetadata>;
   port?: Maybe<Scalars['Int']>;
   host?: Maybe<Scalars['String']>;
+  flags?: Maybe<SiteFlags>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
@@ -2338,6 +2340,8 @@ export type SiteFieldsEnum =
   | 'siteMetadata___social___instagram'
   | 'port'
   | 'host'
+  | 'flags___PRESERVE_FILE_DOWNLOAD_CACHE'
+  | 'flags___PRESERVE_WEBPACK_CACHE'
   | 'polyfill'
   | 'pathPrefix'
   | 'id'
@@ -2432,12 +2436,23 @@ export type SiteFilterInput = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
+  flags?: Maybe<SiteFlagsFilterInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
   internal?: Maybe<InternalFilterInput>;
+};
+
+export type SiteFlags = {
+  PRESERVE_FILE_DOWNLOAD_CACHE?: Maybe<Scalars['Boolean']>;
+  PRESERVE_WEBPACK_CACHE?: Maybe<Scalars['Boolean']>;
+};
+
+export type SiteFlagsFilterInput = {
+  PRESERVE_FILE_DOWNLOAD_CACHE?: Maybe<BooleanQueryOperatorInput>;
+  PRESERVE_WEBPACK_CACHE?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SiteGroupConnection = {
@@ -2749,14 +2764,8 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___quality'
   | 'pluginCreator___pluginOptions___withWebp'
   | 'pluginCreator___pluginOptions___loading'
-  | 'pluginCreator___pluginOptions___linkImagesToOriginal'
-  | 'pluginCreator___pluginOptions___showCaptions'
-  | 'pluginCreator___pluginOptions___markdownCaptions'
-  | 'pluginCreator___pluginOptions___sizeByPixelDensity'
-  | 'pluginCreator___pluginOptions___backgroundColor'
-  | 'pluginCreator___pluginOptions___tracedSVG'
-  | 'pluginCreator___pluginOptions___disableBgImageOnAlpha'
-  | 'pluginCreator___pluginOptions___disableBgImage'
+  | 'pluginCreator___pluginOptions___maxHeight'
+  | 'pluginCreator___pluginOptions___fit'
   | 'pluginCreator___pluginOptions___classPrefix'
   | 'pluginCreator___pluginOptions___showLineNumbers'
   | 'pluginCreator___pluginOptions___noInlineHighlight'
@@ -2970,14 +2979,8 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___plugins___pluginOptions___quality'
   | 'pluginOptions___plugins___pluginOptions___withWebp'
   | 'pluginOptions___plugins___pluginOptions___loading'
-  | 'pluginOptions___plugins___pluginOptions___linkImagesToOriginal'
-  | 'pluginOptions___plugins___pluginOptions___showCaptions'
-  | 'pluginOptions___plugins___pluginOptions___markdownCaptions'
-  | 'pluginOptions___plugins___pluginOptions___sizeByPixelDensity'
-  | 'pluginOptions___plugins___pluginOptions___backgroundColor'
-  | 'pluginOptions___plugins___pluginOptions___tracedSVG'
-  | 'pluginOptions___plugins___pluginOptions___disableBgImageOnAlpha'
-  | 'pluginOptions___plugins___pluginOptions___disableBgImage'
+  | 'pluginOptions___plugins___pluginOptions___maxHeight'
+  | 'pluginOptions___plugins___pluginOptions___fit'
   | 'pluginOptions___plugins___pluginOptions___classPrefix'
   | 'pluginOptions___plugins___pluginOptions___showLineNumbers'
   | 'pluginOptions___plugins___pluginOptions___noInlineHighlight'
@@ -3005,14 +3008,8 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___quality'
   | 'pluginOptions___withWebp'
   | 'pluginOptions___loading'
-  | 'pluginOptions___linkImagesToOriginal'
-  | 'pluginOptions___showCaptions'
-  | 'pluginOptions___markdownCaptions'
-  | 'pluginOptions___sizeByPixelDensity'
-  | 'pluginOptions___backgroundColor'
-  | 'pluginOptions___tracedSVG'
-  | 'pluginOptions___disableBgImageOnAlpha'
-  | 'pluginOptions___disableBgImage'
+  | 'pluginOptions___maxHeight'
+  | 'pluginOptions___fit'
   | 'pluginOptions___classPrefix'
   | 'pluginOptions___showLineNumbers'
   | 'pluginOptions___noInlineHighlight'
@@ -3165,14 +3162,8 @@ export type SitePluginPluginOptions = {
   quality?: Maybe<Scalars['Int']>;
   withWebp?: Maybe<Scalars['Boolean']>;
   loading?: Maybe<Scalars['String']>;
-  linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
-  showCaptions?: Maybe<Scalars['Boolean']>;
-  markdownCaptions?: Maybe<Scalars['Boolean']>;
-  sizeByPixelDensity?: Maybe<Scalars['Boolean']>;
-  backgroundColor?: Maybe<Scalars['String']>;
-  tracedSVG?: Maybe<Scalars['Boolean']>;
-  disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
-  disableBgImage?: Maybe<Scalars['Boolean']>;
+  maxHeight?: Maybe<Scalars['Int']>;
+  fit?: Maybe<Scalars['String']>;
   classPrefix?: Maybe<Scalars['String']>;
   showLineNumbers?: Maybe<Scalars['Boolean']>;
   noInlineHighlight?: Maybe<Scalars['Boolean']>;
@@ -3246,14 +3237,8 @@ export type SitePluginPluginOptionsFilterInput = {
   quality?: Maybe<IntQueryOperatorInput>;
   withWebp?: Maybe<BooleanQueryOperatorInput>;
   loading?: Maybe<StringQueryOperatorInput>;
-  linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
-  showCaptions?: Maybe<BooleanQueryOperatorInput>;
-  markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
-  sizeByPixelDensity?: Maybe<BooleanQueryOperatorInput>;
-  backgroundColor?: Maybe<StringQueryOperatorInput>;
-  tracedSVG?: Maybe<BooleanQueryOperatorInput>;
-  disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
-  disableBgImage?: Maybe<BooleanQueryOperatorInput>;
+  maxHeight?: Maybe<IntQueryOperatorInput>;
+  fit?: Maybe<StringQueryOperatorInput>;
   classPrefix?: Maybe<StringQueryOperatorInput>;
   showLineNumbers?: Maybe<BooleanQueryOperatorInput>;
   noInlineHighlight?: Maybe<BooleanQueryOperatorInput>;
@@ -3302,14 +3287,8 @@ export type SitePluginPluginOptionsPluginsPluginOptions = {
   quality?: Maybe<Scalars['Int']>;
   withWebp?: Maybe<Scalars['Boolean']>;
   loading?: Maybe<Scalars['String']>;
-  linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
-  showCaptions?: Maybe<Scalars['Boolean']>;
-  markdownCaptions?: Maybe<Scalars['Boolean']>;
-  sizeByPixelDensity?: Maybe<Scalars['Boolean']>;
-  backgroundColor?: Maybe<Scalars['String']>;
-  tracedSVG?: Maybe<Scalars['Boolean']>;
-  disableBgImageOnAlpha?: Maybe<Scalars['Boolean']>;
-  disableBgImage?: Maybe<Scalars['Boolean']>;
+  maxHeight?: Maybe<Scalars['Int']>;
+  fit?: Maybe<Scalars['String']>;
   classPrefix?: Maybe<Scalars['String']>;
   showLineNumbers?: Maybe<Scalars['Boolean']>;
   noInlineHighlight?: Maybe<Scalars['Boolean']>;
@@ -3338,14 +3317,8 @@ export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
   quality?: Maybe<IntQueryOperatorInput>;
   withWebp?: Maybe<BooleanQueryOperatorInput>;
   loading?: Maybe<StringQueryOperatorInput>;
-  linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
-  showCaptions?: Maybe<BooleanQueryOperatorInput>;
-  markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
-  sizeByPixelDensity?: Maybe<BooleanQueryOperatorInput>;
-  backgroundColor?: Maybe<StringQueryOperatorInput>;
-  tracedSVG?: Maybe<BooleanQueryOperatorInput>;
-  disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
-  disableBgImage?: Maybe<BooleanQueryOperatorInput>;
+  maxHeight?: Maybe<IntQueryOperatorInput>;
+  fit?: Maybe<StringQueryOperatorInput>;
   classPrefix?: Maybe<StringQueryOperatorInput>;
   showLineNumbers?: Maybe<BooleanQueryOperatorInput>;
   noInlineHighlight?: Maybe<BooleanQueryOperatorInput>;

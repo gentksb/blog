@@ -2,7 +2,7 @@
 title: "2020年CX全日本選手権男子エリートレースレポート"
 date: 2020-11-30
 draft: false
-tags: ["RACEREPORT"]
+tags: ["CX", "RaceReport"]
 cover: "./cover.jpg"
 ---
 

@@ -1,4 +1,8 @@
 module.exports = {
+  flags: {
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PRESERVE_WEBPACK_CACHE: true
+  },
   siteMetadata: {
     title: `幻想サイクル`,
     author: `Gen`,
@@ -52,7 +56,9 @@ module.exports = {
               wrapperStyle: `margin-bottom: 16px;`,
               quality: 80,
               withWebp: true,
-              loading: `lazy`
+              loading: `lazy`,
+              maxHeight: 760,
+              fit: `inside`
             },
           },
           {
