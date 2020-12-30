@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { WindowLocation } from "@reach/router"
-import { AppBar, Container } from "@material-ui/core"
+import { AppBar } from "@material-ui/core"
 import styled from "@emotion/styled"
 import { ChakraProvider } from "@chakra-ui/react"
 
@@ -44,38 +44,25 @@ const Layout: React.FunctionComponent<Props> = (props) => {
     padding: 16px 0px 8px 0px;
   `
 
-  type widthUnion = false | "sm" | "lg" | "xs" | "md" | "xl" | undefined
-
   let header: React.ReactNode
-  let maxMainContentWidth: widthUnion
-
-
   const postpathRegExp = RegExp("^/post/.*")
 
   if (postpathRegExp.test(location.pathname)) {
     header = (
       <BlogTitleText title={title} />
     )
-    maxMainContentWidth = "sm"
   } else {
     header = (
       <h1>
         <BlogTitleText title={title} />
       </h1>
     )
-    maxMainContentWidth = "lg"
   }
 
   return (
     <ChakraProvider>
       <HeaderBar position="static">{header}</HeaderBar>
-      <Container
-        maxWidth={maxMainContentWidth}
-        component="main"
-        style={{ margin: `8px auto`, padding: `0px 0px` }}
-      >
         {children}
-      </Container>
       <Footer />
     </ChakraProvider>
   )
