@@ -1,17 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import { CardActions, Button } from '@material-ui/core'
-import styled from "@emotion/styled";
 import { Box, Grid, GridItem, Heading, HStack, Text } from "@chakra-ui/react";
 import { CalendarIcon } from "@chakra-ui/icons"
 
 import PostTag from "./postTag"
 import PostCoverImage from "./atoms/postCoverImage"
 import { IndexPageQuery } from '../../types/graphql-types'
-
-const ReadmoreButton = styled(CardActions)`
-  justify-content:flex-end;
-`
 
 interface Props {
   props : IndexPageQuery['allMarkdownRemark']['edges']
