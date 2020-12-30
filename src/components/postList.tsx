@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { Typography, Paper, CardHeader, CardMedia, CardContent, CardActions, CardActionArea, Button, Divider, Hidden } from '@material-ui/core'
+import { Paper, CardHeader, CardMedia, CardActions, CardActionArea, Button, Divider } from '@material-ui/core'
 import styled from "@emotion/styled";
 import { Grid, GridItem } from "@chakra-ui/react";
 
@@ -41,14 +41,9 @@ const postList: React.FunctionComponent<Props> = ({ props }) => {
               <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
                 {postCoverBox}
               </Link>
-            <Hidden smDown>
-              <CardContent>
-                <Typography component="p">{node.excerpt}</Typography>
-              </CardContent>
               <ReadmoreButton>
                 <Button variant="contained" color="secondary" href={node.fields.slug} disableElevation >この記事を読む</Button>
               </ReadmoreButton>
-            </Hidden>
           </Postcard>
         </GridItem>
       )
