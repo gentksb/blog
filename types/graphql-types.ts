@@ -3399,6 +3399,11 @@ export type BioComponentQuery = { avatar?: Maybe<{ childImageSharp?: Maybe<{ flu
       & { social?: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
     )> }> };
 
+export type TagListQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type TagListQuery = { allMarkdownRemark: { group: Array<Pick<MarkdownRemarkGroupConnection, 'fieldValue' | 'totalCount'>> } };
+
 export type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3414,11 +3419,6 @@ export type SeoComponentQuery = { site?: Maybe<{ siteMetadata?: Maybe<(
       Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
       & { social?: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
     )> }> };
-
-export type TagListQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type TagListQuery = { allMarkdownRemark: { group: Array<Pick<MarkdownRemarkGroupConnection, 'fieldValue' | 'totalCount'>> } };
 
 export type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 

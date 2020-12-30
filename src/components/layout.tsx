@@ -1,16 +1,12 @@
 import React, { useEffect } from "react"
 import { WindowLocation } from "@reach/router"
-
-import { CssBaseline, AppBar, Container } from "@material-ui/core"
+import { AppBar, Container } from "@material-ui/core"
 import styled from "@emotion/styled"
-import {
-  ThemeProvider,
-  StylesProvider
-} from "@material-ui/core/styles"
-import Footer from "../components/footer"
-import theme from "../config/theme"
-import BlogTitleText from "./atoms/blogTitleText"
 import { ChakraProvider } from "@chakra-ui/react"
+
+import Footer from "../components/footer"
+import BlogTitleText from "./atoms/blogTitleText"
+
 
 declare global {
   interface Window {
@@ -72,21 +68,15 @@ const Layout: React.FunctionComponent<Props> = (props) => {
 
   return (
     <ChakraProvider>
-      <CssBaseline>
-        <StylesProvider injectFirst>
-          <ThemeProvider theme={theme}>
-            <HeaderBar position="static">{header}</HeaderBar>
-            <Container
-              maxWidth={maxMainContentWidth}
-              component="main"
-              style={{ margin: `8px auto`, padding: `0px 0px` }}
-            >
-              {children}
-            </Container>
-            <Footer />
-          </ThemeProvider>
-        </StylesProvider>
-      </CssBaseline>
+      <HeaderBar position="static">{header}</HeaderBar>
+      <Container
+        maxWidth={maxMainContentWidth}
+        component="main"
+        style={{ margin: `8px auto`, padding: `0px 0px` }}
+      >
+        {children}
+      </Container>
+      <Footer />
     </ChakraProvider>
   )
 }

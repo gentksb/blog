@@ -4,7 +4,7 @@ import { Chip, Container } from "@material-ui/core"
 import { LocalOffer } from "@material-ui/icons"
 import styled from "@emotion/styled"
 
-import { TagListQuery } from '../../types/graphql-types'
+import { TagListQuery } from '../../../types/graphql-types'
 
 const TagChip = styled(Chip)`
   margin: 8px 8px;

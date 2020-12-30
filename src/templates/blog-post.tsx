@@ -9,7 +9,7 @@ import Share from "../components/share"
 import PostTag from "../components/postTag"
 import PrevAndNextPost from "../components/prevAndNextpost"
 import BlogPostStyle from "../styles/blog-post.style"
-import TagList from "../components/tagList"
+import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/relatedPosts"
 import { BlogPostBySlugQuery,SitePageContext } from "../../types/graphql-types"
 

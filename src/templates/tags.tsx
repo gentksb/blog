@@ -6,7 +6,7 @@ import { TagPageQuery,SitePageContext } from "../../types/graphql-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostList from "../components/postList"
-import TagList from "../components/tagList"
+import TagList from "../components/molecules/tagList"
 
 const Tags : React.FunctionComponent<PageProps<TagPageQuery, SitePageContext>> = ({ pageContext, data, location }) => {
   const { tag } = pageContext

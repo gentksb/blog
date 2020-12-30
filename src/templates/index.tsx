@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
 import PostList from "../components/postList"
-import TagList from "../components/tagList"
+import TagList from "../components/molecules/tagList"
 
 const BlogIndex: React.FunctionComponent<PageProps<IndexPageQuery, SitePageContext>> = (props) => {
   const { data, location } = props
