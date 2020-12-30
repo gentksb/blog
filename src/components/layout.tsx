@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core/styles"
 import Footer from "../components/footer"
 import theme from "../config/theme"
+import { ChakraProvider } from "@chakra-ui/react"
 
 declare global {
   interface Window {
@@ -76,21 +77,23 @@ const Layout: React.FunctionComponent<Props> = (props) => {
     maxMainContentWidth = "lg"
   }
   return (
-    <CssBaseline>
-      <StylesProvider injectFirst>
-        <ThemeProvider theme={theme}>
-          <HeaderBar position="static">{header}</HeaderBar>
-          <Container
-            maxWidth={maxMainContentWidth}
-            component="main"
-            style={{ margin: `8px auto`, padding: `0px 0px` }}
-          >
-            {children}
-          </Container>
-          <Footer />
-        </ThemeProvider>
-      </StylesProvider>
-    </CssBaseline>
+    <ChakraProvider>
+      <CssBaseline>
+        <StylesProvider injectFirst>
+          <ThemeProvider theme={theme}>
+            <HeaderBar position="static">{header}</HeaderBar>
+            <Container
+              maxWidth={maxMainContentWidth}
+              component="main"
+              style={{ margin: `8px auto`, padding: `0px 0px` }}
+            >
+              {children}
+            </Container>
+            <Footer />
+          </ThemeProvider>
+        </StylesProvider>
+      </CssBaseline>
+    </ChakraProvider>
   )
 }
 
