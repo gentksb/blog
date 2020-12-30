@@ -1,16 +1,15 @@
 import React, { useEffect } from "react"
-import { Link } from "gatsby"
 import { WindowLocation } from "@reach/router"
 
-import { Typography, CssBaseline, AppBar, Container } from "@material-ui/core"
+import { CssBaseline, AppBar, Container } from "@material-ui/core"
 import styled from "@emotion/styled"
 import {
   ThemeProvider,
-  StylesProvider,
-  useTheme,
+  StylesProvider
 } from "@material-ui/core/styles"
 import Footer from "../components/footer"
 import theme from "../config/theme"
+import BlogTitleText from "./atoms/blogTitleText"
 import { ChakraProvider } from "@chakra-ui/react"
 
 declare global {
@@ -31,7 +30,6 @@ interface Props extends LocationState {}
 
 const Layout: React.FunctionComponent<Props> = (props) => {
   const { location, title, children } = props
-  const blogtheme = useTheme()
   useEffect(() => {
     if (window.iframely) {
       window.iframely.load()
@@ -42,10 +40,6 @@ const Layout: React.FunctionComponent<Props> = (props) => {
     }
   })
 
-  const BlogTitleLink = styled(Link)`
-    color: ${blogtheme.palette.common.white};
-    text-decoration: none;
-  `
   const HeaderBar = styled(AppBar)`
     background-color: "#2B0E00";
     max-width: 100%;
@@ -59,23 +53,23 @@ const Layout: React.FunctionComponent<Props> = (props) => {
   let header: React.ReactNode
   let maxMainContentWidth: widthUnion
 
+
   const postpathRegExp = RegExp("^/post/.*")
 
   if (postpathRegExp.test(location.pathname)) {
     header = (
-      <Typography component="div" variant="h4" align="center" gutterBottom>
-        <BlogTitleLink to={`/`}>{title}</BlogTitleLink>
-      </Typography>
+      <BlogTitleText title={title} />
     )
     maxMainContentWidth = "sm"
   } else {
     header = (
-      <Typography component="h1" variant="h4" align="center" gutterBottom>
-        <BlogTitleLink to={`/`}>{title}</BlogTitleLink>
-      </Typography>
+      <h1>
+        <BlogTitleText title={title} />
+      </h1>
     )
     maxMainContentWidth = "lg"
   }
+
   return (
     <ChakraProvider>
       <CssBaseline>

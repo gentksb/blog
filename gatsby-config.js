@@ -18,7 +18,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-emotion`,
     `gatsby-plugin-material-ui`,
-    `gatsby-plugin-chakra-ui`,
+    `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-graphql-codegen`,
