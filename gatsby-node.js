@@ -76,8 +76,8 @@ exports.createPages = async ({ graphql, actions }) => {
     paginate({
       createPage, // The Gatsby `createPage` function
       items: posts, // An array of objects
-      itemsPerPage: 10,
-      itemsPerFirstPage: 6, // How many items you want per page
+      itemsPerPage: 7,
+      itemsPerFirstPage: 7, // How many items you want per page
       pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/" : "/page"), // Creates pages like `/blog`, `/blog/2`, etc
       component: path.resolve("./src/templates/index.tsx"), // Just like `createPage()`
     })
