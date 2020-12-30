@@ -1,16 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Paper, CardHeader, CardActions, CardActionArea, Button, Divider } from '@material-ui/core'
+import { CardActions, Button } from '@material-ui/core'
 import styled from "@emotion/styled";
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Heading, HStack, Text } from "@chakra-ui/react";
+import { CalendarIcon } from "@chakra-ui/icons"
 
 import PostTag from "./postTag"
 import PostCoverImage from "./atoms/postCoverImage"
 import { IndexPageQuery } from '../../types/graphql-types'
 
-const Postcard = styled(Paper)`
-  margin-top: 16px;
-`
 const ReadmoreButton = styled(CardActions)`
   justify-content:flex-end;
 `
@@ -29,21 +27,23 @@ const postList: React.FunctionComponent<Props> = ({ props }) => {
 
       return (
         <GridItem colSpan={columnSpan} key={node.id}>
-          <Postcard elevation={0} variant="outlined">
-            <CardActionArea aria-label={node.frontmatter.title}>
-              <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
-                <CardHeader title={node.frontmatter.title} subheader={node.frontmatter.date} component="h2" style={{padding : '0 16px'}} />
-              </Link>
-            </CardActionArea>
-            <Divider variant="middle" />
+          <Box borderWidth="1px" borderRadius="lg" overflow="hidden">
+            <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
+              <PostCoverImage cover={node.frontmatter.cover} fluid={{ ...node.frontmatter.cover?.childImageSharp.fluid, aspectRatio: 16 / 9 }} alt={coverTitleText} />
+            </Link>
+            <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
+              <Heading as="h2" fontSize="xl">{node.frontmatter.title}</Heading>
+              <HStack>
+                <CalendarIcon /><Text color="gray.500">{node.frontmatter.date}</Text>
+              </HStack>
+            </Link>
             <PostTag tags={node.frontmatter.tags} />
-              <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
-                <PostCoverImage cover={node.frontmatter.cover} fluid={{ ...node.frontmatter.cover?.childImageSharp.fluid, aspectRatio: 16 / 9 }} alt={coverTitleText} />
-              </Link>
-              <ReadmoreButton>
-                <Button variant="contained" color="secondary" href={node.fields.slug} disableElevation >この記事を読む</Button>
-              </ReadmoreButton>
-          </Postcard>
+            <a href={node.fields.slug}>
+              <Box as="button" borderRadius="md" bg="tomato" color="white" px={4} h={8}>
+                この記事を読む
+              </Box>
+            </a>
+          </Box>
         </GridItem>
       )
     })
