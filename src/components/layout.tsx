@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { WindowLocation } from "@reach/router"
 import { AppBar } from "@material-ui/core"
 import styled from "@emotion/styled"
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, Container } from "@chakra-ui/react"
 
 import Footer from "../components/footer"
 import BlogTitleText from "./atoms/blogTitleText"
@@ -62,7 +62,9 @@ const Layout: React.FunctionComponent<Props> = (props) => {
   return (
     <ChakraProvider>
       <HeaderBar position="static">{header}</HeaderBar>
-        {children}
+        <Container maxW="3xl" centerContent>
+          {children}
+        </Container>
       <Footer />
     </ChakraProvider>
   )
