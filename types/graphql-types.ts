@@ -3445,7 +3445,7 @@ export type IndexPageQueryVariables = Exact<{
 
 
 export type IndexPageQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title'>> }>, allMarkdownRemark: { edges: Array<{ node: (
-        Pick<MarkdownRemark, 'excerpt' | 'id'>
+        Pick<MarkdownRemark, 'id'>
         & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<(
           Pick<MarkdownRemarkFrontmatter, 'date' | 'title' | 'tags' | 'draft'>
           & { cover?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
