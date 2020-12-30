@@ -44,24 +44,15 @@ const Layout: React.FunctionComponent<Props> = (props) => {
     padding: 16px 0px 8px 0px;
   `
 
-  let header: React.ReactNode
   const postpathRegExp = RegExp("^/post/.*")
-
-  if (postpathRegExp.test(location.pathname)) {
-    header = (
-      <BlogTitleText title={title} />
-    )
-  } else {
-    header = (
-      <h1>
-        <BlogTitleText title={title} />
-      </h1>
-    )
-  }
+  const headerMarkup = postpathRegExp.test(location.pathname)
+    ? "span" : "h1"
 
   return (
     <ChakraProvider>
-      <HeaderBar position="static">{header}</HeaderBar>
+      <HeaderBar position="static">
+        <BlogTitleText title={title} markup={headerMarkup} />
+      </HeaderBar>
         <Container maxW="3xl" centerContent>
           {children}
         </Container>
