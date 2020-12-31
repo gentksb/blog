@@ -12,20 +12,24 @@ interface Props {
 const PrevAndNextPost: React.FunctionComponent<Props> = ({ previous, next }) => {
   const hasPreviousPost : boolean = (!!previous)
   const hasNextPost : boolean = (!!next)
+  const previousPostPath = previous?.fields.slug
+  const nextPostPath = next?.fields.slug
+  const previousPageTitle = previous?.frontmatter.title
+  const nextPageTitle = next?.frontmatter.title
 
   return (
     <Grid templateColumns="repeat(2,1fr)" gap={2}>
       <GridItem colSpan={1}>
-          <Link to={previous.fields.slug} rel="prev">
+          <Link to={previousPostPath} rel="prev">
             <Button variant="outline" isDisabled={!hasPreviousPost}>
-              <ArrowBackIcon />{previous.frontmatter.title}
+              <ArrowBackIcon />{previousPageTitle}
             </Button>
           </Link>
       </GridItem>
       <GridItem colSpan={1} textAlign="right">
-          <Link to={next.fields.slug} rel="next">
+          <Link to={nextPostPath} rel="next">
             <Button variant="outline" isDisabled={!hasNextPost}>
-              {next.frontmatter.title}<ArrowForwardIcon />
+              {nextPageTitle}<ArrowForwardIcon />
             </Button>
           </Link>
       </GridItem>
