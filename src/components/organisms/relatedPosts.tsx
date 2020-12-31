@@ -34,6 +34,7 @@ const relatedPosts: React.FunctionComponent<Props> = ({tag}) =>{
   `)
 
   const relatedRecentPostsData = recentPostsData.allMarkdownRemark.edges.filter( edge => edge.node.frontmatter.tags.includes(tag) === true)
+  const maxRelatedPostsCount = 4;
 
   const relatedRecentPostsElements = (
     relatedRecentPostsData.map( ({node})  => {

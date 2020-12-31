@@ -45,7 +45,7 @@ const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
     )
   })
 
-  return <HStack>{tagArray}</HStack>
+  return <HStack maxW="100%" display="block">{tagArray}</HStack>
 }
 
 export default TagList
