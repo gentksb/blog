@@ -4,8 +4,8 @@ import { IndexPageQuery,SitePageContext } from '../../types/graphql-types'
 import { VStack } from "@chakra-ui/react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Pagination from "../components/pagination"
+import SEO from "../components/utils/seo"
+import Pagination from "../components/molecules/pagination"
 import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 

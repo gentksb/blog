@@ -3,7 +3,7 @@ import { PageProps,graphql } from "gatsby"
 import { NotFoundPageQuery ,SitePageContext } from "../../types/graphql-types"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/utils/seo"
 
 const NotFoundPage : React.FunctionComponent<PageProps<NotFoundPageQuery, SitePageContext>> = (props) => {
   const { data,location } = props

@@ -4,7 +4,7 @@ import { AppBar } from "@material-ui/core"
 import styled from "@emotion/styled"
 import { ChakraProvider, Container } from "@chakra-ui/react"
 
-import Footer from "../components/footer"
+import Footer from "./organisms/footer"
 import BlogTitleText from "./atoms/blogTitleText"
 
 

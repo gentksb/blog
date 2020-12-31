@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { RecentPostQuery } from "../../types/graphql-types"
+import { RecentPostQuery } from "../../../types/graphql-types"
 import { Grid, Paper, CardHeader, CardActionArea} from '@material-ui/core'
 import styled from "@emotion/styled";
 

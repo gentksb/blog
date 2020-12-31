@@ -4,13 +4,13 @@ import { Typography, Paper, CardContent, Divider } from "@material-ui/core"
 import { Today } from "@material-ui/icons"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Share from "../components/share"
-import PostTag from "../components/postTag"
-import PrevAndNextPost from "../components/prevAndNextpost"
+import SEO from "../components/utils/seo"
+import Share from "../components/molecules/share"
+import PostTag from "../components/molecules/postTag"
+import PrevAndNextPost from "../components/molecules/prevAndNextpost"
 import BlogPostStyle from "../styles/blog-post.style"
 import TagList from "../components/molecules/tagList"
-import RelatedPosts from "../components/relatedPosts"
+import RelatedPosts from "../components/organisms/relatedPosts"
 import { BlogPostBySlugQuery,SitePageContext } from "../../types/graphql-types"
 
 const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, SitePageContext>> = (props) => {
