@@ -9,9 +9,10 @@ import {
 } from "react-share";
 import shareConfig from "../../config/shareConfig"
 import styled from "@emotion/styled"
-import { Share } from "@material-ui/icons"
-import { IconButton } from "@material-ui/core";
+import { IconButton } from "@chakra-ui/react";
+import { FaShareAlt } from "@react-icons/all-files/fa/FaShareAlt"
 import { WindowLocation } from "@reach/router"
+
 
 interface Props {
   location? : WindowLocation
@@ -47,14 +48,12 @@ const sharebox : React.FunctionComponent<Props> = ({ title, location }) => {
 
   return (
     <ShareBox className="social-share">
-      <IconButton aria-label="share with other apps" onClick={() => {
+      <IconButton fontSize="24px" variant="none" aria-label="share this page" icon={<FaShareAlt />} onClick={() => {
         kickShareApi({
           title: `${title}| 幻想サイクル`,
           url: location.href,
         })
-      }}>
-        <Share fontSize="large" />
-      </IconButton>
+      }}/>
       <FacebookShareButton url={location.href} className="sharebutton-box">
         <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRoundIcon} />
       </FacebookShareButton>
