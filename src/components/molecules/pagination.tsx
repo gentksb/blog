@@ -10,21 +10,21 @@ interface Props {
 
 const Pagination: React.FunctionComponent<Props> = ({ props }) => {
   const { previousPagePath, nextPagePath } = props
-  const hasPreviousPage : boolean = (!previousPagePath)
-  const hasNextPage : boolean = (!nextPagePath)
+  const hasPreviousPage : boolean = (!!previousPagePath)
+  const hasNextPage : boolean = (!!nextPagePath)
 
   return (
     <Grid templateColumns="repeat(2,1fr)" w="100%">
       <GridItem colspan={1}>
           <Link to={nextPagePath}>
-            <Button variant="outline" colorScheme="teal" isDisabled={hasNextPage}>
+            <Button variant="outline" colorScheme="teal" isDisabled={!hasNextPage}>
               <ArrowBackIcon />Older Posts
             </Button>
           </Link>
       </GridItem>
       <GridItem colspan={1} textAlign="right">
           <Link to={previousPagePath}>
-            <Button variant="outline" colorScheme="teal" isDisabled={hasPreviousPage}>
+            <Button variant="outline" colorScheme="teal" isDisabled={!hasPreviousPage}>
               Newer Posts<ArrowForwardIcon />
             </Button>
           </Link>
