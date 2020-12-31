@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import { Box, Grid, GridItem, Heading, HStack, Text } from "@chakra-ui/react";
 import { CalendarIcon } from "@chakra-ui/icons"
 
-import PostTag from "./postTag"
-import PostCoverImage from "./atoms/postCoverImage"
-import { IndexPageQuery } from '../../types/graphql-types'
+import PostTag from "../postTag"
+import PostCoverImage from "../atoms/postCoverImage"
+import { IndexPageQuery } from '../../../types/graphql-types'
 
 interface Props {
   props : IndexPageQuery['allMarkdownRemark']['edges']

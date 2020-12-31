@@ -1,12 +1,12 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
-import { Grid } from "@material-ui/core"
 import { IndexPageQuery,SitePageContext } from '../../types/graphql-types'
+import { VStack } from "@chakra-ui/react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Pagination from "../components/pagination"
-import PostList from "../components/postList"
+import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 
 const BlogIndex: React.FunctionComponent<PageProps<IndexPageQuery, SitePageContext>> = (props) => {
@@ -17,13 +17,11 @@ const BlogIndex: React.FunctionComponent<PageProps<IndexPageQuery, SitePageConte
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Top" location={location} />
-      <Grid container justify="center">
-        <Grid item>
+      <VStack>
           <PostList props={edges} />
           <Pagination props={props.pageContext} />
           <TagList />
-        </Grid>
-      </Grid>
+      </VStack>
     </Layout>
   )
 }
