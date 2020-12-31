@@ -20,8 +20,8 @@ const postList: React.FunctionComponent<Props> = ({ props }) => {
       const columnSpan = index === 0 ? 2 : 1
 
       return (
-        <GridItem colSpan={columnSpan} key={node.id} >
-          <Box borderWidth="1px" borderRadius="lg" overflow="hidden">
+        <GridItem colSpan={columnSpan} key={node.id}>
+          <Box borderWidth="1px" borderRadius="lg" overflow="hidden" h="100%">
             <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
               <PostCoverImage cover={node.frontmatter.cover} fluid={{ ...node.frontmatter.cover?.childImageSharp.fluid, aspectRatio: 16 / 9 }} alt={coverTitleText} />
             </Link> 
