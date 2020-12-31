@@ -22,14 +22,14 @@ const PrevAndNextPost: React.FunctionComponent<Props> = ({ previous, next }) => 
       <GridItem colSpan={1}>
           <Link to={previousPostPath} rel="prev">
             <Button variant="outline" isDisabled={!hasPreviousPost} leftIcon={<ArrowBackIcon />} isFullWidth boxSizing="border-box">
-              <Text isTruncated noOfLines={2}>{previousPageTitle}</Text>
+              {/* <Text isTruncated noOfLines={2}>{previousPageTitle}</Text> */}prev
             </Button>
           </Link>
       </GridItem>
       <GridItem colSpan={1} textAlign="right">
           <Link to={nextPostPath} rel="next">
             <Button variant="outline" isDisabled={!hasNextPost} rightIcon={<ArrowForwardIcon />} isFullWidth boxSizing="border-box">
-              <Text isTruncated noOfLines={2}>{nextPageTitle}</Text>
+              {/* <Text isTruncated noOfLines={2}>{nextPageTitle}</Text> */}next
             </Button>
           </Link>
       </GridItem>
