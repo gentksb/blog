@@ -1,11 +1,12 @@
 import React from "react"
 import { PageProps,graphql } from "gatsby"
-import { Grid } from "@material-ui/core"
 import { TagPageQuery,SitePageContext } from "../../types/graphql-types"
+import { VStack } from "@chakra-ui/react"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostList from "../components/postList"
+import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 
 const Tags : React.FunctionComponent<PageProps<TagPageQuery, SitePageContext>> = ({ pageContext, data, location }) => {
@@ -17,12 +18,10 @@ const Tags : React.FunctionComponent<PageProps<TagPageQuery, SitePageContext>> =
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={pageTitle} location={location} />
-      <Grid container justify="center">
-        <Grid item>
+      <VStack>
           <TagList targetTag={tag} />
           <PostList props={edges} />
-        </Grid>
-      </Grid>
+      </VStack>
     </Layout>
   )
 }
