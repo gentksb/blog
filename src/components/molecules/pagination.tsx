@@ -1,8 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Grid, Button } from '@material-ui/core'
-import { ArrowBack, ArrowForward } from '@material-ui/icons'
-import styled from "@emotion/styled";
+import { Grid, Button, GridItem } from '@chakra-ui/react'
+import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 import { SitePageContext } from '../../../types/graphql-types'
 
 interface Props {
@@ -11,35 +10,25 @@ interface Props {
 
 const Pagination: React.FunctionComponent<Props> = ({ props }) => {
   const { previousPagePath, nextPagePath } = props
-
-  const PaginationLink = styled(Link)`
-  text-decoration:none;
-  `
+  const hasPreviousPage : boolean = (!previousPagePath)
+  const hasNextPage : boolean = (!nextPagePath)
 
   return (
-    <Grid container spacing={2} justify="center">
-      <Grid item xs={6} style={{ textAlign: "left" }}>
-        {nextPagePath ?
-          <PaginationLink to={nextPagePath}>
-            <Button variant="outlined" color="primary" startIcon={<ArrowBack />}>
-              Older Posts
+    <Grid templateColumns="repeat(2,1fr)" w="100%">
+      <GridItem colspan={1}>
+          <Link to={nextPagePath}>
+            <Button variant="outline" colorScheme="teal" isDisabled={hasNextPage}>
+              <ArrowBackIcon />Older Posts
             </Button>
-          </PaginationLink>
-          : <Button variant="outlined" disabled startIcon={<ArrowBack />}>
-            Older Posts
-            </Button>}
-      </Grid>
-      <Grid item xs={6} style={{ textAlign: "right" }}>
-        {previousPagePath ?
-          <PaginationLink to={previousPagePath}>
-            <Button variant="outlined" color="primary" endIcon={<ArrowForward />}>
-              Newer Posts
+          </Link>
+      </GridItem>
+      <GridItem colspan={1} textAlign="right">
+          <Link to={previousPagePath}>
+            <Button variant="outline" colorScheme="teal" isDisabled={hasPreviousPage}>
+              Newer Posts<ArrowForwardIcon />
             </Button>
-          </PaginationLink>
-          : <Button variant="outlined" disabled endIcon={<ArrowForward />}>
-            Newer Posts
-            </Button>}
-      </Grid>
+          </Link>
+      </GridItem>
     </Grid>
   )
 }
