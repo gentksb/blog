@@ -5,7 +5,7 @@ import { VStack } from "@chakra-ui/react"
 
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/utils/seo"
 import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 

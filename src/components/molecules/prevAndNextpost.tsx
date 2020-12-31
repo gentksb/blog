@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { ArrowBackIos, ArrowForwardIos } from '@material-ui/icons'
 import { Grid, Button } from '@material-ui/core'
-import { SitePageContextNext, SitePageContextPrevious } from '../../types/graphql-types'
+import { SitePageContextNext, SitePageContextPrevious } from '../../../types/graphql-types'
 
 interface Props {
   previous?: SitePageContextPrevious

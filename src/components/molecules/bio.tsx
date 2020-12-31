@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import { BioComponentQuery } from "../../types/graphql-types"
+import { BioComponentQuery } from "../../../types/graphql-types"
 
 const Bio: React.FunctionComponent = () => {
   const data: BioComponentQuery = useStaticQuery(graphql`

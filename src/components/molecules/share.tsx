@@ -7,7 +7,7 @@ import {
   TwitterIcon,
   LineIcon,
 } from "react-share";
-import shareConfig from "../config/shareConfig"
+import shareConfig from "../../config/shareConfig"
 import styled from "@emotion/styled"
 import { Share } from "@material-ui/icons"
 import { IconButton } from "@material-ui/core";

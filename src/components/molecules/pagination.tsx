@@ -1,9 +1,9 @@
-import { PageProps, Link } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 import { Grid, Button } from '@material-ui/core'
 import { ArrowBack, ArrowForward } from '@material-ui/icons'
 import styled from "@emotion/styled";
-import { SitePageContext } from '../../types/graphql-types'
+import { SitePageContext } from '../../../types/graphql-types'
 
 interface Props {
   props : SitePageContext

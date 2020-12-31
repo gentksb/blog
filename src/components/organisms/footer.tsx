@@ -1,6 +1,6 @@
 import React from "react"
 import { AppBar, Typography } from "@material-ui/core"
-import Bio from "./bio"
+import Bio from "../molecules/bio"
 
 const Footer: React.FunctionComponent = () => (
   <AppBar position="static" component="footer">
