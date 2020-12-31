@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import { ArrowBackIos, ArrowForwardIos } from '@material-ui/icons'
-import { Grid, Button } from '@material-ui/core'
+import { Grid, Button, GridItem } from "@chakra-ui/react"
 import { SitePageContextNext, SitePageContextPrevious } from '../../../types/graphql-types'
+import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons"
 
 interface Props {
   previous?: SitePageContextPrevious
@@ -10,26 +10,25 @@ interface Props {
 }
 
 const PrevAndNextPost: React.FunctionComponent<Props> = ({ previous, next }) => {
+  const hasPreviousPost : boolean = (!!previous)
+  const hasNextPost : boolean = (!!next)
+
   return (
-    <Grid container style={{ marginTop: `8px` }} spacing={2}>
-      <Grid item xs={6}>
-        {previous && (
-          <Link to={previous.fields.slug} rel="prev" style={{ textDecoration: 'none' }}>
-            <Button fullWidth startIcon={<ArrowBackIos />} variant="outlined">
-              {previous.frontmatter.title}
+    <Grid templateColumns="repeat(2,1fr)" gap={2}>
+      <GridItem colSpan={1}>
+          <Link to={previous.fields.slug} rel="prev">
+            <Button variant="outline" isDisabled={!hasPreviousPost}>
+              <ArrowBackIcon />{previous.frontmatter.title}
             </Button>
           </Link>
-        )}
-      </Grid>
-      <Grid item xs={6} style={{ textAlign: "right" }}>
-        {next && (
-          <Link to={next.fields.slug} rel="next" style={{ textDecoration: 'none' }}>
-            <Button fullWidth endIcon={<ArrowForwardIos />} variant="outlined">
-              {next.frontmatter.title}
+      </GridItem>
+      <GridItem colSpan={1} textAlign="right">
+          <Link to={next.fields.slug} rel="next">
+            <Button variant="outline" isDisabled={!hasNextPost}>
+              {next.frontmatter.title}<ArrowForwardIcon />
             </Button>
           </Link>
-        )}
-      </Grid>
+      </GridItem>
     </Grid>
   )
 }
