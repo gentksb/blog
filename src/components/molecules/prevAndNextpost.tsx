@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Grid, Button, GridItem } from "@chakra-ui/react"
+import { Grid, Button, GridItem, Text} from "@chakra-ui/react"
 import { SitePageContextNext, SitePageContextPrevious } from '../../../types/graphql-types'
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons"
 
@@ -18,18 +18,18 @@ const PrevAndNextPost: React.FunctionComponent<Props> = ({ previous, next }) => 
   const nextPageTitle = next?.frontmatter.title
 
   return (
-    <Grid templateColumns="repeat(2,1fr)" gap={2}>
+    <Grid templateColumns="repeat(2,1fr)" w="100%" gap={2}>
       <GridItem colSpan={1}>
           <Link to={previousPostPath} rel="prev">
-            <Button variant="outline" isDisabled={!hasPreviousPost}>
-              <ArrowBackIcon />{previousPageTitle}
+            <Button variant="outline" isDisabled={!hasPreviousPost} leftIcon={<ArrowBackIcon />} isFullWidth boxSizing="border-box">
+              <Text isTruncated noOfLines={2}>{previousPageTitle}</Text>
             </Button>
           </Link>
       </GridItem>
       <GridItem colSpan={1} textAlign="right">
           <Link to={nextPostPath} rel="next">
-            <Button variant="outline" isDisabled={!hasNextPost}>
-              {nextPageTitle}<ArrowForwardIcon />
+            <Button variant="outline" isDisabled={!hasNextPost} rightIcon={<ArrowForwardIcon />} isFullWidth boxSizing="border-box">
+              <Text isTruncated noOfLines={2}>{nextPageTitle}</Text>
             </Button>
           </Link>
       </GridItem>

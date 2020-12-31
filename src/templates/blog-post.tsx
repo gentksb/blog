@@ -66,9 +66,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
         <Divider variant="middle" />
         <Share title={post.frontmatter.title} location={location} />
       </Paper>
-      <nav>
-        <PrevAndNextPost previous={previous} next={next} />
-      </nav>
+      <PrevAndNextPost previous={previous} next={next} />
       <Typography variant="h6" component="h2">最近の似た記事</Typography>
       {relatedPostsComponent}
       <TagList />
