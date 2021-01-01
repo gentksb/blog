@@ -11,6 +11,7 @@ import PostTag from "../components/molecules/postTag"
 import PrevAndNextPost from "../components/molecules/prevAndNextpost"
 import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/organisms/relatedPosts"
+import BlogPostStyle from "../styles/blog-post.style"
 
 
 
@@ -40,14 +41,14 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
         <article>
             <header>
               <time dateTime={post.frontmatter.date}>
-                <HStack>
+                <HStack pt="0.25rem">
                   <CalendarIcon />
                   <Text color="GrayText" fontSize="sm">
                     {post.frontmatter.date}
                   </Text>
                 </HStack>
               </time>
-              <Heading as="h1" fontSize="4xl">
+              <Heading as="h1" fontSize={{ base: "2xl", md: "4xl"}}>
                 {post.frontmatter.title}
               </Heading>
               <PostTag tags={post.frontmatter.tags} />
@@ -57,6 +58,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
               as="div"
               dangerouslySetInnerHTML={{ __html: post.html }}
               className="post-body"
+              css={BlogPostStyle}
             />
         </article>
         <Divider />

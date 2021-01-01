@@ -1,15 +1,19 @@
-import { extendTheme } from "@chakra-ui/react"
-import BlogPostStyle from "../styles/blog-post.style"
+import { extendTheme, Theme } from "@chakra-ui/react"
 
 const primaryColor = "blue.500"
 const secondaryColor = "teal.200"
 
-const theme = extendTheme({
+const theme: Theme = extendTheme({
   styles: {
     global: {
       ".post-body": {
+        ul: {
+          paddingLeft: "3rem",
+          paddingTop: "0.5rem",
+          paddingBottom: "0.5rem"
+        },
         h2: {
-          marginTop: "0.5em",
+          marginTop: "0.5rem",
           marginBottom: "0.5rem",
           padding: "0.25em 0 0.25em 0.75em",
           borderLeftWidth: "6px",
@@ -69,7 +73,6 @@ const theme = extendTheme({
             fontSize: "15px",
             lineHeight: "1.5",
         },
-        // ...BlogPostStyle
       }
     }
   }
