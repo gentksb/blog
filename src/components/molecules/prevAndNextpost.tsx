@@ -18,20 +18,20 @@ const PrevAndNextPost: React.FunctionComponent<Props> = ({ previous, next }) => 
   const nextPageTitle = next?.frontmatter.title
 
   return (
-    <Grid templateColumns="repeat(2,1fr)" w="100%" gap={2}>
-      <GridItem colSpan={1}>
-          <Link to={previousPostPath} rel="prev">
-            <Button variant="outline" isDisabled={!hasPreviousPost} leftIcon={<ArrowBackIcon />} isFullWidth boxSizing="border-box">
-              {/* <Text isTruncated noOfLines={2}>{previousPageTitle}</Text> */}prev
-            </Button>
-          </Link>
+    <Grid templateColumns="repeat(auto-fill, 50%)" w="100%">
+      <GridItem colSpan={[2,2,1,1]} margin={1}>
+        <Link to={previousPostPath} rel="prev">
+          <Button variant="outline" isDisabled={!hasPreviousPost} leftIcon={<ArrowBackIcon />} isFullWidth>
+            <Text isTruncated>{previousPageTitle}</Text>
+          </Button>
+        </Link>
       </GridItem>
-      <GridItem colSpan={1} textAlign="right">
-          <Link to={nextPostPath} rel="next">
-            <Button variant="outline" isDisabled={!hasNextPost} rightIcon={<ArrowForwardIcon />} isFullWidth boxSizing="border-box">
-              {/* <Text isTruncated noOfLines={2}>{nextPageTitle}</Text> */}next
-            </Button>
-          </Link>
+      <GridItem colSpan={[2,2,1,1]} margin={1} textAlign="right">
+        <Link to={nextPostPath} rel="next">
+          <Button variant="outline" isDisabled={!hasNextPost} rightIcon={<ArrowForwardIcon />} isFullWidth>
+            <Text isTruncated>{nextPageTitle}</Text>
+          </Button>
+        </Link>
       </GridItem>
     </Grid>
   )
