@@ -23,7 +23,7 @@ const PostTag: React.FunctionComponent<Props> = ({ tags }) => {
     )
 
   return (
-    <HStack spacing={2}>
+    <HStack spacing={2} padding="0.25rem 0 0.25rem 0">
       {tagArray}
     </HStack>
   )
