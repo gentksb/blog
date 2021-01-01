@@ -41,7 +41,7 @@ const Layout: React.FunctionComponent<Props> = (props) => {
 
   return (
     <ChakraProvider theme={theme}>
-      <Box position="static" bgColor="blue.200" maxW="100%" m="0 0 0 0" padding="0.5rem 0 0.5rem 0" textAlign="center">
+      <Box position="static" layerStyle="themeBgColor" maxW="100%" m="0 0 0 0" padding="0.5rem 0 0.5rem 0" textAlign="center">
         <BlogTitleText title={title} markup={headerMarkup} />
       </Box>
         <Container maxW="3xl" centerContent>
