@@ -4,6 +4,11 @@ const primaryColor = "blue.500"
 const secondaryColor = "teal.200"
 
 const theme: Theme = extendTheme({
+  layerStyles: {
+    themeBgColor: {
+      bg: primaryColor
+    }
+  },
   styles: {
     global: {
       ".post-body": {

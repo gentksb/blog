@@ -38,6 +38,7 @@ const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
           size="sm"
           variant="solid"
           colorScheme={buttonColor}
+          mt="0.5rem"
         >
           {`${tag}:${count}`}
         </Button>
