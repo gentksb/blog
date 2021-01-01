@@ -17,7 +17,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-material-ui`,
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
     {

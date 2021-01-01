@@ -1,9 +1,8 @@
 import React, { useEffect } from "react"
 import { WindowLocation } from "@reach/router"
-import { AppBar } from "@material-ui/core"
-import styled from "@emotion/styled"
-import { ChakraProvider, Container } from "@chakra-ui/react"
+import { Box, ChakraProvider, Container } from "@chakra-ui/react"
 
+import theme from "../config/theme"
 import Footer from "./organisms/footer"
 import BlogTitleText from "./atoms/blogTitleText"
 
@@ -36,23 +35,15 @@ const Layout: React.FunctionComponent<Props> = (props) => {
     }
   })
 
-  const HeaderBar = styled(AppBar)`
-    background-color: "#2B0E00";
-    max-width: 100%;
-    position: relative;
-    margin: 0 0 0 0;
-    padding: 16px 0px 8px 0px;
-  `
-
   const postpathRegExp = RegExp("^/post/.*")
   const headerMarkup = postpathRegExp.test(location.pathname)
     ? "span" : "h1"
 
   return (
-    <ChakraProvider>
-      <HeaderBar position="static">
+    <ChakraProvider theme={theme}>
+      <Box position="static" bgColor="blue.200" maxW="100%" m="0 0 0 0" padding="0.5rem 0 0.5rem 0" textAlign="center">
         <BlogTitleText title={title} markup={headerMarkup} />
-      </HeaderBar>
+      </Box>
         <Container maxW="3xl" centerContent>
           {children}
         </Container>
