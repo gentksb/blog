@@ -7,7 +7,7 @@ import {
   TwitterIcon,
   LineIcon,
 } from "react-share";
-import shareConfig from "../../config/shareConfig"
+import shareConfig from "../utils/shareConfig"
 import styled from "@emotion/styled"
 import { IconButton } from "@chakra-ui/react";
 import { FaShareAlt } from "@react-icons/all-files/fa/FaShareAlt"
