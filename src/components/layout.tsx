@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { WindowLocation } from "@reach/router"
 import { Box, ChakraProvider, Container } from "@chakra-ui/react"
 
-import theme from "../config/theme"
+import theme from "./utils/theme"
 import Footer from "./organisms/footer"
 import BlogTitleText from "./atoms/blogTitleText"
 
