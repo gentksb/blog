@@ -1,58 +1,6 @@
 import { css } from '@emotion/react'
 
-const primaryColor = "blue"
-const secondaryColor = "cyan"
-
 const BlogPostStyle = css`
-    h2 {
-      padding: 0.25em 0 0.25em 0.75em;
-      border-left: 6px solid ${primaryColor};
-      border-bottom: 1px solid ${primaryColor};
-    }
-    h3 {
-      padding: 0.25em 0 0.5em 0.75em;
-      border-left: 6px solid ${primaryColor};
-    }
-    p {
-      margin-bottom: 1.5em;
-      line-height: 1.7;
-    }
-    .gatsby-resp-image-image {
-      max-height: 760px;
-      object-fit: contain !important;
-    }
-    
-
-    /* Quote */
-    blockquote {
-      position: relative;
-      padding: 8px 16px;
-      background: #f5f5f5;
-      color: #555;
-      border-left: 4px solid ${secondaryColor};
-      width: 90%;
-      margin: 16px auto;
-    }
-
-    blockquote:before{
-        display: inline-block;
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        vertical-align: middle;
-        /* content: "\f10d";
-        font-family: FontAwesome; */
-        color: ${secondaryColor};
-        font-size: 25px;
-        line-height: 1;
-    }
-    
-    blockquote p {
-        padding: 0;
-        margin: 16px 0 8px;
-        font-size: 15px;
-        line-height: 1.5;
-    }
 
     /* mobile横スクロール許可テーブル */
     .scrollable_table div {
