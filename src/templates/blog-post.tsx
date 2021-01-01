@@ -1,17 +1,18 @@
 import React from "react"
 import { PageProps,graphql } from "gatsby"
-import { Typography, Paper, CardContent, Divider } from "@material-ui/core"
-import { Today } from "@material-ui/icons"
+import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
+import { CalendarIcon } from "@chakra-ui/icons"
+import { BlogPostBySlugQuery,SitePageContext } from "../../types/graphql-types"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
 import Share from "../components/molecules/share"
 import PostTag from "../components/molecules/postTag"
 import PrevAndNextPost from "../components/molecules/prevAndNextpost"
-import BlogPostStyle from "../styles/blog-post.style"
 import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/organisms/relatedPosts"
-import { BlogPostBySlugQuery,SitePageContext } from "../../types/graphql-types"
+
+
 
 const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, SitePageContext>> = (props) => {
   const { pageContext, data, location } = props
@@ -35,40 +36,35 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
         image={seoImage}
         location={location}
       />
-      <Paper elevation={0}>
+      <Box outline="none">
         <article>
-          <CardContent>
             <header>
               <time dateTime={post.frontmatter.date}>
-                <Typography
-                  component="div"
-                  variant="subtitle1"
-                  color="textSecondary"
-                >
-                  <Today fontSize="small" />
-                  {post.frontmatter.date}
-                </Typography>
+                <HStack>
+                  <CalendarIcon />
+                  <Text color="GrayText" fontSize="sm">
+                    {post.frontmatter.date}
+                  </Text>
+                </HStack>
               </time>
-              <Typography component="h1" variant="h4">
+              <Heading as="h1" fontSize="4xl">
                 {post.frontmatter.title}
-              </Typography>
+              </Heading>
               <PostTag tags={post.frontmatter.tags} />
             </header>
-            <Divider variant="fullWidth" />
-            <Typography
-              variant="body1"
-              component="div"
+            <Divider />
+            <Text
+              as="div"
               dangerouslySetInnerHTML={{ __html: post.html }}
-              css = {BlogPostStyle}
+              className="post-body"
             />
-          </CardContent>
         </article>
-        <Divider variant="middle" />
+        <Divider />
         <Share title={post.frontmatter.title} location={location} />
-      </Paper>
+      </Box>
       <PrevAndNextPost previous={previous} next={next} />
-      <Typography variant="h6" component="h2">最近の似た記事</Typography>
-      {relatedPostsComponent}
+      {/* <Text as="h2">最近の似た記事</Text>
+      {relatedPostsComponent} */}
       <TagList />
     </Layout>
   )

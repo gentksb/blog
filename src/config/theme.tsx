@@ -1,17 +1,14 @@
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
+import { extendTheme } from "@chakra-ui/react"
+import BlogPostStyle from "../styles/blog-post.style"
 
-let theme = createMuiTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 760, //custom
-      md: 960,
-      lg: 1280,
-      xl: 1920,
+const theme = extendTheme({
+  styles: {
+    global: {
+      ".post-body": {
+        ...BlogPostStyle
+      }
     }
   }
 });
-
-theme = responsiveFontSizes(theme)
 
 export default theme;
