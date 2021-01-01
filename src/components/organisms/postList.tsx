@@ -27,8 +27,8 @@ const postList: React.FunctionComponent<Props> = ({ props }) => {
             </Link> 
               <VStack spacing={1} padding={1} alignItems="left">
                 <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
-                <Heading as="h2" fontSize="xl">{node.frontmatter.title}</Heading>
-                <HStack>
+                <Heading as="h2" fontSize={{base:"md", md:"xl"}}>{node.frontmatter.title}</Heading>
+                <HStack fontSize={{base:"sm", md:"md"}}>
                   <CalendarIcon /><Text color="gray.500">{node.frontmatter.date}</Text>
                 </HStack>
               </Link>

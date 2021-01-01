@@ -8,7 +8,7 @@ interface Props {
 }
 
   const blogTitleText: React.FunctionComponent<Props> = ({title, markup}) => (
-      <Heading fontSize="6xl" color="gray.50" decoration="none" align="center" as={markup}>
+      <Heading fontSize={{base:"2xl", md:"5xl"}} color="gray.50" decoration="none" align="center" as={markup}>
         <Link to={`/`}>{title}</Link>
       </Heading>
   )
