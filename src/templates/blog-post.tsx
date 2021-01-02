@@ -41,7 +41,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, S
         <article>
             <header>
               <time dateTime={post.frontmatter.date}>
-                <HStack pt="0.25rem">
+                <HStack pt={1}>
                   <CalendarIcon />
                   <Text color="GrayText" fontSize="sm">
                     {post.frontmatter.date}

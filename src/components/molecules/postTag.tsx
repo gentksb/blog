@@ -11,7 +11,7 @@ const PostTag: React.FunctionComponent<Props> = ({ tags }) => {
     (
       tags.map((tag) => (
         <Link to={`/tags/${tag.toLowerCase()}`} style={{ textDecoration: 'none' }} key={tag}>
-          <Tag key={tag} size="sm" variant="solid">
+          <Tag size="sm" variant="solid">
               {tag}
           </Tag>
         </Link>

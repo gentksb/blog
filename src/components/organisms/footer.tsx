@@ -4,7 +4,7 @@ import { Box, Image, Text, VStack } from "@chakra-ui/react"
 
 const Footer: React.FunctionComponent = () => (
   <footer>
-    <Box position="static" marginTop="0.5rem" layerStyle="themeBgColor">
+    <Box position="static" mt={2} layerStyle="themeBgColor">
       <VStack textAlign="center" justifyContent="center">
         <Bio />
         <Text fontSize="xs">
