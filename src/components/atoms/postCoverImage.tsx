@@ -1,6 +1,5 @@
 import { AspectRatio, Image } from "@chakra-ui/react"
 import Img, { FluidObject } from "gatsby-image"
-// import { ImageSharpFluid, IndexPageQuery } from "../../../types/graphql-types"
 
 interface Props {
   cover: any //coverの型を上手く指定できないため

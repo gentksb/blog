@@ -20,15 +20,10 @@ module.exports = {
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
     {
-      resolve: `gatsby-plugin-graphql-codegen`,
+      resolve: `gatsby-plugin-typegen`,
       options: {
-        fileName: `types/graphql-types.ts`,
-        documentPaths: [
-          "./src/**/*.{ts,tsx}",
-          "./node_modules/gatsby-*/**/*.js",
-        ],
-        codegenDelay: 200,
-      },
+        outputPath: `src/__generated__/gatsby-types.d.ts`,
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,

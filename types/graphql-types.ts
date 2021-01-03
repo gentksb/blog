@@ -710,6 +710,7 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___author'
   | 'childMarkdownRemark___frontmatter___type'
   | 'childMarkdownRemark___frontmatter___date'
+  | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___frontmatter___cover___sourceInstanceName'
   | 'childMarkdownRemark___frontmatter___cover___absolutePath'
   | 'childMarkdownRemark___frontmatter___cover___relativePath'
@@ -746,7 +747,6 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___cover___publicURL'
   | 'childMarkdownRemark___frontmatter___cover___id'
   | 'childMarkdownRemark___frontmatter___cover___children'
-  | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___frontmatter___draft'
   | 'childMarkdownRemark___frontmatter___custom_permalink'
   | 'childMarkdownRemark___excerpt'
@@ -1563,6 +1563,7 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___author'
   | 'frontmatter___type'
   | 'frontmatter___date'
+  | 'frontmatter___tags'
   | 'frontmatter___cover___sourceInstanceName'
   | 'frontmatter___cover___absolutePath'
   | 'frontmatter___cover___relativePath'
@@ -1625,7 +1626,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___cover___childMarkdownRemark___timeToRead'
   | 'frontmatter___cover___childMarkdownRemark___tableOfContents'
   | 'frontmatter___cover___childMarkdownRemark___children'
-  | 'frontmatter___tags'
   | 'frontmatter___draft'
   | 'frontmatter___custom_permalink'
   | 'excerpt'
@@ -1758,8 +1758,8 @@ export type MarkdownRemarkFrontmatter = {
   author?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
-  cover?: Maybe<File>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+  cover?: Maybe<File>;
   draft?: Maybe<Scalars['Boolean']>;
   custom_permalink?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
@@ -1777,8 +1777,8 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   author?: Maybe<StringQueryOperatorInput>;
   type?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
-  cover?: Maybe<FileFilterInput>;
   tags?: Maybe<StringQueryOperatorInput>;
+  cover?: Maybe<FileFilterInput>;
   draft?: Maybe<BooleanQueryOperatorInput>;
   custom_permalink?: Maybe<StringQueryOperatorInput>;
 };
@@ -2750,6 +2750,7 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___isTSX'
   | 'pluginCreator___pluginOptions___jsxPragma'
   | 'pluginCreator___pluginOptions___allExtensions'
+  | 'pluginCreator___pluginOptions___outputPath'
   | 'pluginCreator___pluginOptions___fileName'
   | 'pluginCreator___pluginOptions___documentPaths'
   | 'pluginCreator___pluginOptions___codegenDelay'
@@ -2994,6 +2995,7 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___isTSX'
   | 'pluginOptions___jsxPragma'
   | 'pluginOptions___allExtensions'
+  | 'pluginOptions___outputPath'
   | 'pluginOptions___fileName'
   | 'pluginOptions___documentPaths'
   | 'pluginOptions___codegenDelay'
@@ -3148,6 +3150,7 @@ export type SitePluginPluginOptions = {
   isTSX?: Maybe<Scalars['Boolean']>;
   jsxPragma?: Maybe<Scalars['String']>;
   allExtensions?: Maybe<Scalars['Boolean']>;
+  outputPath?: Maybe<Scalars['String']>;
   fileName?: Maybe<Scalars['String']>;
   documentPaths?: Maybe<Array<Maybe<Scalars['String']>>>;
   codegenDelay?: Maybe<Scalars['Int']>;
@@ -3223,6 +3226,7 @@ export type SitePluginPluginOptionsFilterInput = {
   isTSX?: Maybe<BooleanQueryOperatorInput>;
   jsxPragma?: Maybe<StringQueryOperatorInput>;
   allExtensions?: Maybe<BooleanQueryOperatorInput>;
+  outputPath?: Maybe<StringQueryOperatorInput>;
   fileName?: Maybe<StringQueryOperatorInput>;
   documentPaths?: Maybe<StringQueryOperatorInput>;
   codegenDelay?: Maybe<IntQueryOperatorInput>;

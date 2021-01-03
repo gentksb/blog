@@ -21,7 +21,7 @@ interface Props extends LocationState, SeoDefaultProps {}
 
 const SEO : React.FunctionComponent<Props> = (props) => {
   const { description, lang, meta, title, image, location } = props
-  const { site } = useStaticQuery(
+  const { site } = useStaticQuery<GatsbyTypes.SeoComponentQuery>(
     graphql`
       query SeoComponent {
         site {

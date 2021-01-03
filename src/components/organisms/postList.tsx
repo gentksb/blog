@@ -5,16 +5,15 @@ import { CalendarIcon } from "@chakra-ui/icons"
 
 import PostTag from "../molecules/postTag"
 import PostCoverImage from "../atoms/postCoverImage"
-import { IndexPageQuery } from '../../../types/graphql-types'
 
 interface Props {
-  props : IndexPageQuery['allMarkdownRemark']['edges']
+  edges : GatsbyTypes.IndexPageQuery['allMarkdownRemark']['edges']
 }
 
-const postList: React.FunctionComponent<Props> = ({ props }) => {
+const postList: React.FunctionComponent<Props> = ({edges}) => {
 
   const postCards = (
-    props.map(({ node }, index) => {
+    edges.map(({ node }, index) => {
 
       const coverTitleText = `${node.frontmatter.title} cover image`
       const columnSpan = index === 0 ? 2 : 1

@@ -2,10 +2,9 @@ import { Link } from "gatsby"
 import React from "react"
 import { Grid, Button, GridItem } from '@chakra-ui/react'
 import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
-import { SitePageContext } from '../../../types/graphql-types'
 
 interface Props {
-  props : SitePageContext
+  props : GatsbyTypes.SitePageContext
 }
 
 const Pagination: React.FunctionComponent<Props> = ({ props }) => {

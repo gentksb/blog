@@ -1,6 +1,5 @@
 import React from "react"
 import { PageProps,graphql } from "gatsby"
-import { TagPageQuery,SitePageContext } from "../../types/graphql-types"
 import { VStack } from "@chakra-ui/react"
 
 
@@ -9,7 +8,7 @@ import SEO from "../components/utils/seo"
 import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 
-const Tags : React.FunctionComponent<PageProps<TagPageQuery, SitePageContext>> = ({ pageContext, data, location }) => {
+const Tags : React.FunctionComponent<PageProps<GatsbyTypes.TagPageQuery, GatsbyTypes.SitePageContext>> = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges } = data.allMarkdownRemark
   const pageTitle = `Tag search : ${tag} | 幻想サイクル`
@@ -20,7 +19,7 @@ const Tags : React.FunctionComponent<PageProps<TagPageQuery, SitePageContext>> =
       <SEO title={pageTitle} location={location} />
       <VStack>
           <TagList targetTag={tag} />
-          <PostList props={edges} />
+          <PostList edges={edges} />
       </VStack>
     </Layout>
   )

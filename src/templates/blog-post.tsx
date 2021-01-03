@@ -2,7 +2,6 @@ import React from "react"
 import { PageProps,graphql } from "gatsby"
 import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
-import { BlogPostBySlugQuery,SitePageContext } from "../../types/graphql-types"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
@@ -15,7 +14,7 @@ import BlogPostStyle from "../styles/blog-post.style"
 
 
 
-const BlogPostTemplate: React.FunctionComponent<PageProps<BlogPostBySlugQuery, SitePageContext>> = (props) => {
+const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.SitePageContext>> = (props) => {
   const { pageContext, data, location } = props
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title

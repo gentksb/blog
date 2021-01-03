@@ -1,6 +1,5 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
-import { IndexPageQuery,SitePageContext } from '../../types/graphql-types'
 import { VStack } from "@chakra-ui/react"
 
 import Layout from "../components/layout"
@@ -9,7 +8,7 @@ import Pagination from "../components/molecules/pagination"
 import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 
-const BlogIndex: React.FunctionComponent<PageProps<IndexPageQuery, SitePageContext>> = (props) => {
+const BlogIndex: React.FunctionComponent<PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePageContext>> = (props) => {
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
   const edges = data.allMarkdownRemark.edges
@@ -18,7 +17,7 @@ const BlogIndex: React.FunctionComponent<PageProps<IndexPageQuery, SitePageConte
     <Layout location={location} title={siteTitle}>
       <SEO title="Top" location={location} />
       <VStack>
-          <PostList props={edges} />
+          <PostList edges={edges} />
           <Pagination props={props.pageContext} />
           <TagList />
       </VStack>

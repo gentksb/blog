@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { HStack, Tag } from "@chakra-ui/react"
 interface Props {
-  tags?: string[]
+  tags?: readonly string[]
 }
 
 const PostTag: React.FunctionComponent<Props> = ({ tags }) => {
