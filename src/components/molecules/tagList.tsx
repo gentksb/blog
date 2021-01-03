@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { TagListQuery } from '../../../types/graphql-types'
 import { Button, HStack, Tag } from "@chakra-ui/react"
 
 interface Props {
@@ -8,7 +7,7 @@ interface Props {
 }
 
 const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
-  const data:TagListQuery = useStaticQuery(graphql`
+  const data:GatsbyTypes.TagListQuery = useStaticQuery<GatsbyTypes.TagListQuery>(graphql`
     query TagList {
       allMarkdownRemark(filter: { frontmatter: { draft: { eq: false } } }) {
         group(field: frontmatter___tags) {

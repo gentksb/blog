@@ -1,15 +1,12 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import { RecentPostQuery } from "../../../types/graphql-types"
-// import { Grid, Paper, CardHeader, CardActionArea} from '@material-ui/core'
-import styled from "@emotion/styled";
+import { graphql, useStaticQuery } from "gatsby"
 
 interface Props {
   tag: string
 }
 
 const relatedPosts: React.FunctionComponent<Props> = ({tag}) =>{
-  const recentPostsData: RecentPostQuery = useStaticQuery(graphql`
+  const recentPostsData: GatsbyTypes.RecentPostQuery = useStaticQuery<GatsbyTypes.RecentPostQuery>(graphql`
     query RecentPost {
       allMarkdownRemark(limit: 20, sort: {fields: frontmatter___date, order: DESC}) {
         edges {
