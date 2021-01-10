@@ -177,7 +177,11 @@
         "type": 301
       },
       {
-        "source": "/2017/06/cs-hg-800-11wh-rs770.html",
+        "source": "/2017/08/blog-post.html",
+        "destination": "/post/2017/08/ducttape_1/",
+        "type": 301
+      },
+      {"source": "/2017/06/cs-hg-800-11wh-rs770.html",
         "destination": "/post/2017/06/cs-hg-800-11wh-rs770/",
         "type": 301
       },
