@@ -39,6 +39,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    `gatsby-plugin-twitter`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,

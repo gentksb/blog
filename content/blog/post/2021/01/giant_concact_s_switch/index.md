@@ -52,7 +52,7 @@ GIANT はレバー側でインナーワイヤーの張り具合を調整する�
 
 レバー側ではワイヤーが張りだしてしまうが、レバーの向こう側になっているので、気になることはほぼないと思われる。
 
-![レバー完成時])(./lever.png)
+![レバー完成時](./lever.jpg)
 
 ### レバーの互換性について
 
@@ -79,4 +79,3 @@ Brand-X にはアップグレード用レバーがあるが、これは当然レ
 それなりに速くてスムーズ（当社感覚比）
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">GIANTのドロッパー、動作が速い！（当社比 <a href="https://t.co/SXaAe4d3MM">pic.twitter.com/SXaAe4d3MM</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1350366314703933442?ref_src=twsrc%5Etfw">January 16, 2021</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
