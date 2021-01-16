@@ -35,7 +35,7 @@ tags: ["MTB", "REVIEW"]
 
 ## Brand-X Ascend Dropper seatpost
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fbrand-x-ascend-%25E3%2583%2589%25E3%2583%25AD%25E3%2583%2583%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%2588%25E3%2583%259D%25E3%2582%25B9%25E3%2583%2588-125-150mm-%2Frp-prod149024%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/TqgVzym"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fbrand-x-ascend-%25E3%2583%2589%25E3%2583%25AD%25E3%2583%2583%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%2588%25E3%2583%259D%25E3%2582%25B9%25E3%2583%2588-125-150mm-%2Frp-prod149024%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/HzwjIEE"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 いわゆるドロッパーポスト。MTB 界における 21 世紀最大の発明らしい。
 
