@@ -26,6 +26,12 @@ type Scalars = {
 
 
 
+type AVIFOptions = {
+  readonly quality: Maybe<Scalars['Int']>;
+  readonly lossless: Maybe<Scalars['Boolean']>;
+  readonly speed: Maybe<Scalars['Int']>;
+};
+
 type BlurredOptions = {
   /** Width of the generated low-res preview. Default is 20px */
   readonly width: Maybe<Scalars['Int']>;
@@ -400,12 +406,18 @@ type File = Node & {
   readonly blocks: Maybe<Scalars['Int']>;
   /** Copy file to static directory and return public url to it */
   readonly publicURL: Maybe<Scalars['String']>;
+  /** Returns all children nodes filtered by type MarkdownRemark */
+  readonly childrenMarkdownRemark: Maybe<ReadonlyArray<Maybe<MarkdownRemark>>>;
+  /** Returns the first child node of type MarkdownRemark or null if there are no children of given type on this node */
+  readonly childMarkdownRemark: Maybe<MarkdownRemark>;
+  /** Returns all children nodes filtered by type ImageSharp */
+  readonly childrenImageSharp: Maybe<ReadonlyArray<Maybe<ImageSharp>>>;
+  /** Returns the first child node of type ImageSharp or null if there are no children of given type on this node */
   readonly childImageSharp: Maybe<ImageSharp>;
   readonly id: Scalars['ID'];
   readonly parent: Maybe<Node>;
   readonly children: ReadonlyArray<Node>;
   readonly internal: Internal;
-  readonly childMarkdownRemark: Maybe<MarkdownRemark>;
 };
 
 
@@ -526,6 +538,298 @@ enum FileFieldsEnum {
   blksize = 'blksize',
   blocks = 'blocks',
   publicURL = 'publicURL',
+  childrenMarkdownRemark = 'childrenMarkdownRemark',
+  childrenMarkdownRemark___id = 'childrenMarkdownRemark.id',
+  childrenMarkdownRemark___frontmatter___title = 'childrenMarkdownRemark.frontmatter.title',
+  childrenMarkdownRemark___frontmatter___author = 'childrenMarkdownRemark.frontmatter.author',
+  childrenMarkdownRemark___frontmatter___type = 'childrenMarkdownRemark.frontmatter.type',
+  childrenMarkdownRemark___frontmatter___date = 'childrenMarkdownRemark.frontmatter.date',
+  childrenMarkdownRemark___frontmatter___tags = 'childrenMarkdownRemark.frontmatter.tags',
+  childrenMarkdownRemark___frontmatter___cover___sourceInstanceName = 'childrenMarkdownRemark.frontmatter.cover.sourceInstanceName',
+  childrenMarkdownRemark___frontmatter___cover___absolutePath = 'childrenMarkdownRemark.frontmatter.cover.absolutePath',
+  childrenMarkdownRemark___frontmatter___cover___relativePath = 'childrenMarkdownRemark.frontmatter.cover.relativePath',
+  childrenMarkdownRemark___frontmatter___cover___extension = 'childrenMarkdownRemark.frontmatter.cover.extension',
+  childrenMarkdownRemark___frontmatter___cover___size = 'childrenMarkdownRemark.frontmatter.cover.size',
+  childrenMarkdownRemark___frontmatter___cover___prettySize = 'childrenMarkdownRemark.frontmatter.cover.prettySize',
+  childrenMarkdownRemark___frontmatter___cover___modifiedTime = 'childrenMarkdownRemark.frontmatter.cover.modifiedTime',
+  childrenMarkdownRemark___frontmatter___cover___accessTime = 'childrenMarkdownRemark.frontmatter.cover.accessTime',
+  childrenMarkdownRemark___frontmatter___cover___changeTime = 'childrenMarkdownRemark.frontmatter.cover.changeTime',
+  childrenMarkdownRemark___frontmatter___cover___birthTime = 'childrenMarkdownRemark.frontmatter.cover.birthTime',
+  childrenMarkdownRemark___frontmatter___cover___root = 'childrenMarkdownRemark.frontmatter.cover.root',
+  childrenMarkdownRemark___frontmatter___cover___dir = 'childrenMarkdownRemark.frontmatter.cover.dir',
+  childrenMarkdownRemark___frontmatter___cover___base = 'childrenMarkdownRemark.frontmatter.cover.base',
+  childrenMarkdownRemark___frontmatter___cover___ext = 'childrenMarkdownRemark.frontmatter.cover.ext',
+  childrenMarkdownRemark___frontmatter___cover___name = 'childrenMarkdownRemark.frontmatter.cover.name',
+  childrenMarkdownRemark___frontmatter___cover___relativeDirectory = 'childrenMarkdownRemark.frontmatter.cover.relativeDirectory',
+  childrenMarkdownRemark___frontmatter___cover___dev = 'childrenMarkdownRemark.frontmatter.cover.dev',
+  childrenMarkdownRemark___frontmatter___cover___mode = 'childrenMarkdownRemark.frontmatter.cover.mode',
+  childrenMarkdownRemark___frontmatter___cover___nlink = 'childrenMarkdownRemark.frontmatter.cover.nlink',
+  childrenMarkdownRemark___frontmatter___cover___uid = 'childrenMarkdownRemark.frontmatter.cover.uid',
+  childrenMarkdownRemark___frontmatter___cover___gid = 'childrenMarkdownRemark.frontmatter.cover.gid',
+  childrenMarkdownRemark___frontmatter___cover___rdev = 'childrenMarkdownRemark.frontmatter.cover.rdev',
+  childrenMarkdownRemark___frontmatter___cover___ino = 'childrenMarkdownRemark.frontmatter.cover.ino',
+  childrenMarkdownRemark___frontmatter___cover___atimeMs = 'childrenMarkdownRemark.frontmatter.cover.atimeMs',
+  childrenMarkdownRemark___frontmatter___cover___mtimeMs = 'childrenMarkdownRemark.frontmatter.cover.mtimeMs',
+  childrenMarkdownRemark___frontmatter___cover___ctimeMs = 'childrenMarkdownRemark.frontmatter.cover.ctimeMs',
+  childrenMarkdownRemark___frontmatter___cover___atime = 'childrenMarkdownRemark.frontmatter.cover.atime',
+  childrenMarkdownRemark___frontmatter___cover___mtime = 'childrenMarkdownRemark.frontmatter.cover.mtime',
+  childrenMarkdownRemark___frontmatter___cover___ctime = 'childrenMarkdownRemark.frontmatter.cover.ctime',
+  childrenMarkdownRemark___frontmatter___cover___birthtime = 'childrenMarkdownRemark.frontmatter.cover.birthtime',
+  childrenMarkdownRemark___frontmatter___cover___birthtimeMs = 'childrenMarkdownRemark.frontmatter.cover.birthtimeMs',
+  childrenMarkdownRemark___frontmatter___cover___blksize = 'childrenMarkdownRemark.frontmatter.cover.blksize',
+  childrenMarkdownRemark___frontmatter___cover___blocks = 'childrenMarkdownRemark.frontmatter.cover.blocks',
+  childrenMarkdownRemark___frontmatter___cover___publicURL = 'childrenMarkdownRemark.frontmatter.cover.publicURL',
+  childrenMarkdownRemark___frontmatter___cover___childrenMarkdownRemark = 'childrenMarkdownRemark.frontmatter.cover.childrenMarkdownRemark',
+  childrenMarkdownRemark___frontmatter___cover___childrenImageSharp = 'childrenMarkdownRemark.frontmatter.cover.childrenImageSharp',
+  childrenMarkdownRemark___frontmatter___cover___id = 'childrenMarkdownRemark.frontmatter.cover.id',
+  childrenMarkdownRemark___frontmatter___cover___children = 'childrenMarkdownRemark.frontmatter.cover.children',
+  childrenMarkdownRemark___frontmatter___draft = 'childrenMarkdownRemark.frontmatter.draft',
+  childrenMarkdownRemark___frontmatter___custom_permalink = 'childrenMarkdownRemark.frontmatter.custom_permalink',
+  childrenMarkdownRemark___excerpt = 'childrenMarkdownRemark.excerpt',
+  childrenMarkdownRemark___rawMarkdownBody = 'childrenMarkdownRemark.rawMarkdownBody',
+  childrenMarkdownRemark___fileAbsolutePath = 'childrenMarkdownRemark.fileAbsolutePath',
+  childrenMarkdownRemark___fields___slug = 'childrenMarkdownRemark.fields.slug',
+  childrenMarkdownRemark___html = 'childrenMarkdownRemark.html',
+  childrenMarkdownRemark___htmlAst = 'childrenMarkdownRemark.htmlAst',
+  childrenMarkdownRemark___excerptAst = 'childrenMarkdownRemark.excerptAst',
+  childrenMarkdownRemark___headings = 'childrenMarkdownRemark.headings',
+  childrenMarkdownRemark___headings___id = 'childrenMarkdownRemark.headings.id',
+  childrenMarkdownRemark___headings___value = 'childrenMarkdownRemark.headings.value',
+  childrenMarkdownRemark___headings___depth = 'childrenMarkdownRemark.headings.depth',
+  childrenMarkdownRemark___timeToRead = 'childrenMarkdownRemark.timeToRead',
+  childrenMarkdownRemark___tableOfContents = 'childrenMarkdownRemark.tableOfContents',
+  childrenMarkdownRemark___wordCount___paragraphs = 'childrenMarkdownRemark.wordCount.paragraphs',
+  childrenMarkdownRemark___wordCount___sentences = 'childrenMarkdownRemark.wordCount.sentences',
+  childrenMarkdownRemark___wordCount___words = 'childrenMarkdownRemark.wordCount.words',
+  childrenMarkdownRemark___parent___id = 'childrenMarkdownRemark.parent.id',
+  childrenMarkdownRemark___parent___parent___id = 'childrenMarkdownRemark.parent.parent.id',
+  childrenMarkdownRemark___parent___parent___children = 'childrenMarkdownRemark.parent.parent.children',
+  childrenMarkdownRemark___parent___children = 'childrenMarkdownRemark.parent.children',
+  childrenMarkdownRemark___parent___children___id = 'childrenMarkdownRemark.parent.children.id',
+  childrenMarkdownRemark___parent___children___children = 'childrenMarkdownRemark.parent.children.children',
+  childrenMarkdownRemark___parent___internal___content = 'childrenMarkdownRemark.parent.internal.content',
+  childrenMarkdownRemark___parent___internal___contentDigest = 'childrenMarkdownRemark.parent.internal.contentDigest',
+  childrenMarkdownRemark___parent___internal___description = 'childrenMarkdownRemark.parent.internal.description',
+  childrenMarkdownRemark___parent___internal___fieldOwners = 'childrenMarkdownRemark.parent.internal.fieldOwners',
+  childrenMarkdownRemark___parent___internal___ignoreType = 'childrenMarkdownRemark.parent.internal.ignoreType',
+  childrenMarkdownRemark___parent___internal___mediaType = 'childrenMarkdownRemark.parent.internal.mediaType',
+  childrenMarkdownRemark___parent___internal___owner = 'childrenMarkdownRemark.parent.internal.owner',
+  childrenMarkdownRemark___parent___internal___type = 'childrenMarkdownRemark.parent.internal.type',
+  childrenMarkdownRemark___children = 'childrenMarkdownRemark.children',
+  childrenMarkdownRemark___children___id = 'childrenMarkdownRemark.children.id',
+  childrenMarkdownRemark___children___parent___id = 'childrenMarkdownRemark.children.parent.id',
+  childrenMarkdownRemark___children___parent___children = 'childrenMarkdownRemark.children.parent.children',
+  childrenMarkdownRemark___children___children = 'childrenMarkdownRemark.children.children',
+  childrenMarkdownRemark___children___children___id = 'childrenMarkdownRemark.children.children.id',
+  childrenMarkdownRemark___children___children___children = 'childrenMarkdownRemark.children.children.children',
+  childrenMarkdownRemark___children___internal___content = 'childrenMarkdownRemark.children.internal.content',
+  childrenMarkdownRemark___children___internal___contentDigest = 'childrenMarkdownRemark.children.internal.contentDigest',
+  childrenMarkdownRemark___children___internal___description = 'childrenMarkdownRemark.children.internal.description',
+  childrenMarkdownRemark___children___internal___fieldOwners = 'childrenMarkdownRemark.children.internal.fieldOwners',
+  childrenMarkdownRemark___children___internal___ignoreType = 'childrenMarkdownRemark.children.internal.ignoreType',
+  childrenMarkdownRemark___children___internal___mediaType = 'childrenMarkdownRemark.children.internal.mediaType',
+  childrenMarkdownRemark___children___internal___owner = 'childrenMarkdownRemark.children.internal.owner',
+  childrenMarkdownRemark___children___internal___type = 'childrenMarkdownRemark.children.internal.type',
+  childrenMarkdownRemark___internal___content = 'childrenMarkdownRemark.internal.content',
+  childrenMarkdownRemark___internal___contentDigest = 'childrenMarkdownRemark.internal.contentDigest',
+  childrenMarkdownRemark___internal___description = 'childrenMarkdownRemark.internal.description',
+  childrenMarkdownRemark___internal___fieldOwners = 'childrenMarkdownRemark.internal.fieldOwners',
+  childrenMarkdownRemark___internal___ignoreType = 'childrenMarkdownRemark.internal.ignoreType',
+  childrenMarkdownRemark___internal___mediaType = 'childrenMarkdownRemark.internal.mediaType',
+  childrenMarkdownRemark___internal___owner = 'childrenMarkdownRemark.internal.owner',
+  childrenMarkdownRemark___internal___type = 'childrenMarkdownRemark.internal.type',
+  childMarkdownRemark___id = 'childMarkdownRemark.id',
+  childMarkdownRemark___frontmatter___title = 'childMarkdownRemark.frontmatter.title',
+  childMarkdownRemark___frontmatter___author = 'childMarkdownRemark.frontmatter.author',
+  childMarkdownRemark___frontmatter___type = 'childMarkdownRemark.frontmatter.type',
+  childMarkdownRemark___frontmatter___date = 'childMarkdownRemark.frontmatter.date',
+  childMarkdownRemark___frontmatter___tags = 'childMarkdownRemark.frontmatter.tags',
+  childMarkdownRemark___frontmatter___cover___sourceInstanceName = 'childMarkdownRemark.frontmatter.cover.sourceInstanceName',
+  childMarkdownRemark___frontmatter___cover___absolutePath = 'childMarkdownRemark.frontmatter.cover.absolutePath',
+  childMarkdownRemark___frontmatter___cover___relativePath = 'childMarkdownRemark.frontmatter.cover.relativePath',
+  childMarkdownRemark___frontmatter___cover___extension = 'childMarkdownRemark.frontmatter.cover.extension',
+  childMarkdownRemark___frontmatter___cover___size = 'childMarkdownRemark.frontmatter.cover.size',
+  childMarkdownRemark___frontmatter___cover___prettySize = 'childMarkdownRemark.frontmatter.cover.prettySize',
+  childMarkdownRemark___frontmatter___cover___modifiedTime = 'childMarkdownRemark.frontmatter.cover.modifiedTime',
+  childMarkdownRemark___frontmatter___cover___accessTime = 'childMarkdownRemark.frontmatter.cover.accessTime',
+  childMarkdownRemark___frontmatter___cover___changeTime = 'childMarkdownRemark.frontmatter.cover.changeTime',
+  childMarkdownRemark___frontmatter___cover___birthTime = 'childMarkdownRemark.frontmatter.cover.birthTime',
+  childMarkdownRemark___frontmatter___cover___root = 'childMarkdownRemark.frontmatter.cover.root',
+  childMarkdownRemark___frontmatter___cover___dir = 'childMarkdownRemark.frontmatter.cover.dir',
+  childMarkdownRemark___frontmatter___cover___base = 'childMarkdownRemark.frontmatter.cover.base',
+  childMarkdownRemark___frontmatter___cover___ext = 'childMarkdownRemark.frontmatter.cover.ext',
+  childMarkdownRemark___frontmatter___cover___name = 'childMarkdownRemark.frontmatter.cover.name',
+  childMarkdownRemark___frontmatter___cover___relativeDirectory = 'childMarkdownRemark.frontmatter.cover.relativeDirectory',
+  childMarkdownRemark___frontmatter___cover___dev = 'childMarkdownRemark.frontmatter.cover.dev',
+  childMarkdownRemark___frontmatter___cover___mode = 'childMarkdownRemark.frontmatter.cover.mode',
+  childMarkdownRemark___frontmatter___cover___nlink = 'childMarkdownRemark.frontmatter.cover.nlink',
+  childMarkdownRemark___frontmatter___cover___uid = 'childMarkdownRemark.frontmatter.cover.uid',
+  childMarkdownRemark___frontmatter___cover___gid = 'childMarkdownRemark.frontmatter.cover.gid',
+  childMarkdownRemark___frontmatter___cover___rdev = 'childMarkdownRemark.frontmatter.cover.rdev',
+  childMarkdownRemark___frontmatter___cover___ino = 'childMarkdownRemark.frontmatter.cover.ino',
+  childMarkdownRemark___frontmatter___cover___atimeMs = 'childMarkdownRemark.frontmatter.cover.atimeMs',
+  childMarkdownRemark___frontmatter___cover___mtimeMs = 'childMarkdownRemark.frontmatter.cover.mtimeMs',
+  childMarkdownRemark___frontmatter___cover___ctimeMs = 'childMarkdownRemark.frontmatter.cover.ctimeMs',
+  childMarkdownRemark___frontmatter___cover___atime = 'childMarkdownRemark.frontmatter.cover.atime',
+  childMarkdownRemark___frontmatter___cover___mtime = 'childMarkdownRemark.frontmatter.cover.mtime',
+  childMarkdownRemark___frontmatter___cover___ctime = 'childMarkdownRemark.frontmatter.cover.ctime',
+  childMarkdownRemark___frontmatter___cover___birthtime = 'childMarkdownRemark.frontmatter.cover.birthtime',
+  childMarkdownRemark___frontmatter___cover___birthtimeMs = 'childMarkdownRemark.frontmatter.cover.birthtimeMs',
+  childMarkdownRemark___frontmatter___cover___blksize = 'childMarkdownRemark.frontmatter.cover.blksize',
+  childMarkdownRemark___frontmatter___cover___blocks = 'childMarkdownRemark.frontmatter.cover.blocks',
+  childMarkdownRemark___frontmatter___cover___publicURL = 'childMarkdownRemark.frontmatter.cover.publicURL',
+  childMarkdownRemark___frontmatter___cover___childrenMarkdownRemark = 'childMarkdownRemark.frontmatter.cover.childrenMarkdownRemark',
+  childMarkdownRemark___frontmatter___cover___childrenImageSharp = 'childMarkdownRemark.frontmatter.cover.childrenImageSharp',
+  childMarkdownRemark___frontmatter___cover___id = 'childMarkdownRemark.frontmatter.cover.id',
+  childMarkdownRemark___frontmatter___cover___children = 'childMarkdownRemark.frontmatter.cover.children',
+  childMarkdownRemark___frontmatter___draft = 'childMarkdownRemark.frontmatter.draft',
+  childMarkdownRemark___frontmatter___custom_permalink = 'childMarkdownRemark.frontmatter.custom_permalink',
+  childMarkdownRemark___excerpt = 'childMarkdownRemark.excerpt',
+  childMarkdownRemark___rawMarkdownBody = 'childMarkdownRemark.rawMarkdownBody',
+  childMarkdownRemark___fileAbsolutePath = 'childMarkdownRemark.fileAbsolutePath',
+  childMarkdownRemark___fields___slug = 'childMarkdownRemark.fields.slug',
+  childMarkdownRemark___html = 'childMarkdownRemark.html',
+  childMarkdownRemark___htmlAst = 'childMarkdownRemark.htmlAst',
+  childMarkdownRemark___excerptAst = 'childMarkdownRemark.excerptAst',
+  childMarkdownRemark___headings = 'childMarkdownRemark.headings',
+  childMarkdownRemark___headings___id = 'childMarkdownRemark.headings.id',
+  childMarkdownRemark___headings___value = 'childMarkdownRemark.headings.value',
+  childMarkdownRemark___headings___depth = 'childMarkdownRemark.headings.depth',
+  childMarkdownRemark___timeToRead = 'childMarkdownRemark.timeToRead',
+  childMarkdownRemark___tableOfContents = 'childMarkdownRemark.tableOfContents',
+  childMarkdownRemark___wordCount___paragraphs = 'childMarkdownRemark.wordCount.paragraphs',
+  childMarkdownRemark___wordCount___sentences = 'childMarkdownRemark.wordCount.sentences',
+  childMarkdownRemark___wordCount___words = 'childMarkdownRemark.wordCount.words',
+  childMarkdownRemark___parent___id = 'childMarkdownRemark.parent.id',
+  childMarkdownRemark___parent___parent___id = 'childMarkdownRemark.parent.parent.id',
+  childMarkdownRemark___parent___parent___children = 'childMarkdownRemark.parent.parent.children',
+  childMarkdownRemark___parent___children = 'childMarkdownRemark.parent.children',
+  childMarkdownRemark___parent___children___id = 'childMarkdownRemark.parent.children.id',
+  childMarkdownRemark___parent___children___children = 'childMarkdownRemark.parent.children.children',
+  childMarkdownRemark___parent___internal___content = 'childMarkdownRemark.parent.internal.content',
+  childMarkdownRemark___parent___internal___contentDigest = 'childMarkdownRemark.parent.internal.contentDigest',
+  childMarkdownRemark___parent___internal___description = 'childMarkdownRemark.parent.internal.description',
+  childMarkdownRemark___parent___internal___fieldOwners = 'childMarkdownRemark.parent.internal.fieldOwners',
+  childMarkdownRemark___parent___internal___ignoreType = 'childMarkdownRemark.parent.internal.ignoreType',
+  childMarkdownRemark___parent___internal___mediaType = 'childMarkdownRemark.parent.internal.mediaType',
+  childMarkdownRemark___parent___internal___owner = 'childMarkdownRemark.parent.internal.owner',
+  childMarkdownRemark___parent___internal___type = 'childMarkdownRemark.parent.internal.type',
+  childMarkdownRemark___children = 'childMarkdownRemark.children',
+  childMarkdownRemark___children___id = 'childMarkdownRemark.children.id',
+  childMarkdownRemark___children___parent___id = 'childMarkdownRemark.children.parent.id',
+  childMarkdownRemark___children___parent___children = 'childMarkdownRemark.children.parent.children',
+  childMarkdownRemark___children___children = 'childMarkdownRemark.children.children',
+  childMarkdownRemark___children___children___id = 'childMarkdownRemark.children.children.id',
+  childMarkdownRemark___children___children___children = 'childMarkdownRemark.children.children.children',
+  childMarkdownRemark___children___internal___content = 'childMarkdownRemark.children.internal.content',
+  childMarkdownRemark___children___internal___contentDigest = 'childMarkdownRemark.children.internal.contentDigest',
+  childMarkdownRemark___children___internal___description = 'childMarkdownRemark.children.internal.description',
+  childMarkdownRemark___children___internal___fieldOwners = 'childMarkdownRemark.children.internal.fieldOwners',
+  childMarkdownRemark___children___internal___ignoreType = 'childMarkdownRemark.children.internal.ignoreType',
+  childMarkdownRemark___children___internal___mediaType = 'childMarkdownRemark.children.internal.mediaType',
+  childMarkdownRemark___children___internal___owner = 'childMarkdownRemark.children.internal.owner',
+  childMarkdownRemark___children___internal___type = 'childMarkdownRemark.children.internal.type',
+  childMarkdownRemark___internal___content = 'childMarkdownRemark.internal.content',
+  childMarkdownRemark___internal___contentDigest = 'childMarkdownRemark.internal.contentDigest',
+  childMarkdownRemark___internal___description = 'childMarkdownRemark.internal.description',
+  childMarkdownRemark___internal___fieldOwners = 'childMarkdownRemark.internal.fieldOwners',
+  childMarkdownRemark___internal___ignoreType = 'childMarkdownRemark.internal.ignoreType',
+  childMarkdownRemark___internal___mediaType = 'childMarkdownRemark.internal.mediaType',
+  childMarkdownRemark___internal___owner = 'childMarkdownRemark.internal.owner',
+  childMarkdownRemark___internal___type = 'childMarkdownRemark.internal.type',
+  childrenImageSharp = 'childrenImageSharp',
+  childrenImageSharp___fixed___base64 = 'childrenImageSharp.fixed.base64',
+  childrenImageSharp___fixed___tracedSVG = 'childrenImageSharp.fixed.tracedSVG',
+  childrenImageSharp___fixed___aspectRatio = 'childrenImageSharp.fixed.aspectRatio',
+  childrenImageSharp___fixed___width = 'childrenImageSharp.fixed.width',
+  childrenImageSharp___fixed___height = 'childrenImageSharp.fixed.height',
+  childrenImageSharp___fixed___src = 'childrenImageSharp.fixed.src',
+  childrenImageSharp___fixed___srcSet = 'childrenImageSharp.fixed.srcSet',
+  childrenImageSharp___fixed___srcWebp = 'childrenImageSharp.fixed.srcWebp',
+  childrenImageSharp___fixed___srcSetWebp = 'childrenImageSharp.fixed.srcSetWebp',
+  childrenImageSharp___fixed___originalName = 'childrenImageSharp.fixed.originalName',
+  childrenImageSharp___resolutions___base64 = 'childrenImageSharp.resolutions.base64',
+  childrenImageSharp___resolutions___tracedSVG = 'childrenImageSharp.resolutions.tracedSVG',
+  childrenImageSharp___resolutions___aspectRatio = 'childrenImageSharp.resolutions.aspectRatio',
+  childrenImageSharp___resolutions___width = 'childrenImageSharp.resolutions.width',
+  childrenImageSharp___resolutions___height = 'childrenImageSharp.resolutions.height',
+  childrenImageSharp___resolutions___src = 'childrenImageSharp.resolutions.src',
+  childrenImageSharp___resolutions___srcSet = 'childrenImageSharp.resolutions.srcSet',
+  childrenImageSharp___resolutions___srcWebp = 'childrenImageSharp.resolutions.srcWebp',
+  childrenImageSharp___resolutions___srcSetWebp = 'childrenImageSharp.resolutions.srcSetWebp',
+  childrenImageSharp___resolutions___originalName = 'childrenImageSharp.resolutions.originalName',
+  childrenImageSharp___fluid___base64 = 'childrenImageSharp.fluid.base64',
+  childrenImageSharp___fluid___tracedSVG = 'childrenImageSharp.fluid.tracedSVG',
+  childrenImageSharp___fluid___aspectRatio = 'childrenImageSharp.fluid.aspectRatio',
+  childrenImageSharp___fluid___src = 'childrenImageSharp.fluid.src',
+  childrenImageSharp___fluid___srcSet = 'childrenImageSharp.fluid.srcSet',
+  childrenImageSharp___fluid___srcWebp = 'childrenImageSharp.fluid.srcWebp',
+  childrenImageSharp___fluid___srcSetWebp = 'childrenImageSharp.fluid.srcSetWebp',
+  childrenImageSharp___fluid___sizes = 'childrenImageSharp.fluid.sizes',
+  childrenImageSharp___fluid___originalImg = 'childrenImageSharp.fluid.originalImg',
+  childrenImageSharp___fluid___originalName = 'childrenImageSharp.fluid.originalName',
+  childrenImageSharp___fluid___presentationWidth = 'childrenImageSharp.fluid.presentationWidth',
+  childrenImageSharp___fluid___presentationHeight = 'childrenImageSharp.fluid.presentationHeight',
+  childrenImageSharp___sizes___base64 = 'childrenImageSharp.sizes.base64',
+  childrenImageSharp___sizes___tracedSVG = 'childrenImageSharp.sizes.tracedSVG',
+  childrenImageSharp___sizes___aspectRatio = 'childrenImageSharp.sizes.aspectRatio',
+  childrenImageSharp___sizes___src = 'childrenImageSharp.sizes.src',
+  childrenImageSharp___sizes___srcSet = 'childrenImageSharp.sizes.srcSet',
+  childrenImageSharp___sizes___srcWebp = 'childrenImageSharp.sizes.srcWebp',
+  childrenImageSharp___sizes___srcSetWebp = 'childrenImageSharp.sizes.srcSetWebp',
+  childrenImageSharp___sizes___sizes = 'childrenImageSharp.sizes.sizes',
+  childrenImageSharp___sizes___originalImg = 'childrenImageSharp.sizes.originalImg',
+  childrenImageSharp___sizes___originalName = 'childrenImageSharp.sizes.originalName',
+  childrenImageSharp___sizes___presentationWidth = 'childrenImageSharp.sizes.presentationWidth',
+  childrenImageSharp___sizes___presentationHeight = 'childrenImageSharp.sizes.presentationHeight',
+  childrenImageSharp___gatsbyImageData = 'childrenImageSharp.gatsbyImageData',
+  childrenImageSharp___original___width = 'childrenImageSharp.original.width',
+  childrenImageSharp___original___height = 'childrenImageSharp.original.height',
+  childrenImageSharp___original___src = 'childrenImageSharp.original.src',
+  childrenImageSharp___resize___src = 'childrenImageSharp.resize.src',
+  childrenImageSharp___resize___tracedSVG = 'childrenImageSharp.resize.tracedSVG',
+  childrenImageSharp___resize___width = 'childrenImageSharp.resize.width',
+  childrenImageSharp___resize___height = 'childrenImageSharp.resize.height',
+  childrenImageSharp___resize___aspectRatio = 'childrenImageSharp.resize.aspectRatio',
+  childrenImageSharp___resize___originalName = 'childrenImageSharp.resize.originalName',
+  childrenImageSharp___id = 'childrenImageSharp.id',
+  childrenImageSharp___parent___id = 'childrenImageSharp.parent.id',
+  childrenImageSharp___parent___parent___id = 'childrenImageSharp.parent.parent.id',
+  childrenImageSharp___parent___parent___children = 'childrenImageSharp.parent.parent.children',
+  childrenImageSharp___parent___children = 'childrenImageSharp.parent.children',
+  childrenImageSharp___parent___children___id = 'childrenImageSharp.parent.children.id',
+  childrenImageSharp___parent___children___children = 'childrenImageSharp.parent.children.children',
+  childrenImageSharp___parent___internal___content = 'childrenImageSharp.parent.internal.content',
+  childrenImageSharp___parent___internal___contentDigest = 'childrenImageSharp.parent.internal.contentDigest',
+  childrenImageSharp___parent___internal___description = 'childrenImageSharp.parent.internal.description',
+  childrenImageSharp___parent___internal___fieldOwners = 'childrenImageSharp.parent.internal.fieldOwners',
+  childrenImageSharp___parent___internal___ignoreType = 'childrenImageSharp.parent.internal.ignoreType',
+  childrenImageSharp___parent___internal___mediaType = 'childrenImageSharp.parent.internal.mediaType',
+  childrenImageSharp___parent___internal___owner = 'childrenImageSharp.parent.internal.owner',
+  childrenImageSharp___parent___internal___type = 'childrenImageSharp.parent.internal.type',
+  childrenImageSharp___children = 'childrenImageSharp.children',
+  childrenImageSharp___children___id = 'childrenImageSharp.children.id',
+  childrenImageSharp___children___parent___id = 'childrenImageSharp.children.parent.id',
+  childrenImageSharp___children___parent___children = 'childrenImageSharp.children.parent.children',
+  childrenImageSharp___children___children = 'childrenImageSharp.children.children',
+  childrenImageSharp___children___children___id = 'childrenImageSharp.children.children.id',
+  childrenImageSharp___children___children___children = 'childrenImageSharp.children.children.children',
+  childrenImageSharp___children___internal___content = 'childrenImageSharp.children.internal.content',
+  childrenImageSharp___children___internal___contentDigest = 'childrenImageSharp.children.internal.contentDigest',
+  childrenImageSharp___children___internal___description = 'childrenImageSharp.children.internal.description',
+  childrenImageSharp___children___internal___fieldOwners = 'childrenImageSharp.children.internal.fieldOwners',
+  childrenImageSharp___children___internal___ignoreType = 'childrenImageSharp.children.internal.ignoreType',
+  childrenImageSharp___children___internal___mediaType = 'childrenImageSharp.children.internal.mediaType',
+  childrenImageSharp___children___internal___owner = 'childrenImageSharp.children.internal.owner',
+  childrenImageSharp___children___internal___type = 'childrenImageSharp.children.internal.type',
+  childrenImageSharp___internal___content = 'childrenImageSharp.internal.content',
+  childrenImageSharp___internal___contentDigest = 'childrenImageSharp.internal.contentDigest',
+  childrenImageSharp___internal___description = 'childrenImageSharp.internal.description',
+  childrenImageSharp___internal___fieldOwners = 'childrenImageSharp.internal.fieldOwners',
+  childrenImageSharp___internal___ignoreType = 'childrenImageSharp.internal.ignoreType',
+  childrenImageSharp___internal___mediaType = 'childrenImageSharp.internal.mediaType',
+  childrenImageSharp___internal___owner = 'childrenImageSharp.internal.owner',
+  childrenImageSharp___internal___type = 'childrenImageSharp.internal.type',
   childImageSharp___fixed___base64 = 'childImageSharp.fixed.base64',
   childImageSharp___fixed___tracedSVG = 'childImageSharp.fixed.tracedSVG',
   childImageSharp___fixed___aspectRatio = 'childImageSharp.fixed.aspectRatio',
@@ -703,104 +1007,7 @@ enum FileFieldsEnum {
   internal___ignoreType = 'internal.ignoreType',
   internal___mediaType = 'internal.mediaType',
   internal___owner = 'internal.owner',
-  internal___type = 'internal.type',
-  childMarkdownRemark___id = 'childMarkdownRemark.id',
-  childMarkdownRemark___frontmatter___title = 'childMarkdownRemark.frontmatter.title',
-  childMarkdownRemark___frontmatter___author = 'childMarkdownRemark.frontmatter.author',
-  childMarkdownRemark___frontmatter___type = 'childMarkdownRemark.frontmatter.type',
-  childMarkdownRemark___frontmatter___date = 'childMarkdownRemark.frontmatter.date',
-  childMarkdownRemark___frontmatter___cover___sourceInstanceName = 'childMarkdownRemark.frontmatter.cover.sourceInstanceName',
-  childMarkdownRemark___frontmatter___cover___absolutePath = 'childMarkdownRemark.frontmatter.cover.absolutePath',
-  childMarkdownRemark___frontmatter___cover___relativePath = 'childMarkdownRemark.frontmatter.cover.relativePath',
-  childMarkdownRemark___frontmatter___cover___extension = 'childMarkdownRemark.frontmatter.cover.extension',
-  childMarkdownRemark___frontmatter___cover___size = 'childMarkdownRemark.frontmatter.cover.size',
-  childMarkdownRemark___frontmatter___cover___prettySize = 'childMarkdownRemark.frontmatter.cover.prettySize',
-  childMarkdownRemark___frontmatter___cover___modifiedTime = 'childMarkdownRemark.frontmatter.cover.modifiedTime',
-  childMarkdownRemark___frontmatter___cover___accessTime = 'childMarkdownRemark.frontmatter.cover.accessTime',
-  childMarkdownRemark___frontmatter___cover___changeTime = 'childMarkdownRemark.frontmatter.cover.changeTime',
-  childMarkdownRemark___frontmatter___cover___birthTime = 'childMarkdownRemark.frontmatter.cover.birthTime',
-  childMarkdownRemark___frontmatter___cover___root = 'childMarkdownRemark.frontmatter.cover.root',
-  childMarkdownRemark___frontmatter___cover___dir = 'childMarkdownRemark.frontmatter.cover.dir',
-  childMarkdownRemark___frontmatter___cover___base = 'childMarkdownRemark.frontmatter.cover.base',
-  childMarkdownRemark___frontmatter___cover___ext = 'childMarkdownRemark.frontmatter.cover.ext',
-  childMarkdownRemark___frontmatter___cover___name = 'childMarkdownRemark.frontmatter.cover.name',
-  childMarkdownRemark___frontmatter___cover___relativeDirectory = 'childMarkdownRemark.frontmatter.cover.relativeDirectory',
-  childMarkdownRemark___frontmatter___cover___dev = 'childMarkdownRemark.frontmatter.cover.dev',
-  childMarkdownRemark___frontmatter___cover___mode = 'childMarkdownRemark.frontmatter.cover.mode',
-  childMarkdownRemark___frontmatter___cover___nlink = 'childMarkdownRemark.frontmatter.cover.nlink',
-  childMarkdownRemark___frontmatter___cover___uid = 'childMarkdownRemark.frontmatter.cover.uid',
-  childMarkdownRemark___frontmatter___cover___gid = 'childMarkdownRemark.frontmatter.cover.gid',
-  childMarkdownRemark___frontmatter___cover___rdev = 'childMarkdownRemark.frontmatter.cover.rdev',
-  childMarkdownRemark___frontmatter___cover___ino = 'childMarkdownRemark.frontmatter.cover.ino',
-  childMarkdownRemark___frontmatter___cover___atimeMs = 'childMarkdownRemark.frontmatter.cover.atimeMs',
-  childMarkdownRemark___frontmatter___cover___mtimeMs = 'childMarkdownRemark.frontmatter.cover.mtimeMs',
-  childMarkdownRemark___frontmatter___cover___ctimeMs = 'childMarkdownRemark.frontmatter.cover.ctimeMs',
-  childMarkdownRemark___frontmatter___cover___atime = 'childMarkdownRemark.frontmatter.cover.atime',
-  childMarkdownRemark___frontmatter___cover___mtime = 'childMarkdownRemark.frontmatter.cover.mtime',
-  childMarkdownRemark___frontmatter___cover___ctime = 'childMarkdownRemark.frontmatter.cover.ctime',
-  childMarkdownRemark___frontmatter___cover___birthtime = 'childMarkdownRemark.frontmatter.cover.birthtime',
-  childMarkdownRemark___frontmatter___cover___birthtimeMs = 'childMarkdownRemark.frontmatter.cover.birthtimeMs',
-  childMarkdownRemark___frontmatter___cover___blksize = 'childMarkdownRemark.frontmatter.cover.blksize',
-  childMarkdownRemark___frontmatter___cover___blocks = 'childMarkdownRemark.frontmatter.cover.blocks',
-  childMarkdownRemark___frontmatter___cover___publicURL = 'childMarkdownRemark.frontmatter.cover.publicURL',
-  childMarkdownRemark___frontmatter___cover___id = 'childMarkdownRemark.frontmatter.cover.id',
-  childMarkdownRemark___frontmatter___cover___children = 'childMarkdownRemark.frontmatter.cover.children',
-  childMarkdownRemark___frontmatter___tags = 'childMarkdownRemark.frontmatter.tags',
-  childMarkdownRemark___frontmatter___draft = 'childMarkdownRemark.frontmatter.draft',
-  childMarkdownRemark___frontmatter___custom_permalink = 'childMarkdownRemark.frontmatter.custom_permalink',
-  childMarkdownRemark___excerpt = 'childMarkdownRemark.excerpt',
-  childMarkdownRemark___rawMarkdownBody = 'childMarkdownRemark.rawMarkdownBody',
-  childMarkdownRemark___fileAbsolutePath = 'childMarkdownRemark.fileAbsolutePath',
-  childMarkdownRemark___fields___slug = 'childMarkdownRemark.fields.slug',
-  childMarkdownRemark___html = 'childMarkdownRemark.html',
-  childMarkdownRemark___htmlAst = 'childMarkdownRemark.htmlAst',
-  childMarkdownRemark___excerptAst = 'childMarkdownRemark.excerptAst',
-  childMarkdownRemark___headings = 'childMarkdownRemark.headings',
-  childMarkdownRemark___headings___id = 'childMarkdownRemark.headings.id',
-  childMarkdownRemark___headings___value = 'childMarkdownRemark.headings.value',
-  childMarkdownRemark___headings___depth = 'childMarkdownRemark.headings.depth',
-  childMarkdownRemark___timeToRead = 'childMarkdownRemark.timeToRead',
-  childMarkdownRemark___tableOfContents = 'childMarkdownRemark.tableOfContents',
-  childMarkdownRemark___wordCount___paragraphs = 'childMarkdownRemark.wordCount.paragraphs',
-  childMarkdownRemark___wordCount___sentences = 'childMarkdownRemark.wordCount.sentences',
-  childMarkdownRemark___wordCount___words = 'childMarkdownRemark.wordCount.words',
-  childMarkdownRemark___parent___id = 'childMarkdownRemark.parent.id',
-  childMarkdownRemark___parent___parent___id = 'childMarkdownRemark.parent.parent.id',
-  childMarkdownRemark___parent___parent___children = 'childMarkdownRemark.parent.parent.children',
-  childMarkdownRemark___parent___children = 'childMarkdownRemark.parent.children',
-  childMarkdownRemark___parent___children___id = 'childMarkdownRemark.parent.children.id',
-  childMarkdownRemark___parent___children___children = 'childMarkdownRemark.parent.children.children',
-  childMarkdownRemark___parent___internal___content = 'childMarkdownRemark.parent.internal.content',
-  childMarkdownRemark___parent___internal___contentDigest = 'childMarkdownRemark.parent.internal.contentDigest',
-  childMarkdownRemark___parent___internal___description = 'childMarkdownRemark.parent.internal.description',
-  childMarkdownRemark___parent___internal___fieldOwners = 'childMarkdownRemark.parent.internal.fieldOwners',
-  childMarkdownRemark___parent___internal___ignoreType = 'childMarkdownRemark.parent.internal.ignoreType',
-  childMarkdownRemark___parent___internal___mediaType = 'childMarkdownRemark.parent.internal.mediaType',
-  childMarkdownRemark___parent___internal___owner = 'childMarkdownRemark.parent.internal.owner',
-  childMarkdownRemark___parent___internal___type = 'childMarkdownRemark.parent.internal.type',
-  childMarkdownRemark___children = 'childMarkdownRemark.children',
-  childMarkdownRemark___children___id = 'childMarkdownRemark.children.id',
-  childMarkdownRemark___children___parent___id = 'childMarkdownRemark.children.parent.id',
-  childMarkdownRemark___children___parent___children = 'childMarkdownRemark.children.parent.children',
-  childMarkdownRemark___children___children = 'childMarkdownRemark.children.children',
-  childMarkdownRemark___children___children___id = 'childMarkdownRemark.children.children.id',
-  childMarkdownRemark___children___children___children = 'childMarkdownRemark.children.children.children',
-  childMarkdownRemark___children___internal___content = 'childMarkdownRemark.children.internal.content',
-  childMarkdownRemark___children___internal___contentDigest = 'childMarkdownRemark.children.internal.contentDigest',
-  childMarkdownRemark___children___internal___description = 'childMarkdownRemark.children.internal.description',
-  childMarkdownRemark___children___internal___fieldOwners = 'childMarkdownRemark.children.internal.fieldOwners',
-  childMarkdownRemark___children___internal___ignoreType = 'childMarkdownRemark.children.internal.ignoreType',
-  childMarkdownRemark___children___internal___mediaType = 'childMarkdownRemark.children.internal.mediaType',
-  childMarkdownRemark___children___internal___owner = 'childMarkdownRemark.children.internal.owner',
-  childMarkdownRemark___children___internal___type = 'childMarkdownRemark.children.internal.type',
-  childMarkdownRemark___internal___content = 'childMarkdownRemark.internal.content',
-  childMarkdownRemark___internal___contentDigest = 'childMarkdownRemark.internal.contentDigest',
-  childMarkdownRemark___internal___description = 'childMarkdownRemark.internal.description',
-  childMarkdownRemark___internal___fieldOwners = 'childMarkdownRemark.internal.fieldOwners',
-  childMarkdownRemark___internal___ignoreType = 'childMarkdownRemark.internal.ignoreType',
-  childMarkdownRemark___internal___mediaType = 'childMarkdownRemark.internal.mediaType',
-  childMarkdownRemark___internal___owner = 'childMarkdownRemark.internal.owner',
-  childMarkdownRemark___internal___type = 'childMarkdownRemark.internal.type'
+  internal___type = 'internal.type'
 }
 
 type FileFilterInput = {
@@ -838,12 +1045,14 @@ type FileFilterInput = {
   readonly blksize: Maybe<IntQueryOperatorInput>;
   readonly blocks: Maybe<IntQueryOperatorInput>;
   readonly publicURL: Maybe<StringQueryOperatorInput>;
+  readonly childrenMarkdownRemark: Maybe<MarkdownRemarkFilterListInput>;
+  readonly childMarkdownRemark: Maybe<MarkdownRemarkFilterInput>;
+  readonly childrenImageSharp: Maybe<ImageSharpFilterListInput>;
   readonly childImageSharp: Maybe<ImageSharpFilterInput>;
   readonly id: Maybe<StringQueryOperatorInput>;
   readonly parent: Maybe<NodeFilterInput>;
   readonly children: Maybe<NodeFilterListInput>;
   readonly internal: Maybe<InternalFilterInput>;
-  readonly childMarkdownRemark: Maybe<MarkdownRemarkFilterInput>;
 };
 
 type FileGroupConnection = {
@@ -898,7 +1107,8 @@ enum ImageFormat {
   AUTO = '',
   JPG = 'jpg',
   PNG = 'png',
-  WEBP = 'webp'
+  WEBP = 'webp',
+  AVIF = 'avif'
 }
 
 enum ImageLayout {
@@ -1043,6 +1253,7 @@ type ImageSharp_gatsbyImageDataArgs = {
   jpgOptions: Maybe<JPGOptions>;
   pngOptions: Maybe<PNGOptions>;
   webpOptions: Maybe<WebPOptions>;
+  avifOptions: Maybe<AVIFOptions>;
   transformOptions: Maybe<TransformOptions>;
   background?: Maybe<Scalars['String']>;
 };
@@ -1252,6 +1463,10 @@ type ImageSharpFilterInput = {
   readonly parent: Maybe<NodeFilterInput>;
   readonly children: Maybe<NodeFilterListInput>;
   readonly internal: Maybe<InternalFilterInput>;
+};
+
+type ImageSharpFilterListInput = {
+  readonly elemMatch: Maybe<ImageSharpFilterInput>;
 };
 
 type ImageSharpFixed = {
@@ -1571,6 +1786,7 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___author = 'frontmatter.author',
   frontmatter___type = 'frontmatter.type',
   frontmatter___date = 'frontmatter.date',
+  frontmatter___tags = 'frontmatter.tags',
   frontmatter___cover___sourceInstanceName = 'frontmatter.cover.sourceInstanceName',
   frontmatter___cover___absolutePath = 'frontmatter.cover.absolutePath',
   frontmatter___cover___relativePath = 'frontmatter.cover.relativePath',
@@ -1605,6 +1821,33 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___cover___blksize = 'frontmatter.cover.blksize',
   frontmatter___cover___blocks = 'frontmatter.cover.blocks',
   frontmatter___cover___publicURL = 'frontmatter.cover.publicURL',
+  frontmatter___cover___childrenMarkdownRemark = 'frontmatter.cover.childrenMarkdownRemark',
+  frontmatter___cover___childrenMarkdownRemark___id = 'frontmatter.cover.childrenMarkdownRemark.id',
+  frontmatter___cover___childrenMarkdownRemark___excerpt = 'frontmatter.cover.childrenMarkdownRemark.excerpt',
+  frontmatter___cover___childrenMarkdownRemark___rawMarkdownBody = 'frontmatter.cover.childrenMarkdownRemark.rawMarkdownBody',
+  frontmatter___cover___childrenMarkdownRemark___fileAbsolutePath = 'frontmatter.cover.childrenMarkdownRemark.fileAbsolutePath',
+  frontmatter___cover___childrenMarkdownRemark___html = 'frontmatter.cover.childrenMarkdownRemark.html',
+  frontmatter___cover___childrenMarkdownRemark___htmlAst = 'frontmatter.cover.childrenMarkdownRemark.htmlAst',
+  frontmatter___cover___childrenMarkdownRemark___excerptAst = 'frontmatter.cover.childrenMarkdownRemark.excerptAst',
+  frontmatter___cover___childrenMarkdownRemark___headings = 'frontmatter.cover.childrenMarkdownRemark.headings',
+  frontmatter___cover___childrenMarkdownRemark___timeToRead = 'frontmatter.cover.childrenMarkdownRemark.timeToRead',
+  frontmatter___cover___childrenMarkdownRemark___tableOfContents = 'frontmatter.cover.childrenMarkdownRemark.tableOfContents',
+  frontmatter___cover___childrenMarkdownRemark___children = 'frontmatter.cover.childrenMarkdownRemark.children',
+  frontmatter___cover___childMarkdownRemark___id = 'frontmatter.cover.childMarkdownRemark.id',
+  frontmatter___cover___childMarkdownRemark___excerpt = 'frontmatter.cover.childMarkdownRemark.excerpt',
+  frontmatter___cover___childMarkdownRemark___rawMarkdownBody = 'frontmatter.cover.childMarkdownRemark.rawMarkdownBody',
+  frontmatter___cover___childMarkdownRemark___fileAbsolutePath = 'frontmatter.cover.childMarkdownRemark.fileAbsolutePath',
+  frontmatter___cover___childMarkdownRemark___html = 'frontmatter.cover.childMarkdownRemark.html',
+  frontmatter___cover___childMarkdownRemark___htmlAst = 'frontmatter.cover.childMarkdownRemark.htmlAst',
+  frontmatter___cover___childMarkdownRemark___excerptAst = 'frontmatter.cover.childMarkdownRemark.excerptAst',
+  frontmatter___cover___childMarkdownRemark___headings = 'frontmatter.cover.childMarkdownRemark.headings',
+  frontmatter___cover___childMarkdownRemark___timeToRead = 'frontmatter.cover.childMarkdownRemark.timeToRead',
+  frontmatter___cover___childMarkdownRemark___tableOfContents = 'frontmatter.cover.childMarkdownRemark.tableOfContents',
+  frontmatter___cover___childMarkdownRemark___children = 'frontmatter.cover.childMarkdownRemark.children',
+  frontmatter___cover___childrenImageSharp = 'frontmatter.cover.childrenImageSharp',
+  frontmatter___cover___childrenImageSharp___gatsbyImageData = 'frontmatter.cover.childrenImageSharp.gatsbyImageData',
+  frontmatter___cover___childrenImageSharp___id = 'frontmatter.cover.childrenImageSharp.id',
+  frontmatter___cover___childrenImageSharp___children = 'frontmatter.cover.childrenImageSharp.children',
   frontmatter___cover___childImageSharp___gatsbyImageData = 'frontmatter.cover.childImageSharp.gatsbyImageData',
   frontmatter___cover___childImageSharp___id = 'frontmatter.cover.childImageSharp.id',
   frontmatter___cover___childImageSharp___children = 'frontmatter.cover.childImageSharp.children',
@@ -1622,18 +1865,6 @@ enum MarkdownRemarkFieldsEnum {
   frontmatter___cover___internal___mediaType = 'frontmatter.cover.internal.mediaType',
   frontmatter___cover___internal___owner = 'frontmatter.cover.internal.owner',
   frontmatter___cover___internal___type = 'frontmatter.cover.internal.type',
-  frontmatter___cover___childMarkdownRemark___id = 'frontmatter.cover.childMarkdownRemark.id',
-  frontmatter___cover___childMarkdownRemark___excerpt = 'frontmatter.cover.childMarkdownRemark.excerpt',
-  frontmatter___cover___childMarkdownRemark___rawMarkdownBody = 'frontmatter.cover.childMarkdownRemark.rawMarkdownBody',
-  frontmatter___cover___childMarkdownRemark___fileAbsolutePath = 'frontmatter.cover.childMarkdownRemark.fileAbsolutePath',
-  frontmatter___cover___childMarkdownRemark___html = 'frontmatter.cover.childMarkdownRemark.html',
-  frontmatter___cover___childMarkdownRemark___htmlAst = 'frontmatter.cover.childMarkdownRemark.htmlAst',
-  frontmatter___cover___childMarkdownRemark___excerptAst = 'frontmatter.cover.childMarkdownRemark.excerptAst',
-  frontmatter___cover___childMarkdownRemark___headings = 'frontmatter.cover.childMarkdownRemark.headings',
-  frontmatter___cover___childMarkdownRemark___timeToRead = 'frontmatter.cover.childMarkdownRemark.timeToRead',
-  frontmatter___cover___childMarkdownRemark___tableOfContents = 'frontmatter.cover.childMarkdownRemark.tableOfContents',
-  frontmatter___cover___childMarkdownRemark___children = 'frontmatter.cover.childMarkdownRemark.children',
-  frontmatter___tags = 'frontmatter.tags',
   frontmatter___draft = 'frontmatter.draft',
   frontmatter___custom_permalink = 'frontmatter.custom_permalink',
   excerpt = 'excerpt',
@@ -1762,13 +1993,17 @@ type MarkdownRemarkFilterInput = {
   readonly internal: Maybe<InternalFilterInput>;
 };
 
+type MarkdownRemarkFilterListInput = {
+  readonly elemMatch: Maybe<MarkdownRemarkFilterInput>;
+};
+
 type MarkdownRemarkFrontmatter = {
   readonly title: Maybe<Scalars['String']>;
   readonly author: Maybe<Scalars['String']>;
   readonly type: Maybe<Scalars['String']>;
   readonly date: Maybe<Scalars['Date']>;
-  readonly cover: Maybe<File>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly cover: Maybe<File>;
   readonly draft: Maybe<Scalars['Boolean']>;
   readonly custom_permalink: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
 };
@@ -1786,8 +2021,8 @@ type MarkdownRemarkFrontmatterFilterInput = {
   readonly author: Maybe<StringQueryOperatorInput>;
   readonly type: Maybe<StringQueryOperatorInput>;
   readonly date: Maybe<DateQueryOperatorInput>;
-  readonly cover: Maybe<FileFilterInput>;
   readonly tags: Maybe<StringQueryOperatorInput>;
+  readonly cover: Maybe<FileFilterInput>;
   readonly draft: Maybe<BooleanQueryOperatorInput>;
   readonly custom_permalink: Maybe<StringQueryOperatorInput>;
 };
@@ -1928,12 +2163,14 @@ type Query_fileArgs = {
   blksize: Maybe<IntQueryOperatorInput>;
   blocks: Maybe<IntQueryOperatorInput>;
   publicURL: Maybe<StringQueryOperatorInput>;
+  childrenMarkdownRemark: Maybe<MarkdownRemarkFilterListInput>;
+  childMarkdownRemark: Maybe<MarkdownRemarkFilterInput>;
+  childrenImageSharp: Maybe<ImageSharpFilterListInput>;
   childImageSharp: Maybe<ImageSharpFilterInput>;
   id: Maybe<StringQueryOperatorInput>;
   parent: Maybe<NodeFilterInput>;
   children: Maybe<NodeFilterListInput>;
   internal: Maybe<InternalFilterInput>;
-  childMarkdownRemark: Maybe<MarkdownRemarkFilterInput>;
 };
 
 
