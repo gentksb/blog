@@ -2,6 +2,12 @@ import { css } from '@emotion/react'
 
 const BlogPostStyle = css`
 
+    // iframely調整
+    .iframely-embed div {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
     /* mobile横スクロール許可テーブル */
     .scrollable_table div {
       overflow-x:auto;
