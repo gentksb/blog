@@ -36,7 +36,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
         image={seoImage}
         location={location}
       />
-      <Box outline="none">
+      <Box outline="none" width="100%">
         <article>
             <header>
               <time dateTime={post.frontmatter.date}>
