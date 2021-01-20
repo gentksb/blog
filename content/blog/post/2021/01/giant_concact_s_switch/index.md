@@ -6,7 +6,7 @@ tags: ["REVIEW"]
 cover: "./cover.jpg"
 ---
 
-以前紹介した Brand-X 　 ASCEND ドロッパーポストの動きが悪くなった（上昇した状態でロックされない）ので、新しいドロッパーポストを探すことにした。
+以前紹介した Brand-X ASCEND ドロッパーポストの動きが悪くなった（上昇した状態でロックされない）ので、新しいドロッパーポストを探すことにした。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://blog.gensobunya.net/post/2017/04/goodmtbgears/" data-iframely-url="//cdn.iframe.ly/CJ2g1wm?iframe=card-small"></a></div></div>
 

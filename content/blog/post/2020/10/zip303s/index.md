@@ -69,7 +69,7 @@ SLR1 はカーボンホイールなので重量に関してはアルミのディ
 
 ロードチューブレスはもう 10 年近く使っているので、装着・ビード上げにはかなりの自信があったのですが……過去最大の苦しみを体験しました。（尚、フロントはフロアポンプであっさり上がったので製品公差によるものである可能性が高いです）
 
-シーラントは[Effetto mariposa caffelatex](https://www.chainreactioncycles.com/jp/ja/effetto-caffelatex-tubeless-fluid/rp-prod150131)を使い、リム内部には石鹸水を塗布して作業しています。
+シーラントは[Effetto mariposa caffelatex](https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Feffetto-caffelatex-tubeless-fluid%2Frp-prod150131%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates)を使い、リム内部には石鹸水を塗布して作業しています。
 インフレーターは TOPEAK の[tubibooster X](https://amzn.to/3nj5GF2)での経験です。[tubibooster X](https://amzn.to/3nj5GF2)のレビュー記事はこちら。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;"><a href="https://blog.gensobunya.net/post/2020/06/tubiboosterx/" data-iframely-url="//cdn.iframe.ly/zfBhizG"></a></div></div>
@@ -84,6 +84,7 @@ SLR1 はカーボンホイールなので重量に関してはアルミのディ
 6. 新品タイヤを バルブコアを抜いてからインフレーター（米式）で空気入れ
 7. 社外品のチューブレステープをもう一周巻いてインフレーター（米式）で空気入れ
 
+<br/>
 ここまでやって何とか上がりました。さすがにおかしくないか？ということでショップともコミュニケーションも取って不良品かどうか調査しましたが、一応ビードの位置を慎重に調整すればビードが上がるということで、正常品の範囲内との判断になっています。
 
 バルブコアを抜いてビード上げをすると、当然ポンプを取り外した際に空気が抜け、その際にビードが落ちてしまうことがありますが、それも含めて走行中にビードが上がっているのなら問題ないとのことです。（代理店公式回答）
