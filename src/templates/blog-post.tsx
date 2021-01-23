@@ -2,6 +2,7 @@ import React from "react"
 import { PageProps,graphql } from "gatsby"
 import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
@@ -16,7 +17,7 @@ import BlogPostStyle from "../styles/blog-post.style"
 
 const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.SitePageContext>> = (props) => {
   const { pageContext, data, location } = props
-  const post = data.markdownRemark
+  const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
   const { previous, next } = pageContext
   const seoImage =
@@ -53,12 +54,14 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
               <PostTag tags={post.frontmatter.tags} />
             </header>
             <Divider />
-            <Text
-              as="div"
-              dangerouslySetInnerHTML={{ __html: post.html }}
-              className="post-body"
-              css={BlogPostStyle}
-            />
+            <MDXRenderer>
+              {/* <Text
+                className="post-body"
+                css={BlogPostStyle}
+              > */}
+                {post.body}
+              {/* </Text> */}
+            </MDXRenderer>
         </article>
         <Divider />
         <Share title={post.frontmatter.title} location={location} />
@@ -81,10 +84,10 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(truncate: true)
-      html
+      body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title

@@ -10,7 +10,7 @@ import TagList from "../components/molecules/tagList"
 
 const Tags : React.FunctionComponent<PageProps<GatsbyTypes.TagPageQuery, GatsbyTypes.SitePageContext>> = ({ pageContext, data, location }) => {
   const { tag } = pageContext
-  const { edges } = data.allMarkdownRemark
+  const { edges } = data.allMdx
   const pageTitle = `Tag search : ${tag} | 幻想サイクル`
   const siteTitle = data.site.siteMetadata.title
 
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { draft: { ne: true }, tags: { in: [$tag] } } }
     ) {

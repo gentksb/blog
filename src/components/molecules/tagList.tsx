@@ -9,7 +9,7 @@ interface Props {
 const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
   const data:GatsbyTypes.TagListQuery = useStaticQuery<GatsbyTypes.TagListQuery>(graphql`
     query TagList {
-      allMarkdownRemark(filter: { frontmatter: { draft: { eq: false } } }) {
+      allMdx(filter: { frontmatter: { draft: { eq: false } } }) {
         group(field: frontmatter___tags) {
           fieldValue
           totalCount
@@ -18,7 +18,7 @@ const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
     }
   `)
 
-  const allTagAndCount = data.allMarkdownRemark
+  const allTagAndCount = data.allMdx
   const tagArray = allTagAndCount.group.map((tagdata) => {
     const tag = tagdata.fieldValue
     const count = tagdata.totalCount
