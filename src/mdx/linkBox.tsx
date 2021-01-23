@@ -17,9 +17,9 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
         .then(data => {
           console.log(data)
           const document = new DOMParser().parseFromString(data, "text/html")
-          const title = document.querySelector("meta[property='og:title']").getAttribute('content') || document.querySelector("meta[name='title']").getAttribute('content') || document.querySelector('title').children.toString() || ""
-          const imageUrl = document.querySelector("meta[property='og:image']").getAttribute('content') || ""
-          const description = document.querySelector("meta[property='og:description']").getAttribute('content') || document.querySelector("meta[property='description']").getAttribute('content') || ""
+          const title = document.querySelector("meta[property='og:title']")?.getAttribute('content') || document.querySelector("meta[name='title']")?.getAttribute('content') || document.querySelector('title')?.children.toString() || ""
+          const imageUrl = document.querySelector("meta[property='og:image']")?.getAttribute('content') || ""
+          const description = document.querySelector("meta[property='og:description']")?.getAttribute('content') || document.querySelector("meta[property='description']")?.getAttribute('content') || ""
           changeOgpData(
             {
               title: title,
