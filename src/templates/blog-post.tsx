@@ -54,14 +54,14 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
               <PostTag tags={post.frontmatter.tags} />
             </header>
             <Divider />
-            <MDXRenderer>
-              {/* <Text
-                className="post-body"
-                css={BlogPostStyle}
-              > */}
+            <Text
+              className="post-body"
+              css={BlogPostStyle}
+            >
+              <MDXRenderer>
                 {post.body}
-              {/* </Text> */}
-            </MDXRenderer>
+              </MDXRenderer>
+            </Text>
         </article>
         <Divider />
         <Share title={post.frontmatter.title} location={location} />

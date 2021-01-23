@@ -41,6 +41,7 @@
     "gatsby-source-filesystem": "^2.10.0",
     "gatsby-transformer-sharp": "^2.11.0",
     "lodash": "^4.17.20",
+    "open-graph-scraper-lite": "^1.1.1",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
