@@ -32,9 +32,6 @@ tags: ["REVIEW", "TOURING", "EC"]
 
 ![image]("DSC_1229.jpg)
 
-<div class="separator" style="clear: both; text-align: left;">
-</div>
-
 DT swiss の R1800 Tubeless を購入しました
 
 パンクリスクの非常に低いチューブレスを街乗りにしない手はない。街乗り車に使えるやっすいチューブレスホイールを探してこれに行き着きました。RS61 が鉄板といえば鉄板ですが、シマノホイール以外も使ってみたかったし、うん。

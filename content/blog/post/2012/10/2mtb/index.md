@@ -8,7 +8,7 @@ tags: ["MTB"]
 
 ![image](./DSC_1046.jpg)
 
-続いては MTB。<a href="http://www.konaworld.jp/" target="_blank">KONA</a>の Blast(2011 モデル)です。
+続いては MTB。[KONA](http://www.konaworld.jp/)の Blast(2011 モデル)です。
 
 オフロード走りたいなー！と思って MTB ショップでお手頃な前年モデルのセール品を探しまわって巡りあった。
 
