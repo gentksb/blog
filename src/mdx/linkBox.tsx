@@ -6,15 +6,11 @@ interface Props {
   url : string
 }
 
-  const proxyUrl = "https://cors-anywhere.herokuapp.com/"
-  const headers = { 'x-requested-with': '' }
-  const grabberApiEndPoint = "http://favicongrabber.com/api/grab/"
-
-
+const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+const headers = { 'x-requested-with': '' }
 
 const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
   const [ogpData, changeOgpData] = useState(Object)
-  const [faviconData, changeFaviconData] =useState(Object)
   const urlConstructor = new URL(url)
   const urlDomain = urlConstructor.hostname
 
@@ -29,7 +25,8 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
           const imageUrl = document.querySelector("meta[property='og:image']")?.getAttribute('content') || ""
           const description = document.querySelector("meta[property='og:description']")?.getAttribute('content') || document.querySelector("meta[name='description']")?.getAttribute('content') || ""
           const siteName = document.querySelector("meta[property='og:site_name']")?.getAttribute('content') || urlDomain
-          const siteIcon = document.querySelector("[type='image/x-icon']")?.getAttribute('href')
+          const siteIconPath = document.querySelector("[type='image/x-icon']")?.getAttribute('href')
+          const siteIcon = siteIconPath.includes("//") ? siteIconPath : urlDomain + siteIconPath //絶対パスに変換
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(
             {
@@ -41,12 +38,6 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
             }
           )
         })
-      fetch(grabberApiEndPoint+urlDomain)
-        .then(res => {
-          const result = res.json()
-          console.log(result)
-          changeFaviconData(result)
-        })
     } catch (error) {
       console.error(error)
     }
@@ -56,14 +47,14 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
   return (
     <Box borderRadius="lg" borderWidth="1px" px={3} py={6}>
       <Flex width="100%">
-        <Box>
+        <Box maxWidth="20%">
           <Link isExternal href={url}>
-          <Image src={ogpData.imageUrl} alt={ogpData.title} display="block"/>
+          <Image src={ogpData.imageUrl} alt={ogpData.title} display="block" />
           </Link>
         </Box>
         <VStack width="auto">
           <Link isExternal href={url}>
-            <Box as="h4" lineHeight="tight" fontWeight="SemiBold" mt={1} isTruncated>{ogpData.title}</Box>
+            <Box as="h4" lineHeight="tight" fontWeight="SemiBold" mt={1} overflow="hidden">{ogpData.title}</Box>
           </Link>
           <Text fontSize="sm" fontWeight="light" dangerouslySetInnerHTML={{__html:ogpData.description}} />
         </VStack>
@@ -71,7 +62,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
       <Flex width="100%">
         <Box>
           <Link isExternal href={url}>
-            <Text fontSize="xs" fontWeight="SemiBold" as="span"><Image src={ogpData.ogpIcon || faviconData.icons?.[0].src} alt="favicon"/>{ogpData.siteName}</Text>
+            <Text fontSize="xs" fontWeight="SemiBold" display="inline-flex"><Image src={ogpData.ogpIcon} alt="favicon" />{ogpData.siteName}</Text>
           </Link>
         </Box>
         <Spacer />
