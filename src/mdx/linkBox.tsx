@@ -26,7 +26,10 @@ interface ogImage {
 const ogs = require('open-graph-scraper-lite')
 
 const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
-  const ogs_options = {url: url}
+  const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+  const headers = { 'x-requested-with': '' }
+
+  const ogs_options = {url: proxyUrl + url, headers:headers}
   const ogpData: OgpData = ogs(ogs_options).then((data)=>{
     const { error, result, response } = data
     console.log(response)
