@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons"
-import { Box, Button, Image, Link, Text, VStack, SimpleGrid, Flex, Spacer } from "@chakra-ui/react"
+import { Box, Image, Link, Text } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
 
 interface Props {
@@ -75,7 +75,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
           fontWeight="semibold"
           href={url}
         >
-          {ogpData.title}
+          {ogpData.title}<ExternalLinkIcon />
         </Link>
         <Text mt={2} color="gray.500" dangerouslySetInnerHTML={{__html:ogpData.description}} />
       </Box>
