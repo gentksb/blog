@@ -23,25 +23,29 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
       fetch( proxyUrl + url, {headers: headers})
         .then(res => res.text())
         .then(data => {
-          console.log(data)
+          // console.log(data)
           const document = new DOMParser().parseFromString(data, "text/html")
           const title = document.querySelector("meta[property='og:title']")?.getAttribute('content') || document.querySelector("meta[name='title']")?.getAttribute('content') || document.querySelector('title')?.innerText || ""
           const imageUrl = document.querySelector("meta[property='og:image']")?.getAttribute('content') || ""
           const description = document.querySelector("meta[property='og:description']")?.getAttribute('content') || document.querySelector("meta[name='description']")?.getAttribute('content') || ""
           const siteName = document.querySelector("meta[property='og:site_name']")?.getAttribute('content') || urlDomain
-          console.log(title, imageUrl, description)
+          const siteIcon = document.querySelector("[type='image/x-icon']")?.getAttribute('href')
+          console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(
             {
               title: title,
               imageUrl: imageUrl,
               description: description,
-              siteName: siteName
+              siteName: siteName,
+              ogpIcon: siteIcon
             }
           )
         })
       fetch(grabberApiEndPoint+urlDomain)
         .then(res => {
-          changeFaviconData(res)
+          const result = res.json()
+          console.log(result)
+          changeFaviconData(result)
         })
     } catch (error) {
       console.error(error)
@@ -67,7 +71,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
       <Flex width="100%">
         <Box>
           <Link isExternal href={url}>
-            <Text fontSize="xs" fontWeight="SemiBold" as="span"><Image src={faviconData.icons?.src} alt="favicon"/>{ogpData.siteName}</Text>
+            <Text fontSize="xs" fontWeight="SemiBold" as="span"><Image src={ogpData.ogpIcon || faviconData.icons?.[0].src} alt="favicon"/>{ogpData.siteName}</Text>
           </Link>
         </Box>
         <Spacer />
