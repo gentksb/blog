@@ -25,8 +25,8 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
           const imageUrl = document.querySelector("meta[property='og:image']")?.getAttribute('content') || ""
           const description = document.querySelector("meta[property='og:description']")?.getAttribute('content') || document.querySelector("meta[name='description']")?.getAttribute('content') || ""
           const siteName = document.querySelector("meta[property='og:site_name']")?.getAttribute('content') || urlDomain
-          const siteIconPath = document.querySelector("[type='image/x-icon']")?.getAttribute('href')
-          const siteIcon = siteIconPath.includes("//") ? siteIconPath : urlDomain + siteIconPath //絶対パスに変換
+          const siteIconPath = document.querySelector("[type='image/x-icon']")?.getAttribute('href') || ""
+          const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(
             {
