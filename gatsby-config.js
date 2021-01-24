@@ -58,6 +58,7 @@ module.exports = {
               fit: `inside`
             },
           },
+          `gatsby-remark-embedder`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {

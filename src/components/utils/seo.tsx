@@ -94,7 +94,6 @@ const SEO : React.FunctionComponent<Props> = (props) => {
         },
       ].concat(meta)}
     >
-      <script async src="https://cdn.iframe.ly/embed.js" />
       <script async src="https://platform.twitter.com/widgets.js" />
     </Helmet>
   )

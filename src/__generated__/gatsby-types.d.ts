@@ -3574,14 +3574,6 @@ type TagListQueryVariables = Exact<{ [key: string]: never; }>;
 
 type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
 
-type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
-      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
-    )> }> };
-
 type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3589,6 +3581,14 @@ type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ read
         Pick<Mdx, 'id'>
         & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'tags'>>, readonly fields: Maybe<Pick<MdxFields, 'slug'>> }
       ) }> } };
+
+type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
+      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
+    )> }> };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
