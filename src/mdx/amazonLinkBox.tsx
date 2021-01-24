@@ -4,15 +4,29 @@ import React, { useEffect, useState } from "react"
 
 interface Props {
   url : string
+  image_url?: string
 }
+
+//前提知識
+// 一部は画像が取得できないことがある
+// https://images-na.ssl-images-amazon.com/images/P/[ASIN,ISBN].[国コード].[画像の種類].jpg
+// ASIN/ISBN
+// [ASIN,ISBN]の部分にはASINコード、またはISBNコードを記載します。通常はASINコードですが書籍の一部にはISBNコードしかないものもあり、その場合は"ISBN-10"のコードを設定します。
+// 国コード
+// [国コード]の部分には国のコードを指定します。日本は"09"です。
+// 画像の種類
+// [画像の種類]には取得する画像の大きさを表すコードを設定します。各値は以下の通りです。
+// THUMBZZZ	サムネイル画像を取得します。	75×75	52×75	長辺が75ピクセルの画像を取得します
+// TZZZZZZZ	小サイズの画像を取得します。	110×110	77×110	長辺が110ピクセルの画像を取得します
+// MZZZZZZZ	中サイズの画像を取得します。	160×160	112×160	長辺が160ピクセルの画像を取得します
+// LZZZZZZZ	大サイズの画像を取得します。	500×500	349×500	長辺が500ピクセルの画像を取得します。ただしオリジナルの画像サイズが500ピクセルより小さい場合は原寸の画像を表示します。
 
 const proxyUrl = "https://cors-anywhere.herokuapp.com/"
 const headers = { 'x-requested-with': '' }
 
-const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
+const LinkBox: React.FunctionComponent<Props> = ( {url, image_url} ) => {
   const [ogpData, changeOgpData] = useState(Object)
-  const urlConstructor = new URL(url)
-  const urlDomain = urlConstructor.hostname
+  const urlDomain = "amazon.co.jp"
 
   useEffect(() => {
     try {
@@ -22,11 +36,11 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
           // console.log(data)
           const document = new DOMParser().parseFromString(data, "text/html")
           const title = document.querySelector("meta[property='og:title']")?.getAttribute('content') || document.querySelector("meta[name='title']")?.getAttribute('content') || document.querySelector('title')?.innerText || ""
-          const imageUrl = document.querySelector("meta[property='og:image']")?.getAttribute('content') || ""
+          const asin = document.querySelector("#ASIN")?.getAttribute('value')
+          const imageUrl = image_url || `https://images-na.ssl-images-amazon.com/images/P/${asin}.09.LZZZZZZZ.jpg`
           const description = document.querySelector("meta[property='og:description']")?.getAttribute('content') || document.querySelector("meta[name='description']")?.getAttribute('content') || ""
           const siteName = document.querySelector("meta[property='og:site_name']")?.getAttribute('content') || urlDomain
-          const siteIconPath = document.querySelector("[type='image/x-icon']")?.getAttribute('href') || ""
-          const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
+          const siteIcon = "https://www.amazon.co.jp/favicon.ico"
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(
             {
@@ -45,28 +59,17 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
 //データの取得ルールだけ変更して他はそのままにする
 
   return (
-    <Box p={4} display={{ md: "flex" }} borderWidth="1px" borderRadius="xl">
-      <Box flexShrink={0}>
+    <Box p={4} display="flex" borderWidth="1px" borderRadius="xl">
+      <Box flexShrink={1}>
         <Image
           borderRadius="lg"
-          width={{ md: 40 }}
           src={ogpData.imageUrl}
           alt={ogpData.title}
-          maxHeight="20vh"
+          fit="cover"
+          fallbackSrc={`https://via.placeholder.com/150?Text=${ogpData.siteName}`}
         />
       </Box>
-      <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-        <Text
-          fontWeight="bold"
-          textTransform="uppercase"
-          fontSize="sm"
-          letterSpacing="wide"
-          color="teal.600"
-        >
-          <Link isExternal href={url}>
-                <Text fontSize="xs" fontWeight="SemiBold" display="inline-flex"><Image src={ogpData.ogpIcon} alt="favicon" />{ogpData.siteName}</Text>
-              </Link>
-        </Text>
+      <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
         <Link
           mt={1}
           display="block"
@@ -75,9 +78,22 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
           fontWeight="semibold"
           href={url}
         >
-          {ogpData.title}<ExternalLinkIcon />
+          <Text noOfLines={[1,1,2,2]} as="span"><ExternalLinkIcon />{ogpData.title}</Text>
         </Link>
-        <Text mt={2} color="gray.500" dangerouslySetInnerHTML={{__html:ogpData.description}} />
+        <Text as="span" fontSize="sm" color="gray.500" dangerouslySetInnerHTML={{__html:ogpData.description}} noOfLines={[1,2,2,3]} />
+          <Link isExternal href={url}>
+            <Text
+              as="span"
+              fontSize="sm"
+              letterSpacing="wide"
+              color="teal.600"
+              display="inline-flex"
+              fontWeight="Bold"
+              mt={3}
+            >
+          <Image src={ogpData.ogpIcon} alt="favicon" maxHeight="2em" />{ogpData.siteName}
+          </Text> 
+        </Link>
       </Box>
     </Box>
   )

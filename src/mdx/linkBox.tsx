@@ -45,28 +45,17 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
 
 
   return (
-    <Box p={4} display={{ md: "flex" }} borderWidth="1px" borderRadius="xl">
-      <Box flexShrink={0}>
+    <Box p={4} display="flex" borderWidth="1px" borderRadius="xl">
+      <Box flexShrink={1}>
         <Image
           borderRadius="lg"
-          width={{ md: 40 }}
           src={ogpData.imageUrl}
           alt={ogpData.title}
-          maxHeight="20vh"
+          fit="cover"
+          fallbackSrc={`https://via.placeholder.com/150?Text=${ogpData.siteName}`}
         />
       </Box>
-      <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-        <Text
-          fontWeight="bold"
-          textTransform="uppercase"
-          fontSize="sm"
-          letterSpacing="wide"
-          color="teal.600"
-        >
-          <Link isExternal href={url}>
-                <Text fontSize="xs" fontWeight="SemiBold" display="inline-flex"><Image src={ogpData.ogpIcon} alt="favicon" />{ogpData.siteName}</Text>
-              </Link>
-        </Text>
+      <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
         <Link
           mt={1}
           display="block"
@@ -75,9 +64,22 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
           fontWeight="semibold"
           href={url}
         >
-          {ogpData.title}<ExternalLinkIcon />
+          <Text noOfLines={[1,1,2,2]} as="span"><ExternalLinkIcon />{ogpData.title}</Text>
         </Link>
-        <Text mt={2} color="gray.500" dangerouslySetInnerHTML={{__html:ogpData.description}} />
+        <Text as="span" fontSize="sm" color="gray.500" dangerouslySetInnerHTML={{__html:ogpData.description}} noOfLines={[1,2,2,3]} />
+          <Link isExternal href={url}>
+            <Text
+              as="span"
+              fontSize="sm"
+              letterSpacing="wide"
+              color="teal.600"
+              display="inline-flex"
+              fontWeight="Bold"
+              mt={3}
+            >
+          <Image src={ogpData.ogpIcon} alt="favicon" maxHeight="2em" />{ogpData.siteName}
+          </Text> 
+        </Link>
       </Box>
     </Box>
   )
