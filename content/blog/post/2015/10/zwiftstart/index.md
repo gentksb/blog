@@ -43,7 +43,7 @@ USB ドングルは結構厄介。
 
 一応 Amazon でも売っていた。Wiggle や CRC でも[LifeLine ブランドの製品](https://www.chainreactioncycles.com/jp/ja/lifeline-ant-usb-%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF/rp-prod155468)を売り始めたらしい。
 
-```Aliexpress なら 10 ドルだけどな！！！~~~
+~~Aliexpress なら 10 ドルだけどな！！！~~
 
 <AmazonLinkBox url="https://www.amazon.co.jp/dp/B0874R1DDY/?tag=gensobunya-22" />
 
@@ -107,4 +107,7 @@ Strava がリアルタイムで MMORPG 化した感じである。
 [2]: http://www.amazon.co.jp/gp/product/B008368QN6/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B008368QN6&linkCode=as2&tag=gensobunya-22
 [3]: http://www.amazon.co.jp/gp/product/B0050GL5GM/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B0050GL5GM&linkCode=as2&tag=gensobunya-22
 [4]: http://cyclist.sanspo.com/205583
+
+```
+
 ```

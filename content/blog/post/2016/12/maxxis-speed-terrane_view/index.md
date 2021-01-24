@@ -47,16 +47,6 @@ MTB 乗ってる方はご存知だと思いますが UST とチューブレス�
 
 なので友人の体験談を元にビード上げるためのポンプを買うことに。
 
-<blockquote class="twitter-tweet" data-lang="ja">
-  <div dir="ltr" lang="ja">
-    Giyoのフラッシュチャージャーいい感じ <a href="https://t.co/nsrlvD9G4S">pic.twitter.com/nsrlvD9G4S</a>
-  </div>
-
-  <p>
-    — なぐはる (@nagsaran) <a href="https://twitter.com/nagsaran/status/801228599403495424">2016年11月23日</a>
-  </p>
-</blockquote>
-
 詳細記事はこちら。
 
 <LinkBox url="http://nagsaran.hatenablog.com/entry/2016/11/23/101332" />

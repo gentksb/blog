@@ -6,7 +6,7 @@ tags: ["RaceReport", "CX"]
 cover: 20180226_top.jpg
 ---
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/maekawa0717/40475491811/in/album-72157693073170254/" title="DSC_8261.jpg"><img src="https://farm5.staticflickr.com/4697/40475491811_508c6f6222_c.jpg" width="800" height="490" alt="DSC_8261.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+![cover](https://farm5.staticflickr.com/4697/40475491811_508c6f6222_c.jpg
 
 ## 飛び道具との出会い
 
@@ -44,9 +44,9 @@ cover: 20180226_top.jpg
 コース変更により林間セクションの段差が減っていたので、超低圧で行くことを選択。流石に 1.0bar は余裕が無いので R1.1bar/F1.2bar でセッティングして昼試走。いい感じ！\
 林間セクションで抜かれることは想定済みの割り切りセッティングだと言い聞かせることに集中。
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/132570324@N04/39602252905/in/album-72157693881101785/" title="DSC_1016"><img src="https://farm5.staticflickr.com/4603/39602252905_bb0e7a336a_c.jpg" width="800" height="534" alt="DSC_1016"></a>>
+![photo](https://farm5.staticflickr.com/4603/39602252905_bb0e7a336a_c.jpg)
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/maekawa0717/26604517168/in/album-72157693073170254/" title="DSC_8329.jpg"><img src="https://farm5.staticflickr.com/4653/26604517168_d6dd0afb8d_c.jpg" width="800" height="534" alt="DSC_8329.jpg"></a>
+![photo](https://farm5.staticflickr.com/4653/26604517168_d6dd0afb8d_c.jpg)
 
 すごく砂を乗れる…楽ちん…
 チューブレス(1.5bar~1.6bar)ではちょっとミスするとリカバリーが効かないが、この空気圧だと轍の上は簡単に走れるし、ミスっても駆動力が伝わりやすいのでパワーで押し切ることができる。\

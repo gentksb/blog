@@ -17,9 +17,7 @@ tags: ["ROAD", "FOOD"]
 
 そんな中、見つけた当たり店がこちら。
 
-<h4 style="background-color: white; border: 0px; color: #aeb4b6; font-family: 'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif; font-size: 15px; font-stretch: inherit; font-weight: normal; line-height: 20px; margin: 0px 60px 0px 0px; padding: 0px; vertical-align: baseline;">
-  <strong style="border: 0px; color: #4e595d; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;"><a href="https://www.facebook.com/pages/%E3%81%9F%E3%81%8F%E3%81%BF%E3%81%AE%E9%87%8C%E9%A3%9F%E5%A0%82/1374365642803533" style="border: 0px; color: #4e595d; cursor: pointer; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; margin: 0px; padding: 0px; text-decoration: none; vertical-align: baseline;">たくみの里食堂</a></strong>
-</h4>
+<LinkBox url="https://tabelog.com/gunma/A1003/A100302/10015723/" />
 
 予約すれば 18:00 以降でも席を用意して頂けます。
 
@@ -29,8 +27,7 @@ tags: ["ROAD", "FOOD"]
 
 写真は豚の角煮定食。
 
-<div>
-![image](360)
+![image](./DSC_6154.jpg)
 
 日替わり小鉢はその日仕入れた食材で変わるとのこと。<br /> 味噌汁は具だくさん。隠れてる味噌だけでご飯 1 杯いける旨さ。
 

@@ -25,7 +25,7 @@ tags: ["ROAD"]
 
 貼り付け初心者なので丁寧に
 
-![image](DSC_4214.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" src="./DSC_4214.jpg" height="179" width="320" /></a><a href="DSC_4213.jpg)
+![image](DSC_4214.jpg)
 
 ① 脱脂
 

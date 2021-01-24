@@ -21,7 +21,7 @@ cover: DSC_1424.jpg
 
 翌朝白馬へ。\
 
-https://www.instagram.com/p/Blxq8Z1hft5
+<LinkBox url="https://www.instagram.com/p/Blxq8Z1hft5/" />
 
 遠い遠い…
 
