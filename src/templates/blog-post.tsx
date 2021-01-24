@@ -3,6 +3,7 @@ import { PageProps,graphql } from "gatsby"
 import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
@@ -12,8 +13,13 @@ import PrevAndNextPost from "../components/molecules/prevAndNextpost"
 import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/organisms/relatedPosts"
 import BlogPostStyle from "../styles/blog-post.style"
+import AmazonLinkBox from "../mdx/amazonLinkBox"
+import LinkBox from "../mdx/linkBox"
 
-
+const shortcodes = {
+  AmazonLinkBox,
+  LinkBox,
+}
 
 const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.SitePageContext>> = (props) => {
   const { pageContext, data, location } = props
@@ -58,9 +64,11 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
               className="post-body"
               css={BlogPostStyle}
             >
-              <MDXRenderer>
-                {post.body}
-              </MDXRenderer>
+              <MDXProvider components={shortcodes}>
+                <MDXRenderer>
+                  {post.body}
+                </MDXRenderer>
+              </MDXProvider>
             </Text>
         </article>
         <Divider />
