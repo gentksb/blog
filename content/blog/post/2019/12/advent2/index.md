@@ -68,7 +68,7 @@ IT 業界ではこの言葉が出てくると、大雑把に 2 系統のシス�
 8 割の性能を常に使えることを目指しているため、マスプロメーカーにシマノコンポ、ホイールはシマノハブか DT ハブに適当なリムの組み合わせになって面白みはありませんが、走ることに集中できる機材選びだと思います。  
 もちろん、機材の趣味性が大事という考えもありますので、自分の自転車ライフを豊かにすることを意識して、たまに上記の概念を思い出していただければ幸いです。
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B073XTZ49K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/4147VMKIn0L._SL160_.jpg" alt="シマノ RD-R8050 11S SS 対応CS ロー側最大25-30T ULTEGRA IRDR8050SS" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B073XTZ49K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">シマノ RD-R8050 11S SS 対応CS ロー側最大25-30T ULTEGRA IRDR8050SS</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 19.12.23</div></div><div class="amazlet-detail">シマノ(SHIMANO) <br />売り上げランキング: 29,603<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B073XTZ49K/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B073XTZ49K/gensobunya-22/ref=nosim/" />
 
 ---
 

@@ -28,7 +28,7 @@ cover: "./healthcare_relation.png"
 
 インプレは[本体の過去記事](/post/2019/08/edge530j/)と、[MTB ダイナミクスインプレ](/post/2019/11/edge530_mtbd/)にて。
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07V4DG1DK/gensobunya-22/" name="amachazllink" target="_blank"><img src="https://m.media-amazon.com/images/I/41nWG3UXbVL._SL160_.jpg" alt="GARMIN(ガーミン) EDGE 530 日本語版 GPSサイクルコンピューター(単体) 004476" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07V4DG1DK/gensobunya-22/" name="amachazllink" target="_blank">GARMIN(ガーミン) EDGE 530 日本語版 GPSサイクルコンピューター(単体) 004476</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://amachazl.com/browse/B07V4DG1DK/gensobunya-22" title="GARMIN(ガーミン) EDGE 530 日本語版 GPSサイクルコンピューター(単体) 004476 - 甘茶蔓 (amachazl)" target="_blank">amachazl</a> at 2020.03.29</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07V4DG1DK/gensobunya-22/" name="amachazllink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<AmazonLinkBox url="https://www.amazon.co.jp/exec/obidos/ASIN/B07V4DG1DK/gensobunya-22/" />
 
 ## 応用編：日常生活もモニタリングしよう
 
@@ -40,7 +40,7 @@ cover: "./healthcare_relation.png"
 
 私が使っている ForeAthelete45/45S は、薄くて軽くて日常生活で使っていても違和感が少なく非常におすすめです。持っている人は Apple Watch でもいいでしょう。
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07WG1QZHJ/gensobunya-22/" name="amachazllink" target="_blank"><img src="https://m.media-amazon.com/images/I/311bCYwRq4L._SL160_.jpg" alt="ガーミン フォアアスリート 45 / 45S GARMIN ForeAthlete 45 / 45S フォアアスリート + GARMIN(ガーミン) 液晶保護フィルム FA645/245用と、TRAN(トラン)(R)マイクロファイバークロスセット (ブラック)" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07WG1QZHJ/gensobunya-22/" name="amachazllink" target="_blank">ガーミン フォアアスリート 45 / 45S GARMIN ForeAthlete 45 / 45S フォアアスリート + GARMIN(ガーミン) 液晶保護フィルム FA645/245用と、TRAN(トラン)(R)マイクロファイバークロスセット (ブラック)</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://amachazl.com/browse/B07WG1QZHJ/gensobunya-22" title="ガーミン フォアアスリート 45 / 45S GARMIN ForeAthlete 45 / 45S フォアアスリート + GARMIN(ガーミン) 液晶保護フィルム FA645/245用と、TRAN(トラン)(R)マイクロファイバークロスセット (ブラック) - 甘茶蔓 (amachazl)" target="_blank">amachazl</a></div></div><div class="amachazl-detail">売り上げランキング: 8,393<br /></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B07WG1QZHJ/gensobunya-22/" name="amachazllink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<AmazonLinkBox url="https://www.amazon.co.jp/exec/obidos/ASIN/B07WG1QZHJ/gensobunya-22/" />
 
 ### 睡眠と安静時心拍とコンディション
 
@@ -82,7 +82,7 @@ cover: "./healthcare_relation.png"
 
 体重を記録するだけでなく、GARAMIN CONNECT や先ほど紹介した myfitnesspal に連携できる点がミソです。タニタなど国内メーカーはどうにもこの点が弱いので…IFTTT に対応してくれれば何でもできるんですが、どうにもイケてない…
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/" name="amachazllink" target="_blank"><img src="https://m.media-amazon.com/images/I/31Pa4HV9JyL._SL160_.jpg" alt="Withings Body + フランス生まれのスマート体重計 ホワイト Wi-Fi/Bluetooth対応 体組成計 【日本正規代理店品】 WBS05-WHITE-ALL-JP" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/" name="amachazllink" target="_blank">Withings Body + フランス生まれのスマート体重計 ホワイト Wi-Fi/Bluetooth対応 体組成計 【日本正規代理店品】 WBS05-WHITE-ALL-JP</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://amachazl.com/browse/B071ZG8JP2/gensobunya-22" title="Withings Body + フランス生まれのスマート体重計 ホワイト Wi-Fi/Bluetooth対応 体組成計 【日本正規代理店品】 WBS05-WHITE-ALL-JP - 甘茶蔓 (amachazl)" target="_blank">amachazl</a> at 2020.03.29</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/" name="amachazllink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<AmazonLinkBox url="https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/" />
 
 ## WEB 連携！
 
