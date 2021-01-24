@@ -44,8 +44,7 @@ Dugast は直販か Bike24 が安いが、初期不良が多いので国内で�
 
 ### DMR - V12 フラットペダル
 
-<a href="https://www.wiggle.jp/dmr-v12-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%9A%E3%83%80%E3%83%AB-1/" target="_blank" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" border="0"><img src='https://www.wigglestatic.com/product-media/5360096730/DMR-V12-PEDAL-Flat-Pedals-Polished-DMR-VV12-S9-1.jpg?w=430&h=430&a=7' border='0' width='350' height='350' /></a>  
-<a href="https://www.wiggle.jp/dmr-v12-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%9A%E3%83%80%E3%83%AB-1/" target="_blank" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" border="0">DMR - V12 フラットペダル</a>
+<LinkBox url="https://www.wiggle.jp/dmr-v12-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%9A%E3%83%80%E3%83%AB-1/" />
 
 MTB グッズで今年最も良かったものがこれ。そこそこのお値段でクリーンな見た目（すごく薄くはないが金属ペダルの中では薄い方）を実現してくれる。ピンの食いつきも良くホップも楽ちんだし、FIVE TEN のシューズとの組み合わせでビンディングのように食いついてくれる。
 

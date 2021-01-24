@@ -52,7 +52,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
           src={ogpData.imageUrl}
           alt={ogpData.title}
           fit="cover"
-          fallbackSrc={`https://via.placeholder.com/150?Text=${ogpData.siteName}`}
+          fallbackSrc="https://via.placeholder.com/150?text=NoImage"
         />
       </Box>
       <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
@@ -77,8 +77,9 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
               display="inline-flex"
               fontWeight="Bold"
               mt={3}
+              isTruncated
             >
-          <Image src={ogpData.ogpIcon} alt="favicon" maxHeight="2em" />{ogpData.siteName}
+          <Image src={ogpData.ogpIcon} alt="favicon" maxHeight="2em" fallbackSrc="https://via.placeholder.com/24?text=favicon" />{ogpData.siteName}
           </Text> 
         </Link>
       </Box>

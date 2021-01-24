@@ -62,7 +62,9 @@ cover: "./healthcare_relation.png"
 
 そうすると、次にやることは当然摂取カロリーの可視化です。UNDER ARMOUR 社が提供している[myfitnesspal](https://www.myfitnesspal.com/ja/)を使うと、食材もしくはメニューから簡単に摂取カロリーを計算できます。
 
-<div class="appreach"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/37/a7/b1/37a7b1fd-e53c-0f07-4454-d2dd3bbcb875/source/512x512bb.jpg" alt="MyFitnessPal" class="appreach__icon"><div class="appreach__detail"><p class="appreach__name">MyFitnessPal</p><p class="appreach__info"><span class="appreach__developper">Under Armour, Inc.</span><span class="appreach__price">無料</span><span class="appreach__posted">posted with<a href="https://mama-hack.com/app-reach/" title="アプリーチ" target="_blank" rel="nofollow">アプリーチ</a></span></p></div><div class="appreach__links"><a href="https://apps.apple.com/jp/app/myfitnesspal/id341232718?uo=4" rel="nofollow" class="appreach__aslink"><img src="https://nabettu.github.io/appreach/img/itune_ja.svg"></a><a href="https://play.google.com/store/apps/details?id=com.myfitnesspal.android" rel="nofollow" class="appreach__gplink"><img src="https://nabettu.github.io/appreach/img/gplay_ja.png"></a></div></div>
+<LinkBox url="https://play.google.com/store/apps/details?id=com.myfitnesspal.android" />
+
+<LinkBox url="https://apps.apple.com/jp/app/myfitnesspal/id341232718?uo=4" />
 
 なおかつ、目標体重を設定することで GARMIN CONNECT や STRAVA から消費カロリーをインポートできるので、一日の消費カロリーと摂取カロリーを比較して理想的なバランスになっているか毎日モニタリングすることができます。栄養組成目標も無料で設定できるので、タンパク質をベースに目標設定しています。
 
