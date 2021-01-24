@@ -25,7 +25,7 @@ tags: ["TIPS", "TOURING"]
 
 地味なメーカーだが回転の良さと、工具無しで取り外すことができる Ezy ペダルには定評がある。
 
-寄付額は 10000/15000/25000 円で別れており、それぞれ<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001F2WTLU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">LAMBDA</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00ME93CG4/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">PRIME SYLVAN TOURING</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OOII5CO/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">CYGMA Ezy</a>を返礼品としてもらうことが出来る。
+寄付額は 10000/15000/25000 円で別れており、それぞれ<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001F2WTLU/gensobunya-22/ref=nosim/" target="_blank">LAMBDA</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00ME93CG4/gensobunya-22/ref=nosim/" target="_blank">PRIME SYLVAN TOURING</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OOII5CO/gensobunya-22/ref=nosim/" target="_blank">CYGMA Ezy</a>を返礼品としてもらうことが出来る。
 
 特にシグマ Ezy は輪行時に威力を発揮するのでツーリング派は是非視野に入れて欲しい。
 
@@ -45,63 +45,13 @@ tags: ["TIPS", "TOURING"]
 
 その他、コーヒーを淹れるための<a href="http://amzn.to/2fEOgkt" target="_blank">ジェットボイル</a>などもこれを機会に買って
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00U72QEFQ/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="Helinox(ヘリノックス) チェアワン ブラック 1822151-BK" src="https://images-fe.ssl-images-amazon.com/images/I/51nfUZFnz9L._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00U72QEFQ/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Helinox(ヘリノックス) チェアワン ブラック 1822151-BK</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.11.10
-</div>
-
-<div class="amazlet-detail">
-Helinox(ヘリノックス)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00U72QEFQ/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00U72QEFQ/gensobunya-22/ref=nosim/" />
 
 また、シクロクロスシーズンでは待ち時間に冷え込むことが想定されるので、ウェアの上からダウンベストを着ている。
 
 ユニクロとは違い圧倒的な保温性と折りたたみ性能となっている上、ベストなので出走直前にストレス無く脱ぐことが出来る。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00F68FLVO/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="(モンベル)mont-bell アウトドアウェア メンズ ライトアルパインダウン ベスト 1101432 BK ブラック M" src="https://images-fe.ssl-images-amazon.com/images/I/41coVkgQOqL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00F68FLVO/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(モンベル)mont-bell アウトドアウェア メンズ ライトアルパインダウン ベスト 1101432 BK ブラック M</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.11.10
-</div>
-
-<div class="amazlet-detail">
-mont-bell (2016-09-29)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00F68FLVO/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00F68FLVO/gensobunya-22/ref=nosim/" />
 
 御存知の通り、モンベルは自転車製品も充実している。  
 トゥーカバーなどの防風・防水製品類は本業の山岳ギアの性能が反映されていて非常にクオリティが高い。
@@ -109,29 +59,4 @@ mont-bell (2016-09-29)
 最近流行りのバイクパッキングに最適なウルトラライトのキャンプギアも充実しているので、実によりどりみどりといった具合。  
 ふるさと納税の控除上限は決まっているので、各自しっかり調べた上でうまく活用して良い自転車ライフを送ろう。
 
-<div class="amazlet-box" style="margin-bottom:0px;">
-  <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00INR93EQ/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41p2FYnGrnL._SL160_.jpg" alt="(モンベル)mont-bell サンダーパス ジャケット Men's 1128344 PA/RB パプリカ/レッドブリック XL" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
-    <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00INR93EQ/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(モンベル)mont-bell サンダーパス ジャケット Men&#8217;s 1128344 PA/RB パプリカ/レッドブリック XL</a></p>
-
-<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 16.11.10
-</div>
-
-<div class="amazlet-detail">
-mont-bell (2015-01-16)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00INR93EQ/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00INR93EQ/gensobunya-22/ref=nosim/" />

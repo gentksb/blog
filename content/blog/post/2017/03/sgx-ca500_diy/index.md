@@ -49,29 +49,4 @@ SGX-CA500 のマウント下部には謎のネジ穴があったので、これ�
 ちなみに、これを作っている間に<a href="https://speedfil.com/accessories/pioneer-adapter-kit#1456026403398-87c3bace-faa6" target="_blank">こんなスマートなもの</a>が発表されていた。  
 BARFLY と組み合わせれば似た感じにマウントできるが、ゴムバンドを使わない分自作マウントのほうが上だな！
 
-<div class="amazlet-box" style="margin-bottom:0px;">
-  <div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01B0D7FBC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/31QlI0JP8qL._SL160_.jpg" alt="REC-MOUNTS(レックマウント) 下部アダプター用 シマノ Di2ジャンクション スペーサー Di2 Junction Spacer for lower Adapter 【 Di2-EW90-400Spacer" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height:120%; margin-bottom: 10px">
-    <div class="amazlet-name" style="margin-bottom:10px;line-height:120%">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01B0D7FBC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">REC-MOUNTS(レックマウント) 下部アダプター用 シマノ Di2ジャンクション スペーサー Di2 Junction Spacer for lower Adapter 【 Di2-EW90-400Spacer</a></p>
-
-<div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">
-  posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 17.03.25
-</div>
-
-<div class="amazlet-detail">
-REC-MOUNTS(レックマウント)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01B0D7FBC/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01B0D7FBC/gensobunya-22/ref=nosim/" />

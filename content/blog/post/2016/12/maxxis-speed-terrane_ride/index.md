@@ -93,29 +93,4 @@ Speed Terrane の得意分野はドライコースや重い芝のコースなの
 
 他人のシケインと比べるとサイドノブは低いですが、サンド使うよりはよほどサイドグリップがいいので安心してコーナー突っ込めます。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="MAXXIS(マキシス) スピードテレ-ン 700x33C EXO/TR TB88998100" src="https://images-fe.ssl-images-amazon.com/images/I/41RCDGuxsYL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">MAXXIS(マキシス) スピードテレ-ン 700x33C EXO/TR TB88998100</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.12.11
-</div>
-
-<div class="amazlet-detail">
-MAXXIS(マキシス)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />

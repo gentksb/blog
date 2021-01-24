@@ -36,62 +36,22 @@ tags: ["REVIEW", "ROAD"]
 2016 年モデルまで、ディスクロードは殆どがいわゆる「エンデュランスモデル」だったが 2017 年モデルで一気にレース向けのフレームが登場した。
 Solacio も良いフレームだったが、バッカスに乗っていた頃のロードバイクらしい軽快感が欲しくなったのでブランドとしての安心感もあって TCR に決定！
 
-    リムブレーキモデルに、何も考えずディスクブレーキをポン付けすると、スルーアクスルと相まって剛性バランスが崩れるという話もあったが、現行TCR（リムブレーキ）の開発時から並行してディスクロードを開発しているという記事を読んでいたので、設計も煮詰められていると信用してみた。
+リムブレーキモデルに、何も考えずディスクブレーキをポン付けすると、スルーアクスルと相まって剛性バランスが崩れるという話もあったが、現行 TCR（リムブレーキ）の開発時から並行してディスクロードを開発しているという記事を読んでいたので、設計も煮詰められていると信用してみた。
 
 ### First Review
 
-![image](362)
+![image](./DSC_0311.jpg)
 
-  <p>
-    ディスクロードは重くなるというのが定説だが、完成車のカタログ重量でこいつは7.5kgである。一般的なロードバイクと比べても遜色ない、むしろ検車で変な顔されないラインとしては十分だ。
-  </p>
+ディスクロードは重くなるというのが定説だが、完成車のカタログ重量でこいつは 7.5kg である。一般的なロードバイクと比べても遜色ない、むしろ検車で変な顔されないラインとしては十分だ。
 
-  <p>
-    ペダル（PD-9000 +4mm）・ボトルケージ・サイコンを装着し、コンポを9070に変更した上でパイオニアのペダリングモニター（両側）を装着した実重量は…
-  </p>
+ペダル（PD-9000 +4mm）・ボトルケージ・サイコンを装着し、コンポを 9070 に変更した上でパイオニアのペダリングモニター（両側）を装着した実重量は…
 
-![image](320)
+![image](./DSC_0312.jpg)
 
-  <p>
-    7.8kgでした！<br /> パワーメーター付けたにしてはまぁまぁ軽量。ホイールをチューブラーにしてハンドルとサドルを交換して…と軽量化の余地はあるものの、あんまり頑張る必要もないレベルには軽量。
-  </p>
+7.8kg でした！<br /> パワーメーター付けたにしてはまぁまぁ軽量。ホイールをチューブラーにしてハンドルとサドルを交換して…と軽量化の余地はあるものの、あんまり頑張る必要もないレベルには軽量。
 
-  <p>
-    ちなみに納車時はブレーキホースがダウンチューブに入る部分のグロメットが無かったが、ショップ曰く元から入っていなかったとかなんとか。<br /> そんなわけないのでGIANTジャパンに確認依頼したらやはり入れ忘れとのこと。<br /> 内容物一覧がそもそも同梱されない文化なので入れ忘れ検知できないらしいけどそれは仕事としてどうなんだろう…
-  </p>
+ちなみに納車時はブレーキホースがダウンチューブに入る部分のグロメットが無かったが、ショップ曰く元から入っていなかったとかなんとか。<br /> そんなわけないので GIANT ジャパンに確認依頼したらやはり入れ忘れとのこと。<br /> 内容物一覧がそもそも同梱されない文化なので入れ忘れ検知できないらしいけどそれは仕事としてどうなんだろう…
 
-  <p>
-    First reviewなので実走のインプレは後ほど。
-  </p>
+First review なので実走のインプレは後ほど。
 
-  <p>
-
-    <div class="amazlet-box" style="margin-bottom: 0px;">
-
-<div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B006E4J034/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="ASHIMA(アシマ) ディスクローター  ブラック 180 mm" src="https://images-fe.ssl-images-amazon.com/images/I/41Oi9igxO4L._SL160_.jpg" style="border: none;" /></a>
-</div>
-
-<div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-  <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B006E4J034/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ASHIMA(アシマ) ディスクローター ブラック 180 mm</a></p>
-
-    <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-
-posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.10.25
-
-  </div>
-
-  <div class="amazlet-detail">
-    ASHIMA(アシマ)
-  </div>
-
-  <div class="amazlet-sub-info" style="float: left;">
-    <div class="amazlet-link" style="margin-top: 5px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B006E4J034/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-
-  </div>
-</div>
-
-<div class="amazlet-footer" style="clear: left;">
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B006E4J034/gensobunya-22/ref=nosim/" />

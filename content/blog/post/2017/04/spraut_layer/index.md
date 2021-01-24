@@ -43,32 +43,7 @@ tags: ["REVIEW", "TOURING", "Workout", "RACE"]
 
 ちょっとした峠や、強度の高いトレーニングに GOOD。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001XYBXU8/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="CRAFT(クラフト) ノースリーブメッシュスーパーライト 194378 (1999) ブラック M" src="https://images-fe.ssl-images-amazon.com/images/I/41bxTdaW9LL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001XYBXU8/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">CRAFT(クラフト) ノースリーブメッシュスーパーライト 194378 (1999) ブラック M</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.25
-</div>
-
-<div class="amazlet-detail">
-CRAFT(クラフト)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001XYBXU8/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B001XYBXU8/gensobunya-22/ref=nosim/" />
 
 #### 3. 夏ジャージ+夏インナー＋ウィンドブレーカー
 
@@ -76,32 +51,7 @@ CRAFT(クラフト)
 
 渋峠や乗鞍のような長い下りがある場合もこれ。10km 以下の下りなら腕が出ていても平気だが、標高が高かったり下りが長くなってくるとかなり腕だけでもかなり体温を持っていかれるので長袖のウィンドブレーカーがあったほうがいい。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00K71I28Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="(アウトウェット)OUTWET SLP1 10O021SLP1B BK BK FREE" src="https://images-fe.ssl-images-amazon.com/images/I/51oNY9YV9cL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00K71I28Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(アウトウェット)OUTWET SLP1 10O021SLP1B BK BK FREE</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.25
-</div>
-
-<div class="amazlet-detail">
-outwet(アウトウェット) (2014-05-08)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00K71I28Y/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00K71I28Y/gensobunya-22/ref=nosim/" />
 
 ### 夏インナー万能説
 
@@ -119,29 +69,4 @@ CRAFT はペラペラで表面積が大きく、いかにも涼しそうだが O
 
 レイヤリングについては並々ならぬこだわりがあるメーカーなので、購入はせずとも、<a href="https://www.finetrack.com/products/" target="_blank">レイヤリングについてのページ</a>は一度目を通してみることをおすすめする。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00UBHC3WU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="ファイントラック（finetrack） スキンメッシュ ノースリーブ メンズ BK FUM0416 M" src="https://images-fe.ssl-images-amazon.com/images/I/41ejPfyElJL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00UBHC3WU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ファイントラック（finetrack） スキンメッシュ ノースリーブ メンズ BK FUM0416 M</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.04.25
-</div>
-
-<div class="amazlet-detail">
-finetrack(ファイントラック)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00UBHC3WU/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00UBHC3WU/gensobunya-22/ref=nosim/" />

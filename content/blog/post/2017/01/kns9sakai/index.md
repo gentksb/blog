@@ -59,32 +59,8 @@ C1 のバニホを勉強して自分も跳べるようになりたい
 
 足元には足用カイロ、手には台所用のゴム手袋を装備して臨む。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="ショーワグローブ 【パウダーフリー】No.881 ニトリスト・フィット 100枚入 ブルー Sサイズ 1函" src="https://images-fe.ssl-images-amazon.com/images/I/41GSVQ4PwQL._SL160_.jpg" style="border: none;" /></a>
-  </div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" />
 
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ショーワグローブ 【パウダーフリー】No.881 ニトリスト・フィット 100枚入 ブルー Sサイズ 1函</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.01.16
-</div>
-
-<div class="amazlet-detail">
-ショーワグローブ <br /> 売り上げランキング: 37
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-</div>
-</br>
-</br>
-</br>
 安物だがラテックス製なので、理論的には<a href="http://amzn.to/2iD1DEr" target="_blank">Velotoze</a>と同等の効果を得られるはずという目論見は大当たり。
 
 通常のグローブの上からこれを着用することで完全な防風を実現した上で、伸縮性のあるゴムのおかげでグリップ力や操作性も犠牲にしない。
@@ -93,29 +69,4 @@ C1 のバニホを勉強して自分も跳べるようになりたい
 
 スキーウェアはかさばるので、モンベルの店頭のパーカーを品定めする日々が続いている…
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="(モンベル)mont-bell パーマフロスト ライトダウンパーカ Men's 1101501 IKBL インクブルー L" src="https://images-fe.ssl-images-amazon.com/images/I/41eeHlqHg7L._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">(モンベル)mont-bell パーマフロスト ライトダウンパーカ Men&#8217;s 1101501 IKBL インクブルー L</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.01.16
-</div>
-
-<div class="amazlet-detail">
-mont-bell（モンベル）
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" />

@@ -151,33 +151,6 @@ SS 故に平地の速度は 29km/h ほど（ケイデンス 100-110）が精一�
 
 ここまで快適だと、ギアード CX が戻ってきたときにロードの必要性を考えなければいけないかもしれない…
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00QHS8BQE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="IRC tire IRC SERACCX SAND TUBELESS M134/TL 19048M 700X32c ブラック" src="https://images-fe.ssl-images-amazon.com/images/I/41GHJcgub0L._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-<div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00QHS8BQE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">IRC tire IRC SERACCX SAND TUBELESS M134/TL 19048M 700X32c ブラック</a></p>
-
-  <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.05.06
-  </div>
-</div>
-
-<div class="amazlet-detail">
-  IRC tire <br /> 売り上げランキング: 95,439
-</div>
-
-<div class="amazlet-sub-info" style="float: left;">
-  <div class="amazlet-link" style="margin-top: 5px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00QHS8BQE/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-  </div>
-</div>
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00QHS8BQE/gensobunya-22/ref=nosim/" />
 
 [1]: https://latlonglab.yahoo.co.jp/route/watch?id=640ae6ec2fbbc24f4ee241d39575d3f9 "敦賀ツーリング北摂コース - ルートラボ - LatLongLab"

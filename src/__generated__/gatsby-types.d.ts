@@ -770,6 +770,7 @@ enum FileFieldsEnum {
   childrenMdx___frontmatter___cover___children = 'childrenMdx.frontmatter.cover.children',
   childrenMdx___frontmatter___tags = 'childrenMdx.frontmatter.tags',
   childrenMdx___frontmatter___draft = 'childrenMdx.frontmatter.draft',
+  childrenMdx___frontmatter___custom_permalink = 'childrenMdx.frontmatter.custom_permalink',
   childrenMdx___slug = 'childrenMdx.slug',
   childrenMdx___body = 'childrenMdx.body',
   childrenMdx___excerpt = 'childrenMdx.excerpt',
@@ -868,6 +869,7 @@ enum FileFieldsEnum {
   childMdx___frontmatter___cover___children = 'childMdx.frontmatter.cover.children',
   childMdx___frontmatter___tags = 'childMdx.frontmatter.tags',
   childMdx___frontmatter___draft = 'childMdx.frontmatter.draft',
+  childMdx___frontmatter___custom_permalink = 'childMdx.frontmatter.custom_permalink',
   childMdx___slug = 'childMdx.slug',
   childMdx___body = 'childMdx.body',
   childMdx___excerpt = 'childMdx.excerpt',
@@ -1836,6 +1838,7 @@ enum MdxFieldsEnum {
   frontmatter___cover___internal___type = 'frontmatter.cover.internal.type',
   frontmatter___tags = 'frontmatter.tags',
   frontmatter___draft = 'frontmatter.draft',
+  frontmatter___custom_permalink = 'frontmatter.custom_permalink',
   slug = 'slug',
   body = 'body',
   excerpt = 'excerpt',
@@ -1974,6 +1977,7 @@ type MdxFrontmatter = {
   readonly cover: Maybe<File>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly draft: Maybe<Scalars['Boolean']>;
+  readonly custom_permalink: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
 };
 
 
@@ -1992,6 +1996,7 @@ type MdxFrontmatterFilterInput = {
   readonly cover: Maybe<FileFilterInput>;
   readonly tags: Maybe<StringQueryOperatorInput>;
   readonly draft: Maybe<BooleanQueryOperatorInput>;
+  readonly custom_permalink: Maybe<StringQueryOperatorInput>;
 };
 
 type MdxGroupConnection = {
