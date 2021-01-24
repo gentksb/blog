@@ -8,7 +8,7 @@ cover: "./cover.jpg"
 
 ![overview](./top.jpg)
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.giant.co.jp/giant21/acc_datail.php?p_id=A0002134" data-iframely-url="//cdn.iframe.ly/d1gUALp"></a></div></div>
+<LinkBox url="https://www.giant.co.jp/giant21/acc_datail.php?p_id=A0002134" />
 
 本製品は、特に安いわけでもなく(2000 円)、軽いわけでもない(33g)。
 

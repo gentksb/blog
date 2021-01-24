@@ -18,13 +18,13 @@ cover: "./compare.jpg"
 
 ## 機能性に富んだ薄型財布メーカー Allet
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.all-ett.com/" data-iframely-url="//cdn.iframe.ly/NxI2obn?iframe=card-small"></a></div></div>
+<LinkBox url="https://www.all-ett.com/" />
 
 これがお気に入りのメーカー、Allet だ。特殊な耐水ナイロン製の財布と、表面にレザーをあしらったモデルの大きく二つの製品ラインがあり、それぞれ RFID スキミングの防御機能を持ったパスポートの入る財布から、小銭入れ別体型、コインも入るタイプなど多数の製品を出している。
 
 薄さと機能もさることながら、価格も非常に安いのが特徴。ナイロン製の Coin wallet（カード 12 枚と札入れ 2 個所、小銭ポケット付き）がたったの 35 ドルだ。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.all-ett.com/products/nylon-coin-wallet" data-iframely-url="//cdn.iframe.ly/LRmLx63?iframe=card-small"></a></div></div>
+<LinkBox url="https://www.all-ett.com/products/nylon-coin-wallet" />
 
 現在愛用しているレザータイプのものと、ナイロンタイプのものを見比べていきたい
 
@@ -64,7 +64,7 @@ cover: "./compare.jpg"
 
 そのほかにも最小限の中身になる Sports wallet や、極小ペンの入る財布など、様々なモデルがあるので是非見てほしい。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 53.3203%; padding-top: 120px;"><a href="https://www.all-ett.com/collections/view-all" data-iframely-url="//cdn.iframe.ly/sNIBweb"></a></div></div>
+<LinkBox url="https://www.all-ett.com/collections/view-all" />
 
 自分はパスポートの保管にもこのメーカーの製品を使っている。場所を取らずレザー製で見た目もよく、RFID ガードもある。
 
