@@ -45,7 +45,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
 
 
   return (
-    <Box p={4} display="flex" borderWidth="1px" borderRadius="xl">
+    <Box p={4} display="flex" borderWidth="1px" borderRadius="xl" mb={[2,2,3,3]}>
       <Box flexShrink={1}>
         <Image
           borderRadius="lg"
