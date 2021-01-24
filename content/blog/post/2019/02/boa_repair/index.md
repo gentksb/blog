@@ -12,7 +12,7 @@ cover: "./overview.jpg"
 
 きっかけは前橋 CX で太い枝に引っ掛けて左シューズの BOA ダイヤルを破壊したこと。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">粉☆砕 <a href="https://t.co/Goae6QqbeD">pic.twitter.com/Goae6QqbeD</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1094467428623409154?ref_src=twsrc%5Etfw">February 10, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">粉☆砕 <a href="https://t.co/Goae6QqbeD">pic.twitter.com/Goae6QqbeD</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1094467428623409154?ref_src=twsrc%5Etfw">February 10, 2019</a></blockquote>
 
 レース自体はピットでシューズを借りてなんとか完走したものの、最終戦で機材を壊す（大転倒でエンドも曲げた）ので悲しさ半分ネタゲットという喜び半分。  
 写真をアップロードしたところ、友人から「それ直るよ」との助言が。

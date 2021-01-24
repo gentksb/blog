@@ -69,7 +69,7 @@ JCX ポイント集めに精力的だったこともあり、48 番という良�
 
 そして、年初の自分の計画通りに事を進めていたことを Twilog で知る。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今年のJCXは5ptでフィニッシュなので来年80ptくらい取らないと全日本は厳しいですね…</p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/955040608325808129?ref_src=twsrc%5Etfw">January 21, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今年のJCXは5ptでフィニッシュなので来年80ptくらい取らないと全日本は厳しいですね…</p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/955040608325808129?ref_src=twsrc%5Etfw">January 21, 2018</a></blockquote>
 
 SS クラス及び男子エリートにエントリーしてます。  
 しっかり計画的を立ててポイントゲットして全日本という目標達成できたことに対して素直に嬉しい。

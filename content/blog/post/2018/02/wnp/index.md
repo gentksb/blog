@@ -34,7 +34,6 @@ cover: 20180226_top.jpg
 ## 低圧チューブラーは…いいぞ
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">ケーシングが変形しやすいからか低圧でも走りが軽いママなの偉大ですよね。砂はチューブレスやクリンチャーでやりたくない1.0〜1.1 barとかのヨレヨレのズルズルにしてやっと違いが出るかも</p>&mdash; 小山浩之™ (@0yama) <a href="https://twitter.com/0yama/status/966950721294712832?ref_src=twsrc%5Etfw">2018年2月23日</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ほう…1.1bar ですか…\
 チューブレスでやったら即タイヤ外れる領域…
