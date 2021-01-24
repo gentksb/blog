@@ -63,6 +63,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
           lineHeight="normal"
           fontWeight="semibold"
           href={url}
+          isExternal
         >
           <Text noOfLines={[1,1,2,2]} as="span"><ExternalLinkIcon />{ogpData.title}</Text>
         </Link>

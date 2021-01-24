@@ -37,7 +37,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, image_url} ) => {
           const document = new DOMParser().parseFromString(data, "text/html")
           const title = document.querySelector("meta[property='og:title']")?.getAttribute('content') || document.querySelector("meta[name='title']")?.getAttribute('content') || document.querySelector('title')?.innerText || ""
           const asin = document.querySelector("#ASIN")?.getAttribute('value')
-          const imageUrl = image_url || `https://images-na.ssl-images-amazon.com/images/P/${asin}.09.LZZZZZZZ.jpg`
+          const imageUrl = image_url || `https://images-na.ssl-images-amazon.com/images/P/${asin}.09.MZZZZZZZ.jpg`
           const description = document.querySelector("meta[property='og:description']")?.getAttribute('content') || document.querySelector("meta[name='description']")?.getAttribute('content') || ""
           const siteName = document.querySelector("meta[property='og:site_name']")?.getAttribute('content') || urlDomain
           const siteIcon = "https://www.amazon.co.jp/favicon.ico"
@@ -77,6 +77,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, image_url} ) => {
           lineHeight="normal"
           fontWeight="semibold"
           href={url}
+          isExternal
         >
           <Text noOfLines={[1,1,2,2]} as="span"><ExternalLinkIcon />{ogpData.title}</Text>
         </Link>
