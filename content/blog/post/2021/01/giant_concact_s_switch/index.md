@@ -10,7 +10,7 @@ cover: "./cover.jpg"
 
 <LinkBox url="https://blog.gensobunya.net/post/2017/04/goodmtbgears/" />
 
-今では後継品の[ASCEND II](https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fbrand-x-ascend-%25E3%2583%2589%25E3%2583%25AD%25E3%2583%2583%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%2588%25E3%2583%259D%25E3%2582%25B9%25E3%2583%2588-125-150mm-%2Frp-prod149024%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates) が発売されているが、100mm モデルがなくなってしまった…
+今では後継品の[ASCEND II](https://www.chainreactioncycles.com/jp/ja/brand-x-ascend-%E3%83%89%E3%83%AD%E3%83%83%E3%83%91%E3%83%BC%E3%82%B7%E3%83%BC%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88-125-150mm-/rp-prod149024) が発売されているが、100mm モデルがなくなってしまった…
 
 そのうえ、割引がほぼなくなっており 2 万円程度に実質値上がり。そのため、同価格帯の信頼あるメーカー…GIANT のドロッパーポストを使ってみることにした。
 
@@ -56,19 +56,19 @@ GIANT はレバー側でインナーワイヤーの張り具合を調整する�
 
 ### レバーの互換性について
 
-自分はこれまでドロッパーポストのレバーは自由に変えられると思っていた。（[Wolftooth](https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fwolf-tooth-remote-light-action-dropper-lever%2Frp-prod192985%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates)など、単品で出しているメーカーがある…）
+自分はこれまでドロッパーポストのレバーは自由に変えられると思っていた。（[Wolftooth](https://www.chainreactioncycles.com/jp/ja/wolf-tooth-remote-light-action-dropper-lever/rp-prod192985)など、単品で出しているメーカーがある…）
 
 しかし、今回比較した 2 メーカーの間では明らかにレバーの互換性がない。ワイヤーを通す方向が逆なのだから交換しようがない。どっちが一般的な方式なんだ？ということで調べてみた。
 
 Wolftooth の製品は、レバー側はタイコではなくワイヤー固定だ。
 
-<LinkBox url="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fwolf-tooth-remote-light-action-dropper-lever%2Frp-prod192985%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" />
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/wolf-tooth-remote-light-action-dropper-lever/rp-prod192985" />
 
 ![WT lever behind](./wt.png)
 
 Brand-X にはアップグレード用レバーがあるが、これは当然レバー側にタイコ。
 
-<LinkBox url="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fbrand-x-ascend-%25E3%2583%25AC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588-v2-%25E3%2582%25AE%25E3%2582%25A2-x1-%2Frp-prod176215%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliat" />
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/brand-x-ascend-%E3%83%AC%E3%83%90%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-v2-%E3%82%AE%E3%82%A2-x1-/rp-prod176215" />
 
 そのほか、RACEFACE もシートポストにタイコ前提に見えた。FOX は確信の持てる画像がなかったが、シートポスト側の固定部は ASCEND と同様の構造をしているように見える。
 

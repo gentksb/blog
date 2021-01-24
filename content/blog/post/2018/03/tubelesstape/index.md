@@ -117,6 +117,6 @@ WTB の大ロールは非常にコストパフォーマンスが高い。5 巻�
 
 他に評判が良いのは Notubes の上位機種である[Race Sealant](https://amzn.to/2Ix0Yyu)や[Vittoria のシーラント](https://amzn.to/2HfhDHq)
 
-ブログだと引用の都合上 Amazon リンクが多いが、自転車関連品は自動設定された価格が異常に高くなっていることが目につくため、<<a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104724" target="_blank" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" border="0">Wiggle</a>とか使ったほうが良さそう。
+ブログだと引用の都合上 Amazon リンクが多いが、自転車関連品は自動設定された価格が異常に高くなっていることが目につくため、[Wiggle](https://www.wiggle.jp/) とか使ったほうが良さそう。
 
 <AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" />
