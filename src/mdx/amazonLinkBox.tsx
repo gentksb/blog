@@ -67,6 +67,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, image_url} ) => {
           alt={ogpData.title}
           fit="cover"
           fallbackSrc="https://via.placeholder.com/150?text=NoImage"
+          paddingRight={[2,2,3,3]}
         />
       </Box>
       <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
