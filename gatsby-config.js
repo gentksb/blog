@@ -49,7 +49,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 960,
+              maxWidth: 1200, //discover用
               wrapperStyle: `margin-bottom: 16px;`,
               quality: 80,
               withWebp: true,
