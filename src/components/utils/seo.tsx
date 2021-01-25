@@ -57,6 +57,10 @@ const SEO : React.FunctionComponent<Props> = (props) => {
       }
       meta={[
         {
+          name: `robots`,
+          content: `max-image-preview:large`
+        },
+        {
           name: `description`,
           content: metaDescription,
         },
