@@ -730,7 +730,6 @@ enum FileFieldsEnum {
   childrenMdx___frontmatter___author = 'childrenMdx.frontmatter.author',
   childrenMdx___frontmatter___type = 'childrenMdx.frontmatter.type',
   childrenMdx___frontmatter___date = 'childrenMdx.frontmatter.date',
-  childrenMdx___frontmatter___tags = 'childrenMdx.frontmatter.tags',
   childrenMdx___frontmatter___cover___sourceInstanceName = 'childrenMdx.frontmatter.cover.sourceInstanceName',
   childrenMdx___frontmatter___cover___absolutePath = 'childrenMdx.frontmatter.cover.absolutePath',
   childrenMdx___frontmatter___cover___relativePath = 'childrenMdx.frontmatter.cover.relativePath',
@@ -769,6 +768,7 @@ enum FileFieldsEnum {
   childrenMdx___frontmatter___cover___childrenMdx = 'childrenMdx.frontmatter.cover.childrenMdx',
   childrenMdx___frontmatter___cover___id = 'childrenMdx.frontmatter.cover.id',
   childrenMdx___frontmatter___cover___children = 'childrenMdx.frontmatter.cover.children',
+  childrenMdx___frontmatter___tags = 'childrenMdx.frontmatter.tags',
   childrenMdx___frontmatter___draft = 'childrenMdx.frontmatter.draft',
   childrenMdx___frontmatter___custom_permalink = 'childrenMdx.frontmatter.custom_permalink',
   childrenMdx___slug = 'childrenMdx.slug',
@@ -829,7 +829,6 @@ enum FileFieldsEnum {
   childMdx___frontmatter___author = 'childMdx.frontmatter.author',
   childMdx___frontmatter___type = 'childMdx.frontmatter.type',
   childMdx___frontmatter___date = 'childMdx.frontmatter.date',
-  childMdx___frontmatter___tags = 'childMdx.frontmatter.tags',
   childMdx___frontmatter___cover___sourceInstanceName = 'childMdx.frontmatter.cover.sourceInstanceName',
   childMdx___frontmatter___cover___absolutePath = 'childMdx.frontmatter.cover.absolutePath',
   childMdx___frontmatter___cover___relativePath = 'childMdx.frontmatter.cover.relativePath',
@@ -868,6 +867,7 @@ enum FileFieldsEnum {
   childMdx___frontmatter___cover___childrenMdx = 'childMdx.frontmatter.cover.childrenMdx',
   childMdx___frontmatter___cover___id = 'childMdx.frontmatter.cover.id',
   childMdx___frontmatter___cover___children = 'childMdx.frontmatter.cover.children',
+  childMdx___frontmatter___tags = 'childMdx.frontmatter.tags',
   childMdx___frontmatter___draft = 'childMdx.frontmatter.draft',
   childMdx___frontmatter___custom_permalink = 'childMdx.frontmatter.custom_permalink',
   childMdx___slug = 'childMdx.slug',
@@ -1756,7 +1756,6 @@ enum MdxFieldsEnum {
   frontmatter___author = 'frontmatter.author',
   frontmatter___type = 'frontmatter.type',
   frontmatter___date = 'frontmatter.date',
-  frontmatter___tags = 'frontmatter.tags',
   frontmatter___cover___sourceInstanceName = 'frontmatter.cover.sourceInstanceName',
   frontmatter___cover___absolutePath = 'frontmatter.cover.absolutePath',
   frontmatter___cover___relativePath = 'frontmatter.cover.relativePath',
@@ -1837,6 +1836,7 @@ enum MdxFieldsEnum {
   frontmatter___cover___internal___mediaType = 'frontmatter.cover.internal.mediaType',
   frontmatter___cover___internal___owner = 'frontmatter.cover.internal.owner',
   frontmatter___cover___internal___type = 'frontmatter.cover.internal.type',
+  frontmatter___tags = 'frontmatter.tags',
   frontmatter___draft = 'frontmatter.draft',
   frontmatter___custom_permalink = 'frontmatter.custom_permalink',
   slug = 'slug',
@@ -1974,8 +1974,8 @@ type MdxFrontmatter = {
   readonly author: Maybe<Scalars['String']>;
   readonly type: Maybe<Scalars['String']>;
   readonly date: Maybe<Scalars['Date']>;
-  readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly cover: Maybe<File>;
+  readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly draft: Maybe<Scalars['Boolean']>;
   readonly custom_permalink: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
 };
@@ -1993,8 +1993,8 @@ type MdxFrontmatterFilterInput = {
   readonly author: Maybe<StringQueryOperatorInput>;
   readonly type: Maybe<StringQueryOperatorInput>;
   readonly date: Maybe<DateQueryOperatorInput>;
-  readonly tags: Maybe<StringQueryOperatorInput>;
   readonly cover: Maybe<FileFilterInput>;
+  readonly tags: Maybe<StringQueryOperatorInput>;
   readonly draft: Maybe<BooleanQueryOperatorInput>;
   readonly custom_permalink: Maybe<StringQueryOperatorInput>;
 };
@@ -3561,14 +3561,6 @@ type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
-type BioComponentQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type BioComponentQuery = { readonly avatar: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly githubIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly instaIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly twitterIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'author'>
-      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
-    )> }> };
-
 type TagListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3588,6 +3580,14 @@ type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
       & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
+    )> }> };
+
+type BioComponentQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type BioComponentQuery = { readonly avatar: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly githubIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly instaIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly twitterIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'author'>
+      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
     )> }> };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;

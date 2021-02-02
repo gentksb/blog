@@ -167,6 +167,5 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-lodash`,
   ],
 }
