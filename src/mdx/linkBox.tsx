@@ -1,13 +1,11 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { Box, Image, Link, Text } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
+import firebase from "gatsby-plugin-firebase"
 
 interface Props {
   url : string
 }
-
-const proxyUrl = "https://cors-anywhere.herokuapp.com/"
-const headers = { 'x-requested-with': '' }
 
 const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
   const [ogpData, changeOgpData] = useState(Object)
@@ -16,16 +14,14 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
 
   useEffect(() => {
     try {
-      fetch( proxyUrl + url, {headers: headers})
-        .then(res => res.text())
-        .then(data => {
-          // console.log(data)
-          const document = new DOMParser().parseFromString(data, "text/html")
-          const title = document.querySelector("meta[property='og:title']")?.getAttribute('content') || document.querySelector("meta[name='title']")?.getAttribute('content') || document.querySelector('title')?.innerText || ""
-          const imageUrl = document.querySelector("meta[property='og:image']")?.getAttribute('content') || ""
-          const description = document.querySelector("meta[property='og:description']")?.getAttribute('content') || document.querySelector("meta[name='description']")?.getAttribute('content') || ""
-          const siteName = document.querySelector("meta[property='og:site_name']")?.getAttribute('content') || urlDomain
-          const siteIconPath = document.querySelector("[type='image/x-icon']")?.getAttribute('href') || "/favicon.ico"
+      const getOgpData = firebase.functions().httpsCallable('getOgpLinkData');
+      getOgpData({url: url})
+        .then(result => {
+          const title = result.data.title || document.querySelector("meta[name='title']")?.getAttribute('content') || document.querySelector('title')?.innerText || ""
+          const imageUrl = result.data.imageUrl || ""
+          const description = result.data.description || document.querySelector("meta[name='description']")?.getAttribute('content') || ""
+          const siteName = result.data.siteName || urlDomain
+          const siteIconPath = result.data.ogpIcon || "/favicon.ico"
           const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(

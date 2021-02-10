@@ -50,7 +50,7 @@ export const getOgpLinkData = functions
         defaultClient.host = "webservices.amazon.co.jp"
         defaultClient.region = "us-west-2"
 
-        const api = new ProductAdvertisingAPIv1.DefaultApi()
+        // const api = new ProductAdvertisingAPIv1.DefaultApi()
         var getItemsRequest = new ProductAdvertisingAPIv1.GetItemsRequest()
 
         /** Enter your partner tag (store/tracking id) and partner type */
@@ -74,7 +74,7 @@ export const getOgpLinkData = functions
 
         //この辺にリターン処理
 
-        return
+        return null
       } catch (error) {
         console.error(error)
         result.error = error

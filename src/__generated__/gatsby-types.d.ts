@@ -2997,6 +2997,10 @@ enum SitePageFieldsEnum {
   pluginCreator___pluginOptions___exclude = 'pluginCreator.pluginOptions.exclude',
   pluginCreator___pluginOptions___output = 'pluginCreator.pluginOptions.output',
   pluginCreator___pluginOptions___createLinkInHead = 'pluginCreator.pluginOptions.createLinkInHead',
+  pluginCreator___pluginOptions___features___fucntions = 'pluginCreator.pluginOptions.features.fucntions',
+  pluginCreator___pluginOptions___credentials___apiKey = 'pluginCreator.pluginOptions.credentials.apiKey',
+  pluginCreator___pluginOptions___credentials___projectId = 'pluginCreator.pluginOptions.credentials.projectId',
+  pluginCreator___pluginOptions___credentials___appId = 'pluginCreator.pluginOptions.credentials.appId',
   pluginCreator___pluginOptions___query = 'pluginCreator.pluginOptions.query',
   pluginCreator___pluginOptions___feeds = 'pluginCreator.pluginOptions.feeds',
   pluginCreator___pluginOptions___feeds___query = 'pluginCreator.pluginOptions.feeds.query',
@@ -3218,6 +3222,10 @@ enum SitePluginFieldsEnum {
   pluginOptions___exclude = 'pluginOptions.exclude',
   pluginOptions___output = 'pluginOptions.output',
   pluginOptions___createLinkInHead = 'pluginOptions.createLinkInHead',
+  pluginOptions___features___fucntions = 'pluginOptions.features.fucntions',
+  pluginOptions___credentials___apiKey = 'pluginOptions.credentials.apiKey',
+  pluginOptions___credentials___projectId = 'pluginOptions.credentials.projectId',
+  pluginOptions___credentials___appId = 'pluginOptions.credentials.appId',
   pluginOptions___query = 'pluginOptions.query',
   pluginOptions___feeds = 'pluginOptions.feeds',
   pluginOptions___feeds___query = 'pluginOptions.feeds.query',
@@ -3364,9 +3372,31 @@ type SitePluginPluginOptions = {
   readonly exclude: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly output: Maybe<Scalars['String']>;
   readonly createLinkInHead: Maybe<Scalars['Boolean']>;
+  readonly features: Maybe<SitePluginPluginOptionsFeatures>;
+  readonly credentials: Maybe<SitePluginPluginOptionsCredentials>;
   readonly query: Maybe<Scalars['String']>;
   readonly feeds: Maybe<ReadonlyArray<Maybe<SitePluginPluginOptionsFeeds>>>;
   readonly pathCheck: Maybe<Scalars['Boolean']>;
+};
+
+type SitePluginPluginOptionsCredentials = {
+  readonly apiKey: Maybe<Scalars['String']>;
+  readonly projectId: Maybe<Scalars['String']>;
+  readonly appId: Maybe<Scalars['String']>;
+};
+
+type SitePluginPluginOptionsCredentialsFilterInput = {
+  readonly apiKey: Maybe<StringQueryOperatorInput>;
+  readonly projectId: Maybe<StringQueryOperatorInput>;
+  readonly appId: Maybe<StringQueryOperatorInput>;
+};
+
+type SitePluginPluginOptionsFeatures = {
+  readonly fucntions: Maybe<Scalars['Boolean']>;
+};
+
+type SitePluginPluginOptionsFeaturesFilterInput = {
+  readonly fucntions: Maybe<BooleanQueryOperatorInput>;
 };
 
 type SitePluginPluginOptionsFeeds = {
@@ -3414,6 +3444,8 @@ type SitePluginPluginOptionsFilterInput = {
   readonly exclude: Maybe<StringQueryOperatorInput>;
   readonly output: Maybe<StringQueryOperatorInput>;
   readonly createLinkInHead: Maybe<BooleanQueryOperatorInput>;
+  readonly features: Maybe<SitePluginPluginOptionsFeaturesFilterInput>;
+  readonly credentials: Maybe<SitePluginPluginOptionsCredentialsFilterInput>;
   readonly query: Maybe<StringQueryOperatorInput>;
   readonly feeds: Maybe<SitePluginPluginOptionsFeedsFilterListInput>;
   readonly pathCheck: Maybe<BooleanQueryOperatorInput>;
@@ -3506,8 +3538,6 @@ type WebPOptions = {
   readonly quality: Maybe<Scalars['Int']>;
 };
 
-type GatsbyImageSharpFluidFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
-
 type BlogPostBySlugQueryVariables = Exact<{
   slug: Scalars['String'];
 }>;
@@ -3561,10 +3591,13 @@ type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
-type TagListQueryVariables = Exact<{ [key: string]: never; }>;
+type BioComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
+type BioComponentQuery = { readonly avatar: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly githubIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly instaIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly twitterIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'author'>
+      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
+    )> }> };
 
 type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3582,13 +3615,10 @@ type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
     )> }> };
 
-type BioComponentQueryVariables = Exact<{ [key: string]: never; }>;
+type TagListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type BioComponentQuery = { readonly avatar: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly githubIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly instaIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly twitterIcon: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }>, readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'author'>
-      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
-    )> }> };
+type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -3601,6 +3631,8 @@ type GatsbyImageSharpFixed_withWebp_tracedSVGFragment = Pick<ImageSharpFixed, 't
 type GatsbyImageSharpFixed_noBase64Fragment = Pick<ImageSharpFixed, 'width' | 'height' | 'src' | 'srcSet'>;
 
 type GatsbyImageSharpFixed_withWebp_noBase64Fragment = Pick<ImageSharpFixed, 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
+
+type GatsbyImageSharpFluidFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluidLimitPresentationSizeFragment = { maxHeight: ImageSharpFluid['presentationHeight'], maxWidth: ImageSharpFluid['presentationWidth'] };
 
