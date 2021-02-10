@@ -7,6 +7,10 @@ interface Props {
   url : string
 }
 
+if (process.env.NODE_ENV === 'development' ){
+  firebase.functions().useEmulator("localhost", 5001);
+}
+
 const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
   const [ogpData, changeOgpData] = useState(Object)
   const urlConstructor = new URL(url)
@@ -17,9 +21,9 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
       const getOgpData = firebase.functions().httpsCallable('getOgpLinkData');
       getOgpData({url: url})
         .then(result => {
-          const title = result.data.title || document.querySelector("meta[name='title']")?.getAttribute('content') || document.querySelector('title')?.innerText || ""
+          const title = result.data.title || ""
           const imageUrl = result.data.imageUrl || ""
-          const description = result.data.description || document.querySelector("meta[name='description']")?.getAttribute('content') || ""
+          const description = result.data.description || ""
           const siteName = result.data.siteName || urlDomain
           const siteIconPath = result.data.ogpIcon || "/favicon.ico"
           const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
