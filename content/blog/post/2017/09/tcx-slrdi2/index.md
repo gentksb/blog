@@ -73,6 +73,6 @@ Amazon には<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前
 
 残りの特筆すべき点は OD2（1-1/4）コラムという点だが、これはステム規格だけなので大した影響はなし。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B071NLWNDB/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B071NLWNDB/gensobunya-22/ref=nosim/" />
 
 [1]: http://www.ebay.com/itm/ASHIMA-Ai2-The-Worlds-Lightest-Stainless-Disc-Rotor-140mm-64g-ABE-/131992899865?epid=2058435442&hash=item1ebb63d119:g:U8AAAOSw44BYHFd1

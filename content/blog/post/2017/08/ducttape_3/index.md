@@ -27,6 +27,6 @@ MAVIC からロード UST が出てきたことだし、これを機に統一し
 
 泡状になってサイドやリム側まで回り込んでくれるとの謳い文句。ついでに Notubes と違って中性らしいので、リムやテープへの攻撃性も低い。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B002YMJKT4/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B002YMJKT4/gensobunya-22/ref=nosim/" />
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00OD5F95Y/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00OD5F95Y/gensobunya-22/ref=nosim/" />

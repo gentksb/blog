@@ -70,4 +70,4 @@ SLR1 disc の 12mm…ハブの型番は`1520-CL1608-701`、ハブベアリング
 
 嵌めるときも、BB ツールと適当なスペーサー・元々入っていたベアリングを駆使してしっかり奥まで圧入。フリー側はハブグリス、反フリー側はデュラグリスで防水してキャップ類を締めて作業完了。別物のようにヌルヌル動くようになった！
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B001NMTIX4/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B001NMTIX4/gensobunya-22/ref=nosim/" />

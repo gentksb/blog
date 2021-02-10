@@ -34,4 +34,4 @@ cover: "./IMG_20190720_105901.jpg"
 
 これで「1 ボトル 1 ツールボトル」or「2 ボトル 1 ツールボトル」のどちらかで走り出すことができるため、朝のちょっと迷う時間を削減して気持ちよくライドに出かけることができるようになった。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B075ZPVWVL/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B075ZPVWVL/gensobunya-22/ref=nosim/" />

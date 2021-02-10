@@ -40,4 +40,4 @@ STONE のチェーンリングに比べると、肉抜きの方針が大きく�
 
 経験上、中華チェーンリングよりウルフトゥースのほうが 2 倍近く長持ちするので、コストで言うとトントンのはずです。
 
-<AmazonLinkBox url="https://www.amazon.co.jp/dp/B01BULOKJE/?tag=gensobunya-22" />
+<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01BULOKJE/?tag=gensobunya-22" />

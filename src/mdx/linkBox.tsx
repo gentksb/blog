@@ -7,6 +7,15 @@ interface Props {
   url : string
 }
 
+interface ApiResponse {
+      title: string
+      imageUrl: string
+      description: string
+      siteName: string
+      ogpIcon: string
+      error?: string
+    }
+
 if (process.env.NODE_ENV === 'development' ){
   firebase.functions().useEmulator("localhost", 5001);
 }
@@ -21,11 +30,19 @@ const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
       const getOgpData = firebase.functions().httpsCallable('getOgpLinkData');
       getOgpData({url: url})
         .then(result => {
-          const title = result.data.title || ""
-          const imageUrl = result.data.imageUrl || ""
-          const description = result.data.description || ""
-          const siteName = result.data.siteName || urlDomain
-          const siteIconPath = result.data.ogpIcon || "/favicon.ico"
+          const response: ApiResponse = result.data
+          const errorMessage = response.error
+
+          if (errorMessage !== ""){
+            console.log(errorMessage)
+            return
+          }
+
+          const title = response.title || ""
+          const imageUrl = response.imageUrl || ""
+          const description = response.description || ""
+          const siteName = response.siteName || urlDomain
+          const siteIconPath = response.ogpIcon || "/favicon.ico"
           const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(

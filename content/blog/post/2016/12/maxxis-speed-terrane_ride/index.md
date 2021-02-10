@@ -77,4 +77,4 @@ https://twitter.com/gen_sobunya/status/807812034658086912
 
 他人のシケインと比べるとサイドノブは低いですが、サンド使うよりはよほどサイドグリップがいいので安心してコーナー突っ込めます。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />

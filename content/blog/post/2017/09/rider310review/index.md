@@ -41,7 +41,7 @@ BluetoothLE の通信速度に起因していると思うので、ここは Wifi
 
 専用アプリはだいぶお粗末なので、割り切って転送用にしてしまってこの安さを維持してもらいたいものだ。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B074KXFHDW/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B074KXFHDW/gensobunya-22/ref=nosim/" />
 
 [1]: http://amzn.to/2xAqcrr
 [2]: https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338191852&mpre=http%3A%2F%2Fwww.ebay.com%2Fitm%2FBryton-Rider-310E-GPS-Bike-Bicycle-Cycling-Computer-Extension-Mount-%2F172011670052%3Fepid%3D1249387116%26hash%3Ditem280cb1ca24%3Ag%3AfjkAAOSwTM5Yw6oj

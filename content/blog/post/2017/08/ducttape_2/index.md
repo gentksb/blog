@@ -45,4 +45,4 @@ tags: ["CX", "MTB", "TIPS", "REVIEW"]
 
 続編、乞うご期待。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01MRK8TB7/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01MRK8TB7/gensobunya-22/ref=nosim/" />

@@ -45,7 +45,7 @@ USB ドングルは結構厄介。
 
 ~~Aliexpress なら 10 ドルだけどな！！！~~
 
-<AmazonLinkBox url="https://www.amazon.co.jp/dp/B0874R1DDY/?tag=gensobunya-22" />
+<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B0874R1DDY/?tag=gensobunya-22" />
 
 1 週間ほどして届いたブツがこちら。
 
@@ -101,7 +101,7 @@ Strava がリアルタイムで MMORPG 化した感じである。
 
 冬場のローラーはこれだけでかなり遊べそうだ。
 
-<AmazonLinkBox url="https://www.amazon.co.jp/dp/B00CM381SQ/?tag=gensobunya-22" />
+<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00CM381SQ/?tag=gensobunya-22" />
 
 [1]: http://www.zwift.com/
 [2]: http://www.amazon.co.jp/gp/product/B008368QN6/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B008368QN6&linkCode=as2&tag=gensobunya-22

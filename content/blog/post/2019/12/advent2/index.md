@@ -68,7 +68,7 @@ IT 業界ではこの言葉が出てくると、大雑把に 2 系統のシス�
 8 割の性能を常に使えることを目指しているため、マスプロメーカーにシマノコンポ、ホイールはシマノハブか DT ハブに適当なリムの組み合わせになって面白みはありませんが、走ることに集中できる機材選びだと思います。  
 もちろん、機材の趣味性が大事という考えもありますので、自分の自転車ライフを豊かにすることを意識して、たまに上記の概念を思い出していただければ幸いです。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B073XTZ49K/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B073XTZ49K/gensobunya-22/ref=nosim/" />
 
 ---
 

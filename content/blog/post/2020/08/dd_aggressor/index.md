@@ -77,4 +77,4 @@ Aggressor において、DD と EXO のカタログスペックを見てみま�
 
 さすがに 1kg ともなると登りトレイルで使う気にはなれませんが、フロントだけならなんとか…？ゲレンデコースではどんどん使いたいモデルでした。
 
-<AmazonLinkBox url="https://www.amazon.co.jp/dp/B01D2ZFFCM/?tag=gensobunya-22" />
+<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01D2ZFFCM/?tag=gensobunya-22" />

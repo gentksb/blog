@@ -12,7 +12,7 @@ Twitter で水で流せて効き目抜群のディグリーザーと噂になっ
 
 刷毛で塗って放置するだけでスプロケとチェーンがピカピカに！処理も水で流すだけ！すごい！とのこと。マジですか？
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01LN1TYKQ/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01LN1TYKQ/gensobunya-22/ref=nosim/" />
 
 ## 実際に使ってみた
 
@@ -62,7 +62,7 @@ Twitter で水で流せて効き目抜群のディグリーザーと噂になっ
 
 あと、この本の中で紹介していた[マックオフの濃縮ナノテククリーナー](https://amzn.to/3a7AVfx)が現役だとチェーンにも使えると聞いたので、そちらも今度検証してみます。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01LN1TYKQ/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01LN1TYKQ/gensobunya-22/ref=nosim/" />
 
 ## 2020/12 追記 チェーンクリーナーで洗ってみた
 

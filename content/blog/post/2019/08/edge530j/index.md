@@ -71,4 +71,4 @@ ClimbPro でなくとも簡単な高低差は表示してくれる（要イン�
 
 MTB ダイナミクスはめちゃくちゃ期待しているので、トレイルとパークで試したらまたインプレしたい。→[白馬で試してみました](/post/2019/11/edge530_mtbd/)
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" />

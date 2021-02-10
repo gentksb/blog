@@ -43,4 +43,4 @@ cover: "./kazuma.jpg"
 
 そして公平優勝おめでとう。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B007PLDRAC/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B007PLDRAC/gensobunya-22/ref=nosim/" />

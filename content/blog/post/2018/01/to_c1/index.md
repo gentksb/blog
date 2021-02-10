@@ -63,4 +63,4 @@ Wheel: (Front)SHIMANO XT M785,(Rear)PAX PROJECT 24mm TL
 ドライ路面と、地脚に不安があることもあって前後ともセミスリックのスピードテレーンをチョイス。\
 想定通り、フラット区間で抜群の伸びを見せてくれた。マイアミのレース中、高速コーナー中にタイヤを変形させてサイドノブを引っ掛ける感覚を掴んだのでコーナーの不安もなし。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />

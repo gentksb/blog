@@ -107,4 +107,4 @@ tags: ["MTB", "RACE"]
 
 翌日、有給が出張に化けたら体調最悪のまま 3 日間過ごすことになったので休みは死守、絶対。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00IWK4ULU/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00IWK4ULU/gensobunya-22/ref=nosim/" />

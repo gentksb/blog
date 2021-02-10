@@ -49,4 +49,4 @@ SGX-CA500 のマウント下部には謎のネジ穴があったので、これ�
 ちなみに、これを作っている間に<a href="https://speedfil.com/accessories/pioneer-adapter-kit#1456026403398-87c3bace-faa6" target="_blank">こんなスマートなもの</a>が発表されていた。  
 BARFLY と組み合わせれば似た感じにマウントできるが、ゴムバンドを使わない分自作マウントのほうが上だな！
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01B0D7FBC/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01B0D7FBC/gensobunya-22/ref=nosim/" />

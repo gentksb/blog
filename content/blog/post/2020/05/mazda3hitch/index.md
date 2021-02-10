@@ -61,7 +61,7 @@ Mazda3 のディーゼルモデルで、航続スピードにもよりますが�
 
 これで車内を汚さず、半分浮いている状態であることも生きて衝撃にもちょっと強めです。しかも 2000 円と非常にお安い。
 
-<AmazonLinkBox url="https://www.amazon.co.jp/dp/B00TWT9JVG/?tag=gensobunya-22" />
+<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00TWT9JVG/?tag=gensobunya-22" />
 
 ## ヒッチキャリア輸入
 
@@ -130,4 +130,4 @@ Mazda3 のリア部分の形状と Kuat の純正ロックピンの相性が悪�
 今の御時世ではこのヒッチキャリアもなかなか出番がありませんが、特に MTB・CX を趣味にしている自転車乗りには是非ともおすすめしたい装備です。  
 トランクマウントのキャリアのほうが、ヒッチと同じく燃費と全高を維持しつつ手軽ですが、揺れや傷に強くマウントも簡単なヒッチキャリアは投資する価値があります。
 
-<AmazonLinkBox url="https://www.amazon.co.jp/dp/B00IUMN1VA/?tag=gensobunya-22" />
+<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00IUMN1VA/?tag=gensobunya-22" />

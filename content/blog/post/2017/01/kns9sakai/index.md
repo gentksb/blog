@@ -59,7 +59,7 @@ C1 のバニホを勉強して自分も跳べるようになりたい
 
 足元には足用カイロ、手には台所用のゴム手袋を装備して臨む。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00BES4PV2/gensobunya-22/ref=nosim/" />
 
 安物だがラテックス製なので、理論的には<a href="http://amzn.to/2iD1DEr" target="_blank">Velotoze</a>と同等の効果を得られるはずという目論見は大当たり。
 
@@ -69,4 +69,4 @@ C1 のバニホを勉強して自分も跳べるようになりたい
 
 スキーウェアはかさばるので、モンベルの店頭のパーカーを品定めする日々が続いている…
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B013UM1XVE/gensobunya-22/ref=nosim/" />

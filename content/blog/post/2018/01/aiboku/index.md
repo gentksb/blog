@@ -33,4 +33,4 @@ Bike: TCX SLR('14) Ultegra Di2\
 Tyre: Maxxis SpeedTerrane 1.7Bar(F,R)\
 Wheel: (Front)SHIMANO XT M785,(Rear)PAX PROJECT 24mm TL
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />

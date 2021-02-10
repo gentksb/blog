@@ -65,4 +65,4 @@ cover: ""
 
 怪我をしないに越したことはないが、怪我しても安心のモンベル自転車保険。存在感は薄いがオフロードライダーには強くお勧めできる
 
-<AmazonLinkBox url="https://www.amazon.co.jp/dp/B00UD39YII/?tag=gensobunya-22" />
+<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00UD39YII/?tag=gensobunya-22" />

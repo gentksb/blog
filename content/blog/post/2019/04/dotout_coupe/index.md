@@ -47,4 +47,4 @@ OGK もしくは GIRO のアジアンフィットがジャストフィットす�
 
 エアロヘルメットはウェアの次に空力を改善できる機材だったはずなので、ロングライドでも良い相棒になってくれそうだ。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B07PY3Y1ST/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07PY3Y1ST/gensobunya-22/ref=nosim/" />

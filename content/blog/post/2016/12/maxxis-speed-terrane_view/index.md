@@ -15,7 +15,7 @@ tags: ["CX", "REVIEW"]
 
 ついに待ち望んでいたサイドノブ＋センターセミスリックパターンのチューブレスタイヤが発売。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />
 
 芝路面ではシラクサンドが圧倒的な速さを誇るが、コースが全て芝ということはなく、どこかでサイドグリップを求められる場面が出てくる。
 
@@ -67,4 +67,4 @@ GIANT のチューブレスタンクもいい感じのお値段だったので�
 
 明日向山のコースで練習してくるので、タイヤそのもののインプレは明日アップします。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B01JG277DA/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01JG277DA/gensobunya-22/ref=nosim/" />

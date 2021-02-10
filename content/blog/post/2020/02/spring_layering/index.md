@@ -62,4 +62,4 @@ cover: "./superleggera.jpg"
 
 裏起毛ビブは最近いくつかのメーカーから出てきているので、必携アイテムです。今までは某激安ブランドで冬ウェアを揃えていましたが、大手のハイラインウェアはかなり進化してると実感しました。ゴワついていないのに暖かさは維持、やめられなくなりそうです。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B084GT3L6V/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B084GT3L6V/gensobunya-22/ref=nosim/" />

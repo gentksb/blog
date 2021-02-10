@@ -76,4 +76,4 @@ SS クラス及び男子エリートにエントリーしてます。
 
 シーズン後半は残留に向けて AJOCC ポイントを稼がなければ…
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B019FM9MQ6/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B019FM9MQ6/gensobunya-22/ref=nosim/" />

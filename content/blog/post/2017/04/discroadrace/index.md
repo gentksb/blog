@@ -19,4 +19,4 @@ cover: courseThumb.png
 
 レース運びも特筆すべきことがないので、これしか書くことがない…
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B006E4J5MA/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B006E4J5MA/gensobunya-22/ref=nosim/" />

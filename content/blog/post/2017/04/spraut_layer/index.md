@@ -43,7 +43,7 @@ tags: ["REVIEW", "TOURING", "Workout", "RACE"]
 
 ちょっとした峠や、強度の高いトレーニングに GOOD。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B001XYBXU8/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B001XYBXU8/gensobunya-22/ref=nosim/" />
 
 #### 3. 夏ジャージ+夏インナー＋ウィンドブレーカー
 
@@ -51,7 +51,7 @@ tags: ["REVIEW", "TOURING", "Workout", "RACE"]
 
 渋峠や乗鞍のような長い下りがある場合もこれ。10km 以下の下りなら腕が出ていても平気だが、標高が高かったり下りが長くなってくるとかなり腕だけでもかなり体温を持っていかれるので長袖のウィンドブレーカーがあったほうがいい。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00K71I28Y/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00K71I28Y/gensobunya-22/ref=nosim/" />
 
 ### 夏インナー万能説
 
@@ -69,4 +69,4 @@ CRAFT はペラペラで表面積が大きく、いかにも涼しそうだが O
 
 レイヤリングについては並々ならぬこだわりがあるメーカーなので、購入はせずとも、<a href="https://www.finetrack.com/products/" target="_blank">レイヤリングについてのページ</a>は一度目を通してみることをおすすめする。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B00UBHC3WU/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00UBHC3WU/gensobunya-22/ref=nosim/" />

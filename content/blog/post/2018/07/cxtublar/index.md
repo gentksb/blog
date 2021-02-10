@@ -63,4 +63,4 @@ cover: dugast_set.jpg
 ここまでやったら後は神頼み。\
 シクロクロスシーズンまで 3 ヶ月程度に迫ってきたことだし、体の方もチューブレスタイヤでしっかり作ってオフロードに慣れていきたい。
 
-<AmazonLinkBox url="http://www.amazon.co.jp/exec/obidos/ASIN/B071S9F8ZM/gensobunya-22/ref=nosim/" />
+<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B071S9F8ZM/gensobunya-22/ref=nosim/" />
