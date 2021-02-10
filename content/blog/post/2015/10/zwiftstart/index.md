@@ -107,7 +107,3 @@ Strava がリアルタイムで MMORPG 化した感じである。
 [2]: http://www.amazon.co.jp/gp/product/B008368QN6/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B008368QN6&linkCode=as2&tag=gensobunya-22
 [3]: http://www.amazon.co.jp/gp/product/B0050GL5GM/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=B0050GL5GM&linkCode=as2&tag=gensobunya-22
 [4]: http://cyclist.sanspo.com/205583
-
-```
-
-```
