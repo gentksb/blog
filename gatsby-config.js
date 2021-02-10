@@ -20,12 +20,6 @@ module.exports = {
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
     {
-      resolve: `gatsby-plugin-typegen`,
-      options: {
-        outputPath: `src/__generated__/gatsby-types.d.ts`,
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -179,6 +173,12 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-typegen`,
+      options: {
+        outputPath: `src/__generated__/gatsby-types.d.ts`,
+      }
     },
   ],
 }
