@@ -25,7 +25,7 @@ post した username を自動的に取得して、それぞれの人の記録�
 
 体重の計測は 200g 刻みと、21 世紀の体重計とは思えない精度ですが計測結果が 100g 程度変動していたところで一喜一憂するものでもなし、インターネット直結という点を重視しました。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B071LNJTVH/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B071LNJTVH/gensobunya-22/ref=nosim/" />
 
 ## とりあえず IFTTT
 
@@ -110,4 +110,4 @@ Slack グループの設定がありませんが、トークンがグループ�
 
 アプリ連携体重計だとその後の広がりがあまり良くないのですが、WEB サービスだと連携も簡単です。タニタもオムロンも、WEB サービス連携する体重計は結構高いので 1 万円程度で買える Withings はかなりコスパ良い買い物でした。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B071LNJTVH/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B071LNJTVH/gensobunya-22/ref=nosim/" />

@@ -67,4 +67,4 @@ ERG モードによるトルク変動は数秒～ 10 秒ほどのラグがある
 
 問題は品薄で予約必須だったりすることか…
 
-<linkBox isAmazonLink url="https://shopping.yahoo.co.jp/products/z79dtn4n2v" />
+<LinkBox isAmazonLink url="https://shopping.yahoo.co.jp/products/z79dtn4n2v" />

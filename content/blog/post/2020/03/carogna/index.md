@@ -19,7 +19,7 @@ cover: "./bomb_1.jpg"
 
 リムセメントのように 1 シーズン経ったらもう信頼できないというわけではなく 2 シーズン丸々運用できたのは非常に良い結果だと捉えています。施工もかんたんですし。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0168TBGR2/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0168TBGR2/gensobunya-22/ref=nosim/" />
 
 ## タイヤ剥がし・リム掃除
 
@@ -54,4 +54,4 @@ cover: "./bomb_1.jpg"
 
 上記の事象から、サイドからの侵入より、リム穴からの水分侵入がタイヤの剥がれる主要因なのでは？という仮説が立ちました。自分はリムホールレスのホイールしか無いので気にならないのですが…来シーズンからタイヤはタイヤサイドの部分のみコーキング材を塗って、リムとの隙間は埋めないことでサイドのコーキング有無の違いに関して検証していこうと思います。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0168TBGR2/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0168TBGR2/gensobunya-22/ref=nosim/" />

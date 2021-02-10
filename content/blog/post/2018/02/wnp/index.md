@@ -6,7 +6,7 @@ tags: ["RaceReport", "CX"]
 cover: 20180226_top.jpg
 ---
 
-![cover](https://farm5.staticflickr.com/4697/40475491811_508c6f6222_c.jpg
+![cover](https://farm5.staticflickr.com/4697/40475491811_508c6f6222_c.jpg)
 
 ## 飛び道具との出会い
 
@@ -66,4 +66,4 @@ Bike: TCX SLR('14) Ultegra Di2\
 Tyre: Dugast smallbird 1.2Bar(F), Dugast smallbird 1.1Bar(R)\
 Wheel: (F/R)PAX PROJECT carbon 30mm TU
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" />

@@ -95,4 +95,4 @@ TCR の 12mm スルーアクスル用ホイールと、ローラーのアダプ�
 
 安心のアフターサービスですね。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" />

@@ -115,4 +115,4 @@ R369 は曲がりくねっていないものの、長い直登の連続で心を
 
 近畿圏の鉄道はそこまで明るくないが、こういった楽ちんなグルメロングライドスポットを開拓していきたい。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01MZ9GYH7/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01MZ9GYH7/gensobunya-22/ref=nosim/" />

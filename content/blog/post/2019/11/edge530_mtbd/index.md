@@ -76,4 +76,4 @@ Edge530/830/1050 のあまり日本で語られない機能、「MTB ダイナ�
 
 とりあえずログを取っているという事実や、ジャンプの検知音はライド中のいいアクセントになるので、Edge530 みんな買いましょう！
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07TVPYCTV/gensobunya-22/ref=nosim/" />

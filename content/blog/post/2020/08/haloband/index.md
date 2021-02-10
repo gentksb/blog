@@ -26,7 +26,7 @@ Halo Headband は一般的なヘッドバンドの内側にシリコンを配置
 
 自分が購入したのは Air Abyss Blue というカラー。
 
-<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B084ZG18JW/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B084ZG18JW/?tag=gensobunya-22" />
 
 ## 使用レビュー
 
@@ -54,4 +54,4 @@ Halo バンドを使っているときは、水をかぶるのは後頭部だけ
 
 結局、この日のライドでアイウェアのレンズ部分に汗がかかることはなかった。ヘッドバンドがある前提の冷却プランを考える必要があるものの、期待していた効果はしっかり出てくれたので、あとはシクロクロスレースなどでどういった挙動になるか確認したいところ。
 
-<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07P5C596H/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07P5C596H/?tag=gensobunya-22" />

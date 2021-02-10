@@ -67,4 +67,4 @@ JCX で数少ないフラットコース。
 いけるか！？全日本！？~~（今年の要項早く出してくださいお願いします）~~
 今年もランキング 100 位以内が出場可能でした。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0060GI8DE/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0060GI8DE/gensobunya-22/ref=nosim/" />

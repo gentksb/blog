@@ -5,6 +5,7 @@ import firebase from "gatsby-plugin-firebase"
 
 interface Props {
   url : string
+  isAmazonLink? : boolean
 }
 
 interface ApiResponse {
@@ -20,15 +21,16 @@ if (process.env.NODE_ENV === 'development' ){
   firebase.functions().useEmulator("localhost", 5001);
 }
 
-const LinkBox: React.FunctionComponent<Props> = ( {url} ) => {
+const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
   const [ogpData, changeOgpData] = useState(Object)
   const urlConstructor = new URL(url)
   const urlDomain = urlConstructor.hostname
+  const apiRequestBody = isAmazonLink ? {url: url, isAmazonLink: isAmazonLink} : {url: url}
 
   useEffect(() => {
     try {
       const getOgpData = firebase.functions().httpsCallable('getOgpLinkData');
-      getOgpData({url: url})
+      getOgpData(apiRequestBody)
         .then(result => {
           const response: ApiResponse = result.data
           const errorMessage = response.error

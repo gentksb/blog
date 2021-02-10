@@ -139,9 +139,6 @@ DNF がないルールなので、荒れていない箇所は走行し残りは�
 
 そんな中の解説…
 
-\*\*
-\*\*
-
 **三船さん「実はこういうコース、空気圧は高くしたほうがいいんですね。跳ねるけれどもトラブルを避けたほうが」**
 
 <strike>最初に言ってくれ</strike>
@@ -176,4 +173,4 @@ DNF がないルールなので、荒れていない箇所は走行し残りは�
 
 普通のレースではない異常な雰囲気だったが、アホみたいに面白かったので次回はちゃんとアルミホイールで参戦しようと思う。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00NIE8FKM/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00NIE8FKM/gensobunya-22/ref=nosim/" />

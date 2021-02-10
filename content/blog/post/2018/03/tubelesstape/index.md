@@ -56,7 +56,7 @@ ETRTO(ISO5775)規格が改定されて、ホイールとリムの規格がお互
 
 ### Notubes Yellow Tape
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BAAME/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BAAME/gensobunya-22/ref=nosim/" />
 
 基本中の基本、元祖チューブレステープ。\
 MTB 向けに作られた製品だったので、ロードの空気圧に耐えきれるほどの耐久性は無いようで 3~4 ヶ月 CX の空気圧で運用すると次は交換。
@@ -65,7 +65,7 @@ MTB 向けに作られた製品だったので、ロードの空気圧に耐え�
 
 ### ダクトテープ類
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B004JLGARI/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B004JLGARI/gensobunya-22/ref=nosim/" />
 
 通称ダクトテープと呼ばれる高耐久の粘着テープ。\
 粘着性能は悪くないものの、テープ自体の剛性は最弱。当然の用に 1 発の使い捨てになるが、コストを考えると悪くはない。
@@ -74,7 +74,7 @@ MTB 向けに作られた製品だったので、ロードの空気圧に耐え�
 
 ### 3M 仮固定用テープ
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B000SPHL4U/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B000SPHL4U/gensobunya-22/ref=nosim/" />
 
 ダクトテープと同じく使い捨て前提だが、幅が揃っている分ダクトテープより便利らしい。（使ったことはない）
 
@@ -96,11 +96,11 @@ CX シーズンの後半はこれを投入したところ、4 ヶ月経っても
 
 18mm と 22mm という少ないバリエーションだが BBB のリムテープは安い。ただ 18mm はリム幅の都合でほぼ出番はないと思われる。
 
-<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B079JXZFM3/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B079JXZFM3/?tag=gensobunya-22" />
 
 WTB の大ロールは非常にコストパフォーマンスが高い。5 巻き分の長さで値段あ 2 巻き分の GIANT テープとほぼ変わらない。
 
-<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01I2YCP8U/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01I2YCP8U/?tag=gensobunya-22" />
 
 パナレーサーも[チューブレステープ](https://store.shopping.yahoo.co.jp/worldcycle/PAN-O-TLT-21.html)を出しており、幅のバリエーションが広く取られていながら値段は 1500 円と抑えられている。
 
@@ -119,4 +119,4 @@ WTB の大ロールは非常にコストパフォーマンスが高い。5 巻�
 
 ブログだと引用の都合上 Amazon リンクが多いが、自転車関連品は自動設定された価格が異常に高くなっていることが目につくため、[Wiggle](https://www.wiggle.jp/) とか使ったほうが良さそう。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" />

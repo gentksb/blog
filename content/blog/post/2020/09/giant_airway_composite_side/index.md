@@ -36,7 +36,7 @@ GIANT 製らしく、スローピングの大きいフレームでもロング�
 
 もちろん、マウント場所が配慮されているのもあるが、それを差し引いてもキッチリ可能な範囲で一番下側にボトルを配置できているのがわかると思う。[R250 の細いフレームバッグ](https://amzn.to/32tKWlI)であればショートボトルを組み合わせれば利用できるだろう。
 
-<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B072Q5DXGW/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B072Q5DXGW/?tag=gensobunya-22" />
 
 ## まとめ
 

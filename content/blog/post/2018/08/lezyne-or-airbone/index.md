@@ -21,7 +21,7 @@ cover: DSC_1434.jpg
 
 代表的なものは Panaracer のワンタッチヘッド、しかしこれはホース径が特殊なので汎用的ではない。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01EKOVX1G/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01EKOVX1G/gensobunya-22/ref=nosim/" />
 
 今まで使っていたのがこちらの Lezyne ABS-2。  
 既に廃盤。
@@ -31,7 +31,7 @@ cover: DSC_1434.jpg
 中々良かったのだが、耐久性が悪いという噂通り 1 年経たずに壊れてしまった。  
 次に購入したのがこちらの Airbone。ABS-2 とほぼ同じような仕組みのポンプヘッド。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B072LTF86P/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B072LTF86P/gensobunya-22/ref=nosim/" />
 
 明確に違う点は、仏式と米式が明示的に切り替わるところ。  
 ABS-2 はどちらも区別なくねじ込んでいく仕組み。
@@ -43,4 +43,4 @@ ABS-2 はここのスライド機構の O リングが摩耗してオーバー�
 
 レザインの解放ボタンはヘッドを外すためのものだが、Airbone の解放ボタンは空気圧調整用になっている点も大きく違う。MTB や CX など、空気圧を調節したいときが多いのでこれは非常に便利に使えそうだ。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01G1O3JCY/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01G1O3JCY/gensobunya-22/ref=nosim/" />

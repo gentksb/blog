@@ -56,4 +56,4 @@ Zolder はおそらく 2021 年でモデルチェンジして、ワウト・フ�
 
 ロットユンボに供給を始めてからのビアンキは、モデルチェンジの頻度が高くなりプロツアーチームからのフィードバックを取り入れているそうです。数十年間自転車をやっている人にとってビアンキはレースブランドだったそうですが、近年少し離れたせいか私のようなここ 10 年で自転車を始めたペーペーにはそんなイメージはありません。が、またレーシングブランドとしての立ち位置を手に入れかけているのではないでしょうか。
 
-<linkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07W8FZJW6/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07W8FZJW6/?tag=gensobunya-22" />

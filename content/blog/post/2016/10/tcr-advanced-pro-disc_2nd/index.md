@@ -63,4 +63,4 @@ tags: ["REVIEW", "ROAD"]
 
 パッケージとしてもカーボンホイールまでついて 50 万なので文句なし！
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00VHJLCWS/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00VHJLCWS/gensobunya-22/ref=nosim/" />

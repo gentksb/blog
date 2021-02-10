@@ -73,4 +73,4 @@ tags: ["REVIEW", "EC", "FOOD"]
 
 PBK じゃん！！！！！！！！！！！！！！！
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B004EI6G8E/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B004EI6G8E/gensobunya-22/ref=nosim/" />

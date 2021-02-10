@@ -38,4 +38,4 @@ C1 のレースは試走が終わったら 1 時間もせずに始まるので�
 泥レースの試走はどうしてるんだとかウェアはどうこうみたいな TIPS をもっと知りたいところなので、ゲストの人誰か聞いてほしい。  
 C1 にもなるとほぼ全員やっていることが、実は下位カテゴリでは常識ではない…みたいなことも有り得るし、何より準備によるリザルトの向上はすぐに効果が出るので、もっと知りたいところ。レースは号砲より前に始まっている…
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/4003320719/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/4003320719/gensobunya-22/ref=nosim/" />

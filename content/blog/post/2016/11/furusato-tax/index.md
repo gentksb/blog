@@ -45,13 +45,13 @@ tags: ["TIPS", "TOURING"]
 
 その他、コーヒーを淹れるための<a href="http://amzn.to/2fEOgkt" target="_blank">ジェットボイル</a>などもこれを機会に買って
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00U72QEFQ/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00U72QEFQ/gensobunya-22/ref=nosim/" />
 
 また、シクロクロスシーズンでは待ち時間に冷え込むことが想定されるので、ウェアの上からダウンベストを着ている。
 
 ユニクロとは違い圧倒的な保温性と折りたたみ性能となっている上、ベストなので出走直前にストレス無く脱ぐことが出来る。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00F68FLVO/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00F68FLVO/gensobunya-22/ref=nosim/" />
 
 御存知の通り、モンベルは自転車製品も充実している。  
 トゥーカバーなどの防風・防水製品類は本業の山岳ギアの性能が反映されていて非常にクオリティが高い。
@@ -59,4 +59,4 @@ tags: ["TIPS", "TOURING"]
 最近流行りのバイクパッキングに最適なウルトラライトのキャンプギアも充実しているので、実によりどりみどりといった具合。  
 ふるさと納税の控除上限は決まっているので、各自しっかり調べた上でうまく活用して良い自転車ライフを送ろう。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00INR93EQ/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00INR93EQ/gensobunya-22/ref=nosim/" />

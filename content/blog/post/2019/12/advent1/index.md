@@ -53,7 +53,7 @@ UCI レースもアジア圏屈指の開催数となり、実にブームと言�
 
 自転車生活マンネリ化してませんか？シクロクロスやりませんか？最低 10 年は楽しめますよ、みんなやってるから大丈夫大丈夫！
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07TSF99PD/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07TSF99PD/gensobunya-22/ref=nosim/" />
 
 ---
 

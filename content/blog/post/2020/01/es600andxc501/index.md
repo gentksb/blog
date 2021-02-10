@@ -23,7 +23,7 @@ cover: "./cover.jpg"
 
 ## リーズナブルな SPD シューズ SH-XC501(XC5)
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07XNX5RLG/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07XNX5RLG/gensobunya-22/ref=nosim/" />
 
 このシューズの特筆する点は、1 万円半ばというプライスながら、非常に軽量な点です。  
 最軽量 SPD シューズたるグラベルレーサーシューズである[RX8](https://bike.shimano.com/ja-JP/product/apparel-accessories/shimano-series-lsg-2020/SH-RX800.html)からの重量増はたったの 33g で、片側 300g を切る SPD シューズはこの 2 種類のみです。
@@ -56,4 +56,4 @@ XC7 はスパイクピン部分に合わせる別部品が付属していまし�
 
 デュラエースや XTR ペダルほど高くなく、この軽さと感覚と、歩きやすさを考えるとツーリング派やオールロード用の鉄板選択肢になるのではないでしょうか。よく乗り降りをするのであれば XTR/XT の両面 SPD のほうがストレスは少ないと思います。
 
-<linkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07BWC3Y1N/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07BWC3Y1N/gensobunya-22/ref=nosim/" />
