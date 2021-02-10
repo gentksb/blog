@@ -13,11 +13,9 @@ import PrevAndNextPost from "../components/molecules/prevAndNextpost"
 import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/organisms/relatedPosts"
 import BlogPostStyle from "../styles/blog-post.style"
-import AmazonLinkBox from "../mdx/amazonLinkBox"
 import LinkBox from "../mdx/linkBox"
 
 const shortcodes = {
-  AmazonLinkBox,
   LinkBox,
 }
 
