@@ -1,7 +1,6 @@
 import * as functions from "firebase-functions"
 import fetch from "node-fetch"
-const jsdom = require("jsdom")
-const { JSDOM } = jsdom
+import { JSDOM } from "jsdom"
 const ProductAdvertisingAPIv1 = require("paapi5-nodejs-sdk")
 
 // // Start writing Firebase Functions
@@ -41,7 +40,8 @@ export const getOgpLinkData = functions
         }
         const httpResponse = await fetch(data.url)
         const html = await httpResponse.text()
-        const document = new JSDOM(html)
+        const jsdom = new JSDOM(html)
+        const document = jsdom.window.document
         const asin = document.querySelector("#ASIN")?.getAttribute("value")
 
         const defaultClient = ProductAdvertisingAPIv1.ApiClient.instance
@@ -84,7 +84,8 @@ export const getOgpLinkData = functions
       try {
         const httpResponse = await fetch(data.url)
         const html = await httpResponse.text()
-        const document = new JSDOM(html)
+        const jsdom = new JSDOM(html)
+        const document = jsdom.window.document
         result.title =
           document
             .querySelector("meta[property='og:title']")
