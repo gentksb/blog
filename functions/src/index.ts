@@ -31,11 +31,12 @@ export const getOgpLinkData = functions
     if (data.isAmazonLink) {
       try {
         if (
-          process.env.AMAZON_PAAPI_KEY ||
-          process.env.AMAZON_PAAPI_SECRET ||
-          process.env.PARTNER_TAG
+          functions.config().amazon.paapi_key ||
+          functions.config().amazon.paapi_secret ||
+          functions.config().amazon.partner_tag
         ) {
           result.error = "Didn't set PAAPIv5 parameters"
+          console.error("Didn't set PAAPIv5 parameters")
           return result
         }
         const httpResponse = await fetch(data.url)
@@ -45,8 +46,8 @@ export const getOgpLinkData = functions
         const asin = document.querySelector("#ASIN")?.getAttribute("value")
 
         const defaultClient = ProductAdvertisingAPIv1.ApiClient.instance
-        defaultClient.accessKey = process.env.AMAZON_PAAPI_KEY
-        defaultClient.secretKey = process.env.AMAZON_PAAPI_SECRET
+        defaultClient.accessKey = functions.config().amazon.paapi_key
+        defaultClient.secretKey = functions.config().amazon.paapi_secret
         defaultClient.host = "webservices.amazon.co.jp"
         defaultClient.region = "us-west-2"
 
@@ -54,7 +55,7 @@ export const getOgpLinkData = functions
         var getItemsRequest = new ProductAdvertisingAPIv1.GetItemsRequest()
 
         /** Enter your partner tag (store/tracking id) and partner type */
-        getItemsRequest["PartnerTag"] = process.env.PARTNER_TAG
+        getItemsRequest["PartnerTag"] = functions.config().amazon.partner_tag
         getItemsRequest["PartnerType"] = "Associates"
 
         /** Enter the Item IDs for which item information is desired */
