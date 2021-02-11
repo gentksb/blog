@@ -18,7 +18,7 @@ interface ApiResponse {
     }
 
 if (process.env.NODE_ENV === 'development' ){
-  firebase.functions().useEmulator("localhost", 5001);
+  firebase.app().functions('asia-northeast1').useEmulator("localhost", 5001);
 }
 
 const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
@@ -29,7 +29,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
 
   useEffect(() => {
     try {
-      const getOgpData = firebase.functions().httpsCallable('getOgpLinkData');
+      const getOgpData = firebase.app().functions('asia-northeast1').httpsCallable('getOgpLinkData');
       getOgpData(apiRequestBody)
         .then(result => {
           const response: ApiResponse = result.data
