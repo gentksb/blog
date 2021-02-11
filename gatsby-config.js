@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `幻想サイクル`,
     author: `Gen`,
-    description: `gensobunya's bicycle life`,
+    description: `AJOCC C1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです`,
     siteUrl: `https://blog.gensobunya.net`,
     image: `/image/logo.jpg`,
     social: {
