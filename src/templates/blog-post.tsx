@@ -29,7 +29,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
       ? post.frontmatter.cover.childImageSharp.fluid.src
       : "/image/dummy.jpg"
   const relatedPostsComponent = post.frontmatter.tags != null
-      ? <RelatedPosts tag={post.frontmatter.tags[0]} />
+      ? <RelatedPosts tag={post.frontmatter.tags[0]} id={post.id} />
       : null
   
 

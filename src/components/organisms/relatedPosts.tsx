@@ -4,12 +4,13 @@ import { Box, Heading, LinkBox, LinkOverlay, VStack } from "@chakra-ui/react"
 import { AttachmentIcon } from "@chakra-ui/icons"
 interface Props {
   tag: string
+  id: string
 }
 
-const relatedPosts: React.FunctionComponent<Props> = ({tag}) =>{
+const relatedPosts: React.FunctionComponent<Props> = ({tag,id}) =>{
   const recentPostsData: GatsbyTypes.RecentPostQuery = useStaticQuery<GatsbyTypes.RecentPostQuery>(graphql`
     query RecentPost {
-      allMdx(limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
+      allMdx(limit: 10, sort: {fields: frontmatter___date, order: DESC}) {
         edges {
           node {
             frontmatter {
@@ -27,9 +28,10 @@ const relatedPosts: React.FunctionComponent<Props> = ({tag}) =>{
   `)
 
   const relatedRecentPostsData = recentPostsData.allMdx.edges.filter( edge => edge.node.frontmatter.tags.includes(tag) === true)
+  const excludeSelfPostData = relatedRecentPostsData.filter( edge => edge.node.id !== id)
 
   const relatedRecentPostsElements = (
-    relatedRecentPostsData.map( ({node})  => {
+    excludeSelfPostData.map( ({node})  => {
       return (
         <LinkBox as="article" key={node.id} width="100%" p={[2,2,3,3]}  borderWidth="1px" rounded="md"> 
           <Heading size="md" fontWeight="normal">
