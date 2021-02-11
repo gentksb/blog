@@ -9,7 +9,9 @@ cover: DSC_1568.jpg
 tags: ["ROAD"]
 ---
 
-<img border="0" height="360" src="./DSC_1568.jpg" width="640" />浜松まで餃子を食べにロングライドしていたある日…
+<img border="0" height="360" src="./DSC_1568.jpg" width="640" />
+
+浜松まで餃子を食べにロングライドしていたある日…
 
 東海道由比あたりの自歩道ダートを走らなければならない区域で突如
 
@@ -25,27 +27,15 @@ tags: ["ROAD"]
 
 ![image](./DSC_1570.jpg)
 
-<div class="separator" style="clear: both; text-align: left;">
-  注文から一週間以内で届くあたりさすがシマノです。日本に住んでるんだからみんなシマノのこういうメリットを享受すればいいのに…
-</div>
+注文から一週間以内で届くあたりさすがシマノです。日本に住んでるんだからみんなシマノのこういうメリットを享受すればいいのに…
 
 ![image](./DSC_1571.jpg)
 
 ![image](./DSC_1572.jpg)
 
-<div class="separator" style="clear: both; text-align: left;">
-  普通に素手で外して素手で嵌めていきます。プラ製の爪で留まっているので特に工具はいりませんね。
-</div>
+普通に素手で外して素手で嵌めていきます。プラ製の爪で留まっているので特に工具はいりませんね。
 
-<div class="separator" style="clear: both; text-align: left;">
-</div>
-
-<div class="separator" style="clear: both; text-align: left;">
-</div>
-
-<div class="separator" style="clear: both; text-align: left;">
-  ハブキャップ代　995- 
-</div>
+ハブキャップ代　 995-
 
 高いと思うか安いと思うかは人による金額です。
 

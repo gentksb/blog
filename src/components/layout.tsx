@@ -10,8 +10,6 @@ import BlogTitleText from "./atoms/blogTitleText"
 declare global {
   interface Window {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    iframely: any
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     twitter: any
   }
 }
@@ -26,9 +24,6 @@ interface Props extends LocationState {}
 const Layout: React.FunctionComponent<Props> = (props) => {
   const { location, title, children } = props
   useEffect(() => {
-    if (window.iframely) {
-      window.iframely.load()
-    }
     // ツイート内容を埋め込みたい場合
     if (window.twitter) {
       window.twitter.widgets.load()

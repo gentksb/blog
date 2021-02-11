@@ -1,0 +1,81 @@
+---
+title: nasneでどこでもロードレース視聴できる環境を作ろう
+author: admin
+type: post
+date: 2016-03-12T04:19:00+00:00
+cover: "41kPTlyHj2L._SL250_.jpg"
+tags: ["TIPS", "GADGETS"]
+---
+
+![cover](./41kPTlyHj2L._SL250_.jpg)
+
+### ロードレースシーズン開幕
+
+参加が主な活動となるシクロクロスシーズンから、TV 観戦も主な活動になるロードレースシーズンに移行する季節になりました。
+ただ、生放送は深夜となり、何かと見逃すことが多いので、合法的に録画・出先視聴の環境を整える方法でも記しておこうかと思います。
+
+TV ではなく、PC とスマートフォンがメインの視聴機器となります。
+
+### nasne はいいぞ
+
+本記事は、Jsports を「録画」「リモート視聴」することを目的とします。  
+外出先でも自宅で撮りためたロードレースを見たり、ストリーミング環境でライブ視聴を実現します。
+
+上記実現のためにキモとなるのが、SONY 製の TV チューナー兼 NAS「nasne」です。PS3 のオプションみたいな扱いですが、単体で使用できます。  
+自宅のルーターに接続することで、TV 番組をネットワーク内と外出先で視聴可能にしてくれるスグレモノです。
+
+正直、この要件を満たすためならば、<a href="http://front.jsports-ondemand.com/" target="_blank">Jsports オンデマンド</a>を利用するのが一番シンプルです。  
+ただ、モバイル回線ですと通信量の問題が出てきますし、固定回線でも混雑していると毎日ストリーミングが綺麗に流れるか微妙なラインですし、何より画質が低いという問題がつきまといます。
+
+なので衛星放送クオリティで可能な限りリアルタイムで視聴したいという人向けの記事です。
+
+### 手順
+
+1. nasne に入っている B-CAS カードでスカパー！を契約する（もしくはスカパー！契約済みの B-CAS カードを nasne に入れる）
+1. PC に「PC TV with nasne」をインストールする（有料）
+1. スマートフォンには「nasne access（一部機能有料）」をインストールする
+
+nasne のセットアップについては割愛します。
+
+#### ①nasne に入っている B-CAS カードでスカパー！を契約する
+
+まずは、Jsports1+2+3+4 を契約します、ロードレース観戦の基本セットですね。  
+契約は B-CAS カード単位なので、PC でも TV でも見たい方は複数契約か、chromecast とかでゴニョゴニョすることとなります。
+
+nasne に保存した動画を再生するためには、DLNA という機能を持ち、かつ DTCP-IP に対応した動画再生ソフトを利用する必要があります。
+このままでは録画するだけで視聴できませんので ② ～ ③ に続きます。
+
+#### ②PC TV with nasne をインストールする
+
+DTCP-IP 対応のソフトはそこまでラインナップがない他、日本のガラパゴス規格ということも有りサードパーティ製だと相性問題が多発します。（昔泣かされました）
+
+予約録画や nasne 内 HDD から PC への転送にも対応する<a href="http://www.sony.jp/playstation/store/products/nasne/pcnasne-dl/" target="_blank">PC TV with nasne</a>以外ほぼ選択する理由がありません。  
+3000 円ですが、14 日間の試用期間があるのでまずはトライアルからでいいと思います。この時点で PC でのライブ視聴・録画・録画視聴が可能となります。
+
+もちろん一般地上・BS 波放送も同様に視聴可能です。
+
+#### ③ スマートフォン側のアプリをインストールする
+
+<LinkBox url="https://play.google.com/store/apps/details?id=com.playstation.nasneaccess" />
+
+スマートフォン側に、リモート視聴するアプリを導入します。
+
+ホームネットワーク内（nasne の繋がっているルーターに接続している状態）で nasne の動画を視聴できるソフトはかなりあるのですが、「nasne access」ならば、事前に nasne を家の中で接続しておけば、外部でもインターネット経由で nasne に録画されている動画と現在放送されている番組を視聴できます。
+
+iPhone の人は TV sidevew を使えばいいらしいです
+
+<LinkBox url="https://itunes.apple.com/jp/developer/sony-corporation/id371425038?uo=4" />
+
+### 構成図
+
+文章だけで、ダラダラ書いてしまったので構成図だけ置いておきます。  
+出てくる機器全てで nasne に録画・保存してある動画と、視聴可能な番組をストリーミング視聴できます。
+
+とても特殊な人向けの記事ですが、何人かには役に立つでしょう…
+
+<LinkBox
+  isAmazonLink
+  url="http://www.amazon.co.jp/exec/obidos/ASIN/B00UBS2OIC/gensobunya-22/ref=nosim/"
+/>
+
+[1]: http://www.amazon.co.jp/gp/product/B00UBS2OIC/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B00UBS2OIC&linkCode=as2&tag=gensobunya-22

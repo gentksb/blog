@@ -15,32 +15,7 @@ tags: ["CX", "REVIEW"]
 
 ついに待ち望んでいたサイドノブ＋センターセミスリックパターンのチューブレスタイヤが発売。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="MAXXIS(マキシス) スピードテレ-ン 700x33C EXO/TR TB88998100" src="https://images-fe.ssl-images-amazon.com/images/I/41RCDGuxsYL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">MAXXIS(マキシス) スピードテレ-ン 700x33C EXO/TR TB88998100</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.12.10
-</div>
-
-<div class="amazlet-detail">
-MAXXIS(マキシス)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01M8LR2G6/gensobunya-22/ref=nosim/" />
 
 芝路面ではシラクサンドが圧倒的な速さを誇るが、コースが全て芝ということはなく、どこかでサイドグリップを求められる場面が出てくる。
 
@@ -72,23 +47,9 @@ MTB 乗ってる方はご存知だと思いますが UST とチューブレス�
 
 なので友人の体験談を元にビード上げるためのポンプを買うことに。
 
-<blockquote class="twitter-tweet" data-lang="ja">
-  <div dir="ltr" lang="ja">
-    Giyoのフラッシュチャージャーいい感じ <a href="https://t.co/nsrlvD9G4S">pic.twitter.com/nsrlvD9G4S</a>
-  </div>
-
-  <p>
-    — なぐはる (@nagsaran) <a href="https://twitter.com/nagsaran/status/801228599403495424">2016年11月23日</a>
-  </p>
-</blockquote>
-
 詳細記事はこちら。
 
-<blockquote class="tr_bq">
-  <p>
-    なぐはるブログ<br /> <a href="http://nagsaran.hatenablog.com/entry/2016/11/23/101332">もうチューブレスなんて怖くない！ GIYO フラッシュチャージャー GF-94T</a>
-  </p>
-</blockquote>
+<LinkBox url="http://nagsaran.hatenablog.com/entry/2016/11/23/101332" />
 
 B○NTRAGER を始めとするフラッシュチャージャーより結構安い、LEZYNE もチューブレスタンク付きのポンプ出すみたいですね、どうせ高いでしょうが。
 
@@ -106,29 +67,4 @@ GIANT のチューブレスタンクもいい感じのお値段だったので�
 
 明日向山のコースで練習してくるので、タイヤそのもののインプレは明日アップします。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01JG277DA/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="GIYO(ジーヨ) GF-94T チューブレス対応 アルミフロアポンプ GF-94T" src="https://images-fe.ssl-images-amazon.com/images/I/31w7PTluV4L._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01JG277DA/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">GIYO(ジーヨ) GF-94T チューブレス対応 アルミフロアポンプ GF-94T</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 16.12.10
-</div>
-
-<div class="amazlet-detail">
-GIYO(ジーヨ) <br /> 売り上げランキング: 6,425
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01JG277DA/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01JG277DA/gensobunya-22/ref=nosim/" />

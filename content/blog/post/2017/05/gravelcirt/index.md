@@ -139,9 +139,6 @@ DNF がないルールなので、荒れていない箇所は走行し残りは�
 
 そんな中の解説…
 
-\*\*
-\*\*
-
 **三船さん「実はこういうコース、空気圧は高くしたほうがいいんですね。跳ねるけれどもトラブルを避けたほうが」**
 
 <strike>最初に言ってくれ</strike>
@@ -176,31 +173,4 @@ DNF がないルールなので、荒れていない箇所は走行し残りは�
 
 普通のレースではない異常な雰囲気だったが、アホみたいに面白かったので次回はちゃんとアルミホイールで参戦しようと思う。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00NIE8FKM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="Panaracer(パナレーサー) タイヤ グラベルキング [700×28C] ブラック F728-GK-B" src="https://images-fe.ssl-images-amazon.com/images/I/413soDOC6OL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-<div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00NIE8FKM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Panaracer(パナレーサー) タイヤ グラベルキング [700×28C] ブラック F728-GK-B</a></p>
-
-  <div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.05.06
-  </div>
-</div>
-
-<div class="amazlet-detail">
-  Panaracer(パナレーサー) (2014-11-01)
-</div>
-
-<div class="amazlet-sub-info" style="float: left;">
-  <div class="amazlet-link" style="margin-top: 5px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00NIE8FKM/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-  </div>
-</div>
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00NIE8FKM/gensobunya-22/ref=nosim/" />

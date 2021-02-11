@@ -49,7 +49,7 @@ cover: DSC_0694.jpg
 
 価格もうどん 100~200 円台、揚げ物 100 円という標準ラインを示してくれる。いつも思うがうどん屋の採算はどうなっているんだ…
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19745.015520241996!2d134.02403249661933!3d34.33636964546219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x985964ff0d2aaca8!2z44GV44GL5p6d!5e0!3m2!1sja!2sjp!4v1519352855502" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<LinkBox url="https://goo.gl/maps/gzn6UYrMdBPotSyP7" />
 
 ---
 
@@ -63,7 +63,7 @@ cover: DSC_0694.jpg
 
 バターと溶き卵で釜玉うどんを頂くというシンプルと言えばシンプルな一品なのだが、超粗挽きの黒胡椒がかけたことでさながらカルボナーラの如き風味を生み出す釜玉うどん界に一石を投じたメニュー。トドメの特性出汁醤油が完璧な調和を作り出す。400 円台でこの味がいただけるのだから香川はおそろしい。
 
-## <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19745.015520241996!2d134.02403249661933!3d34.33636964546219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe891aa3aa469e3a4!2z5omL5omT5Y2B5q6144GG44Gp44KT44OQ44Kr5LiA5Luj!5e0!3m2!1sja!2sjp!4v1519352863645" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<LinkBox url="https://g.page/udonbakaichidai?share" />
 
 ## 五色台
 
@@ -85,12 +85,8 @@ cover: DSC_0694.jpg
 景色を堪能した後はスカイラインのアップダウンをひたすらこなしながら山を降りていく。思ったより登り返しが多く心を折られる…
 
 何名か地元のサイクリストとすれ違ったところを見ると、安定の練習コースなんだと推測できる。
-<br>
-<br>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.671058655665!2d133.93080766962996!3d34.37930172809167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8fb1dc835d961ec4!2z5LqU6Imy5Y-w!5e0!3m2!1sja!2sjp!4v1519352838489" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
----
+<LinkBox url="https://goo.gl/maps/xbNLW7ZbjCwdmxPMA" />
 
 ## がもううどん
 
@@ -102,9 +98,7 @@ cover: DSC_0694.jpg
 この店の特徴は出汁。いりこと醤油のバランスが素晴らしい。
 もちろんうどんも素晴らしいのだが、揚げのタレとうどんのダシが絡み合って他にはない味を作り出している。おかわりしたい欲求に駆られるが、胃袋と時間の都合があるので我慢ガマン…
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66450.77727173062!2d133.85325149023413!3d34.289958544287394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc97580290de16f2!2z6K6D5bKQ44GG44Gp44KTIOOBjOOCguOBhg!5e0!3m2!1sja!2sjp!4v1519352805484" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
----
+<LinkBox url="https://goo.gl/maps/3Qe36zRcXXcJsNF19" />
 
 ## 山下うどん店
 
@@ -118,9 +112,7 @@ cover: DSC_0694.jpg
 通常なら坂出方面に向かうところだが、ここであえて善通寺方面に足を延ばす。
 昨年のさぬき CX で使った会場近くの店が当たりだったので、そちらを優先！
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66450.77727173062!2d133.85325149023413!3d34.289958544287394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x685e0dee369e7ac3!2z5bGx5LiL44GG44Gp44KT5bqX!5e0!3m2!1sja!2sjp!4v1519352816031" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
----
+<LinkBox url="https://goo.gl/maps/VNWdJv7LL7kv3GPL9" />
 
 ## 山下うどん
 
@@ -134,9 +126,7 @@ cover: DSC_0694.jpg
 
 胃の調子をととのえるために蓮根天を追加。
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23508.06138906092!2d133.837383777404!3d34.239270007616156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab6153f56ac2e0ee!2z5bGx5LiL44GG44Gp44KT!5e0!3m2!1sja!2sjp!4v1519352784087" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
----
+<LinkBox url="https://goo.gl/maps/E37SzVm1Y3JyvxHa9" />
 
 ## 綿谷　高松店
 
@@ -151,9 +141,7 @@ cover: DSC_0694.jpg
 大きな丼いっぱいに麺が入っているが、これでも「小」なので量には気をつけないとヤラれる。甘辛く似た豚肉 or 牛肉がうどんを引き立てる。
 甘辛い具は出汁と喧嘩することもままあるが、この店は見事に味を合せている。
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105407.22843109028!2d133.9455026063911!3d34.35109173473586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5c7c2bc2ec099bb!2z6bq65YemIOe2v-iwtyDpq5jmnb7lupc!5e0!3m2!1sja!2sjp!4v1519353262992" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
----
+<LinkBox url="https://goo.gl/maps/VzsibdtEjNLpxhhF9" />
 
 ## フェリー
 
@@ -168,6 +156,6 @@ cover: DSC_0694.jpg
 14 時の便で帰ると 18 時ごろには神戸に戻ることができ、まだ日曜日が残っているという贅沢な週末。
 朝入りうどんツーリング是非おすすめです。
 
-<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/1411117008/embed/d47d0732e75a8dc95988b0cf0696cb662873aa16'></iframe>
+<LinkBox url="https://www.strava.com/activities/1411117008/embed/d47d0732e75a8dc95988b0cf0696cb662873aa16" />
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007A9DRH2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51VBmpz1EuL._SL160_.jpg" alt="日の出製麺所 純生うどん（お徳用・簡易包装） ２５０ｇ x ８個 セット （NU250T-8F）" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007A9DRH2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">日の出製麺所 純生うどん（お徳用・簡易包装） ２５０ｇ x ８個 セット （NU250T-8F）</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.02.23</div></div><div class="amazlet-detail">日の出製麺所 <br />売り上げランキング: 70,453<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B007A9DRH2/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B007A9DRH2/gensobunya-22/ref=nosim/" />

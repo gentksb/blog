@@ -73,31 +73,6 @@ Amazon には<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前
 
 残りの特筆すべき点は OD2（1-1/4）コラムという点だが、これはステム規格だけなので大した影響はなし。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B071NLWNDB/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink"><img style="border: none;" src="https://images-fe.ssl-images-amazon.com/images/I/41Vb4QsoUDL._SL160_.jpg" alt="Dovewill バイク 　スチール製　ボトム ブラケット プレス 　取り付け　 ツール　 ヘッドセットBB86 / 90/91/92適用　耐久性" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B071NLWNDB/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">Dovewill バイク 　スチール製　ボトム ブラケット プレス 　取り付け　 ツール　 ヘッドセットBB86 / 90/91/92適用　耐久性</a></p>
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 17.09.05
-</div>
-
-<div class="amazlet-detail">
-Dovewill <br /> 売り上げランキング: 166,270
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B071NLWNDB/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-     
-  </div>
-</div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B071NLWNDB/gensobunya-22/ref=nosim/" />
 
 [1]: http://www.ebay.com/itm/ASHIMA-Ai2-The-Worlds-Lightest-Stainless-Disc-Rotor-140mm-64g-ABE-/131992899865?epid=2058435442&hash=item1ebb63d119:g:U8AAAOSw44BYHFd1

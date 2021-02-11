@@ -20,12 +20,6 @@ module.exports = {
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
     {
-      resolve: `gatsby-plugin-typegen`,
-      options: {
-        outputPath: `src/__generated__/gatsby-types.d.ts`,
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -42,13 +36,14 @@ module.exports = {
     `gatsby-plugin-twitter`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1200, // discover用
+              maxWidth: 1200, //discover用
               wrapperStyle: `margin-bottom: 16px;`,
               quality: 80,
               withWebp: true,
@@ -57,6 +52,7 @@ module.exports = {
               fit: `inside`
             },
           },
+          `gatsby-remark-embedder`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
@@ -111,7 +107,20 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        features: {
+          fucntions: true
+        },
+        credentials: {
+          apiKey: process.env.FIREBASE_API_KEY,
+          projectId: process.env.FIREBASE_PROJECT_ID,
+          appId: process.env.FIREBASE_APP_ID
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-feed-mdx`,
       options: {
         query: `
           {
@@ -127,8 +136,8 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
@@ -141,7 +150,7 @@ module.exports = {
             },
             query: `
               query RssFeed {
-                allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 20, filter: {frontmatter: {draft: {ne: true}}}) {
+                allMdx(sort: {order: DESC, fields: [frontmatter___date]}, limit: 20, filter: {frontmatter: {draft: {ne: true}}}) {
                   edges {
                     node {
                       excerpt
@@ -165,6 +174,11 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-lodash`,
+    {
+      resolve: `gatsby-plugin-typegen`,
+      options: {
+        outputPath: `src/__generated__/gatsby-types.d.ts`,
+      }
+    },
   ],
 }

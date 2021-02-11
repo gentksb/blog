@@ -56,7 +56,7 @@ ETRTO(ISO5775)規格が改定されて、ホイールとリムの規格がお互
 
 ### Notubes Yellow Tape
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BAAME/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/21eiDTRvokL._SL160_.jpg" alt="NoTubes YELLOW RIM TAPE 25mm幅/10Yd（約9.14m）（AS0033）" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BAAME/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">NoTubes YELLOW RIM TAPE 25mm幅/10Yd（約9.14m）（AS0033）</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.03.29</div></div><div class="amazlet-detail">NoTubes <br />売り上げランキング: 6,033<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BAAME/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0044BAAME/gensobunya-22/ref=nosim/" />
 
 基本中の基本、元祖チューブレステープ。\
 MTB 向けに作られた製品だったので、ロードの空気圧に耐えきれるほどの耐久性は無いようで 3~4 ヶ月 CX の空気圧で運用すると次は交換。
@@ -65,7 +65,7 @@ MTB 向けに作られた製品だったので、ロードの空気圧に耐え�
 
 ### ダクトテープ類
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B004JLGARI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51zaNnHS5yL._SL160_.jpg" alt="ニトムズ 気密・防水クロステープ 片面粘着 KZ-7 50mm×20m G0010" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B004JLGARI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ニトムズ 気密・防水クロステープ 片面粘着 KZ-7 50mm×20m G0010</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.03.29</div></div><div class="amazlet-detail">ニトムズ(Nitoms) <br />売り上げランキング: 772<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B004JLGARI/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B004JLGARI/gensobunya-22/ref=nosim/" />
 
 通称ダクトテープと呼ばれる高耐久の粘着テープ。\
 粘着性能は悪くないものの、テープ自体の剛性は最弱。当然の用に 1 発の使い捨てになるが、コストを考えると悪くはない。
@@ -74,7 +74,7 @@ MTB 向けに作られた製品だったので、ロードの空気圧に耐え�
 
 ### 3M 仮固定用テープ
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000SPHL4U/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/317ygeq96PL._SL160_.jpg" alt="3M 仮固定用テープ 8898 24mmx55M 8898 24X55" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000SPHL4U/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">3M 仮固定用テープ 8898 24mmx55M 8898 24X55</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.03.29</div></div><div class="amazlet-detail">3M(スリーエム) <br />売り上げランキング: 5,021<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000SPHL4U/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B000SPHL4U/gensobunya-22/ref=nosim/" />
 
 ダクトテープと同じく使い捨て前提だが、幅が揃っている分ダクトテープより便利らしい。（使ったことはない）
 
@@ -96,11 +96,11 @@ CX シーズンの後半はこれを投入したところ、4 ヶ月経っても
 
 18mm と 22mm という少ないバリエーションだが BBB のリムテープは安い。ただ 18mm はリム幅の都合でほぼ出番はないと思われる。
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B079JXZFM3/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/21i7tkXvmNL._SL200_.jpg" alt="BBB リムテープ リムテープ 22MMX4M チューブレス BTI-150 703044 703044" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B079JXZFM3/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">BBB リムテープ リムテープ 22MMX4M チューブレス BTI-150 703044 703044</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="BBB リムテープ リムテープ 22MMX4M チューブレス BTI-150 703044 703044" rel="nofollow" target="_blank">Amaquick</a> at 2020-12-14</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B079JXZFM3/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B079JXZFM3/?tag=gensobunya-22" />
 
 WTB の大ロールは非常にコストパフォーマンスが高い。5 巻き分の長さで値段あ 2 巻き分の GIANT テープとほぼ変わらない。
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B01I2YCP8U/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/41GOrdxB-aL._SL200_.jpg" alt="WTB(ダブルティービー) TCS リムテープ イエロー 24mm×11m Roll (for 5 wheels)-i19" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B01I2YCP8U/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">WTB(ダブルティービー) TCS リムテープ イエロー 24mm×11m Roll (for 5 wheels)-i19</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="WTB(ダブルティービー) TCS リムテープ イエロー 24mm×11m Roll (for 5 wheels)-i19" rel="nofollow" target="_blank">Amaquick</a> at 2020-12-14</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B01I2YCP8U/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01I2YCP8U/?tag=gensobunya-22" />
 
 パナレーサーも[チューブレステープ](https://store.shopping.yahoo.co.jp/worldcycle/PAN-O-TLT-21.html)を出しており、幅のバリエーションが広く取られていながら値段は 1500 円と抑えられている。
 
@@ -117,6 +117,6 @@ WTB の大ロールは非常にコストパフォーマンスが高い。5 巻�
 
 他に評判が良いのは Notubes の上位機種である[Race Sealant](https://amzn.to/2Ix0Yyu)や[Vittoria のシーラント](https://amzn.to/2HfhDHq)
 
-ブログだと引用の都合上 Amazon リンクが多いが、自転車関連品は自動設定された価格が異常に高くなっていることが目につくため、<<a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=883104724" target="_blank" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" border="0">Wiggle</a>とか使ったほうが良さそう。
+ブログだと引用の都合上 Amazon リンクが多いが、自転車関連品は自動設定された価格が異常に高くなっていることが目につくため、[Wiggle](https://www.wiggle.jp/) とか使ったほうが良さそう。
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/416cXMLzStL._SL160_.jpg" alt="3M 耐熱性ポリイミドテープ 7413D 21mm幅x33m" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">3M 耐熱性ポリイミドテープ 7413D 21mm幅x33m</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.04.06</div></div><div class="amazlet-detail">3M(スリーエム) <br />売り上げランキング: 228,859<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B0171L294A/gensobunya-22/ref=nosim/" />

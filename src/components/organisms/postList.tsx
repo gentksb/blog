@@ -7,7 +7,7 @@ import PostTag from "../molecules/postTag"
 import PostCoverImage from "../atoms/postCoverImage"
 
 interface Props {
-  edges : GatsbyTypes.IndexPageQuery['allMarkdownRemark']['edges']
+  edges : GatsbyTypes.IndexPageQuery['allMdx']['edges']
 }
 
 const postList: React.FunctionComponent<Props> = ({edges}) => {

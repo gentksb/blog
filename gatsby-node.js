@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const postsQueryResult = await graphql(`
       query AllPostNode{
-        allMarkdownRemark(
+        allMdx(
           sort: { fields: [frontmatter___date], order: DESC }
           filter: {frontmatter: {draft: {ne: true}}}
         ) {
@@ -28,7 +28,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const tagsQueryResult = await graphql(`
   query AllTagNode{
-    allMarkdownRemark {
+    allMdx {
           group(field: frontmatter___tags) {
             fieldValue
           }
@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
     throw postsQueryResult.errors
   }
 
-  const posts = postsQueryResult.data.allMarkdownRemark.edges
+  const posts = postsQueryResult.data.allMdx.edges
 
   // Create blog posts pages.
   posts.forEach((post, index) => {
@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
   // Create Tag Page
   // Extract tag data from query
-  const tags = tagsQueryResult.data.allMarkdownRemark.group
+  const tags = tagsQueryResult.data.allMdx.group
   // Make tag pages
   tags.forEach(tag => {
     createPage({
@@ -88,7 +88,7 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,

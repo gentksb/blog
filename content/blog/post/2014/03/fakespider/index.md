@@ -21,25 +21,12 @@ CX 用に AliExpress で色合せで偽スパイダーを買いました。
 
 CX4 レース後（3 ヶ月後）
 
-<div style="text-align: center;">
-  リアのレール固定部分からお亡くなりになられました。
-</div>
+リアのレール固定部分からお亡くなりになられました。
 
-<div style="text-align: center;">
-  CXで酷使しましたからね…
-</div>
+CX で酷使しましたからね…
 
-<div style="text-align: center;">
-</div>
+値段を考えれば買いだめして使ってもいいかもと思えるレベル
 
-<div style="text-align: center;">
-  値段を考えれば買いだめして使ってもいいかもと思えるレベル
-</div>
+色も多いのでカラーコーディネートにも使える。ケツに合えばなかなかいいのでは…
 
-<div style="text-align: center;">
-  色も多いのでカラーコーディネートにも使える。ケツに合えばなかなかいいのでは…
-</div>
-
-<div style="text-align: center;">
-  代替に買ったVELOのサドルが合わなくて泣いてるのでオーダー入れるか…
-</div>
+代替に買った VELO のサドルが合わなくて泣いてるのでオーダー入れるか…

@@ -173,29 +173,4 @@ Serac CX Mud
 
 シクロクロス会場では天気に次ぐ無難な話題であるところのタイヤチョイス、個々人のスキルにもよると思うが「こんな人もいるんだなぁ」くらいでネタにしてもらえれば幸いです。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="CHALLENGE(チャレンジ) シクロクロス シケイン33 TEAM EDITION チューブラー ブラック/コットン 33C" src="https://images-fe.ssl-images-amazon.com/images/I/41OIogqvHRL._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">CHALLENGE(チャレンジ) シクロクロス シケイン33 TEAM EDITION チューブラー ブラック/コットン 33C</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.02.14
-</div>
-
-<div class="amazlet-detail">
-CHALLENGE(チャレンジ) <br /> 売り上げランキング: 211,109
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" />

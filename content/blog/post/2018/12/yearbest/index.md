@@ -12,7 +12,7 @@ cover: "./dugast_set.jpg"
 
 ### ルンバ（WiFi 対応）
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B079P47RKF/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/410t%2Bm8aOVL._SL160_.jpg" alt="【Amazon.co.jp限定】ルンバ691 アイロボット ロボット掃除機 wifi対応 遠隔操作 自動充電 清掃予約 髪の毛 畳にも ロボットクリーナー【Alexa対応】" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B079P47RKF/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">【Amazon.co.jp限定】ルンバ691 アイロボット ロボット掃除機 wifi対応 遠隔操作 自動充電 清掃予約 髪の毛 畳にも ロボットクリーナー【Alexa対応】</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.12.11</div></div><div class="amazlet-detail">iRobot (アイロボット) <br />売り上げランキング: 16<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B079P47RKF/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B079P47RKF/gensobunya-22/ref=nosim/" />
 
 いきなり自転車ぽくないものから始まるが、こいつのおかげで泥やホコリを自転車と一緒に持ち込んだ場合でも翌日仕事から帰ってくると床がきれいになっているすごいやつ。CX や MTB に傾倒している自分には欠かせない存在。自分の場合は GoogleHOME に「行ってきます」と声をかければ起動するように設定しているので、家に居ない時間を有効に使ってくれる。
 
@@ -44,8 +44,7 @@ Dugast は直販か Bike24 が安いが、初期不良が多いので国内で�
 
 ### DMR - V12 フラットペダル
 
-<a href="https://www.wiggle.jp/dmr-v12-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%9A%E3%83%80%E3%83%AB-1/" target="_blank" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" border="0"><img src='https://www.wigglestatic.com/product-media/5360096730/DMR-V12-PEDAL-Flat-Pedals-Polished-DMR-VV12-S9-1.jpg?w=430&h=430&a=7' border='0' width='350' height='350' /></a>  
-<a href="https://www.wiggle.jp/dmr-v12-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%9A%E3%83%80%E3%83%AB-1/" target="_blank" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=883104724" height="1" width="0" border="0">DMR - V12 フラットペダル</a>
+<LinkBox url="https://www.wiggle.jp/dmr-v12-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%9A%E3%83%80%E3%83%AB-1/" />
 
 MTB グッズで今年最も良かったものがこれ。そこそこのお値段でクリーンな見た目（すごく薄くはないが金属ペダルの中では薄い方）を実現してくれる。ピンの食いつきも良くホップも楽ちんだし、FIVE TEN のシューズとの組み合わせでビンディングのように食いついてくれる。
 
@@ -53,4 +52,4 @@ MTB グッズで今年最も良かったものがこれ。そこそこのお値�
 
 謎の SS29er で通勤するのは疲れるし軽快感に欠けるので、通勤用にピストとか組みたい。
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4883934896/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/41Reg3zjD7L._SL160_.jpg" alt="ピスト&シングルスピードバイクメンテナンスブック" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4883934896/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">ピスト&シングルスピードバイクメンテナンスブック</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.12.11</div></div><div class="amazlet-detail"><br />スタジオタッククリエイティブ <br />売り上げランキング: 491,079<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4883934896/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/4883934896/gensobunya-22/ref=nosim/" />

@@ -23,9 +23,7 @@ tags: ["REVIEW", "ROAD"]
 
 あった
 
-<div style="text-align: center;">
-  NOVATEC JETFLY
-</div>
+### NOVATEC JETFLY
 
 ![image](BWXIUoJCEAAl97d.jpg)
 

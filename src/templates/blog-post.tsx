@@ -2,6 +2,8 @@ import React from "react"
 import { PageProps,graphql } from "gatsby"
 import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
@@ -11,12 +13,15 @@ import PrevAndNextPost from "../components/molecules/prevAndNextpost"
 import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/organisms/relatedPosts"
 import BlogPostStyle from "../styles/blog-post.style"
+import LinkBox from "../mdx/linkBox"
 
-
+const shortcodes = {
+  LinkBox,
+}
 
 const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.SitePageContext>> = (props) => {
   const { pageContext, data, location } = props
-  const post = data.markdownRemark
+  const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
   const { previous, next } = pageContext
   const seoImage =
@@ -53,12 +58,16 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
               <PostTag tags={post.frontmatter.tags} />
             </header>
             <Divider />
-            <Text
-              as="div"
-              dangerouslySetInnerHTML={{ __html: post.html }}
+            <Box
               className="post-body"
               css={BlogPostStyle}
-            />
+            >
+              <MDXProvider components={shortcodes}>
+                <MDXRenderer>
+                  {post.body}
+                </MDXRenderer>
+              </MDXProvider>
+            </Box>
         </article>
         <Divider />
         <Share title={post.frontmatter.title} location={location} />
@@ -81,10 +90,10 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(truncate: true)
-      html
+      body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title

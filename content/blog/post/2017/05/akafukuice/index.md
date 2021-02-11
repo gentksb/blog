@@ -115,29 +115,4 @@ R369 は曲がりくねっていないものの、長い直登の連続で心を
 
 近畿圏の鉄道はそこまで明るくないが、こういった楽ちんなグルメロングライドスポットを開拓していきたい。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01MZ9GYH7/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img alt="るるぶお伊勢まいり(2017年版) (るるぶ情報版(国内))" src="https://images-fe.ssl-images-amazon.com/images/I/61BIZ-dvZML._SL160_.jpg" style="border: none;" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01MZ9GYH7/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">るるぶお伊勢まいり(2017年版) (るるぶ情報版(国内))</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a href="http://www.amazlet.com/" target="_blank" title="amazlet">amazlet</a> at 17.05.16
-</div>
-
-<div class="amazlet-detail">
-JTBパブリッシング (2017-01-13)
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01MZ9GYH7/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01MZ9GYH7/gensobunya-22/ref=nosim/" />

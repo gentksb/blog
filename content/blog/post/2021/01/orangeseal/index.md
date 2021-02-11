@@ -8,11 +8,11 @@ cover: "./cover.jpg"
 
 ![製品写真](./cover.jpg)
 
-今まで、チューブレスレディタイヤの初期空気漏れのカバーやビード上げ時の浸透力では [Caffelatex](https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Feffetto-caffelatex-tubeless-fluid%2Frp-prod150131%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates)が最も良いと信じて疑わなかったが、今回別の製品に手を出してみた。
+今まで、チューブレスレディタイヤの初期空気漏れのカバーやビード上げ時の浸透力では [Caffelatex](https://www.chainreactioncycles.com/jp/ja/effetto-caffelatex-tubeless-fluid/rp-prod150131)が最も良いと信じて疑わなかったが、今回別の製品に手を出してみた。
 
 ## Orangeseal Sealant
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Forange-seal-endurance-sealant-refill%2Frp-prod179168%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/JBYIFhb"></a></div></div>
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/orange-seal-endurance-sealant-refill/rp-prod179168" />
 
 Orange Seal(オレンジシール)は新興シーラントメーカーで、英語メディアのインプレッションで毎回高い評価を得ていたので気にはなっていた。
 
@@ -46,4 +46,4 @@ MTB やグラベルバイクでオレンジシールを使っている友人曰�
 
 シーラントが長持ちするに越したことはないので、現在はこちらの購入をお勧めします。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Forange-seal-endurance-sealant-refill%2Frp-prod179168%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" data-iframely-url="//cdn.iframe.ly/JBYIFhb"></a></div></div>
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/orange-seal-endurance-sealant-refill/rp-prod179168" />

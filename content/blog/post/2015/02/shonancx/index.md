@@ -13,10 +13,6 @@ tags: ["CX", "RACE"]
 
 ![image](10750033_726704890775926_8167226097473679261_o.jpg)
 
-<div style="text-align: right;">
-  photo じーなか
-</div>
-
 開幕戦は雨のフラットコース。
 
 雨の影響で、フラット特有の地脚勝負にはならず、砂利と泥という性質の違うスリッピーなコーナーをいかにクリアするかがキモになった。
@@ -50,10 +46,6 @@ tags: ["CX", "RACE"]
 ![image](DPP6018_c.jpg)
 
 ![image](DPP6029_c.jpg)
-
-<div style="text-align: right;">
-  photo ryodoh
-</div>
 
 昨年は鬼のような下りで賛否両論あった中井コース（自分は好きだった）。
 

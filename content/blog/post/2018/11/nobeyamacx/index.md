@@ -69,11 +69,11 @@ JCX ポイント集めに精力的だったこともあり、48 番という良�
 
 そして、年初の自分の計画通りに事を進めていたことを Twilog で知る。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今年のJCXは5ptでフィニッシュなので来年80ptくらい取らないと全日本は厳しいですね…</p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/955040608325808129?ref_src=twsrc%5Etfw">January 21, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今年のJCXは5ptでフィニッシュなので来年80ptくらい取らないと全日本は厳しいですね…</p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/955040608325808129?ref_src=twsrc%5Etfw">January 21, 2018</a></blockquote>
 
 SS クラス及び男子エリートにエントリーしてます。  
 しっかり計画的を立ててポイントゲットして全日本という目標達成できたことに対して素直に嬉しい。
 
 シーズン後半は残留に向けて AJOCC ポイントを稼がなければ…
 
-<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B019FM9MQ6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/418S%2BtQLvnL._SL160_.jpg" alt="アロマ【イナーメ・スポーツアロマ】for CX バラ系の香り（ホホバオイル100%）低温 高強度 レース 運動前【正規品】マッサージオイル 30ml" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B019FM9MQ6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">アロマ【イナーメ・スポーツアロマ】for CX バラ系の香り（ホホバオイル100%）低温 高強度 レース 運動前【正規品】マッサージオイル 30ml</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 18.11.20</div></div><div class="amazlet-detail">Dissetare <br />売り上げランキング: 11,166<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B019FM9MQ6/gensobunya-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B019FM9MQ6/gensobunya-22/ref=nosim/" />

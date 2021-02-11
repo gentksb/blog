@@ -7,12 +7,7 @@ cover: "./DSC_0048.jpg"
 tags: ["TOURING", "ROAD"]
 ---
 
-<div class="separator" style="clear: both; text-align: left;">
-</div>
-
-<div class="separator" style="clear: both; text-align: left;">
-  札幌から小樽方面に抜けていく途中にある「朝里峠」
-</div>
+札幌から小樽方面に抜けていく途中にある「朝里峠」
 
 ![image](DSC_0048.jpg)
 

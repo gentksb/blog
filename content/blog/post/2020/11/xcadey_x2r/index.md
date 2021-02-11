@@ -18,15 +18,15 @@ AliExpress でよくみる中華パワーメーター筆頭である XCADEY の�
 左側クランク単体・スパイダー・両側システムが大きな区分で、補修パーツ扱いで右だけのメーターも販売しているというのが公式のラインナップ。\
 左側クランクはバッテリー式とコイン電池式がある。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://s.click.aliexpress.com/e/_AprDnl" data-iframely-url="//cdn.iframe.ly/uXDV8CD"></a></div></div>
+<LinkBox url="https://s.click.aliexpress.com/e/_AprDnl" />
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://s.click.aliexpress.com/e/_A4DPRH" data-iframely-url="//cdn.iframe.ly/BGkOUiP"></a></div></div>
+<LinkBox url="https://s.click.aliexpress.com/e/_A4DPRH" />
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://s.click.aliexpress.com/e/_9Qq8Xt" data-iframely-url="//cdn.iframe.ly/HHHDvPu?iframe=card-small"></a></div></div>
+<LinkBox url="https://s.click.aliexpress.com/e/_9Qq8Xt" />
 
 AliExpress のセラーには、公式に存在しない謎の右クランクメーターも。何故か両側 PM の最新版は自分が右側を買った後に AliExpress から姿を消し、しょっぱなから不穏。
 
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://s.click.aliexpress.com/e/_A3KpYJ" data-iframely-url="//cdn.iframe.ly/RIREE0S"></a></div></div>
+<LinkBox url="https://s.click.aliexpress.com/e/_A3KpYJ" />
 
 ## Unboxing
 

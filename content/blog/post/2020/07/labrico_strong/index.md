@@ -17,7 +17,7 @@ cover: "./complete.jpg"
 
 その点、[LABRICO のアジャスター](https://amzn.to/32LE9Et)はねじ式なので、ネジの長さ分だけ柔軟に調整することができ、カットの誤差を吸収しやすいため自分はこちらが好みです。
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B01HTRVZ0A/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/212SEdqumoL._SL200_.jpg" alt="平安伸銅工業 LABRICO  DIY収納パーツ 2×4アジャスター オフホワイト DXO-1" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B01HTRVZ0A/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">平安伸銅工業 LABRICO  DIY収納パーツ 2×4アジャスター オフホワイト DXO-1</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="平安伸銅工業 LABRICO  DIY収納パーツ 2×4アジャスター オフホワイト DXO-1" rel="nofollow" target="_blank">Amaquick</a> at 2020-07-23</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B01HTRVZ0A/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01HTRVZ0A/?tag=gensobunya-22" />
 
 以前は棚の両端を縦置きしていたのですが、今回は部屋レイアウトの都合で横置きをしたかったので、新たに 1 本作り直すことにして今までの木材はそのまま棚として引き継ぐことにしました。
 
@@ -27,7 +27,7 @@ cover: "./complete.jpg"
 
 転倒対策がなされた[STAPLER](https://amzn.to/3fUJygk)、屋外利用が可能な[アイアンシリーズ](https://amzn.to/2CHdCxp)、そして今回自分が使った[強力タイプ](https://amzn.to/2WOgL5H)。
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B083WKJ7V6/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/31M1j2TeIlL._SL200_.jpg" alt="平安伸銅工業 LABRICO DIY収納パーツ 2×4アジャスター強力タイプ ブロンズ EXB-1 最大使用荷重40kg" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B083WKJ7V6/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">平安伸銅工業 LABRICO DIY収納パーツ 2×4アジャスター強力タイプ ブロンズ EXB-1 最大使用荷重40kg</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="平安伸銅工業 LABRICO DIY収納パーツ 2×4アジャスター強力タイプ ブロンズ EXB-1 最大使用荷重40kg" rel="nofollow" target="_blank">Amaquick</a> at 2020-07-23</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B083WKJ7V6/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B083WKJ7V6/?tag=gensobunya-22" />
 
 使用例からして自転車を吊るすことを想定している、完全に自分向けの製品でしたので、これを利用することにしました。
 
@@ -66,7 +66,7 @@ cover: "./complete.jpg"
 
 これ以外は特に難しい場所はなく、いい感じの場所にハンガーを木ネジで留めていくだけです。MTB 用のハンガーは横幅が必要なので別途[中華製のハンガー](https://amzn.to/32LXGor)を買ってみました。[ミノウラ](https://amzn.to/2CFEwpz)の 1/2 の値段だし…
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B078SN8Z8N/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/41gkCTs-tlL._SL200_.jpg" alt="SUNSPOT マウンテンバイク用バイクハンガー レッド" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B078SN8Z8N/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">SUNSPOT マウンテンバイク用バイクハンガー レッド</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="SUNSPOT マウンテンバイク用バイクハンガー レッド" rel="nofollow" target="_blank">Amaquick</a> at 2020-07-23</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B078SN8Z8N/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B078SN8Z8N/?tag=gensobunya-22" />
 
 結果、本体の剛性は十分ですが付属のネジが最低の品質で、仮止めから動かそうとしたところ頭からネジが破壊されました。怖い。
 
@@ -84,4 +84,4 @@ cover: "./complete.jpg"
 
 強力タイプと銘打つだけあり、力をかけて揺らしても全然だいじょうぶです。突っ張り型のミノウラバイクタワーなどは、半年に 1 回ほど崩壊するのでバネに比べるとネジによるアジャスターのほうが遥かに安心感がありますね。
 
-<div class="amachazl-box" style="margin-bottom:0px;"><div class="amachazl-image" style="float:left;margin:0px 12px 1px 0px;"><a href="https://www.amazon.co.jp/dp/B083WKJ7V6/?tag=gensobunya-22" name="amazonlink" rel="nofollow" target="_blank"><img src="https://m.media-amazon.com/images/I/31M1j2TeIlL._SL200_.jpg" alt="平安伸銅工業 LABRICO DIY収納パーツ 2×4アジャスター強力タイプ ブロンズ EXB-1 最大使用荷重40kg" style="border: none;" /></a></div><div class="amachazl-info" style="line-height:120%; margin-bottom: 10px"><div class="amachazl-name" style="margin-bottom:10px;line-height:120%"><a href="https://www.amazon.co.jp/dp/B083WKJ7V6/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">平安伸銅工業 LABRICO DIY収納パーツ 2×4アジャスター強力タイプ ブロンズ EXB-1 最大使用荷重40kg</a><div class="amachazl-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="https://creazy.net/amazon_quick_affiliate/" title="平安伸銅工業 LABRICO DIY収納パーツ 2×4アジャスター強力タイプ ブロンズ EXB-1 最大使用荷重40kg" rel="nofollow" target="_blank">Amaquick</a> at 2020-07-23</div></div><div class="amachazl-sub-info" style="float: left;"><div class="amachazl-link" style="margin-top: 5px"><a href="https://www.amazon.co.jp/dp/B083WKJ7V6/?tag=gensobunya-22" name="amachazllink" rel="nofollow" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amachazl-footer" style="clear: left"></div></div>
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B083WKJ7V6/?tag=gensobunya-22" />

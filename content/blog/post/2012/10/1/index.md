@@ -9,8 +9,6 @@ tags: ["ROAD"]
 
 ![image](./DSC_0664.jpg)
 
-<!--BUILD TEST-->
-
 まずはメインで使っているロードバイクから。
 <a href="http://www.avedio.net/" target="_blank">AVEDIO</a>の Bacchus01(2011 モデル)です。
 コンポは 5700 で統一、サドルはスペシャの TOUPE Expert。フロントホイールは WH-7850SL でやたら目立っているリアホイールは中華の 60mm ホイールとなっています。

@@ -95,29 +95,4 @@ TCR の 12mm スルーアクスル用ホイールと、ローラーのアダプ�
 
 安心のアフターサービスですね。
 
-<div class="amazlet-box" style="margin-bottom: 0px;">
-  <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;">
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink"><img style="border: none;" src="https://images-fe.ssl-images-amazon.com/images/I/314zu5iB-rL._SL160_.jpg" alt="（TNI/ティーエヌアイ)（自転車用パーツ）エボリューション フロントディスクハブ用 12mmスルーアクスル変換アダプター(2016～)" /></a>
-  </div>
-
-  <div class="amazlet-info" style="line-height: 120%; margin-bottom: 10px;">
-    <div class="amazlet-name" style="line-height: 120%; margin-bottom: 10px;">
-<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">（TNI/ティーエヌアイ)（自転車用パーツ）エボリューション フロントディスクハブ用 12mmスルーアクスル変換アダプター(2016～)</a></p>
-
-<div class="amazlet-powered-date" style="font-size: 80%; line-height: 120%; margin-top: 5px;">
-  posted with <a title="amazlet" href="http://www.amazlet.com/" target="_blank" rel="noopener">amazlet</a> at 16.11.12
-</div>
-
-<div class="amazlet-detail">
-TNI(ティーエヌアイ) <br /> 売り上げランキング: 219,657
-
-<div class="amazlet-sub-info" style="float: left;">
-<div class="amazlet-link" style="margin-top: 5px;">
-  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" target="_blank" rel="noopener" name="amazletlink">Amazon.co.jpで詳細を見る</a>
-</div>
-
-  </div>
-
-  <div class="amazlet-footer" style="clear: left;">
-  </div>
-</div>
+<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B01DNU5B0C/gensobunya-22/ref=nosim/" />

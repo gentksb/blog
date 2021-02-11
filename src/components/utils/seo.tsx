@@ -40,9 +40,9 @@ const SEO : React.FunctionComponent<Props> = (props) => {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description ?? site.siteMetadata.description
   const metaImage =
-    site.siteMetadata.siteUrl + (image || site.siteMetadata.image)
+    site.siteMetadata.siteUrl + (image ?? site.siteMetadata.image)
 
   return (
     <Helmet
@@ -98,7 +98,6 @@ const SEO : React.FunctionComponent<Props> = (props) => {
         },
       ].concat(meta)}
     >
-      <script async src="https://cdn.iframe.ly/embed.js" />
       <script async src="https://platform.twitter.com/widgets.js" />
     </Helmet>
   )

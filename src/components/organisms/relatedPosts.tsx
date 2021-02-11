@@ -8,7 +8,7 @@ interface Props {
 const relatedPosts: React.FunctionComponent<Props> = ({tag}) =>{
   const recentPostsData: GatsbyTypes.RecentPostQuery = useStaticQuery<GatsbyTypes.RecentPostQuery>(graphql`
     query RecentPost {
-      allMarkdownRemark(limit: 20, sort: {fields: frontmatter___date, order: DESC}) {
+      allMdx(limit: 20, sort: {fields: frontmatter___date, order: DESC}) {
         edges {
           node {
             frontmatter {
@@ -25,7 +25,7 @@ const relatedPosts: React.FunctionComponent<Props> = ({tag}) =>{
     }
   `)
 
-  const relatedRecentPostsData = recentPostsData.allMarkdownRemark.edges.filter( edge => edge.node.frontmatter.tags.includes(tag) === true)
+  const relatedRecentPostsData = recentPostsData.allMdx.edges.filter( edge => edge.node.frontmatter.tags.includes(tag) === true)
   const maxRelatedPostsCount = 4;
 
   const relatedRecentPostsElements = (
