@@ -40,11 +40,11 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
             return
           }
 
-          const title = response.title || ""
-          const imageUrl = response.imageUrl || ""
-          const description = response.description || ""
-          const siteName = response.siteName || urlDomain
-          const siteIconPath = response.ogpIcon || "/favicon.ico"
+          const title = response.title
+          const imageUrl = response.imageUrl
+          const description = response.description
+          const siteName = response.siteName ?? urlDomain
+          const siteIconPath = response.ogpIcon ?? "/favicon.ico"
           const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(

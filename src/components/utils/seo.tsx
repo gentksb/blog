@@ -40,9 +40,9 @@ const SEO : React.FunctionComponent<Props> = (props) => {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description ?? site.siteMetadata.description
   const metaImage =
-    site.siteMetadata.siteUrl + (image || site.siteMetadata.image)
+    site.siteMetadata.siteUrl + (image ?? site.siteMetadata.image)
 
   return (
     <Helmet

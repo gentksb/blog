@@ -31,9 +31,9 @@ export const getOgpLinkData = functions
     if (data.isAmazonLink) {
       try {
         if (
-          functions.config().amazon.paapi_key ||
-          functions.config().amazon.paapi_secret ||
-          functions.config().amazon.partner_tag
+          functions.config().amazon.paapi_key !== null ||
+          functions.config().amazon.paapi_secret !== null ||
+          functions.config().amazon.partner_tag !== null
         ) {
           result.error = "Didn't set PAAPIv5 parameters"
           console.error("Didn't set PAAPIv5 parameters")
@@ -90,28 +90,28 @@ export const getOgpLinkData = functions
         result.title =
           document
             .querySelector("meta[property='og:title']")
-            ?.getAttribute("content") ||
+            ?.getAttribute("content") ??
           document
             .querySelector("meta[name='title']")
-            ?.getAttribute("content") ||
-          document.querySelector("title")?.innerText ||
+            ?.getAttribute("content") ??
+          document.querySelector("title")?.innerText ??
           ""
         result.imageUrl =
           document
             .querySelector("meta[property='og:image']")
-            ?.getAttribute("content") || ""
+            ?.getAttribute("content") ?? ""
         result.description =
           document
             .querySelector("meta[property='og:description']")
-            ?.getAttribute("content") ||
+            ?.getAttribute("content") ??
           document
             .querySelector("meta[name='description']")
-            ?.getAttribute("content") ||
+            ?.getAttribute("content") ??
           ""
         result.siteName =
           document
             .querySelector("meta[property='og:site_name']")
-            ?.getAttribute("content") || urlDomain
+            ?.getAttribute("content") ?? urlDomain
 
         const siteIconPath =
           document
