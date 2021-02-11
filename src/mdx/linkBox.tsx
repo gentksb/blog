@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons"
-import { Box, CircularProgress, Image, Link, Text } from "@chakra-ui/react"
+import { Box, CircularProgress, Image, Text, LinkBox as ChakraLinkBox, LinkOverlay } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
 import firebase from "gatsby-plugin-firebase"
 
@@ -69,7 +69,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
 
 
   return (
-    <Box p={4} display="flex" borderWidth="1px" borderRadius="xl" mb={[2,2,3,3]}>
+    <ChakraLinkBox p={4} display="flex" borderWidth="1px" borderRadius="xl" mb={[2,2,3,3]}>
       <Box flexShrink={1}>
         <Image
           borderRadius="lg"
@@ -82,34 +82,32 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
         />
       </Box>
       <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-        <Link
+        <LinkOverlay
           mt={1}
           display="block"
           fontSize="lg"
           lineHeight="normal"
           fontWeight="semibold"
-          href={ogpData.url}
+          href={url ?? ogpData.url}
           isExternal
         >
           <Text noOfLines={[1,1,2,2]} as="span"><ExternalLinkIcon />{ogpData.title}</Text>
-        </Link>
+        </LinkOverlay>
         <Text as="span" fontSize="sm" color="gray.500" dangerouslySetInnerHTML={{__html:ogpData.description}} noOfLines={[1,2,2,3]} />
-          <Link isExternal href={ogpData.url}>
-            <Text
-              as="span"
-              fontSize="sm"
-              letterSpacing="wide"
-              color="teal.600"
-              display="inline-flex"
-              fontWeight="Bold"
-              mt={3}
-              isTruncated
-            >
+          <Text
+            as="span"
+            fontSize="sm"
+            letterSpacing="wide"
+            color="teal.600"
+            display="inline-flex"
+            fontWeight="Bold"
+            mt={3}
+            isTruncated
+          >
           {loading ? <CircularProgress isIndeterminate color="teal.300" /> : <Image src={ogpData.ogpIcon} alt="favicon" maxHeight="2em" fallbackSrc="https://via.placeholder.com/24?text=f" />}{ogpData.siteName} 
           </Text> 
-        </Link>
       </Box>
-    </Box>
+    </ChakraLinkBox>
   )
 }
 
