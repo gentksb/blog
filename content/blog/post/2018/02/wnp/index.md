@@ -66,4 +66,4 @@ Bike: TCX SLR('14) Ultegra Di2\
 Tyre: Dugast smallbird 1.2Bar(F), Dugast smallbird 1.1Bar(R)\
 Wheel: (F/R)PAX PROJECT carbon 30mm TU
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B079NS766M/" />

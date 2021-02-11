@@ -173,4 +173,4 @@ Serac CX Mud
 
 シクロクロス会場では天気に次ぐ無難な話題であるところのタイヤチョイス、個々人のスキルにもよると思うが「こんな人もいるんだなぁ」くらいでネタにしてもらえれば幸いです。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00K305H82/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B079NS766M/" />
