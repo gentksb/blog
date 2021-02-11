@@ -22,6 +22,7 @@ export const getOgpLinkData = functions
       description: "",
       siteName: "",
       ogpIcon: "",
+      pageurl: "",
       error: "",
     }
     const urlConstructor = new URL(data.url)
@@ -74,6 +75,7 @@ export const getOgpLinkData = functions
         const productDetail = apiResult.ItemsResult.Items[0]
         console.log(productDetail)
 
+        result.pageurl = productDetail.DetailPageURL //AmazonはPAAPIで発行したURLを返す
         result.imageUrl =
           productDetail.Images.Primary.Large.URL ??
           productDetail.Images.Primary.Medium.URL
@@ -93,6 +95,7 @@ export const getOgpLinkData = functions
         const html = await httpResponse.text()
         const jsdom = new JSDOM(html)
         const document = jsdom.window.document
+        result.pageurl = data.url //通常のOGPは渡されたURLをそのままセットする
         result.title =
           document
             .querySelector("meta[property='og:title']")

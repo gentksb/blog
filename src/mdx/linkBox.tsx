@@ -14,6 +14,7 @@ interface ApiResponse {
       description: string
       siteName: string
       ogpIcon: string
+      pageurl: string
       error?: string
     }
 
@@ -46,6 +47,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
           const siteName = response.siteName ?? urlDomain
           const siteIconPath = response.ogpIcon ?? "/favicon.ico"
           const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
+          const linkurl = response.pageurl
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(
             {
@@ -53,7 +55,8 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
               imageUrl: imageUrl,
               description: description,
               siteName: siteName,
-              ogpIcon: siteIcon
+              ogpIcon: siteIcon,
+              url: linkurl
             }
           )
         })
@@ -83,13 +86,13 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
           fontSize="lg"
           lineHeight="normal"
           fontWeight="semibold"
-          href={url}
+          href={ogpData.url}
           isExternal
         >
           <Text noOfLines={[1,1,2,2]} as="span"><ExternalLinkIcon />{ogpData.title}</Text>
         </Link>
         <Text as="span" fontSize="sm" color="gray.500" dangerouslySetInnerHTML={{__html:ogpData.description}} noOfLines={[1,2,2,3]} />
-          <Link isExternal href={url}>
+          <Link isExternal href={ogpData.url}>
             <Text
               as="span"
               fontSize="sm"
