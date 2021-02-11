@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons"
-import { Box, Image, Link, Text } from "@chakra-ui/react"
+import { Box, CircularProgress, Image, Link, Text } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
 import firebase from "gatsby-plugin-firebase"
 
@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === 'development' ){
 
 const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
   const [ogpData, changeOgpData] = useState(Object)
+  const [loading, changeLoading] = useState(true)
   const urlConstructor = new URL(url)
   const urlDomain = urlConstructor.hostname
   const apiRequestBody = isAmazonLink ? {url: url, isAmazonLink: isAmazonLink} : {url: url}
@@ -59,6 +60,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
               url: linkurl
             }
           )
+          changeLoading(false)
         })
     } catch (error) {
       console.error(error)
@@ -74,7 +76,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
           src={ogpData.imageUrl}
           alt={ogpData.title}
           fit="cover"
-          fallbackSrc="https://via.placeholder.com/150?text=NoImage"
+          fallbackSrc={`https://via.placeholder.com/150?text=${loading ? "Loading" : "NoImage"}`}
           paddingRight={[2,2,3,3]}
           maxWidth={["100px","100px","150px","150px"]}
         />
@@ -103,7 +105,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
               mt={3}
               isTruncated
             >
-          <Image src={ogpData.ogpIcon} alt="favicon" maxHeight="2em" fallbackSrc="https://via.placeholder.com/24?text=favicon" />{ogpData.siteName}
+          {loading ? <CircularProgress isIndeterminate color="teal.300" /> : <Image src={ogpData.ogpIcon} alt="favicon" maxHeight="2em" fallbackSrc="https://via.placeholder.com/24?text=f" />}{ogpData.siteName} 
           </Text> 
         </Link>
       </Box>
