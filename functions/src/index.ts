@@ -27,6 +27,9 @@ export const getOgpLinkData = functions
     const urlDomain = urlConstructor.hostname
 
     if (data.isAmazonLink) {
+      result.siteName = "www.amazon.co.jp"
+      result.ogpIcon = "https://www.amazon.co.jp/favicon.ico"
+
       try {
         if (
           functions.config().amazon.paapi_key === null ||
@@ -48,31 +51,33 @@ export const getOgpLinkData = functions
           SecretKey: functions.config().amazon.paapi_secret,
           PartnerTag: functions.config().amazon.partner_tag,
           PartnerType: "Associates",
-          Marketplace: "Japan",
-          Host: "webservices.amazon.co.jp",
-          Region: "us-west-2",
+          Marketplace: "www.amazon.co.jp",
         }
 
         const requestParameters = {
-          ASIN: asin,
+          ItemIds: [asin],
+          ItemIdType: "ASIN",
           Condition: "New",
           Resources: [
             "Images.Primary.Medium",
+            "Images.Primary.Large",
             "ItemInfo.Title",
-            "Offers.Listings.Price",
+            "ItemInfo.Features",
           ],
         }
 
-        amazonPaapi
-          .GetItems(commonParameters, requestParameters)
-          .then((data: any) => {
-            // do something with the success response.
-            console.log(data)
-          })
-          .catch((error: any) => {
-            // catch an error.
-            console.log(error)
-          })
+        const apiResult = await amazonPaapi.GetItems(
+          commonParameters,
+          requestParameters
+        )
+        const productDetail = apiResult.ItemsResult.Items[0]
+        console.log(productDetail)
+
+        result.imageUrl =
+          productDetail.Images.Primary.Large.URL ??
+          productDetail.Images.Primary.Medium.URL
+        result.title = productDetail.ItemInfo.Title.DisplayValue
+        result.description = productDetail.ItemInfo.Features.DisplayValues[0]
 
         return result
       } catch (error) {
