@@ -1,4 +1,5 @@
 import * as functions from "firebase-functions"
+import "firebase-functions/lib/logger/compat"
 import fetch from "node-fetch"
 import { JSDOM } from "jsdom"
 const amazonPaapi = require("amazon-paapi")
