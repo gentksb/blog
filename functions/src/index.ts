@@ -1,8 +1,7 @@
 import * as functions from "firebase-functions"
 import fetch from "node-fetch"
 import { JSDOM } from "jsdom"
-const ProductAdvertisingAPIv1 = require("paapi5-nodejs-sdk")
-
+const amazonPaapi = require("amazon-paapi")
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
@@ -16,7 +15,6 @@ export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
     functions.logger.info("Url:", data.url, "isAmazon", data.isAmazonLink)
-
     const result = {
       title: "",
       imageUrl: "",
@@ -31,9 +29,9 @@ export const getOgpLinkData = functions
     if (data.isAmazonLink) {
       try {
         if (
-          functions.config().amazon.paapi_key !== null ||
-          functions.config().amazon.paapi_secret !== null ||
-          functions.config().amazon.partner_tag !== null
+          functions.config().amazon.paapi_key === null ||
+          functions.config().amazon.paapi_secret === null ||
+          functions.config().amazon.partner_tag === null
         ) {
           result.error = "Didn't set PAAPIv5 parameters"
           console.error("Didn't set PAAPIv5 parameters")
@@ -45,37 +43,38 @@ export const getOgpLinkData = functions
         const document = jsdom.window.document
         const asin = document.querySelector("#ASIN")?.getAttribute("value")
 
-        const defaultClient = ProductAdvertisingAPIv1.ApiClient.instance
-        defaultClient.accessKey = functions.config().amazon.paapi_key
-        defaultClient.secretKey = functions.config().amazon.paapi_secret
-        defaultClient.host = "webservices.amazon.co.jp"
-        defaultClient.region = "us-west-2"
+        const commonParameters = {
+          AccessKey: functions.config().amazon.paapi_key,
+          SecretKey: functions.config().amazon.paapi_secret,
+          PartnerTag: functions.config().amazon.partner_tag,
+          PartnerType: "Associates",
+          Marketplace: "Japan",
+          Host: "webservices.amazon.co.jp",
+          Region: "us-west-2",
+        }
 
-        // const api = new ProductAdvertisingAPIv1.DefaultApi()
-        var getItemsRequest = new ProductAdvertisingAPIv1.GetItemsRequest()
+        const requestParameters = {
+          ASIN: asin,
+          Condition: "New",
+          Resources: [
+            "Images.Primary.Medium",
+            "ItemInfo.Title",
+            "Offers.Listings.Price",
+          ],
+        }
 
-        /** Enter your partner tag (store/tracking id) and partner type */
-        getItemsRequest["PartnerTag"] = functions.config().amazon.partner_tag
-        getItemsRequest["PartnerType"] = "Associates"
+        amazonPaapi
+          .GetItems(commonParameters, requestParameters)
+          .then((data: any) => {
+            // do something with the success response.
+            console.log(data)
+          })
+          .catch((error: any) => {
+            // catch an error.
+            console.log(error)
+          })
 
-        /** Enter the Item IDs for which item information is desired */
-        getItemsRequest["ItemIds"] = [asin]
-
-        getItemsRequest["Condition"] = "New"
-
-        /**
-         * Choose resources you want from GetItemsResource enum
-         * For more details, refer: https://webservices.amazon.com/paapi5/documentation/get-items.html#resources-parameter
-         */
-        getItemsRequest["Resources"] = [
-          "Images.Primary.Medium",
-          "ItemInfo.Title",
-          "Offers.Listings.Price", //必要な項目だけ取る
-        ]
-
-        //この辺にリターン処理
-
-        return null
+        return result
       } catch (error) {
         console.error(error)
         result.error = error
