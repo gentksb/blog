@@ -77,8 +77,9 @@ export const getOgpLinkData = functions
           productDetail.Images.Primary.Large.URL ??
           productDetail.Images.Primary.Medium.URL
         result.title = productDetail.ItemInfo.Title.DisplayValue
-        result.description = productDetail.ItemInfo.Features.DisplayValues[0]
-
+        result.description =
+          productDetail.ItemInfo.Features?.DisplayValues[0] ?? ""
+        console.log(result)
         return result
       } catch (error) {
         console.error(error)
@@ -98,7 +99,7 @@ export const getOgpLinkData = functions
           document
             .querySelector("meta[name='title']")
             ?.getAttribute("content") ??
-          document.querySelector("title")?.innerText ??
+          document.title ??
           ""
         result.imageUrl =
           document
@@ -124,7 +125,7 @@ export const getOgpLinkData = functions
         result.ogpIcon = siteIconPath.includes("//")
           ? siteIconPath
           : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
-
+        console.log(result)
         return result
       } catch (error) {
         console.error(error)

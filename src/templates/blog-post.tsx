@@ -58,7 +58,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
               <PostTag tags={post.frontmatter.tags} />
             </header>
             <Divider />
-            <Text
+            <Box
               className="post-body"
               css={BlogPostStyle}
             >
@@ -67,7 +67,7 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
                   {post.body}
                 </MDXRenderer>
               </MDXProvider>
-            </Text>
+            </Box>
         </article>
         <Divider />
         <Share title={post.frontmatter.title} location={location} />
