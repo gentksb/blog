@@ -3577,11 +3577,6 @@ type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
-type TagListQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
-
 type BioComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3589,6 +3584,11 @@ type BioComponentQuery = { readonly avatar: Maybe<{ readonly childImageSharp: Ma
       Pick<SiteSiteMetadata, 'author'>
       & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter' | 'github' | 'instagram'>> }
     )> }> };
+
+type TagListQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
 
 type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
 
