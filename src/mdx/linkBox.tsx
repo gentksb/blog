@@ -73,6 +73,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
           fit="cover"
           fallbackSrc="https://via.placeholder.com/150?text=NoImage"
           paddingRight={[2,2,3,3]}
+          maxWidth={["100px","100px","150px","150px"]}
         />
       </Box>
       <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
