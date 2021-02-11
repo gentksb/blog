@@ -47,7 +47,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
           const siteName = response.siteName ?? urlDomain
           const siteIconPath = response.ogpIcon ?? "/favicon.ico"
           const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
-          const linkurl = response.pageurl
+          const linkurl = response.pageurl ?? url
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(
             {
