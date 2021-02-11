@@ -73,8 +73,8 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
         <Share title={post.frontmatter.title} location={location} />
       </Box>
       <PrevAndNextPost previous={previous} next={next} />
-      {/* <Text as="h2">最近の似た記事</Text>
-      {relatedPostsComponent} */}
+      <Divider my={2} />
+      {relatedPostsComponent}
       <TagList />
     </Layout>
   )

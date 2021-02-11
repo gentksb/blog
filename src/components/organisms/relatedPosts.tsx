@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-
+import { Box, Heading, LinkBox, LinkOverlay, VStack } from "@chakra-ui/react"
+import { AttachmentIcon } from "@chakra-ui/icons"
 interface Props {
   tag: string
 }
@@ -8,7 +9,7 @@ interface Props {
 const relatedPosts: React.FunctionComponent<Props> = ({tag}) =>{
   const recentPostsData: GatsbyTypes.RecentPostQuery = useStaticQuery<GatsbyTypes.RecentPostQuery>(graphql`
     query RecentPost {
-      allMdx(limit: 20, sort: {fields: frontmatter___date, order: DESC}) {
+      allMdx(limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
         edges {
           node {
             frontmatter {
@@ -26,27 +27,25 @@ const relatedPosts: React.FunctionComponent<Props> = ({tag}) =>{
   `)
 
   const relatedRecentPostsData = recentPostsData.allMdx.edges.filter( edge => edge.node.frontmatter.tags.includes(tag) === true)
-  const maxRelatedPostsCount = 4;
 
   const relatedRecentPostsElements = (
     relatedRecentPostsData.map( ({node})  => {
       return (
-        <>
-        </>
-        // <Grid item xs={12} key={node.id}>
-        //   <Postcard elevation={0} variant="outlined">
-        //     <CardActionArea aria-label={node.frontmatter.title}>
-        //       <Link to={node.fields.slug} style={{ textDecoration: 'none' }}>
-        //         <CardHeader title={node.frontmatter.title} component="h2" style={{padding : '0 16px'}} />
-        //       </Link>
-        //     </CardActionArea>
-        //   </Postcard>
-        // </Grid>
+        <LinkBox as="article" key={node.id} width="100%" p={[2,2,3,3]}  borderWidth="1px" rounded="md"> 
+          <Heading size="md" fontWeight="normal">
+            <LinkOverlay href="#">{node.frontmatter.title}</LinkOverlay>
+          </Heading> 
+        </LinkBox>
       )
     })
   )
   return (
-    <>{relatedRecentPostsElements}</>
+    <Box width="100%">
+      <Heading as="h2" fontSize={{ base: "xl", md: "2xl"}} my={2}><AttachmentIcon color="teal.500" height="1lh" mr={2} />関連記事</Heading>
+      <VStack spacing={2} >
+      {relatedRecentPostsElements}
+      </VStack>
+    </Box>
   )
   }
 
