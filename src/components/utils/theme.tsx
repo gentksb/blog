@@ -1,10 +1,10 @@
-import { extendTheme, Theme } from "@chakra-ui/react"
+import { extendTheme } from "@chakra-ui/react"
 
 const primaryColor = "blue.500"
 const secondaryColor = "teal.200"
 const linkColor = "teal.500"
 
-const theme: Theme = extendTheme({
+const theme = extendTheme({
   layerStyles: {
     themeBgColor: {
       bg: primaryColor
