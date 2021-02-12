@@ -26,6 +26,25 @@ interface Res {
 //　https://firebase.google.com/docs/functions/tips?hl=ja#use_global_variables_to_reuse_objects_in_future_invocations
 const cache = new Map<string, Res>()
 
+const amazonPaApiKey = functions.config().amazon.paapi_key
+const amazonPaApiSecret = functions.config().amazon.paapi_secret
+const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
+
+const commonParameters = {
+  AccessKey: amazonPaApiKey,
+  SecretKey: amazonPaApiSecret,
+  PartnerTag: amazonPaApiPartnerTag,
+  PartnerType: "Associates",
+  Marketplace: "www.amazon.co.jp",
+}
+
+const getHtmlDocument = async (url: string) => {
+  const httpResponse = await fetch(url)
+  const html = await httpResponse.text()
+  const jsdom = new JSDOM(html)
+  return jsdom.window.document
+}
+
 export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
@@ -54,27 +73,16 @@ export const getOgpLinkData = functions
 
       try {
         if (
-          functions.config().amazon.paapi_key === null ||
-          functions.config().amazon.paapi_secret === null ||
-          functions.config().amazon.partner_tag === null
+          amazonPaApiKey === null ||
+          amazonPaApiSecret === null ||
+          amazonPaApiPartnerTag === null
         ) {
           result.error = "Didn't set PAAPIv5 parameters"
           console.error("Didn't set PAAPIv5 parameters")
           return result
         }
-        const httpResponse = await fetch(data.url)
-        const html = await httpResponse.text()
-        const jsdom = new JSDOM(html)
-        const document = jsdom.window.document
+        const document = await getHtmlDocument(data.url)
         const asin = document.querySelector("#ASIN")?.getAttribute("value")
-
-        const commonParameters = {
-          AccessKey: functions.config().amazon.paapi_key,
-          SecretKey: functions.config().amazon.paapi_secret,
-          PartnerTag: functions.config().amazon.partner_tag,
-          PartnerType: "Associates",
-          Marketplace: "www.amazon.co.jp",
-        }
 
         const requestParameters = {
           ItemIds: [asin],
@@ -114,10 +122,7 @@ export const getOgpLinkData = functions
       }
     } else {
       try {
-        const httpResponse = await fetch(data.url)
-        const html = await httpResponse.text()
-        const jsdom = new JSDOM(html)
-        const document = jsdom.window.document
+        const document = await getHtmlDocument(data.url)
         result.pageurl = data.url //通常のOGPは渡されたURLをそのままセットする
         result.title =
           document
