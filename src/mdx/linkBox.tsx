@@ -25,9 +25,10 @@ if (process.env.NODE_ENV === 'development' ){
 const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
   const [ogpData, changeOgpData] = useState(Object)
   const [loading, changeLoading] = useState(true)
-  const urlConstructor = new URL(url)
+  const encodedUrl = encodeURI(url)
+  const urlConstructor = new URL(encodedUrl)
   const urlDomain = urlConstructor.hostname
-  const apiRequestBody = isAmazonLink ? {url: url, isAmazonLink: isAmazonLink} : {url: url}
+  const apiRequestBody = isAmazonLink ? {url: encodedUrl, isAmazonLink: isAmazonLink} : {url: encodedUrl}
 
   useEffect(() => {
     try {
@@ -48,7 +49,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
           const siteName = response.siteName ?? urlDomain
           const siteIconPath = response.ogpIcon ?? "/favicon.ico"
           const siteIcon = siteIconPath.includes("//") ? siteIconPath : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
-          const linkurl = response.pageurl ?? url
+          const linkurl = response.pageurl ?? encodedUrl
           console.log(title, imageUrl, description, siteName, siteIcon)
           changeOgpData(
             {
@@ -88,7 +89,7 @@ const LinkBox: React.FunctionComponent<Props> = ( {url, isAmazonLink} ) => {
           fontSize="lg"
           lineHeight="normal"
           fontWeight="semibold"
-          href={url ?? ogpData.url}
+          href={encodedUrl ?? ogpData.url}
           isExternal
         >
           <Text noOfLines={[1,1,2,2]} as="span"><ExternalLinkIcon />{ogpData.title}</Text>
