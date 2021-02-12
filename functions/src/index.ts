@@ -12,11 +12,31 @@ interface Props {
   isAmazonLink?: boolean
 }
 
+interface Res {
+  title: string
+  imageUrl: string
+  description: string
+  siteName: string
+  ogpIcon: string
+  pageurl: string
+  error?: string
+}
+
+// AmazonのAPIやFetchの回数を減らすためにグローバル変数にキャッシュする
+//　https://firebase.google.com/docs/functions/tips?hl=ja#use_global_variables_to_reuse_objects_in_future_invocations
+const cache = new Map<string, Res>()
+
 export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
     functions.logger.info("Url:", data.url, "isAmazon", data.isAmazonLink)
-    const result = {
+
+    if (cache.has(data.url)) {
+      functions.logger.info("Cahe hit!", cache.get(data.url))
+      return cache.get(data.url)
+    }
+
+    const result: Res = {
       title: "",
       imageUrl: "",
       description: "",
@@ -82,7 +102,10 @@ export const getOgpLinkData = functions
         result.title = productDetail.ItemInfo.Title.DisplayValue
         result.description =
           productDetail.ItemInfo.Features?.DisplayValues[0] ?? ""
+
         console.log(result)
+        cache.set(data.url, result)
+
         return result
       } catch (error) {
         console.error(error)
@@ -129,7 +152,10 @@ export const getOgpLinkData = functions
         result.ogpIcon = siteIconPath.includes("//")
           ? siteIconPath
           : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
+
         console.log(result)
+        cache.set(data.url, result)
+
         return result
       } catch (error) {
         console.error(error)
