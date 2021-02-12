@@ -51,7 +51,7 @@ export const getOgpLinkData = functions
     functions.logger.info("Url:", data.url, "isAmazon", data.isAmazonLink)
 
     if (cache.has(data.url)) {
-      functions.logger.info("Cahe hit!", cache.get(data.url))
+      functions.logger.info("Cache hit!", cache.get(data.url))
       return cache.get(data.url)
     }
 
