@@ -49,6 +49,12 @@ export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
     functions.logger.info("Url:", data.url, "isAmazon", data.isAmazonLink)
+    if (data.url === undefined) {
+      throw new functions.https.HttpsError(
+        "invalid-argument",
+        "No url parameter"
+      )
+    }
 
     if (cache.has(data.url)) {
       functions.logger.info("Cache hit!", cache.get(data.url))
@@ -100,6 +106,7 @@ export const getOgpLinkData = functions
           commonParameters,
           requestParameters
         )
+
         const productDetail = apiResult.ItemsResult.Items[0]
         console.log(productDetail)
 
@@ -117,8 +124,7 @@ export const getOgpLinkData = functions
         return result
       } catch (error) {
         console.error(error)
-        result.error = error
-        return result
+        throw new functions.https.HttpsError("internal", error)
       }
     } else {
       try {
@@ -164,8 +170,7 @@ export const getOgpLinkData = functions
         return result
       } catch (error) {
         console.error(error)
-        result.error = error
-        return result
+        throw new functions.https.HttpsError("internal", error)
       }
     }
   })

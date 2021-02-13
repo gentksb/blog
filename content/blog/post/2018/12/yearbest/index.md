@@ -12,7 +12,7 @@ cover: "./dugast_set.jpg"
 
 ### ルンバ（WiFi 対応）
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B079P47RKF/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B088HL6J9P/" />
 
 いきなり自転車ぽくないものから始まるが、こいつのおかげで泥やホコリを自転車と一緒に持ち込んだ場合でも翌日仕事から帰ってくると床がきれいになっているすごいやつ。CX や MTB に傾倒している自分には欠かせない存在。自分の場合は GoogleHOME に「行ってきます」と声をかければ起動するように設定しているので、家に居ない時間を有効に使ってくれる。
 
@@ -51,5 +51,3 @@ MTB グッズで今年最も良かったものがこれ。そこそこのお値�
 ## 2019 買いたいもの
 
 謎の SS29er で通勤するのは疲れるし軽快感に欠けるので、通勤用にピストとか組みたい。
-
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/4883934896/gensobunya-22/ref=nosim/" />
