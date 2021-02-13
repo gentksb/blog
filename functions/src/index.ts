@@ -83,12 +83,20 @@ export const getOgpLinkData = functions
           amazonPaApiSecret === null ||
           amazonPaApiPartnerTag === null
         ) {
-          result.error = "Didn't set PAAPIv5 parameters"
-          console.error("Didn't set PAAPIv5 parameters")
-          return result
+          throw new functions.https.HttpsError(
+            "failed-precondition",
+            "Didn't set PAAPIv5 parameters"
+          )
         }
         const document = await getHtmlDocument(data.url)
         const asin = document.querySelector("#ASIN")?.getAttribute("value")
+
+        if (asin === null || asin === undefined) {
+          throw new functions.https.HttpsError(
+            "not-found",
+            "Amazon Product page does't have ASIN."
+          )
+        }
 
         const requestParameters = {
           ItemIds: [asin],
