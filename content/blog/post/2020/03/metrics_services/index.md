@@ -28,7 +28,7 @@ cover: "./healthcare_relation.png"
 
 インプレは[本体の過去記事](/post/2019/08/edge530j/)と、[MTB ダイナミクスインプレ](/post/2019/11/edge530_mtbd/)にて。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/exec/obidos/ASIN/B07V4DG1DK/gensobunya-22/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07V4DG1DK/" />
 
 ## 応用編：日常生活もモニタリングしよう
 
@@ -40,7 +40,7 @@ cover: "./healthcare_relation.png"
 
 私が使っている ForeAthelete45/45S は、薄くて軽くて日常生活で使っていても違和感が少なく非常におすすめです。持っている人は Apple Watch でもいいでしょう。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/exec/obidos/ASIN/B07WG1QZHJ/gensobunya-22/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07WG1QZHJ/" />
 
 ### 睡眠と安静時心拍とコンディション
 
@@ -84,7 +84,7 @@ cover: "./healthcare_relation.png"
 
 体重を記録するだけでなく、GARAMIN CONNECT や先ほど紹介した myfitnesspal に連携できる点がミソです。タニタなど国内メーカーはどうにもこの点が弱いので…IFTTT に対応してくれれば何でもできるんですが、どうにもイケてない…
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/exec/obidos/ASIN/B071ZG8JP2/gensobunya-22/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B071ZG8JP2/" />
 
 ## WEB 連携！
 

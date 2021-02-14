@@ -96,11 +96,11 @@ CX シーズンの後半はこれを投入したところ、4 ヶ月経っても
 
 18mm と 22mm という少ないバリエーションだが BBB のリムテープは安い。ただ 18mm はリム幅の都合でほぼ出番はないと思われる。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B079JXZFM3/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B079JXZFM3/" />
 
 WTB の大ロールは非常にコストパフォーマンスが高い。5 巻き分の長さで値段あ 2 巻き分の GIANT テープとほぼ変わらない。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01I2YCP8U/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01I2YCP8U/" />
 
 パナレーサーも[チューブレステープ](https://store.shopping.yahoo.co.jp/worldcycle/PAN-O-TLT-21.html)を出しており、幅のバリエーションが広く取られていながら値段は 1500 円と抑えられている。
 

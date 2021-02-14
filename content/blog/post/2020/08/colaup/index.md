@@ -27,17 +27,17 @@ cover: "./colaup.jpg"
 
 これだけで優秀さがわかりますね。しかも暑い日でもすぐには溶けず、パッケージもチャックがついているのでライド中こまめに食べることもできます。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00K6C79EM/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00K6C79EM/" />
 
 ## その他美味しいグミシリーズ
 
 ハリボー派の人はみんな大好きハッピーコーラも 100g あたりタンパク質 6.9g と中々優秀なタンパク質も含まれているお菓子です。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B000QUR7BY/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B000QUR7BY/" />
 
 酸っぱさが欲しい人はフェットチーネグミがおすすめです。粉がまぶしてあるので、普通のグミ以上に溶けにくいのも非常にグッド。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00W0MNIAA/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00W0MNIAA/" />
 
 エンデュランス競技用の補給食のように吸収速度やカフェイン、パフォーマンスアップにつながる成分は入っていませんが、エネルギー補給という観点のみ見ればかなりおすすめできます。
 

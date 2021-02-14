@@ -24,7 +24,7 @@ CONTROL TANK は米式バルブでしか空気を入れられないという欠�
 
 [SCHWALBE TIRE BOOSTER](https://www.amazon.co.jp/dp/B0773KVMV6/?tag=gensobunya-22)と、[TOPEAK Tubibooster X](https://topeak.jp/pump/ppm11300.html)です。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B0773KVMV6/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B0773KVMV6/" />
 
 こいつらの優秀な点は
 
@@ -57,4 +57,4 @@ Tubibooster のほうがちょっと安いのでこちらを買いました。Am
 
 仏式と米式の切り替えは内部部品を切り替える必要があるのでちょっと時間がかかります。[スマートヘッド アップグレード キット](https://www.amazon.co.jp/dp/B004BUC576/?tag=gensobunya-22)などを使えばこの切替が更に早くなり、使い勝手が良くなりそうです。ホース径は要確認。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B004BUC576/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B004BUC576/" />

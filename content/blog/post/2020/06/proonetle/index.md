@@ -8,7 +8,7 @@ cover: "./rear_clearance.jpg"
 
 周辺で、最近のロードチューブレスレディはいいぞという声がよく聞こえてきたので、今まで使っていた IRC の[Formula Pro TL RBCC](https://amzn.to/3eJaIWs)から SCHWALBE の[Pro One Tubeless Easy](https://www.amazon.co.jp/dp/B07WPV58SC/?tag=gensobunya-22)へ交換することにしました。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07WPV58SC/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07WPV58SC/" />
 
 Pro One はロードレース向けのタイヤですが、昨今のタイヤ幅・リム幅の拡大傾向に伴ってかなり広いタイヤ幅をラインナップしています。
 
@@ -54,7 +54,7 @@ RBCC はこれに比べるとかなり重く（使っている 28c は 公称 32
 
 290g という 30c とは思えない軽量 TLR タイヤである Pro One ですが、実は 32c で 300g を切る TLR タイヤが存在しています。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07D6X5DYX/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07D6X5DYX/" />
 
 グラベルキングのチューブレスレディバージョンは幅広かつ同重量です。グラベル向きなので、当然耐久性に振ってあるため用途によっては Pro One より適しているかもしれません。何より国内流通で安く手に入る点が Good です。色もアメサイドカラーが選べますしね。
 
@@ -66,4 +66,4 @@ TLR タイヤを使ってしまうと、純 TL タイヤは重いし固いしな
 
 太いタイヤが履けることの多いディスクロードのタイヤは、軽快さとグリップの Pro One, 耐久性のグラベルキングという観点で軽量 TLR タイヤの定番になりそうです。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07WPV58SC/?tag=gensobunya-22" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07WPV58SC/" />
