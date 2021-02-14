@@ -53,4 +53,4 @@ tags: ["TIPS", "REVIEW", "ROAD"]
 
 TT は電動一択ですが、ロードの電動変速もいいものですよ。というお話でした。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00BPJKM4E/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00BPJKM4E/" />

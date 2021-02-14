@@ -158,4 +158,4 @@ cover: DSC_0694.jpg
 
 <LinkBox url="https://www.strava.com/activities/1411117008/embed/d47d0732e75a8dc95988b0cf0696cb662873aa16" />
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B007A9DRH2/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B007A9DRH2/" />

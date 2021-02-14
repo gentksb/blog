@@ -101,4 +101,4 @@ STONE のチェーンリングは安物なので、[Wolftooth のロー側オフ
 
 38mm 限界程度のダーティカンザ専用フレームみたいなチタンフレームが出たら購入して載せ替えたいところですね。オーダーしてもよいですが…
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07RRPKB5D/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07RRPKB5D/" />

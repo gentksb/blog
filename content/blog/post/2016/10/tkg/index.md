@@ -71,4 +71,4 @@ tags: ["TOURING", "FOOD"]
 
 流石に新鮮高級卵と同じ味とはいかないが、ちょっとした工夫で朝ごはんが美味しくなるのであれば大歓迎だ。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B006GLLSK8/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B006GLLSK8/" />

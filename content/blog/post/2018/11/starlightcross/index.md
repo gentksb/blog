@@ -43,4 +43,4 @@ cover: "./45096130694_67408ab69f_k.jpg"
 
 自分より上位の人が何人ツール・ド・おきなわに参戦しているか？格好悪いが気になっている…全日本マキノいきたいなぁ
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/4594072968/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/4594072968/" />

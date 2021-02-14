@@ -25,7 +25,7 @@ tags: ["TIPS", "TOURING"]
 
 地味なメーカーだが回転の良さと、工具無しで取り外すことができる Ezy ペダルには定評がある。
 
-寄付額は 10000/15000/25000 円で別れており、それぞれ<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001F2WTLU/gensobunya-22/ref=nosim/" target="_blank">LAMBDA</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00ME93CG4/gensobunya-22/ref=nosim/" target="_blank">PRIME SYLVAN TOURING</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OOII5CO/gensobunya-22/ref=nosim/" target="_blank">CYGMA Ezy</a>を返礼品としてもらうことが出来る。
+寄付額は 10000/15000/25000 円で別れており、それぞれ<a href="https://www.amazon.co.jp/dp/B001F2WTLU/gensobunya-22/ref=nosim/" target="_blank">LAMBDA</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00ME93CG4/gensobunya-22/ref=nosim/" target="_blank">PRIME SYLVAN TOURING</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OOII5CO/" target="_blank">CYGMA Ezy</a>を返礼品としてもらうことが出来る。
 
 特にシグマ Ezy は輪行時に威力を発揮するのでツーリング派は是非視野に入れて欲しい。
 
@@ -45,13 +45,13 @@ tags: ["TIPS", "TOURING"]
 
 その他、コーヒーを淹れるための<a href="http://amzn.to/2fEOgkt" target="_blank">ジェットボイル</a>などもこれを機会に買って
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00U72QEFQ/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00U72QEFQ/" />
 
 また、シクロクロスシーズンでは待ち時間に冷え込むことが想定されるので、ウェアの上からダウンベストを着ている。
 
 ユニクロとは違い圧倒的な保温性と折りたたみ性能となっている上、ベストなので出走直前にストレス無く脱ぐことが出来る。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00F68FLVO/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00F68FLVO/" />
 
 御存知の通り、モンベルは自転車製品も充実している。  
 トゥーカバーなどの防風・防水製品類は本業の山岳ギアの性能が反映されていて非常にクオリティが高い。
@@ -59,4 +59,4 @@ tags: ["TIPS", "TOURING"]
 最近流行りのバイクパッキングに最適なウルトラライトのキャンプギアも充実しているので、実によりどりみどりといった具合。  
 ふるさと納税の控除上限は決まっているので、各自しっかり調べた上でうまく活用して良い自転車ライフを送ろう。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00INR93EQ/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00INR93EQ/" />

@@ -173,4 +173,4 @@ DNF がないルールなので、荒れていない箇所は走行し残りは�
 
 普通のレースではない異常な雰囲気だったが、アホみたいに面白かったので次回はちゃんとアルミホイールで参戦しようと思う。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00NIE8FKM/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00NIE8FKM/" />

@@ -94,4 +94,4 @@ cover: "./real.jpg"
 
 いい感じのバッグの組み合わせを探すより荷物を工夫するほうが楽だった（結論）
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07NLG8VG8/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07NLG8VG8/" />

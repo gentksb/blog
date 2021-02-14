@@ -38,4 +38,4 @@ SAVAS の補給食は数ある補給食の中でトップクラスに美味し�
 その他、ドロッパーポストを装備していたが 1 回も動作させなかった。
 こちらもノーマルポストに交換することで、サドルバッグも利用していくべき。カーボンなら衝撃吸収も期待できる。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B06XPW1TTN/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B06XPW1TTN/" />

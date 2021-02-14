@@ -40,7 +40,7 @@ Tufo のように、最初から黒いふんどしで若干の防水力がある
 
 ![マスキングしたリム](./seal.jpg)
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B000TGLPM2/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B000TGLPM2/" />
 
 テープは[シクロクロスでも問題なく使えるという触れ込み](https://www.cyclowired.jp/lifenews/node/191669)の Effetto Mariposa の[チューブラーテープ](https://amzn.to/2u8o89K)を利用。このテープ自体も防水性があるらしいが、過信せずに上記の加工をしている。
 
@@ -68,4 +68,4 @@ CX22 リムはもちろんスポークホールが空いている、つまり水
 
 ちなみに現状の組み合わせだと 4000 円のリムに 2000 円のテープを使って 2000 円のタイヤを貼っている状態。コストめっちゃ安い。デュガスだとタイヤが 8000 ～ 15000 円になるが、空気抜けやリム打ち、ビード外れのリスクを考えるとむしろコスパが良いのでは…？
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00SYZFCGU/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00SYZFCGU/" />

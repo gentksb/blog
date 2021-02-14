@@ -151,6 +151,6 @@ SS 故に平地の速度は 29km/h ほど（ケイデンス 100-110）が精一�
 
 ここまで快適だと、ギアード CX が戻ってきたときにロードの必要性を考えなければいけないかもしれない…
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B00QHS8BQE/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B00QHS8BQE/" />
 
 [1]: https://latlonglab.yahoo.co.jp/route/watch?id=640ae6ec2fbbc24f4ee241d39575d3f9 "敦賀ツーリング北摂コース - ルートラボ - LatLongLab"

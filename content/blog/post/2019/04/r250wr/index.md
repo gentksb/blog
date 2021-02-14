@@ -29,7 +29,7 @@ cover: "./framebag.jpg"
 肩紐が付属しているので駐輪後の持ち運びバッグとしても想定されている模様。  
 取り付けは 2 本のベルクロのみなのでらくちん。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07NLFZG6D/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07NLFZG6D/" />
 
 ## R250 防水フレームインナーバッグ レギュラー
 
@@ -53,4 +53,4 @@ GW は[ステムバッグ](https://amzn.to/2G29eqK)と[防水サドルバッグ�
 
 →[書きました](/post/2019/05/small_bikepacking/)
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07NLFZG6D/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07NLFZG6D/" />

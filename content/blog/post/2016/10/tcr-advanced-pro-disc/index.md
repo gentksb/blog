@@ -54,4 +54,4 @@ Solacio も良いフレームだったが、バッカスに乗っていた頃の
 
 First review なので実走のインプレは後ほど。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B006E4J034/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B006E4J034/" />

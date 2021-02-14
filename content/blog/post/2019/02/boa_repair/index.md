@@ -44,4 +44,4 @@ cover: "./overview.jpg"
 自分が使っていた、SH-XC700 の BOA ダイヤルは IP1 というモデルだった。そもそものモデルが多いほか、各左回りと右回りが存在するので注文する際はよく確認する必要がある。シマノ公式リペアパーツに品番が書いてある。  
 ただ、公式のリペアパーツは BOA から直接買うよりお高い。予備で買うなら 1 点 1500 円の[公式ショップ](https://boa-spareparts-japan.myshopify.com/)から買うべきだろう。IP1 でなければもっと安い。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B07DWPRLLV/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07DWPRLLV/" />

@@ -56,4 +56,4 @@ cover: DSC_1424.jpg
 大阪からも東京からもメチャクチャに遠い上新幹線も通っていないが、なんども来たくなる最高のフィールドであることは間違いない。  
 DH バイクなら富士見でも楽しめるが、富士見で HT だとやや恐怖感が残る。白馬にそれはない。
 
-<LinkBox isAmazonLink url="http://www.amazon.co.jp/exec/obidos/ASIN/B072R6RB44/gensobunya-22/ref=nosim/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B072R6RB44/" />
