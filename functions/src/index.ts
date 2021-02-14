@@ -94,7 +94,8 @@ export const getOgpLinkData = functions
         if (asin === null || asin === undefined) {
           throw new functions.https.HttpsError(
             "not-found",
-            "Amazon Product page does't have ASIN."
+            "Amazon Product page does't have ASIN.",
+            data.url
           )
         }
 
