@@ -63,7 +63,7 @@ Amazon には<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前
 
 ![image](./P_20170904_184136.jpg)
 
-ホームメカニックを悩ませる圧入 BB だが、今回は<a href="http://amzn.to/2vIiT38" target="_blank" rel="noopener">怪しい激安工具</a>を用いて組み上げてみた。
+ホームメカニックを悩ませる圧入 BB だが、今回は<a href="https://amzn.to/3rXnLdt" target="_blank" rel="noopener">怪しい激安工具</a>を用いて組み上げてみた。
 
 ホームセンターで売っていそうなパーツと、ベアリングを組み合わせただけの工具だが、丁寧に並行を出したあとは意外なほどスルスルと装着できた。
 
@@ -73,6 +73,6 @@ Amazon には<a href="http://amzn.to/2eHadCZ" target="_blank" rel="noopener">前
 
 残りの特筆すべき点は OD2（1-1/4）コラムという点だが、これはステム規格だけなので大した影響はなし。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B071NLWNDB/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07HKM3TJW/" />
 
 [1]: http://www.ebay.com/itm/ASHIMA-Ai2-The-Worlds-Lightest-Stainless-Disc-Rotor-140mm-64g-ABE-/131992899865?epid=2058435442&hash=item1ebb63d119:g:U8AAAOSw44BYHFd1
