@@ -34,7 +34,7 @@ const relatedPosts: React.FunctionComponent<Props> = ({tag,id}) =>{
     excludeSelfPostData.map( ({node})  => {
       return (
         <LinkBox as="article" key={node.id} width="100%" p={[2,2,3,3]}  borderWidth="1px" rounded="md"> 
-          <Heading size="md" fontWeight="normal">
+          <Heading size="sm" fontWeight="normal">
             <LinkOverlay href={node.fields.slug}>{node.frontmatter.title}</LinkOverlay>
           </Heading> 
         </LinkBox>
