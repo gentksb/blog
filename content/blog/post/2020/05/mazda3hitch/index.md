@@ -53,6 +53,16 @@ Mazda3 のディーゼルモデルで、航続スピードにもよりますが�
 
 つまりこの時点では基本外付けのキャリアを利用できないわけです。見た目や安定性を妥協して[SARIS のトランクマウント](http://shop.kirschberg.co.jp/?pid=150014295)を使うか…？といったところ。もしくは[Terzo の定番モデル](https://amzn.to/2YrfiUf)が候補でしょうか。格好良くはないですが…
 
+### 2021 年現在の状況
+
+Terzo からフック型の適合フットが発売されています！
+
+エアロバーは EF100A, スクエアバーは EF14BL が適合品です。
+
+<LinkBox url="https://paypaymall.yahoo.co.jp/store/creer-net/item/terzo-mazda3-fastback-aeroset/" />
+
+また、ルーフへの穴開けが必要になりますが海外版のフィックスポイント取り付けと海外版のルーフモール取り寄せで作業した記録も[みんカラ](https://minkara.carview.co.jp/userid/3303388/blog/44472694/)で出てきたので、選択肢は広がっています
+
 ## Mazda3 に頑張って自転車を載せる
 
 ![ペットシーツで後部座席へ](./petseats.jpg)
