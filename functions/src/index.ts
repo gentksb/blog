@@ -38,13 +38,6 @@ const commonParameters = {
   Marketplace: "www.amazon.co.jp",
 }
 
-const getHtmlDocument = async (url: string) => {
-  const httpResponse = await fetch(url)
-  const html = await httpResponse.text()
-  const jsdom = new JSDOM(html)
-  return jsdom.window.document
-}
-
 export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
@@ -88,8 +81,17 @@ export const getOgpLinkData = functions
             "Didn't set PAAPIv5 parameters"
           )
         }
-        const document = await getHtmlDocument(data.url)
-        const asin = document.querySelector("#ASIN")?.getAttribute("value")
+        const getAsinFromUrl = (str: string) => {
+          return new Promise((resolve) => {
+            if (str.search(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/) !== -1) {
+              resolve(RegExp.$1)
+            } else {
+              resolve
+            }
+          })
+        }
+        const asin = await getAsinFromUrl(data.url)
+        console.log(asin)
 
         if (asin === null || asin === undefined) {
           throw new functions.https.HttpsError(
@@ -137,6 +139,12 @@ export const getOgpLinkData = functions
       }
     } else {
       try {
+        const getHtmlDocument = async (url: string) => {
+          const httpResponse = await fetch(url)
+          const html = await httpResponse.text()
+          const jsdom = new JSDOM(html)
+          return jsdom.window.document
+        }
         const document = await getHtmlDocument(data.url)
         result.pageurl = data.url //通常のOGPは渡されたURLをそのままセットする
         result.title =
