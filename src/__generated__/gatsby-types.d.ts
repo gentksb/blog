@@ -729,6 +729,7 @@ type FileFieldsEnum =
   | 'childrenMdx.frontmatter.author'
   | 'childrenMdx.frontmatter.type'
   | 'childrenMdx.frontmatter.date'
+  | 'childrenMdx.frontmatter.tags'
   | 'childrenMdx.frontmatter.cover.sourceInstanceName'
   | 'childrenMdx.frontmatter.cover.absolutePath'
   | 'childrenMdx.frontmatter.cover.relativePath'
@@ -767,7 +768,6 @@ type FileFieldsEnum =
   | 'childrenMdx.frontmatter.cover.childrenMdx'
   | 'childrenMdx.frontmatter.cover.id'
   | 'childrenMdx.frontmatter.cover.children'
-  | 'childrenMdx.frontmatter.tags'
   | 'childrenMdx.frontmatter.draft'
   | 'childrenMdx.frontmatter.custom_permalink'
   | 'childrenMdx.slug'
@@ -828,6 +828,7 @@ type FileFieldsEnum =
   | 'childMdx.frontmatter.author'
   | 'childMdx.frontmatter.type'
   | 'childMdx.frontmatter.date'
+  | 'childMdx.frontmatter.tags'
   | 'childMdx.frontmatter.cover.sourceInstanceName'
   | 'childMdx.frontmatter.cover.absolutePath'
   | 'childMdx.frontmatter.cover.relativePath'
@@ -866,7 +867,6 @@ type FileFieldsEnum =
   | 'childMdx.frontmatter.cover.childrenMdx'
   | 'childMdx.frontmatter.cover.id'
   | 'childMdx.frontmatter.cover.children'
-  | 'childMdx.frontmatter.tags'
   | 'childMdx.frontmatter.draft'
   | 'childMdx.frontmatter.custom_permalink'
   | 'childMdx.slug'
@@ -1747,6 +1747,7 @@ type MdxFieldsEnum =
   | 'frontmatter.author'
   | 'frontmatter.type'
   | 'frontmatter.date'
+  | 'frontmatter.tags'
   | 'frontmatter.cover.sourceInstanceName'
   | 'frontmatter.cover.absolutePath'
   | 'frontmatter.cover.relativePath'
@@ -1827,7 +1828,6 @@ type MdxFieldsEnum =
   | 'frontmatter.cover.internal.mediaType'
   | 'frontmatter.cover.internal.owner'
   | 'frontmatter.cover.internal.type'
-  | 'frontmatter.tags'
   | 'frontmatter.draft'
   | 'frontmatter.custom_permalink'
   | 'slug'
@@ -1964,8 +1964,8 @@ type MdxFrontmatter = {
   readonly author: Maybe<Scalars['String']>;
   readonly type: Maybe<Scalars['String']>;
   readonly date: Maybe<Scalars['Date']>;
-  readonly cover: Maybe<File>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly cover: Maybe<File>;
   readonly draft: Maybe<Scalars['Boolean']>;
   readonly custom_permalink: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
 };
@@ -1983,8 +1983,8 @@ type MdxFrontmatterFilterInput = {
   readonly author: Maybe<StringQueryOperatorInput>;
   readonly type: Maybe<StringQueryOperatorInput>;
   readonly date: Maybe<DateQueryOperatorInput>;
-  readonly cover: Maybe<FileFilterInput>;
   readonly tags: Maybe<StringQueryOperatorInput>;
+  readonly cover: Maybe<FileFilterInput>;
   readonly draft: Maybe<BooleanQueryOperatorInput>;
   readonly custom_permalink: Maybe<StringQueryOperatorInput>;
 };
