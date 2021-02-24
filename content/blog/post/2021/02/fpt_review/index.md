@@ -38,7 +38,7 @@ cover: "./cover.jpg"
 
 大きなドロップオフはありませんが、フカフカの土やツルツルの湿った路面もありグリップを失いやすいセクションもあるので下りは油断禁物です。先日買った[Zefal DEFLECTOR LIGHT](https://amzn.to/3rYIqO9)が見事に役立ちました。
 
-<LinkBox url="https://www.amazon.co.jp/dp/B06XHQYGKL" isAmazonLink />
+<LinkBox url="https://www.amazon.co.jp/dp/B00XMPQQ1W" isAmazonLink />
 
 <LinkBox url="https://blog.gensobunya.net/post/2021/02/compact_rear_mudgurad/" />
 
