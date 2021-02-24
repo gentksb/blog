@@ -42,7 +42,7 @@ cover: "./cover.jpg"
 
 <LinkBox url="https://blog.gensobunya.net/post/2021/02/compact_rear_mudgurad/" />
 
-1 本目の全編に渡って、GoPro Hero8 で撮影した動画を Youtube にアップロードしましたので、詳細はこちらで感じていただければ…
+1 本目の全編に渡って、[GoPro Hero8](https://amzn.to/3qPOett) で撮影した動画を Youtube にアップロードしましたので、詳細はこちらで感じていただければ…
 
 <LinkBox url="https://youtu.be/mWl6x8iVLOc" />
 
