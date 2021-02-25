@@ -81,17 +81,19 @@ export const getOgpLinkData = functions
             "Didn't set PAAPIv5 parameters"
           )
         }
-        const getAsinFromUrl = (str: string) => {
+        const getAsinFromUrl = (url: string) => {
           return new Promise((resolve) => {
-            if (str.search(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/) !== -1) {
-              resolve(RegExp.$1)
+            const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
+            const hitData = re.exec(url)
+            if (hitData !== null) {
+              resolve(hitData[1])
             } else {
-              resolve
+              throw new Error("ASIN not found in URL")
             }
           })
         }
         const asin = await getAsinFromUrl(data.url)
-        console.log(asin)
+        console.log("asin is", asin)
 
         if (asin === null || asin === undefined) {
           throw new functions.https.HttpsError(
