@@ -23,7 +23,7 @@ interface Res {
 }
 
 // AmazonのAPIやFetchの回数を減らすためにグローバル変数にキャッシュする
-//　https://firebase.google.com/docs/functions/tips?hl=ja#use_global_variables_to_reuse_objects_in_future_invocations
+// https://firebase.google.com/docs/functions/tips?hl=ja#use_global_variables_to_reuse_objects_in_future_invocations
 const cache = new Map<string, Res>()
 
 const amazonPaApiKey = functions.config().amazon.paapi_key
@@ -35,7 +35,7 @@ const commonParameters = {
   SecretKey: amazonPaApiSecret,
   PartnerTag: amazonPaApiPartnerTag,
   PartnerType: "Associates",
-  Marketplace: "www.amazon.co.jp",
+  Marketplace: "www.amazon.co.jp"
 }
 
 export const getOgpLinkData = functions
@@ -61,7 +61,7 @@ export const getOgpLinkData = functions
       siteName: "",
       ogpIcon: "",
       pageurl: "",
-      error: "",
+      error: ""
     }
     const urlConstructor = new URL(data.url)
     const urlDomain = urlConstructor.hostname
@@ -111,10 +111,11 @@ export const getOgpLinkData = functions
             "Images.Primary.Medium",
             "Images.Primary.Large",
             "ItemInfo.Title",
-            "ItemInfo.Features",
-          ],
+            "ItemInfo.Features"
+          ]
         }
 
+        // eslint-disable-next-line
         const apiResult = await amazonPaapi.GetItems(
           commonParameters,
           requestParameters
@@ -123,7 +124,7 @@ export const getOgpLinkData = functions
         const productDetail = apiResult.ItemsResult.Items[0]
         console.log(productDetail)
 
-        result.pageurl = productDetail.DetailPageURL //AmazonはPAAPIで発行したURLを返す
+        result.pageurl = productDetail.DetailPageURL // AmazonはPAAPIで発行したURLを返す
         result.imageUrl =
           productDetail.Images.Primary.Large.URL ??
           productDetail.Images.Primary.Medium.URL
@@ -148,7 +149,7 @@ export const getOgpLinkData = functions
           return jsdom.window.document
         }
         const document = await getHtmlDocument(data.url)
-        result.pageurl = data.url //通常のOGPは渡されたURLをそのままセットする
+        result.pageurl = data.url // 通常のOGPは渡されたURLをそのままセットする
         result.title =
           document
             .querySelector("meta[property='og:title']")
@@ -181,7 +182,7 @@ export const getOgpLinkData = functions
             ?.getAttribute("href") || "/favicon.ico"
         result.ogpIcon = siteIconPath.includes("//")
           ? siteIconPath
-          : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
+          : `https://${urlDomain}${siteIconPath}` // 絶対パスに変換
 
         console.log(result)
         cache.set(data.url, result)

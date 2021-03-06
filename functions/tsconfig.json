@@ -9,7 +9,5 @@
     "target": "ES2019"
   },
   "compileOnSave": true,
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

@@ -78,7 +78,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json}\"",
     "start": "npm run serve",
     "serve": "gatsby build && gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "lint": "eslint 'src/**/*.{ts,tsx}'"
   },
   "engines": {
     "node": "12.x"

@@ -12,8 +12,8 @@ module.exports = {
     social: {
       twitter: `gen_sobunya`,
       github: `gentksb`,
-      instagram: `gen_sobunya`,
-    },
+      instagram: `gen_sobunya`
+    }
   },
   plugins: [
     `gatsby-plugin-emotion`,
@@ -23,15 +23,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
+        name: `blog`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
+        name: `assets`
+      }
     },
     `gatsby-plugin-twitter`,
     `gatsby-plugin-sharp`,
@@ -50,14 +50,14 @@ module.exports = {
               loading: `lazy`,
               maxHeight: 760,
               fit: `inside`
-            },
+            }
           },
           `gatsby-remark-embedder`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem;`,
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem;`
+            }
           },
           {
             resolve: `gatsby-remark-prismjs`,
@@ -66,8 +66,8 @@ module.exports = {
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
-              noInlineHighlight: false,
-            },
+              noInlineHighlight: false
+            }
           },
           `gatsby-remark-copy-linked-files`,
           {
@@ -75,13 +75,13 @@ module.exports = {
             options: {
               blocks: {
                 scrollableTable: {
-                  classes: "scrollable_table",
-                },
-              },
-            },
-          },
-        ],
-      },
+                  classes: "scrollable_table"
+                }
+              }
+            }
+          }
+        ]
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -97,13 +97,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: `GTM-MGHR8XJ`,
-      },
+        id: `GTM-MGHR8XJ`
+      }
     },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/tags/*", "/page/*"],
+        exclude: ["/tags/*", "/page/*"]
       }
     },
     {
@@ -137,14 +137,14 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
+              return allMdx.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   categories: edge.node.frontmatter.tags,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  custom_elements: [{ "content:encoded": edge.node.html }]
                 })
               })
             },
@@ -169,16 +169,16 @@ module.exports = {
             `,
             output: `/index.xml`,
             title: `幻想サイクル`,
-            match: `^/blog/`,
-          },
-        ],
-      },
+            match: `^/blog/`
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-typegen`,
       options: {
-        outputPath: `src/__generated__/gatsby-types.d.ts`,
+        outputPath: `src/__generated__/gatsby-types.d.ts`
       }
-    },
-  ],
+    }
+  ]
 }
