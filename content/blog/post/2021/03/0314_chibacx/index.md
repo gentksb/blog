@@ -64,6 +64,10 @@ cover: "./cover.jpg"
 
 いい形でシーズンを締めくくることができたので、来シーズンまでしっかり体を鍛えなおして全日本に出られるよう努力したい。
 
+WNP に続いて、前半同じパックにいた小林選手の動画に出演しています。
+
+https://www.youtube.com/watch?v=5fbZy_f3ye8
+
 ## Photo
 
 [Kazutaka Inoue](https://www.facebook.com/kazutaka.inoue.5)
