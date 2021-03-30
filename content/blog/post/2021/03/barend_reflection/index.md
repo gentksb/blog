@@ -1,10 +1,12 @@
 ---
 title: "バーエンドリフレクターのすゝめ"
-date: 2021-03-16
+date: 2021-03-30
 draft: false
 tags: ["REVIEW", "ROAD"]
 cover: "./cover.jpg"
 ---
+
+![cover](./cover.jpg)
 
 ここ 5 年以上ずっと使っている安全装備がある（法規上必要な装備でもある）
 
