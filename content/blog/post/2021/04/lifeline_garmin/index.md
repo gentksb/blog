@@ -1,6 +1,6 @@
 ---
 title: "Lifeline Garmin アウトフロントマウント2種比較"
-date: 2021-04-12
+date: 2021-04-15
 draft: false
 tags: ["REVIEW", "ROAD"]
 cover: "./cover.jpg"
