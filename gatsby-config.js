@@ -1,8 +1,4 @@
 module.exports = {
-  flags: {
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PRESERVE_WEBPACK_CACHE: true
-  },
   siteMetadata: {
     title: `幻想サイクル`,
     author: `Gen`,
