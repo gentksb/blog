@@ -729,7 +729,6 @@ type FileFieldsEnum =
   | 'childrenMdx.frontmatter.author'
   | 'childrenMdx.frontmatter.type'
   | 'childrenMdx.frontmatter.date'
-  | 'childrenMdx.frontmatter.tags'
   | 'childrenMdx.frontmatter.cover.sourceInstanceName'
   | 'childrenMdx.frontmatter.cover.absolutePath'
   | 'childrenMdx.frontmatter.cover.relativePath'
@@ -768,6 +767,7 @@ type FileFieldsEnum =
   | 'childrenMdx.frontmatter.cover.childrenMdx'
   | 'childrenMdx.frontmatter.cover.id'
   | 'childrenMdx.frontmatter.cover.children'
+  | 'childrenMdx.frontmatter.tags'
   | 'childrenMdx.frontmatter.draft'
   | 'childrenMdx.frontmatter.custom_permalink'
   | 'childrenMdx.slug'
@@ -828,7 +828,6 @@ type FileFieldsEnum =
   | 'childMdx.frontmatter.author'
   | 'childMdx.frontmatter.type'
   | 'childMdx.frontmatter.date'
-  | 'childMdx.frontmatter.tags'
   | 'childMdx.frontmatter.cover.sourceInstanceName'
   | 'childMdx.frontmatter.cover.absolutePath'
   | 'childMdx.frontmatter.cover.relativePath'
@@ -867,6 +866,7 @@ type FileFieldsEnum =
   | 'childMdx.frontmatter.cover.childrenMdx'
   | 'childMdx.frontmatter.cover.id'
   | 'childMdx.frontmatter.cover.children'
+  | 'childMdx.frontmatter.tags'
   | 'childMdx.frontmatter.draft'
   | 'childMdx.frontmatter.custom_permalink'
   | 'childMdx.slug'
@@ -1246,7 +1246,7 @@ type ImageSharp_gatsbyImageDataArgs = {
   placeholder: Maybe<ImagePlaceholder>;
   blurredOptions: Maybe<BlurredOptions>;
   tracedSVGOptions: Maybe<Potrace>;
-  formats?: Maybe<ReadonlyArray<Maybe<ImageFormat>>>;
+  formats: Maybe<ReadonlyArray<Maybe<ImageFormat>>>;
   outputPixelDensities: Maybe<ReadonlyArray<Maybe<Scalars['Float']>>>;
   breakpoints: Maybe<ReadonlyArray<Maybe<Scalars['Int']>>>;
   sizes: Maybe<Scalars['String']>;
@@ -1747,7 +1747,6 @@ type MdxFieldsEnum =
   | 'frontmatter.author'
   | 'frontmatter.type'
   | 'frontmatter.date'
-  | 'frontmatter.tags'
   | 'frontmatter.cover.sourceInstanceName'
   | 'frontmatter.cover.absolutePath'
   | 'frontmatter.cover.relativePath'
@@ -1828,6 +1827,7 @@ type MdxFieldsEnum =
   | 'frontmatter.cover.internal.mediaType'
   | 'frontmatter.cover.internal.owner'
   | 'frontmatter.cover.internal.type'
+  | 'frontmatter.tags'
   | 'frontmatter.draft'
   | 'frontmatter.custom_permalink'
   | 'slug'
@@ -1964,8 +1964,8 @@ type MdxFrontmatter = {
   readonly author: Maybe<Scalars['String']>;
   readonly type: Maybe<Scalars['String']>;
   readonly date: Maybe<Scalars['Date']>;
-  readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly cover: Maybe<File>;
+  readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly draft: Maybe<Scalars['Boolean']>;
   readonly custom_permalink: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
 };
@@ -1983,8 +1983,8 @@ type MdxFrontmatterFilterInput = {
   readonly author: Maybe<StringQueryOperatorInput>;
   readonly type: Maybe<StringQueryOperatorInput>;
   readonly date: Maybe<DateQueryOperatorInput>;
-  readonly tags: Maybe<StringQueryOperatorInput>;
   readonly cover: Maybe<FileFilterInput>;
+  readonly tags: Maybe<StringQueryOperatorInput>;
   readonly draft: Maybe<BooleanQueryOperatorInput>;
   readonly custom_permalink: Maybe<StringQueryOperatorInput>;
 };
@@ -2209,7 +2209,6 @@ type Query_allDirectoryArgs = {
 type Query_siteArgs = {
   buildTime: Maybe<DateQueryOperatorInput>;
   siteMetadata: Maybe<SiteSiteMetadataFilterInput>;
-  flags: Maybe<SiteFlagsFilterInput>;
   polyfill: Maybe<BooleanQueryOperatorInput>;
   pathPrefix: Maybe<StringQueryOperatorInput>;
   id: Maybe<StringQueryOperatorInput>;
@@ -2349,7 +2348,6 @@ type Query_allSitePluginArgs = {
 type Site = Node & {
   readonly buildTime: Maybe<Scalars['Date']>;
   readonly siteMetadata: Maybe<SiteSiteMetadata>;
-  readonly flags: Maybe<SiteFlags>;
   readonly polyfill: Maybe<Scalars['Boolean']>;
   readonly pathPrefix: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
@@ -2557,8 +2555,6 @@ type SiteFieldsEnum =
   | 'siteMetadata.social.twitter'
   | 'siteMetadata.social.github'
   | 'siteMetadata.social.instagram'
-  | 'flags.PRESERVE_FILE_DOWNLOAD_CACHE'
-  | 'flags.PRESERVE_WEBPACK_CACHE'
   | 'polyfill'
   | 'pathPrefix'
   | 'id'
@@ -2651,23 +2647,12 @@ type SiteFieldsEnum =
 type SiteFilterInput = {
   readonly buildTime: Maybe<DateQueryOperatorInput>;
   readonly siteMetadata: Maybe<SiteSiteMetadataFilterInput>;
-  readonly flags: Maybe<SiteFlagsFilterInput>;
   readonly polyfill: Maybe<BooleanQueryOperatorInput>;
   readonly pathPrefix: Maybe<StringQueryOperatorInput>;
   readonly id: Maybe<StringQueryOperatorInput>;
   readonly parent: Maybe<NodeFilterInput>;
   readonly children: Maybe<NodeFilterListInput>;
   readonly internal: Maybe<InternalFilterInput>;
-};
-
-type SiteFlags = {
-  readonly PRESERVE_FILE_DOWNLOAD_CACHE: Maybe<Scalars['Boolean']>;
-  readonly PRESERVE_WEBPACK_CACHE: Maybe<Scalars['Boolean']>;
-};
-
-type SiteFlagsFilterInput = {
-  readonly PRESERVE_FILE_DOWNLOAD_CACHE: Maybe<BooleanQueryOperatorInput>;
-  readonly PRESERVE_WEBPACK_CACHE: Maybe<BooleanQueryOperatorInput>;
 };
 
 type SiteGroupConnection = {
@@ -2950,6 +2935,8 @@ type SitePageFieldsEnum =
   | 'pluginCreator.resolve'
   | 'pluginCreator.name'
   | 'pluginCreator.version'
+  | 'pluginCreator.pluginOptions.cpu'
+  | 'pluginCreator.pluginOptions.heap'
   | 'pluginCreator.pluginOptions.sourceMap'
   | 'pluginCreator.pluginOptions.autoLabel'
   | 'pluginCreator.pluginOptions.labelFormat'
@@ -3173,6 +3160,8 @@ type SitePluginFieldsEnum =
   | 'resolve'
   | 'name'
   | 'version'
+  | 'pluginOptions.cpu'
+  | 'pluginOptions.heap'
   | 'pluginOptions.sourceMap'
   | 'pluginOptions.autoLabel'
   | 'pluginOptions.labelFormat'
@@ -3323,6 +3312,8 @@ type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 };
 
 type SitePluginPluginOptions = {
+  readonly cpu: Maybe<Scalars['Boolean']>;
+  readonly heap: Maybe<Scalars['Boolean']>;
   readonly sourceMap: Maybe<Scalars['Boolean']>;
   readonly autoLabel: Maybe<Scalars['String']>;
   readonly labelFormat: Maybe<Scalars['String']>;
@@ -3395,6 +3386,8 @@ type SitePluginPluginOptionsFeedsFilterListInput = {
 };
 
 type SitePluginPluginOptionsFilterInput = {
+  readonly cpu: Maybe<BooleanQueryOperatorInput>;
+  readonly heap: Maybe<BooleanQueryOperatorInput>;
   readonly sourceMap: Maybe<BooleanQueryOperatorInput>;
   readonly autoLabel: Maybe<StringQueryOperatorInput>;
   readonly labelFormat: Maybe<StringQueryOperatorInput>;
