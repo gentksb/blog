@@ -171,6 +171,18 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `幻想サイクル`,
+        short_name: `幻想サイクル`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `static/image/logo.jpg`
+      }
+    },
+    {
       resolve: `gatsby-plugin-typegen`,
       options: {
         outputPath: `src/__generated__/gatsby-types.d.ts`
