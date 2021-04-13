@@ -69,7 +69,7 @@ Bontrager のフロントライトのメインモデルである ION シリー�
 
 このライトの一番の特徴は、照度センサーでナイトモードとデイモードが切り替わる点。フラッシュか点灯を選択するだけで 4 パターンを利用できる。
 
-https://twitter.com/takikokun/status/1380154376476581890
+> 内蔵ライトセンサーが輝度を自動でコントロール
 
 <LinkBox url="https://www.trekbikes.com/jp/ja_JP/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC/%E3%83%90%E3%82%A4%E3%82%AF%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC/%E8%87%AA%E8%BB%A2%E8%BB%8A%E7%94%A8%E3%83%A9%E3%82%A4%E3%83%88/%E3%83%AA%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%88/bontrager-flare-r-city-rear-bike-light/p/14241/?colorCode=black" />
 
