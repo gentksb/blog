@@ -1,6 +1,6 @@
 ---
 title: "Bontrager Ion Comp R/Flare R City Bike Light Set"
-date: 2021-04-13
+date: 2021-04-14
 draft: false
 tags: ["REVIEW", "ROAD"]
 cover: "./cover.jpg"
