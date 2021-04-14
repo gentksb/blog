@@ -10,7 +10,6 @@ import {
   VStack
 } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
-import { getImage } from "gatsby-plugin-image"
 import PostTag from "../molecules/postTag"
 import PostCoverImage from "../atoms/postCoverImage"
 
@@ -22,13 +21,15 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
   const postCards = edges.map(({ node }, index) => {
     const coverTitleText = `${node.frontmatter.title} cover image`
     const columnSpan = index === 0 ? 2 : 1
-    const coverImage = getImage(node.frontmatter.cover)
 
     return (
       <GridItem colSpan={columnSpan} key={node.id}>
         <Box borderWidth="1px" borderRadius="lg" overflow="hidden" h="100%">
           <Link to={node.fields.slug} style={{ textDecoration: "none" }}>
-            <PostCoverImage image={coverImage} alt={coverTitleText} />
+            <PostCoverImage
+              image={node.frontmatter.cover.childImageSharp.gatsbyImageData}
+              alt={coverTitleText}
+            />
           </Link>
           <VStack spacing={1} padding={1} alignItems="left">
             <Link to={node.fields.slug} style={{ textDecoration: "none" }}>

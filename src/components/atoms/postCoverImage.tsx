@@ -1,9 +1,9 @@
 import { AspectRatio, Image } from "@chakra-ui/react"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
 
 interface Props {
   alt: string
-  image: any
+  image: IGatsbyImageData
 }
 
 const postCoverImage: React.FunctionComponent<Props> = ({ image, alt }) =>
