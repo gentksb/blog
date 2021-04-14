@@ -12,6 +12,7 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-plugin-typegen`,
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
@@ -174,12 +175,6 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `static/image/logo.jpg`
-      }
-    },
-    {
-      resolve: `gatsby-plugin-typegen`,
-      options: {
-        outputPath: `src/__generated__/gatsby-types.d.ts`
       }
     }
   ]
