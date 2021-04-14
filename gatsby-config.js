@@ -12,6 +12,7 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
@@ -20,13 +21,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`
       }
     },
     `gatsby-plugin-twitter`,

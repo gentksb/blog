@@ -1,5 +1,5 @@
 import React from "react"
-import { PageProps,graphql } from "gatsby"
+import { PageProps, graphql } from "gatsby"
 import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
 import { MDXRenderer } from "gatsby-plugin-mdx"
@@ -16,22 +16,24 @@ import BlogPostStyle from "../styles/blog-post.style"
 import LinkBox from "../mdx/linkBox"
 
 const shortcodes = {
-  LinkBox,
+  LinkBox
 }
 
-const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.SitePageContext>> = (props) => {
+const BlogPostTemplate: React.FunctionComponent<
+  PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.SitePageContext>
+> = (props) => {
   const { pageContext, data, location } = props
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
   const { previous, next } = pageContext
   const seoImage =
     post.frontmatter.cover != null
-      ? post.frontmatter.cover.childImageSharp.fluid.src
+      ? post.frontmatter.cover.childImageSharp.gatsbyImageData.src
       : "/image/dummy.jpg"
-  const relatedPostsComponent = post.frontmatter.tags != null
-      ? <RelatedPosts tag={post.frontmatter.tags[0]} id={post.id} />
-      : null
-  
+  const relatedPostsComponent =
+    post.frontmatter.tags != null ? (
+      <RelatedPosts tag={post.frontmatter.tags[0]} id={post.id} />
+    ) : null
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -43,31 +45,26 @@ const BlogPostTemplate: React.FunctionComponent<PageProps<GatsbyTypes.BlogPostBy
       />
       <Box outline="none" width="100%">
         <article>
-            <header>
-              <time dateTime={post.frontmatter.date}>
-                <HStack pt={1}>
-                  <CalendarIcon />
-                  <Text color="GrayText" fontSize="sm">
-                    {post.frontmatter.date}
-                  </Text>
-                </HStack>
-              </time>
-              <Heading as="h1" fontSize={{ base: "2xl", md: "4xl"}}>
-                {post.frontmatter.title}
-              </Heading>
-              <PostTag tags={post.frontmatter.tags} />
-            </header>
-            <Divider />
-            <Box
-              className="post-body"
-              css={BlogPostStyle}
-            >
-              <MDXProvider components={shortcodes}>
-                <MDXRenderer>
-                  {post.body}
-                </MDXRenderer>
-              </MDXProvider>
-            </Box>
+          <header>
+            <time dateTime={post.frontmatter.date}>
+              <HStack pt={1}>
+                <CalendarIcon />
+                <Text color="GrayText" fontSize="sm">
+                  {post.frontmatter.date}
+                </Text>
+              </HStack>
+            </time>
+            <Heading as="h1" fontSize={{ base: "2xl", md: "4xl" }}>
+              {post.frontmatter.title}
+            </Heading>
+            <PostTag tags={post.frontmatter.tags} />
+          </header>
+          <Divider />
+          <Box className="post-body" css={BlogPostStyle}>
+            <MDXProvider components={shortcodes}>
+              <MDXRenderer>{post.body}</MDXRenderer>
+            </MDXProvider>
+          </Box>
         </article>
         <Divider />
         <Share title={post.frontmatter.title} location={location} />
@@ -91,21 +88,11 @@ export const pageQuery = graphql`
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(truncate: true)
       body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        cover {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         tags
-        draft
       }
     }
   }

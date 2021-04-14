@@ -8,7 +8,9 @@ import Pagination from "../components/molecules/pagination"
 import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 
-const BlogIndex: React.FunctionComponent<PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePageContext>> = (props) => {
+const BlogIndex: React.FunctionComponent<
+  PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePageContext>
+> = (props) => {
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
   const edges = data.allMdx.edges
@@ -17,9 +19,9 @@ const BlogIndex: React.FunctionComponent<PageProps<GatsbyTypes.IndexPageQuery, G
     <Layout location={location} title={siteTitle}>
       <SEO title="Top" location={location} />
       <VStack>
-          <PostList edges={edges} />
-          <Pagination props={props.pageContext} />
-          <TagList />
+        <PostList edges={edges} />
+        <Pagination props={props.pageContext} />
+        <TagList />
       </VStack>
     </Layout>
   )
@@ -51,9 +53,7 @@ export const pageQuery = graphql`
             title
             cover {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(aspectRatio: 1.77)
               }
             }
             tags

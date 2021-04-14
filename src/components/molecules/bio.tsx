@@ -1,38 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Bio: React.FunctionComponent = () => {
   const data: GatsbyTypes.BioComponentQuery = useStaticQuery<GatsbyTypes.BioComponentQuery>(graphql`
     query BioComponent {
-      avatar: file(absolutePath: { regex: "/profile-icon.png/" }) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      githubIcon: file(absolutePath: { regex: "/Github.png/" }) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      instaIcon: file(absolutePath: { regex: "/Instagram.png/" }) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      twitterIcon: file(absolutePath: { regex: "/Twitter.png/" }) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       site {
         siteMetadata {
           author
@@ -53,7 +25,7 @@ const Bio: React.FunctionComponent = () => {
         display: `flex`,
         padding: `8px 8px 8px 8px`,
         margin: `auto`,
-        alignItems: `center`,
+        alignItems: `center`
       }}
     >
       <a
@@ -61,16 +33,15 @@ const Bio: React.FunctionComponent = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          fluid={data.avatar.childImageSharp.fluid}
+        <StaticImage
+          src="../../images/profile-icon.png"
           alt={author}
+          placeholder="blurred"
           style={{
-            marginBottom: 0,
-            minWidth: 50,
-            borderRadius: `100%`,
+            maxWidth: "50px"
           }}
           imgStyle={{
-            borderRadius: `50%`,
+            borderRadius: "100%"
           }}
         />
       </a>
@@ -79,13 +50,13 @@ const Bio: React.FunctionComponent = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          fluid={data.twitterIcon.childImageSharp.fluid}
+        <StaticImage
+          src="../../images/Twitter.png"
           alt="Twitter"
           style={{
             width: `25px`,
             margin: `0px 0px 0px 8px`,
-            display: `inline-block`,
+            display: `inline-block`
           }}
         />
       </a>
@@ -94,13 +65,13 @@ const Bio: React.FunctionComponent = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          fluid={data.githubIcon.childImageSharp.fluid}
+        <StaticImage
+          src="../../images/Github.png"
           alt="Github"
           style={{
             width: `25px`,
             margin: `0px 0px 0px 8px`,
-            display: `inline-block`,
+            display: `inline-block`
           }}
         />
       </a>
@@ -109,13 +80,13 @@ const Bio: React.FunctionComponent = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          fluid={data.instaIcon.childImageSharp.fluid}
-          alt="Instagram"
+        <StaticImage
+          src="../../images/Instagram.png"
+          alt="instagram"
           style={{
             width: `25px`,
             margin: `0px 0px 0px 8px`,
-            display: `inline-block`,
+            display: `inline-block`
           }}
         />
       </a>

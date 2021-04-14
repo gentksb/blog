@@ -27,40 +27,37 @@ const Tags : React.FunctionComponent<PageProps<GatsbyTypes.TagPageQuery, GatsbyT
 
 export default Tags
 
-export const pageQuery = graphql`
-  query TagPage($tag: String) {
-    site {
-      siteMetadata {
-        title
-      }
+export const pageQuery = graphql`query TagPage($tag: String) {
+  site {
+    siteMetadata {
+      title
     }
-    allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { ne: true }, tags: { in: [$tag] } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          excerpt(truncate: true)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            cover {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+  }
+  allMdx(
+    sort: {fields: [frontmatter___date], order: DESC}
+    filter: {frontmatter: {draft: {ne: true}, tags: {in: [$tag]}}}
+  ) {
+    totalCount
+    edges {
+      node {
+        excerpt(truncate: true)
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          cover {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
             }
-            tags
-            draft
           }
+          tags
+          draft
         }
       }
     }
   }
+}
 `

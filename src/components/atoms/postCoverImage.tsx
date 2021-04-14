@@ -1,18 +1,18 @@
 import { AspectRatio, Image } from "@chakra-ui/react"
-import Img, { FluidObject } from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 interface Props {
-  cover: any //coverの型を上手く指定できないため
   alt: string
-  fluid?: FluidObject | null
+  image: any
 }
 
-  const postCoverImage: React.FunctionComponent<Props> = ({cover, alt, fluid}) => (
-    cover != null 
-    ? (<Img fluid={fluid} title={alt} />) 
-    : (<AspectRatio ratio={16/9}>
+const postCoverImage: React.FunctionComponent<Props> = ({ image, alt }) =>
+  image != null ? (
+    <GatsbyImage image={image} alt={alt} />
+  ) : (
+    <AspectRatio ratio={16 / 9}>
       <Image src="/image/dummy.jpg" alt="cover image" objectFit="cover" />
-    </AspectRatio>)
+    </AspectRatio>
   )
 
-  export default postCoverImage
+export default postCoverImage
