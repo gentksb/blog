@@ -1,8 +1,4 @@
 module.exports = {
-  flags: {
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PRESERVE_WEBPACK_CACHE: true
-  },
   siteMetadata: {
     title: `幻想サイクル`,
     author: `Gen`,
@@ -172,6 +168,18 @@ module.exports = {
             match: `^/blog/`
           }
         ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `幻想サイクル`,
+        short_name: `幻想サイクル`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `static/image/logo.jpg`
       }
     },
     {
