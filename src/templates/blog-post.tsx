@@ -1,5 +1,6 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
+import { getSrc } from "gatsby-plugin-image"
 import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
 import { MDXRenderer } from "gatsby-plugin-mdx"
@@ -27,8 +28,8 @@ const BlogPostTemplate: React.FunctionComponent<
   const siteTitle = data.site.siteMetadata?.title
   const { previous, next } = pageContext
   const seoImage =
-    post.frontmatter.cover != null
-      ? post.frontmatter.cover.childImageSharp.gatsbyImageData.src
+    post.frontmatter.cover != undefined
+      ? getSrc(post.frontmatter.cover.childImageSharp.gatsbyImageData)
       : "/image/dummy.jpg"
   const relatedPostsComponent =
     post.frontmatter.tags != null ? (
@@ -93,7 +94,14 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         tags
+        cover {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
+      excerpt
+      id
     }
   }
 `
