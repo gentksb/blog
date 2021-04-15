@@ -27,7 +27,7 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
         <Box borderWidth="1px" borderRadius="lg" overflow="hidden" h="100%">
           <Link to={node.fields.slug} style={{ textDecoration: "none" }}>
             <PostCoverImage
-              image={node.frontmatter.cover.childImageSharp.gatsbyImageData}
+              image={node.frontmatter.cover?.childImageSharp?.gatsbyImageData}
               alt={coverTitleText}
             />
           </Link>

@@ -3376,10 +3376,10 @@ type SitePluginSortInput = {
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
 
-type TagListQueryVariables = Exact<{ [key: string]: never; }>;
+type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
+type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
 type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3399,18 +3399,19 @@ type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe
     & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'date' | 'title' | 'tags'>> }
   )> };
 
-type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
+type IndexPageQueryVariables = Exact<{
+  skip: Scalars['Int'];
+  limit: Scalars['Int'];
+}>;
 
 
-type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
-      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
-    )> }> };
-
-type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
+type IndexPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }>, readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<Mdx, 'id'>
+        & { readonly fields: Maybe<Pick<MdxFields, 'slug'>>, readonly frontmatter: Maybe<(
+          Pick<MdxFrontmatter, 'date' | 'title' | 'tags' | 'draft'>
+          & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
+        )> }
+      ) }> } };
 
 type TagPageQueryVariables = Exact<{
   tag: Maybe<Scalars['String']>;
@@ -3454,19 +3455,18 @@ type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
-type IndexPageQueryVariables = Exact<{
-  skip: Scalars['Int'];
-  limit: Scalars['Int'];
-}>;
+type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type IndexPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }>, readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<Mdx, 'id'>
-        & { readonly fields: Maybe<Pick<MdxFields, 'slug'>>, readonly frontmatter: Maybe<(
-          Pick<MdxFrontmatter, 'date' | 'title' | 'tags' | 'draft'>
-          & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
-        )> }
-      ) }> } };
+type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
+      & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
+    )> }> };
+
+type TagListQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
 
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
