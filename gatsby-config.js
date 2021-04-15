@@ -12,6 +12,8 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-plugin-typegen`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
@@ -20,13 +22,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`
       }
     },
     `gatsby-plugin-twitter`,
@@ -180,12 +175,6 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `static/image/logo.jpg`
-      }
-    },
-    {
-      resolve: `gatsby-plugin-typegen`,
-      options: {
-        outputPath: `src/__generated__/gatsby-types.d.ts`
       }
     }
   ]
