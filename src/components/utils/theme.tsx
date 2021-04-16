@@ -15,7 +15,6 @@ const theme = extendTheme({
       ".post-body": {
         ul: {
           paddingLeft: "3rem",
-          paddingTop: "0.5rem",
           paddingBottom: "0.5rem"
         },
         ol: {
@@ -57,8 +56,9 @@ const theme = extendTheme({
           fontSize: "lg"
         },
         p: {
-          marginBottom: "1.5em",
+          marginBottom: "1em",
           lineHeight: "1.7",
+          padding: "0 0.5rem 0 0.5rem"
         },
         ".gatsby-resp-image-image": {
           maxH: "760px",
@@ -72,27 +72,27 @@ const theme = extendTheme({
           color: "#555",
           borderLeft: `4px solid ${secondaryColor}`,
           width: "90%",
-          margin: "16px auto",
+          margin: "16px auto"
         },
-        "blockquote:before" : {
-            display: "inline-block",
-            position: "absolute",
-            top: "16px",
-            left: "16px",
-            verticalAlign: "middle",
-            color: secondaryColor,
-            fontSize: "25px",
-            lineHeight: "1",
-        },    
+        "blockquote:before": {
+          display: "inline-block",
+          position: "absolute",
+          top: "16px",
+          left: "16px",
+          verticalAlign: "middle",
+          color: secondaryColor,
+          fontSize: "25px",
+          lineHeight: "1"
+        },
         "blockquote p": {
-            padding: "0",
-            margin: "16px 0 8px",
-            fontSize: "15px",
-            lineHeight: "1.5",
-        },
+          padding: "0",
+          margin: "16px 0 8px",
+          fontSize: "15px",
+          lineHeight: "1.5"
+        }
       }
     }
   }
-});
+})
 
-export default theme;
+export default theme

@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typegen`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-twitter`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
@@ -24,7 +25,6 @@ module.exports = {
         name: `blog`
       }
     },
-    `gatsby-plugin-twitter`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,

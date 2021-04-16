@@ -5,7 +5,7 @@ import {
   Image,
   Text,
   LinkBox as ChakraLinkBox,
-  LinkOverlay,
+  LinkOverlay
 } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
 import firebase from "gatsby-plugin-firebase"
@@ -70,7 +70,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
           description: description,
           siteName: siteName,
           ogpIcon: siteIcon,
-          url: linkurl,
+          url: linkurl
         })
         changeLoading(false)
       })
@@ -87,7 +87,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
       borderRadius="xl"
       mb={[2, 2, 3, 3]}
     >
-      <Box flexShrink={1}>
+      <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
         <Image
           borderRadius="lg"
           src={ogpData.imageUrl}
@@ -97,7 +97,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
             loading ? "Loading" : "NoImage"
           }`}
           paddingRight={[2, 2, 3, 3]}
-          maxWidth={["100px", "100px", "150px", "150px"]}
+          width="100%"
         />
       </Box>
       <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
