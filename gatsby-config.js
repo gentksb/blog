@@ -12,6 +12,7 @@ module.exports = {
     }
   },
   plugins: [
+    `gatsby-plugin-no-sourcemaps`,
     `gatsby-plugin-typegen`,
     `gatsby-plugin-image`,
     `gatsby-plugin-twitter`,
