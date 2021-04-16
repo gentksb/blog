@@ -9,7 +9,11 @@ interface LocationState {
   location: WindowLocation
 }
 
-interface MetaObject { name: string; content: any; property?: undefined; }
+interface MetaObject {
+  name: string
+  content: any
+  property?: undefined
+}
 
 interface SeoDefaultProps {
   lang?: string
@@ -19,7 +23,7 @@ interface SeoDefaultProps {
 
 interface Props extends LocationState, SeoDefaultProps {}
 
-const SEO : React.FunctionComponent<Props> = (props) => {
+const SEO: React.FunctionComponent<Props> = (props) => {
   const { description, lang, meta, title, image, location } = props
   const { site } = useStaticQuery<GatsbyTypes.SeoComponentQuery>(
     graphql`
@@ -47,7 +51,7 @@ const SEO : React.FunctionComponent<Props> = (props) => {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang
       }}
       title={title}
       titleTemplate={
@@ -62,52 +66,49 @@ const SEO : React.FunctionComponent<Props> = (props) => {
         },
         {
           name: `description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:site_name`,
-          content: site.siteMetadata.title,
+          content: site.siteMetadata.title
         },
         {
           property: `og:url`,
-          content: location.href,
+          content: location.href
         },
         {
           property: `og:title`,
-          content: title,
+          content: title
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:image`,
-          content: metaImage,
+          content: metaImage
         },
         {
           property: `og:type`,
-          content: `blog`,
+          content: `blog`
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary_large_image`
         },
         {
           name: `twitter:site`,
-          content: `@${site.siteMetadata.social.twitter}`,
-        },
+          content: `@${site.siteMetadata.social.twitter}`
+        }
       ].concat(meta)}
-    >
-      <script async src="https://platform.twitter.com/widgets.js" />
-    </Helmet>
+    ></Helmet>
   )
 }
-
 
 SEO.defaultProps = {
   lang: `ja`,
   meta: [],
-  description: ``,
+  description: ``
 }
 
 export default SEO

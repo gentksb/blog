@@ -24,7 +24,6 @@ module.exports = {
         name: `blog`
       }
     },
-    `gatsby-plugin-twitter`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
