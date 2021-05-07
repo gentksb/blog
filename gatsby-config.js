@@ -91,12 +91,7 @@ module.exports = {
         id: `GTM-MGHR8XJ`
       }
     },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        exclude: ["/tags/*", "/page/*"]
-      }
-    },
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-firebase",
       options: {
