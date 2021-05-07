@@ -88,7 +88,10 @@ export const getOgpLinkData = functions
             if (hitData !== null) {
               resolve(hitData[1])
             } else {
-              throw new Error("ASIN not found in URL")
+              throw new functions.https.HttpsError(
+                "invalid-argument",
+                "ASIN not found in URL"
+              )
             }
           })
         }
