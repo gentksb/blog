@@ -32,14 +32,11 @@ const theme = extendTheme({
           marginTop: "0.5rem",
           marginBottom: "0.5rem",
           padding: "0.25em 0 0.25em 0.75em",
-          borderLeftWidth: "6px",
-          borderLeftStyle: "solid",
-          borderLeftColor: primaryColor,
-          borderBottomColor: primaryColor,
-          borderBottomStyle: "solid",
-          borderBottomWidth: "1px",
+          backgroundColor: primaryColor,
+          lineHeight: "2.5em",
           fontWeight: "bold",
-          fontSize: "2xl"
+          fontSize: "2xl",
+          color: "#fee"
         },
         h3: {
           marginTop: "0.25rem",
@@ -48,6 +45,9 @@ const theme = extendTheme({
           borderLeftWidth: "6px",
           borderLeftStyle: "solid",
           borderLeftColor: primaryColor,
+          borderBottomColor: primaryColor,
+          borderBottomStyle: "solid",
+          borderBottomWidth: "1px",
           fontWeight: "bold",
           fontSize: "lg"
         },

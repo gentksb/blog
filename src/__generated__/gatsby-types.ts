@@ -738,7 +738,6 @@ type SitePluginPluginOptions = {
   readonly output: Maybe<Scalars['String']>;
   readonly createLinkInHead: Maybe<Scalars['Boolean']>;
   readonly features: Maybe<SitePluginPluginOptionsFeatures>;
-  readonly credentials: Maybe<SitePluginPluginOptionsCredentials>;
   readonly query: Maybe<Scalars['String']>;
   readonly feeds: Maybe<ReadonlyArray<Maybe<SitePluginPluginOptionsFeeds>>>;
   readonly short_name: Maybe<Scalars['String']>;
@@ -766,12 +765,6 @@ type SitePluginPluginOptionsRemarkPluginsScrollableTable = {
 
 type SitePluginPluginOptionsFeatures = {
   readonly fucntions: Maybe<Scalars['Boolean']>;
-};
-
-type SitePluginPluginOptionsCredentials = {
-  readonly apiKey: Maybe<Scalars['String']>;
-  readonly projectId: Maybe<Scalars['String']>;
-  readonly appId: Maybe<Scalars['String']>;
 };
 
 type SitePluginPluginOptionsFeeds = {
@@ -2280,7 +2273,6 @@ type SitePluginPluginOptionsFilterInput = {
   readonly output: Maybe<StringQueryOperatorInput>;
   readonly createLinkInHead: Maybe<BooleanQueryOperatorInput>;
   readonly features: Maybe<SitePluginPluginOptionsFeaturesFilterInput>;
-  readonly credentials: Maybe<SitePluginPluginOptionsCredentialsFilterInput>;
   readonly query: Maybe<StringQueryOperatorInput>;
   readonly feeds: Maybe<SitePluginPluginOptionsFeedsFilterListInput>;
   readonly short_name: Maybe<StringQueryOperatorInput>;
@@ -2312,12 +2304,6 @@ type SitePluginPluginOptionsRemarkPluginsScrollableTableFilterInput = {
 
 type SitePluginPluginOptionsFeaturesFilterInput = {
   readonly fucntions: Maybe<BooleanQueryOperatorInput>;
-};
-
-type SitePluginPluginOptionsCredentialsFilterInput = {
-  readonly apiKey: Maybe<StringQueryOperatorInput>;
-  readonly projectId: Maybe<StringQueryOperatorInput>;
-  readonly appId: Maybe<StringQueryOperatorInput>;
 };
 
 type SitePluginPluginOptionsFeedsFilterListInput = {
@@ -2570,9 +2556,6 @@ type SitePageFieldsEnum =
   | 'pluginCreator.pluginOptions.output'
   | 'pluginCreator.pluginOptions.createLinkInHead'
   | 'pluginCreator.pluginOptions.features.fucntions'
-  | 'pluginCreator.pluginOptions.credentials.apiKey'
-  | 'pluginCreator.pluginOptions.credentials.projectId'
-  | 'pluginCreator.pluginOptions.credentials.appId'
   | 'pluginCreator.pluginOptions.query'
   | 'pluginCreator.pluginOptions.feeds'
   | 'pluginCreator.pluginOptions.feeds.query'
@@ -3320,9 +3303,6 @@ type SitePluginFieldsEnum =
   | 'pluginOptions.output'
   | 'pluginOptions.createLinkInHead'
   | 'pluginOptions.features.fucntions'
-  | 'pluginOptions.credentials.apiKey'
-  | 'pluginOptions.credentials.projectId'
-  | 'pluginOptions.credentials.appId'
   | 'pluginOptions.query'
   | 'pluginOptions.feeds'
   | 'pluginOptions.feeds.query'
@@ -3381,6 +3361,14 @@ type TagListQueryVariables = Exact<{ [key: string]: never; }>;
 
 type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
 
+type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<Mdx, 'id'>
+        & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'tags'>>, readonly fields: Maybe<Pick<MdxFields, 'slug'>> }
+      ) }> } };
+
 type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3389,13 +3377,23 @@ type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
     )> }> };
 
-type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
+type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<Mdx, 'id'>
-        & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'tags'>>, readonly fields: Maybe<Pick<MdxFields, 'slug'>> }
-      ) }> } };
+type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
+
+type BlogPostBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'author'>> }>, readonly mdx: Maybe<(
+    Pick<Mdx, 'body' | 'excerpt' | 'id'>
+    & { readonly frontmatter: Maybe<(
+      Pick<MdxFrontmatter, 'date' | 'title' | 'tags'>
+      & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
+    )> }
+  )> };
 
 type IndexPageQueryVariables = Exact<{
   skip: Scalars['Int'];
@@ -3427,11 +3425,6 @@ type TagPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<S
       ) }> }
   ) };
 
-type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
-
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
 type GatsbyImageSharpFixed_tracedSVGFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'>;
@@ -3457,19 +3450,6 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-type BlogPostBySlugQueryVariables = Exact<{
-  slug: Scalars['String'];
-}>;
-
-
-type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'author'>> }>, readonly mdx: Maybe<(
-    Pick<Mdx, 'body' | 'excerpt' | 'id'>
-    & { readonly frontmatter: Maybe<(
-      Pick<MdxFrontmatter, 'date' | 'title' | 'tags'>
-      & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
-    )> }
-  )> };
 
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
