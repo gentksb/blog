@@ -70,60 +70,72 @@ export const getOgpLinkData = functions
       result.siteName = "www.amazon.co.jp"
       result.ogpIcon = "https://www.amazon.co.jp/favicon.ico"
 
-      try {
-        if (
-          amazonPaApiKey === null ||
-          amazonPaApiSecret === null ||
-          amazonPaApiPartnerTag === null
-        ) {
-          throw new functions.https.HttpsError(
-            "failed-precondition",
-            "Didn't set PAAPIv5 parameters"
-          )
-        }
-        const getAsinFromUrl = (url: string) => {
-          return new Promise((resolve) => {
-            const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
-            const hitData = re.exec(url)
-            if (hitData !== null) {
-              resolve(hitData[1])
-            } else {
-              throw new functions.https.HttpsError(
-                "invalid-argument",
-                "ASIN not found in URL"
-              )
-            }
-          })
-        }
-        const asin = await getAsinFromUrl(data.url)
-        console.log("asin is", asin)
-
-        if (asin === null || asin === undefined) {
-          throw new functions.https.HttpsError(
-            "not-found",
-            "Amazon Product page does't have ASIN.",
-            data.url
-          )
-        }
-
-        const requestParameters = {
-          ItemIds: [asin],
-          ItemIdType: "ASIN",
-          Condition: "New",
-          Resources: [
-            "Images.Primary.Medium",
-            "Images.Primary.Large",
-            "ItemInfo.Title",
-            "ItemInfo.Features"
-          ]
-        }
-
-        // eslint-disable-next-line
-        const apiResult = await amazonPaapi.GetItems(
-          commonParameters,
-          requestParameters
+      if (
+        amazonPaApiKey === null ||
+        amazonPaApiSecret === null ||
+        amazonPaApiPartnerTag === null
+      ) {
+        throw new functions.https.HttpsError(
+          "failed-precondition",
+          "Didn't set PAAPIv5 parameters"
         )
+      }
 
+      const getAsinFromUrl = (url: string) => {
+        return new Promise((resolve) => {
+          const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
+          const hitData = re.exec(url)
+          if (hitData !== null) {
+            resolve(hitData[1])
+          } else {
+            throw new functions.https.HttpsError(
+              "invalid-argument",
+              "ASIN not found in URL"
+            )
+          }
+        })
+      }
+      const asin = await getAsinFromUrl(data.url)
+      console.log("asin is", asin)
+
+      const requestParameters = {
+        ItemIds: [asin],
+        ItemIdType: "ASIN",
+        Condition: "New",
+        Resources: [
+          "Images.Primary.Medium",
+          "Images.Primary.Large",
+          "ItemInfo.Title",
+          "ItemInfo.Features"
+        ]
+      }
+
+      // eslint-disable-next-line
+      const callPaapi = async () => {
+        for (let retrycount = 0; retrycount < 3; retrycount++) {
+          try {
+            return await amazonPaapi.GetItems(
+              commonParameters,
+              requestParameters
+            )
+          } catch (error) {
+            if (error.status === 429) {
+              const backoffSleep = (retrycount + 1) ** 2 * 1000
+              const sleep = (msec: number) =>
+                new Promise((resolve) => setTimeout(resolve, msec))
+              await sleep(backoffSleep)
+              console.log("retry")
+            } else {
+              console.error(error)
+              throw new functions.https.HttpsError("internal", error)
+            }
+          }
+        }
+      }
+
+      const apiResult = await callPaapi()
+
+      try {
         const productDetail = apiResult.ItemsResult.Items[0]
         console.log(productDetail)
 
