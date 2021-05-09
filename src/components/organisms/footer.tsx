@@ -9,11 +9,11 @@ const Footer: React.FunctionComponent = () => (
         <Bio />
         <Text fontSize="xs">
           © {new Date().getFullYear()}, Built with{` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-          <p>
-            This website uses Cookie to ensure you get the best experience on
-            this website.
-          </p>
+          <a href="https://www.gatsbyjs.org">Gatsby</a>{" "}
+        </Text>
+        <Text fontSize="xs">
+          This website uses Cookie to ensure you get the best experience on this
+          website.
         </Text>
         <a href="https://blogmura.com/profiles/11085449?p_cid=11085449">
           <Image
