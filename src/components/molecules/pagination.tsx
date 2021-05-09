@@ -1,32 +1,64 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Grid, Button, GridItem } from '@chakra-ui/react'
-import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
+import { Grid, Button, GridItem } from "@chakra-ui/react"
+import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons"
 
 interface Props {
-  props : GatsbyTypes.SitePageContext
+  props: GatsbyTypes.SitePageContext
 }
 
 const Pagination: React.FunctionComponent<Props> = ({ props }) => {
   const { previousPagePath, nextPagePath } = props
-  const hasPreviousPage : boolean = (!!previousPagePath)
-  const hasNextPage : boolean = (!!nextPagePath)
+  const hasNewerPage: boolean = !!previousPagePath
+  const hasOlderPage: boolean = !!nextPagePath
 
   return (
     <Grid templateColumns="repeat(2,1fr)" w="100%">
       <GridItem colSpan={1}>
+        {hasOlderPage ? (
           <Link to={nextPagePath}>
-            <Button variant="outline" colorScheme="teal" isDisabled={!hasNextPage}>
-              <ArrowBackIcon />Older Posts
+            <Button
+              variant="outline"
+              colorScheme="teal"
+              isDisabled={!hasOlderPage}
+            >
+              <ArrowBackIcon />
+              Older Posts
             </Button>
           </Link>
+        ) : (
+          <Button
+            variant="outline"
+            colorScheme="teal"
+            isDisabled={!hasOlderPage}
+          >
+            <ArrowBackIcon />
+            Older Posts
+          </Button>
+        )}
       </GridItem>
       <GridItem colSpan={1} textAlign="right">
+        {hasNewerPage ? (
           <Link to={previousPagePath}>
-            <Button variant="outline" colorScheme="teal" isDisabled={!hasPreviousPage}>
-              Newer Posts<ArrowForwardIcon />
+            <Button
+              variant="outline"
+              colorScheme="teal"
+              isDisabled={!hasNewerPage}
+            >
+              Newer Posts
+              <ArrowForwardIcon />
             </Button>
           </Link>
+        ) : (
+          <Button
+            variant="outline"
+            colorScheme="teal"
+            isDisabled={!hasNewerPage}
+          >
+            Newer Posts
+            <ArrowForwardIcon />
+          </Button>
+        )}
       </GridItem>
     </Grid>
   )
