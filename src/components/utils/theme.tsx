@@ -36,7 +36,7 @@ const theme = extendTheme({
           lineHeight: "2.5em",
           fontWeight: "bold",
           fontSize: "2xl",
-          color: "#fee"
+          color: "#f6f6f6"
         },
         h3: {
           marginTop: "0.25rem",
