@@ -31,9 +31,8 @@ const theme = extendTheme({
         h2: {
           marginTop: "0.5rem",
           marginBottom: "0.5rem",
-          padding: "0.25em 0 0.25em 0.75em",
+          padding: "0.5em 0.5rem 0.5em 0.5em",
           backgroundColor: primaryColor,
-          lineHeight: "2.5em",
           fontWeight: "bold",
           fontSize: "2xl",
           color: "#f6f6f6"
