@@ -119,7 +119,7 @@ export const getOgpLinkData = functions
               requestParameters
             )
           } catch (error) {
-            if (error.status === 429) {
+            if (error.status === 429 && retrycount < 2) {
               const backoffSleep = (retrycount + 1) ** 2 * 1000
               const sleep = (msec: number) =>
                 new Promise((resolve) => setTimeout(resolve, msec))
