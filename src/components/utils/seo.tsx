@@ -44,9 +44,17 @@ const SEO: React.FunctionComponent<Props> = (props) => {
     `
   )
 
+  const siteUrl = site.siteMetadata.siteUrl
   const metaDescription = description ?? site.siteMetadata.description
-  const metaImage =
-    site.siteMetadata.siteUrl + (image ?? site.siteMetadata.image)
+  const metaImage = siteUrl + (image ?? site.siteMetadata.image)
+
+  const canonicalUrl =
+    process.env.NODE_ENV === "production"
+      ? siteUrl + location.pathname
+      : "testwebsite"
+
+  const metaRobotsContent =
+    process.env.NODE_ENV === "production" ? "all" : "none"
 
   return (
     <Helmet
@@ -59,10 +67,15 @@ const SEO: React.FunctionComponent<Props> = (props) => {
           ? site.siteMetadata.title
           : `%s | ${site.siteMetadata.title}`
       }
+      link={[{ rel: "canonical", href: canonicalUrl }]}
       meta={[
         {
           name: `robots`,
           content: `max-image-preview:large`
+        },
+        {
+          name: "robots",
+          content: metaRobotsContent
         },
         {
           name: `description`,
