@@ -171,6 +171,14 @@ module.exports = {
         display: `minimal-ui`,
         icon: `static/image/logo.jpg`
       }
+    },
+    {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        allPageHeaders: [
+          "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload"
+        ]
+      }
     }
   ]
 }
