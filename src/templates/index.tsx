@@ -53,7 +53,7 @@ export const pageQuery = graphql`
             title
             cover {
               childImageSharp {
-                gatsbyImageData(aspectRatio: 1.77)
+                gatsbyImageData(aspectRatio: 1.77, quality: 40)
               }
             }
             tags
