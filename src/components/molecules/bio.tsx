@@ -40,7 +40,7 @@ const Bio: React.FunctionComponent = () => {
           placeholder="blurred"
           style={{
             maxWidth: "50px",
-            margin: `0px 0px 0px 8px`
+            margin: `8px 0px 0px 8px`
           }}
           imgStyle={{
             borderRadius: "100%"
