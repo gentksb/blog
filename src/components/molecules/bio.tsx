@@ -3,20 +3,21 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio: React.FunctionComponent = () => {
-  const data: GatsbyTypes.BioComponentQuery = useStaticQuery<GatsbyTypes.BioComponentQuery>(graphql`
-    query BioComponent {
-      site {
-        siteMetadata {
-          author
-          social {
-            twitter
-            github
-            instagram
+  const data: GatsbyTypes.BioComponentQuery =
+    useStaticQuery<GatsbyTypes.BioComponentQuery>(graphql`
+      query BioComponent {
+        site {
+          siteMetadata {
+            author
+            social {
+              twitter
+              github
+              instagram
+            }
           }
         }
       }
-    }
-  `)
+    `)
 
   const { author, social } = data.site.siteMetadata
   return (
@@ -38,7 +39,8 @@ const Bio: React.FunctionComponent = () => {
           alt={author}
           placeholder="blurred"
           style={{
-            maxWidth: "50px"
+            maxWidth: "50px",
+            margin: `0px 0px 0px 8px`
           }}
           imgStyle={{
             borderRadius: "100%"
