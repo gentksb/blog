@@ -25,7 +25,14 @@ module.exports = {
         name: `blog`
       }
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          breakpoints: [180, 360, 810, 1080, 1366, 1920]
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
