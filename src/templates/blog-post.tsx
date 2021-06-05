@@ -99,7 +99,7 @@ export const pageQuery = graphql`
             gatsbyImageData(
               quality: 40
               width: 1200
-              formats: [WEBP]
+              formats: [AUTO]
               breakpoints: 1200
             )
           }
