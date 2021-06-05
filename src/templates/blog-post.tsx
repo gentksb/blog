@@ -97,9 +97,9 @@ export const pageQuery = graphql`
         cover {
           childImageSharp {
             gatsbyImageData(
-              quality: 30
+              quality: 40
               width: 1200
-              formats: [AUTO, WEBP]
+              formats: [WEBP]
               breakpoints: 1200
             )
           }
