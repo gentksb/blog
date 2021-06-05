@@ -45,13 +45,14 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   )
 
   const siteUrl = site.siteMetadata.siteUrl
+  const currentHost = location.origin
   const metaDescription = description ?? site.siteMetadata.description
-  const metaImage = siteUrl + (image ?? site.siteMetadata.image)
+  const metaImage = currentHost + (image ?? site.siteMetadata.image)
 
   const canonicalUrl =
     process.env.NODE_ENV === "production"
       ? siteUrl + location.pathname
-      : "testwebsite"
+      : currentHost + location.pathname
 
   const metaRobotsContent =
     process.env.NODE_ENV === "production" ? "all" : "none"
