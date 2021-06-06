@@ -111,6 +111,10 @@ const SEO: React.FunctionComponent<Props> = (props) => {
           content: `summary_large_image`
         },
         {
+          property: `twitter:image`,
+          content: metaImage
+        },
+        {
           name: `twitter:site`,
           content: `@${site.siteMetadata.social.twitter}`
         }
