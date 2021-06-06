@@ -45,14 +45,12 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   )
 
   const siteUrl = site.siteMetadata.siteUrl
-  const currentHost = location.origin
+  const currentHost =
+    process.env.NODE_ENV === "production" ? siteUrl : location.origin
   const metaDescription = description ?? site.siteMetadata.description
   const metaImage = currentHost + (image ?? site.siteMetadata.image)
 
-  const canonicalUrl =
-    process.env.NODE_ENV === "production"
-      ? siteUrl + location.pathname
-      : currentHost + location.pathname
+  const canonicalUrl = currentHost + location.pathname
 
   const metaRobotsContent =
     process.env.NODE_ENV === "production" ? "all" : "none"
@@ -109,6 +107,10 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         {
           name: `twitter:card`,
           content: `summary_large_image`
+        },
+        {
+          property: `twitter:image`,
+          content: metaImage
         },
         {
           name: `twitter:site`,
