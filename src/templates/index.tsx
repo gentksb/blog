@@ -17,7 +17,7 @@ const BlogIndex: React.FunctionComponent<
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Top" location={location} />
+      <SEO title="幻想サイクル" location={location} />
       <VStack>
         <PostList edges={edges} />
         <Pagination props={props.pageContext} />
