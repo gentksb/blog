@@ -68,3 +68,5 @@ ERG モードによるトルク変動は数秒～ 10 秒ほどのラグがある
 問題は品薄で予約必須だったりすることか…
 
 <LinkBox url="https://shopping.yahoo.co.jp/products/z79dtn4n2v" />
+
+<LinkBox url="https://www.probikekit.jp/turbo-trainers-bicycle-rollers/elite-suito-direct-drive-fe-c-turbo-trainer/12226071.html" />
