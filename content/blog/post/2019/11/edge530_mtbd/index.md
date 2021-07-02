@@ -18,6 +18,8 @@ Edge530/830/1050 のあまり日本で語られない機能、「MTB ダイナ�
 
 ちなみに MTB ダイナミクスはアクティビティタイプを MTB にしないとロギングされないので注意。
 
+<LinkBox isAmazonLink url="https://www.probikekit.jp/bicycle-computers-gps-hrm/garmin-edge-530-gps-cycling-computer-performance-bundle/12662078.html" />
+
 ## MTB ダイナミクスの定義
 
 岩岳コースを６本ほど走った際のログがこちら

@@ -19,6 +19,8 @@ cover: "./vs_ca500.jpg"
 MTB ダイナミクスにかなり期待していることもあって Edge530 を発売日に IYH！シェイクダウンがかなり遅くなってしまったがひとまずインプレを。  
 (しかも MTB ではまだ使っていない)
 
+<LinkBox isAmazonLink url="https://www.probikekit.jp/bicycle-computers-gps-hrm/garmin-edge-530-gps-cycling-computer-performance-bundle/12662078.html" />
+
 ## インプレ
 
 ### とにかく見やすい！
