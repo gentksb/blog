@@ -98,6 +98,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
           }`}
           paddingRight={[2, 2, 3, 3]}
           width="100%"
+          loading="lazy"
         />
       </Box>
       <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
@@ -140,6 +141,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
               alt="favicon"
               maxHeight="2em"
               fallbackSrc="https://via.placeholder.com/24?text=f"
+              loading="lazy"
             />
           )}
           {ogpData.siteName}
