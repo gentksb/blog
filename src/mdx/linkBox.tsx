@@ -64,9 +64,11 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
           : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
         const linkurl = response.pageurl ?? encodedUrl
         console.log(title, linkurl, imageUrl, description, siteName, siteIcon)
+        const isImageUrlExists = imageUrl !== ""
+
         changeOgpData({
           title: title,
-          imageUrl: imageUrl,
+          imageUrl: isImageUrlExists ? imageUrl : null,
           description: description,
           siteName: siteName,
           ogpIcon: siteIcon,
@@ -141,7 +143,6 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
               alt="favicon"
               maxHeight="2em"
               fallbackSrc="https://via.placeholder.com/24?text=f"
-              loading="lazy"
             />
           )}
           {ogpData.siteName}
