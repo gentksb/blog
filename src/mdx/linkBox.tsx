@@ -95,9 +95,6 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
           src={ogpData.imageUrl}
           alt={ogpData.title}
           fit="cover"
-          fallbackSrc={`https://via.placeholder.com/150?text=${
-            loading ? "Loading" : "NoImage"
-          }`}
           paddingRight={[2, 2, 3, 3]}
           width="100%"
           loading="lazy"
