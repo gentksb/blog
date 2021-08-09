@@ -14,26 +14,26 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@types/jsdom": "^16.2.10",
-    "@types/node-fetch": "^2.5.10",
+    "@types/jsdom": "^16.2.13",
+    "@types/node-fetch": "^2.5.12",
     "amazon-paapi": "^1.0.5",
-    "firebase-admin": "^9.8.0",
-    "firebase-functions": "^3.14.0",
-    "jsdom": "^16.5.3",
+    "firebase-admin": "^9.11.0",
+    "firebase-functions": "^3.14.1",
+    "jsdom": "^16.7.0",
     "node-fetch": "^2.6.1",
     "paapi5-nodejs-sdk": "^1.1.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.23.0",
-    "@typescript-eslint/parser": "^4.23.0",
-    "eslint": "^7.26.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.2",
-    "firebase-functions-test": "^0.2.3",
-    "prettier": "^2.3.0",
-    "tsc-watch": "^4.2.9",
-    "typescript": "^4.2.4"
+    "eslint-plugin-import": "^2.24.0",
+    "firebase-functions-test": "^0.3.1",
+    "prettier": "^2.3.2",
+    "tsc-watch": "^4.4.0",
+    "typescript": "^4.3.5"
   },
   "private": true
 }
