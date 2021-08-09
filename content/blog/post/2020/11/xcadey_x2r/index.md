@@ -1,5 +1,5 @@
 ---
-title: "XCADEY 2XPower Right-sideパワーメーターレビュー"
+title: "中華パワーメーターの精度は？XCADEY 2XPower Right-sideパワーメーターレビュー"
 date: 2020-11-03
 draft: false
 tags: ["REVIEW", "ROAD"]
