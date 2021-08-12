@@ -10,7 +10,7 @@ cover: "./cover.jpg"
 
 以前は FEEL CYCLE でシクロクロス前の体づくりと維持をしていたが、今年はコロナ禍であまり人との接触をむやみやたらに増やすのもどうかと思って Zwift を再開することに。
 
-FC の会費を考えれば、スマートローラーの価格など実質無料！なのだが保管場所は湧いてこないので、保管に便利そうな Elite の[SUITO](https://www.chainreactioncycles.com/jp/rp-prod192145)を購入してみた。
+FC の会費を考えれば、スマートローラーの価格など実質無料！なのだが保管場所は湧いてこないので、保管に便利そうな Elite の[SUITO](https://www.chainreactioncycles.com/jp/ja/elite-suito-t-%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8A%E3%83%BC/rp-prod204115)を購入してみた。
 
 ## 特徴
 
@@ -70,3 +70,5 @@ ERG モードによるトルク変動は数秒～ 10 秒ほどのラグがある
 <LinkBox url="https://shopping.yahoo.co.jp/products/z79dtn4n2v" />
 
 <LinkBox url="https://www.probikekit.jp/turbo-trainers-bicycle-rollers/elite-suito-direct-drive-fe-c-turbo-trainer/12226071.html" />
+
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/elite-suito-t-%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8A%E3%83%BC/rp-prod204115" />
