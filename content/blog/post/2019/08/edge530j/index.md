@@ -19,7 +19,7 @@ cover: "./vs_ca500.jpg"
 MTB ダイナミクスにかなり期待していることもあって Edge530 を発売日に IYH！シェイクダウンがかなり遅くなってしまったがひとまずインプレを。  
 (しかも MTB ではまだ使っていない)
 
-<LinkBox isAmazonLink url="https://www.probikekit.jp/bicycle-computers-gps-hrm/garmin-edge-530-gps-cycling-computer-performance-bundle/12662078.html" />
+<LinkBox url="https://www.probikekit.jp/bicycle-computers-gps-hrm/garmin-edge-530-gps-cycling-computer-performance-bundle/12662078.html" />
 
 ## インプレ
 
@@ -73,4 +73,4 @@ ClimbPro でなくとも簡単な高低差は表示してくれる（要イン�
 
 MTB ダイナミクスはめちゃくちゃ期待しているので、トレイルとパークで試したらまたインプレしたい。→[白馬で試してみました](/post/2019/11/edge530_mtbd/)
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07TVPYCTV/" />
+<LinkBox url="https://www.probikekit.jp/bicycle-computers-gps-hrm/garmin-edge-530-gps-cycling-computer/12662080.html" />
