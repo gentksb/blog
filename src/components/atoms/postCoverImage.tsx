@@ -13,6 +13,7 @@ const postCoverImage: React.FunctionComponent<Props> = ({ image, alt }) =>
       alt={alt}
       style={{ width: "100%" }}
       imgStyle={{ height: "100%" }}
+      objectFit={"contain"}
     />
   ) : (
     <AspectRatio ratio={16 / 9}>
