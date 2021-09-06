@@ -105,7 +105,7 @@ export const pageQuery = graphql`
           }
         }
       }
-      excerpt
+      excerpt(truncate: true, pruneLength: 250)
       id
     }
   }
