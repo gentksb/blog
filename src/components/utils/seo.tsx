@@ -19,12 +19,14 @@ interface SeoDefaultProps {
   lang?: string
   meta?: MetaObject[]
   description?: string
+  datePublished?: string
 }
 
 interface Props extends LocationState, SeoDefaultProps {}
 
 const SEO: React.FunctionComponent<Props> = (props) => {
-  const { description, lang, meta, title, image, location } = props
+  const { description, lang, meta, title, image, location, datePublished } =
+    props
   const { site } = useStaticQuery<GatsbyTypes.SeoComponentQuery>(
     graphql`
       query SeoComponent {
@@ -85,7 +87,8 @@ const SEO: React.FunctionComponent<Props> = (props) => {
       }
     },
     url: location.href,
-    description: metaDescription
+    description: metaDescription,
+    datePublished: datePublished
   }
 
   return (
