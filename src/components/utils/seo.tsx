@@ -63,6 +63,11 @@ const SEO: React.FunctionComponent<Props> = (props) => {
       "@type": "ImageObject",
       url: metaImage
     },
+    author: {
+      "@type": "Person",
+      name: site.siteMetadata.author,
+      url: site.siteMetadata.siteUrl
+    },
     url: location.href,
     description: metaDescription
   }
