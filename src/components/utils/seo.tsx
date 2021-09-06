@@ -51,9 +51,21 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   const metaImage = currentHost + (image ?? site.siteMetadata.image)
   const canonicalUrl = currentHost + location.pathname
   const ogType = location.href.includes("/post/") ? "article" : "website"
-
+  const jsonLdType = location.href.includes("/post/") ? "Article" : "Blog"
   const metaRobotsContent =
     process.env.NODE_ENV === "production" ? "all" : "none"
+
+  const jsonLd = {
+    "@context": "http://schema.org",
+    "@type": jsonLdType,
+    name: title,
+    image: {
+      "@type": "ImageObject",
+      url: metaImage
+    },
+    url: location.href,
+    description: metaDescription
+  }
 
   return (
     <Helmet
@@ -134,7 +146,9 @@ const SEO: React.FunctionComponent<Props> = (props) => {
           content: location.host
         }
       ].concat(meta)}
-    ></Helmet>
+    >
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+    </Helmet>
   )
 }
 
