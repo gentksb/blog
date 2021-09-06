@@ -5,6 +5,7 @@ import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
+import moment from "moment"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
@@ -26,6 +27,12 @@ const BlogPostTemplate: React.FunctionComponent<
   const { pageContext, data, location } = props
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
+  const momentPostDate = moment(post.frontmatter.date)
+    .utcOffset(9)
+    .subtract(9, "hours")
+  console.log(`master time is: ${momentPostDate.toISOString(true)}`)
+  const jstIsoDate = momentPostDate.toISOString(true)
+  const formattedDate = momentPostDate.format("YYYY-MM-DD")
   const { previous, next } = pageContext
   const seoImage =
     post.frontmatter.cover != undefined
@@ -43,15 +50,16 @@ const BlogPostTemplate: React.FunctionComponent<
         description={post.excerpt}
         image={seoImage}
         location={location}
+        datePublished={jstIsoDate}
       />
       <Box outline="none" width="100%">
         <article>
           <header>
-            <time dateTime={post.frontmatter.date}>
+            <time dateTime={formattedDate} itemProp="datepublished">
               <HStack pt={1}>
                 <CalendarIcon />
                 <Text color="GrayText" fontSize="sm">
-                  {post.frontmatter.date}
+                  {formattedDate}
                 </Text>
               </HStack>
             </time>
@@ -91,7 +99,7 @@ export const pageQuery = graphql`
     mdx(fields: { slug: { eq: $slug } }) {
       body
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         title
         tags
         cover {
