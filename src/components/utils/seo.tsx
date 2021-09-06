@@ -151,10 +151,12 @@ const SEO: React.FunctionComponent<Props> = (props) => {
       ].concat(meta)}
     >
       <script type="application/ld+json">
-        {`{
-          ...jsonLd,
-          "@type": ${location.pathname.includes("/post/") ? "Article" : "Blog"}
-        }`}
+        {`
+          ${{
+            ...jsonLd,
+            "@type": location.pathname.includes("/post/") ? "Article" : "Blog"
+          }}
+        `}
       </script>
     </Helmet>
   )
