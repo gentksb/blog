@@ -50,14 +50,11 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   const metaDescription = description ?? site.siteMetadata.description
   const metaImage = currentHost + (image ?? site.siteMetadata.image)
   const canonicalUrl = currentHost + location.pathname
-  const ogType = location.href.includes("/post/") ? "article" : "website"
-  const jsonLdType = location.href.includes("/post/") ? "Article" : "Blog"
   const metaRobotsContent =
     process.env.NODE_ENV === "production" ? "all" : "none"
 
-  const jsonLd = {
+  const jsonLd: Object = {
     "@context": "http://schema.org",
-    "@type": jsonLdType,
     name: title,
     image: {
       "@type": "ImageObject",
@@ -73,6 +70,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   }
 
   return (
+    //windowオブジェクトはレンダリング時にしか評価できないため、返り値内に記述する必要がある
     <Helmet
       htmlAttributes={{
         lang
@@ -103,7 +101,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         },
         {
           property: `og:type`,
-          content: ogType
+          content: location.href.includes("/post/") ? "article" : "website"
         },
         {
           property: `og:url`,
@@ -152,7 +150,12 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         }
       ].concat(meta)}
     >
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <script type="application/ld+json">
+        {{
+          ...jsonLd,
+          "@type": location.href.includes("/post/") ? "Article" : "Blog"
+        }}
+      </script>
     </Helmet>
   )
 }
