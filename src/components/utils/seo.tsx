@@ -49,11 +49,32 @@ const SEO: React.FunctionComponent<Props> = (props) => {
     process.env.NODE_ENV === "production" ? siteUrl : location.origin
   const metaDescription = description ?? site.siteMetadata.description
   const metaImage = currentHost + (image ?? site.siteMetadata.image)
-
   const canonicalUrl = currentHost + location.pathname
-
   const metaRobotsContent =
     process.env.NODE_ENV === "production" ? "all" : "none"
+  const siteTitle =
+    location.pathname === "/"
+      ? site.siteMetadata.title
+      : `%s | ${site.siteMetadata.title}`
+  const jsonLdType = location.pathname.includes("/post/") ? "Article" : "Blog"
+  const ogType = location.pathname.includes("/post/") ? "article" : "website"
+
+  const jsonLd: Object = {
+    "@context": "http://schema.org",
+    "@type": jsonLdType,
+    name: title,
+    image: {
+      "@type": "ImageObject",
+      url: metaImage
+    },
+    author: {
+      "@type": "Person",
+      name: site.siteMetadata.author,
+      url: site.siteMetadata.siteUrl
+    },
+    url: location.href,
+    description: metaDescription
+  }
 
   return (
     <Helmet
@@ -61,11 +82,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         lang
       }}
       title={title}
-      titleTemplate={
-        location.pathname === "/"
-          ? site.siteMetadata.title
-          : `%s | ${site.siteMetadata.title}`
-      }
+      titleTemplate={siteTitle}
       link={[{ rel: "canonical", href: canonicalUrl }]}
       meta={[
         {
@@ -85,6 +102,10 @@ const SEO: React.FunctionComponent<Props> = (props) => {
           content: site.siteMetadata.title
         },
         {
+          property: `og:type`,
+          content: ogType
+        },
+        {
           property: `og:url`,
           content: location.href
         },
@@ -101,12 +122,21 @@ const SEO: React.FunctionComponent<Props> = (props) => {
           content: metaImage
         },
         {
-          property: `og:type`,
-          content: `blog`
-        },
-        {
           name: `twitter:card`,
           content: `summary_large_image`
+        },
+        {
+          property: `twitter:url`,
+          content: location.href
+        },
+
+        {
+          name: `twitter:title`,
+          content: title
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription
         },
         {
           property: `twitter:image`,
@@ -115,9 +145,15 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         {
           name: `twitter:site`,
           content: `@${site.siteMetadata.social.twitter}`
+        },
+        {
+          name: `twitter:domain`,
+          content: location.host
         }
       ].concat(meta)}
-    ></Helmet>
+    >
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+    </Helmet>
   )
 }
 
