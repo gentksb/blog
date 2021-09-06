@@ -3761,6 +3761,19 @@ type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
+type BlogPostBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'author'>> }>, readonly mdx: Maybe<(
+    Pick<Mdx, 'body' | 'excerpt' | 'id'>
+    & { readonly frontmatter: Maybe<(
+      Pick<MdxFrontmatter, 'date' | 'title' | 'tags'>
+      & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
+    )> }
+  )> };
+
 type IndexPageQueryVariables = Exact<{
   skip: Scalars['Int'];
   limit: Scalars['Int'];
@@ -3790,19 +3803,6 @@ type TagPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<S
         )> }
       ) }> }
   ) };
-
-type BlogPostBySlugQueryVariables = Exact<{
-  slug: Scalars['String'];
-}>;
-
-
-type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'author'>> }>, readonly mdx: Maybe<(
-    Pick<Mdx, 'body' | 'excerpt' | 'id'>
-    & { readonly frontmatter: Maybe<(
-      Pick<MdxFrontmatter, 'date' | 'title' | 'tags'>
-      & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
-    )> }
-  )> };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 

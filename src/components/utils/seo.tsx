@@ -77,7 +77,6 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   }
 
   return (
-    //windowオブジェクトはレンダリング時にしか評価できないため、返り値内に記述する必要がある
     <Helmet
       htmlAttributes={{
         lang
