@@ -5,7 +5,7 @@ import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
-import moment, { ISO_8601 } from "moment"
+import moment from "moment"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"

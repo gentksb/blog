@@ -1,6 +1,7 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
 import { VStack } from "@chakra-ui/react"
+import moment from "moment"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
@@ -14,10 +15,18 @@ const BlogIndex: React.FunctionComponent<
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
   const edges = data.allMdx.edges
+  const buildJstIsoTime = moment(data.siteBuildMetadata.buildTime)
+    .utcOffset(9)
+    .toISOString(true)
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="幻想サイクル" location={location} />
+      <SEO
+        title="幻想サイクル"
+        location={location}
+        description={data.site.siteMetadata.description}
+        datePublished={buildJstIsoTime}
+      />
       <VStack>
         <PostList edges={edges} />
         <Pagination props={props.pageContext} />
@@ -34,6 +43,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
     allMdx(
@@ -61,6 +71,9 @@ export const pageQuery = graphql`
           }
         }
       }
+    }
+    siteBuildMetadata {
+      buildTime
     }
   }
 `
