@@ -52,9 +52,16 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   const canonicalUrl = currentHost + location.pathname
   const metaRobotsContent =
     process.env.NODE_ENV === "production" ? "all" : "none"
+  const siteTitle =
+    location.pathname === "/"
+      ? site.siteMetadata.title
+      : `%s | ${site.siteMetadata.title}`
+  const jsonLdType = location.pathname.includes("/post/") ? "Article" : "Blog"
+  const ogType = location.pathname.includes("/post/") ? "article" : "website"
 
   const jsonLd: Object = {
     "@context": "http://schema.org",
+    "@type": jsonLdType,
     name: title,
     image: {
       "@type": "ImageObject",
@@ -76,11 +83,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         lang
       }}
       title={title}
-      titleTemplate={
-        location.pathname === "/"
-          ? site.siteMetadata.title
-          : `%s | ${site.siteMetadata.title}`
-      }
+      titleTemplate={siteTitle}
       link={[{ rel: "canonical", href: canonicalUrl }]}
       meta={[
         {
@@ -101,7 +104,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         },
         {
           property: `og:type`,
-          content: location.pathname.includes("/post/") ? "article" : "website"
+          content: ogType
         },
         {
           property: `og:url`,
@@ -150,14 +153,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         }
       ].concat(meta)}
     >
-      <script type="application/ld+json">
-        {`
-          ${{
-            ...jsonLd,
-            "@type": location.pathname.includes("/post/") ? "Article" : "Blog"
-          }}
-        `}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </Helmet>
   )
 }
