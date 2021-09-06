@@ -62,7 +62,11 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   const jsonLd: Object = {
     "@context": "http://schema.org",
     "@type": jsonLdType,
-    name: title,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl
+    },
+    headline: title,
     image: {
       "@type": "ImageObject",
       url: metaImage
@@ -71,6 +75,14 @@ const SEO: React.FunctionComponent<Props> = (props) => {
       "@type": "Person",
       name: site.siteMetadata.author,
       url: site.siteMetadata.siteUrl
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "幻想サイクル",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://blog.gensobunya.net/image/logo.jpg"
+      }
     },
     url: location.href,
     description: metaDescription
