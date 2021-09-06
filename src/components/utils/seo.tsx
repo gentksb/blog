@@ -101,7 +101,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         },
         {
           property: `og:type`,
-          content: location.href.includes("/post/") ? "article" : "website"
+          content: location.pathname.includes("/post/") ? "article" : "website"
         },
         {
           property: `og:url`,
@@ -153,7 +153,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
       <script type="application/ld+json">
         {{
           ...jsonLd,
-          "@type": location.href.includes("/post/") ? "Article" : "Blog"
+          "@type": location.pathname.includes("/post/") ? "Article" : "Blog"
         }}
       </script>
     </Helmet>

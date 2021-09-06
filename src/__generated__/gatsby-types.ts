@@ -3748,6 +3748,11 @@ type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ read
         & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'tags'>>, readonly fields: Maybe<Pick<MdxFields, 'slug'>> }
       ) }> } };
 
+type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
+
 type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3755,11 +3760,6 @@ type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
       & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
     )> }> };
-
-type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
 type BlogPostBySlugQueryVariables = Exact<{
   slug: Scalars['String'];
