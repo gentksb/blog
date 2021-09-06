@@ -49,8 +49,8 @@ const SEO: React.FunctionComponent<Props> = (props) => {
     process.env.NODE_ENV === "production" ? siteUrl : location.origin
   const metaDescription = description ?? site.siteMetadata.description
   const metaImage = currentHost + (image ?? site.siteMetadata.image)
-
   const canonicalUrl = currentHost + location.pathname
+  const ogType = location.href.includes("/post/") ? "article" : "website"
 
   const metaRobotsContent =
     process.env.NODE_ENV === "production" ? "all" : "none"
@@ -85,6 +85,10 @@ const SEO: React.FunctionComponent<Props> = (props) => {
           content: site.siteMetadata.title
         },
         {
+          property: `og:type`,
+          content: ogType
+        },
+        {
           property: `og:url`,
           content: location.href
         },
@@ -101,12 +105,21 @@ const SEO: React.FunctionComponent<Props> = (props) => {
           content: metaImage
         },
         {
-          property: `og:type`,
-          content: `blog`
-        },
-        {
           name: `twitter:card`,
           content: `summary_large_image`
+        },
+        {
+          property: `twitter:url`,
+          content: location.href
+        },
+
+        {
+          name: `twitter:title`,
+          content: title
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription
         },
         {
           property: `twitter:image`,
@@ -115,6 +128,10 @@ const SEO: React.FunctionComponent<Props> = (props) => {
         {
           name: `twitter:site`,
           content: `@${site.siteMetadata.social.twitter}`
+        },
+        {
+          name: `twitter:domain`,
+          content: location.host
         }
       ].concat(meta)}
     ></Helmet>
