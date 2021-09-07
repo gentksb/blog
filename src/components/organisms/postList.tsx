@@ -24,7 +24,7 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
     const coverTitleText = `${node.frontmatter.title} cover image`
     const columnSpan = index === 0 ? 2 : 1
     const nodeIsoDate = convertMdxDateToIsoJstDate(node.frontmatter.date)
-    const formattedDate = moment(nodeIsoDate).format("YYYY-MM-DD")
+    const formattedDate = moment.parseZone(nodeIsoDate).format("YYYY-MM-DD")
 
     return (
       <GridItem colSpan={columnSpan} key={node.id}>
