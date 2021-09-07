@@ -30,7 +30,6 @@ const BlogPostTemplate: React.FunctionComponent<
   const momentPostDate = moment(post.frontmatter.date)
     .utcOffset(9)
     .subtract(9, "hours")
-  console.log(`master time is: ${momentPostDate.toISOString(true)}`)
   const jstIsoDate = momentPostDate.toISOString(true)
   const formattedDate = momentPostDate.format("YYYY-MM-DD")
   const { previous, next } = pageContext
