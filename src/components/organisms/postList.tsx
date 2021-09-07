@@ -10,8 +10,10 @@ import {
   VStack
 } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
+import moment from "moment"
 import PostTag from "../molecules/postTag"
 import PostCoverImage from "../atoms/postCoverImage"
+import { convertMdxDateToIsoJstDate } from "../../utils/convertMdxDateToIsoJstDate"
 
 interface Props {
   edges: GatsbyTypes.IndexPageQuery["allMdx"]["edges"]
@@ -21,6 +23,8 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
   const postCards = edges.map(({ node }, index) => {
     const coverTitleText = `${node.frontmatter.title} cover image`
     const columnSpan = index === 0 ? 2 : 1
+    const nodeIsoDate = convertMdxDateToIsoJstDate(node.frontmatter.date)
+    const formattedDate = moment.parseZone(nodeIsoDate).format("YYYY-MM-DD")
 
     return (
       <GridItem colSpan={columnSpan} key={node.id}>
@@ -38,7 +42,7 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
               </Heading>
               <HStack fontSize={{ base: "sm", md: "md" }}>
                 <CalendarIcon />
-                <Text color="gray.500">{node.frontmatter.date}</Text>
+                <Text color="gray.500">{formattedDate}</Text>
               </HStack>
             </Link>
             <PostTag tags={node.frontmatter.tags} />

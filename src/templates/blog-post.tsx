@@ -16,6 +16,7 @@ import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/organisms/relatedPosts"
 import BlogPostStyle from "../styles/blog-post.style"
 import LinkBox from "../mdx/linkBox"
+import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 
 const shortcodes = {
   LinkBox
@@ -27,11 +28,8 @@ const BlogPostTemplate: React.FunctionComponent<
   const { pageContext, data, location } = props
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
-  const momentPostDate = moment(post.frontmatter.date)
-    .utcOffset(9)
-    .subtract(9, "hours")
-  const jstIsoDate = momentPostDate.toISOString(true)
-  const formattedDate = momentPostDate.format("YYYY-MM-DD")
+  const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
+  const formattedDate = moment.parseZone(jstIsoDate).format("YYYY-MM-DD")
   const { previous, next } = pageContext
   const seoImage =
     post.frontmatter.cover != undefined
