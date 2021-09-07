@@ -42,13 +42,12 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
-          excerpt(truncate: true)
           id
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date
             title
             cover {
               childImageSharp {

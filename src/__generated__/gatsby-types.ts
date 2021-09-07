@@ -3804,7 +3804,7 @@ type TagPageQueryVariables = Exact<{
 type TagPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }>, readonly allMdx: (
     Pick<MdxConnection, 'totalCount'>
     & { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<Mdx, 'excerpt' | 'id'>
+        Pick<Mdx, 'id'>
         & { readonly fields: Maybe<Pick<MdxFields, 'slug'>>, readonly frontmatter: Maybe<(
           Pick<MdxFrontmatter, 'date' | 'title' | 'tags' | 'draft'>
           & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
