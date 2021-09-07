@@ -55,7 +55,7 @@ const BlogPostTemplate: React.FunctionComponent<
       <Box outline="none" width="100%">
         <article>
           <header>
-            <time dateTime={formattedDate} itemProp="datepublished">
+            <time dateTime={formattedDate}>
               <HStack pt={1}>
                 <CalendarIcon />
                 <Text color="GrayText" fontSize="sm">
