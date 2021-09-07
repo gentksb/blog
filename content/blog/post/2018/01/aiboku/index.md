@@ -2,7 +2,7 @@
 title: "2017-18東海CX 愛知牧場レースレポート"
 date: 2018-01-22T19:12:44+09:00
 draft: false
-tags: ["CX", "RaceReport"]
+tags: ["CX", "RACEREPORT"]
 cover: 18aiboku_1.jpg
 ---
 

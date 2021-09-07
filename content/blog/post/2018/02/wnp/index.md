@@ -2,7 +2,7 @@
 title: "東海CX#8 ワールドネイチャープラザレースレポート"
 date: 2018-02-28T19:19:18+09:00
 draft: false
-tags: ["RaceReport", "CX"]
+tags: ["RACEREPORT", "CX"]
 cover: 20180226_top.jpg
 ---
 

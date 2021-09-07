@@ -2,7 +2,7 @@
 title: "2017-18関西シクロクロス最終戦 桂川レースレポート"
 date: 2018-02-06T23:32:02+09:00
 draft: false
-tags: ["CX", "RaceReport"]
+tags: ["CX", "RACEREPORT"]
 cover: 18katsura.jpg
 ---
 

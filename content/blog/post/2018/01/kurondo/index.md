@@ -2,7 +2,7 @@
 title: "2018くろんどCXレースレポート"
 date: 2018-01-28T21:10:12+09:00
 draft: false
-tags: ["CX", "RaceReport"]
+tags: ["CX", "RACEREPORT"]
 cover: 18kurondo.jpg
 ---
 
