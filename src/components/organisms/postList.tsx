@@ -10,7 +10,8 @@ import {
   VStack
 } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
-import moment from "moment"
+import { format, parseISO } from "date-fns"
+
 import PostTag from "../molecules/postTag"
 import PostCoverImage from "../atoms/postCoverImage"
 import { convertMdxDateToIsoJstDate } from "../../utils/convertMdxDateToIsoJstDate"
@@ -24,7 +25,8 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
     const coverTitleText = `${node.frontmatter.title} cover image`
     const columnSpan = index === 0 ? 2 : 1
     const nodeIsoDate = convertMdxDateToIsoJstDate(node.frontmatter.date)
-    const formattedDate = moment.parseZone(nodeIsoDate).format("YYYY-MM-DD")
+    const parsedDate = parseISO(nodeIsoDate)
+    const formattedDate = format(parsedDate, "yyyy-MM-dd")
 
     return (
       <GridItem colSpan={columnSpan} key={node.id}>
