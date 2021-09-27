@@ -30,15 +30,7 @@ interface ApiResponse {
   error?: string
 }
 
-//windowオブジェクトチェック
-const isBrowser = typeof window !== "undefined"
-let defaultApp
-
-if (isBrowser) {
-  defaultApp = getApp()
-}
-
-const functions = getFunctions(defaultApp, "asia-northeast1")
+const functions = getFunctions(getApp(), "asia-northeast1")
 if (process.env.NODE_ENV === "development") {
   connectFunctionsEmulator(functions, "localhost", 5001)
 }
