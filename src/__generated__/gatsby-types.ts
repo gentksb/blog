@@ -4000,6 +4000,14 @@ type TagListQueryVariables = Exact<{ [key: string]: never; }>;
 
 type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
 
+type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<Mdx, 'id'>
+        & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'tags'>>, readonly fields: Maybe<Pick<MdxFields, 'slug'>> }
+      ) }> } };
+
 type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -4025,14 +4033,6 @@ type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe
       & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
     )> }
   )> };
-
-type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<Mdx, 'id'>
-        & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'tags'>>, readonly fields: Maybe<Pick<MdxFields, 'slug'>> }
-      ) }> } };
 
 type IndexPageQueryVariables = Exact<{
   skip: Scalars['Int'];
