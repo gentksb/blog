@@ -30,11 +30,6 @@ interface ApiResponse {
   error?: string
 }
 
-const functions = getFunctions(getApp(), "asia-northeast1")
-if (process.env.NODE_ENV === "development") {
-  connectFunctionsEmulator(functions, "localhost", 5001)
-}
-
 const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
   const [ogpData, changeOgpData] = useState(Object)
   const [loading, changeLoading] = useState(true)
@@ -47,6 +42,11 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
 
   useEffect(() => {
     try {
+      const functions = getFunctions(getApp(), "asia-northeast1")
+      if (process.env.NODE_ENV === "development") {
+        connectFunctionsEmulator(functions, "localhost", 5001)
+      }
+
       const getOgpData = httpsCallable(functions, "getOgpLinkData")
       getOgpData(apiRequestBody).then((result) => {
         const response = result.data as ApiResponse
