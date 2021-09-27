@@ -30,7 +30,7 @@ const BlogPostTemplate: React.FunctionComponent<
   const siteTitle = data.site.siteMetadata?.title
   const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
   const parsedDate = parseISO(jstIsoDate)
-  const formattedDate = format(parsedDate, "YYYY-MM-DD")
+  const formattedDate = format(parsedDate, "yyyy-MM-dd")
   const { previous, next } = pageContext
   const seoImage =
     post.frontmatter.cover != undefined
