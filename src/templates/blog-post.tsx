@@ -5,7 +5,7 @@ import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
-import moment from "moment"
+import { parseISO, format } from "date-fns"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
@@ -29,7 +29,8 @@ const BlogPostTemplate: React.FunctionComponent<
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
   const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
-  const formattedDate = moment.parseZone(jstIsoDate).format("YYYY-MM-DD")
+  const parsedDate = parseISO(jstIsoDate)
+  const formattedDate = format(parsedDate, "yyyy-MM-dd")
   const { previous, next } = pageContext
   const seoImage =
     post.frontmatter.cover != undefined

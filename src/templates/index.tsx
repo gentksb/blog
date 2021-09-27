@@ -1,13 +1,13 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
 import { VStack } from "@chakra-ui/react"
-import moment from "moment"
 
 import Layout from "../components/layout"
 import SEO from "../components/utils/seo"
 import Pagination from "../components/molecules/pagination"
 import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
+import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 
 const BlogIndex: React.FunctionComponent<
   PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePageContext>
@@ -15,9 +15,9 @@ const BlogIndex: React.FunctionComponent<
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title
   const edges = data.allMdx.edges
-  const buildJstIsoTime = moment(data.siteBuildMetadata.buildTime)
-    .utcOffset(9)
-    .toISOString(true)
+  const buildJstIsoTime = convertMdxDateToIsoJstDate(
+    data.siteBuildMetadata.buildTime
+  )
 
   return (
     <Layout location={location} title={siteTitle}>
