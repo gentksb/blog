@@ -8,14 +8,19 @@ import {
   LinkOverlay
 } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
-import firebase from "gatsby-plugin-firebase"
+import { getApp } from "firebase/app"
+import {
+  getFunctions,
+  httpsCallable,
+  connectFunctionsEmulator
+} from "firebase/functions"
 
 interface Props {
   url: string
   isAmazonLink?: boolean
 }
 
-interface ApiResponse {
+class ApiResponse {
   title: string
   imageUrl: string
   description: string
@@ -25,8 +30,9 @@ interface ApiResponse {
   error?: string
 }
 
+const functions = getFunctions(getApp(), "asia-northeast1")
 if (process.env.NODE_ENV === "development") {
-  firebase.app().functions("asia-northeast1").useEmulator("localhost", 5001)
+  connectFunctionsEmulator(functions, "localhost", 5001)
 }
 
 const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
@@ -41,43 +47,38 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
 
   useEffect(() => {
     try {
-      const getOgpData = firebase
-        .app()
-        .functions("asia-northeast1")
-        .httpsCallable("getOgpLinkData")
+      const getOgpData = httpsCallable(functions, "getOgpLinkData")
       getOgpData(apiRequestBody).then((result) => {
-        const response: ApiResponse = result.data
-        const errorMessage = response.error
+        const response = result.data
 
-        if (errorMessage !== "") {
-          console.log(errorMessage)
-          return
+        if (response instanceof ApiResponse) {
+          const title = response.title
+          const imageUrl = response.imageUrl
+          const description = response.description
+          const siteName = response.siteName ?? urlDomain
+          const siteIconPath = response.ogpIcon ?? "/favicon.ico"
+          const siteIcon = siteIconPath.includes("//")
+            ? siteIconPath
+            : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
+          const linkurl = response.pageurl ?? encodedUrl
+          console.log(title, linkurl, imageUrl, description, siteName, siteIcon)
+          const isImageUrlExists = imageUrl !== ""
+
+          changeOgpData({
+            title: title,
+            imageUrl: isImageUrlExists ? imageUrl : null,
+            description: description,
+            siteName: siteName,
+            ogpIcon: siteIcon,
+            url: linkurl
+          })
+          changeLoading(false)
+        } else {
+          console.error("unknown API Response", response)
         }
-
-        const title = response.title
-        const imageUrl = response.imageUrl
-        const description = response.description
-        const siteName = response.siteName ?? urlDomain
-        const siteIconPath = response.ogpIcon ?? "/favicon.ico"
-        const siteIcon = siteIconPath.includes("//")
-          ? siteIconPath
-          : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
-        const linkurl = response.pageurl ?? encodedUrl
-        console.log(title, linkurl, imageUrl, description, siteName, siteIcon)
-        const isImageUrlExists = imageUrl !== ""
-
-        changeOgpData({
-          title: title,
-          imageUrl: isImageUrlExists ? imageUrl : null,
-          description: description,
-          siteName: siteName,
-          ogpIcon: siteIcon,
-          url: linkurl
-        })
-        changeLoading(false)
       })
     } catch (error) {
-      console.error(error)
+      console.error(error.code, error.message, error.details)
     }
   }, [])
 

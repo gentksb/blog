@@ -100,19 +100,6 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     {
-      resolve: "gatsby-plugin-firebase",
-      options: {
-        features: {
-          fucntions: true
-        },
-        credentials: {
-          apiKey: process.env.FIREBASE_API_KEY,
-          projectId: process.env.FIREBASE_PROJECT_ID,
-          appId: process.env.FIREBASE_APP_ID
-        }
-      }
-    },
-    {
       resolve: `gatsby-plugin-feed-mdx`,
       options: {
         query: `
