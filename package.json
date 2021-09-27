@@ -15,6 +15,7 @@
     "@react-icons/all-files": "^4.1.0",
     "amazon-paapi": "^1.0.5",
     "date-fns": "^2.24.0",
+    "date-fns-tz": "^1.1.6",
     "emotion-theming": "^11.0.0",
     "firebase": "^9.1.0",
     "framer-motion": "^4.1.17",
