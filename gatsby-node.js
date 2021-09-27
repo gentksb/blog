@@ -96,3 +96,21 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+// firebase v9がnode.jsで利用できないパッケージを参照する対策
+// https://github.com/gatsbyjs/gatsby/issues/29012
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html" || stage === "develop-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /firebase/,
+            use: loaders.null()
+          }
+        ]
+      }
+    })
+  }
+}

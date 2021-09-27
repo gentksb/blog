@@ -8,7 +8,12 @@ import {
   LinkOverlay
 } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
-import firebase from "gatsby-plugin-firebase"
+import { getApp } from "firebase/app"
+import {
+  getFunctions,
+  httpsCallable,
+  connectFunctionsEmulator
+} from "firebase/functions"
 
 interface Props {
   url: string
@@ -25,10 +30,6 @@ interface ApiResponse {
   error?: string
 }
 
-if (process.env.NODE_ENV === "development") {
-  firebase.app().functions("asia-northeast1").useEmulator("localhost", 5001)
-}
-
 const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
   const [ogpData, changeOgpData] = useState(Object)
   const [loading, changeLoading] = useState(true)
@@ -41,18 +42,14 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
 
   useEffect(() => {
     try {
-      const getOgpData = firebase
-        .app()
-        .functions("asia-northeast1")
-        .httpsCallable("getOgpLinkData")
-      getOgpData(apiRequestBody).then((result) => {
-        const response: ApiResponse = result.data
-        const errorMessage = response.error
+      const functions = getFunctions(getApp(), "asia-northeast1")
+      if (process.env.NODE_ENV === "development") {
+        connectFunctionsEmulator(functions, "localhost", 5001)
+      }
 
-        if (errorMessage !== "") {
-          console.log(errorMessage)
-          return
-        }
+      const getOgpData = httpsCallable(functions, "getOgpLinkData")
+      getOgpData(apiRequestBody).then((result) => {
+        const response = result.data as ApiResponse
 
         const title = response.title
         const imageUrl = response.imageUrl
@@ -77,7 +74,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
         changeLoading(false)
       })
     } catch (error) {
-      console.error(error)
+      console.error(error.code, error.message, error.details)
     }
   }, [])
 
