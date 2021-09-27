@@ -5,5 +5,5 @@ import { firebaseConfig } from "./src/utils/firebaseConfig"
 const config = firebaseConfig
 
 export const onClientEntry = () => {
-  const firebaseApp = initializeApp(config)
+  initializeApp(config)
 }
