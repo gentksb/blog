@@ -6,5 +6,5 @@ const config = firebaseConfig
 
 export const onClientEntry = () => {
   console.log(JSON.stringify(config))
-  const firebaseApp = initializeApp(config)
+  const firebaseApp = initializeApp(firebaseConfig)
 }

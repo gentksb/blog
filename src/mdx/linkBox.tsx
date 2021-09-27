@@ -20,7 +20,7 @@ interface Props {
   isAmazonLink?: boolean
 }
 
-class ApiResponse {
+interface ApiResponse {
   title: string
   imageUrl: string
   description: string
@@ -49,33 +49,29 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
     try {
       const getOgpData = httpsCallable(functions, "getOgpLinkData")
       getOgpData(apiRequestBody).then((result) => {
-        const response = result.data
+        const response = result.data as ApiResponse
 
-        if (response instanceof ApiResponse) {
-          const title = response.title
-          const imageUrl = response.imageUrl
-          const description = response.description
-          const siteName = response.siteName ?? urlDomain
-          const siteIconPath = response.ogpIcon ?? "/favicon.ico"
-          const siteIcon = siteIconPath.includes("//")
-            ? siteIconPath
-            : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
-          const linkurl = response.pageurl ?? encodedUrl
-          console.log(title, linkurl, imageUrl, description, siteName, siteIcon)
-          const isImageUrlExists = imageUrl !== ""
+        const title = response.title
+        const imageUrl = response.imageUrl
+        const description = response.description
+        const siteName = response.siteName ?? urlDomain
+        const siteIconPath = response.ogpIcon ?? "/favicon.ico"
+        const siteIcon = siteIconPath.includes("//")
+          ? siteIconPath
+          : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
+        const linkurl = response.pageurl ?? encodedUrl
+        console.log(title, linkurl, imageUrl, description, siteName, siteIcon)
+        const isImageUrlExists = imageUrl !== ""
 
-          changeOgpData({
-            title: title,
-            imageUrl: isImageUrlExists ? imageUrl : null,
-            description: description,
-            siteName: siteName,
-            ogpIcon: siteIcon,
-            url: linkurl
-          })
-          changeLoading(false)
-        } else {
-          console.error("unknown API Response", response)
-        }
+        changeOgpData({
+          title: title,
+          imageUrl: isImageUrlExists ? imageUrl : null,
+          description: description,
+          siteName: siteName,
+          ogpIcon: siteIcon,
+          url: linkurl
+        })
+        changeLoading(false)
       })
     } catch (error) {
       console.error(error.code, error.message, error.details)
