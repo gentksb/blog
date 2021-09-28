@@ -14,7 +14,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typegen`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-twitter`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-typescript`,
@@ -95,7 +94,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: `GTM-MGHR8XJ`
+        id: `GTM-MGHR8XJ`,
+        includeInDevelopment: true,
+        enableWebVitalsTracking: true
       }
     },
     `gatsby-plugin-sitemap`,
