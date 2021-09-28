@@ -27,7 +27,7 @@ const BlogIndex: React.FunctionComponent<
         description={data.site.siteMetadata.description}
         datePublished={buildJstIsoTime}
       />
-      <VStack>
+      <VStack maxW="100%">
         <PostList edges={edges} />
         <Pagination props={props.pageContext} />
         <TagList />

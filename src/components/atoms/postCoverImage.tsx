@@ -12,7 +12,6 @@ const postCoverImage: React.FunctionComponent<Props> = ({ image, alt }) =>
       image={image}
       alt={alt}
       style={{ width: "100%" }}
-      imgStyle={{ height: "100%" }}
       objectFit={"contain"}
     />
   ) : (

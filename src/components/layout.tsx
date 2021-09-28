@@ -31,7 +31,7 @@ const Layout: React.FunctionComponent<Props> = (props) => {
       >
         <BlogTitleText title={title} markup={headerMarkup} />
       </Box>
-      <Container maxW="3xl" centerContent>
+      <Container maxW="3xl" padding="0 0 0 0" centerContent>
         {children}
       </Container>
       <Footer />

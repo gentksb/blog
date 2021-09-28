@@ -23,7 +23,7 @@ interface Props {
 const postList: React.FunctionComponent<Props> = ({ edges }) => {
   const postCards = edges.map(({ node }, index) => {
     const coverTitleText = `${node.frontmatter.title} cover image`
-    const columnSpan = index === 0 ? 2 : 1
+    const columnSpan = index === 0 ? 2 : 1 //トップ記事だけ2コマ使って表示する
     const nodeIsoDate = convertMdxDateToIsoJstDate(node.frontmatter.date)
     const parsedDate = parseISO(nodeIsoDate)
     const formattedDate = format(parsedDate, "yyyy-MM-dd")
@@ -54,7 +54,12 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
     )
   })
   return (
-    <Grid templateColumns="repeat(2,1fr)" gap={2}>
+    <Grid
+      templateColumns="repeat(2,1fr)"
+      gap={2}
+      maxW="100%"
+      boxSizing="border-box"
+    >
       {postCards}
     </Grid>
   )
