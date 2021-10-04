@@ -6,15 +6,15 @@ tags: ["RACEREPORT", "CX"]
 cover: "./cover.jpg"
 ---
 
-## Summery
+![cover](./cover.jpg)
+
+## Summary
 
 普段であれば 50 位以降をうろちょろするのが JCX レースでの定位置であったが、今年は毎週火曜日の Meetup トレーニングとマグマ生活の肉体改造、いつものシーズン前タバタでリザルトジャンプアップに成功！
 
 ## リザルト
 
 35/81 位(-3 lap)
-
-![cover](./cover.jpg)
 
 ### 機材
 
