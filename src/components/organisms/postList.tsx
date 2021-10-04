@@ -56,7 +56,7 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
   return (
     <Grid
       templateColumns="repeat(2,1fr)"
-      gap={2}
+      gap={1}
       maxW="100%"
       boxSizing="border-box"
     >
