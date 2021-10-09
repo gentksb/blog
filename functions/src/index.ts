@@ -2,8 +2,8 @@ import * as functions from "firebase-functions"
 import "firebase-functions/lib/logger/compat"
 import fetch from "node-fetch"
 import { JSDOM } from "jsdom"
-import amazonPaapi = require("amazon-paapi")
-import "./@types/amazon-paapi-type"
+import * as amazonPaapi from "amazon-paapi"
+// import "./@types/amazon-paapi-type"
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //

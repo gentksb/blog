@@ -1,6 +1,5 @@
 {
   "name": "functions",
-  "type": "module",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc",
@@ -13,6 +12,7 @@
   "engines": {
     "node": "14"
   },
+  "type": "module",
   "main": "lib/index.js",
   "dependencies": {
     "@types/jsdom": "^16.2.13",
