@@ -1,8 +1,8 @@
-import * as functions from "firebase-functions"
+import functions from "firebase-functions"
 import "firebase-functions/lib/logger/compat"
 import fetch from "node-fetch"
 import { JSDOM } from "jsdom"
-const amazonPaapi = require("amazon-paapi")
+import amazonPaapi from "amazon-paapi"
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
@@ -29,14 +29,6 @@ const cache = new Map<string, Res>()
 const amazonPaApiKey = functions.config().amazon.paapi_key
 const amazonPaApiSecret = functions.config().amazon.paapi_secret
 const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
-
-const commonParameters = {
-  AccessKey: amazonPaApiKey,
-  SecretKey: amazonPaApiSecret,
-  PartnerTag: amazonPaApiPartnerTag,
-  PartnerType: "Associates",
-  Marketplace: "www.amazon.co.jp"
-}
 
 export const getOgpLinkData = functions
   .region("asia-northeast1")
@@ -70,17 +62,6 @@ export const getOgpLinkData = functions
       result.siteName = "www.amazon.co.jp"
       result.ogpIcon = "https://www.amazon.co.jp/favicon.ico"
 
-      if (
-        amazonPaApiKey === null ||
-        amazonPaApiSecret === null ||
-        amazonPaApiPartnerTag === null
-      ) {
-        throw new functions.https.HttpsError(
-          "failed-precondition",
-          "Didn't set PAAPIv5 parameters"
-        )
-      }
-
       const getAsinFromUrl = (url: string) => {
         return new Promise((resolve) => {
           const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
@@ -98,60 +79,79 @@ export const getOgpLinkData = functions
       const asin = await getAsinFromUrl(data.url)
       console.log("asin is", asin)
 
-      const requestParameters = {
-        ItemIds: [asin],
-        ItemIdType: "ASIN",
-        Condition: "New",
-        Resources: [
-          "Images.Primary.Medium",
-          "Images.Primary.Large",
-          "ItemInfo.Title",
-          "ItemInfo.Features"
-        ]
-      }
-
-      // eslint-disable-next-line
       const callPaapi = async () => {
-        for (let retrycount = 0; retrycount < 3; retrycount++) {
-          try {
-            return await amazonPaapi.GetItems(
-              commonParameters,
-              requestParameters
-            )
-          } catch (error) {
-            if (error.status === 429 && retrycount < 2) {
-              const backoffSleep = (retrycount + 1) ** 2 * 1000
-              const sleep = (msec: number) =>
-                new Promise((resolve) => setTimeout(resolve, msec))
-              await sleep(backoffSleep)
-              console.log("retry")
-            } else {
-              console.error(error)
-              throw new functions.https.HttpsError("internal", error)
+        if (
+          typeof amazonPaApiKey !== "string" ||
+          typeof amazonPaApiSecret !== "string" ||
+          typeof amazonPaApiPartnerTag !== "string" ||
+          typeof asin !== "string"
+        ) {
+          throw new functions.https.HttpsError(
+            "failed-precondition",
+            "Didn't set or invalid PAAPIv5 parameters"
+          )
+        } else {
+          for (let retrycount = 0; retrycount < 3; retrycount++) {
+            try {
+              return await amazonPaapi.GetItems(
+                {
+                  AccessKey: amazonPaApiKey,
+                  SecretKey: amazonPaApiSecret,
+                  PartnerTag: amazonPaApiPartnerTag,
+                  PartnerType: "Associates",
+                  Marketplace: "www.amazon.co.jp"
+                },
+                {
+                  ItemIds: [asin],
+                  ItemIdType: "ASIN",
+                  Condition: "New",
+                  Resources: [
+                    "Images.Primary.Medium",
+                    "Images.Primary.Large",
+                    "ItemInfo.Title",
+                    "ItemInfo.Features"
+                  ]
+                }
+              )
+            } catch (error: any) {
+              if (error.status === 429 && retrycount < 2) {
+                const backoffSleep = (retrycount + 1) ** 2 * 1000
+                const sleep = (msec: number) =>
+                  new Promise((resolve) => setTimeout(resolve, msec))
+                await sleep(backoffSleep)
+                console.log("retry")
+              } else {
+                console.error(error)
+                throw new functions.https.HttpsError("internal", error)
+              }
             }
           }
+          throw new functions.https.HttpsError("internal", "nothing happened")
         }
       }
 
       const apiResult = await callPaapi()
 
       try {
-        const productDetail = apiResult.ItemsResult.Items[0]
-        console.log(productDetail)
+        if (apiResult !== undefined) {
+          const productDetail = apiResult.ItemsResult.Items[0]
+          console.log(productDetail)
 
-        result.pageurl = productDetail.DetailPageURL // AmazonはPAAPIで発行したURLを返す
-        result.imageUrl =
-          productDetail.Images.Primary.Large.URL ??
-          productDetail.Images.Primary.Medium.URL
-        result.title = productDetail.ItemInfo.Title.DisplayValue
-        result.description =
-          productDetail.ItemInfo.Features?.DisplayValues[0] ?? ""
+          result.pageurl = productDetail.DetailPageURL // AmazonはPAAPIで発行したURLを返す
+          result.imageUrl =
+            productDetail.Images?.Primary?.Large?.URL ??
+            productDetail.Images?.Primary?.Medium?.URL ??
+            ""
+          result.title = productDetail.ItemInfo.Title?.DisplayValue ?? ""
+          result.description =
+            productDetail.ItemInfo.Features?.DisplayValues[0] ?? ""
 
-        console.log(result)
-        cache.set(data.url, result)
+          console.log(result)
+          cache.set(data.url, result)
 
-        return result
-      } catch (error) {
+          return result
+        }
+      } catch (error: any) {
         console.error(error)
         throw new functions.https.HttpsError("internal", error)
       }
@@ -203,9 +203,10 @@ export const getOgpLinkData = functions
         cache.set(data.url, result)
 
         return result
-      } catch (error) {
+      } catch (error: any) {
         console.error(error)
         throw new functions.https.HttpsError("internal", error)
       }
     }
+    throw new functions.https.HttpsError("internal", "nothing happened")
   })

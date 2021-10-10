@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "es2015",
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "outDir": "lib",
     "sourceMap": true,
     "strict": true,
-    "target": "ES2019"
+    "target": "ESNEXT",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "baseUrl": "src/@types",
+    "paths": {
+      "amazonPaapi": ["amazon-paapi-type.d.ts"]
+    }
   },
   "compileOnSave": true,
   "include": ["src"]
