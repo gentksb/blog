@@ -1,5 +1,5 @@
 ---
-title: "Muc-Off Disc Brake Clearnerを使ってみた"
+title: "Muc-Off Disc Brake Cleanerを使ってみた"
 date: 2021-10-12
 draft: false
 tags: ["REVIEW", "CX", "MTB", "ROAD"]

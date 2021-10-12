@@ -215,6 +215,11 @@
         "source": "/post/2019/07/withings2slack/",
         "destination": "https://gensobunya-tech.hatenablog.com/entry/2019/07/19/000000",
         "type": 301
+      },
+      {
+        "source": "/post/2021/10/disc_clearner/",
+        "destination": "/post/2021/10/disc_cleaner/",
+        "type": 301
       }
     ]
   }
