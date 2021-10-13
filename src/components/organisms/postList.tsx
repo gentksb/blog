@@ -42,12 +42,12 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
               <Heading as="h2" fontSize={{ base: "md", md: "xl" }}>
                 {node.frontmatter.title}
               </Heading>
-              <HStack fontSize={{ base: "sm", md: "md" }}>
-                <CalendarIcon />
-                <Text color="gray.500">{formattedDate}</Text>
-              </HStack>
             </Link>
             <PostTag tags={node.frontmatter.tags} />
+            <HStack fontSize={{ base: "sm", md: "md" }} paddingTop={0.5}>
+              <CalendarIcon color="gray.600" />
+              <Text color="gray.600">{formattedDate}</Text>
+            </HStack>
           </VStack>
         </Box>
       </GridItem>
