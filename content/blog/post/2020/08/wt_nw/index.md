@@ -40,4 +40,4 @@ STONE のチェーンリングに比べると、肉抜きの方針が大きく�
 
 経験上、中華チェーンリングよりウルフトゥースのほうが 2 倍近く長持ちするので、コストで言うとトントンのはずです。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B01BULOKJE/" />
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/wolf-tooth-110-bcd-%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%83%AA%E3%83%B3%E3%82%B0/rp-prod192988" />
