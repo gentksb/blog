@@ -54,12 +54,7 @@ const postList: React.FunctionComponent<Props> = ({ edges }) => {
     )
   })
   return (
-    <Grid
-      templateColumns="repeat(2,1fr)"
-      gap={1}
-      maxW="100%"
-      boxSizing="border-box"
-    >
+    <Grid templateColumns="repeat(2,1fr)" gap={1}>
       {postCards}
     </Grid>
   )

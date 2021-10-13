@@ -1,3 +1,5 @@
+const { AspectRatio } = require("@chakra-ui/layout")
+
 module.exports = {
   siteMetadata: {
     title: `幻想サイクル`,
@@ -28,7 +30,12 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          breakpoints: [180, 360, 810, 1080, 1366, 1920]
+          breakpoints: [180, 360, 810, 1080, 1366, 1920],
+          transformOptions: {
+            maxWidth: 800,
+            fit: "inside",
+            cropFocus: "attention"
+          }
         }
       }
     },
