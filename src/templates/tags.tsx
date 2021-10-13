@@ -18,7 +18,7 @@ const Tags: React.FunctionComponent<
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={pageTitle} location={location} />
-      <VStack>
+      <VStack maxW="100%">
         <TagList targetTag={tag} />
         <PostList edges={edges} />
       </VStack>

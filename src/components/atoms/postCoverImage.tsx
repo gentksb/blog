@@ -8,13 +8,14 @@ interface Props {
 
 const postCoverImage: React.FunctionComponent<Props> = ({ image, alt }) =>
   image != undefined ? (
-    <GatsbyImage
-      image={image}
-      alt={alt}
-      style={{ width: "100%" }}
-      imgStyle={{ height: "100%" }}
-      objectFit={"contain"}
-    />
+    <AspectRatio ratio={16 / 9}>
+      <GatsbyImage
+        image={image}
+        alt={alt}
+        style={{ width: "100%" }}
+        objectFit={"cover"}
+      />
+    </AspectRatio>
   ) : (
     <AspectRatio ratio={16 / 9}>
       <Image src="/image/dummy.jpg" alt="cover image" objectFit="cover" />
