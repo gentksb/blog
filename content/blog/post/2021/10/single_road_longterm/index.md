@@ -18,7 +18,7 @@ cover: "./cover.jpg"
 
 - チェーンリングを 48T から 46T に換装
 - GIANT の純正ホイールを [ZIP303S](https://shopping.yahoo.co.jp/search?p=ZIPP+303S&cid=&pf=&pt=&area=14&dlv=&first=1&tab_ex=commerce&sc_i=shp_pc_store_searchBox) に換装
-- クランク 9000 から[中華 PM のついた R7000](https://www.aliexpress.com/item/32999218701.html) に換装
+- クランク 9000 から[中華 PM のついた R7000](https://www.awin1.com/cread.php?awinmid=10748&awinaffid=761747&ued=https%3A%2F%2Fwww.aliexpress.com%2Fitem%2F32999218701.html) に換装
 
 ## 総評
 
