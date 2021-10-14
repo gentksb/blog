@@ -19,7 +19,7 @@ cover: "./vs_ca500.jpg"
 MTB ダイナミクスにかなり期待していることもあって Edge530 を発売日に IYH！シェイクダウンがかなり遅くなってしまったがひとまずインプレを。  
 (しかも MTB ではまだ使っていない)
 
-<LinkBox url="https://www.probikekit.jp/bicycle-computers-gps-hrm/garmin-edge-530-gps-cycling-computer-performance-bundle/12662078.html" />
+<LinkBox url="https://www.amazon.co.jp/dp/B08DD3LRH3/" isAmazonLink />
 
 ## インプレ
 
@@ -68,6 +68,7 @@ ClimbPro でなくとも簡単な高低差は表示してくれる（要イン�
 バッテリーセーバーモードの場合、アクティビティは記録しつつ、通常ライド中は画面が消えます。それでいて、ルートの通知や急カーブの警告・スマートフォン通知のときだけ画面点灯してお知らせしてくれます。むしろライドに集中できてロードに乗るときは常時バッテリーセーバーを使ったほうが良いかもしれないレベル！
 
 <LinkBox url="https://www.amazon.co.jp/dp/B08DD3LRH3/" isAmazonLink />
+
 ## 総括
 
 正当進化した Edge という感じ。500 ～ 520 の間のアップデートより 520->530 のほうが機能的にアップデート幅が多かった（というよりこの間サイコンの機能的進化がバッテリーに偏重していた用に思える）ので、ここに来て「ライドのサポート」ツールとしてより進化したギアとしての印象がある。**ついでだから充電端子を USB type-C にすれば完璧だったのに**
