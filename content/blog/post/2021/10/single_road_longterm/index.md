@@ -47,7 +47,7 @@ Di2 なんだからシンクロシフトで解決してもいいのだが、変�
 
 チェーンリングはいいものを使わないと耐久性が低いので、Wolftooth を推奨。
 
-<LinkBox url="https://www.wiggle.jp/wolf-tooth-110-bcd-%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%83%AA%E3%83%B3%E3%82%B0" />
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/wolf-tooth-110-bcd-%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%83%AA%E3%83%B3%E3%82%B0/rp-prod192988" />
 
 ## デメリット
 
