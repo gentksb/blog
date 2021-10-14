@@ -52,7 +52,7 @@ const BlogPostTemplate: React.FunctionComponent<
       />
       <Box outline="none" width="100%">
         <article>
-          <header>
+          <Box as="header" p={1}>
             <time dateTime={formattedDate}>
               <HStack pt={1}>
                 <CalendarIcon />
@@ -65,8 +65,8 @@ const BlogPostTemplate: React.FunctionComponent<
               {post.frontmatter.title}
             </Heading>
             <PostTag tags={post.frontmatter.tags} />
-          </header>
-          <Divider />
+          </Box>
+          <Divider marginY={2} />
           <Box className="post-body" css={BlogPostStyle}>
             <MDXProvider components={shortcodes}>
               <MDXRenderer>{post.body}</MDXRenderer>

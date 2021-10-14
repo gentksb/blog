@@ -3,20 +3,21 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import { Button, HStack, Tag } from "@chakra-ui/react"
 
 interface Props {
-  targetTag?:string
+  targetTag?: string
 }
 
-const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
-  const data:GatsbyTypes.TagListQuery = useStaticQuery<GatsbyTypes.TagListQuery>(graphql`
-    query TagList {
-      allMdx(filter: { frontmatter: { draft: { eq: false } } }) {
-        group(field: frontmatter___tags) {
-          fieldValue
-          totalCount
+const TagList: React.FunctionComponent<Props> = ({ targetTag }) => {
+  const data: GatsbyTypes.TagListQuery =
+    useStaticQuery<GatsbyTypes.TagListQuery>(graphql`
+      query TagList {
+        allMdx(filter: { frontmatter: { draft: { eq: false } } }) {
+          group(field: frontmatter___tags) {
+            fieldValue
+            totalCount
+          }
         }
       }
-    }
-  `)
+    `)
 
   const allTagAndCount = data.allMdx
   const tagArray = allTagAndCount.group.map((tagdata) => {
@@ -30,7 +31,7 @@ const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
         style={{ textDecoration: "none" }}
         key={tag}
       >
-        <Button 
+        <Button
           key={tag}
           icon={<Tag />}
           label={`${tag}:${count}`}
@@ -45,7 +46,11 @@ const TagList : React.FunctionComponent<Props> = ({ targetTag }) => {
     )
   })
 
-  return <HStack maxW="100%" display="block">{tagArray}</HStack>
+  return (
+    <HStack maxW="100%" display="block" p={1}>
+      {tagArray}
+    </HStack>
+  )
 }
 
 export default TagList
