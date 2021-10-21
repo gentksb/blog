@@ -31,7 +31,11 @@ interface ApiResponse {
   error?: string
 }
 
-const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
+const LinkBox: React.FunctionComponent<Props> = ({
+  url,
+  isAmazonLink,
+  isAwinAffi
+}) => {
   const [ogpData, changeOgpData] = useState(Object)
   const [loading, changeLoading] = useState(true)
   const encodedUrl = encodeURI(url)
@@ -107,6 +111,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
           fontWeight="semibold"
           href={ogpData.url}
           isExternal
+          data-awinignore={!isAwinAffi}
         >
           <Text noOfLines={[1, 1, 2, 2]} as="span">
             <ExternalLinkIcon />
