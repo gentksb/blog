@@ -18,6 +18,7 @@ import {
 interface Props {
   url: string
   isAmazonLink?: boolean
+  isAwinAffi?: boolean
 }
 
 interface ApiResponse {
