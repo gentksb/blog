@@ -17,17 +17,13 @@ AliExpress でよくみる中華パワーメーター筆頭である XCADEY の�
 ラインナップは[公式ショップ](https://xcadey.com/shop/)を見るのが分かりやすい。
 
 左側クランク単体・スパイダー・両側システムが大きな区分で、補修パーツ扱いで右だけのメーターも販売しているというのが公式のラインナップ。\
-左側クランクはバッテリー式とコイン電池式がある。
+左側クランクはバッテリー式がメイン。
 
 <LinkBox url="https://s.click.aliexpress.com/e/_AprDnl" />
 
 <LinkBox url="https://s.click.aliexpress.com/e/_A4DPRH" />
 
-<LinkBox url="https://s.click.aliexpress.com/e/_9Qq8Xt" />
-
 AliExpress のセラーには、公式に存在しない謎の右クランクメーターも。何故か両側 PM の最新版は自分が右側を買った後に AliExpress から姿を消し、しょっぱなから不穏。
-
-<LinkBox url="https://s.click.aliexpress.com/e/_A3KpYJ" />
 
 ## Unboxing
 
@@ -129,6 +125,6 @@ XCADEY のアプリをダウンロードして、クランクを回してパワ�
 
 11/11 は AliExpress で盛大なセールが開催される。SIGEYI の[スパイダー式](https://s.click.aliexpress.com/e/_A8c2uT)や Megane の[デュアル PM](https://s.click.aliexpress.com/e/_AlRWLp)がセールとなるので、覚悟と理解があればチャレンジしてみてはいかがだろうか？おすすめはしないけども。
 
-[![SIGEYIスパイダー式](./SIGEYI_spider.webp)](https://s.click.aliexpress.com/e/_9JzEFV)
+<LinkBox url="https://s.click.aliexpress.com/e/_A8c2uT" />
 
-[AXO SRM Power Meter Spider powermeter bicycle Crank spider Cadence for road mtb mountain bike SRAM ROTOR crankset power meter](https://s.click.aliexpress.com/e/_A8c2uT)
+<LinkBox url="https://s.click.aliexpress.com/e/_9JzEFV" />
