@@ -35,3 +35,5 @@ ETC というメーカーが[Warm up Full Zip tights](https://www.ebay.com/sch/1
 これは地味に重要なことで、レースの忙しいタイミングでいちいち着替えたりしなくてよいのは精神的に非常に楽。なによりそれっぽい。
 
 2019 年頃からサンボルトでも発売されたが、ETC のほうが安い。
+
+<LinkBox url="https://www.ebay.com/itm/265294065190" />
