@@ -69,4 +69,4 @@ C1 のバニホを勉強して自分も跳べるようになりたい
 
 スキーウェアはかさばるので、モンベルの店頭のパーカーを品定めする日々が続いている…
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B013UM1XVE/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B08QHJN65J/" />
