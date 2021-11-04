@@ -55,12 +55,9 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
         const imageUrl = response.imageUrl
         const description = response.description
         const siteName = response.siteName ?? urlDomain
-        const siteIconPath = response.ogpIcon ?? "/favicon.ico"
-        const siteIcon = siteIconPath.includes("//")
-          ? siteIconPath
-          : `https://${urlDomain}${siteIconPath}` //絶対パスに変換
+        const ogpIcon = response.ogpIcon
         const linkurl = response.pageurl ?? encodedUrl
-        console.log(title, linkurl, imageUrl, description, siteName, siteIcon)
+        console.log(title, linkurl, imageUrl, description, siteName, ogpIcon)
         const isImageUrlExists = imageUrl !== ""
 
         changeOgpData({
@@ -68,7 +65,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
           imageUrl: isImageUrlExists ? imageUrl : null,
           description: description,
           siteName: siteName,
-          ogpIcon: siteIcon,
+          ogpIcon: ogpIcon,
           url: linkurl
         })
         changeLoading(false)
@@ -131,13 +128,15 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
         >
           {loading ? (
             <CircularProgress isIndeterminate color="teal.300" />
-          ) : (
+          ) : ogpData.ogpIcon !== null ? (
             <Image
               src={ogpData.ogpIcon}
               alt="favicon"
               maxHeight="2em"
               fallbackSrc="https://via.placeholder.com/24?text=f"
             />
+          ) : (
+            <></>
           )}
           {ogpData.siteName}
         </Text>
