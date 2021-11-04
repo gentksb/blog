@@ -56,7 +56,7 @@ const theme = extendTheme({
         },
         p: {
           marginBottom: "1em",
-          lineHeight: "1.7",
+          lineHeight: "1.8",
           padding: "0 0.5rem 0 0.5rem"
         },
         ".gatsby-resp-image-image": {

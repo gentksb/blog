@@ -67,7 +67,11 @@ const BlogPostTemplate: React.FunctionComponent<
             <PostTag tags={post.frontmatter.tags} />
           </Box>
           <Divider marginY={2} />
-          <Box className="post-body" css={BlogPostStyle}>
+          <Box
+            className="post-body"
+            css={BlogPostStyle}
+            fontSize={{ base: "16px", md: "18px" }}
+          >
             <MDXProvider components={shortcodes}>
               <MDXRenderer>{post.body}</MDXRenderer>
             </MDXProvider>
