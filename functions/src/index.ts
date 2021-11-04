@@ -57,6 +57,7 @@ export const getOgpLinkData = functions
     }
     const urlConstructor = new URL(data.url)
     const urlDomain = urlConstructor.hostname
+    const urlProtocol = urlConstructor.protocol
 
     if (data.isAmazonLink) {
       result.siteName = "www.amazon.co.jp"
@@ -128,7 +129,10 @@ export const getOgpLinkData = functions
             }
           }
           console.error("INPUT: ", data)
-          throw new functions.https.HttpsError("internal", "Backoff loop had done, but nothing happened")
+          throw new functions.https.HttpsError(
+            "internal",
+            "Backoff loop had done, but nothing happened"
+          )
         }
       }
 
@@ -156,7 +160,10 @@ export const getOgpLinkData = functions
       } catch (error: any) {
         console.error(error)
         console.error("INPUT: ", data)
-        throw new functions.https.HttpsError("internal", "PAAPI result parse failed")
+        throw new functions.https.HttpsError(
+          "internal",
+          "PAAPI result parse failed"
+        )
       }
     } else {
       try {
@@ -200,7 +207,7 @@ export const getOgpLinkData = functions
             ?.getAttribute("href") || "/favicon.ico"
         result.ogpIcon = siteIconPath.includes("//")
           ? siteIconPath
-          : `https://${urlDomain}${siteIconPath}` // 絶対パスに変換
+          : `${urlProtocol}//${urlDomain}${siteIconPath}` // 絶対パスに変換
 
         console.log(result)
         cache.set(data.url, result)
@@ -209,8 +216,14 @@ export const getOgpLinkData = functions
       } catch (error: any) {
         console.error(error)
         console.error("INPUT: ", data)
-        throw new functions.https.HttpsError("internal", "Webpage data parse failed")
+        throw new functions.https.HttpsError(
+          "internal",
+          "Webpage data parse failed"
+        )
       }
     }
-    throw new functions.https.HttpsError("internal", "Complete functions, but nothing happened")
+    throw new functions.https.HttpsError(
+      "internal",
+      "Complete functions, but nothing happened"
+    )
   })
