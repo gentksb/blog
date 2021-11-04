@@ -122,11 +122,13 @@ export const getOgpLinkData = functions
                 console.log("retry")
               } else {
                 console.error(error)
+                console.error("INPUT: ", data)
                 throw new functions.https.HttpsError("internal", error)
               }
             }
           }
-          throw new functions.https.HttpsError("internal", "nothing happened")
+          console.error("INPUT: ", data)
+          throw new functions.https.HttpsError("internal", "Backoff loop had done, but nothing happened")
         }
       }
 
@@ -153,7 +155,8 @@ export const getOgpLinkData = functions
         }
       } catch (error: any) {
         console.error(error)
-        throw new functions.https.HttpsError("internal", error)
+        console.error("INPUT: ", data)
+        throw new functions.https.HttpsError("internal", "PAAPI result parse failed")
       }
     } else {
       try {
@@ -205,8 +208,9 @@ export const getOgpLinkData = functions
         return result
       } catch (error: any) {
         console.error(error)
-        throw new functions.https.HttpsError("internal", error)
+        console.error("INPUT: ", data)
+        throw new functions.https.HttpsError("internal", "Webpage data parse failed")
       }
     }
-    throw new functions.https.HttpsError("internal", "nothing happened")
+    throw new functions.https.HttpsError("internal", "Complete functions, but nothing happened")
   })
