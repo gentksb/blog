@@ -64,4 +64,4 @@ cover: "./5353.png"
 
 ハッキング事件もありましたが、エコシステム含めて優秀なサイコンは GARMIN 一択になっているので頑張ってほしいところです。
 
-<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B07V5GY15F/" />
+<LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B08DD4H38R/" />

@@ -128,15 +128,13 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
         >
           {loading ? (
             <CircularProgress isIndeterminate color="teal.300" />
-          ) : ogpData.ogpIcon !== null ? (
+          ) : (
             <Image
               src={ogpData.ogpIcon}
               alt="favicon"
               maxHeight="2em"
-              fallbackSrc="https://via.placeholder.com/24?text=f"
+              fallbackSrc="https://via.placeholder.com/24/FFFFFF/FFFFFF/"
             />
-          ) : (
-            <></>
           )}
           {ogpData.siteName}
         </Text>
