@@ -4423,11 +4423,6 @@ type StaticImageSortInput = {
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
 
-type TagListQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
-
 type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -4449,18 +4444,10 @@ type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
-type BlogPostBySlugQueryVariables = Exact<{
-  slug: Scalars['String'];
-}>;
+type TagListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'author'>> }>, readonly mdx: Maybe<(
-    Pick<Mdx, 'body' | 'excerpt' | 'id'>
-    & { readonly frontmatter: Maybe<(
-      Pick<MdxFrontmatter, 'date' | 'title' | 'tags'>
-      & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
-    )> }
-  )> };
+type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
 
 type IndexPageQueryVariables = Exact<{
   skip: Scalars['Int'];
@@ -4517,6 +4504,19 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
+
+type BlogPostBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+type BlogPostBySlugQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'author'>> }>, readonly mdx: Maybe<(
+    Pick<Mdx, 'body' | 'excerpt' | 'id'>
+    & { readonly frontmatter: Maybe<(
+      Pick<MdxFrontmatter, 'date' | 'title' | 'tags'>
+      & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
+    )> }
+  )> };
 
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
