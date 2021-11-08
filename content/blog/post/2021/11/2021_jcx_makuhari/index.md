@@ -105,3 +105,5 @@ https://twitter.com/kuotasyan/status/1457314144776974345
 https://twitter.com/ryo04mayu/status/1457327878228492288
 
 https://twitter.com/yuki_asato/status/1457452889731854338
+
+https://twitter.com/K_kazumasan/status/1457667659219144705
