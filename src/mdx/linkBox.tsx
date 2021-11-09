@@ -76,70 +76,78 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
   }, [])
 
   return (
-    <ChakraLinkBox
-      p={4}
-      display="flex"
-      borderWidth="1px"
-      borderRadius="xl"
-      mb={[2, 2, 3, 3]}
-    >
-      <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
-        <Image
-          borderRadius="lg"
-          src={ogpData.imageUrl}
-          alt={ogpData.title}
-          fit="cover"
-          paddingRight={[2, 2, 3, 3]}
-          width="100%"
-          loading="lazy"
-        />
-      </Box>
-      <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-        <LinkOverlay
-          mt={1}
-          display="block"
-          fontSize="lg"
-          lineHeight="normal"
-          fontWeight="semibold"
-          href={ogpData.url}
-          isExternal
-        >
-          <Text noOfLines={[1, 1, 2, 2]} as="span">
-            <ExternalLinkIcon />
-            {ogpData.title}
+    <>
+      <ChakraLinkBox
+        p={4}
+        display="flex"
+        borderWidth="1px"
+        borderRadius="xl"
+        mb={[2, 2, 3, 3]}
+      >
+        <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
+          <Image
+            borderRadius="lg"
+            src={ogpData.imageUrl}
+            alt={ogpData.title}
+            fit="cover"
+            paddingRight={[2, 2, 3, 3]}
+            width="100%"
+            loading="lazy"
+          />
+        </Box>
+        <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+          <LinkOverlay
+            mt={1}
+            display="block"
+            fontSize="lg"
+            lineHeight="normal"
+            fontWeight="semibold"
+            href={ogpData.url}
+            isExternal
+          >
+            <Text noOfLines={[1, 1, 2, 2]} as="span">
+              <ExternalLinkIcon />
+              {ogpData.title}
+            </Text>
+          </LinkOverlay>
+          <Text
+            as="span"
+            fontSize="sm"
+            color="gray.500"
+            dangerouslySetInnerHTML={{ __html: ogpData.description }}
+            noOfLines={[1, 2, 2, 3]}
+          />
+          <Text
+            as="span"
+            fontSize="sm"
+            letterSpacing="wide"
+            color="teal.600"
+            display="inline-flex"
+            fontWeight="Bold"
+            mt={3}
+            isTruncated
+          >
+            {loading ? (
+              <CircularProgress isIndeterminate color="teal.300" />
+            ) : (
+              <Image
+                src={ogpData.ogpIcon}
+                alt="favicon"
+                maxHeight="2em"
+                fallbackSrc="https://via.placeholder.com/24/FFFFFF/FFFFFF/"
+              />
+            )}
+            {ogpData.siteName}
           </Text>
-        </LinkOverlay>
-        <Text
-          as="span"
-          fontSize="sm"
-          color="gray.500"
-          dangerouslySetInnerHTML={{ __html: ogpData.description }}
-          noOfLines={[1, 2, 2, 3]}
-        />
-        <Text
-          as="span"
-          fontSize="sm"
-          letterSpacing="wide"
-          color="teal.600"
-          display="inline-flex"
-          fontWeight="Bold"
-          mt={3}
-          isTruncated
-        >
-          {loading ? (
-            <CircularProgress isIndeterminate color="teal.300" />
-          ) : (
-            <Image
-              src={ogpData.ogpIcon}
-              alt="favicon"
-              maxHeight="2em"
-              fallbackSrc="https://via.placeholder.com/24/FFFFFF/FFFFFF/"
-            />
-          )}
-          {ogpData.siteName}
-        </Text>
-      </Box>
-    </ChakraLinkBox>
+        </Box>
+      </ChakraLinkBox>
+      <script type="text/javascript">var vc_pid = "886313738";</script>
+      <script
+        type="text/javascript"
+        src="//aml.valuecommerce.com/vcdal.js"
+        async
+      ></script>
+    </>
   )
 }
 
