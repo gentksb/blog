@@ -2,7 +2,7 @@
 title: "正しいチェーンチェッカーと噂のシマノTK-CN42を使ってみた"
 date: 2021-11-06
 draft: false
-tags: ["TIPS", "ROAD", "CX", "MTB"]
+tags: ["REVIEW", "ROAD", "CX", "MTB"]
 cover: "./cover.jpg"
 ---
 

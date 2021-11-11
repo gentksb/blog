@@ -6,7 +6,7 @@ tags: ["TIPS", "ROAD", "CX", "MTB"]
 cover: "./cover.jpg"
 ---
 
-![アイキャッチ](./cover.jpg)
+![アイキャッチ](./eyecatch.jpg)
 
 ## 泥汚れもすっきり落としてタイヤの黒さも復活
 
