@@ -1,6 +1,6 @@
 ---
 title: "自転車に"丁度いい"アイリスオーヤマの高圧洗浄機を買って試してみた"
-date: 2021-11-08
+date: 2021-11-17
 draft: false
 tags: ["REVIEW", "CX", "MTB"]
 cover: "./cover.jpg"
