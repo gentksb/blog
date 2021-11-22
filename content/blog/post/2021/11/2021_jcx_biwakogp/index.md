@@ -1,5 +1,5 @@
 ---
-title: "JCX#2 幕張 Men Elite レースレポート"
+title: "JCX#5 UCI琵琶湖GP  Men Elite レースレポート"
 date: 2021-11-22
 draft: false
 tags: ["RACEREPORT", "CX"]
