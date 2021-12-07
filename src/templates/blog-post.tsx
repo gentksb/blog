@@ -70,7 +70,7 @@ const BlogPostTemplate: React.FunctionComponent<
           <Box
             className="post-body"
             css={BlogPostStyle}
-            fontSize={{ base: "16px", md: "18px" }}
+            fontSize={{ base: "14px", md: "16px" }}
           >
             <MDXProvider components={shortcodes}>
               <MDXRenderer>{post.body}</MDXRenderer>
