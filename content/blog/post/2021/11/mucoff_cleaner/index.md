@@ -2,7 +2,7 @@
 title: "タイヤの黒さも取り戻せる！Muc-off ナノテックバイククリーナー"
 date: 2021-11-09
 draft: false
-tags: ["TIPS", "ROAD", "CX", "MTB"]
+tags: ["REVIEW", "ROAD", "CX", "MTB"]
 cover: "./cover.jpg"
 ---
 
