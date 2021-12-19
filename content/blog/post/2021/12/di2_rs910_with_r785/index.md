@@ -3,7 +3,7 @@ title: "ハンドル・フレーム内装ジャンクションA RS910をST-R785�
 date: 2021-12-20
 draft: false
 tags: ["TIPS", "ROAD", "CX", "MTB"]
-cover: "./cover.jpg"
+# cover: ""
 ---
 
 RS910 を使う際、**1 ポートしかない STI レバー**である ST-R785 とどう組み合わせるか
