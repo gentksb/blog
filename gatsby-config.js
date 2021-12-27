@@ -18,7 +18,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
