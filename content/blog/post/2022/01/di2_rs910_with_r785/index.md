@@ -1,5 +1,5 @@
 ---
-title: "ハンドル・フレーム内装ジャンクションA RS910をST-R785と併用する"
+title: "内装ジャンクションRS910を1ポートしかないSTIレバー(ST-R785)と併用する"
 date: 2022-01-02
 draft: false
 tags: ["TIPS", "ROAD", "CX", "MTB"]
