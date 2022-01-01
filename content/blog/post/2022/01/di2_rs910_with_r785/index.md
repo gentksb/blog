@@ -1,6 +1,6 @@
 ---
 title: "ハンドル・フレーム内装ジャンクションA RS910をST-R785と併用する"
-date: 2021-12-20
+date: 2022-01-02
 draft: false
 tags: ["TIPS", "ROAD", "CX", "MTB"]
 # cover: ""
