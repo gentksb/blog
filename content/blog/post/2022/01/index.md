@@ -10,11 +10,11 @@ cover: "./cover.jpg"
 
 ## このコンテンツについて
 
-この記事は、コミックマーケット 99 で頒布した「[Cyclocross Deep Dive](https://amzn.to/3qJo6l8)」の一部を抜粋・編集したものです。
+**この記事は、コミックマーケット 99 で頒布した「[Cyclocross Deep Dive](https://amzn.to/3qJo6l8)」の一部を抜粋・編集したものです。**
 
 フルバージョンが読みたい方は、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=1163552)での物理本の委託購入もしくは、[Kindle での電子版](https://amzn.to/3qJo6l8)の購入をご検討ください。
 
-<LinkBox url="https://amzn.to/3qJo6l8" isAmazonLink />
+<LinkBox url="https://www.amazon.co.jp/dp/B09NWBGVJD/" isAmazonLink />
 
 <LinkBox url="https://www.melonbooks.co.jp/detail/detail.php?product_id=1163552" />
 
@@ -103,12 +103,16 @@ cover: "./cover.jpg"
 
 <LinkBox url="https://www.globaldro.com/JP/search" />
 
-JADA 提供となっており、信頼性も高い。スポーツファーマシストの検索も可能となっている」便利なサイトだ。
+JADA 提供となっており、信頼性も高い。スポーツファーマシストの検索も可能となっている便利なサイトだ。
+
+ステロイド系の成分を含む薬でも、内服しなければ OK といった細かい内容もわかるようになっている。
 
 ## 宣伝
 
 この記事は、一部自分の感想や、シャペロンから伺った興味深い五輪の体験談など一部を省略して、要点のみ記載しました
 
-繰り返しになりますが、フルバージョンが読みたい方は新刊のご購入をお願いします
+フルバージョンは Kindle の電子版か、メロンブックスの委託通販を使った C99 新刊に掲載しております。
 
-<LinkBox url="https://amzn.to/3qJo6l8" isAmazonLink />
+<LinkBox url="https://www.amazon.co.jp/dp/B09NWBGVJD/" isAmazonLink />
+
+<LinkBox url="https://www.melonbooks.co.jp/detail/detail.php?product_id=1163552" />
