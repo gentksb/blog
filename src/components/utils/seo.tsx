@@ -47,6 +47,8 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   )
 
   const siteUrl = site.siteMetadata.siteUrl
+  const isTopPage = location.pathname === "/"
+  const isPostPage = location.pathname.includes("/post/")
   const currentHost =
     process.env.NODE_ENV === "production" ? siteUrl : location.origin
   const metaDescription = description ?? site.siteMetadata.description
@@ -54,12 +56,11 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   const canonicalUrl = currentHost + location.pathname
   const metaRobotsContent =
     process.env.NODE_ENV === "production" ? "all" : "none"
-  const siteTitle =
-    location.pathname === "/"
-      ? site.siteMetadata.title
-      : `%s | ${site.siteMetadata.title}`
-  const jsonLdType = location.pathname.includes("/post/") ? "Article" : "Blog"
-  const ogType = location.pathname.includes("/post/") ? "article" : "website"
+  const siteTitle = isTopPage
+    ? site.siteMetadata.title
+    : `%s | ${site.siteMetadata.title}`
+  const jsonLdType = isPostPage ? "Article" : "Blog"
+  const ogType = isPostPage ? "article" : "website"
 
   const jsonLd: Object = {
     "@context": "http://schema.org",
