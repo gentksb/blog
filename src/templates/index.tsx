@@ -10,7 +10,7 @@ import TagList from "../components/molecules/tagList"
 import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 
 const BlogIndex: React.FunctionComponent<
-  PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePageContext>
+  PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePage["pageContext"]>
 > = (props) => {
   const { data, location } = props
   const siteTitle = data.site.siteMetadata.title

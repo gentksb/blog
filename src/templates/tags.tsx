@@ -8,11 +8,11 @@ import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 
 const Tags: React.FunctionComponent<
-  PageProps<GatsbyTypes.TagPageQuery, GatsbyTypes.SitePageContext>
+  PageProps<GatsbyTypes.TagPageQuery, GatsbyTypes.SitePage["pageContext"]>
 > = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges } = data.allMdx
-  const pageTitle = `Tag search : ${tag} | 幻想サイクル`
+  const pageTitle = `Tag search : ${tag}`
   const siteTitle = data.site.siteMetadata.title
 
   return (
