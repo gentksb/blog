@@ -92,6 +92,21 @@ const Bio: React.FunctionComponent = () => {
           }}
         />
       </a>
+      <a
+        href="https://amzn.to/3ELrOQd"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <StaticImage
+          src="../../images/amazon.png"
+          alt="amazon著者ページ"
+          style={{
+            width: `25px`,
+            margin: `0px 0px 0px 8px`,
+            display: `inline-block`
+          }}
+        />
+      </a>
     </div>
   )
 }
