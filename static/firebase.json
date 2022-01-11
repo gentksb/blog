@@ -220,6 +220,11 @@
         "source": "/post/2021/10/disc_clearner/",
         "destination": "/post/2021/10/disc_cleaner/",
         "type": 301
+      },
+      {
+        "source": "/post/2022/01/",
+        "destination": "/post/2022/01/doping/",
+        "type": 301
       }
     ]
   }
