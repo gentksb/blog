@@ -36,11 +36,12 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
   const encodedUrl = encodeURI(url)
   const urlConstructor = new URL(encodedUrl)
   const urlDomain = urlConstructor.hostname
-  const apiRequestBody = isAmazonLink
-    ? { url: encodedUrl, isAmazonLink: isAmazonLink }
-    : { url: encodedUrl }
 
   useEffect(() => {
+    const apiRequestBody = isAmazonLink
+      ? { url: encodedUrl, isAmazonLink: isAmazonLink }
+      : { url: encodedUrl }
+
     try {
       const functions = getFunctions(getApp(), "asia-northeast1")
       if (process.env.NODE_ENV === "development") {
@@ -73,7 +74,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
     } catch (error) {
       console.error(error.code, error.message, error.details)
     }
-  }, [])
+  }, [isAmazonLink, encodedUrl, urlDomain])
 
   return (
     <>
@@ -141,7 +142,10 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
           </Text>
         </Box>
       </ChakraLinkBox>
-      <script type="text/javascript">var vc_pid = "886313738";</script>
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{ __html: `var vc_pid ="886313738";` }}
+      />
       <script
         type="text/javascript"
         src="//aml.valuecommerce.com/vcdal.js"

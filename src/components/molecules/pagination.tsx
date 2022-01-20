@@ -5,12 +5,14 @@ import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons"
 
 interface Props {
   props: GatsbyTypes.SitePageContext
+  previousPagePath?: string
+  nextPagePath?: string
 }
 
 const Pagination: React.FunctionComponent<Props> = ({ props }) => {
   const { previousPagePath, nextPagePath } = props
-  const hasNewerPage: boolean = !!previousPagePath
-  const hasOlderPage: boolean = !!nextPagePath
+  const hasNewerPage = !!previousPagePath
+  const hasOlderPage = !!nextPagePath
 
   return (
     <Grid templateColumns="repeat(2,1fr)" w="100%">

@@ -9,11 +9,10 @@ const PostTag: React.FunctionComponent<Props> = ({ tags }) => {
   const tagArray =
     tags != null ? (
       tags.map((tag) => (
-        <Box>
+        <Box key={tag}>
           <Link
             to={`/tags/${tag.toLowerCase()}`}
             style={{ textDecoration: "none" }}
-            key={tag}
           >
             <Tag size="sm" variant="solid">
               {tag}

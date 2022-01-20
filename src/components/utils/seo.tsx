@@ -11,6 +11,7 @@ interface LocationState {
 
 interface MetaObject {
   name: string
+  //eslint-disable-next-line
   content: any
   property?: undefined
 }
@@ -62,7 +63,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   const jsonLdType = isPostPage ? "Article" : "Blog"
   const ogType = isPostPage ? "article" : "website"
 
-  const jsonLd: Object = {
+  const jsonLd: Record<string, unknown> = {
     "@context": "http://schema.org",
     "@type": jsonLdType,
     mainEntityOfPage: {
