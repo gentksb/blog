@@ -6,8 +6,8 @@ export const NegativeBox: React.FC = ({ children }) => {
   return (
     <Box p={2}>
       <Alert borderRadius="lg" status="error" flexDirection="column">
-        <Icon as={MdMoodBad} />
-        <AlertDescription>{children}</AlertDescription>
+        <Icon as={MdMoodBad} boxSize="2em" />
+        <AlertDescription pt={1}>{children}</AlertDescription>
       </Alert>
     </Box>
   )

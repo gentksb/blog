@@ -6,8 +6,8 @@ export const PositiveBox: React.FC = ({ children }) => {
   return (
     <Box p={2}>
       <Alert borderRadius="lg" status="success" flexDirection="column">
-        <Icon as={MdMood} />
-        <AlertDescription>{children}</AlertDescription>
+        <Icon as={MdMood} boxSize="2em" />
+        <AlertDescription pt={1}>{children}</AlertDescription>
       </Alert>
     </Box>
   )
