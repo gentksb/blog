@@ -82,4 +82,17 @@ cover: "./cover.jpg"
 
 **数字を測って意味を考えるより、チェッカーが交換と言ったら交換する基準の方が運用しやすい。**「チェッカー」として本来の役割を果たしているのではないだろうか。
 
+<PositiveBox>
+
+- 本来計測すべきチェーンの伸びを正確に計測可能
+- 迷いのないチェーン交換基準を作ることができる
+
+</PositiveBox>
+
+<NegativeBox>
+
+- チェーンチェッカーとしてはかなりの高価格帯
+
+</NegativeBox>
+
 <LinkBox url="https://www.amazon.co.jp/dp/B00DT01OBC/" isAmazonLink />

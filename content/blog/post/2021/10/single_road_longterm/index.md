@@ -83,4 +83,17 @@ SRAM のようにトップ 10T が使えるのであればややこの状況は�
 
 長期運用してわかったことと、当初計画していた段階で想定していたことがほぼ一致してるが、予想通りだったということで…
 
+<PositiveBox>
+
+- 洗車・シフトに関する悩みからの解放
+
+</PositiveBox>
+
+<NegativeBox>
+
+- ギア比が飛ぶことによるストレス
+- ギアレンジの狭さ
+
+</NegativeBox>
+
 <LinkBox url="https://www.amazon.co.jp/dp/B07RSRGQLS/" isAmazonLink />

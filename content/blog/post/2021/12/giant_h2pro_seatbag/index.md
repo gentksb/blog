@@ -66,4 +66,17 @@ MTB やグラベルバイクで**ドロッパーポストなどを利用して�
 
 ロールトップの宿命である中身の出し入れの面倒さは残るが、最低限持つもの＝緊急用セットと定義して、鍵などは背面ポケットに入れて運用すれば身軽なサイクリングになると思われる。
 
+<PositiveBox>
+
+- お手ごろな値段
+- シートポストへのベルトの選択肢があること
+
+</PositiveBox>
+
+<NegativeBox>
+
+- ベルトの硬さ
+
+</NegativeBox>
+
 <LinkBox url="https://www.giant.co.jp/giant22/acc_datail.php?p_id=A0002824" />

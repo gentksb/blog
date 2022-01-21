@@ -142,4 +142,18 @@ https://www.youtube.com/watch?v=fEcIikdl6yE
 
 こちらは、濃縮 1L のパッケージとほぼ同価格でその他諸々ついてくるお得なパックとなっているので、これから購入する人はこちらを買うのがいいだろう。
 
+<PositiveBox>
+
+- タイヤについた細かい泥汚れまで綺麗に落とせる強力な洗浄力
+- 濃縮版でコスト圧縮が可能
+- ディグリーザーとしても利用可能（但し専用品には劣る）
+
+</PositiveBox>
+
+<NegativeBox>
+
+- 水洗い前提
+
+</NegativeBox>
+
 <LinkBox url="https://www.wiggle.jp/muc-off-%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%AD%E3%83%83%E3%83%88" />

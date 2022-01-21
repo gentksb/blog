@@ -89,4 +89,20 @@ IT 業界やバリバリのビジネスマンでは 1 日に行使できる決�
 
 この調子で夏ウェアもセパレートワンピースにしたいのですが、まだまだジャージとビブが残っているのでローラーで使いつぶしていかなければ…
 
+<PositiveBox>
+
+- 厚めの記事による保温性
+- ワンピース特有の取り回しやすさ
+- 太腿グリッパーの質
+- 価格
+
+</PositiveBox>
+
+<NegativeBox>
+
+- ジッパーの固定力
+- インナーとの相性は要考慮
+
+</NegativeBox>
+
 <LinkBox url="https://store.shopping.yahoo.co.jp/sunvolt-store/sy-800-tseo-red.html" />
