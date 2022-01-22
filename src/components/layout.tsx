@@ -11,9 +11,7 @@ interface LocationState {
   location: WindowLocation
 }
 
-interface Props extends LocationState {}
-
-const Layout: React.FunctionComponent<Props> = (props) => {
+const Layout: React.FunctionComponent<LocationState> = (props) => {
   const { location, title, children } = props
 
   const postpathRegExp = RegExp("^/post/.*")

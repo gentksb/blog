@@ -90,4 +90,18 @@ cover: "./cover.jpg"
 
 バッテリー式で、コンパクトにたためて持ち運びが簡単、という特性を生かして遠征用の装備にするのがいいだろう。
 
+<PositiveBox>
+
+- 自転車洗浄に必要十分な水圧と水量・稼働時間
+- 1 万円台半ばという絶妙に安い実勢価格
+
+</PositiveBox>
+
+<NegativeBox>
+
+- ノズルの取り回しの悪さ
+- ホースアダプタの精度の悪さ
+
+</NegativeBox>
+
 <LinkBox url="https://www.amazon.co.jp/gp/product/B08481Z7H1/" isAmazonLink />

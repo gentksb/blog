@@ -18,7 +18,7 @@ cover: "./cover.jpg"
 
 - チェーンリングを 48T から 46T に換装
 - GIANT の純正ホイールを [ZIP303S](https://shopping.yahoo.co.jp/search?p=ZIPP+303S&cid=&pf=&pt=&area=14&dlv=&first=1&tab_ex=commerce&sc_i=shp_pc_store_searchBox) に換装
-- クランク 9000 から[中華 PM のついた R7000](https://www.aliexpress.com/item/32999218701.html) に換装
+- クランク 9000 から[中華 PM のついた R7000](https://s.click.aliexpress.com/e/_AS7Nb6) に換装
 
 ## 総評
 
@@ -82,5 +82,19 @@ SRAM のようにトップ 10T が使えるのであればややこの状況は�
 グラベルロードやエンデュランスロードをオールロードとして使うには、フロントシングルではギア比は足りないだろう…自分もグラベルロードに移植した直後はシングルのままで運用する予定ではあるものの、R8100 か新型 GRX が出てきた段階でフロントダブルに戻す予定。
 
 長期運用してわかったことと、当初計画していた段階で想定していたことがほぼ一致してるが、予想通りだったということで…
+
+<PositiveBox>
+
+- 洗車・シフトに関する悩みからの解放
+- 故障ポイントの減少
+
+</PositiveBox>
+
+<NegativeBox>
+
+- ギア比が飛ぶことによるストレス
+- ギアレンジの狭さ
+
+</NegativeBox>
 
 <LinkBox url="https://www.amazon.co.jp/dp/B07RSRGQLS/" isAmazonLink />

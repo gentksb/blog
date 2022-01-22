@@ -1,3 +1,4 @@
+import React from "react"
 import { AspectRatio, Image } from "@chakra-ui/react"
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image"
 

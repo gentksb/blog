@@ -39,7 +39,7 @@ USB ドングルは結構厄介。
 
 信頼できそうな製品での価格帯が低いものは Amazon で売っている[BC-ANT-USB][2]だが、本記事執筆時点では売り切れで 10 月中旬まで入荷は無いらしい。次点は[SUUNTO Movestick Mini USB][3]だった。
 
-流石にちょっと高いと感じたので、自分は Aliexpress の [1000 円ドングル](https://s.click.aliexpress.com/e/_BfiMUYCE)を購入。怪しさ満載。
+流石にちょっと高いと感じたので、自分は Aliexpress の [1000 円ドングル](https://s.click.aliexpress.com/e/_AZTfHq)を購入。怪しさ満載。
 
 一応 Amazon でも売っていた。Wiggle や CRC でも[LifeLine ブランドの製品](https://www.chainreactioncycles.com/jp/ja/lifeline-ant-usb-%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF/rp-prod155468)を売り始めたらしい。
 

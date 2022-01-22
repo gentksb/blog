@@ -17,9 +17,13 @@ import RelatedPosts from "../components/organisms/relatedPosts"
 import BlogPostStyle from "../styles/blog-post.style"
 import LinkBox from "../mdx/linkBox"
 import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
+import { PositiveBox } from "../mdx/positive"
+import { NegativeBox } from "../mdx/negative"
 
 const shortcodes = {
-  LinkBox
+  LinkBox,
+  PositiveBox,
+  NegativeBox
 }
 
 const BlogPostTemplate: React.FunctionComponent<

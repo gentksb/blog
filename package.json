@@ -54,7 +54,14 @@
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
-    "prettier": "^2.4.1"
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.4"
   },
   "homepage": "https://blog.gensobunya.net/",
   "keywords": [
@@ -71,7 +78,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json}\"",
     "start": "npm run serve",
     "serve": "gatsby build && gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "lint": "eslint 'src/**/*.{ts,tsx}'"
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   }
 }

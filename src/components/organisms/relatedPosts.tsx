@@ -7,7 +7,7 @@ interface Props {
   id: string
 }
 
-const relatedPosts: React.FunctionComponent<Props> = ({ tag, id }) => {
+const RelatedPosts: React.FunctionComponent<Props> = ({ tag, id }) => {
   const recentPostsData: GatsbyTypes.RecentPostQuery =
     useStaticQuery<GatsbyTypes.RecentPostQuery>(graphql`
       query RecentPost {
@@ -64,4 +64,4 @@ const relatedPosts: React.FunctionComponent<Props> = ({ tag, id }) => {
   )
 }
 
-export default relatedPosts
+export default RelatedPosts
