@@ -207,7 +207,9 @@ export const getOgpLinkData = functions
             ?.getAttribute("href") || "/favicon.ico"
         result.ogpIcon = siteIconPath.includes("//")
           ? siteIconPath
-          : `${urlProtocol}//${urlDomain}${siteIconPath}` // 絶対パスに変換
+          : siteIconPath.charAt(0) === "/"
+          ? `${urlProtocol}//${urlDomain}${siteIconPath}`
+          : `${urlProtocol}//${urlDomain}/${siteIconPath}` // 絶対パスに変換
 
         console.log(result)
         cache.set(data.url, result)
