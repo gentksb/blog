@@ -105,4 +105,4 @@ IT 業界やバリバリのビジネスマンでは 1 日に行使できる決�
 
 </NegativeBox>
 
-<LinkBox url="https://store.shopping.yahoo.co.jp/sunvolt-store/sy-800-tseo-red.html" />
+<LinkBox url="https://store.shopping.yahoo.co.jp/sunvolt-store/fma2017s2f.html" />
