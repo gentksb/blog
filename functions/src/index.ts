@@ -3,6 +3,7 @@ import "firebase-functions/lib/logger/compat"
 import fetch from "node-fetch"
 import { JSDOM } from "jsdom"
 import amazonPaapi from "amazon-paapi"
+import queryString from "query-string"
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
@@ -10,6 +11,7 @@ import amazonPaapi from "amazon-paapi"
 interface Props {
   url: string
   isAmazonLink?: boolean
+  isA8Link?: boolean
 }
 
 interface Res {
@@ -30,10 +32,44 @@ const amazonPaApiKey = functions.config().amazon.paapi_key
 const amazonPaApiSecret = functions.config().amazon.paapi_secret
 const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
 
+const getAsinFromUrl = (url: string) => {
+  const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
+  const hitData = re.exec(url)
+  if (hitData !== null) {
+    return hitData[1]
+  } else {
+    throw new functions.https.HttpsError(
+      "invalid-argument",
+      "ASIN not found in URL"
+    )
+  }
+}
+
+const getRedirectionUrl = (url: string) => {
+  //sample: https://px.a8.net/svt/ejp?a8mat=3N3PXW+IGGJ6+4JDO+BW0YB&a8ejpredirect=https%3A%2F%2Fonline.ysroad.co.jp%2Fshop%2Fg%2Fg0012527018642%2F)
+  const queryObject = queryString.parseUrl(url)
+  const redirectUrl = queryObject.query.a8ejpredirect
+  if (typeof redirectUrl === "string") {
+    return decodeURIComponent(redirectUrl)
+  } else {
+    throw new functions.https.HttpsError(
+      "invalid-argument",
+      "invalid A8 affiliate URL"
+    )
+  }
+}
+
 export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
-    functions.logger.info("Url:", data.url, "isAmazon", data.isAmazonLink)
+    functions.logger.info(
+      "Url:",
+      data.url,
+      "isAmazon",
+      data.isAmazonLink,
+      "isA8",
+      data.isA8Link
+    )
     if (data.url === undefined) {
       throw new functions.https.HttpsError(
         "invalid-argument",
@@ -55,7 +91,8 @@ export const getOgpLinkData = functions
       pageurl: "",
       error: ""
     }
-    const urlConstructor = new URL(data.url)
+    const ogpTargetUrl = data.isA8Link ? getRedirectionUrl(data.url) : data.url
+    const urlConstructor = new URL(ogpTargetUrl)
     const urlDomain = urlConstructor.hostname
     const urlProtocol = urlConstructor.protocol
 
@@ -63,21 +100,7 @@ export const getOgpLinkData = functions
       result.siteName = "www.amazon.co.jp"
       result.ogpIcon = "https://www.amazon.co.jp/favicon.ico"
 
-      const getAsinFromUrl = (url: string) => {
-        return new Promise((resolve) => {
-          const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
-          const hitData = re.exec(url)
-          if (hitData !== null) {
-            resolve(hitData[1])
-          } else {
-            throw new functions.https.HttpsError(
-              "invalid-argument",
-              "ASIN not found in URL"
-            )
-          }
-        })
-      }
-      const asin = await getAsinFromUrl(data.url)
+      const asin = await getAsinFromUrl(ogpTargetUrl)
       console.log("asin is", asin)
 
       const callPaapi = async () => {
@@ -173,8 +196,8 @@ export const getOgpLinkData = functions
           const jsdom = new JSDOM(html)
           return jsdom.window.document
         }
-        const document = await getHtmlDocument(data.url)
-        result.pageurl = data.url // 通常のOGPは渡されたURLをそのままセットする
+        const document = await getHtmlDocument(ogpTargetUrl)
+        result.pageurl = data.isA8Link ? decodeURI(data.url) : data.url // 通常のOGPは渡されたURLをそのままセットする
         result.title =
           document
             .querySelector("meta[property='og:title']")
