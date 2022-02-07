@@ -18,6 +18,7 @@ import {
 interface Props {
   url: string
   isAmazonLink?: boolean
+  isA8Link?: boolean
 }
 
 interface ApiResponse {
@@ -30,7 +31,11 @@ interface ApiResponse {
   error?: string
 }
 
-const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
+const LinkBox: React.FunctionComponent<Props> = ({
+  url,
+  isAmazonLink,
+  isA8Link
+}) => {
   const [ogpData, changeOgpData] = useState(Object)
   const [loading, changeLoading] = useState(true)
   const encodedUrl = encodeURI(url)
@@ -38,9 +43,11 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
   const urlDomain = urlConstructor.hostname
 
   useEffect(() => {
-    const apiRequestBody = isAmazonLink
-      ? { url: encodedUrl, isAmazonLink: isAmazonLink }
-      : { url: encodedUrl }
+    const apiRequestBody = {
+      url: encodedUrl,
+      isAmazonLink: isAmazonLink ?? false,
+      isA8Link: isA8Link ?? false
+    }
 
     try {
       const functions = getFunctions(getApp(), "asia-northeast1")
@@ -74,7 +81,7 @@ const LinkBox: React.FunctionComponent<Props> = ({ url, isAmazonLink }) => {
     } catch (error) {
       console.error(error.code, error.message, error.details)
     }
-  }, [isAmazonLink, encodedUrl, urlDomain])
+  }, [isAmazonLink, encodedUrl, urlDomain, isA8Link])
 
   return (
     <>
