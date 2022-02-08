@@ -197,7 +197,7 @@ export const getOgpLinkData = functions
           return jsdom.window.document
         }
         const document = await getHtmlDocument(ogpTargetUrl)
-        result.pageurl = data.isA8Link ? decodeURI(data.url) : data.url // 通常のOGPは渡されたURLをそのままセットする
+        result.pageurl = decodeURI(data.url) // 通常のOGPは渡されたURLをそのままセットする
         result.title =
           document
             .querySelector("meta[property='og:title']")
