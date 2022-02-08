@@ -149,15 +149,6 @@ const LinkBox: React.FunctionComponent<Props> = ({
           </Text>
         </Box>
       </ChakraLinkBox>
-      <script
-        type="text/javascript"
-        dangerouslySetInnerHTML={{ __html: `var vc_pid ="886313738";` }}
-      />
-      <script
-        type="text/javascript"
-        src="//aml.valuecommerce.com/vcdal.js"
-        async
-      ></script>
     </>
   )
 }
