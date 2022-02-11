@@ -15,15 +15,17 @@ jobs:
 
     steps:
       - name: checkout-repo
-        uses: actions/checkout@v2
-      - run: git checkout HEAD^2
-        if: ${{ github.event_name == 'pull_request' }}
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{github.event.pull_request.head.sha}}
         
       - name: install node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: run test
-      - run: npm ci
+      - name: install dependencies
+      - run: cd functions/ && npm ci
+
+      - name: Run test
       - run: npm test
