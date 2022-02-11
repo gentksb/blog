@@ -28,10 +28,6 @@ export interface ResType {
 // https://firebase.google.com/docs/functions/tips?hl=ja#use_global_variables_to_reuse_objects_in_future_invocations
 const cache = new Map<string, ResType>()
 
-const amazonPaApiKey = functions.config().amazon.paapi_key
-const amazonPaApiSecret = functions.config().amazon.paapi_secret
-const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
-
 const getAsinFromUrl = (url: string) => {
   const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
   const hitData = re.exec(url)
@@ -62,6 +58,10 @@ const getRedirectionUrl = (url: string) => {
 export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
+    const amazonPaApiKey = functions.config().amazon.paapi_key
+    const amazonPaApiSecret = functions.config().amazon.paapi_secret
+    const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
+
     functions.logger.info(
       "Url:",
       data.url,
