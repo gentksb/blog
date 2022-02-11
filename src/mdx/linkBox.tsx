@@ -56,30 +56,52 @@ const LinkBox: React.FunctionComponent<Props> = ({
       }
 
       const getOgpData = httpsCallable(functions, "getOgpLinkData")
-      getOgpData(apiRequestBody).then((result) => {
-        const response = result.data as ApiResponse
+      getOgpData(apiRequestBody)
+        .then((result) => {
+          const response = result.data as ApiResponse
 
-        const title = response.title
-        const imageUrl = response.imageUrl
-        const description = response.description
-        const siteName = response.siteName ?? urlDomain
-        const ogpIcon = response.ogpIcon
-        const linkurl = response.pageurl ?? encodedUrl
-        console.log(title, linkurl, imageUrl, description, siteName, ogpIcon)
-        const isImageUrlExists = imageUrl !== ""
+          const title = response.title
+          const imageUrl = response.imageUrl
+          const description = response.description
+          const siteName = response.siteName ?? urlDomain
+          const ogpIcon = response.ogpIcon
+          const linkurl = response.pageurl ?? encodedUrl
+          console.log(title, linkurl, imageUrl, description, siteName, ogpIcon)
+          const isImageUrlExists = imageUrl !== ""
 
-        changeOgpData({
-          title: title,
-          imageUrl: isImageUrlExists ? imageUrl : null,
-          description: description,
-          siteName: siteName,
-          ogpIcon: ogpIcon,
-          url: linkurl
+          changeOgpData({
+            title: title,
+            imageUrl: isImageUrlExists ? imageUrl : null,
+            description: description,
+            siteName: siteName,
+            ogpIcon: ogpIcon,
+            url: linkurl
+          })
+          changeLoading(false)
         })
-        changeLoading(false)
-      })
+        .catch((error) => {
+          console.log("catch api error response")
+          console.error(
+            `code: ${error.code}, message: ${error.message}, detail:${error.detail}`
+          )
+          const temporaryLinkText = isAmazonLink
+            ? "amazon.co.jp"
+            : "外部サイトへ"
+          changeOgpData({
+            title: temporaryLinkText,
+            url: url
+          })
+          changeLoading(false)
+        })
     } catch (error) {
       console.error(error.code, error.message, error.details)
+      console.log("catch exception error when calling api")
+      const temporaryLinkText = isAmazonLink ? "amazon.co.jp" : "外部サイトへ"
+      changeOgpData({
+        title: temporaryLinkText,
+        url: url
+      })
+      changeLoading(false)
     }
   }, [isAmazonLink, encodedUrl, urlDomain, isA8Link])
 
