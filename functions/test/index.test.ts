@@ -11,13 +11,7 @@ describe("This", () => {
 
 import test from "firebase-functions-test"
 const firebaseTest = test()
-firebaseTest.mockConfig({
-  amazon: {
-    partner_tag: process.env.PARTNER_TAG,
-    paapi_secret: process.env.AMAZON_PAAPI_SECRET,
-    paapi_key: process.env.AMAZON_PAAPI_KEY
-  }
-})
+
 
 import { getOgpLinkData } from "../src/index"
 import {
@@ -31,6 +25,15 @@ import {
   normalLinkDataExpectedResponse
 } from "./testData"
 const wrapped = firebaseTest.wrap(getOgpLinkData)
+before(() =>
+  firebaseTest.mockConfig({
+    amazon: {
+      partner_tag: process.env.PARTNER_TAG,
+      paapi_secret: process.env.AMAZON_PAAPI_SECRET,
+      paapi_key: process.env.AMAZON_PAAPI_KEY
+    }
+  })
+)
 after(() => firebaseTest.cleanup())
 
 describe("リンク先OGPデータを取得する", () => {
