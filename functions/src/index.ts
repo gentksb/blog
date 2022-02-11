@@ -14,7 +14,7 @@ interface Props {
   isA8Link?: boolean
 }
 
-interface Res {
+export interface ResType {
   title: string
   imageUrl: string
   description: string
@@ -26,11 +26,7 @@ interface Res {
 
 // AmazonのAPIやFetchの回数を減らすためにグローバル変数にキャッシュする
 // https://firebase.google.com/docs/functions/tips?hl=ja#use_global_variables_to_reuse_objects_in_future_invocations
-const cache = new Map<string, Res>()
-
-const amazonPaApiKey = functions.config().amazon.paapi_key
-const amazonPaApiSecret = functions.config().amazon.paapi_secret
-const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
+const cache = new Map<string, ResType>()
 
 const getAsinFromUrl = (url: string) => {
   const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
@@ -82,7 +78,7 @@ export const getOgpLinkData = functions
       return cache.get(data.url)
     }
 
-    const result: Res = {
+    const result: ResType = {
       title: "",
       imageUrl: "",
       description: "",
@@ -104,12 +100,22 @@ export const getOgpLinkData = functions
       console.log("asin is", asin)
 
       const callPaapi = async () => {
+        const amazonPaApiKey = functions.config().amazon.paapi_key
+        const amazonPaApiSecret = functions.config().amazon.paapi_secret
+        const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
         if (
           typeof amazonPaApiKey !== "string" ||
           typeof amazonPaApiSecret !== "string" ||
           typeof amazonPaApiPartnerTag !== "string" ||
           typeof asin !== "string"
         ) {
+          console.log(
+            "types:",
+            typeof amazonPaApiKey,
+            typeof amazonPaApiSecret,
+            typeof amazonPaApiPartnerTag,
+            typeof asin
+          )
           throw new functions.https.HttpsError(
             "failed-precondition",
             "Didn't set or invalid PAAPIv5 parameters"
