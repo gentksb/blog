@@ -43,7 +43,7 @@ Speed Terrane の得意分野はドライコースや重い芝のコースなの
 
 このコースで行われた関西クロスの後、こんなツイートがあった。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今日のレース、リアタイヤだけスリックにして正解だった。全区間登れたし、下りはロックすれば簡単に方向転換できて速く下れた。<br>何よりも芝区間ですぐに泥が落ちるので重くならず快適だった。<br>（マイアミに向けてタイヤ貼り替えるのが面倒だっただけ）</p>&mdash; Tsuji Yoshimitsu (@zenkozz) <a href="https://twitter.com/zenkozz/status/805390639269433345?ref_src=twsrc%5Etfw">December 4, 2016</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今日のレース、リアタイヤだけスリックにして正解だった。全区間登れたし、下りはロックすれば簡単に方向転換できて速く下れた。<br/>何よりも芝区間ですぐに泥が落ちるので重くならず快適だった。<br/>（マイアミに向けてタイヤ貼り替えるのが面倒だっただけ）</p>&mdash; Tsuji Yoshimitsu (@zenkozz) <a href="https://twitter.com/zenkozz/status/805390639269433345?ref_src=twsrc%5Etfw">December 4, 2016</a></blockquote>
 
 全然登れないから 1 気圧まで空気圧下げてみたけど自分にはムリでした。下りはツイートの通りでしたけど…
 
