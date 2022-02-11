@@ -12,7 +12,7 @@ cover: "./cover.jpg"
 
 今シーズンの成果を存分に発揮し、最低目標だったゼッケン番号以上のフィニッシュは達成。
 
-自己最高順位(49位以上)は惜しくも達成できなかったものの、自己最高順位%でゴール。
+自己最高順位(49 位以上)は惜しくも達成できなかったものの、自己最高順位%でゴール。
 
 一方で、落車でポジションを落としてリズムを崩してまた落車してしまうなど、もったいない場面もあった。ノーミスならあと 10 近くは順位を上げられたはずなのだが…
 
@@ -36,7 +36,7 @@ cover: "./cover.jpg"
 
 ## レース
 
-https://youtu.be/GL9BCkRjYY8
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GL9BCkRjYY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 スタートは今年一の平和さ。レイアウトがいかにも行き場のない人を生みそうだったが、全員で安定したコーナーラインを作ったおかげか大乱なく序盤進行する。
 

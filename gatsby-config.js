@@ -18,7 +18,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -56,7 +55,6 @@ module.exports = {
               fit: `inside`
             }
           },
-          `gatsby-remark-embedder`,
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
@@ -108,7 +106,7 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-plugin-feed-mdx`,
+      resolve: `gatsby-plugin-feed`,
       options: {
         query: `
           {

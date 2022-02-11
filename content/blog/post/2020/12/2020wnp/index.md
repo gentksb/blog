@@ -50,7 +50,7 @@ https://www.youtube.com/embed/mGPXn9qUQdM
 
 最後の 1 周は保守的に砂区間のランを多めにしてゴール。最後の 1 周だけ板に触れずにバニーホップの形になっていたのが密かな満足。
 
-https://youtu.be/BCipQMhY_Kk?t=1059
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BCipQMhY_Kk?t=1059" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 これは序盤だが、撮っていてくれた人がいらっしゃった。数をこなすうちに上手くなっていったので、レーススピードのチャレンジで自信とスキルが両方上がった気がする。コソ練の高さを 30cm にするか…
 

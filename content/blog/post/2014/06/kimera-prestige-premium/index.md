@@ -37,11 +37,14 @@ tags: ["REVIEW", "ROAD"]
 
 上記くらいしか残っていない。
 
-2014 のキメラはバッテリー内蔵が前提であるうえ、ブレーキもダイレクトマウントで新規購入が必要なので、「縁がないかなぁ」なんて考えていた。\
+2014 のキメラはバッテリー内蔵が前提であるうえ、ブレーキもダイレクトマウントで新規購入が必要なので、「縁がないかなぁ」なんて考えていた。
+
 試乗で TCR AdvancedSL を越える乗り味のフレームに同価格帯では今まで出会わなかったこともある。
 
-<a href="http://www.uci.ch/includes/asp/getTarget.asp?type=FILE&id=NjczMDE" target="_blank" rel="noopener">CANYON から Aeroad がモデルチェンジして Aeroad CF SLX になるというんでそっちがかなり気になっていた。FUJI からも TRANSONIC という新型も出るらしいし。</a>\
-エアロロードで剛性高くて Di2 内装で安いならいいよな～思ってました。\
+<a href="http://www.uci.ch/includes/asp/getTarget.asp?type=FILE&id=NjczMDE" target="_blank" rel="noopener">CANYON から Aeroad がモデルチェンジして Aeroad CF SLX になるというんでそっちがかなり気になっていた。FUJI からも TRANSONIC という新型も出るらしいし。</a>
+
+エアロロードで剛性高くて Di2 内装で安いならいいよな～思ってました。
+
 この 2 メーカーはチェーンステー裏か BB 裏にバッテリーマウントするし。
 
 そんな中で「異次元だからマジオススメ」と唆されて
@@ -50,8 +53,10 @@ tags: ["REVIEW", "ROAD"]
 
 ![image](IMG_20140531_124412.jpg)
 
-ひとまず見た目。\
-剛性バカの KOGA らしくマッチョなチューブ。\
+ひとまず見た目。
+
+剛性バカの KOGA らしくマッチョなチューブ。
+
 そしてカタログ写真ではわからないヘッド付近のキメラマーク。
 
 デザインはかなり GOOD

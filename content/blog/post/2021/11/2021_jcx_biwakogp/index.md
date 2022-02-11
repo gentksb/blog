@@ -34,7 +34,7 @@ cover: "./cover.jpg"
 
 キャンバーそのものは楽しいので、1 時間ほど楽しんだ。前日試走組の様子はこちら。
 
-https://www.youtube.com/watch?v=89-ku-KMvbw
+<iframe width="560" height="315" src="https://www.youtube.com/embed/89-ku-KMvbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 昼試走の感触
 
@@ -42,7 +42,7 @@ https://www.youtube.com/watch?v=89-ku-KMvbw
 
 ## レース
 
-https://youtu.be/ODqRriRlmeA
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ODqRriRlmeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 スタートの落車に巻き込まれ、大きく順位を落とす。その後、キャンバーでジャンプアップするものの、集中力を維持できず細かいミスを繰り返し、中々上がったポジションをキープできずに 54 位に沈んだ。
 

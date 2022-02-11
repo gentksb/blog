@@ -44,7 +44,7 @@ cover: "./cover.jpg"
 
 1 本目の全編に渡って、[GoPro Hero8](https://amzn.to/3qPOett) で撮影した動画を Youtube にアップロードしましたので、詳細はこちらで感じていただければ…
 
-<LinkBox url="https://youtu.be/mWl6x8iVLOc" />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mWl6x8iVLOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 グロスタイムで本コース 40 分、スタート地点に戻るまで 30 分といったところでした。脚のある 2 名だったのでペースは速めですが、明らかに XC の練習で来ていた人はこれより遥かに速いペースを刻んでいました。
 

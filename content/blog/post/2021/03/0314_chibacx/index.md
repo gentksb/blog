@@ -66,7 +66,7 @@ cover: "./cover.jpg"
 
 WNP に続いて、前半同じパックにいた小林選手の動画に出演しています。
 
-https://www.youtube.com/watch?v=5fbZy_f3ye8
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5fbZy_f3ye8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Photo
 
