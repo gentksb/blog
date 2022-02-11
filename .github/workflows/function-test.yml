@@ -25,4 +25,4 @@ jobs:
         run: cd functions/ && npm ci
 
       - name: Run test
-        run: npm test
+        run: cd functions/ && npm test

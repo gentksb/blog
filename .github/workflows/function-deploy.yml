@@ -7,19 +7,17 @@ on:
       - "functions/**"
 
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
-      matrix:
-        node-version: [14.x]
 
     steps:
       - name: checkout-repo
-      - uses: actions/checkout@v2
-        
-      - name: install node.js ${{ matrix.node-version }}
+        uses: actions/checkout@v2
+
+      - name: install node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14.x
 
       - name: install dependencies
         run: cd functions/ && npm ci
@@ -30,3 +28,4 @@ jobs:
           args: deploy --only functions
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          PROJECT_ID: gensobunya-blog
