@@ -42,7 +42,7 @@ cover: "./cover.jpg"
 
 ## レース
 
-https://youtu.be/ODqRriRlmeA
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ODqRriRlmeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 スタートの落車に巻き込まれ、大きく順位を落とす。その後、キャンバーでジャンプアップするものの、集中力を維持できず細かいミスを繰り返し、中々上がったポジションをキープできずに 54 位に沈んだ。
 

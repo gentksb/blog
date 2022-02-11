@@ -32,7 +32,7 @@ draft: false
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6zyA2kDmxIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-https://youtu.be/jFV3KVTCN9g
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jFV3KVTCN9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 サドルの下降量が 0mm→5mm→10mm となるにしたがってアンクリングの度合いが減っていますね。
 
