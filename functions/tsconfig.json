@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "es2015",
+    "module": "ESNEXT",
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "outDir": "lib",
@@ -14,6 +14,5 @@
       "amazonPaapi": ["amazon-paapi-type.d.ts"]
     }
   },
-  "compileOnSave": true,
-  "include": ["src"]
+  "compileOnSave": true
 }
