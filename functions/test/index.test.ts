@@ -1,4 +1,4 @@
-import { expect } from "chai"
+import { expect, assert } from "chai"
 import "mocha"
 
 describe("This", () => {
@@ -19,19 +19,18 @@ firebaseTest.mockConfig({
   }
 })
 
-import { getOgpLinkData, ResType } from "../src/index"
-import { normalLinkData } from "./testData"
+import { getOgpLinkData } from "../src/index"
+import { normalLinkData, normalLinkDataExpectedResponse } from "./testData"
+const wrapped = firebaseTest.wrap(getOgpLinkData)
+after(() => firebaseTest.cleanup())
 
-const wrappedFunction = firebaseTest.wrap(getOgpLinkData)
-
-const normalLinkTest: ResType = await wrappedFunction(normalLinkData).result
 describe("リンク先OGPデータを取得する", () => {
-  it("オプション無し", () => {
-    console.log(normalLinkTest)
-    // expect(normalLinkTest.pageurl).to.equal("https://blog.gensobunya.net/")
-    // expect(normalLinkTest.imageUrl).to.equal(
-    //   "https://blog.gensobunya.net/image/logo.jpg"
-    // )
-    // expect(normalLinkTest.title).to.equal("幻想サイクル")
+  it("オプション無し", async () => {
+    try {
+      const res = await wrapped(normalLinkData)
+      assert.deepEqual(res, normalLinkDataExpectedResponse)
+    } catch (e) {
+      throw e
+    }
   })
 })

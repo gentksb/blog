@@ -3,17 +3,14 @@ export const normalLinkData = {
 }
 
 export const normalLinkDataExpectedResponse = {
-  code: 200,
-  result: {
-    title: "幻想サイクル",
-    imageUrl: "https://blog.gensobunya.net/image/logo.jpg",
-    description:
-      "AJOCC C1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです",
-    siteName: "幻想サイクル",
-    ogpIcon: "https://blog.gensobunya.net/favicon.ico",
-    pageurl: "https://blog.gensobunya.net/",
-    error: ""
-  }
+  title: "幻想サイクル",
+  imageUrl: "https://blog.gensobunya.net/image/logo.jpg",
+  description:
+    "AJOCC C1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです",
+  siteName: "幻想サイクル",
+  ogpIcon: "https://blog.gensobunya.net/favicon.ico",
+  pageurl: "https://blog.gensobunya.net/",
+  error: ""
 }
 
 export const amazonLinkData = {
