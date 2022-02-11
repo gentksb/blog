@@ -9,8 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    matrix:
-      node-version: [14.x]
 
     steps:
       - name: checkout-repo
@@ -18,10 +16,10 @@ jobs:
         with:
           ref: ${{github.event.pull_request.head.sha}}
 
-      - name: install node.js ${{ matrix.node-version }}
+      - name: install node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14.x
 
       - name: install dependencies
         run: cd functions/ && npm ci
