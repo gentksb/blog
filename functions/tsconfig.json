@@ -8,11 +8,7 @@
     "strict": true,
     "target": "ESNEXT",
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "baseUrl": "src/@types",
-    "paths": {
-      "amazonPaapi": ["amazon-paapi-type.d.ts"]
-    }
+    "moduleResolution": "node"
   },
   "compileOnSave": true
 }

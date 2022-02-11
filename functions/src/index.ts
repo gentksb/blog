@@ -14,7 +14,7 @@ interface Props {
   isA8Link?: boolean
 }
 
-interface Res {
+export interface ResType {
   title: string
   imageUrl: string
   description: string
@@ -26,7 +26,7 @@ interface Res {
 
 // AmazonのAPIやFetchの回数を減らすためにグローバル変数にキャッシュする
 // https://firebase.google.com/docs/functions/tips?hl=ja#use_global_variables_to_reuse_objects_in_future_invocations
-const cache = new Map<string, Res>()
+const cache = new Map<string, ResType>()
 
 const amazonPaApiKey = functions.config().amazon.paapi_key
 const amazonPaApiSecret = functions.config().amazon.paapi_secret
@@ -82,7 +82,7 @@ export const getOgpLinkData = functions
       return cache.get(data.url)
     }
 
-    const result: Res = {
+    const result: ResType = {
       title: "",
       imageUrl: "",
       description: "",
