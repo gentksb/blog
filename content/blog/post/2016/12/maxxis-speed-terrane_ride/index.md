@@ -43,9 +43,7 @@ Speed Terrane の得意分野はドライコースや重い芝のコースなの
 
 このコースで行われた関西クロスの後、こんなツイートがあった。
 
-https://twitter.com/zenkozz/status/805390639269433345
-
-結論から言うと、このコースでは（自分では）登れませんでした…
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今日のレース、リアタイヤだけスリックにして正解だった。全区間登れたし、下りはロックすれば簡単に方向転換できて速く下れた。<br>何よりも芝区間ですぐに泥が落ちるので重くならず快適だった。<br>（マイアミに向けてタイヤ貼り替えるのが面倒だっただけ）</p>&mdash; Tsuji Yoshimitsu (@zenkozz) <a href="https://twitter.com/zenkozz/status/805390639269433345?ref_src=twsrc%5Etfw">December 4, 2016</a></blockquote>
 
 全然登れないから 1 気圧まで空気圧下げてみたけど自分にはムリでした。下りはツイートの通りでしたけど…
 
@@ -59,7 +57,7 @@ https://twitter.com/zenkozz/status/805390639269433345
 
 マッドタイヤがすっ転ぶ下りでもこの通り！
 
-https://twitter.com/gen_sobunya/status/807812034658086912
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ウィッチに不可能はない！（サンドタイヤ） <a href="https://t.co/42tEISaQIk">pic.twitter.com/42tEISaQIk</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/807812034658086912?ref_src=twsrc%5Etfw">December 11, 2016</a></blockquote>
 
 前輪に使う分にはかなりいい感じのタイヤです。
 
