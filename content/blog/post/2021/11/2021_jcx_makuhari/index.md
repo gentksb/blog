@@ -44,7 +44,7 @@ JCX 取手につづき、（当人比）良い位置で展開することがで�
 
 前日試走組の様子はこちら。
 
-https://www.youtube.com/watch?v=jqJWF2QAOfk&t=6s
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jqJWF2QAOfk&t=6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 昼試走の感触
 

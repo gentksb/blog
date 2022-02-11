@@ -34,7 +34,7 @@ cover: "./cover.jpg"
 
 キャンバーそのものは楽しいので、1 時間ほど楽しんだ。前日試走組の様子はこちら。
 
-https://www.youtube.com/watch?v=89-ku-KMvbw
+<iframe width="560" height="315" src="https://www.youtube.com/embed/89-ku-KMvbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 昼試走の感触
 

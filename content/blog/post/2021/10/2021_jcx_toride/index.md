@@ -30,7 +30,7 @@ cover: "./cover.jpg"
 
 ちなみに前日の様子はこちら
 
-https://www.youtube.com/watch?v=9uYE90Fh68w
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9uYE90Fh68w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 昼試走の感触
 
@@ -38,7 +38,7 @@ F1.6Bar, R1.7Bar の空気圧高めでスタートし、良い感じにグリッ
 
 ## レース
 
-https://www.youtube.com/watch?v=IJYQnt5Ya5U
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IJYQnt5Ya5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 スタートから外側と降車を上手く使うことができ、人生最大のスタートジャンプアップ。
 

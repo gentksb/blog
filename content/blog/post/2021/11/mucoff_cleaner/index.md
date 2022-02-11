@@ -86,7 +86,7 @@ CX や MTB など、オフロードはもちろんのこと。ロードバイク
 
 <LinkBox url="https://www.amazon.co.jp/gp/product/B09KL22CKH/" isAmazonLink />
 
-https://www.youtube.com/watch?v=fEcIikdl6yE
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fEcIikdl6yE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 このグローブ、謎のエロい PV まで用意されていた
 

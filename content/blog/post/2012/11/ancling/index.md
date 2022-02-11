@@ -24,13 +24,13 @@ draft: false
 
 まずは元々のポジション
 
-https://www.youtube.com/watch?v=mCF6Jow_W10
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mCF6Jow_W10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 はい、アンクリングしてますねｗ
 
 以下サドルを 5mm,10mm づつ下げた場合に続きます
 
-https://www.youtube.com/watch?v=6zyA2kDmxIM
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6zyA2kDmxIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 https://youtu.be/jFV3KVTCN9g
 
