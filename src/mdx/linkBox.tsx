@@ -80,6 +80,13 @@ const LinkBox: React.FunctionComponent<Props> = ({
       })
     } catch (error) {
       console.error(error.code, error.message, error.details)
+      console.log("OGPデータ取得失敗")
+      const temporaryLinkText = isAmazonLink ? "amazon.co.jp" : "外部サイトへ"
+      changeOgpData({
+        title: temporaryLinkText,
+        url: url
+      })
+      changeLoading(false)
     }
   }, [isAmazonLink, encodedUrl, urlDomain, isA8Link])
 
