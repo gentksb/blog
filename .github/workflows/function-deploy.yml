@@ -25,7 +25,7 @@ jobs:
       - name: Deploy to Cloud Functions
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only functions
+          args: ${{ secrets.SET_CLOUD_FUNCTIONS_ENV }} ; deploy --only functions
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_ID: gensobunya-blog
+          PROJECT_ID: gensoucycle-blog
