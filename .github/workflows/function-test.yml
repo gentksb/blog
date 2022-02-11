@@ -7,18 +7,17 @@ on:
       - "functions/**"
 
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
-      matrix:
-        node-version: [14.x]
-
+    matrix:
+      node-version: [14.x]
 
     steps:
       - name: checkout-repo
       - uses: actions/checkout@v2
         with:
           ref: ${{github.event.pull_request.head.sha}}
-        
+
       - name: install node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
