@@ -1,0 +1,29 @@
+name: functions test
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "functions/**"
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+      matrix:
+        node-version: [14.x]
+
+
+    steps:
+      - name: checkout-repo
+        uses: actions/checkout@v2
+      - run: git checkout HEAD^2
+        if: ${{ github.event_name == 'pull_request' }}
+        
+      - name: install node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: run test
+      - run: npm ci
+      - run: npm test
