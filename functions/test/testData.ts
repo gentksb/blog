@@ -19,17 +19,14 @@ export const amazonLinkData = {
 }
 
 export const amazonLinkDataExpectedResponse = {
-  code: 200,
-  result: {
-    title: "Amazonギフト券 Eメールタイプ - Amazonベーシック",
-    imageUrl: "https://m.media-amazon.com/images/I/41-4Hj2o+qL._SL500_.jpg",
-    description: "Amazon.co.jpで使えるデジタル商品券",
-    siteName: "www.amazon.co.jp",
-    ogpIcon: "https://www.amazon.co.jp/favicon.ico",
-    pageurl:
-      "https://www.amazon.co.jp/dp/B004N3APGO?tag=gensobunya-22&linkCode=ogi&th=1&psc=1",
-    error: ""
-  }
+  title: "Amazonギフト券 Eメールタイプ - Amazonベーシック",
+  imageUrl: "https://m.media-amazon.com/images/I/41-4Hj2o+qL._SL500_.jpg",
+  description: "Amazon.co.jpで使えるデジタル商品券",
+  siteName: "www.amazon.co.jp",
+  ogpIcon: "https://www.amazon.co.jp/favicon.ico",
+  pageurl:
+    "https://www.amazon.co.jp/dp/B004N3APGO?tag=gensobunya-22&linkCode=ogi&th=1&psc=1",
+  error: ""
 }
 
 export const a8LinkData = {
@@ -38,30 +35,24 @@ export const a8LinkData = {
 }
 
 export const a8LinkDataExpectedResponse = {
-  code: 200,
-  result: {
-    title: "Impact ホエイ プロテイン",
-    imageUrl:
-      "https://static.thcdn.com/images/small/original//productimg/960/960/10530943-1224889444460882.jpg",
-    description:
-      "\n\t\t\n\t\t\t\n\t\t\t\tImpact ホエイ プロテインを割引クーポンで超お得に購入するなら英国発マイプロテイン。一定額購入で送料無料。1食分あたり80％以上のタンパク質を含有する、英国で一番の高品質ホエイプロテインです。食欲をそそるおいしいフレーバーを50種類以上もご用意しています。\n\t\t\t\n\t\t\t\n\t\t",
-    siteName: "Myprotein Japan",
-    ogpIcon: "https://www.myprotein.jp/favicon.ico",
-    pageurl:
-      "https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fimpact-whey-protein%2F10530943.html",
-    error: ""
-  }
+  title: "Impact ホエイ プロテイン",
+  imageUrl:
+    "https://static.thcdn.com/images/small/original//productimg/960/960/10530943-1224889444460882.jpg",
+  description:
+    "\n\t\t\n\t\t\t\n\t\t\t\tImpact ホエイ プロテインを割引クーポンで超お得に購入するなら英国発マイプロテイン。一定額購入で送料無料。1食分あたり80％以上のタンパク質を含有する、英国で一番の高品質ホエイプロテインです。食欲をそそるおいしいフレーバーを50種類以上もご用意しています。\n\t\t\t\n\t\t\t\n\t\t",
+  siteName: "Myprotein Japan",
+  ogpIcon: "https://www.myprotein.jp/favicon.ico",
+  pageurl:
+    "https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fimpact-whey-protein%2F10530943.html",
+  error: ""
 }
 
 export const invalidAmazonAsinData = {
-  url: "https://blog.gensobunya.net/",
+  url: "https://www.gensobunya.net/",
   isAmazonLink: true
 }
 
 export const invalidAmazonAsinDataResponse = {
-  code: 400,
-  error: {
-    message: "ASIN not found in URL",
-    status: "INVALID_ARGUMENT"
-  }
+  message: "ASIN not found in URL",
+  status: "INVALID_ARGUMENT"
 }
