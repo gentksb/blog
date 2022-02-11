@@ -110,6 +110,13 @@ export const getOgpLinkData = functions
           typeof amazonPaApiPartnerTag !== "string" ||
           typeof asin !== "string"
         ) {
+          console.log(
+            "types:",
+            typeof amazonPaApiKey,
+            typeof amazonPaApiSecret,
+            typeof amazonPaApiPartnerTag,
+            typeof asin
+          )
           throw new functions.https.HttpsError(
             "failed-precondition",
             "Didn't set or invalid PAAPIv5 parameters"
