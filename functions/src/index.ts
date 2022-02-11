@@ -58,10 +58,6 @@ const getRedirectionUrl = (url: string) => {
 export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
-    const amazonPaApiKey = functions.config().amazon.paapi_key
-    const amazonPaApiSecret = functions.config().amazon.paapi_secret
-    const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
-
     functions.logger.info(
       "Url:",
       data.url,
@@ -104,6 +100,9 @@ export const getOgpLinkData = functions
       console.log("asin is", asin)
 
       const callPaapi = async () => {
+        const amazonPaApiKey = functions.config().amazon.paapi_key
+        const amazonPaApiSecret = functions.config().amazon.paapi_secret
+        const amazonPaApiPartnerTag = functions.config().amazon.partner_tag
         if (
           typeof amazonPaApiKey !== "string" ||
           typeof amazonPaApiSecret !== "string" ||
