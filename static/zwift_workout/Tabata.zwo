@@ -1,0 +1,25 @@
+<workout_file>
+    <author>gen_sobunya</author>
+    <name>Tabata</name>
+    <description>Tabata Protcol*8</description>
+    <tags>
+        <tag name="INTERVALS"/>
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.25082988" PowerHigh="0.79024893">
+            <textevent timeoffset="80" message="20sec full power &amp; 10sec rest."/>
+            <textevent timeoffset="569" message="Welcome Hell"/>
+            <textevent timeoffset="560" message="Shut up legs."/>
+            <textevent timeoffset="55" message="Hello, It  is TABATA protcol."/>
+            <textevent timeoffset="100" message="8 times full power phase."/>
+            <textevent timeoffset="130" message="DO NOT save a power all phase."/>
+        </Warmup>
+        <IntervalsT Repeat="8" OnDuration="20" OffDuration="10" OnPower="1.8649378" OffPower="0.20518672"/>
+        <Cooldown Duration="600" PowerLow="0.74449998" PowerHigh="0.33450001">
+            <textevent timeoffset="4" message="Complete!"/>
+            <textevent timeoffset="60" message="Cool Down..."/>
+            <textevent timeoffset="340" message="3-4 times workout in a week."/>
+            <textevent timeoffset="315" message="To develop your performance"/>
+        </Cooldown>
+    </workout>
+</workout_file>
