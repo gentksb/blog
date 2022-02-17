@@ -13,13 +13,13 @@ tags: ["REVIEW", "EC", "FOOD"]
 
 ### 圧倒的コストパフォーマンス
 
-今まで愛用してたバルクスポーツの<a href="http://amzn.to/2nttvKb" target="_blank">ソイプロ</a>が切れたのを契機に、身の回りで話題になっている<a href="https://www.myprotein.jp/referrals.list?applyCode=AJPC-R3&li" target="_blank">MYPROTEIN</a>のホエイプロテインを購入してみた。
+今まで愛用してたバルクスポーツの<a href="http://amzn.to/2nttvKb" target="_blank">ソイプロ</a>が切れたのを契機に、身の回りで話題になっている<a href="https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+5YJRM" target="_blank">MYPROTEIN</a>のホエイプロテインを購入してみた。
 
 上記リンクか、紹介コード「AJPC-R3」を使えば 25％オフになるようですので是非是非。
 
 サイクリストにとってのプロテインの重要性については、<a href="/2016/02/blog-post.html" target="_blank">以前の記事</a>か<a href="http://genkibicycle.jp/" target="_blank">山本元喜選手のブログ</a>を参照して欲しい。
 
-購入したのは、同サイト標準モデルのプロテインよりタンパク質含有率を高めた<a href="https://www.myprotein.jp/sports-nutrition/impact-whey-protein/10530943.html" target="_blank">IMPACT WHEY プロテイン</a>。ちょうどセール対象だった[ナチュラルバニラ味](https://item.rakuten.co.jp/myprotein/10530943_5000_other/)をチョイス。
+購入したのは、同サイト標準モデルのプロテインよりタンパク質含有率を高めた<a href="https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fimpact-whey-protein%2F10530943.html" target="_blank">IMPACT WHEY プロテイン</a>。ちょうどセール対象だったナチュラルバニラ味をチョイス。
 
 ソイプロは 2kg で 6000 円程度かつ、タンパク質含有率 90%越えという高コストパフォーマンスだったが、こいつは 5kg で 9000 円程度だった。驚きの安さである。
 
