@@ -10,6 +10,15 @@
     ],
     "headers": [
       {
+        "source": "/sitemap.xml",
+        "headers": [
+          {
+            "key": "content-type",
+            "value": "text/xml; charset=utf-8"
+          }
+        ]
+      },
+      {
         "source": "**/*",
         "headers": [
           {
