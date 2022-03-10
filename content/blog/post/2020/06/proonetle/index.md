@@ -24,6 +24,7 @@ TLE はいわゆるチューブレスレディのことで、シーラントの�
 
 ![RBCC 重量](./weight_rbcc.jpg)
 [Formula Pro TL RBCC 28c](https://amzn.to/3eJaIWs) (外した際についていたシーラント込)は 340g
+
 ![PROONE 重量](./weight_proone.jpg)
 [PRO ONE Tubeless Easy 30c](https://www.amazon.co.jp/dp/B07WPV58SC/?tag=gensobunya-22) 新品で 290g
 
