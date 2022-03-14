@@ -1,6 +1,6 @@
 ---
-title: "2021-22 シクロクロス千葉 レースレポート"
-date: 2022-01-11
+title: "2021-22 湘南シクロクロス伊豆の国 レースレポート"
+date: 2022-03-14
 draft: false
 tags: ["RACEREPORT", "CX"]
 cover: "./cover.jpg"
