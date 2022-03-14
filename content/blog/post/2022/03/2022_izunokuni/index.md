@@ -36,7 +36,7 @@ CX 千葉を終えた 2 月以降、まともなトレーニングを積めて�
 
 ## レース
 
-https://youtu.be/jMqcmfem0eA
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jMqcmfem0eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 朝こそ無風で春の陽気といった風情であったが、時間がたつにつれて強風が吹き荒れるハードな一日になった。
 
