@@ -6,6 +6,11 @@ on:
     paths:
       - "functions/**"
       - ".github/workflows/function-test.yml"
+  push:
+    branches: [master]
+    paths:
+      - "functions/**"
+      - ".github/workflows/function-test.yml"
 
 jobs:
   test:
