@@ -22,10 +22,13 @@ jobs:
       - name: install dependencies
         run: cd functions/ && npm ci
 
+      - name: import .env
+        run: cd functions/ && "${{ secrets.SET_CLOUD_FUNCTIONS_ENV }}" >> .env
+
       - name: Deploy to Cloud Functions
         uses: w9jds/firebase-action@master
         with:
-          args: ${{ secrets.SET_CLOUD_FUNCTIONS_ENV }} ; deploy --only functions
+          args: deploy --only functions
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           PROJECT_ID: gensoucycle-blog
