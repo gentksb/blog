@@ -23,7 +23,10 @@ jobs:
         run: cd functions/ && npm ci
 
       - name: import .env
-        run: cd functions/ && "${{ secrets.SET_CLOUD_FUNCTIONS_ENV }}" >> .env
+        run: |
+        cd functions/
+        touch .env
+        echo "${{ secrets.SET_CLOUD_FUNCTIONS_ENV }}" >> .env
 
       - name: Deploy to Cloud Functions
         uses: w9jds/firebase-action@master
