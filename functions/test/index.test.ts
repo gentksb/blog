@@ -34,5 +34,5 @@ describe("リンク先OGPデータを取得する", () => {
   it("A8リンクOGP", async () => {
     const res = await wrapped(a8LinkData)
     expect(res).deep.equal(a8LinkDataExpectedResponse)
-  })
+  }).timeout(10000)
 })
