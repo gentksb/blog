@@ -13,3 +13,17 @@ This is gensobunya's bike blog repository.
 ### Deploy
 
 Hosting at Firebase.
+
+### environment variables
+
+```env
+GATSBY_FIREBASE_API_KEY
+GATSBY_FIREBASE_PROJECT_ID
+GATSBY_FIREBASE_APP_ID
+```
+
+```functions/env
+AMAZON_PAAPI_KEY
+AMAZON_PAAPI_SECRET
+PARTNER_TAG
+```
