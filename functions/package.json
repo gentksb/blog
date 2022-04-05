@@ -41,7 +41,7 @@
     "mocha": "^9.2.2",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",
-    "tsc-watch": "^4.6.2",
+    "tsc-watch": "^5.0.2",
     "typescript": "^4.6.3"
   },
   "private": true
