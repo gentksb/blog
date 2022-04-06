@@ -118,7 +118,7 @@ CX や MTB など、オフロードはもちろんのこと。ロードバイク
 
 ※画像は 5L パッケージだけど商品は 500ml なので注意
 
-<LinkBox url="https://www.wiggle.jp/muc-off-%E6%BF%83%E7%B8%AE%E3%83%90%E3%82%A4%E3%82%AF%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC-1l-" />
+<LinkBox url="https://www.wiggle.jp/muc-off-%E6%BF%83%E7%B8%AE%E3%83%90%E3%82%A4%E3%82%AF%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC-1l-" linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886932159&vc_url=https%3A%2F%2Fwww.wiggle.jp%2Fmuc-off-%25E6%25BF%2583%25E7%25B8%25AE%25E3%2583%2590%25E3%2582%25A4%25E3%2582%25AF%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%258A%25E3%2583%25BC-1l-%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" />
 
 濃縮版が 1L あれば、2 バイク運用の CXer が 2 シーズンくらいは困ることなく利用できると思う。
 
@@ -156,4 +156,5 @@ CX や MTB など、オフロードはもちろんのこと。ロードバイク
 
 </NegativeBox>
 
-<LinkBox url="https://www.wiggle.jp/muc-off-%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%AD%E3%83%83%E3%83%88" />
+<LinkBox url="https://www.wiggle.jp/muc-off-%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%AD%E3%83%83%E3%83%88"
+linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886932159&vc_url=https%3A%2F%2Fwww.wiggle.jp%2Fmuc-off-ebike-ultimate-cleaning-kit%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" />

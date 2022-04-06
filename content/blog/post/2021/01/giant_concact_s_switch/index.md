@@ -62,13 +62,15 @@ GIANT はレバー側でインナーワイヤーの張り具合を調整する�
 
 Wolftooth の製品は、レバー側はタイコではなくワイヤー固定だ。
 
-<LinkBox url="https://www.chainreactioncycles.com/jp/ja/wolf-tooth-remote-light-action-dropper-lever/rp-prod192985" />
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/wolf-tooth-remote-light-action-dropper-lever/rp-prod192985" 
+linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fwolf-tooth-remote-light-action-%25E3%2583%2589%25E3%2583%25AD%25E3%2583%2583%25E3%2583%2591%25E3%2583%25BC%25E3%2583%25AC%25E3%2583%2590%25E3%2583%25BC%2Frp-prod192985%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" />
 
 ![WT lever behind](./wt.png)
 
 Brand-X にはアップグレード用レバーがあるが、これは当然レバー側にタイコ。
 
-<LinkBox url="https://www.chainreactioncycles.com/jp/ja/brand-x-ascend-%E3%83%AC%E3%83%90%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-v2-%E3%82%AE%E3%82%A2-x1-/rp-prod176215" />
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/brand-x-ascend-%E3%83%AC%E3%83%90%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88-v2-%E3%82%AE%E3%82%A2-x1-/rp-prod176215" 
+linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fbrand-x-ascend-%25E3%2583%25AC%25E3%2583%2590%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2583%25E3%2583%2588-v2-%25E3%2582%25AE%25E3%2582%25A2-x1-%2Frp-prod176215%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" />
 
 そのほか、RACEFACE もシートポストにタイコ前提に見えた。FOX は確信の持てる画像がなかったが、シートポスト側の固定部は ASCEND と同様の構造をしているように見える。
 

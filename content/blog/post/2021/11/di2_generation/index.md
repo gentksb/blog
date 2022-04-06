@@ -28,7 +28,7 @@ R9200/R8100 Di2 で完全な別物になったこともあって、一度自分�
 
 ※カブトガニは 78 世代から言われていたらしい
 
-<LinkBox url="https://store.shopping.yahoo.co.jp/cycleparadise/cps-2109298007-pa-037660173.html" />
+<LinkBox url="https://store.shopping.yahoo.co.jp/cycleparadise/cps-2109298007-pa-037660173.html" linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fcycleparadise%2Fcps-2109298007-pa-037660173.html" />
 
 <div data-vc_mylinkbox_id="887480782"></div>
 
@@ -70,7 +70,7 @@ Di2 の心臓部分たるバッテリーユニットが別物になったのだ�
 
 SRAM の etap AXS のようにギアの使っている割合やシフト傾向を見られたら面白かったとは思うが…そうはならなかった。
 
-<LinkBox url="https://bike.shimano.com/ja-JP/product/component/duraace-r9150-di2/SM-PCE1.html" />
+<LinkBox url="https://bike.shimano.com/ja-JP/product/component/duraace-r9150-di2/SM-PCE1.html" linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fmekaanikko%2Fr9200.html" />
 
 ## 第 3 世代（現行）
 
@@ -82,7 +82,7 @@ STI が無線化した最新最高の Di2 コンポーネント（R9200, R8100�
 
 今のところ、全然触ったこともないがこの世代の GRX が発売されたら是非とも購入したい。
 
-<LinkBox url="https://store.shopping.yahoo.co.jp/worldcycle/shi-p-r9270.html" />
+<LinkBox url="https://store.shopping.yahoo.co.jp/mekaanikko/r9200.html" />
 
 <div data-vc_mylinkbox_id="887480710"></div>
 

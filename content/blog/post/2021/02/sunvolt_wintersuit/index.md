@@ -12,7 +12,9 @@ cover: "./overview.jpg"
 
 2 月から徐々に暖かくなってくるとはいえ、三寒四温の寒の方が週末に当たるとウィンターウェアの出番です。というわけで、サンボルトさんのセールにのっかって、セパレートワンピース型のウィンターウェアである[サーモスーツ](http://sunvolt.co.jp/item/s-ride_tseo.html)をポチってみました。
 
-<LinkBox url="https://store.shopping.yahoo.co.jp/sunvolt-store/fma2017s2f.html" />
+<LinkBox url="https://store.shopping.yahoo.co.jp/sunvolt-store/fma2017s2f.html"
+linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fsunvolt-store%2Ffma2017s2f.html"
+/>
 
 ヤフーショッピング店ではセールエリアがあるので、そこばっかり見ています。
 

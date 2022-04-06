@@ -19,6 +19,7 @@ interface Props {
   url: string
   isAmazonLink?: boolean
   isA8Link?: boolean
+  linkurl?: string
 }
 
 interface ApiResponse {
@@ -34,7 +35,8 @@ interface ApiResponse {
 const LinkBox: React.FunctionComponent<Props> = ({
   url,
   isAmazonLink,
-  isA8Link
+  isA8Link,
+  linkurl
 }) => {
   const [ogpData, changeOgpData] = useState(Object)
   const [loading, changeLoading] = useState(true)
@@ -65,7 +67,7 @@ const LinkBox: React.FunctionComponent<Props> = ({
           const description = response.description
           const siteName = response.siteName ?? urlDomain
           const ogpIcon = response.ogpIcon
-          const linkurl = response.pageurl ?? encodedUrl
+          const linkurl = response.pageurl ?? url
           console.log(title, linkurl, imageUrl, description, siteName, ogpIcon)
           const isImageUrlExists = imageUrl !== ""
 
@@ -132,7 +134,7 @@ const LinkBox: React.FunctionComponent<Props> = ({
             fontSize="lg"
             lineHeight="normal"
             fontWeight="semibold"
-            href={ogpData.url}
+            href={linkurl ?? ogpData.url}
             isExternal
           >
             <Text noOfLines={[1, 1, 2, 2]} as="span">

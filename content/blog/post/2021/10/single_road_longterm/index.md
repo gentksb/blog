@@ -65,7 +65,7 @@ CX や MTB のような限定された状況ではデメリットにならない
 
 SRAM のようにトップ 10T が使えるのであればややこの状況は改善されるが、それでもこの後の課題は残る。
 
-<LinkBox url="https://paypaymall.yahoo.co.jp/store/qbei/item/pi-810753" />
+<LinkBox url="https://paypaymall.yahoo.co.jp/store/qbei/item/pi-810753" linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fpaypaymall.yahoo.co.jp%2Fstore%2Fqbei%2Fitem%2Fpi-810753" />
 
 ### ギアがクロスしていないことのストレス
 
