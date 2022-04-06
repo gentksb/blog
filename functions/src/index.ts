@@ -3,7 +3,6 @@ import "firebase-functions/lib/logger/compat"
 import fetch from "node-fetch"
 import { JSDOM } from "jsdom"
 import amazonPaapi from "amazon-paapi"
-import queryString from "query-string"
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
