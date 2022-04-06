@@ -12,7 +12,8 @@ cover: "./cover.jpg"
 
 ## Orangeseal Sealant
 
-<LinkBox url="https://www.chainreactioncycles.com/jp/ja/orange-seal-endurance-sealant-refill/rp-prod179168" />
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/orange-seal-endurance-sealant-refill/rp-prod179168"
+linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Forange-seal-endurance-%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%25A9%25E3%2583%25B3%25E3%2583%2588%25E3%2583%25AC%25E3%2583%2595%25E3%2582%25A3%25E3%2583%25AB%2Frp-prod179168%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" />
 
 Orange Seal(オレンジシール)は新興シーラントメーカーで、英語メディアのインプレッションで毎回高い評価を得ていたので気にはなっていた。
 
@@ -46,4 +47,5 @@ MTB やグラベルバイクでオレンジシールを使っている友人曰�
 
 シーラントが長持ちするに越したことはないので、現在はこちらの購入をお勧めします。
 
-<LinkBox url="https://www.chainreactioncycles.com/jp/ja/orange-seal-endurance-sealant-refill/rp-prod179168" />
+<LinkBox url="https://www.chainreactioncycles.com/jp/ja/orange-seal-endurance-sealant-refill/rp-prod179168"
+linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Forange-seal-endurance-%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%25A9%25E3%2583%25B3%25E3%2583%2588%25E3%2583%25AC%25E3%2583%2595%25E3%2582%25A3%25E3%2583%25AB%2Frp-prod179168%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" />
