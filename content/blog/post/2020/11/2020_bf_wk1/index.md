@@ -24,7 +24,7 @@ TLR 界の超新星。28c ～ 30c であればデファクトスタンダード�
 ## dhb メリノ袖なしベースレイヤー
 
 <LinkBox url="https://www.chainreactioncycles.com/jp/ja/dhb-%E3%83%A1%E3%83%AA%E3%83%8E%E8%A2%96%E3%81%AA%E3%81%97%E3%83%99%E3%83%BC%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC-m-150-/rp-prod156765"
-linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fdhb-%25E3%2583%25A1%25E3%2583%25AA%25E3%2583%258E%25E8%25A2%2596%25E3%2581%25AA%25E3%2581%2597%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC-m-150-%2Frp-prod156765%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates />
+linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fdhb-%25E3%2583%25A1%25E3%2583%25AA%25E3%2583%258E%25E8%25A2%2596%25E3%2581%25AA%25E3%2581%2597%25E3%2583%2599%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC-m-150-%2Frp-prod156765%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" />
 
 袖なしの冬用インナー。珍しい組み合わせだが、特定の用途で非常に便利。具体的にはめちゃくちゃピチピチの Bioracer スキンスーツと組み合わせている。
 
