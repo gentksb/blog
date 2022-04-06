@@ -3,8 +3,6 @@ import "mocha"
 import test from "firebase-functions-test"
 const firebaseTest = test()
 import {
-  a8LinkData,
-  a8LinkDataExpectedResponse,
   amazonLinkData,
   amazonLinkDataExpectedResponse,
   normalLinkData,
@@ -31,8 +29,4 @@ describe("リンク先OGPデータを取得する", () => {
     const res = await wrapped(amazonLinkData)
     expect(res).deep.equal(amazonLinkDataExpectedResponse)
   })
-  it("A8リンクOGP", async () => {
-    const res = await wrapped(a8LinkData)
-    expect(res).deep.equal(a8LinkDataExpectedResponse)
-  }).timeout(10000)
 })
