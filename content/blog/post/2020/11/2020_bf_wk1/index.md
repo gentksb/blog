@@ -35,7 +35,7 @@ linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886
 ## Maxxis Agressor TR EXO
 
 <LinkBox url="https://www.chainreactioncycles.com/jp/ja/maxxis-aggressor-mtb-%E3%82%BF%E3%82%A4%E3%83%A4-exo-tr-/rp-prod150233"
-linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fmaxxis-aggressor-mtb-%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25A4-exo-tr-%2Frp-prod150233%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3171302&pid=886701002" />
+linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886701002&vc_url=https%3A%2F%2Fwww.chainreactioncycles.com%2Fjp%2Fja%2Fmaxxis-aggressor-mtb-%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25A4-exo-tr-%2Frp-prod150233%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates" />
 
 ウェットもドライも行けるトレイルタイヤ。ふじてんなどの DH コースから、日常トレイルまで幅広く対応してくれます。
 
