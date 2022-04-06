@@ -1,5 +1,4 @@
-{
-  "name": "functions",
+{  "name": "functions",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc",
@@ -22,8 +21,7 @@
     "firebase-functions": "^3.19.0",
     "jsdom": "^19.0.0",
     "node-fetch": "^3.2.3",
-    "paapi5-nodejs-sdk": "^1.1.0",
-    "query-string": "^7.1.1"
+    "paapi5-nodejs-sdk": "^1.1.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.0",

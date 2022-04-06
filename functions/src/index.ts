@@ -3,7 +3,6 @@ import "firebase-functions/lib/logger/compat"
 import fetch from "node-fetch"
 import { JSDOM } from "jsdom"
 import amazonPaapi from "amazon-paapi"
-import queryString from "query-string"
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
@@ -11,7 +10,6 @@ import queryString from "query-string"
 interface Props {
   url: string
   isAmazonLink?: boolean
-  isA8Link?: boolean
 }
 
 export interface ResType {
@@ -41,31 +39,10 @@ const getAsinFromUrl = (url: string) => {
   }
 }
 
-const getRedirectionUrl = (url: string) => {
-  //sample: https://px.a8.net/svt/ejp?a8mat=3N3PXW+IGGJ6+4JDO+BW0YB&a8ejpredirect=https%3A%2F%2Fonline.ysroad.co.jp%2Fshop%2Fg%2Fg0012527018642%2F)
-  const queryObject = queryString.parseUrl(url)
-  const redirectUrl = queryObject.query.a8ejpredirect
-  if (typeof redirectUrl === "string") {
-    return decodeURIComponent(redirectUrl)
-  } else {
-    throw new functions.https.HttpsError(
-      "invalid-argument",
-      "invalid A8 affiliate URL"
-    )
-  }
-}
-
 export const getOgpLinkData = functions
   .region("asia-northeast1")
   .https.onCall(async (data: Props, context) => {
-    functions.logger.info(
-      "Url:",
-      data.url,
-      "isAmazon",
-      data.isAmazonLink,
-      "isA8",
-      data.isA8Link
-    )
+    functions.logger.info("Url:", data.url, "isAmazon", data.isAmazonLink)
     if (data.url === undefined) {
       throw new functions.https.HttpsError(
         "invalid-argument",
@@ -87,8 +64,8 @@ export const getOgpLinkData = functions
       pageurl: "",
       error: ""
     }
-    const ogpTargetUrl = data.isA8Link ? getRedirectionUrl(data.url) : data.url
-    const urlConstructor = new URL(ogpTargetUrl)
+    const ogpTargetUrl = data.url
+    const urlConstructor = new URL(data.url)
     const urlDomain = urlConstructor.hostname
     const urlProtocol = urlConstructor.protocol
 
