@@ -97,6 +97,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-S8PKGWKFS2"]
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: `GTM-MGHR8XJ`,
