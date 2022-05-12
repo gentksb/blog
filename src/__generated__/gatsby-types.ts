@@ -3593,19 +3593,6 @@ type ImageSharpSortInput = {
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
 
-type TagListQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
-
-type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<Mdx, 'id'>
-        & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'tags'>>, readonly fields: Maybe<Pick<MdxFields, 'slug'>> }
-      ) }> } };
-
 type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3613,11 +3600,6 @@ type SeoComponentQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       Pick<SiteSiteMetadata, 'title' | 'description' | 'author' | 'image' | 'siteUrl'>
       & { readonly social: Maybe<Pick<SiteSiteMetadataSocial, 'twitter'>> }
     )> }> };
-
-type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
 type BlogPostBySlugQueryVariables = Exact<{
   slug: Scalars['String'];
@@ -3687,6 +3669,24 @@ type TagPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<S
         )> }
       ) }> }
   ) };
+
+type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<Mdx, 'id'>
+        & { readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title' | 'tags'>>, readonly fields: Maybe<Pick<MdxFields, 'slug'>> }
+      ) }> } };
+
+type TagListQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
+
+type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type NotFoundPageQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title'>> }> };
 
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
