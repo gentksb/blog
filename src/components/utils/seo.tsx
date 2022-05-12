@@ -59,7 +59,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
     process.env.NODE_ENV === "production" ? "all" : "none"
   const siteTitle = isTopPage
     ? site.siteMetadata.title
-    : `%s | ${site.siteMetadata.title}`
+    : `${title} | ${site.siteMetadata.title}`
   const jsonLdType = isPostPage ? "Article" : "Blog"
   const ogType = isPostPage ? "article" : "website"
 
