@@ -98,8 +98,7 @@ const SEO: React.FunctionComponent<Props> = (props) => {
       htmlAttributes={{
         lang
       }}
-      title={title}
-      titleTemplate={siteTitle}
+      title={siteTitle}
       link={[{ rel: "canonical", href: canonicalUrl }]}
       meta={[
         {
