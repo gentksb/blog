@@ -1,6 +1,6 @@
-const { AspectRatio } = require("@chakra-ui/layout")
+import type { GatsbyConfig } from "gatsby"
 
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `幻想サイクル`,
     author: `Gen`,
@@ -188,3 +188,5 @@ module.exports = {
     }
   ]
 }
+
+export default config

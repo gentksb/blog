@@ -12,8 +12,10 @@ import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 const BlogIndex: React.FunctionComponent<
   PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePage["pageContext"]>
 > = (props) => {
-  const { data, location } = props
+  const { data, location, pageContext } = props
+  const { pageNumber } = pageContext
   const siteTitle = data.site.siteMetadata.title
+  const pageTitle = pageNumber > 0 ? `Old posts page ${pageNumber}` : siteTitle
   const edges = data.allMdx.edges
   const buildJstIsoTime = convertMdxDateToIsoJstDate(
     data.siteBuildMetadata.buildTime
@@ -22,7 +24,7 @@ const BlogIndex: React.FunctionComponent<
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title="幻想サイクル"
+        title={pageTitle}
         location={location}
         description={data.site.siteMetadata.description}
         datePublished={buildJstIsoTime}
