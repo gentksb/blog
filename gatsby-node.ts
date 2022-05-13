@@ -1,11 +1,15 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
-const { paginate } = require("gatsby-awesome-pagination")
+import path from "path"
+import { createFilePath } from "gatsby-source-filesystem"
+import { paginate } from "gatsby-awesome-pagination"
+import { GatsbyNode } from "gatsby"
 
-exports.createPages = async ({ graphql, actions }) => {
+export const createPages: GatsbyNode["createPages"] = async ({
+  graphql,
+  actions
+}) => {
   const { createPage } = actions
 
-  const postsQueryResult = await graphql(`
+  const postsQueryResult = await graphql<GatsbyTypes.AllPostNodeQuery>(`
     query AllPostNode {
       allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
@@ -25,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  const tagsQueryResult = await graphql(`
+  const tagsQueryResult = await graphql<GatsbyTypes.AllTagNodeQuery>(`
     query AllTagNode {
       allMdx {
         group(field: frontmatter___tags) {
