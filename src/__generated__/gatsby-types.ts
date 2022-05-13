@@ -3711,4 +3711,14 @@ type AllTagNodeQueryVariables = Exact<{ [key: string]: never; }>;
 
 type AllTagNodeQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue'>> } };
 
+type AllTagNodeDummyQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AllTagNodeDummyQuery = { readonly allMdx: { readonly group: ReadonlyArray<Pick<MdxGroupConnection, 'fieldValue'>> } };
+
+type AllPostNodeDummyQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AllPostNodeDummyQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly fields: Maybe<Pick<MdxFields, 'slug'>>, readonly frontmatter: Maybe<Pick<MdxFrontmatter, 'title'>> } }> } };
+
 }

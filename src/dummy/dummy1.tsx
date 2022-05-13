@@ -3,7 +3,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-const dummy: React.FunctionComponent = () => {
+const dummy1: React.FunctionComponent = () => {
   return <></>
 }
 
@@ -27,13 +27,4 @@ export const allPostNodeQuery = graphql`
   }
 `
 
-export const tagsQuery = graphql`
-  query AllTagNodeDummy {
-    allMdx {
-      group(field: frontmatter___tags) {
-        fieldValue
-      }
-    }
-  }
-`
-export default dummy
+export default dummy1
