@@ -13,7 +13,7 @@ const BlogIndex: React.FunctionComponent<
   PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePage["pageContext"]>
 > = (props) => {
   const { data, location, pageContext } = props
-  const pageNumber = pageContext.pageNumber
+  const { pageNumber } = pageContext
   const siteTitle = data.site.siteMetadata.title
   const pageTitle = pageNumber > 0 ? `Old posts page ${pageNumber}` : siteTitle
   const edges = data.allMdx.edges
