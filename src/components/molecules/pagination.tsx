@@ -4,7 +4,7 @@ import { Grid, Button, GridItem } from "@chakra-ui/react"
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons"
 
 interface Props {
-  props: GatsbyTypes.SitePageContext
+  props: GatsbyTypes.SitePage["pageContext"]
   previousPagePath?: string
   nextPagePath?: string
 }
