@@ -9,7 +9,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
 }) => {
   const { createPage } = actions
 
-  const postsQueryResult = await graphql<GatsbyTypes.AllPostNodeQuery>(`
+  const postsQueryResult = await graphql<GatsbyTypes.AllPostNodeDummyQuery>(`
     query AllPostNode {
       allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
@@ -29,7 +29,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
     }
   `)
 
-  const tagsQueryResult = await graphql<GatsbyTypes.AllTagNodeQuery>(`
+  const tagsQueryResult = await graphql<GatsbyTypes.AllTagNodeDummyQuery>(`
     query AllTagNode {
       allMdx {
         group(field: frontmatter___tags) {
@@ -39,7 +39,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
     }
   `)
 
-  if (postsQueryResult.errors) {
+  if (postsQueryResult.errors || tagsQueryResult.errors) {
     throw postsQueryResult.errors
   }
 
@@ -60,6 +60,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
       }
     })
   })
+
   // Create Tag Page
   // Extract tag data from query
   const tags = tagsQueryResult.data.allMdx.group
@@ -88,7 +89,11 @@ export const createPages: GatsbyNode["createPages"] = async ({
   buildPagination(posts)
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export const onCreateNode: GatsbyNode["onCreateNode"] = ({
+  node,
+  actions,
+  getNode
+}) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `Mdx`) {
@@ -104,7 +109,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 // firebase v9がnode.jsで利用できないパッケージを参照する対策
 // https://github.com/gatsbyjs/gatsby/issues/29012
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = ({
+  stage,
+  loaders,
+  actions
+}) => {
   if (stage === "build-html" || stage === "develop-html") {
     actions.setWebpackConfig({
       module: {
