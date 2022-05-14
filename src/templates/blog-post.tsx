@@ -27,10 +27,7 @@ const shortcodes = {
 }
 
 const BlogPostTemplate: React.FunctionComponent<
-  PageProps<
-    GatsbyTypes.BlogPostBySlugQuery,
-    GatsbyTypes.SitePage["pageContext"]
-  >
+  PageProps<GatsbyTypes.BlogPostBySlugQuery, GatsbyTypes.MdxEdge>
 > = (props) => {
   const { pageContext, data, location } = props
   const post = data.mdx
