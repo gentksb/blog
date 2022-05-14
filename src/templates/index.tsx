@@ -8,9 +8,10 @@ import Pagination from "../components/molecules/pagination"
 import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
+import { PaginationContext } from "../../gatsby-node"
 
 const BlogIndex: React.FunctionComponent<
-  PageProps<GatsbyTypes.IndexPageQuery, GatsbyTypes.SitePage["pageContext"]>
+  PageProps<GatsbyTypes.IndexPageQuery, PaginationContext>
 > = (props) => {
   const { data, location, pageContext } = props
   const { pageNumber } = pageContext
@@ -31,7 +32,7 @@ const BlogIndex: React.FunctionComponent<
       />
       <VStack maxW="100%">
         <PostList edges={edges} />
-        <Pagination props={props.pageContext} />
+        <Pagination paginationdata={props.pageContext} />
         <TagList />
       </VStack>
     </Layout>

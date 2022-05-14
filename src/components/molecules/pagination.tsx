@@ -2,15 +2,14 @@ import { Link } from "gatsby"
 import React from "react"
 import { Grid, Button, GridItem } from "@chakra-ui/react"
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons"
+import { PaginationContext } from "../../../gatsby-node"
 
 interface Props {
-  props: GatsbyTypes.SitePage["pageContext"]
-  previousPagePath?: string
-  nextPagePath?: string
+  paginationdata: PaginationContext
 }
 
-const Pagination: React.FunctionComponent<Props> = ({ props }) => {
-  const { previousPagePath, nextPagePath } = props
+const Pagination: React.FunctionComponent<Props> = (props) => {
+  const { previousPagePath, nextPagePath } = props.paginationdata
   const hasNewerPage = !!previousPagePath
   const hasOlderPage = !!nextPagePath
 
