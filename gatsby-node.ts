@@ -89,6 +89,16 @@ export const createPages: GatsbyNode["createPages"] = async ({
   buildPagination(posts)
 }
 
+export interface PaginationContext {
+  pageNumber: Number
+  humanPageNumber: Number
+  skip: Number
+  limit: Number
+  numberOfPages: Number
+  previousPagePath: string
+  nextPagePath: string
+}
+
 export const onCreateNode: GatsbyNode["onCreateNode"] = ({
   node,
   actions,
