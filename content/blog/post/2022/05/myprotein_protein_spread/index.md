@@ -68,3 +68,5 @@ cover: "./cover.jpg"
 非常に自然な味で、既存の食品からの置き換えに違和感なく使うことができる。
 
 そもそも、パンに塗る量が少ないのだから、マクロ栄養に対する影響がそこまで多くない……という指摘もできるか、1 食でタンパク質 6 グラムを甘味から得られるという点は大きい
+
+<LinkBox url="https://www.myprotein.jp/sports-nutrition/protein-spreads/11691950.html" linkUrl="https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-spreads%2F11691950.html" />
