@@ -46,7 +46,7 @@ cover: "./cover.jpg"
 ### 栄養成分
 
 [[scrollableTable]]
-| | 100g あたり | 70g あたり |
+| --- | 100g あたり | 70g あたり |
 |-------|------------------|-------------------|
 | エネルギー | 854 kJ/ 204 kcal | 598 kJ/ 143 kcal |
 | 脂質 | 0.1 g | 0.1 g |
@@ -59,7 +59,7 @@ cover: "./cover.jpg"
 
 エナジージェルの甘ったるさと違い、ヨーグルトの酸味とストロベリーの香料でフルーツ感が強く出ており、**非常に食べやすい一品**となっている。
 
-1 本で 143kcal あるので、[エナジーゼリーエリート](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fenergy-gel-elite-12-pack%2F11271257.html)(1 本 50g 100kcal)よりむしろ補給に向いている局面もあるのではないかと思える。
+1 本で 143kcal あるので、[エナジーゼリーエリート](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fenergy-gel-elite-12-pack%2F11271257.html)(1 本 50g 100kcal)より**むしろ補給に向いている局面もある**のではないかと思える。
 
 激しいロードレースやサーキットエンデューロの場合は、吸収効率に特化して糖質だけを取るという判断もメインになるが、**ロングライドやファストランではタンパク質も食べないと食事全体の栄養バランスが崩れてしまう**ので、こちらの方がむしろ向いている可能性すらあるのではないだろうか。
 
