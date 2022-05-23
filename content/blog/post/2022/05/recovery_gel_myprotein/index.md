@@ -12,6 +12,14 @@ cover: "./cover.jpg"
 
 減量中は、**必要以上のエネルギーを摂取しない目的**でこうした補助食品も頼りになる。食事だけから必要量の微量栄養素を取ろうとすると、オーバーカロリーになりやすいためだ。
 
+これまでのマイプロテイン食品レビューは以下の通り。
+
+<LinkBox url="https://blog.gensobunya.net/post/2022/05/myprotein_protein_spread/" />
+
+<LinkBox url="https://blog.gensobunya.net/post/2022/05/protein_granola/" />
+
+<LinkBox url="https://blog.gensobunya.net/post/2022/02/mp_lean_cookie/" />
+
 ## MYPROTEIN リカバリーゼリーエリート
 
 ![パッケージ](/cover.jpg)
