@@ -18,6 +18,10 @@ cover: "./cover.jpg"
 
 我らが[マイプロテイン](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+60WN6)様の Food カテゴリから、セールで買い込んだものを一つづつ紹介していく
 
+小腹が空いたときに食べる[リーン クッキー](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Flean-cookie%2F11200865.html)も再注文した。
+
+<LinkBox url="https://blog.gensobunya.net/post/2022/02/mp_lean_cookie/" />
+
 ## MYPROTEIN Protein Spread
 
 ![パッケージ](/package.jpg)
