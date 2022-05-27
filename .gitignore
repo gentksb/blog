@@ -70,9 +70,4 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-#vscode
-.vscode
-
-.vercel
-
 types/*
