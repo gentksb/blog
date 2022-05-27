@@ -1,5 +1,5 @@
 ---
-title: "MYPTOTEIN プロテインパンケーキミックス"
+title: "MYPTOTEIN プロテインパンケーキミックス(ビーガン版)"
 date: 2022-05-28
 draft: false
 tags: ["FOOD", "REVIEW"]
@@ -52,7 +52,7 @@ cover: "./cover.jpg"
 
 なお、ビーガン版は 10g のところ、**[通常版のパンケーキミックス](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-pancake-mix%2F10867261.html)は 34g もタンパク質が含まれている**。圧倒的にこちらを買った方がいい……正直ミスった
 
-## 調理・味
+## 調理
 
 気を取り直して調理に移る。
 
@@ -67,3 +67,15 @@ cover: "./cover.jpg"
 ![じっくり弱火で火を通す](./yaki.jpg)
 
 コツは、薄く生地を伸ばして弱火で中まで火が通るように焼くこと。**自力で膨らむホットケーキと違い、パンケーキは本当に生地に火を通すだけなので、厚いと半生になりやすい。**
+
+## 味
+
+食感はいい！匂いはかなりソイプロテインだ
+
+バターはなくても大丈夫だが、**ジャムやメープルシロップがないと大豆の香りが強くて食べづらい**。
+
+それに、ビーガン食品のせいだろうが**乳製品や卵が入っていないため、どうにも味にコクがない**
+
+どう考えても通常版を買うべきだ。こちらを買ってまたレビューしたいと思う。
+
+<LinkBox url="https://www.myprotein.jp/sports-nutrition/protein-pancake-mix/10867261.html" linkUrl="https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-pancake-mix%2F10867261.html" />
