@@ -7,8 +7,8 @@ interface Props {
 }
 
 const TagList: React.FunctionComponent<Props> = ({ targetTag }) => {
-  const data: GatsbyTypes.TagListQuery =
-    useStaticQuery<GatsbyTypes.TagListQuery>(graphql`
+  const data: Queries.TagListQuery =
+    useStaticQuery<Queries.TagListQuery>(graphql`
       query TagList {
         allMdx(filter: { frontmatter: { draft: { eq: false } } }) {
           group(field: frontmatter___tags) {
@@ -33,8 +33,8 @@ const TagList: React.FunctionComponent<Props> = ({ targetTag }) => {
       >
         <Button
           key={tag}
-          icon={<Tag />}
-          label={`${tag}:${count}`}
+          leftIcon={<Tag />}
+          aria-label={`${tag}:${count}`}
           size="sm"
           variant="solid"
           colorScheme={buttonColor}

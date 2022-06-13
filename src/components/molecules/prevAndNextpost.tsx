@@ -4,8 +4,8 @@ import { Grid, Button, GridItem, Text } from "@chakra-ui/react"
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons"
 
 interface Props {
-  previous?: GatsbyTypes.MdxEdge["previous"]
-  next?: GatsbyTypes.MdxEdge["next"]
+  previous?: Queries.MdxEdge["previous"]
+  next?: Queries.MdxEdge["next"]
 }
 
 const PrevAndNextPost: React.FunctionComponent<Props> = ({

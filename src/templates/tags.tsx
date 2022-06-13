@@ -7,8 +7,12 @@ import SEO from "../components/utils/seo"
 import PostList from "../components/organisms/postList"
 import TagList from "../components/molecules/tagList"
 
+type PageContext = {
+  tag: string
+}
+
 const Tags: React.FunctionComponent<
-  PageProps<GatsbyTypes.TagPageQuery, GatsbyTypes.SitePage["pageContext"]>
+  PageProps<Queries.TagPageQuery, PageContext>
 > = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges } = data.allMdx

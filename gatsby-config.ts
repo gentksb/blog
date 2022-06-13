@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
+  graphqlTypegen: true,
   siteMetadata: {
     title: `幻想サイクル`,
     author: `Gen`,
@@ -14,7 +15,7 @@ const config: GatsbyConfig = {
     }
   },
   plugins: [
-    `gatsby-plugin-typegen`,
+    // `gatsby-plugin-typegen`,
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
