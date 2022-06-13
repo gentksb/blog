@@ -9,7 +9,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
 }) => {
   const { createPage } = actions
 
-  const postsQueryResult = await graphql<GatsbyTypes.AllPostNodeDummyQuery>(`
+  const postsQueryResult = await graphql<Queries.AllPostNodeQuery>(`
     query AllPostNode {
       allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
@@ -29,7 +29,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
     }
   `)
 
-  const tagsQueryResult = await graphql<GatsbyTypes.AllTagNodeDummyQuery>(`
+  const tagsQueryResult = await graphql<Queries.AllTagNodeQuery>(`
     query AllTagNode {
       allMdx {
         group(field: frontmatter___tags) {

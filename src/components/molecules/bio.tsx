@@ -3,8 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio: React.FunctionComponent = () => {
-  const data: GatsbyTypes.BioComponentQuery =
-    useStaticQuery<GatsbyTypes.BioComponentQuery>(graphql`
+  const data: Queries.BioComponentQuery =
+    useStaticQuery<Queries.BioComponentQuery>(graphql`
       query BioComponent {
         site {
           siteMetadata {

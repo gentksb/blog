@@ -11,7 +11,7 @@ import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 import { PaginationContext } from "../../gatsby-node"
 
 const BlogIndex: React.FunctionComponent<
-  PageProps<GatsbyTypes.IndexPageQuery, PaginationContext>
+  PageProps<Queries.IndexPageQuery, PaginationContext>
 > = (props) => {
   const { data, location, pageContext } = props
   const { pageNumber } = pageContext

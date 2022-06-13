@@ -17,7 +17,7 @@ import PostCoverImage from "../atoms/postCoverImage"
 import { convertMdxDateToIsoJstDate } from "../../utils/convertMdxDateToIsoJstDate"
 
 interface Props {
-  edges: GatsbyTypes.IndexPageQuery["allMdx"]["edges"]
+  edges: Queries.IndexPageQuery["allMdx"]["edges"]
 }
 
 const postList: React.FunctionComponent<Props> = ({ edges }) => {
