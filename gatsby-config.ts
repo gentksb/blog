@@ -15,7 +15,6 @@ const config: GatsbyConfig = {
     }
   },
   plugins: [
-    // `gatsby-plugin-typegen`,
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
