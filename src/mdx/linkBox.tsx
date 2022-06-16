@@ -55,11 +55,16 @@ const LinkBox: React.FunctionComponent<Props> = ({
       const functions = getFunctions(getApp(), "asia-northeast1")
       if (process.env.NODE_ENV === "development") {
         //未完成：Codespacesであることを検知してAPIの投げ向きを変えたい
-        const localhost = process.env.CODESPACES
-          ? `${process.env.CODESPACE_NAME}-5001`
+        const localhost = process.env.GATSBY_CODESPACES
+          ? `${process.env.GATSBY_CODESPACE_NAME}-5001.githubpreview.dev`
           : "localhost"
-        const localport = process.env.CODESPACES ? 80 : 5001
-        console.log("connect localhost api", localhost)
+        const localport = process.env.GATSBY_CODESPACES ? 80 : 5001
+        console.log(
+          "connect localhost api",
+          localhost,
+          process.env.GATSBY_CODESPACES,
+          process.env.GATSBY_CODESPACE_NAME
+        )
         connectFunctionsEmulator(functions, localhost, localport)
         //未完成ここまで
       }
