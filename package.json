@@ -79,7 +79,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -o",
-    "dev": "GATSBY_CODESPACES=$CODESPACES && echo $GATSBY_CODESPACES && GATSBY_CODESPACE_NAME=$CODESPACE_NAME && npm run develop",
+    "dev": "GATSBY_CODESPACES=$CODESPACES GATSBY_CODESPACE_NAME=$CODESPACE_NAME npm run develop",
     "format": "prettier --write \"**/*.{js,jsx,json}\"",
     "start": "npm run serve",
     "serve": "gatsby build && gatsby serve",
