@@ -2117,13 +2117,6 @@ declare namespace Queries {
     sort: InputMaybe<SitePluginSortInput>
   }
 
-  type Query_allStaticImageArgs = {
-    filter: InputMaybe<StaticImageFilterInput>
-    limit: InputMaybe<Scalars["Int"]>
-    skip: InputMaybe<Scalars["Int"]>
-    sort: InputMaybe<StaticImageSortInput>
-  }
-
   type Query_directoryArgs = {
     absolutePath: InputMaybe<StringQueryOperatorInput>
     accessTime: InputMaybe<DateQueryOperatorInput>
@@ -2905,25 +2898,6 @@ declare namespace Queries {
     readonly totalCount: Scalars["Int"]
   }
 
-  type SiteGraphqlTypegenFilterInput = {
-    readonly generateOnBuild: InputMaybe<BooleanQueryOperatorInput>
-    readonly typesOutputPath: InputMaybe<StringQueryOperatorInput>
-  }
-
-  type SiteGroupConnection = {
-    readonly distinct: ReadonlyArray<Scalars["String"]>
-    readonly edges: ReadonlyArray<SiteEdge>
-    readonly field: Scalars["String"]
-    readonly fieldValue: Maybe<Scalars["String"]>
-    readonly group: ReadonlyArray<SiteGroupConnection>
-    readonly max: Maybe<Scalars["Float"]>
-    readonly min: Maybe<Scalars["Float"]>
-    readonly nodes: ReadonlyArray<Site>
-    readonly pageInfo: PageInfo
-    readonly sum: Maybe<Scalars["Float"]>
-    readonly totalCount: Scalars["Int"]
-  }
-
   type SiteGroupConnection_distinctArgs = {
     field: SiteFieldsEnum
   }
@@ -3452,49 +3426,35 @@ declare namespace Queries {
     readonly regex: InputMaybe<Scalars["String"]>
   }
 
-  type StaticImage_accessTimeArgs = {
-    difference: InputMaybe<Scalars["String"]>
-    formatString: InputMaybe<Scalars["String"]>
-    fromNow: InputMaybe<Scalars["Boolean"]>
-    locale: InputMaybe<Scalars["String"]>
+  type TransformOptions = {
+    readonly cropFocus: InputMaybe<ImageCropFocus>
+    readonly duotone: InputMaybe<DuotoneGradient>
+    readonly fit: InputMaybe<ImageFit>
+    readonly grayscale: InputMaybe<Scalars["Boolean"]>
+    readonly rotate: InputMaybe<Scalars["Int"]>
+    readonly trim: InputMaybe<Scalars["Float"]>
   }
 
-  type StaticImage_atimeArgs = {
-    difference: InputMaybe<Scalars["String"]>
-    formatString: InputMaybe<Scalars["String"]>
-    fromNow: InputMaybe<Scalars["Boolean"]>
-    locale: InputMaybe<Scalars["String"]>
+  type WebPOptions = {
+    readonly quality: InputMaybe<Scalars["Int"]>
   }
 
-  type StaticImage_birthTimeArgs = {
-    difference: InputMaybe<Scalars["String"]>
-    formatString: InputMaybe<Scalars["String"]>
-    fromNow: InputMaybe<Scalars["Boolean"]>
-    locale: InputMaybe<Scalars["String"]>
-  }
+  type BioComponentQueryVariables = Exact<{ [key: string]: never }>
 
-  type StaticImage_birthtimeArgs = {
-    difference: InputMaybe<Scalars["String"]>
-    formatString: InputMaybe<Scalars["String"]>
-    fromNow: InputMaybe<Scalars["Boolean"]>
-    locale: InputMaybe<Scalars["String"]>
-  }
-
-  type StaticImage_changeTimeArgs = {
-    difference: InputMaybe<Scalars["String"]>
-    formatString: InputMaybe<Scalars["String"]>
-    fromNow: InputMaybe<Scalars["Boolean"]>
-    locale: InputMaybe<Scalars["String"]>
+  type BioComponentQuery = {
+    readonly site: {
+      readonly siteMetadata: {
+        readonly author: string | null
+        readonly social: {
+          readonly twitter: string | null
+          readonly github: string | null
+          readonly instagram: string | null
+        } | null
+      } | null
+    } | null
   }
 
   type TagListQueryVariables = Exact<{ [key: string]: never }>
-
-  type StaticImage_modifiedTimeArgs = {
-    difference: InputMaybe<Scalars["String"]>
-    formatString: InputMaybe<Scalars["String"]>
-    fromNow: InputMaybe<Scalars["Boolean"]>
-    locale: InputMaybe<Scalars["String"]>
-  }
 
   type TagListQuery = {
     readonly allMdx: {
@@ -3537,11 +3497,43 @@ declare namespace Queries {
     } | null
   }
 
+  type IndexPageQueryVariables = Exact<{
+    skip: Scalars["Int"]
+    limit: Scalars["Int"]
+  }>
   type NotFoundPageQueryVariables = Exact<{ [key: string]: never }>
 
   type NotFoundPageQuery = {
     readonly site: {
       readonly siteMetadata: { readonly title: string | null } | null
+    } | null
+  }
+
+  type BlogPostBySlugQueryVariables = Exact<{
+    slug: Scalars["String"]
+  }>
+
+  type BlogPostBySlugQuery = {
+    readonly site: {
+      readonly siteMetadata: {
+        readonly title: string | null
+        readonly author: string | null
+      } | null
+    } | null
+    readonly mdx: {
+      readonly body: string
+      readonly excerpt: string
+      readonly id: string
+      readonly frontmatter: {
+        readonly date: string | null
+        readonly title: string
+        readonly tags: ReadonlyArray<string | null> | null
+        readonly cover: {
+          readonly childImageSharp: {
+            readonly gatsbyImageData: import("gatsby-plugin-image").IGatsbyImageData
+          } | null
+        } | null
+      } | null
     } | null
   }
 
@@ -3579,32 +3571,33 @@ declare namespace Queries {
     readonly siteBuildMetadata: { readonly buildTime: string | null } | null
   }
 
-  type BlogPostBySlugQueryVariables = Exact<{
-    slug: Scalars["String"]
-  }>
-
-  type BlogPostBySlugQuery = {
+  type IndexPageQuery = {
     readonly site: {
       readonly siteMetadata: {
         readonly title: string | null
-        readonly author: string | null
+        readonly description: string | null
       } | null
     } | null
-    readonly mdx: {
-      readonly body: string
-      readonly excerpt: string
-      readonly id: string
-      readonly frontmatter: {
-        readonly date: string | null
-        readonly title: string
-        readonly tags: ReadonlyArray<string | null> | null
-        readonly cover: {
-          readonly childImageSharp: {
-            readonly gatsbyImageData: import("gatsby-plugin-image").IGatsbyImageData
+    readonly allMdx: {
+      readonly edges: ReadonlyArray<{
+        readonly node: {
+          readonly id: string
+          readonly fields: { readonly slug: string | null } | null
+          readonly frontmatter: {
+            readonly date: string | null
+            readonly title: string
+            readonly tags: ReadonlyArray<string | null> | null
+            readonly draft: boolean | null
+            readonly cover: {
+              readonly childImageSharp: {
+                readonly gatsbyImageData: import("gatsby-plugin-image").IGatsbyImageData
+              } | null
+            } | null
           } | null
-        } | null
-      } | null
-    } | null
+        }
+      }>
+    }
+    readonly siteBuildMetadata: { readonly buildTime: string | null } | null
   }
 
   type TagPageQueryVariables = Exact<{
@@ -3774,8 +3767,6 @@ declare namespace Queries {
 
   type AllPostNodeQueryVariables = Exact<{ [key: string]: never }>
 
-  type TagListQueryVariables = Exact<{ [key: string]: never }>
-
   type AllPostNodeQuery = {
     readonly allMdx: {
       readonly edges: ReadonlyArray<{
@@ -3783,27 +3774,6 @@ declare namespace Queries {
           readonly fields: { readonly slug: string | null } | null
           readonly frontmatter: { readonly title: string } | null
         }
-      }>
-    }
-  }
-
-  type AllPostNodeQueryVariables = Exact<{ [key: string]: never }>
-
-  type AllPostNodeQuery = {
-    readonly allMdx: {
-      readonly edges: ReadonlyArray<{
-        readonly node: {
-          readonly fields: { readonly slug: string | null } | null
-          readonly frontmatter: { readonly title: string } | null
-        }
-        readonly next: {
-          readonly fields: { readonly slug: string | null } | null
-          readonly frontmatter: { readonly title: string } | null
-        } | null
-        readonly previous: {
-          readonly fields: { readonly slug: string | null } | null
-          readonly frontmatter: { readonly title: string } | null
-        } | null
       }>
     }
   }

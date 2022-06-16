@@ -54,7 +54,14 @@ const LinkBox: React.FunctionComponent<Props> = ({
     try {
       const functions = getFunctions(getApp(), "asia-northeast1")
       if (process.env.NODE_ENV === "development") {
-        connectFunctionsEmulator(functions, "localhost", 5001)
+        //未完成：Codespacesであることを検知してAPIの投げ向きを変えたい
+        const localhost = process.env.CODESPACES
+          ? `${process.env.CODESPACE_NAME}-5001`
+          : "localhost"
+        const localport = process.env.CODESPACES ? 80 : 5001
+        console.log("connect localhost api", localhost)
+        connectFunctionsEmulator(functions, localhost, localport)
+        //未完成ここまで
       }
 
       const getOgpData = httpsCallable(functions, "getOgpLinkData")
