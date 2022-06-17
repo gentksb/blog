@@ -54,11 +54,10 @@ const LinkBox: React.FunctionComponent<Props> = ({
     try {
       const functions = getFunctions(getApp(), "asia-northeast1")
       if (process.env.NODE_ENV === "development") {
-        //未完成：Codespacesであることを検知してAPIの投げ向きを変えたい
         const localhost = process.env.GATSBY_CODESPACES
           ? `${process.env.GATSBY_CODESPACE_NAME}-5001.githubpreview.dev`
           : "localhost"
-        const localport = process.env.GATSBY_CODESPACES ? 80 : 5001
+        const localport = process.env.GATSBY_CODESPACES ? 443 : 5001
         console.log(
           "connect localhost api",
           localhost,
@@ -66,7 +65,8 @@ const LinkBox: React.FunctionComponent<Props> = ({
           process.env.GATSBY_CODESPACE_NAME
         )
         connectFunctionsEmulator(functions, localhost, localport)
-        //未完成ここまで
+        //WIP: HTTPで投げちゃう。エミュレーターでハードコードされている
+        //https://github.com/firebase/firebase-js-sdk/blob/master/packages/functions/src/service.ts
       }
 
       const getOgpData = httpsCallable(functions, "getOgpLinkData")
