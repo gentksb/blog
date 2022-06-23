@@ -23,20 +23,20 @@ tags: ["TIPS", "TOURING"]
 
 まずは埼玉県所沢市の三ヶ島ペダル。
 
-地味なメーカーだが回転の良さと、工具無しで取り外すことができる Ezy ペダルには定評がある。
+地味なメーカーだが回転の良さと、工具無しで取り外すことができるEzyペダルには定評がある。
 
-寄付額は 10000/15000/25000 円で別れており、それぞれ<a href="https://www.amazon.co.jp/dp/B001F2WTLU/gensobunya-22/ref=nosim/" target="_blank">LAMBDA</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00ME93CG4/gensobunya-22/ref=nosim/" target="_blank">PRIME SYLVAN TOURING</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OOII5CO/" target="_blank">CYGMA Ezy</a>を返礼品としてもらうことが出来る。
+寄付額は10000/15000/25000円で別れており、それぞれ<a href="https://www.amazon.co.jp/dp/B001F2WTLU/gensobunya-22/ref=nosim/" target="_blank">LAMBDA</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00ME93CG4/gensobunya-22/ref=nosim/" target="_blank">PRIME SYLVAN TOURING</a>、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00OOII5CO/" target="_blank">CYGMA Ezy</a>を返礼品としてもらうことが出来る。
 
-特にシグマ Ezy は輪行時に威力を発揮するのでツーリング派は是非視野に入れて欲しい。
+特にシグマEzyは輪行時に威力を発揮するのでツーリング派は是非視野に入れて欲しい。
 
 ### モンベルポイント
 
   <img border="0" height="108" src="./montbelllogo.jpg" width="640" />
 
 ~~こいつがド本命。~~  
-2018/09/15 追記：ふるさと納税規制の結果、交換できる自治体が消滅した。残念。
+2018/09/15追記：ふるさと納税規制の結果、交換できる自治体が消滅した。残念。
 
-テントなどをもらえる納税もあるが、概ね寄付額の 50％＋ 1 年の会員権を返礼品としてもらうことができる。
+テントなどをもらえる納税もあるが、概ね寄付額の50％＋ 1年の会員権を返礼品としてもらうことができる。
 
 ありがとう<a href="http://www.furusato-tax.jp/japan/prefecture/20486" target="_blank">長野県小谷村</a>。
 

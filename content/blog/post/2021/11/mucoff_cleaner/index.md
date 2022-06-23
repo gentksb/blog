@@ -12,13 +12,13 @@ cover: "./cover.jpg"
 
 普段は代用品ばかり推していることが多い筆者だが、専用品としてのメリットがある商品は積極的に使うことも多い
 
-今回紹介する[Muc-Off ナノテックバイククリーナー](https://amzn.to/3GZvYpO)もそのうちの一つだ。
+今回紹介する[Muc-Off ナノテックバイククリーナー](https://amzn.to/3GZvYpO)もそのうちの1つだ。
 
 <LinkBox url="https://www.amazon.co.jp/gp/product/B07T1YW9BW/" isAmazonLink />
 
 泥にまみれたタイヤなど、**単純な水洗いや高圧洗浄では泥の跡が落ち切らないことも多い**が、きれいさっぱり黒さを取り戻してくれる。
 
-砂ほこりにまみれた JCX 幕張後のタイヤもこの通り。
+砂ほこりにまみれたJCX幕張後のタイヤもこの通り。
 
 ![洗う前2](./before_tyre.jpg)
 
@@ -26,7 +26,7 @@ cover: "./cover.jpg"
 
 タイヤのトレッド部分が、新品と見まごうばかりの黒さを取り戻している。
 
-CX や MTB など、オフロードはもちろんのこと。ロードバイクも路上の埃や汚れ、排気ガスの細かい粒子など取りづらい汚れであふれているが、このクリーナーを使うことでスッキリ洗い落とすことができる。
+CXやMTBなど、オフロードはもちろんのこと。ロードバイクも路上の埃や汚れ、排気ガスの細かい粒子など取りづらい汚れであふれているが、このクリーナーを使うことでスッキリ洗い落とすことができる。
 
 > 汚れやホコリを顕微鏡レベルで分解するナノテクノロジーで作られ、強い洗浄力を発揮。
 >
@@ -82,13 +82,13 @@ CX や MTB など、オフロードはもちろんのこと。ロードバイク
 
 <LinkBox url="https://www.amazon.co.jp/gp/product/B01LZ4WFNF/" isAmazonLink />
 
-気が付いたら Muc-off から[洗車用のスクラブグローブ](https://amzn.to/3c6tZSB)も登場していたので、こちらを使ってもよさそう。
+気が付いたらMuc-offから[洗車用のスクラブグローブ](https://amzn.to/3c6tZSB)も登場していたので、こちらを使ってもよさそう。
 
 <LinkBox url="https://www.amazon.co.jp/gp/product/B09KL22CKH/" isAmazonLink />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fEcIikdl6yE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-このグローブ、謎のエロい PV まで用意されていた
+このグローブ、謎のエロいPVまで用意されていた
 
 ### 4. ゆすぎ
 
@@ -96,7 +96,7 @@ CX や MTB など、オフロードはもちろんのこと。ロードバイク
 
 タイヤのブラッシングが終わるころには数分経っているので、全体に水を流してクリーナーを落としていく。
 
-泡が残ると、落とした泥の粒子も残ってしまうので BB 下やホイールの下になっているところに濯ぎ残しが無いようにする。
+泡が残ると、落とした泥の粒子も残ってしまうのでBB下やホイールの下になっているところに濯ぎ残しが無いようにする。
 
 ### 5. 乾燥
 
@@ -106,7 +106,7 @@ CX や MTB など、オフロードはもちろんのこと。ロードバイク
 
 自転車をバウンドさせたり吊ったりして、水気をあらかた切ったあと拭き上げて完了。
 
-15 分ちょっとの作業で、室内に持ち込んでも全く問題ない状態にすることができた。
+15分ちょっとの作業で、室内に持ち込んでも全く問題ない状態にできた。
 
 大抵この洗車作業はレース後になるので、チェーンの注油くらいはしておく。
 
@@ -116,11 +116,11 @@ CX や MTB など、オフロードはもちろんのこと。ロードバイク
 
 <LinkBox url="https://www.amazon.co.jp/gp/product/B07T22FKHB/" isAmazonLink />
 
-※画像は 5L パッケージだけど商品は 500ml なので注意
+※画像は5Lパッケージだけど商品は500mlなので注意
 
 <LinkBox url="https://www.wiggle.jp/muc-off-%E6%BF%83%E7%B8%AE%E3%83%90%E3%82%A4%E3%82%AF%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8A%E3%83%BC-1l-" linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=886932159&vc_url=https%3A%2F%2Fwww.wiggle.jp%2Fmuc-off-%25E6%25BF%2583%25E7%25B8%25AE%25E3%2583%2590%25E3%2582%25A4%25E3%2582%25AF%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%258A%25E3%2583%25BC-1l-%3Futm_source%3Dvaluecommerce%26utm_medium%3Daffiliates%26utm_campaign%3Daffiliate-website" />
 
-濃縮版が 1L あれば、2 バイク運用の CXer が 2 シーズンくらいは困ることなく利用できると思う。
+濃縮版が1Lあれば、2バイク運用のCXerが2シーズンくらいは困ることなく利用できると思う。
 
 自分は濃縮版だけを購入して、花王の詰め替え容器で薄めたものを利用している。
 
@@ -138,9 +138,9 @@ CX や MTB など、オフロードはもちろんのこと。ロードバイク
 
 このナノテッククリーナー、セールの時はそれなりに安く売られていることも多いのだが、昨今の品不足に伴いセールには期待できない状況が続いている。
 
-代わりに、Muc-off から[Winter キット](https://www.wiggle.jp/muc-off-%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%AD%E3%83%83%E3%83%88)なるものが発売されている。
+代わりに、Muc-offから[Winter キット](https://www.wiggle.jp/muc-off-%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%AD%E3%83%83%E3%83%88)なるものが発売されている。
 
-こちらは、濃縮 1L のパッケージとほぼ同価格でその他諸々ついてくるお得なパックとなっているので、これから購入する人はこちらを買うのがいいだろう。
+こちらは、濃縮1Lのパッケージとほぼ同価格でその他諸々ついてくるお得なパックとなっているので、これから購入する人はこちらを買うのがいいだろう。
 
 <PositiveBox>
 

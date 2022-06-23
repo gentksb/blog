@@ -6,7 +6,7 @@ tags: ["FOOD", "REVIEW"]
 cover: "./cover.jpg"
 ---
 
-プロテイン食品レビューシリーズ第 3 弾は[リカバリージェル](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Frecovery-gel-elite%2F11214831.html)だ
+プロテイン食品レビューシリーズ第3弾は[リカバリージェル](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Frecovery-gel-elite%2F11214831.html)だ
 
 こちらは食事ではなく、ワークアウト中・後に不足している栄養成分を素早く摂取するためのもの。
 
@@ -26,7 +26,7 @@ cover: "./cover.jpg"
 
 > タンパク質と炭水化物を BCAA とグルタミンとミックス。リカバリーに必要な成分がこれ１本に！健康を維持し、運動後のカラダの修復をするのにオススメです。
 
-売り文句にあるように、単純にホエイプロテインだけでなく BCAA の状態でタンパク質を摂ることができ、**吸収率も考えられている**食品となっている
+売り文句にあるように、単純にホエイプロテインだけでなくBCAAの状態でタンパク質を摂ることができ、**吸収率も考えられている**食品となっている
 
 主な成分は、**26％を占める「ギリシャ風ヨーグルト」**。
 
@@ -59,7 +59,7 @@ cover: "./cover.jpg"
 
 エナジージェルの甘ったるさと違い、ヨーグルトの酸味とストロベリーの香料でフルーツ感が強く出ており、**非常に食べやすい一品**となっている。
 
-1 本で 143kcal あるので、[エナジーゼリーエリート](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fenergy-gel-elite-12-pack%2F11271257.html)(1 本 50g 100kcal)より**むしろ補給に向いている局面もある**のではないかと思える。
+1本で143kcalあるので、[エナジーゼリーエリート](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fenergy-gel-elite-12-pack%2F11271257.html)(1本50g 100kcal)より**むしろ補給に向いている局面もある**のではないかと思える。
 
 激しいロードレースやサーキットエンデューロの場合は、吸収効率に特化して糖質だけを取るという判断もメインになるが、**ロングライドやファストランではタンパク質も食べないと食事全体の栄養バランスが崩れてしまう**ので、こちらの方がむしろ向いている可能性すらあるのではないだろうか。
 
@@ -67,6 +67,6 @@ cover: "./cover.jpg"
 
 タンパク質・ビタミン・BCAA・電解質を摂りつつ、エネルギーもエナジージェル以上に摂取できる万能補給食。
 
-低中強度で 1 日走り続ける場合は、むしろエナジージェルよりおすすめ。
+低中強度で1日走り続ける場合は、むしろエナジージェルよりおすすめ。
 
 <LinkBox url="https://www.myprotein.jp/sports-nutrition/recovery-gel-elite/11214831.html" linkUrl="https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Frecovery-gel-elite%2F11214831.html" />

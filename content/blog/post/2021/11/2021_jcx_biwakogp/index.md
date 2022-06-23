@@ -16,7 +16,7 @@ cover: "./cover.jpg"
 
 ## リザルト
 
-54/79 位(-4 lap)
+54/79位（-4 lap)
 
 ### 機材
 
@@ -32,7 +32,7 @@ cover: "./cover.jpg"
 
 急斜面を駆け上がるセクションが数か所用意されており、エリートレーサーたちがガッツリラインを試していた。どう考えても乗車クリアとそれ以外でタイムが開く。
 
-キャンバーそのものは楽しいので、1 時間ほど楽しんだ。前日試走組の様子はこちら。
+キャンバーそのものは楽しいので、1時間ほど楽しんだ。前日試走組の様子はこちら。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/89-ku-KMvbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -44,15 +44,15 @@ cover: "./cover.jpg"
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ODqRriRlmeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-スタートの落車に巻き込まれ、大きく順位を落とす。その後、キャンバーでジャンプアップするものの、集中力を維持できず細かいミスを繰り返し、中々上がったポジションをキープできずに 54 位に沈んだ。
+スタートの落車に巻き込まれ、大きく順位を落とす。その後、キャンバーでジャンプアップするものの、集中力を維持できず細かいミスを繰り返し、中々上がったポジションをキープできずに54位に沈んだ。
 
 オンボードは諸事情でスタートだけ。
 
-昼試走から時間が開き、なんとなく空気圧を調べたらセッティングより落ちていたので、試走時より 0.05bar 高めていたのがよくなく、平坦セクションの伸びが非常に悪かった。前日試走の空気圧（昼試走の-0.1bar）でも良かった気がする。
+昼試走から時間が開き、なんとなく空気圧を調べたらセッティングより落ちていたので、試走時より0.05bar高めていたのがよくなく、平坦セクションの伸びが非常に悪かった。前日試走の空気圧（昼試走の-0.1bar）でも良かった気がする。
 
-リアエンドも曲げてしまい、今週に復旧が必要な状態に。GIANT はこういうとき GPM 以上のディーラーに頼めば 2 日でスペアが届くのでありがたい。
+リアエンドも曲げてしまい、今週に復旧が必要な状態に。GIANTはこういうときGPM以上のディーラーに頼めば2日でスペアが届くのでありがたい。
 
-久しぶりに関西に顔を出せて、懐かしいメンツに挨拶できたはいいものの、今年分の JCF ランキングには何の影響ももたらさない遠征になってしまった…
+久しぶりに関西に顔を出せて、懐かしいメンツに挨拶できたはいいものの、今年分のJCFランキングには何の影響ももたらさない遠征になってしまった…
 
 ## Photo
 
