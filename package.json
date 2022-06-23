@@ -51,11 +51,11 @@
     "typeface-roboto": "1.1.13"
   },
   "devDependencies": {
+    "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^17.0.42",
     "@types/react": "^17.0.45",
     "@types/react-dom": "^17.0.17",
     "prettier": "^2.6.2",
-    "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "textlint": "^12.1.1",
     "textlint-rule-ja-no-abusage": "^3.0.0",
     "textlint-rule-ja-no-redundant-expression": "^4.0.1",
@@ -67,7 +67,6 @@
     "textlint-rule-no-mix-dearu-desumasu": "^5.0.0",
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
     "textlint-rule-no-todo": "^2.0.1",
-    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
     "textlint-rule-preset-jtf-style": "^2.3.12"
   },
   "homepage": "https://blog.gensobunya.net/",
@@ -85,6 +84,7 @@
     "start": "npm run serve",
     "serve": "gatsby build && gatsby serve",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "textlint": "textlint 'content/blog/post/202*/**'",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   }
 }
