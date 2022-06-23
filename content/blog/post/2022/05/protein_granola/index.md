@@ -6,13 +6,13 @@ tags: ["FOOD", "REVIEW"]
 cover: "./cover.jpg"
 ---
 
-プロテイン食品レビューシリーズ第 2 弾は[プロテイングラノーラ](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-granola%2F11091293.html)だ
+プロテイン食品レビューシリーズ第2弾は[プロテイングラノーラ](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-granola%2F11091293.html)だ
 
 こちらも目的は**自然に置き換えられるメニューで、朝食の一部からタンパク質を摂取する**こと
 
 食物繊維・適切なカロリー・（主に牛乳の影響で）バランスの取れた栄養成分になることで定評のあるグラノーラにさらにタンパク質を追加していく。
 
-第 1 弾はプロテインスプレッドをレビューした。今回で朝食メニューをパンとグラノーラでローテーションできることになる。
+第1弾はプロテインスプレッドをレビューした。今回で朝食メニューをパンとグラノーラでローテーションできることになる。
 
 <LinkBox url="https://blog.gensobunya.net/post/2022/05/myprotein_protein_spread/" />
 
@@ -20,7 +20,7 @@ cover: "./cover.jpg"
 
 ![パッケージ](/cover.jpg)
 
-堂々の 750g パッケージ、もし外したらと思うと中々踏み出せない量だ。
+堂々の750gパッケージ、もし外したらと思うと中々踏み出せない量だ。
 
 <PositiveBox>
 

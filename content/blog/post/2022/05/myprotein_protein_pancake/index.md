@@ -6,7 +6,7 @@ tags: ["FOOD", "REVIEW"]
 cover: "./cover.jpg"
 ---
 
-プロテイン食品レビューシリーズ第 4 弾は[プロテインパンケーキミックス](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fvegan-protein-pancake-mix%2F11802970.html)だ
+プロテイン食品レビューシリーズ第4弾は[プロテインパンケーキミックス](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fvegan-protein-pancake-mix%2F11802970.html)だ
 
 [プロテイングラノーラ](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-granola%2F11091293.html)などと同じく、**朝食の置き換えで、タンパク質を自然に摂取する**のが狙い。
 
@@ -49,9 +49,9 @@ cover: "./cover.jpg"
 
 **1 食辺りのタンパク質量は 10g**と、マイプロテイン食品にしては控えめ。
 
-だが、実際は 1 枚分 50g のパンケーキミックスに対して、**70ml ほどの牛乳や無脂肪乳を合わせるので、実質的な 1 食辺りタンパク質は更に多く**なる。
+だが、実際は1枚分50gのパンケーキミックスに対して、**70ml ほどの牛乳や無脂肪乳を合わせるので、実質的な 1 食辺りタンパク質は更に多く**なる。
 
-なお、ビーガン版は 10g のところ、**[通常版のパンケーキミックス](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-pancake-mix%2F10867261.html)は 34g もタンパク質が含まれている**。圧倒的にこちらを買った方がいい……正直ミスった
+なお、ビーガン版は10gのところ、**[通常版のパンケーキミックス](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-pancake-mix%2F10867261.html)は 34g もタンパク質が含まれている**。圧倒的にこちらを買った方がいい……正直ミスった
 
 ## 調理
 

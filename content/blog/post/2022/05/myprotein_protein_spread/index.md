@@ -8,7 +8,7 @@ cover: "./cover.jpg"
 
 ![見た目は普通のヌテラっぽいもの](/cover.jpg)
 
-家庭持ちになってしまい、マグマのような減量食を 3 食分作り置き、食べきるというストイックで徹底した食生活を送ることは難しくなってしまった。
+家庭持ちになってしまい、マグマのような減量食を3食分作り置き、食べきるというストイックで徹底した食生活を送ることは難しくなってしまった。
 
 <LinkBox url="https://blog.gensobunya.net/post/2021/06/magma_cyclist/" />
 
@@ -16,7 +16,7 @@ cover: "./cover.jpg"
 
 そんな状況下でも、夏の**減量のお供となるよう、基本的な食事スタイルを変えず、高たんぱく食を維持する食品**に興味が出てきた。
 
-我らが[マイプロテイン](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+60WN6)様の Food カテゴリから、セールで買い込んだものを一つづつ紹介していく
+我らが[マイプロテイン](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+60WN6)様のFoodカテゴリから、セールで買い込んだものを1つづつ紹介していく
 
 小腹が空いたときに食べる[リーン クッキー](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Flean-cookie%2F11200865.html)も再注文した。
 
@@ -28,7 +28,7 @@ cover: "./cover.jpg"
 
 最初の候補はこれ、[プロテイン スプレッド](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-spreads%2F11691950.html)だ
 
-フレーバーは「ミルクチョコレート」「ホワイトチョコレート」「チョコレートヘーゼルナッツ」の 3 つ。『ヌテラに似ている！』とレビューされていた「チョコレートヘーゼルナッツ」味を注文した。
+フレーバーは「ミルクチョコレート」「ホワイトチョコレート」「チョコレートヘーゼルナッツ」の3つ。『ヌテラに似ている！』とレビューされていた「チョコレートヘーゼルナッツ」味を注文した。
 
 <PositiveBox>
 
@@ -53,7 +53,7 @@ cover: "./cover.jpg"
 | 炭水化物 | 33 g | 5.0 g |
 | タンパク質 | 22 g | 3.2 g |
 
-**重量当たり 22%がタンパク質**だ。やや脂質が多いが、1 食辺り 15g 中 6g が脂肪であれば、総量は少ないので脂質に目くじらを立てることもないだろう。
+**重量当たり 22%がタンパク質**だ。やや脂質が多いが、1食辺り15g中6gが脂肪であれば、総量は少ないので脂質に目くじらを立てることもないだろう。
 
 ### 味
 
@@ -71,6 +71,6 @@ cover: "./cover.jpg"
 
 非常に自然な味で、既存の食品からの置き換えに違和感なく使うことができる。
 
-そもそも、パンに塗る量が少ないのだから、マクロ栄養に対する影響がそこまで多くない……という指摘もできるか、1 食でタンパク質 6 グラムを甘味から得られるという点は大きい
+そもそも、パンに塗る量が少ないのだから、マクロ栄養に対する影響がそこまで多くない……という指摘もできるか、1食でタンパク質6グラムを甘味から得られるという点は大きい
 
 <LinkBox url="https://www.myprotein.jp/sports-nutrition/protein-spreads/11691950.html" linkUrl="https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-spreads%2F11691950.html" />
