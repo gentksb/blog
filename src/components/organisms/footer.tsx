@@ -15,6 +15,10 @@ const Footer: React.FunctionComponent = () => (
           This website uses Cookie to ensure you get the best experience on this
           website.
         </Text>
+        <Text fontSize="xs">
+          このサイトはAmazonアソシエイトの適格販売やGoogle
+          Adsenseによる収入で運営されています。
+        </Text>
         <a href="https://blogmura.com/profiles/11085449?p_cid=11085449">
           <Image
             htmlWidth="160px"
