@@ -85,6 +85,7 @@
     "serve": "gatsby build && gatsby serve",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "textlint": "textlint 'content/blog/post/202*/**'",
+    "textlint:fix": "textlint --fix 'content/blog/post/202*/**'",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   }
 }
