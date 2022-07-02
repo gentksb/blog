@@ -20,6 +20,8 @@ cover: "./cover.jpg"
 
 機械式変速の扱いについてはR8100アルテグラと同じように、前世代が継続ラインナップされるかは現時点で不明。しかし、105だけアップデートされることは無いだろう。
 
+<LinkBox url="https://blog.gensobunya.net/post/2021/09/compatibility_R9200-R8100/" />
+
 ## 電動12s時代のコンポーネント選択
 
 ![105だけでかでかとDi2のロゴが入っている](lineup.jpg)
