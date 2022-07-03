@@ -6,7 +6,7 @@ tags: ["REVIEW", "MTB", "ROAD", "CX"]
 cover: "./cover.jpg"
 ---
 
-これまで、チューブレスタイヤの装着用のインフレーターには色々使ってきましたが、中々決定版と言えるものがありませんでした。
+これまで、チューブレスタイヤの装着用のインフレーターには色々使ってきましたが、なかなか決定版と言えるものがありませんでした。
 
 私は[LEZYNE CLASSIC FLOOR DRIVE](https://www.amazon.co.jp/dp/B0753CL283/?tag=gensobunya-22)の木製取手と、[ヒラメ横カム](https://www.amazon.co.jp/dp/B01G1O3JBA/?tag=gensobunya-22)の収まりの良さを非常に気に入っており、これを捨てきれずなんとかフロアポンプを活かしたままチューブレス運用をしています。
 
@@ -55,6 +55,6 @@ Tubiboosterのほうがちょっと安いのでこちらを買いました。Ama
 
 エアボリュームは十分なので、MTBタイヤでも問題なく利用できました。
 
-仏式と米式の切り替えは内部部品を切り替える必要があるのでちょっと時間がかかります。[スマートヘッド アップグレード キット](https://www.amazon.co.jp/dp/B004BUC576/?tag=gensobunya-22)などを使えばこの切替が更に早くなり、使い勝手が良くなりそうです。ホース径は要確認。
+仏式と米式の切り替えは内部部品を切り替える必要があるのでちょっと時間がかかります。[スマートヘッド アップグレード キット](https://www.amazon.co.jp/dp/B004BUC576/?tag=gensobunya-22)などを使えばこの切替がさらに早くなり、使い勝手が良くなりそうです。ホース径は要確認。
 
 <LinkBox isAmazonLink url="https://www.amazon.co.jp/dp/B004BUC576/" />
