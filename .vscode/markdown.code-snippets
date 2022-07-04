@@ -13,5 +13,11 @@
       ""
     ],
     "description": "make frontmatter"
+  },
+  "Link MDX": {
+    "prefix": "linkbox",
+    "scope": "markdown",
+    "body": "<LinkBox url=\"${1:url}\" ${2:isAmazonLink} ${3:linkurl=\"\"} />",
+    "description": "make frontmatter"
   }
 }
