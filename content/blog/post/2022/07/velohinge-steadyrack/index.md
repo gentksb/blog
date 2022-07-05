@@ -93,9 +93,15 @@ Z軸を用いた横置き保管に比べ、縦置き保管は空間の利用効�
 
 縦置き用のバイクフックにヒンジ機構を持たせた、その名の通りのバイクフック。
 
-この機構により、バイクをかけた後で横に倒し、占有スペースを一時的に減らすことができる。
+この機構により、**バイクをかけた後で横に倒し、占有スペースを一時的に減らすことができる。**
 
 <LinkBox url="https://www.amazon.co.jp/dp/B00H96DA00/" isAmazonLink />
+
+ヒンジは片側にしか傾けることができないが、六角レンチとプラハンさえあれば、**簡単にヒンジの向きを変更可能。**部屋の都合に合わせて収納方向を設定できる。
+
+公式の作業解説動画がある点も非常に助かる。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NMnC2VwlYCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Long Hook
 
@@ -108,6 +114,10 @@ Z軸を用いた横置き保管に比べ、縦置き保管は空間の利用効�
 実際に試したところ、ワイドリムに2.3インチのMTBタイヤは既に装着が難しい。MTBではほぼ必須だ。
 
 <LinkBox url="https://paypaymall.yahoo.co.jp/store/qbei/item/pi-921319/" linkurl="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fpaypaymall.yahoo.co.jp%2Fstore%2Fqbei%2Fitem%2Fpi-921319%2F" />
+
+こちらも、取り付けの案内動画が出ている
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1n1toj0710U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Velo Hinge使用感
 
