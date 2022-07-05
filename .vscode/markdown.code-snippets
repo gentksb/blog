@@ -13,5 +13,29 @@
       ""
     ],
     "description": "make frontmatter"
+  },
+  "Link MDX": {
+    "prefix": "linkbox",
+    "scope": "markdown",
+    "body": "<LinkBox url=\"${1:url}\" ${2:isAmazonLink} ${3:linkurl=\"\"} />",
+    "description": "template of LinxBox MDX component"
+  },
+  "negaposi": {
+    "prefix": "proscons",
+    "scope": "markdown",
+    "body": [
+      "<PositiveBox>",
+      "",
+      "- ",
+      "",
+      "</PositiveBox>",
+      "",
+      "<NegativeBox>",
+      "",
+      "- ",
+      "",
+      "</NegativeBox>"
+    ],
+    "description": "template of Negative/Positive MDX component"
   }
 }

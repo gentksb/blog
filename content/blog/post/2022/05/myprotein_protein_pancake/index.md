@@ -10,7 +10,7 @@ cover: "./cover.jpg"
 
 [プロテイングラノーラ](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-granola%2F11091293.html)などと同じく、**朝食の置き換えで、タンパク質を自然に摂取する**のが狙い。
 
-これまでのマイプロテイン食品レビューは以下の通り。
+これまでのマイプロテイン食品レビューは以下のとおり。
 
 <LinkBox url="https://blog.gensobunya.net/post/2022/05/myprotein_protein_spread/" />
 
@@ -49,7 +49,7 @@ cover: "./cover.jpg"
 
 **1 食辺りのタンパク質量は 10g**と、マイプロテイン食品にしては控えめ。
 
-だが、実際は1枚分50gのパンケーキミックスに対して、**70ml ほどの牛乳や無脂肪乳を合わせるので、実質的な 1 食辺りタンパク質は更に多く**なる。
+だが、実際は1枚分50gのパンケーキミックスに対して、**70ml ほどの牛乳や無脂肪乳を合わせるので、実質的な 1 食辺りタンパク質はさらに多く**なる。
 
 なお、ビーガン版は10gのところ、**[通常版のパンケーキミックス](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fprotein-pancake-mix%2F10867261.html)は 34g もタンパク質が含まれている**。圧倒的にこちらを買った方がいい……正直ミスった
 
