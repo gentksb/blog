@@ -1,6 +1,6 @@
 ---
 title: "サイクリストにも使えるスマートウォッチ　Forerunner255S"
-date: 2022-07-18
+date: 2022-07-20
 draft: false
 tags: ["REVIEW", "ROAD"]
 cover: "./cover.jpg"
