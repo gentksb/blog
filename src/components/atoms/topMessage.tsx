@@ -19,7 +19,12 @@ const topMessage: React.FunctionComponent = () => {
     topMessage.length === 0 ? (
       <></>
     ) : (
-      <Text color="gray.50" decoration="none" align="center">
+      <Text
+        color="gray.50"
+        decoration="none"
+        align="center"
+        fontSize={{ base: "xs", md: "sm" }}
+      >
         {topMessage}
       </Text>
     )
