@@ -14,7 +14,7 @@ cover: "./cover.jpg"
 
 唯一の欠点はフラッグシップモデルならではの価格だったが、2022年にミドルグレードの[SH-RX600（RX6）](https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fpaypaymall.yahoo.co.jp%2Fstore%2Fkt-gigaweb%2Fitem%2F299-smn-sh-rx600%2F)シューズが登場。コストパフォーマンスを求めていた自分は好みのカラーがあったこともあり即購入してしまった。
 
-<LinkBox url="https://paypaymall.yahoo.co.jp/store/kt-gigaweb/item/299-smn-sh-rx600/" isAmazonLink linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fpaypaymall.yahoo.co.jp%2Fstore%2Fkt-gigaweb%2Fitem%2F299-smn-sh-rx600%2F" />
+<LinkBox url="https://paypaymall.yahoo.co.jp/store/kt-gigaweb/item/299-smn-sh-rx600/" linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fpaypaymall.yahoo.co.jp%2Fstore%2Fkt-gigaweb%2Fitem%2F299-smn-sh-rx600%2F" />
 
 ## スペック
 
@@ -98,4 +98,4 @@ RX6はブラック・グリーンの2色。ソールとのツートンも良い�
 
 最大のペダリング効率にこだわりがあるなら[RX8](https://amzn.to/3BbdH8x)、コストパフォーマンスとカラーリングではRX6に分があるといったところか。
 
-<LinkBox url="https://paypaymall.yahoo.co.jp/store/kt-gigaweb/item/299-smn-sh-rx600/" isAmazonLink linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fpaypaymall.yahoo.co.jp%2Fstore%2Fkt-gigaweb%2Fitem%2F299-smn-sh-rx600%2F" />
+<LinkBox url="https://paypaymall.yahoo.co.jp/store/kt-gigaweb/item/299-smn-sh-rx600/" linkurl="https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3171302&pid=887657037&vc_url=https%3A%2F%2Fpaypaymall.yahoo.co.jp%2Fstore%2Fkt-gigaweb%2Fitem%2F299-smn-sh-rx600%2F" />
