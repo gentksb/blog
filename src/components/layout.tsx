@@ -5,6 +5,7 @@ import { Box, ChakraProvider, Container } from "@chakra-ui/react"
 import theme from "./utils/theme"
 import Footer from "./organisms/footer"
 import BlogTitleText from "./atoms/blogTitleText"
+import TopMessage from "./atoms/topMessage"
 
 interface LocationState {
   title: string
@@ -28,6 +29,7 @@ const Layout: React.FunctionComponent<LocationState> = (props) => {
         textAlign="center"
       >
         <BlogTitleText title={title} markup={headerMarkup} />
+        <TopMessage />
       </Box>
       <Container maxW="3xl" padding="0 0 0 0" centerContent>
         {children}
