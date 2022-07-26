@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
       instagram: `gen_sobunya`
     },
     topMessage:
-      "現在、一部リンクでタイトルが想定と異なる表示になる事象が発生していますが、リンク先は正常なPayPayモール・YahooショッピングのURLですのでご安心ください。Yahoo!JAPANの判定ロジックが修正され次第回復予定です。"
+      ""
   },
   plugins: [
     `gatsby-plugin-image`,
