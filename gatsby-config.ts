@@ -12,7 +12,9 @@ const config: GatsbyConfig = {
       twitter: `gen_sobunya`,
       github: `gentksb`,
       instagram: `gen_sobunya`
-    }
+    },
+    topMessage:
+      ""
   },
   plugins: [
     `gatsby-plugin-image`,
