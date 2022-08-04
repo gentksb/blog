@@ -22,11 +22,11 @@ cover: "./cover.jpg"
 
 楽しそうだったのでエントリーした。グラベルライドのために色々買った。
 
-## チャンピオンシステム カーゴビブショーツ
+## PERFORMANCEエンデュランス ビブショーツ
 
 オーダージャージで有名なチャンピオンシステムだが、既製品もオンラインショップで注文できる。
 
-<LinkBox url="https://champsys.shop/" />
+<LinkBox url="https://champsys.shop/collections/mens-shorts-bibshorts/products/performance-endurance-bibshorts-unison-mens" />
 
 比較候補、Rapha, SAUCE, ファンキアー
 
@@ -42,8 +42,7 @@ cover: "./cover.jpg"
 
 > 裾のグリッパーの位置も膝の近くまで下がるため、圧迫感が軽減される傾向にあります。とくに太腿の大きいライダーは、快適性が向上します。
 
-脚も腕も太いので、本来はオプション追加すべきだった。反省。
-
+脚も腕も太いので、本来はオプション追加すべきだった。反省。**オンラインショップでも受注制作なので、オプションは自由だ。**
 
 <!-- textlint-disable -->
 
