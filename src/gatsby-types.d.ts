@@ -3603,10 +3603,51 @@ type BioComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 type BioComponentQuery = { readonly site: { readonly siteMetadata: { readonly author: string | null, readonly social: { readonly twitter: string | null, readonly github: string | null, readonly instagram: string | null } | null } | null } | null };
 
-type TagListQueryVariables = Exact<{ [key: string]: never; }>;
+type BlogPostBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
 
 
-type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<{ readonly fieldValue: string | null, readonly totalCount: number }> } };
+type BlogPostBySlugQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly author: string | null } | null } | null, readonly mdx: { readonly body: string, readonly excerpt: string, readonly id: string, readonly frontmatter: { readonly date: string | null, readonly title: string, readonly tags: ReadonlyArray<string | null> | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } | null };
+
+type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
+
+type GatsbyImageSharpFixed_noBase64Fragment = { readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
+
+type GatsbyImageSharpFixed_tracedSVGFragment = { readonly tracedSVG: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
+
+type GatsbyImageSharpFixed_withWebpFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null };
+
+type GatsbyImageSharpFixed_withWebp_noBase64Fragment = { readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null };
+
+type GatsbyImageSharpFixed_withWebp_tracedSVGFragment = { readonly tracedSVG: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null };
+
+type GatsbyImageSharpFluidFragment = { readonly base64: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly sizes: string };
+
+type GatsbyImageSharpFluid_noBase64Fragment = { readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly sizes: string };
+
+type GatsbyImageSharpFluid_tracedSVGFragment = { readonly tracedSVG: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly sizes: string };
+
+type GatsbyImageSharpFluid_withWebpFragment = { readonly base64: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null, readonly sizes: string };
+
+type GatsbyImageSharpFluid_withWebp_noBase64Fragment = { readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null, readonly sizes: string };
+
+type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = { readonly tracedSVG: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null, readonly sizes: string };
+
+type GatsbyImageSharpFluidLimitPresentationSizeFragment = { readonly maxHeight: number, readonly maxWidth: number };
+
+type IndexPageQueryVariables = Exact<{
+  skip: Scalars['Int'];
+  limit: Scalars['Int'];
+}>;
+
+
+type IndexPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly description: string | null } | null } | null, readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string, readonly tags: ReadonlyArray<string | null> | null, readonly draft: boolean | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly siteBuildMetadata: { readonly buildTime: string | null } | null };
+
+type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type NotFoundPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null } | null } | null };
 
 type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3618,18 +3659,10 @@ type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
 type SeoComponentQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly description: string | null, readonly author: string | null, readonly image: string | null, readonly siteUrl: string | null, readonly social: { readonly twitter: string | null } | null } | null } | null };
 
-type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
+type TagListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type NotFoundPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null } | null } | null };
-
-type IndexPageQueryVariables = Exact<{
-  skip: Scalars['Int'];
-  limit: Scalars['Int'];
-}>;
-
-
-type IndexPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly description: string | null } | null } | null, readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string, readonly tags: ReadonlyArray<string | null> | null, readonly draft: boolean | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly siteBuildMetadata: { readonly buildTime: string | null } | null };
+type TagListQuery = { readonly allMdx: { readonly group: ReadonlyArray<{ readonly fieldValue: string | null, readonly totalCount: number }> } };
 
 type TagPageQueryVariables = Exact<{
   tag: InputMaybe<Scalars['String']>;
@@ -3637,39 +3670,6 @@ type TagPageQueryVariables = Exact<{
 
 
 type TagPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null } | null } | null, readonly allMdx: { readonly totalCount: number, readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string, readonly tags: ReadonlyArray<string | null> | null, readonly draft: boolean | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
-
-type BlogPostBySlugQueryVariables = Exact<{
-  slug: Scalars['String'];
-}>;
-
-
-type BlogPostBySlugQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly author: string | null } | null } | null, readonly mdx: { readonly body: string, readonly excerpt: string, readonly id: string, readonly frontmatter: { readonly date: string | null, readonly title: string, readonly tags: ReadonlyArray<string | null> | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } | null };
-
-type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
-
-type GatsbyImageSharpFixed_tracedSVGFragment = { readonly tracedSVG: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
-
-type GatsbyImageSharpFixed_withWebpFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null };
-
-type GatsbyImageSharpFixed_withWebp_tracedSVGFragment = { readonly tracedSVG: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null };
-
-type GatsbyImageSharpFixed_noBase64Fragment = { readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
-
-type GatsbyImageSharpFixed_withWebp_noBase64Fragment = { readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null };
-
-type GatsbyImageSharpFluidFragment = { readonly base64: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly sizes: string };
-
-type GatsbyImageSharpFluidLimitPresentationSizeFragment = { readonly maxHeight: number, readonly maxWidth: number };
-
-type GatsbyImageSharpFluid_tracedSVGFragment = { readonly tracedSVG: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly sizes: string };
-
-type GatsbyImageSharpFluid_withWebpFragment = { readonly base64: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null, readonly sizes: string };
-
-type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = { readonly tracedSVG: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null, readonly sizes: string };
-
-type GatsbyImageSharpFluid_noBase64Fragment = { readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly sizes: string };
-
-type GatsbyImageSharpFluid_withWebp_noBase64Fragment = { readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null, readonly sizes: string };
 
 type AllPostNodeQueryVariables = Exact<{ [key: string]: never; }>;
 
