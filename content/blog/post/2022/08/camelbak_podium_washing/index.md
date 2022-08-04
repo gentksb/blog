@@ -1,6 +1,6 @@
 ---
 title: "Camelbak Podiumのキャップを分解清掃してみた"
-date: 2022-08-04
+date: 2022-08-05
 draft: false
 tags: ["REVIEW","ROAD","MTB"]
 cover: "./cover.jpg"
