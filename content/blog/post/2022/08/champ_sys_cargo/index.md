@@ -28,7 +28,7 @@ cover: "./cover.jpg"
 
 <LinkBox url="https://blog.gensobunya.net/post/2022/04/revolot_adv22_review/" />
 
-当初はオールロードとして[30cのAGILIST](https://amzn.to/3PZKpyk)を履かせていたが、今は普段用の[GravelKing SS 38c](https://amzn.to/3oRbzvd)や、ニセコ用の[SK 43c](https://amzn.to/3QlIrb5)を購入して徐々に準備を進めているところ。\
+当初はオールロードとして[30cのAGILIST](https://amzn.to/3PZKpyk)を履かせていたが、今は普段用の[GravelKing SS 38c](https://amzn.to/3oRbzvd)や、ニセコ用の[SK 43c](https://amzn.to/3QlIrb5)を購入して徐々に準備を進めているところ。
 
 長距離グラベルで補給食を持っていくにあたり、自転車へのバッグ搭載は最小限に納めたかったので、白羽の矢を立てたのがカーゴビブショーツというわけだ。
 
