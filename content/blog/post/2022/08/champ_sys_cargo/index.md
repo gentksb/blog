@@ -1,6 +1,6 @@
 ---
 title: "チャンピオンシステムのカーゴビブショーツを使ってみる"
-date: 2022-08-05
+date: 2022-08-04
 draft: false
 tags: ["ROAD","REVIEW"]
 cover: "./cover.jpg"
