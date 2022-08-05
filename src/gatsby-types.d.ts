@@ -4052,7 +4052,6 @@ type IndexPageQuery = { readonly site: { readonly siteMetadata: { readonly title
 
 type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
-
 type NotFoundPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null } | null } | null };
 
 type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
