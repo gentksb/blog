@@ -86,12 +86,15 @@ Performanceラインのチャンピオンシステムビブショーツはいつ
 
 デジタル機器でサイクリングライフを変革！アクションカメラ5機種のレビューと、マウント8種類を撮影イメージと共に徹底解説！
 
-後半は、サイクルコンピューター・スマートウォッチの使いこなし・WEBサービスの連携設定をして、自分のコンディションを徹底的に可視化して、自分だけのデジタルトレーナー化する現代のサイクリングログ活用について。ライド動画とライドログはもちろん、ライフログも合わせてあなたもサイクリングをDX！
-
+後半は、サイクルコンピューター・スマートウォッチの使いこなし・WEBサービスの連携設定をして、自分のコンディションを徹底的に可視化して、自分だけのデジタルトレーナー化する現代のサイクリングログ活用について。ライド動画とライドログはもちろん、ライフログも合わせてあなたもサイクリングをDX！\
 **本文70ページ**。
 
 会場価格1000円
 
-[メロンブックスさんでも委託販売](https://www.melonbooks.co.jp/detail/detail.php?product_id=1579831)を予定。
+[メロンブックスさんでも委託販売](https://www.melonbooks.co.jp/detail/detail.php?product_id=1579831)、[Kindle](https://amzn.to/3Q9oepq)で8/14より電子版を配信予定。
+
+<LinkBox url="https://www.melonbooks.co.jp/detail/detail.php?product_id=1579831" />
+
+<LinkBox url="https://www.amazon.co.jp/dp/B0B8VVTTSJ" isAmazonLink />
 
 <!-- textlint-enable -->

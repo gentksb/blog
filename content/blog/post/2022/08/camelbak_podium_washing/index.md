@@ -67,6 +67,10 @@ cover: "./cover.jpg"
 
 会場価格1000円
 
-[メロンブックスさんでも委託販売](https://www.melonbooks.co.jp/detail/detail.php?product_id=1579831)を予定。
+[メロンブックスさんでも委託販売](https://www.melonbooks.co.jp/detail/detail.php?product_id=1579831)、[Kindle](https://amzn.to/3Q9oepq)で8/14より電子版を配信予定。
+
+<LinkBox url="https://www.melonbooks.co.jp/detail/detail.php?product_id=1579831" />
+
+<LinkBox url="https://www.amazon.co.jp/dp/B0B8VVTTSJ" isAmazonLink />
 
 <!-- textlint-enable -->
