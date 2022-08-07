@@ -19,13 +19,8 @@ const topMessage: React.FunctionComponent = () => {
     topMessage.length === 0 ? (
       <></>
     ) : (
-      <Text
-        color="gray.50"
-        decoration="none"
-        align="center"
-        fontSize={{ base: "xs", md: "sm" }}
-      >
-        {topMessage}
+      <Text color="gray.50" align="center" fontSize={{ base: "xs", md: "sm" }}>
+        <div dangerouslySetInnerHTML={{ __html: topMessage }} />
       </Text>
     )
 

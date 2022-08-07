@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
       instagram: `gen_sobunya`
     },
     topMessage:
-      ""
+      'C100で新刊「サイクリング・デジタルトランスフォーメーション」を頒布します。詳しくは<a href="https://www.gensobunya.net/c100/" target="blank" style="text-Decoration: underline; font-weight: bold;">サークルサイトへ</a>'
   },
   plugins: [
     `gatsby-plugin-image`,
