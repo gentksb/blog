@@ -1,6 +1,6 @@
 ---
 title: "パールイズミのインドアサイクリングビブ（ベンチレーションビブパンツ）が予想以上に良かった"
-date: 2022-08-06
+date: 2022-08-12
 draft: false
 tags: ["REVIEW","ROAD","MTB"]
 cover: "./cover.jpg"
