@@ -82,7 +82,7 @@ Amazonといえばペラペラの梱包段ボールだが、[Try before you buy]
 
 ## ポイ活要素
 
-Try before you buyでの買い物は、購入時にも表示されるが購入金額に対してのAmazonポイント（通常1%）は付与されない（[Amazonマスターカード](https://amzn.to/3A2eEOh)の追加ポイントもない）
+Try before you buyでの買い物は、購入時にも表示されるが購入金額に対してのAmazonポイント（通常1%）は付与されない。（[Amazonマスターカード](https://amzn.to/3A2eEOh)の追加ポイントも付与されないが、カスタマーサポートに問い合わせたところ不具合のようだ）
 
 通常購入時にポイント利用分金額にはポイント付与されないため、[Try before you buy](https://amzn.to/3PuNcOZ)に対してポイントを利用すると、実質ポイント価値をわずかながら上げることができる。
 
