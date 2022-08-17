@@ -1,9 +1,8 @@
-import React from "react"
+import React, { Children } from "react"
 import { PageProps, graphql } from "gatsby"
 import { getSrc } from "gatsby-plugin-image"
 import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
 import { parseISO, format } from "date-fns"
 
@@ -73,10 +72,12 @@ const BlogPostTemplate: React.FunctionComponent<
             <PostTag tags={post.frontmatter.tags} />
           </Box>
           <Divider marginY={2} />
-          <Box className="post-body" paddingX={2} css={BlogPostStyle}>
-            <MDXProvider components={components}>
-              <MDXRenderer>{post.body}</MDXRenderer>
-            </MDXProvider>
+          <Box
+            className="post-body"
+            css={BlogPostStyle}
+            fontSize={{ base: "15px", md: "17px" }}
+          >
+            <MDXProvider components={components}>{Children}</MDXProvider>
           </Box>
         </article>
         <Divider />
@@ -120,7 +121,6 @@ export const pageQuery = graphql`
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
-      body
       frontmatter {
         date
         title
@@ -136,7 +136,7 @@ export const pageQuery = graphql`
           }
         }
       }
-      excerpt(truncate: true, pruneLength: 250)
+      excerpt(pruneLength: 250)
       id
     }
   }
