@@ -1,6 +1,6 @@
 ---
 title: "【レビュー】GoPro Hero8からInsta360 ONE RSへ乗り換え"
-date: 2022-08-21
+date: 2022-08-22
 draft: false
 tags: ["REVIEW","MTB","GRAVEL","ROAD"]
 cover: "./package.jpg"
