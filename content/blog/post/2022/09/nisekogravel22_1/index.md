@@ -81,7 +81,7 @@ Spring Rideの参戦記事を何本か読み、すっかりAutumnへ行く気に
 
 ![サンドリアは24時間営業のサンドイッチ店](./sandria.jpg)
 
-サンドリア本店は夜職の人にも対応できる24時間営業。早朝になりがちなサイクリストにもありがたい存在だ。
+**サンドリア本店は夜職の人にも対応できる24時間営業**。早朝になりがちなサイクリストにもありがたい存在だ。
 
 ### 石狩グラベルライド
 
@@ -91,13 +91,11 @@ Spring Rideの参戦記事を何本か読み、すっかりAutumnへ行く気に
 
 この日は44kmの適度な登りを組み込んだグラベル込みライドだ。ウォーミングアップ兼機材慣らしにはちょうどいい。
 
-<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/7744811695/embed/0af8eb595067d0aded80fa0d771351d53c6ba9d4'></iframe>
-
 ![3人の装備でパシャリ](./start.jpg)
 
 河川敷に入ると、平坦な舗装路とグラベルが入れ替わり立ち代わり現れ、早くもテンションは最高潮に。
 
-関東平野のような喧噪とは無縁の広い道に感慨を覚えながら進んでいく。北海道のような雪国は、除雪やチェーンで路面が荒れていることがお約束だが、グラベルロードのタイヤはそれを全く感じさせず、ただただ景色のみを楽しむことができた。
+関東平野のような喧噪とは無縁の広い道に感慨を覚えながら進んでいく。北海道のような雪**国は、除雪やチェーンで路面が荒れていることがお約束だが、グラベルロードのタイヤはそれを全く感じさせず**、ただただ景色のみを楽しむことができた。
 
 ![顧客の望んでいたグラベルがここにはある](./gravel.jpg)
 
@@ -111,9 +109,9 @@ Spring Rideの参戦記事を何本か読み、すっかりAutumnへ行く気に
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">極上グラベルライド、お先に頂きました。 <a href="https://t.co/sI5bnWkxVs">pic.twitter.com/sI5bnWkxVs</a></p>&mdash; すくみずさん (@skmzmw) <a href="https://twitter.com/skmzmw/status/1565898291031654405?ref_src=twsrc%5Etfw">September 3, 2022</a></blockquote>
 
-元々が、GARMIN CONNECTで公開されていたルートをベースにしたので、20%の不整地登りをこなす途中、軽トラのおじさんに行き止まりであることを告げられるなどのハプニングはあったものの、ネタ写真も撮りつつ、気持ちいい疲労感でライドを終えることができた。
+元々が、GARMIN CONNECTで公開されていたルートをベースにしたので、**20%の不整地登りをこなす途中、軽トラのおじさんに行き止まりであることを告げられる**などのハプニングはあったものの、ネタ写真も撮りつつ、気持ちいい疲労感でライドを終えることができた。
 
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">赤報隊で培った鉄砲火器の知識を元に作った<br>炸裂弾だ🎃 <a href="https://t.co/urpYwl0KtL">pic.twitter.com/urpYwl0KtL</a></p>&mdash; すくみずさん (@skmzmw) <a href="https://twitter.com/skmzmw/status/1565902034314076160?ref_src=twsrc%5Etfw">September 3, 2022</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">赤報隊で培った鉄砲火器の知識を元に作った<br />炸裂弾だ🎃 <a href="https://t.co/urpYwl0KtL">pic.twitter.com/urpYwl0KtL</a></p>&mdash; すくみずさん (@skmzmw) <a href="https://twitter.com/skmzmw/status/1565902034314076160?ref_src=twsrc%5Etfw">September 3, 2022</a></blockquote>
 
 ### ニセコへ
 
