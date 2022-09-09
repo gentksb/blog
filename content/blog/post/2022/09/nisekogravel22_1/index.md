@@ -62,6 +62,8 @@ Spring Rideの参戦記事を何本か読み、すっかりAutumnへ行く気に
 
 ### 北の飯はうまい
 
+![王道から外れないと気のすまないオタクたちはバネットバンをチョイス](./van.jpg)
+
 集合後はハイエース**ではなく**バネットバンをレンタルして、宿まで移動した後に札幌でジンギスカンを楽しむ。
 
 金曜日の夜というタイミングにも関わらず、予約なしという段取りの悪さで突撃したため、第一候補の店には入れなかったが、GoogleMap評価4.8の店に飛び込むことができた。
@@ -86,13 +88,55 @@ Spring Rideの参戦記事を何本か読み、すっかりAutumnへ行く気に
 
 ![地味にセットに時間がかかった](./sandria_eat.jpg)
 
+この日は44kmの適度な登りを組み込んだグラベル込みライドだ。ウォーミングアップ兼機材慣らしにはちょうどいい。
+
+<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/7744811695/embed/0af8eb595067d0aded80fa0d771351d53c6ba9d4'></iframe>
+
+![3人の装備でパシャリ](./start.jpg)
+
+河川敷に入ると、平坦な舗装路とグラベルが入れ替わり立ち代わり現れ、早くもテンションは最高潮に。
+
+関東平野のような喧噪とは無縁の広い道に感慨を覚えながら進んでいく。北海道のような雪国は、除雪やチェーンで路面が荒れていることがお約束だが、グラベルロードのタイヤはそれを全く感じさせず、ただただ景色のみを楽しむことができた。
+
+![顧客の望んでいたグラベルがここにはある](./gravel.jpg)
+
+この日は [Insta one RS](https://amzn.to/3xajHLP) の操作をミスっており良い動画は撮れず。本番前のテストとしても役立つライドだった。
+
+新たに購入した[LAMEDA長袖ジャージ](https://www.lameda.jp/)の着心地や、それぞれの装備を確かめつつ、平坦基調の往路ではあっという間に折り返し地点の[カシオペアの丘](https://goo.gl/maps/EweLTHp8a3K7fRsSA)に到着。
+
+シクロワイヤード撮りをしたり、存分に遊びながら復路の山がちなグラベルへ。
+
+ここも、未舗装のままの林道が残されており正にグラベル天国といった様相だった。登りではすくみずさんがフォトアタックを繰り返すが、反応せずに被写体としての責務を全うすることに集中…
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">極上グラベルライド、お先に頂きました。 <a href="https://t.co/sI5bnWkxVs">pic.twitter.com/sI5bnWkxVs</a></p>&mdash; すくみずさん (@skmzmw) <a href="https://twitter.com/skmzmw/status/1565898291031654405?ref_src=twsrc%5Etfw">September 3, 2022</a></blockquote>
+
+元々が、GARMIN CONNECTで公開されていたルートをベースにしたので、20%の不整地登りをこなす途中、軽トラのおじさんに行き止まりであることを告げられるなどのハプニングはあったものの、ネタ写真も撮りつつ、気持ちいい疲労感でライドを終えることができた。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">赤報隊で培った鉄砲火器の知識を元に作った<br>炸裂弾だ🎃 <a href="https://t.co/urpYwl0KtL">pic.twitter.com/urpYwl0KtL</a></p>&mdash; すくみずさん (@skmzmw) <a href="https://twitter.com/skmzmw/status/1565902034314076160?ref_src=twsrc%5Etfw">September 3, 2022</a></blockquote>
 
 ### ニセコへ
+
+![宝石のようないくら](./ikura.jpg)
 
 ニセコに移動しがてら、花まるで寿司を堪能。
 
 道中は牧場ソフトも頂き、全人類が北海道でやるべきことのチェックリストを順調にクリアしていく。
 
-ニセコエリアにたどり着くと、リゾートらしい英語ファースト日本語セカンドの世界が我々を出迎えた。本会場であるニセコアンヌプリ国際スキー場で前日受付を終える。
+ニセコエリアにたどり着くと、リゾートらしい英語ファースト日本語セカンドの世界が我々を出迎えた。
 
-この日は、知人との挨拶を終えたあとはそそくさと退散。味噌ラーメン屋で英気を養い、セイコーマートの100円パスタパックを朝食に買い込み、明日に備えた。
+![日本語の無い日本](./niseko_town.jpg)
+
+本会場であるニセコアンヌプリ国際スキー場で前日受付を終え、シルバーGRXやつむりさんの洗練されたハンドル回りを楽しみつつも、知人との挨拶を終えたあとはそそくさと退散。
+漏れ聞こえた会話によると、パートナーは沢山いるがあまりお金を払わなくともパートナーになれるらしい。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Canyon「新刊落としました」 <a href="https://t.co/x6IKdKsNZn">pic.twitter.com/x6IKdKsNZn</a></p>&mdash; ゲン@C100委託はメロンブックスとKindle (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1565953384590413826?ref_src=twsrc%5Etfw">September 3, 2022</a></blockquote>
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">神楽坂つむりさんの洗練されたハンドル周り <a href="https://t.co/8NImhtXiuB">pic.twitter.com/8NImhtXiuB</a></p>&mdash; ゲン@C100委託はメロンブックスとKindle (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1565959202832412672?ref_src=twsrc%5Etfw">September 3, 2022</a></blockquote>
+
+![シルバーGRX](./grx_silver.jpg)
+
+![パートナーたち](./partner.jpg)
+
+この日は味噌ラーメン屋で英気を養い、セイコーマートの100円パスタパックを朝食に買い込み、明日に備えた。
+
+ニセコグラベル本番、エクストラロングコースが予想を超えたハードライドになるとはこの時まだ誰も予想していなかった…
