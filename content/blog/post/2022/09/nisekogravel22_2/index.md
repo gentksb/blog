@@ -1,5 +1,5 @@
 ---
-title: "2022ニセコグラベル Autumn "Extra-Long" "
+title: "2022 ニセコグラベル Autumn Extra-Long"
 date: 2022-09-11
 draft: false
 tags: ["GRAVEL"]
