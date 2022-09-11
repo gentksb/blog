@@ -1,6 +1,6 @@
 ---
 title: "2022ニセコグラベル Autumn "Extra-Long" "
-date: 2022-09-10
+date: 2022-09-11
 draft: false
 tags: ["GRAVEL"]
 cover: "./cover.jpg"
