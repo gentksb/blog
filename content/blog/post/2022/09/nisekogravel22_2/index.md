@@ -108,7 +108,7 @@ Tシャツや襟シャツの人もいるし、バッグ類も積載にかなり�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fgOIUGPaCzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-舗装路UP→グラベルDOWNのシンプルな構成で、難易度高めな下りを脳汁垂らしながら楽しめるというわけだ。
+**舗装路UP→グラベルDOWNのシンプルな構成で、難易度高めな下りを脳汁垂らしながら楽しめる**というわけだ。
 
 ここでは、脚の合った地元北海道ライダー2名とご一緒させてもらった。CannondaleのSlate, TopStoneでゴリゴリに走っているが、**なんと片方の方は無印グラベルキング**……
 
@@ -146,7 +146,7 @@ Tシャツや襟シャツの人もいるし、バッグ類も積載にかなり�
 
 ## ゴール、そして失われた4日目
 
-![支笏湖](./shikotsu.jpg)
+![ゴール！](./goal.jpg)
 
 **終盤にいくつかの激坂グラベル**が設定されており、ショートコースの**e-bike勢にぶち抜かれるなど熱烈なセールス**を受けながら、攣りかけた脚を引きずりスキー場へゴール。
 
@@ -159,6 +159,8 @@ Tシャツや襟シャツの人もいるし、バッグ類も積載にかなり�
 ハイペースに付き合い、ゴール後の談笑や余韻を最低限に新千歳まで運んでくれたチームメンバーにはこの場を借りて深く感謝する。
 
 幸いにも、脚の仕上がっているメンバーのおかげで夕暮れの支笏湖や温泉を堪能する余裕はあった。
+
+![支笏湖](./shikotsu.jpg)
 
 ![onsen](./onsen.jpg)
 
