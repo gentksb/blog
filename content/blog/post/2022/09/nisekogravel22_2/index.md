@@ -32,7 +32,7 @@ cover: "./cover.jpg"
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">おはようございます！<a href="https://twitter.com/hashtag/%E3%83%8B%E3%82%BB%E3%82%B3%E3%82%B0%E3%83%A9%E3%83%99%E3%83%AB?src=hash&amp;ref_src=twsrc%5Etfw">#ニセコグラベル</a> スタートしてます！グラベルサイクリスト大集合感すごい！<a href="https://twitter.com/hashtag/nisekogravel?src=hash&amp;ref_src=twsrc%5Etfw">#nisekogravel</a> <a href="https://t.co/5NParTlSJI">pic.twitter.com/5NParTlSJI</a></p>&mdash; エリグチ@サイスポ編集部 (@ergtick2019) <a href="https://twitter.com/ergtick2019/status/1566217636857651200?ref_src=twsrc%5Etfw">September 4, 2022</a></blockquote>
 
-イドイベントらしい。ゆるーいカウントダウンとスタートで始まったニセコグラベル。
+ロングライドイベントらしい。ゆるーいカウントダウンとスタートで始まったニセコグラベル。
 
 ところがどっこい、**正しいルートはこの動画のアングルで見て左向き**である。
 
