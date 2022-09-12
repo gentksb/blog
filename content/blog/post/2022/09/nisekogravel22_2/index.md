@@ -118,7 +118,7 @@ Tシャツや襟シャツの人もいるし、バッグ類も積載にかなり�
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ブロックのありがたみを感じました。<br />無印＝ 虚無<br />SS＝少し滑る<br />SK＝少し食う <a href="https://t.co/DBgKT8jnEq">https://t.co/DBgKT8jnEq</a></p>&mdash; ozonetch (@ozonetch) <a href="https://twitter.com/ozonetch/status/1567724023894900736?ref_src=twsrc%5Etfw">September 8, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-地味に嫌らしいアップダウンをモリモリ走りながら中間地点の「道の駅らんえつ」に到着。
+地味に嫌らしいアップダウンをモリモリ走りながら中間地点の「道の駅らんこし」に到着。
 
 **オフロードでは、平坦でもそれなりに踏まないと進まない**ため、アップダウンを繰り返しながら登っていくプロファイルになるとかなり脚を使う。
 
