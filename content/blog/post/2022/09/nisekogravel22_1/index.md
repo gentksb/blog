@@ -1,5 +1,5 @@
 ---
-title: "2022ニセコグラベルプロローグ - 石狩グラベルライド編"
+title: "2022ニセコグラベル Autumn 前日: 石狩グラベルライド編"
 date: 2022-09-07
 draft: false
 tags: ["GRAVEL"]

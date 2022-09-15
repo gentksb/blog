@@ -1,5 +1,5 @@
 ---
-title: "2022 ニセコグラベル Autumn Extra-Long"
+title: "2022 ニセコグラベル Autumn Extra-Long ライド当日編"
 date: 2022-09-11
 draft: false
 tags: ["GRAVEL"]
