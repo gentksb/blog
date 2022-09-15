@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
       instagram: `gen_sobunya`
     },
     topMessage:
-      '同人誌の新刊「サイクリング・デジタルトランスフォーメーション」を委託通販・Kindle配信しています<a href="https://www.gensobunya.net/c100/" target="blank" style="text-Decoration: underline; font-weight: bold;">サークルサイトへ</a>'
+      ''
   },
   plugins: [
     `gatsby-plugin-image`,
