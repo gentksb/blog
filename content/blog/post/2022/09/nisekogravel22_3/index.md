@@ -145,7 +145,9 @@ GIANT REVOLT ADVANCEDは北米の長距離グラベルレースをターゲッ�
 
 ### カーゴビブショーツ
 
-チャンピオンシステムのエンデュランスビブショーツを着用した。
+[チャンピオンシステムのエンデュランスビブショーツ](https://champsys.shop/collections/mens-shorts-bibshorts/products/performance-endurance-bibshorts-unison-mens)を着用した。
+
+<LinkBox url="https://blog.gensobunya.net/post/2022/08/champ_sys_cargo/" />
 
 厚めのパッドのおかげか尻が振動で痛くなることはなかったし、[各エイドで配られる補給食](https://amzn.to/3de1xlP)に加え、マイプロテインの[リカバリージェル](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Frecovery-gel-elite%2F11214831.html)、[エナジーゼリーエリート](https://px.a8.net/svt/ejp?a8mat=3N3PXV+GF7GHE+45DI+BW0YB&a8ejpredirect=https%3A%2F%2Fwww.myprotein.jp%2Fsports-nutrition%2Fenergy-gel-elite-12-pack%2F11271257.html)も脚のポケットに収まった。
 
