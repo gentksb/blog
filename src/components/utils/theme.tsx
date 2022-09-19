@@ -2,7 +2,6 @@ import { extendTheme } from "@chakra-ui/react"
 
 const primaryColor = "blue.500"
 const secondaryColor = "teal.200"
-const linkColor = "teal.500"
 
 const theme = extendTheme({
   layerStyles: {
@@ -13,21 +12,6 @@ const theme = extendTheme({
   styles: {
     global: {
       ".post-body": {
-        ul: {
-          paddingLeft: "3rem",
-          paddingBottom: "0.5rem"
-        },
-        ol: {
-          paddingLeft: "3rem",
-          paddingTop: "0.5rem",
-          paddingBottom: "0.5rem"
-        },
-        a: {
-          color: linkColor,
-          _hover: {
-            textDecoration: "underline"
-          }
-        },
         h2: {
           marginTop: "0.5rem",
           marginBottom: "0.5rem",

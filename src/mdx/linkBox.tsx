@@ -157,7 +157,7 @@ const LinkBox: React.FunctionComponent<Props> = ({
             display="inline-flex"
             fontWeight="Bold"
             mt={3}
-            isTruncated
+            noOfLines={1}
           >
             {loading ? (
               <CircularProgress isIndeterminate color="teal.300" />

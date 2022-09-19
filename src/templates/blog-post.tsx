@@ -19,11 +19,17 @@ import LinkBox from "../mdx/linkBox"
 import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 import { PositiveBox } from "../mdx/positive"
 import { NegativeBox } from "../mdx/negative"
+import { MdxLink } from "../mdx/atoms/link"
+import { MdxListLi, MdxListOl, MdxListUl } from "../mdx/atoms/list"
 
-const shortcodes = {
+const components = {
   LinkBox,
   PositiveBox,
-  NegativeBox
+  NegativeBox,
+  a: MdxLink,
+  ul: MdxListUl,
+  ol: MdxListOl,
+  li: MdxListLi
 }
 
 const BlogPostTemplate: React.FunctionComponent<
@@ -76,7 +82,7 @@ const BlogPostTemplate: React.FunctionComponent<
             css={BlogPostStyle}
             fontSize={{ base: "15px", md: "17px" }}
           >
-            <MDXProvider components={shortcodes}>
+            <MDXProvider components={components}>
               <MDXRenderer>{post.body}</MDXRenderer>
             </MDXProvider>
           </Box>

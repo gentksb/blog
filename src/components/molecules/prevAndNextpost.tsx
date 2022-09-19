@@ -27,9 +27,9 @@ const PrevAndNextPost: React.FunctionComponent<Props> = ({
             variant="outline"
             isDisabled={!hasPreviousPost}
             leftIcon={<ArrowBackIcon />}
-            isFullWidth
+            width="full"
           >
-            <Text isTruncated>{previousPageTitle}</Text>
+            <Text noOfLines={1}>{previousPageTitle}</Text>
           </Button>
         </Link>
       </GridItem>
@@ -39,9 +39,9 @@ const PrevAndNextPost: React.FunctionComponent<Props> = ({
             variant="outline"
             isDisabled={!hasNextPost}
             rightIcon={<ArrowForwardIcon />}
-            isFullWidth
+            width="full"
           >
-            <Text isTruncated>{nextPageTitle}</Text>
+            <Text noOfLines={1}>{nextPageTitle}</Text>
           </Button>
         </Link>
       </GridItem>
