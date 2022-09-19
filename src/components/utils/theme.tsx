@@ -38,10 +38,6 @@ const theme = extendTheme({
           fontWeight: "bold",
           fontSize: "lg"
         },
-        ".gatsby-resp-image-image": {
-          maxH: "760px",
-          objectFit: "contain !important"
-        },
         /* Quote */
         blockquote: {
           position: "relative",

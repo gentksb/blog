@@ -21,15 +21,19 @@ import { PositiveBox } from "../mdx/positive"
 import { NegativeBox } from "../mdx/negative"
 import { MdxLink } from "../mdx/atoms/link"
 import { MdxListLi, MdxListOl, MdxListUl } from "../mdx/atoms/list"
+import { MdxParagraph } from "../mdx/atoms/paragraph"
+import { MdxImage } from "../mdx/atoms/image"
 
 const components = {
   LinkBox,
   PositiveBox,
   NegativeBox,
   a: MdxLink,
+  p: MdxParagraph,
   ul: MdxListUl,
   ol: MdxListOl,
-  li: MdxListLi
+  li: MdxListLi,
+  img: MdxImage
 }
 
 const BlogPostTemplate: React.FunctionComponent<
@@ -77,11 +81,7 @@ const BlogPostTemplate: React.FunctionComponent<
             <PostTag tags={post.frontmatter.tags} />
           </Box>
           <Divider marginY={2} />
-          <Box
-            className="post-body"
-            css={BlogPostStyle}
-            fontSize={{ base: "15px", md: "17px" }}
-          >
+          <Box className="post-body" css={BlogPostStyle}>
             <MDXProvider components={components}>
               <MDXRenderer>{post.body}</MDXRenderer>
             </MDXProvider>
