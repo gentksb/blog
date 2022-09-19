@@ -38,11 +38,6 @@ const theme = extendTheme({
           fontWeight: "bold",
           fontSize: "lg"
         },
-        p: {
-          marginBottom: "1em",
-          lineHeight: "1.8",
-          padding: "0 0.5rem 0 0.5rem"
-        },
         ".gatsby-resp-image-image": {
           maxH: "760px",
           objectFit: "contain !important"
