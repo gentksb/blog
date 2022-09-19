@@ -1,4 +1,4 @@
-import React, { Children } from "react"
+import React from "react"
 import { PageProps, graphql } from "gatsby"
 import { getSrc } from "gatsby-plugin-image"
 import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
@@ -41,8 +41,8 @@ const components = {
 }
 
 const BlogPostTemplate: React.FunctionComponent<
-  PageProps<Queries.BlogPostBySlugQuery, Queries.MdxEdge>
-> = ({ pageContext, data, location }) => {
+  PageProps<BlogPostBySlugQuery, Queries.MdxEdge>
+> = ({ pageContext, data, location, children }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
   const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
@@ -74,7 +74,7 @@ const BlogPostTemplate: React.FunctionComponent<
           </Box>
           <Divider marginY={2} />
           <Box className="post-body" fontSize={{ base: "15px", md: "17px" }}>
-            <MDXProvider components={components}>{Children}</MDXProvider>
+            <MDXProvider components={components}>{children}</MDXProvider>
           </Box>
         </article>
         <Divider />
@@ -138,3 +138,28 @@ export const pageQuery = graphql`
     }
   }
 `
+//mdx plugin v4は型生成がまだできないため
+
+type BlogPostBySlugQuery = {
+  readonly site: {
+    readonly siteMetadata: {
+      readonly title: string | null
+      readonly author: string | null
+    } | null
+  } | null
+  readonly mdx: {
+    readonly body: string
+    readonly excerpt: string
+    readonly id: string
+    readonly frontmatter: {
+      readonly date: string | null
+      readonly title: string
+      readonly tags: ReadonlyArray<string | null> | null
+      readonly cover: {
+        readonly childImageSharp: {
+          readonly gatsbyImageData: import("gatsby-plugin-image").IGatsbyImageData
+        } | null
+      } | null
+    } | null
+  } | null
+}
