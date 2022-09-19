@@ -218,6 +218,7 @@ type DirectoryFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -229,6 +230,7 @@ type DirectoryFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -241,6 +243,7 @@ type DirectoryFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -260,6 +263,7 @@ type DirectoryFieldsEnum =
   | 'ino'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -279,6 +283,7 @@ type DirectoryFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -290,6 +295,7 @@ type DirectoryFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -302,6 +308,7 @@ type DirectoryFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
@@ -581,6 +588,7 @@ type FileFieldsEnum =
   | 'childImageSharp.children.id'
   | 'childImageSharp.children.internal.content'
   | 'childImageSharp.children.internal.contentDigest'
+  | 'childImageSharp.children.internal.contentFilePath'
   | 'childImageSharp.children.internal.description'
   | 'childImageSharp.children.internal.fieldOwners'
   | 'childImageSharp.children.internal.ignoreType'
@@ -615,6 +623,7 @@ type FileFieldsEnum =
   | 'childImageSharp.id'
   | 'childImageSharp.internal.content'
   | 'childImageSharp.internal.contentDigest'
+  | 'childImageSharp.internal.contentFilePath'
   | 'childImageSharp.internal.description'
   | 'childImageSharp.internal.fieldOwners'
   | 'childImageSharp.internal.ignoreType'
@@ -630,6 +639,7 @@ type FileFieldsEnum =
   | 'childImageSharp.parent.id'
   | 'childImageSharp.parent.internal.content'
   | 'childImageSharp.parent.internal.contentDigest'
+  | 'childImageSharp.parent.internal.contentFilePath'
   | 'childImageSharp.parent.internal.description'
   | 'childImageSharp.parent.internal.fieldOwners'
   | 'childImageSharp.parent.internal.ignoreType'
@@ -652,6 +662,7 @@ type FileFieldsEnum =
   | 'childMdx.children.id'
   | 'childMdx.children.internal.content'
   | 'childMdx.children.internal.contentDigest'
+  | 'childMdx.children.internal.contentFilePath'
   | 'childMdx.children.internal.description'
   | 'childMdx.children.internal.fieldOwners'
   | 'childMdx.children.internal.ignoreType'
@@ -715,6 +726,7 @@ type FileFieldsEnum =
   | 'childMdx.id'
   | 'childMdx.internal.content'
   | 'childMdx.internal.contentDigest'
+  | 'childMdx.internal.contentFilePath'
   | 'childMdx.internal.description'
   | 'childMdx.internal.fieldOwners'
   | 'childMdx.internal.ignoreType'
@@ -728,6 +740,7 @@ type FileFieldsEnum =
   | 'childMdx.parent.id'
   | 'childMdx.parent.internal.content'
   | 'childMdx.parent.internal.contentDigest'
+  | 'childMdx.parent.internal.contentFilePath'
   | 'childMdx.parent.internal.description'
   | 'childMdx.parent.internal.fieldOwners'
   | 'childMdx.parent.internal.ignoreType'
@@ -752,6 +765,7 @@ type FileFieldsEnum =
   | 'childrenImageSharp.children.id'
   | 'childrenImageSharp.children.internal.content'
   | 'childrenImageSharp.children.internal.contentDigest'
+  | 'childrenImageSharp.children.internal.contentFilePath'
   | 'childrenImageSharp.children.internal.description'
   | 'childrenImageSharp.children.internal.fieldOwners'
   | 'childrenImageSharp.children.internal.ignoreType'
@@ -786,6 +800,7 @@ type FileFieldsEnum =
   | 'childrenImageSharp.id'
   | 'childrenImageSharp.internal.content'
   | 'childrenImageSharp.internal.contentDigest'
+  | 'childrenImageSharp.internal.contentFilePath'
   | 'childrenImageSharp.internal.description'
   | 'childrenImageSharp.internal.fieldOwners'
   | 'childrenImageSharp.internal.ignoreType'
@@ -801,6 +816,7 @@ type FileFieldsEnum =
   | 'childrenImageSharp.parent.id'
   | 'childrenImageSharp.parent.internal.content'
   | 'childrenImageSharp.parent.internal.contentDigest'
+  | 'childrenImageSharp.parent.internal.contentFilePath'
   | 'childrenImageSharp.parent.internal.description'
   | 'childrenImageSharp.parent.internal.fieldOwners'
   | 'childrenImageSharp.parent.internal.ignoreType'
@@ -824,6 +840,7 @@ type FileFieldsEnum =
   | 'childrenMdx.children.id'
   | 'childrenMdx.children.internal.content'
   | 'childrenMdx.children.internal.contentDigest'
+  | 'childrenMdx.children.internal.contentFilePath'
   | 'childrenMdx.children.internal.description'
   | 'childrenMdx.children.internal.fieldOwners'
   | 'childrenMdx.children.internal.ignoreType'
@@ -887,6 +904,7 @@ type FileFieldsEnum =
   | 'childrenMdx.id'
   | 'childrenMdx.internal.content'
   | 'childrenMdx.internal.contentDigest'
+  | 'childrenMdx.internal.contentFilePath'
   | 'childrenMdx.internal.description'
   | 'childrenMdx.internal.fieldOwners'
   | 'childrenMdx.internal.ignoreType'
@@ -900,6 +918,7 @@ type FileFieldsEnum =
   | 'childrenMdx.parent.id'
   | 'childrenMdx.parent.internal.content'
   | 'childrenMdx.parent.internal.contentDigest'
+  | 'childrenMdx.parent.internal.contentFilePath'
   | 'childrenMdx.parent.internal.description'
   | 'childrenMdx.parent.internal.fieldOwners'
   | 'childrenMdx.parent.internal.ignoreType'
@@ -922,6 +941,7 @@ type FileFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -933,6 +953,7 @@ type FileFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -945,6 +966,7 @@ type FileFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -964,6 +986,7 @@ type FileFieldsEnum =
   | 'ino'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -983,6 +1006,7 @@ type FileFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -994,6 +1018,7 @@ type FileFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -1006,6 +1031,7 @@ type FileFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
@@ -1358,6 +1384,7 @@ type ImageSharpFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -1369,6 +1396,7 @@ type ImageSharpFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -1381,6 +1409,7 @@ type ImageSharpFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -1415,6 +1444,7 @@ type ImageSharpFieldsEnum =
   | 'id'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -1431,6 +1461,7 @@ type ImageSharpFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -1442,6 +1473,7 @@ type ImageSharpFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -1454,6 +1486,7 @@ type ImageSharpFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
@@ -1631,6 +1664,7 @@ type IntQueryOperatorInput = {
 type Internal = {
   readonly content: Maybe<Scalars['String']>;
   readonly contentDigest: Scalars['String'];
+  readonly contentFilePath: Maybe<Scalars['String']>;
   readonly description: Maybe<Scalars['String']>;
   readonly fieldOwners: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly ignoreType: Maybe<Scalars['Boolean']>;
@@ -1642,6 +1676,7 @@ type Internal = {
 type InternalFilterInput = {
   readonly content: InputMaybe<StringQueryOperatorInput>;
   readonly contentDigest: InputMaybe<StringQueryOperatorInput>;
+  readonly contentFilePath: InputMaybe<StringQueryOperatorInput>;
   readonly description: InputMaybe<StringQueryOperatorInput>;
   readonly fieldOwners: InputMaybe<StringQueryOperatorInput>;
   readonly ignoreType: InputMaybe<BooleanQueryOperatorInput>;
@@ -1759,6 +1794,7 @@ type MdxFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -1770,6 +1806,7 @@ type MdxFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -1782,6 +1819,7 @@ type MdxFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -1851,6 +1889,7 @@ type MdxFieldsEnum =
   | 'frontmatter.cover.ino'
   | 'frontmatter.cover.internal.content'
   | 'frontmatter.cover.internal.contentDigest'
+  | 'frontmatter.cover.internal.contentFilePath'
   | 'frontmatter.cover.internal.description'
   | 'frontmatter.cover.internal.fieldOwners'
   | 'frontmatter.cover.internal.ignoreType'
@@ -1887,6 +1926,7 @@ type MdxFieldsEnum =
   | 'id'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -1901,6 +1941,7 @@ type MdxFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -1912,6 +1953,7 @@ type MdxFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -1924,6 +1966,7 @@ type MdxFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
@@ -2340,7 +2383,7 @@ type Query_mdxArgs = {
 type Query_siteArgs = {
   buildTime: InputMaybe<DateQueryOperatorInput>;
   children: InputMaybe<NodeFilterListInput>;
-  graphqlTypegen: InputMaybe<BooleanQueryOperatorInput>;
+  graphqlTypegen: InputMaybe<SiteGraphqlTypegenFilterInput>;
   host: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
@@ -2412,7 +2455,7 @@ type Query_sitePluginArgs = {
 type Site = Node & {
   readonly buildTime: Maybe<Scalars['Date']>;
   readonly children: ReadonlyArray<Node>;
-  readonly graphqlTypegen: Maybe<Scalars['Boolean']>;
+  readonly graphqlTypegen: Maybe<SiteGraphqlTypegen>;
   readonly host: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly internal: Internal;
@@ -2504,6 +2547,7 @@ type SiteBuildMetadataFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -2515,6 +2559,7 @@ type SiteBuildMetadataFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -2527,6 +2572,7 @@ type SiteBuildMetadataFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -2538,6 +2584,7 @@ type SiteBuildMetadataFieldsEnum =
   | 'id'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -2551,6 +2598,7 @@ type SiteBuildMetadataFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -2562,6 +2610,7 @@ type SiteBuildMetadataFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -2574,6 +2623,7 @@ type SiteBuildMetadataFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
@@ -2692,6 +2742,7 @@ type SiteFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -2703,6 +2754,7 @@ type SiteFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -2715,6 +2767,7 @@ type SiteFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -2723,11 +2776,13 @@ type SiteFieldsEnum =
   | 'children.parent.internal.type'
   | 'children.parent.parent.children'
   | 'children.parent.parent.id'
-  | 'graphqlTypegen'
+  | 'graphqlTypegen.generateOnBuild'
+  | 'graphqlTypegen.typesOutputPath'
   | 'host'
   | 'id'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -2742,6 +2797,7 @@ type SiteFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -2753,6 +2809,7 @@ type SiteFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -2765,6 +2822,7 @@ type SiteFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
@@ -2790,7 +2848,7 @@ type SiteFieldsEnum =
 type SiteFilterInput = {
   readonly buildTime: InputMaybe<DateQueryOperatorInput>;
   readonly children: InputMaybe<NodeFilterListInput>;
-  readonly graphqlTypegen: InputMaybe<BooleanQueryOperatorInput>;
+  readonly graphqlTypegen: InputMaybe<SiteGraphqlTypegenFilterInput>;
   readonly host: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
@@ -2872,6 +2930,7 @@ type SiteFunctionFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -2883,6 +2942,7 @@ type SiteFunctionFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -2895,6 +2955,7 @@ type SiteFunctionFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -2907,6 +2968,7 @@ type SiteFunctionFieldsEnum =
   | 'id'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -2923,6 +2985,7 @@ type SiteFunctionFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -2934,6 +2997,7 @@ type SiteFunctionFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -2946,6 +3010,7 @@ type SiteFunctionFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
@@ -3015,6 +3080,16 @@ type SiteFunctionGroupConnection_sumArgs = {
 type SiteFunctionSortInput = {
   readonly fields: InputMaybe<ReadonlyArray<InputMaybe<SiteFunctionFieldsEnum>>>;
   readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+};
+
+type SiteGraphqlTypegen = {
+  readonly generateOnBuild: Maybe<Scalars['Boolean']>;
+  readonly typesOutputPath: Maybe<Scalars['String']>;
+};
+
+type SiteGraphqlTypegenFilterInput = {
+  readonly generateOnBuild: InputMaybe<BooleanQueryOperatorInput>;
+  readonly typesOutputPath: InputMaybe<StringQueryOperatorInput>;
 };
 
 type SiteGroupConnection = {
@@ -3126,6 +3201,7 @@ type SitePageFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -3137,6 +3213,7 @@ type SitePageFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -3149,6 +3226,7 @@ type SitePageFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -3163,6 +3241,7 @@ type SitePageFieldsEnum =
   | 'internalComponentName'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -3178,6 +3257,7 @@ type SitePageFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -3189,6 +3269,7 @@ type SitePageFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -3201,6 +3282,7 @@ type SitePageFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
@@ -3218,6 +3300,7 @@ type SitePageFieldsEnum =
   | 'pluginCreator.children.id'
   | 'pluginCreator.children.internal.content'
   | 'pluginCreator.children.internal.contentDigest'
+  | 'pluginCreator.children.internal.contentFilePath'
   | 'pluginCreator.children.internal.description'
   | 'pluginCreator.children.internal.fieldOwners'
   | 'pluginCreator.children.internal.ignoreType'
@@ -3229,6 +3312,7 @@ type SitePageFieldsEnum =
   | 'pluginCreator.id'
   | 'pluginCreator.internal.content'
   | 'pluginCreator.internal.contentDigest'
+  | 'pluginCreator.internal.contentFilePath'
   | 'pluginCreator.internal.description'
   | 'pluginCreator.internal.fieldOwners'
   | 'pluginCreator.internal.ignoreType'
@@ -3244,6 +3328,7 @@ type SitePageFieldsEnum =
   | 'pluginCreator.parent.id'
   | 'pluginCreator.parent.internal.content'
   | 'pluginCreator.parent.internal.contentDigest'
+  | 'pluginCreator.parent.internal.contentFilePath'
   | 'pluginCreator.parent.internal.description'
   | 'pluginCreator.parent.internal.fieldOwners'
   | 'pluginCreator.parent.internal.ignoreType'
@@ -3389,6 +3474,7 @@ type SitePluginFieldsEnum =
   | 'children.children.id'
   | 'children.children.internal.content'
   | 'children.children.internal.contentDigest'
+  | 'children.children.internal.contentFilePath'
   | 'children.children.internal.description'
   | 'children.children.internal.fieldOwners'
   | 'children.children.internal.ignoreType'
@@ -3400,6 +3486,7 @@ type SitePluginFieldsEnum =
   | 'children.id'
   | 'children.internal.content'
   | 'children.internal.contentDigest'
+  | 'children.internal.contentFilePath'
   | 'children.internal.description'
   | 'children.internal.fieldOwners'
   | 'children.internal.ignoreType'
@@ -3412,6 +3499,7 @@ type SitePluginFieldsEnum =
   | 'children.parent.id'
   | 'children.parent.internal.content'
   | 'children.parent.internal.contentDigest'
+  | 'children.parent.internal.contentFilePath'
   | 'children.parent.internal.description'
   | 'children.parent.internal.fieldOwners'
   | 'children.parent.internal.ignoreType'
@@ -3423,6 +3511,7 @@ type SitePluginFieldsEnum =
   | 'id'
   | 'internal.content'
   | 'internal.contentDigest'
+  | 'internal.contentFilePath'
   | 'internal.description'
   | 'internal.fieldOwners'
   | 'internal.ignoreType'
@@ -3439,6 +3528,7 @@ type SitePluginFieldsEnum =
   | 'parent.children.id'
   | 'parent.children.internal.content'
   | 'parent.children.internal.contentDigest'
+  | 'parent.children.internal.contentFilePath'
   | 'parent.children.internal.description'
   | 'parent.children.internal.fieldOwners'
   | 'parent.children.internal.ignoreType'
@@ -3450,6 +3540,7 @@ type SitePluginFieldsEnum =
   | 'parent.id'
   | 'parent.internal.content'
   | 'parent.internal.contentDigest'
+  | 'parent.internal.contentFilePath'
   | 'parent.internal.description'
   | 'parent.internal.fieldOwners'
   | 'parent.internal.ignoreType'
@@ -3462,6 +3553,7 @@ type SitePluginFieldsEnum =
   | 'parent.parent.id'
   | 'parent.parent.internal.content'
   | 'parent.parent.internal.contentDigest'
+  | 'parent.parent.internal.contentFilePath'
   | 'parent.parent.internal.description'
   | 'parent.parent.internal.fieldOwners'
   | 'parent.parent.internal.ignoreType'
