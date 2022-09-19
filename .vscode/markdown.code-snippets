@@ -37,5 +37,11 @@
       "</NegativeBox>"
     ],
     "description": "template of Negative/Positive MDX component"
+  },
+  "override image": {
+    "prefix": "image",
+    "scope": "markdown",
+    "body": "![${1:alt}](./${2:path})",
+    "description": "override image snippet for local image"
   }
 }
