@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { Button, HStack, Tag } from "@chakra-ui/react"
+import { Button, HStack } from "@chakra-ui/react"
+import { AttachmentIcon } from "@chakra-ui/icons"
 
 interface Props {
   targetTag?: string
@@ -33,7 +34,7 @@ const TagList: React.FunctionComponent<Props> = ({ targetTag }) => {
       >
         <Button
           key={tag}
-          leftIcon={<Tag />}
+          leftIcon={<AttachmentIcon />}
           aria-label={`${tag}:${count}`}
           size="sm"
           variant="solid"
