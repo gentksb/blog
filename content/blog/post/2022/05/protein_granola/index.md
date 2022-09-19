@@ -37,7 +37,8 @@ cover: "./cover.jpg"
 
 ### 栄養成分
 
-[[scrollableTable]]
+<InArticleTable>
+
 | --- | 100g あたり | 30g+スキムミルク |
 | --- | --- | --- |
 | エネルギー | 1696 kJ/403 kcal | 716 kJ/170 kcal |
@@ -46,6 +47,8 @@ cover: "./cover.jpg"
 | 食物繊維 | 5.8 g | 1.6 g |
 | タンパク質 | 37 g | 15 g |
 | 食塩相当量 | 0.90 g | 0.47 g |
+
+</InArticleTable>
 
 **重量当たり 37%がタンパク質**だ。
 

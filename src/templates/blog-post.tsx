@@ -13,7 +13,6 @@ import PostTag from "../components/molecules/postTag"
 import PrevAndNextPost from "../components/molecules/prevAndNextpost"
 import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/organisms/relatedPosts"
-import BlogPostStyle from "../styles/blog-post.style"
 import LinkBox from "../mdx/linkBox"
 import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 import { PositiveBox } from "../mdx/positive"
@@ -22,6 +21,7 @@ import { MdxLink } from "../mdx/atoms/link"
 import { MdxListLi, MdxListOl, MdxListUl } from "../mdx/atoms/list"
 import { MdxH2, MdxH3, MdxH4, MdxParagraph } from "../mdx/atoms/paragraph"
 import { MdxCaption, MdxImage } from "../mdx/atoms/image"
+import { InArticleTable } from "../mdx/inArticleTable"
 
 const components = {
   LinkBox,
@@ -36,7 +36,8 @@ const components = {
   figcaption: MdxCaption,
   h2: MdxH2,
   h3: MdxH3,
-  h4: MdxH4
+  h4: MdxH4,
+  InArticleTable
 }
 
 const BlogPostTemplate: React.FunctionComponent<
@@ -72,11 +73,7 @@ const BlogPostTemplate: React.FunctionComponent<
             <PostTag tags={post.frontmatter.tags} />
           </Box>
           <Divider marginY={2} />
-          <Box
-            className="post-body"
-            css={BlogPostStyle}
-            fontSize={{ base: "15px", md: "17px" }}
-          >
+          <Box className="post-body" fontSize={{ base: "15px", md: "17px" }}>
             <MDXProvider components={components}>{Children}</MDXProvider>
           </Box>
         </article>
