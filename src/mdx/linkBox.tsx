@@ -154,10 +154,11 @@ const LinkBox: React.FunctionComponent<Props> = ({
             fontSize="sm"
             letterSpacing="wide"
             color="teal.600"
-            display="inline-flex"
             fontWeight="Bold"
             mt={3}
             noOfLines={1}
+            display="inline-flex"
+            alignContent="center"
           >
             {loading ? (
               <CircularProgress isIndeterminate color="teal.300" />
@@ -166,7 +167,9 @@ const LinkBox: React.FunctionComponent<Props> = ({
                 src={ogpData.ogpIcon}
                 alt="favicon"
                 maxHeight="2em"
+                display="inline-flex"
                 fallbackSrc="https://via.placeholder.com/24/FFFFFF/FFFFFF/"
+                objectFit="contain"
               />
             )}
             {ogpData.siteName}
