@@ -12,28 +12,19 @@ const theme = extendTheme({
   styles: {
     global: {
       ".post-body": {
-        h2: {
-          marginTop: "0.5rem",
-          marginBottom: "0.5rem",
-          padding: "0.5em 0.5rem 0.5em 0.5em",
-          backgroundColor: primaryColor,
-          fontWeight: "bold",
-          fontSize: "2xl",
-          color: "#f6f6f6"
-        },
-        h3: {
-          marginTop: "0.25rem",
-          marginBottom: "0.25rem",
-          padding: "0.25em 0 0.25em 0.75em",
-          borderLeftWidth: "6px",
-          borderLeftStyle: "solid",
-          borderLeftColor: primaryColor,
-          borderBottomColor: primaryColor,
-          borderBottomStyle: "solid",
-          borderBottomWidth: "1px",
-          fontWeight: "bold",
-          fontSize: "lg"
-        },
+        // h3: {
+        //   marginTop: "0.25rem",
+        //   marginBottom: "0.25rem",
+        //   padding: "0.25em 0 0.25em 0.75em",
+        //   borderLeftWidth: "6px",
+        //   borderLeftStyle: "solid",
+        //   borderLeftColor: primaryColor,
+        //   borderBottomColor: primaryColor,
+        //   borderBottomStyle: "solid",
+        //   borderBottomWidth: "1px",
+        //   fontWeight: "bold",
+        //   fontSize: "lg"
+        // },
         h4: {
           fontWeight: "bold",
           fontSize: "lg"
