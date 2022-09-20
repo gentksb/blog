@@ -21,7 +21,7 @@ import { PositiveBox } from "../mdx/positive"
 import { NegativeBox } from "../mdx/negative"
 import { MdxLink } from "../mdx/atoms/link"
 import { MdxListLi, MdxListOl, MdxListUl } from "../mdx/atoms/list"
-import { MdxH2, MdxH3, MdxParagraph } from "../mdx/atoms/paragraph"
+import { MdxH2, MdxH3, MdxH4, MdxParagraph } from "../mdx/atoms/paragraph"
 import { MdxImage } from "../mdx/atoms/image"
 
 const components = {
@@ -35,7 +35,8 @@ const components = {
   li: MdxListLi,
   img: MdxImage,
   h2: MdxH2,
-  h3: MdxH3
+  h3: MdxH3,
+  h4: MdxH4
 }
 
 const BlogPostTemplate: React.FunctionComponent<

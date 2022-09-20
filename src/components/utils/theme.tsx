@@ -12,23 +12,6 @@ const theme = extendTheme({
   styles: {
     global: {
       ".post-body": {
-        // h3: {
-        //   marginTop: "0.25rem",
-        //   marginBottom: "0.25rem",
-        //   padding: "0.25em 0 0.25em 0.75em",
-        //   borderLeftWidth: "6px",
-        //   borderLeftStyle: "solid",
-        //   borderLeftColor: primaryColor,
-        //   borderBottomColor: primaryColor,
-        //   borderBottomStyle: "solid",
-        //   borderBottomWidth: "1px",
-        //   fontWeight: "bold",
-        //   fontSize: "lg"
-        // },
-        // h4: {
-        //   fontWeight: "bold",
-        //   fontSize: "lg"
-        // },
         /* Quote */
         blockquote: {
           position: "relative",

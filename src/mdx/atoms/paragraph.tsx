@@ -55,7 +55,15 @@ export const MdxH3: React.FC<Props> = ({ children }) => {
 
 export const MdxH4: React.FC<Props> = ({ children }) => {
   return (
-    <Heading as="h4" fontSize="lg" fontWeight="bold">
+    <Heading
+      marginY={4}
+      padding={2}
+      as="h4"
+      fontSize="lg"
+      fontWeight="bold"
+      borderBottomWidth={1}
+      borderBottomColor={baseColor}
+    >
       {children}
     </Heading>
   )
