@@ -25,10 +25,10 @@ const theme = extendTheme({
         //   fontWeight: "bold",
         //   fontSize: "lg"
         // },
-        h4: {
-          fontWeight: "bold",
-          fontSize: "lg"
-        },
+        // h4: {
+        //   fontWeight: "bold",
+        //   fontSize: "lg"
+        // },
         /* Quote */
         blockquote: {
           position: "relative",
