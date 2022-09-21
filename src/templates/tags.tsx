@@ -16,12 +16,10 @@ const Tags: React.FunctionComponent<
 > = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges } = data.allMdx
-  const pageTitle = `Tag search : ${tag}`
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={pageTitle} location={location} />
       <VStack maxW="100%">
         <TagList targetTag={tag} />
         <PostList edges={edges} />
@@ -31,6 +29,12 @@ const Tags: React.FunctionComponent<
 }
 
 export default Tags
+
+export const Head = ({ pageContext, location }) => {
+  const { tag } = pageContext
+  const pageTitle = `Tag search : ${tag}`
+  return <SEO title={pageTitle} location={location} />
+}
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {

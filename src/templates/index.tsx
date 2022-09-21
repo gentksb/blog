@@ -12,27 +12,15 @@ import { PaginationContext } from "../../gatsby-node"
 
 const BlogIndex: React.FunctionComponent<
   PageProps<Queries.IndexPageQuery, PaginationContext>
-> = (props) => {
-  const { data, location, pageContext } = props
-  const { pageNumber } = pageContext
+> = ({ data, location, pageContext }) => {
   const siteTitle = data.site.siteMetadata.title
-  const pageTitle = pageNumber > 0 ? `Old posts page ${pageNumber}` : siteTitle
   const edges = data.allMdx.edges
-  const buildJstIsoTime = convertMdxDateToIsoJstDate(
-    data.siteBuildMetadata.buildTime
-  )
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={pageTitle}
-        location={location}
-        description={data.site.siteMetadata.description}
-        datePublished={buildJstIsoTime}
-      />
       <VStack maxW="100%">
         <PostList edges={edges} />
-        <Pagination paginationdata={props.pageContext} />
+        <Pagination paginationdata={pageContext} />
         <TagList />
       </VStack>
     </Layout>
@@ -40,6 +28,23 @@ const BlogIndex: React.FunctionComponent<
 }
 
 export default BlogIndex
+
+export const Head = ({ data, location, pageContext }) => {
+  const siteTitle = data.site.siteMetadata.title
+  const { pageNumber } = pageContext
+  const pageTitle = pageNumber > 0 ? `Old posts page ${pageNumber}` : siteTitle
+  const buildJstIsoTime = convertMdxDateToIsoJstDate(
+    data.siteBuildMetadata.buildTime
+  )
+  return (
+    <SEO
+      title={pageTitle}
+      location={location}
+      description={data.site.siteMetadata.description}
+      datePublished={buildJstIsoTime}
+    />
+  )
+}
 
 export const pageQuery = graphql`
   query IndexPage($skip: Int!, $limit: Int!) {

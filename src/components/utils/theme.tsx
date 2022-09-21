@@ -2,7 +2,6 @@ import { extendTheme } from "@chakra-ui/react"
 
 const primaryColor = "blue.500"
 const secondaryColor = "teal.200"
-const linkColor = "teal.500"
 
 const theme = extendTheme({
   layerStyles: {
@@ -13,56 +12,6 @@ const theme = extendTheme({
   styles: {
     global: {
       ".post-body": {
-        ul: {
-          paddingLeft: "3rem",
-          paddingBottom: "0.5rem"
-        },
-        ol: {
-          paddingLeft: "3rem",
-          paddingTop: "0.5rem",
-          paddingBottom: "0.5rem"
-        },
-        a: {
-          color: linkColor,
-          _hover: {
-            textDecoration: "underline"
-          }
-        },
-        h2: {
-          marginTop: "0.5rem",
-          marginBottom: "0.5rem",
-          padding: "0.5em 0.5rem 0.5em 0.5em",
-          backgroundColor: primaryColor,
-          fontWeight: "bold",
-          fontSize: "2xl",
-          color: "#f6f6f6"
-        },
-        h3: {
-          marginTop: "0.25rem",
-          marginBottom: "0.25rem",
-          padding: "0.25em 0 0.25em 0.75em",
-          borderLeftWidth: "6px",
-          borderLeftStyle: "solid",
-          borderLeftColor: primaryColor,
-          borderBottomColor: primaryColor,
-          borderBottomStyle: "solid",
-          borderBottomWidth: "1px",
-          fontWeight: "bold",
-          fontSize: "lg"
-        },
-        h4: {
-          fontWeight: "bold",
-          fontSize: "lg"
-        },
-        p: {
-          marginBottom: "1em",
-          lineHeight: "1.8",
-          padding: "0 0.5rem 0 0.5rem"
-        },
-        ".gatsby-resp-image-image": {
-          maxH: "760px",
-          objectFit: "contain !important"
-        },
         /* Quote */
         blockquote: {
           position: "relative",

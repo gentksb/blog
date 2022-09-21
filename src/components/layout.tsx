@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import { WindowLocation } from "@reach/router"
 import { Box, ChakraProvider, Container } from "@chakra-ui/react"
 
@@ -7,12 +7,13 @@ import Footer from "./organisms/footer"
 import BlogTitleText from "./atoms/blogTitleText"
 import TopMessage from "./atoms/topMessage"
 
-interface LocationState {
+interface Props {
   title: string
   location: WindowLocation
+  children: ReactNode
 }
 
-const Layout: React.FunctionComponent<LocationState> = (props) => {
+const Layout: React.FC<Props> = (props) => {
   const { location, title, children } = props
 
   const postpathRegExp = RegExp("^/post/.*")

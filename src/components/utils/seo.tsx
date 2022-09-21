@@ -1,33 +1,17 @@
 import React from "react"
 import { WindowLocation } from "@reach/router"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-interface LocationState {
+interface Props {
   title: string
   image?: string
   location: WindowLocation
-}
-
-interface MetaObject {
-  name: string
-  //eslint-disable-next-line
-  content: any
-  property?: undefined
-}
-
-interface SeoDefaultProps {
-  lang?: string
-  meta?: MetaObject[]
   description?: string
   datePublished?: string
 }
 
-interface Props extends LocationState, SeoDefaultProps {}
-
 const SEO: React.FunctionComponent<Props> = (props) => {
-  const { description, lang, meta, title, image, location, datePublished } =
-    props
+  const { description, title, image, location, datePublished } = props
   const { site } = useStaticQuery<Queries.SeoComponentQuery>(
     graphql`
       query SeoComponent {
@@ -50,8 +34,9 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   const siteUrl = site.siteMetadata.siteUrl
   const isTopPage = location.pathname === "/"
   const isPostPage = location.pathname.includes("/post/")
-  const currentHost =
-    process.env.NODE_ENV === "production" ? siteUrl : location.origin
+  const currentHost = siteUrl
+  // process.env.NODE_ENV === "production" ? siteUrl : location.origin
+  // Head APIがpathname以外のlocationを受け取らないため、一旦コメントアウト
   const metaDescription = description ?? site.siteMetadata.description
   const metaImage = currentHost + (image ?? site.siteMetadata.image)
   const canonicalUrl = currentHost + location.pathname
@@ -94,89 +79,30 @@ const SEO: React.FunctionComponent<Props> = (props) => {
   }
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang
-      }}
-      title={siteTitle}
-      link={[{ rel: "canonical", href: canonicalUrl }]}
-      meta={[
-        {
-          name: `robots`,
-          content: `max-image-preview:large`
-        },
-        {
-          name: "robots",
-          content: metaRobotsContent
-        },
-        {
-          name: `description`,
-          content: metaDescription
-        },
-        {
-          property: `og:site_name`,
-          content: site.siteMetadata.title
-        },
-        {
-          property: `og:type`,
-          content: ogType
-        },
-        {
-          property: `og:url`,
-          content: location.href
-        },
-        {
-          property: `og:title`,
-          content: title
-        },
-        {
-          property: `og:description`,
-          content: metaDescription
-        },
-        {
-          property: `og:image`,
-          content: metaImage
-        },
-        {
-          name: `twitter:card`,
-          content: `summary_large_image`
-        },
-        {
-          property: `twitter:url`,
-          content: location.href
-        },
-
-        {
-          name: `twitter:title`,
-          content: title
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription
-        },
-        {
-          property: `twitter:image`,
-          content: metaImage
-        },
-        {
-          name: `twitter:site`,
-          content: `@${site.siteMetadata.social.twitter}`
-        },
-        {
-          name: `twitter:domain`,
-          content: location.host
-        }
-      ].concat(meta)}
-    >
+    <>
+      <title>{siteTitle}</title>
+      <link rel="canonical" href={canonicalUrl} />
+      <meta name="robots" content="max-image-preview:large" />
+      <meta name="robots" content={metaRobotsContent} />
+      <meta name="robots" content={metaDescription} />
+      <meta property="og:site_name" content={site.siteMetadata.title} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:url" content={location.href} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:image" content={metaImage} />
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={location.href} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:image" content={metaImage} />
+      <meta
+        property="twitter:site"
+        content={`@${site.siteMetadata.social.twitter}`}
+      />
+      <meta property="twitter:domain" content="blog.gensobunya.net" />
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-    </Helmet>
+    </>
   )
-}
-
-SEO.defaultProps = {
-  lang: `ja`,
-  meta: [],
-  description: ``
 }
 
 export default SEO

@@ -13,8 +13,7 @@ const config: GatsbyConfig = {
       github: `gentksb`,
       instagram: `gen_sobunya`
     },
-    topMessage:
-      ''
+    topMessage: ""
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -49,12 +48,11 @@ const config: GatsbyConfig = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200, //discover用
-              wrapperStyle: `margin-bottom: 16px;`,
               quality: 80,
               withWebp: true,
               loading: `lazy`,
-              maxHeight: 760,
-              fit: `inside`
+              wrapperStyle: `max-height: 800px`,
+              showCaptions: true
             }
           },
           {
@@ -88,7 +86,6 @@ const config: GatsbyConfig = {
       }
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-preconnect",
       options: {

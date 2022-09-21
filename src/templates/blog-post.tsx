@@ -19,27 +19,36 @@ import LinkBox from "../mdx/linkBox"
 import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 import { PositiveBox } from "../mdx/positive"
 import { NegativeBox } from "../mdx/negative"
+import { MdxLink } from "../mdx/atoms/link"
+import { MdxListLi, MdxListOl, MdxListUl } from "../mdx/atoms/list"
+import { MdxH2, MdxH3, MdxH4, MdxParagraph } from "../mdx/atoms/paragraph"
+import { MdxCaption, MdxImage } from "../mdx/atoms/image"
 
-const shortcodes = {
+const components = {
   LinkBox,
   PositiveBox,
-  NegativeBox
+  NegativeBox,
+  a: MdxLink,
+  p: MdxParagraph,
+  ul: MdxListUl,
+  ol: MdxListOl,
+  li: MdxListLi,
+  img: MdxImage,
+  figcaption: MdxCaption,
+  h2: MdxH2,
+  h3: MdxH3,
+  h4: MdxH4
 }
 
 const BlogPostTemplate: React.FunctionComponent<
   PageProps<Queries.BlogPostBySlugQuery, Queries.MdxEdge>
-> = (props) => {
-  const { pageContext, data, location } = props
+> = ({ pageContext, data, location }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
   const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
   const parsedDate = parseISO(jstIsoDate)
   const formattedDate = format(parsedDate, "yyyy-MM-dd")
   const { previous, next } = pageContext
-  const seoImage =
-    post.frontmatter.cover != undefined
-      ? getSrc(post.frontmatter.cover.childImageSharp.gatsbyImageData)
-      : "/image/dummy.jpg"
   const relatedPostsComponent =
     post.frontmatter.tags != null ? (
       <RelatedPosts tag={post.frontmatter.tags[0]} id={post.id} />
@@ -47,13 +56,6 @@ const BlogPostTemplate: React.FunctionComponent<
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.excerpt}
-        image={seoImage}
-        location={location}
-        datePublished={jstIsoDate}
-      />
       <Box outline="none" width="100%">
         <article>
           <Box as="header" p={1}>
@@ -71,12 +73,8 @@ const BlogPostTemplate: React.FunctionComponent<
             <PostTag tags={post.frontmatter.tags} />
           </Box>
           <Divider marginY={2} />
-          <Box
-            className="post-body"
-            css={BlogPostStyle}
-            fontSize={{ base: "15px", md: "17px" }}
-          >
-            <MDXProvider components={shortcodes}>
+          <Box className="post-body" paddingX={2} css={BlogPostStyle}>
+            <MDXProvider components={components}>
               <MDXRenderer>{post.body}</MDXRenderer>
             </MDXProvider>
           </Box>
@@ -93,6 +91,25 @@ const BlogPostTemplate: React.FunctionComponent<
 }
 
 export default BlogPostTemplate
+
+export const Head = ({ data, location }) => {
+  const post = data.mdx
+  const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
+  const seoImage =
+    post.frontmatter.cover != undefined
+      ? getSrc(post.frontmatter.cover.childImageSharp.gatsbyImageData)
+      : "/image/dummy.jpg"
+
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.excerpt}
+      image={seoImage}
+      location={location}
+      datePublished={jstIsoDate}
+    />
+  )
+}
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
