@@ -85,7 +85,7 @@ const BlogPostTemplate: React.FunctionComponent<
             <PostTag tags={post.frontmatter.tags} />
           </Box>
           <Divider marginY={2} />
-          <Box className="post-body" css={BlogPostStyle}>
+          <Box className="post-body" paddingX={2} css={BlogPostStyle}>
             <MDXProvider components={components}>
               <MDXRenderer>{post.body}</MDXRenderer>
             </MDXProvider>
