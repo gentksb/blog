@@ -6,13 +6,11 @@ import SEO from "../components/utils/seo"
 
 const NotFoundPage: React.FunctionComponent<
   PageProps<Queries.NotFoundPageQuery, Queries.SitePage["pageContext"]>
-> = (props) => {
-  const { data, location } = props
+> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="404: Not Found" location={location} />
       <h1>Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     </Layout>
@@ -20,6 +18,10 @@ const NotFoundPage: React.FunctionComponent<
 }
 
 export default NotFoundPage
+
+export const Head = ({ location }) => (
+  <SEO title="404: Not Found" location={location} />
+)
 
 export const pageQuery = graphql`
   query NotFoundPage {

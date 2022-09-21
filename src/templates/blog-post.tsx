@@ -42,18 +42,13 @@ const components = {
 
 const BlogPostTemplate: React.FunctionComponent<
   PageProps<Queries.BlogPostBySlugQuery, Queries.MdxEdge>
-> = (props) => {
-  const { pageContext, data, location } = props
+> = ({ pageContext, data, location }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
   const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
   const parsedDate = parseISO(jstIsoDate)
   const formattedDate = format(parsedDate, "yyyy-MM-dd")
   const { previous, next } = pageContext
-  const seoImage =
-    post.frontmatter.cover != undefined
-      ? getSrc(post.frontmatter.cover.childImageSharp.gatsbyImageData)
-      : "/image/dummy.jpg"
   const relatedPostsComponent =
     post.frontmatter.tags != null ? (
       <RelatedPosts tag={post.frontmatter.tags[0]} id={post.id} />
@@ -61,13 +56,6 @@ const BlogPostTemplate: React.FunctionComponent<
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.excerpt}
-        image={seoImage}
-        location={location}
-        datePublished={jstIsoDate}
-      />
       <Box outline="none" width="100%">
         <article>
           <Box as="header" p={1}>
@@ -103,6 +91,25 @@ const BlogPostTemplate: React.FunctionComponent<
 }
 
 export default BlogPostTemplate
+
+export const Head = ({ data, location }) => {
+  const post = data.mdx
+  const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
+  const seoImage =
+    post.frontmatter.cover != undefined
+      ? getSrc(post.frontmatter.cover.childImageSharp.gatsbyImageData)
+      : "/image/dummy.jpg"
+
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.excerpt}
+      image={seoImage}
+      location={location}
+      datePublished={jstIsoDate}
+    />
+  )
+}
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
