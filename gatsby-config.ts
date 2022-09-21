@@ -51,7 +51,8 @@ const config: GatsbyConfig = {
               quality: 80,
               withWebp: true,
               loading: `lazy`,
-              wrapperStyle: `max-height: 760px`
+              wrapperStyle: `max-height: 800px`,
+              showCaptions: true
             }
           },
           {
