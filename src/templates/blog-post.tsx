@@ -21,7 +21,7 @@ import { MdxLink } from "../mdx/atoms/link"
 import { MdxListLi, MdxListOl, MdxListUl } from "../mdx/atoms/list"
 import { MdxH2, MdxH3, MdxH4, MdxParagraph } from "../mdx/atoms/paragraph"
 import { MdxCaption, MdxImage } from "../mdx/atoms/image"
-import { InArticleTable } from "../mdx/inArticleTable"
+import { InArticleTable } from "../mdx/atoms/inArticleTable"
 
 const components = {
   LinkBox,

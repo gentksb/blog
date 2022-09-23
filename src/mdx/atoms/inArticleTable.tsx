@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import { Box } from "@chakra-ui/react"
 import { css } from "@emotion/react"
 
@@ -29,6 +29,6 @@ const style = css`
   }
 `
 
-export const InArticleTable: React.FC = ({ children }) => {
+export const InArticleTable: React.FC<ReactNode> = (children) => {
   return <Box css={style}>{children}</Box>
 }
