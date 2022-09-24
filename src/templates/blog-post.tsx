@@ -27,6 +27,7 @@ const components = {
   LinkBox,
   PositiveBox,
   NegativeBox,
+  InArticleTable,
   a: MdxLink,
   p: MdxParagraph,
   ul: MdxListUl,
@@ -36,8 +37,7 @@ const components = {
   figcaption: MdxCaption,
   h2: MdxH2,
   h3: MdxH3,
-  h4: MdxH4,
-  InArticleTable
+  h4: MdxH4
 }
 
 const BlogPostTemplate: React.FunctionComponent<

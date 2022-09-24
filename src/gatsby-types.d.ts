@@ -673,7 +673,6 @@ type FileFieldsEnum =
   | 'childMdx.children.parent.id'
   | 'childMdx.excerpt'
   | 'childMdx.fields.slug'
-  | 'childMdx.fileAbsolutePath'
   | 'childMdx.frontmatter.author'
   | 'childMdx.frontmatter.cover.absolutePath'
   | 'childMdx.frontmatter.cover.accessTime'
@@ -719,10 +718,6 @@ type FileFieldsEnum =
   | 'childMdx.frontmatter.tags'
   | 'childMdx.frontmatter.title'
   | 'childMdx.frontmatter.type'
-  | 'childMdx.headings'
-  | 'childMdx.headings.depth'
-  | 'childMdx.headings.value'
-  | 'childMdx.html'
   | 'childMdx.id'
   | 'childMdx.internal.content'
   | 'childMdx.internal.contentDigest'
@@ -733,7 +728,6 @@ type FileFieldsEnum =
   | 'childMdx.internal.mediaType'
   | 'childMdx.internal.owner'
   | 'childMdx.internal.type'
-  | 'childMdx.mdxAST'
   | 'childMdx.parent.children'
   | 'childMdx.parent.children.children'
   | 'childMdx.parent.children.id'
@@ -749,13 +743,7 @@ type FileFieldsEnum =
   | 'childMdx.parent.internal.type'
   | 'childMdx.parent.parent.children'
   | 'childMdx.parent.parent.id'
-  | 'childMdx.rawBody'
-  | 'childMdx.slug'
   | 'childMdx.tableOfContents'
-  | 'childMdx.timeToRead'
-  | 'childMdx.wordCount.paragraphs'
-  | 'childMdx.wordCount.sentences'
-  | 'childMdx.wordCount.words'
   | 'children'
   | 'childrenImageSharp'
   | 'childrenImageSharp.children'
@@ -851,7 +839,6 @@ type FileFieldsEnum =
   | 'childrenMdx.children.parent.id'
   | 'childrenMdx.excerpt'
   | 'childrenMdx.fields.slug'
-  | 'childrenMdx.fileAbsolutePath'
   | 'childrenMdx.frontmatter.author'
   | 'childrenMdx.frontmatter.cover.absolutePath'
   | 'childrenMdx.frontmatter.cover.accessTime'
@@ -897,10 +884,6 @@ type FileFieldsEnum =
   | 'childrenMdx.frontmatter.tags'
   | 'childrenMdx.frontmatter.title'
   | 'childrenMdx.frontmatter.type'
-  | 'childrenMdx.headings'
-  | 'childrenMdx.headings.depth'
-  | 'childrenMdx.headings.value'
-  | 'childrenMdx.html'
   | 'childrenMdx.id'
   | 'childrenMdx.internal.content'
   | 'childrenMdx.internal.contentDigest'
@@ -911,7 +894,6 @@ type FileFieldsEnum =
   | 'childrenMdx.internal.mediaType'
   | 'childrenMdx.internal.owner'
   | 'childrenMdx.internal.type'
-  | 'childrenMdx.mdxAST'
   | 'childrenMdx.parent.children'
   | 'childrenMdx.parent.children.children'
   | 'childrenMdx.parent.children.id'
@@ -927,13 +909,7 @@ type FileFieldsEnum =
   | 'childrenMdx.parent.internal.type'
   | 'childrenMdx.parent.parent.children'
   | 'childrenMdx.parent.parent.id'
-  | 'childrenMdx.rawBody'
-  | 'childrenMdx.slug'
   | 'childrenMdx.tableOfContents'
-  | 'childrenMdx.timeToRead'
-  | 'childrenMdx.wordCount.paragraphs'
-  | 'childrenMdx.wordCount.sentences'
-  | 'childrenMdx.wordCount.words'
   | 'children.children'
   | 'children.children.children'
   | 'children.children.children.children'
@@ -1177,14 +1153,6 @@ type GatsbyImagePlaceholder =
   | 'dominantColor'
   | 'none'
   | 'tracedSVG';
-
-type HeadingsMdx =
-  | 'h1'
-  | 'h2'
-  | 'h3'
-  | 'h4'
-  | 'h5'
-  | 'h6';
 
 type ImageCropFocus =
   | 17
@@ -1700,34 +1668,20 @@ type JSONQueryOperatorInput = {
 };
 
 type Mdx = Node & {
-  readonly body: Scalars['String'];
+  readonly body: Maybe<Scalars['String']>;
   readonly children: ReadonlyArray<Node>;
-  readonly excerpt: Scalars['String'];
+  readonly excerpt: Maybe<Scalars['String']>;
   readonly fields: Maybe<MdxFields>;
-  readonly fileAbsolutePath: Scalars['String'];
   readonly frontmatter: Maybe<MdxFrontmatter>;
-  readonly headings: Maybe<ReadonlyArray<Maybe<MdxHeadingMdx>>>;
-  readonly html: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly internal: Internal;
-  readonly mdxAST: Maybe<Scalars['JSON']>;
   readonly parent: Maybe<Node>;
-  readonly rawBody: Scalars['String'];
-  readonly slug: Maybe<Scalars['String']>;
   readonly tableOfContents: Maybe<Scalars['JSON']>;
-  readonly timeToRead: Maybe<Scalars['Int']>;
-  readonly wordCount: Maybe<MdxWordCount>;
 };
 
 
 type Mdx_excerptArgs = {
   pruneLength?: InputMaybe<Scalars['Int']>;
-  truncate?: InputMaybe<Scalars['Boolean']>;
-};
-
-
-type Mdx_headingsArgs = {
-  depth: InputMaybe<HeadingsMdx>;
 };
 
 
@@ -1830,7 +1784,6 @@ type MdxFieldsEnum =
   | 'children.parent.parent.id'
   | 'excerpt'
   | 'fields.slug'
-  | 'fileAbsolutePath'
   | 'frontmatter.author'
   | 'frontmatter.cover.absolutePath'
   | 'frontmatter.cover.accessTime'
@@ -1849,15 +1802,8 @@ type MdxFieldsEnum =
   | 'frontmatter.cover.childMdx.body'
   | 'frontmatter.cover.childMdx.children'
   | 'frontmatter.cover.childMdx.excerpt'
-  | 'frontmatter.cover.childMdx.fileAbsolutePath'
-  | 'frontmatter.cover.childMdx.headings'
-  | 'frontmatter.cover.childMdx.html'
   | 'frontmatter.cover.childMdx.id'
-  | 'frontmatter.cover.childMdx.mdxAST'
-  | 'frontmatter.cover.childMdx.rawBody'
-  | 'frontmatter.cover.childMdx.slug'
   | 'frontmatter.cover.childMdx.tableOfContents'
-  | 'frontmatter.cover.childMdx.timeToRead'
   | 'frontmatter.cover.children'
   | 'frontmatter.cover.childrenImageSharp'
   | 'frontmatter.cover.childrenImageSharp.children'
@@ -1867,15 +1813,8 @@ type MdxFieldsEnum =
   | 'frontmatter.cover.childrenMdx.body'
   | 'frontmatter.cover.childrenMdx.children'
   | 'frontmatter.cover.childrenMdx.excerpt'
-  | 'frontmatter.cover.childrenMdx.fileAbsolutePath'
-  | 'frontmatter.cover.childrenMdx.headings'
-  | 'frontmatter.cover.childrenMdx.html'
   | 'frontmatter.cover.childrenMdx.id'
-  | 'frontmatter.cover.childrenMdx.mdxAST'
-  | 'frontmatter.cover.childrenMdx.rawBody'
-  | 'frontmatter.cover.childrenMdx.slug'
   | 'frontmatter.cover.childrenMdx.tableOfContents'
-  | 'frontmatter.cover.childrenMdx.timeToRead'
   | 'frontmatter.cover.children.children'
   | 'frontmatter.cover.children.id'
   | 'frontmatter.cover.ctime'
@@ -1919,10 +1858,6 @@ type MdxFieldsEnum =
   | 'frontmatter.tags'
   | 'frontmatter.title'
   | 'frontmatter.type'
-  | 'headings'
-  | 'headings.depth'
-  | 'headings.value'
-  | 'html'
   | 'id'
   | 'internal.content'
   | 'internal.contentDigest'
@@ -1933,7 +1868,6 @@ type MdxFieldsEnum =
   | 'internal.mediaType'
   | 'internal.owner'
   | 'internal.type'
-  | 'mdxAST'
   | 'parent.children'
   | 'parent.children.children'
   | 'parent.children.children.children'
@@ -1975,13 +1909,7 @@ type MdxFieldsEnum =
   | 'parent.parent.internal.type'
   | 'parent.parent.parent.children'
   | 'parent.parent.parent.id'
-  | 'rawBody'
-  | 'slug'
-  | 'tableOfContents'
-  | 'timeToRead'
-  | 'wordCount.paragraphs'
-  | 'wordCount.sentences'
-  | 'wordCount.words';
+  | 'tableOfContents';
 
 type MdxFieldsFilterInput = {
   readonly slug: InputMaybe<StringQueryOperatorInput>;
@@ -1992,19 +1920,11 @@ type MdxFilterInput = {
   readonly children: InputMaybe<NodeFilterListInput>;
   readonly excerpt: InputMaybe<StringQueryOperatorInput>;
   readonly fields: InputMaybe<MdxFieldsFilterInput>;
-  readonly fileAbsolutePath: InputMaybe<StringQueryOperatorInput>;
   readonly frontmatter: InputMaybe<MdxFrontmatterFilterInput>;
-  readonly headings: InputMaybe<MdxHeadingMdxFilterListInput>;
-  readonly html: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
-  readonly mdxAST: InputMaybe<JSONQueryOperatorInput>;
   readonly parent: InputMaybe<NodeFilterInput>;
-  readonly rawBody: InputMaybe<StringQueryOperatorInput>;
-  readonly slug: InputMaybe<StringQueryOperatorInput>;
   readonly tableOfContents: InputMaybe<JSONQueryOperatorInput>;
-  readonly timeToRead: InputMaybe<IntQueryOperatorInput>;
-  readonly wordCount: InputMaybe<MdxWordCountFilterInput>;
 };
 
 type MdxFilterListInput = {
@@ -2018,7 +1938,7 @@ type MdxFrontmatter = {
   readonly date: Maybe<Scalars['Date']>;
   readonly draft: Maybe<Scalars['Boolean']>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
-  readonly title: Scalars['String'];
+  readonly title: Maybe<Scalars['String']>;
   readonly type: Maybe<Scalars['String']>;
 };
 
@@ -2082,35 +2002,9 @@ type MdxGroupConnection_sumArgs = {
   field: MdxFieldsEnum;
 };
 
-type MdxHeadingMdx = {
-  readonly depth: Maybe<Scalars['Int']>;
-  readonly value: Maybe<Scalars['String']>;
-};
-
-type MdxHeadingMdxFilterInput = {
-  readonly depth: InputMaybe<IntQueryOperatorInput>;
-  readonly value: InputMaybe<StringQueryOperatorInput>;
-};
-
-type MdxHeadingMdxFilterListInput = {
-  readonly elemMatch: InputMaybe<MdxHeadingMdxFilterInput>;
-};
-
 type MdxSortInput = {
   readonly fields: InputMaybe<ReadonlyArray<InputMaybe<MdxFieldsEnum>>>;
   readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
-};
-
-type MdxWordCount = {
-  readonly paragraphs: Maybe<Scalars['Int']>;
-  readonly sentences: Maybe<Scalars['Int']>;
-  readonly words: Maybe<Scalars['Int']>;
-};
-
-type MdxWordCountFilterInput = {
-  readonly paragraphs: InputMaybe<IntQueryOperatorInput>;
-  readonly sentences: InputMaybe<IntQueryOperatorInput>;
-  readonly words: InputMaybe<IntQueryOperatorInput>;
 };
 
 /** Node Interface */
@@ -2364,19 +2258,11 @@ type Query_mdxArgs = {
   children: InputMaybe<NodeFilterListInput>;
   excerpt: InputMaybe<StringQueryOperatorInput>;
   fields: InputMaybe<MdxFieldsFilterInput>;
-  fileAbsolutePath: InputMaybe<StringQueryOperatorInput>;
   frontmatter: InputMaybe<MdxFrontmatterFilterInput>;
-  headings: InputMaybe<MdxHeadingMdxFilterListInput>;
-  html: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
-  mdxAST: InputMaybe<JSONQueryOperatorInput>;
   parent: InputMaybe<NodeFilterInput>;
-  rawBody: InputMaybe<StringQueryOperatorInput>;
-  slug: InputMaybe<StringQueryOperatorInput>;
   tableOfContents: InputMaybe<JSONQueryOperatorInput>;
-  timeToRead: InputMaybe<IntQueryOperatorInput>;
-  wordCount: InputMaybe<MdxWordCountFilterInput>;
 };
 
 
@@ -3730,7 +3616,7 @@ type IndexPageQueryVariables = Exact<{
 }>;
 
 
-type IndexPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly description: string | null } | null } | null, readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string, readonly tags: ReadonlyArray<string | null> | null, readonly draft: boolean | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly siteBuildMetadata: { readonly buildTime: string | null } | null };
+type IndexPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly description: string | null } | null } | null, readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly tags: ReadonlyArray<string | null> | null, readonly draft: boolean | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> }, readonly siteBuildMetadata: { readonly buildTime: string | null } | null };
 
 type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3740,7 +3626,7 @@ type NotFoundPageQuery = { readonly site: { readonly siteMetadata: { readonly ti
 type RecentPostQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly title: string, readonly tags: ReadonlyArray<string | null> | null } | null, readonly fields: { readonly slug: string | null } | null } }> } };
+type RecentPostQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly title: string | null, readonly tags: ReadonlyArray<string | null> | null } | null, readonly fields: { readonly slug: string | null } | null } }> } };
 
 type SeoComponentQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3757,7 +3643,7 @@ type TagPageQueryVariables = Exact<{
 }>;
 
 
-type TagPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null } | null } | null, readonly allMdx: { readonly totalCount: number, readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string, readonly tags: ReadonlyArray<string | null> | null, readonly draft: boolean | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
+type TagPageQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null } | null } | null, readonly allMdx: { readonly totalCount: number, readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly date: string | null, readonly title: string | null, readonly tags: ReadonlyArray<string | null> | null, readonly draft: boolean | null, readonly cover: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null } }> } };
 
 type topMessageQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3767,7 +3653,7 @@ type topMessageQuery = { readonly site: { readonly siteMetadata: { readonly topM
 type AllPostNodeQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type AllPostNodeQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string } | null, readonly internal: { readonly contentFilePath: string | null } } }> } };
+type AllPostNodeQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string | null } | null, readonly internal: { readonly contentFilePath: string | null } } }> } };
 
 type AllTagNodeQueryVariables = Exact<{ [key: string]: never; }>;
 
