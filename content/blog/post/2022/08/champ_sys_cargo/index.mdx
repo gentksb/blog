@@ -62,8 +62,6 @@ Performanceラインのチャンピオンシステムビブショーツはいつ
 
 **オンラインショップでも受注制作なので、オプションは自由だ。**
 
-<!-- textlint-disable -->
-
 ## まとめ
 
 <PositiveBox>
@@ -96,5 +94,3 @@ Performanceラインのチャンピオンシステムビブショーツはいつ
 <LinkBox url="https://www.melonbooks.co.jp/detail/detail.php?product_id=1579831" />
 
 <LinkBox url="https://www.amazon.co.jp/dp/B0B8VVTTSJ" isAmazonLink />
-
-<!-- textlint-enable -->

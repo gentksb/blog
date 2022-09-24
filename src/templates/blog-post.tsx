@@ -1,10 +1,20 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
 import { getSrc } from "gatsby-plugin-image"
-import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
+import {
+  Box,
+  Text,
+  Divider,
+  Heading,
+  HStack,
+  Td,
+  Tr,
+  Thead,
+  Tbody
+} from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import { parseISO, format } from "date-fns"
 
 import Layout from "../components/layout"
@@ -14,7 +24,6 @@ import PostTag from "../components/molecules/postTag"
 import PrevAndNextPost from "../components/molecules/prevAndNextpost"
 import TagList from "../components/molecules/tagList"
 import RelatedPosts from "../components/organisms/relatedPosts"
-import BlogPostStyle from "../styles/blog-post.style"
 import LinkBox from "../mdx/linkBox"
 import { convertMdxDateToIsoJstDate } from "../utils/convertMdxDateToIsoJstDate"
 import { PositiveBox } from "../mdx/positive"
@@ -23,6 +32,7 @@ import { MdxLink } from "../mdx/atoms/link"
 import { MdxListLi, MdxListOl, MdxListUl } from "../mdx/atoms/list"
 import { MdxH2, MdxH3, MdxH4, MdxParagraph } from "../mdx/atoms/paragraph"
 import { MdxCaption, MdxImage } from "../mdx/atoms/image"
+import { MdxTable } from "../mdx/atoms/table"
 
 const components = {
   LinkBox,
@@ -37,7 +47,12 @@ const components = {
   figcaption: MdxCaption,
   h2: MdxH2,
   h3: MdxH3,
-  h4: MdxH4
+  h4: MdxH4,
+  table: MdxTable,
+  td: Td,
+  tr: Tr,
+  thead: Thead,
+  Tbody: Tbody
 }
 
 const BlogPostTemplate: React.FunctionComponent<
@@ -73,7 +88,7 @@ const BlogPostTemplate: React.FunctionComponent<
             <PostTag tags={post.frontmatter.tags} />
           </Box>
           <Divider marginY={2} />
-          <Box className="post-body" paddingX={2} css={BlogPostStyle}>
+          <Box className="post-body" paddingX={2}>
             <MDXProvider components={components}>
               <MDXRenderer>{post.body}</MDXRenderer>
             </MDXProvider>
@@ -136,7 +151,7 @@ export const pageQuery = graphql`
           }
         }
       }
-      excerpt(truncate: true, pruneLength: 250)
+      excerpt(pruneLength: 250)
       id
     }
   }

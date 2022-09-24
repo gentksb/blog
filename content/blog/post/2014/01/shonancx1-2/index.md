@@ -4,7 +4,6 @@ author: admin
 type: post
 date: 2014-01-24T06:09:00+00:00
 
-
 tags: ["CX","MTB","RACE"]
 
 ---

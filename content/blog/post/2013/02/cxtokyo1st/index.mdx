@@ -65,7 +65,7 @@ MTBの特性を活かして砂浜を乗車して一気に差をつける！
 
 そしてこれですよ…
 
-<https://www.cyclowired.jp/?q=node/101211>
+<LinkBox url="https://www.cyclowired.jp/?q=node/101211" />
 
 ![image](https://www.cyclowired.jp/sites/default/files/images/2013/02/09/CXTOKYO201301CW16.jpg)
 

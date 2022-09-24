@@ -52,8 +52,6 @@ cover: "./cover.jpg"
 
 <LinkBox url="https://www.riteway-jp.com/itemblog/%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89-23631/2019/05/_kamata" />
 
-<!-- textlint-disable -->
-
 ## 宣伝
 
 8/13に行われるコミックマーケット100の1日目で、同人誌「サイクリング・デジタルトランスフォーメーション」を頒布予定。
@@ -72,5 +70,3 @@ cover: "./cover.jpg"
 <LinkBox url="https://www.melonbooks.co.jp/detail/detail.php?product_id=1579831" />
 
 <LinkBox url="https://www.amazon.co.jp/dp/B0B8VVTTSJ" isAmazonLink />
-
-<!-- textlint-enable -->

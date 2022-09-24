@@ -71,17 +71,7 @@ const config: GatsbyConfig = {
               noInlineHighlight: false
             }
           },
-          `gatsby-remark-copy-linked-files`,
-          {
-            resolve: "gatsby-remark-custom-blocks",
-            options: {
-              blocks: {
-                scrollableTable: {
-                  classes: "scrollable_table"
-                }
-              }
-            }
-          }
+          `gatsby-remark-copy-linked-files`
         ]
       }
     },

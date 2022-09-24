@@ -1,6 +1,6 @@
 const shareConfig = {
   iconSize: 48,
-  isRoundIcon: true,
+  isRound: true
 }
 
 export default shareConfig
