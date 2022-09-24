@@ -72,7 +72,6 @@ function getLatestWeightData(){
   return postData
 }
 
-
 function postMeasureDataToSlack() {
   //Get latest row data
   const data = getLatestWeightData();

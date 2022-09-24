@@ -22,13 +22,12 @@ import { MdxLink } from "../mdx/atoms/link"
 import { MdxListLi, MdxListOl, MdxListUl } from "../mdx/atoms/list"
 import { MdxH2, MdxH3, MdxH4, MdxParagraph } from "../mdx/atoms/paragraph"
 import { MdxCaption, MdxImage } from "../mdx/atoms/image"
-import { InArticleTable } from "../mdx/atoms/inArticleTable"
+import { MdxTable } from "../mdx/atoms/table"
 
 const components = {
   LinkBox,
   PositiveBox,
   NegativeBox,
-  InArticleTable,
   a: MdxLink,
   p: MdxParagraph,
   ul: MdxListUl,
@@ -38,7 +37,8 @@ const components = {
   figcaption: MdxCaption,
   h2: MdxH2,
   h3: MdxH3,
-  h4: MdxH4
+  h4: MdxH4,
+  table: MdxTable
 }
 
 const BlogPostTemplate: React.FunctionComponent<

@@ -43,14 +43,10 @@ DD(正式名称DoubleDown)はブチルゴム層をインナーのビード寄り
 
 Aggressorにおいて、DDとEXOのカタログスペックを見てみます。
 
-<InArticleTable>
-
 | Part Number | Size | ETRTO | TPI | Bead | Weight(g) | Compound | MaxPSI | Tech | Color | Application |
 | ---------- | --------- | ------ | ----- | -------- | ----- | --------- | -------- | ------ | ----- | -------- |
 | TB91009100 | 27.5X2.30 | 58-584 | 60 | FOLDABLE | 885 | DUAL | 60 | EXO/TR | Black | MOUNTAIN |
 | TB91009200 | 27.5X2.30 | 58-584 | 120 | FOLDABLE | 1,050 | DUAL | 60 | TR/DD | Black | MOUNTAIN |
-
-</InArticleTable>
 
 まず重量が165g近く変わってきます。DDモデルは1㎏ の大台に乗っており、トレイルをゴリゴリ登るならちょっと使いたくないレベル。
 
