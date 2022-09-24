@@ -21,7 +21,7 @@
     "firebase-admin": "^10.0.2",
     "firebase-functions": "^3.19.0",
     "jsdom": "^19.0.0",
-    "node-fetch": "^3.2.3",
+    "node-fetch": "^3.2.10",
     "paapi5-nodejs-sdk": "^1.1.0"
   },
   "devDependencies": {
