@@ -1,7 +1,17 @@
 import React from "react"
 import { PageProps, graphql } from "gatsby"
 import { getSrc } from "gatsby-plugin-image"
-import { Box, Text, Divider, Heading, HStack } from "@chakra-ui/react"
+import {
+  Box,
+  Text,
+  Divider,
+  Heading,
+  HStack,
+  Td,
+  Tr,
+  Thead,
+  Tbody
+} from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
@@ -38,7 +48,11 @@ const components = {
   h2: MdxH2,
   h3: MdxH3,
   h4: MdxH4,
-  table: MdxTable
+  table: MdxTable,
+  td: Td,
+  tr: Tr,
+  thead: Thead,
+  Tbody: Tbody
 }
 
 const BlogPostTemplate: React.FunctionComponent<
