@@ -75,7 +75,6 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
       <HatenaShareButton url={location.href} title={shareTitle} className="sharebutton-box">
         <HatenaIcon
           size={shareConfig.iconSize}
-          className="sharebutton-box"
           round={shareConfig.isRound}
         />
       </HatenaShareButton>
