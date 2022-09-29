@@ -72,10 +72,9 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
       >
         <TwitterIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
       </TwitterShareButton>
-      <HatenaShareButton url={location.href} title={shareTitle}>
+      <HatenaShareButton url={location.href} title={shareTitle} className="sharebutton-box">
         <HatenaIcon
           size={shareConfig.iconSize}
-          className="sharebutton-box"
           round={shareConfig.isRound}
         />
       </HatenaShareButton>
