@@ -32,7 +32,7 @@ const config: GatsbyConfig = {
         defaults: {
           breakpoints: [180, 360, 810, 1080, 1366, 1920],
           transformOptions: {
-            maxWidth: 800,
+            maxWidth: 1200,
             fit: "inside",
             cropFocus: "attention"
           }
