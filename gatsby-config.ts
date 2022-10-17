@@ -30,7 +30,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          breakpoints: [180, 360, 810, 1080, 1366, 1920],
+          breakpoints: [180, 360, 810, 1080, 1200],
           transformOptions: {
             maxWidth: 1200,
             fit: "inside",
@@ -52,7 +52,8 @@ const config: GatsbyConfig = {
               withWebp: true,
               loading: `lazy`,
               wrapperStyle: `max-height: 800px`,
-              showCaptions: true
+              showCaptions: true,
+              disableBgImage: true
             }
           },
           {
