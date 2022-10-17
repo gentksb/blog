@@ -15,7 +15,7 @@ tags: ["REVIEW", "ROAD"]
 
 何が問題だったかというと…コイツです
 
-![image](DSC_1114.jpg)
+![GATSBY_EMPTY_ALT](DSC_1114.jpg)
 
 ようするにシートポストのヤグラとの相性ですね。
 

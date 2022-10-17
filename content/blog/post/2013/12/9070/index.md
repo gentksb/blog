@@ -9,7 +9,7 @@ cover: DSC_4646.jpg
 tags: ["TIPS", "REVIEW", "ROAD"]
 ---
 
-![image](DSC_4646.jpg)
+![GATSBY_EMPTY_ALT](DSC_4646.jpg)
 
 説明不要！冬だ！IYHだ！
 
@@ -33,13 +33,13 @@ Bacchus01を9070に換装します。
 
 届いた勢いで組み付けます
 
-![image](DSC_4649.jpg)
+![GATSBY_EMPTY_ALT](DSC_4649.jpg)
 
 まずはクランク、RD,FD,STIから…FDはバンド式なので純正品を使います。
 
 Di2のFD特有？のサポートボルトからフレームを保護する必要があるのですが、純正バンドなら保護用のメタルパッドも必要ありません。
 
-![image](DSC_4650.jpg)
+![GATSBY_EMPTY_ALT](DSC_4650.jpg)
 
 簡単に組み付けました。ここからがDi2の本番
 
@@ -51,15 +51,15 @@ TRINITYでわかっていたのに完全にやらかしました。テンショ�
 
 とりあえず気合でなんとかします。
 
-![image](DSC_4653.jpg)
+![GATSBY_EMPTY_ALT](DSC_4653.jpg)
 
 ホムセンで仕入れたグッズを…
 
-![image](DSC_4658.jpg)
+![GATSBY_EMPTY_ALT](DSC_4658.jpg)
 
 こうして
 
-![image](DSC_4663.jpg)
+![GATSBY_EMPTY_ALT](DSC_4663.jpg)
 
 こうじゃ
 

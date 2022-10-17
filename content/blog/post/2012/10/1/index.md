@@ -7,7 +7,7 @@ cover: DSC_0664.jpg
 tags: ["ROAD"]
 ---
 
-![image](./DSC_0664.jpg)
+![GATSBY_EMPTY_ALT](./DSC_0664.jpg)
 
 まずはメインで使っているロードバイクから。
 <a href="http://www.avedio.net/" target="_blank">AVEDIO</a>のBacchus01(2011モデル）です。

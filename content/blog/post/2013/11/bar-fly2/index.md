@@ -9,7 +9,7 @@ cover: DSC_4572.jpg
 tags: ["TIPS", "TT", "REVIEW"]
 ---
 
-![image](DSC_4572.jpg)
+![GATSBY_EMPTY_ALT](DSC_4572.jpg)
 
 BAR FLY2.0
 
@@ -23,13 +23,13 @@ BAR FLY2.0
 
 というわけで買ってみました。
 
-![image](DSC_4578.jpg)
+![GATSBY_EMPTY_ALT](DSC_4578.jpg)
 
 わかりにくいですがタイラップ2本で固定。
 
 太めのタイラップ1本でもいいと思います。公式サイトではジャンクションをまるまる縛っていますが中央のゴムバンドを通す部分に固定すればよいかと。
 
-![image](DSC_4584.jpg)
+![GATSBY_EMPTY_ALT](DSC_4584.jpg)
 
 こちらが装着状態。
 

@@ -25,7 +25,7 @@ tags: ["REVIEW", "ROAD"]
 
 ### NOVATEC JETFLY
 
-![image](BWXIUoJCEAAl97d.jpg)
+![GATSBY_EMPTY_ALT](BWXIUoJCEAAl97d.jpg)
 
 11s対応、チューブレスレディ、32mmリム、公称1435 g
 
@@ -35,7 +35,7 @@ GP4000Sとビットリアの緑チューブ、6700スプロケを嵌めた上体
 
 見なかったことにしましょう、公称です公称。リムテープとか入れてないでしょう。
 
-![image](BWXhenkCIAEeGMK.jpg)
+![GATSBY_EMPTY_ALT](BWXhenkCIAEeGMK.jpg)
 
 見た目そこそこ！
 

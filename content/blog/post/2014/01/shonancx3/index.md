@@ -9,7 +9,7 @@ cover: DSC_4739.jpg
 tags: ["CX", "RACE"]
 ---
 
-![image](DSC_4739.jpg)
+![GATSBY_EMPTY_ALT](DSC_4739.jpg)
 
 毎度おなじみ湘南シクロクロス第3戦。
 

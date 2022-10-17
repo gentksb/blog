@@ -9,7 +9,7 @@ cover: IMG_20140122_2230.jpg
 tags: ["CX", "EC"]
 ---
 
-![image](IMG_20140122_223026.jpg)
+![GATSBY_EMPTY_ALT](IMG_20140122_223026.jpg)
 
 CX用にAliExpressで色合せで偽スパイダーを買いました。
 
