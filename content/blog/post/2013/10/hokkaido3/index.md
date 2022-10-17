@@ -13,7 +13,7 @@ tags: ["TOURING", "ROAD"]
 
 いわゆる広域農道で20kmくらい車通のすくない平地があるそうで…路面もGOOD
 
-![image](DSC_4135.jpg)
+![GATSBY_EMPTY_ALT](DSC_4135.jpg)
 
 こんなかんじの道が延々 20km以上！
 
@@ -21,9 +21,9 @@ TTの大会開いたら人気が出そうなコースです
 
 写真が少ないのはエアロポジションでテンション上がり続けていた影響で
 
-![image](DSC_4137.jpg)
+![GATSBY_EMPTY_ALT](DSC_4137.jpg)
 
-![image](DSC_4136.jpg)
+![GATSBY_EMPTY_ALT](DSC_4136.jpg)
 
 道の駅で鶏の半身揚げを食し、T-800に載せて頂いたりしました。
 

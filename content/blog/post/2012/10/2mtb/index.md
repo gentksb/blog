@@ -6,7 +6,7 @@ date: 2012-10-16T02:21:00+00:00
 tags: ["MTB"]
 ---
 
-![image](./DSC_1046.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1046.jpg)
 
 続いてはMTB。[KONA](http://www.konaworld.jp/)のBlast(2011モデル）です。
 

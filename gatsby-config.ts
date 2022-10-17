@@ -26,13 +26,12 @@ const config: GatsbyConfig = {
         name: `blog`
       }
     },
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          breakpoints: [180, 360, 810, 1080, 1366, 1920],
           transformOptions: {
-            maxWidth: 800,
             fit: "inside",
             cropFocus: "attention"
           }
@@ -43,15 +42,17 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.md`, `.mdx`],
+        plugins: [`gatsby-remark-images`],
+        // a workaround to solve mdx-remark plugin compat issue
+        // https://github.com/gatsbyjs/gatsby/issues/15486
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
+              srcSetBreakpoints: [810, 1080, 1200],
               maxWidth: 1200, //discover用
               quality: 80,
               withWebp: true,
-              loading: `lazy`,
-              wrapperStyle: `max-height: 800px`,
               showCaptions: true
             }
           },
@@ -75,7 +76,6 @@ const config: GatsbyConfig = {
         ]
       }
     },
-    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-preconnect",
       options: {

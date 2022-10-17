@@ -14,15 +14,15 @@ tags: ["TIPS", "EC"]
 
 1, まずは**日本語版**のPaypalページにログイン、限度額を表示する
 
-![image](./lightshot.png)
+![GATSBY_EMPTY_ALT](./lightshot.png)
 
 2,「支払い」部分の「本人確認」ボタンをクリックするとアップロード画面にいけると思います。
 
-![image](./lightshot1.png)
+![GATSBY_EMPTY_ALT](./lightshot1.png)
 
 そうするとこんな画面に飛びます
 
-![image](./Screenshot_1.png)
+![GATSBY_EMPTY_ALT](./Screenshot_1.png)
 
 自分のステータスでは既に書類確認中になっていますが、まだの方はアップロードページに飛ぶリンクが存在します。
 

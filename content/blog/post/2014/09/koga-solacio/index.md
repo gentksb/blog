@@ -9,7 +9,7 @@ cover: 2014-09-2110.09.30.jpg
 tags: ["REVIEW", "ROAD"]
 ---
 
-![image](2014-09-2110.09.30.jpg)
+![GATSBY_EMPTY_ALT](2014-09-2110.09.30.jpg)
 
 AVEDIOのバッカス01からKOGAのsolacioに乗り換えました。
 

@@ -107,6 +107,8 @@ const LinkBox: React.FunctionComponent<Props> = ({
     }
   }, [isAmazonLink, encodedUrl, urlDomain, isA8Link])
 
+  const linkColor = "teal.600"
+
   return (
     <>
       <ChakraLinkBox
@@ -137,7 +139,7 @@ const LinkBox: React.FunctionComponent<Props> = ({
             href={linkurl ?? ogpData.url}
             isExternal
           >
-            <Text noOfLines={[1, 1, 2, 2]} as="span">
+            <Text noOfLines={[1, 1, 2, 2]} as="span" color={linkColor}>
               <ExternalLinkIcon />
               {ogpData.title}
             </Text>
@@ -161,7 +163,7 @@ const LinkBox: React.FunctionComponent<Props> = ({
             alignContent="center"
           >
             {loading ? (
-              <CircularProgress isIndeterminate color="teal.300" />
+              <CircularProgress isIndeterminate color={linkColor} />
             ) : (
               <Image
                 src={ogpData.ogpIcon}
