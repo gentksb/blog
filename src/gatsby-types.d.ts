@@ -713,6 +713,7 @@ type FileFieldsEnum =
   | 'childMdx.frontmatter.cover.size'
   | 'childMdx.frontmatter.cover.sourceInstanceName'
   | 'childMdx.frontmatter.cover.uid'
+  | 'childMdx.frontmatter.custom_permalink'
   | 'childMdx.frontmatter.date'
   | 'childMdx.frontmatter.draft'
   | 'childMdx.frontmatter.tags'
@@ -890,6 +891,7 @@ type FileFieldsEnum =
   | 'childrenMdx.frontmatter.cover.size'
   | 'childrenMdx.frontmatter.cover.sourceInstanceName'
   | 'childrenMdx.frontmatter.cover.uid'
+  | 'childrenMdx.frontmatter.custom_permalink'
   | 'childrenMdx.frontmatter.date'
   | 'childrenMdx.frontmatter.draft'
   | 'childrenMdx.frontmatter.tags'
@@ -1911,6 +1913,7 @@ type MdxFieldsEnum =
   | 'frontmatter.cover.size'
   | 'frontmatter.cover.sourceInstanceName'
   | 'frontmatter.cover.uid'
+  | 'frontmatter.custom_permalink'
   | 'frontmatter.date'
   | 'frontmatter.draft'
   | 'frontmatter.tags'
@@ -2011,6 +2014,7 @@ type MdxFilterListInput = {
 type MdxFrontmatter = {
   readonly author: Maybe<Scalars['String']>;
   readonly cover: Maybe<File>;
+  readonly custom_permalink: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly date: Maybe<Scalars['Date']>;
   readonly draft: Maybe<Scalars['Boolean']>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
@@ -2029,6 +2033,7 @@ type MdxFrontmatter_dateArgs = {
 type MdxFrontmatterFilterInput = {
   readonly author: InputMaybe<StringQueryOperatorInput>;
   readonly cover: InputMaybe<FileFilterInput>;
+  readonly custom_permalink: InputMaybe<StringQueryOperatorInput>;
   readonly date: InputMaybe<DateQueryOperatorInput>;
   readonly draft: InputMaybe<BooleanQueryOperatorInput>;
   readonly tags: InputMaybe<StringQueryOperatorInput>;
