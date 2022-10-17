@@ -9,7 +9,7 @@ interface CaptionProps {
 
 export const MdxImage: React.FC<React.ImgHTMLAttributes<HTMLImageElement>> = (
   props
-) => <Image {...props} objectFit="contain" maxHeight="760px" marginBottom={8} />
+) => <Image {...props} marginBottom={8} />
 
 export const MdxCaption: React.FC<CaptionProps> = ({
   attributes,

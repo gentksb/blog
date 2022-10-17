@@ -27,18 +27,17 @@ const config: GatsbyConfig = {
       }
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-sharp`,
-    //   options: {
-    //     defaults: {
-    //       transformOptions: {
-    //         fit: "inside",
-    //         cropFocus: "attention"
-    //       }
-    //     }
-    //   }
-    // },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          transformOptions: {
+            fit: "inside",
+            cropFocus: "attention"
+          }
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -54,7 +53,6 @@ const config: GatsbyConfig = {
               maxWidth: 1200, //discover用
               quality: 80,
               withWebp: true,
-              wrapperStyle: `max-height: 800px`,
               showCaptions: true
             }
           },
