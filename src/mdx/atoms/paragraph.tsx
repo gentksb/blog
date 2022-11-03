@@ -12,7 +12,7 @@ export const MdxParagraph: React.FC<Props> = ({ children }) => {
     <Text
       lineHeight={1.8}
       fontSize={{ base: "15px", md: "17px" }}
-      paddingBottom={8}
+      paddingBottom={6}
     >
       {children}
     </Text>
