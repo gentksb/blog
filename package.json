@@ -4,6 +4,9 @@
   "description": "",
   "version": "2.1.0",
   "author": "gen",
+  "browserslist": [
+    ">0.25%, not dead and supports es6-module"
+  ],
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^3.0.6",
     "@chakra-ui/icons": "^2.0.11",
