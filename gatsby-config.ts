@@ -1,5 +1,7 @@
 import type { GatsbyConfig } from "gatsby"
 
+const breakpoints = [375, 768, 1280] //画像生成数を削減するためにサイズを限定
+
 const config: GatsbyConfig = {
   graphqlTypegen: true,
   siteMetadata: {
@@ -27,7 +29,15 @@ const config: GatsbyConfig = {
       }
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          breakpoints: breakpoints,
+          }
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -39,7 +49,7 @@ const config: GatsbyConfig = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              srcSetBreakpoints: [375, 768, 1280],
+              srcSetBreakpoints: breakpoints,
               maxWidth: 1280, //discover用
               quality: 80,
               withWebp: true,
