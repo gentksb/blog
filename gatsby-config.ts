@@ -27,17 +27,7 @@ const config: GatsbyConfig = {
       }
     },
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          transformOptions: {
-            fit: "inside",
-            cropFocus: "attention"
-          }
-        }
-      }
-    },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -49,7 +39,6 @@ const config: GatsbyConfig = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              srcSetBreakpoints: [375, 768, 1280],
               maxWidth: 1280, //discover用
               quality: 80,
               withWebp: true,
