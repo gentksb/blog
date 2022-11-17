@@ -39,6 +39,7 @@ const config: GatsbyConfig = {
           {
             resolve: `gatsby-remark-images`,
             options: {
+              srcSetBreakpoints: [375, 768, 1280],
               maxWidth: 1280, //discover用
               quality: 80,
               withWebp: true,
