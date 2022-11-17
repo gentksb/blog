@@ -29,14 +29,7 @@ const config: GatsbyConfig = {
       }
     },
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          breakpoints: breakpoints,
-        }
-      }
-    },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
