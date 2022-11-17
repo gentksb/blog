@@ -24,6 +24,21 @@ export const createPages: GatsbyNode["createPages"] = async ({
               title
             }
           }
+          next {
+            slug
+            frontmatter {
+              title
+            }
+          }
+          previous {
+            fields {
+              slug
+            }
+            slug
+            frontmatter {
+              title
+            }
+          }
         }
       }
     }
@@ -46,17 +61,14 @@ export const createPages: GatsbyNode["createPages"] = async ({
   const posts = postsQueryResult.data.allMdx.edges
 
   // Create blog posts pages.
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
-
+  posts.forEach((post) => {
     createPage({
       path: post.node.fields.slug,
       component: path.resolve(`./src/templates/blog-post.tsx`),
       context: {
         slug: post.node.fields.slug,
-        previous,
-        next
+        previous: post.previous,
+        next: post.next
       }
     })
   })
