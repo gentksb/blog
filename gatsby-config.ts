@@ -34,7 +34,6 @@ const config: GatsbyConfig = {
       options: {
         defaults: {
           breakpoints: breakpoints,
-          }
         }
       }
     },
