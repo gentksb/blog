@@ -12,7 +12,7 @@
     "test": "TS_NODE_FILES=true mocha"
   },
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "type": "module",
   "main": "lib/src/index.js",
