@@ -25,7 +25,9 @@ export const createPages: GatsbyNode["createPages"] = async ({
             }
           }
           next {
-            slug
+            fields {
+              slug
+            }
             frontmatter {
               title
             }
@@ -34,7 +36,6 @@ export const createPages: GatsbyNode["createPages"] = async ({
             fields {
               slug
             }
-            slug
             frontmatter {
               title
             }

@@ -3774,7 +3774,7 @@ type topMessageQuery = { readonly site: { readonly siteMetadata: { readonly topM
 type AllPostNodeQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type AllPostNodeQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string } | null }, readonly next: { readonly slug: string | null, readonly frontmatter: { readonly title: string } | null } | null, readonly previous: { readonly slug: string | null, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string } | null } | null }> } };
+type AllPostNodeQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string } | null }, readonly next: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string } | null } | null, readonly previous: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string } | null } | null }> } };
 
 type AllTagNodeQueryVariables = Exact<{ [key: string]: never; }>;
 

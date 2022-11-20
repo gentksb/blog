@@ -24,7 +24,7 @@ const PrevAndNextPost: React.FunctionComponent<Props> = ({
   return (
     <Grid templateColumns="repeat(auto-fill, 50%)" w="100%">
       <GridItem colSpan={[2, 2, 1, 1]} margin={1}>
-        <Link to={nextPostPath} rel="prev">
+        <Link to={nextPostPath} rel="past">
           <Button
             variant="outline"
             isDisabled={!hasNextPost}
@@ -36,7 +36,7 @@ const PrevAndNextPost: React.FunctionComponent<Props> = ({
         </Link>
       </GridItem>
       <GridItem colSpan={[2, 2, 1, 1]} margin={1} textAlign="right">
-        <Link to={previousPostPath} rel="next">
+        <Link to={previousPostPath} rel="future">
           <Button
             variant="outline"
             isDisabled={!hasPreviousPost}
