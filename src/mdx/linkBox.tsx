@@ -54,19 +54,7 @@ const LinkBox: React.FunctionComponent<Props> = ({
     try {
       const functions = getFunctions(getApp(), "asia-northeast1")
       if (process.env.NODE_ENV === "development") {
-        const localhost = process.env.GATSBY_CODESPACES
-          ? `${process.env.GATSBY_CODESPACE_NAME}-5001.githubpreview.dev`
-          : "localhost"
-        const localport = process.env.GATSBY_CODESPACES ? 443 : 5001
-        console.log(
-          "connect localhost api",
-          localhost,
-          process.env.GATSBY_CODESPACES,
-          process.env.GATSBY_CODESPACE_NAME
-        )
-        connectFunctionsEmulator(functions, localhost, localport)
-        //WIP: HTTPで投げちゃう。エミュレーターでハードコードされている
-        //https://github.com/firebase/firebase-js-sdk/blob/master/packages/functions/src/service.ts
+        connectFunctionsEmulator(functions, "localhost", 5001)
       }
 
       const getOgpData = httpsCallable(functions, "getOgpLinkData")
@@ -170,9 +158,6 @@ const LinkBox: React.FunctionComponent<Props> = ({
             color="teal.600"
             fontWeight="Bold"
             mt={3}
-            noOfLines={1}
-            display="inline-flex"
-            alignContent="center"
           >
             {loading ? (
               <CircularProgress isIndeterminate color={linkColor} />
