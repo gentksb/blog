@@ -24,7 +24,7 @@ Hosting at Firebase.
 
 ### environment variables
 
-```
+```bash
 # env
 GATSBY_FIREBASE_API_KEY
 GATSBY_FIREBASE_PROJECT_ID
