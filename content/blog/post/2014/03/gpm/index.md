@@ -6,7 +6,7 @@ date: 2014-03-06T05:18:00+00:00
 
 cover: IMG_20140302_101739.jpg
 
-tags: ["CX", "RACE"]
+tags: ["CX", "RACEREPORT"]
 ---
 
 ![GATSBY_EMPTY_ALT](IMG_20140302_101739.jpg)

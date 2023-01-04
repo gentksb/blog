@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-03-05T14:40:00+00:00
 
-tags: ["RACE", "ROAD"]
+tags: ["RACEREPORT", "ROAD"]
 ---
 
 JCRC第1戦走って来ましたよー

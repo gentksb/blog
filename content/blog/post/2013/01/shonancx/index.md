@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-01-27T00:45:00+00:00
 
-tags: ["MTB", "RACE"]
+tags: ["MTB", "RACEREPORT"]
 ---
 
 [湘南ベルマーレシクロクロス][1]に出場してきました！

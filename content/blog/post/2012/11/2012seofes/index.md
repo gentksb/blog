@@ -3,7 +3,7 @@ title: セオフェス、優勝
 author: admin
 type: post
 date: 2012-11-25T04:24:00+00:00
-tags: ["RACE","ROAD"]
+tags: ["RACEREPORT","ROAD"]
 ---
 本日行われたセオ・サイクルフェスティバルの初参加クラスで優勝しました！
 

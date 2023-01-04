@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-10-28T06:39:00+00:00
 
-tags: ["RACE", "ROAD"]
+tags: ["RACEREPORT", "ROAD"]
 ---
 
 それぞれのイベントで記事を作ろうかと思ったけど色々比較したい点があったので一緒にします。

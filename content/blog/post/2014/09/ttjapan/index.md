@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2014-09-15T04:37:00+00:00
 
-tags: ["TT", "RACE"]
+tags: ["TT", "RACEREPORT"]
 ---
 
 昨年、TTバイクを組んだ。そんなところに舞い降りた
