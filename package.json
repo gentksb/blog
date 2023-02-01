@@ -22,7 +22,7 @@
     "emotion-theming": "^11.0.0",
     "firebase": "^9.12.1",
     "framer-motion": "^7.5.3",
-    "gatsby": "^4.24.4",
+    "gatsby": "^4.25.4",
     "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-plugin-emotion": "^7.24.0",
     "gatsby-plugin-feed": "^4.24.0",
