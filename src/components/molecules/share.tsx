@@ -46,7 +46,7 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
     }
   }
 
-  const shareTitle = `${title}| 幻想サイクル`
+  const shareTitle = `${title} - 幻想サイクル`
 
   return (
     <ShareBox className="social-share">
@@ -62,6 +62,30 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
           })
         }}
       />
+      {/* <TwitterShareButton
+        url={location.href}
+        title={shareTitle}
+        className="sharebutton-box"
+        blankTarget
+      > */}
+      <div className="sharebutton-box">
+        <script
+          type="text/javascript"
+          async
+          src="//platform.twitter.com/widgets.js"
+        ></script>
+        <a
+          target="_blank"
+          href={`https://twitter.com/intent/tweet?text=${shareTitle}&url=${location.href}`}
+          rel="nofollow"
+        >
+          <TwitterIcon
+            size={shareConfig.iconSize}
+            round={shareConfig.isRound}
+          />
+        </a>
+      </div>
+      {/* </TwitterShareButton> */}
       <FacebookShareButton
         url={location.href}
         className="sharebutton-box"
@@ -69,14 +93,6 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
       >
         <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
       </FacebookShareButton>
-      <TwitterShareButton
-        url={location.href}
-        title={shareTitle}
-        className="sharebutton-box"
-        blankTarget
-      >
-        <TwitterIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
-      </TwitterShareButton>
       <HatenaShareButton
         url={location.href}
         title={shareTitle}
