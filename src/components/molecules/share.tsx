@@ -62,26 +62,34 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
           })
         }}
       />
-      <FacebookShareButton url={location.href} className="sharebutton-box">
+      <FacebookShareButton
+        url={location.href}
+        className="sharebutton-box"
+        blankTarget
+      >
         <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
       </FacebookShareButton>
       <TwitterShareButton
         url={location.href}
         title={shareTitle}
         className="sharebutton-box"
+        blankTarget
       >
         <TwitterIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
       </TwitterShareButton>
-      <HatenaShareButton url={location.href} title={shareTitle} className="sharebutton-box">
-        <HatenaIcon
-          size={shareConfig.iconSize}
-          round={shareConfig.isRound}
-        />
+      <HatenaShareButton
+        url={location.href}
+        title={shareTitle}
+        className="sharebutton-box"
+        blankTarget
+      >
+        <HatenaIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
       </HatenaShareButton>
       <LineShareButton
         url={location.href}
         title={shareTitle}
         className="sharebutton-box"
+        blankTarget
       >
         <LineIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
       </LineShareButton>
