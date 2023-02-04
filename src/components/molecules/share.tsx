@@ -69,15 +69,10 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
         blankTarget
       > */}
       <div className="sharebutton-box">
-        <script
-          type="text/javascript"
-          async
-          src="//platform.twitter.com/widgets.js"
-        ></script>
         <a
           target="_blank"
           href={`https://twitter.com/intent/tweet?text=${shareTitle}&url=${location.href}`}
-          rel="nofollow"
+          rel="noopener noreferrer"
         >
           <TwitterIcon
             size={shareConfig.iconSize}
