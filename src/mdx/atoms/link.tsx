@@ -14,6 +14,7 @@ export const MdxLink: React.FC<Props> = ({ children, href }) => {
       href={href}
       _hover={{ textDecoration: "underline" }}
       isExternal={isExternal}
+      fontWeight="semibold"
     >
       {children}
     </Link>
