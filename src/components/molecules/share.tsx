@@ -1,7 +1,7 @@
 import React from "react"
 import {
   FacebookShareButton,
-  TwitterShareButton,
+  // TwitterShareButton,
   LineShareButton,
   FacebookIcon,
   TwitterIcon,
@@ -46,7 +46,7 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
     }
   }
 
-  const shareTitle = `${title}| 幻想サイクル`
+  const shareTitle = `${title} - 幻想サイクル`
 
   return (
     <ShareBox className="social-share">
@@ -62,26 +62,45 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
           })
         }}
       />
-      <FacebookShareButton url={location.href} className="sharebutton-box">
-        <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
-      </FacebookShareButton>
-      <TwitterShareButton
+      {/* <TwitterShareButton
         url={location.href}
         title={shareTitle}
         className="sharebutton-box"
+        blankTarget
+      > */}
+      <div className="sharebutton-box">
+        <a
+          target="_blank"
+          href={`https://twitter.com/intent/tweet?text=${shareTitle}&url=${location.href}`}
+          rel="noopener noreferrer"
+        >
+          <TwitterIcon
+            size={shareConfig.iconSize}
+            round={shareConfig.isRound}
+          />
+        </a>
+      </div>
+      {/* </TwitterShareButton> */}
+      <FacebookShareButton
+        url={location.href}
+        className="sharebutton-box"
+        blankTarget
       >
-        <TwitterIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
-      </TwitterShareButton>
-      <HatenaShareButton url={location.href} title={shareTitle} className="sharebutton-box">
-        <HatenaIcon
-          size={shareConfig.iconSize}
-          round={shareConfig.isRound}
-        />
+        <FacebookIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
+      </FacebookShareButton>
+      <HatenaShareButton
+        url={location.href}
+        title={shareTitle}
+        className="sharebutton-box"
+        blankTarget
+      >
+        <HatenaIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
       </HatenaShareButton>
       <LineShareButton
         url={location.href}
         title={shareTitle}
         className="sharebutton-box"
+        blankTarget
       >
         <LineIcon size={shareConfig.iconSize} round={shareConfig.isRound} />
       </LineShareButton>
