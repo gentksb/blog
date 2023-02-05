@@ -47,6 +47,7 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
   }
 
   const shareTitle = `${title} - 幻想サイクル`
+  const twitterShareTitle = encodeURIComponent(shareTitle)
 
   return (
     <ShareBox className="social-share">
@@ -71,7 +72,7 @@ const sharebox: React.FunctionComponent<Props> = ({ title, location }) => {
       <div className="sharebutton-box">
         <a
           target="_blank"
-          href={`https://twitter.com/intent/tweet?text=${shareTitle}&url=${location.href}`}
+          href={`https://twitter.com/intent/tweet?text=${twitterShareTitle}&url=${location.href}`}
           rel="noopener noreferrer"
         >
           <TwitterIcon
