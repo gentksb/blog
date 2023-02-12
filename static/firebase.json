@@ -230,6 +230,11 @@
         "source": "/post/2022/11/revale_af/",
         "destination": "/post/2022/11/rivale_mips/",
         "type": 301
+      },
+      {
+        "source": "/2012/11/TTposition_on_road.html",
+        "destination": "/2012/11/TTposition_on_road/",
+        "type": 301
       }
     ]
   }
