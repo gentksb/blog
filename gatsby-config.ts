@@ -19,12 +19,7 @@ const config: GatsbyConfig = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    {
-      resolve: "gatsby-plugin-emotion",
-      options: {
-        sourceMap: false
-      }
-    },
+    `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
     {
       resolve: `gatsby-source-filesystem`,

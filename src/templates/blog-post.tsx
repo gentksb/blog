@@ -128,7 +128,7 @@ export const Head = ({ data, location }) => {
 }
 
 export const pageQuery = graphql`
-  query ($slug: String!) {
+  query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
