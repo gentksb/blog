@@ -19,7 +19,12 @@ const config: GatsbyConfig = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-emotion`,
+    {
+      resolve: "gatsby-plugin-emotion",
+      options: {
+        sourceMap: false
+      }
+    },
     `@chakra-ui/gatsby-plugin`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,6 +39,9 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.md`, `.mdx`],
+        plugins: [`gatsby-remark-images`],
+        // a workaround to solve mdx-remark plugin compat issue
+        // https://github.com/gatsbyjs/gatsby/issues/15486
         mdxOptions: {
           remarkPlugins: [require(`remark-frontmatter`), require(`remark-gfm`)]
         },

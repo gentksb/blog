@@ -2712,7 +2712,7 @@ type topMessageQuery = { readonly site: { readonly siteMetadata: { readonly topM
 type AllPostNodeQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type AllPostNodeQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string | null } | null }, readonly next: { readonly frontmatter: { readonly title: string | null } | null, readonly fields: { readonly slug: string | null } | null } | null, readonly previous: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string | null } | null } | null }> } };
+type AllPostNodeQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string | null } | null, readonly internal: { readonly contentFilePath: string | null } }, readonly next: { readonly frontmatter: { readonly title: string | null } | null, readonly fields: { readonly slug: string | null } | null } | null, readonly previous: { readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly title: string | null } | null } | null }> } };
 
 type AllTagNodeQueryVariables = Exact<{ [key: string]: never; }>;
 
