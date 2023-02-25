@@ -24,6 +24,9 @@ export const createPages: GatsbyNode["createPages"] = async ({
               title
             }
           }
+          internal {
+            contentFilePath
+          }
           next {
             fields {
               slug
@@ -65,7 +68,9 @@ export const createPages: GatsbyNode["createPages"] = async ({
   posts.forEach((post) => {
     createPage({
       path: post.node.fields.slug,
-      component: path.resolve(`./src/templates/blog-post.tsx`),
+      component: `${path.resolve(
+        `./src/templates/blog-post.tsx`
+      )}?__contentFilePath=${post.node.internal.contentFilePath}`,
       context: {
         slug: post.node.fields.slug,
         previous: post.previous,

@@ -34,9 +34,9 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.md`, `.mdx`],
-        plugins: [`gatsby-remark-images`],
-        // a workaround to solve mdx-remark plugin compat issue
-        // https://github.com/gatsbyjs/gatsby/issues/15486
+        mdxOptions: {
+          remarkPlugins: [require(`remark-frontmatter`), require(`remark-gfm`)]
+        },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,

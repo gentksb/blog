@@ -14,7 +14,6 @@ import {
 } from "@chakra-ui/react"
 import { CalendarIcon } from "@chakra-ui/icons"
 import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 import { parseISO, format } from "date-fns"
 
 import Layout from "../components/layout"
@@ -57,7 +56,7 @@ const components = {
 
 const BlogPostTemplate: React.FunctionComponent<
   PageProps<Queries.BlogPostBySlugQuery, Queries.MdxEdge>
-> = ({ pageContext, data, location }) => {
+> = ({ pageContext, data, location, children }) => {
   const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title
   const jstIsoDate = convertMdxDateToIsoJstDate(post.frontmatter.date)
@@ -88,10 +87,12 @@ const BlogPostTemplate: React.FunctionComponent<
             <PostTag tags={post.frontmatter.tags} />
           </Box>
           <Divider marginY={2} />
-          <Box className="post-body" paddingX={2}>
-            <MDXProvider components={components}>
-              <MDXRenderer>{post.body}</MDXRenderer>
-            </MDXProvider>
+          <Box
+            className="post-body"
+            fontSize={{ base: "15px", md: "17px" }}
+            paddingX={2}
+          >
+            <MDXProvider components={components}>{children}</MDXProvider>
           </Box>
         </article>
         <Divider />
@@ -127,7 +128,7 @@ export const Head = ({ data, location }) => {
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title
@@ -135,7 +136,6 @@ export const pageQuery = graphql`
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
-      body
       frontmatter {
         date
         title
