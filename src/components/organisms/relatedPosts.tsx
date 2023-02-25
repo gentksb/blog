@@ -11,7 +11,7 @@ const RelatedPosts: React.FunctionComponent<Props> = ({ tag, id }) => {
   const recentPostsData: Queries.RecentPostQuery =
     useStaticQuery<Queries.RecentPostQuery>(graphql`
       query RecentPost {
-        allMdx(limit: 10, sort: { fields: frontmatter___date, order: DESC }) {
+        allMdx(limit: 10, sort: { frontmatter: { date: DESC } }) {
           edges {
             node {
               frontmatter {

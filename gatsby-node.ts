@@ -12,7 +12,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
   const postsQueryResult = await graphql<Queries.AllPostNodeQuery>(`
     query AllPostNode {
       allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { frontmatter: { date: DESC } }
         filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
@@ -23,16 +23,16 @@ export const createPages: GatsbyNode["createPages"] = async ({
             frontmatter {
               title
             }
-          }
-          internal {
-            contentFilePath
+            internal {
+              contentFilePath
+            }
           }
           next {
-            fields {
-              slug
-            }
             frontmatter {
               title
+            }
+            fields {
+              slug
             }
           }
           previous {
@@ -51,7 +51,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
   const tagsQueryResult = await graphql<Queries.AllTagNodeQuery>(`
     query AllTagNode {
       allMdx {
-        group(field: frontmatter___tags) {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
         }
       }

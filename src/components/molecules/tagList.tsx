@@ -12,7 +12,7 @@ const TagList: React.FunctionComponent<Props> = ({ targetTag }) => {
     useStaticQuery<Queries.TagListQuery>(graphql`
       query TagList {
         allMdx(filter: { frontmatter: { draft: { eq: false } } }) {
-          group(field: frontmatter___tags) {
+          group(field: { frontmatter: { tags: SELECT } }) {
             fieldValue
             totalCount
           }
