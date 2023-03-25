@@ -3,5 +3,11 @@
   "semi": false,
   "singleQuote": false,
   "tabWidth": 2,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "overrides":[{
+    "files": ["*.md","*.mdx"],
+    "options": {
+      "parser": "markdown-nocjsp"
+    }
+  }]
 }
