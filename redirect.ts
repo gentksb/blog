@@ -6,24 +6,24 @@ export const redirectData = [
   },
   {
     source: "/category/*",
-    destination: "/tags/:1",
+    destination: "/tags/*",
     type: 301
   },
   {
     source: "/categories/*",
-    destination: "/tags/:1",
+    destination: "/tags/*",
     type: 301
   },
   {
     source: "/search/label/*",
-    destination: "/tags/:1",
+    destination: "/tags/*",
     type: 301
   },
-  {
-    source: "/*/feed",
-    destination: "/*/index.xml",
-    type: 301
-  },
+  // {
+  //   source: "/*/feed",
+  //   destination: "/*/index.xml",
+  //   type: 301
+  // },
   {
     source: "/2015/05/12/flo-disc-whee.html",
     destination: "/post/2015/05/flo-impression/",
