@@ -1,27 +1,27 @@
 export const redirectData = [
   {
-    source: "/tag/(.*)",
+    source: "/tag/*",
+    destination: "/tags/*",
+    type: 301
+  },
+  {
+    source: "/category/*",
     destination: "/tags/:1",
     type: 301
   },
   {
-    source: "/category/(.*)",
+    source: "/categories/*",
     destination: "/tags/:1",
     type: 301
   },
   {
-    source: "/categories/(.*)",
+    source: "/search/label/*",
     destination: "/tags/:1",
     type: 301
   },
   {
-    source: "/search/label/(.*)",
-    destination: "/tags/:1",
-    type: 301
-  },
-  {
-    source: "/(.*)/feed",
-    destination: "/:1/index.xml",
+    source: "/*/feed",
+    destination: "/*/index.xml",
     type: 301
   },
   {
