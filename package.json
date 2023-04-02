@@ -26,7 +26,7 @@
     "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-plugin-emotion": "^7.24.0",
     "gatsby-plugin-feed": "^4.24.0",
-    "gatsby-plugin-gatsby-cloud": "^4.24.0",
+    "gatsby-plugin-gatsby-cloud": "^4.25.0",
     "gatsby-plugin-google-gtag": "^4.24.0",
     "gatsby-plugin-google-tagmanager": "^4.24.0",
     "gatsby-plugin-image": "^2.24.0",

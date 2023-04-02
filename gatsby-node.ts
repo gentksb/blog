@@ -2,12 +2,13 @@ import path from "path"
 import { createFilePath } from "gatsby-source-filesystem"
 import { paginate } from "gatsby-awesome-pagination"
 import { GatsbyNode } from "gatsby"
+import { redirectData } from "./redirect"
 
 export const createPages: GatsbyNode["createPages"] = async ({
   graphql,
   actions
 }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   const postsQueryResult = await graphql<Queries.AllPostNodeQuery>(`
     query AllPostNode {
@@ -100,6 +101,15 @@ export const createPages: GatsbyNode["createPages"] = async ({
     })
   }
   buildPagination(posts)
+
+  //create redirect
+  redirectData.map((redirectRecord) => {
+    createRedirect({
+      fromPath: redirectRecord.source,
+      toPath: redirectRecord.destination,
+      statusCode: redirectRecord.type
+    })
+  })
 }
 
 export interface PaginationContext {
