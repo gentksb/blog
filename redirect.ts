@@ -202,7 +202,7 @@ export const redirectData = [
   },
   {
     source: "/201808/2018-07-29-iwatake.html",
-    destination: "/2018/07/iwatake/",
+    destination: "/post/2018/07/iwatake/",
     type: 301
   }
 ]
