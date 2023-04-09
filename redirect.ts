@@ -177,7 +177,32 @@ export const redirectData = [
   },
   {
     source: "/2012/11/TTposition_on_road.html",
-    destination: "/2012/11/TTposition_on_road/",
+    destination: "/post/2012/11/TTposition_on_road/",
+    type: 301
+  },
+  {
+    source: "/2016/09/2016-17-cx1-irc-tire-90th-anniversary.html",
+    destination: "/post/2016/09/irc90thcup/",
+    type: 301
+  },
+  {
+    source: "/201807/2018-07-12-cxtublar.html",
+    destination: "/post/2018/07/cxtublar/",
+    type: 301
+  },
+  {
+    source: "/2015/10/01/zwif-3.html",
+    destination: "/post/2015/10/zwiftstart/",
+    type: 301
+  },
+  {
+    source: "/201711/2017-11-22-sdawinter.html",
+    destination: "/post/2017/11/SdaWinter/",
+    type: 301
+  },
+  {
+    source: "/201808/2018-07-29-iwatake.html",
+    destination: "/post/2018/07/iwatake/",
     type: 301
   }
 ]
