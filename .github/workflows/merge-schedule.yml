@@ -9,7 +9,7 @@ on:
   schedule:
     # https://crontab.guru/every-hour
     # UTC
-    - cron: "*/30 3-6,16-18,21-22 * * *"
+    - cron: "*/30 0,3-4,10-12,22-23 * * *"
 
 jobs:
   merge_schedule:
