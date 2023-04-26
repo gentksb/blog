@@ -204,5 +204,65 @@ export const redirectData = [
     source: "/201808/2018-07-29-iwatake.html",
     destination: "/post/2018/07/iwatake/",
     type: 301
+  },
+  {
+    source: "/2013/11/bar-fly20.html",
+    destination: "/post/2013/11/bar-fly2/",
+    type: 301
+  },
+  {
+    source: "/2014/05/2014-sda.html",
+    destination: "/post/2014/05/sdaspring/",
+    type: 301
+  },
+  {
+    source: "/2016/03/zwift.html",
+    destination: "/post/2016/03/zwift_env/",
+    type: 301
+  },
+  {
+    source: "/2016/08/di2.html",
+    destination: "/post/2016/08/di2drill_1/",
+    type: 301
+  },
+  {
+    source: "/2017/05/2017.html",
+    destination: "/post/2017/05/sdaspring/",
+    type: 301
+  },
+  {
+    source: "/2014/12/27/flo-disc.html",
+    destination: "/post/2014/12/27/flo-disc/",
+    type: 301
+  },
+  {
+    source: "/2016/07/blog-post.html",
+    destination: "/post/2016/07/hybrid_trainer/",
+    type: 301
+  },
+  {
+    source: "/2017/04/my-protein.html",
+    destination: "/post/2017/04/myprotein/",
+    type: 301
+  },
+  {
+    source: "/2016/09/choice.html",
+    destination: "/post/2016/09/choice/",
+    type: 301
+  },
+  {
+    source: "/201807/2018-07-12-cxtublar.html",
+    destination: "/post/2018/07/cxtublar/",
+    type: 301
+  },
+  {
+    source: "/post/2017zwift-mobile-link.html",
+    destination: "/post/2017/10/2017zwift-mobile-link/",
+    type: 301
+  },
+  {
+    source: "/2015/10/01/zwif-3.html",
+    destination: "/post/2015/10/zwiftstart/",
+    type: 301
   }
 ]
