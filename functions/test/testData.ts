@@ -21,7 +21,7 @@ export const amazonLinkData = {
 export const amazonLinkDataExpectedResponse = {
   title:
     "Amazonギフトカード (Eメールタイプ)テキストメッセージにも送信可 - Amazonベーシック",
-  imageUrl: "https://m.media-amazon.com/images/I/41-4Hj2o+qL._SL500_.jpg",
+  imageUrl: "https://m.media-amazon.com/images/I/41xROrVX5kL._SL500_.jpg",
   description: "Amazon.co.jpで使えるギフトカード(デジタルタイプ)です。",
   siteName: "www.amazon.co.jp",
   ogpIcon: "https://www.amazon.co.jp/favicon.ico",
