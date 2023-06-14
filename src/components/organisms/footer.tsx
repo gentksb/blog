@@ -1,6 +1,7 @@
 import React from "react"
 import Bio from "../molecules/bio"
 import { Box, Image, Text, VStack } from "@chakra-ui/react"
+import { Link } from "gatsby"
 
 const Footer: React.FunctionComponent = () => (
   <footer>
@@ -12,8 +13,7 @@ const Footer: React.FunctionComponent = () => (
           <a href="https://www.gatsbyjs.org">Gatsby</a>{" "}
         </Text>
         <Text fontSize="xs">
-          This website uses Cookie to ensure you get the best experience on this
-          website.
+          このサイトにおける情報送信については<Link to="/about/" style={{color: "lightgray"}}>外部送信規律に基づく情報提供</Link>をご確認ください
         </Text>
         <Text fontSize="xs">
           このサイトはAmazonアソシエイトの適格販売やGoogle
