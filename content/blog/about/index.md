@@ -55,7 +55,8 @@ https://policies.google.com/privacy?hl=ja#infocollect
 
 https://policies.google.com/technologies/cookies?hl=ja#types-of-cookies
 
-詳細は[Google社のページ](https://policies.google.com/technologies/partner-sites?hl=ja)に記載されおります。
+最新情報については[Google社のページ](https://policies.google.com/technologies/partner-sites?hl=ja)をご参照下さい
+
 
 ### Google広告
 
@@ -83,7 +84,8 @@ https://policies.google.com/privacy?hl=ja#infocollect
 
 https://policies.google.com/technologies/cookies?hl=ja#types-of-cookies
 
-詳細は[Google社のページ](https://policies.google.com/technologies/partner-sites?hl=ja)に記載されおります。
+最新情報については[Google社のページ](https://policies.google.com/technologies/partner-sites?hl=ja)をご参照下さい
+
 
 ### Google Tag Manager
 
@@ -120,7 +122,7 @@ https://policies.google.com/privacy?hl=ja#infocollect
 
 https://policies.google.com/technologies/cookies?hl=ja#types-of-cookies
 
-詳細は[Google社のページ](https://policies.google.com/technologies/partner-sites?hl=ja)に記載されおります。
+最新情報については[Google社のページ](https://policies.google.com/technologies/partner-sites?hl=ja)をご参照下さい
 
 ### Google Search Console
 
@@ -130,9 +132,18 @@ https://policies.google.com/technologies/cookies?hl=ja#types-of-cookies
 
 #### 送信内容
 
-― クライアントID
+- クライアントID
 - サイト利用者の当社ウェブサイトでの行動履歴
 - サイト利用者の当社ウェブサイトの閲覧履歴
 - サイト利用者の属性情報
 - サイト利用者の位置情報
+
+詳細は以下のリンク先もご参照ください。
+
+https://policies.google.com/privacy?hl=ja#infocollect
+
+https://policies.google.com/technologies/cookies?hl=ja#types-of-cookies
+
+最新情報については[Google社のページ](https://policies.google.com/technologies/partner-sites?hl=ja)をご参照下さい
+
 
