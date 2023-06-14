@@ -148,7 +148,7 @@ https://policies.google.com/technologies/cookies?hl=ja#types-of-cookies
 
 ## その他注記
 
-下記サイトについては、当ウェブサイト上から直接情報を送信しているものではありませんが、リンク先で情報送信が行われております
+下記サイトについては、機能提供上必須の情報送信もしくは当ウェブサイト上から直接情報を送信しているものではありませんが、リンク先で情報送信が行われております
 
 ### Youtube, Twitter, InstagramなどSNS
 
