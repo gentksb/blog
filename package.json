@@ -55,7 +55,7 @@
     "@types/node": "^18.17.1",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.1",
     "textlint": "^12.6.1",
     "textlint-rule-ja-no-abusage": "^3.0.0",
     "textlint-rule-ja-no-redundant-expression": "^4.0.1",
