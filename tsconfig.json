@@ -21,5 +21,6 @@
     "./gatsby-node.ts",
     "./gatsby-config.ts",
     "./plugins/**/*"
-  ]
+  ],
+  "exclude": ["/funcsions/**/*"]
 }

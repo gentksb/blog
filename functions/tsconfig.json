@@ -1,14 +1,8 @@
 {
   "compilerOptions": {
-    "module": "ESNEXT",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "lib",
-    "sourceMap": true,
-    "strict": true,
-    "target": "ESNEXT",
-    "esModuleInterop": true,
-    "moduleResolution": "node"
-  },
-  "compileOnSave": true
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "types": ["@cloudflare/workers-types"]
+  }
 }
