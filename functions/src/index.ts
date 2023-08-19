@@ -1,6 +1,3 @@
-import functions from "firebase-functions"
-import "firebase-functions/logger/compat"
-import fetch from "node-fetch"
 import { JSDOM } from "jsdom"
 import amazonPaapi from "amazon-paapi"
 // // Start writing Firebase Functions
