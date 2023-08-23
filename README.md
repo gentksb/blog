@@ -4,14 +4,6 @@ This is gensobunya's bike blog repository.
 
 [Go to website](http://blog.gensobunya.net)
 
-## Environment setting
-
-```bash
-cd functions
-firebase login
-firebase use --add
-```
-
 ## Build & Deploy Pipeline
 
 ### Build for
@@ -25,13 +17,8 @@ Hosting at Firebase.
 ### environment variables
 
 ```bash
-# env
-GATSBY_FIREBASE_API_KEY
-GATSBY_FIREBASE_PROJECT_ID
-GATSBY_FIREBASE_APP_ID
-
-# functions/env
-AMAZON_PAAPI_KEY
-AMAZON_PAAPI_SECRET
+# dev.vars
+PAAPI_ACCESSKEY
+PAAPI_SECRETKEY
 PARTNER_TAG
 ```
