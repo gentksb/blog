@@ -1,0 +1,47 @@
+{
+  "Post Markdown Template": {
+    "prefix": "blogpost",
+    "scope": "markdown",
+    "body": [
+      "---",
+      "title: \"${1:title}\"",
+      "date: ${2:YYYY}-${3:MM}-${4:DD}",
+      "draft: false",
+      "tags: [\"${5:tag1}\"]",
+      "cover: \"./cover.jpg\"",
+      "---",
+      ""
+    ],
+    "description": "make frontmatter"
+  },
+  "Link MDX": {
+    "prefix": "linkbox",
+    "scope": "markdown",
+    "body": "<LinkBox url=\"${1:url}\" ${2:isAmazonLink} ${3:linkurl=\"\"} />",
+    "description": "template of LinxBox MDX component"
+  },
+  "negaposi": {
+    "prefix": "proscons",
+    "scope": "markdown",
+    "body": [
+      "<PositiveBox>",
+      "",
+      "- ",
+      "",
+      "</PositiveBox>",
+      "",
+      "<NegativeBox>",
+      "",
+      "- ",
+      "",
+      "</NegativeBox>"
+    ],
+    "description": "template of Negative/Positive MDX component"
+  },
+  "override image": {
+    "prefix": "image",
+    "scope": "markdown",
+    "body": "![${1:alt}](./${2:path})",
+    "description": "override image snippet for local image"
+  }
+}

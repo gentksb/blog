@@ -22,5 +22,5 @@
     "./gatsby-config.ts",
     "./plugins/**/*"
   ],
-  "exclude": ["/funcsions/**/*"]
+  "exclude": ["./cf-astro/**/*"]
 }

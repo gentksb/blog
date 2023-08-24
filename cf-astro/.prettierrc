@@ -1,0 +1,12 @@
+{
+  "endOfLine": "lf",
+  "semi": false,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": ["*.md", "*.mdx"]
+    }
+  ]
+}

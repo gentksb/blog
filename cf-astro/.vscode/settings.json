@@ -1,0 +1,14 @@
+{
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
+    "editor.snippetSuggestions": "top"
+  },
+  "files.associations": {
+    "*.mdx": "markdown"
+  }
+}
