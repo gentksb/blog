@@ -1,65 +1,93 @@
-import { JSDOM } from "jsdom"
+export interface ResType {
+  ogpTitle?: string
+  ogpImageUrl?: string
+  ogpDescription?: string
+  ogpSiteName?: string
+  pageurl?: string
+  ok: boolean
+  error?: string
+}
 
-export const onRequest: PagesFunction = (context) => {
+// https://zenn.dev/uyas/articles/0b7dcbb46d8031
+class OGPParser {
+  ogpTitle: string
+  ogpDescription: string
+  ogpImageUrl: string
+  ogpSiteName: string
+
+  constructor() {
+    this.ogpTitle = ""
+    this.ogpDescription = ""
+    this.ogpImageUrl = ""
+    this.ogpSiteName = ""
+  }
+  element(element: Element) {
+    console.log(`Incoming element: ${element.tagName}`)
+    switch (element.getAttribute("property")) {
+      case "og:title":
+        this.ogpTitle = element.getAttribute("content") ?? ""
+        break
+      case "og:description":
+        this.ogpDescription = element.getAttribute("content") ?? ""
+        break
+      case "og:image":
+        this.ogpImageUrl = element.getAttribute("content") ?? ""
+        break
+      case "og:site_name":
+        this.ogpSiteName = element.getAttribute("content") ?? ""
+        break
+      default:
+        break
+    }
+  }
+}
+
+export const onRequest: PagesFunction = async (context) => {
   const { searchParams } = new URL(context.request.url)
   const targetUrl = searchParams.get("url")
 
-  return new Response(targetUrl)
+  const responseBody = await getOgpDatas(targetUrl)
+
+  return new Response(JSON.stringify(responseBody), {
+    status: 200,
+    headers: {
+      "content-type": "application/json;charset=UTF-8"
+    }
+  })
 }
 
-// {
-//   try {
-//     const getHtmlDocument = async (url: string) => {
-//       const httpResponse = await fetch(url)
-//       const html = await httpResponse.text()
-//       const jsdom = new JSDOM(html)
-//       return jsdom.window.document
-//     }
-//     const document = await getHtmlDocument(ogpTargetUrl)
-//     result.pageurl = decodeURI(data.url) // 通常のOGPは渡されたURLをそのままセットする
-//     result.title =
-//       document
-//         .querySelector("meta[property='og:title']")
-//         ?.getAttribute("content") ??
-//       document.querySelector("meta[name='title']")?.getAttribute("content") ??
-//       document.title ??
-//       ""
-//     result.imageUrl =
-//       document
-//         .querySelector("meta[property='og:image']")
-//         ?.getAttribute("content") ?? ""
-//     result.description =
-//       document
-//         .querySelector("meta[property='og:description']")
-//         ?.getAttribute("content") ??
-//       document
-//         .querySelector("meta[name='description']")
-//         ?.getAttribute("content") ??
-//       ""
-//     result.siteName =
-//       document
-//         .querySelector("meta[property='og:site_name']")
-//         ?.getAttribute("content") ?? urlDomain
+const getOgpDatas = async (url: string): Promise<ResType> => {
+  const href = decodeURIComponent(url)
 
-//     const siteIconPath =
-//       document.querySelector("[type='image/x-icon']")?.getAttribute("href") ||
-//       "/favicon.ico"
-//     result.ogpIcon = siteIconPath.includes("//")
-//       ? siteIconPath
-//       : siteIconPath.charAt(0) === "/"
-//       ? `${urlProtocol}//${urlDomain}${siteIconPath}`
-//       : `${urlProtocol}//${urlDomain}/${siteIconPath}` // 絶対パスに変換
+  try {
+    const httpResponse = await fetch(href)
+    if (!httpResponse.ok) {
+      const result: ResType = {
+        ok: false,
+        error: "Query url is not found"
+      }
+      return result
+    } else {
+      const ogp = new OGPParser()
+      new HTMLRewriter().on("meta", ogp).transform(httpResponse)
 
-//     console.log(result)
-//     cache.set(data.url, result)
-
-//     return result
-//   } catch (error: any) {
-//     console.error(error)
-//     console.error("INPUT: ", data)
-//     throw new functions.https.HttpsError(
-//       "internal",
-//       "Webpage data parse failed"
-//     )
-//   }
-// }
+      const result: ResType = {
+        ogpTitle: ogp.ogpTitle,
+        ogpImageUrl: ogp.ogpImageUrl,
+        ogpDescription: ogp.ogpDescription,
+        ogpSiteName: ogp.ogpSiteName,
+        pageurl: href,
+        ok: true
+      }
+      console.log(result)
+      return result
+    }
+  } catch (error: any) {
+    console.error(error)
+    const result: ResType = {
+      ok: false,
+      error: JSON.stringify(error)
+    }
+    return result
+  }
+}
