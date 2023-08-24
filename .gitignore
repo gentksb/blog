@@ -72,12 +72,9 @@ yarn-error.log
 
 types/*
 
-<<<<<<< HEAD
 # firebase
 .firebaserc
 
-=======
->>>>>>> 867aa752 (大体通る。PAAPIをFetch化する必要あり)
 # cloudflare
 .dev.vars
 
