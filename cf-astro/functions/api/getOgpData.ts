@@ -22,7 +22,6 @@ class OGPParser {
     this.ogpSiteName = ""
   }
   element(element: Element) {
-    console.log(`Incoming element: ${element.tagName}`)
     switch (element.getAttribute("property")) {
       case "og:title":
         this.ogpTitle = element.getAttribute("content") ?? ""
@@ -69,7 +68,10 @@ const getOgpDatas = async (url: string): Promise<ResType> => {
       return result
     } else {
       const ogp = new OGPParser()
-      new HTMLRewriter().on("meta", ogp).transform(httpResponse)
+      await new HTMLRewriter()
+        .on("meta", ogp)
+        .transform(httpResponse)
+        .arrayBuffer()
 
       const result: ResType = {
         ogpTitle: ogp.ogpTitle,
