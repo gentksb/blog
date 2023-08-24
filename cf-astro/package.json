@@ -4,21 +4,21 @@
   "type": "module",
   "version": "3.0.0",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "wrangler pages dev --compatibility-date=2023-08-14 -- astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
-    "@astrojs/rss": "^2.4.4",
-    "@astrojs/sitemap": "^2.0.2",
-    "astro": "^2.10.13"
+    "@astrojs/cloudflare": "7.0.0-rc.3",
+    "@astrojs/mdx": "1.0.0-rc.2",
+    "@astrojs/rss": "3.0.0-rc.1",
+    "@astrojs/sitemap": "3.0.0-rc.1",
+    "astro": "3.0.0-rc.5"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230821.0",
-    "typescript": "^5.1.6",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "prettier": "^3.0.1",
     "textlint": "^12.6.1",
@@ -33,6 +33,7 @@
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.13",
+    "typescript": "^5.1.6",
     "wrangler": "^3.5.1"
   }
 }
