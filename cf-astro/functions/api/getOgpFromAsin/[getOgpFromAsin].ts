@@ -1,5 +1,5 @@
 import amazonPaapi from "amazon-paapi"
-
+// Error: Browser-only version of superagent could not find XHR
 interface ENV {
   PAAPI_ACCESSKEY: string
   PAAPI_SECRETKEY: string
