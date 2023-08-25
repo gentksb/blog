@@ -18,7 +18,7 @@ const config: GatsbyConfig = {
     topMessage: ""
   },
   plugins: [
-    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
@@ -158,14 +158,6 @@ const config: GatsbyConfig = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `static/image/logo.jpg`
-      }
-    },
-    {
-      resolve: `gatsby-plugin-gatsby-cloud`,
-      options: {
-        allPageHeaders: [
-          "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload"
-        ]
       }
     }
   ]
