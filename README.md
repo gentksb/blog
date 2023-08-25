@@ -16,7 +16,7 @@ firebase use --add
 
 ### Build for
 
-[Gatsby Cloud](https://www.gatsbyjs.com/cloud/) with GitHub master branch trigger.
+Netlify with GitHub master branch trigger.
 
 ### Deploy
 
