@@ -18,7 +18,7 @@ const config: GatsbyConfig = {
     topMessage: ""
   },
   plugins: [
-    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `@chakra-ui/gatsby-plugin`,
