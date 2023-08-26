@@ -20,6 +20,9 @@ dependencies:
   astro:
     specifier: 3.0.0-rc.5
     version: 3.0.0-rc.5
+  aws4fetch:
+    specifier: ^1.0.17
+    version: 1.0.17
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -1491,6 +1494,10 @@ packages:
     dependencies:
       lodash: 4.17.21
     dev: true
+
+  /aws4fetch@1.0.17:
+    resolution: {integrity: sha512-4IbOvsxqxeOSxI4oA+8xEO8SzBMVlzbSTgGy/EF83rHnQ/aKtP6Sc6YV/k0oiW0mqrcxuThlbDosnvetGOuO+g==}
+    dev: false
 
   /b4a@1.6.4:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
