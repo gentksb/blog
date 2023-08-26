@@ -142,6 +142,7 @@ export const signRequestForPaapiv5 = async (
     awsService,
     "aws4_request"
   ].join("/")
+  const authorization = `AWS4-HMAC-SHA256 Credential=${credential} SignedHeaders=${signedHeadersText}  Signature=${signature}`
   signedRequest.headers.set("Authorization", authorization)
 
   return signedRequest
