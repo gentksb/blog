@@ -10,7 +10,6 @@ type AmazonRequestBody = AmazonItemsRequestParameters & {
   PartnerTag: string
   PartnerType: "Associates"
   Marketplace: "www.amazon.co.jp"
-  Operation: "GetItems"
 }
 
 export const onRequest: PagesFunction<ENV> = async (context) => {
@@ -32,14 +31,14 @@ export const onRequest: PagesFunction<ENV> = async (context) => {
       ItemIdType: "ASIN",
       PartnerTag: context.env.PARTNER_TAG,
       PartnerType: "Associates",
-      Marketplace: "www.amazon.co.jp",
-      Operation: "GetItems"
+      Marketplace: "www.amazon.co.jp"
     }
-    console.log(JSON.stringify(body))
     const reqPropaties = {
       method: "POST",
       headers: {
         Accept: "application/json, text/javascript",
+        "Accepet-Language": "en-US",
+        "Content-Type": "application/json; charset=utf-8",
         "X-Amz-Target": "com.amazon.paapi5.v1.ProductAdvertisingAPIv1.GetItems",
         "Content-Encoding": "amz-1.0"
       },
