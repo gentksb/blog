@@ -43,7 +43,7 @@ const hmacSha256 = async (
 // ---------- AWS Signature V4 ----------
 
 interface AwsParams {
-  awsRegion: "us-east-1"
+  awsRegion: "us-west-2"
   awsService: "ProductAdvertisingAPI"
   awsAccessKeyId: string
   awsSecretAccessKey: string
@@ -78,11 +78,11 @@ export const signRequestForPaapiv5 = async (
 
   // Task1: https://docs.aws.amazon.com/general/latest/gr/sigv4-create-canonical-request.html
   const signedHeaders = new Headers({
+    "Content-Encoding": request.headers.get("Content-Encoding") ?? "",
     Host: url.host,
-    "X-Amz-Date": dateTimeText
+    "X-Amz-Date": dateTimeText,
+    "X-Amz-Target": request.headers.get("X-Amz-Target") ?? ""
   })
-  if (awsSessionToken != null)
-    signedHeaders.set("X-Amz-Security-Token", awsSessionToken)
   const signedHeadersText: string = Array.from(signedHeaders.entries())
     .map(([key]) => key.toLowerCase())
     .sort()
@@ -148,7 +148,7 @@ export const signRequestForPaapiv5 = async (
     awsService,
     "aws4_request"
   ].join("/")
-  const authorization = `AWS4-HMAC-SHA256 Credential=${credential}, SignedHeaders=${signedHeadersText}, Signature=${signature}`
+  const authorization = `AWS4-HMAC-SHA256 Credential=${credential} SignedHeaders=${signedHeadersText}  Signature=${signature}`
   signedRequest.headers.set("Authorization", authorization)
 
   return signedRequest

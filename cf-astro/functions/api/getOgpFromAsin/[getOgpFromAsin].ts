@@ -49,7 +49,7 @@ export const onRequest: PagesFunction<ENV> = async (context) => {
       })
     } else {
       const signedRequest = await signRequestForPaapiv5(unsignedRequest, {
-        awsRegion: "us-east-1",
+        awsRegion: "us-west-2",
         awsService: "ProductAdvertisingAPI",
         awsAccessKeyId: context.env.PAAPI_ACCESSKEY,
         awsSecretAccessKey: context.env.PAAPI_SECRETKEY
@@ -60,13 +60,15 @@ export const onRequest: PagesFunction<ENV> = async (context) => {
         body: JSON.stringify(reqPropaties)
       })
       console.log(
+        refreshedRequest.url,
+        refreshedRequest.method,
         refreshedRequest.headers.get("Host"),
         refreshedRequest.headers.get("Accept"),
         refreshedRequest.headers.get("Accept-Language"),
         refreshedRequest.headers.get("Content-Type"),
+        refreshedRequest.headers.get("Content-Encoding"),
         refreshedRequest.headers.get("X-Amz-Date"),
         refreshedRequest.headers.get("X-Amz-Target"),
-        refreshedRequest.headers.get("Content-Encoding"),
         refreshedRequest.headers.get("Authorization")
       )
 
