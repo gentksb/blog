@@ -1,8 +1,16 @@
 import { signRequestForPaapiv5 } from "./awsSigv4"
+import { AmazonItemsRequestParameters } from "amazon-paapi"
 interface ENV {
   PAAPI_ACCESSKEY: string
   PAAPI_SECRETKEY: string
   PARTNER_TAG: string
+}
+
+type AmazonRequestBody = AmazonItemsRequestParameters & {
+  PartnerTag: string
+  PartnerType: "Associates"
+  Marketplace: "www.amazon.co.jp"
+  Operation: "GetItems"
 }
 
 export const onRequest: PagesFunction<ENV> = async (context) => {
@@ -10,28 +18,32 @@ export const onRequest: PagesFunction<ENV> = async (context) => {
     return new Response("Parameter is not a single string", { status: 400 })
   } else {
     const asin = context.params.getOgpFromAsin
+    console.log(`Start function with ASIN:${asin}`)
+
+    const body: AmazonRequestBody = {
+      ItemIds: [asin],
+      Resources: [
+        "Images.Primary.Medium",
+        "Images.Primary.Large",
+        "ItemInfo.Features",
+        "ItemInfo.Title"
+      ],
+      Condition: "New",
+      ItemIdType: "ASIN",
+      PartnerTag: context.env.PARTNER_TAG,
+      PartnerType: "Associates",
+      Marketplace: "www.amazon.co.jp",
+      Operation: "GetItems"
+    }
+    console.log(JSON.stringify(body))
     const reqPropaties = {
       method: "POST",
       headers: {
         Accept: "application/json, text/javascript",
-        "Accept-Language": "en-US",
-        "Content-Type": "application/json; charset=UTF-8",
         "X-Amz-Target": "com.amazon.paapi5.v1.ProductAdvertisingAPIv1.GetItems",
         "Content-Encoding": "amz-1.0"
       },
-      body: JSON.stringify({
-        ItemIds: [asin],
-        Marketplace: "www.amazon.co.jp",
-        PartnerType: "Associates",
-        ItemIdType: "ASIN",
-        Condition: "New",
-        Resources: [
-          "Images.Primary.Medium",
-          "Images.Primary.Large",
-          "ItemInfo.Title",
-          "ItemInfo.Features"
-        ]
-      })
+      body: JSON.stringify(body)
     }
     const unsignedRequest = new Request(
       "https://webservices.amazon.co.jp/paapi5/getitems",
@@ -60,21 +72,30 @@ export const onRequest: PagesFunction<ENV> = async (context) => {
         body: JSON.stringify(reqPropaties)
       })
       console.log(
+        "Request Details: \n",
         refreshedRequest.url,
         refreshedRequest.method,
-        refreshedRequest.headers.get("Host"),
-        refreshedRequest.headers.get("Accept"),
-        refreshedRequest.headers.get("Accept-Language"),
-        refreshedRequest.headers.get("Content-Type"),
-        refreshedRequest.headers.get("Content-Encoding"),
-        refreshedRequest.headers.get("X-Amz-Date"),
-        refreshedRequest.headers.get("X-Amz-Target"),
-        refreshedRequest.headers.get("Authorization")
+        JSON.stringify(reqPropaties)
       )
+      refreshedRequest.headers.forEach((value, key) => {
+        console.log(`${key}: ${value}`)
+      })
 
       const amazonPaapiResponse = await fetch(refreshedRequest)
-      const amazonPaapiResponseData = await amazonPaapiResponse.json()
-      return new Response(JSON.stringify(amazonPaapiResponseData))
+      const amazonPaapiResponseData = await amazonPaapiResponse.text()
+      console.log(
+        "Response Details: \n",
+        amazonPaapiResponse.ok,
+        "\n",
+        amazonPaapiResponse.status,
+        amazonPaapiResponse.statusText,
+        "\n",
+        amazonPaapiResponseData
+      )
+      amazonPaapiResponse.headers.forEach((value, key) => {
+        console.log(`${key}: ${value}`)
+      })
+      return new Response(amazonPaapiResponseData)
     }
   }
 }

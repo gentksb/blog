@@ -60,13 +60,7 @@ export const signRequestForPaapiv5 = async (
     .replace(/[-:]/g, "")
   const dateText = dateTimeText.substring(0, 8)
   const url = new URL(request.url)
-  const {
-    awsRegion,
-    awsService,
-    awsAccessKeyId,
-    awsSessionToken,
-    awsSecretAccessKey
-  } = params
+  const { awsRegion, awsService, awsAccessKeyId, awsSecretAccessKey } = params
 
   // https://github.com/cloudflare/workers-sdk/issues/3259
   // copy request w/o request.clone() method
@@ -148,7 +142,6 @@ export const signRequestForPaapiv5 = async (
     awsService,
     "aws4_request"
   ].join("/")
-  const authorization = `AWS4-HMAC-SHA256 Credential=${credential} SignedHeaders=${signedHeadersText}  Signature=${signature}`
   signedRequest.headers.set("Authorization", authorization)
 
   return signedRequest
