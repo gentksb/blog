@@ -1,5 +1,4 @@
-import amazonPaapi from "amazon-paapi"
-// Error: Browser-only version of superagent could not find XHR
+import { signRequestForPaapiv5 } from "./awsSigv4"
 interface ENV {
   PAAPI_ACCESSKEY: string
   PAAPI_SECRETKEY: string
@@ -11,69 +10,55 @@ export const onRequest: PagesFunction<ENV> = async (context) => {
     return new Response("Parameter is not a single string", { status: 400 })
   } else {
     const asin = context.params.getOgpFromAsin
-
-    const callPaapi = async (asin) => {
-      const amazonPaApiKey = context.env.PAAPI_ACCESSKEY
-      const amazonPaApiSecret = context.env.PAAPI_SECRETKEY
-      const amazonPaApiPartnerTag = context.env.PARTNER_TAG
-      if (
-        typeof amazonPaApiKey !== "string" ||
-        typeof amazonPaApiSecret !== "string" ||
-        typeof amazonPaApiPartnerTag !== "string"
-      ) {
-        console.log(
-          "env error",
-          "types:",
-          typeof amazonPaApiKey,
-          typeof amazonPaApiSecret,
-          typeof amazonPaApiPartnerTag
-        )
-        return new Response("Environment variables are not valid", {
-          status: 500
-        })
-      } else {
-        for (let retrycount = 0; retrycount < 3; retrycount++) {
-          try {
-            return await amazonPaapi.GetItems(
-              {
-                AccessKey: amazonPaApiKey,
-                SecretKey: amazonPaApiSecret,
-                PartnerTag: amazonPaApiPartnerTag,
-                PartnerType: "Associates",
-                Marketplace: "www.amazon.co.jp"
-              },
-              {
-                ItemIds: [asin],
-                ItemIdType: "ASIN",
-                Condition: "New",
-                Resources: [
-                  "Images.Primary.Medium",
-                  "Images.Primary.Large",
-                  "ItemInfo.Title",
-                  "ItemInfo.Features"
-                ]
-              }
-            )
-          } catch (error: any) {
-            if (error.status === 429 && retrycount < 2) {
-              const backoffSleep = (retrycount + 1) ** 2 * 1000
-              const sleep = (msec: number) =>
-                new Promise((resolve) => setTimeout(resolve, msec))
-              await sleep(backoffSleep)
-              console.log("retry")
-            } else {
-              console.error(error)
-              return new Response("PAAPI call error", { status: 500 })
-            }
-          }
-        }
-        return new Response("internal", {
-          status: 500,
-          statusText: "Backoff loop had done, but nothing happened"
-        })
-      }
+    const body = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        ItemIds: [asin],
+        Marketplace: "www.amazon.co.jp",
+        PartnerType: "Associates",
+        ItemIdType: "ASIN",
+        Condition: "New",
+        Resources: [
+          "Images.Primary.Medium",
+          "Images.Primary.Large",
+          "ItemInfo.Title",
+          "ItemInfo.Features"
+        ]
+      })
     }
-    const response = await callPaapi(asin)
-    return new Response(JSON.stringify(response))
+    const unsignedRequest = new Request(
+      "https://webservices.amazon.co.jp/paapi5/getitems",
+      body
+    )
+
+    // check context.env for PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG
+    if (
+      typeof context.env.PAAPI_ACCESSKEY !== "string" ||
+      typeof context.env.PAAPI_SECRETKEY !== "string" ||
+      typeof context.env.PARTNER_TAG !== "string"
+    ) {
+      return new Response("Environment variables are not valid", {
+        status: 500
+      })
+    } else {
+      const signedRequest = await signRequestForPaapiv5(unsignedRequest, {
+        awsRegion: "us-east-1",
+        awsService: "ProductAdvertisingAPI",
+        awsAccessKeyId: context.env.PAAPI_ACCESSKEY,
+        awsSecretAccessKey: context.env.PAAPI_SECRETKEY
+      })
+      const refreshedRequest = new Request(signedRequest.url, {
+        method: signedRequest.method,
+        headers: signedRequest.headers,
+        body: JSON.stringify(body)
+      })
+
+      const amazonPaapiResponse = await fetch(refreshedRequest)
+      const amazonPaapiResponseData = await amazonPaapiResponse.json()
+      return new Response(JSON.stringify(amazonPaapiResponseData))
+    }
   }
 }
