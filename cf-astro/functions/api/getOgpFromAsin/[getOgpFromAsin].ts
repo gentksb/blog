@@ -71,12 +71,18 @@ export const onRequest: PagesFunction<ENV> = async (context) => {
           body: reqPropaties.body
         }
       )
-      console.log(`Response status: ${response.status}`)
+      console.log(`PAAPI Response status: ${response.status}`)
       response.headers.forEach((value, key) => {
         console.log(`${key}: ${value}`)
       })
 
-      return new Response(await response.arrayBuffer())
+      return new Response(await response.text(), {
+        status: response.status,
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+          "cache-control": "max-age=86400"
+        }
+      })
     }
   }
 }
