@@ -11,11 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "7.0.0-rc.3",
-    "@astrojs/mdx": "1.0.0-rc.2",
-    "@astrojs/rss": "3.0.0-rc.1",
-    "@astrojs/sitemap": "3.0.0-rc.1",
-    "astro": "3.0.0-rc.5",
+    "@astrojs/cloudflare": "^7.0.0",
+    "@astrojs/mdx": "^1.0.0",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.0",
+    "astro": "^3.0.3",
     "aws4fetch": "^1.0.17"
   },
   "devDependencies": {
