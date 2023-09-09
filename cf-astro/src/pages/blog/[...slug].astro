@@ -1,20 +1,23 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, getEntry } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
-export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
-}
-type Props = CollectionEntry<'blog'>;
+// https://docs.astro.build/en/guides/content-collections/#building-for-server-output-ssr
 
-const post = Astro.props;
-const { Content } = await post.render();
+const { slug } = Astro.params
+if (slug===undefined){
+	throw new Error("Slug is required")
+}
+
+const entry = await getEntry('blog', slug);
+
+if (entry === undefined) {
+	return Astro.redirect("/404")
+}
+
+const { Content } = await entry.render();
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...entry.data}>
 	<Content />
 </BlogPost>
