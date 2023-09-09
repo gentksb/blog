@@ -1,3 +1,5 @@
+import { sanitizeUrl } from "@braintree/sanitize-url"
+
 export interface ResType {
   ogpTitle?: string
   ogpImageUrl?: string
@@ -41,23 +43,17 @@ class OGPParser {
   }
 }
 
-export const onRequest: PagesFunction = async (context) => {
-  const { searchParams } = new URL(context.request.url)
-  const targetUrl = searchParams.get("url")
+export const fetchOgp = async (queryUrl: string) => {
+  // queryで取得先URLを受け取るので、URLエンコードされた文字列を想定
+  const decodedUrl = decodeURIComponent(queryUrl)
+  const safeUrl = sanitizeUrl(decodedUrl)
 
-  const responseBody = await getOgpDatas(targetUrl)
+  const responseBody = await getOgpDatas(safeUrl)
 
-  return new Response(JSON.stringify(responseBody), {
-    status: 200,
-    headers: {
-      "content-type": "application/json;charset=UTF-8"
-    }
-  })
+  return responseBody
 }
 
-const getOgpDatas = async (url: string): Promise<ResType> => {
-  const href = decodeURIComponent(url)
-
+const getOgpDatas = async (href: string): Promise<ResType> => {
   try {
     const httpResponse = await fetch(href)
     if (!httpResponse.ok) {

@@ -13,10 +13,7 @@ export const normalLinkDataExpectedResponse = {
   error: ""
 }
 
-export const amazonLinkData = {
-  url: "https://www.amazon.co.jp/dp/B004N3APGO/",
-  isAmazonLink: true
-}
+export const amazonLinkData = "https://www.amazon.co.jp/dp/B004N3APGO/"
 
 export const amazonLinkDataExpectedResponse = {
   title:
