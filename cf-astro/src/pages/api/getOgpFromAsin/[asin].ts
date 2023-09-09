@@ -2,7 +2,7 @@ import type { APIRoute } from "astro"
 import { getAmazonProductInfo } from "./src/getAmazonProductInfo"
 
 export const GET: APIRoute = async ({ params, request }) => {
-  console.table({ params, request })
+  console.dir({ params, request }, { depth: null, colors: true })
   if (params.asin === undefined) {
     return new Response("bad request", {
       status: 400

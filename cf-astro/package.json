@@ -11,18 +11,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^7.0.0",
-    "@astrojs/mdx": "^1.0.0",
+    "@astrojs/cloudflare": "^7.0.2",
+    "@astrojs/mdx": "^1.0.3",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.0",
     "@braintree/sanitize-url": "^6.0.4",
-    "astro": "^3.0.3",
+    "astro": "^3.0.12",
     "aws4fetch": "^1.0.17"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230821.0",
+    "@cloudflare/workers-types": "^4.20230904.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.3",
     "textlint": "^12.6.1",
     "textlint-rule-ja-no-abusage": "^3.0.0",
     "textlint-rule-ja-no-redundant-expression": "^4.0.1",
@@ -35,7 +35,7 @@
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.13",
-    "typescript": "^5.1.6",
-    "wrangler": "^3.5.1"
+    "typescript": "^5.2.2",
+    "wrangler": "^3.7.0"
   }
 }

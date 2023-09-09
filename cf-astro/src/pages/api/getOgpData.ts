@@ -2,7 +2,7 @@ import type { APIRoute } from "astro"
 import { fetchOgp } from "./src/fetchOgp"
 
 export const GET: APIRoute = async ({ params, request }) => {
-  console.table({ params, request })
+  console.dir({ params, request }, { depth: null, colors: true })
   const queryUrl = new URL(request.url).searchParams.get("url")
   if (queryUrl === null) {
     return new Response("bad request", {
