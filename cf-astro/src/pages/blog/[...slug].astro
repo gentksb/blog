@@ -5,7 +5,7 @@ import BlogPost from '../../layouts/BlogPost.astro';
 // https://docs.astro.build/en/guides/content-collections/#building-for-server-output-ssr
 
 const { slug } = Astro.params
-if (slug===undefined){
+if (slug === undefined){
 	throw new Error("Slug is required")
 }
 

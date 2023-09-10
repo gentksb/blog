@@ -2,6 +2,7 @@
   "name": "gensobunya-cycle-blog",
   "homepage": "https://blog.gensobunya.net/",
   "type": "module",
+  "private": true,
   "version": "3.0.0",
   "scripts": {
     "dev": "wrangler pages dev --compatibility-date=2023-08-14 -- astro dev",
