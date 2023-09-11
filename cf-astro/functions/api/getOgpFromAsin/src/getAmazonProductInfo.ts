@@ -2,6 +2,7 @@ import type {
   AmazonItemsRequestParameters,
   AmazonItemsResponse
 } from "amazon-paapi"
+import type { ENV } from "../[asin]"
 import { AwsClient } from "aws4fetch"
 
 type AmazonRequestBody = AmazonItemsRequestParameters & {
@@ -10,20 +11,22 @@ type AmazonRequestBody = AmazonItemsRequestParameters & {
   Marketplace: "www.amazon.co.jp"
 }
 
-export const getAmazonProductInfo = async (asin: string) => {
+export const getAmazonProductInfo = async (asin: string, env:ENV) => {
+  const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = env
+  console.dir(env, { depth: null, colors: true })
   // check process.env for PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG
   if (
-    typeof process.env.PAAPI_ACCESSKEY !== "string" ||
-    typeof process.env.PAAPI_SECRETKEY !== "string" ||
-    typeof process.env.PARTNER_TAG !== "string"
+    typeof PAAPI_ACCESSKEY !== "string" ||
+    typeof PAAPI_SECRETKEY !== "string" ||
+    typeof PARTNER_TAG !== "string"
   ) {
     throw new Error("Environment variables are not valid")
   } else if (asin.length !== 10) {
     throw new Error("ASIN is not valid: invalid length")
   } else {
     const paapiClient = new AwsClient({
-      accessKeyId: process.env.PAAPI_ACCESSKEY,
-      secretAccessKey: process.env.PAAPI_SECRETKEY,
+      accessKeyId: PAAPI_ACCESSKEY,
+      secretAccessKey: PAAPI_SECRETKEY,
       service: "ProductAdvertisingAPI",
       region: "us-west-2"
     })
@@ -38,7 +41,7 @@ export const getAmazonProductInfo = async (asin: string) => {
       ],
       Condition: "New",
       ItemIdType: "ASIN",
-      PartnerTag: process.env.PARTNER_TAG,
+      PartnerTag: PARTNER_TAG,
       PartnerType: "Associates",
       Marketplace: "www.amazon.co.jp"
     }

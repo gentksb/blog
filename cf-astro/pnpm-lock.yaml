@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@astrojs/cloudflare':
-    specifier: ^7.0.2
-    version: 7.0.2(astro@3.0.12)
   '@astrojs/mdx':
     specifier: ^1.0.3
     version: 1.0.3(astro@3.0.12)
@@ -96,18 +93,6 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.19
-    dev: false
-
-  /@astrojs/cloudflare@7.0.2(astro@3.0.12):
-    resolution: {integrity: sha512-kRjbZ8IzRrjSRNUIqzY37YCJwCuN7mHNaz0t2t8Q+ZedyUTjlrnOQO4iOIGx/GQn9vZZ6FmesuJO7wrcL8wT7A==}
-    peerDependencies:
-      astro: ^3.0.9
-    dependencies:
-      '@astrojs/underscore-redirects': 0.3.0
-      '@cloudflare/workers-types': 4.20230904.0
-      astro: 3.0.12
-      esbuild: 0.19.2
-      tiny-glob: 0.2.9
     dev: false
 
   /@astrojs/compiler@2.1.0:
@@ -202,10 +187,6 @@ packages:
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /@astrojs/underscore-redirects@0.3.0:
-    resolution: {integrity: sha512-dWBOH6hlGeaERmbdi+jFV2rnTcjOJrNOFYTnTTf8G2x0Gs3Radsh1ObSNEL5Z+xUhXNZLymhLbnN9yQSmh+PQw==}
     dev: false
 
   /@azu/format-text@1.0.2:
@@ -498,6 +479,7 @@ packages:
 
   /@cloudflare/workers-types@4.20230904.0:
     resolution: {integrity: sha512-IX4oJCe14ctblSPZBlW64BVZ9nYLUo6sD2I5gu3hX0ywByYWm1OuoKm9Xb/Zpbj8Ph18Z7Ryii6u2/ocnncXdA==}
+    dev: true
 
   /@esbuild-plugins/node-globals-polyfill@0.2.3(esbuild@0.17.19):
     resolution: {integrity: sha512-r3MIryXDeXDOZh7ih1l/yE9ZLORCd5e8vWg02azWRGj5SPTuoh69A2AIyn0Z31V/kHBfZ4HgWJ+OK3GTTwLmnw==}
@@ -2607,14 +2589,6 @@ packages:
   /globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
-    dev: false
-
-  /globalyzer@0.1.0:
-    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
-    dev: false
-
-  /globrex@0.1.2:
-    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: false
 
   /graceful-fs@4.2.11:
@@ -5458,13 +5432,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /tiny-glob@0.2.9:
-    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
-    dependencies:
-      globalyzer: 0.1.0
-      globrex: 0.1.2
-    dev: false
 
   /to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
