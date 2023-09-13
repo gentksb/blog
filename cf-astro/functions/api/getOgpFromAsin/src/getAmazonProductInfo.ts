@@ -11,7 +11,7 @@ type AmazonRequestBody = AmazonItemsRequestParameters & {
   Marketplace: "www.amazon.co.jp"
 }
 
-export const getAmazonProductInfo = async (asin: string, env:ENV) => {
+export const getAmazonProductInfo = async (asin: string, env: ENV) => {
   const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = env
   console.dir(env, { depth: null, colors: true })
   // check process.env for PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG

@@ -24,7 +24,7 @@ class OGPParser {
     this.ogpImageUrl = ""
     this.ogpSiteName = ""
   }
-  element(element: Element):void {
+  element(element: Element): void {
     switch (element.getAttribute("property")) {
       case "og:title":
         this.ogpTitle = element.getAttribute("content") ?? ""
@@ -54,11 +54,10 @@ export const fetchOgp = async (queryUrl: string) => {
 }
 
 const getOgpDatas = async (href: string): Promise<ResType> => {
-
   const result: ResType = {
     ogpTitle: "",
     ogpImageUrl: "",
-    ogpDescription:"",
+    ogpDescription: "",
     ogpSiteName: "",
     pageurl: href,
     ok: true
@@ -76,26 +75,27 @@ const getOgpDatas = async (href: string): Promise<ResType> => {
       const ogp = new OGPParser()
 
       const rewriter = new HTMLRewriter((outputChunk) => {})
-      await rewriter.on("meta", {element(element){
-        switch (element.getAttribute("property")) {
-          case "og:title":
-            result.ogpTitle = element.getAttribute("content") ?? ""
-            break
-          case "og:description":
-            result.ogpDescription = element.getAttribute("content") ?? ""
-            break
-          case "og:image":
-            result.ogpImageUrl = element.getAttribute("content") ?? ""
-            break
-          case "og:site_name":
-            result.ogpSiteName = element.getAttribute("content") ?? ""
-            break
-          default:
-            break
+      await rewriter.on("meta", {
+        element(element) {
+          switch (element.getAttribute("property")) {
+            case "og:title":
+              result.ogpTitle = element.getAttribute("content") ?? ""
+              break
+            case "og:description":
+              result.ogpDescription = element.getAttribute("content") ?? ""
+              break
+            case "og:image":
+              result.ogpImageUrl = element.getAttribute("content") ?? ""
+              break
+            case "og:site_name":
+              result.ogpSiteName = element.getAttribute("content") ?? ""
+              break
+            default:
+              break
+          }
         }
-      }})
+      })
       await rewriter.end()
-
 
       console.log(result)
       return result

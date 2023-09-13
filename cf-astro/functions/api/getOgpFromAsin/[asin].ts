@@ -14,7 +14,10 @@ export const onRequest: PagesFunction<ENV> = async (context) => {
     })
   } else {
     try {
-      const response = await getAmazonProductInfo(context.params.asin, context.env)
+      const response = await getAmazonProductInfo(
+        context.params.asin,
+        context.env
+      )
       return new Response(JSON.stringify(response), {
         status: 200,
         headers: {

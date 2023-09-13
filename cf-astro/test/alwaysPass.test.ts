@@ -1,6 +1,5 @@
-import {assert, expect, test } from "vitest"
+import { assert, expect, test } from "vitest"
 
-test('alwaysPass', () => {
+test("alwaysPass", () => {
   expect(true).toBe(true)
-}
-)
+})
