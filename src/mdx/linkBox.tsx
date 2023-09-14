@@ -5,7 +5,8 @@ import {
   Image,
   Text,
   LinkBox as ChakraLinkBox,
-  LinkOverlay
+  LinkOverlay,
+  Spacer
 } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
 import { getApp } from "firebase/app"
@@ -112,48 +113,36 @@ const LinkBox: React.FunctionComponent<Props> = ({
   return (
     <>
       <ChakraLinkBox
-        p={4}
+        p={2}
         display="flex"
         borderWidth="1px"
-        borderRadius="xl"
+        borderRadius="none"
         mb={[2, 2, 3, 3]}
       >
-        <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
-          <Image
-            borderRadius="lg"
-            src={ogpData.imageUrl}
-            alt={ogpData.title}
-            fit="cover"
-            paddingRight={[2, 2, 3, 3]}
-            width="100%"
-            loading="lazy"
-          />
-        </Box>
-        <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+        <Box flexShrink={1} ml={{ base: 0, md: 2 }}>
           <LinkOverlay
-            mt={1}
             display="block"
-            fontSize="lg"
+            fontSize={{ base: "sm", md: "md" }}
             lineHeight="normal"
             fontWeight="semibold"
             href={linkurl ?? ogpData.url}
             isExternal
           >
-            <Text noOfLines={[1, 1, 2, 2]} as="span" color={linkColor}>
+            <Text noOfLines={[2, 2, 3, 3]} as="span" color={linkColor}>
               <ExternalLinkIcon />
               {ogpData.title}
             </Text>
           </LinkOverlay>
           <Text
             as="span"
-            fontSize="sm"
+            fontSize={{ base: "xs", md: "sm" }}
             color="gray.500"
             dangerouslySetInnerHTML={{ __html: ogpData.description }}
-            noOfLines={[1, 2, 2, 3]}
+            noOfLines={[2, 3, 3, 4]}
           />
           <Text
             as="span"
-            fontSize="sm"
+            fontSize={{ base: "2xs", md: "xs" }}
             letterSpacing="wide"
             color="teal.600"
             fontWeight="Bold"
@@ -176,6 +165,18 @@ const LinkBox: React.FunctionComponent<Props> = ({
             )}
             {ogpData.siteName}
           </Text>
+        </Box>
+        <Spacer />
+        <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
+          <Image
+            borderRadius="none"
+            src={ogpData.imageUrl}
+            alt={ogpData.title}
+            fit="cover"
+            paddingRight={[2, 2, 3, 3]}
+            width="100%"
+            loading="lazy"
+          />
         </Box>
       </ChakraLinkBox>
     </>
