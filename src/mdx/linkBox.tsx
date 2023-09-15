@@ -111,75 +111,73 @@ const LinkBox: React.FunctionComponent<Props> = ({
   const linkColor = "teal.600"
 
   return (
-    <>
-      <ChakraLinkBox
-        p={2}
-        display="flex"
-        borderWidth="1px"
-        borderRadius="none"
-        mb={[2, 2, 3, 3]}
-      >
-        <Box flexShrink={1} ml={{ base: 0, md: 2 }}>
-          <LinkOverlay
-            display="block"
-            fontSize={{ base: "sm", md: "md" }}
-            lineHeight="normal"
-            fontWeight="semibold"
-            href={linkurl ?? ogpData.url}
-            isExternal
-          >
-            <Text noOfLines={[2, 2, 3, 3]} as="span" color={linkColor}>
-              <ExternalLinkIcon />
-              {ogpData.title}
-            </Text>
-          </LinkOverlay>
-          <Text
-            as="span"
-            fontSize={{ base: "xs", md: "sm" }}
-            color="gray.500"
-            dangerouslySetInnerHTML={{ __html: ogpData.description }}
-            noOfLines={2}
-          />
-          <Text
-            as="span"
-            fontSize={{ base: "2xs", md: "xs" }}
-            letterSpacing="wide"
-            color="teal.600"
-            fontWeight="Bold"
-            mt={3}
-            noOfLines={1}
-            display="inline-flex"
-            alignContent="center"
-          >
-            {loading ? (
-              <CircularProgress isIndeterminate color={linkColor} />
-            ) : (
-              <Image
-                src={ogpData.ogpIcon}
-                alt="favicon"
-                maxHeight="2em"
-                display="inline-flex"
-                fallbackSrc="https://via.placeholder.com/24/FFFFFF/FFFFFF/"
-                objectFit="contain"
-              />
-            )}
-            {ogpData.siteName}
+    <ChakraLinkBox
+      p={2}
+      display="flex"
+      borderWidth="1px"
+      borderRadius="none"
+      mb={[2, 2, 3, 3]}
+    >
+      <Box flexShrink={1} ml={{ base: 0, md: 2 }}>
+        <LinkOverlay
+          display="block"
+          fontSize={{ base: "sm", md: "md" }}
+          lineHeight="normal"
+          fontWeight="semibold"
+          href={linkurl ?? ogpData.url}
+          isExternal
+        >
+          <Text noOfLines={[2, 2, 3, 3]} as="span" color={linkColor}>
+            <ExternalLinkIcon />
+            {ogpData.title}
           </Text>
-        </Box>
-        <Spacer />
-        <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
-          <Image
-            borderRadius="none"
-            src={ogpData.imageUrl}
-            alt={ogpData.title}
-            fit="cover"
-            paddingRight={[2, 2, 3, 3]}
-            width="100%"
-            loading="lazy"
-          />
-        </Box>
-      </ChakraLinkBox>
-    </>
+        </LinkOverlay>
+        <Text
+          as="span"
+          fontSize={{ base: "xs", md: "sm" }}
+          color="gray.500"
+          dangerouslySetInnerHTML={{ __html: ogpData.description }}
+          noOfLines={2}
+        />
+        <Text
+          as="span"
+          fontSize={{ base: "2xs", md: "xs" }}
+          letterSpacing="wide"
+          color="teal.600"
+          fontWeight="Bold"
+          mt={3}
+          noOfLines={1}
+          display="inline-flex"
+          alignContent="center"
+        >
+          {loading ? (
+            <CircularProgress isIndeterminate color={linkColor} />
+          ) : (
+            <Image
+              src={ogpData.ogpIcon}
+              alt="favicon"
+              maxHeight="2em"
+              display="inline-flex"
+              fallbackSrc="https://via.placeholder.com/24/FFFFFF/FFFFFF/"
+              objectFit="contain"
+            />
+          )}
+          {ogpData.siteName}
+        </Text>
+      </Box>
+      <Spacer />
+      <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
+        <Image
+          borderRadius="none"
+          src={ogpData.imageUrl}
+          alt={ogpData.title}
+          fit="cover"
+          paddingRight={[2, 2, 3, 3]}
+          width="100%"
+          loading="lazy"
+        />
+      </Box>
+    </ChakraLinkBox>
   )
 }
 
