@@ -5,7 +5,8 @@ import {
   Image,
   Text,
   LinkBox as ChakraLinkBox,
-  LinkOverlay
+  LinkOverlay,
+  Spacer
 } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
 import { getApp } from "firebase/app"
@@ -110,75 +111,72 @@ const LinkBox: React.FunctionComponent<Props> = ({
   const linkColor = "teal.600"
 
   return (
-    <>
-      <ChakraLinkBox
-        p={4}
-        display="flex"
-        borderWidth="1px"
-        borderRadius="xl"
-        mb={[2, 2, 3, 3]}
-      >
-        <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
-          <Image
-            borderRadius="lg"
-            src={ogpData.imageUrl}
-            alt={ogpData.title}
-            fit="cover"
-            paddingRight={[2, 2, 3, 3]}
-            width="100%"
-            loading="lazy"
-          />
-        </Box>
-        <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-          <LinkOverlay
-            mt={1}
-            display="block"
-            fontSize="lg"
-            lineHeight="normal"
-            fontWeight="semibold"
-            href={linkurl ?? ogpData.url}
-            isExternal
-          >
-            <Text noOfLines={[1, 1, 2, 2]} as="span" color={linkColor}>
-              <ExternalLinkIcon />
-              {ogpData.title}
-            </Text>
-          </LinkOverlay>
-          <Text
-            as="span"
-            fontSize="sm"
-            color="gray.500"
-            dangerouslySetInnerHTML={{ __html: ogpData.description }}
-            noOfLines={[1, 2, 2, 3]}
-          />
-          <Text
-            as="span"
-            fontSize="sm"
-            letterSpacing="wide"
-            color="teal.600"
-            fontWeight="Bold"
-            mt={3}
-            noOfLines={1}
-            display="inline-flex"
-            alignContent="center"
-          >
-            {loading ? (
-              <CircularProgress isIndeterminate color={linkColor} />
-            ) : (
-              <Image
-                src={ogpData.ogpIcon}
-                alt="favicon"
-                maxHeight="2em"
-                display="inline-flex"
-                fallbackSrc="https://via.placeholder.com/24/FFFFFF/FFFFFF/"
-                objectFit="contain"
-              />
-            )}
-            {ogpData.siteName}
+    <ChakraLinkBox
+      display="flex"
+      borderWidth="1px"
+      borderRadius="none"
+      mb={[2, 2, 3, 3]}
+    >
+      <Box flexShrink={1} mt={2} ml={2}>
+        <LinkOverlay
+          display="block"
+          fontSize={{ base: "sm", md: "md" }}
+          lineHeight="normal"
+          fontWeight="semibold"
+          href={linkurl ?? ogpData.url}
+          isExternal
+        >
+          <Text noOfLines={[2, 2, 3, 3]} as="span" color={linkColor}>
+            <ExternalLinkIcon />
+            {ogpData.title}
           </Text>
-        </Box>
-      </ChakraLinkBox>
-    </>
+        </LinkOverlay>
+        <Text
+          as="span"
+          fontSize={{ base: "xs", md: "sm" }}
+          color="gray.500"
+          dangerouslySetInnerHTML={{ __html: ogpData.description }}
+          noOfLines={[1, 1, 2, 2]}
+        />
+        <Text
+          as="span"
+          fontSize={{ base: "2xs", md: "xs" }}
+          letterSpacing="wide"
+          color="teal.600"
+          fontWeight="Bold"
+          mt={3}
+          noOfLines={1}
+          display="inline-flex"
+          alignContent="center"
+        >
+          {loading ? (
+            <CircularProgress isIndeterminate color={linkColor} />
+          ) : (
+            <Image
+              src={ogpData.ogpIcon}
+              alt="favicon"
+              maxHeight="2em"
+              display="inline-flex"
+              fallbackSrc="https://via.placeholder.com/24/FFFFFF/FFFFFF/"
+              objectFit="contain"
+            />
+          )}
+          {ogpData.siteName}
+        </Text>
+      </Box>
+      <Spacer />
+      <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
+        <Image
+          borderRadius="none"
+          src={ogpData.imageUrl}
+          alt={ogpData.title}
+          fit="cover"
+          width="100%"
+          height="100%"
+          loading="lazy"
+        />
+      </Box>
+    </ChakraLinkBox>
   )
 }
 
