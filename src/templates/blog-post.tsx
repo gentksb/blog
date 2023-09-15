@@ -86,6 +86,15 @@ const BlogPostTemplate: React.FunctionComponent<
               {post.frontmatter.title}
             </Heading>
             <PostTag tags={post.frontmatter.tags} />
+            <Text
+              as="span"
+              fontSize={{ base: "2xs", md: "xs" }}
+              letterSpacing="wide"
+              color="gray.500"
+              noOfLines={1}
+            >
+              本文中のリンクにはアフィリエイトリンクを使用している場合があります。
+            </Text>
           </Box>
           <Divider marginY={2} />
           <Box className="post-body" paddingX={2}>
