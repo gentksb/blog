@@ -112,13 +112,12 @@ const LinkBox: React.FunctionComponent<Props> = ({
 
   return (
     <ChakraLinkBox
-      p={2}
       display="flex"
       borderWidth="1px"
       borderRadius="none"
       mb={[2, 2, 3, 3]}
     >
-      <Box flexShrink={1} ml={{ base: 0, md: 2 }}>
+      <Box flexShrink={1} mt={2} ml={2}>
         <LinkOverlay
           display="block"
           fontSize={{ base: "sm", md: "md" }}
@@ -137,7 +136,7 @@ const LinkBox: React.FunctionComponent<Props> = ({
           fontSize={{ base: "xs", md: "sm" }}
           color="gray.500"
           dangerouslySetInnerHTML={{ __html: ogpData.description }}
-          noOfLines={2}
+          noOfLines={[1, 1, 2, 2]}
         />
         <Text
           as="span"
@@ -172,8 +171,8 @@ const LinkBox: React.FunctionComponent<Props> = ({
           src={ogpData.imageUrl}
           alt={ogpData.title}
           fit="cover"
-          paddingRight={[2, 2, 3, 3]}
           width="100%"
+          height="100%"
           loading="lazy"
         />
       </Box>
