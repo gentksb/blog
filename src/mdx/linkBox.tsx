@@ -138,7 +138,7 @@ const LinkBox: React.FunctionComponent<Props> = ({
             fontSize={{ base: "xs", md: "sm" }}
             color="gray.500"
             dangerouslySetInnerHTML={{ __html: ogpData.description }}
-            noOfLines={[2, 3, 3, 4]}
+            noOfLines={2}
           />
           <Text
             as="span"
