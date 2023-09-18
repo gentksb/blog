@@ -13,7 +13,6 @@ type AmazonRequestBody = AmazonItemsRequestParameters & {
 
 export const getAmazonProductInfo = async (asin: string, env: ENV) => {
   const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = env
-  console.dir(env, { depth: null, colors: true })
   // check process.env for PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG
   if (
     typeof PAAPI_ACCESSKEY !== "string" ||
@@ -67,7 +66,7 @@ export const getAmazonProductInfo = async (asin: string, env: ENV) => {
     )
     console.log(`PAAPI Response status: ${response.status}`)
     const responseBody: AmazonItemsResponse = await response.json()
-    console.dir(responseBody.ItemsResult.Items)
+    console.dir(responseBody.ItemsResult.Items, { depth: null, colors: true })
 
     return responseBody
   }
