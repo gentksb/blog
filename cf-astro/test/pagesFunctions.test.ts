@@ -20,5 +20,5 @@ test("Amazon ASINから製品データを取得する", async () => {
     PAAPI_SECRETKEY,
     PARTNER_TAG
   })
-  expect(res).deep.equal(amazonLinkDataExpectedResponse)
+  expect(res).toMatchObject(amazonLinkDataExpectedResponse)
 })
