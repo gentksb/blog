@@ -1,5 +1,5 @@
 // import type { AmazonItemsResponse } from "amazon-paapi"
-import type { ResType } from "../src/fetcher/fetchOgp"
+import type { ResType } from "../src/util/fetcher/fetchOgp"
 
 export const normalLinkUrl = "https://blog.gensobunya.net/"
 
