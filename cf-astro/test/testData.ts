@@ -1,4 +1,4 @@
-import type { AmazonItemsResponse } from "amazon-paapi"
+// import type { AmazonItemsResponse } from "amazon-paapi"
 import type { ResType } from "../src/fetcher/fetchOgp"
 
 export const normalLinkUrl = "https://blog.gensobunya.net/"
@@ -10,8 +10,7 @@ export const normalLinkDataExpectedResponse: ResType = {
     "AJOCC C1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです",
   ogpSiteName: "幻想サイクル",
   pageurl: "https://blog.gensobunya.net/",
-  ok: true,
-  error: ""
+  ok: true
 }
 
 export const testAsin = "B004N3APGO"
