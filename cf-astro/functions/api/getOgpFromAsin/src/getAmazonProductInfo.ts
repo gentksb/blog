@@ -56,7 +56,7 @@ export const getAmazonProductInfo = async (asin: string, env: ENV) => {
       body: JSON.stringify(body)
     }
 
-    const response = await paapiClient.fetch(
+    const response: Response = await paapiClient.fetch(
       "https://webservices.amazon.co.jp/paapi5/getitems",
       {
         method: reqPropaties.method,

@@ -1,3 +1,5 @@
-kv_namespace = [
-  { binding = "OGP_DATASTORE", id = "399b75e90505478b86435d8af75404d7", preview_id = "e77ae49b6b164fbe8a96c4c4cfad8f0d" }
+name = "gensoucycle-blog-worker"
+kv_namespaces = [
+  { binding = "OGP_DATASTORE", id = "399b75e90505478b86435d8af75404d7", preview_id = "e77ae49b6b164fbe8a96c4c4cfad8f0d" },
+  { binding = "PAAPI_DATASTORE", id = "64fddb5e468e4954a9e2a2ee07d9b709", preview_id = "701470abdcbd43ae9c3d7a586684acf4" }
 ]
