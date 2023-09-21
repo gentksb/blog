@@ -17,7 +17,9 @@ const getAmazonProductInfoCacheThrough = async (asin: string, env: ENV) => {
     return cache
   } else {
     const response = await getAmazonProductInfo(asin, env)
-    await env.PAAPI_DATASTORE.put(asin, JSON.stringify(response))
+    await env.PAAPI_DATASTORE.put(asin, JSON.stringify(response), {
+      expirationTtl: 86400
+    })
     return response
   }
 }
