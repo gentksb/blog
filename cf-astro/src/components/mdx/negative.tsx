@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import React, { type ReactNode } from "react"
 import { Alert, AlertDescription, Box, Icon } from "@chakra-ui/react"
 import { MdMoodBad } from "@react-icons/all-files/md/MdMoodBad"
 
