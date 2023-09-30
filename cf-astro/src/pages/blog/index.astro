@@ -15,24 +15,26 @@ const posts = (await getCollection('post')).sort(
 	<head>
 		<BaseHead title="幻想サイクル" description="テスト中" />
 		</head>
-	<body>
+	<body class="bg-base-200">
 		<Header />
 		<main>
 			<div class="container">
 			<section>
-				<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+				<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
 					{
 						posts.map((post) => (
-								<div class="card card-compact">
+								<div class="card card-compact card-bordered rounded-none border-slate-300">
 								<a href={`/post/${post.slug}/`}>
-									<div class="absolute badge badge-accent rounded-none">
+									<div class="absolute badge badge-primary rounded-none">
 										{post.data.tags[0]}
 									</div>
 									<div class="aspect-[16/9] max-w-full overflow-hidden">
+										<figure>
 										<img src={post.data.cover.src} alt="カバー画像" class="object-cover" />
+										</figure>
 									</div>
 									<div class="card-body">
-									<h4 class="title">{post.data.title}</h4>
+									<h4 class="text-base lg:text-lg font-bold">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.date} />
 									</p>
