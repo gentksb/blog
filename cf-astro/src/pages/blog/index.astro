@@ -25,6 +25,9 @@ const posts = (await getCollection('post')).sort(
 						posts.map((post) => (
 								<div class="card card-compact">
 								<a href={`/post/${post.slug}/`}>
+									<div class="absolute bg-accent">
+										{post.data.tags[0]}
+									</div>
 									<div class="aspect-[16/9] max-w-full overflow-hidden">
 										<img src={post.data.cover.src} alt="カバー画像" class="object-cover" />
 									</div>
