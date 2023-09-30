@@ -1,52 +1,58 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
+import BaseHead from "../../components/BaseHead.astro"
+import Header from "../../components/Header.astro"
+import Footer from "../../components/Footer.astro"
+import { getCollection } from "astro:content"
+import FormattedDate from "../../components/FormattedDate.astro"
 
-const posts = (await getCollection('post')).sort(
-	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-);
+const posts = (await getCollection("post")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+)
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja" data-theme="corporate">
-	<head>
-		<BaseHead title="幻想サイクル" description="テスト中" />
-		</head>
-	<body class="bg-base-200">
-		<Header />
-		<main>
-			<div class="container">
-			<section>
-				<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-					{
-						posts.map((post) => (
-								<div class="card card-compact card-bordered rounded-none border-slate-300">
-								<a href={`/post/${post.slug}/`}>
-									<div class="absolute badge badge-primary rounded-none">
-										{post.data.tags[0]}
-									</div>
-									<div class="aspect-[16/9] max-w-full overflow-hidden">
-										<figure>
-										<img src={post.data.cover.src} alt="カバー画像" class="object-cover" />
-										</figure>
-									</div>
-									<div class="card-body">
-									<h4 class="text-base lg:text-lg font-bold">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.date} />
-									</p>
-								</a>
-								</div>
-								</div>
-						))
-					}
-				</div>
-			</section>
-			</div>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title="幻想サイクル" description="テスト中" />
+  </head>
+  <body class="bg-base-200">
+    <Header />
+    <main>
+      <div class="container">
+        <section>
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {
+              posts.map((post) => (
+                <div class="card card-compact card-bordered rounded-none border-slate-300">
+                  <a href={`/post/${post.slug}/`}>
+                    <div class="absolute badge badge-primary rounded-none">
+                      {post.data.tags[0]}
+                    </div>
+                    <div class="aspect-[16/9] max-w-full overflow-hidden">
+                      <figure>
+                        <img
+                          src={post.data.cover.src}
+                          alt="カバー画像"
+                          class="object-cover"
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="text-base lg:text-lg font-bold">
+                        {post.data.title}
+                      </h4>
+                      <p class="date">
+                        <FormattedDate date={post.data.date} />
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+      </div>
+    </main>
+    <Footer />
+  </body>
 </html>
