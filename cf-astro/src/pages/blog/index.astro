@@ -18,7 +18,7 @@ const posts = (await getCollection("post")).sort(
   <body class="bg-base-200">
     <Header />
     <main>
-      <div class="container">
+      <div class="max-w-5xl mx-auto">
         <section>
           <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {
@@ -38,7 +38,7 @@ const posts = (await getCollection("post")).sort(
                       </figure>
                     </div>
                     <div class="card-body">
-                      <h4 class="text-base lg:text-lg font-bold">
+                      <h4 class="leading-tight lg:leading-tight text-base lg:text-lg font-bold">
                         {post.data.title}
                       </h4>
                       <p class="date">
