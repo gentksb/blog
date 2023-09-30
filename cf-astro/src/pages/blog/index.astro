@@ -6,35 +6,41 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('post')).sort(
-	(a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 ---
 
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-theme="corporate">
 	<head>
 		<BaseHead title="幻想サイクル" description="テスト中" />
 		</head>
 	<body>
 		<Header />
 		<main>
+			<div class="container">
 			<section>
-				<ul>
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
 					{
 						posts.map((post) => (
-							<li>
+								<div class="card card-compact">
 								<a href={`/post/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.cover.src} alt="カバー画像" />
+									<div class="aspect-[16/9] max-w-full overflow-hidden">
+										<img src={post.data.cover.src} alt="カバー画像" class="object-cover" />
+									</div>
+									<div class="card-body">
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.date} />
 									</p>
 								</a>
-							</li>
+								</div>
+								</div>
 						))
 					}
-				</ul>
+				</div>
 			</section>
+			</div>
 		</main>
 		<Footer />
 	</body>
