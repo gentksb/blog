@@ -25,7 +25,7 @@ const posts = (await getCollection('post')).sort(
 						posts.map((post) => (
 								<div class="card card-compact">
 								<a href={`/post/${post.slug}/`}>
-									<div class="absolute bg-accent">
+									<div class="absolute badge badge-accent rounded-none">
 										{post.data.tags[0]}
 									</div>
 									<div class="aspect-[16/9] max-w-full overflow-hidden">
