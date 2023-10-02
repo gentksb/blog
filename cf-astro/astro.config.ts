@@ -13,9 +13,9 @@ export default defineConfig({
   integrations: [
     AutoImport({
       imports: [
-        "./src/components/mdx/Test.astro"
+        "./src/components/mdx/Test.astro",
+        "./src/components/mdx/LinkBox.astro"
         // {
-        //   "./src/components/mdx/linkBox.tsx": ["LinkBox"],
         //   "./src/components/mdx/positive.tsx": ["PositiveBox"],
         //   "./src/components/mdx/negative.tsx": ["NegativeBox"]
         // }

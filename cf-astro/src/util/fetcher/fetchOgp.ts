@@ -1,15 +1,6 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
 import { HTMLRewriter } from "html-rewriter-wasm"
-
-export interface ResType {
-  ogpTitle?: string
-  ogpImageUrl?: string
-  ogpDescription?: string
-  ogpSiteName?: string
-  pageurl?: string
-  ok: boolean
-  error?: string
-}
+import { type OgpData } from "../../../@types/ogpData-type"
 
 export const fetchOgp = async (queryUrl: string) => {
   const decodedUrl = decodeURIComponent(queryUrl)
@@ -20,8 +11,8 @@ export const fetchOgp = async (queryUrl: string) => {
   return responseBody
 }
 
-const getOgpDatas = async (href: string): Promise<ResType> => {
-  const result: ResType = {
+const getOgpDatas = async (href: string): Promise<OgpData> => {
+  const result: OgpData = {
     ogpTitle: "",
     ogpImageUrl: "",
     ogpDescription: "",
@@ -35,7 +26,7 @@ const getOgpDatas = async (href: string): Promise<ResType> => {
     const encoder = new TextEncoder()
 
     if (!httpResponse.ok) {
-      const result: ResType = {
+      const result: OgpData = {
         ok: false,
         error: "Query url is not found"
       }
@@ -71,7 +62,7 @@ const getOgpDatas = async (href: string): Promise<ResType> => {
     }
   } catch (error: any) {
     console.error(error)
-    const result: ResType = {
+    const result: OgpData = {
       ok: false,
       error: JSON.stringify(error)
     }

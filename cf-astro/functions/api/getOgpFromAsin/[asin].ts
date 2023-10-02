@@ -1,3 +1,4 @@
+import { AmazonItemsResponse } from "amazon-paapi"
 import { getAmazonProductInfo } from "./src/getAmazonProductInfo"
 
 export interface ENV {
@@ -10,7 +11,7 @@ export interface ENV {
 //  response cache get-through logic here, using Cloudflare KV with typescript
 // https://developers.cloudflare.com/workers/runtime-apis/kv
 const getAmazonProductInfoCacheThrough = async (asin: string, env: ENV) => {
-  const cache = await env.PAAPI_DATASTORE.get(asin, "json")
+  const cache: AmazonItemsResponse = await env.PAAPI_DATASTORE.get(asin, "json")
   if (cache) {
     console.log("cache hit")
     console.dir(cache, { depth: null, colors: true })
