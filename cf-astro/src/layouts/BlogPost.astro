@@ -13,7 +13,7 @@ const { title, date, cover } = Astro.props
     <div class="hero-image">
       {cover && <img width={1020} height={510} src={cover.src} alt="" />}
     </div>
-    <div class="prose">
+    <div class="w-full">
       <div class="title">
         <div class="date">
           <FormattedDate date={date} />
@@ -21,7 +21,9 @@ const { title, date, cover } = Astro.props
         <h1>{title}</h1>
         <hr />
       </div>
-      <slot />
+      <div class="prose max-w-full">
+        <slot />
+      </div>
     </div>
   </article>
 </Layout>

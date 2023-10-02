@@ -9,38 +9,36 @@ const posts = (await getCollection("post")).sort(
 ---
 
 <Layout>
-  <div class="max-w-5xl mx-auto">
-    <section>
-      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-        {
-          posts.map((post) => (
-            <div class="card card-compact card-bordered rounded-none border-slate-300">
-              <a href={`/post/${post.slug}/`}>
-                <div class="absolute badge badge-primary rounded-none">
-                  {post.data.tags[0]}
-                </div>
-                <div class="aspect-[16/9] max-w-full overflow-hidden">
-                  <figure>
-                    <img
-                      src={post.data.cover.src}
-                      alt="カバー画像"
-                      class="object-cover"
-                    />
-                  </figure>
-                </div>
-                <div class="card-body">
-                  <h4 class="leading-tight lg:leading-tight text-base lg:text-lg font-bold">
-                    {post.data.title}
-                  </h4>
-                  <p class="date">
-                    <FormattedDate date={post.data.date} />
-                  </p>
-                </div>
-              </a>
-            </div>
-          ))
-        }
-      </div>
-    </section>
-  </div>
+  <section>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      {
+        posts.map((post) => (
+          <div class="card card-compact card-bordered rounded-none border-slate-300">
+            <a href={`/post/${post.slug}/`}>
+              <div class="absolute badge badge-primary rounded-none">
+                {post.data.tags[0]}
+              </div>
+              <div class="aspect-[16/9] max-w-full overflow-hidden">
+                <figure>
+                  <img
+                    src={post.data.cover.src}
+                    alt="カバー画像"
+                    class="object-cover"
+                  />
+                </figure>
+              </div>
+              <div class="card-body">
+                <h4 class="leading-tight lg:leading-tight text-base lg:text-lg font-bold">
+                  {post.data.title}
+                </h4>
+                <p class="date">
+                  <FormattedDate date={post.data.date} />
+                </p>
+              </div>
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </section>
 </Layout>
