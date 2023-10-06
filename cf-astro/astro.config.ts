@@ -14,11 +14,11 @@ export default defineConfig({
     AutoImport({
       imports: [
         "./src/components/mdx/Test.astro",
-        "./src/components/mdx/LinkBox.astro"
-        // {
-        //   "./src/components/mdx/positive.tsx": ["PositiveBox"],
-        //   "./src/components/mdx/negative.tsx": ["NegativeBox"]
-        // }
+        "./src/components/mdx/LinkBox.astro",
+        {
+          "./src/components/mdx/positive.tsx": ["PositiveBox"],
+          "./src/components/mdx/negative.tsx": ["NegativeBox"]
+        }
       ]
     }),
     mdx(),

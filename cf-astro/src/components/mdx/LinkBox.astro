@@ -1,7 +1,4 @@
 ---
-import type { AmazonItemsResponse } from "amazon-paapi"
-import { getOgp } from "../../../src/util/getOgp"
-import type { OgpData } from "../../../@types/ogpData-type"
 import { ReactLinkBox } from "./components/linkBox"
 interface Props {
   url: string
@@ -9,48 +6,7 @@ interface Props {
   isAmazonLink: boolean
 }
 
-const { url, linkUrl, isAmazonLink }: Props = Astro.props
-const getAsinFromUrl = (url: string) => {
-  const re = RegExp(/[^0-9A-Z]([0-9A-Z]{10})([^0-9A-Z]|$)/)
-  const hitData = re.exec(url)
-  if (hitData !== null) {
-    return hitData[1]
-  } else {
-    throw new Error("ASIN not found in URL")
-  }
-}
-
-const getAmazonOgp = async (asin: string) => {
-  const ogpData: OgpData = {
-    ok: false
-  }
-  const productData = await fetch(
-    new URL(`/api/getOgpFromAsin/${asin}`, Astro.url.origin)
-  )
-  const productDataJson: AmazonItemsResponse = await productData.json()
-  if (productDataJson.Errors) {
-    ogpData.ok = false
-    ogpData.error = productDataJson.Errors[0].Message
-    return ogpData
-  } else {
-    ogpData.ok = true
-    ogpData.ogpTitle =
-      productDataJson.ItemsResult.Items[0].ItemInfo.Title?.DisplayValue ?? ""
-    ogpData.ogpDescription =
-      productDataJson.ItemsResult.Items[0].ItemInfo.Features
-        ?.DisplayValues[0] ?? ""
-    ogpData.ogpImageUrl =
-      productDataJson.ItemsResult.Items[0].Images?.Primary?.Large?.URL ??
-      productDataJson.ItemsResult.Items[0].Images?.Primary?.Medium?.URL ??
-      ""
-    ogpData.pageurl = productDataJson.ItemsResult.Items[0].DetailPageURL ?? url
-    return ogpData
-  }
-}
-
-const displayOgp = isAmazonLink
-  ? await getAmazonOgp(getAsinFromUrl(url))
-  : { ok: false }
+const props: Props = Astro.props
 ---
 
-<ReactLinkBox props={displayOgp} client:only="react" />
+<ReactLinkBox {...props} client:only="react" />

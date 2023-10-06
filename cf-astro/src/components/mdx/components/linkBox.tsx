@@ -4,77 +4,111 @@ import {
   Image,
   Text,
   LinkBox as ChakraLinkBox,
-  LinkOverlay
+  LinkOverlay,
+  CircularProgress,
+  Spacer
 } from "@chakra-ui/react"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import type { OgpData } from "../../../../@types/ogpData-type"
+import { getAmazonOgp } from "../lib/getAmazonOgp"
+import { getAsinFromUrl } from "../lib/getAsinFromUrl"
 
 interface Props {
-  props: OgpData
+  url: string
+  isAmazonLink?: boolean
+  isA8Link?: boolean
+  linkurl?: string
 }
 
-export const ReactLinkBox: React.FunctionComponent<Props> = (ogpData) => {
+export const ReactLinkBox: React.FunctionComponent<Props> = ({
+  url,
+  isAmazonLink,
+  isA8Link,
+  linkurl
+}) => {
+  const [ogpData, changeOgpData] = useState<OgpData>({ ok: false })
+  const [loading, changeLoading] = useState(true)
   const linkColor = "teal.600"
-  const { ogpTitle, ogpDescription, ogpImageUrl, ogpSiteName, pageurl, error } =
-    ogpData.props
+  const linkBoxHandler = async ({
+    url,
+    isAmazonLink,
+    isA8Link,
+    linkurl
+  }: Props) => {
+    try {
+      const asin = getAsinFromUrl(url)
+      const amazonData: OgpData = await getAmazonOgp(asin)
+      changeOgpData(amazonData)
+      changeLoading(false)
+    } catch (error) {
+      console.log("catch exception error when calling api")
+      const temporaryLinkText = isAmazonLink ? "amazon.co.jp" : "外部サイトへ"
+      changeOgpData({
+        ogpTitle: temporaryLinkText,
+        pageurl: linkurl ?? url,
+        ok: false
+      })
+      changeLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    linkBoxHandler({ url, isAmazonLink, isA8Link, linkurl })
+  }, [url, isAmazonLink, isA8Link, linkurl])
 
   return (
-    <>
-      <ChakraLinkBox
-        p={4}
-        display="flex"
-        borderWidth="1px"
-        borderRadius="xl"
-        mb={[2, 2, 3, 3]}
-      >
-        <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
-          <Image
-            borderRadius="lg"
-            src={ogpImageUrl}
-            alt={ogpTitle}
-            fit="cover"
-            paddingRight={[2, 2, 3, 3]}
-            width="100%"
-            loading="lazy"
-          />
-        </Box>
-        <Box flexShrink={1} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-          <LinkOverlay
-            mt={1}
-            display="block"
-            fontSize="lg"
-            lineHeight="normal"
-            fontWeight="semibold"
-            href={pageurl}
-            isExternal
-          >
-            <Text noOfLines={[1, 1, 2, 2]} as="span" color={linkColor}>
-              <ExternalLinkIcon />
-              {ogpTitle}
-            </Text>
-          </LinkOverlay>
-          <Text
-            as="span"
-            fontSize="sm"
-            color="gray.500"
-            dangerouslySetInnerHTML={{ __html: ogpDescription ?? "" }}
-            noOfLines={[1, 2, 2, 3]}
-          />
-          <Text
-            as="span"
-            fontSize="sm"
-            letterSpacing="wide"
-            color="teal.600"
-            fontWeight="Bold"
-            mt={3}
-            noOfLines={1}
-            display="inline-flex"
-            alignContent="center"
-          >
-            {ogpSiteName}
+    <ChakraLinkBox
+      display="flex"
+      borderWidth="1px"
+      borderRadius="none"
+      mb={[2, 2, 3, 3]}
+    >
+      <Box flexShrink={1} mt={2} ml={2}>
+        <LinkOverlay
+          display="block"
+          fontSize={{ base: "sm", md: "md" }}
+          lineHeight="normal"
+          fontWeight="semibold"
+          href={linkurl ?? ogpData.pageurl}
+          isExternal
+        >
+          <Text noOfLines={[2, 2, 3, 3]} as="span" color={linkColor}>
+            <ExternalLinkIcon />
+            {ogpData.ogpTitle}
           </Text>
-        </Box>
-      </ChakraLinkBox>
-    </>
+        </LinkOverlay>
+        <Text
+          as="span"
+          fontSize={{ base: "2xs", md: "xs" }}
+          letterSpacing="wide"
+          color="teal.600"
+          fontWeight="Bold"
+          mt={3}
+          noOfLines={1}
+          display="inline-flex"
+          alignContent="center"
+        >
+          {loading ? (
+            <CircularProgress isIndeterminate color={linkColor} />
+          ) : (
+            ""
+          )}
+          {ogpData.ogpSiteName}
+        </Text>
+      </Box>
+      <Spacer />
+      <Box flexShrink={1} maxWidth={["100px", "100px", "150px", "150px"]}>
+        <Image
+          borderRadius="none"
+          src={ogpData.ogpImageUrl}
+          alt={ogpData.ogpTitle}
+          fit="cover"
+          width="100%"
+          height="100%"
+          loading="lazy"
+          margin={0}
+        />
+      </Box>
+    </ChakraLinkBox>
   )
 }
