@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content"
 import Layout from "./Layout.astro"
 import FormattedDate from "../components/FormattedDate.astro"
+import { Image } from "astro:assets"
 
 type Props = CollectionEntry<"post">["data"]
 
@@ -11,7 +12,7 @@ const { title, date, cover } = Astro.props
 <Layout>
   <article>
     <div class="hero-image">
-      {cover && <img width={1020} height={510} src={cover.src} alt="" />}
+      {cover && <Image width={1020} height={510} src={cover} alt="" />}
     </div>
     <div class="w-full">
       <div class="title">
