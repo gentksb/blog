@@ -2,7 +2,7 @@
 title: "JCX#1 土浦 Men Elite レースレポート"
 date: 2022-10-11
 draft: false
-tags: ["RACEREPORT","CX"]
+tags: ["RACEREPORT", "CX"]
 cover: "./cover.jpg"
 ---
 
@@ -16,7 +16,7 @@ cover: "./cover.jpg"
 
 ## リザルト
 
-47/73位（-6 lap)
+47/73位（-6 lap）
 
 ### 機材
 
