@@ -19,7 +19,7 @@ export const LinkBoxLayout: React.FunctionComponent<OgpData> = ({
           {ogpDescription}
         </div>
       </div>
-      <div className="max-w-[30%] shrink">
+      <div className="max-h-24 max-w-[30%] shrink">
         <figure className="h-full w-full object-cover">
           <img src={ogpImageUrl ?? ""} className="h-full" />
         </figure>
