@@ -1,5 +1,8 @@
 ---
 import { ReactLinkBox } from "./components/linkBox"
+import { getOgp } from "../../lib/getOgp"
+import { LinkBoxLayout } from "./components/linkBoxLayout"
+
 interface Props {
   url: string
   linkUrl?: string
@@ -7,6 +10,13 @@ interface Props {
 }
 
 const props: Props = Astro.props
+const staticOgp = props.isAmazonLink ? undefined : await getOgp(props.url)
 ---
 
-<ReactLinkBox {...props} client:only="react" />
+{
+  !staticOgp ? (
+    <ReactLinkBox {...props} client:only="react" />
+  ) : (
+    <LinkBoxLayout {...staticOgp} />
+  )
+}
