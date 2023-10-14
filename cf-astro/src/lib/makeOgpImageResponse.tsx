@@ -22,18 +22,18 @@ export const makeBlogPostOgpImageResponse = async ({
   image,
   slug
 }: Props) => {
-  const faviconBase64 = readFileSync(
-    new URL("../../public/favicon.svg", import.meta.url),
-    { encoding: "base64" }
-  )
-  const backgroungImageBase64 = readFileSync(
-    new URL(`../../src/content/post/${slug}/cover.jpg`, import.meta.url),
-    {
-      encoding: "base64"
-    }
-  )
-  const faviconDataUrl = `data:image/svg+xml;base64,${faviconBase64}`
-  const backgroundImageDataUrl = `data:image/jpeg;base64,${backgroungImageBase64}`
+  // const faviconBase64 = readFileSync(
+  //   new URL("../../public/favicon.svg", import.meta.url),
+  //   { encoding: "base64" }
+  // )
+  // const backgroungImageBase64 = readFileSync(
+  //   new URL(`../../src/content/post/${slug}/cover.jpg`, import.meta.url),
+  //   {
+  //     encoding: "base64"
+  //   }
+  // )
+  // const faviconDataUrl = `data:image/svg+xml;base64,${faviconBase64}`
+  // const backgroundImageDataUrl = `data:image/jpeg;base64,${backgroungImageBase64}`
 
   return asResponse(
     new ImageResponse(
@@ -57,7 +57,7 @@ export const makeBlogPostOgpImageResponse = async ({
         >
           <div style={{ display: "flex" }}>{title}</div>
           <div style={{ display: "flex", lineHeight: 1.2 }}>
-            <img src={faviconDataUrl} height={100} />
+            {/* <img src={faviconDataUrl} height={100} /> */}
           </div>
         </div>
       ),
