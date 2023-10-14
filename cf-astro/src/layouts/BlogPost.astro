@@ -9,10 +9,11 @@ const { title, date, cover, tags } = Astro.props
 ---
 
 <Layout>
+  <meta name="description" content="ヘッダテスト" />
   <article>
     <BlogTitle title={title} cover={cover} date={date} tags={tags} />
-    <div class="w-full h-[25%] mt-4">
-      <div class="prose prose-sm md:prose-lg max-w-full">
+    <div class="w-full mt-4">
+      <div class="prose prose-sm md:prose-base max-w-3xl mx-auto">
         <slot />
       </div>
     </div>
