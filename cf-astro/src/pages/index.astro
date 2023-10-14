@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content"
 import FormattedDate from "../components/FormattedDate.astro"
 import Layout from "../layouts/Layout.astro"
-import { Image } from "astro:assets"
+import { Picture } from "astro:assets"
 
 const posts = (await getCollection("post")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -20,13 +20,14 @@ const posts = (await getCollection("post")).sort(
                 {post.data.tags[0]}
               </div>
               <div class="aspect-[16/9] max-w-full overflow-hidden">
-                <figure>
-                  <Image
-                    src={post.data.cover}
-                    alt="記事カバー画像"
-                    class="object-cover"
-                  />
-                </figure>
+                <Picture
+                  src={post.data.cover}
+                  alt="記事カバー画像"
+                  class="object-cover"
+                  formats={["webp"]}
+                  widths={[180, 360]}
+                  quality={50}
+                   />
               </div>
               <div class="card-body">
                 <h4 class="leading-tight lg:leading-tight text-base lg:text-lg font-bold">

@@ -1,14 +1,14 @@
 ---
 import type { CollectionEntry } from "astro:content"
 import FormattedDate from "./FormattedDate.astro"
+import { Picture } from "astro:assets"
 type Props = CollectionEntry<"post">["data"]
 
 const { cover, title, date, tags } = Astro.props
-
-const coverSrc = cover.src
 ---
 
-<div class="hero aspect-video" style=`background-image: url(${coverSrc});`>
+<div class="hero aspect-video">
+  <Picture src={cover} alt="" formats={['webp']} quality={30} widths={[640,768,1280]} />
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content text-center">
     <div class="max-w-full">
