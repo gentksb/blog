@@ -17,7 +17,7 @@ export const LinkBoxLayout: React.FunctionComponent<OgpData> = ({
     target="_blank"
     rel="noopener noreferrer"
   >
-    <div className="not-prose card card-side mx-2 rounded-none border border-base-300 bg-base-100">
+    <div className="not-prose card card-side rounded-none border border-base-300 bg-base-100">
       <div className="card-body p-2">
         <div className="card-title text-sm md:text-base leading-none text-md text-secondary-focus line-clamp-2">{isExternal? <MdOpenInNew className="inline" /> : ""}{ogpTitle}</div>
         <div className="card-body p-0 text-secondary line-clamp-2 max-h-[3em] text-xs md:text-sm font-normal">

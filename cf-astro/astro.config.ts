@@ -25,5 +25,11 @@ export default defineConfig({
     sitemap(),
     tailwind(),
     react()
-  ]
+  ],
+  vite: {
+    ssr: {
+      // to fix react-icons ESM import error
+      noExternal: ["react-icons"]
+    }
+  }
 })
