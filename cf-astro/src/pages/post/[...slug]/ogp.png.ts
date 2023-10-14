@@ -16,7 +16,8 @@ export const GET: APIRoute = async ({ params }) => {
 
     return await makeBlogPostOgpImageResponse({
       title: post?.data.title ?? "no title",
-      image: post?.data.cover
+      image: post?.data.cover,
+      slug: post?.slug
     })
   }
 }
