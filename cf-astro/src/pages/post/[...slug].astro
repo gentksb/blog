@@ -8,7 +8,9 @@ import {
   MdxH4,
   MdxParagraph,
   MdxBlockQuote,
-  MdxA
+  MdxA,
+  MdxTable,
+  MdxStrong
 } from "../../components/mdx/mdxReplacer"
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -32,7 +34,9 @@ const { Content } = await post.render()
       h4: MdxH4,
       p: MdxParagraph,
       blockquote: MdxBlockQuote,
-      a: MdxA
+      a: MdxA,
+      table: MdxTable,
+      strong: MdxStrong
     }}
   />
 </BlogPost>

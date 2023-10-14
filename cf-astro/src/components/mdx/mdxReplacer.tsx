@@ -39,3 +39,19 @@ export const MdxBlockQuote: React.FC<Props> = ({ children }) => {
 export const MdxA: React.FC<Props> = ({ children }) => {
   return <a className="text-primary hover:underline">{children}</a>
 }
+
+export const MdxTable: React.FC<Props> = ({ children }) => {
+  return (
+    <div className="overflow-x-auto">
+      <table className="table-auto">{children}</table>
+    </div>
+  )
+}
+
+export const MdxStrong: React.FC<Props> = ({ children }) => {
+  return (
+    <strong className="font-bold underline decoration-info/30 decoration-4">
+      {children}
+    </strong>
+  )
+}
