@@ -1,14 +1,3 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons"
-import {
-  Box,
-  Image,
-  Text,
-  LinkBox as ChakraLinkBox,
-  LinkOverlay,
-  CircularProgress,
-  Spacer,
-  Link
-} from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
 import type { OgpData } from "../../../../@types/ogpData-type"
 import { getAmazonOgp } from "../lib/getAmazonOgp"
