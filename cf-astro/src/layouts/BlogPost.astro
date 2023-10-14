@@ -13,8 +13,8 @@ const { title, date, cover } = Astro.props
 <Layout>
   <article>
     <BlogTitle title={title} cover={cover} date={date} />
-    <div class="w-full h-[25%]">
-      <div class="prose max-w-full">
+    <div class="w-full h-[25%] mt-4">
+      <div class="prose prose-sm font-normal max-w-full px-2">
         <slot />
       </div>
     </div>
