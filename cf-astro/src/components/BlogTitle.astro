@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from "astro:content"
+import FormattedDate from "./FormattedDate.astro"
+type Props = {
+  cover: CollectionEntry<"post">["data"]["cover"]
+  title: CollectionEntry<"post">["data"]["title"]
+  date: CollectionEntry<"post">["data"]["date"]
+}
+
+const { cover, title, date } = Astro.props
+
+const coverSrc = cover.src
+---
+
+<div class="hero aspect-video" style=`background-image: url(${coverSrc});`>
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-full">
+      <h1 class="mb-5 text-xl md:text-3xl font-bold">{title}</h1>
+      <p class="mb-5">
+        <FormattedDate date={date} />
+      </p>
+    </div>
+  </div>
+</div>
