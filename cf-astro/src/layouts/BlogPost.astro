@@ -2,14 +2,23 @@
 import type { CollectionEntry } from "astro:content"
 import Layout from "./Layout.astro"
 import BlogTitle from "../components/BlogTitle.astro"
+import { utcToZonedTime } from "date-fns-tz"
+import { sub, formatISO } from "date-fns"
 
 type Props = CollectionEntry<"post">["data"]
 
 const { title, date, cover, tags } = Astro.props
+const publishedDate = formatISO(
+  sub(utcToZonedTime(date, "Asia/Tokyo"), { hours: 9 })
+)
 ---
 
-<Layout>
-  <meta name="description" content="ヘッダテスト" />
+<Layout
+  title={title}
+  datePublished={publishedDate}
+  image={cover.src}
+  description=""
+>
   <article>
     <BlogTitle title={title} cover={cover} date={date} tags={tags} />
     <div class="w-full mt-4">
