@@ -27,9 +27,9 @@ tags: ["RACEREPORT", "ROAD"]
 
 某所の駐輪場はすでにこんな具合に
 
-![GATSBY_EMPTY_ALT](DSC_4222.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4222.jpg)
 
-![GATSBY_EMPTY_ALT](DSC_4224.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4224.jpg)
 
 そしてオリオン通りにはこんなものが…
 
@@ -53,7 +53,7 @@ tags: ["RACEREPORT", "ROAD"]
 
 翌朝は雨にもかかわらずオタクチャリが来るわ来るわ
 
-![GATSBY_EMPTY_ALT](DSC_4230.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4230.jpg)
 
 雨は1mm予報だったからいけるとおもったんだ…この時は
 
@@ -61,7 +61,7 @@ tags: ["RACEREPORT", "ROAD"]
 
 かなり写真撮られてましたね、イタリア人ジャーナリストはビアンキとルッキーニちゃんがお気に入りの模様。
 
-![GATSBY_EMPTY_ALT](DSC_4279.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4279.jpg)
 
 そして途中から豪雨。どうしてこうなった
 
@@ -69,7 +69,7 @@ tags: ["RACEREPORT", "ROAD"]
 
 ただひたすらバッソコール
 
-![GATSBY_EMPTY_ALT](DSC_4283.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4283.jpg)
 
 それでも選手は走り続ける、というかバッソさんめっちゃ笑顔（わかりにくいけど
 
@@ -81,7 +81,7 @@ tags: ["RACEREPORT", "ROAD"]
 
 翌日に泥だらけの自転車を入渠して終戦
 
-![GATSBY_EMPTY_ALT](BXGYQbYCIAAUlKo.jpg)
+![GATSBY_EMPTY_ALT](./BXGYQbYCIAAUlKo.jpg)
 
 <h3>
 さいたまクリテ
@@ -97,7 +97,7 @@ tags: ["RACEREPORT", "ROAD"]
 
 JCより近いのですが前回で雨は懲りたので電車で参戦。
 
-![GATSBY_EMPTY_ALT](DSC_4308.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4308.jpg)
 
 まずはSSAにてブースを見て回る。
 
@@ -119,13 +119,13 @@ JCより近いのですが前回で雨は懲りたので電車で参戦。
 
 いい場所ゲット！と思いきや
 
-![GATSBY_EMPTY_ALT](DSC_4309.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4309.jpg)
 
 あ、そこプレスが来るんですか…
 
 そうですか…
 
-![GATSBY_EMPTY_ALT](DSC_4311.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4311.jpg)
 
 仕方ないからアンダーパスを上から眺め…
 
@@ -133,17 +133,17 @@ JCより近いのですが前回で雨は懲りたので電車で参戦。
 
 （アンダーパス覗き込める場所）
 
-![GATSBY_EMPTY_ALT](DSC_4312.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4312.jpg)
 
 橋の上は…なんか布が
 
-![GATSBY_EMPTY_ALT](DSC_4313.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4313.jpg)
 
 コーナ…え？ここもだめ？
 
 フェンスあるけど…はいそうですか
 
-![GATSBY_EMPTY_ALT](DSC_4314.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4314.jpg)
 
 少し遠くに…え？横断不可？
 
@@ -157,11 +157,11 @@ JCに比べると選手はレースではなく走りにきているだけっぽ
 
 しかしレース開始後すぐにモヤモヤにはさようなら
 
-![GATSBY_EMPTY_ALT](DSC_4337.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4337.jpg)
 
 アラシーロ！
 
-![GATSBY_EMPTY_ALT](DSC_4328.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4328.jpg)
 
 「（ワット管理しないとトレーナーうるさいんだよな…）」の構えを見せるフルーム
 

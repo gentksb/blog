@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-10-12T04:23:00+00:00
 
-cover: DSC_0180.jpg
+cover: "./DSC_0180.jpg"
 
 tags: ["TOURING", "ROAD"]
 ---
@@ -15,7 +15,7 @@ tags: ["TOURING", "ROAD"]
 
 …持っていくしかないでしょう！
 
-![GATSBY_EMPTY_ALT](DSC_0180.jpg)
+![GATSBY_EMPTY_ALT](./DSC_0180.jpg)
 
 なんせ北海道です。平坦な道がどどーん！TTバイク持ってくしかねえ！
 
@@ -23,7 +23,7 @@ tags: ["TOURING", "ROAD"]
 
 「支笏湖へ豊平川CRで行くが人気コースかな～」
 
-![GATSBY_EMPTY_ALT](1.png)
+![GATSBY_EMPTY_ALT](./1.png)
 
 HAHAHAHA、素敵な山岳コースじゃないか！
 
@@ -41,12 +41,12 @@ TTバイクだと縦剛性が高めでな上、前乗りで振動が上体に直
 
 ただその後の景色は格別でした
 
-![GATSBY_EMPTY_ALT](DSC_0182.jpg)
+![GATSBY_EMPTY_ALT](./DSC_0182.jpg)
 
-![GATSBY_EMPTY_ALT](DSC_0183.jpg)
+![GATSBY_EMPTY_ALT](./DSC_0183.jpg)
 
-![GATSBY_EMPTY_ALT](DSC_0184.jpg)
+![GATSBY_EMPTY_ALT](./DSC_0184.jpg)
 
-![GATSBY_EMPTY_ALT](DSC_0185.jpg)
+![GATSBY_EMPTY_ALT](./DSC_0185.jpg)
 
 ロードも結構いましたね、今度は軽快に登りたいw

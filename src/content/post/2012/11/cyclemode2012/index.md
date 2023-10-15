@@ -23,9 +23,9 @@ Buraは「軽いことがすごくわかりやすいバイク」って感じで�
 
 まずはBOMAのカーボンスポークホイール！
 
-![GATSBY_EMPTY_ALT](DSC_1128.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1128.jpg)
 
-![GATSBY_EMPTY_ALT](DSC_1131.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1131.jpg)
 
 価格未定なのがちょっと気になりますが45mmで1,250gはかなり頑張ってる！\
 
@@ -33,29 +33,29 @@ Buraは「軽いことがすごくわかりやすいバイク」って感じで�
 
 それとOGKの新ヘルメット、名前を撮り忘れた上にショーケースの中でスマホには写真がつらいw
 
-![GATSBY_EMPTY_ALT](DSC_1135.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1135.jpg)
 
-![GATSBY_EMPTY_ALT](DSC_1136.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1136.jpg)
 
 かなりエアロ効果を意識した作りという売り込みです、後ろのラチェットもさらなる新型に。形状はMS-2とREDIMOSのちょうど中間ぐらいだそうで。来春発売予定。
 
 コントロールテックさんは相変わらずの変態パーツ群を出していました
 
-![GATSBY_EMPTY_ALT](DSC_1137.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1137.jpg)
 
 スカンジウムハンドル！とっくに旬の過ぎた素材かと思っていましたがw
 
-![GATSBY_EMPTY_ALT](DSC_1139.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1139.jpg)
 
 裏にカーボンのケーブルガイドのあるハンドルとか・・・
 
-![GATSBY_EMPTY_ALT](DSC_1142.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1142.jpg)
 
-![GATSBY_EMPTY_ALT](DSC_1140.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1140.jpg)
 
 変態形状のシートポストw　そしてカーボンが薄いwww
 
-![GATSBY_EMPTY_ALT](DSC_1144.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1144.jpg)
 
 説明不要のステム
 

@@ -4,20 +4,20 @@ author: admin
 type: post
 date: 2014-01-24T06:34:00+00:00
 
-cover: IMG_20140123_232028.jpg
+cover: "./IMG_20140123_232028.jpg"
 
 tags: ["CX", "REVIEW"]
 ---
 
-![GATSBY_EMPTY_ALT](IMG_20140123_232028.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140123_232028.jpg)
 
 更新サボっている間に組みあがりました。
 
 PBKでセールになっていたのを衝動でポチっと購入。
 
-![GATSBY_EMPTY_ALT](IMG_20140110_231831.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140110_231831.jpg)
 
-![GATSBY_EMPTY_ALT](IMG_20140110_231909.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140110_231909.jpg)
 
 フレーム単体と付属品。ヘッドパーツ多すぎないか！？と思うも後で理由が発覚します。
 
@@ -27,9 +27,9 @@ PBKでセールになっていたのを衝動でポチっと購入。
 
 トップチューブとチェーンステー。
 
-![GATSBY_EMPTY_ALT](IMG_20140110_234237.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140110_234237.jpg)
 
-![GATSBY_EMPTY_ALT](IMG_20140110_234313.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140110_234313.jpg)
 
 ひどい。
 
@@ -39,7 +39,7 @@ PBKでセールになっていたのを衝動でポチっと購入。
 
 そこで用意したものがこちら。
 
-![GATSBY_EMPTY_ALT](IMG_20140111_191109.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140111_191109.jpg)
 
 ホムセンで買ってきたパイプジョイントをガムテープで巻いただけの工具？
 
@@ -63,7 +63,7 @@ PBKでセールになっていたのを衝動でポチっと購入。
 
 最初はMTBとロードのリム幅違いではまらないのかと思いましたが、手持ちのJETFLYと比較してもそこまで変化ありません。
 
-![GATSBY_EMPTY_ALT](IMG_20140113_183454.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140113_183454.jpg)
 
 左がJETFLY ＋ Notubeテープ、右がMT66です。
 
@@ -101,6 +101,6 @@ MTBの経験で不整地行くのにフロント2枚いらないことは自明�
 
 適宜組み付けて完成！
 
-![GATSBY_EMPTY_ALT](IMG_20140123_232028.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140123_232028.jpg)
 
 明後日レースなのにまだシェイクダウンしていない…ぶっつけだ！

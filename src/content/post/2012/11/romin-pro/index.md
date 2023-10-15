@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2012-11-01T02:46:00+00:00
 
-cover: DSC_1114.jpg
+cover: "./DSC_1114.jpg"
 
 tags: ["REVIEW", "ROAD"]
 ---
@@ -15,7 +15,7 @@ tags: ["REVIEW", "ROAD"]
 
 何が問題だったかというと…コイツです
 
-![GATSBY_EMPTY_ALT](DSC_1114.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1114.jpg)
 
 ようするにシートポストのヤグラとの相性ですね。
 

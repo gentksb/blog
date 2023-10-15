@@ -17,7 +17,7 @@ tags: ["REVIEW", "ROAD"]
 
 最近のアルミフレームを見ているとCAAD10は過去のモノでTCR SLRとかGF02などより軽くて方向性のはっきりしたものが増えてきましたね
 
-![GATSBY_EMPTY_ALT](BWhBf5NCYAAmlH4.jpg)
+![GATSBY_EMPTY_ALT](./BWhBf5NCYAAmlH4.jpg)
 
 このフレームは青のアルマイト塗装が非常に綺麗です。ロードバイクでは珍しいですね
 

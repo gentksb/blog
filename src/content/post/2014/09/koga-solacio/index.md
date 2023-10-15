@@ -4,12 +4,12 @@ author: admin
 type: post
 date: 2014-09-25T01:37:00+00:00
 
-cover: 2014-09-2110.09.30.jpg
+cover: "./2014-09-2110.09.30.jpg"
 
 tags: ["REVIEW", "ROAD"]
 ---
 
-![GATSBY_EMPTY_ALT](2014-09-2110.09.30.jpg)
+![GATSBY_EMPTY_ALT](./2014-09-2110.09.30.jpg)
 
 AVEDIOのバッカス01からKOGAのsolacioに乗り換えました。
 

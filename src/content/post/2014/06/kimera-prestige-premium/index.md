@@ -51,7 +51,7 @@ tags: ["REVIEW", "ROAD"]
 
 <a href="http://www.nicole-eurocycle.co.jp/" target="_blank" rel="noopener">アルパカサイクル</a>  の試乗会に誘われてやってきた。
 
-![GATSBY_EMPTY_ALT](IMG_20140531_124412.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140531_124412.jpg)
 
 ひとまず見た目。
 
@@ -61,7 +61,7 @@ tags: ["REVIEW", "ROAD"]
 
 デザインはかなりGOOD
 
-![GATSBY_EMPTY_ALT](IMG_20140531_124421.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140531_124421.jpg)
 
 Premiumから乗ってみる。
 

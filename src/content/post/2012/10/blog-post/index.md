@@ -3,7 +3,6 @@ title: ブログ始めました
 author: admin
 type: post
 date: 2012-10-16T01:52:00+00:00
-cover: ""
 tags: ["MEMO"]
 ---
 

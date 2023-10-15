@@ -1,9 +1,9 @@
 // import type { AmazonItemsResponse } from "amazon-paapi"
-import type { ResType } from "../src/lib/fetcher/fetchOgp"
+import { type OgpData } from "../@types/ogpData-type"
 
 export const normalLinkUrl = "https://blog.gensobunya.net/"
 
-export const normalLinkDataExpectedResponse: ResType = {
+export const normalLinkDataExpectedResponse: OgpData = {
   ogpTitle: "幻想サイクル",
   ogpImageUrl: "https://blog.gensobunya.net/image/logo.jpg",
   ogpDescription:

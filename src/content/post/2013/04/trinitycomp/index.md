@@ -3,7 +3,7 @@ title: Trinity composite 1 購入記
 author: admin
 type: post
 date: 2013-04-27T04:09:00+00:00
-cover: DSC_1500.jpg
+cover: "./DSC_1500.jpg"
 tags: ["ROAD"]
 ---
 

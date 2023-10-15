@@ -4,10 +4,9 @@ author: admin
 type: post
 date: 2013-12-25T08:48:00+00:00
 
-#cover: Pro6_Black_Gallery.jpg
+#cover: "./Pro6_Black_Gallery.jpg"
 
 tags: ["CX"]
-
 ---
 
 湘南CXにHORNETで参加したものの、平地で完全に置いて行かれる…
@@ -39,4 +38,3 @@ TCX SLR…ブレーキかなり効く、すげー進む
 ポチ
 
 届くの楽しみだなぁ
-

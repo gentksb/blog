@@ -4,12 +4,12 @@ author: admin
 type: post
 date: 2013-10-15T04:09:00+00:00
 
-cover: DSC_4209.jpg
+cover: "./DSC_4209.jpg"
 
 tags: ["ROAD"]
 ---
 
-![GATSBY_EMPTY_ALT](DSC_4209.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4209.jpg)
 
 お久しぶりです。
 
@@ -19,19 +19,19 @@ tags: ["ROAD"]
 
 ブツが届いたぜ！
 
-![GATSBY_EMPTY_ALT](DSC_4210.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4210.jpg)
 
 なぜTRINITYにディスクを履かせたかというとこれがやりたかったからですよ～
 
 貼り付け初心者なので丁寧に
 
-![GATSBY_EMPTY_ALT](DSC_4214.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4214.jpg)
 
 ① 脱脂
 
 ② 中性洗剤薄めて霧吹きでバシャー
 
-![GATSBY_EMPTY_ALT](DSC_4215.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4215.jpg)
 
 ③ 貼り付けて完成！定規で水抜きして仕上げして偏らないように上を向けて乾かします
 

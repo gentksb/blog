@@ -17,19 +17,19 @@ tags: ["MTB", "RACEREPORT"]
 
 初めてシクロクロスに出たわけですが予想以上のコースのフリーダムさ
 
-![GATSBY_EMPTY_ALT](DSC_1307.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1307.jpg)
 
 こーんな斜面を走らされたり
 
-![GATSBY_EMPTY_ALT](DSC_1308.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1308.jpg)
 
 こーんな階段を登らされたり
 
-![GATSBY_EMPTY_ALT](DSC_1315.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1315.jpg)
 
 斜面で折り返したり
 
-![GATSBY_EMPTY_ALT](DSC_1313.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1313.jpg)
 
 こんなダウンヒルをさせられたり
 
@@ -53,7 +53,7 @@ tags: ["MTB", "RACEREPORT"]
 
 別クラスの写真ですがスタート直後の階段での様子。
 
-![GATSBY_EMPTY_ALT]("DSC_1309.jpg)
+![GATSBY_EMPTY_ALT](./"DSC_1309.jpg)
 
 その後一番最初の写真にある斜面を走る、ランニングで。
 
@@ -123,7 +123,7 @@ tags: ["MTB", "RACEREPORT"]
 
 C1の人たちの走りの異次元っぷりに驚愕しました。スロープ登りはもはや必須テクとなっており普通に皆さんラインを選んで登っていきます。
 
-![GATSBY_EMPTY_ALT](DSC_1320.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1320.jpg)
 
 そして定番のバニホによるシケイン越え！
 

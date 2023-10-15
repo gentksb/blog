@@ -4,12 +4,12 @@ author: admin
 type: post
 date: 2014-03-29T02:49:00+00:00
 
-cover: IMG_20140122_2230.jpg
+cover: "./IMG_20140122_223026.jpg"
 
 tags: ["CX", "EC"]
 ---
 
-![GATSBY_EMPTY_ALT](IMG_20140122_223026.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140122_223026.jpg)
 
 CX用にAliExpressで色合せで偽スパイダーを買いました。
 

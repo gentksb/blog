@@ -4,14 +4,14 @@ author: admin
 type: post
 date: 2014-01-24T05:49:00+00:00
 
-cover: IMG_20140118_152717.jpg
+cover: "./IMG_20140118_152717.jpg"
 
 tags: ["MTB"]
 ---
 
 友人のやんぼーからMTBフレームを譲ってもらったため、念願のAMHTの150mmフォーク仕様になりました。
 
-![GATSBY_EMPTY_ALT](IMG_20140118_152717.jpg)
+![GATSBY_EMPTY_ALT](./IMG_20140118_152717.jpg)
 
 パーツ類はほぼBlastからの移植。
 

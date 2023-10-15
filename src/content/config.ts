@@ -7,7 +7,7 @@ const post = defineCollection({
       date: z.date().transform((val) => new Date(val)),
       draft: z.boolean().optional(), // 歴史的経緯で必須ではない
       tags: z.string().array().min(1),
-      cover: image()
+      cover: image().optional()
     })
 })
 

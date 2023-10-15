@@ -4,6 +4,7 @@ author: admin
 type: post
 draft: true
 date: 2013-04-06T04:04:00+00:00
+tags: ["ROAD"]
 ---
 
 <blockquote class="twitter-tweet" lang="ja">

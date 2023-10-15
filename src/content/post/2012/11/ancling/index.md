@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2012-11-28T21:50:00+00:00
 
-cover: 0.jpg
+cover: "./0.jpg"
 
 tags: ["ROAD"]
 draft: false

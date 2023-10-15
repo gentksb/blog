@@ -4,7 +4,7 @@ author: admin
 type: post
 date: 2013-05-12T01:29:00+00:00
 
-cover: DSC_1568.jpg
+cover: "./DSC_1568.jpg"
 
 tags: ["ROAD"]
 ---

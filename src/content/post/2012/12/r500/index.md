@@ -4,14 +4,14 @@ author: admin
 type: post
 date: 2012-12-17T01:59:00+00:00
 
-cover: DSC_1222.jpg
+cover: "./DSC_1222.jpg"
 
 tags: ["REVIEW", "TOURING", "EC"]
 ---
 
 通学車兼旅行車に装備していたR500がとうとう逝去されました
 
-![GATSBY_EMPTY_ALT]("DSC_1222.jpg)
+![GATSBY_EMPTY_ALT](./"DSC_1222.jpg)
 
 急に前輪が振れたな？と思ったらニップルの根本からスポークが折れてました…
 
@@ -27,10 +27,10 @@ tags: ["REVIEW", "TOURING", "EC"]
 
 届きました
 
-![GATSBY_EMPTY_ALT](DSC_1228.jpg)
-![GATSBY_EMPTY_ALT]("DSC_1230.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1228.jpg)
+![GATSBY_EMPTY_ALT](./"DSC_1230.jpg)
 
-![GATSBY_EMPTY_ALT]("DSC_1229.jpg)
+![GATSBY_EMPTY_ALT](./"DSC_1229.jpg)
 
 DT swissのR1800 Tubelessを購入しました
 

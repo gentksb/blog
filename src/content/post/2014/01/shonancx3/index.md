@@ -4,12 +4,12 @@ author: admin
 type: post
 date: 2014-01-27T04:39:00+00:00
 
-cover: DSC_4739.jpg
+cover: "./DSC_4739.jpg"
 
 tags: ["CX", "RACEREPORT"]
 ---
 
-![GATSBY_EMPTY_ALT](DSC_4739.jpg)
+![GATSBY_EMPTY_ALT](./DSC_4739.jpg)
 
 毎度おなじみ湘南シクロクロス第3戦。
 
