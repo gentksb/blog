@@ -1,5 +1,4 @@
 ---
-import HeaderLink from "./HeaderLink.astro"
 import { SITE_TITLE, PROFILE } from "../consts"
 ---
 
@@ -8,7 +7,7 @@ import { SITE_TITLE, PROFILE } from "../consts"
     <div class="navbar bg-base-100">
       <div class="navbar-start"></div>
       <div class="navbar-center">
-        <a class="btn btn-ghost normal-case text-xl">{SITE_TITLE}</a>
+        <a href="/" class="btn btn-ghost normal-case text-xl">{SITE_TITLE}</a>
       </div>
       <div class="navbar-end">
         <div class="dropdown dropdown-end">
