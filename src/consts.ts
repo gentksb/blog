@@ -1,4 +1,4 @@
-import type { Redirect } from "./redirects"
+import type { Redirect } from "./scripts/redirects"
 
 export const SITE_TITLE = "幻想サイクル"
 export const SITE_DESCRIPTION =

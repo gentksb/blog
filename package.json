@@ -5,15 +5,13 @@
   "private": true,
   "version": "3.0.0",
   "scripts": {
-    "predev": "pnpm run build:redirect",
     "dev": "wrangler pages dev --compatibility-date=2023-08-14 -- astro dev",
     "start": "astro dev",
-    "prebuild": "pnpm run build:redirect",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
-    "build:redirect": "ts-node --esm src/redirects.ts"
+    "build:redirect": "ts-node --esm src/scripts/redirects.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.2",
