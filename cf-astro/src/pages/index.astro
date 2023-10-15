@@ -1,11 +1,11 @@
 ---
-import { getCollection } from "astro:content"
 import Layout from "../layouts/Layout.astro"
 import BlogPostCard from "../components/BlogPostCard.astro"
+import { timeOrderPosts } from "../lib/timeOrderPosts"
+import { pageSize } from "./config"
+import Paginate from "../components/Paginate.astro"
 
-const posts = (await getCollection("post")).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-)
+const posts = timeOrderPosts.slice(0, pageSize)
 ---
 
 <Layout title="幻想サイクル">
@@ -14,4 +14,5 @@ const posts = (await getCollection("post")).sort(
       {posts.map((post) => <BlogPostCard {...post} />)}
     </div>
   </section>
+  <Paginate currentPage={1} totalPages={5} />
 </Layout>

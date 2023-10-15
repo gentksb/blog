@@ -1,0 +1,29 @@
+---
+type Props = {
+  currentPage: number
+  totalPages: number
+}
+const { currentPage, totalPages } = Astro.props
+const hasPreviousPage = currentPage > 1
+const previousPageLink = currentPage > 2 ? `/page/${currentPage - 1}` : `/`
+const hasNextpage = currentPage < totalPages
+const nextPageLink = `/page/${currentPage + 1}`
+---
+
+<div class="join grid grid-cols-3 mt-4">
+  <a href={previousPageLink} class="join-item">
+    <div
+      class:list=`w-full btn btn-outline ${hasPreviousPage ? '' : 'btn-disabled'}`
+    >
+      Previous
+    </div>
+  </a>
+  <div class="join-item btn btn-outline">Page {currentPage}</div>
+  <a href={nextPageLink} class="join-item">
+    <div
+      class:list=`w-full btn btn-outline ${hasNextpage ? '' : 'btn-disabled'}`
+    >
+      Next
+    </div>
+  </a>
+</div>
