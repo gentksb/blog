@@ -57,7 +57,7 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
       await rewriter.write(encoder.encode(await httpResponse.text()))
       await rewriter.end()
 
-      console.log(result)
+      // console.log(result)
       return result
     }
   } catch (error: any) {
