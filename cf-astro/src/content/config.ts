@@ -11,4 +11,11 @@ const post = defineCollection({
     })
 })
 
-export const collections = { post }
+const singlePage = defineCollection({
+  schema: () =>
+    z.object({
+      title: z.string()
+    })
+})
+
+export const collections = { post, singlePage }

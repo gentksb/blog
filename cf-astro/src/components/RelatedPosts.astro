@@ -1,0 +1,20 @@
+---
+import BlogPostCard from "./BlogPostCard.astro"
+import { timeOrderPosts } from "../lib/timeOrderPosts"
+
+type Props = {
+  searchTag: string
+}
+
+const { searchTag } = Astro.props
+const showPosts = timeOrderPosts
+  .filter((post) => post.data.tags.includes(searchTag))
+  .slice(0, 4)
+---
+
+<div class="f-full">
+  <div class="w-full text-lg md:text-xl font-bold">関連記事</div>
+  <div class="grid grid-cols-2 gap-4 mx-auto">
+    {showPosts.map((post) => <BlogPostCard {...post} />)}
+  </div>
+</div>

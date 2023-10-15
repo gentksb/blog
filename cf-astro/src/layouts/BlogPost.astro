@@ -4,6 +4,7 @@ import Layout from "./Layout.astro"
 import BlogTitle from "../components/BlogTitle.astro"
 import { utcToZonedTime } from "date-fns-tz"
 import { sub, formatISO } from "date-fns"
+import RelatedPosts from "../components/RelatedPosts.astro"
 
 type Props = CollectionEntry<"post">["data"] & { description: string }
 
@@ -27,4 +28,6 @@ const publishedDate = formatISO(
       </div>
     </div>
   </article>
+  <div class="divider"></div>
+  <RelatedPosts searchTag={tags[0]} />
 </Layout>
