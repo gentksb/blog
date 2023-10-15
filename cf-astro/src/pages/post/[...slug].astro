@@ -23,10 +23,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 type Props = CollectionEntry<"post">
 
 const post = Astro.props
-const { Content } = await post.render()
+const { Content, remarkPluginFrontmatter } = await post.render()
+const excerpt: string = remarkPluginFrontmatter.excerpt
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...post.data} description={remarkPluginFrontmatter.excerpt}>
   <Content
     components={{
       h2: MdxH2,

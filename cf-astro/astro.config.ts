@@ -3,9 +3,8 @@ import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 import AutoImport from "astro-auto-import"
 import tailwind from "@astrojs/tailwind"
-import { componentIsHTMLElement } from "astro/runtime/server/render/dom.js"
-
 import react from "@astrojs/react"
+import remarkDescription from "astro-remark-description"
 
 // https://astro.build/config
 export default defineConfig({
@@ -26,6 +25,11 @@ export default defineConfig({
     tailwind(),
     react()
   ],
+  markdown: {
+    remarkPlugins: [
+      [remarkDescription, { name: "excerpt", override: true, skip: 1 }]
+    ]
+  },
   vite: {
     ssr: {
       // to fix react-icons ESM import error
