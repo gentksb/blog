@@ -5,5 +5,11 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   },
+  "paths": {
+    "@components": ["src/components/*"],
+    "@layouts": ["src/layouts/*"],
+    "@lib": ["src/lib/*"],
+    "@images": ["src/images/*"]
+  },
   "exclude": ["./funcsions/**/*"]
 }

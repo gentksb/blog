@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content"
 import { Picture } from "astro:assets"
 import FormattedDate from "./FormattedDate.astro"
+import dummy from "../images/dummy.jpg"
 
 type Props = CollectionEntry<"post">
 const post = Astro.props
@@ -14,7 +15,7 @@ const post = Astro.props
     </div>
     <div class="aspect-[16/9] max-w-full overflow-hidden">
       <Picture
-        src={post.data.cover}
+        src={post.data.cover ?? dummy}
         alt="記事カバー画像"
         class="object-cover"
         formats={["webp"]}
