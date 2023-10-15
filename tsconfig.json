@@ -16,6 +16,9 @@
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node",
-    "baseDir": "."
+    "baseDir": ".",
+    "compilerOptions": {
+      "module": "ESNext"
+    }
   }
 }
