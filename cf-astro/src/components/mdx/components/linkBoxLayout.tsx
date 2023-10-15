@@ -1,11 +1,16 @@
 import type { OgpData } from "../../../../@types/ogpData-type"
 import { MdOpenInNew, MdWeb } from "react-icons/md"
 
-export const LinkBoxLayout: React.FunctionComponent<OgpData> = ({
+interface Props extends OgpData {
+  loading?: boolean
+}
+
+export const LinkBoxLayout: React.FunctionComponent<Props> = ({
   ogpTitle,
   ogpDescription,
   pageurl,
-  ogpImageUrl
+  ogpImageUrl,
+  loading
 }) => {
   const isExternal = !pageurl?.startsWith("https://blog.gensobunya") ?? true
   const hostname = pageurl ? new URL(pageurl).hostname : ""
@@ -32,9 +37,13 @@ export const LinkBoxLayout: React.FunctionComponent<OgpData> = ({
           </div>
         </div>
         <div className="max-h-28 max-w-[30%] shrink md:max-h-36">
-          <figure className="h-full w-full object-cover">
-            <img src={ogpImageUrl ?? ""} className="h-full" />
-          </figure>
+          {loading ? (
+            <span className="loading loading-dots loading-lg text-accent" />
+          ) : (
+            <figure className="h-full w-full object-cover">
+              <img src={ogpImageUrl ?? ""} className="h-full" />
+            </figure>
+          )}
         </div>
       </div>
     </a>

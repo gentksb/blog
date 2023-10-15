@@ -19,7 +19,6 @@ export const ReactLinkBox: React.FunctionComponent<Props> = ({
 }) => {
   const [ogpData, changeOgpData] = useState<OgpData>({ ok: false })
   const [loading, changeLoading] = useState(true)
-  const linkColor = "teal.600"
   const linkBoxHandler = async ({
     url,
     isAmazonLink,
@@ -45,7 +44,7 @@ export const ReactLinkBox: React.FunctionComponent<Props> = ({
 
   useEffect(() => {
     linkBoxHandler({ url, isAmazonLink, isA8Link, linkurl })
-  }, [url, isAmazonLink, isA8Link, linkurl])
+  }, [url, isAmazonLink, isA8Link, linkurl, loading])
 
-  return <LinkBoxLayout {...ogpData} />
+  return <LinkBoxLayout {...ogpData} loading={loading} />
 }
