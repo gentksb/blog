@@ -1,4 +1,5 @@
-import { redirectData } from "./consts"
+// ESM import
+import { redirectData } from "./consts.js"
 import fs from "fs"
 import path from "path"
 
