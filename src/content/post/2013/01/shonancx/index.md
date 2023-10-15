@@ -33,7 +33,9 @@ tags: ["MTB", "RACEREPORT"]
 
 こんなダウンヒルをさせられたり
 
-<a href="DSC_1318.jpg" imageanchor="1" style="clear: left; display: inline !important; margin-bottom: 1em; margin-right: 1em; text-align: center;"><img border="0" src="./DSC_1318.jpg" height="180" width="320" /></a>終いにもう1回登り下りがあったり
+![ ](./DSC_1308.jpg)
+
+終いにもう1回登り下りがあったり
 
 ダウンヒルはMTBでも一瞬躊躇するくらいの斜度でした…
 
@@ -53,7 +55,7 @@ tags: ["MTB", "RACEREPORT"]
 
 別クラスの写真ですがスタート直後の階段での様子。
 
-![GATSBY_EMPTY_ALT](./"DSC_1309.jpg)
+![GATSBY_EMPTY_ALT](./DSC_1309.jpg)
 
 その後一番最初の写真にある斜面を走る、ランニングで。
 
