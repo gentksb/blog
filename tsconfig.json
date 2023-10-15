@@ -12,5 +12,10 @@
     "@lib": ["src/lib/*"],
     "@images": ["src/images/*"]
   },
-  "exclude": ["./funcsions/**/*"]
+  "exclude": ["./funcsions/**/*"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "baseDir": "."
+  }
 }

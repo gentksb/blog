@@ -23,3 +23,5 @@ pnpm-debug.log*
 # cloudflare
 .dev.vars
 .wrangler/
+
+public/_redirects
