@@ -3,6 +3,7 @@ title: Paypalの本人認証について（追記
 author: admin
 type: post
 date: 2012-10-16T18:36:00+00:00
+cover: ""
 tags: ["TIPS", "EC"]
 ---
 

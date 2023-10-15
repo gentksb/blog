@@ -3,7 +3,7 @@ title: 愛車紹介その1（ロード）
 author: admin
 type: post
 date: 2012-10-16T02:08:00+00:00
-cover: DSC_0664.jpg
+cover: "./DSC_0664.jpg"
 tags: ["ROAD"]
 ---
 
