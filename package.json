@@ -13,7 +13,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
-    "build:redirect": "ts-node ./src/redirects.ts"
+    "build:redirect": "ts-node src/redirects.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.2",

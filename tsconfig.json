@@ -15,10 +15,6 @@
   "exclude": ["./funcsions/**/*"],
   "ts-node": {
     "esm": true,
-    "experimentalSpecifierResolution": "node",
-    "baseDir": ".",
-    "compilerOptions": {
-      "module": "ESNext"
-    }
+    "experimentalSpecifierResolution": "node"
   }
 }
