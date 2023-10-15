@@ -24,7 +24,6 @@ type Props = CollectionEntry<"post">
 
 const post = Astro.props
 const { Content, remarkPluginFrontmatter } = await post.render()
-const excerpt: string = remarkPluginFrontmatter.excerpt
 ---
 
 <BlogPost {...post.data} description={remarkPluginFrontmatter.excerpt}>

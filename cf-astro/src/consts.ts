@@ -4,6 +4,7 @@
 export const SITE_TITLE = "幻想サイクル"
 export const SITE_DESCRIPTION =
   "AJOCC C1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです"
+export const SITE_URL = "https://blog.gensobunya.net/"
 export const PROFILE = {
   social: {
     twitter: "gen_sobunya",
