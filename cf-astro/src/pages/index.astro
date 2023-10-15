@@ -1,8 +1,7 @@
 ---
 import { getCollection } from "astro:content"
-import FormattedDate from "../components/FormattedDate.astro"
 import Layout from "../layouts/Layout.astro"
-import { Picture } from "astro:assets"
+import BlogPostCard from "../components/BlogPostCard.astro"
 
 const posts = (await getCollection("post")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -12,35 +11,7 @@ const posts = (await getCollection("post")).sort(
 <Layout title="幻想サイクル">
   <section>
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-      {
-        posts.map((post) => (
-          <div class="card card-compact card-bordered rounded-none border-slate-300">
-            <a href={`/post/${post.slug}/`}>
-              <div class="absolute badge badge-primary rounded-none">
-                {post.data.tags[0]}
-              </div>
-              <div class="aspect-[16/9] max-w-full overflow-hidden">
-                <Picture
-                  src={post.data.cover}
-                  alt="記事カバー画像"
-                  class="object-cover"
-                  formats={["webp"]}
-                  widths={[180, 360]}
-                  quality={50}
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="leading-tight lg:leading-tight text-base lg:text-lg font-bold">
-                  {post.data.title}
-                </h4>
-                <p class="date">
-                  <FormattedDate date={post.data.date} />
-                </p>
-              </div>
-            </a>
-          </div>
-        ))
-      }
+      {posts.map((post) => <BlogPostCard {...post} />)}
     </div>
   </section>
 </Layout>

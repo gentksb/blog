@@ -1,0 +1,34 @@
+---
+import type { CollectionEntry } from "astro:content"
+import { Picture } from "astro:assets"
+import FormattedDate from "./FormattedDate.astro"
+
+type Props = CollectionEntry<"post">
+const post = Astro.props
+---
+
+<div class="card card-compact card-bordered rounded-none border-slate-300">
+  <a href={`/post/${post.slug}/`}>
+    <div class="absolute badge badge-primary rounded-none text-xs md:text-sm">
+      {post.data.tags[0]}
+    </div>
+    <div class="aspect-[16/9] max-w-full overflow-hidden">
+      <Picture
+        src={post.data.cover}
+        alt="記事カバー画像"
+        class="object-cover"
+        formats={["webp"]}
+        widths={[180, 360]}
+        quality={50}
+      />
+    </div>
+    <div class="card-body">
+      <h4 class="leading-tight lg:leading-tight text-sm md:text-base font-bold">
+        {post.data.title}
+      </h4>
+      <p class="date text-xs md:text-md">
+        <FormattedDate date={post.data.date} />
+      </p>
+    </div>
+  </a>
+</div>
