@@ -14,5 +14,6 @@
       "@type/*": ["@types/*"]
     }
   },
-  "exclude": ["./funcsions/**/*"]
+  "exclude": ["./funcsions/**/*"],
+  "ts-node": { "esm": true }
 }
