@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import type { OgpData } from "../../../../@types/ogpData-type"
+import type { OgpData } from "@type/ogpData-type"
 import { getAmazonOgp } from "../lib/getAmazonOgp"
 import { getAsinFromUrl } from "../lib/getAsinFromUrl"
 import { LinkBoxLayout } from "./linkBoxLayout"

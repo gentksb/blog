@@ -1,5 +1,5 @@
 import { expect, test } from "vitest"
-import { fetchOgp } from "../src/lib/fetcher/fetchOgp"
+import { fetchOgp } from "~/lib/fetcher/fetchOgp"
 import { normalLinkUrl, normalLinkDataExpectedResponse } from "./testData"
 
 const encodedUrl = encodeURIComponent(normalLinkUrl)

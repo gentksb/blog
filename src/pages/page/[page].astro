@@ -1,11 +1,11 @@
 ---
 import type { GetStaticPaths, Page } from "astro"
-import { timeOrderPosts } from "../../lib/timeOrderPosts"
-import { pageSize } from "../config"
-import Layout from "../../layouts/Layout.astro"
-import BlogPostCard from "../../components/BlogPostCard.astro"
+import { timeOrderPosts } from "@lib/timeOrderPosts"
+import { pageSize } from "~/config"
+import Layout from "@layouts/Layout.astro"
+import BlogPostCard from "@components/BlogPostCard.astro"
 import type { CollectionEntry } from "astro:content"
-import Paginate from "../../components/Paginate.astro"
+import Paginate from "@components/Paginate.astro"
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   return paginate(timeOrderPosts, { pageSize: pageSize })

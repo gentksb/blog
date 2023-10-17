@@ -1,4 +1,4 @@
-import type { OgpData } from "../../../../@types/ogpData-type"
+import type { OgpData } from "@type/ogpData-type"
 import type { AmazonItemsResponse } from "amazon-paapi"
 
 export const getAmazonOgp = async (asin: string) => {

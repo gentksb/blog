@@ -2,7 +2,7 @@
 import type { GetStaticPaths } from "astro"
 import type { CollectionEntry } from "astro:content"
 import { getCollection } from "astro:content"
-import Layout from "../../layouts/Layout.astro"
+import Layout from "@layouts/Layout.astro"
 export const getStaticPaths: GetStaticPaths = async () => {
   const singlePages = await getCollection("singlePage")
   return singlePages.map((page) => ({
@@ -19,7 +19,7 @@ import {
   MdxA,
   MdxTable,
   MdxStrong
-} from "../../components/mdx/mdxReplacer"
+} from "@components/mdx/mdxReplacer"
 
 type Props = CollectionEntry<"singlePage">
 const page = Astro.props

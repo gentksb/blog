@@ -1,4 +1,4 @@
-import type { OgpData } from "../../../../@types/ogpData-type"
+import type { OgpData } from "@type/ogpData-type"
 import { MdOpenInNew, MdWeb } from "react-icons/md"
 
 interface Props extends OgpData {

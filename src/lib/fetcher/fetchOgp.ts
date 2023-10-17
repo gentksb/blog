@@ -1,6 +1,6 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
 import { HTMLRewriter } from "html-rewriter-wasm"
-import { type OgpData } from "../../../@types/ogpData-type"
+import { type OgpData } from "@type/ogpData-type"
 
 export const fetchOgp = async (queryUrl: string) => {
   const decodedUrl = decodeURIComponent(queryUrl)

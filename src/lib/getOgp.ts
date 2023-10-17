@@ -1,5 +1,5 @@
 import { fetchOgp } from "./fetcher/fetchOgp"
-import type { OgpData } from "../../@types/ogpData-type"
+import type { OgpData } from "@type/ogpData-type"
 
 // interface ENV {
 //   OGP_DATASTORE: KVNamespace

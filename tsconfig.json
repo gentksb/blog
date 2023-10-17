@@ -4,13 +4,15 @@
     "baseUrl": ".",
     "strictNullChecks": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  },
-  "paths": {
-    "@components": ["src/components/*"],
-    "@layouts": ["src/layouts/*"],
-    "@lib": ["src/lib/*"],
-    "@images": ["src/images/*"]
+    "jsxImportSource": "react",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@lib/*": ["src/lib/*"],
+      "@images/*": ["src/images/*"],
+      "~/*": ["src/*"],
+      "@type/*": ["@types/*"]
+    }
   },
   "exclude": ["./funcsions/**/*"]
 }

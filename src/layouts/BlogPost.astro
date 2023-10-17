@@ -1,10 +1,10 @@
 ---
 import type { CollectionEntry } from "astro:content"
 import Layout from "./Layout.astro"
-import BlogTitle from "../components/BlogTitle.astro"
+import BlogTitle from "@components/BlogTitle.astro"
 import { utcToZonedTime } from "date-fns-tz"
 import { sub, formatISO } from "date-fns"
-import RelatedPosts from "../components/RelatedPosts.astro"
+import RelatedPosts from "@components/RelatedPosts.astro"
 
 type Props = CollectionEntry<"post">["data"] & { description: string }
 
