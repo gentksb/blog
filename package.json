@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "wrangler pages dev --compatibility-date=2023-08-14 -- astro dev",
     "start": "astro dev",
+    "prebuild": "run-p build:redirect build:optimizeimage",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -54,6 +55,7 @@
     "@types/node": "^20.8.6",
     "fs-extra": "^11.1.1",
     "glob": "^10.3.10",
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
     "prettier-plugin-tailwindcss": "^0.5.6",
