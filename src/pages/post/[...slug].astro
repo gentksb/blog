@@ -26,7 +26,7 @@ const post = Astro.props
 const { Content, remarkPluginFrontmatter } = await post.render()
 ---
 
-<BlogPost {...post.data} description={remarkPluginFrontmatter.excerpt}>
+<BlogPost {...post} description={remarkPluginFrontmatter.excerpt}>
   <Content
     components={{
       h2: MdxH2,

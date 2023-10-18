@@ -4,17 +4,20 @@ import { timeOrderPosts } from "@lib/timeOrderPosts"
 
 type Props = {
   searchTag: string
+  selfSlug: string
 }
 
-const { searchTag } = Astro.props
+const { searchTag, selfSlug } = Astro.props
+console.log(searchTag, selfSlug)
 const showPosts = timeOrderPosts
+  .filter((post) => post.slug !== selfSlug)
   .filter((post) => post.data.tags.includes(searchTag))
-  .slice(0, 4)
+  .slice(0, 3)
 ---
 
 <div class="f-full">
   <div class="w-full text-lg md:text-xl font-bold">関連記事</div>
-  <div class="grid grid-cols-2 gap-4 mx-auto">
+  <div class="grid grid-cols-3 gap-4 mx-auto">
     {showPosts.map((post) => <BlogPostCard {...post} />)}
   </div>
 </div>
