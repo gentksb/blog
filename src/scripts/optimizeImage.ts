@@ -13,7 +13,7 @@ Promise.all(
     const stream = sharp(match)
     const info = await stream.metadata()
 
-    if (info.width === undefined || info.width < MAX_WIDTH) {
+    if (info.width === undefined || info.width <= MAX_WIDTH) {
       console.log(`Skipping ${match} because is is too small`)
       return
     }
