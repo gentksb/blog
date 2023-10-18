@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
-    "build:redirect": "ts-node --esm src/scripts/redirects.ts"
+    "build:redirect": "ts-node src/scripts/redirects.ts",
+    "build:optimizeimage": "ts-node src/scripts/optimizeImage.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.2",

@@ -15,5 +15,10 @@
     }
   },
   "exclude": ["./funcsions/**/*"],
-  "ts-node": { "esm": true }
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "baseUrl": "."
+    }
+  }
 }
