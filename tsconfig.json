@@ -14,11 +14,5 @@
       "@type/*": ["@types/*"]
     }
   },
-  "exclude": ["./funcsions/**/*"],
-  "ts-node": {
-    "esm": true,
-    "compilerOptions": {
-      "baseUrl": "."
-    }
-  }
+  "exclude": ["./funcsions/**/*"]
 }
