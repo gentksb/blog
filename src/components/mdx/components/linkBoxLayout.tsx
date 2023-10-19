@@ -11,10 +11,54 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
   pageurl,
   ogpImageUrl,
   ogpSiteName,
-  loading
+  loading,
+  ok
 }) => {
   const isExternal = !pageurl?.startsWith("https://blog.gensobunya") ?? true
   const hostname = pageurl ? new URL(pageurl).hostname : ""
+
+  const LinkcCardBody = (
+    <>
+      <div className="card-body p-2">
+        <div className="text-md card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
+          {isExternal ? <MdOpenInNew className="inline" /> : ""}
+          {ogpTitle}
+        </div>
+        <div className="card-body line-clamp-2 max-h-[3em] p-0 text-xs font-normal text-secondary md:text-sm">
+          {ogpDescription}
+        </div>
+        <div className="card-subtitle text-xs text-secondary md:text-sm">
+          <MdWeb className="inline" />
+          {ogpSiteName ?? hostname}
+        </div>
+      </div>
+      <div className="max-h-28 max-w-[30%] shrink md:max-h-36">
+        {loading ? (
+          <span className="loading loading-dots loading-lg text-accent" />
+        ) : (
+          <figure className="h-full w-full object-cover">
+            <img src={ogpImageUrl ?? ""} className="h-full" />
+          </figure>
+        )}
+      </div>
+    </>
+  )
+
+  const ErrorPlaceHolder = (
+    <div className="card-body p-2">
+      <div className="text-md card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
+        <MdOpenInNew className="inline" />
+        {ogpTitle}
+      </div>
+      <div className="card-body line-clamp-2 max-h-[3em] p-0 text-xs font-normal text-secondary md:text-sm">
+        {ogpDescription}
+      </div>
+      <div className="card-subtitle text-xs text-secondary md:text-sm">
+        <MdWeb className="inline" />
+        {ogpSiteName ?? hostname}
+      </div>
+    </div>
+  )
 
   return (
     <a
@@ -24,28 +68,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
       rel="noopener noreferrer"
     >
       <div className="not-prose card card-side mx-2 rounded-none border border-base-300 bg-base-100">
-        <div className="card-body p-2">
-          <div className="text-md card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
-            {isExternal ? <MdOpenInNew className="inline" /> : ""}
-            {ogpTitle}
-          </div>
-          <div className="card-body line-clamp-2 max-h-[3em] p-0 text-xs font-normal text-secondary md:text-sm">
-            {ogpDescription}
-          </div>
-          <div className="card-subtitle text-xs text-secondary md:text-sm">
-            <MdWeb className="inline" />
-            {ogpSiteName ?? hostname}
-          </div>
-        </div>
-        <div className="max-h-28 max-w-[30%] shrink md:max-h-36">
-          {loading ? (
-            <span className="loading loading-dots loading-lg text-accent" />
-          ) : (
-            <figure className="h-full w-full object-cover">
-              <img src={ogpImageUrl ?? ""} className="h-full" />
-            </figure>
-          )}
-        </div>
+        {ok ? LinkcCardBody : ErrorPlaceHolder}
       </div>
     </a>
   )

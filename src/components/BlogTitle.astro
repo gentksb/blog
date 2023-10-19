@@ -8,16 +8,19 @@ type Props = CollectionEntry<"post">["data"]
 const { cover, title, date, tags } = Astro.props
 ---
 
-<div class="hero aspect-video">
-  <Picture
-    src={cover ?? dummy}
-    alt=""
-    formats={["webp"]}
-    quality={30}
-    widths={[640, 768]}
-  />
+<div class="hero">
+  <div class="w-full aspect-video">
+    <Picture
+      src={cover ?? dummy}
+      alt=""
+      formats={["webp"]}
+      quality={30}
+      widths={[640, 768]}
+      class="object-cover h-full w-full"
+    />
+  </div>
   <div class="hero-overlay bg-opacity-60"></div>
-  <div class="hero-content text-center flex flex-col">
+  <div class="hero-content text-center flex-col">
     <div class="max-w-full">
       <h1
         class="mb-5 text-xl md:text-3xl font-bold text-neutral-content max-w-4xl"

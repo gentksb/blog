@@ -2,6 +2,7 @@
 import { ReactLinkBox } from "@components/mdx/components/linkBox"
 import { getOgp } from "@lib/getOgp"
 import { LinkBoxLayout } from "@components/mdx/components/linkBoxLayout"
+import type { OgpData } from "@type/ogpData-type"
 
 interface Props {
   url: string
@@ -10,7 +11,26 @@ interface Props {
 }
 
 const props: Props = Astro.props
-const staticOgp = props.isAmazonLink ? undefined : await getOgp(props.url)
+const validateAndOverrideOgpData = async () => {
+  if (props.isAmazonLink) {
+    return undefined
+  } else {
+    const ogpData = await getOgp(props.url)
+
+    return (
+      ogpData.ok
+        ? { ...ogpData, pageurl: props.linkUrl ?? props.url }
+        : {
+            ...ogpData,
+            ogpTitle: props.url,
+            ogpSiteName: new URL(props.url).hostname,
+            pageUrl: props.linkUrl
+          }
+    ) as OgpData
+  }
+}
+
+const staticOgp = await validateAndOverrideOgpData()
 ---
 
 {
