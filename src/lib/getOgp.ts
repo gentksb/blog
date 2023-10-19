@@ -1,14 +1,18 @@
 import { fetchOgp } from "./fetcher/fetchOgp"
 import type { OgpData } from "@type/ogpData-type"
+import { getOgpCache, putOgpCache } from "~/cache"
 
-// interface ENV {
-//   OGP_DATASTORE: KVNamespace
-// }
+// まとめて取得してメモリに乗せたほうが速いが、画像生成比べると誤差レベルなのでコードのシンプルさを優先して毎回問い合わせる
 
 export const getOgp = async (queryUrl: string): Promise<OgpData> => {
-  // Cloudflare KVに保存されているOGP情報を取得して、ビルドキャッシュとして使いたかったがビルド環境からKVにアクセスできないため断念
-  // ひとまず何もしないラッパー関数を作成して、あとからKVにアクセスできるようにする
+  const cache = await getOgpCache(queryUrl)
 
-  const res = await fetchOgp(queryUrl)
-  return res
+  if (!cache) {
+    const res = await fetchOgp(queryUrl)
+    putOgpCache(queryUrl, res)
+    return res
+  } else {
+    console.log("hit OGP cache from KV: ", queryUrl)
+    return cache
+  }
 }
