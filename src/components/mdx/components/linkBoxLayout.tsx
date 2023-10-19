@@ -10,6 +10,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
   ogpDescription,
   pageurl,
   ogpImageUrl,
+  ogpSiteName,
   loading
 }) => {
   const isExternal = !pageurl?.startsWith("https://blog.gensobunya") ?? true
@@ -33,7 +34,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
           </div>
           <div className="card-subtitle text-xs text-secondary md:text-sm">
             <MdWeb className="inline" />
-            {hostname}
+            {ogpSiteName ?? hostname}
           </div>
         </div>
         <div className="max-h-28 max-w-[30%] shrink md:max-h-36">
