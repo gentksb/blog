@@ -4,7 +4,6 @@ import fs from "fs-extra"
 
 const matches = glob.sync(`src/content/post/**/*.{png,jpg,jpeg}`)
 // 実行場所からの相対パスで指定する
-console.dir(matches, { maxArrayLength: null })
 const MAX_WIDTH = 1800
 const QUALITY = 100
 
