@@ -35,7 +35,11 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
           <span className="loading loading-dots loading-lg text-accent" />
         ) : (
           <figure className="h-full w-full object-cover">
-            <img src={ogpImageUrl ?? ""} className="h-full" />
+            <img
+              src={ogpImageUrl ?? ""}
+              className="h-full"
+              alt="リンク先カバー画像"
+            />
           </figure>
         )}
       </div>

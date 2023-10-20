@@ -6,6 +6,8 @@ import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
 import remarkDescription from "astro-remark-description"
 
+import partytown from "@astrojs/partytown"
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://blog.gensobunya.net/",
@@ -23,11 +25,23 @@ export default defineConfig({
     mdx(),
     sitemap(),
     tailwind(),
-    react()
+    react(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"]
+      }
+    })
   ],
   markdown: {
     remarkPlugins: [
-      [remarkDescription, { name: "excerpt", override: true, skip: 1 }]
+      [
+        remarkDescription,
+        {
+          name: "excerpt",
+          override: true,
+          skip: 1
+        }
+      ]
     ]
   },
   vite: {

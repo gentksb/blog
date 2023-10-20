@@ -13,7 +13,34 @@ const isPostPage = Astro.url.pathname.includes("/post/")
 const ogType = isPostPage ? "article" : "website"
 ---
 
-<!-- Global Metadata -->
+<!-- partytown --><!-- Google tag (gtag.js) -->
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S8PKGWKFS2"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments) // eslint-disable-line
+  }
+  gtag("js", new Date())
+
+  gtag("config", "G-S8PKGWKFS2")
+</script>
+<!-- Google Tag Manager -->
+<script type="text/partytown">
+  ;(function (w, d, s, l, i) {
+    w[l] = w[l] || []
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : ""
+    j.async = true
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+    f.parentNode.insertBefore(j, f)
+  })(window, document, "script", "dataLayer", "GTM-MGHR8XJ")
+</script>
+<!-- End Google Tag Manager --><!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
