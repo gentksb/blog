@@ -33,7 +33,7 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
       return result
     } else {
       result.ok = true
-      const rewriter = new HTMLRewriter((outputChunk) => {})
+      const rewriter = new HTMLRewriter(() => {})
       await rewriter.on("meta", {
         element(element) {
           switch (element.getAttribute("property")) {
@@ -60,7 +60,7 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
       // console.log(result)
       return result
     }
-  } catch (error: any) {
+  } catch (error) {
     console.error(error)
     const result: OgpData = {
       ok: false,

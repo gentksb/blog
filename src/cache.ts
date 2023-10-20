@@ -8,6 +8,8 @@ const api_token = import.meta.env.CLOUDFLARE_KV_TOKEN
 // URLをキーにキャッシュを取得・作成するが、日本語URLなどを考慮してBASE64エンコードしてキーにする
 
 // 型チェッカー
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const isOgpData = (data: any): data is OgpData => {
   return typeof data === "object" && typeof data.ok === "boolean"
 }

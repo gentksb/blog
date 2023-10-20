@@ -10,7 +10,7 @@ const hasNextpage = currentPage < totalPages
 const nextPageLink = `/page/${currentPage + 1}`
 ---
 
-<div class="join grid grid-cols-3 mt-4">
+<div class="join mt-4 grid grid-cols-3">
   <a href={previousPageLink} class="join-item">
     <div
       class:list=`w-full btn btn-outline ${hasPreviousPage ? '' : 'btn-disabled'}`
@@ -18,7 +18,7 @@ const nextPageLink = `/page/${currentPage + 1}`
       Previous
     </div>
   </a>
-  <div class="join-item btn btn-outline">Page {currentPage}</div>
+  <div class="btn btn-outline join-item">Page {currentPage}</div>
   <a href={nextPageLink} class="join-item">
     <div
       class:list=`w-full btn btn-outline ${hasNextpage ? '' : 'btn-disabled'}`

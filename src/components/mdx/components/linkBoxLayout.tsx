@@ -11,22 +11,21 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
   pageurl,
   ogpImageUrl,
   ogpSiteName,
-  loading,
-  ok
+  loading
 }) => {
   const isExternal = !pageurl?.startsWith("https://blog.gensobunya") ?? true
 
   const LinkcCardBody = (
     <>
       <div className="card-body p-2">
-        <div className="text-md card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
+        <div className="card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
           {isExternal ? <MdOpenInNew className="inline" /> : ""}
           {ogpTitle}
         </div>
         <div className="card-body line-clamp-2 max-h-[3em] p-0 text-xs font-normal text-secondary md:text-sm">
           {ogpDescription}
         </div>
-        <div className="card-subtitle text-xs text-secondary md:text-sm">
+        <div className="text-xs text-secondary md:text-sm">
           <MdWeb className="inline" />
           {ogpSiteName ?? "別ページへ"}
         </div>
@@ -45,14 +44,14 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
 
   const NoImageCardBody = (
     <div className="card-body p-2">
-      <div className="text-md card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
+      <div className="card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
         <MdOpenInNew className="inline" />
         {ogpTitle}
       </div>
       <div className="card-body line-clamp-2 max-h-[3em] p-0 text-xs font-normal text-secondary md:text-sm">
         {ogpDescription}
       </div>
-      <div className="card-subtitle text-xs text-secondary md:text-sm">
+      <div className="text-xs text-secondary md:text-sm">
         <MdWeb className="inline" />
         {ogpSiteName ?? "別ページへ"}
       </div>

@@ -8,26 +8,26 @@ type Props = CollectionEntry<"post">
 const post = Astro.props
 ---
 
-<div class="card card-compact card-bordered rounded-none border-slate-300">
+<div class="card card-bordered card-compact rounded-none border-slate-300">
   <a href={`/post/${post.slug}/`}>
-    <div class="absolute badge badge-primary rounded-none text-xs md:text-sm">
+    <div class="badge badge-primary absolute rounded-none text-xs md:text-sm">
       {post.data.tags[0]}
     </div>
     <div class="aspect-[16/9] max-w-full overflow-hidden">
       <Picture
         src={post.data.cover ?? dummy}
         alt="記事カバー画像"
-        class="object-cover w-full"
+        class="w-full object-cover"
         formats={["webp"]}
         widths={[330]}
         quality={80}
       />
     </div>
     <div class="card-body">
-      <h4 class="leading-tight lg:leading-tight text-sm md:text-base font-bold">
+      <h4 class="text-sm font-bold leading-tight md:text-base lg:leading-tight">
         {post.data.title}
       </h4>
-      <p class="date text-xs md:text-md">
+      <p class="text-xs md:text-base">
         <FormattedDate date={post.data.date} />
       </p>
     </div>

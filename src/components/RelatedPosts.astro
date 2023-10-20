@@ -15,9 +15,9 @@ const showPosts = timeOrderPosts
   .slice(0, 3)
 ---
 
-<div class="f-full">
-  <div class="w-full text-lg md:text-xl font-bold">関連記事</div>
-  <div class="grid grid-cols-3 gap-4 mx-auto">
+<div class="w-full">
+  <div class="w-full text-lg font-bold md:text-xl">関連記事</div>
+  <div class="mx-auto grid grid-cols-2 gap-4 md:grid-cols-3">
     {showPosts.map((post) => <BlogPostCard {...post} />)}
   </div>
 </div>

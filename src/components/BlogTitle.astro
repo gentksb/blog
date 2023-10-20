@@ -9,28 +9,28 @@ const { cover, title, date, tags } = Astro.props
 ---
 
 <div class="hero">
-  <div class="w-full aspect-video">
+  <div class="aspect-video w-full">
     <Picture
       src={cover ?? dummy}
       alt=""
       formats={["webp"]}
       quality={30}
       widths={[640, 768]}
-      class="object-cover h-full w-full"
+      class="h-full w-full object-cover"
     />
   </div>
-  <div class="hero-overlay bg-opacity-60"></div>
-  <div class="hero-content text-center flex-col">
+  <div class="hero-overlay bg-black/60"></div>
+  <div class="hero-content flex-col text-center">
     <div class="max-w-full">
       <h1
-        class="mb-5 text-xl md:text-3xl font-bold text-neutral-content max-w-4xl"
+        class="mb-5 max-w-4xl text-xl font-bold text-neutral-content md:text-3xl"
       >
         {title}
       </h1>
-      <div class="grid grid-flow-col grid-cols-max gap-2 justify-center">
+      <div class="grid grid-flow-col justify-center gap-2">
         {
           tags.map((tag) => (
-            <span class="badge badge-outline badge-accent md:text-lg">
+            <span class="badge badge-accent badge-outline md:text-lg">
               {tag}
             </span>
           ))
@@ -41,7 +41,7 @@ const { cover, title, date, tags } = Astro.props
       </div>
     </div>
   </div>
-  <div class="text-base-300 text-xs mt-auto ml-auto">
+  <div class="ml-auto mt-auto text-xs text-base-300">
     記事内にアフェリエイトリンクを含む場合があります
   </div>
 </div>

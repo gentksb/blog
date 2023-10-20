@@ -23,8 +23,8 @@ const publishedDate = formatISO(
 >
   <article>
     <BlogTitle title={title} cover={cover} date={date} tags={tags} />
-    <div class="w-full mt-4">
-      <div class="prose prose-sm md:prose-base max-w-3xl mx-auto">
+    <div class="mt-4 w-full">
+      <div class="prose prose-sm mx-auto max-w-3xl md:prose-base">
         <slot />
       </div>
     </div>

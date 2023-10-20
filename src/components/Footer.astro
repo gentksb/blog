@@ -3,7 +3,7 @@ import { Icon } from "astro-icon"
 import { PROFILE } from "~/consts"
 ---
 
-<footer class="footer footer-center p-4 bg-base-content text-base-100">
+<footer class="footer footer-center bg-base-content p-4 text-base-100">
   <nav>
     <div class="grid grid-flow-col gap-4">
       <a
@@ -11,16 +11,16 @@ import { PROFILE } from "~/consts"
         target="_blank"
         rel="noreferrer"
       >
-        <Icon name="mdi:twitter" class="w-8 h-8 md:w-12 md:h-12" />
+        <Icon name="mdi:twitter" class="h-8 w-8 md:h-12 md:w-12" />
       </a>
       <a
         href=`https://www.instagram.com/${PROFILE.social.instagram}`
         target="_blank"
         rel="noreferrer"
-        ><Icon name="mdi:instagram" class="w-8 h-8 md:w-12 md:h-12" /></a
+        ><Icon name="mdi:instagram" class="h-8 w-8 md:h-12 md:w-12" /></a
       >
       <a href=`https://www.youtube.com/channel/UCwNPD5TeaVKBhYrp_ODMCqg`>
-        <Icon name="mdi:youtube" class="w-8 h-8 md:w-12 md:h-12" /></a
+        <Icon name="mdi:youtube" class="h-8 w-8 md:h-12 md:w-12" /></a
       >
     </div>
   </nav>

@@ -10,7 +10,7 @@ const posts = timeOrderPosts.slice(0, pageSize)
 
 <Layout title="幻想サイクル">
   <section>
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
       {posts.map((post) => <BlogPostCard {...post} />)}
     </div>
   </section>
