@@ -5,7 +5,6 @@ import AutoImport from "astro-auto-import"
 import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
 import remarkDescription from "astro-remark-description"
-
 import partytown from "@astrojs/partytown"
 
 // https://astro.build/config
