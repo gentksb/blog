@@ -4,7 +4,7 @@ import fs from "fs-extra"
 
 const matches = glob.sync(`src/content/post/**/*.{png,jpg,jpeg}`)
 // 実行場所からの相対パスで指定する
-const MAX_WIDTH = 1800
+const MAX_WIDTH = 1200
 const QUALITY = 100
 
 Promise.all(
