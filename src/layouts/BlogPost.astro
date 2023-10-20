@@ -7,6 +7,7 @@ import { sub, formatISO } from "date-fns"
 import RelatedPosts from "@components/RelatedPosts.astro"
 import { SITE_TITLE } from "~/consts"
 import { getImage } from "astro:assets"
+import Share from "@components/Share.astro"
 
 type Props = CollectionEntry<"post"> & { description: string }
 
@@ -38,6 +39,8 @@ const ogpStaticImage = cover
       </div>
     </div>
   </article>
+  <div class="divider"></div>
+  <Share title={title} url={Astro.url.href} />
   <div class="divider"></div>
   <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
 </Layout>

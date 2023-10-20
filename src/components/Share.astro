@@ -1,0 +1,10 @@
+---
+import { SocialShare } from "./jsx/share"
+interface Props {
+  url: string
+  title: string
+}
+const props = Astro.props
+---
+
+<SocialShare url={props.url} title={props.title} client:only="react" />
