@@ -1,6 +1,5 @@
 import React, { type ReactNode } from "react"
-import { Alert, AlertDescription, Icon, Box } from "@chakra-ui/react"
-import { MdMood } from "@react-icons/all-files/md/MdMood"
+import { MdMood } from "react-icons/md"
 
 interface Props {
   children: ReactNode
@@ -8,11 +7,11 @@ interface Props {
 
 export const PositiveBox: React.FC<Props> = ({ children }) => {
   return (
-    <Box p={2}>
-      <Alert borderRadius="lg" status="success" flexDirection="column">
-        <Icon as={MdMood} boxSize="2em" />
-        <AlertDescription pt={1}>{children}</AlertDescription>
-      </Alert>
-    </Box>
+    <div className="p-2">
+      <div className="flex flex-col items-center rounded-lg border bg-info pt-2">
+        <MdMood className="h-8 w-8" />
+        <div>{children}</div>
+      </div>
+    </div>
   )
 }
