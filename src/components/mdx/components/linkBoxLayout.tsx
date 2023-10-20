@@ -15,7 +15,6 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
   ok
 }) => {
   const isExternal = !pageurl?.startsWith("https://blog.gensobunya") ?? true
-  const hostname = pageurl ? new URL(pageurl).hostname : ""
 
   const LinkcCardBody = (
     <>
@@ -29,7 +28,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
         </div>
         <div className="card-subtitle text-xs text-secondary md:text-sm">
           <MdWeb className="inline" />
-          {ogpSiteName ?? hostname}
+          {ogpSiteName ?? "別ページへ"}
         </div>
       </div>
       <div className="max-h-28 max-w-[30%] shrink md:max-h-36">
@@ -44,7 +43,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
     </>
   )
 
-  const ErrorPlaceHolder = (
+  const NoImageCardBody = (
     <div className="card-body p-2">
       <div className="text-md card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
         <MdOpenInNew className="inline" />
@@ -55,7 +54,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
       </div>
       <div className="card-subtitle text-xs text-secondary md:text-sm">
         <MdWeb className="inline" />
-        {ogpSiteName ?? hostname}
+        {ogpSiteName ?? "別ページへ"}
       </div>
     </div>
   )
@@ -68,7 +67,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
       rel="noopener noreferrer"
     >
       <div className="not-prose card card-side mx-2 rounded-none border border-base-300 bg-base-100">
-        {ok ? LinkcCardBody : ErrorPlaceHolder}
+        {ogpImageUrl ? LinkcCardBody : NoImageCardBody}
       </div>
     </a>
   )
