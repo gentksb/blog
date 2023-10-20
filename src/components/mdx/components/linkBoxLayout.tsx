@@ -14,6 +14,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
   loading
 }) => {
   const isExternal = !pageurl?.startsWith("https://blog.gensobunya") ?? true
+  const altSiteName = pageurl ? new URL(pageurl).pathname : "別ページへ"
 
   const LinkcCardBody = (
     <>
@@ -27,7 +28,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
         </div>
         <div className="text-xs text-secondary md:text-sm">
           <MdWeb className="inline" />
-          {ogpSiteName ?? "別ページへ"}
+          {ogpSiteName ?? altSiteName}
         </div>
       </div>
       <div className="max-h-28 max-w-[30%] shrink md:max-h-36">
