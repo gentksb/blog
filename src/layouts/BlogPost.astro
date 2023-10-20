@@ -5,6 +5,7 @@ import BlogTitle from "@components/BlogTitle.astro"
 import { utcToZonedTime } from "date-fns-tz"
 import { sub, formatISO } from "date-fns"
 import RelatedPosts from "@components/RelatedPosts.astro"
+import { SITE_TITLE } from "~/consts"
 
 type Props = CollectionEntry<"post"> & { description: string }
 
@@ -16,7 +17,7 @@ const publishedDate = formatISO(
 ---
 
 <Layout
-  title={title}
+  title={`${title} | ${SITE_TITLE}`}
   datePublished={publishedDate}
   image={cover?.src}
   description={description}
