@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from "astro:content"
+import Layout from "./Layout.astro"
+import BlogTitle from "@components/BlogTitle.astro"
+import { utcToZonedTime } from "date-fns-tz"
+import { sub, formatISO } from "date-fns"
+import RelatedPosts from "@components/RelatedPosts.astro"
+import { SITE_TITLE } from "~/consts"
+import { getImage } from "astro:assets"
+
+type Props = CollectionEntry<"post"> & { description: string }
+
+const { title, date, cover, tags } = Astro.props.data
+const { slug, description } = Astro.props
+const publishedDate = formatISO(
+  sub(utcToZonedTime(date, "Asia/Tokyo"), { hours: 9 })
+)
+
+// ogp画像はURLが変更されないようにオリジナルを取得する
+const ogpStaticImage = cover
+  ? await getImage({ src: cover, format: "jpg" })
+  : undefined
+---
+
+<Layout
+  title={`${title} | ${SITE_TITLE}`}
+  datePublished={publishedDate}
+  image={typeof ogpStaticImage?.rawOptions.src === "string"
+    ? ogpStaticImage?.rawOptions.src
+    : ogpStaticImage?.rawOptions.src.src}
+  description={description}
+>
+  <article>
+    <BlogTitle title={title} cover={cover} date={date} tags={tags} />
+    <div class="mt-4 w-full">
+      <div class="prose prose-sm mx-auto max-w-3xl md:prose-base">
+        <slot />
+      </div>
+    </div>
+  </article>
+  <div class="divider"></div>
+  <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
+</Layout>
+<!-- 画像中央寄せ一時対応 -->
+<style is:global>
+  article > div > div > p > img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

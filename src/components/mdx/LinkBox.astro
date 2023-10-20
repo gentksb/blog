@@ -1,0 +1,40 @@
+---
+import { ReactLinkBox } from "@components/mdx/components/linkBox"
+import { getOgp } from "@lib/getOgp"
+import { LinkBoxLayout } from "@components/mdx/components/linkBoxLayout"
+
+interface Props {
+  url: string
+  linkUrl?: string
+  isAmazonLink: boolean
+}
+
+const props: Props = Astro.props
+const validateAndOverrideOgpData = async () => {
+  if (props.isAmazonLink) {
+    return undefined
+  } else {
+    const ogpData = await getOgp(props.url)
+
+    // ogpデータが取得できなかったor空だった場合は、urlをtitleとして表示する
+    return ogpData.ok && ogpData.ogpTitle && ogpData.ogpImageUrl
+      ? { ...ogpData, pageurl: props.linkUrl ?? props.url }
+      : {
+          ...ogpData,
+          ogpTitle: props.url,
+          ogpSiteName: new URL(props.url).hostname,
+          pageurl: props.linkUrl ?? props.url
+        }
+  }
+}
+
+const staticOgp = await validateAndOverrideOgpData()
+---
+
+{
+  !staticOgp ? (
+    <ReactLinkBox {...props} client:only="react" />
+  ) : (
+    <LinkBoxLayout {...staticOgp} />
+  )
+}

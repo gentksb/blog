@@ -1,0 +1,49 @@
+---
+import type { CollectionEntry } from "astro:content"
+import FormattedDate from "./FormattedDate.astro"
+import { Picture } from "astro:assets"
+import dummy from "@images/dummy.jpg"
+type Props = CollectionEntry<"post">["data"]
+
+const { cover, title, date, tags } = Astro.props
+---
+
+<div class="hero">
+  <div class="aspect-video w-full">
+    <Picture
+      src={cover ?? dummy}
+      alt=""
+      formats={["webp"]}
+      quality={30}
+      widths={[640, 768]}
+      class="h-full w-full object-cover"
+      loading="eager"
+      fallbackFormat="jpg"
+    />
+  </div>
+  <div class="hero-overlay bg-black/60"></div>
+  <div class="hero-content flex-col text-center">
+    <div class="max-w-full">
+      <h1
+        class="mb-5 max-w-4xl text-xl font-bold text-neutral-content md:text-3xl"
+      >
+        {title}
+      </h1>
+      <div class="grid grid-flow-col justify-center gap-2">
+        {
+          tags.map((tag) => (
+            <span class="badge badge-accent badge-outline md:text-lg">
+              {tag}
+            </span>
+          ))
+        }
+      </div>
+      <div class="mb-5 text-neutral-content">
+        <FormattedDate date={date} />
+      </div>
+    </div>
+  </div>
+  <div class="ml-auto mt-auto text-xs text-base-300">
+    記事内にアフェリエイトリンクを含む場合があります
+  </div>
+</div>

@@ -6,9 +6,26 @@
       "strings": "on",
       "other": "on"
     },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true,
+      "source.fixAll.eslint": true
+    },
     "editor.snippetSuggestions": "top"
   },
   "files.associations": {
     "*.mdx": "markdown"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+    "astro"
+  ],
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   }
 }

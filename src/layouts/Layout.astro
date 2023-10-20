@@ -1,0 +1,39 @@
+---
+import BaseHead from "@components/BaseHead.astro"
+import Header from "@components/Header.astro"
+import Footer from "@components/Footer.astro"
+
+interface Props {
+  title: string
+  description?: string
+  image?: string
+  datePublished?: string
+}
+
+const props = Astro.props
+---
+
+<!doctype html>
+<html lang="ja" data-theme="corporate">
+  <head>
+    <BaseHead {...props} />
+  </head>
+  <body class="bg-base-200">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MGHR8XJ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+    <Header />
+    <main>
+      <div class="mx-auto mb-4 max-w-5xl">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

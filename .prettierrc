@@ -4,9 +4,17 @@
   "singleQuote": false,
   "tabWidth": 2,
   "trailingComma": "none",
+  "tailwindConfig": "./tailwind.config.cjs",
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-astro"],
   "overrides": [
     {
       "files": ["*.md", "*.mdx"]
+    },
+    {
+      "files": ["**/*.astro"],
+      "options": {
+        "parser": "astro"
+      }
     }
   ]
 }

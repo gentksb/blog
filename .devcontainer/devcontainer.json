@@ -5,9 +5,8 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/firebase-cli:2": {},
-		"ghcr.io/devcontainers-contrib/features/netlify-cli:1": {},
 		"ghcr.io/devcontainers-contrib/features/fzf:1": {}
+		// wrangler, astroはnpxで実行できるため省略
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -17,7 +16,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm ci && cd functions && npm ci"
+	"postCreateCommand": "pnpm install --frozen-lockfile true"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

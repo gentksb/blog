@@ -4,34 +4,28 @@ This is gensobunya's bike blog repository.
 
 [Go to website](http://blog.gensobunya.net)
 
-## Environment setting
-
-```bash
-cd functions
-firebase login
-firebase use --add
-```
-
 ## Build & Deploy Pipeline
 
 ### Build for
 
-Netlify with GitHub master branch trigger.
-
-### Deploy
-
-Hosting at Firebase.
+Cloudflare Pages and Functions
 
 ### environment variables
 
 ```bash
-# env
-GATSBY_FIREBASE_API_KEY
-GATSBY_FIREBASE_PROJECT_ID
-GATSBY_FIREBASE_APP_ID
-
-# functions/env
-AMAZON_PAAPI_KEY
-AMAZON_PAAPI_SECRET
-PARTNER_TAG
+# dev.vars
+# .env
+  PAAPI_ACCESSKEY
+  PAAPI_SECRETKEY
+  PARTNER_TAG
+  CLOUDFLARE_KV_TOKEN
+  CLOUDFLARE_ACCOUNT_IDENTIFIER
+  OGP_DATASTORE_ID
 ```
+
+- PAAPI_ACCESSKEY: PA-API v5 Access key ID
+- PAAPI_SECRETKEY: PA-API v5 Secret key
+- PARTNER_TAG: Amazon Associate Partner Tag
+- CLOUDFLARE_KV_TOKEN: Cloudflare v4 API Token which need "KV edit" role
+- CLOUDFLARE_ACCOUNT_IDENTIFIER: Cloudflare Account ID(not email)
+- OGP_DATASTORE_ID: Cloudflare KV ID (not local-preview ID)
