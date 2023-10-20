@@ -2,11 +2,12 @@ name: Run Lint and Tests
 
 on:
   push:
+    branches:
+      - "master"
     paths:
       - "functions/**"
       - "src/lib/**"
       - ".github/workflows/**"
-
   pull_request:
     paths:
       - "functions/**"
