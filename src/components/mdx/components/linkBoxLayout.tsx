@@ -14,7 +14,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
   loading
 }) => {
   const isExternal = !pageurl?.startsWith("https://blog.gensobunya") ?? true
-  const altSiteName = pageurl ? new URL(pageurl).pathname : "別ページへ"
+  const altSiteName = pageurl ? new URL(pageurl).hostname : "別ページへ"
 
   const LinkcCardBody = (
     <>
