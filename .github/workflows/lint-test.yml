@@ -1,11 +1,20 @@
 name: Run Lint and Tests
 
 on:
-  - push
-  - pull_request
+  push:
+    paths:
+      - "functions/**"
+      - "src/lib/**"
+      - ".github/workflows/**"
+
+  pull_request:
+    paths:
+      - "functions/**"
+      - "src/lib/**"
+      - ".github/workflows/**"
 
 jobs:
-  cache-and-install:
+  lint-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -44,3 +53,7 @@ jobs:
 
       - name: Run Tests
         run: pnpm run test
+        env:
+          PARTNER_TAG: ${{ secrets.PARTNER_TAG }}
+          PAAPI_SECRETKEY: ${{ secrets.PAAPI_SECRETKEY }}
+          PAAPI_ACCESSKEY: ${{ secrets.PAAPI_ACCESSKEY }}
