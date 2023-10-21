@@ -12,6 +12,7 @@ import {
   MdxTable,
   MdxStrong
 } from "@components/mdx/mdxReplacer"
+import MdxPicture from "@components/mdx/MdxPicture.astro"
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getCollection("post")
@@ -36,7 +37,8 @@ const { Content, remarkPluginFrontmatter } = await post.render()
       blockquote: MdxBlockQuote,
       a: MdxA,
       table: MdxTable,
-      strong: MdxStrong
+      strong: MdxStrong,
+      img: MdxPicture
     }}
   />
 </BlogPost>
