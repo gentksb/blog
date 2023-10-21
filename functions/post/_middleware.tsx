@@ -17,7 +17,7 @@ export const onRequest = vercelOGPagesPlugin<Props>({
           <img src={ogImageSrc} tw="w-full h-full object-cover" />
         </div>
         <div tw="absolute top-0 left-0 bg-black/60 w-full h-full "></div>
-        <div tw="absolute flex top-[40%] px-4 bg-black text-7xl font-bold text-gray-100 text-center w-full justify-center">
+        <div tw="absolute flex top-[40%] px-8 bg-black text-3xl font-bold text-gray-100 text-center w-full justify-center">
           {rawTitle}
         </div>
         <div tw="flex text-gray-100 text-2xl justify-end absolute bottom-0 right-0">
