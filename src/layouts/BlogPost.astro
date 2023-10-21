@@ -16,6 +16,7 @@ const { slug, description } = Astro.props
 const publishedDate = formatISO(
   sub(utcToZonedTime(date, "Asia/Tokyo"), { hours: 9 })
 )
+const twitterOgpImageUrl = `${Astro.url}/twitter-og.png`
 
 // ogp画像はURLが変更されないようにオリジナルを取得する
 const ogpStaticImage = cover
@@ -30,6 +31,7 @@ const ogpStaticImage = cover
     ? ogpStaticImage?.rawOptions.src
     : ogpStaticImage?.rawOptions.src.src}
   description={description}
+  twitterImage={twitterOgpImageUrl}
 >
   <article>
     <BlogTitle title={title} cover={cover} date={date} tags={tags} />

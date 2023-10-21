@@ -5,6 +5,7 @@ interface Props {
   description?: string
   image?: string
   publishedDate?: string
+  twitterImage?: string
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
@@ -13,11 +14,13 @@ const {
   title = "幻想サイクル",
   description = "AJOCC C1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです",
   image = "/image/logo.jpg",
-  publishedDate
+  publishedDate,
+  twitterImage
 } = Astro.props
 const isPostPage = Astro.url.pathname.includes("/post/")
 const ogType = isPostPage ? "article" : "website"
 const metaImageUrl = new URL(image, Astro.url)
+const twitterImageUrl = new URL(twitterImage ?? image, Astro.url)
 
 const jsonLdType = isPostPage ? "Article" : "Blog"
 const jsonLd = {
@@ -111,7 +114,7 @@ const jsonLd = {
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={metaImageUrl} />
+<meta property="twitter:image" content={twitterImageUrl ?? metaImageUrl} />
 
 <!-- JSON-LD -->
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
