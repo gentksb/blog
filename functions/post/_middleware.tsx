@@ -9,8 +9,8 @@ interface Props {
 export const onRequest = vercelOGPagesPlugin<Props>({
   imagePathSuffix: "/twitter-og.png",
   component: ({ ogTitle, ogImageSrc }) => {
-    // テキストが真ん中にそろわないので、要調整
-    // わかりやすくテキストにバックグラウンドカラーを設定
+    const rawTitle = ogTitle.replace(" | 幻想サイクル", "")
+
     return (
       <div tw="flex flex-col w-full h-full">
         <div tw="flex w-full h-full">
@@ -18,7 +18,7 @@ export const onRequest = vercelOGPagesPlugin<Props>({
         </div>
         <div tw="absolute top-0 left-0 bg-black/60 w-full h-full "></div>
         <div tw="absolute flex top-[40%] px-4 bg-black text-7xl font-bold text-gray-100 text-center w-full justify-center">
-          {ogTitle}
+          {rawTitle}
         </div>
         <div tw="flex text-gray-100 text-2xl justify-end absolute bottom-0 right-0">
           <img src="https://blog.gensobunya.net/image/logo.jpg" tw="h-[2rem]" />
