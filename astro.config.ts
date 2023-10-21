@@ -13,7 +13,6 @@ export default defineConfig({
   integrations: [
     AutoImport({
       imports: [
-        "./src/components/mdx/Test.astro",
         "./src/components/mdx/LinkBox.astro",
         {
           "./src/components/mdx/positive.tsx": ["PositiveBox"],
