@@ -40,13 +40,13 @@ export const onRequest = vercelOGPagesPlugin<Props>({
   extractors: {
     on: {
       'meta[property="og:title"]': (props) => ({
-        element(element) {
-          props.ogTitle = element.getAttribute("content")
+        element(element: HTMLMetaElement) {
+          props.ogTitle = element.getAttribute("content") ?? ""
         }
       }),
       'meta[property="og:image"]': (props) => ({
-        element(element) {
-          props.ogImageSrc = element.getAttribute("content")
+        element(element: HTMLMetaElement) {
+          props.ogImageSrc = element.getAttribute("content") ?? ""
         }
       })
     }
