@@ -16,11 +16,11 @@ export const onRequest = vercelOGPagesPlugin<Props>({
         <div tw="flex w-full h-full">
           <img src={ogImageSrc} tw="w-full h-full object-cover" />
         </div>
-        <div tw="absolute top-0 left-0 bg-black/60 w-full h-full "></div>
-        <div tw="absolute flex top-[40%] px-12 bg-black text-5xl font-bold text-gray-100 text-center w-full justify-center">
-          {rawTitle}
+        <div tw="absolute top-0 left-0 bg-black/70 w-full h-full "></div>
+        <div tw="absolute flex h-full w-full">
+          <div tw="w-full px-12 ">{rawTitle}</div>
         </div>
-        <div tw="flex text-gray-100 text-2xl justify-end absolute bottom-0 right-0">
+        <div tw="w-full my-auto px-12 text-white text-7xl font-bold text-center">
           <img src="https://blog.gensobunya.net/image/logo.jpg" tw="h-[2rem]" />
           幻想サイクル
         </div>
