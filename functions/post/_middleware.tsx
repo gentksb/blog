@@ -1,6 +1,7 @@
 import React from "react"
 import vercelOGPagesPlugin from "@cloudflare/pages-plugin-vercel-og"
-// import { loadGoogleFont } from "./src/loadGoogleFont"
+// eslint-disable-next-line
+// @ts-ignore
 import notoSansJpSubset from "./fonts/NotoSans-ExBold-sub.woff.bin"
 
 interface Props {
