@@ -9,9 +9,6 @@ interface Props {
   ogImageSrc: string
 }
 
-// 外部データを読み込みながらOGPを生成するには、pluginのAPI使うしかなさそう
-// https://developers.cloudflare.com/pages/platform/functions/plugins/vercel-og/#generate-arbitrary-images
-
 export const onRequest = vercelOGPagesPlugin<Props>({
   imagePathSuffix: "/twitter-og.png",
   component: ({ ogTitle, ogImageSrc }) => {
