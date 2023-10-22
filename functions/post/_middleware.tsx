@@ -1,18 +1,25 @@
 import React from "react"
 import vercelOGPagesPlugin from "@cloudflare/pages-plugin-vercel-og"
+// import { loadGoogleFont } from "./src/loadGoogleFont"
+import notoSansJpSubset from "./fonts/NotoSans-ExBold-sub.woff.bin"
 
 interface Props {
   ogTitle: string
   ogImageSrc: string
 }
 
+// 外部データを読み込みながらOGPを生成するには、pluginのAPI使うしかなさそう
+// https://developers.cloudflare.com/pages/platform/functions/plugins/vercel-og/#generate-arbitrary-images
+
 export const onRequest = vercelOGPagesPlugin<Props>({
   imagePathSuffix: "/twitter-og.png",
   component: ({ ogTitle, ogImageSrc }) => {
     const rawTitle = ogTitle.replace(" | 幻想サイクル", "")
-
     return (
-      <div tw="flex flex-col w-full h-full">
+      <div
+        tw="flex flex-col w-full h-full"
+        style={{ fontFamily: "Noto Sans JP" }}
+      >
         <div tw="flex w-full h-full">
           <img src={ogImageSrc} tw="w-full h-full object-cover" />
         </div>
@@ -45,7 +52,14 @@ export const onRequest = vercelOGPagesPlugin<Props>({
   },
   options: {
     width: 1200,
-    height: 630
+    height: 675,
+    fonts: [
+      {
+        data: notoSansJpSubset,
+        name: "Noto Sans JP",
+        weight: 800
+      }
+    ]
   },
   autoInject: {
     openGraph: false
