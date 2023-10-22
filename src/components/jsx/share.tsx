@@ -7,7 +7,8 @@ import {
   TwitterIcon,
   LineIcon,
   HatenaShareButton,
-  HatenaIcon
+  HatenaIcon,
+  TwitterShareButton
 } from "next-share"
 import { MdShare } from "react-icons/md"
 
@@ -37,56 +38,43 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
   const twitterShareTitle = encodeURIComponent(shareTitle)
 
   const ButtonWrapper = ({ children }: { children: ReactNode }) => {
-    return <div className="flex md:ml-4">{children}</div>
+    return <div className="text-center">{children}</div>
   }
 
   return (
-    <div className="my-2 flex flex-wrap items-center justify-center p-4">
-      <button
-        className="btn btn-circle text-base"
-        aria-label="share this page"
-        onClick={() => {
-          kickShareApi({
-            title: shareTitle,
-            url: url
-          })
-        }}
-      >
-        <MdShare className="h-[32px] w-[32px]" />
-      </button>
-      <ButtonWrapper>
-        <a
-          target="_blank"
-          href={`https://twitter.com/intent/tweet?text=${twitterShareTitle}&url=${url}`}
-          rel="noopener noreferrer"
+    <div className="my-2 grid grid-cols-5 content-center justify-center gap-2 p-4">
+      <div className="my-auto text-center">
+        <button
+          className="btn btn-circle text-base"
+          aria-label="share this page"
+          onClick={() => {
+            kickShareApi({
+              title: shareTitle,
+              url: url
+            })
+          }}
         >
+          <MdShare className="h-[32px] w-[32px]" />
+        </button>
+      </div>
+      <ButtonWrapper>
+        <TwitterShareButton url={url} title={twitterShareTitle} blankTarget>
           <TwitterIcon round={shareConfig.isRound} />
-        </a>
+        </TwitterShareButton>
       </ButtonWrapper>
       <ButtonWrapper>
-        <FacebookShareButton url={url} className="ml-8 flex" blankTarget>
+        <FacebookShareButton url={url} className="flex" blankTarget>
           <FacebookIcon round={shareConfig.isRound} />
         </FacebookShareButton>
       </ButtonWrapper>
-
       <ButtonWrapper>
-        <HatenaShareButton
-          url={url}
-          title={shareTitle}
-          className="ml-8 flex"
-          blankTarget
-        >
+        <HatenaShareButton url={url} title={shareTitle} blankTarget>
           <HatenaIcon round={shareConfig.isRound} />
         </HatenaShareButton>
       </ButtonWrapper>
 
       <ButtonWrapper>
-        <LineShareButton
-          url={url}
-          title={shareTitle}
-          className="ml-8 flex"
-          blankTarget
-        >
+        <LineShareButton url={url} title={shareTitle} blankTarget>
           <LineIcon round={shareConfig.isRound} />
         </LineShareButton>
       </ButtonWrapper>

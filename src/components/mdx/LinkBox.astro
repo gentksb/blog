@@ -16,12 +16,12 @@ const validateAndOverrideOgpData = async () => {
   } else {
     const ogpData = await getOgp(props.url)
 
-    // ogpデータが取得できなかったor空だった場合は、urlをtitleとして表示する
+    // ogpデータが取得できなかったor空だった場合は、ドメインをtitleとして表示する
     return ogpData.ok && ogpData.ogpTitle && ogpData.ogpImageUrl
       ? { ...ogpData, pageurl: props.linkUrl ?? props.url }
       : {
           ...ogpData,
-          ogpTitle: props.url,
+          ogpTitle: new URL(props.url).hostname,
           ogpSiteName: new URL(props.url).hostname,
           pageurl: props.linkUrl ?? props.url
         }

@@ -70,7 +70,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="not-prose card card-side mx-2 rounded-none border border-base-300 bg-base-100">
+      <div className="not-prose card card-side mx-2 mt-2 rounded-none border border-base-300 bg-base-100">
         {ogpImageUrl ? LinkcCardBody : NoImageCardBody}
       </div>
     </a>
