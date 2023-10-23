@@ -59,14 +59,14 @@ tokenの取得やアプリの登録に関しては割愛します。
 1回、IFTTTでスプレッドシートにデータを飛ばしてカラムを確認した後に以下のスクリプトを、編集をトリガーに設定して実行します。
 Date,Weight,Weight w/o fat,Fat weight,Fat Percentの順に4カラムIFTTTで入力しています。
 
-```JavaScript
-function getLatestWeightData(){
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  const lastRawNum = sheet.getLastRow();
+```javascript
+function getLatestWeightData() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet()
+  const lastRawNum = sheet.getLastRow()
   const dataRange = sheet.getRange(lastRawNum, 1, 1, 5) //Date,Weight,Weight w/o fat,Fat weight,Fat Percent
   const postData = {
-    "weightKg": dataRange.getValues()[0][1],
-    "fatPercent": dataRange.getValues()[0][4]
+    weightKg: dataRange.getValues()[0][1],
+    fatPercent: dataRange.getValues()[0][4]
   }
   Logger.log(postData)
   return postData
@@ -74,26 +74,26 @@ function getLatestWeightData(){
 
 function postMeasureDataToSlack() {
   //Get latest row data
-  const data = getLatestWeightData();
-  const postMessage =　data.weightKg+"kg "+data.fatPercent+"%";
+  const data = getLatestWeightData()
+  const postMessage = data.weightKg + "kg " + data.fatPercent + "%"
 
   //POST to Slack channel
-  const baseURL = "https://slack.com/api/chat.postMessage";
+  const baseURL = "https://slack.com/api/chat.postMessage"
   const postData = {
-    "channel": "<your channel name>",
-    "as_user": true,
-    "text": postMessage
-  };
+    channel: "<your channel name>",
+    as_user: true,
+    text: postMessage
+  }
   const options = {
-    "method": "post",
-    "contentType": "application/json; charset=utf-8",
-    "headers":{
-      "Authorization": "Bearer <!!your access token!!>"
+    method: "post",
+    contentType: "application/json; charset=utf-8",
+    headers: {
+      Authorization: "Bearer <!!your access token!!>"
     },
-    "payload": JSON.stringify(postData)
+    payload: JSON.stringify(postData)
   }
 
-  const response = UrlFetchApp.fetch(baseURL, options);
+  const response = UrlFetchApp.fetch(baseURL, options)
   Logger.log(response)
   return
 }

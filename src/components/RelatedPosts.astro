@@ -12,7 +12,7 @@ console.log(searchTag, selfSlug)
 const showPosts = timeOrderPosts
   .filter((post) => post.slug !== selfSlug)
   .filter((post) => post.data.tags.includes(searchTag))
-  .slice(0, 3)
+  .slice(0, 6)
 ---
 
 <div class="w-full">

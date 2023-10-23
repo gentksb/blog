@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const MdxParagraph: React.FC<Props> = ({ children }) => {
-  return <p className="px-5 ">{children}</p>
+  return <p className="px-5">{children}</p>
 }
 
 export const MdxH2: React.FC<Props> = ({ children }) => {
