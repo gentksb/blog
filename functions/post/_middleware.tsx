@@ -45,7 +45,7 @@ export const onRequest = vercelOGPagesPlugin<Props>({
   },
   options: {
     width: 1200,
-    height: 675
+    height: 630
   },
   autoInject: {
     openGraph: false
