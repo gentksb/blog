@@ -1,7 +1,6 @@
 import React, { type ReactNode } from "react"
 import {
   FacebookShareButton,
-  // TwitterShareButton,
   LineShareButton,
   FacebookIcon,
   TwitterIcon,
@@ -35,7 +34,6 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
   }
 
   const shareTitle = `${title} - 幻想サイクル`
-  const twitterShareTitle = encodeURIComponent(shareTitle)
 
   const ButtonWrapper = ({ children }: { children: ReactNode }) => {
     return <div className="text-center">{children}</div>
@@ -58,7 +56,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
         </button>
       </div>
       <ButtonWrapper>
-        <TwitterShareButton url={url} title={twitterShareTitle} blankTarget>
+        <TwitterShareButton url={url} title={shareTitle} blankTarget>
           <TwitterIcon round={shareConfig.isRound} />
         </TwitterShareButton>
       </ButtonWrapper>
