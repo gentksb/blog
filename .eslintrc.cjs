@@ -34,7 +34,7 @@ module.exports = {
       env: {
         node: true
       }
-    },
-    { files: "*.mdx", extends: ["plugin:mdx/recommended"] }
+    }
+    // { files: "*.mdx", extends: ["plugin:mdx/recommended"] }
   ]
 }

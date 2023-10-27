@@ -1,7 +1,7 @@
 import { PROFILE } from "~/consts"
 
 export const MenuDropDown = () => (
-  <div className="dropdown-end dropdown">
+  <div className="dropdown dropdown-end">
     <label tabIndex={0} className="btn btn-circle btn-ghost">
       <svg
         xmlns="http://www.w3.org/2000/svg"
