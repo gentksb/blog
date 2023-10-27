@@ -7,8 +7,6 @@ type Props = {
   selfSlug: string
 }
 
-const mainTags = ["REVIEW", "TIPS", "RACEREPORT"]
-
 const { searchTag, selfSlug } = Astro.props
 console.log(searchTag, selfSlug)
 const showPosts = timeOrderPosts
