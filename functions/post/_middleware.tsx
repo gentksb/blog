@@ -13,6 +13,15 @@ function escapeRegex(string: string) {
   return string.replace(/[/\-\\^$*+?.()|[\]{}]/g, "\\$&")
 }
 
+// https://github.com/TatsuyaYamamoto/t28.dev/blob/main/src/components/OgpImage.tsx#L46C19-L46C20
+const asResponse = (imageResponse: ImageResponse) => {
+  /**
+   * ImageResponse's constructor returns Response instance.
+   * @see {import("@vercel/og").ImageResponse}
+   */
+  return imageResponse as Response;
+};
+
 export const onRequest: PagesFunction = async ({ request, next }) => {
   const imagePathSuffix = "/twitter-og.png"
   const options = {
@@ -84,7 +93,7 @@ export const onRequest: PagesFunction = async ({ request, next }) => {
       return res.arrayBuffer()
     }
 
-    return new ImageResponse(makeComponents(componentProps), {
+    return asResponse (new ImageResponse(makeComponents(componentProps), {
       ...options,
       fonts: [
         {
@@ -94,7 +103,7 @@ export const onRequest: PagesFunction = async ({ request, next }) => {
           style: "normal"
         }
       ]
-    })
+    }))
   }
   // og:imageへのautoInjectはしないので、パスが一致しなかったらnext()を呼ぶ
   return next()
