@@ -5,7 +5,7 @@
   "private": true,
   "version": "3.0.0",
   "scripts": {
-    "dev": "wrangler pages dev --compatibility-date=2023-12-01 -- astro dev",
+    "dev": "wrangler pages dev --compatibility-date=2023-11-08 -- astro dev",
     "start": "astro dev",
     "prebuild": "run-p build:redirect build:optimizeimage",
     "build": "astro build",
