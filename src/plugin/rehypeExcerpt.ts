@@ -11,3 +11,5 @@ export function rehypeExcerptContent(options: Options = { ellipsis: "…" }) {
     data.astro.frontmatter.excerpt = excerpt
   }
 }
+
+// Thanks https://www.tunamaguro.dev/articles/astro-markdown-content-excerpt/
