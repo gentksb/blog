@@ -32,16 +32,6 @@ export default defineConfig({
     })
   ],
   markdown: {
-    // remarkPlugins: [
-    //   [
-    //     remarkDescription,
-    //     {
-    //       name: "excerpt",
-    //       override: true,
-    //       skip: 1
-    //     }
-    //   ]
-    // ],
     rehypePlugins: [rehypeExcerptContent]
   },
   vite: {
