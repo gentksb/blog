@@ -71,6 +71,12 @@ dependencies:
   framer-motion:
     specifier: ^7.10.3
     version: 7.10.3(react-dom@18.2.0)(react@18.2.0)
+  hast-util-to-string:
+    specifier: ^3.0.0
+    version: 3.0.0
+  hast-util-truncate:
+    specifier: ^2.0.0
+    version: 2.0.0
   html-rewriter-wasm:
     specifier: ^0.4.1
     version: 0.4.1
@@ -92,6 +98,9 @@ dependencies:
   tailwindcss:
     specifier: ^3.3.5
     version: 3.3.5(ts-node@10.9.1)
+  unified:
+    specifier: ^11.0.4
+    version: 11.0.4
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -4468,6 +4477,20 @@ packages:
       zwitch: 2.0.4
     dev: false
 
+  /hast-util-to-string@3.0.0:
+    resolution: {integrity: sha512-OGkAxX1Ua3cbcW6EJ5pT/tslVb90uViVkcJ4ZZIMW/R33DX/AkcJcRrPebPwJkHYwlDHXz4aIwvAAaAdtrACFA==}
+    dependencies:
+      '@types/hast': 3.0.2
+    dev: false
+
+  /hast-util-truncate@2.0.0:
+    resolution: {integrity: sha512-QjtUhkt0hT75dHwwTYS+E9Rge12IVClGUErJgss7q7EewBuSr6LoGjq7nPp3R6BThqWJ6CbarPVPCbklwnUf/g==}
+    dependencies:
+      '@types/hast': 3.0.2
+      '@ungap/structured-clone': 1.2.0
+      micromark-util-character: 2.0.1
+    dev: false
+
   /hast-util-whitespace@2.0.1:
     resolution: {integrity: sha512-nAxA0v8+vXSBDt3AnRUNjyRIQ0rD+ntpbAp4LnPkumc5M9yUbSMa4XDU9Q6etY4f1Wp4bNgvc1yjiZtsTTrSng==}
     dev: false
@@ -8479,6 +8502,18 @@ packages:
       is-plain-obj: 4.1.0
       trough: 2.1.0
       vfile: 5.3.7
+    dev: false
+
+  /unified@11.0.4:
+    resolution: {integrity: sha512-apMPnyLjAX+ty4OrNap7yumyVAMlKx5IWU2wlzzUdYJO9A8f1p9m/gywF/GM2ZDFcjQPrx59Mc90KwmxsoklxQ==}
+    dependencies:
+      '@types/unist': 3.0.1
+      bail: 2.0.2
+      devlop: 1.1.0
+      extend: 3.0.2
+      is-plain-obj: 4.1.0
+      trough: 2.1.0
+      vfile: 6.0.1
     dev: false
 
   /unified@8.4.2:
