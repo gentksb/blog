@@ -5,7 +5,7 @@
   "private": true,
   "version": "3.0.0",
   "scripts": {
-    "dev": "wrangler pages dev --compatibility-date=2023-08-14 -- astro dev",
+    "dev": "wrangler pages dev --compatibility-date=2023-12-01 -- astro dev",
     "start": "astro dev",
     "prebuild": "run-p build:redirect build:optimizeimage",
     "build": "astro build",
@@ -30,7 +30,6 @@
     "@tailwindcss/typography": "^0.5.10",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
-    "@vercel/og": "^0.5.20",
     "astro": "^3.5.5",
     "astro-auto-import": "^0.3.2",
     "astro-icon": "^0.8.1",
