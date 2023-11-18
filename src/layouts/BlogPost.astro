@@ -30,7 +30,7 @@ const ogpStaticImage = cover
   image={typeof ogpStaticImage?.rawOptions.src === "string"
     ? ogpStaticImage?.rawOptions.src
     : ogpStaticImage?.rawOptions.src.src}
-  description={description}
+  description={description.trim()}
   twitterImage={twitterOgpImageUrl}
 >
   <article>

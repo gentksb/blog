@@ -4,8 +4,9 @@ import sitemap from "@astrojs/sitemap"
 import AutoImport from "astro-auto-import"
 import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
-import remarkDescription from "astro-remark-description"
+// import remarkDescription from "astro-remark-description"
 import partytown from "@astrojs/partytown"
+import { rehypeExcerptContent } from "./src/plugin/rehypeExcerpt"
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,16 +32,7 @@ export default defineConfig({
     })
   ],
   markdown: {
-    remarkPlugins: [
-      [
-        remarkDescription,
-        {
-          name: "excerpt",
-          override: true,
-          skip: 1
-        }
-      ]
-    ]
+    rehypePlugins: [rehypeExcerptContent]
   },
   vite: {
     ssr: {
