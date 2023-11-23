@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "wrangler pages dev --compatibility-date=2023-08-14 -- astro dev",
     "start": "astro dev",
-    "prebuild": "run-p build:redirect build:optimizeimage",
+    "prebuild": "run-p build:redirect",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
