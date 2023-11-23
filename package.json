@@ -7,15 +7,14 @@
   "scripts": {
     "dev": "wrangler pages dev --compatibility-date=2023-08-14 -- astro dev",
     "start": "astro dev",
-    "prebuild": "run-p build:redirect",
+    "prebuild": "run-p build:*",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "build:redirect": "node --loader ts-node/esm src/scripts/redirects.ts",
-    "build:optimizeimage": "node --loader ts-node/esm src/scripts/optimizeImage.ts"
+    "build:redirect": "node --loader ts-node/esm src/scripts/redirects.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.5",
