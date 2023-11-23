@@ -80,7 +80,7 @@
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.13",
     "ts-node": "^10.9.1",
-    "typescript": "^5.3.2",
+    "typescript": "^5.2.2",
     "vitest": "^0.34.6",
     "wrangler": "^3.17.1"
   }
