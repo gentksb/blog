@@ -10,7 +10,9 @@ const post = Astro.props
 
 <div class="card card-bordered card-compact rounded-none border-slate-300">
   <a href={`/post/${post.slug}/`}>
-    <div class="badge badge-primary absolute rounded-none text-xs md:text-sm">
+    <div
+      class="badge badge-primary absolute rounded-none text-xs text-base-100 md:text-sm"
+    >
       {post.data.tags[0]}
     </div>
     <div class="aspect-[16/9] max-w-full overflow-hidden">
