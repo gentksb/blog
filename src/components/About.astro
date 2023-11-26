@@ -1,0 +1,16 @@
+---
+import { Picture } from "astro:assets"
+import logo from "../images/dummy.jpg"
+import { Content as AbountText } from "./text/about.md"
+---
+
+<div class="hero bg-base-200">
+  <div class="hero-content flex-col lg:flex-row">
+    <div class="overflow-hidden rounded-full md:mx-10">
+      <Picture src={logo} alt="social logo" fallbackFormat="jpg" />
+    </div>
+    <div class="prose max-w-md text-sm md:text-base">
+      <AbountText />
+    </div>
+  </div>
+</div>

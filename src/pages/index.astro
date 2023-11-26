@@ -4,6 +4,7 @@ import BlogPostCard from "@components/BlogPostCard.astro"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
 import { pageSize } from "~/config"
 import Paginate from "@components/Paginate.astro"
+import About from "@components/About.astro"
 import Hero from "@components/Hero.astro"
 
 const posts = timeOrderPosts.slice(0, pageSize)
@@ -17,4 +18,5 @@ const posts = timeOrderPosts.slice(0, pageSize)
     </div>
   </section>
   <Paginate currentPage={1} totalPages={5} />
+  <About />
 </Layout>
