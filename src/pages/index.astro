@@ -4,11 +4,13 @@ import BlogPostCard from "@components/BlogPostCard.astro"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
 import { pageSize } from "~/config"
 import Paginate from "@components/Paginate.astro"
+import Hero from "@components/Hero.astro"
 
 const posts = timeOrderPosts.slice(0, pageSize)
 ---
 
 <Layout title="幻想サイクル">
+  <Hero />
   <section>
     <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
       {posts.map((post) => <BlogPostCard {...post} />)}
