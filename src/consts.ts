@@ -14,6 +14,8 @@ export const PROFILE = {
 }
 
 export const redirectData: Redirect[] = [
+  // 過去記事一覧の1ページ目リダイレクト
+  { source: "/page/1", destination: "/", type: 301 },
   {
     source: "/tag/*",
     destination: "/tags/*",
