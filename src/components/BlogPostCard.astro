@@ -8,7 +8,9 @@ type Props = CollectionEntry<"post">
 const post = Astro.props
 ---
 
-<div class="card card-bordered card-compact rounded-none border-slate-300">
+<div
+  class="card card-bordered card-compact rounded-none border-slate-300 bg-base-100"
+>
   <a href={`/post/${post.slug}/`}>
     <div
       class="badge badge-primary absolute rounded-none text-xs text-base-100 md:text-sm"

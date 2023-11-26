@@ -1,0 +1,29 @@
+---
+import { Content as HeroText } from "./text/hero.md"
+import heroImage from "../images/hero.jpg"
+import { Picture } from "astro:assets"
+---
+
+<div class="hero">
+  <div class="aspect-video w-full">
+    <Picture
+      src={heroImage}
+      alt=""
+      formats={["webp"]}
+      quality={30}
+      widths={[640, 768]}
+      class="h-full w-full object-cover"
+      loading="eager"
+      fallbackFormat="jpg"
+    />
+  </div>
+  <div class="hero-overlay bg-black/60"></div>
+  <div class="hero-content text-center">
+    <div
+      class="prose prose-sm max-w-md text-neutral-content
+      md:prose-base"
+    >
+      <HeroText />
+    </div>
+  </div>
+</div>

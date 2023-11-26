@@ -49,7 +49,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
 
   const NoImageCardBody = (
     <div className="card-body p-2">
-      <div className="card-title line-clamp-2 text-sm leading-none text-secondary-focus md:text-base">
+      <div className="card-title line-clamp-2 text-sm leading-none text-secondary-content md:text-base">
         <MdOpenInNew className="inline" />
         {ogpTitle}
       </div>

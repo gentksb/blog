@@ -1,19 +1,25 @@
 ---
 import { SITE_TITLE } from "~/consts"
 import { MenuDropDown } from "./jsx/dropdown"
+import Social from "./Social.astro"
 ---
 
 <header>
   <nav>
-    <div class="navbar bg-base-100">
-      <div class="navbar-start"></div>
-      <div class="navbar-center">
+    <div class="navbar mx-auto max-w-5xl bg-base-200">
+      <div class="navbar-start">
         <a href="/" class="btn btn-ghost text-xl normal-case md:text-2xl"
           >{SITE_TITLE}</a
         >
       </div>
+      <div class="navbar-center"></div>
       <div class="navbar-end">
-        <MenuDropDown client:only="react" />
+        <div class="invisible md:visible">
+          <Social />
+        </div>
+        <div class="visible md:invisible md:w-0">
+          <MenuDropDown client:only="react" />
+        </div>
       </div>
     </div>
   </nav>

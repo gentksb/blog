@@ -35,6 +35,11 @@ module.exports = {
         node: true
       }
     }
-    // { files: "*.mdx", extends: ["plugin:mdx/recommended"] }
+    // eslintでMDXをフォーマットすると、HTML埋め込みを改行してしまう。Ignoreに追加してフォーマットはPrettierに任せる。
+    // { files: "*.mdx", extends: ["plugin:mdx/recommended"] }.
+    // {
+    //   files: ["*.md"],
+    //   extends: []
+    // }
   ]
 }

@@ -1,29 +1,9 @@
 ---
-import { Icon } from "astro-icon"
-import { PROFILE } from "~/consts"
+import Social from "./Social.astro"
 ---
 
 <footer class="footer footer-center bg-base-content p-4 text-base-100">
-  <nav>
-    <div class="grid grid-flow-col gap-4">
-      <a
-        href=`https://twitter.com/${PROFILE.social.twitter}`
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Icon name="mdi:twitter" class="h-8 w-8 md:h-12 md:w-12" />
-      </a>
-      <a
-        href=`https://www.instagram.com/${PROFILE.social.instagram}`
-        target="_blank"
-        rel="noreferrer"
-        ><Icon name="mdi:instagram" class="h-8 w-8 md:h-12 md:w-12" /></a
-      >
-      <a href=`https://www.youtube.com/channel/UCwNPD5TeaVKBhYrp_ODMCqg`>
-        <Icon name="mdi:youtube" class="h-8 w-8 md:h-12 md:w-12" /></a
-      >
-    </div>
-  </nav>
+  <Social />
   <aside class="text-xs">
     <p>
       このサイトはAmazonアソシエイトの適格販売やGoogle

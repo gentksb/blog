@@ -20,7 +20,7 @@ export const MenuDropDown = () => (
     </label>
     <ul
       tabIndex={0}
-      className="menu dropdown-content rounded-box menu-lg z-[1] mt-3 w-52 bg-base-200 p-2 shadow"
+      className="menu dropdown-content menu-lg z-[1] mt-3 w-52 rounded-box bg-base-200 p-2 shadow"
     >
       <li>
         <a href="/">Home</a>
@@ -36,11 +36,6 @@ export const MenuDropDown = () => (
       <li>
         <a href="https://www.gensobunya.net/" target="_blank">
           サークルサイト
-        </a>
-      </li>
-      <li>
-        <a href="https://gensobunya-tech.hatenablog.com/" target="_blank">
-          Tech Blog
         </a>
       </li>
     </ul>
