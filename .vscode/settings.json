@@ -7,8 +7,8 @@
       "other": "on"
     },
     "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": true,
-      "source.fixAll.eslint": true
+      "source.fixAll.markdownlint": "explicit",
+      "source.fixAll.eslint": "explicit"
     },
     "editor.snippetSuggestions": "top"
   },
