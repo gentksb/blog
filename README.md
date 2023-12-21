@@ -10,6 +10,10 @@ This is gensobunya's bike blog repository.
 
 Cloudflare Pages and Functions
 
+### local development
+
+At first, run `npx wrangler login` before start local environment.
+
 ### environment variables
 
 ```bash
