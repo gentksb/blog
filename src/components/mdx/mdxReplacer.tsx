@@ -1,57 +1,57 @@
-import React, { type ReactNode } from "react"
-
-interface Props {
-  children: ReactNode
+export const MdxParagraph: React.FC<JSX.IntrinsicElements["p"]> = (props) => {
+  return <p {...props} className="px-5" />
 }
 
-export const MdxParagraph: React.FC<Props> = ({ children }) => {
-  return <p className="px-5">{children}</p>
-}
-
-export const MdxH2: React.FC<Props> = ({ children }) => {
+export const MdxH2: React.FC<JSX.IntrinsicElements["h2"]> = (props) => {
   return (
-    <h2 className="my-4 bg-accent p-2 text-xl font-bold text-accent-content">
-      {children}
-    </h2>
+    <h2
+      {...props}
+      className="my-4 bg-accent p-2 text-xl font-bold text-accent-content"
+    />
   )
 }
 
-export const MdxH3: React.FC<Props> = ({ children }) => {
+export const MdxH3: React.FC<JSX.IntrinsicElements["h3"]> = (props) => {
   return (
-    <h3 className="mx-1 my-4 border-b-2 border-l-4 border-accent p-2 text-lg font-bold text-accent-content">
-      {children}
-    </h3>
+    <h3
+      {...props}
+      className="mx-1 my-4 border-b-2 border-l-4 border-accent p-2 text-lg font-bold text-accent-content"
+    />
   )
 }
 
-export const MdxH4: React.FC<Props> = ({ children }) => {
+export const MdxH4: React.FC<JSX.IntrinsicElements["h4"]> = (props) => {
   return (
-    <h4 className="my-4 border-l-4 border-accent p-2 text-base font-bold text-accent-content">
-      {children}
-    </h4>
+    <h4
+      {...props}
+      className="my-4 border-l-4 border-accent p-2 text-base font-bold text-accent-content"
+    />
   )
 }
 
-export const MdxBlockQuote: React.FC<Props> = ({ children }) => {
-  return <blockquote className="mx-4 bg-base-300">{children}</blockquote>
+export const MdxBlockQuote: React.FC<JSX.IntrinsicElements["blockquote"]> = (
+  props
+) => {
+  return <blockquote {...props} className="mx-4 bg-base-300" />
 }
 
-export const MdxA: React.FC<Props> = ({ children }) => {
-  return <a className="text-primary hover:underline">{children}</a>
+export const MdxA: React.FC<JSX.IntrinsicElements["a"]> = (props) => {
+  return <a {...props} className="text-primary hover:underline" />
 }
 
-export const MdxTable: React.FC<Props> = ({ children }) => {
+export const MdxTable: React.FC<JSX.IntrinsicElements["table"]> = (props) => {
   return (
     <div className="overflow-x-auto">
-      <table className="table-auto">{children}</table>
+      <table {...props} className="table-auto" />
     </div>
   )
 }
 
-export const MdxStrong: React.FC<Props> = ({ children }) => {
+export const MdxStrong: React.FC<JSX.IntrinsicElements["strong"]> = (props) => {
   return (
-    <strong className="font-bold underline decoration-info/30 decoration-4">
-      {children}
-    </strong>
+    <strong
+      {...props}
+      className="font-bold underline decoration-info/30 decoration-4"
+    />
   )
 }
