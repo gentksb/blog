@@ -33,3 +33,7 @@ At first, run `npx wrangler login` before start local environment.
 - CLOUDFLARE_KV_TOKEN: Cloudflare v4 API Token which need "KV edit" role
 - CLOUDFLARE_ACCOUNT_IDENTIFIER: Cloudflare Account ID(not email)
 - OGP_DATASTORE_ID: Cloudflare KV ID (not local-preview ID)
+
+## Operation
+
+Delete OGP caches: <https://developers.cloudflare.com/kv/platform/kv-commands/#delete-2>

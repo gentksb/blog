@@ -1,2 +1,3 @@
 src/content/post/**/*.mdx
 src/components/text/**/*.md
+README.md
