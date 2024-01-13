@@ -281,5 +281,10 @@ export const redirectData: Redirect[] = [
     source: "/2015/10/01/zwif-3.html",
     destination: "/post/2015/10/zwiftstart/",
     type: 301
+  },
+  {
+    source: "/post/2024/01/",
+    destination: "/post/2024/01/shonancx-kaisei/",
+    type: 301
   }
 ]
