@@ -28,7 +28,7 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
     if (!httpResponse.ok) {
       const result: OgpData = {
         ok: false,
-        error: "Query url is not found"
+        error: "Query url is not found or invalid."
       }
       return result
     } else {
@@ -58,7 +58,7 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
         await rewriter.write(encoder.encode(await httpResponse.text()))
         await rewriter.end()
       } catch (error) {
-        console.error(error)
+        console.error(`Error on HTMLrewriter: ${error}`)
         result.error = JSON.stringify(error)
       } finally {
         rewriter.free()
@@ -68,7 +68,7 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
       return result
     }
   } catch (error) {
-    console.error(error)
+    console.error(`Error on fetch: ${error}`)
     const result: OgpData = {
       ok: false,
       error: JSON.stringify(error)
