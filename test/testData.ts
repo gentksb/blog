@@ -7,7 +7,7 @@ export const normalLinkDataExpectedResponse: OgpData = {
   ogpTitle: "幻想サイクル",
   ogpImageUrl: "https://blog.gensobunya.net/image/logo.jpg",
   ogpDescription:
-    "AJOCC C1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです",
+    "AJOCC ME1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです",
   ogpSiteName: "幻想サイクル",
   pageurl: "https://blog.gensobunya.net/",
   ok: true
