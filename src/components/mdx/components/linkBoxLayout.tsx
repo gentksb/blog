@@ -40,6 +40,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
               src={ogpImageUrl ?? ""}
               className="h-full"
               alt="リンク先カバー画像"
+              loading="lazy"
             />
           </figure>
         )}
