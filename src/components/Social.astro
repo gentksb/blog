@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon"
+import { Icon } from "astro-icon/components"
 import { PROFILE } from "~/consts"
 type Props = {
   colorClass?: string
@@ -14,35 +14,19 @@ export const props = Astro.props
       target="_blank"
       rel="noreferrer"
     >
-      <Icon
-        name="mdi:twitter"
-        class="h-8 w-8 md:h-12 md:w-12"
-        alt="Twitter(X) Account"
-      />
+      <Icon name="mdi:twitter" class="size-8 md:size-12" />
     </a>
     <a
       href=`https://www.instagram.com/${PROFILE.social.instagram}`
       target="_blank"
       rel="noreferrer"
-      ><Icon
-        name="mdi:instagram"
-        class="h-8 w-8 md:h-12 md:w-12"
-        alt="Instagram Account"
-      /></a
+      ><Icon name="mdi:instagram" class="size-8 md:size-12" /></a
     >
     <a href=`https://www.youtube.com/channel/UCwNPD5TeaVKBhYrp_ODMCqg`>
-      <Icon
-        name="mdi:youtube"
-        class="h-8 w-8 md:h-12 md:w-12"
-        alt="Youtube Channel"
-      /></a
+      <Icon name="mdi:youtube" class="size-8 md:size-12" /></a
     >
     <a href=`https://www.gensobunya.net/`>
-      <Icon
-        name="mdi:web"
-        class="h-8 w-8 md:h-12 md:w-12"
-        alt="個人ポートフォリオウェブサイト"
-      /></a
+      <Icon name="mdi:web" class="size-8 md:size-12" /></a
     >
   </div>
 </nav>

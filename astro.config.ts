@@ -6,6 +6,7 @@ import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
 // import remarkDescription from "astro-remark-description"
 import partytown from "@astrojs/partytown"
+import icon from "astro-icon"
 import { rehypeExcerptContent } from "./src/plugin/rehypeExcerpt"
 
 // https://astro.build/config
@@ -25,6 +26,7 @@ export default defineConfig({
     sitemap(),
     tailwind(),
     react(),
+    icon(),
     partytown({
       config: {
         forward: ["dataLayer.push"]
