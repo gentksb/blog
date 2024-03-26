@@ -4,7 +4,8 @@ import { expect, test } from "vitest"
 import { testAsin, amazonLinkDataExpectedResponse } from "./testData"
 import { getAmazonProductInfo } from "../functions/api/getOgpFromAsin/src/getAmazonProductInfo"
 
-const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = process.env
+const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG, PAAPI_DATASTORE } =
+  process.env
 
 if (
   typeof PAAPI_ACCESSKEY !== "string" ||
@@ -18,7 +19,8 @@ test("Amazon ASINから製品データを取得する", async () => {
   const res = await getAmazonProductInfo(testAsin, {
     PAAPI_ACCESSKEY,
     PAAPI_SECRETKEY,
-    PARTNER_TAG
+    PARTNER_TAG,
+    PAAPI_DATASTORE // 不要だが型エラー回避のために渡す
   })
   expect(res).toMatchObject(amazonLinkDataExpectedResponse)
 })
