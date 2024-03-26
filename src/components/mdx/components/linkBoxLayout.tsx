@@ -13,7 +13,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
   ogpSiteName,
   loading
 }) => {
-  const isExternal = !pageurl?.startsWith("https://blog.gensobunya") ?? true
+  const isExternal = pageurl?.startsWith("https://blog.gensobunya") ?? false
   const altSiteName = pageurl ? new URL(pageurl).hostname : "別ページへ"
 
   const LinkcCardBody = (
@@ -35,7 +35,7 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
         {loading ? (
           <span className="loading loading-dots loading-lg text-accent" />
         ) : (
-          <figure className="h-full w-full object-cover">
+          <figure className="size-full object-cover">
             <img
               src={ogpImageUrl ?? ""}
               className="h-full"
