@@ -26,3 +26,6 @@ pnpm-debug.log*
 
 # リダイレクトファイルはスクリプトでprebuild生成
 public/_redirects
+
+# 作業用
+kv.json
