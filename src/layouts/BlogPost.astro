@@ -27,9 +27,7 @@ const ogpStaticImage = cover
 <Layout
   title={`${title} | ${SITE_TITLE}`}
   datePublished={publishedDate}
-  image={typeof ogpStaticImage?.rawOptions.src === "string"
-    ? ogpStaticImage?.rawOptions.src
-    : ogpStaticImage?.rawOptions.src.src}
+  image={ogpStaticImage?.src}
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
 >
@@ -37,7 +35,7 @@ const ogpStaticImage = cover
     <BlogTitle title={title} cover={cover} date={date} tags={tags} />
     <div class="mt-4 w-full">
       <div
-        class="prose prose-sm mx-auto max-w-4xl text-base-content md:prose-base [&_iframe]:max-w-full [&_iframe]:mx-auto [&_.twitter-tweet]:mx-auto"
+        class="prose prose-sm mx-auto max-w-4xl text-base-content md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
       >
         <slot />
       </div>
