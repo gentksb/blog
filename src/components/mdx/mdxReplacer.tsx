@@ -41,8 +41,8 @@ export const MdxA: React.FC<JSX.IntrinsicElements["a"]> = (props) => {
 
 export const MdxTable: React.FC<JSX.IntrinsicElements["table"]> = (props) => {
   return (
-    <div className="overflow-x-auto">
-      <table {...props} className="table-auto" />
+    <div className="overflow-x-auto bg-white">
+      <table {...props} className="m-2 table-auto" />
     </div>
   )
 }
