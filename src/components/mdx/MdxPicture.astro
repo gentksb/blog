@@ -22,7 +22,7 @@ const { src, alt } = Astro.props
         formats={["webp"]}
         fallbackFormat="jpg"
         widths={[450, 900]}
-        class="mx-auto"
+        class="mx-auto max-h-[80vh] object-contain"
         {src}
         {alt}
       />
