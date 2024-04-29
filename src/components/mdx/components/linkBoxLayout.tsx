@@ -15,6 +15,10 @@ export const LinkBoxLayout: React.FunctionComponent<Props> = ({
 }) => {
   const isExternal = pageurl?.startsWith("https://blog.gensobunya") ?? false
   const altSiteName = pageurl ? new URL(pageurl).hostname : "別ページへ"
+  // OGP画像URLが相対パスだった場合、URLからドメインを取得して結合
+  if (ogpImageUrl && !ogpImageUrl.startsWith("http")) {
+    ogpImageUrl = new URL(ogpImageUrl, pageurl).href
+  }
 
   const LinkcCardBody = (
     <>
