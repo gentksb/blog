@@ -5,10 +5,10 @@
   "private": true,
   "version": "3.0.0",
   "scripts": {
-    "dev": "wrangler pages dev --compatibility-date=2023-08-14 -- astro dev",
+    "dev": "wrangler pages dev --compatibility-date=2024-05-13 --kv=PAAPI_DATASTORE -- astro dev",
     "start": "astro dev",
     "prebuild": "run-p build:*",
-    "build": "astro build",
+    "build": "bun astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "vitest",
@@ -80,6 +80,6 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3",
     "vitest": "^1.4.0",
-    "wrangler": "^3.37.0"
+    "wrangler": "^3.60.3"
   }
 }
