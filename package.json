@@ -14,7 +14,7 @@
     "test": "vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "build:redirect": "node --loader ts-node/esm src/scripts/redirects.ts"
+    "build:redirect": "bun src/scripts/redirects.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.2.1",
@@ -53,6 +53,7 @@
     "@cloudflare/workers-types": "^4.20240320.1",
     "@edge-runtime/vm": "^3.2.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
+    "@types/bun": "^1.1.5",
     "@types/node": "^20.11.30",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
@@ -77,7 +78,6 @@
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.14",
-    "ts-node": "^10.9.2",
     "typescript": "^5.4.3",
     "vitest": "^1.4.0",
     "wrangler": "^3.60.3"
