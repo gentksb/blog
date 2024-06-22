@@ -41,7 +41,11 @@ export default defineConfig({
   vite: {
     ssr: {
       // to fix react-icons ESM import error
+      external: ["node:path"],
       noExternal: ["react-icons"]
+    },
+    build: {
+      minify: false
     }
   },
   output: "server",
