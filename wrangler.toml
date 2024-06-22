@@ -1,4 +1,5 @@
 name = "gensoucycle-blog-worker"
+compatibility_flags = [ "nodejs_compat" ]
 
 [env.production]
 kv_namespaces = [

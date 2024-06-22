@@ -41,10 +41,7 @@ export default defineConfig({
   vite: {
     ssr: {
       // to fix react-icons ESM import error
-      noExternal: ["react-icons", "html-rewriter-wasm"]
-    },
-    optimizeDeps: {
-      exclude: ["html-rewriter-wasm"]
+      noExternal: ["react-icons"]
     }
   },
   output: "server",
