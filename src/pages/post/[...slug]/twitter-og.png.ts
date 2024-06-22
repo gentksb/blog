@@ -23,5 +23,5 @@ export const GET: APIRoute = async ({ params }) => {
   }
   const { cover, title } = entry.data
 
-  return ogImage(title, cover?.src)
+  return await ogImage(title, cover?.src)
 }
