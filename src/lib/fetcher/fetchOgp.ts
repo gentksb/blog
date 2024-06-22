@@ -1,5 +1,4 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
-import { HTMLRewriter } from "html-rewriter-wasm"
 import { type OgpData } from "@type/ogpData-type"
 
 export const fetchOgp = async (queryUrl: string) => {
@@ -23,7 +22,6 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
 
   try {
     const httpResponse = await fetch(href)
-    const encoder = new TextEncoder()
 
     if (!httpResponse.ok) {
       const result: OgpData = {
@@ -33,38 +31,30 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
       return result
     } else {
       result.ok = true
-      const rewriter = new HTMLRewriter(() => {})
-      await rewriter.on("meta", {
-        element(element) {
-          switch (element.getAttribute("property")) {
-            case "og:title":
-              result.ogpTitle = element.getAttribute("content") ?? ""
-              break
-            case "og:description":
-              result.ogpDescription = element.getAttribute("content") ?? ""
-              break
-            case "og:image":
-              result.ogpImageUrl = element.getAttribute("content") ?? ""
-              break
-            case "og:site_name":
-              result.ogpSiteName = element.getAttribute("content") ?? ""
-              break
-            default:
-              break
+      const rewriter = new HTMLRewriter()
+      rewriter
+        .on("meta", {
+          element(element) {
+            switch (element.getAttribute("property")) {
+              case "og:title":
+                result.ogpTitle = element.getAttribute("content") ?? ""
+                break
+              case "og:description":
+                result.ogpDescription = element.getAttribute("content") ?? ""
+                break
+              case "og:image":
+                result.ogpImageUrl = element.getAttribute("content") ?? ""
+                break
+              case "og:site_name":
+                result.ogpSiteName = element.getAttribute("content") ?? ""
+                break
+              default:
+                break
+            }
           }
-        }
-      })
-      try {
-        await rewriter.write(encoder.encode(await httpResponse.text()))
-        await rewriter.end()
-      } catch (error) {
-        console.error(`Error on HTMLrewriter: ${error}`)
-        result.error = JSON.stringify(error)
-      } finally {
-        rewriter.free()
-      }
-
-      // console.log(result)
+        })
+        .transform(httpResponse)
+      // transformではなく抽出だが、一度Streamを動かさないと機能しないため、transformを使っている
       return result
     }
   } catch (error) {

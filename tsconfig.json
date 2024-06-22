@@ -23,7 +23,7 @@
       "@lib/*": ["src/lib/*"],
       "@images/*": ["src/images/*"],
       "~/*": ["src/*"],
-      "@type/*": ["@types/*"]
+      "@type/*": ["@types/*", "@cloudflare/workers-types"]
     }
   },
   "exclude": ["./funcsions/**/*"]

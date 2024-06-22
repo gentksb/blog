@@ -41,7 +41,6 @@ export default defineConfig({
   vite: {
     ssr: {
       // to fix react-icons ESM import error
-      external: ["node:path"],
       noExternal: ["react-icons"]
     },
     build: {
@@ -49,5 +48,9 @@ export default defineConfig({
     }
   },
   output: "server",
-  adapter: cloudflare()
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true
+    }
+  })
 })
