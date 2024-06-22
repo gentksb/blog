@@ -2,7 +2,7 @@
 
 import { expect, test } from "vitest"
 import { testAsin, amazonLinkDataExpectedResponse } from "./testData"
-import { getAmazonProductInfo } from "../functions/api/getOgpFromAsin/src/getAmazonProductInfo"
+import { getAmazonProductInfo } from "../src/components/mdx/lib/getAmazonProductInfo"
 
 const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG, PAAPI_DATASTORE } =
   process.env

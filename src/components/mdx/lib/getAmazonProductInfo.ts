@@ -2,7 +2,6 @@ import type {
   AmazonItemsRequestParameters,
   AmazonItemsResponse
 } from "amazon-paapi"
-import type { ENV } from "../[asin]"
 import { AwsClient } from "aws4fetch"
 
 type AmazonRequestBody = AmazonItemsRequestParameters & {
@@ -11,7 +10,7 @@ type AmazonRequestBody = AmazonItemsRequestParameters & {
   Marketplace: "www.amazon.co.jp"
 }
 
-export const getAmazonProductInfo = async (asin: string, env: ENV) => {
+export const getAmazonProductInfo = async (asin: string, env: Env) => {
   const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = env
   // check process.env for PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG
   if (

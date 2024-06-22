@@ -25,6 +25,5 @@
       "~/*": ["src/*"],
       "@type/*": ["@types/*", "@cloudflare/workers-types"]
     }
-  },
-  "exclude": ["./funcsions/**/*"]
+  }
 }

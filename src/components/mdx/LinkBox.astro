@@ -9,6 +9,8 @@ interface Props {
   isAmazonLink: boolean
 }
 
+const { env } = Astro.locals.runtime
+
 const props: Props = Astro.props
 const validateAndOverrideOgpData = async () => {
   if (props.isAmazonLink) {
