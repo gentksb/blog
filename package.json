@@ -12,7 +12,7 @@
     "test": "vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "build:redirect": "bun src/scripts/redirects.ts"
+    "build:redirect": "bun scripts/redirects.ts"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^10.4.2",

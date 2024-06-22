@@ -1,5 +1,5 @@
 // ESM import
-import { redirectData } from "../consts.js"
+import { redirectData } from "~/consts.js"
 // import Bun
 import * as Bun from "bun"
 

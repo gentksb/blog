@@ -6,8 +6,9 @@ import { ogImage } from "./_ogImage"
 // bunだとメッセージがunexpectedのみだが、nodeの場合はwasm拡張しが認識されないエラーが出る
 // Unknown file extension ".wasm" for /home/gen/blog/node_modules/@cloudflare/pages-plugin-vercel-og/dist/src/api/yoga.wasm
 
-export const GET: APIRoute = async ({ params }) => {
+export const GET: APIRoute = async ({ params, request }) => {
   const { slug } = params
+  const origin = new URL(request.url).origin
   if (!slug) {
     return new Response(null, {
       status: 404,
@@ -22,6 +23,11 @@ export const GET: APIRoute = async ({ params }) => {
     })
   }
   const { cover, title } = entry.data
+  const coverSrc = cover?.src
+    ? origin + cover.src
+    : "https://blog.gensobunya.net/image/logo.jpg"
 
-  return await ogImage(title, cover?.src)
+  console.log("coverSrc", coverSrc)
+
+  return await ogImage(origin, title, coverSrc)
 }
