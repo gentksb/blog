@@ -51,23 +51,5 @@ export default defineConfig({
   output: "server",
   adapter: cloudflare({
     imageService: "passthrough"
-  }),
-  experimental: {
-    env: {
-      schema: {
-        PAAPI_ACCESSKEY: envField.string({
-          context: "server",
-          access: "secret"
-        }),
-        PAAPI_SECRETKEY: envField.string({
-          context: "server",
-          access: "secret"
-        }),
-        PARTNER_TAG: envField.string({
-          context: "server",
-          access: "secret"
-        })
-      }
-    }
-  }
+  })
 })
