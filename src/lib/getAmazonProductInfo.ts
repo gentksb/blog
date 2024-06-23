@@ -23,6 +23,7 @@ export const getAmazonProductInfo = async (asin: string) => {
   const paapiSecretkey =
     getSecret(PAAPI_SECRETKEY) ?? process.env.PAAPI_SECRETKEY
   const partnerTag = getSecret(PARTNER_TAG) ?? process.env.PARTNER_TAG
+  console.log(`PAAPI AccessKey: ${paapiAccesskey} from getSecret`)
 
   // if secrets are not found, throw an error
   if (
