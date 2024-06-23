@@ -1,16 +1,16 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
 import { type OgpData } from "@type/ogpData-type"
 
-export const fetchOgp = async (queryUrl: string) => {
+export const getOgpMetaData = async (queryUrl: string) => {
   const decodedUrl = decodeURIComponent(queryUrl)
   const safeUrl = sanitizeUrl(decodedUrl)
 
-  const responseBody = await getOgpDatas(safeUrl)
+  const responseBody = await parseOgpTags(safeUrl)
 
   return responseBody
 }
 
-const getOgpDatas = async (href: string): Promise<OgpData> => {
+const parseOgpTags = async (href: string): Promise<OgpData> => {
   const result: OgpData = {
     ogpTitle: "",
     ogpImageUrl: "",
