@@ -10,7 +10,6 @@ import icon from "astro-icon"
 import { rehypeExcerptContent } from "./src/plugin/rehypeExcerpt"
 
 import cloudflare from "@astrojs/cloudflare"
-import { env } from "process"
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,6 +18,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         "./src/components/mdx/LinkCard.astro",
+        "./src/components/mdx/Amzn.astro",
         {
           "./src/components/mdx/positive.tsx": ["PositiveBox"],
           "./src/components/mdx/negative.tsx": ["NegativeBox"]
