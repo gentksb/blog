@@ -17,7 +17,11 @@
     "strict": true,
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["@cloudflare/workers-types"],
+    "types": [
+      "@cloudflare/workers-types",
+      "@cloudflare/workers-types/experimental",
+      "@cloudflare/vitest-pool-workers"
+    ],
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],

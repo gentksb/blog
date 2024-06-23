@@ -15,7 +15,6 @@ export const getAmazonProductInfo = async (asin: string) => {
   const paapiAccesskey = import.meta.env.PAAPI_ACCESSKEY
   const paapiSecretkey = import.meta.env.PAAPI_SECRETKEY
   const partnerTag = import.meta.env.PARTNER_TAG
-  console.log(`PAAPI AccessKey: ${paapiAccesskey} from getSecret`)
 
   // if secrets are not found, throw an error
   if (

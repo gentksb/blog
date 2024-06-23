@@ -46,6 +46,7 @@
     "unified": "^11.0.5"
   },
   "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.4.6",
     "@cloudflare/workers-types": "^4.20240620.0",
     "@edge-runtime/vm": "^3.2.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
@@ -75,7 +76,7 @@
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.14",
     "typescript": "^5.5.2",
-    "vitest": "^1.6.0",
+    "vitest": "^1.5.3",
     "wrangler": "^3.61.0"
   }
 }

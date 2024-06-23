@@ -32,7 +32,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     }
     result.ok = true
     const rewriter = new HTMLRewriter()
-    rewriter
+    await rewriter
       .on("meta", {
         element(element) {
           switch (element.getAttribute("property")) {
@@ -54,7 +54,8 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
         }
       })
       .transform(httpResponse)
-    // transformではなく抽出だが、一度Streamを動かさないと機能しないため、transformを使っている
+      .text()
+    // transformではなく抽出だが、一度Streamを動かさないと機能しないため、text()を使っている
     return result
   } catch (error) {
     console.error(`Error on fetch: ${error}`)

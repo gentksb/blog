@@ -1,5 +1,4 @@
-// import type { AmazonItemsResponse } from "amazon-paapi"
-import { type OgpData } from "@type/ogpData-type"
+import type { OgpData } from "@type/ogpData-type"
 
 export const normalLinkUrl = "https://blog.gensobunya.net/"
 
