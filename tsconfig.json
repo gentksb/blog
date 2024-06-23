@@ -17,13 +17,14 @@
     "strict": true,
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
+    "types": ["@cloudflare/workers-types"],
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@lib/*": ["src/lib/*"],
       "@images/*": ["src/images/*"],
       "~/*": ["src/*"],
-      "@type/*": ["@types/*", "@cloudflare/workers-types"]
+      "@type/*": ["@types/*"]
     }
   }
 }

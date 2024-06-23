@@ -2,10 +2,9 @@
 
 import { expect, test } from "vitest"
 import { testAsin, amazonLinkDataExpectedResponse } from "./testData"
-import { getAmazonProductInfo } from "../src/components/mdx/lib/getAmazonProductInfo"
+import { getAmazonProductInfo } from "@lib/getAmazonProductInfo"
 
-const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG, PAAPI_DATASTORE } =
-  process.env
+const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = process.env
 
 if (
   typeof PAAPI_ACCESSKEY !== "string" ||
@@ -16,11 +15,6 @@ if (
 }
 
 test("Amazon ASINから製品データを取得する", async () => {
-  const res = await getAmazonProductInfo(testAsin, {
-    PAAPI_ACCESSKEY,
-    PAAPI_SECRETKEY,
-    PARTNER_TAG,
-    PAAPI_DATASTORE // 不要だが型エラー回避のために渡す
-  })
+  const res = await getAmazonProductInfo(testAsin)
   expect(res).toMatchObject(amazonLinkDataExpectedResponse)
 })

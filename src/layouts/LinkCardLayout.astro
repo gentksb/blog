@@ -1,0 +1,48 @@
+---
+import { Icon } from "astro-icon/components"
+interface Props {
+  title: string
+  description: string
+  siteName: string
+  imageSrc: string
+  url: string
+}
+
+const { title, description, siteName, imageSrc, url } = Astro.props
+
+const isExternal = new URL(url).hostname !== "blog.gensobunya.net"
+---
+
+<a href={url} class="link-hover link" target="_blank" rel="noopener noreferrer">
+  <div
+    class="not-prose card card-side mx-2 mt-2 rounded-none border border-base-300 bg-base-100"
+  >
+    <div class="card-body max-w-[75%] p-2">
+      <div
+        class="card-title line-clamp-2 text-sm leading-none text-secondary-content md:text-base"
+      >
+        {isExternal ? <Icon name="mdi:open-in-new" class="inline" /> : ""}
+        {title}
+      </div>
+      <div
+        class="card-body line-clamp-2 max-h-[3em] p-0 text-xs font-normal text-secondary md:text-sm"
+      >
+        {description}
+      </div>
+      <div class="text-xs text-secondary md:text-sm">
+        <Icon name="mdi:web" class="inline" />
+        {siteName}
+      </div>
+    </div>
+    <div class="max-h-28 max-w-[30%] shrink md:max-h-36">
+      <figure class="size-full object-cover">
+        <img
+          src={imageSrc}
+          class="h-full"
+          alt="リンク先カバー画像"
+          loading="lazy"
+        />
+      </figure>
+    </div>
+  </div>
+</a>

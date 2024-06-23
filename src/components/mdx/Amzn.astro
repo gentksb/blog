@@ -1,0 +1,48 @@
+---
+import type { AmazonItemsResponse } from "amazon-paapi"
+import LinkCard from "@layouts/LinkCardLayout.astro"
+import { getAmazonProductInfo } from "@lib/getAmazonProductInfo"
+
+interface Props {
+  asin: string
+}
+
+const { asin } = Astro.props
+const { env } = Astro.locals.runtime
+
+// asinが10桁の英数字であるかどうかを判定する
+const isValidAsin = (asin: string): boolean => {
+  return /^[A-Z0-9]{10}$/.test(asin)
+}
+
+if (!isValidAsin(asin)) {
+  throw new Error("asin must be 10 characters of uppercase letters and numbers")
+}
+
+const paapiCache: AmazonItemsResponse | null | undefined =
+  await env.PAAPI_DATASTORE.get(asin, { type: "json" })
+const getProductData = async (asin: string) => {
+  if (paapiCache) {
+    return paapiCache
+  } else {
+    const productInfo = await getAmazonProductInfo(asin)
+    await env.PAAPI_DATASTORE.put(asin, JSON.stringify(productInfo), {
+      expirationTtl: 60 * 60 * 24
+    })
+    return productInfo
+  }
+}
+const productData = await getProductData(asin)
+---
+
+<LinkCard
+  title={productData.ItemsResult.Items[0].ItemInfo.Title?.DisplayValue ?? ""}
+  description={productData.ItemsResult.Items[0].ItemInfo.Features
+    ?.DisplayValues[0] ?? ""}
+  imageSrc={productData.ItemsResult.Items[0].Images?.Primary?.Large?.URL ??
+    productData.ItemsResult.Items[0].Images?.Primary?.Medium?.URL ??
+    ""}
+  siteName="Amazon.co.jp"
+  url={productData.ItemsResult.Items[0].DetailPageURL ??
+    `https://www.amazon.co.jp/dp/${asin}`}
+/>

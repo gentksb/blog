@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config"
+import { defineConfig, envField } from "astro/config"
 import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 import AutoImport from "astro-auto-import"
@@ -10,6 +10,7 @@ import icon from "astro-icon"
 import { rehypeExcerptContent } from "./src/plugin/rehypeExcerpt"
 
 import cloudflare from "@astrojs/cloudflare"
+import { env } from "process"
 
 // https://astro.build/config
 export default defineConfig({
@@ -48,10 +49,23 @@ export default defineConfig({
     }
   },
   output: "server",
-  adapter: cloudflare({
-    platformProxy: {
-      enabled: true
-    },
-    cloudflareModules: true
-  })
+  adapter: cloudflare(),
+  experimental: {
+    env: {
+      schema: {
+        PAAPI_ACCESSKEY: envField.string({
+          context: "server",
+          access: "secret"
+        }),
+        PAAPI_SECRETKEY: envField.string({
+          context: "server",
+          access: "secret"
+        }),
+        PARTNER_TAG: envField.string({
+          context: "server",
+          access: "secret"
+        })
+      }
+    }
+  }
 })
