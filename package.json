@@ -9,7 +9,7 @@
     "prebuild": "run-p build:*",
     "build": "wrangler types && astro build",
     "preview": "wrangler pages dev ./dist",
-    "test": "vitest",
+    "test": "wrangler types && vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "build:redirect": "bun scripts/redirects.ts"
