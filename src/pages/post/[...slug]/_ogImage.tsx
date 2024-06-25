@@ -1,4 +1,3 @@
-import React from "react"
 import { ImageResponse } from "@cloudflare/pages-plugin-vercel-og/api"
 
 export const ogImage = async (title: string, coverSrc: string) => {
