@@ -10,12 +10,12 @@ type AmazonRequestBody = AmazonItemsRequestParameters & {
   Marketplace: "www.amazon.co.jp"
 }
 
-export const getAmazonProductInfo = async (asin: string) => {
-  // get Secrets
-  const paapiAccesskey = import.meta.env.PAAPI_ACCESSKEY
-  const paapiSecretkey = import.meta.env.PAAPI_SECRETKEY
-  const partnerTag = import.meta.env.PARTNER_TAG
-
+export const getAmazonProductInfo = async (
+  asin: string,
+  paapiAccesskey: string,
+  paapiSecretkey: string,
+  partnerTag: string
+) => {
   // if secrets are not found, throw an error
   if (
     typeof paapiAccesskey !== "string" ||

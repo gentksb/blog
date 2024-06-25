@@ -25,7 +25,12 @@ const getProductData = async (asin: string) => {
   if (paapiCache) {
     return paapiCache
   } else {
-    const productInfo = await getAmazonProductInfo(asin)
+    const productInfo = await getAmazonProductInfo(
+      asin,
+      env.PAAPI_ACCESSKEY,
+      env.PAAPI_SECRETKEY,
+      env.PARTNER_TAG
+    )
     await env.PAAPI_DATASTORE.put(asin, JSON.stringify(productInfo), {
       expirationTtl: 60 * 60 * 24
     })

@@ -100,9 +100,6 @@ devDependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20240620.0
     version: 4.20240620.0
-  '@edge-runtime/vm':
-    specifier: ^3.2.0
-    version: 3.2.0
   '@textlint-ja/textlint-rule-no-filler':
     specifier: ^1.1.0
     version: 1.1.0
@@ -186,7 +183,7 @@ devDependencies:
     version: 5.5.2
   vitest:
     specifier: ^1.5.3
-    version: 1.5.3(@edge-runtime/vm@3.2.0)(@types/node@20.14.8)
+    version: 1.5.3(@types/node@20.14.8)
   wrangler:
     specifier: ^3.61.0
     version: 3.61.0(@cloudflare/workers-types@4.20240620.0)
@@ -691,7 +688,7 @@ packages:
       esbuild: 0.17.19
       miniflare: 3.20240610.1
       semver: 7.6.2
-      vitest: 1.5.3(@edge-runtime/vm@3.2.0)(@types/node@20.14.8)
+      vitest: 1.5.3(@types/node@20.14.8)
       wrangler: 3.61.0(@cloudflare/workers-types@4.20240620.0)
       zod: 3.23.8
     transitivePeerDependencies:
@@ -749,18 +746,6 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
-
-  /@edge-runtime/primitives@4.1.0:
-    resolution: {integrity: sha512-Vw0lbJ2lvRUqc7/soqygUX216Xb8T3WBZ987oywz6aJqRxcwSVWwr9e+Nqo2m9bxobA9mdbWNNoRY6S9eko1EQ==}
-    engines: {node: '>=16'}
-    dev: true
-
-  /@edge-runtime/vm@3.2.0:
-    resolution: {integrity: sha512-0dEVyRLM/lG4gp1R/Ik5bfPl/1wX00xFwd5KcNH602tzBa09oF7pbTKETEhR1GjZ75K6OJnYFu8II2dyMhONMw==}
-    engines: {node: '>=16'}
-    dependencies:
-      '@edge-runtime/primitives': 4.1.0
-    dev: true
 
   /@emnapi/runtime@1.2.0:
     resolution: {integrity: sha512-bV21/9LQmcQeCPEg3BDFtvwL6cwiTMksYNWQQ4KOxCZikEGalWtenoZ0wCiukJINlGCIi2KXx01g4FoH/LxpzQ==}
@@ -8898,7 +8883,7 @@ packages:
       vite: 5.3.1(@types/node@20.14.8)
     dev: false
 
-  /vitest@1.5.3(@edge-runtime/vm@3.2.0)(@types/node@20.14.8):
+  /vitest@1.5.3(@types/node@20.14.8):
     resolution: {integrity: sha512-2oM7nLXylw3mQlW6GXnRriw+7YvZFk/YNV8AxIC3Z3MfFbuziLGWP9GPxxu/7nRlXhqyxBikpamr+lEEj1sUEw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -8923,7 +8908,6 @@ packages:
       jsdom:
         optional: true
     dependencies:
-      '@edge-runtime/vm': 3.2.0
       '@types/node': 20.14.8
       '@vitest/expect': 1.5.3
       '@vitest/runner': 1.5.3
