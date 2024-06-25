@@ -1,4 +1,4 @@
-import type { Redirect } from "./scripts/redirects"
+import type { Redirect } from "../scripts/redirects"
 
 export const SITE_TITLE = "幻想サイクル"
 export const SITE_DESCRIPTION =
@@ -153,17 +153,17 @@ export const redirectData: Redirect[] = [
   },
   {
     source: "/post/2017/10/blgger-to-wp-to-hugo-1/",
-    destination: "http://www.gensobunya.net/portfolio/blgger-to-wp-to-hugo-1/",
+    destination: "https://www.gensobunya.net/portfolio/blgger-to-wp-to-hugo-1/",
     type: 301
   },
   {
     source: "/post/2017/10/blggrtowp-2/",
-    destination: "http://www.gensobunya.net/portfolio/blggrtowp-2/",
+    destination: "https://www.gensobunya.net/portfolio/blggrtowp-2/",
     type: 301
   },
   {
     source: "/post/2017/11/wp2hugo/",
-    destination: "http://www.gensobunya.net/portfolio/wp2hugo/",
+    destination: "https://www.gensobunya.net/portfolio/wp2hugo/",
     type: 301
   },
   {
@@ -200,16 +200,6 @@ export const redirectData: Redirect[] = [
   {
     source: "/2016/09/2016-17-cx1-irc-tire-90th-anniversary.html",
     destination: "/post/2016/09/irc90thcup/",
-    type: 301
-  },
-  {
-    source: "/201807/2018-07-12-cxtublar.html",
-    destination: "/post/2018/07/cxtublar/",
-    type: 301
-  },
-  {
-    source: "/2015/10/01/zwif-3.html",
-    destination: "/post/2015/10/zwiftstart/",
     type: 301
   },
   {

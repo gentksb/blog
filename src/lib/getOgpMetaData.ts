@@ -1,17 +1,16 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
-import { HTMLRewriter } from "html-rewriter-wasm"
-import { type OgpData } from "@type/ogpData-type"
+import type { OgpData } from "@type/ogpData-type"
 
-export const fetchOgp = async (queryUrl: string) => {
+export const getOgpMetaData = async (queryUrl: string) => {
   const decodedUrl = decodeURIComponent(queryUrl)
   const safeUrl = sanitizeUrl(decodedUrl)
 
-  const responseBody = await getOgpDatas(safeUrl)
+  const responseBody = await parseOgpTags(safeUrl)
 
   return responseBody
 }
 
-const getOgpDatas = async (href: string): Promise<OgpData> => {
+const parseOgpTags = async (href: string): Promise<OgpData> => {
   const result: OgpData = {
     ogpTitle: "",
     ogpImageUrl: "",
@@ -23,7 +22,6 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
 
   try {
     const httpResponse = await fetch(href)
-    const encoder = new TextEncoder()
 
     if (!httpResponse.ok) {
       const result: OgpData = {
@@ -31,10 +29,11 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
         error: "Query url is not found or invalid."
       }
       return result
-    } else {
-      result.ok = true
-      const rewriter = new HTMLRewriter(() => {})
-      await rewriter.on("meta", {
+    }
+    result.ok = true
+    const rewriter = new HTMLRewriter()
+    await rewriter
+      .on("meta", {
         element(element) {
           switch (element.getAttribute("property")) {
             case "og:title":
@@ -54,19 +53,10 @@ const getOgpDatas = async (href: string): Promise<OgpData> => {
           }
         }
       })
-      try {
-        await rewriter.write(encoder.encode(await httpResponse.text()))
-        await rewriter.end()
-      } catch (error) {
-        console.error(`Error on HTMLrewriter: ${error}`)
-        result.error = JSON.stringify(error)
-      } finally {
-        rewriter.free()
-      }
-
-      // console.log(result)
-      return result
-    }
+      .transform(httpResponse)
+      .text()
+    // transformではなく抽出だが、一度Streamを動かさないと機能しないため、text()を使っている
+    return result
   } catch (error) {
     console.error(`Error on fetch: ${error}`)
     const result: OgpData = {

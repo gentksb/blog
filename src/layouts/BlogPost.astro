@@ -2,8 +2,7 @@
 import type { CollectionEntry } from "astro:content"
 import Layout from "./Layout.astro"
 import BlogTitle from "@components/BlogTitle.astro"
-import { utcToZonedTime } from "date-fns-tz"
-import { sub, formatISO } from "date-fns"
+import { formatInTimeZone } from "date-fns-tz"
 import RelatedPosts from "@components/RelatedPosts.astro"
 import { SITE_TITLE } from "~/consts"
 import { getImage } from "astro:assets"
@@ -13,9 +12,8 @@ type Props = CollectionEntry<"post"> & { description: string }
 
 const { title, date, cover, tags } = Astro.props.data
 const { slug, description } = Astro.props
-const publishedDate = formatISO(
-  sub(utcToZonedTime(date, "Asia/Tokyo"), { hours: 9 })
-)
+// cloudflare上ではタイムゾーンが日本時間になる保証がないため、明示的に指定する
+const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
 
 // ogp画像はURLが変更されないようにオリジナルを取得する

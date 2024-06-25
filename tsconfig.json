@@ -1,10 +1,27 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
     "baseUrl": ".",
     "strictNullChecks": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
+    "allowJs": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": [
+      "@cloudflare/workers-types",
+      "@cloudflare/workers-types/experimental",
+      "@cloudflare/vitest-pool-workers"
+    ],
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
@@ -13,6 +30,5 @@
       "~/*": ["src/*"],
       "@type/*": ["@types/*"]
     }
-  },
-  "exclude": ["./funcsions/**/*"]
+  }
 }

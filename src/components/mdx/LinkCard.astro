@@ -1,0 +1,51 @@
+---
+import LinkCardLayout from "@layouts/LinkCardLayout.astro"
+import { getOgpMetaData } from "@lib/getOgpMetaData"
+import type { OgpData } from "@type/ogpData-type"
+
+interface Props {
+  url: string
+  linkUrl?: string
+}
+
+const { url, linkUrl } = Astro.props
+const { env } = Astro.locals.runtime
+
+// check if the url is valid
+try {
+  new URL(url)
+  if (linkUrl) {
+    new URL(linkUrl)
+  }
+} catch (error) {
+  throw new Error("Invalid URL")
+}
+
+const getOgpData = async (url: string) => {
+  // cache key is the base64encoded url
+  const cacheKey = btoa(url)
+  const ogpCache: OgpData | null | undefined = await env.OGP_DATASTORE.get(
+    cacheKey,
+    { type: "json" }
+  )
+  if (ogpCache) {
+    return ogpCache
+  } else {
+    const ogpMetaData = await getOgpMetaData(url)
+    await env.OGP_DATASTORE.put(cacheKey, JSON.stringify(ogpMetaData), {
+      expirationTtl: 60 * 60 * 24
+    })
+    return ogpMetaData
+  }
+}
+
+const ogpData = await getOgpData(url)
+---
+
+<LinkCardLayout
+  title={ogpData.ogpTitle ?? url}
+  siteName={ogpData.ogpSiteName ?? new URL(url).hostname}
+  description={ogpData.ogpDescription ?? ""}
+  imageSrc={ogpData.ogpImageUrl}
+  url={linkUrl ?? url}
+/>
