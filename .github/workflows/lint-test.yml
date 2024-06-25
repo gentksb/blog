@@ -53,7 +53,12 @@ jobs:
         run: pnpm run lint
 
       - name: Run Tests
-        run: pnpm run test
+        run: |
+          touch .dev.var
+          echo "PARTNER_TAG=$PARTNER_TAG" >> .dev.var
+          echo "PAAPI_SECRETKEY=$PAAPI_SECRETKEY" >> .dev.var
+          echo "PAAPI_ACCESSKEY=$PAAPI_ACCESSKEY" >> .dev.var
+          pnpm run test
         env:
           PARTNER_TAG: ${{ secrets.PARTNER_TAG }}
           PAAPI_SECRETKEY: ${{ secrets.PAAPI_SECRETKEY }}
