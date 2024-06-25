@@ -54,7 +54,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          touch .dev.var
+          touch .dev.vars
           echo "PARTNER_TAG=$PARTNER_TAG" >> .dev.var
           echo "PAAPI_SECRETKEY=$PAAPI_SECRETKEY" >> .dev.var
           echo "PAAPI_ACCESSKEY=$PAAPI_ACCESSKEY" >> .dev.var
