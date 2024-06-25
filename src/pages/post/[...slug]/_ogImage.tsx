@@ -1,11 +1,7 @@
 import React from "react"
 import { ImageResponse } from "@cloudflare/pages-plugin-vercel-og/api"
 
-export const ogImage = async (
-  host: string,
-  title: string,
-  coverSrc: string
-) => {
+export const ogImage = async (title: string, coverSrc: string) => {
   // https://github.com/vercel/satori/blob/main/playground/pages/api/font.ts
   const weight = 600
   const fontName = "Noto Sans JP"

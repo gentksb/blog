@@ -2,9 +2,8 @@ import type { APIRoute } from "astro"
 import { getEntry } from "astro:content"
 import { ogImage } from "./_ogImage"
 
-// astro/cloudflare アダプタ上のローカル開発環境では vercel/og が機能しないため、ビルド後に動作確認の必要あり
-// bunだとメッセージがunexpectedのみだが、nodeの場合はwasm拡張しが認識されないエラーが出る
-// Unknown file extension ".wasm" for /home/gen/blog/node_modules/@cloudflare/pages-plugin-vercel-og/dist/src/api/yoga.wasm
+// astro/cloudflare アダプタ上のローカル開発環境では vercel/og が機能しないため、ビルド後に動作確認の必要あり. Esbuildだけおかしい？
+// ERROR: No loader is configured for ".bin" files: node_modules/.pnpm/@cloudflare+pages-plugin-vercel-og@0.1.2/node_modules/@cloudflare/pages-plugin-vercel-og/dist/src/api/noto-sans-v27-latin-regular.ttf.bin
 
 export const GET: APIRoute = async ({ params, request }) => {
   const { slug } = params
@@ -29,5 +28,5 @@ export const GET: APIRoute = async ({ params, request }) => {
 
   console.log("coverSrc", coverSrc)
 
-  return await ogImage(origin, title, coverSrc)
+  return await ogImage(title, coverSrc)
 }
