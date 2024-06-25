@@ -4,8 +4,7 @@ import { getAmazonProductInfo } from "@lib/getAmazonProductInfo"
 import { env } from "cloudflare:test"
 
 const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = env
-console.log(`env.PARTNER_TAG: ${PARTNER_TAG}`)
-console.log(`process.env.PARTNER_TAG: ${process.env.PARTNER_TAG}`)
+console.dir(env, { depth: 3 })
 
 if (!PAAPI_ACCESSKEY || !PAAPI_SECRETKEY || !PARTNER_TAG) {
   throw new Error("Environment variables are not valid")
