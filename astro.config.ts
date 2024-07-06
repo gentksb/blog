@@ -7,7 +7,6 @@ import react from "@astrojs/react"
 import partytown from "@astrojs/partytown"
 import icon from "astro-icon"
 import { rehypeExcerptContent } from "./src/plugin/rehypeExcerpt"
-import wasmModuleWorkers from "vite-plugin-wasm-module-workers"
 
 import cloudflare from "@astrojs/cloudflare"
 
@@ -40,7 +39,6 @@ export default defineConfig({
     rehypePlugins: [rehypeExcerptContent]
   },
   vite: {
-    plugins: [wasmModuleWorkers()],
     ssr: {
       // to fix react-icons ESM import error
       noExternal: ["react-icons"]

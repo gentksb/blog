@@ -181,9 +181,6 @@ devDependencies:
   typescript:
     specifier: ^5.5.3
     version: 5.5.3
-  vite-plugin-wasm-module-workers:
-    specifier: ^0.0.2
-    version: 0.0.2
   vitest:
     specifier: ^1.5.3
     version: 1.5.3(@types/node@20.14.10)
@@ -9180,10 +9177,6 @@ packages:
       - sugarss
       - supports-color
       - terser
-    dev: true
-
-  /vite-plugin-wasm-module-workers@0.0.2:
-    resolution: {integrity: sha512-zbVuJb5gTGSrR1EREDh3DUCyCgacAaIwAashvatXjBYfmIqDiuBRGchj4kT9ekjvAG51fK/VWbWHSeye5x4vvg==}
     dev: true
 
   /vite@5.3.1(@types/node@20.14.10):

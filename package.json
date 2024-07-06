@@ -75,7 +75,6 @@
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.14",
     "typescript": "^5.5.3",
-    "vite-plugin-wasm-module-workers": "^0.0.2",
     "vitest": "^1.5.3",
     "wrangler": "^3.63.1"
   }
