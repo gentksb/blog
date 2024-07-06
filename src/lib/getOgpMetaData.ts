@@ -4,6 +4,7 @@ import type { OgpData } from "@type/ogpData-type"
 export const getOgpMetaData = async (queryUrl: string) => {
   const decodedUrl = decodeURIComponent(queryUrl)
   const safeUrl = sanitizeUrl(decodedUrl)
+  console.log(`safeUrl: ${safeUrl}`)
 
   const responseBody = await parseOgpTags(safeUrl)
 
@@ -22,6 +23,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
 
   try {
     const httpResponse = await fetch(href)
+    console.log(`fetching ${href} is done`, httpResponse.status)
 
     if (!httpResponse.ok) {
       const result: OgpData = {
@@ -30,6 +32,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
       }
       return result
     }
+
     result.ok = true
     const rewriter = new HTMLRewriter()
     await rewriter
@@ -55,7 +58,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
       })
       .transform(httpResponse)
       .text()
-    // transformではなく抽出だが、一度Streamを動かさないと機能しないため、text()を使っている
+    // transformではなく抽出だが、一度Streamを動かさないと機能しないため、text()を使っている)
     return result
   } catch (error) {
     console.error(`Error on fetch: ${error}`)

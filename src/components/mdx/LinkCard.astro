@@ -32,14 +32,18 @@ const getOgpData = async (url: string) => {
     return ogpCache
   } else {
     const ogpMetaData = await getOgpMetaData(url)
-    await env.OGP_DATASTORE.put(cacheKey, JSON.stringify(ogpMetaData), {
-      expirationTtl: 60 * 60 * 24
-    })
+    // OGPデータが取得できた場合のみ1週間キャッシュする
+    if (ogpMetaData.ok) {
+      await env.OGP_DATASTORE.put(cacheKey, JSON.stringify(ogpMetaData), {
+        expirationTtl: 60 * 60 * 24 * 7
+      })
+    }
     return ogpMetaData
   }
 }
 
 const ogpData = await getOgpData(url)
+console.log(ogpData, "from astro component")
 ---
 
 <LinkCardLayout
