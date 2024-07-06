@@ -1,4 +1,4 @@
-import { ImageResponse } from "@cloudflare/pages-plugin-vercel-og/api"
+import { ImageResponse } from "workers-og"
 
 export const ogImage = async (title: string, coverSrc: string) => {
   // https://github.com/vercel/satori/blob/main/playground/pages/api/font.ts
