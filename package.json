@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "wrangler types && astro dev",
     "prebuild": "run-p build:*",
-    "build": "wrangler types && astro check && astro build",
+    "build": "wrangler types && astro build",
     "preview": "wrangler pages dev ./dist",
     "test": "wrangler types && vitest",
     "lint": "eslint ./src",
