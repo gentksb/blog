@@ -28,7 +28,18 @@ export default defineConfig({
     sitemap(),
     tailwind(),
     react(),
-    icon(),
+    icon({
+      include: {
+        mdi: [
+          "calendar",
+          "twitter",
+          "instagram",
+          "youtube",
+          "web",
+          "open-in-new"
+        ]
+      }
+    }),
     partytown({
       config: {
         forward: ["dataLayer.push"]
