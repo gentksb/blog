@@ -40,7 +40,7 @@ const ogpStaticImage = cover
     </div>
   </article>
   <div class="divider"></div>
-  <Share title={title} url={Astro.url.href} />
+  <Share url={Astro.url.href} title={title} />
   <div class="divider"></div>
   <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
 </Layout>
