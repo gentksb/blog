@@ -7,7 +7,6 @@ import react from "@astrojs/react"
 import partytown from "@astrojs/partytown"
 import icon from "astro-icon"
 import { rehypeExcerptContent } from "./src/plugin/rehypeExcerpt"
-
 import cloudflare from "@astrojs/cloudflare"
 
 // https://astro.build/config
@@ -50,16 +49,15 @@ export default defineConfig({
     rehypePlugins: [rehypeExcerptContent]
   },
   vite: {
-    ssr: {
-      // to fix react-icons ESM import error
-      noExternal: ["react-icons"]
-    },
     build: {
       minify: false
     }
   },
   output: "server",
   adapter: cloudflare({
+    platformProxy: {
+      enabled: true
+    },
     imageService: "passthrough"
   })
 })
