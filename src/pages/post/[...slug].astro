@@ -27,12 +27,12 @@ if (entry === undefined) {
   return Astro.redirect("/404")
 }
 // 4. (Optional) Render the entry to HTML in the template
-const { Content, remarkPluginFrontmatter } = await entry.render()
+const { Content } = await entry.render()
 
 type Props = CollectionEntry<"post">
 ---
 
-<BlogPost {...entry} description={remarkPluginFrontmatter.excerpt}>
+<BlogPost {...entry} description="">
   <Content
     components={{
       h2: MdxH2,
