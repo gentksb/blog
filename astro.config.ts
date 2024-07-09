@@ -6,7 +6,6 @@ import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
 import partytown from "@astrojs/partytown"
 import icon from "astro-icon"
-import { rehypeExcerptContent } from "./src/plugin/rehypeExcerpt"
 import cloudflare from "@astrojs/cloudflare"
 
 // https://astro.build/config
@@ -45,9 +44,6 @@ export default defineConfig({
       }
     })
   ],
-  markdown: {
-    rehypePlugins: [rehypeExcerptContent]
-  },
   vite: {
     build: {
       minify: false
@@ -58,6 +54,6 @@ export default defineConfig({
     platformProxy: {
       enabled: true
     },
-    imageService: "passthrough"
+    imageService: "cloudflare"
   })
 })
