@@ -50,4 +50,5 @@ const productData = await getProductData(asin)
   siteName="Amazon.co.jp"
   url={productData.ItemsResult.Items[0].DetailPageURL ??
     `https://www.amazon.co.jp/dp/${asin}`}
+  theme="amazon"
 />

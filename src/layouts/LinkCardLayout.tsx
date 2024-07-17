@@ -7,6 +7,7 @@ interface Props {
   siteName: string
   imageSrc?: string
   url: string
+  theme?: "amazon" | "rakuten" | "yahoo" | "singleLine"
 }
 
 export const LinkCardLayout: React.FC<Props> = ({
@@ -14,19 +15,38 @@ export const LinkCardLayout: React.FC<Props> = ({
   description,
   siteName,
   imageSrc,
-  url
+  url,
+  theme = "default"
 }) => {
   const isExternal = new URL(url).hostname !== "blog.gensobunya.net"
-
-  return (
+  const showBadge =
+    theme === "amazon" || theme === "rakuten" || theme === "yahoo"
+  const brandColorBorder: { [key: string]: string } = {
+    amazon: "border-amazon border-3",
+    rakuten: "border-rakuten border-3",
+    yahoo: "border-yahoo border-4",
+    singleLine: "border-base-300",
+    default: "border-base-300"
+  }
+  const brandColorBackground: { [key: string]: string } = {
+    amazon: "bg-amazon",
+    rakuten: "bg-rakuten",
+    yahoo: "bg-yahoo",
+    singleLine: "bg-base-300",
+    default: "bg-base-300"
+  }
+  const defaultLayout = (
     <a
       href={url}
       className="link-hover link"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="not-prose card card-side mx-2 mt-2 rounded-none border border-base-300 bg-base-100">
+      <div
+        className={`not-prose card card-side mx-2 mt-2 rounded-none border bg-base-100 ${brandColorBorder[theme]}`}
+      >
         <div className="card-body max-w-[75%] p-2">
+          {showBadge ? (<div className={`absolute top-0 right-0 ${brandColorBackground[theme]} text-white text-xs px-2 py-1 rounded-bl`}>{theme}</div> ) : ""}           
           <div className="card-title line-clamp-2 text-sm leading-none text-secondary-content md:text-base">
             {isExternal ? <MdOpenInNew className="inline" /> : ""}
             {title}
@@ -40,7 +60,7 @@ export const LinkCardLayout: React.FC<Props> = ({
           </div>
         </div>
         <div className="max-h-28 max-w-[30%] shrink md:max-h-36">
-          <figure className="size-full object-cover">
+          <figure className="size-full object-contain">
             <img
               src={imageSrc}
               className="h-full"
@@ -52,4 +72,6 @@ export const LinkCardLayout: React.FC<Props> = ({
       </div>
     </a>
   )
+
+  return defaultLayout
 }

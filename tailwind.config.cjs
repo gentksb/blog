@@ -7,6 +7,11 @@ module.exports = {
         sans: ["sans-serif"],
         relics: ["Times New Roman", "MS PGothic"],
         ui: ["system-ui", "-apple-system"]
+      },
+      colors: {
+        amazon: "#ff9900",
+        yahoo: "#FF0033",
+        rakuten: "#BF0000"
       }
     }
   },
