@@ -1,6 +1,6 @@
 ---
 import type { AmazonItemsResponse } from "amazon-paapi"
-import LinkCard from "@layouts/LinkCardLayout.astro"
+import { LinkCardLayout } from "@layouts/LinkCardLayout"
 import { getAmazonProductInfo } from "@lib/getAmazonProductInfo"
 
 interface Props {
@@ -40,7 +40,7 @@ const getProductData = async (asin: string) => {
 const productData = await getProductData(asin)
 ---
 
-<LinkCard
+<LinkCardLayout
   title={productData.ItemsResult.Items[0].ItemInfo.Title?.DisplayValue ?? ""}
   description={productData.ItemsResult.Items[0].ItemInfo.Features
     ?.DisplayValues[0] ?? ""}
