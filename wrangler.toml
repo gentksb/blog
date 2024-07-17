@@ -1,5 +1,6 @@
 name = "gensoucycle-blog-worker"
 compatibility_flags = [ "nodejs_compat" ]
+upload_source_maps = true
 
 
 kv_namespaces = [
