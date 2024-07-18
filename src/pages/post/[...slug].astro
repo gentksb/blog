@@ -1,6 +1,6 @@
 ---
-import { getEntry } from "astro:content"
-import { type CollectionEntry } from "astro:content"
+import type { GetStaticPaths } from "astro"
+import { type CollectionEntry, getCollection } from "astro:content"
 import BlogPost from "@layouts/BlogPost.astro"
 import {
   MdxH2,
@@ -14,25 +14,20 @@ import {
 } from "@components/mdx/mdxReplacer"
 import MdxPicture from "@components/mdx/MdxPicture.astro"
 
-// SSRでは記事単体をgetEntryで取得する
-// 1. Get the slug from the incoming server request
-const { slug } = Astro.params
-if (slug === undefined) {
-  throw new Error("Slug is required")
+export const getStaticPaths: GetStaticPaths = async () => {
+  const posts = await getCollection("post")
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post
+  }))
 }
-// 2. Query for the entry directly using the request slug
-const entry = await getEntry("post", slug)
-// 3. Redirect if the entry does not exist
-if (entry === undefined) {
-  return Astro.redirect("/404")
-}
-// 4. (Optional) Render the entry to HTML in the template
-const { Content } = await entry.render()
-
 type Props = CollectionEntry<"post">
+
+const post = Astro.props
+const { Content } = await post.render()
 ---
 
-<BlogPost {...entry} description="">
+<BlogPost {...post} description="">
   <Content
     components={{
       h2: MdxH2,

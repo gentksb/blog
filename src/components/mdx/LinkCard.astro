@@ -1,6 +1,6 @@
 ---
 import { LinkCardLayout } from "@layouts/LinkCardLayout"
-import { getOgpMetaData } from "@lib/getOgpMetaData"
+import { getOgpMetaData } from "functions/api/src/getOgpMetaDataetOgpMetaData"
 import type { OgpData } from "@type/ogpData-type"
 
 interface Props {
@@ -9,7 +9,6 @@ interface Props {
 }
 
 const { url, linkUrl } = Astro.props
-const { env } = Astro.locals.runtime
 
 // check if the url is valid
 try {
@@ -21,29 +20,13 @@ try {
   throw new Error("Invalid URL")
 }
 
-const getOgpData = async (url: string) => {
-  // cache key is the base64encoded url
-  const cacheKey = btoa(url)
-  const ogpCache: OgpData | null | undefined = await env.OGP_DATASTORE.get(
-    cacheKey,
-    { type: "json" }
-  )
-  if (ogpCache) {
-    return ogpCache
-  } else {
-    const ogpMetaData = await getOgpMetaData(url)
-    // OGPデータが取得できた場合のみ1週間キャッシュする
-    if (ogpMetaData.ok) {
-      await env.OGP_DATASTORE.put(cacheKey, JSON.stringify(ogpMetaData), {
-        expirationTtl: 60 * 60 * 24 * 7
-      })
-    }
-    return ogpMetaData
-  }
-}
-
-const ogpData = await getOgpData(url)
-console.log(ogpData, "from astro component")
+// dummy
+const ogpData = {
+  ogpTitle: "dummy title",
+  ogpSiteName: "dummy site name",
+  ogpDescription: "dummy description",
+  ogpImageUrl: "https://dummyimage.com/600x400/000/fff"
+} as OgpData
 ---
 
 <LinkCardLayout

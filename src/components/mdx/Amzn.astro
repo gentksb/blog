@@ -1,14 +1,13 @@
 ---
 import type { AmazonItemsResponse } from "amazon-paapi"
 import { LinkCardLayout } from "@layouts/LinkCardLayout"
-import { getAmazonProductInfo } from "@lib/getAmazonProductInfo"
+// import { getAmazonProductInfo } from "functions/api/src/getAmazonProductInfoonProductInfo"
 
 interface Props {
   asin: string
 }
 
 const { asin } = Astro.props
-const { env } = Astro.locals.runtime
 
 // asinが10桁の英数字であるかどうかを判定する
 const isValidAsin = (asin: string): boolean => {
@@ -19,25 +18,34 @@ if (!isValidAsin(asin)) {
   throw new Error("asin must be 10 characters of uppercase letters and numbers")
 }
 
-const paapiCache: AmazonItemsResponse | null | undefined =
-  await env.PAAPI_DATASTORE.get(asin, { type: "json" })
-const getProductData = async (asin: string) => {
-  if (paapiCache) {
-    return paapiCache
-  } else {
-    const productInfo = await getAmazonProductInfo(
-      asin,
-      env.PAAPI_ACCESSKEY,
-      env.PAAPI_SECRETKEY,
-      env.PARTNER_TAG
-    )
-    await env.PAAPI_DATASTORE.put(asin, JSON.stringify(productInfo), {
-      expirationTtl: 60 * 60 * 24
-    })
-    return productInfo
+// dummy
+const productData = {
+  ItemsResult: {
+    Items: [
+      {
+        ItemInfo: {
+          Title: {
+            DisplayValue: "dummy title"
+          },
+          Features: {
+            DisplayValues: ["dummy description"]
+          }
+        },
+        Images: {
+          Primary: {
+            Large: {
+              URL: "https://dummyimage.com/600x400/000/fff"
+            },
+            Medium: {
+              URL: "https://dummyimage.com/600x400/000/fff"
+            }
+          }
+        },
+        DetailPageURL: "https://www.amazon.co.jp/dp/B08P4J5F5H"
+      }
+    ]
   }
-}
-const productData = await getProductData(asin)
+} as AmazonItemsResponse
 ---
 
 <LinkCardLayout
