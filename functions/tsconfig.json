@@ -11,6 +11,6 @@
       "@type/*": ["../@types/*"]
     }
   },
-  "include": ["./api/**/*", "./post/**/*"],
+  "include": ["./api/**/*", "./post/**/*", "../@types/**/*"],
   "files": ["../worker-configuration.d.ts"]
 }
