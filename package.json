@@ -8,8 +8,8 @@
     "dev": "bun typegen && wrangler pages dev -- astro dev",
     "prebuild": "run-p build:*",
     "build": "bun typegen && bunx --bun astro build",
-    "preview": "bun typegen && bun build && bunx --bun wrangler pages dev ./dist",
-    "preview:cf": "bun typegen && bunx --bun wrangler pages dev ./dist",
+    "preview": "bun typegen && bun run build && wrangler pages dev ./dist",
+    "preview:cf": "bun typegen && wrangler pages dev ./dist",
     "test": "bun typegen && bunx vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
@@ -24,6 +24,7 @@
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@braintree/sanitize-url": "^7.0.4",
+    "@cloudflare/pages-plugin-vercel-og": "^0.1.2",
     "@emotion/react": "^11.11.4",
     "@iconify-json/mdi": "^1.1.67",
     "@tailwindcss/typography": "^0.5.13",
@@ -41,8 +42,7 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "tailwindcss": "^3.4.6",
-    "unified": "^11.0.5",
-    "workers-og": "^0.0.24"
+    "unified": "^11.0.5"
   },
   "devDependencies": {
     "@astrojs/check": "^0.8.2",

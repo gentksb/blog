@@ -1,4 +1,4 @@
-import { ImageResponse } from "workers-og"
+import { ImageResponse } from "@cloudflare/pages-plugin-vercel-og/api"
 
 export const ogImage = async (title: string, coverSrc: string) => {
   // https://github.com/vercel/satori/blob/main/playground/pages/api/font.ts
@@ -13,6 +13,7 @@ export const ogImage = async (title: string, coverSrc: string) => {
     throw new Error("font resource not found")
   }
   const fontData = await (await fetch(resource[1])).arrayBuffer()
+  console.log(resource)
 
   return new ImageResponse(
     (

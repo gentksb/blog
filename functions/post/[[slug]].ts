@@ -14,7 +14,8 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     imageUrl: ""
   }
   const rewriter = new HTMLRewriter()
-  const response = await context.next()
+  // response from without `imagePathSuffix`
+  const response = await fetch(context.request.url.replace(imagePathSuffix, ""))
   await rewriter
     .on("meta", {
       element(element) {
@@ -34,7 +35,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     .arrayBuffer()
 
   const imageResponse = await ogImage(
-    postMetaData.title,
+    postMetaData.title.replace(" | 幻想サイクル", ""),
     postMetaData.imageUrl
       ? postMetaData.imageUrl
       : "https://blog.gensobunya.net/image/logo.jpg"
