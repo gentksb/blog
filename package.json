@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "bun typegen && wrangler pages dev -- astro dev",
     "prebuild": "run-p build:*",
-    "build": "bun typegen  && bunx --bun build",
-    "preview": "bun typegen && bun build && wrangler pages dev ./dist",
-    "preview:cf": "bun typegen && wrangler pages dev ./dist",
-    "test": "bun typegen && vitest",
+    "build": "bun typegen && bunx --bun astro build",
+    "preview": "bun typegen && bun build && bunx --bun wrangler pages dev ./dist",
+    "preview:cf": "bun typegen && bunx --bun wrangler pages dev ./dist",
+    "test": "bun typegen && bunx vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "build:redirect": "bun scripts/redirects.ts",
@@ -74,7 +74,7 @@
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.14",
     "typescript": "^5.5.3",
-    "vitest": "^1.5.3",
+    "vitest": "1.5",
     "wrangler": "^3.65.0"
   }
 }
