@@ -8,11 +8,19 @@ import partytown from "@astrojs/partytown"
 import icon from "astro-icon"
 import { imageService } from "@unpic/astro/service"
 
+// ローカル開発のために環境変数を設定
+const isCfPages = process.env.CF_PAGES === "1" ? true : false
+const mainImageService = isCfPages ? "imgix" : "astro"
+console.log(
+  `CF_PAGES detect: ${isCfPages}, mainImageService: ${mainImageService}`
+)
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://blog.gensobunya.net/",
   image: {
     service: imageService({
+      fallbackService: mainImageService,
       cdnOptions: {
         imgix: {
           domain: "gensobunya.imgix.net",
