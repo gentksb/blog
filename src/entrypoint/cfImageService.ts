@@ -44,16 +44,17 @@ const service: ExternalImageService = {
     }
     const sourcePath = typeof imageSrc === "string" ? imageSrc : imageSrc.src
     const baseUrl = import.meta.env.BASE_URL
-      ? `${import.meta.env.BASE_URL}/`
+      ? `${import.meta.env.BASE_URL}`
       : ""
     // Cloudflare Image ResizingのURL形式に変換
     const imagePath = `${baseUrl}/cdn-cgi/image/${cfOptions.join(",")}${sourcePath}`
-    // console.log(
-    //   `baseUrl: ${baseUrl}`,
-    //   `sourcePath: ${sourcePath}`,
-    //   `cfOptions: ${cfOptions}`,
-    //   `rawPath: ${imagePath}`
-    // )
+    console.log(
+      `baseUrl: ${baseUrl}`,
+      `sourcePath: ${sourcePath}`,
+      `cfOptions: ${cfOptions}`,
+      `rawPath: ${imagePath}`,
+      "if LeadingSlash, will remove it"
+    )
 
     // @cloudflare/internal-helperの実装を参考に
     return imagePath.startsWith("/") ? imagePath.substring(1) : imagePath
