@@ -30,7 +30,6 @@
     "@tailwindcss/typography": "^0.5.13",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@unpic/astro": "^0.0.46",
     "astro": "^4.12.1",
     "astro-auto-import": "^0.4.2",
     "astro-icon": "^1.1.0",
