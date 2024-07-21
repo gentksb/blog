@@ -27,7 +27,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
       )
 
   if (!kvCache) {
-    await context.env.OGP_DATASTORE.put(asin, JSON.stringify(productData), {
+    await context.env.PAAPI_DATASTORE.put(asin, JSON.stringify(productData), {
       expirationTtl: 60 * 60 * 24
     }).then(() => console.log(`write PAAPI Cache. asin: ${asin}`))
   } else {
