@@ -45,8 +45,16 @@ export const LinkCardLayout: React.FC<Props> = ({
       <div
         className={`not-prose card card-side mx-2 mt-2 rounded-none border bg-base-100 ${brandColorBorder[theme]}`}
       >
-        <div className="card-body max-w-[75%] p-2">
-          {showBadge ? (<div className={`absolute right-0 top-0 ${brandColorBackground[theme]} rounded-bl px-2 py-1 text-xs text-white`}>{theme}</div> ) : ""}           
+        <div className="card-body max-w-[70%] p-2">
+          {showBadge ? (
+            <div
+              className={`absolute right-0 top-0 ${brandColorBackground[theme]} rounded-bl px-2 py-1 text-xs text-white`}
+            >
+              {theme}
+            </div>
+          ) : (
+            ""
+          )}
           <div className="card-title line-clamp-2 text-sm leading-none text-secondary-content md:text-base">
             {isExternal ? <MdOpenInNew className="inline" /> : ""}
             {title}

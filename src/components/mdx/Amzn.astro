@@ -1,15 +1,11 @@
 ---
-import type { AmazonItemsResponse } from "amazon-paapi"
-import { LinkCardLayout } from "@layouts/LinkCardLayout"
-// import { getAmazonProductInfo } from "functions/api/src/getAmazonProductInfoonProductInfo"
-
+import { AmznClientComponent } from "./AmznClientComponent"
 interface Props {
   asin: string
 }
 
 const { asin } = Astro.props
 
-// asinが10桁の英数字であるかどうかを判定する
 const isValidAsin = (asin: string): boolean => {
   return /^[A-Z0-9]{10}$/.test(asin)
 }
@@ -17,46 +13,6 @@ const isValidAsin = (asin: string): boolean => {
 if (!isValidAsin(asin)) {
   throw new Error("asin must be 10 characters of uppercase letters and numbers")
 }
-
-// dummy
-const productData = {
-  ItemsResult: {
-    Items: [
-      {
-        ItemInfo: {
-          Title: {
-            DisplayValue: "dummy title"
-          },
-          Features: {
-            DisplayValues: ["dummy description"]
-          }
-        },
-        Images: {
-          Primary: {
-            Large: {
-              URL: "https://dummyimage.com/600x400/000/fff"
-            },
-            Medium: {
-              URL: "https://dummyimage.com/600x400/000/fff"
-            }
-          }
-        },
-        DetailPageURL: "https://www.amazon.co.jp/dp/B08P4J5F5H"
-      }
-    ]
-  }
-} as AmazonItemsResponse
 ---
 
-<LinkCardLayout
-  title={productData.ItemsResult.Items[0].ItemInfo.Title?.DisplayValue ?? ""}
-  description={productData.ItemsResult.Items[0].ItemInfo.Features
-    ?.DisplayValues[0] ?? ""}
-  imageSrc={productData.ItemsResult.Items[0].Images?.Primary?.Large?.URL ??
-    productData.ItemsResult.Items[0].Images?.Primary?.Medium?.URL ??
-    ""}
-  siteName="Amazon.co.jp"
-  url={productData.ItemsResult.Items[0].DetailPageURL ??
-    `https://www.amazon.co.jp/dp/${asin}`}
-  theme="amazon"
-/>
+<AmznClientComponent asin={asin} client:only="react" />
