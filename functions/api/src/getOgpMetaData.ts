@@ -58,7 +58,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
       })
       .transform(httpResponse)
       .arrayBuffer()
-    // transformではなく抽出だが、一度Streamを動かさないと機能しないため、arrayBuffer()を使っている)
+    // transformではなく抽出だが、一度Streamを動かさないと機能しないため、arrayBuffer()を使っている
     return result
   } catch (error) {
     console.error(`Error on fetch: ${error}`)

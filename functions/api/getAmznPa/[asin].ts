@@ -34,7 +34,13 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     console.log(`hitted PAAPI KV cache`)
   }
 
-  const response = new Response(JSON.stringify(productData))
+  const response = new Response(JSON.stringify(productData), {
+    headers: {
+      "content-type": "application/json",
+      "cache-control": "public, max-age=86400",
+      "x-robots-tag": "noindex"
+    }
+  })
 
   return response
 }
