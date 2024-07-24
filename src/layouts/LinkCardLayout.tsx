@@ -24,7 +24,7 @@ export const LinkCardLayout: React.FC<Props> = ({
   const brandColorBorder: { [key: string]: string } = {
     amazon: "border-amazon border-3",
     rakuten: "border-rakuten border-3",
-    yahoo: "border-yahoo border-4",
+    yahoo: "border-yahoo border-3",
     singleLine: "border-base-300",
     default: "border-base-300"
   }
@@ -50,7 +50,7 @@ export const LinkCardLayout: React.FC<Props> = ({
             <div
               className={`absolute right-0 top-0 ${brandColorBackground[theme]} rounded-bl px-2 py-1 text-xs text-white`}
             >
-              {theme}
+              {theme.charAt(0).toUpperCase() + theme.slice(1)}
             </div>
           ) : (
             ""

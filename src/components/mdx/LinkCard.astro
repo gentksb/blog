@@ -1,6 +1,5 @@
 ---
-import { LinkCardLayout } from "@layouts/LinkCardLayout"
-import type { OgpData } from "@type/ogpData-type"
+import { LinkCardClientComponent } from "./LinkCardClientComponent"
 
 interface Props {
   url: string
@@ -18,20 +17,6 @@ try {
 } catch (error) {
   throw new Error("Invalid URL")
 }
-
-// dummy
-const ogpData = {
-  ogpTitle: "dummy title",
-  ogpSiteName: "dummy site name",
-  ogpDescription: "dummy description",
-  ogpImageUrl: "https://dummyimage.com/600x400/000/fff"
-} as OgpData
 ---
 
-<LinkCardLayout
-  title={ogpData.ogpTitle ?? url}
-  siteName={ogpData.ogpSiteName ?? new URL(url).hostname}
-  description={ogpData.ogpDescription ?? ""}
-  imageSrc={ogpData.ogpImageUrl}
-  url={linkUrl ?? url}
-/>
+<LinkCardClientComponent url={url} linkUrl={linkUrl} client:only="react" />
