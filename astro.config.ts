@@ -28,6 +28,7 @@ export default defineConfig({
       imports: [
         "./src/components/mdx/LinkCard.astro",
         "./src/components/mdx/Amzn.astro",
+        "./src/components/mdx/SimpleLinkCard.astro",
         {
           "./src/components/mdx/positive.tsx": ["PositiveBox"],
           "./src/components/mdx/negative.tsx": ["NegativeBox"]
