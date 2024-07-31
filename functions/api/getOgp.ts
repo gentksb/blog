@@ -1,4 +1,5 @@
-import { getOgpMetaData } from "./src/getOgpMetaData"
+import { getOgpMetaData } from "../src/getOgpMetaData"
+import { postLogToSlack } from "../src/postLogToSlack"
 
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   const searchParams = new URL(context.request.url).searchParams
@@ -18,7 +19,14 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     })
   }
 
-  const body = await getOgpMetaData(url)
+  const body = await getOgpMetaData(url).catch(async (e) => {
+    await postLogToSlack(
+      `${context.request.url} \n error:${e}`,
+      context.env.SLACK_WEBHOOK_URL
+    )
+    throw new Error(e)
+  })
+
   const bodyString = JSON.stringify(body)
   await context.env.OGP_DATASTORE.put(url, bodyString, {
     expirationTtl: 60 * 60 * 24 * 7 // 1 week

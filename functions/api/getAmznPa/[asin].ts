@@ -1,5 +1,6 @@
 import { AmazonItemsResponse } from "amazon-paapi"
-import { getAmazonProductInfo } from "../src/getAmazonProductInfo"
+import { getAmazonProductInfo } from "../../src/getAmazonProductInfo"
+import { postLogToSlack } from "../../src/postLogToSlack"
 
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   const asin = context.params.asin
@@ -7,6 +8,10 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     return /^[A-Z0-9]{10}$/.test(asin)
   }
   if (!asin || !isValidAsin || typeof asin !== "string") {
+    await postLogToSlack(
+      `${context.request.url} \n Invalid asin: ${asin}`,
+      context.env.SLACK_WEBHOOK_URL
+    )
     throw new Error("asin is't valid.")
   }
   const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = context.env
@@ -24,7 +29,13 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
         PAAPI_ACCESSKEY,
         PAAPI_SECRETKEY,
         PARTNER_TAG
-      )
+      ).catch(async (e) => {
+        await postLogToSlack(
+          `${context.request.url} \n error:${e}`,
+          context.env.SLACK_WEBHOOK_URL
+        )
+        throw new Error(e)
+      })
 
   if (!kvCache) {
     await context.env.PAAPI_DATASTORE.put(asin, JSON.stringify(productData), {

@@ -1,4 +1,4 @@
-import { ogImage } from "./src/ogImage"
+import { ogImage } from "../src/ogImage"
 
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   const imagePathSuffix = "/twitter-og.png"
