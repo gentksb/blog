@@ -59,6 +59,7 @@ export const ogImage = async (title: string, coverSrc: string) => {
               fontSize: "72px",
               lineHeight: "72px",
               textAlign: "center",
+              textWrap: "balance",
               fontFamily: fontName
             }}
           >
