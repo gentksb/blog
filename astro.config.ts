@@ -4,7 +4,6 @@ import sitemap from "@astrojs/sitemap"
 import AutoImport from "astro-auto-import"
 import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
-import partytown from "@astrojs/partytown"
 import icon from "astro-icon"
 
 // ローカル開発時は画像サービスをパススルー
@@ -49,11 +48,6 @@ export default defineConfig({
           "web",
           "open-in-new"
         ]
-      }
-    }),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"]
       }
     })
   ],
