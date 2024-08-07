@@ -9,7 +9,7 @@ export const PositiveBox: React.FC<Props> = ({ children }) => {
   return (
     <div className="p-2">
       <div className="flex flex-col items-center rounded-lg border bg-info/50 pt-2">
-        <MdMood className="h-8 w-8" />
+        <MdMood className="size-8" />
         <div>{children}</div>
       </div>
     </div>

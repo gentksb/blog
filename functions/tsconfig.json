@@ -4,7 +4,13 @@
     "module": "esnext",
     "moduleResolution": "Bundler",
     "lib": ["esnext"],
-    "types": ["@cloudflare/workers-types"]
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "types": ["@cloudflare/workers-types"],
+    "paths": {
+      "@type/*": ["../@types/*"]
+    }
   },
-  "include": ["./api/**/*", "./*", "../@types"]
+  "include": ["./api/**/*", "./post/**/*", "./src/**/*", "../@types/**/*"],
+  "files": ["../worker-configuration.d.ts"]
 }

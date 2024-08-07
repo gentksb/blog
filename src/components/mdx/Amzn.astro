@@ -1,0 +1,18 @@
+---
+import { AmznClientComponent } from "./AmznClientComponent"
+interface Props {
+  asin: string
+}
+
+const { asin } = Astro.props
+
+const isValidAsin = (asin: string): boolean => {
+  return /^[A-Z0-9]{10}$/.test(asin)
+}
+
+if (!isValidAsin(asin)) {
+  throw new Error("asin must be 10 characters of uppercase letters and numbers")
+}
+---
+
+<AmznClientComponent asin={asin} client:only="react" />

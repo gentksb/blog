@@ -1,19 +1,19 @@
-import { PROFILE } from "~/consts"
+// import { PROFILE } from "~/consts"
 
 export const MenuDropDown = () => (
   <div className="dropdown dropdown-end">
     <label tabIndex={0} className="btn btn-circle btn-ghost">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
+        className="size-5"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
       >
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="M4 6h16M4 12h16M4 18h7"
         ></path>
       </svg>
@@ -26,10 +26,7 @@ export const MenuDropDown = () => (
         <a href="/">Home</a>
       </li>
       <li>
-        <a
-          href={`https://twitter.com/${PROFILE.social.twitter}`}
-          target="_blank"
-        >
+        <a href={`https://twitter.com/gen_sobunya`} target="_blank">
           Twitter
         </a>
       </li>

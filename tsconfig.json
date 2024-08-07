@@ -1,7 +1,9 @@
 {
   "extends": "astro/tsconfigs/strict",
+  "exclude": ["node_modules", "dist", "./funcsions/**/*"],
   "compilerOptions": {
     "baseUrl": ".",
+    "moduleResolution": "Bundler",
     "strictNullChecks": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
@@ -12,7 +14,7 @@
       "@images/*": ["src/images/*"],
       "~/*": ["src/*"],
       "@type/*": ["@types/*"]
-    }
-  },
-  "exclude": ["./funcsions/**/*"]
+    },
+    "types": ["@cloudflare/vitest-pool-workers"]
+  }
 }

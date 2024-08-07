@@ -1,0 +1,22 @@
+---
+import { LinkCardClientComponent } from "./LinkCardClientComponent"
+
+interface Props {
+  url: string
+  linkUrl?: string
+}
+
+const { url, linkUrl } = Astro.props
+
+// check if the url is valid
+try {
+  new URL(url)
+  if (linkUrl) {
+    new URL(linkUrl)
+  }
+} catch (error) {
+  throw new Error("Invalid URL")
+}
+---
+
+<LinkCardClientComponent url={url} linkUrl={linkUrl} client:only="react" />

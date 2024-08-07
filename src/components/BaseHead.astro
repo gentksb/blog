@@ -54,24 +54,8 @@ const jsonLd = {
 }
 ---
 
-<!-- Google tag (gtag.js) -->
-<script
-  type="text/partytown"
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-S8PKGWKFS2"></script>
-<script type="text/partytown">
-  window.dataLayer = window.dataLayer || []
-  function gtag() {
-    dataLayer.push(arguments) // eslint-disable-line
-  }
-  gtag("js", new Date())
-
-  gtag("config", "G-S8PKGWKFS2")
-</script>
 <!-- Google Tag Manager -->
-<script>
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
+<script is:inline>
   ;(function (w, d, s, l, i) {
     w[l] = w[l] || []
     w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
@@ -83,8 +67,7 @@ const jsonLd = {
     f.parentNode.insertBefore(j, f)
   })(window, document, "script", "dataLayer", "GTM-MGHR8XJ")
 </script>
-
-<!-- Global Metadata -->
+<!-- End Google Tag Manager --><!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -117,4 +100,8 @@ const jsonLd = {
 <meta property="twitter:image" content={twitterImageUrl ?? metaImageUrl} />
 
 <!-- JSON-LD -->
-<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(jsonLd)}
+  is:inline
+/>

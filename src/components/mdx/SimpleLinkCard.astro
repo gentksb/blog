@@ -1,0 +1,29 @@
+---
+import { Icon } from "astro-icon/components"
+
+interface Props {
+  url: string
+  title?: string
+  linkUrl?: string
+}
+
+const { url, title, linkUrl } = Astro.props
+try {
+  new URL(url)
+  if (linkUrl) {
+    new URL(linkUrl)
+  }
+} catch (error) {
+  throw new Error("Invalid URL")
+}
+---
+
+<div
+  class="not-prose mx-2 rounded-md border border-secondary bg-base-100 px-2 py-1 shadow-sm"
+>
+  <a href={linkUrl ?? url}>
+    <p class="text-xs font-bold text-secondary">
+      <Icon name="mdi:web" class="mr-1 inline" />{title ?? url}
+    </p>
+  </a>
+</div>

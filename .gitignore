@@ -23,6 +23,7 @@ pnpm-debug.log*
 # cloudflare
 .dev.vars
 .wrangler/
+worker-configuration.d.ts
 
 # リダイレクトファイルはスクリプトでprebuild生成
 public/_redirects
