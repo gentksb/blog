@@ -5,6 +5,7 @@ import AutoImport from "astro-auto-import"
 import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
 import icon from "astro-icon"
+import pagefind from "astro-pagefind"
 
 // ローカル開発時は画像サービスをパススルー
 const imageServiceConfig = import.meta.env.DEV
@@ -49,8 +50,12 @@ export default defineConfig({
           "open-in-new"
         ]
       }
-    })
+    }),
+    pagefind()
   ],
+  build: {
+    format: "file"
+  },
   vite: {
     build: {
       minify: false

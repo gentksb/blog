@@ -2,6 +2,7 @@
 import { SITE_TITLE } from "~/consts"
 import { MenuDropDown } from "./jsx/dropdown"
 import Social from "./Social.astro"
+import PageFind from "./PageFind.astro"
 ---
 
 <header>
@@ -12,7 +13,7 @@ import Social from "./Social.astro"
           >{SITE_TITLE}</a
         >
       </div>
-      <div class="navbar-center"></div>
+      <div class="navbar-center"><PageFind /></div>
       <div class="navbar-end">
         <div class="invisible md:visible">
           <Social />

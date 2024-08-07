@@ -32,6 +32,7 @@
     "astro": "^4.13.1",
     "astro-auto-import": "^0.4.2",
     "astro-icon": "^1.1.0",
+    "astro-pagefind": "^1.6.0",
     "aws4fetch": "^1.0.19",
     "daisyui": "^4.12.10",
     "date-fns-tz": "^3.1.3",
