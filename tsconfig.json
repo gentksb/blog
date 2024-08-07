@@ -3,6 +3,7 @@
   "exclude": ["node_modules", "dist", "./funcsions/**/*"],
   "compilerOptions": {
     "baseUrl": ".",
+    "moduleResolution": "Bundler",
     "strictNullChecks": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
