@@ -16,7 +16,7 @@ const { cover, title, date, tags } = Astro.props
       formats={["webp"]}
       quality={30}
       widths={[640, 768]}
-      class="h-full w-full object-cover"
+      class="size-full object-cover"
       loading="eager"
       fallbackFormat="jpg"
     />
@@ -25,7 +25,7 @@ const { cover, title, date, tags } = Astro.props
   <div class="hero-content flex-col text-center">
     <div class="max-w-full">
       <h1
-        class="mb-5 max-w-4xl text-xl font-bold text-neutral-content md:text-3xl"
+        class="mb-5 max-w-4xl text-balance text-xl font-bold text-neutral-content md:text-3xl"
       >
         {title}
       </h1>

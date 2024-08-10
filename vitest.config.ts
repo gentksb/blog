@@ -1,5 +1,30 @@
 /// <reference types="vitest" />
 
-import { getViteConfig } from "astro/config"
+// import { getViteConfig } from "astro/config"
+import { defineWorkersConfig } from "@cloudflare/vitest-pool-workers/config"
+import * as path from "path"
 
-export default getViteConfig({})
+// const astroConfig = getViteConfig({})
+
+const workersConfig = defineWorkersConfig({
+  test: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+      "@lib": path.resolve(__dirname, "./src/lib"),
+      "@type": path.resolve(__dirname, "./@types")
+    },
+    poolOptions: {
+      workers: {
+        wrangler: { configPath: "./wrangler.toml" },
+        miniflare: {
+          compatibilityDate: "2024-05-13",
+          compatibilityFlags: ["nodejs_compat"]
+        }
+      }
+    }
+  }
+})
+
+const config = { ...workersConfig }
+
+export default config

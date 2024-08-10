@@ -20,40 +20,30 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
+      - uses: oven-sh/setup-bun@v2
         with:
-          version: 8
-          run_install: false
-
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          bun-version: latest
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install
 
       - name: Run Lint
-        run: pnpm run lint
+        run: bun run lint
 
       - name: Run Tests
-        run: pnpm run test
+        run: |
+          touch .dev.vars
+          echo "PARTNER_TAG=$PARTNER_TAG" >> .dev.vars
+          echo "PAAPI_SECRETKEY=$PAAPI_SECRETKEY" >> .dev.vars
+          echo "PAAPI_ACCESSKEY=$PAAPI_ACCESSKEY" >> .dev.vars
+          bun run test
         env:
           PARTNER_TAG: ${{ secrets.PARTNER_TAG }}
           PAAPI_SECRETKEY: ${{ secrets.PAAPI_SECRETKEY }}

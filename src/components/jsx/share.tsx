@@ -45,14 +45,14 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
         <button
           className="btn btn-circle text-base"
           aria-label="share this page"
-          onClick={() => {
-            kickShareApi({
+          onClick={async () => {
+            await kickShareApi({
               title: shareTitle,
               url: url
             })
           }}
         >
-          <MdShare className="h-[32px] w-[32px]" />
+          <MdShare className="size-[32px]" />
         </button>
       </div>
       <ButtonWrapper>
