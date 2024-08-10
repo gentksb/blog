@@ -13,6 +13,19 @@ import {
   MdxStrong
 } from "@components/mdx/mdxReplacer"
 import MdxPicture from "@components/mdx/MdxPicture.astro"
+// descriptionレンダリング用
+import { experimental_AstroContainer as AstroContainer } from "astro/container"
+import reactRenderer from "@astrojs/react/server.js"
+import mdxRenderer from "astro/jsx/server.js"
+import sanitizeHtml from "sanitize-html"
+
+const container = await AstroContainer.create()
+container.addServerRenderer({ name: "mdx", renderer: mdxRenderer })
+container.addServerRenderer({ name: "react", renderer: reactRenderer })
+container.addClientRenderer({
+  name: "@astrojs/react",
+  entrypoint: "@astrojs/react/client.js"
+})
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getCollection("post")
@@ -25,9 +38,15 @@ type Props = CollectionEntry<"post">
 
 const post = Astro.props
 const { Content } = await post.render()
+
+// descriptionレンダリング
+const contentString = await container.renderToString(Content)
+const description = sanitizeHtml(contentString, {
+  allowedTags: []
+}).slice(0, 100)
 ---
 
-<BlogPost {...post} description="">
+<BlogPost {...post} description={description}>
   <Content
     components={{
       h2: MdxH2,
