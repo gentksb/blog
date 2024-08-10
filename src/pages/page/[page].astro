@@ -1,8 +1,4 @@
 ---
-// 記事一覧はプリレンダリングする
-// 事前生成すると、コンテンツコレクションを全てメモリ上に保持することになり、Workersの制限上問題になる可能性が高い
-export const prerender = true
-
 import type { GetStaticPaths, Page } from "astro"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
 import { pageSize } from "~/config"
