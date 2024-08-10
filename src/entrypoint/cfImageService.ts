@@ -24,13 +24,15 @@ const service: ExternalImageService = {
 
   getURL(options: ImageTransform): string {
     const { src: imageSrc, width, height, format, quality = 80, fit } = options
+    // "jpg" to "jpeg" on format
+    const cfFormat = format === "jpg" ? "jpeg" : format
 
     // Cloudflare Image Resizingのオプションを構築
     const cfOptions: string[] = []
 
     if (width) cfOptions.push(`width=${width}`)
     if (height) cfOptions.push(`height=${height}`)
-    if (format) cfOptions.push(`format=${format}`)
+    if (format) cfOptions.push(`format=${cfFormat}`)
     if (quality) cfOptions.push(`quality=${quality}`)
     if (fit) cfOptions.push(`fit=${fit}`)
 
