@@ -29,7 +29,7 @@ const { cover, title, date, tags } = Astro.props
       >
         {title}
       </h1>
-      <div class="grid grid-flow-col justify-center gap-2">
+      <div class="grid grid-flow-col justify-center gap-2" data-pagefind-ignore>
         {
           tags.map((tag) => (
             <span class="badge badge-accent badge-outline md:text-lg">
@@ -38,12 +38,12 @@ const { cover, title, date, tags } = Astro.props
           ))
         }
       </div>
-      <div class="mb-5 text-neutral-content">
+      <div class="mb-5 text-neutral-content" data-pagefind-ignore>
         <FormattedDate date={date} />
       </div>
     </div>
   </div>
-  <div class="ml-auto mt-auto text-xs text-base-300">
+  <div class="ml-auto mt-auto text-xs text-base-300" data-pagefind-ignore>
     記事内にアフェリエイトリンクを含む場合があります
   </div>
 </div>

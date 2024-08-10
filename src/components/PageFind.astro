@@ -2,7 +2,16 @@
 import Search from "astro-pagefind/components/Search"
 ---
 
-<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+<Search
+  id="search"
+  className="pagefind-ui"
+  uiOptions={{
+    showImages: false,
+    translations: {
+      placeholder: "全記事から検索"
+    }
+  }}
+/>
 
 <style is:global>
   nav {
