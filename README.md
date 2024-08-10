@@ -18,7 +18,6 @@ At first, run `npx wrangler login` before start local environment.
 
 ```bash
 # dev.vars
-# .env
   PAAPI_ACCESSKEY
   PAAPI_SECRETKEY
   PARTNER_TAG
