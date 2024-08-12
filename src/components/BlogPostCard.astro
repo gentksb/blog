@@ -26,12 +26,13 @@ const post = Astro.props
         formats={["webp"]}
         widths={[330]}
         quality={50}
-        fallbackFormat="jpg"
+        fallbackFormat="jpeg"
       />
     </div>
     <div class="card-body">
       <h4
         class="text-pretty text-sm font-bold leading-tight md:text-base lg:leading-tight"
+        transition:name={`title-${post.slug}`}
       >
         {post.data.title}
       </h4>

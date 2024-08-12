@@ -3,9 +3,9 @@ import type { CollectionEntry } from "astro:content"
 import FormattedDate from "./FormattedDate.astro"
 import { Picture } from "astro:assets"
 import dummy from "@images/dummy.jpg"
-type Props = CollectionEntry<"post">["data"]
+type Props = CollectionEntry<"post">["data"] & { slug: string }
 
-const { cover, title, date, tags } = Astro.props
+const { cover, title, date, tags, slug } = Astro.props
 ---
 
 <div class="hero">
@@ -18,7 +18,7 @@ const { cover, title, date, tags } = Astro.props
       widths={[640, 768]}
       class="size-full object-cover"
       loading="eager"
-      fallbackFormat="jpg"
+      fallbackFormat="jpeg"
     />
   </div>
   <div class="hero-overlay bg-black/60"></div>
@@ -26,6 +26,7 @@ const { cover, title, date, tags } = Astro.props
     <div class="max-w-full">
       <h1
         class="mb-5 max-w-4xl text-balance text-xl font-bold text-neutral-content md:text-3xl"
+        transition:name={`title-${slug}`}
       >
         {title}
       </h1>

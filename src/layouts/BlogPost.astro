@@ -30,7 +30,13 @@ const ogpStaticImage = cover
   twitterImage={twitterOgpImageUrl}
 >
   <article data-pagefind-body>
-    <BlogTitle title={title} cover={cover} date={date} tags={tags} />
+    <BlogTitle
+      title={title}
+      cover={cover}
+      date={date}
+      tags={tags}
+      slug={slug}
+    />
     <div class="mt-4 w-full">
       <div
         class="prose prose-sm mx-auto max-w-4xl text-base-content md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
