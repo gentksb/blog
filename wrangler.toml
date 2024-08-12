@@ -9,3 +9,6 @@ kv_namespaces = [
   { binding = "PAAPI_DATASTORE", id = "64fddb5e468e4954a9e2a2ee07d9b709", preview_id = "701470abdcbd43ae9c3d7a586684acf4" }
 ]
 
+[vars]
+BUN_VERSION = 1.1.20
+NODE_VERSION = 20.15
