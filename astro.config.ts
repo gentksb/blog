@@ -7,16 +7,20 @@ import react from "@astrojs/react"
 import icon from "astro-icon"
 import pagefind from "astro-pagefind"
 
+console.log(
+  `meta CF_PAGES: ${import.meta.env.CF_PAGES}\nprocess.env.CF_PAGES: ${process.env.CF_PAGES}`
+)
+
 // ローカル開発時は画像サービスをパススルー
 const imageServiceConfig =
-  import.meta.env.CF_PAGES !== "1"
-    ? passthroughImageService()
-    : {
+  import.meta.env.CF_PAGES === 1
+    ? {
         entrypoint: "./src/entrypoint/cfImageService",
         config: {
           maxWidth: 800
         }
       }
+    : passthroughImageService()
 
 // https://astro.build/config
 export default defineConfig({
