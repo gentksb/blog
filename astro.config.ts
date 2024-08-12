@@ -8,14 +8,15 @@ import icon from "astro-icon"
 import pagefind from "astro-pagefind"
 
 // ローカル開発時は画像サービスをパススルー
-const imageServiceConfig = import.meta.env.DEV
-  ? passthroughImageService()
-  : {
-      entrypoint: "./src/entrypoint/cfImageService",
-      config: {
-        maxWidth: 800
+const imageServiceConfig =
+  import.meta.env.CF_PAGES !== "1"
+    ? passthroughImageService()
+    : {
+        entrypoint: "./src/entrypoint/cfImageService",
+        config: {
+          maxWidth: 800
+        }
       }
-    }
 
 // https://astro.build/config
 export default defineConfig({

@@ -27,6 +27,7 @@ const post = Astro.props
         widths={[330]}
         quality={50}
         fallbackFormat="jpeg"
+        transition:name=`cover-${post.slug}`
       />
     </div>
     <div class="card-body">
