@@ -78,6 +78,6 @@
     "textlint-rule-preset-jtf-style": "^2.3.14",
     "typescript": "^5.5.4",
     "vitest": "1.5",
-    "wrangler": "^3.67.1"
+    "wrangler": "^3.70.0"
   }
 }
