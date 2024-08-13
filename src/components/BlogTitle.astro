@@ -9,7 +9,7 @@ const { cover, title, date, tags, slug } = Astro.props
 ---
 
 <div class="hero">
-  <div class="aspect-video w-full">
+  <div class="z-0 aspect-video w-full">
     <Picture
       src={cover ?? dummy}
       alt=""
@@ -19,10 +19,11 @@ const { cover, title, date, tags, slug } = Astro.props
       class="size-full object-cover"
       loading="eager"
       fallbackFormat="jpeg"
+      transition:name=`cover-${slug}`
     />
   </div>
-  <div class="hero-overlay bg-black/60"></div>
-  <div class="hero-content flex-col text-center">
+  <div class="hero-overlay z-10 bg-black/60"></div>
+  <div class="hero-content z-20 flex-col text-center">
     <div class="max-w-full">
       <h1
         class="mb-5 max-w-4xl text-balance text-xl font-bold text-neutral-content md:text-3xl"
