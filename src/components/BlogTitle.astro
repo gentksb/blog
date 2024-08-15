@@ -5,7 +5,7 @@ import { Picture } from "astro:assets"
 import dummy from "@images/dummy.jpg"
 type Props = CollectionEntry<"post">["data"] & { slug: string }
 
-const { cover, title, date, tags, slug } = Astro.props
+const { cover, title, date, tags } = Astro.props
 ---
 
 <div class="hero">
@@ -19,7 +19,6 @@ const { cover, title, date, tags, slug } = Astro.props
       class="size-full object-cover"
       loading="eager"
       fallbackFormat="jpeg"
-      transition:name=`cover-${slug}`
     />
   </div>
   <div class="hero-overlay z-10 bg-black/60"></div>
@@ -27,7 +26,6 @@ const { cover, title, date, tags, slug } = Astro.props
     <div class="max-w-full">
       <h1
         class="mb-5 max-w-4xl text-balance text-xl font-bold text-neutral-content md:text-3xl"
-        transition:name={`title-${slug}`}
       >
         {title}
       </h1>

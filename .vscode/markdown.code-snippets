@@ -17,7 +17,7 @@
   "Link MDX": {
     "prefix": "linkbox",
     "scope": "markdown",
-    "body": "<LinkBox url=\"${1:url}\" ${2:isAmazonLink} ${3:linkurl=\"\"} />",
+    "body": "<LinkCard url=\"${1:url}\" ${3:linkurl=\"\"} />",
     "description": "template of LinxBox MDX component"
   },
   "negaposi": {
