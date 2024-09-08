@@ -8,10 +8,11 @@ import icon from "astro-icon"
 import pagefind from "astro-pagefind"
 
 console.log(`process.env.CF_PAGES: ${process.env.CF_PAGES}`)
+console.log(`process.env.CF_PAGES_BRANCH: ${process.env.CF_PAGES_BRANCH}`)
 
 // ローカル開発時は画像サービスをパススルー
 const imageServiceConfig =
-  process.env.CF_PAGES === "1"
+  process.env.CF_PAGES === "1" && process.env.CF_PAGES_BRANCH === "master"
     ? {
         entrypoint: "./src/entrypoint/cfImageService",
         config: {
