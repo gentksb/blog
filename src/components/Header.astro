@@ -15,10 +15,10 @@ import PageFind from "./PageFind.astro"
       </div>
       <div class="navbar-end">
         <div class="w-full"><PageFind /></div>
-        <div class="invisible w-0 md:visible md:w-full">
+        <div class="hidden w-0 md:visible md:w-full">
           <Social />
         </div>
-        <div class="visible md:invisible md:w-0">
+        <div class="visible md:hidden md:w-0">
           <MenuDropDown client:only="react" />
         </div>
       </div>
