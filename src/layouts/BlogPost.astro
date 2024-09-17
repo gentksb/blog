@@ -18,7 +18,7 @@ const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
 
 // ogp画像はURLが変更されないようにオリジナルを取得する
 const ogpStaticImage = cover
-  ? await getImage({ src: cover, format: "jpg" })
+  ? await getImage({ src: cover, format: "jpeg" })
   : undefined
 ---
 
