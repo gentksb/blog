@@ -56,8 +56,5 @@ export default defineConfig({
       }
     }),
     pagefind()
-  ],
-  build: {
-    format: "file"
-  }
+  ]
 })
