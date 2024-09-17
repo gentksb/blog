@@ -24,7 +24,7 @@ export async function GET() {
         const { Content } = await post.render()
         const contentString = await container.renderToString(Content)
         return {
-          title: `<![CDATA[${post.data.title}]]>`,
+          title: `${post.data.title}`,
           pubDate: post.data.date,
           link: `/post/${post.slug}/`,
           categories: post.data.tags,
