@@ -17,7 +17,13 @@
   "Link MDX": {
     "prefix": "linkbox",
     "scope": "markdown",
-    "body": "<LinkCard url=\"${1:url}\" ${3:linkurl=\"\"} />",
+    "body": "<LinkCard url=\"${1:url}\" ${2:linkurl?=\"\"} />",
+    "description": "template of LinxBox MDX component"
+  },
+  "Simple Link liner box": {
+    "prefix": "simplelink",
+    "scope": "markdown",
+    "body": "<SimpleLinkCard url=\"${1:url}\" ${2:linkurl?=\"\"} ${3:title?=\"\"} />",
     "description": "template of LinxBox MDX component"
   },
   "Amazon": {
@@ -43,11 +49,5 @@
       "</NegativeBox>"
     ],
     "description": "template of Negative/Positive MDX component"
-  },
-  "override image": {
-    "prefix": "image",
-    "scope": "markdown",
-    "body": "![${1:alt}](./${2:path})",
-    "description": "override image snippet for local image"
   }
 }
