@@ -17,6 +17,7 @@ const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
 
 // ogp画像はURLが変更されないようにオリジナルを取得する
+
 const ogpStaticImage = cover
   ? await getImage({ src: cover, format: "jpg" })
   : undefined
@@ -25,7 +26,7 @@ const ogpStaticImage = cover
 <Layout
   title={`${title} | ${SITE_TITLE}`}
   datePublished={publishedDate}
-  image={ogpStaticImage?.src}
+  image={ogpStaticImage?.rawOptions.src.src ?? ogpStaticImage?.src}
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
 >
