@@ -13,7 +13,7 @@ export const ogImage = async (title: string, coverSrc: string) => {
     throw new Error("font resource not found")
   }
   const fontData = await (await fetch(resource[1])).arrayBuffer()
-  console.log(resource)
+  console.log("Generate OG Image", `Title: ${title}`, `CoverSrc:${coverSrc}`)
 
   return new ImageResponse(
     (
@@ -59,7 +59,7 @@ export const ogImage = async (title: string, coverSrc: string) => {
               fontSize: "72px",
               lineHeight: "72px",
               textAlign: "center",
-              textWrap: "balance",
+              textWrap: "pretty",
               fontFamily: fontName
             }}
           >

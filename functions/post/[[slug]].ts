@@ -1,4 +1,5 @@
 import { ogImage } from "../src/ogImage"
+import { postLogToSlack } from "../src/postLogToSlack"
 
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   const imagePathSuffix = "/twitter-og.png"
@@ -34,12 +35,17 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     .transform(response)
     .arrayBuffer()
 
-  const imageResponse = await ogImage(
-    postMetaData.title.replace(" | 幻想サイクル", ""),
-    postMetaData.imageUrl
-      ? postMetaData.imageUrl
-      : "https://blog.gensobunya.net/image/logo.jpg"
-  )
+  try {
+    const imageResponse = await ogImage(
+      postMetaData.title.replace(" | 幻想サイクル", ""),
+      postMetaData.imageUrl
+        ? postMetaData.imageUrl
+        : "https://blog.gensobunya.net/image/logo.jpg"
+    )
 
-  return imageResponse
+    return imageResponse
+  } catch (error) {
+    await postLogToSlack(error, context.env.SLACK_WEBHOOK_URL)
+    return new Response(null, { status: 500, statusText: "internal error" })
+  }
 }

@@ -21,9 +21,15 @@ const imageServiceConfig =
       }
     : passthroughImageService()
 
+// プロダクションブランチのみ固定のURLをsiteに設定する
+const siteUrl =
+  process.env.CF_PAGES_BRANCH === "master"
+    ? "https://blog.gensobunya.net/"
+    : (process.env.CF_PAGES_URL ?? "https://blog.gensobunya.net/")
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://blog.gensobunya.net/",
+  site: siteUrl,
   image: {
     service: imageServiceConfig
   },
