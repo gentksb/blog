@@ -43,7 +43,7 @@ export const LinkCardClientComponent: React.FC<{
     <LinkCardLayout
       title={data.ogpTitle ?? ""}
       description={data.ogpDescription ?? ""}
-      imageSrc={data.ogpImageUrl ?? ""}
+      imageSrc={data.ogpImageUrl}
       siteName={data.ogpSiteName ?? ""}
       url={linkUrl ?? url}
       theme={brandColorTheme}

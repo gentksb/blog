@@ -68,14 +68,18 @@ export const LinkCardLayout: React.FC<Props> = ({
           </div>
         </div>
         <div className="max-h-28 max-w-[30%] shrink md:max-h-36">
-          <figure className="size-full object-contain">
-            <img
-              src={imageSrc}
-              className="h-full"
-              alt="リンク先カバー画像"
-              loading="lazy"
-            />
-          </figure>
+          {imageSrc === undefined ? (
+            ""
+          ) : (
+            <figure className="size-full object-contain">
+              <img
+                src={imageSrc}
+                className="h-full"
+                alt="リンク先カバー画像"
+                loading="lazy"
+              />
+            </figure>
+          )}
         </div>
       </div>
     </a>
