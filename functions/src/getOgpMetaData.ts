@@ -13,10 +13,10 @@ export const getOgpMetaData = async (queryUrl: string) => {
 
 const parseOgpTags = async (href: string): Promise<OgpData> => {
   const result: OgpData = {
-    ogpTitle: "",
-    ogpImageUrl: "",
-    ogpDescription: "",
-    ogpSiteName: "",
+    ogpTitle: undefined,
+    ogpImageUrl: undefined,
+    ogpDescription: undefined,
+    ogpSiteName: undefined,
     pageurl: href,
     ok: false
   }
@@ -35,29 +35,52 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
 
     result.ok = true
     const rewriter = new HTMLRewriter()
-    await rewriter
-      .on("meta", {
-        element(element) {
-          switch (element.getAttribute("property")) {
-            case "og:title":
-              result.ogpTitle = element.getAttribute("content") ?? ""
-              break
-            case "og:description":
-              result.ogpDescription = element.getAttribute("content") ?? ""
-              break
-            case "og:image":
-              result.ogpImageUrl = element.getAttribute("content") ?? ""
-              break
-            case "og:site_name":
-              result.ogpSiteName = element.getAttribute("content") ?? ""
-              break
-            default:
-              break
-          }
+    rewriter.on("meta", {
+      element(element) {
+        switch (element.getAttribute("property")) {
+          case "og:title":
+            result.ogpTitle = element.getAttribute("content")
+            break
+          case "og:description":
+            result.ogpDescription = element.getAttribute("content")
+            break
+          case "og:image":
+            result.ogpImageUrl = element.getAttribute("content")
+            break
+          case "og:site_name":
+            result.ogpSiteName = element.getAttribute("content")
+            break
+          default:
+            break
         }
-      })
-      .transform(httpResponse)
-      .arrayBuffer()
+      }
+    })
+    rewriter.on("title", {
+      text(text) {
+        if (!result.ogpTitle || "") {
+          console.log("og:title is not found. Replace with title tag.")
+          result.ogpTitle = text.text ?? ""
+        }
+      }
+    })
+    rewriter.on("meta", {
+      element(element) {
+        switch (element.getAttribute("name")) {
+          case "description":
+            if (!result.ogpDescription || "") {
+              console.log(
+                "og:description is not found. Replace with description tag."
+              )
+              result.ogpDescription = element.getAttribute("content")
+            }
+            break
+          default:
+            break
+        }
+      }
+    })
+
+    await rewriter.transform(httpResponse).arrayBuffer()
     // transformではなく抽出だが、一度Streamを動かさないと機能しないため、arrayBuffer()を使っている
     return result
   } catch (error) {
