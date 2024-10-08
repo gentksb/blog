@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.8.3",
-    "@cloudflare/vitest-pool-workers": "^0.5.9",
+    "@cloudflare/vitest-pool-workers": "^0.5.15",
     "@cloudflare/workers-types": "^4.20240806.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/bun": "^1.1.6",
@@ -78,6 +78,6 @@
     "textlint-rule-preset-jtf-style": "^2.3.14",
     "typescript": "^5.5.4",
     "vitest": "2.0.5",
-    "wrangler": "^3.78.9"
+    "wrangler": "^3.80.1"
   }
 }

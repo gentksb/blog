@@ -12,6 +12,10 @@ export const normalLinkDataExpectedResponse: OgpData = {
   ok: true
 }
 
+// Todo: テストパターン追加「og:titleとtitleタグ情報が異なる」
+// Todo: テストパターン追加「og:titleがなくtitleタグ情報で出力」
+// 上記2つのdescription版
+
 export const testAsin = "B004N3APGO"
 
 // A part of AmazonItemsResponse Type
@@ -25,7 +29,7 @@ export const amazonLinkDataExpectedResponse = {
         ItemInfo: {
           Title: {
             DisplayValue:
-              "Amazonギフトカード (Eメールタイプ)テキストメッセージにも送信可 - Amazonベーシック",
+              "Amazonギフトカード(Eメール送信,携帯電話番号にも送信可)-お礼、お祝い(Amazonベーシック)",
             Label: "Title",
             Locale: "ja_JP"
           }
