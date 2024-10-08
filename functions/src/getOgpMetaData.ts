@@ -35,6 +35,9 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
 
     result.ok = true
     const rewriter = new HTMLRewriter()
+    // rewriter.onしたハンドラーの順序性は保証されているが、解析先のWEBサイトにおいてmetaタグの後にtitleタグが来る保証
+    // およびog:xxxとdescriptionのmetaタグ順序は保証されないため、titleとdescriptionはデータが無い場合の書き込み、ogで上書きされることで
+    // 冪等性を担保している
     rewriter.on("meta", {
       element(element) {
         switch (element.getAttribute("property")) {
@@ -58,7 +61,6 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     rewriter.on("title", {
       text(text) {
         if (!result.ogpTitle || "") {
-          console.log("og:title is not found. Replace with title tag.")
           result.ogpTitle = text.text ?? ""
         }
       }
@@ -68,9 +70,6 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
         switch (element.getAttribute("name")) {
           case "description":
             if (!result.ogpDescription || "") {
-              console.log(
-                "og:description is not found. Replace with description tag."
-              )
               result.ogpDescription = element.getAttribute("content")
             }
             break
