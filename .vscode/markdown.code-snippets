@@ -29,7 +29,7 @@
   "Amazon": {
     "prefix": "amzn",
     "scope": "markdown",
-    "body": "<Amzn asin=\"${1:url}\" />",
+    "body": "<Amzn asin=\"${1:asin}\" />",
     "description": "template of Amzn assosiate MDX component"
   },
   "negaposi": {
