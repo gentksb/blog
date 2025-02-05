@@ -1,0 +1,63 @@
+---
+title: "TrainingPeaks VirtualはZwiftの対抗馬になるか"
+date: 2025-02-06
+draft: false
+tags: ["REVIEW"]
+cover: "./TPV.png"
+---
+
+## TrainingPeaks Virtualを試してみた
+
+<LinkCard url="https://blog.gensobunya.net/post/2025/02/qz-virtual-shifting-in-zwift/" />
+
+[先の記事](/post/2025/02/qz-virtual-shifting-in-zwift/)で、理論上はどのバーチャルサイクリングでも仮想シフトはできるはずと考えていたところで、**TrainingPeaks Virtual(旧indieVeloを買収)は、キーボードを使ったバーチャルシフティングに対応**していることがわかった。
+
+現在、**ベータサービス中で無料**ということもあり、TCXSSローラーバイク化にあたって、影の第1選択肢となっていた。
+
+Zwiftの仮想シフト記事で書いた通り、[シフター代わりの3キーボード](https://amzn.to/4hpPSMh)を買ったのも、Training Peaks Virtual（以下TPV）でシフティング操作にあたる"+","-"キーを割り当て、余ったキーはスクリーンショットにしてみたというのが発端。
+
+<Amzn asin="B0CQN6BGMF" />
+
+Zwiftでのペースパートナーにあたる、24365ペーサーとのライドで仮想シフトをお試ししてみた。
+
+![透過UIがベースになっている以外はほぼZwift](./TPV.png)
+
+TPVの画面は、Indirveloのチームが元Zwiftメンバーということもあって、ほぼZwiftに近い。
+
+設定項目が多い点は、Zwiftの弱点を補強しているともいえるが、メニュー画面が正直ごちゃごちゃしているなという感想。
+
+肝心の**仮想シフト機能は、24段変速で驚くほど問題なく機能した**。QZアプリも使わないので、キーボードをPCに繋ぐだけのシンプル構成。
+
+![右上のギアマークが現在の仮想ギア](./virtualShiftInTPV.png)
+
+変速による負荷の上がり方は調整なしのQZより自然な印象。ギア1枚が仮想シフト1段階と考えておおむね違和感がない。それなりに作りこんでいる機能のようだ。ただ、タイムラグはZwift+QZと同様に、1秒から2秒くらいかかる。
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">TrainingPeaks Virtual (indieVelo) ならZwift Cog/shift がなくてもバーチャルシフティングできると分かったので、しばらくこれでいく <a href="https://t.co/lycZkL9bB8">pic.twitter.com/lycZkL9bB8</a></p>&mdash; ゲン (@gen_sobunya) <a href="https://twitter.com/gen_sobunya/status/1862781260223127701?ref_src=twsrc%5Etfw">November 30, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+TPV仮想シフト設定の画面では、『ネイティブ』『レガシー』という項目があり、Saris H3は後者のレガシー設定で動作させる必要があるのだが、おそらくネイティブ設定が使えるトレーナーは、Zwiftでもバーチャルシフティングに対応するトレーナーなのだろうと想像がつく。ネイティブ対応しているトレーナーであれば、タイムラグの問題は起こらないのかもしれない。
+
+### TrainingPeaks Virtualの課題
+
+仮想シフトの実験としては、自分の乗り方（ベース走とワークアウト）では問題なく対応できそうだったのだが、それとは別に困った問題が起きた。
+
+ベータゆえに**起動や走行中にハングアップ**することがあったり、TrainingPeaksの名を冠しながら、**ワークアウトの種類が少なく、質も悪い**こと。何よりも、TPVのログが**Garmin Connectに転送できず**、Fitファイルをアップロードしても**Garminの各種ステータスに反映されない**ことだ。
+
+調べてみると、Garmin Connectの連携は、[特定のバーチャルサイクリングアプリに限定](https://support.garmin.com/en-US/?faq=apva7Th82K6Mm0zY4shzD6)されていた。Tacx Training™ app, Zwift, ROUVY, TrainerRoad以外はトレーニングステータスや有酸素効果が出ないようだ。
+
+特に後者2つは深刻で、Garmin依存している自分にとっては、**疲労度や負荷管理ができなくなってしまうのは大問題**。ワークアウトはカスタムワークアウトで代替できなくはないが、ちゃんと出し切れる設定のワークアウトメニューを使いたいし、何よりそこに自分のリソースを割きたくないというのが本音。
+
+これらの問題から、**Zwiftでなんとか（安く）仮想シフトをできるようにする**という方針に切り替わってQZアプリ+Zwiftに行きついたというわけだ。
+
+## まとめ
+
+TPVのバーチャルライドプラットフォームとしての機能は、悪くなかった。
+
+Zwiftの利用料金が高くなったことによる移住もある程度進むし、UIが近いこともあってユーザー側としても移行しやすいだろう（メニュー操作を除く）。
+
+ただ、TrainingPeaksの名前に付随している期待は、トレーニングの管理機能にあるという人が少なくないだろうと思われる。そもそも、トレーニングを積むようなサイクリストには浸透している名前だが、ツーリングや日常サイクリングを楽しむ層にはあまり馴染みがないのではないか。
+
+そんな期待の中で、Garminのログと統合できないというのは、Garmin Connectを主とするユーザーにとっては致命的な問題だ。ライフログ込みで考えている人にとっては以降は厳しいだろう。
+
+逆に、TrainingPeaksを主たる管理に使っていると想定される、シリアスサイクリスト層であれば、実走行のログもTrainingPeaksに既に連携されているだろうし、ログデータに関しては問題なくとも、今度はトレーニングメニューの貧弱さが問題となる。
+
+ベータの時点であまり評価しすぎるのはかわいそうだが、現状では帯に短し襷に長し、期待しているユーザー層と機能がかみ合っていない状態に感じた。
