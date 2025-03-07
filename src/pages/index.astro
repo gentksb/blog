@@ -5,18 +5,21 @@ import { timeOrderPosts } from "@lib/timeOrderPosts"
 import { pageSize } from "~/config"
 import Paginate from "@components/Paginate.astro"
 import About from "@components/About.astro"
-import Hero from "@components/Hero.astro"
 
 const posts = timeOrderPosts.slice(0, pageSize)
 ---
 
 <Layout title="幻想サイクル">
-  <Hero />
-  <section>
-    <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
+  <section class="mx-auto max-w-xl mb-12">
+    <h1 class="mb-8 text-3xl font-bold">最新の記事</h1>
+    <div class="space-y-8">
       {posts.map((post) => <BlogPostCard {...post} />)}
     </div>
   </section>
+
   <Paginate currentPage={1} totalPages={5} />
-  <About />
+
+  <section class="mt-16">
+    <About />
+  </section>
 </Layout>

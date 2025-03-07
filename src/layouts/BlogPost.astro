@@ -1,7 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content"
 import Layout from "./Layout.astro"
-import BlogTitle from "@components/BlogTitle.astro"
 import { formatInTimeZone } from "date-fns-tz"
 import RelatedPosts from "@components/RelatedPosts.astro"
 import { SITE_TITLE } from "~/consts"
@@ -12,11 +11,8 @@ type Props = CollectionEntry<"post"> & { description: string }
 
 const { title, date, cover, tags } = Astro.props.data
 const { slug, description } = Astro.props
-// cloudflare上ではタイムゾーンが日本時間になる保証がないため、明示的に指定する
 const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
-
-// ogp画像はURLが変更されないようにオリジナルを取得する
 
 const ogpStaticImage = cover
   ? await getImage({ src: cover, format: "jpg" })
@@ -26,42 +22,36 @@ const ogpStaticImage = cover
 <Layout
   title={`${title} | ${SITE_TITLE}`}
   datePublished={publishedDate}
-  image={ogpStaticImage?.rawOptions.src.src ?? ogpStaticImage?.src}
+  image={ogpStaticImage?.src}
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
 >
-  <article data-pagefind-body>
-    <BlogTitle
-      title={title}
-      cover={cover}
-      date={date}
-      tags={tags}
-      slug={slug}
-    />
-    <div class="mt-4 w-full">
-      <div
-        class="prose prose-sm mx-auto max-w-4xl text-base-content md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
-      >
-        <slot />
+  <article data-pagefind-body class="mx-auto">
+    <header class="mb-8">
+      <div class="mb-4 text-sm text-gray-500">
+        <time datetime={date.toISOString()}>{publishedDate}</time>
+        {tags.map((tag) => <span class="ml-2 text-accent">#{tag}</span>)}
       </div>
+      <h1 class="text-3xl font-bold tracking-tight">{title}</h1>
+    </header>
+
+    {
+      cover && (
+        <img src={ogpStaticImage?.src} alt="" class="mb-8 w-full rounded-lg" />
+      )
+    }
+
+    <div class="prose prose-sm prose-gray max-w-none">
+      <slot />
     </div>
   </article>
-  <div class="divider"></div>
-  <Share url={Astro.url.href} title={title} />
-  <div class="divider"></div>
-  <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
-  <script is:inline type="text/javascript">
-    // eslint-disable-next-line
-    var vc_pid = "886313738"
-  </script>
-  <script
-    is:inline
-    type="text/javascript"
-    src="//aml.valuecommerce.com/vcdal.js"
-    async></script>
-  <script
-    is:inline
-    type="text/javascript"
-    src="//mlb.valuecommerce.com/mylinkbox.js"
-    async></script>
+
+  <div class="my-12 border-t border-gray-200 pt-8">
+    <Share url={Astro.url.href} title={title} />
+  </div>
+
+  <div class="my-12">
+    <h2 class="mb-6 text-xl font-semibold">関連記事</h2>
+    <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
+  </div>
 </Layout>

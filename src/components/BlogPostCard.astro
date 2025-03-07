@@ -1,47 +1,25 @@
 ---
 import type { CollectionEntry } from "astro:content"
-import { Picture } from "astro:assets"
-import { Icon } from "astro-icon/components"
 import FormattedDate from "./FormattedDate.astro"
-import dummy from "@images/dummy.jpg"
 
 type Props = CollectionEntry<"post">
 const post = Astro.props
 ---
 
-<div
-  class="card card-bordered card-compact rounded-none border-slate-300 bg-base-100"
->
-  <a href={`/post/${post.slug}/`}>
-    <div
-      class="badge badge-primary absolute rounded-none text-xs text-base-100 md:text-sm"
-    >
-      {post.data.tags[0]}
-    </div>
-    <div class="aspect-[16/9] max-w-full overflow-hidden">
-      <Picture
-        src={post.data.cover ?? dummy}
-        alt="記事カバー画像"
-        class="w-full object-cover"
-        formats={["webp"]}
-        widths={[330]}
-        quality={50}
-        fallbackFormat="jpeg"
-      />
-    </div>
-    <div class="card-body">
-      <h4
-        class="text-pretty text-sm font-bold leading-tight md:text-base lg:leading-tight"
-      >
+<article class="group">
+  <a href={`/post/${post.slug}/`} class="block">
+    <div class="space-y-2">
+      <div class="text-xs text-gray-500">
+        <FormattedDate date={post.data.date} />
+        {
+          post.data.tags.length > 0 && (
+            <span class="ml-2 text-accent">{post.data.tags[0]}</span>
+          )
+        }
+      </div>
+      <h2 class="text-lg font-medium group-hover:text-accent">
         {post.data.title}
-      </h4>
-      <p
-        class="flex items-center justify-end text-right text-xs text-secondary md:text-base"
-      >
-        <Icon name="mdi:calendar" class="mr-2 inline h-5" /><FormattedDate
-          date={post.data.date}
-        />
-      </p>
+      </h2>
     </div>
   </a>
-</div>
+</article>

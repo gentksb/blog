@@ -2,15 +2,18 @@
 import Social from "./Social.astro"
 ---
 
-<footer class="footer footer-center bg-base-content p-4 text-base-100">
-  <Social />
-  <aside class="text-xs">
-    <p>
-      このサイトはAmazonアソシエイトの適格販売やGoogle
-      Adsenseによる収入で運営されています。情報送信については、情報送信については<a
-        href="/page/external-data-policy">外部送信規律に基づく情報提供ページ</a
-      >をご確認ください
-    </p>
-  </aside>
-  <p>Copyright © 2023 All right reserved by 幻想サイクル</p>
+<footer class="mt-12 border-t border-gray-200 pt-8 text-sm text-gray-500">
+  <div class="mb-4">
+    <Social />
+  </div>
+  <p class="mb-2 text-xs">
+    このサイトはAmazonアソシエイトの適格販売やGoogle
+    Adsenseによる収入で運営されています。 情報送信については<a
+      href="/page/external-data-policy"
+      class="underline hover:text-accent">外部送信規律に基づく情報提供ページ</a
+    >をご確認ください
+  </p>
+  <p>
+    Copyright © {new Date().getFullYear()} All right reserved by 幻想サイクル
+  </p>
 </footer>

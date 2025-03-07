@@ -1,27 +1,15 @@
 ---
 import { SITE_TITLE } from "~/consts"
-import { MenuDropDown } from "./jsx/dropdown"
-import Social from "./Social.astro"
 import PageFind from "./PageFind.astro"
 ---
 
-<header>
-  <nav>
-    <div class="navbar mx-auto max-w-5xl bg-base-200">
-      <div class="navbar-start">
-        <a href="/" class="btn btn-ghost text-xl normal-case md:text-2xl"
-          >{SITE_TITLE}</a
-        >
-      </div>
-      <div class="navbar-end">
-        <div class="w-full"><PageFind /></div>
-        <div class="hidden w-0 md:visible md:w-full">
-          <Social />
-        </div>
-        <div class="visible md:hidden md:w-0">
-          <MenuDropDown client:only="react" />
-        </div>
-      </div>
+<header class="border-b border-gray-200 pb-6">
+  <div
+    class="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between"
+  >
+    <a href="/" class="text-2xl font-bold tracking-tight">{SITE_TITLE}</a>
+    <div class="w-full max-w-xs">
+      <PageFind />
     </div>
-  </nav>
+  </div>
 </header>

@@ -26,6 +26,7 @@
     "@cloudflare/pages-plugin-vercel-og": "^0.1.2",
     "@emotion/react": "^11.13.0",
     "@iconify-json/mdi": "^1.1.67",
+    "@tailwindcss/postcss": "^4.0.11",
     "@tailwindcss/typography": "^0.5.13",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

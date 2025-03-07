@@ -4,19 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["sans-serif"],
-        relics: ["Times New Roman", "MS PGothic"],
-        ui: ["system-ui", "-apple-system"]
+        sans: ["Inter", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"]
       },
       colors: {
-        amazon: "#ff9900",
-        yahoo: "#FF0033",
-        rakuten: "#BF0000"
+        primary: "#333333",
+        accent: "#0066cc"
       }
     }
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
-  daisyui: {
-    themes: ["corporate"]
-  }
+  plugins: [require("@tailwindcss/typography")]
 }
