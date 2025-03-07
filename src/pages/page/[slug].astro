@@ -10,16 +10,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     props: page
   }))
 }
-import {
-  MdxH2,
-  MdxH3,
-  MdxH4,
-  MdxParagraph,
-  MdxBlockQuote,
-  MdxA,
-  MdxTable,
-  MdxStrong
-} from "@components/mdx/mdxReplacer"
 
 type Props = CollectionEntry<"singlePage">
 const page = Astro.props
@@ -28,17 +18,6 @@ const { Content } = await page.render()
 
 <Layout title={page.data.title}>
   <div class="prose prose-sm mx-auto max-w-3xl md:prose-base">
-    <Content
-      components={{
-        h2: MdxH2,
-        h3: MdxH3,
-        h4: MdxH4,
-        p: MdxParagraph,
-        blockquote: MdxBlockQuote,
-        a: MdxA,
-        table: MdxTable,
-        strong: MdxStrong
-      }}
-    />
+    <Content />
   </div>
 </Layout>

@@ -2,16 +2,6 @@
 import type { GetStaticPaths } from "astro"
 import { type CollectionEntry, getCollection } from "astro:content"
 import BlogPost from "@layouts/BlogPost.astro"
-import {
-  MdxH2,
-  MdxH3,
-  MdxH4,
-  MdxParagraph,
-  MdxBlockQuote,
-  MdxA,
-  MdxTable,
-  MdxStrong
-} from "@components/mdx/mdxReplacer"
 import MdxPicture from "@components/mdx/MdxPicture.astro"
 // descriptionレンダリング用
 import { experimental_AstroContainer as AstroContainer } from "astro/container"
@@ -47,17 +37,5 @@ const description = sanitizeHtml(contentString, {
 ---
 
 <BlogPost {...post} description={description}>
-  <Content
-    components={{
-      h2: MdxH2,
-      h3: MdxH3,
-      h4: MdxH4,
-      p: MdxParagraph,
-      blockquote: MdxBlockQuote,
-      a: MdxA,
-      table: MdxTable,
-      strong: MdxStrong,
-      img: MdxPicture
-    }}
-  />
+  <Content />
 </BlogPost>

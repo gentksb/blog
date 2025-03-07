@@ -41,7 +41,27 @@ const ogpStaticImage = cover
       )
     }
 
-    <div class="prose prose-xs prose-gray max-w-none">
+    <div
+      class={`prose prose-gray prose-xs max-w-none
+        [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full
+        
+        ${/* Heading styles */ ""}
+        [&_h3]:not-prose [&_h2]:p-2 [&_h2]:text-xl [&_h2]:font-bold
+        
+        [&_h2]:text-gray-800 [&_h3]:mx-1 [&_h3]:p-2 [&_h3]:text-base 
+        [&_h3]:font-bold [&_h3]:text-gray-800
+        
+        [&_h4]:p-2 [&_h4]:text-base [&_h4]:font-bold [&_h4]:text-gray-800
+        
+        ${/* Blockquote styles */ ""}
+        [&_blockquote]:mx-4 [&_blockquote]:bg-gray-200
+        
+        ${/* Link styles */ ""}
+        [&_a:hover]:underline [&_a]:text-blue-600
+        
+        ${/* Strong text styles */ ""}
+        [&_strong]:font-bold [&_strong]:underline [&_strong]:decoration-4`}
+    >
       <slot />
     </div>
   </article>
@@ -55,3 +75,12 @@ const ogpStaticImage = cover
     <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
   </div>
 </Layout>
+
+<style>
+  /* Add a wrapper for tables to ensure proper overflow behavior */
+  :global(.prose table) {
+    @apply overflow-x-auto bg-white;
+    display: table;
+    width: auto !important;
+  }
+</style>
