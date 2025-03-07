@@ -12,9 +12,7 @@ const { src, alt } = Astro.props
   typeof src === "string" ? (
     <figure>
       <img class="mx-auto" src={src} alt={alt} />
-      <figcaption class="not-prose text-center text-xs text-secondary md:text-sm">
-        {alt}
-      </figcaption>
+      <figcaption class="not-prose text-center text-[0.75em]">{alt}</figcaption>
     </figure>
   ) : (
     <figure>
@@ -26,9 +24,7 @@ const { src, alt } = Astro.props
         {src}
         {alt}
       />
-      <figcaption class="not-prose text-center text-xs text-secondary md:text-sm">
-        {alt}
-      </figcaption>
+      <figcaption class="not-prose text-center text-[0.75em]">{alt}</figcaption>
     </figure>
   )
 }

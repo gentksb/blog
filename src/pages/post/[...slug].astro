@@ -37,5 +37,9 @@ const description = sanitizeHtml(contentString, {
 ---
 
 <BlogPost {...post} description={description}>
-  <Content />
+  <Content
+    components={{
+      img: MdxPicture
+    }}
+  />
 </BlogPost>
