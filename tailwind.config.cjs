@@ -10,6 +10,25 @@ module.exports = {
       colors: {
         primary: "#333333",
         accent: "#0066cc"
+      },
+      typography: {
+        xs: {
+          css: {
+            fontSize: "0.80rem", // または必要なサイズ
+            p: {
+              fontSize: "0.75rem",
+              lineHeight: "1.75",
+              marginTop: "0.8em",
+              marginBottom: "1.5em"
+            },
+            h1: {
+              fontSize: "1.5rem"
+            },
+            h2: {
+              fontSize: "1.25rem"
+            }
+          }
+        }
       }
     }
   },

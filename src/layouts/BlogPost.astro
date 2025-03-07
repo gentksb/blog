@@ -32,7 +32,7 @@ const ogpStaticImage = cover
         <time datetime={date.toISOString()}>{publishedDate}</time>
         {tags.map((tag) => <span class="ml-2 text-accent">#{tag}</span>)}
       </div>
-      <h1 class="text-3xl font-bold tracking-tight">{title}</h1>
+      <h1 class="text-2xl font-bold tracking-tight">{title}</h1>
     </header>
 
     {
@@ -41,7 +41,7 @@ const ogpStaticImage = cover
       )
     }
 
-    <div class="prose prose-sm prose-gray max-w-none">
+    <div class="prose prose-xs prose-gray max-w-none">
       <slot />
     </div>
   </article>

@@ -1,28 +1,23 @@
 export const MdxParagraph: React.FC<JSX.IntrinsicElements["p"]> = (props) => {
-  return <p {...props} className="px-5" />
+  return <p {...props} />
 }
 
 export const MdxH2: React.FC<JSX.IntrinsicElements["h2"]> = (props) => {
-  return (
-    <h2 {...props} className="text-accent-content my-4 p-2 text-xl font-bold" />
-  )
+  return <h2 {...props} className="text-accent-content p-2 text-xl font-bold" />
 }
 
 export const MdxH3: React.FC<JSX.IntrinsicElements["h3"]> = (props) => {
   return (
     <h3
       {...props}
-      className="text-accent-content not-prose text-md mx-1 my-4 p-2 font-bold"
+      className="text-accent-content not-prose text-md mx-1 p-2 font-bold"
     />
   )
 }
 
 export const MdxH4: React.FC<JSX.IntrinsicElements["h4"]> = (props) => {
   return (
-    <h4
-      {...props}
-      className="text-accent-content my-4 border-l-4 border-accent p-2 text-base font-bold"
-    />
+    <h4 {...props} className="text-accent-content p-2 text-base font-bold" />
   )
 }
 
