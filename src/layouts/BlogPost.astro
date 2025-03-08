@@ -42,7 +42,7 @@ const ogpStaticImage = cover
     }
 
     <div
-      class={`prose prose-gray prose-xs max-w-none
+      class={`prose prose-gray prose-xs min-w-0 max-w-none
         [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full
         
         ${/* Heading styles */ ""}
@@ -60,7 +60,10 @@ const ogpStaticImage = cover
         [&_a:hover]:underline [&_a]:text-blue-600
         
         ${/* Strong text styles */ ""}
-        [&_strong]:font-bold [&_strong]:underline [&_strong]:decoration-4`}
+        [&_strong]:font-bold
+        
+        ${/* サイズを維持するための設定 */ ""}
+        [&_p]:!text-[0.85rem]`}
     >
       <slot />
     </div>
@@ -80,7 +83,17 @@ const ogpStaticImage = cover
   /* Add a wrapper for tables to ensure proper overflow behavior */
   :global(.prose table) {
     @apply overflow-x-auto bg-white;
-    display: table;
+    display: block;
     width: auto !important;
+  }
+
+  /* レスポンシブサイズ調整の補助設定 */
+  @media (max-width: 640px) {
+    :global(.prose) {
+      font-size: 0.85rem !important;
+    }
+    :global(.prose p) {
+      font-size: 0.85rem !important;
+    }
   }
 </style>

@@ -14,9 +14,9 @@ module.exports = {
       typography: {
         xs: {
           css: {
-            fontSize: "0.80rem", // または必要なサイズ
+            fontSize: "0.85rem", // ベースサイズを少し大きくする
             p: {
-              fontSize: "0.75rem",
+              fontSize: "0.85rem", // 本文フォントサイズを大きくする
               lineHeight: "1.75",
               marginTop: "0.8em",
               marginBottom: "1.5em"
@@ -26,6 +26,13 @@ module.exports = {
             },
             h2: {
               fontSize: "1.25rem"
+            },
+            // レスポンシブ性を維持するための追加設定
+            [`@media (max-width: 640px)`]: {
+              fontSize: "0.85rem", // モバイルでも同じサイズを維持
+              p: {
+                fontSize: "0.85rem" // モバイルでも同じサイズを維持
+              }
             }
           }
         }
