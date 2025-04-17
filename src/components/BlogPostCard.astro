@@ -6,15 +6,13 @@ import dummy from "@images/dummy.jpg"
 
 type Props = CollectionEntry<"post">
 const post = Astro.props
-const accentColor = "#3182CE" // 青系統のアクセントカラー
 ---
 
 <article class="bg-white border border-gray-200 flex flex-col group cursor-pointer hover:shadow-md transition-shadow">
   <a href={`/post/${post.slug}/`}>
     <div class="relative">
       <div 
-        class="absolute top-0 left-0 z-10 text-xs px-2 py-1 text-white font-semibold"
-        style={{backgroundColor: accentColor}}
+        class="absolute top-0 left-0 z-10 text-xs px-2 py-1 bg-accent text-accent-content font-semibold"
       >
         {post.data.tags[0]}
       </div>
@@ -31,7 +29,7 @@ const accentColor = "#3182CE" // 青系統のアクセントカラー
       </div>
     </div>
     <div class="p-4 flex-grow flex flex-col">
-      <h3 class="font-bold mb-2 group-hover:text-blue-600 transition-colors">
+      <h3 class="font-bold mb-2 group-hover:text-accent transition-colors">
         {post.data.title}
       </h3>
       <div class="mt-auto flex justify-end text-xs text-gray-500">

@@ -6,7 +6,6 @@ import dummy from "@images/dummy.jpg"
 type Props = CollectionEntry<"post">["data"] & { slug: string }
 
 const { cover, title, date, tags } = Astro.props
-const accentColor = "#3182CE" // 青系統のアクセントカラー
 ---
 
 <div class="relative mb-6">
@@ -26,8 +25,7 @@ const accentColor = "#3182CE" // 青系統のアクセントカラー
     <div class="flex gap-2 mb-2">
       {tags.map((tag) => (
         <span 
-          class="text-xs px-2 py-1 rounded-full text-white"
-          style={{backgroundColor: accentColor}}
+          class="text-xs px-2 py-1 rounded-full bg-accent text-accent-content"
           data-pagefind-ignore
         >
           {tag}

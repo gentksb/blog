@@ -15,7 +15,6 @@ const { slug, description } = Astro.props
 // cloudflare上ではタイムゾーンが日本時間になる保証がないため、明示的に指定する
 const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
-const accentColor = "#3182CE" // 青系統のアクセントカラー
 
 // ogp画像はURLが変更されないようにオリジナルを取得する
 const ogpStaticImage = cover
