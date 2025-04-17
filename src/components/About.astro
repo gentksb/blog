@@ -1,16 +1,24 @@
 ---
 import { Picture } from "astro:assets"
 import logo from "../images/dummy.jpg"
-import { Content as AbountText } from "./text/about.md"
+import { Content as AboutText } from "./text/about.md"
 ---
 
-<div class="hero bg-base-200">
-  <div class="hero-content flex-col lg:flex-row">
-    <div class="overflow-hidden rounded-full md:mx-10">
-      <Picture src={logo} alt="social logo" fallbackFormat="jpg" />
+<div class="my-8 bg-white border border-gray-200 p-6 rounded-lg">
+  <div class="flex flex-col md:flex-row items-center">
+    <div class="w-32 h-32 mb-4 md:mb-0 md:mr-6 flex-shrink-0 overflow-hidden rounded-full">
+      <Picture 
+        src={logo} 
+        alt="著者アイコン" 
+        class="w-full h-full object-cover"
+        fallbackFormat="jpg" 
+      />
     </div>
-    <div class="prose prose-sm max-w-md md:prose-base">
-      <AbountText />
+    <div>
+      <h2 class="text-xl font-bold mb-2">このブログと著者について</h2>
+      <div class="text-gray-600 text-sm leading-relaxed prose prose-sm max-w-none md:prose-base">
+        <AboutText />
+      </div>
     </div>
   </div>
 </div>

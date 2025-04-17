@@ -1,47 +1,44 @@
 ---
 import type { CollectionEntry } from "astro:content"
 import { Picture } from "astro:assets"
-import { Icon } from "astro-icon/components"
 import FormattedDate from "./FormattedDate.astro"
 import dummy from "@images/dummy.jpg"
 
 type Props = CollectionEntry<"post">
 const post = Astro.props
+const accentColor = "#3182CE" // 青系統のアクセントカラー
 ---
 
-<div
-  class="card card-bordered card-compact rounded-none border-slate-300 bg-base-100"
->
+<article class="bg-white border border-gray-200 flex flex-col group cursor-pointer hover:shadow-md transition-shadow">
   <a href={`/post/${post.slug}/`}>
-    <div
-      class="badge badge-primary absolute rounded-none text-xs text-base-100 md:text-sm"
-    >
-      {post.data.tags[0]}
-    </div>
-    <div class="aspect-[16/9] max-w-full overflow-hidden">
-      <Picture
-        src={post.data.cover ?? dummy}
-        alt="記事カバー画像"
-        class="w-full object-cover"
-        formats={["webp"]}
-        widths={[330]}
-        quality={50}
-        fallbackFormat="jpeg"
-      />
-    </div>
-    <div class="card-body">
-      <h4
-        class="text-pretty text-sm font-bold leading-tight md:text-base lg:leading-tight"
+    <div class="relative">
+      <div 
+        class="absolute top-0 left-0 z-10 text-xs px-2 py-1 text-white font-semibold"
+        style={{backgroundColor: accentColor}}
       >
-        {post.data.title}
-      </h4>
-      <p
-        class="flex items-center justify-end text-right text-xs text-secondary md:text-base"
-      >
-        <Icon name="mdi:calendar" class="mr-2 inline h-5" /><FormattedDate
-          date={post.data.date}
+        {post.data.tags[0]}
+      </div>
+      <div class="aspect-video bg-gray-200 overflow-hidden">
+        <Picture
+          src={post.data.cover ?? dummy}
+          alt="記事カバー画像"
+          class="w-full h-full object-cover"
+          formats={["webp"]}
+          widths={[330]}
+          quality={50}
+          fallbackFormat="jpeg"
         />
-      </p>
+      </div>
+    </div>
+    <div class="p-4 flex-grow flex flex-col">
+      <h3 class="font-bold mb-2 group-hover:text-blue-600 transition-colors">
+        {post.data.title}
+      </h3>
+      <div class="mt-auto flex justify-end text-xs text-gray-500">
+        <time>
+          <FormattedDate date={post.data.date} />
+        </time>
+      </div>
     </div>
   </a>
-</div>
+</article>

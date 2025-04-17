@@ -15,9 +15,9 @@ const { slug, description } = Astro.props
 // cloudflare上ではタイムゾーンが日本時間になる保証がないため、明示的に指定する
 const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
+const accentColor = "#3182CE" // 青系統のアクセントカラー
 
 // ogp画像はURLが変更されないようにオリジナルを取得する
-
 const ogpStaticImage = cover
   ? await getImage({ src: cover, format: "jpg" })
   : undefined
@@ -30,26 +30,36 @@ const ogpStaticImage = cover
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
 >
-  <article data-pagefind-body>
-    <BlogTitle
-      title={title}
-      cover={cover}
-      date={date}
-      tags={tags}
-      slug={slug}
-    />
-    <div class="mt-4 w-full">
-      <div
-        class="prose prose-sm mx-auto max-w-4xl text-base-content md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
-      >
-        <slot />
+  <div class="bg-white border border-gray-200 mb-8">
+    <article data-pagefind-body>
+      <BlogTitle
+        title={title}
+        cover={cover}
+        date={date}
+        tags={tags}
+        slug={slug}
+      />
+      <div class="p-6">
+        <div
+          class="prose prose-sm mx-auto max-w-none text-gray-700 md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
+        >
+          <slot />
+        </div>
+
+        <!-- シェアボタン -->
+        <div class="mt-8 border-t border-b border-gray-200 py-4">
+          <Share url={Astro.url.href} title={title} />
+        </div>
       </div>
-    </div>
-  </article>
-  <div class="divider"></div>
-  <Share url={Astro.url.href} title={title} />
-  <div class="divider"></div>
-  <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
+    </article>
+  </div>
+
+  <!-- 関連記事 -->
+  <div class="my-8">
+    <h2 class="text-xl font-bold mb-4">関連記事</h2>
+    <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
+  </div>
+
   <script is:inline type="text/javascript">
     // eslint-disable-next-line
     var vc_pid = "886313738"
