@@ -8,22 +8,88 @@ const hasPreviousPage = currentPage > 1
 const previousPageLink = currentPage > 2 ? `/page/${currentPage - 1}` : `/`
 const hasNextpage = currentPage < totalPages
 const nextPageLink = `/page/${currentPage + 1}`
+
+// ページネーションの数字表示用
+const pageNumbers = [] as number[]
+const maxPagesToShow = 5
+const halfMaxPages = Math.floor(maxPagesToShow / 2)
+
+let startPage = Math.max(currentPage - halfMaxPages, 1)
+let endPage = Math.min(startPage + maxPagesToShow - 1, totalPages)
+
+if (endPage - startPage + 1 < maxPagesToShow) {
+  startPage = Math.max(endPage - maxPagesToShow + 1, 1)
+}
+
+for (let i = startPage; i <= endPage; i++) {
+  pageNumbers.push(i)
+}
 ---
 
-<div class="join mt-4 grid grid-cols-3">
-  <a href={previousPageLink} class="join-item">
-    <div
-      class:list=`w-full btn btn-outline ${hasPreviousPage ? '' : 'btn-disabled'}`
+<div class="my-8 flex justify-center">
+  <div class="flex rounded-md">
+    <a
+      href={previousPageLink}
+      class:list={[
+        "px-4 py-2 border border-gray-300 text-sm rounded-l-md flex items-center justify-center transition",
+        hasPreviousPage
+          ? "hover:bg-gray-100 text-gray-700"
+          : "opacity-50 cursor-not-allowed text-gray-400"
+      ]}
+      aria-disabled={!hasPreviousPage}
     >
-      Previous
-    </div>
-  </a>
-  <div class="btn btn-outline join-item">Page {currentPage}</div>
-  <a href={nextPageLink} class="join-item">
-    <div
-      class:list=`w-full btn btn-outline ${hasNextpage ? '' : 'btn-disabled'}`
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="mr-1 size-4"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+          clip-rule="evenodd"></path>
+      </svg>
+      前へ
+    </a>
+
+    {
+      pageNumbers.map((pageNum) => (
+        <a
+          href={pageNum === 1 ? "/" : `/page/${pageNum}`}
+          class:list={[
+            "px-4 py-2 border-t border-b border-gray-300 text-sm",
+            currentPage === pageNum
+              ? "bg-accent text-accent-content font-medium"
+              : "hover:bg-gray-100 text-gray-700"
+          ]}
+        >
+          {pageNum}
+        </a>
+      ))
+    }
+
+    <a
+      href={nextPageLink}
+      class:list={[
+        "px-4 py-2 border border-gray-300 text-sm rounded-r-md flex items-center justify-center transition",
+        hasNextpage
+          ? "hover:bg-gray-100 text-gray-700"
+          : "opacity-50 cursor-not-allowed text-gray-400"
+      ]}
+      aria-disabled={!hasNextpage}
     >
-      Next
-    </div>
-  </a>
+      次へ
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="ml-1 size-4"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </a>
+  </div>
 </div>
