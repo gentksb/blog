@@ -17,7 +17,6 @@ const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
 
 // ogp画像はURLが変更されないようにオリジナルを取得する
-
 const ogpStaticImage = cover
   ? await getImage({ src: cover, format: "jpg" })
   : undefined
@@ -30,26 +29,36 @@ const ogpStaticImage = cover
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
 >
-  <article data-pagefind-body>
-    <BlogTitle
-      title={title}
-      cover={cover}
-      date={date}
-      tags={tags}
-      slug={slug}
-    />
-    <div class="mt-4 w-full">
-      <div
-        class="prose prose-sm mx-auto max-w-4xl text-base-content md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
-      >
-        <slot />
+  <div class="mb-8 border border-gray-200 bg-white">
+    <article data-pagefind-body>
+      <BlogTitle
+        title={title}
+        cover={cover}
+        date={date}
+        tags={tags}
+        slug={slug}
+      />
+      <div class="p-6">
+        <div
+          class="prose prose-sm mx-auto max-w-none text-gray-700 md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
+        >
+          <slot />
+        </div>
+
+        <!-- シェアボタン -->
+        <div class="mt-8 border-t border-gray-200 py-4">
+          <Share url={Astro.url.href} title={title} />
+        </div>
       </div>
-    </div>
-  </article>
-  <div class="divider"></div>
-  <Share url={Astro.url.href} title={title} />
-  <div class="divider"></div>
-  <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
+    </article>
+  </div>
+
+  <!-- 関連記事 -->
+  <div class="my-8">
+    <h2 class="mb-4 text-xl font-bold">関連記事</h2>
+    <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
+  </div>
+
   <script is:inline type="text/javascript">
     // eslint-disable-next-line
     var vc_pid = "886313738"

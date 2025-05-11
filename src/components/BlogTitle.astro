@@ -8,42 +8,38 @@ type Props = CollectionEntry<"post">["data"] & { slug: string }
 const { cover, title, date, tags } = Astro.props
 ---
 
-<div class="hero">
-  <div class="z-0 aspect-video w-full">
+<div class="relative mb-6">
+  <div class="aspect-video w-full bg-gray-300">
     <Picture
       src={cover ?? dummy}
       alt=""
       formats={["webp"]}
       quality={30}
       widths={[640, 768]}
-      class="size-full object-cover"
+      class="w-full h-full object-cover"
       loading="eager"
       fallbackFormat="jpeg"
     />
   </div>
-  <div class="hero-overlay z-10 bg-black/60"></div>
-  <div class="hero-content z-20 flex-col text-center">
-    <div class="max-w-full">
-      <h1
-        class="mb-5 max-w-4xl text-pretty text-xl font-bold text-neutral-content md:text-3xl"
-      >
-        {title}
-      </h1>
-      <div class="grid grid-flow-col justify-center gap-2" data-pagefind-ignore>
-        {
-          tags.map((tag) => (
-            <span class="badge badge-accent badge-outline md:text-lg">
-              {tag}
-            </span>
-          ))
-        }
-      </div>
-      <div class="mb-5 text-neutral-content" data-pagefind-ignore>
-        <FormattedDate date={date} />
-      </div>
+  <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6">
+    <div class="flex gap-2 mb-2">
+      {tags.map((tag) => (
+        <span 
+          class="text-xs px-2 py-1 rounded-full bg-accent text-accent-content"
+          data-pagefind-ignore
+        >
+          {tag}
+        </span>
+      ))}
+    </div>
+    <h1 class="text-xl md:text-2xl font-bold text-white max-w-4xl">
+      {title}
+    </h1>
+    <div class="text-white text-sm mt-2" data-pagefind-ignore>
+      <FormattedDate date={date} />
     </div>
   </div>
-  <div class="ml-auto mt-auto text-xs text-base-300" data-pagefind-ignore>
+  <div class="absolute bottom-1 right-2 text-xs text-gray-300" data-pagefind-ignore>
     記事内にアフェリエイトリンクを含む場合があります
   </div>
 </div>

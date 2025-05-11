@@ -19,9 +19,9 @@ const props = Astro.props
   <head>
     <BaseHead {...props} />
   </head>
-  <body class="bg-base-200">
+  <body class="flex flex-col min-h-screen bg-gray-50">
     <Header />
-    <main>
+    <main class="flex-grow">
       <div class="mx-auto mb-4 max-w-5xl">
         <slot />
       </div>

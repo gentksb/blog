@@ -6,7 +6,7 @@ export const MdxH2: React.FC<JSX.IntrinsicElements["h2"]> = (props) => {
   return (
     <h2
       {...props}
-      className="my-4 bg-accent p-2 text-xl font-bold text-accent-content"
+      className="my-4 p-2 text-xl font-bold text-gray-700 bg-accent/20 border-l-4 border-accent"
     />
   )
 }
@@ -15,7 +15,7 @@ export const MdxH3: React.FC<JSX.IntrinsicElements["h3"]> = (props) => {
   return (
     <h3
       {...props}
-      className="mx-1 my-4 border-b-2 border-l-4 border-accent p-2 text-lg font-bold text-accent-content"
+      className="mx-1 my-4 border-b-2 border-l-4 border-accent p-2 text-lg font-bold text-gray-700"
     />
   )
 }
@@ -24,7 +24,7 @@ export const MdxH4: React.FC<JSX.IntrinsicElements["h4"]> = (props) => {
   return (
     <h4
       {...props}
-      className="my-4 border-l-4 border-accent p-2 text-base font-bold text-accent-content"
+      className="my-4 border-l-4 border-accent p-2 text-base font-bold text-gray-700"
     />
   )
 }

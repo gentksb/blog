@@ -2,58 +2,92 @@
 import Search from "astro-pagefind/components/Search"
 ---
 
-<Search
-  id="search"
-  className="pagefind-ui"
-  uiOptions={{
-    showImages: false,
-    translations: {
-      placeholder: "全記事から検索"
-    }
-  }}
-/>
+<div class="search-container relative">
+  <Search
+    id="search"
+    className="pagefind-ui"
+    uiOptions={{
+      showImages: false,
+      translations: {
+        placeholder: "記事を検索"
+      }
+    }}
+  />
+</div>
 
 <style is:global>
+  /* ヘッダー内の検索コンテナスタイル */
+  .search-container {
+    width: 220px;
+  }
+
+  /* Pagefindコンポーネントのカスタマイズ */
   .pagefind-ui {
-    --pagefind-ui-scale: 0.75;
-    --pagefind-ui-primary: navy;
-    --pagefind-ui-text: black;
-    --pagefind-ui-border: slategrey;
+    --pagefind-ui-scale: 0.8;
+    --pagefind-ui-primary: var(--accent, #0066cc);
+    --pagefind-ui-text: #333;
+    --pagefind-ui-background: #fff;
+    --pagefind-ui-border: #eaeaea;
     --pagefind-ui-border-width: 1px;
-    --pagefind-ui-border-radius: 0.25rem;
-    --pagefind-ui-font: sans-serif;
+    --pagefind-ui-border-radius: 0.5rem;
+    --pagefind-ui-font: inherit;
     width: 100%;
   }
 
-  .pagefind-ui.yellow {
-    --pagefind-ui-background: lightyellow;
-  }
-
-  .pagefind-ui.red {
-    --pagefind-ui-background: peachpuff;
+  /* 検索入力欄のカスタマイズ */
+  .pagefind-ui .pagefind-ui__search-input {
+    background-color: #f3f4f6;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
     width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
 
+  .pagefind-ui .pagefind-ui__search-input::placeholder {
+    text-align: center;
+  }
+
+  .pagefind-ui .pagefind-ui__search-input:focus {
+    outline: none;
+    ring: 2px solid var(--accent, #0066cc);
+    ring-offset: 2px;
+  }
+
+  /* 検索結果ドロワーのスタイル */
   .pagefind-ui .pagefind-ui__drawer:not(.pagefind-ui__hidden) {
     position: fixed;
-    left: 5vw;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
     width: 90vw;
-    z-index: 9999;
-    padding: 0 2em 1em;
+    max-width: 800px;
+    z-index: 99999;
+    padding: 1em;
     overflow-y: auto;
+    max-height: 80vh;
     box-shadow:
-      0 10px 10px -5px rgba(0, 0, 0, 0.2),
-      0 2px 2px 0 rgba(0, 0, 0, 0.1);
-    border-bottom-right-radius: var(--pagefind-ui-border-radius);
-    border-bottom-left-radius: var(--pagefind-ui-border-radius);
+      0 10px 15px -5px rgba(0, 0, 0, 0.3),
+      0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: var(--pagefind-ui-border-radius);
     background-color: var(--pagefind-ui-background);
   }
 
+  /* 検索結果のリンクとテキストスタイル */
   .pagefind-ui .pagefind-ui__result-link {
     color: var(--pagefind-ui-primary);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .pagefind-ui .pagefind-ui__result-link:hover {
+    text-decoration: underline;
   }
 
   .pagefind-ui .pagefind-ui__result-excerpt {
     color: var(--pagefind-ui-text);
+    font-size: 0.875rem;
   }
 </style>
