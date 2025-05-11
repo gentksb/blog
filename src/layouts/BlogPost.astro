@@ -29,7 +29,7 @@ const ogpStaticImage = cover
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
 >
-  <div class="bg-white border border-gray-200 mb-8">
+  <div class="mb-8 border border-gray-200 bg-white">
     <article data-pagefind-body>
       <BlogTitle
         title={title}
@@ -46,7 +46,7 @@ const ogpStaticImage = cover
         </div>
 
         <!-- シェアボタン -->
-        <div class="mt-8 border-t border-b border-gray-200 py-4">
+        <div class="mt-8 border-t border-gray-200 py-4">
           <Share url={Astro.url.href} title={title} />
         </div>
       </div>
@@ -55,7 +55,7 @@ const ogpStaticImage = cover
 
   <!-- 関連記事 -->
   <div class="my-8">
-    <h2 class="text-xl font-bold mb-4">関連記事</h2>
+    <h2 class="mb-4 text-xl font-bold">関連記事</h2>
     <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
   </div>
 

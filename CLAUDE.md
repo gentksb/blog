@@ -63,8 +63,8 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 ## デプロイフロー
 
 - Cloudflare Pagesでのビルド・デプロイ
-- 開発環境: `bun typegen && wrangler pages dev -- bun --bun astro dev`
-- 本番ビルド: `bun typegen && bunx --bun astro build`
+- 開発環境： `bun typegen && wrangler pages dev -- bun --bun astro dev`
+- 本番ビルド： `bun typegen && bunx --bun astro build`
 
 ## 特記事項
 
