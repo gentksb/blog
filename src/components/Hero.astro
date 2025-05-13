@@ -4,8 +4,10 @@ import heroImage from "../images/hero.jpg"
 import { Picture } from "astro:assets"
 ---
 
-<div class="w-full bg-gray-900 text-white relative">
-  <div class="h-64 md:h-80 max-w-5xl mx-auto flex items-center justify-center relative">
+<div class="relative w-full bg-gray-900 text-white">
+  <div
+    class="relative mx-auto flex h-64 max-w-5xl items-center justify-center md:h-80"
+  >
     <div class="absolute inset-0 overflow-hidden">
       <Picture
         src={heroImage}
@@ -13,14 +15,14 @@ import { Picture } from "astro:assets"
         formats={["webp"]}
         quality={30}
         widths={[640, 768]}
-        class="w-full h-full object-cover"
+        class="size-full object-cover"
         loading="eager"
         fallbackFormat="jpg"
       />
     </div>
     <div class="absolute inset-0 bg-black opacity-60"></div>
-    <div class="text-center relative z-10 p-6">
-      <div class="prose prose-sm max-w-2xl mx-auto text-white md:prose-base">
+    <div class="relative p-6 text-center">
+      <div class="prose prose-sm mx-auto max-w-2xl text-white md:prose-base">
         <HeroText />
       </div>
     </div>
