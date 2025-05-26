@@ -58,8 +58,6 @@ export const ogImage = async (title: string, coverSrc: string) => {
 
     console.log("Starting ImageResponse generation")
 
-    console.log("Starting ImageResponse generation")
-
     try {
       return new ImageResponse(
         (
@@ -158,6 +156,31 @@ export const ogImage = async (title: string, coverSrc: string) => {
       title,
       coverSrc
     })
+
+    // フォールバック: coverSrcの画像をそのまま返す
+    if (coverSrc) {
+      try {
+        console.log("Attempting fallback: returning coverSrc image directly")
+        const imageResponse = await fetch(coverSrc)
+        if (imageResponse.ok) {
+          console.log("Fallback successful: coverSrc image fetched")
+          return new Response(imageResponse.body, {
+            headers: {
+              "Content-Type":
+                imageResponse.headers.get("Content-Type") || "image/jpeg",
+              "Cache-Control": "public, max-age=31536000"
+            }
+          })
+        } else {
+          console.warn(
+            `Fallback failed: coverSrc fetch failed with status ${imageResponse.status}`
+          )
+        }
+      } catch (fallbackError) {
+        console.error("Fallback also failed:", fallbackError)
+      }
+    }
+
     throw error
   }
 }
