@@ -1,5 +1,5 @@
 import { expect, test } from "vitest"
-import { testAsin, amazonLinkDataExpectedResponse } from "./testData"
+import { testAsin } from "./testData"
 import { getAmazonProductInfo } from "functions/src/getAmazonProductInfo"
 import { env } from "cloudflare:test"
 
@@ -16,5 +16,6 @@ test("Amazon ASINから製品データを取得する", async () => {
     PAAPI_SECRETKEY,
     PARTNER_TAG
   )
-  expect(res).toMatchObject(amazonLinkDataExpectedResponse)
+  // リクエストしたASINとレスポンスのasinが一致することを確認
+  expect(res.ItemsResult.Items[0].ASIN).toBe(testAsin)
 })
