@@ -45,7 +45,12 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
 
     return imageResponse
   } catch (error) {
+    console.error("Error generating OG image:", error)
+    // エラーをSlackに通知
     await postLogToSlack(error, context.env.SLACK_WEBHOOK_URL)
-    return new Response(null, { status: 500, statusText: "internal error" })
+    return new Response(null, {
+      status: 500,
+      statusText: "internal error"
+    })
   }
 }
