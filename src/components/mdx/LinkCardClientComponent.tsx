@@ -37,7 +37,7 @@ export const LinkCardClientComponent: React.FC<{
     return fallBackLayout
   }
   if (!data) return fallBackLayout
-  if (data.ogpTitle?.length === 0) return fallBackLayout
+  if (data.ok === false) return fallBackLayout
 
   return (
     <LinkCardLayout
