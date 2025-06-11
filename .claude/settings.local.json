@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "cloudflare-docs"
+  ],
+  "enableAllProjectMcpServers": true
+}
