@@ -1,7 +1,7 @@
 // ESM import
 import { redirectData } from "~/consts.js"
-// import Bun
-import * as Bun from "bun"
+// import Node.js fs
+import { writeFile } from "fs/promises"
 
 export type Redirect = {
   source: string
@@ -20,12 +20,12 @@ const writeRedirectFile = async (redirectData: Redirect[]) => {
     .join("\n")
 
   try {
-    await Bun.write("public/_redirects", content)
+    await writeFile("public/_redirects", content, "utf8")
     console.log("Redirects file written successfully")
   } catch (error) {
     console.error("Error writing redirects file", error)
   }
 }
 
-// output "_redirect" local file with bun
+// output "_redirect" local file with Node.js
 writeRedirectFile(redirectData)

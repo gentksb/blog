@@ -13,7 +13,7 @@
 - **ホスティング**: Cloudflare Pages + Functions
 - **画像処理**: Cloudflare Image Service
 - **データベース**: Cloudflare KV（OGPキャッシュ用）
-- **パッケージマネージャー**: Bun
+- **パッケージマネージャー**: pnpm
 
 ## 主要機能
 
@@ -63,8 +63,8 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 ## デプロイフロー
 
 - Cloudflare Pagesでのビルド・デプロイ
-- 開発環境： `bun typegen && wrangler pages dev -- bun --bun astro dev`
-- 本番ビルド： `bun typegen && bunx --bun astro build`
+- 開発環境： `pnpm typegen && wrangler pages dev -- pnpm astro dev`
+- 本番ビルド： `pnpm typegen && pnpm astro build`
 
 ## 特記事項
 

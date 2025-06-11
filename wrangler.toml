@@ -10,5 +10,4 @@ kv_namespaces = [
 ]
 
 [vars]
-BUN_VERSION = "1.2.14"
 NODE_VERSION = "22.14"
