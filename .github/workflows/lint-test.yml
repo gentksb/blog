@@ -6,12 +6,24 @@ on:
       - "master"
     paths:
       - "functions/**"
+      - "src/components/**"
+      - "src/layouts/**"
       - "src/lib/**"
+      - "test/**"
+      - "package.json"
+      - "tsconfig.json"
+      - "vitest.config.ts"
       - ".github/workflows/**"
   pull_request:
     paths:
       - "functions/**"
+      - "src/components/**"
+      - "src/layouts/**"
       - "src/lib/**"
+      - "test/**"
+      - "package.json"
+      - "tsconfig.json"
+      - "vitest.config.ts"
       - ".github/workflows/**"
 
 jobs:

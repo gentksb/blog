@@ -26,20 +26,10 @@ const jsonLdType = isPostPage ? "Article" : "Blog"
 const jsonLd = {
   "@context": "http://schema.org",
   "@type": jsonLdType,
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": canonicalURL
-  },
+  mainEntityOfPage: { "@type": "WebPage", "@id": canonicalURL },
   headline: title,
-  image: {
-    "@type": "ImageObject",
-    url: metaImageUrl
-  },
-  author: {
-    "@type": "Person",
-    name: "Gen",
-    url: "https://www.gensobunya.net"
-  },
+  image: { "@type": "ImageObject", url: metaImageUrl },
+  author: { "@type": "Person", name: "Gen", url: "https://www.gensobunya.net" },
   publisher: {
     "@type": "Organization",
     name: SITE_TITLE,
@@ -92,8 +82,3 @@ const jsonLd = {
   set:html={JSON.stringify(jsonLd)}
   is:inline
 />
-
-<!-- Valuecommerce -->
-<script type="text/javascript" language="javascript">
-    var vc_pid = "886313738";
-</script><script type="text/javascript" src="//aml.valuecommerce.com/vcdal.js" async></script>

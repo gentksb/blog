@@ -74,6 +74,23 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 - Cloudflare画像サービスを本番環境で活用（maxWidth: 800px）
 - OGPキャッシュを活用して外部データ取得を最適化
 
+## コード品質とテスト方針
+
+### CI/CD対象ディレクトリ
+- **functions/**: Cloudflare Functions（API実装）
+- **src/components/**: UIコンポーネント
+- **src/layouts/**: ページレイアウト
+- **src/lib/**: ユーティリティ関数
+- **test/**: テストファイル
+- 設定ファイル（package.json、tsconfig.json、vitest.config.ts）
+
+### Textlint方針
+- **CI/CD対象外**: `src/content/post/`（2012年〜の過去記事）
+  - 理由：textlint未対応時に作成された大量の過去記事の修正は非現実的
+  - エディタ上でのlint表示は有効（ローカル開発時の参考情報として活用）
+- **新規記事**: エディタ上のtextlint警告を参考に品質を確保
+- **コンポーネント等**: CI/CDでのESLint/TypeScriptチェック必須
+
 ## ソーシャルメディア連携
 
 - Twitter: gen_sobunya
