@@ -7,7 +7,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
   const isValidAsin = (asin: string): boolean => {
     return /^[A-Z0-9]{10}$/.test(asin)
   }
-  if (!asin || !isValidAsin || typeof asin !== "string") {
+  if (!asin || !isValidAsin(asin) || typeof asin !== "string") {
     await postLogToSlack(
       `${context.request.url} \n Invalid asin: ${asin}`,
       context.env.SLACK_WEBHOOK_URL

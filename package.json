@@ -5,16 +5,16 @@
   "private": true,
   "version": "3.0.0",
   "scripts": {
-    "dev": "bun typegen && bun --bun astro dev",
+    "dev": "pnpm typegen && pnpm astro dev",
     "prebuild": "run-p build:*",
-    "build": "bun typegen && bunx --bun astro build",
-    "preview": "bun typegen && bun run build && wrangler pages dev ./dist",
-    "preview:cf": "bun typegen && wrangler pages dev ./dist",
-    "test": "bun typegen && bunx vitest",
+    "build": "pnpm typegen && pnpm astro build",
+    "preview": "pnpm typegen && pnpm run build && wrangler pages dev ./dist",
+    "preview:cf": "pnpm typegen && wrangler pages dev ./dist",
+    "test": "pnpm typegen && pnpm vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "build:redirect": "bun scripts/redirects.ts",
-    "typegen": "bunx --bun wrangler types"
+    "build:redirect": "pnpm tsx scripts/redirects.ts",
+    "typegen": "pnpm wrangler types"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.3",
@@ -76,8 +76,9 @@
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.14",
+    "tsx": "^4.20.0",
     "typescript": "^5.5.4",
     "vitest": "2.0.5",
-    "wrangler": "^3.80.1"
+    "wrangler": "^4.19.1"
   }
 }

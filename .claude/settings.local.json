@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(pnpm:*)",
+      "mcp__cloudflare-docs__search_cloudflare_documentation"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "cloudflare-docs"
+  ]
+}
