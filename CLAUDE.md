@@ -45,7 +45,7 @@
   - **`jsx/`**: React UIコンポーネント
 - **`src/layouts/`**: ページレイアウト定義
 - **`src/pages/`**: ルーティング定義
-- **`functions/`**: Cloudflare Functionsのサーバーサイド処理
+- **`functions/`**: Cloudflare Functionsのサーバーサイド処理（[詳細](functions/CLAUDE.md)）
   - Amazon商品情報取得API
   - OGP情報取得API
   - ブログ記事表示
