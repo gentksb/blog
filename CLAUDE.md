@@ -34,6 +34,7 @@
 
 3. **開発機能**:
    - ESLint/Prettierによるコード整形
+     - インデントはダブルスペース
    - Textlintによる日本語文章校正
    - Vitestによるテスト
    - Redirectルール設定
@@ -71,7 +72,7 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 ### 設定ファイル
 
 - **`wrangler.jsonc`**: Workers設定（KVバインディング、静的アセット設定等）
-- **`.assetsignore`**: 静的アセットから除外するファイル（_worker.js）
+- **`.assetsignore`**: 静的アセットから除外するファイル（\_worker.js）
 
 ## 特記事項
 
@@ -88,16 +89,18 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 **背景**: Cloudflareの推奨により、Pages FunctionsからWorkers Static Assetsへ移行
 
 **変更内容**:
+
 - `wrangler.toml` → `wrangler.jsonc` へ設定移行
 - `pages_build_output_dir` → `assets.directory` + `main` フィールドへ変更
 - Pages Functions → Workers Functions へのビルドプロセス追加
 - 開発・ビルドコマンドの `wrangler pages` → `wrangler` への変更
-- `.assetsignore` ファイル追加で _worker.js の静的配信除外
+- `.assetsignore` ファイル追加で \_worker.js の静的配信除外
 - 環境変数の変更: `CF_PAGES_*` → `CLOUDFLARE_ENV` へ移行
 
 ## コード品質とテスト方針
 
 ### CI/CD対象ディレクトリ
+
 - **functions/**: Cloudflare Workers Functions（API実装）
 - **src/components/**: UIコンポーネント
 - **src/layouts/**: ページレイアウト
@@ -106,6 +109,7 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 - 設定ファイル（package.json、tsconfig.json、vitest.config.ts、wrangler.jsonc、.assetsignore）
 
 ### Textlint方針
+
 - **CI/CD対象外**: `src/content/post/`（2012年〜の過去記事）
   - 理由：textlint未対応時に作成された大量の過去記事の修正は非現実的
   - エディタ上でのlint表示は有効（ローカル開発時の参考情報として活用）
