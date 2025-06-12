@@ -13,6 +13,8 @@ on:
       - "package.json"
       - "tsconfig.json"
       - "vitest.config.ts"
+      - "wrangler.jsonc"
+      - ".assetsignore"
       - ".github/workflows/**"
   pull_request:
     paths:
@@ -24,6 +26,8 @@ on:
       - "package.json"
       - "tsconfig.json"
       - "vitest.config.ts"
+      - "wrangler.jsonc"
+      - ".assetsignore"
       - ".github/workflows/**"
 
 jobs:
