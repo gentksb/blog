@@ -9,8 +9,6 @@
     "dev:cf": "pnpm typegen && pnpm run build && wrangler dev",
     "prebuild": "run-p build:*",
     "build": "pnpm typegen && pnpm astro build && wrangler pages functions build --outdir=./dist/_worker.js/",
-    "preview": "pnpm typegen && pnpm run build && wrangler dev",
-    "preview:cf": "pnpm typegen && wrangler dev",
     "test": "pnpm typegen && pnpm vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",

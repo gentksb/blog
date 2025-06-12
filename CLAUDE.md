@@ -64,8 +64,8 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 ## デプロイフロー
 
 - Cloudflare Workers + Static Assetsでのビルド・デプロイ
-- 開発環境： `pnpm dev` （`pnpm typegen && wrangler dev -- pnpm astro dev`）
-- プレビュー環境： `pnpm preview` （`pnpm typegen && pnpm run build && wrangler dev`）
+- 通常開発： `pnpm dev` （`pnpm astro dev` - Astroの開発サーバー）
+- Cloudflare開発： `pnpm dev:cf` （`pnpm typegen && pnpm run build && wrangler dev` - Workers環境での開発）
 - 本番ビルド： `pnpm build` （`pnpm typegen && pnpm astro build && wrangler pages functions build --outdir=./dist/_worker.js/`）
 
 ### 設定ファイル
