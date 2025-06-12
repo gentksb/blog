@@ -93,6 +93,7 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 - Pages Functions → Workers Functions へのビルドプロセス追加
 - 開発・ビルドコマンドの `wrangler pages` → `wrangler` への変更
 - `.assetsignore` ファイル追加で _worker.js の静的配信除外
+- 環境変数の変更: `CF_PAGES_*` → `CLOUDFLARE_ENV` へ移行
 
 ## コード品質とテスト方針
 
