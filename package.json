@@ -50,7 +50,6 @@
     "@cloudflare/vitest-pool-workers": "^0.5.15",
     "@cloudflare/workers-types": "^4.20240806.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
-    "@types/bun": "^1.1.6",
     "@types/node": "^20.14.13",
     "@types/sanitize-html": "^2.11.0",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
