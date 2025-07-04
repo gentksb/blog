@@ -38,6 +38,8 @@ const siteUrl = isProduction
 // https://astro.build/config
 export default defineConfig({
   site: siteUrl,
+  output: "static",
+  outDir: "./dist/client",
   image: {
     service: imageServiceConfig
   },

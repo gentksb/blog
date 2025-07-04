@@ -8,7 +8,7 @@
     "dev": "pnpm astro dev",
     "dev:cf": "pnpm typegen && pnpm run build && wrangler dev",
     "prebuild": "run-p build:*",
-    "build": "pnpm typegen && pnpm astro build && wrangler pages functions build --outdir=./dist/_worker.js/",
+    "build": "pnpm typegen && pnpm astro build && wrangler pages functions build --outdir=./dist/worker/",
     "test": "pnpm typegen && pnpm vitest",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",

@@ -25,8 +25,5 @@ pnpm-debug.log*
 .wrangler/
 worker-configuration.d.ts
 
-# リダイレクトファイルはスクリプトでprebuild生成
-public/_redirects
-
 # 作業用
 kv.json
