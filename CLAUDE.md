@@ -123,17 +123,20 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 リポジトリサイズ縮小のため、`src/content/`配下の大きな画像ファイルを一括リサイズするスクリプトを提供しています。
 
 **実行方法**:
+
 ```bash
 ./resize_images.sh
 ```
 
 **処理内容**:
+
 - 対象: `src/content/`配下の画像ファイル（jpg, jpeg, png, webp）
 - 条件: 横幅1200px以上の画像のみ
 - 処理: 横幅1200px以下にリサイズ（アスペクト比維持）
 - 安全性: 処理前にバックアップ作成、エラー時は自動復元
 
 **注意事項**:
+
 - 1回限りの実行を想定したスクリプトです
 - 実行前に重要なファイルをバックアップしてください
 - ImageMagickが必要です（`identify`, `mogrify`コマンド）
