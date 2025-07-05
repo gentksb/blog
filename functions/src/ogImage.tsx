@@ -46,7 +46,8 @@ async function createImageResponse(
   coverSrc: string,
   fontData: ArrayBuffer,
   fontName: string,
-  weight: number
+  weight: number,
+  currentHost?: string
 ) {
   console.log("Starting ImageResponse generation")
 
@@ -64,6 +65,8 @@ async function createImageResponse(
           <img
             src={coverSrc}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            width={1200}
+            height={630}
           />
         </div>
         <div
@@ -114,7 +117,7 @@ async function createImageResponse(
           }}
         >
           <img
-            src="https://blog.gensobunya.net/image/logo.jpg"
+            src={currentHost ? `${currentHost}/image/logo.jpg` : "https://blog.gensobunya.net/image/logo.jpg"}
             style={{ height: "2rem" }}
           />
           幻想サイクル
@@ -163,7 +166,7 @@ async function createFallbackResponse(coverSrc: string) {
   })
 }
 
-export const ogImage = async (title: string, coverSrc: string) => {
+export const ogImage = async (title: string, coverSrc: string, currentHost?: string) => {
   console.log("OG Image generation started", { title, coverSrc })
 
   try {
@@ -173,7 +176,8 @@ export const ogImage = async (title: string, coverSrc: string) => {
       coverSrc,
       fontData,
       fontName,
-      weight
+      weight,
+      currentHost
     )
   } catch (error) {
     console.error("OG Image generation failed:", {
