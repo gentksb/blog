@@ -20,6 +20,10 @@
       "preview_id": "701470abdcbd43ae9c3d7a586684acf4"
     }
   ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
   "vars": {
     "NODE_VERSION": "22.14"
   }
