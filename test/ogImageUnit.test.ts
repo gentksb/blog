@@ -22,8 +22,8 @@ vi.mock("@cloudflare/pages-plugin-vercel-og/api", () => ({
   })
 }))
 
-// Mock global fetch for the internal post content fetch
-global.fetch = vi.fn().mockImplementation(() => {
+// Mock ASSETS.fetch for the internal post content fetch
+const mockAssetsFetch = vi.fn().mockImplementation(() => {
   const htmlContent = `
 <html>
   <head>
@@ -64,7 +64,10 @@ test("OG image generation returns PNG for twitter-og.png requests", async () => 
   
   const mockEnv = {
     ...env,
-    SLACK_WEBHOOK_URL: "https://mock-webhook.com"
+    SLACK_WEBHOOK_URL: "https://mock-webhook.com",
+    ASSETS: {
+      fetch: mockAssetsFetch
+    }
   }
   
   const ctx = {} as any

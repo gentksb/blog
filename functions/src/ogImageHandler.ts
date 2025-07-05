@@ -24,7 +24,7 @@ export async function handleOgImage(
   
   try {
     // Extract metadata from the corresponding HTML page
-    const postMetadata = await extractPostMetadata(request)
+    const postMetadata = await extractPostMetadata(request, env)
     
     // Generate OG image
     const imageResponse = await ogImage(
@@ -53,20 +53,52 @@ export async function handleOgImage(
 /**
  * Extracts post metadata from the HTML page
  */
-async function extractPostMetadata(request: Request): Promise<PostMetadata> {
+async function extractPostMetadata(request: Request, env: Env): Promise<PostMetadata> {
   const imagePathSuffix = "/twitter-og.png"
   
   // Get the HTML page URL by removing the image suffix
   const htmlUrl = request.url.replace(imagePathSuffix, "")
   
-  // Fetch the HTML page
-  const response = await fetch(htmlUrl)
+  console.log(`OG Image: Attempting to fetch HTML from: ${htmlUrl}`)
+  
+  // Create a new request for the HTML page
+  const htmlRequest = new Request(htmlUrl, {
+    method: "GET",
+    headers: request.headers
+  })
+  
+  // Fetch the HTML page from static assets
+  const response = await env.ASSETS.fetch(htmlRequest)
+  
+  console.log(`OG Image: HTML fetch response status: ${response.status}`)
   
   if (!response.ok) {
-    throw new Error(`Failed to fetch HTML page: ${response.status}`)
+    // Try alternative path with trailing slash
+    const alternativeUrl = htmlUrl.endsWith('/') ? htmlUrl : htmlUrl + '/'
+    console.log(`OG Image: Trying alternative URL: ${alternativeUrl}`)
+    
+    const alternativeRequest = new Request(alternativeUrl, {
+      method: "GET",
+      headers: request.headers
+    })
+    
+    const alternativeResponse = await env.ASSETS.fetch(alternativeRequest)
+    console.log(`OG Image: Alternative fetch response status: ${alternativeResponse.status}`)
+    
+    if (!alternativeResponse.ok) {
+      throw new Error(`Failed to fetch HTML page: ${response.status} (original), ${alternativeResponse.status} (alternative)`)
+    }
+    
+    return parseHtmlForMetadata(alternativeResponse)
   }
   
-  // Parse metadata from HTML
+  return parseHtmlForMetadata(response)
+}
+
+/**
+ * Parses HTML response for OG metadata
+ */
+async function parseHtmlForMetadata(response: Response): Promise<PostMetadata> {
   const postMetadata: PostMetadata = {
     title: "",
     imageUrl: ""
@@ -76,7 +108,7 @@ async function extractPostMetadata(request: Request): Promise<PostMetadata> {
   
   await rewriter
     .on("meta", {
-      element(element) {
+      element(element: Element) {
         const property = element.getAttribute("property")
         const content = element.getAttribute("content") || ""
         
