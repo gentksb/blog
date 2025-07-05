@@ -39,7 +39,7 @@ const siteUrl = isProduction
 export default defineConfig({
   site: siteUrl,
   output: "static",
-  outDir: "./dist/client",
+  outDir: "./dist/",
   image: {
     service: imageServiceConfig
   },

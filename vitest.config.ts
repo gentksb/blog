@@ -15,7 +15,7 @@ const workersConfig = defineWorkersConfig({
     },
     poolOptions: {
       workers: {
-        wrangler: { configPath: "./wrangler.toml" },
+        wrangler: { configPath: "./wrangler.jsonc" },
         miniflare: {
           compatibilityDate: "2024-05-13",
           compatibilityFlags: ["nodejs_compat"]

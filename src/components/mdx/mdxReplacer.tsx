@@ -6,7 +6,7 @@ export const MdxH2: React.FC<JSX.IntrinsicElements["h2"]> = (props) => {
   return (
     <h2
       {...props}
-      className="my-4 p-2 text-xl font-bold text-gray-700 bg-accent/20 border-l-4 border-accent"
+      className="my-4 border-l-4 border-accent bg-accent/20 p-2 text-xl font-bold text-gray-700"
     />
   )
 }

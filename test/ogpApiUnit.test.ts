@@ -1,5 +1,5 @@
 import { expect, test, vi } from "vitest"
-import { onRequestGet } from "../functions/api/getOgp"
+import { handleOgpApi } from "../functions/src/ogpApi"
 import { env } from "cloudflare:test"
 
 // Mock functions to avoid external dependencies
@@ -18,6 +18,15 @@ vi.mock("../functions/src/postLogToSlack", () => ({
   postLogToSlack: vi.fn().mockResolvedValue(undefined)
 }))
 
+// Mock Cloudflare Pages plugin to avoid font loading issues
+vi.mock("@cloudflare/pages-plugin-vercel-og/api", () => ({
+  ImageResponse: vi.fn().mockImplementation(() => {
+    return new Response(new ArrayBuffer(100), {
+      headers: { "content-type": "image/png" }
+    })
+  })
+}))
+
 test("OGP API requires URL parameter", async () => {
   const request = new Request("http://localhost/api/getOgp", {
     method: "GET"
@@ -28,18 +37,18 @@ test("OGP API requires URL parameter", async () => {
     put: vi.fn().mockResolvedValue(undefined)
   }
   
-  const context = {
-    request,
-    env: {
-      ...env,
-      OGP_DATASTORE: mockKV,
-      SLACK_WEBHOOK_URL: "https://mock-webhook.com"
-    }
-  } as any
+  const mockEnv = {
+    ...env,
+    OGP_DATASTORE: mockKV,
+    SLACK_WEBHOOK_URL: "https://mock-webhook.com"
+  }
+  
+  const ctx = {} as any
   
   // Should handle missing URL parameter gracefully
-  const response = await onRequestGet(context)
+  const response = await handleOgpApi(request, mockEnv, ctx)
   expect(response).toBeDefined()
+  expect(response.status).toBe(400)
 })
 
 test("OGP API handles encoded URLs", async () => {
@@ -55,16 +64,15 @@ test("OGP API handles encoded URLs", async () => {
     put: vi.fn().mockResolvedValue(undefined)
   }
   
-  const context = {
-    request,
-    env: {
-      ...env,
-      OGP_DATASTORE: mockKV,
-      SLACK_WEBHOOK_URL: "https://mock-webhook.com"
-    }
-  } as any
+  const mockEnv = {
+    ...env,
+    OGP_DATASTORE: mockKV,
+    SLACK_WEBHOOK_URL: "https://mock-webhook.com"
+  }
   
-  const response = await onRequestGet(context)
+  const ctx = {} as any
+  
+  const response = await handleOgpApi(request, mockEnv, ctx)
   expect(response.status).toBe(200)
   expect(response.headers.get("content-type")).toBe("application/json; charset=UTF-8")
   expect(response.headers.get("X-Robots-Tag")).toBe("noindex")
@@ -91,16 +99,15 @@ test("OGP API returns from cache when available", async () => {
     put: vi.fn().mockResolvedValue(undefined)
   }
   
-  const context = {
-    request,
-    env: {
-      ...env,
-      OGP_DATASTORE: mockKV,
-      SLACK_WEBHOOK_URL: "https://mock-webhook.com"
-    }
-  } as any
+  const mockEnv = {
+    ...env,
+    OGP_DATASTORE: mockKV,
+    SLACK_WEBHOOK_URL: "https://mock-webhook.com"
+  }
   
-  const response = await onRequestGet(context)
+  const ctx = {} as any
+  
+  const response = await handleOgpApi(request, mockEnv, ctx)
   expect(response.status).toBe(200)
   
   const responseData = await response.json() as any

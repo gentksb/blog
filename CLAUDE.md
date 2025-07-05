@@ -11,7 +11,7 @@
 - **スタイリング**: Tailwind CSS + DaisyUI
 - **検索機能**: Pagefind
 - **ホスティング**: Cloudflare Workers + Static Assets
-- **サーバーサイド**: Cloudflare Workers（旧Pages Functions）
+- **サーバーサイド**: Cloudflare Workers
 - **画像処理**: Cloudflare Image Service
 - **データベース**: Cloudflare KV（OGPキャッシュ用）
 - **パッケージマネージャー**: pnpm
@@ -47,10 +47,13 @@
   - **`jsx/`**: React UIコンポーネント
 - **`src/layouts/`**: ページレイアウト定義
 - **`src/pages/`**: ルーティング定義
-- **`functions/`**: Cloudflare Workers Functions（旧Pages Functions）のサーバーサイド処理（[詳細](functions/CLAUDE.md)）
-  - Amazon商品情報取得API
-  - OGP情報取得API
-  - ブログ記事表示
+- **`functions/`**: Cloudflare Workers のサーバーサイド処理（[詳細](functions/CLAUDE.md)）
+  - `_worker.ts`: 統一Workerエントリーポイント
+  - `src/`: ドメイン別ハンドラー（DDD アーキテクチャ）
+    - Amazon商品情報取得API
+    - OGP情報取得API
+    - OG画像生成
+    - セキュリティミドルウェア
 
 ## 環境変数
 
@@ -66,13 +69,14 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 
 - Cloudflare Workers + Static Assetsでのビルド・デプロイ
 - 通常開発： `pnpm dev` （`pnpm astro dev` - Astroの開発サーバー）
-- Cloudflare開発： `pnpm dev:cf` （`pnpm typegen && pnpm run build && wrangler dev` - Workers環境での開発）
-- 本番ビルド： `pnpm build` （`pnpm typegen && pnpm astro build && wrangler pages functions build --outdir=./dist/_worker.js/`）
+- Workers開発： `pnpm dev:cf` （`pnpm typegen && pnpm run build && wrangler dev` - Workers環境での開発）
+- 本番ビルド： `pnpm build` （`pnpm typegen && pnpm astro build`）
+- デプロイ： `wrangler deploy`
 
 ### 設定ファイル
 
 - **`wrangler.jsonc`**: Workers設定（KVバインディング、静的アセット設定等）
-- **`.assetsignore`**: 静的アセットから除外するファイル（\_worker.js）
+- **`astro.config.ts`**: Astro設定（出力ディレクトリ：`./dist/`）
 
 ## 特記事項
 
@@ -84,18 +88,20 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 
 ## マイグレーション履歴
 
-### 2025年6月：Cloudflare Pages → Workers Static Assets
+### 2025年7月：Pages Functions → Workers + Static Assets
 
-**背景**: Cloudflareの推奨により、Pages FunctionsからWorkers Static Assetsへ移行
+**背景**: Cloudflareの推奨により、Pages FunctionsからWorkers + Static Assetsへ移行
 
 **変更内容**:
 
-- `wrangler.toml` → `wrangler.jsonc` へ設定移行
-- `pages_build_output_dir` → `assets.directory` + `main` フィールドへ変更
-- Pages Functions → Workers Functions へのビルドプロセス追加
-- 開発・ビルドコマンドの `wrangler pages` → `wrangler` への変更
-- `.assetsignore` ファイル追加で \_worker.js の静的配信除外
-- 環境変数の変更: `CF_PAGES_*` → `CLOUDFLARE_ENV` へ移行
+- **アーキテクチャ変更**: ファイルベースルーティング → 統一Workerエントリーポイント
+- **ドメイン分離**: DDD（ドメイン駆動設計）に基づくハンドラー分離
+- **型安全性向上**: TypeScript完全対応（`.js` → `.ts`）
+- **API変更**: `onRequestGet(context)` → `fetch(request, env, ctx)`
+- **設定変更**: `astro.config.ts`出力ディレクトリ `./dist/client/` → `./dist/`
+- **ビルドプロセス簡素化**: Pages Functions build不要
+
+**技術的な変更**:
 
 ## コード品質とテスト方針
 

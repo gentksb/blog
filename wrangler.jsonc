@@ -4,11 +4,10 @@
   "compatibility_flags": ["nodejs_compat"],
   "upload_source_maps": true,
   "assets": {
-    "directory": "./dist/client/",
-    "binding": "ASSETS",
-    "run_worker_first": true
+    "directory": "./dist/",
+    "binding": "ASSETS"
   },
-  "main": "./dist/worker/index.js",
+  "main": "./functions/_worker.ts",
   "kv_namespaces": [
     {
       "binding": "OGP_DATASTORE",
