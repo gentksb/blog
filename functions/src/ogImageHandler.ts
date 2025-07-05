@@ -26,10 +26,19 @@ export async function handleOgImage(
     // Extract metadata from the corresponding HTML page
     const postMetadata = await extractPostMetadata(request, env)
     
+    // Get the current host from the request
+    const currentHost = new URL(request.url).origin
+    const fallbackImageUrl = `${currentHost}/image/logo.jpg`
+    
+    // Process image URL to use current host
+    const processedImageUrl = processImageUrl(postMetadata.imageUrl, currentHost, fallbackImageUrl)
+    
+    console.log(`OG Image: Using image URL: ${processedImageUrl}`)
+    
     // Generate OG image
     const imageResponse = await ogImage(
       postMetadata.title.replace(" | 幻想サイクル", ""),
-      postMetadata.imageUrl || "https://blog.gensobunya.net/image/logo.jpg"
+      processedImageUrl
     )
     
     return imageResponse
@@ -128,4 +137,44 @@ async function parseHtmlForMetadata(response: Response): Promise<PostMetadata> {
     .arrayBuffer()
   
   return postMetadata
+}
+
+/**
+ * Processes image URL to use the current request host instead of hardcoded domains
+ */
+function processImageUrl(imageUrl: string, currentHost: string, fallbackImageUrl: string): string {
+  if (!imageUrl) {
+    console.log("OG Image: No image URL provided, using fallback")
+    return fallbackImageUrl
+  }
+  
+  console.log(`OG Image: Original image URL: ${imageUrl}`)
+  console.log(`OG Image: Current host: ${currentHost}`)
+  
+  try {
+    const url = new URL(imageUrl)
+    
+    // Check if it's pointing to the production domain
+    if (url.hostname === 'blog.gensobunya.net') {
+      // Replace with current host
+      const newImageUrl = `${currentHost}${url.pathname}${url.search}${url.hash}`
+      console.log(`OG Image: Converted production URL to current host: ${newImageUrl}`)
+      return newImageUrl
+    }
+    
+    // If it's already using the current host or another domain, use as-is
+    console.log(`OG Image: Using original URL: ${imageUrl}`)
+    return imageUrl
+    
+  } catch (error) {
+    // If URL parsing fails, it might be a relative URL
+    if (imageUrl.startsWith('/')) {
+      const absoluteUrl = `${currentHost}${imageUrl}`
+      console.log(`OG Image: Converting relative URL to current host: ${absoluteUrl}`)
+      return absoluteUrl
+    }
+    
+    console.log(`OG Image: Invalid URL format, using fallback: ${imageUrl}`)
+    return fallbackImageUrl
+  }
 }
