@@ -46,13 +46,13 @@
   "devDependencies": {
     "@astrojs/check": "^0.8.3",
     "@cloudflare/vitest-pool-workers": "^0.5.15",
-    "@cloudflare/workers-types": "^4.20240806.0",
+    "@cloudflare/workers-types": "^4.20250726.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^20.14.13",
     "@types/sanitize-html": "^2.11.0",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-tailwindcss": "^3.17.4",
@@ -74,6 +74,6 @@
     "tsx": "^4.20.0",
     "typescript": "^5.5.4",
     "vitest": "2.0.5",
-    "wrangler": "^4.19.1"
+    "wrangler": "^4.26.1"
   }
 }
