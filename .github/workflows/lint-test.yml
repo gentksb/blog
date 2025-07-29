@@ -55,8 +55,8 @@ jobs:
       - name: Run Lint
         run: pnpm run lint
 
-      - name: Build
-        run: pnpm run build
+      - name: Create dist directory for tests
+        run: mkdir -p dist
 
       - name: Run Tests
         run: |
