@@ -1,5 +1,5 @@
 import { expect, test } from "vitest"
-import { onRequest } from "../functions/api/_middleware"
+import { handleMiddleware } from "../functions/src/middleware"
 
 test("middleware allows valid sec-fetch-mode headers", async () => {
   const validModes = ["same-origin", "cors", "same-site"]
@@ -12,15 +12,13 @@ test("middleware allows valid sec-fetch-mode headers", async () => {
       }
     })
     
-    const context = {
-      request,
-      next: () => new Response("OK", { status: 200 })
-    } as any
+    const env = {} as any
+    const ctx = {} as any
     
-    const response = await onRequest(context)
+    const response = await handleMiddleware(request, env, ctx)
     
-    // Should not be blocked by middleware (status should not be 403)
-    expect(response.status).not.toBe(403)
+    // Should return null (no blocking) for valid headers
+    expect(response).toBe(null)
   }
 })
 
@@ -35,13 +33,12 @@ test("middleware blocks invalid sec-fetch-mode headers", async () => {
       }
     })
     
-    const context = {
-      request,
-      next: () => new Response("OK", { status: 200 })
-    } as any
+    const env = {} as any
+    const ctx = {} as any
     
-    const response = await onRequest(context)
+    const response = await handleMiddleware(request, env, ctx)
     
+    expect(response).not.toBe(null)
     expect(response.status).toBe(403)
     expect(await response.text()).toBe("Forbidden")
   }
@@ -52,13 +49,12 @@ test("middleware blocks requests without sec-fetch-mode header", async () => {
     method: "GET"
   })
   
-  const context = {
-    request,
-    next: () => new Response("OK", { status: 200 })
-  } as any
+  const env = {} as any
+  const ctx = {} as any
   
-  const response = await onRequest(context)
+  const response = await handleMiddleware(request, env, ctx)
   
+  expect(response).not.toBe(null)
   expect(response.status).toBe(403)
   expect(await response.text()).toBe("Forbidden")
 })

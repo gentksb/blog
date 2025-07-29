@@ -7,12 +7,21 @@ import react from "@astrojs/react"
 import icon from "astro-icon"
 import pagefind from "astro-pagefind"
 
-console.log(`process.env.CF_PAGES: ${process.env.CF_PAGES}`)
-console.log(`process.env.CF_PAGES_BRANCH: ${process.env.CF_PAGES_BRANCH}`)
+console.log(`process.env.NODE_ENV: ${process.env.NODE_ENV}`)
+console.log(`process.env.WORKERS_CI: ${process.env.WORKERS_CI}`)
+console.log(`process.env.WORKERS_CI_BRANCH: ${process.env.WORKERS_CI_BRANCH}`)
 
-// ローカル開発時は画像サービスをパススルー
+// 本番環境かどうかの判定（本番ブランチかつCloudflare Workers CI環境）
+const isProduction = process.env.WORKERS_CI_BRANCH === "master" || process.env.NODE_ENV === "production"
+// Cloudflare Workers CI環境での実行かどうか
+const isCloudflareEnvironment = process.env.WORKERS_CI === "1"
+
+console.log(`isProduction: ${isProduction}`)
+console.log(`isCloudflareEnvironment: ${isCloudflareEnvironment}`)
+
+// Cloudflare本番環境でのみ画像サービスを使用
 const imageServiceConfig =
-  process.env.CF_PAGES === "1" && process.env.CF_PAGES_BRANCH === "master"
+  isProduction && isCloudflareEnvironment
     ? {
         entrypoint: "./src/entrypoint/cfImageService",
         config: {
@@ -21,15 +30,16 @@ const imageServiceConfig =
       }
     : passthroughImageService()
 
-// プロダクションブランチのみ固定のURLをsiteに設定する
-const siteUrl =
-  process.env.CF_PAGES_BRANCH === "master"
+// 本番環境のみ固定のURLをsiteに設定する
+const siteUrl = isProduction 
     ? "https://blog.gensobunya.net/"
-    : (process.env.CF_PAGES_URL ?? "https://blog.gensobunya.net/")
+    : "https://blog.gensobunya.net/"
 
 // https://astro.build/config
 export default defineConfig({
   site: siteUrl,
+  output: "static",
+  outDir: "./dist/",
   image: {
     service: imageServiceConfig
   },

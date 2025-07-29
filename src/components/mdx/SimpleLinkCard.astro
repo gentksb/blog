@@ -13,7 +13,7 @@ try {
   if (linkUrl) {
     new URL(linkUrl)
   }
-} catch (error) {
+} catch {
   throw new Error("Invalid URL")
 }
 ---

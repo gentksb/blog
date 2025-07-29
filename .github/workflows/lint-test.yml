@@ -13,6 +13,8 @@ on:
       - "package.json"
       - "tsconfig.json"
       - "vitest.config.ts"
+      - "wrangler.jsonc"
+      - ".assetsignore"
       - ".github/workflows/**"
   pull_request:
     paths:
@@ -24,6 +26,8 @@ on:
       - "package.json"
       - "tsconfig.json"
       - "vitest.config.ts"
+      - "wrangler.jsonc"
+      - ".assetsignore"
       - ".github/workflows/**"
 
 jobs:
@@ -50,6 +54,9 @@ jobs:
 
       - name: Run Lint
         run: pnpm run lint
+
+      - name: Create dist directory for tests
+        run: mkdir -p dist
 
       - name: Run Tests
         run: |
