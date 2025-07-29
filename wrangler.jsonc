@@ -8,6 +8,12 @@
     "binding": "ASSETS"
   },
   "main": "./functions/_worker.ts",
+  "routes": [
+    {
+      "pattern": "blog.gensobunya.net",
+      "custom_domain": true
+    }
+  ],
   "kv_namespaces": [
     {
       "binding": "OGP_DATASTORE",
