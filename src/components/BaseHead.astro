@@ -74,7 +74,9 @@ const jsonLd = {
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={twitterImageUrl ?? metaImageUrl} />
+<!-- <meta property="twitter:image" content={twitterImageUrl ?? metaImageUrl} /> -->
+<!-- hotfix twitter image generation fail -->
+<meta property="twitter:image" content={metaImageUrl} />
 
 <!-- JSON-LD -->
 <script
