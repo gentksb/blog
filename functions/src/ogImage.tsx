@@ -1,37 +1,62 @@
 import { ImageResponse } from "@cloudflare/pages-plugin-vercel-og/api"
+import { env } from "cloudflare:workers"
 import { Buffer } from "node:buffer"
 
 function detectImageFormat(buffer: Buffer): string {
   const uint8Array = new Uint8Array(buffer)
-  
+
   // PNG: 89 50 4E 47
-  if (uint8Array[0] === 0x89 && uint8Array[1] === 0x50 && uint8Array[2] === 0x4E && uint8Array[3] === 0x47) {
+  if (
+    uint8Array[0] === 0x89 &&
+    uint8Array[1] === 0x50 &&
+    uint8Array[2] === 0x4e &&
+    uint8Array[3] === 0x47
+  ) {
     return "image/png"
   }
-  
+
   // JPEG: FF D8 FF
-  if (uint8Array[0] === 0xFF && uint8Array[1] === 0xD8 && uint8Array[2] === 0xFF) {
+  if (
+    uint8Array[0] === 0xff &&
+    uint8Array[1] === 0xd8 &&
+    uint8Array[2] === 0xff
+  ) {
     return "image/jpeg"
   }
-  
+
   // WebP: RIFF ... WEBP
-  if (uint8Array[0] === 0x52 && uint8Array[1] === 0x49 && uint8Array[2] === 0x46 && uint8Array[3] === 0x46) {
-    if (uint8Array[8] === 0x57 && uint8Array[9] === 0x45 && uint8Array[10] === 0x42 && uint8Array[11] === 0x50) {
+  if (
+    uint8Array[0] === 0x52 &&
+    uint8Array[1] === 0x49 &&
+    uint8Array[2] === 0x46 &&
+    uint8Array[3] === 0x46
+  ) {
+    if (
+      uint8Array[8] === 0x57 &&
+      uint8Array[9] === 0x45 &&
+      uint8Array[10] === 0x42 &&
+      uint8Array[11] === 0x50
+    ) {
       return "image/webp"
     }
   }
-  
+
   // GIF: GIF8
-  if (uint8Array[0] === 0x47 && uint8Array[1] === 0x49 && uint8Array[2] === 0x46 && uint8Array[3] === 0x38) {
+  if (
+    uint8Array[0] === 0x47 &&
+    uint8Array[1] === 0x49 &&
+    uint8Array[2] === 0x46 &&
+    uint8Array[3] === 0x38
+  ) {
     return "image/gif"
   }
-  
+
   return "image/png" // デフォルトをPNGに変更（ImageResponseでより安全）
 }
 
-async function fetchImageAsBase64(imageUrl: string): Promise<string> {
+async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
   console.log("Fetching image from:", imageUrl)
-  const response = await fetch(imageUrl)
+  const response = await env.ASSETS.fetch(imageUrl)
   if (!response.ok) {
     throw new Error(
       `Image fetch failed: ${response.status} ${response.statusText}`
@@ -40,7 +65,7 @@ async function fetchImageAsBase64(imageUrl: string): Promise<string> {
 
   const arrayBuffer = await response.arrayBuffer()
   const declaredContentType = response.headers.get("content-type")
-  
+
   // メモリ使用量チェック
   if (arrayBuffer.byteLength > 5 * 1024 * 1024) {
     console.warn(
@@ -50,20 +75,24 @@ async function fetchImageAsBase64(imageUrl: string): Promise<string> {
 
   try {
     const buffer = Buffer.from(arrayBuffer)
-    
+
     // 実際のファイル形式を検出
     const detectedContentType = detectImageFormat(buffer)
-    
+
     // Content-Typeが宣言されているものと異なる場合は警告
     if (declaredContentType && declaredContentType !== detectedContentType) {
-      console.warn(`Content-Type mismatch for ${imageUrl}: declared=${declaredContentType}, detected=${detectedContentType}`)
+      console.warn(
+        `Content-Type mismatch for ${imageUrl}: declared=${declaredContentType}, detected=${detectedContentType}`
+      )
     }
-    
+
     const contentType = detectedContentType
     const base64String = buffer.toString("base64")
     const dataUrl = `data:${contentType};base64,${base64String}`
 
-    console.log(`Image processed: ${imageUrl}, format: ${contentType}, size: ${arrayBuffer.byteLength}`)
+    console.log(
+      `Image processed: ${imageUrl}, format: ${contentType}, size: ${arrayBuffer.byteLength}`
+    )
     return dataUrl
   } catch (error) {
     console.error("Image processing failed:", error)
@@ -247,8 +276,8 @@ export const ogImage = async (
     // 並行してフォントデータ、カバー画像、ロゴ画像を取得
     const [fontResult, coverBase64, logoBase64] = await Promise.all([
       fetchFontData(title),
-      fetchImageAsBase64(coverSrc),
-      fetchImageAsBase64(
+      fetchImageAssetAsBase64(coverSrc),
+      fetchImageAssetAsBase64(
         currentHost
           ? `${currentHost}/image/logo.jpg`
           : "https://blog.gensobunya.net/image/logo.jpg"
