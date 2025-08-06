@@ -1,4 +1,77 @@
 import { ImageResponse } from "@cloudflare/pages-plugin-vercel-og/api"
+import { Buffer } from "node:buffer"
+
+function detectImageFormat(buffer: Buffer): string {
+  const uint8Array = new Uint8Array(buffer)
+  
+  // PNG: 89 50 4E 47
+  if (uint8Array[0] === 0x89 && uint8Array[1] === 0x50 && uint8Array[2] === 0x4E && uint8Array[3] === 0x47) {
+    return "image/png"
+  }
+  
+  // JPEG: FF D8 FF
+  if (uint8Array[0] === 0xFF && uint8Array[1] === 0xD8 && uint8Array[2] === 0xFF) {
+    return "image/jpeg"
+  }
+  
+  // WebP: RIFF ... WEBP
+  if (uint8Array[0] === 0x52 && uint8Array[1] === 0x49 && uint8Array[2] === 0x46 && uint8Array[3] === 0x46) {
+    if (uint8Array[8] === 0x57 && uint8Array[9] === 0x45 && uint8Array[10] === 0x42 && uint8Array[11] === 0x50) {
+      return "image/webp"
+    }
+  }
+  
+  // GIF: GIF8
+  if (uint8Array[0] === 0x47 && uint8Array[1] === 0x49 && uint8Array[2] === 0x46 && uint8Array[3] === 0x38) {
+    return "image/gif"
+  }
+  
+  return "image/png" // デフォルトをPNGに変更（ImageResponseでより安全）
+}
+
+async function fetchImageAsBase64(imageUrl: string): Promise<string> {
+  console.log("Fetching image from:", imageUrl)
+  const response = await fetch(imageUrl)
+  if (!response.ok) {
+    throw new Error(
+      `Image fetch failed: ${response.status} ${response.statusText}`
+    )
+  }
+
+  const arrayBuffer = await response.arrayBuffer()
+  const declaredContentType = response.headers.get("content-type")
+  
+  // メモリ使用量チェック
+  if (arrayBuffer.byteLength > 5 * 1024 * 1024) {
+    console.warn(
+      `Large image detected: ${arrayBuffer.byteLength} bytes for ${imageUrl}`
+    )
+  }
+
+  try {
+    const buffer = Buffer.from(arrayBuffer)
+    
+    // 実際のファイル形式を検出
+    const detectedContentType = detectImageFormat(buffer)
+    
+    // Content-Typeが宣言されているものと異なる場合は警告
+    if (declaredContentType && declaredContentType !== detectedContentType) {
+      console.warn(`Content-Type mismatch for ${imageUrl}: declared=${declaredContentType}, detected=${detectedContentType}`)
+    }
+    
+    const contentType = detectedContentType
+    const base64String = buffer.toString("base64")
+    const dataUrl = `data:${contentType};base64,${base64String}`
+
+    console.log(`Image processed: ${imageUrl}, format: ${contentType}, size: ${arrayBuffer.byteLength}`)
+    return dataUrl
+  } catch (error) {
+    console.error("Image processing failed:", error)
+    throw new Error(
+      `Image processing failed for ${imageUrl}: ${error instanceof Error ? error.message : String(error)}`
+    )
+  }
+}
 
 async function fetchFontData(title: string) {
   const weight = 600
@@ -43,11 +116,11 @@ async function fetchFontData(title: string) {
 
 async function createImageResponse(
   title: string,
-  coverSrc: string,
+  coverBase64: string,
+  logoBase64: string,
   fontData: ArrayBuffer,
   fontName: string,
-  weight: number,
-  currentHost?: string
+  weight: number
 ) {
   console.log("Starting ImageResponse generation")
 
@@ -63,7 +136,7 @@ async function createImageResponse(
       >
         <div style={{ display: "flex", width: "100%", height: "100%" }}>
           <img
-            src={coverSrc}
+            src={coverBase64}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
             width={1200}
             height={630}
@@ -116,10 +189,7 @@ async function createImageResponse(
             fontFamily: fontName
           }}
         >
-          <img
-            src={currentHost ? `${currentHost}/image/logo.jpg` : "https://blog.gensobunya.net/image/logo.jpg"}
-            style={{ height: "2rem" }}
-          />
+          <img src={logoBase64} style={{ height: "2rem" }} />
           幻想サイクル
         </div>
       </div>
@@ -160,24 +230,40 @@ async function createFallbackResponse(coverSrc: string) {
   console.log("Fallback successful: coverSrc image fetched")
   return new Response(imageResponse.body, {
     headers: {
-      "Content-Type": imageResponse.headers.get("Content-Type") || "image/jpeg",
+      "Content-Type": imageResponse.headers.get("Content-Type") || "image/jpg",
       "Cache-Control": "public, max-age=31536000"
     }
   })
 }
 
-export const ogImage = async (title: string, coverSrc: string, currentHost?: string) => {
+export const ogImage = async (
+  title: string,
+  coverSrc: string,
+  currentHost?: string
+) => {
   console.log("OG Image generation started", { title, coverSrc })
 
   try {
-    const { fontData, fontName, weight } = await fetchFontData(title)
+    // 並行してフォントデータ、カバー画像、ロゴ画像を取得
+    const [fontResult, coverBase64, logoBase64] = await Promise.all([
+      fetchFontData(title),
+      fetchImageAsBase64(coverSrc),
+      fetchImageAsBase64(
+        currentHost
+          ? `${currentHost}/image/logo.jpg`
+          : "https://blog.gensobunya.net/image/logo.jpg"
+      )
+    ])
+
+    const { fontData, fontName, weight } = fontResult
+
     return await createImageResponse(
       title,
-      coverSrc,
+      coverBase64,
+      logoBase64,
       fontData,
       fontName,
-      weight,
-      currentHost
+      weight
     )
   } catch (error) {
     console.error("OG Image generation failed:", {

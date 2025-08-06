@@ -12,7 +12,9 @@ console.log(`process.env.WORKERS_CI: ${process.env.WORKERS_CI}`)
 console.log(`process.env.WORKERS_CI_BRANCH: ${process.env.WORKERS_CI_BRANCH}`)
 
 // 本番環境かどうかの判定（本番ブランチかつCloudflare Workers CI環境）
-const isProduction = process.env.WORKERS_CI_BRANCH === "master" || process.env.NODE_ENV === "production"
+const isProduction =
+  process.env.WORKERS_CI_BRANCH === "master" &&
+  process.env.NODE_ENV === "production"
 // Cloudflare Workers CI環境での実行かどうか
 const isCloudflareEnvironment = process.env.WORKERS_CI === "1"
 
@@ -31,9 +33,9 @@ const imageServiceConfig =
     : passthroughImageService()
 
 // 本番環境のみ固定のURLをsiteに設定する
-const siteUrl = isProduction 
-    ? "https://blog.gensobunya.net/"
-    : "https://blog.gensobunya.net/"
+const siteUrl = isProduction
+  ? "https://blog.gensobunya.net/"
+  : "https://blog.gensobunya.net/"
 
 // https://astro.build/config
 export default defineConfig({
