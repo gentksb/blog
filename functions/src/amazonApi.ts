@@ -1,111 +1,114 @@
 /**
- * Amazon Product API Handler
- * Handles fetching and caching of Amazon product information via PA-API
+ * Amazon商品API ハンドラー
+ * PA-APIを通じたAmazon商品情報の取得とキャッシングを処理
+ * 依存性注入を使ったクリーンアーキテクチャにリファクタリング済み
  */
-import { getAmazonProductInfo } from "./getAmazonProductInfo"
-import { postLogToSlack } from "./postLogToSlack"
-import type { AmazonItemsResponse } from "amazon-paapi"
+
+import { 
+  isValidAsin, 
+  extractAsinFromUrl, 
+  validateAmazonConfig 
+} from "./domain/validators"
+import { createAmazonResponse } from "./domain/transformers"
+import { 
+  createAmazonAdapter,
+  createKVCacheAdapter,
+  createSlackLoggerAdapter,
+  type AmazonAdapter
+} from "./adapters/amazonAdapter"
 
 /**
- * Handles GET requests for Amazon product information
+ * 依存性注入を使ったAmazonハンドラーを作成
+ * @param adapter - 注入された依存関係を持つAmazonアダプター
+ * @returns Amazon APIリクエスト用のハンドラー関数
+ */
+export const createAmazonHandler = (adapter: AmazonAdapter) => {
+  return async (request: Request): Promise<Response> => {
+    if (request.method !== 'GET') {
+      return new Response('Method Not Allowed', { status: 405 })
+    }
+    
+    try {
+      // URLパスからASINを抽出
+      const asin = extractAsinFromUrl(request.url)
+      
+      // ASIN形式を検証
+      if (!asin || !isValidAsin(asin)) {
+        const errorMsg = `Invalid ASIN format: ${asin}`
+        console.error(errorMsg)
+        
+        await adapter.logError(errorMsg, request.url)
+        throw new Error("asin is't valid.")
+      }
+      
+      console.log(`Requested ASIN: ${asin}`)
+      
+      // まずキャッシュをチェック
+      const cachedData = await adapter.getCached(asin)
+      
+      if (cachedData) {
+        console.log(`Amazon PA-API cache hit for ASIN: ${asin}`)
+        return createAmazonResponse(cachedData)
+      }
+      
+      // PA-APIから商品データを取得
+      const productData = await adapter.getProductInfo(asin)
+      
+      // 結果をキャッシュ
+      await adapter.cacheResult(asin, productData)
+      
+      console.log(`Amazon product data cached for ASIN: ${asin}`)
+      return createAmazonResponse(productData)
+      
+    } catch (error) {
+      console.error('Amazon API error:', error)
+      
+      // Slackにエラーをログ
+      await adapter.logError(
+        `Error: ${(error as Error).message}`,
+        request.url
+      )
+      
+      throw error
+    }
+  }
+}
+
+/**
+ * Amazon商品情報のGETリクエストを処理
+ * 依存関係を作成してハンドラーに委譲するメインエントリーポイント
  */
 export async function handleAmazonApi(
   request: Request, 
   env: Env, 
   _ctx: ExecutionContext
 ): Promise<Response> {
-  if (request.method !== 'GET') {
-    return new Response('Method Not Allowed', { status: 405 })
+  // 設定を検証
+  const config = {
+    accessKey: env.PAAPI_ACCESSKEY,
+    secretKey: env.PAAPI_SECRETKEY,
+    partnerTag: env.PARTNER_TAG
   }
   
-  try {
-    // Extract ASIN from URL path
-    const asin = extractAsinFromUrl(request.url)
-    
-    // Validate ASIN format
-    if (!asin || !isValidAsin(asin)) {
-      const errorMsg = `Invalid ASIN format: ${asin}`
-      console.error(errorMsg)
-      
-      await postLogToSlack(
-        `Amazon API Error: ${request.url}\n${errorMsg}`,
-        env.SLACK_WEBHOOK_URL
-      )
-      
-      throw new Error("asin is't valid.")
-    }
-    
-    console.log(`Requested ASIN: ${asin}`)
-    
-    // Check cache first
-    const cachedData: AmazonItemsResponse | null = await env.PAAPI_DATASTORE.get(asin, "json")
-    
-    if (cachedData) {
-      console.log(`Amazon PA-API cache hit for ASIN: ${asin}`)
-      return createAmazonResponse(cachedData)
-    }
-    
-    // Fetch product data from PA-API
-    const productData = await getAmazonProductInfo(
-      asin,
-      env.PAAPI_ACCESSKEY,
-      env.PAAPI_SECRETKEY,
-      env.PARTNER_TAG
-    )
-    
-    // Cache the result
-    await env.PAAPI_DATASTORE.put(asin, JSON.stringify(productData), {
-      expirationTtl: 60 * 60 * 24 // 24 hours
-    })
-    
-    console.log(`Amazon product data cached for ASIN: ${asin}`)
-    return createAmazonResponse(productData)
-    
-  } catch (error) {
-    console.error('Amazon API error:', error)
-    
-    // Log error to Slack
-    await postLogToSlack(
-      `Amazon API Error: ${request.url}\nError: ${(error as Error).message}`,
-      env.SLACK_WEBHOOK_URL
-    )
-    
-    throw error
+  if (!validateAmazonConfig(config)) {
+    throw new Error("Environment variables are not valid")
   }
-}
-
-/**
- * Extracts ASIN from URL path
- */
-function extractAsinFromUrl(url: string): string | null {
-  const urlObj = new URL(url)
-  const pathSegments = urlObj.pathname.split('/')
   
-  // Expected format: /api/getAmznPa/{asin}
-  const asinIndex = pathSegments.indexOf('getAmznPa') + 1
-  return pathSegments[asinIndex] || null
+  // 依存性注入でアダプターを作成
+  const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
+  const logger = createSlackLoggerAdapter(env.SLACK_WEBHOOK_URL)
+  const adapter = createAmazonAdapter({ cache, config, logger })
+  
+  // ハンドラーを作成して実行
+  const handler = createAmazonHandler(adapter)
+  return await handler(request)
 }
 
-/**
- * Validates ASIN format
- */
-function isValidAsin(asin: string): boolean {
-  if (typeof asin !== 'string') {
-    return false
-  }
-  return /^[A-Z0-9]{10}$/.test(asin)
-}
+// テスト用に純粋関数をエクスポート
+export { 
+  isValidAsin, 
+  extractAsinFromUrl, 
+  validateAmazonConfig 
+} from "./domain/validators"
 
-/**
- * Creates a standardized Amazon API response
- */
-function createAmazonResponse(productData: AmazonItemsResponse): Response {
-  return new Response(JSON.stringify(productData), {
-    status: 200,
-    headers: {
-      "content-type": "application/json",
-      "cache-control": "public, max-age=86400",
-      "x-robots-tag": "noindex"
-    }
-  })
-}
+export { createAmazonResponse } from "./domain/transformers"
