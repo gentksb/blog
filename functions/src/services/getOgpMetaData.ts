@@ -1,17 +1,34 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
 import type { OgpData } from "@type/ogpData-type"
 
-export const getOgpMetaData = async (queryUrl: string) => {
+function isSelfSiteUrl(url: string): boolean {
+  try {
+    const parsedUrl = new URL(url)
+    const hostname = parsedUrl.hostname
+
+    // 自サイトのドメインを判定
+    return (
+      hostname === "blog.gensobunya.net" ||
+      hostname === "localhost" ||
+      hostname === "127.0.0.1"
+    )
+  } catch {
+    console.warn(`Invalid URL format: ${url}`)
+    return false
+  }
+}
+
+export const getOgpMetaData = async (queryUrl: string, env: Env) => {
   const decodedUrl = decodeURIComponent(queryUrl)
   const safeUrl = sanitizeUrl(decodedUrl)
   console.log(`safeUrl: ${safeUrl}`)
 
-  const responseBody = await parseOgpTags(safeUrl)
+  const responseBody = await parseOgpTags(safeUrl, env)
 
   return responseBody
 }
 
-const parseOgpTags = async (href: string): Promise<OgpData> => {
+const parseOgpTags = async (href: string, env: Env): Promise<OgpData> => {
   const result: OgpData = {
     ogpTitle: undefined,
     ogpImageUrl: undefined,
@@ -22,8 +39,18 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
   }
 
   try {
-    const httpResponse = await fetch(href)
-    console.log(`fetching ${href} is done`, httpResponse.status)
+    // 自サイトのURLかどうかを判定
+    const isOwnSite = isSelfSiteUrl(href)
+
+    // 自サイトの場合はASSETS.fetchを使用、外部サイトの場合は通常のfetchを使用
+    const httpResponse = isOwnSite
+      ? await env.ASSETS.fetch(href)
+      : await fetch(href)
+
+    console.log(
+      `fetching ${href} is done (${isOwnSite ? "self-site" : "external"})`,
+      httpResponse.status
+    )
 
     if (!httpResponse.ok) {
       const result: OgpData = {

@@ -4,18 +4,18 @@
  * 依存性注入を使ったクリーンアーキテクチャにリファクタリング済み
  */
 
-import { 
-  isValidUrl, 
-  extractUrlFromRequest, 
-  validateOgpConfig 
+import {
+  isValidUrl,
+  extractUrlFromRequest,
+  validateOgpConfig
 } from "../domain/validators"
-import { 
+import {
   createOgpResponse,
   createMissingUrlParameterResponse,
   createOgpFetchErrorResponse,
   createMethodNotAllowedResponse
 } from "../domain/transformers"
-import { 
+import {
   createOgpAdapter,
   createOgpKVCacheAdapter,
   createOgpSlackLoggerAdapter,
@@ -28,23 +28,23 @@ import {
  * @param adapter - 注入された依存関係を持つOGPアダプター
  * @returns OGP APIリクエスト用のハンドラー関数
  */
-export const createOgpHandler = (adapter: OgpAdapter) => {
+export const createOgpHandler = (adapter: OgpAdapter, env: Env) => {
   return async (request: Request): Promise<Response> => {
-    if (request.method !== 'GET') {
+    if (request.method !== "GET") {
       return createMethodNotAllowedResponse()
     }
-    
+
     try {
       // URLパラメータを抽出
       const url = extractUrlFromRequest(request)
-      
+
       // URLパラメータの存在を検証
       if (!url) {
-        console.error('Missing URL parameter')
-        await adapter.logError('Missing URL parameter', request.url)
+        console.error("Missing URL parameter")
+        await adapter.logError("Missing URL parameter", request.url)
         return createMissingUrlParameterResponse()
       }
-      
+
       // URL形式を検証
       if (!isValidUrl(url)) {
         const errorMsg = `Invalid URL format: ${url}`
@@ -52,35 +52,31 @@ export const createOgpHandler = (adapter: OgpAdapter) => {
         await adapter.logError(errorMsg, request.url)
         return createMissingUrlParameterResponse()
       }
-      
+
       console.log(`Requested OGP URL: ${url}`)
-      
+
       // まずキャッシュをチェック
       const cachedData = await adapter.getCached(url)
-      
+
       if (cachedData) {
         console.log(`OGP KV cache hit for: ${url}`)
         return createOgpResponse(cachedData)
       }
-      
+
       // OGPデータを取得
-      const ogpData = await adapter.getOgpData(url)
-      
+      const ogpData = await adapter.getOgpData(url, env)
+
       // 結果をキャッシュ
       await adapter.cacheResult(url, ogpData)
-      
+
       console.log(`OGP data cached for: ${url}`)
       return createOgpResponse(ogpData)
-      
     } catch (error) {
-      console.error('OGP API error:', error)
-      
+      console.error("OGP API error:", error)
+
       // Slackにエラーをログ
-      await adapter.logError(
-        `Error: ${(error as Error).message}`,
-        request.url
-      )
-      
+      await adapter.logError(`Error: ${(error as Error).message}`, request.url)
+
       return createOgpFetchErrorResponse()
     }
   }
@@ -91,38 +87,38 @@ export const createOgpHandler = (adapter: OgpAdapter) => {
  * 依存関係を作成してハンドラーに委譲するメインエントリーポイント
  */
 export async function handleOgpApi(
-  request: Request, 
-  env: Env, 
+  request: Request,
+  env: Env,
   _ctx: ExecutionContext
 ): Promise<Response> {
   // 設定を検証
   const config = {
     slackWebhookUrl: env.SLACK_WEBHOOK_URL
   }
-  
+
   if (!validateOgpConfig(config)) {
     throw new Error("Environment variables are not valid")
   }
-  
+
   // 依存性注入でアダプターを作成
   const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
   const logger = createOgpSlackLoggerAdapter(env.SLACK_WEBHOOK_URL)
   const fetcher = createOgpFetcherAdapter()
   const adapter = createOgpAdapter({ cache, config, logger, fetcher })
-  
+
   // ハンドラーを作成して実行
-  const handler = createOgpHandler(adapter)
+  const handler = createOgpHandler(adapter, env)
   return await handler(request)
 }
 
 // テスト用に純粋関数をエクスポート
-export { 
-  isValidUrl, 
-  extractUrlFromRequest, 
-  validateOgpConfig 
+export {
+  isValidUrl,
+  extractUrlFromRequest,
+  validateOgpConfig
 } from "../domain/validators"
 
-export { 
+export {
   createOgpResponse,
   createMissingUrlParameterResponse,
   createOgpFetchErrorResponse

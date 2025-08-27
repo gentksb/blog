@@ -31,14 +31,14 @@ export interface OgpLoggerAdapter {
  * OGPメタデータを取得するためのフェッチャーインターフェース
  */
 export interface OgpFetcherAdapter {
-  fetchOgpData: (url: string) => Promise<OgpData>
+  fetchOgpData: (url: string, env: Env) => Promise<OgpData>
 }
 
 /**
  * 全ての外部依存をカプセル化するOGPサービスアダプター
  */
 export interface OgpAdapter {
-  getOgpData: (url: string) => Promise<OgpData>
+  getOgpData: (url: string, env: Env) => Promise<OgpData>
   getCached: (url: string) => Promise<OgpData | string | null>
   cacheResult: (url: string, data: OgpData) => Promise<void>
   logError: (message: string, url: string) => Promise<void>
@@ -56,8 +56,8 @@ export const createOgpAdapter = (deps: {
   fetcher: OgpFetcherAdapter
 }): OgpAdapter => {
   return {
-    async getOgpData(url: string): Promise<OgpData> {
-      return await deps.fetcher.fetchOgpData(url)
+    async getOgpData(url: string, env: Env): Promise<OgpData> {
+      return await deps.fetcher.fetchOgpData(url, env)
     },
 
     async getCached(url: string): Promise<OgpData | string | null> {
@@ -83,17 +83,21 @@ export const createOgpKVCacheAdapter = (kv: KVNamespace): OgpCacheAdapter => {
   return {
     async get(key: string): Promise<OgpData | string | null> {
       // まずJSON形式で取得を試す
-      const jsonData = await kv.get(key, "json") as OgpData | null
+      const jsonData = (await kv.get(key, "json")) as OgpData | null
       if (jsonData) {
         return jsonData
       }
-      
+
       // 次にテキスト形式で取得を試す（既存データとの互換性のため）
       return await kv.get(key)
     },
 
-    async put(key: string, data: OgpData | string, ttl = 60 * 60 * 24 * 7): Promise<void> {
-      const dataString = typeof data === 'string' ? data : JSON.stringify(data)
+    async put(
+      key: string,
+      data: OgpData | string,
+      ttl = 60 * 60 * 24 * 7
+    ): Promise<void> {
+      const dataString = typeof data === "string" ? data : JSON.stringify(data)
       await kv.put(key, dataString, {
         expirationTtl: ttl
       })
@@ -106,7 +110,9 @@ export const createOgpKVCacheAdapter = (kv: KVNamespace): OgpCacheAdapter => {
  * @param webhookUrl - Slack Webhook URL
  * @returns ロガーアダプター実装
  */
-export const createOgpSlackLoggerAdapter = (webhookUrl: string): OgpLoggerAdapter => {
+export const createOgpSlackLoggerAdapter = (
+  webhookUrl: string
+): OgpLoggerAdapter => {
   return {
     async logError(message: string, url: string): Promise<void> {
       // 循環依存を回避するために動的インポート
@@ -122,10 +128,10 @@ export const createOgpSlackLoggerAdapter = (webhookUrl: string): OgpLoggerAdapte
  */
 export const createOgpFetcherAdapter = (): OgpFetcherAdapter => {
   return {
-    async fetchOgpData(url: string): Promise<OgpData> {
+    async fetchOgpData(url: string, env: Env): Promise<OgpData> {
       // 循環依存を回避するために動的インポート
       const { getOgpMetaData } = await import("../services/getOgpMetaData")
-      return await getOgpMetaData(url)
+      return await getOgpMetaData(url, env)
     }
   }
 }
