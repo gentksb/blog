@@ -62,18 +62,18 @@ test("Amazon response creation", () => {
   expect(response.headers.get("x-robots-tag")).toBe("noindex")
 })
 
-test("Invalid ASIN response creation", () => {
+test("Invalid ASIN response creation", async () => {
   const response = createInvalidAsinResponse("INVALID")
   
   expect(response.status).toBe(400)
-  expect(response.text()).resolves.toBe("Invalid ASIN format: INVALID")
+  await expect(response.text()).resolves.toBe("Invalid ASIN format: INVALID")
 })
 
-test("Invalid ASIN response with null ASIN", () => {
+test("Invalid ASIN response with null ASIN", async () => {
   const response = createInvalidAsinResponse(null)
   
   expect(response.status).toBe(400)
-  expect(response.text()).resolves.toBe("Invalid ASIN format: null")
+  await expect(response.text()).resolves.toBe("Invalid ASIN format: null")
 })
 
 // === OGP API用変換関数のテスト ===
@@ -101,7 +101,7 @@ test("OGP response creation with OgpData object", () => {
   })
 })
 
-test("OGP response creation with string data", () => {
+test("OGP response creation with string data", async () => {
   const ogpDataString = JSON.stringify({
     ogpTitle: "String Test Title",
     pageurl: "https://example.com/",
@@ -112,7 +112,7 @@ test("OGP response creation with string data", () => {
   
   expect(response.status).toBe(200)
   expect(response.headers.get("content-type")).toBe("application/json; charset=UTF-8")
-  expect(response.text()).resolves.toBe(ogpDataString)
+  await expect(response.text()).resolves.toBe(ogpDataString)
 })
 
 test("Missing URL parameter response creation", () => {
@@ -139,11 +139,11 @@ test("OGP fetch error response creation", () => {
 
 // === セキュリティミドルウェア用変換関数のテスト ===
 
-test("Forbidden response creation", () => {
+test("Forbidden response creation", async () => {
   const response = createForbiddenResponse()
   
   expect(response.status).toBe(403)
-  expect(response.text()).resolves.toBe("Forbidden")
+  await expect(response.text()).resolves.toBe("Forbidden")
 })
 
 // === OG画像生成用変換関数のテスト ===
@@ -162,11 +162,11 @@ test("OG image error response creation", () => {
 
 // === 共通エラーレスポンステスト ===
 
-test("Method Not Allowed response creation", () => {
+test("Method Not Allowed response creation", async () => {
   const response = createMethodNotAllowedResponse()
   
   expect(response.status).toBe(405)
-  expect(response.text()).resolves.toBe("Method Not Allowed")
+  await expect(response.text()).resolves.toBe("Method Not Allowed")
 })
 
 // === レスポンスヘッダーの一貫性テスト ===

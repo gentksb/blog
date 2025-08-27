@@ -8,6 +8,7 @@ import * as path from "path"
 
 const workersConfig = defineWorkersConfig({
   test: {
+    testTimeout: 15000,
     alias: {
       "@": path.resolve(__dirname, "./src"),
       "@lib": path.resolve(__dirname, "./src/lib"),
