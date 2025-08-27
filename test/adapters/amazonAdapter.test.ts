@@ -13,8 +13,8 @@ vi.mock("../../functions/src/postLogToSlack", () => ({
 
 test("KV cache adapter works correctly with real KV", async () => {
   // Use actual KV from test environment instead of mocking
-  const cache = createKVCacheAdapter(env.AMAZON_CACHE || env.OGP_DATASTORE)
-  
+  const cache = createKVCacheAdapter(env.OGP_DATASTORE)
+
   if (!cache) {
     throw new Error("KV namespace not available in test environment")
   }
@@ -28,24 +28,17 @@ test("KV cache adapter works correctly with real KV", async () => {
   // Test get operation
   const retrievedData = await cache.get(testKey)
   expect(retrievedData).toEqual(testData)
-
-  // Cleanup: delete test data
-  if (env.AMAZON_CACHE?.delete) {
-    await env.AMAZON_CACHE.delete(testKey)
-  } else if (env.OGP_DATASTORE?.delete) {
-    await env.OGP_DATASTORE.delete(testKey)
-  }
 })
 
 test("KV cache adapter handles missing keys gracefully", async () => {
-  const cache = createKVCacheAdapter(env.AMAZON_CACHE || env.OGP_DATASTORE)
-  
+  const cache = createKVCacheAdapter(env.OGP_DATASTORE)
+
   if (!cache) {
     throw new Error("KV namespace not available in test environment")
   }
 
   const nonExistentKey = `non-existent-${Date.now()}`
-  
+
   // Should return null for non-existent keys
   const result = await cache.get(nonExistentKey)
   expect(result).toBeNull()

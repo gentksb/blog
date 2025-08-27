@@ -2,7 +2,13 @@ import { expect, test } from "vitest"
 import { 
   isValidAsin, 
   extractAsinFromUrl, 
-  validateAmazonConfig 
+  validateAmazonConfig,
+  isValidUrl,
+  extractUrlFromRequest,
+  validateOgpConfig,
+  isValidSecFetchMode,
+  isTwitterOgImageRequest,
+  extractPostPathFromImageRequest
 } from "../../functions/src/domain/validators"
 
 test("ASIN validation", () => {
@@ -44,4 +50,83 @@ test("Amazon config validation", () => {
     accessKey: "key",
     secretKey: "secret"
   })).toBe(false) // missing partnerTag
+})
+
+// === OGP API用バリデーション関数のテスト ===
+
+test("URL validation", () => {
+  // Valid URLs
+  expect(isValidUrl("https://example.com")).toBe(true)
+  expect(isValidUrl("http://example.com")).toBe(true)
+  expect(isValidUrl("https://example.com/path?query=1")).toBe(true)
+  
+  // Invalid URLs
+  expect(isValidUrl("ftp://example.com")).toBe(false)
+  expect(isValidUrl("invalid-url")).toBe(false)
+  expect(isValidUrl("")).toBe(false)
+  expect(isValidUrl("   ")).toBe(false)
+})
+
+test("URL extraction from request", () => {
+  const requestWithUrl = new Request("https://example.com/api/getOgp?url=https://test.com")
+  const requestWithoutUrl = new Request("https://example.com/api/getOgp")
+  const requestWithEmptyUrl = new Request("https://example.com/api/getOgp?url=")
+  
+  expect(extractUrlFromRequest(requestWithUrl)).toBe("https://test.com")
+  expect(extractUrlFromRequest(requestWithoutUrl)).toBeNull()
+  expect(extractUrlFromRequest(requestWithEmptyUrl)).toBeNull()
+})
+
+test("OGP config validation", () => {
+  expect(validateOgpConfig({
+    slackWebhookUrl: "https://hooks.slack.com/test"
+  })).toBe(true)
+  
+  expect(validateOgpConfig({
+    slackWebhookUrl: "http://example.com"
+  })).toBe(false) // not https
+  
+  expect(validateOgpConfig({})).toBe(false)
+  
+  expect(validateOgpConfig({
+    slackWebhookUrl: ""
+  })).toBe(false)
+})
+
+// === セキュリティミドルウェア用バリデーション関数のテスト ===
+
+test("sec-fetch-mode validation", () => {
+  // Valid modes
+  expect(isValidSecFetchMode("same-origin")).toBe(true)
+  expect(isValidSecFetchMode("cors")).toBe(true)
+  expect(isValidSecFetchMode("same-site")).toBe(true)
+  
+  // Invalid modes
+  expect(isValidSecFetchMode("navigate")).toBe(false)
+  expect(isValidSecFetchMode("websocket")).toBe(false)
+  expect(isValidSecFetchMode("no-cors")).toBe(false)
+  expect(isValidSecFetchMode("")).toBe(false)
+  expect(isValidSecFetchMode(null)).toBe(false)
+})
+
+// === OG画像生成用バリデーション関数のテスト ===
+
+test("Twitter OG image request validation", () => {
+  const imageRequest = new Request("https://example.com/post/test-slug/twitter-og.png")
+  const nonImageRequest = new Request("https://example.com/post/test-slug")
+  const differentImageRequest = new Request("https://example.com/post/test-slug/facebook-og.png")
+  
+  expect(isTwitterOgImageRequest(imageRequest)).toBe(true)
+  expect(isTwitterOgImageRequest(nonImageRequest)).toBe(false)
+  expect(isTwitterOgImageRequest(differentImageRequest)).toBe(false)
+})
+
+test("Post path extraction from image request", () => {
+  const imageRequest = new Request("https://example.com/post/test-slug/twitter-og.png")
+  const nestedImageRequest = new Request("https://example.com/post/2024/01/article/twitter-og.png")
+  const nonImageRequest = new Request("https://example.com/post/test-slug")
+  
+  expect(extractPostPathFromImageRequest(imageRequest)).toBe("https://example.com/post/test-slug")
+  expect(extractPostPathFromImageRequest(nestedImageRequest)).toBe("https://example.com/post/2024/01/article")
+  expect(extractPostPathFromImageRequest(nonImageRequest)).toBeNull()
 })

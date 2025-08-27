@@ -1,142 +1,125 @@
 /**
- * OG Image Generation Handler
- * Handles dynamic OG image generation for blog posts
+ * OG画像生成 ハンドラー
+ * ブログ記事用のOG画像動的生成を処理
+ * 依存性注入を使ったクリーンアーキテクチャにリファクタリング済み
  */
-import { ogImage } from "./ogImage"
-import { postLogToSlack } from "./postLogToSlack"
 
-interface PostMetadata {
-  title: string
-  imageUrl: string
+import { 
+  isTwitterOgImageRequest,
+  extractPostPathFromImageRequest,
+  validateOgpConfig 
+} from "./domain/validators"
+import { 
+  createOgImageErrorResponse,
+  createMethodNotAllowedResponse
+} from "./domain/transformers"
+import { 
+  createOgImageAdapter,
+  createOgImageSlackLoggerAdapter,
+  createAssetFetcherAdapter,
+  createHtmlParserAdapter,
+  createImageGeneratorAdapter,
+  type OgImageAdapter
+} from "./adapters/ogImageAdapter"
+
+/**
+ * 依存性注入を使ったOG画像生成ハンドラーを作成
+ * @param adapter - 注入された依存関係を持つOG画像生成アダプター
+ * @returns OG画像生成リクエスト用のハンドラー関数
+ */
+export const createOgImageHandler = (adapter: OgImageAdapter) => {
+  return async (request: Request): Promise<Response> => {
+    if (request.method !== 'GET') {
+      return createMethodNotAllowedResponse()
+    }
+    
+    // twitter-og.pngリクエストかどうか検証
+    if (!isTwitterOgImageRequest(request)) {
+      throw new Error("Not a Twitter OG image request")
+    }
+    
+    try {
+      // 対応するHTMLページからメタデータを抽出
+      const postMetadata = await adapter.extractPostMetadata(request)
+      
+      // リクエストから現在のホストを取得
+      const currentHost = new URL(request.url).origin
+      const fallbackImageUrl = `${currentHost}/image/logo.jpg`
+      
+      // 画像URLをそのまま使用（シンプルなアプローチ）
+      const processedImageUrl = postMetadata.imageUrl || fallbackImageUrl
+      
+      console.log(`OG Image: Using image URL: ${processedImageUrl}`)
+      
+      // タイトルから不要な部分を削除
+      const cleanTitle = postMetadata.title.replace(" | 幻想サイクル", "")
+      
+      // OG画像を生成
+      const imageResponse = await adapter.generateOgImage(
+        cleanTitle,
+        processedImageUrl,
+        currentHost
+      )
+      
+      return imageResponse
+      
+    } catch (error) {
+      console.error("Error generating OG image:", error)
+      
+      // Slackにエラーをログ
+      await adapter.logError(
+        `Error: ${(error as Error).message}`,
+        request.url
+      )
+      
+      return createOgImageErrorResponse()
+    }
+  }
 }
 
 /**
- * Handles GET requests for OG image generation
+ * OG画像生成のGETリクエストを処理
+ * 依存関係を作成してハンドラーに委譲するメインエントリーポイント
  */
 export async function handleOgImage(
   request: Request, 
   env: Env, 
   _ctx: ExecutionContext
 ): Promise<Response> {
-  if (request.method !== 'GET') {
-    return new Response('Method Not Allowed', { status: 405 })
+  // 設定を検証
+  const config = {
+    slackWebhookUrl: env.SLACK_WEBHOOK_URL
   }
   
-  try {
-    // Extract metadata from the corresponding HTML page
-    const postMetadata = await extractPostMetadata(request, env)
-    
-    // Get the current host from the request
-    const currentHost = new URL(request.url).origin
-    const fallbackImageUrl = `${currentHost}/image/logo.jpg`
-    
-    // Use image URL as-is (simple approach)
-    const processedImageUrl = postMetadata.imageUrl || fallbackImageUrl
-    
-    console.log(`OG Image: Using image URL: ${processedImageUrl}`)
-    
-    // Generate OG image
-    const imageResponse = await ogImage(
-      postMetadata.title.replace(" | 幻想サイクル", ""),
-      processedImageUrl,
-      currentHost
-    )
-    
-    return imageResponse
-    
-  } catch (error) {
-    console.error("Error generating OG image:", error)
-    
-    // Log error to Slack
-    await postLogToSlack(
-      `OG Image Generation Error: ${request.url}\nError: ${(error as Error).message}`,
-      env.SLACK_WEBHOOK_URL
-    )
-    
-    return new Response(null, {
-      status: 500,
-      statusText: "Internal Server Error"
-    })
+  if (!validateOgpConfig(config)) {
+    throw new Error("Environment variables are not valid")
   }
-}
-
-/**
- * Extracts post metadata from the HTML page
- */
-async function extractPostMetadata(request: Request, env: Env): Promise<PostMetadata> {
-  const imagePathSuffix = "/twitter-og.png"
   
-  // Get the HTML page URL by removing the image suffix
-  const htmlUrl = request.url.replace(imagePathSuffix, "")
-  
-  console.log(`OG Image: Attempting to fetch HTML from: ${htmlUrl}`)
-  
-  // Create a new request for the HTML page
-  const htmlRequest = new Request(htmlUrl, {
-    method: "GET",
-    headers: request.headers
+  // 依存性注入でアダプターを作成
+  const logger = createOgImageSlackLoggerAdapter(env.SLACK_WEBHOOK_URL)
+  const assetFetcher = createAssetFetcherAdapter(env.ASSETS)
+  const htmlParser = createHtmlParserAdapter()
+  const imageGenerator = createImageGeneratorAdapter()
+  const adapter = createOgImageAdapter({ 
+    config, 
+    logger, 
+    assetFetcher, 
+    htmlParser, 
+    imageGenerator 
   })
   
-  // Fetch the HTML page from static assets
-  const response = await env.ASSETS.fetch(htmlRequest)
-  
-  console.log(`OG Image: HTML fetch response status: ${response.status}`)
-  
-  if (!response.ok) {
-    // Try alternative path with trailing slash
-    const alternativeUrl = htmlUrl.endsWith('/') ? htmlUrl : htmlUrl + '/'
-    console.log(`OG Image: Trying alternative URL: ${alternativeUrl}`)
-    
-    const alternativeRequest = new Request(alternativeUrl, {
-      method: "GET",
-      headers: request.headers
-    })
-    
-    const alternativeResponse = await env.ASSETS.fetch(alternativeRequest)
-    console.log(`OG Image: Alternative fetch response status: ${alternativeResponse.status}`)
-    
-    if (!alternativeResponse.ok) {
-      throw new Error(`Failed to fetch HTML page: ${response.status} (original), ${alternativeResponse.status} (alternative)`)
-    }
-    
-    return parseHtmlForMetadata(alternativeResponse)
-  }
-  
-  return parseHtmlForMetadata(response)
+  // ハンドラーを作成して実行
+  const handler = createOgImageHandler(adapter)
+  return await handler(request)
 }
 
-/**
- * Parses HTML response for OG metadata
- */
-async function parseHtmlForMetadata(response: Response): Promise<PostMetadata> {
-  const postMetadata: PostMetadata = {
-    title: "",
-    imageUrl: ""
-  }
-  
-  const rewriter = new HTMLRewriter()
-  
-  await rewriter
-    .on("meta", {
-      element(element: Element) {
-        const property = element.getAttribute("property")
-        const content = element.getAttribute("content") || ""
-        
-        switch (property) {
-          case "og:title":
-            postMetadata.title = content
-            break
-          case "og:image":
-            postMetadata.imageUrl = content
-            break
-          default:
-            break
-        }
-      }
-    })
-    .transform(response)
-    .arrayBuffer()
-  
-  return postMetadata
-}
+// テスト用に純粋関数をエクスポート
+export { 
+  isTwitterOgImageRequest,
+  extractPostPathFromImageRequest 
+} from "./domain/validators"
+
+export { 
+  createOgImageErrorResponse
+} from "./domain/transformers"
 

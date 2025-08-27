@@ -1,85 +1,129 @@
 /**
- * OGP API Handler
- * Handles fetching and caching of OGP metadata
+ * OGP API ハンドラー
+ * OGPメタデータの取得とキャッシングを処理
+ * 依存性注入を使ったクリーンアーキテクチャにリファクタリング済み
  */
-import { getOgpMetaData } from "./getOgpMetaData"
-import { postLogToSlack } from "./postLogToSlack"
+
+import { 
+  isValidUrl, 
+  extractUrlFromRequest, 
+  validateOgpConfig 
+} from "./domain/validators"
+import { 
+  createOgpResponse,
+  createMissingUrlParameterResponse,
+  createOgpFetchErrorResponse,
+  createMethodNotAllowedResponse
+} from "./domain/transformers"
+import { 
+  createOgpAdapter,
+  createOgpKVCacheAdapter,
+  createOgpSlackLoggerAdapter,
+  createOgpFetcherAdapter,
+  type OgpAdapter
+} from "./adapters/ogpAdapter"
 
 /**
- * Handles GET requests for OGP metadata
+ * 依存性注入を使ったOGPハンドラーを作成
+ * @param adapter - 注入された依存関係を持つOGPアダプター
+ * @returns OGP APIリクエスト用のハンドラー関数
+ */
+export const createOgpHandler = (adapter: OgpAdapter) => {
+  return async (request: Request): Promise<Response> => {
+    if (request.method !== 'GET') {
+      return createMethodNotAllowedResponse()
+    }
+    
+    try {
+      // URLパラメータを抽出
+      const url = extractUrlFromRequest(request)
+      
+      // URLパラメータの存在を検証
+      if (!url) {
+        console.error('Missing URL parameter')
+        await adapter.logError('Missing URL parameter', request.url)
+        return createMissingUrlParameterResponse()
+      }
+      
+      // URL形式を検証
+      if (!isValidUrl(url)) {
+        const errorMsg = `Invalid URL format: ${url}`
+        console.error(errorMsg)
+        await adapter.logError(errorMsg, request.url)
+        return createMissingUrlParameterResponse()
+      }
+      
+      console.log(`Requested OGP URL: ${url}`)
+      
+      // まずキャッシュをチェック
+      const cachedData = await adapter.getCached(url)
+      
+      if (cachedData) {
+        console.log(`OGP KV cache hit for: ${url}`)
+        return createOgpResponse(cachedData)
+      }
+      
+      // OGPデータを取得
+      const ogpData = await adapter.getOgpData(url)
+      
+      // 結果をキャッシュ
+      await adapter.cacheResult(url, ogpData)
+      
+      console.log(`OGP data cached for: ${url}`)
+      return createOgpResponse(ogpData)
+      
+    } catch (error) {
+      console.error('OGP API error:', error)
+      
+      // Slackにエラーをログ
+      await adapter.logError(
+        `Error: ${(error as Error).message}`,
+        request.url
+      )
+      
+      return createOgpFetchErrorResponse()
+    }
+  }
+}
+
+/**
+ * OGPメタデータのGETリクエストを処理
+ * 依存関係を作成してハンドラーに委譲するメインエントリーポイント
  */
 export async function handleOgpApi(
   request: Request, 
   env: Env, 
   _ctx: ExecutionContext
 ): Promise<Response> {
-  if (request.method !== 'GET') {
-    return new Response('Method Not Allowed', { status: 405 })
+  // 設定を検証
+  const config = {
+    slackWebhookUrl: env.SLACK_WEBHOOK_URL
   }
   
-  const searchParams = new URL(request.url).searchParams
-  const url = searchParams.get("url")
-  
-  if (!url) {
-    return new Response(
-      JSON.stringify({ error: 'URL parameter is required' }),
-      { 
-        status: 400,
-        headers: { 'content-type': 'application/json' }
-      }
-    )
+  if (!validateOgpConfig(config)) {
+    throw new Error("Environment variables are not valid")
   }
   
-  try {
-    // Check cache first
-    const cache = await env.OGP_DATASTORE.get(url)
-    
-    if (cache) {
-      console.log(`OGP KV cache hit for: ${url}`)
-      return createOgpResponse(cache)
-    }
-    
-    // Fetch OGP data
-    const ogpData = await getOgpMetaData(url)
-    const bodyString = JSON.stringify(ogpData)
-    
-    // Cache the result
-    await env.OGP_DATASTORE.put(url, bodyString, {
-      expirationTtl: 60 * 60 * 24 * 7 // 1 week
-    })
-    
-    console.log(`OGP data cached for: ${url}`)
-    return createOgpResponse(bodyString)
-    
-  } catch (error) {
-    console.error('OGP API error:', error)
-    
-    // Log error to Slack
-    await postLogToSlack(
-      `OGP API Error: ${request.url}\nError: ${(error as Error).message}`,
-      env.SLACK_WEBHOOK_URL
-    )
-    
-    return new Response(
-      JSON.stringify({ error: 'Failed to fetch OGP data' }),
-      { 
-        status: 500,
-        headers: { 'content-type': 'application/json' }
-      }
-    )
-  }
+  // 依存性注入でアダプターを作成
+  const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
+  const logger = createOgpSlackLoggerAdapter(env.SLACK_WEBHOOK_URL)
+  const fetcher = createOgpFetcherAdapter()
+  const adapter = createOgpAdapter({ cache, config, logger, fetcher })
+  
+  // ハンドラーを作成して実行
+  const handler = createOgpHandler(adapter)
+  return await handler(request)
 }
 
-/**
- * Creates a standardized OGP response
- */
-function createOgpResponse(bodyString: string): Response {
-  return new Response(bodyString, {
-    status: 200,
-    headers: {
-      "content-type": "application/json; charset=UTF-8",
-      "X-Robots-Tag": "noindex",
-      "cache-control": "public, max-age=86400"
-    }
-  })
-}
+// テスト用に純粋関数をエクスポート
+export { 
+  isValidUrl, 
+  extractUrlFromRequest, 
+  validateOgpConfig 
+} from "./domain/validators"
+
+export { 
+  createOgpResponse,
+  createMissingUrlParameterResponse,
+  createOgpFetchErrorResponse
+} from "./domain/transformers"
