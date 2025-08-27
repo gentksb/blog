@@ -13,7 +13,7 @@ import {
 } from "../../functions/src/adapters/ogImageAdapter"
 
 // Mock external dependencies
-vi.mock("../../functions/src/postLogToSlack", () => ({
+vi.mock("../../functions/src/services/postLogToSlack", () => ({
   postLogToSlack: vi.fn().mockResolvedValue(undefined)
 }))
 

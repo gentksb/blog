@@ -110,7 +110,7 @@ export const createOgpSlackLoggerAdapter = (webhookUrl: string): OgpLoggerAdapte
   return {
     async logError(message: string, url: string): Promise<void> {
       // 循環依存を回避するために動的インポート
-      const { postLogToSlack } = await import("../postLogToSlack")
+      const { postLogToSlack } = await import("../services/postLogToSlack")
       await postLogToSlack(`OGP API Error: ${url}\n${message}`, webhookUrl)
     }
   }
@@ -124,7 +124,7 @@ export const createOgpFetcherAdapter = (): OgpFetcherAdapter => {
   return {
     async fetchOgpData(url: string): Promise<OgpData> {
       // 循環依存を回避するために動的インポート
-      const { getOgpMetaData } = await import("../getOgpMetaData")
+      const { getOgpMetaData } = await import("../services/getOgpMetaData")
       return await getOgpMetaData(url)
     }
   }

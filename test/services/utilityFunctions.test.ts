@@ -1,5 +1,5 @@
 import { expect, test } from "vitest"
-import { postLogToSlack } from "functions/src/postLogToSlack"
+import { postLogToSlack } from "functions/src/services/postLogToSlack"
 
 test("postLogToSlack handles missing webhook URL gracefully", async () => {
   // Should handle empty webhook URL without throwing

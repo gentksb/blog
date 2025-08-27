@@ -1,6 +1,6 @@
 import { expect, test } from "vitest"
-import { testAsin } from "./testData"
-import { getAmazonProductInfo } from "functions/src/getAmazonProductInfo"
+import { testAsin } from "../fixtures/testData"
+import { getAmazonProductInfo } from "functions/src/services/getAmazonProductInfo"
 import { env } from "cloudflare:test"
 
 const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = env

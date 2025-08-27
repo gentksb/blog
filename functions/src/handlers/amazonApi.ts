@@ -8,14 +8,14 @@ import {
   isValidAsin, 
   extractAsinFromUrl, 
   validateAmazonConfig 
-} from "./domain/validators"
-import { createAmazonResponse } from "./domain/transformers"
+} from "../domain/validators"
+import { createAmazonResponse } from "../domain/transformers"
 import { 
   createAmazonAdapter,
   createKVCacheAdapter,
   createSlackLoggerAdapter,
   type AmazonAdapter
-} from "./adapters/amazonAdapter"
+} from "../adapters/amazonAdapter"
 
 /**
  * 依存性注入を使ったAmazonハンドラーを作成
@@ -109,6 +109,6 @@ export {
   isValidAsin, 
   extractAsinFromUrl, 
   validateAmazonConfig 
-} from "./domain/validators"
+} from "../domain/validators"
 
-export { createAmazonResponse } from "./domain/transformers"
+export { createAmazonResponse } from "../domain/transformers"

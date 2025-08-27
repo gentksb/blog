@@ -1,10 +1,10 @@
 // Main Worker entry point for blog functions
 // This replaces the Pages Functions routing system
 
-import { handleMiddleware } from './src/middleware'
-import { handleOgpApi } from './src/ogpApi'
-import { handleAmazonApi } from './src/amazonApi'
-import { handleOgImage } from './src/ogImageHandler'
+import { handleMiddleware } from './src/middleware/middleware'
+import { handleOgpApi } from './src/handlers/ogpApi'
+import { handleAmazonApi } from './src/handlers/amazonApi'
+import { handleOgImage } from './src/handlers/ogImageHandler'
 
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {

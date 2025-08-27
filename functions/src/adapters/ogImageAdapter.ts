@@ -125,7 +125,7 @@ export const createOgImageSlackLoggerAdapter = (webhookUrl: string): OgImageLogg
   return {
     async logError(message: string, url: string): Promise<void> {
       // 循環依存を回避するために動的インポート
-      const { postLogToSlack } = await import("../postLogToSlack")
+      const { postLogToSlack } = await import("../services/postLogToSlack")
       await postLogToSlack(`OG Image Generation Error: ${url}\n${message}`, webhookUrl)
     }
   }
@@ -192,7 +192,7 @@ export const createImageGeneratorAdapter = (): ImageGeneratorAdapter => {
   return {
     async generateImage(title: string, imageUrl: string, currentHost: string): Promise<Response> {
       // 循環依存を回避するために動的インポート
-      const { ogImage } = await import("../ogImage")
+      const { ogImage } = await import("../services/ogImage")
       return await ogImage(title, imageUrl, currentHost)
     }
   }

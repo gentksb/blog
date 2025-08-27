@@ -1,5 +1,5 @@
 import { expect, test } from "vitest"
-import { createAmazonResponse } from "../../functions/src/amazonApi"
+import { createAmazonResponse } from "../../functions/src/handlers/amazonApi"
 import { createMockAmazonResponse } from "../helpers/mockData"
 
 test("Amazon response creation works correctly", () => {

@@ -6,8 +6,8 @@
 
 import { expect, test, vi } from "vitest"
 import { env } from "cloudflare:test"
-import { createOgpHandler } from "../../functions/src/ogpApi"
-import { createOgImageHandler } from "../../functions/src/ogImageHandler"
+import { createOgpHandler } from "../../functions/src/handlers/ogpApi"
+import { createOgImageHandler } from "../../functions/src/handlers/ogImageHandler"
 import {
   createOgpAdapter,
   createOgpKVCacheAdapter,
@@ -23,15 +23,15 @@ import {
 } from "../../functions/src/adapters/ogImageAdapter"
 import {
   createSecurityMiddleware
-} from "../../functions/src/middleware"
+} from "../../functions/src/middleware/middleware"
 import type { OgpData } from "@type/ogpData-type"
 
 // Mock external dependencies to keep tests isolated
-vi.mock("../../functions/src/postLogToSlack", () => ({
+vi.mock("../../functions/src/services/postLogToSlack", () => ({
   postLogToSlack: vi.fn().mockResolvedValue(undefined)
 }))
 
-vi.mock("../../functions/src/getOgpMetaData", () => ({
+vi.mock("../../functions/src/services/getOgpMetaData", () => ({
   getOgpMetaData: vi.fn().mockResolvedValue({
     ogpTitle: "Test OGP Title",
     ogpImageUrl: "https://example.com/test.jpg",

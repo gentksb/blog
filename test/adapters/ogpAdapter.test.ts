@@ -12,11 +12,11 @@ import {
 import type { OgpData } from "@type/ogpData-type"
 
 // Mock external dependencies for Slack logger and OGP fetcher
-vi.mock("../../functions/src/postLogToSlack", () => ({
+vi.mock("../../functions/src/services/postLogToSlack", () => ({
   postLogToSlack: vi.fn().mockResolvedValue(undefined)
 }))
 
-vi.mock("../../functions/src/getOgpMetaData", () => ({
+vi.mock("../../functions/src/services/getOgpMetaData", () => ({
   getOgpMetaData: vi.fn().mockResolvedValue({
     ogpTitle: "Test Title",
     ogpImageUrl: "https://example.com/image.jpg",

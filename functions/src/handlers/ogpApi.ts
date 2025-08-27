@@ -8,20 +8,20 @@ import {
   isValidUrl, 
   extractUrlFromRequest, 
   validateOgpConfig 
-} from "./domain/validators"
+} from "../domain/validators"
 import { 
   createOgpResponse,
   createMissingUrlParameterResponse,
   createOgpFetchErrorResponse,
   createMethodNotAllowedResponse
-} from "./domain/transformers"
+} from "../domain/transformers"
 import { 
   createOgpAdapter,
   createOgpKVCacheAdapter,
   createOgpSlackLoggerAdapter,
   createOgpFetcherAdapter,
   type OgpAdapter
-} from "./adapters/ogpAdapter"
+} from "../adapters/ogpAdapter"
 
 /**
  * 依存性注入を使ったOGPハンドラーを作成
@@ -120,10 +120,10 @@ export {
   isValidUrl, 
   extractUrlFromRequest, 
   validateOgpConfig 
-} from "./domain/validators"
+} from "../domain/validators"
 
 export { 
   createOgpResponse,
   createMissingUrlParameterResponse,
   createOgpFetchErrorResponse
-} from "./domain/transformers"
+} from "../domain/transformers"

@@ -4,7 +4,7 @@
  */
 
 import type { AmazonItemsResponse } from "amazon-paapi"
-import { getAmazonProductInfo } from "../getAmazonProductInfo"
+import { getAmazonProductInfo } from "../services/getAmazonProductInfo"
 
 /**
  * Amazon API用の設定インターフェース
@@ -102,7 +102,7 @@ export const createSlackLoggerAdapter = (webhookUrl: string): LoggerAdapter => {
   return {
     async logError(message: string, url: string): Promise<void> {
       // 循環依存を回避するために動的インポート
-      const { postLogToSlack } = await import("../postLogToSlack")
+      const { postLogToSlack } = await import("../services/postLogToSlack")
       await postLogToSlack(`Amazon API Error: ${url}\n${message}`, webhookUrl)
     }
   }

@@ -1,6 +1,6 @@
 import { expect, test } from "vitest"
-import { getOgpMetaData } from "functions/src/getOgpMetaData"
-import { normalLinkUrl, normalLinkDataExpectedResponse } from "./testData"
+import { getOgpMetaData } from "../../functions/src/services/getOgpMetaData"
+import { normalLinkUrl, normalLinkDataExpectedResponse } from "../fixtures/testData"
 
 const encodedUrl = encodeURIComponent(normalLinkUrl)
 

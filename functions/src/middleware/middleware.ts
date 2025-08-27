@@ -6,10 +6,10 @@
 
 import { 
   isValidSecFetchMode 
-} from "./domain/validators"
+} from "../domain/validators"
 import { 
   createForbiddenResponse 
-} from "./domain/transformers"
+} from "../domain/transformers"
 
 /**
  * セキュリティミドルウェアの依存性注入を使った実装
@@ -46,8 +46,8 @@ export async function handleMiddleware(
 // テスト用に純粋関数をエクスポート
 export { 
   isValidSecFetchMode 
-} from "./domain/validators"
+} from "../domain/validators"
 
 export { 
   createForbiddenResponse 
-} from "./domain/transformers"
+} from "../domain/transformers"

@@ -8,11 +8,11 @@ import {
   isTwitterOgImageRequest,
   extractPostPathFromImageRequest,
   validateOgpConfig 
-} from "./domain/validators"
+} from "../domain/validators"
 import { 
   createOgImageErrorResponse,
   createMethodNotAllowedResponse
-} from "./domain/transformers"
+} from "../domain/transformers"
 import { 
   createOgImageAdapter,
   createOgImageSlackLoggerAdapter,
@@ -20,7 +20,7 @@ import {
   createHtmlParserAdapter,
   createImageGeneratorAdapter,
   type OgImageAdapter
-} from "./adapters/ogImageAdapter"
+} from "../adapters/ogImageAdapter"
 
 /**
  * 依存性注入を使ったOG画像生成ハンドラーを作成
@@ -117,9 +117,9 @@ export async function handleOgImage(
 export { 
   isTwitterOgImageRequest,
   extractPostPathFromImageRequest 
-} from "./domain/validators"
+} from "../domain/validators"
 
 export { 
   createOgImageErrorResponse
-} from "./domain/transformers"
+} from "../domain/transformers"
 

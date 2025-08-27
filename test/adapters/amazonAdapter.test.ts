@@ -7,7 +7,7 @@ import {
 import { createMockAmazonResponse } from "../helpers/mockData"
 
 // Mock external dependencies only for Slack logger
-vi.mock("../../functions/src/postLogToSlack", () => ({
+vi.mock("../../functions/src/services/postLogToSlack", () => ({
   postLogToSlack: vi.fn().mockResolvedValue(undefined)
 }))
 
