@@ -120,17 +120,3 @@ export const isTwitterOgImageRequest = (request: Request): boolean => {
   return request.url.endsWith('/twitter-og.png')
 }
 
-/**
- * OG画像生成用の投稿パスを抽出
- * @param request - HTTPリクエストオブジェクト
- * @returns 投稿パス（HTMLページのURL）、無効な場合はnull
- */
-export const extractPostPathFromImageRequest = (request: Request): string | null => {
-  const imagePathSuffix = "/twitter-og.png"
-  
-  if (!request.url.endsWith(imagePathSuffix)) {
-    return null
-  }
-  
-  return request.url.replace(imagePathSuffix, "")
-}

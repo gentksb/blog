@@ -7,8 +7,7 @@ import {
   extractUrlFromRequest,
   validateOgpConfig,
   isValidSecFetchMode,
-  isTwitterOgImageRequest,
-  extractPostPathFromImageRequest
+  isTwitterOgImageRequest
 } from "../../functions/src/domain/validators"
 
 test("ASIN validation", () => {
@@ -121,12 +120,3 @@ test("Twitter OG image request validation", () => {
   expect(isTwitterOgImageRequest(differentImageRequest)).toBe(false)
 })
 
-test("Post path extraction from image request", () => {
-  const imageRequest = new Request("https://example.com/post/test-slug/twitter-og.png")
-  const nestedImageRequest = new Request("https://example.com/post/2024/01/article/twitter-og.png")
-  const nonImageRequest = new Request("https://example.com/post/test-slug")
-  
-  expect(extractPostPathFromImageRequest(imageRequest)).toBe("https://example.com/post/test-slug")
-  expect(extractPostPathFromImageRequest(nestedImageRequest)).toBe("https://example.com/post/2024/01/article")
-  expect(extractPostPathFromImageRequest(nonImageRequest)).toBeNull()
-})
