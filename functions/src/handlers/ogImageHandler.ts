@@ -6,7 +6,6 @@
 
 import { 
   isTwitterOgImageRequest,
-  extractPostPathFromImageRequest,
   validateOgpConfig 
 } from "../domain/validators"
 import { 
@@ -115,8 +114,7 @@ export async function handleOgImage(
 
 // テスト用に純粋関数をエクスポート
 export { 
-  isTwitterOgImageRequest,
-  extractPostPathFromImageRequest 
+  isTwitterOgImageRequest 
 } from "../domain/validators"
 
 export { 
