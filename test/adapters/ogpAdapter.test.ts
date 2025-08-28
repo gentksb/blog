@@ -169,9 +169,10 @@ test("OGP adapter integrates all dependencies correctly", async () => {
   expect(mockCache.get).toHaveBeenCalledWith(testUrl)
   
   // Test fetching OGP data
-  const ogpData = await adapter.getOgpData(testUrl, {} as Env)
+  const currentHost = "example.com"
+  const ogpData = await adapter.getOgpData(testUrl, {} as Env, currentHost)
   expect(ogpData.ogpTitle).toBe("Integration Test Title")
-  expect(mockFetcher.fetchOgpData).toHaveBeenCalledWith(testUrl, {} as Env)
+  expect(mockFetcher.fetchOgpData).toHaveBeenCalledWith(testUrl, {} as Env, currentHost)
   
   // Test caching result
   await adapter.cacheResult(testUrl, ogpData)

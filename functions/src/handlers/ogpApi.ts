@@ -63,8 +63,11 @@ export const createOgpHandler = (adapter: OgpAdapter, env: Env) => {
         return createOgpResponse(cachedData)
       }
 
+      // 現在のホストを取得
+      const currentHost = new URL(request.url).hostname
+
       // OGPデータを取得
-      const ogpData = await adapter.getOgpData(url, env)
+      const ogpData = await adapter.getOgpData(url, env, currentHost)
 
       // 結果をキャッシュ
       await adapter.cacheResult(url, ogpData)
