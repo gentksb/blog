@@ -46,7 +46,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@cloudflare/vitest-pool-workers": "^0.8.65",
-    "@cloudflare/workers-types": "^4.20250821.0",
+    "@cloudflare/workers-types": "^4.20250828.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^20.19.11",
     "@types/sanitize-html": "^2.16.0",
@@ -75,6 +75,6 @@
     "tsx": "^4.20.4",
     "typescript": "^5.9.2",
     "vitest": "2.1.9",
-    "wrangler": "^4.31.0"
+    "wrangler": "^4.33.0"
   }
 }
