@@ -91,6 +91,11 @@ export async function handleOgpApi(
   env: Env,
   _ctx: ExecutionContext
 ): Promise<Response> {
+  // HTTPメソッドを先にチェック
+  if (request.method !== "GET") {
+    return new Response("Method Not Allowed", { status: 405 })
+  }
+
   // 設定を検証
   const config = {
     slackWebhookUrl: env.SLACK_WEBHOOK_URL
