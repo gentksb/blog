@@ -65,20 +65,20 @@ fi
 
 echo "🔧 Step 2: バッチ削除用JSONファイルを作成中..."
 
-# Wrangler kv bulk deleteで必要な形式に変換
+# Wrangler kv bulk deleteで必要な形式に変換（文字列配列）
 if command -v jq &> /dev/null; then
-    echo "jqを使用してJSON変換中..."
-    jq '[.[] | {key: .name, value: ""}]' "$KEYS_FILE" > "$DELETE_FILE"
+    echo "jqを使用して文字列配列に変換中..."
+    jq '[.[].name]' "$KEYS_FILE" > "$DELETE_FILE"
 else
-    echo "jqが無いため、Node.jsを使用してJSON変換中..."
-    # Node.jsを使ってJSON変換
+    echo "jqが無いため、Node.jsを使用して文字列配列に変換中..."
+    # Node.jsを使って文字列配列に変換
     node -e "
     const fs = require('fs');
     try {
         const data = JSON.parse(fs.readFileSync('$KEYS_FILE', 'utf8'));
-        const deleteData = data.map(item => ({key: item.name, value: ''}));
+        const deleteData = data.map(item => item.name);
         fs.writeFileSync('$DELETE_FILE', JSON.stringify(deleteData, null, 2));
-        console.log('✅ Node.jsによるJSON変換完了');
+        console.log('✅ Node.jsによる文字列配列変換完了');
     } catch (error) {
         console.error('❌ JSON変換エラー:', error.message);
         process.exit(1);
@@ -88,7 +88,8 @@ fi
 
 # 作成されたファイルの確認
 if [[ -s "$DELETE_FILE" ]]; then
-    DELETE_COUNT=$(grep -c '"key"' "$DELETE_FILE" || echo "0")
+    # 文字列配列なので、行数から1を引いて配列の要素数を計算（開始・終了の[]を除く）
+    DELETE_COUNT=$(grep -v '^\[' "$DELETE_FILE" | grep -v '^\]' | grep -c '"' || echo "0")
     echo "✅ 削除用ファイル作成完了: $DELETE_COUNT エントリ"
     echo "最初の3行:"
     head -3 "$DELETE_FILE"
