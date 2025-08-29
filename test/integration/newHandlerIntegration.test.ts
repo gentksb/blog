@@ -65,7 +65,12 @@ test("createOgpHandler with dependency injection works correctly", async () => {
     fetcher
   })
 
-  const handler = createOgpHandler(adapter)
+  // Mock env for testing
+  const mockEnv = {
+    SLACK_WEBHOOK_URL: "https://hooks.slack.com/test"
+  } as Env
+
+  const handler = createOgpHandler(adapter, mockEnv)
 
   // Test valid request
   const validRequest = new Request("https://example.com/api/getOgp?url=https://example.com/test")
@@ -94,7 +99,12 @@ test("createOgpHandler handles missing URL parameter", async () => {
     fetcher
   })
 
-  const handler = createOgpHandler(adapter)
+  // Mock env for testing
+  const mockEnv = {
+    SLACK_WEBHOOK_URL: "https://hooks.slack.com/test"
+  } as Env
+
+  const handler = createOgpHandler(adapter, mockEnv)
 
   const invalidRequest = new Request("https://example.com/api/getOgp")
   const response = await handler(invalidRequest)
@@ -117,7 +127,12 @@ test("createOgpHandler handles non-GET methods", async () => {
     fetcher
   })
 
-  const handler = createOgpHandler(adapter)
+  // Mock env for testing
+  const mockEnv = {
+    SLACK_WEBHOOK_URL: "https://hooks.slack.com/test"
+  } as Env
+
+  const handler = createOgpHandler(adapter, mockEnv)
 
   const postRequest = new Request("https://example.com/api/getOgp?url=https://example.com/test", {
     method: "POST"
@@ -290,7 +305,12 @@ test("OGP handler uses cache correctly", async () => {
   adapter.getCached = (_url: string) => originalCacheGet.call(adapter, testKey)
   adapter.cacheResult = (_url: string, data: OgpData) => originalCacheSet.call(adapter, testKey, data)
 
-  const handler = createOgpHandler(adapter)
+  // Mock env for testing
+  const mockEnv = {
+    SLACK_WEBHOOK_URL: "https://hooks.slack.com/test"
+  } as Env
+
+  const handler = createOgpHandler(adapter, mockEnv)
 
   // First request - should fetch and cache
   const firstRequest = new Request(`https://example.com/api/getOgp?url=${encodeURIComponent(testUrl)}`)
