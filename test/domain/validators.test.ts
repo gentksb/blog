@@ -95,17 +95,18 @@ test("OGP config validation", () => {
 // === セキュリティミドルウェア用バリデーション関数のテスト ===
 
 test("sec-fetch-mode validation", () => {
-  // Valid modes
+  // Valid modes (MDN準拠: navigateのみブロック、その他は全て許可)
   expect(isValidSecFetchMode("same-origin")).toBe(true)
   expect(isValidSecFetchMode("cors")).toBe(true)
   expect(isValidSecFetchMode("same-site")).toBe(true)
+  expect(isValidSecFetchMode("websocket")).toBe(true)
+  expect(isValidSecFetchMode("no-cors")).toBe(true)
+  expect(isValidSecFetchMode("")).toBe(true) // 空文字列も許可（古いブラウザ対応）
+  expect(isValidSecFetchMode(null)).toBe(true) // nullも許可（ヘッダー未送信）
+  expect(isValidSecFetchMode("unknown-mode")).toBe(true) // 未知の値も無視して許可
   
-  // Invalid modes
+  // Invalid modes (navigateのみブロック)
   expect(isValidSecFetchMode("navigate")).toBe(false)
-  expect(isValidSecFetchMode("websocket")).toBe(false)
-  expect(isValidSecFetchMode("no-cors")).toBe(false)
-  expect(isValidSecFetchMode("")).toBe(false)
-  expect(isValidSecFetchMode(null)).toBe(false)
 })
 
 // === OG画像生成用バリデーション関数のテスト ===

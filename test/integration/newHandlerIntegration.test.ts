@@ -217,7 +217,8 @@ test("createOgImageHandler handles non-GET methods", async () => {
 test("createSecurityMiddleware allows valid sec-fetch-mode headers", () => {
   const middleware = createSecurityMiddleware()
 
-  const validModes = ["same-origin", "cors", "same-site"]
+  // MDN準拠: navigateのみブロック、その他は全て許可
+  const validModes = ["same-origin", "cors", "same-site", "websocket", "no-cors", ""]
 
   validModes.forEach(mode => {
     const request = new Request("https://example.com/api/test", {
@@ -234,7 +235,8 @@ test("createSecurityMiddleware allows valid sec-fetch-mode headers", () => {
 test("createSecurityMiddleware blocks invalid sec-fetch-mode headers", () => {
   const middleware = createSecurityMiddleware()
 
-  const invalidModes = ["navigate", "websocket", "no-cors", ""]
+  // MDN準拠: navigateのみブロック
+  const invalidModes = ["navigate"]
 
   invalidModes.forEach(mode => {
     const request = new Request("https://example.com/api/test", {
@@ -249,15 +251,14 @@ test("createSecurityMiddleware blocks invalid sec-fetch-mode headers", () => {
   })
 })
 
-test("createSecurityMiddleware blocks requests without sec-fetch-mode header", async () => {
+test("createSecurityMiddleware allows requests without sec-fetch-mode header", async () => {
   const middleware = createSecurityMiddleware()
 
   const request = new Request("https://example.com/api/test")
   
+  // MDN準拠: ヘッダーがない場合は許可（古いブラウザ対応）
   const result = middleware(request)
-  expect(result).not.toBeNull()
-  expect(result!.status).toBe(403)
-  await expect(result!.text()).resolves.toBe("Forbidden")
+  expect(result).toBeNull() // null means request should proceed
 })
 
 // === キャッシュ動作の統合テスト ===

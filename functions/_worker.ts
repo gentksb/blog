@@ -28,6 +28,14 @@ export default {
         return handleAmazonApi(request, env, ctx)
       }
       
+      // Health check endpoint for middleware testing
+      if (pathname === '/api/healthcheck') {
+        return new Response('OK', { 
+          status: 200,
+          headers: { 'Content-Type': 'text/plain' }
+        })
+      }
+      
       return new Response('Not Found', { status: 404 })
     }
     

@@ -99,14 +99,61 @@ export const validateOgpConfig = (config: {
 // === セキュリティミドルウェア用バリデーション関数 ===
 
 /**
- * sec-fetch-modeヘッダーが有効な値かどうかを検証
+ * sec-fetch-siteヘッダーが許可される値かどうかを検証
+ * @param secFetchSite - sec-fetch-siteヘッダーの値
+ * @returns 許可される値の場合はtrue
+ */
+export const isValidSecFetchSite = (secFetchSite: string | null): boolean => {
+  if (!secFetchSite) {
+    return false
+  }
+  const allowedSites = ["same-origin", "same-site"]
+  return allowedSites.includes(secFetchSite)
+}
+
+/**
+ * sec-fetch-modeヘッダーによる検証（MDN仕様準拠）
+ * 明示的に拒否すべき値のみをブロックし、それ以外は無視する
  * @param secFetchMode - sec-fetch-modeヘッダーの値
- * @returns 有効な値の場合はtrue
+ * @returns ブロックすべき場合はfalse、それ以外（無視すべき場合含む）はtrue
  */
 export const isValidSecFetchMode = (secFetchMode: string | null): boolean => {
-  return secFetchMode === "same-origin" ||
-         secFetchMode === "cors" ||
-         secFetchMode === "same-site"
+  // ヘッダーが存在しない場合は許可（ブラウザが古い等）
+  if (!secFetchMode) {
+    return true
+  }
+  
+  // navigateモードのみ明示的にブロック（直接ブラウザアクセス）
+  if (secFetchMode === "navigate") {
+    return false
+  }
+  
+  // その他の値（既知・未知問わず）は全て許可（MDN仕様に従い無視）
+  return true
+}
+
+/**
+ * セキュリティヘッダーに基づいたリクエストの検証
+ * sec-fetch-siteとsec-fetch-modeを組み合わせた包括的な検証
+ * @param request - HTTPリクエストオブジェクト
+ * @returns リクエストが許可される場合はtrue
+ */
+export const isSecurityHeadersValid = (request: Request): boolean => {
+  const headers = request.headers
+  const secFetchSite = headers.get("sec-fetch-site")
+  const secFetchMode = headers.get("sec-fetch-mode")
+  
+  // Sec-Fetch-Siteによる検証（主要な検証）
+  if (secFetchSite && !isValidSecFetchSite(secFetchSite)) {
+    return false
+  }
+  
+  // Sec-Fetch-Modeによる追加検証
+  if (secFetchMode && !isValidSecFetchMode(secFetchMode)) {
+    return false
+  }
+  
+  return true
 }
 
 // === OG画像生成用バリデーション関数 ===
