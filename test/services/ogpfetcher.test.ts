@@ -27,7 +27,6 @@ const mockEnv = {
 } as unknown as Env
 
 test("URIエンコードされたURLからOGPデータを取得する", async () => {
-  const currentHost = "blog.gensobunya.net"
-  const res = await getOgpMetaData(encodedUrl, mockEnv, currentHost)
+  const res = await getOgpMetaData(encodedUrl, mockEnv)
   expect(res).deep.equal(normalLinkDataExpectedResponse)
 })

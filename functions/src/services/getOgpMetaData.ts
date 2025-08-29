@@ -1,30 +1,17 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
 import type { OgpData } from "@type/ogpData-type"
 
-function isSelfSiteUrl(url: string, currentHost: string): boolean {
-  try {
-    const parsedUrl = new URL(url)
-    const targetHostname = parsedUrl.hostname
-
-    // 現在のアクセスホストと比較
-    return targetHostname === currentHost
-  } catch {
-    console.warn(`Invalid URL format: ${url}`)
-    return false
-  }
-}
-
-export const getOgpMetaData = async (queryUrl: string, env: Env, currentHost: string) => {
+export const getOgpMetaData = async (queryUrl: string, _env: Env) => {
   const decodedUrl = decodeURIComponent(queryUrl)
   const safeUrl = sanitizeUrl(decodedUrl)
   console.log(`safeUrl: ${safeUrl}`)
 
-  const responseBody = await parseOgpTags(safeUrl, env, currentHost)
+  const responseBody = await parseOgpTags(safeUrl)
 
   return responseBody
 }
 
-const parseOgpTags = async (href: string, env: Env, currentHost: string): Promise<OgpData> => {
+const parseOgpTags = async (href: string): Promise<OgpData> => {
   const result: OgpData = {
     ogpTitle: undefined,
     ogpImageUrl: undefined,
@@ -35,18 +22,10 @@ const parseOgpTags = async (href: string, env: Env, currentHost: string): Promis
   }
 
   try {
-    // 自サイトのURLかどうかを判定
-    const isOwnSite = isSelfSiteUrl(href, currentHost)
+    // global_fetch_strictly_publicフラグにより統一されたfetchを使用
+    const httpResponse = await fetch(href)
 
-    // 自サイトの場合はASSETS.fetchを使用、外部サイトの場合は通常のfetchを使用
-    const httpResponse = isOwnSite
-      ? await env.ASSETS.fetch(href)
-      : await fetch(href)
-
-    console.log(
-      `fetching ${href} is done (${isOwnSite ? "self-site" : "external"})`,
-      httpResponse.status
-    )
+    console.log(`fetching ${href} is done`, httpResponse.status)
 
     if (!httpResponse.ok) {
       const result: OgpData = {

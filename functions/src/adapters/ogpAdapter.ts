@@ -31,14 +31,14 @@ export interface OgpLoggerAdapter {
  * OGPメタデータを取得するためのフェッチャーインターフェース
  */
 export interface OgpFetcherAdapter {
-  fetchOgpData: (url: string, env: Env, currentHost: string) => Promise<OgpData>
+  fetchOgpData: (url: string, env: Env) => Promise<OgpData>
 }
 
 /**
  * 全ての外部依存をカプセル化するOGPサービスアダプター
  */
 export interface OgpAdapter {
-  getOgpData: (url: string, env: Env, currentHost: string) => Promise<OgpData>
+  getOgpData: (url: string, env: Env) => Promise<OgpData>
   getCached: (url: string) => Promise<OgpData | string | null>
   cacheResult: (url: string, data: OgpData) => Promise<void>
   logError: (message: string, url: string) => Promise<void>
@@ -56,8 +56,8 @@ export const createOgpAdapter = (deps: {
   fetcher: OgpFetcherAdapter
 }): OgpAdapter => {
   return {
-    async getOgpData(url: string, env: Env, currentHost: string): Promise<OgpData> {
-      return await deps.fetcher.fetchOgpData(url, env, currentHost)
+    async getOgpData(url: string, env: Env): Promise<OgpData> {
+      return await deps.fetcher.fetchOgpData(url, env)
     },
 
     async getCached(url: string): Promise<OgpData | string | null> {
@@ -128,10 +128,10 @@ export const createOgpSlackLoggerAdapter = (
  */
 export const createOgpFetcherAdapter = (): OgpFetcherAdapter => {
   return {
-    async fetchOgpData(url: string, env: Env, currentHost: string): Promise<OgpData> {
+    async fetchOgpData(url: string, env: Env): Promise<OgpData> {
       // 循環依存を回避するために動的インポート
       const { getOgpMetaData } = await import("../services/getOgpMetaData")
-      return await getOgpMetaData(url, env, currentHost)
+      return await getOgpMetaData(url, env)
     }
   }
 }
