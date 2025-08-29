@@ -1,7 +1,7 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
 import type { OgpData } from "@type/ogpData-type"
 
-export const getOgpMetaData = async (queryUrl: string) => {
+export const getOgpMetaData = async (queryUrl: string, _env: Env) => {
   const decodedUrl = decodeURIComponent(queryUrl)
   const safeUrl = sanitizeUrl(decodedUrl)
   console.log(`safeUrl: ${safeUrl}`)
@@ -22,7 +22,9 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
   }
 
   try {
+    // global_fetch_strictly_publicフラグにより統一されたfetchを使用
     const httpResponse = await fetch(href)
+
     console.log(`fetching ${href} is done`, httpResponse.status)
 
     if (!httpResponse.ok) {

@@ -1,16 +1,7 @@
-import { expect, test, vi } from "vitest"
-import { testAsin } from "./testData"
-import { getAmazonProductInfo } from "functions/src/getAmazonProductInfo"
+import { expect, test } from "vitest"
+import { testAsin } from "../fixtures/testData"
+import { getAmazonProductInfo } from "functions/src/services/getAmazonProductInfo"
 import { env } from "cloudflare:test"
-
-// Mock Cloudflare Pages plugin to avoid font loading issues
-vi.mock("@cloudflare/pages-plugin-vercel-og/api", () => ({
-  ImageResponse: vi.fn().mockImplementation(() => {
-    return new Response(new ArrayBuffer(100), {
-      headers: { "content-type": "image/png" }
-    })
-  })
-}))
 
 const { PAAPI_ACCESSKEY, PAAPI_SECRETKEY, PARTNER_TAG } = env
 console.dir(env, { depth: 3 })

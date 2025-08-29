@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "compatibility_date": "2024-05-13",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "upload_source_maps": true,
   "assets": {
     "directory": "./dist/",
