@@ -12,6 +12,7 @@
       "#  - CX",
       "#  - MTB",
       "#  - ROAD",
+      "#  - GRAVEL",
       "#  - RACEREPORT",
       "cover: \"./cover.jpg\"",
       "---",
