@@ -43,7 +43,11 @@ export interface HtmlParserAdapter {
  * OG画像を生成するためのイメージジェネレーターアダプター
  */
 export interface ImageGeneratorAdapter {
-  generateImage: (title: string, imageUrl: string, currentHost: string) => Promise<Response>
+  generateImage: (
+    title: string,
+    imageUrl: string,
+    currentHost: string
+  ) => Promise<Response>
 }
 
 /**
@@ -51,7 +55,11 @@ export interface ImageGeneratorAdapter {
  */
 export interface OgImageAdapter {
   extractPostMetadata: (request: Request) => Promise<PostMetadata>
-  generateOgImage: (title: string, imageUrl: string, currentHost: string) => Promise<Response>
+  generateOgImage: (
+    title: string,
+    imageUrl: string,
+    currentHost: string
+  ) => Promise<Response>
   logError: (message: string, url: string) => Promise<void>
 }
 
@@ -71,43 +79,53 @@ export const createOgImageAdapter = (deps: {
     async extractPostMetadata(request: Request): Promise<PostMetadata> {
       const imagePathSuffix = "/twitter-og.png"
       const htmlUrl = request.url.replace(imagePathSuffix, "")
-      
+
       console.log(`OG Image: Attempting to fetch HTML from: ${htmlUrl}`)
-      
+
       // HTMLページのリクエストを作成
       const htmlRequest = new Request(htmlUrl, {
         method: "GET",
         headers: request.headers
       })
-      
+
       // 静的アセットからHTMLページを取得
       let response = await deps.assetFetcher.fetchAsset(htmlRequest)
-      
+
       console.log(`OG Image: HTML fetch response status: ${response.status}`)
-      
+
       if (!response.ok) {
         // 代替パス（末尾スラッシュ付き）を試す
-        const alternativeUrl = htmlUrl.endsWith('/') ? htmlUrl : htmlUrl + '/'
+        const alternativeUrl = htmlUrl.endsWith("/") ? htmlUrl : htmlUrl + "/"
         console.log(`OG Image: Trying alternative URL: ${alternativeUrl}`)
-        
+
         const alternativeRequest = new Request(alternativeUrl, {
           method: "GET",
           headers: request.headers
         })
-        
+
         response = await deps.assetFetcher.fetchAsset(alternativeRequest)
-        console.log(`OG Image: Alternative fetch response status: ${response.status}`)
-        
+        console.log(
+          `OG Image: Alternative fetch response status: ${response.status}`
+        )
+
         if (!response.ok) {
           throw new Error(`Failed to fetch HTML page: ${response.status}`)
         }
       }
-      
+
       return await deps.htmlParser.parseMetadata(response)
     },
 
-    async generateOgImage(title: string, imageUrl: string, currentHost: string): Promise<Response> {
-      return await deps.imageGenerator.generateImage(title, imageUrl, currentHost)
+    async generateOgImage(
+      title: string,
+      imageUrl: string,
+      currentHost: string
+    ): Promise<Response> {
+      return await deps.imageGenerator.generateImage(
+        title,
+        imageUrl,
+        currentHost
+      )
     },
 
     async logError(message: string, url: string): Promise<void> {
@@ -121,12 +139,17 @@ export const createOgImageAdapter = (deps: {
  * @param webhookUrl - Slack Webhook URL
  * @returns ロガーアダプター実装
  */
-export const createOgImageSlackLoggerAdapter = (webhookUrl: string): OgImageLoggerAdapter => {
+export const createOgImageSlackLoggerAdapter = (
+  webhookUrl: string
+): OgImageLoggerAdapter => {
   return {
     async logError(message: string, url: string): Promise<void> {
       // 循環依存を回避するために動的インポート
       const { postLogToSlack } = await import("../services/postLogToSlack")
-      await postLogToSlack(`OG Image Generation Error: ${url}\n${message}`, webhookUrl)
+      await postLogToSlack(
+        `OG Image Generation Error: ${new URL(url).pathname} on ${new URL(url).host}\n${message}`,
+        webhookUrl
+      )
     }
   }
 }
@@ -136,7 +159,9 @@ export const createOgImageSlackLoggerAdapter = (webhookUrl: string): OgImageLogg
  * @param assets - Cloudflare ASSETS binding
  * @returns アセットフェッチャーアダプター実装
  */
-export const createAssetFetcherAdapter = (assets: Fetcher): AssetFetcherAdapter => {
+export const createAssetFetcherAdapter = (
+  assets: Fetcher
+): AssetFetcherAdapter => {
   return {
     async fetchAsset(request: Request): Promise<Response> {
       return await assets.fetch(request)
@@ -155,15 +180,15 @@ export const createHtmlParserAdapter = (): HtmlParserAdapter => {
         title: "",
         imageUrl: ""
       }
-      
+
       const rewriter = new HTMLRewriter()
-      
+
       await rewriter
         .on("meta", {
           element(element: Element) {
             const property = element.getAttribute("property")
             const content = element.getAttribute("content") || ""
-            
+
             switch (property) {
               case "og:title":
                 postMetadata.title = content
@@ -178,7 +203,7 @@ export const createHtmlParserAdapter = (): HtmlParserAdapter => {
         })
         .transform(response)
         .arrayBuffer()
-      
+
       return postMetadata
     }
   }
@@ -190,7 +215,11 @@ export const createHtmlParserAdapter = (): HtmlParserAdapter => {
  */
 export const createImageGeneratorAdapter = (): ImageGeneratorAdapter => {
   return {
-    async generateImage(title: string, imageUrl: string, currentHost: string): Promise<Response> {
+    async generateImage(
+      title: string,
+      imageUrl: string,
+      currentHost: string
+    ): Promise<Response> {
       // 循環依存を回避するために動的インポート
       const { ogImage } = await import("../services/ogImage")
       return await ogImage(title, imageUrl, currentHost)
