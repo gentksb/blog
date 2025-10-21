@@ -4,7 +4,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "~/consts"
 import { timeOrderPosts as posts } from "@lib/timeOrderPosts"
 import { experimental_AstroContainer as AstroContainer } from "astro/container"
 import reactRenderer from "@astrojs/react/server.js"
-import mdxRenderer from "astro/jsx/server.js"
+import mdxRenderer from "@astrojs/mdx/server.js"
 
 const container = await AstroContainer.create()
 container.addServerRenderer({ name: "mdx", renderer: mdxRenderer })

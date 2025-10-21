@@ -16,7 +16,7 @@ import MdxPicture from "@components/mdx/MdxPicture.astro"
 // descriptionレンダリング用
 import { experimental_AstroContainer as AstroContainer } from "astro/container"
 import reactRenderer from "@astrojs/react/server.js"
-import mdxRenderer from "astro/jsx/server.js"
+import mdxRenderer from "@astrojs/mdx/server.js"
 import sanitizeHtml from "sanitize-html"
 
 const container = await AstroContainer.create()

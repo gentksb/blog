@@ -6,7 +6,7 @@
 
 ## 技術スタック
 
-- **フレームワーク**: Astro
+- **フレームワーク**: Astro v5
 - **UIライブラリ**: React（部分的に使用）
 - **スタイリング**: Tailwind CSS + DaisyUI
 - **検索機能**: Pagefind
@@ -87,6 +87,27 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 - OGPキャッシュを活用して外部データ取得を最適化
 
 ## マイグレーション履歴
+
+### 2025年10月：Astro v4 → v5 メジャーアップグレード
+
+**背景**: Astro v5の新機能とVite v6への対応
+
+**変更内容**:
+
+- **Astroコア**: v4.16.19 → v5.14.7
+- **MDX統合**: @astrojs/mdx v3.1.9 → v4.3.7（必須アップグレード）
+- **React統合**: @astrojs/react v3.6.3 → v4.4.0
+- **Tailwind統合**: @astrojs/tailwind v5.1.5 → v6.0.2
+- **Sitemap統合**: @astrojs/sitemap v3.5.0 → v3.6.0
+- **Vite**: v6.4.1（自動アップグレード）
+
+**コード変更**:
+
+- **JSX Server Renderer**: インポートパス変更
+  - `astro/jsx/server.js` → `@astrojs/mdx/server.js`
+  - 影響ファイル: `src/pages/post/[...slug].astro`, `src/pages/index.xml.ts`
+
+**参考リンク**: [Astro v5 Upgrade Guide](https://docs.astro.build/en/guides/upgrade-to/v5/)
 
 ### 2025年7月：Pages Functions → Workers + Static Assets
 
