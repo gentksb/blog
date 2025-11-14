@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content"
+import type { MarkdownHeading } from "astro"
 import Layout from "./Layout.astro"
 import BlogTitle from "@components/BlogTitle.astro"
 import { formatInTimeZone } from "date-fns-tz"
@@ -7,11 +8,17 @@ import RelatedPosts from "@components/RelatedPosts.astro"
 import { SITE_TITLE } from "~/consts"
 import { getImage } from "astro:assets"
 import Share from "@components/Share.astro"
+import CollapsibleToc from "@components/CollapsibleToc.astro"
+import StickyToc from "@components/jsx/StickyToc"
+import CopyMarkdown from "@components/jsx/CopyMarkdown"
 
-type Props = CollectionEntry<"post"> & { description: string }
+type Props = CollectionEntry<"post"> & {
+  description: string
+  headings: MarkdownHeading[]
+}
 
 const { title, date, cover, tags } = Astro.props.data
-const { slug, description } = Astro.props
+const { slug, description, headings, body } = Astro.props
 // cloudflare上ではタイムゾーンが日本時間になる保証がないため、明示的に指定する
 const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
@@ -29,34 +36,53 @@ const ogpStaticImage = cover
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
 >
-  <div class="mb-8 border border-gray-200 bg-white">
-    <article data-pagefind-body>
-      <BlogTitle
-        title={title}
-        cover={cover}
-        date={date}
-        tags={tags}
-        slug={slug}
-      />
-      <div class="p-6">
-        <div
-          class="prose prose-sm mx-auto max-w-none text-gray-700 md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
-        >
-          <slot />
-        </div>
+  <!-- デスクトップビューで2カラムレイアウト -->
+  <div class="flex gap-8">
+    <!-- メインコンテンツ -->
+    <div class="flex-1">
+      <div class="mb-8 border border-gray-200 bg-white">
+        <article data-pagefind-body>
+          <BlogTitle
+            title={title}
+            cover={cover}
+            date={date}
+            tags={tags}
+            slug={slug}
+          />
+          <div class="p-6">
+            <!-- Copy as markdownボタン -->
+            <CopyMarkdown client:load content={body} tags={tags} />
 
-        <!-- シェアボタン -->
-        <div class="mt-8 border-t border-gray-200 py-4">
-          <Share url={Astro.url.href} title={title} />
-        </div>
+            <!-- 折りたたみ可能な目次（モバイル/タブレット向け） -->
+            <div class="xl:hidden">
+              <CollapsibleToc headings={headings} />
+            </div>
+
+            <div
+              class="prose prose-sm mx-auto max-w-none text-gray-700 md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
+            >
+              <slot />
+            </div>
+
+            <!-- シェアボタン -->
+            <div class="mt-8 border-t border-gray-200 py-4">
+              <Share url={Astro.url.href} title={title} />
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
-  </div>
 
-  <!-- 関連記事 -->
-  <div class="my-8">
-    <h2 class="mb-4 text-xl font-bold">関連記事</h2>
-    <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
+      <!-- 関連記事 -->
+      <div class="my-8">
+        <h2 class="mb-4 text-xl font-bold">関連記事</h2>
+        <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
+      </div>
+    </div>
+
+    <!-- 右カラム（デスクトップのみ） -->
+    <aside class="hidden w-64 shrink-0 xl:block">
+      <StickyToc client:load headings={headings} />
+    </aside>
   </div>
 
   <script is:inline type="text/javascript">
