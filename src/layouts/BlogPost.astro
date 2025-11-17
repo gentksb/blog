@@ -50,8 +50,10 @@ const ogpStaticImage = cover
             slug={slug}
           />
           <div class="p-6">
-            <!-- Copy as markdownボタン -->
-            <CopyMarkdown client:load content={body} />
+            <!-- Copy as Markdownボタン（モバイル/タブレット向け） -->
+            <div class="xl:hidden mb-4">
+              <CopyMarkdown client:load content={body} />
+            </div>
 
             <!-- 折りたたみ可能な目次（モバイル/タブレット向け） -->
             <div class="xl:hidden">
@@ -64,7 +66,7 @@ const ogpStaticImage = cover
               <slot />
             </div>
 
-            <!-- シェアボタン -->
+            <!-- シェアボタンエリア -->
             <div class="mt-8 border-t border-gray-200 py-4">
               <Share url={Astro.url.href} title={title} />
             </div>
@@ -81,6 +83,10 @@ const ogpStaticImage = cover
 
     <!-- 右カラム（デスクトップのみ） -->
     <aside class="hidden w-64 shrink-0 xl:block" aria-label="目次">
+      <!-- Copy as Markdownボタン（デスクトップ向け） -->
+      <div class="mb-4">
+        <CopyMarkdown client:load content={body} />
+      </div>
       <StickyToc client:load headings={headings} />
     </aside>
   </div>
