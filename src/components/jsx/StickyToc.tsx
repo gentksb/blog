@@ -71,9 +71,11 @@ export default function StickyToc({ headings }: Props) {
   }
 
   return (
-    <nav className="sticky top-4 hidden xl:block">
+    <nav className="sticky top-24 hidden xl:block" aria-labelledby="toc-heading">
       <div className="mb-4 border-b border-gray-200 pb-2">
-        <h2 className="text-sm font-bold text-gray-700">目次</h2>
+        <h2 id="toc-heading" className="text-sm font-bold text-gray-700">
+          目次
+        </h2>
       </div>
       <ul className="space-y-2 text-sm">
         {filteredHeadings.map((heading) => {
@@ -82,11 +84,12 @@ export default function StickyToc({ headings }: Props) {
             <li key={heading.slug} className={getIndentClass(heading.depth)}>
               <a
                 href={`#${heading.slug}`}
-                className={`block transition-colors ${
+                className={`block transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:rounded ${
                   isActive
                     ? "font-semibold text-primary"
                     : "text-gray-600 hover:text-primary"
                 }`}
+                aria-current={isActive ? "location" : undefined}
               >
                 {heading.text}
               </a>

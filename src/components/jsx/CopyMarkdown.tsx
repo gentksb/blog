@@ -41,7 +41,7 @@ export default function CopyMarkdown({ content }: Props) {
     <>
       <button
         onClick={handleCopy}
-        className="btn btn-outline btn-sm mb-4"
+        className="btn btn-outline btn-sm mb-4 hover:bg-primary hover:text-primary-content hover:border-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         type="button"
       >
         {error ? (
