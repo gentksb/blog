@@ -39,7 +39,7 @@ const ogpStaticImage = cover
   <!-- デスクトップビューで2カラムレイアウト -->
   <div class="flex gap-8">
     <!-- メインコンテンツ -->
-    <div class="flex-1">
+    <main class="flex-1">
       <div class="mb-8 border border-gray-200 bg-white">
         <article data-pagefind-body>
           <BlogTitle
@@ -51,7 +51,7 @@ const ogpStaticImage = cover
           />
           <div class="p-6">
             <!-- Copy as markdownボタン -->
-            <CopyMarkdown client:load content={body} tags={tags} />
+            <CopyMarkdown client:load content={body} />
 
             <!-- 折りたたみ可能な目次（モバイル/タブレット向け） -->
             <div class="xl:hidden">
@@ -77,10 +77,10 @@ const ogpStaticImage = cover
         <h2 class="mb-4 text-xl font-bold">関連記事</h2>
         <RelatedPosts searchTag={tags[0]} selfSlug={slug} />
       </div>
-    </div>
+    </main>
 
     <!-- 右カラム（デスクトップのみ） -->
-    <aside class="hidden w-64 shrink-0 xl:block">
+    <aside class="hidden w-64 shrink-0 xl:block" aria-label="目次">
       <StickyToc client:load headings={headings} />
     </aside>
   </div>

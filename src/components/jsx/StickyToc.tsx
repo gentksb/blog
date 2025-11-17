@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 
 interface Heading {
   depth: number
@@ -13,17 +13,28 @@ interface Props {
 export default function StickyToc({ headings }: Props) {
   const [activeId, setActiveId] = useState<string>("")
 
-  // h2とh3のみを表示
-  const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3)
+  // h2とh3のみを表示（メモ化して再レンダリングを防ぐ）
+  const filteredHeadings = useMemo(
+    () => headings.filter((h) => h.depth === 2 || h.depth === 3),
+    [headings]
+  )
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id)
-          }
-        })
+        // 交差している要素のみを抽出
+        const intersectingEntries = entries.filter((entry) => entry.isIntersecting)
+
+        if (intersectingEntries.length > 0) {
+          // 複数の見出しが同時に交差する場合、最も上の見出しを選択
+          const topEntry = intersectingEntries.reduce((prev, current) => {
+            const prevTop = prev.boundingClientRect.top
+            const currentTop = current.boundingClientRect.top
+            return currentTop < prevTop ? current : prev
+          })
+
+          setActiveId(topEntry.target.id)
+        }
       },
       {
         rootMargin: "-20% 0% -35% 0%",
