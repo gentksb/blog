@@ -10,7 +10,6 @@ import { getImage } from "astro:assets"
 import Share from "@components/Share.astro"
 import CollapsibleToc from "@components/CollapsibleToc.astro"
 import StickyToc from "@components/jsx/StickyToc"
-import CopyMarkdown from "@components/jsx/CopyMarkdown"
 
 type Props = CollectionEntry<"post"> & {
   description: string
@@ -18,7 +17,7 @@ type Props = CollectionEntry<"post"> & {
 }
 
 const { title, date, cover, tags } = Astro.props.data
-const { slug, description, headings, body } = Astro.props
+const { slug, description, headings } = Astro.props
 // cloudflare上ではタイムゾーンが日本時間になる保証がないため、明示的に指定する
 const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
@@ -50,11 +49,6 @@ const ogpStaticImage = cover
             slug={slug}
           />
           <div class="p-6">
-            <!-- Copy as Markdownボタン（モバイル/タブレット向け） -->
-            <div class="xl:hidden mb-4">
-              <CopyMarkdown client:load content={body} />
-            </div>
-
             <!-- 折りたたみ可能な目次（モバイル/タブレット向け） -->
             <div class="xl:hidden">
               <CollapsibleToc headings={headings} />
@@ -83,10 +77,6 @@ const ogpStaticImage = cover
 
     <!-- 右カラム（デスクトップのみ） -->
     <aside class="hidden w-64 shrink-0 xl:block" aria-label="目次">
-      <!-- Copy as Markdownボタン（デスクトップ向け） -->
-      <div class="mb-4">
-        <CopyMarkdown client:load content={body} />
-      </div>
       <StickyToc client:load headings={headings} />
     </aside>
   </div>
