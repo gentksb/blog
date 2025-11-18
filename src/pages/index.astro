@@ -6,6 +6,7 @@ import { pageSize } from "~/config"
 import Paginate from "@components/Paginate.astro"
 import About from "@components/About.astro"
 import Hero from "@components/Hero.astro"
+import TagCloud from "@components/TagCloud.astro"
 
 const posts = timeOrderPosts.slice(0, pageSize)
 ---
@@ -18,5 +19,8 @@ const posts = timeOrderPosts.slice(0, pageSize)
     </div>
   </section>
   <Paginate currentPage={1} totalPages={5} />
+  <div class="my-8">
+    <TagCloud />
+  </div>
   <About />
 </Layout>

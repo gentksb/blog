@@ -1,0 +1,44 @@
+---
+import { timeOrderPosts } from "@lib/timeOrderPosts"
+
+// タグごとの記事数を集計
+const tagCounts = new Map<string, number>()
+timeOrderPosts.forEach((post) => {
+  post.data.tags?.forEach((tag) => {
+    tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1)
+  })
+})
+
+// タグを記事数でソートして配列に変換
+const sortedTags = Array.from(tagCounts.entries())
+  .sort((a, b) => b[1] - a[1])
+  .map(([tag, count]) => ({ tag, count }))
+
+// フォントサイズを計算（最小12px、最大24px）
+const maxCount = Math.max(...sortedTags.map((t) => t.count))
+const minCount = Math.min(...sortedTags.map((t) => t.count))
+const getFontSize = (count: number) => {
+  if (maxCount === minCount) return 16
+  const ratio = (count - minCount) / (maxCount - minCount)
+  return 12 + ratio * 12 // 12px ~ 24px
+}
+---
+
+<div class="rounded-lg border border-gray-200 bg-white p-6">
+  <h2 class="mb-4 text-xl font-bold">タグ一覧</h2>
+  <div class="flex flex-wrap gap-3">
+    {
+      sortedTags.map(({ tag, count }) => (
+        <a
+          href={`/tag/${tag}/1`}
+          class="rounded-full bg-gray-100 px-3 py-1 transition hover:bg-accent hover:text-accent-content"
+          style={`font-size: ${getFontSize(count)}px`}
+          title={`${tag} (${count}件)`}
+        >
+          {tag}
+          <span class="ml-1 text-xs text-gray-500">({count})</span>
+        </a>
+      ))
+    }
+  </div>
+</div>

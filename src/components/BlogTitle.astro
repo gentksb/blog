@@ -25,12 +25,13 @@ const { cover, title, date, tags } = Astro.props
     <div class="mb-2 flex gap-2">
       {
         tags.map((tag) => (
-          <span
-            class="rounded-full bg-accent px-2 py-1 text-xs text-accent-content"
+          <a
+            href={`/tag/${tag}/1`}
+            class="rounded-full bg-accent px-2 py-1 text-xs text-accent-content transition hover:bg-accent-focus"
             data-pagefind-ignore
           >
             {tag}
-          </span>
+          </a>
         ))
       }
     </div>
