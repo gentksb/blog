@@ -1,8 +1,7 @@
 /page/1 / 301
-/tag/* /tags/:splat 301
-/category/* /tags/:splat 301
-/categories/* /tags/:splat 301
-/search/label/* /tags/:splat 301
+/category/* /tag/:splat 301
+/categories/* /tag/:splat 301
+/search/label/* /tag/:splat 301
 /2015/05/12/flo-disc-whee.html /post/2015/05/flo-impression/ 301
 /2016/01/05/blog-post_83.html /post/2016/01/hydrohealing/ 301
 /2016/01/zwift-mobile-link.html /post/2016/01/zwift-mobile-link/ 301

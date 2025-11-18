@@ -31,7 +31,7 @@ type Props = {
 }
 
 const { page } = Astro.props
-const { tag } = Astro.params
+const { tag } = Astro.params as { tag: string }
 const posts = page.data
 ---
 

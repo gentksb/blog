@@ -6,10 +6,15 @@ type Props = {
 }
 const { currentPage, totalPages, basePath = "" } = Astro.props
 const hasPreviousPage = currentPage > 1
-const previousPageLink =
-  currentPage > 2 ? `${basePath}/page/${currentPage - 1}` : basePath || `/`
+const previousPageLink = basePath
+  ? `${basePath}/${currentPage - 1}`
+  : currentPage > 2
+    ? `/page/${currentPage - 1}`
+    : `/`
 const hasNextpage = currentPage < totalPages
-const nextPageLink = `${basePath}/page/${currentPage + 1}`
+const nextPageLink = basePath
+  ? `${basePath}/${currentPage + 1}`
+  : `/page/${currentPage + 1}`
 
 // ページネーションの数字表示用
 const pageNumbers = [] as number[]
@@ -57,7 +62,13 @@ for (let i = startPage; i <= endPage; i++) {
     {
       pageNumbers.map((pageNum) => (
         <a
-          href={pageNum === 1 ? basePath || "/" : `${basePath}/page/${pageNum}`}
+          href={
+            basePath
+              ? `${basePath}/${pageNum}`
+              : pageNum === 1
+                ? "/"
+                : `/page/${pageNum}`
+          }
           class:list={[
             "px-4 py-2 border-t border-b border-gray-300 text-sm",
             currentPage === pageNum
