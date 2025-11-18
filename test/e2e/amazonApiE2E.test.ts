@@ -3,11 +3,14 @@ import { SELF } from "cloudflare:test"
 
 test.skip("Amazon API E2E - 無効なASINで400エラーを返す (Slackログによるタイムアウトのためスキップ)", async () => {
   // 無効なASINでリクエスト
-  const response = await SELF.fetch("http://example.com/api/getAmznPa/INVALID", {
-    headers: {
-      "sec-fetch-mode": "cors"
+  const response = await SELF.fetch(
+    "http://example.com/api/getAmznPa/INVALID",
+    {
+      headers: {
+        "sec-fetch-mode": "cors"
+      }
     }
-  })
+  )
 
   expect(response.status).toBe(400)
   expect(await response.text()).toContain("Invalid ASIN format")

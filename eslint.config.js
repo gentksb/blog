@@ -1,10 +1,10 @@
-import js from "@eslint/js";
-import globals from "globals";
-import tseslint from "@typescript-eslint/eslint-plugin";
-import tsparser from "@typescript-eslint/parser";
-import astro from "eslint-plugin-astro";
-import tailwindcss from "eslint-plugin-tailwindcss";
-import prettier from "eslint-config-prettier";
+import js from "@eslint/js"
+import globals from "globals"
+import tseslint from "@typescript-eslint/eslint-plugin"
+import tsparser from "@typescript-eslint/parser"
+import astro from "eslint-plugin-astro"
+import tailwindcss from "eslint-plugin-tailwindcss"
+import prettier from "eslint-config-prettier"
 
 export default [
   js.configs.recommended,
@@ -37,8 +37,8 @@ export default [
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
-          "argsIgnorePattern": "^_",
-          "varsIgnorePattern": "^_"
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_"
         }
       ],
       "no-unused-vars": "off", // TypeScriptでは@typescript-eslint版を使用
@@ -66,14 +66,14 @@ export default [
       "no-unused-vars": [
         "error",
         {
-          "argsIgnorePattern": "^_",
-          "varsIgnorePattern": "^_"
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_"
         }
       ],
       "no-undef": "error" // JavaScriptファイルでは有効のまま
     }
   },
-  ...astro.configs['flat/recommended'],
+  ...astro.configs["flat/recommended"],
   {
     files: ["**/*.cjs"],
     languageOptions: {
@@ -93,4 +93,4 @@ export default [
     ]
   },
   prettier
-];
+]

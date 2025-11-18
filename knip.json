@@ -8,12 +8,7 @@
     "functions/_worker.ts"
   ],
   "project": ["src/**/*.{ts,tsx,astro}", "functions/**/*.ts"],
-  "ignore": [
-    "src/content/**",
-    "**/*.d.ts",
-    "dist/**",
-    "node_modules/**"
-  ],
+  "ignore": ["src/content/**", "**/*.d.ts", "dist/**", "node_modules/**"],
   "ignoreDependencies": [],
   "ignoreExportsUsedInFile": true
 }

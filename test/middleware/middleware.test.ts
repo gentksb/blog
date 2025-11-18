@@ -9,8 +9,15 @@ import { SELF } from "cloudflare:test"
 
 test("middleware allows valid sec-fetch-mode headers in Worker environment", async () => {
   // MDN準拠: navigate以外は全て許可
-  const validModes = ["same-origin", "cors", "same-site", "websocket", "no-cors", ""]
-  
+  const validModes = [
+    "same-origin",
+    "cors",
+    "same-site",
+    "websocket",
+    "no-cors",
+    ""
+  ]
+
   for (const mode of validModes) {
     const response = await SELF.fetch("http://example.com/api/healthcheck", {
       method: "GET",
@@ -18,7 +25,7 @@ test("middleware allows valid sec-fetch-mode headers in Worker environment", asy
         "sec-fetch-mode": mode
       }
     })
-    
+
     // Valid headers should not be blocked by middleware
     expect(response.status).toBe(200)
     expect(await response.text()).toBe("OK")
@@ -28,7 +35,7 @@ test("middleware allows valid sec-fetch-mode headers in Worker environment", asy
 test("middleware blocks invalid sec-fetch-mode headers in Worker environment", async () => {
   // MDN準拠: navigateのみブロック
   const invalidModes = ["navigate"]
-  
+
   for (const mode of invalidModes) {
     const response = await SELF.fetch("http://example.com/api/healthcheck", {
       method: "GET",
@@ -36,7 +43,7 @@ test("middleware blocks invalid sec-fetch-mode headers in Worker environment", a
         "sec-fetch-mode": mode
       }
     })
-    
+
     expect(response.status).toBe(403)
     expect(await response.text()).toBe("Forbidden")
   }
@@ -46,7 +53,7 @@ test("middleware allows requests without sec-fetch-mode header in Worker environ
   const response = await SELF.fetch("http://example.com/api/healthcheck", {
     method: "GET"
   })
-  
+
   // MDN準拠: ヘッダーがない場合は許可（古いブラウザ対応）
   // ヘルスチェックエンドポイントに到達できることを確認
   expect(response.status).toBe(200)
@@ -61,7 +68,7 @@ test("middleware validation works for healthcheck endpoint", async () => {
       "sec-fetch-mode": "navigate" // Invalid mode
     }
   })
-  
+
   expect(response.status).toBe(403)
   expect(await response.text()).toBe("Forbidden")
 })
@@ -73,15 +80,22 @@ test("middleware allows requests with valid headers through to API processing", 
       "sec-fetch-mode": "cors"
     }
   })
-  
+
   // Should pass through middleware and reach healthcheck endpoint
   expect(response.status).toBe(200)
   expect(await response.text()).toBe("OK")
 })
 
 test("middleware works consistently for healthcheck endpoint with various valid modes", async () => {
-  const validModes = ["cors", "same-origin", "same-site", "websocket", "no-cors", ""]
-  
+  const validModes = [
+    "cors",
+    "same-origin",
+    "same-site",
+    "websocket",
+    "no-cors",
+    ""
+  ]
+
   for (const mode of validModes) {
     const response = await SELF.fetch("http://example.com/api/healthcheck", {
       method: "GET",
@@ -89,7 +103,7 @@ test("middleware works consistently for healthcheck endpoint with various valid 
         "sec-fetch-mode": mode
       }
     })
-    
+
     expect(response.status).toBe(200)
     expect(await response.text()).toBe("OK")
   }

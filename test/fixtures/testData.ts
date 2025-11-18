@@ -19,7 +19,7 @@ export const normalLinkDataExpectedResponse: OgpData = {
 // Additional test data for edge cases
 export const invalidAsins = [
   "B004N3APG", // 9 characters
-  "B004N3APGO1", // 11 characters  
+  "B004N3APGO1", // 11 characters
   "B004N3APGo", // lowercase
   "B004-N3APG", // special character
   "B004 N3APG", // space
@@ -28,15 +28,15 @@ export const invalidAsins = [
 ]
 
 export const validAsins = [
-  "B004N3APGO", 
-  "1234567890", 
+  "B004N3APGO",
+  "1234567890",
   "ABCDEFGHIJ",
   "A1B2C3D4E5"
 ]
 
 export const malformedUrls = [
   "not-a-url",
-  "ftp://invalid-protocol.com", 
+  "ftp://invalid-protocol.com",
   "javascript:alert('xss')",
   "data:text/html,<script>alert('xss')</script>",
   "http://",

@@ -85,7 +85,11 @@ export const createKVCacheAdapter = (kv: KVNamespace): CacheAdapter => {
       return await kv.get(key, "json")
     },
 
-    async put(key: string, data: AmazonItemsResponse, ttl = 86400): Promise<void> {
+    async put(
+      key: string,
+      data: AmazonItemsResponse,
+      ttl = 86400
+    ): Promise<void> {
       await kv.put(key, JSON.stringify(data), {
         expirationTtl: ttl
       })

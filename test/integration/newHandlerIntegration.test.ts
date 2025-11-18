@@ -21,9 +21,7 @@ import {
   createHtmlParserAdapter,
   createImageGeneratorAdapter
 } from "../../functions/src/adapters/ogImageAdapter"
-import {
-  createSecurityMiddleware
-} from "../../functions/src/middleware/middleware"
+import { createSecurityMiddleware } from "../../functions/src/middleware/middleware"
 import type { OgpData } from "@type/ogpData-type"
 
 // Mock external dependencies to keep tests isolated
@@ -57,7 +55,7 @@ test("createOgpHandler with dependency injection works correctly", async () => {
   const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
   const logger = createOgpSlackLoggerAdapter("https://hooks.slack.com/test")
   const fetcher = createOgpFetcherAdapter()
-  
+
   const adapter = createOgpAdapter({
     cache,
     config: { slackWebhookUrl: "https://hooks.slack.com/test" },
@@ -73,16 +71,20 @@ test("createOgpHandler with dependency injection works correctly", async () => {
   const handler = createOgpHandler(adapter, mockEnv)
 
   // Test valid request
-  const validRequest = new Request("https://example.com/api/getOgp?url=https://example.com/test")
+  const validRequest = new Request(
+    "https://example.com/api/getOgp?url=https://example.com/test"
+  )
   const response = await handler(validRequest)
 
   expect(response.status).toBe(200)
-  expect(response.headers.get("content-type")).toBe("application/json; charset=UTF-8")
+  expect(response.headers.get("content-type")).toBe(
+    "application/json; charset=UTF-8"
+  )
   expect(response.headers.get("X-Robots-Tag")).toBe("noindex")
   expect(response.headers.get("cache-control")).toBe("public, max-age=86400")
 
   // Verify response data
-  const data = await response.json() as OgpData
+  const data = (await response.json()) as OgpData
   expect(data.ogpTitle).toBe("Test OGP Title")
   expect(data.pageurl).toBe("https://example.com/test")
 })
@@ -91,7 +93,7 @@ test("createOgpHandler handles missing URL parameter", async () => {
   const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
   const logger = createOgpSlackLoggerAdapter("https://hooks.slack.com/test")
   const fetcher = createOgpFetcherAdapter()
-  
+
   const adapter = createOgpAdapter({
     cache,
     config: { slackWebhookUrl: "https://hooks.slack.com/test" },
@@ -110,16 +112,16 @@ test("createOgpHandler handles missing URL parameter", async () => {
   const response = await handler(invalidRequest)
 
   expect(response.status).toBe(400)
-  
-  const errorData = await response.json() as { error: string }
-  expect(errorData.error).toBe('URL parameter is required')
+
+  const errorData = (await response.json()) as { error: string }
+  expect(errorData.error).toBe("URL parameter is required")
 })
 
 test("createOgpHandler handles non-GET methods", async () => {
   const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
   const logger = createOgpSlackLoggerAdapter("https://hooks.slack.com/test")
   const fetcher = createOgpFetcherAdapter()
-  
+
   const adapter = createOgpAdapter({
     cache,
     config: { slackWebhookUrl: "https://hooks.slack.com/test" },
@@ -134,9 +136,12 @@ test("createOgpHandler handles non-GET methods", async () => {
 
   const handler = createOgpHandler(adapter, mockEnv)
 
-  const postRequest = new Request("https://example.com/api/getOgp?url=https://example.com/test", {
-    method: "POST"
-  })
+  const postRequest = new Request(
+    "https://example.com/api/getOgp?url=https://example.com/test",
+    {
+      method: "POST"
+    }
+  )
   const response = await handler(postRequest)
 
   expect(response.status).toBe(405)
@@ -147,23 +152,25 @@ test("createOgpHandler handles non-GET methods", async () => {
 
 test.skip("createOgImageHandler with dependency injection works correctly (フォントファイルエラーのためスキップ)", async () => {
   const logger = createOgImageSlackLoggerAdapter("https://hooks.slack.com/test")
-  
+
   // Mock assets fetcher that returns HTML with OG metadata
   const mockAssets = {
-    fetch: vi.fn().mockResolvedValue(new Response(`
+    fetch: vi.fn().mockResolvedValue(
+      new Response(`
       <html>
         <head>
           <meta property="og:title" content="Test Article | 幻想サイクル">
           <meta property="og:image" content="https://example.com/article-image.jpg">
         </head>
       </html>
-    `))
+    `)
+    )
   } as unknown as Fetcher
 
   const assetFetcher = createAssetFetcherAdapter(mockAssets)
   const htmlParser = createHtmlParserAdapter()
   const imageGenerator = createImageGeneratorAdapter()
-  
+
   const adapter = createOgImageAdapter({
     config: { slackWebhookUrl: "https://hooks.slack.com/test" },
     logger,
@@ -174,7 +181,9 @@ test.skip("createOgImageHandler with dependency injection works correctly (フ�
 
   const handler = createOgImageHandler(adapter)
 
-  const imageRequest = new Request("https://example.com/post/test-article/twitter-og.png")
+  const imageRequest = new Request(
+    "https://example.com/post/test-article/twitter-og.png"
+  )
   const response = await handler(imageRequest)
 
   expect(response.status).toBe(200)
@@ -186,7 +195,7 @@ test("createOgImageHandler handles non-twitter-og.png requests", async () => {
   const assetFetcher = createAssetFetcherAdapter({} as Fetcher)
   const htmlParser = createHtmlParserAdapter()
   const imageGenerator = createImageGeneratorAdapter()
-  
+
   const adapter = createOgImageAdapter({
     config: { slackWebhookUrl: "https://hooks.slack.com/test" },
     logger,
@@ -198,8 +207,10 @@ test("createOgImageHandler handles non-twitter-og.png requests", async () => {
   const handler = createOgImageHandler(adapter)
 
   const nonImageRequest = new Request("https://example.com/post/test-article")
-  
-  await expect(handler(nonImageRequest)).rejects.toThrow("Not a Twitter OG image request")
+
+  await expect(handler(nonImageRequest)).rejects.toThrow(
+    "Not a Twitter OG image request"
+  )
 })
 
 test("createOgImageHandler handles non-GET methods", async () => {
@@ -207,7 +218,7 @@ test("createOgImageHandler handles non-GET methods", async () => {
   const assetFetcher = createAssetFetcherAdapter({} as Fetcher)
   const htmlParser = createHtmlParserAdapter()
   const imageGenerator = createImageGeneratorAdapter()
-  
+
   const adapter = createOgImageAdapter({
     config: { slackWebhookUrl: "https://hooks.slack.com/test" },
     logger,
@@ -218,9 +229,12 @@ test("createOgImageHandler handles non-GET methods", async () => {
 
   const handler = createOgImageHandler(adapter)
 
-  const postRequest = new Request("https://example.com/post/test-article/twitter-og.png", {
-    method: "POST"
-  })
+  const postRequest = new Request(
+    "https://example.com/post/test-article/twitter-og.png",
+    {
+      method: "POST"
+    }
+  )
   const response = await handler(postRequest)
 
   expect(response.status).toBe(405)
@@ -233,9 +247,16 @@ test("createSecurityMiddleware allows valid sec-fetch-mode headers", () => {
   const middleware = createSecurityMiddleware()
 
   // MDN準拠: navigateのみブロック、その他は全て許可
-  const validModes = ["same-origin", "cors", "same-site", "websocket", "no-cors", ""]
+  const validModes = [
+    "same-origin",
+    "cors",
+    "same-site",
+    "websocket",
+    "no-cors",
+    ""
+  ]
 
-  validModes.forEach(mode => {
+  validModes.forEach((mode) => {
     const request = new Request("https://example.com/api/test", {
       headers: {
         "sec-fetch-mode": mode
@@ -253,7 +274,7 @@ test("createSecurityMiddleware blocks invalid sec-fetch-mode headers", () => {
   // MDN準拠: navigateのみブロック
   const invalidModes = ["navigate"]
 
-  invalidModes.forEach(mode => {
+  invalidModes.forEach((mode) => {
     const request = new Request("https://example.com/api/test", {
       headers: {
         "sec-fetch-mode": mode
@@ -270,7 +291,7 @@ test("createSecurityMiddleware allows requests without sec-fetch-mode header", a
   const middleware = createSecurityMiddleware()
 
   const request = new Request("https://example.com/api/test")
-  
+
   // MDN準拠: ヘッダーがない場合は許可（古いブラウザ対応）
   const result = middleware(request)
   expect(result).toBeNull() // null means request should proceed
@@ -281,7 +302,7 @@ test("createSecurityMiddleware allows requests without sec-fetch-mode header", a
 test("OGP handler uses cache correctly", async () => {
   const testUrl = "https://cache-test.example.com/"
   const testKey = `ogp-cache-integration-test-${Date.now()}`
-  
+
   // Clear potential existing data
   if (env.OGP_DATASTORE?.delete) {
     await env.OGP_DATASTORE.delete(testKey)
@@ -290,7 +311,7 @@ test("OGP handler uses cache correctly", async () => {
   const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
   const logger = createOgpSlackLoggerAdapter("https://hooks.slack.com/test")
   const fetcher = createOgpFetcherAdapter()
-  
+
   const adapter = createOgpAdapter({
     cache,
     config: { slackWebhookUrl: "https://hooks.slack.com/test" },
@@ -301,9 +322,10 @@ test("OGP handler uses cache correctly", async () => {
   // Mock the cache to use our test key
   const originalCacheGet = adapter.getCached
   const originalCacheSet = adapter.cacheResult
-  
+
   adapter.getCached = (_url: string) => originalCacheGet.call(adapter, testKey)
-  adapter.cacheResult = (_url: string, data: OgpData) => originalCacheSet.call(adapter, testKey, data)
+  adapter.cacheResult = (_url: string, data: OgpData) =>
+    originalCacheSet.call(adapter, testKey, data)
 
   // Mock env for testing
   const mockEnv = {
@@ -313,19 +335,23 @@ test("OGP handler uses cache correctly", async () => {
   const handler = createOgpHandler(adapter, mockEnv)
 
   // First request - should fetch and cache
-  const firstRequest = new Request(`https://example.com/api/getOgp?url=${encodeURIComponent(testUrl)}`)
+  const firstRequest = new Request(
+    `https://example.com/api/getOgp?url=${encodeURIComponent(testUrl)}`
+  )
   const firstResponse = await handler(firstRequest)
-  
+
   expect(firstResponse.status).toBe(200)
-  const firstData = await firstResponse.json() as OgpData
+  const firstData = (await firstResponse.json()) as OgpData
   expect(firstData.ogpTitle).toBe("Test OGP Title")
 
   // Second request - should return from cache
-  const secondRequest = new Request(`https://example.com/api/getOgp?url=${encodeURIComponent(testUrl)}`)
+  const secondRequest = new Request(
+    `https://example.com/api/getOgp?url=${encodeURIComponent(testUrl)}`
+  )
   const secondResponse = await handler(secondRequest)
-  
+
   expect(secondResponse.status).toBe(200)
-  const secondData = await secondResponse.json() as OgpData
+  const secondData = (await secondResponse.json()) as OgpData
   expect(secondData.ogpTitle).toBe(firstData.ogpTitle)
 
   // Cleanup

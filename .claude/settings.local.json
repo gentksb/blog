@@ -19,9 +19,7 @@
     ]
   },
   "enableAllProjectMcpServers": true,
-  "enabledMcpjsonServers": [
-    "cloudflare-docs"
-  ],
+  "enabledMcpjsonServers": ["cloudflare-docs"],
   "hooks": {
     "PostToolUse": [
       {

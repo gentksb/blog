@@ -11,7 +11,9 @@ import type { OgpData } from "@type/ogpData-type"
  * @param productData - レスポンスにラップするAmazon商品データ
  * @returns JSONデータと適切なヘッダーを持つResponseオブジェクト
  */
-export const createAmazonResponse = (productData: AmazonItemsResponse): Response => {
+export const createAmazonResponse = (
+  productData: AmazonItemsResponse
+): Response => {
   return new Response(JSON.stringify(productData), {
     status: 200,
     headers: {
@@ -40,8 +42,9 @@ export const createInvalidAsinResponse = (asin: string | null): Response => {
  * @returns 適切なヘッダーを持つOGPレスポンス
  */
 export const createOgpResponse = (ogpData: OgpData | string): Response => {
-  const bodyString = typeof ogpData === 'string' ? ogpData : JSON.stringify(ogpData)
-  
+  const bodyString =
+    typeof ogpData === "string" ? ogpData : JSON.stringify(ogpData)
+
   return new Response(bodyString, {
     status: 200,
     headers: {
@@ -57,13 +60,10 @@ export const createOgpResponse = (ogpData: OgpData | string): Response => {
  * @returns 400エラーレスポンス
  */
 export const createMissingUrlParameterResponse = (): Response => {
-  return new Response(
-    JSON.stringify({ error: 'URL parameter is required' }),
-    { 
-      status: 400,
-      headers: { 'content-type': 'application/json' }
-    }
-  )
+  return new Response(JSON.stringify({ error: "URL parameter is required" }), {
+    status: 400,
+    headers: { "content-type": "application/json" }
+  })
 }
 
 /**
@@ -71,13 +71,10 @@ export const createMissingUrlParameterResponse = (): Response => {
  * @returns 500エラーレスポンス
  */
 export const createOgpFetchErrorResponse = (): Response => {
-  return new Response(
-    JSON.stringify({ error: 'Failed to fetch OGP data' }),
-    { 
-      status: 500,
-      headers: { 'content-type': 'application/json' }
-    }
-  )
+  return new Response(JSON.stringify({ error: "Failed to fetch OGP data" }), {
+    status: 500,
+    headers: { "content-type": "application/json" }
+  })
 }
 
 // === セキュリティミドルウェア用変換関数 ===
@@ -110,5 +107,5 @@ export const createOgImageErrorResponse = (): Response => {
  * @returns 405エラーレスポンス
  */
 export const createMethodNotAllowedResponse = (): Response => {
-  return new Response('Method Not Allowed', { status: 405 })
+  return new Response("Method Not Allowed", { status: 405 })
 }

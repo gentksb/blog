@@ -55,16 +55,19 @@ Delete OGP caches: <https://developers.cloudflare.com/kv/platform/kv-commands/#d
 A batch script for resizing large image files in `src/content/` to reduce repository size.
 
 **Usage:**
+
 ```bash
 ./resize_images.sh
 ```
 
 **Processing:**
+
 - Target: Image files (jpg, jpeg, png, webp) in `src/content/`
 - Condition: Images with width ≥ 1200px only
 - Action: Resize to width ≤ 1200px (maintain aspect ratio)
 - Safety: Creates backup before processing, auto-restores on error
 
 **Requirements:**
+
 - ImageMagick (`identify`, `mogrify` commands)
 - One-time execution script - backup important files before running

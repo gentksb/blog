@@ -23,14 +23,16 @@ const { cover, title, date, tags } = Astro.props
   </div>
   <div class="absolute inset-0 flex flex-col justify-end bg-black/60 p-6">
     <div class="mb-2 flex gap-2">
-      {tags.map((tag) => (
-        <span 
-          class="rounded-full bg-accent px-2 py-1 text-xs text-accent-content"
-          data-pagefind-ignore
-        >
-          {tag}
-        </span>
-      ))}
+      {
+        tags.map((tag) => (
+          <span
+            class="rounded-full bg-accent px-2 py-1 text-xs text-accent-content"
+            data-pagefind-ignore
+          >
+            {tag}
+          </span>
+        ))
+      }
     </div>
     <h1 class="max-w-4xl text-xl font-bold text-white md:text-2xl">
       {title}
@@ -39,7 +41,10 @@ const { cover, title, date, tags } = Astro.props
       <FormattedDate date={date} />
     </div>
   </div>
-  <div class="absolute bottom-1 right-2 text-xs text-gray-300" data-pagefind-ignore>
+  <div
+    class="absolute bottom-1 right-2 text-xs text-gray-300"
+    data-pagefind-ignore
+  >
     記事内にアフェリエイトリンクを含む場合があります
   </div>
 </div>

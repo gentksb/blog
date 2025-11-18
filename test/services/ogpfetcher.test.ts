@@ -1,7 +1,10 @@
 import { expect, test, vi } from "vitest"
 import { env } from "cloudflare:test"
 import { getOgpMetaData } from "../../functions/src/services/getOgpMetaData"
-import { normalLinkUrl, normalLinkDataExpectedResponse } from "../fixtures/testData"
+import {
+  normalLinkUrl,
+  normalLinkDataExpectedResponse
+} from "../fixtures/testData"
 
 const encodedUrl = encodeURIComponent(normalLinkUrl)
 
@@ -9,7 +12,9 @@ const encodedUrl = encodeURIComponent(normalLinkUrl)
 const mockEnv = {
   ...env,
   ASSETS: {
-    fetch: vi.fn().mockResolvedValue(new Response(`
+    fetch: vi.fn().mockResolvedValue(
+      new Response(
+        `
       <!DOCTYPE html>
       <html>
       <head>
@@ -21,7 +26,10 @@ const mockEnv = {
       </head>
       <body></body>
       </html>
-    `, { status: 200, headers: { "content-type": "text/html" } })),
+    `,
+        { status: 200, headers: { "content-type": "text/html" } }
+      )
+    ),
     connect: vi.fn()
   }
 } as unknown as Env

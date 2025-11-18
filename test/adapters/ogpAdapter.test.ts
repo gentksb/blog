@@ -30,7 +30,7 @@ vi.mock("../../functions/src/services/getOgpMetaData", () => ({
 test("OGP KV cache adapter works correctly with real KV", async () => {
   // Use actual KV from test environment
   const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
-  
+
   if (!cache) {
     throw new Error("KV namespace not available in test environment")
   }
@@ -60,13 +60,13 @@ test("OGP KV cache adapter works correctly with real KV", async () => {
 
 test("OGP KV cache adapter handles missing keys gracefully", async () => {
   const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
-  
+
   if (!cache) {
     throw new Error("KV namespace not available in test environment")
   }
 
   const nonExistentKey = `non-existent-ogp-${Date.now()}`
-  
+
   // Should return null for non-existent keys
   const result = await cache.get(nonExistentKey)
   expect(result).toBeNull()
@@ -74,7 +74,7 @@ test("OGP KV cache adapter handles missing keys gracefully", async () => {
 
 test("OGP KV cache adapter handles string data (backward compatibility)", async () => {
   const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
-  
+
   if (!cache) {
     throw new Error("KV namespace not available in test environment")
   }
@@ -92,13 +92,13 @@ test("OGP KV cache adapter handles string data (backward compatibility)", async 
 
   // Test get operation - should return parsed object or string
   const retrievedData = await cache.get(testKey)
-  
+
   // KVアダプターはJSON形式で読み取るため、オブジェクトまたは文字列を返す
   if (typeof retrievedData === "object" && retrievedData !== null) {
     // JSON形式で読み取られた場合
     expect(retrievedData).toEqual(testDataObj)
   } else if (typeof retrievedData === "string") {
-    // テキスト形式で読み取られた場合  
+    // テキスト形式で読み取られた場合
     expect(retrievedData).toBe(testDataString)
   } else {
     throw new Error("Unexpected data type returned from cache")
@@ -124,7 +124,7 @@ test("OGP fetcher adapter works correctly", async () => {
 
   // The actual getOgpMetaData is mocked
   const result = await fetcher.fetchOgpData("https://example.com/", {} as Env)
-  
+
   expect(result).toEqual({
     ogpTitle: "Test Title",
     ogpImageUrl: "https://example.com/image.jpg",
@@ -137,17 +137,17 @@ test("OGP fetcher adapter works correctly", async () => {
 
 test("OGP adapter integrates all dependencies correctly", async () => {
   const testUrl = "https://example.com/test"
-  
+
   // Create mock dependencies
   const mockCache: OgpCacheAdapter = {
     get: vi.fn().mockResolvedValue(null),
     put: vi.fn().mockResolvedValue(undefined)
   }
-  
+
   const mockLogger: OgpLoggerAdapter = {
     logError: vi.fn().mockResolvedValue(undefined)
   }
-  
+
   const mockFetcher: OgpFetcherAdapter = {
     fetchOgpData: vi.fn().mockResolvedValue({
       ogpTitle: "Integration Test Title",
@@ -155,28 +155,28 @@ test("OGP adapter integrates all dependencies correctly", async () => {
       ok: true
     })
   }
-  
+
   const adapter = createOgpAdapter({
     cache: mockCache,
     config: { slackWebhookUrl: "https://hooks.slack.com/test" },
     logger: mockLogger,
     fetcher: mockFetcher
   })
-  
+
   // Test cache miss scenario
   const cachedResult = await adapter.getCached(testUrl)
   expect(cachedResult).toBeNull()
   expect(mockCache.get).toHaveBeenCalledWith(testUrl)
-  
+
   // Test fetching OGP data
   const ogpData = await adapter.getOgpData(testUrl, {} as Env)
   expect(ogpData.ogpTitle).toBe("Integration Test Title")
   expect(mockFetcher.fetchOgpData).toHaveBeenCalledWith(testUrl, {} as Env)
-  
+
   // Test caching result
   await adapter.cacheResult(testUrl, ogpData)
   expect(mockCache.put).toHaveBeenCalledWith(testUrl, ogpData, 60 * 60 * 24 * 7)
-  
+
   // Test error logging
   await adapter.logError("Test error", testUrl)
   expect(mockLogger.logError).toHaveBeenCalledWith("Test error", testUrl)
