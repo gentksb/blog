@@ -27,3 +27,6 @@ worker-configuration.d.ts
 
 # 作業用
 kv.json
+
+# Claude code
+.claude/settings.local.json

@@ -62,8 +62,7 @@
 
 ## 環境変数
 
-```
-# dev.vars
+```bash
 PAAPI_ACCESSKEY    # PA-API v5 Access key ID
 PAAPI_SECRETKEY    # PA-API v5 Secret key
 PARTNER_TAG        # Amazon Associate Partner Tag

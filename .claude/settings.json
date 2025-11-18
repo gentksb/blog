@@ -4,7 +4,6 @@
       "Bash(ls:*)",
       "Bash(pnpm:*)",
       "mcp__cloudflare-docs__search_cloudflare_documentation",
-      "mcp__cloudflare-docs__migrate_pages_to_workers_guide",
       "WebFetch(domain:developers.cloudflare.com)",
       "Bash(find:*)",
       "Bash(git add:*)",

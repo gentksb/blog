@@ -32,7 +32,6 @@ wrangler deploy
 ### Environment Variables
 
 ```bash
-# dev.vars
 PAAPI_ACCESSKEY=your-pa-api-access-key
 PAAPI_SECRETKEY=your-pa-api-secret-key
 PARTNER_TAG=your-amazon-associate-tag

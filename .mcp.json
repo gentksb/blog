@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "cloudflare-docs": {
+    "CloudflareDocumentation": {
       "type": "sse",
       "url": "https://docs.mcp.cloudflare.com/sse"
     }
