@@ -24,7 +24,7 @@
 
 - **`src/middleware.ts`**: セキュリティミドルウェア
 - **`src/ogpApi.ts`**: OGPメタデータAPI
-- **`src/amazonApi.ts`**: Amazon商品情報API  
+- **`src/amazonApi.ts`**: Amazon商品情報API
 - **`src/ogImageHandler.ts`**: OG画像生成
 
 ## Workers API 使用方法
@@ -32,11 +32,11 @@
 ```typescript
 // ✅ Workers方式
 export async function handleOgpApi(
-  request: Request, 
-  env: Env, 
+  request: Request,
+  env: Env,
   ctx: ExecutionContext
 ): Promise<Response> {
-  const key = env.PAAPI_ACCESSKEY; // 環境変数アクセス
+  const key = env.PAAPI_ACCESSKEY // 環境変数アクセス
   // ハンドラーロジック
 }
 ```
@@ -91,12 +91,14 @@ wrangler deploy
 ### 2025年7月: Pages Functions → Workers + Static Assets
 
 **変更内容**:
+
 - 統一Workerエントリーポイント（`_worker.ts`）への移行
 - ドメイン駆動設計（DDD）に基づくハンドラー分離
 - TypeScript型安全性の向上
 - テストの Workers API 対応
 
 **技術的な変更**:
+
 - ハンドラーシグネチャ: `onRequestGet(context)` → `fetch(request, env, ctx)`
 - 環境変数アクセス: `context.env` → `env`
 - ルートパラメータ: `context.params` → 手動URL解析

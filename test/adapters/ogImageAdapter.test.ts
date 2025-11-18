@@ -43,7 +43,7 @@ test("Asset fetcher adapter works correctly", async () => {
   const testRequest = new Request("https://example.com/test")
 
   const response = await assetFetcher.fetchAsset(testRequest)
-  
+
   expect(response).toBeDefined()
   expect(mockAssets.fetch).toHaveBeenCalledWith(testRequest)
 })
@@ -91,14 +91,16 @@ test("OG Image adapter integrates all dependencies correctly", async () => {
   }
 
   const mockAssetFetcher: AssetFetcherAdapter = {
-    fetchAsset: vi.fn().mockResolvedValue(new Response(`
+    fetchAsset: vi.fn().mockResolvedValue(
+      new Response(`
       <html>
         <head>
           <meta property="og:title" content="Integration Test Title">
           <meta property="og:image" content="https://example.com/test.jpg">
         </head>
       </html>
-    `))
+    `)
+    )
   }
 
   const mockHtmlParser: HtmlParserAdapter = {
@@ -124,7 +126,9 @@ test("OG Image adapter integrates all dependencies correctly", async () => {
     imageGenerator: mockImageGenerator
   })
 
-  const testRequest = new Request("https://example.com/post/test/twitter-og.png")
+  const testRequest = new Request(
+    "https://example.com/post/test/twitter-og.png"
+  )
 
   // Test extracting post metadata
   const metadata = await adapter.extractPostMetadata(testRequest)
@@ -150,12 +154,16 @@ test("OG Image adapter integrates all dependencies correctly", async () => {
 
   // Test error logging
   await adapter.logError("Test error", "https://example.com/test")
-  expect(mockLogger.logError).toHaveBeenCalledWith("Test error", "https://example.com/test")
+  expect(mockLogger.logError).toHaveBeenCalledWith(
+    "Test error",
+    "https://example.com/test"
+  )
 })
 
 test("OG Image adapter handles HTML fetch failure gracefully", async () => {
   const mockAssetFetcher: AssetFetcherAdapter = {
-    fetchAsset: vi.fn()
+    fetchAsset: vi
+      .fn()
       .mockResolvedValueOnce(new Response("", { status: 404 }))
       .mockResolvedValueOnce(new Response("", { status: 404 }))
   }
@@ -175,7 +183,9 @@ test("OG Image adapter handles HTML fetch failure gracefully", async () => {
     imageGenerator: { generateImage: vi.fn() }
   })
 
-  const testRequest = new Request("https://example.com/post/test/twitter-og.png")
+  const testRequest = new Request(
+    "https://example.com/post/test/twitter-og.png"
+  )
 
   // Should throw error when both original and alternative URLs fail
   await expect(adapter.extractPostMetadata(testRequest)).rejects.toThrow(
@@ -188,9 +198,15 @@ test("OG Image adapter handles HTML fetch failure gracefully", async () => {
 
 test("OG Image adapter tries alternative URL with trailing slash", async () => {
   const mockAssetFetcher: AssetFetcherAdapter = {
-    fetchAsset: vi.fn()
+    fetchAsset: vi
+      .fn()
       .mockResolvedValueOnce(new Response("", { status: 404 })) // First attempt fails
-      .mockResolvedValueOnce(new Response("<html><head><meta property='og:title' content='Alt Title'></head></html>", { status: 200 })) // Second attempt succeeds
+      .mockResolvedValueOnce(
+        new Response(
+          "<html><head><meta property='og:title' content='Alt Title'></head></html>",
+          { status: 200 }
+        )
+      ) // Second attempt succeeds
   }
 
   const mockHtmlParser: HtmlParserAdapter = {
@@ -208,7 +224,9 @@ test("OG Image adapter tries alternative URL with trailing slash", async () => {
     imageGenerator: { generateImage: vi.fn() }
   })
 
-  const testRequest = new Request("https://example.com/post/test/twitter-og.png")
+  const testRequest = new Request(
+    "https://example.com/post/test/twitter-og.png"
+  )
 
   const metadata = await adapter.extractPostMetadata(testRequest)
   expect(metadata.title).toBe("Alt Title")

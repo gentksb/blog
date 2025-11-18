@@ -9,7 +9,9 @@ import type { AmazonItemsResponse, AmazonItem } from "amazon-paapi"
 /**
  * テスト用の最小限の有効なAmazon商品アイテムを作成
  */
-export const createMockAmazonItem = (asin: string = "B004N3APGO"): AmazonItem => ({
+export const createMockAmazonItem = (
+  asin: string = "B004N3APGO"
+): AmazonItem => ({
   ASIN: asin,
   DetailPageURL: `https://amazon.com/dp/${asin}`,
   Images: {
@@ -20,7 +22,7 @@ export const createMockAmazonItem = (asin: string = "B004N3APGO"): AmazonItem =>
         Width: 75
       },
       Medium: {
-        URL: "https://example.com/medium.jpg", 
+        URL: "https://example.com/medium.jpg",
         Height: 160,
         Width: 160
       },
@@ -39,33 +41,37 @@ export const createMockAmazonItem = (asin: string = "B004N3APGO"): AmazonItem =>
     },
     Features: {
       DisplayValues: ["Feature 1", "Feature 2"],
-      Label: "Features", 
+      Label: "Features",
       Locale: "en_US"
     }
   },
   Offers: {
-    Listings: [{
-      Id: "test-offer",
-      Availability: {},
-      IsBuyboxWinner: true,
-      Price: {
-        Amount: 1000,
-        Currency: "JPY",
-        DisplayAmount: "¥1,000"
-      },
-      SavingBasis: {
-        Amount: 1200,
-        Currency: "JPY", 
-        DisplayAmount: "¥1,200"
+    Listings: [
+      {
+        Id: "test-offer",
+        Availability: {},
+        IsBuyboxWinner: true,
+        Price: {
+          Amount: 1000,
+          Currency: "JPY",
+          DisplayAmount: "¥1,000"
+        },
+        SavingBasis: {
+          Amount: 1200,
+          Currency: "JPY",
+          DisplayAmount: "¥1,200"
+        }
       }
-    }]
+    ]
   }
 })
 
 /**
  * テスト用の有効なAmazon Items Responseを作成
  */
-export const createMockAmazonResponse = (asin: string = "B004N3APGO"): AmazonItemsResponse => ({
+export const createMockAmazonResponse = (
+  asin: string = "B004N3APGO"
+): AmazonItemsResponse => ({
   ItemsResult: {
     Items: [createMockAmazonItem(asin)]
   }

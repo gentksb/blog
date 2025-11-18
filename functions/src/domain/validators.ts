@@ -9,7 +9,7 @@
  * @returns ASINが有効な場合（英数字10文字）はtrue、そうでなければfalse
  */
 export const isValidAsin = (asin: string): boolean => {
-  if (typeof asin !== 'string') {
+  if (typeof asin !== "string") {
     return false
   }
   return /^[A-Z0-9]{10}$/.test(asin)
@@ -22,10 +22,10 @@ export const isValidAsin = (asin: string): boolean => {
  */
 export const extractAsinFromUrl = (url: string): string | null => {
   const urlObj = new URL(url)
-  const pathSegments = urlObj.pathname.split('/')
-  
+  const pathSegments = urlObj.pathname.split("/")
+
   // 期待する形式: /api/getAmznPa/{asin}
-  const asinIndex = pathSegments.indexOf('getAmznPa') + 1
+  const asinIndex = pathSegments.indexOf("getAmznPa") + 1
   const asin = pathSegments[asinIndex]
   return asin && asin.length > 0 ? asin : null
 }
@@ -44,9 +44,9 @@ export const validateAmazonConfig = (config: {
     config.accessKey &&
     config.secretKey &&
     config.partnerTag &&
-    typeof config.accessKey === 'string' &&
-    typeof config.secretKey === 'string' &&
-    typeof config.partnerTag === 'string'
+    typeof config.accessKey === "string" &&
+    typeof config.secretKey === "string" &&
+    typeof config.partnerTag === "string"
   )
 }
 
@@ -58,13 +58,13 @@ export const validateAmazonConfig = (config: {
  * @returns URLが有効な形式の場合はtrue
  */
 export const isValidUrl = (url: string): boolean => {
-  if (typeof url !== 'string' || url.trim() === '') {
+  if (typeof url !== "string" || url.trim() === "") {
     return false
   }
-  
+
   try {
     const urlObj = new URL(url)
-    return urlObj.protocol === 'http:' || urlObj.protocol === 'https:'
+    return urlObj.protocol === "http:" || urlObj.protocol === "https:"
   } catch {
     return false
   }
@@ -78,7 +78,7 @@ export const isValidUrl = (url: string): boolean => {
 export const extractUrlFromRequest = (request: Request): string | null => {
   const searchParams = new URL(request.url).searchParams
   const url = searchParams.get("url")
-  return url && url.trim() !== '' ? url : null
+  return url && url.trim() !== "" ? url : null
 }
 
 /**
@@ -91,8 +91,8 @@ export const validateOgpConfig = (config: {
 }): boolean => {
   return !!(
     config.slackWebhookUrl &&
-    typeof config.slackWebhookUrl === 'string' &&
-    config.slackWebhookUrl.startsWith('https://')
+    typeof config.slackWebhookUrl === "string" &&
+    config.slackWebhookUrl.startsWith("https://")
   )
 }
 
@@ -122,12 +122,12 @@ export const isValidSecFetchMode = (secFetchMode: string | null): boolean => {
   if (!secFetchMode) {
     return true
   }
-  
+
   // navigateモードのみ明示的にブロック（直接ブラウザアクセス）
   if (secFetchMode === "navigate") {
     return false
   }
-  
+
   // その他の値（既知・未知問わず）は全て許可（MDN仕様に従い無視）
   return true
 }
@@ -142,17 +142,17 @@ export const isSecurityHeadersValid = (request: Request): boolean => {
   const headers = request.headers
   const secFetchSite = headers.get("sec-fetch-site")
   const secFetchMode = headers.get("sec-fetch-mode")
-  
+
   // Sec-Fetch-Siteによる検証（主要な検証）
   if (secFetchSite && !isValidSecFetchSite(secFetchSite)) {
     return false
   }
-  
+
   // Sec-Fetch-Modeによる追加検証
   if (secFetchMode && !isValidSecFetchMode(secFetchMode)) {
     return false
   }
-  
+
   return true
 }
 
@@ -164,6 +164,5 @@ export const isSecurityHeadersValid = (request: Request): boolean => {
  * @returns twitter-og.pngリクエストの場合はtrue
  */
 export const isTwitterOgImageRequest = (request: Request): boolean => {
-  return request.url.endsWith('/twitter-og.png')
+  return request.url.endsWith("/twitter-og.png")
 }
-

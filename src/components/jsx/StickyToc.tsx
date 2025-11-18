@@ -23,7 +23,9 @@ export default function StickyToc({ headings }: Props) {
     const observer = new IntersectionObserver(
       (entries) => {
         // 交差している要素のみを抽出
-        const intersectingEntries = entries.filter((entry) => entry.isIntersecting)
+        const intersectingEntries = entries.filter(
+          (entry) => entry.isIntersecting
+        )
 
         if (intersectingEntries.length > 0) {
           // 複数の見出しが同時に交差する場合、最も上の見出しを選択
@@ -71,7 +73,10 @@ export default function StickyToc({ headings }: Props) {
   }
 
   return (
-    <nav className="sticky top-24 hidden xl:block" aria-labelledby="toc-heading">
+    <nav
+      className="sticky top-24 hidden xl:block"
+      aria-labelledby="toc-heading"
+    >
       <div className="mb-4 border-b border-gray-200 pb-2">
         <h2 id="toc-heading" className="text-sm font-bold text-gray-700">
           目次
@@ -84,7 +89,7 @@ export default function StickyToc({ headings }: Props) {
             <li key={heading.slug} className={getIndentClass(heading.depth)}>
               <a
                 href={`#${heading.slug}`}
-                className={`block transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:rounded ${
+                className={`block transition-colors focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isActive
                     ? "font-semibold text-primary"
                     : "text-gray-600 hover:text-primary"
