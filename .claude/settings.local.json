@@ -21,5 +21,29 @@
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "cloudflare-docs"
-  ]
+  ],
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm lint:fix && pnpm format",
+            "timeout": 60
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm lint:fix && pnpm format",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -37,7 +37,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 type Props = CollectionEntry<"post">
 
 const post = Astro.props
-const { Content } = await post.render()
+const { Content, headings } = await post.render()
 
 // descriptionレンダリング
 const contentString = await container.renderToString(Content)
@@ -46,7 +46,7 @@ const description = sanitizeHtml(contentString, {
 }).slice(0, 100)
 ---
 
-<BlogPost {...post} description={description}>
+<BlogPost {...post} description={description} headings={headings}>
   <Content
     components={{
       h2: MdxH2,

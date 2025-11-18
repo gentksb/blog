@@ -1,0 +1,19 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": [
+    "src/pages/**/*.{astro,ts,tsx}",
+    "src/layouts/**/*.astro",
+    "astro.config.ts",
+    "tailwind.config.ts",
+    "functions/_worker.ts"
+  ],
+  "project": ["src/**/*.{ts,tsx,astro}", "functions/**/*.ts"],
+  "ignore": [
+    "src/content/**",
+    "**/*.d.ts",
+    "dist/**",
+    "node_modules/**"
+  ],
+  "ignoreDependencies": [],
+  "ignoreExportsUsedInFile": true
+}

@@ -1,0 +1,42 @@
+---
+import type { MarkdownHeading } from "astro"
+import { getIndentClass } from "@lib/headings"
+
+interface Props {
+  headings: MarkdownHeading[]
+}
+
+const { headings } = Astro.props
+
+// h2とh3のみを表示
+const filteredHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3)
+
+if (filteredHeadings.length === 0) {
+  return null
+}
+---
+
+<div class="collapse collapse-arrow mb-6 border border-gray-200 bg-base-100">
+  <input type="checkbox" aria-label="目次を展開" aria-controls="mobile-toc" />
+  <div class="collapse-title text-base font-medium" id="mobile-toc-heading">
+    目次
+  </div>
+  <div class="collapse-content" id="mobile-toc">
+    <nav class="toc-nav" aria-labelledby="mobile-toc-heading">
+      <ul class="space-y-2 text-sm">
+        {
+          filteredHeadings.map((heading) => (
+            <li class={getIndentClass(heading.depth)}>
+              <a
+                href={`#${heading.slug}`}
+                class="text-gray-600 hover:text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:rounded"
+              >
+                {heading.text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</div>
