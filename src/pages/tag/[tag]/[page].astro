@@ -1,0 +1,55 @@
+---
+import type { GetStaticPaths, Page } from "astro"
+import { timeOrderPosts } from "@lib/timeOrderPosts"
+import { pageSize } from "~/config"
+import Layout from "@layouts/Layout.astro"
+import BlogPostCard from "@components/BlogPostCard.astro"
+import type { CollectionEntry } from "astro:content"
+import Paginate from "@components/Paginate.astro"
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  // 全タグを収集
+  const allTags = new Set<string>()
+  timeOrderPosts.forEach((post) => {
+    post.data.tags?.forEach((tag) => allTags.add(tag))
+  })
+
+  // 各タグごとにページを生成
+  return Array.from(allTags).flatMap((tag) => {
+    const filteredPosts = timeOrderPosts.filter((post) =>
+      post.data.tags?.includes(tag)
+    )
+    return paginate(filteredPosts, {
+      params: { tag },
+      pageSize: pageSize
+    })
+  })
+}
+
+type Props = {
+  page: Page<CollectionEntry<"post">>
+}
+
+const { page } = Astro.props
+const { tag } = Astro.params
+const posts = page.data
+---
+
+<Layout title={`タグ: ${tag} - 幻想サイクル`}>
+  <section>
+    <h1 class="mb-6 text-3xl font-bold">
+      タグ: <span class="text-accent">{tag}</span>
+    </h1>
+    <p class="mb-6 text-gray-600">
+      {page.total}件の記事
+    </p>
+    <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
+      {posts.map((post) => <BlogPostCard {...post} />)}
+    </div>
+  </section>
+  <Paginate
+    currentPage={page.currentPage}
+    totalPages={page.lastPage}
+    basePath={`/tag/${tag}`}
+  />
+</Layout>
