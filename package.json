@@ -29,7 +29,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
-    "astro": "^5.14.7",
+    "astro": "^5.15.9",
     "astro-auto-import": "^0.4.4",
     "astro-icon": "^1.1.5",
     "astro-pagefind": "^1.8.3",
