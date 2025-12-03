@@ -1,8 +1,18 @@
 {
   "mcpServers": {
-    "CloudflareDocumentation": {
+    "cloudflare-documentation": {
       "type": "sse",
       "url": "https://docs.mcp.cloudflare.com/sse"
+    },
+    "astro-docs": {
+      "type": "http",
+      "url": "https://mcp.docs.astro.build/mcp"
+    },
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"],
+      "env": {}
     }
   }
 }
