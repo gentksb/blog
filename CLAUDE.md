@@ -52,9 +52,9 @@
 - **`src/layouts/`**: ページレイアウト定義
 - **`src/pages/`**: ルーティング定義
   - **`tag/[tag]/[page].astro`**: タグ別記事一覧ページ（動的ルーティング）
-- **`functions/`**: Cloudflare Workers のサーバーサイド処理（[詳細](functions/CLAUDE.md)）
+- **`functions/`**: Cloudflare Workersのサーバーサイド処理（[詳細](functions/CLAUDE.md)）
   - `_worker.ts`: 統一Workerエントリーポイント
-  - `src/`: ドメイン別ハンドラー（DDD アーキテクチャ）
+  - `src/`: ドメイン別ハンドラー（DDDアーキテクチャ）
     - Amazon商品情報取得API
     - OGP情報取得API
     - OG画像生成
@@ -72,10 +72,9 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 ## デプロイフロー
 
 - Cloudflare Workers + Static Assetsでのビルド・デプロイ
-- 通常開発： `pnpm dev` （`pnpm astro dev` - Astroの開発サーバー）
-- Workers開発： `pnpm dev:cf` （`pnpm typegen && pnpm run build && wrangler dev` - Workers環境での開発）
-- 本番ビルド： `pnpm build` （`pnpm typegen && pnpm astro build`）
-- デプロイ： `wrangler deploy`
+- 通常開発： `pnpm dev`（`pnpm astro dev` - Astroの開発サーバー）
+- Workers開発： `pnpm dev:cf`（`pnpm typegen && pnpm run build && wrangler dev` - Workers環境での開発）
+- 本番ビルド： `pnpm build`（`pnpm typegen && pnpm astro build`）
 
 ### 設定ファイル
 
@@ -91,79 +90,8 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 - OGPキャッシュを活用して外部データ取得を最適化
 - **タグ管理**: 18個の正規化されたタグセットを使用
   - ビルド時間最適化のため、低頻度タグは統合済み
-  - 主要タグ: REVIEW, CX, ROAD, RACEREPORT, MTB, TIPS, GRAVEL, Workout, Zwift等
+  - 主要タグ： REVIEW, CX, ROAD, RACEREPORT, MTB, TIPS, GRAVEL, Workout, Zwift等
   - レガシーURL（`/category/*`, `/categories/*`, `/search/label/*`）は新しい`/tag/*`構造にリダイレクト
-
-## マイグレーション履歴
-
-### 2025年1月：タグページ機能の実装
-
-**背景**: コンテンツの発見性向上とユーザーエクスペリエンス改善
-
-**変更内容**:
-
-- **タグページ実装**: `/tag/[tag]/[page]` 動的ルーティング
-  - 全18タグに対してページネーション付き一覧ページを生成
-  - 1ページあたり12記事表示
-- **タグクラウドコンポーネント**: `TagCloud.astro`
-  - 使用頻度に応じたフォントサイズ調整（12-24px）
-  - 記事数の表示
-  - トップページに配置
-- **タグナビゲーション強化**:
-  - 記事ページのタグをクリック可能に変更
-  - ホバーエフェクト追加
-- **タグデータ正規化**:
-  - `MEMO` → `TIPS` (2件)
-  - `TOOLS` → `GADGETS` (1件)
-  - `EVENT` → `RACEREPORT` (1件)
-  - `WORKOUT` → `Workout` (ケース統一)
-- **リダイレクト設定更新**:
-  - `/tag/*` ルール削除（新規タグページと競合）
-  - レガシーパスを新構造にリダイレクト（`/category/*`, `/categories/*`, `/search/label/*` → `/tag/*`）
-
-**技術的な変更**:
-
-- `Paginate.astro`に`basePath`プロパティ追加
-- タグページ用のURL構造対応（`/tag/[tag]/1`, `/tag/[tag]/2`）
-- 型安全性向上（`Astro.params`に型アサーション追加）
-
-**ビルド結果**: 462ページ生成（タグページ約70ページ含む）
-
-### 2025年10月：Astro v4 → v5 メジャーアップグレード
-
-**背景**: Astro v5の新機能とVite v6への対応
-
-**変更内容**:
-
-- **Astroコア**: v4.16.19 → v5.14.7
-- **MDX統合**: @astrojs/mdx v3.1.9 → v4.3.7（必須アップグレード）
-- **React統合**: @astrojs/react v3.6.3 → v4.4.0
-- **Tailwind統合**: @astrojs/tailwind v5.1.5 → v6.0.2
-- **Sitemap統合**: @astrojs/sitemap v3.5.0 → v3.6.0
-- **Vite**: v6.4.1（自動アップグレード）
-
-**コード変更**:
-
-- **JSX Server Renderer**: インポートパス変更
-  - `astro/jsx/server.js` → `@astrojs/mdx/server.js`
-  - 影響ファイル: `src/pages/post/[...slug].astro`, `src/pages/index.xml.ts`
-
-**参考リンク**: [Astro v5 Upgrade Guide](https://docs.astro.build/en/guides/upgrade-to/v5/)
-
-### 2025年7月：Pages Functions → Workers + Static Assets
-
-**背景**: Cloudflareの推奨により、Pages FunctionsからWorkers + Static Assetsへ移行
-
-**変更内容**:
-
-- **アーキテクチャ変更**: ファイルベースルーティング → 統一Workerエントリーポイント
-- **ドメイン分離**: DDD（ドメイン駆動設計）に基づくハンドラー分離
-- **型安全性向上**: TypeScript完全対応（`.js` → `.ts`）
-- **API変更**: `onRequestGet(context)` → `fetch(request, env, ctx)`
-- **設定変更**: `astro.config.ts`出力ディレクトリ `./dist/client/` → `./dist/`
-- **ビルドプロセス簡素化**: Pages Functions build不要
-
-**技術的な変更**:
 
 ## コード品質とテスト方針
 
@@ -186,6 +114,15 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 
 ## メンテナンス用ツール
 
+### MCP Server
+
+- cloudflare-documentation
+  - Cloudflare WorkersおよびWorkersランタイム・Wranglerに関するナレッジを取得する際に利用
+- astro-docs
+  - Astroのフレームワーク仕様・各APIで利用できるメソッドや設定について検索する際に利用
+- chrome-devtools
+  - フロントエンド変更時、開発サーバーを起動して情報を取得する際に利用。`pnpm run dev` コマンドと併用。
+
 ### 画像リサイズスクリプト
 
 リポジトリサイズ縮小のため、`src/content/`配下の大きな画像ファイルを一括リサイズするスクリプトを提供しています。
@@ -198,10 +135,10 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 
 **処理内容**:
 
-- 対象: `src/content/`配下の画像ファイル（jpg, jpeg, png, webp）
-- 条件: 横幅1200px以上の画像のみ
-- 処理: 横幅1200px以下にリサイズ（アスペクト比維持）
-- 安全性: 処理前にバックアップ作成、エラー時は自動復元
+- 対象： `src/content/`配下の画像ファイル（jpg, jpeg, png, webp）
+- 条件： 横幅1200px以上の画像のみ
+- 処理： 横幅1200px以下にリサイズ（アスペクト比維持）
+- 安全性： 処理前にバックアップ作成、エラー時は自動復元
 
 **注意事項**:
 
@@ -209,18 +146,11 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 - 実行前に重要なファイルをバックアップしてください
 - ImageMagickが必要です（`identify`, `mogrify`コマンド）
 
-## ソーシャルメディア連携
-
-- Twitter: gen_sobunya
-- GitHub: gentksb
-- Instagram: gen_sobunya
-- Threads: gen_sobunya
-
 ## プロジェクト情報の更新について
 
 **重要**: プロジェクトの技術スタック、構成、依存関係、設定ファイルなどを変更した際は、必ずこのCLAUDE.mdファイルを更新してください。このファイルはプロジェクトの現在の状態を正確に反映する必要があります。
 
-更新が必要な変更例:
+更新が必要な変更例：
 
 - 新しい依存関係やライブラリの追加・削除
 - ビルド・デプロイフローの変更
