@@ -112,7 +112,50 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
   - 理由：textlint未対応時に作成された大量の過去記事の修正は非現実的
   - エディタ上でのlint表示は有効（ローカル開発時の参考情報として活用）
 - **新規記事**: エディタ上のtextlint警告を参考に品質を確保
-- **コンポーネント等**: CI/CDでのESLint/TypeScriptチェック必須
+- **コンポーネント等**: CI/CDでのBiome/TypeScriptチェック必須
+
+### Biome移行状況（2025年12月）
+
+**現在の構成**: Biome 2.3 + Prettier（Astroファイル用）
+
+| ファイル種別 | リンター | フォーマッター |
+|-------------|----------|---------------|
+| TS/TSX/JS/JSX | Biome | Biome |
+| Astro | - | Prettier |
+| JSON/CSS | Biome | Biome |
+
+**Astroファイルが対象外の理由**:
+
+Biome 2.3の実験的Astroサポート（`html.experimentalFullSupportEnabled`）では、以下のAstro固有構文がパースエラーになります：
+
+```astro
+<!-- 1. テンプレートリテラルの属性値 -->
+<a href=`https://example.com/${slug}`>Link</a>
+
+<!-- 2. Astroコンポーネントの自己終了タグ -->
+<Icon name="mdi:youtube" class="size-8" /></a>
+
+<!-- 該当ファイル例 -->
+<!-- src/components/Social.astro -->
+```
+
+**完全移行の判断基準**:
+
+以下の条件が満たされた時点でPrettierを削除し、Biome単独構成に移行できます：
+
+1. Biomeが上記構文をエラーなくパースできる
+2. `html.experimentalFullSupportEnabled`が安定版になる
+3. `pnpm biome check src/components/Social.astro` がパスする
+
+**確認コマンド**:
+
+```bash
+# Astro対応状況の確認
+pnpm biome check --write src/components/Social.astro
+
+# 全Astroファイルのテスト
+pnpm biome check "src/**/*.astro"
+```
 
 ## メンテナンス用ツール
 
