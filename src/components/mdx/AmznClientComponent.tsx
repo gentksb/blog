@@ -1,8 +1,8 @@
-import React from "react"
-import useSWR from "swr"
 import { LinkCardLayout } from "@layouts/LinkCardLayout"
-import type { AmazonItemsResponse } from "amazon-paapi" // LinkCardLayout コンポーネントのパスを適宜調整してください
 import { LinkCardSkeltonLayout } from "@layouts/LinkCardSkeletonLayout"
+import type { AmazonItemsResponse } from "amazon-paapi" // LinkCardLayout コンポーネントのパスを適宜調整してください
+import type React from "react"
+import useSWR from "swr"
 
 // データフェッチ用の関数
 const fetcher = (url: string) => fetch(url).then((res) => res.json())

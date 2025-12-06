@@ -6,7 +6,13 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["functions/**", "!!**/node_modules", "!!**/dist"]
+    "includes": [
+      "functions/**",
+      "src/components/**/*.{ts,tsx,js,jsx}",
+      "src/lib/**",
+      "!!**/node_modules",
+      "!!**/dist"
+    ]
   },
   "formatter": {
     "enabled": true,
