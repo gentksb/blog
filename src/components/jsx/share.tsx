@@ -1,9 +1,9 @@
-import React from "react"
 import {
   FacebookShareButton,
   LineShareButton,
   TwitterShareButton
 } from "next-share"
+import type React from "react"
 
 interface Props {
   url: string
@@ -18,7 +18,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
       await navigator.share(shareData)
       console.info("Success sharing", shareData)
     } catch (err) {
-      console.error("Error: " + err)
+      console.error(`Error: ${err}`)
     }
   }
 
@@ -31,6 +31,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
       </span>
       <div className="flex gap-2">
         <button
+          type="button"
           className="rounded-full bg-accent p-2 text-accent-content"
           onClick={async () => {
             await kickShareApi({
@@ -50,6 +51,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
+            aria-hidden="true"
           >
             <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
             <polyline points="16 6 12 2 8 6"></polyline>
@@ -68,6 +70,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
+              aria-hidden="true"
             >
               <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
             </svg>
@@ -85,6 +88,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
+              aria-hidden="true"
             >
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
             </svg>
@@ -102,6 +106,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
+              aria-hidden="true"
             >
               {/* LINE風ロゴ - アルファベットのL */}
               <rect x="3" y="3" width="18" height="18" rx="3" ry="3"></rect>

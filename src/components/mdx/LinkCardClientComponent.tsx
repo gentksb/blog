@@ -1,8 +1,8 @@
-import React from "react"
-import useSWR from "swr"
 import { LinkCardLayout } from "@layouts/LinkCardLayout"
 import { LinkCardSkeltonLayout } from "@layouts/LinkCardSkeletonLayout"
 import type { OgpData } from "@type/ogpData-type"
+import type React from "react"
+import useSWR from "swr"
 
 // データフェッチ用の関数
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
