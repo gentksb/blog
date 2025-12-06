@@ -95,7 +95,7 @@ export const createOgImageAdapter = (deps: {
 
       if (!response.ok) {
         // 代替パス（末尾スラッシュ付き）を試す
-        const alternativeUrl = htmlUrl.endsWith("/") ? htmlUrl : htmlUrl + "/"
+        const alternativeUrl = htmlUrl.endsWith("/") ? htmlUrl : `${htmlUrl}/`
         console.log(`OG Image: Trying alternative URL: ${alternativeUrl}`)
 
         const alternativeRequest = new Request(alternativeUrl, {
