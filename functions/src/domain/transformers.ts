@@ -3,8 +3,8 @@
  * 副作用なしでデータを変換する関数を提供
  */
 
-import type { AmazonItemsResponse } from "amazon-paapi"
 import type { OgpData } from "@type/ogpData-type"
+import type { AmazonItemsResponse } from "amazon-paapi"
 
 /**
  * 適切なヘッダーを持つ標準化されたAmazon APIレスポンスを作成
