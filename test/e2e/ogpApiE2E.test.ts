@@ -4,9 +4,9 @@
  * モックは使わず、実際のWorker環境とKVでテスト
  */
 
-import { expect, test } from "vitest"
-import { SELF, env } from "cloudflare:test"
+import { env, SELF } from "cloudflare:test"
 import type { OgpData } from "@type/ogpData-type"
+import { expect, test } from "vitest"
 
 test.skip("OGP API E2E - URLパラメータなしで400エラーを返す (Slackログによるタイムアウトのためスキップ)", async () => {
   const response = await SELF.fetch("http://example.com/api/getOgp", {

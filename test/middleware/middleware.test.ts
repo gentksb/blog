@@ -4,8 +4,8 @@
  * セキュリティヘッダーのvalidation動作をテスト
  */
 
-import { expect, test } from "vitest"
 import { SELF } from "cloudflare:test"
+import { expect, test } from "vitest"
 
 test("middleware allows valid sec-fetch-mode headers in Worker environment", async () => {
   // MDN準拠: navigate以外は全て許可

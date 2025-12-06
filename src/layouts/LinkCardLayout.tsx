@@ -1,4 +1,4 @@
-import React from "react"
+import type React from "react"
 import { MdOpenInNew, MdWeb } from "react-icons/md"
 
 interface Props {
