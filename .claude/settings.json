@@ -1,15 +1,18 @@
 {
   "permissions": {
+    "defaultMode": "acceptEdits",
     "allow": [
+      "WebSearch",
       "Bash(ls:*)",
       "Bash(pnpm:*)",
+      "WebFetch(domain:biomejs.dev)",
+      "WebFetch(domain:astro-tips.dev)",
       "WebFetch(domain:developers.cloudflare.com)",
       "Bash(find:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(mv:*)",
       "Bash(mkdir:*)",
-      "Bash(gemini:*)",
       "mcp__ide__getDiagnostics",
       "Bash(grep:*)",
       "Bash(gh run list:*)",
