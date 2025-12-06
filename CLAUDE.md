@@ -35,7 +35,9 @@
    - 外部リンクカード表示
 
 3. **開発機能**:
-   - ESLint/Prettierによるコード整形
+   - Biome + Prettierによるコード整形
+     - **Biome**: TS/TSX/JS/JSXファイルのリント・フォーマット
+     - **Prettier**: Astroファイルのフォーマット（Biome実験的サポート待ち）
      - インデントはダブルスペース
    - Textlintによる日本語文章校正
    - Vitestによるテスト

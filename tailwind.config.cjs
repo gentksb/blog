@@ -17,12 +17,14 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: [{
-      corporate: {
-        ...require("daisyui/src/theming/themes")["[data-theme=corporate]"],
-        "accent": "#3182CE", // アクセントカラーを上書き
-        "accent-content": "#FFFFFF", // アクセントカラー上のテキスト色
+    themes: [
+      {
+        corporate: {
+          ...require("daisyui/src/theming/themes")["[data-theme=corporate]"],
+          accent: "#3182CE", // アクセントカラーを上書き
+          "accent-content": "#FFFFFF" // アクセントカラー上のテキスト色
+        }
       }
-    }]
+    ]
   }
 }

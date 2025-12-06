@@ -13,7 +13,7 @@
       "*.config.{js,ts,mjs,cjs}",
       "!!**/node_modules",
       "!!**/dist",
-      "!!src/content/post/**"
+      "!!src/content/post"
     ]
   },
   "formatter": {
