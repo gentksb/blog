@@ -8,10 +8,12 @@
   "files": {
     "includes": [
       "functions/**",
-      "src/components/**/*.{ts,tsx,js,jsx}",
-      "src/lib/**",
+      "src/**/*.{ts,tsx,js,jsx}",
+      "test/**",
+      "*.config.{js,ts,mjs,cjs}",
       "!!**/node_modules",
-      "!!**/dist"
+      "!!**/dist",
+      "!!src/content/post/**"
     ]
   },
   "formatter": {
@@ -37,6 +39,14 @@
       "trailingCommas": "none"
     }
   },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
   "assist": {
     "enabled": true,
     "actions": {
@@ -44,5 +54,6 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "overrides": []
 }

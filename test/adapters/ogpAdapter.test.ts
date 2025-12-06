@@ -1,15 +1,15 @@
-import { expect, test, vi } from "vitest"
 import { env } from "cloudflare:test"
+import type { OgpData } from "@type/ogpData-type"
+import { expect, test, vi } from "vitest"
 import {
   createOgpAdapter,
+  createOgpFetcherAdapter,
   createOgpKVCacheAdapter,
   createOgpSlackLoggerAdapter,
-  createOgpFetcherAdapter,
   type OgpCacheAdapter,
-  type OgpLoggerAdapter,
-  type OgpFetcherAdapter
+  type OgpFetcherAdapter,
+  type OgpLoggerAdapter
 } from "../../functions/src/adapters/ogpAdapter"
-import type { OgpData } from "@type/ogpData-type"
 
 // Mock external dependencies for Slack logger and OGP fetcher
 vi.mock("../../functions/src/services/postLogToSlack", () => ({

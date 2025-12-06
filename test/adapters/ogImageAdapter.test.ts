@@ -1,15 +1,14 @@
 import { expect, test, vi } from "vitest"
 import {
-  createOgImageAdapter,
-  createOgImageSlackLoggerAdapter,
+  type AssetFetcherAdapter,
   createAssetFetcherAdapter,
   createHtmlParserAdapter,
   createImageGeneratorAdapter,
-  type OgImageLoggerAdapter,
-  type AssetFetcherAdapter,
+  createOgImageAdapter,
+  createOgImageSlackLoggerAdapter,
   type HtmlParserAdapter,
   type ImageGeneratorAdapter,
-  type PostMetadata
+  type OgImageLoggerAdapter
 } from "../../functions/src/adapters/ogImageAdapter"
 
 // Mock external dependencies

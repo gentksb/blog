@@ -4,8 +4,8 @@
  * モックは使わず、実際のWorker環境でテスト
  */
 
-import { expect, test } from "vitest"
 import { SELF } from "cloudflare:test"
+import { expect, test } from "vitest"
 
 test.skip("OG画像生成 E2E - twitter-og.pngリクエストでPNG画像を返す (フォント関連エラーのためスキップ)", async () => {
   const response = await SELF.fetch(

@@ -1,5 +1,5 @@
-import { expect, test, vi } from "vitest"
 import { env } from "cloudflare:test"
+import { expect, test, vi } from "vitest"
 import {
   createKVCacheAdapter,
   createSlackLoggerAdapter

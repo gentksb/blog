@@ -1,8 +1,8 @@
 ---
-import type { GetStaticPaths } from "astro"
 import type { CollectionEntry } from "astro:content"
 import { getCollection } from "astro:content"
 import Layout from "@layouts/Layout.astro"
+import type { GetStaticPaths } from "astro"
 export const getStaticPaths: GetStaticPaths = async () => {
   const singlePages = await getCollection("singlePage")
   return singlePages.map((page) => ({
@@ -10,15 +10,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
     props: page
   }))
 }
+
 import {
+  MdxA,
+  MdxBlockQuote,
   MdxH2,
   MdxH3,
   MdxH4,
   MdxParagraph,
-  MdxBlockQuote,
-  MdxA,
-  MdxTable,
-  MdxStrong
+  MdxStrong,
+  MdxTable
 } from "@components/mdx/mdxReplacer"
 
 type Props = CollectionEntry<"singlePage">
