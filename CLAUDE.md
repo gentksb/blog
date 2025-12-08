@@ -16,6 +16,18 @@
 - **データベース**: Cloudflare KV（OGPキャッシュ用）
 - **パッケージマネージャー**: pnpm
 
+### スタック選定背景
+
+ドメイン管理費用を除き、「インフラ費用をほぼ無料枠のみで運用する」というテーマで選定。
+
+ブログというコンテンツの性質上、ほとんどのアセットを静的配信できるほか、新規記事のアップロードや編集と明確なイベントを基に更新できる。SSGとMarkdown管理をベースとするAstroをフレームワークとして採用し、Pull Requestがマージされたタイミングでビルド・デプロイを実施する構成となっている。
+
+例外的に、24時間以内の情報を配信する必要があるAmazon PAAPIデータのみ動的に配信する要件がある。ここについてはCSRコンポーネントとする必要があるが、AstroがReactコンポーネントを配信し、部分的にSPA構成とすることで解決している。外部サーバーへ問い合わせを複数件・すべてのアクセス毎に実施するとユーザー体験が明確に損なわれるレベルで表示が遅くなるので、Cloudflare KVに24時間TTLでキャッシュすることで高速表示を可能にしている。サイト内検索についてもPagefindを用いた静的配信を使い、ユーザーアクセス時にサーバサイド処理をなるべく行わない構成としている。
+
+また、SSGという特性上ビルド時間の長期化（特に画像アセットを複数サイズレンダリングするケース）が顕在化したため、Cloudflare Imagesを用いてビルド時のリサイズなしに動的な複数画像サイズ配信を実装した。
+
+スタイリング等はシェアを見て決定。
+
 ## 主要機能
 
 1. **ブログ機能**:
@@ -118,11 +130,11 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 
 **現在の構成**: Biome 2.3 + Prettier（Astroファイル用）
 
-| ファイル種別 | リンター | フォーマッター |
-|-------------|----------|---------------|
-| TS/TSX/JS/JSX | Biome | Biome |
-| Astro | - | Prettier |
-| JSON/CSS | Biome | Biome |
+| ファイル種別  | リンター | フォーマッター |
+| ------------- | -------- | -------------- |
+| TS/TSX/JS/JSX | Biome    | Biome          |
+| Astro         | -        | Prettier       |
+| JSON/CSS      | Biome    | Biome          |
 
 **Astroファイルが対象外の理由**:
 
@@ -133,7 +145,7 @@ Biome 2.3の実験的Astroサポート（`html.experimentalFullSupportEnabled`�
 <a href=`https://example.com/${slug}`>Link</a>
 
 <!-- 2. Astroコンポーネントの自己終了タグ -->
-<Icon name="mdi:youtube" class="size-8" /></a>
+<Icon name="mdi:youtube" class="size-8" />
 
 <!-- 該当ファイル例 -->
 <!-- src/components/Social.astro -->
