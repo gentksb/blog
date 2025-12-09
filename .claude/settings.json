@@ -1,6 +1,5 @@
 {
   "permissions": {
-    "defaultMode": "acceptEdits",
     "allow": [
       "WebSearch",
       "Bash(ls:*)",
@@ -17,7 +16,8 @@
       "Bash(grep:*)",
       "Bash(gh run list:*)",
       "Bash(gh run view:*)"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   },
   "enableAllProjectMcpServers": true,
   "hooks": {
