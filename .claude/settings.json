@@ -1,6 +1,5 @@
 {
   "permissions": {
-    "defaultMode": "acceptEdits",
     "allow": [
       "WebSearch",
       "Bash(ls:*)",
@@ -17,7 +16,8 @@
       "Bash(grep:*)",
       "Bash(gh run list:*)",
       "Bash(gh run view:*)"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   },
   "enableAllProjectMcpServers": true,
   "hooks": {
@@ -43,5 +43,17 @@
         ]
       }
     ]
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-code-plugins": true,
+    "code-review@claude-code-plugins": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-code-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code"
+      }
+    }
   }
 }
