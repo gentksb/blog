@@ -31,7 +31,10 @@
     "enabled": true,
     "head_sampling_rate": 1
   },
+  "traces": {
+    "enabled": true
+  },
   "vars": {
-    "NODE_VERSION": "22.14"
+    "NODE_VERSION": "24.12"
   }
 }
