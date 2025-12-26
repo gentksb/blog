@@ -4,12 +4,9 @@
 
 このプロジェクトは**Cloudflare Workers + Static Assets**アーキテクチャを使用し、統一されたWorkerエントリーポイントからAPI機能を提供します。
 
-## 実行環境の特徴
+### 実行環境の特徴
 
-- **Cloudflare Workers Runtime（V8）**で実行
-- **Web標準API使用**: `fetch`, `Request`, `Response`, `URL`等
-- **Node.js API使用不可**: `fs`, `path`, `os`等は利用不可
-- **TypeScript型**: 自動生成された`worker-configuration.d.ts`を参照
+Cloudflare Workers Runtime（V8）で実行されており、原則としてWeb標準API(`fetch`, `Request`, `Response`, `URL`)等を利用する。利用可能なNode.js APIや制限の詳細についてはCloudflare Documentationを参照すること。
 
 ## プロジェクト構成
 
