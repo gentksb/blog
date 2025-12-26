@@ -49,24 +49,25 @@ Delete OGP caches: <https://developers.cloudflare.com/kv/platform/kv-commands/#d
 
 ## Maintenance Tools
 
-### Image Resize Script
+### 画像リサイズスクリプト
 
-A batch script for resizing large image files in `src/content/` to reduce repository size.
+リポジトリサイズ縮小のため、`src/content/`配下の大きな画像ファイルを一括リサイズするスクリプトを提供しています。
 
-**Usage:**
+**実行方法**:
 
 ```bash
 ./resize_images.sh
 ```
 
-**Processing:**
+**処理内容**:
 
-- Target: Image files (jpg, jpeg, png, webp) in `src/content/`
-- Condition: Images with width ≥ 1200px only
-- Action: Resize to width ≤ 1200px (maintain aspect ratio)
-- Safety: Creates backup before processing, auto-restores on error
+- 対象： `src/content/`配下の画像ファイル（jpg, jpeg, png, webp）
+- 条件： 横幅1200px以上の画像のみ
+- 処理： 横幅1200px以下にリサイズ（アスペクト比維持）
+- 安全性： 処理前にバックアップ作成、エラー時は自動復元
 
-**Requirements:**
+**注意事項**:
 
-- ImageMagick (`identify`, `mogrify` commands)
-- One-time execution script - backup important files before running
+- 1回限りの実行を想定したスクリプトです
+- 実行前に重要なファイルをバックアップしてください
+- ImageMagickが必要です（`identify`, `mogrify`コマンド）
