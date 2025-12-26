@@ -39,8 +39,5 @@
       "head_sampling_rate": 1,
       "persist": true
     }
-  },
-  "vars": {
-    "NODE_VERSION": "24.12"
   }
 }
