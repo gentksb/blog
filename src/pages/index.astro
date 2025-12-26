@@ -1,12 +1,12 @@
 ---
-import Layout from "@layouts/Layout.astro"
+import About from "@components/About.astro"
 import BlogPostCard from "@components/BlogPostCard.astro"
+import Hero from "@components/Hero.astro"
+import Paginate from "@components/Paginate.astro"
+import TagCloud from "@components/TagCloud.astro"
+import Layout from "@layouts/Layout.astro"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
 import { pageSize } from "~/config"
-import Paginate from "@components/Paginate.astro"
-import About from "@components/About.astro"
-import Hero from "@components/Hero.astro"
-import TagCloud from "@components/TagCloud.astro"
 
 const posts = timeOrderPosts.slice(0, pageSize)
 ---

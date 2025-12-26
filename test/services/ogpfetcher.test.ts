@@ -1,9 +1,9 @@
-import { expect, test, vi } from "vitest"
 import { env } from "cloudflare:test"
+import { expect, test, vi } from "vitest"
 import { getOgpMetaData } from "../../functions/src/services/getOgpMetaData"
 import {
-  normalLinkUrl,
-  normalLinkDataExpectedResponse
+  normalLinkDataExpectedResponse,
+  normalLinkUrl
 } from "../fixtures/testData"
 
 const encodedUrl = encodeURIComponent(normalLinkUrl)

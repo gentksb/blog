@@ -3,8 +3,8 @@
  * モックデータを一元化して重複を減らし保守性を向上
  */
 
+import type { AmazonItem, AmazonItemsResponse } from "amazon-paapi"
 import { vi } from "vitest"
-import type { AmazonItemsResponse, AmazonItem } from "amazon-paapi"
 
 /**
  * テスト用の最小限の有効なAmazon商品アイテムを作成

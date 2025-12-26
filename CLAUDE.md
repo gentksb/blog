@@ -16,6 +16,18 @@
 - **データベース**: Cloudflare KV（OGPキャッシュ用）
 - **パッケージマネージャー**: pnpm
 
+### スタック選定背景
+
+ドメイン管理費用を除き、「インフラ費用をほぼ無料枠のみで運用する」というテーマで選定。
+
+ブログというコンテンツの性質上、ほとんどのアセットを静的配信できるほか、新規記事のアップロードや編集と明確なイベントを基に更新できる。SSGとMarkdown管理をベースとするAstroをフレームワークとして採用し、Pull Requestがマージされたタイミングでビルド・デプロイを実施する構成となっている。
+
+例外的に、24時間以内の情報を配信する必要があるAmazon PAAPIデータのみ動的に配信する要件がある。ここについてはCSRコンポーネントとする必要があるが、AstroがReactコンポーネントを配信し、部分的にSPA構成とすることで解決している。外部サーバーへ問い合わせを複数件・すべてのアクセス毎に実施するとユ、ーザー体験が明確に損なわれるレベルで表示が遅くなるので、Cloudflare KVに24時間TTLでキャッシュして高速表示させている。サイト内検索についてもPagefindを用いた静的配信を使い、ユーザーアクセス時にサーバサイド処理をなるべく行わない構成としている。
+
+また、SSGという特性上ビルド時間の長期化（特に画像アセットを複数サイズレンダリングするケース）が顕在化したため、Cloudflare Imagesを用いてビルド時のリサイズなしに動的な複数画像サイズ配信を実装した。
+
+スタイリング等はシェアを見て決定。
+
 ## 主要機能
 
 1. **ブログ機能**:
@@ -35,7 +47,9 @@
    - 外部リンクカード表示
 
 3. **開発機能**:
-   - ESLint/Prettierによるコード整形
+   - Biome + Prettierによるコード整形
+     - **Biome**: TS/TSX/JS/JSXファイルのリント・フォーマット
+     - **Prettier**: Astroファイルのフォーマット（Biome実験的サポート待ち）
      - インデントはダブルスペース
    - Textlintによる日本語文章校正
    - Vitestによるテスト
@@ -110,11 +124,52 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
   - 理由：textlint未対応時に作成された大量の過去記事の修正は非現実的
   - エディタ上でのlint表示は有効（ローカル開発時の参考情報として活用）
 - **新規記事**: エディタ上のtextlint警告を参考に品質を確保
-- **コンポーネント等**: CI/CDでのESLint/TypeScriptチェック必須
+- **コンポーネント等**: CI/CDでのBiome/TypeScriptチェック必須
 
-## メンテナンス用ツール
+### Biome移行状況（2025年12月）
 
-### MCP Server
+**現在の構成**: Biome 2.3 + Prettier（Astroファイル用）
+
+| ファイル種別  | リンター | フォーマッター |
+| ------------- | -------- | -------------- |
+| TS/TSX/JS/JSX | Biome    | Biome          |
+| Astro         | -        | Prettier       |
+| JSON/CSS      | Biome    | Biome          |
+
+**Astroファイルが対象外の理由**:
+
+Biome 2.3の実験的Astroサポート（`html.experimentalFullSupportEnabled`）では、以下のAstro固有構文がパースエラーになります：
+
+```astro
+<!-- 1. テンプレートリテラルの属性値 -->
+<a href=`https://example.com/${slug}`>Link</a>
+
+<!-- 2. Astroコンポーネントの自己終了タグ -->
+<Icon name="mdi:youtube" class="size-8" />
+
+<!-- 該当ファイル例 -->
+<!-- src/components/Social.astro -->
+```
+
+**完全移行の判断基準**:
+
+以下の条件が満たされた時点でPrettierを削除し、Biome単独構成に移行できます：
+
+1. Biomeが上記構文をエラーなくパースできる
+2. `html.experimentalFullSupportEnabled`が安定版になる
+3. `pnpm biome check src/components/Social.astro` がパスする
+
+**確認コマンド**:
+
+```bash
+# Astro対応状況の確認
+pnpm biome check --write src/components/Social.astro
+
+# 全Astroファイルのテスト
+pnpm biome check "src/**/*.astro"
+```
+
+## Project Level MCP Server
 
 - cloudflare-documentation
   - Cloudflare WorkersおよびWorkersランタイム・Wranglerに関するナレッジを取得する際に利用
@@ -122,39 +177,3 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
   - Astroのフレームワーク仕様・各APIで利用できるメソッドや設定について検索する際に利用
 - chrome-devtools
   - フロントエンド変更時、開発サーバーを起動して情報を取得する際に利用。`pnpm run dev` コマンドと併用。
-
-### 画像リサイズスクリプト
-
-リポジトリサイズ縮小のため、`src/content/`配下の大きな画像ファイルを一括リサイズするスクリプトを提供しています。
-
-**実行方法**:
-
-```bash
-./resize_images.sh
-```
-
-**処理内容**:
-
-- 対象： `src/content/`配下の画像ファイル（jpg, jpeg, png, webp）
-- 条件： 横幅1200px以上の画像のみ
-- 処理： 横幅1200px以下にリサイズ（アスペクト比維持）
-- 安全性： 処理前にバックアップ作成、エラー時は自動復元
-
-**注意事項**:
-
-- 1回限りの実行を想定したスクリプトです
-- 実行前に重要なファイルをバックアップしてください
-- ImageMagickが必要です（`identify`, `mogrify`コマンド）
-
-## プロジェクト情報の更新について
-
-**重要**: プロジェクトの技術スタック、構成、依存関係、設定ファイルなどを変更した際は、必ずこのCLAUDE.mdファイルを更新してください。このファイルはプロジェクトの現在の状態を正確に反映する必要があります。
-
-更新が必要な変更例：
-
-- 新しい依存関係やライブラリの追加・削除
-- ビルド・デプロイフローの変更
-- 設定ファイルの追加・変更・削除
-- プロジェクト構造の変更
-- 環境変数の追加・削除
-- 新機能やコンポーネントの追加

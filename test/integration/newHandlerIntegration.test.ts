@@ -4,25 +4,25 @@
  * モックに依存せず、実際の依存性を使った統合テスト
  */
 
-import { expect, test, vi } from "vitest"
 import { env } from "cloudflare:test"
-import { createOgpHandler } from "../../functions/src/handlers/ogpApi"
-import { createOgImageHandler } from "../../functions/src/handlers/ogImageHandler"
+import type { OgpData } from "@type/ogpData-type"
+import { expect, test, vi } from "vitest"
 import {
-  createOgpAdapter,
-  createOgpKVCacheAdapter,
-  createOgpSlackLoggerAdapter,
-  createOgpFetcherAdapter
-} from "../../functions/src/adapters/ogpAdapter"
-import {
-  createOgImageAdapter,
-  createOgImageSlackLoggerAdapter,
   createAssetFetcherAdapter,
   createHtmlParserAdapter,
-  createImageGeneratorAdapter
+  createImageGeneratorAdapter,
+  createOgImageAdapter,
+  createOgImageSlackLoggerAdapter
 } from "../../functions/src/adapters/ogImageAdapter"
+import {
+  createOgpAdapter,
+  createOgpFetcherAdapter,
+  createOgpKVCacheAdapter,
+  createOgpSlackLoggerAdapter
+} from "../../functions/src/adapters/ogpAdapter"
+import { createOgImageHandler } from "../../functions/src/handlers/ogImageHandler"
+import { createOgpHandler } from "../../functions/src/handlers/ogpApi"
 import { createSecurityMiddleware } from "../../functions/src/middleware/middleware"
-import type { OgpData } from "@type/ogpData-type"
 
 // Mock external dependencies to keep tests isolated
 vi.mock("../../functions/src/services/postLogToSlack", () => ({
@@ -283,7 +283,7 @@ test("createSecurityMiddleware blocks invalid sec-fetch-mode headers", () => {
 
     const result = middleware(request)
     expect(result).not.toBeNull()
-    expect(result!.status).toBe(403)
+    expect(result?.status).toBe(403)
   })
 })
 

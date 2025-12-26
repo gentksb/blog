@@ -1,9 +1,9 @@
-import { defineConfig, passthroughImageService } from "astro/config"
 import mdx from "@astrojs/mdx"
-import sitemap from "@astrojs/sitemap"
-import AutoImport from "astro-auto-import"
-import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
+import sitemap from "@astrojs/sitemap"
+import tailwind from "@astrojs/tailwind"
+import { defineConfig, passthroughImageService } from "astro/config"
+import AutoImport from "astro-auto-import"
 import icon from "astro-icon"
 import pagefind from "astro-pagefind"
 

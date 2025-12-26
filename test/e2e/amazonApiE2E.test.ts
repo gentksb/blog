@@ -1,5 +1,5 @@
-import { expect, test } from "vitest"
 import { SELF } from "cloudflare:test"
+import { expect, test } from "vitest"
 
 test.skip("Amazon API E2E - 無効なASINで400エラーを返す (Slackログによるタイムアウトのためスキップ)", async () => {
   // 無効なASINでリクエスト
