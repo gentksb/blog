@@ -40,7 +40,7 @@
      - 記事ページからのクリック可能なタグリンク
 
 2. **特殊コンポーネント**:
-   - Amazon商品リンク表示（PA-API連携）
+   - Amazon商品リンク表示（Creators API連携）
    - OGP情報取得と表示
    - ソーシャルシェア機能
    - 関連記事表示
@@ -77,11 +77,21 @@
 ## 環境変数
 
 ```bash
-PAAPI_ACCESSKEY    # PA-API v5 Access key ID
-PAAPI_SECRETKEY    # PA-API v5 Secret key
-PARTNER_TAG        # Amazon Associate Partner Tag
-SLACK_WEBHOOK_URL  # Slack webhook URL for logging
+CREATORS_CREDENTIAL_ID      # Amazon Creators API Credential ID
+CREATORS_CREDENTIAL_SECRET  # Amazon Creators API Credential Secret
+PARTNER_TAG                 # Amazon Associate Partner Tag
+SLACK_WEBHOOK_URL           # Slack webhook URL for logging
 ```
+
+### Amazon Creators API 移行について
+
+2026年1月31日のPAAPI v5 Offers V1廃止に伴い、Amazon Creators APIに移行しています。
+
+- **認証方式**: OAuth 2.0（Amazon Cognito）
+- **トークンエンドポイント**: `https://creatorsapi.auth.us-west-2.amazoncognito.com/oauth2/token`
+- **APIエンドポイント**: `https://creatorsapi.amazon/getitems`
+
+認証情報はAmazon Associates Central の Creators APIセクションで取得してください。
 
 ## デプロイフロー
 

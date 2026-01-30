@@ -82,10 +82,10 @@ export async function handleAmazonApi(
   env: Env,
   _ctx: ExecutionContext
 ): Promise<Response> {
-  // 設定を検証
+  // 設定を検証（Creators API用の認証情報）
   const config = {
-    accessKey: env.PAAPI_ACCESSKEY,
-    secretKey: env.PAAPI_SECRETKEY,
+    credentialId: env.CREATORS_CREDENTIAL_ID,
+    credentialSecret: env.CREATORS_CREDENTIAL_SECRET,
     partnerTag: env.PARTNER_TAG
   }
 
@@ -96,7 +96,12 @@ export async function handleAmazonApi(
   // 依存性注入でアダプターを作成
   const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
   const logger = createSlackLoggerAdapter(env.SLACK_WEBHOOK_URL)
-  const adapter = createAmazonAdapter({ cache, config, logger })
+  const adapter = createAmazonAdapter({
+    cache,
+    config,
+    logger,
+    kv: env.PAAPI_DATASTORE // OAuthトークンキャッシュ用にKVを渡す
+  })
 
   // ハンドラーを作成して実行
   const handler = createAmazonHandler(adapter)

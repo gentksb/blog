@@ -7,11 +7,11 @@ import type { AmazonItemsResponse } from "amazon-paapi"
 import { getAmazonProductInfo } from "../services/getAmazonProductInfo"
 
 /**
- * Amazon API用の設定インターフェース
+ * Amazon Creators API用の設定インターフェース
  */
 export interface AmazonConfig {
-  accessKey: string
-  secretKey: string
+  credentialId: string
+  credentialSecret: string
   partnerTag: string
 }
 
@@ -42,21 +42,23 @@ export interface AmazonAdapter {
 
 /**
  * 注入された依存関係を持つAmazonアダプターを作成
- * @param deps - キャッシュ、設定、ロガーを含む依存関係
+ * @param deps - キャッシュ、設定、ロガー、KVを含む依存関係
  * @returns Amazonアダプターインスタンス
  */
 export const createAmazonAdapter = (deps: {
   cache: CacheAdapter
   config: AmazonConfig
   logger: LoggerAdapter
+  kv?: KVNamespace // OAuthトークンキャッシュ用
 }): AmazonAdapter => {
   return {
     async getProductInfo(asin: string): Promise<AmazonItemsResponse> {
       return await getAmazonProductInfo(
         asin,
-        deps.config.accessKey,
-        deps.config.secretKey,
-        deps.config.partnerTag
+        deps.config.credentialId,
+        deps.config.credentialSecret,
+        deps.config.partnerTag,
+        deps.kv
       )
     },
 

@@ -33,7 +33,7 @@ export async function handleOgpApi(
   env: Env,
   ctx: ExecutionContext
 ): Promise<Response> {
-  const key = env.PAAPI_ACCESSKEY // 環境変数アクセス
+  const credentialId = env.CREATORS_CREDENTIAL_ID // 環境変数アクセス
   // ハンドラーロジック
 }
 ```
@@ -73,8 +73,9 @@ wrangler deploy
 ### Amazon商品情報API
 
 - **エンドポイント**: `GET /api/getAmznPa/{ASIN}`
-- **機能**: PA-API v5 Amazon商品データ取得
-- **キャッシュ**: KV 24時間
+- **機能**: Amazon Creators API 商品データ取得
+- **認証**: OAuth 2.0（Amazon Cognito）+ Bearer Token
+- **キャッシュ**: KV 24時間（商品データ）、KV 1時間（OAuthトークン）
 - **制約**: ASIN 10文字英数字のみ
 
 ### OG画像生成
