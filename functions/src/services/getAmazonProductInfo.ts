@@ -102,22 +102,51 @@ export const getAmazonProductInfo = async (
  */
 // biome-ignore lint/suspicious/noExplicitAny: Creators APIのレスポンス形式は動的
 function normalizeCreatorsApiResponse(raw: any): AmazonItemsResponse {
+  console.log("Raw response keys:", Object.keys(raw))
+
   // Creators APIがPascalCaseで返す場合はそのまま返す
-  if (raw.ItemsResult) {
+  if (raw.ItemsResult?.Items?.length > 0) {
+    console.log("Using PascalCase format (ItemsResult)")
     return raw as AmazonItemsResponse
   }
 
   // camelCase → PascalCase変換
-  if (raw.itemsResult) {
+  if (raw.itemsResult?.items?.length > 0) {
+    console.log("Using camelCase format (itemsResult)")
     return {
       ItemsResult: {
-        Items: raw.itemsResult.items?.map(normalizeItem) || []
+        Items: raw.itemsResult.items.map(normalizeItem)
       }
     } as AmazonItemsResponse
   }
 
+  // GetItemsResponse形式（PA-API v5と同じ）
+  if (raw.GetItemsResponse?.ItemsResult?.Items?.length > 0) {
+    console.log("Using GetItemsResponse format")
+    return raw.GetItemsResponse as AmazonItemsResponse
+  }
+
+  // getItemsResponse形式（camelCase）
+  if (raw.getItemsResponse?.itemsResult?.items?.length > 0) {
+    console.log("Using getItemsResponse format (camelCase)")
+    return {
+      ItemsResult: {
+        Items: raw.getItemsResponse.itemsResult.items.map(normalizeItem)
+      }
+    } as AmazonItemsResponse
+  }
+
+  // エラーレスポンスをチェック
+  if (raw.Errors || raw.errors) {
+    const errors = raw.Errors || raw.errors
+    console.error("API returned errors:", JSON.stringify(errors, null, 2))
+  }
+
   // フォールバック: 空のレスポンス
-  console.error("Unexpected Creators API response format:", raw)
+  console.error(
+    "Unexpected Creators API response format. Full response:",
+    JSON.stringify(raw, null, 2)
+  )
   return {
     ItemsResult: {
       Items: []
