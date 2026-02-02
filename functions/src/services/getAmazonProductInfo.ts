@@ -83,8 +83,80 @@ export const getAmazonProductInfo = async (
     )
   }
 
-  const responseBody: AmazonItemsResponse = await response.json()
+  const rawResponse = await response.json()
+  console.log(
+    "Creators API raw response:",
+    JSON.stringify(rawResponse, null, 2)
+  )
+
+  // Creators APIはcamelCaseでレスポンスを返すため、PAAPI v5形式に変換
+  const responseBody: AmazonItemsResponse =
+    normalizeCreatorsApiResponse(rawResponse)
   console.dir(responseBody.ItemsResult.Items, { depth: null, colors: true })
 
   return responseBody
+}
+
+/**
+ * Creators APIのcamelCaseレスポンスをPAAPI v5形式（PascalCase）に変換
+ */
+// biome-ignore lint/suspicious/noExplicitAny: Creators APIのレスポンス形式は動的
+function normalizeCreatorsApiResponse(raw: any): AmazonItemsResponse {
+  // Creators APIがPascalCaseで返す場合はそのまま返す
+  if (raw.ItemsResult) {
+    return raw as AmazonItemsResponse
+  }
+
+  // camelCase → PascalCase変換
+  if (raw.itemsResult) {
+    return {
+      ItemsResult: {
+        Items: raw.itemsResult.items?.map(normalizeItem) || []
+      }
+    } as AmazonItemsResponse
+  }
+
+  // フォールバック: 空のレスポンス
+  console.error("Unexpected Creators API response format:", raw)
+  return {
+    ItemsResult: {
+      Items: []
+    }
+  } as AmazonItemsResponse
+}
+
+/**
+ * 個別アイテムのフィールドを正規化
+ */
+// biome-ignore lint/suspicious/noExplicitAny: 動的レスポンス形式の変換
+function normalizeItem(item: any): any {
+  if (!item) return item
+
+  return {
+    ASIN: item.asin || item.ASIN,
+    DetailPageURL: item.detailPageURL || item.DetailPageURL,
+    Images: normalizeImages(item.images || item.Images),
+    ItemInfo: normalizeItemInfo(item.itemInfo || item.ItemInfo),
+    Offers: item.offers || item.Offers
+  }
+}
+
+// biome-ignore lint/suspicious/noExplicitAny: 動的レスポンス形式の変換
+function normalizeImages(images: any): any {
+  if (!images) return images
+  return {
+    Primary: {
+      Medium: images.primary?.medium || images.Primary?.Medium,
+      Large: images.primary?.large || images.Primary?.Large
+    }
+  }
+}
+
+// biome-ignore lint/suspicious/noExplicitAny: 動的レスポンス形式の変換
+function normalizeItemInfo(itemInfo: any): any {
+  if (!itemInfo) return itemInfo
+  return {
+    Title: itemInfo.title || itemInfo.Title,
+    Features: itemInfo.features || itemInfo.Features
+  }
 }
