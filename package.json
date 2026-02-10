@@ -8,6 +8,13 @@
     "node": ">=24.0.0",
     "pnpm": ">=10.0.0"
   },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.4.0",
+      "onFail": "download"
+    }
+  },
   "scripts": {
     "dev": "pnpm astro dev",
     "dev:cf": "pnpm typegen && pnpm run build && wrangler dev",
@@ -54,7 +61,7 @@
     "@astrojs/check": "^0.9.6",
     "@biomejs/biome": "^2.3.10",
     "@cloudflare/vitest-pool-workers": "^0.11.1",
-    "@cloudflare/workers-types": "^4.20251225.0",
+    "@cloudflare/workers-types": "^4.20260210.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^20.19.27",
     "@types/sanitize-html": "^2.16.0",
@@ -77,6 +84,6 @@
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "2.1.9",
-    "wrangler": "^4.56.0"
+    "wrangler": "^4.64.0"
   }
 }
