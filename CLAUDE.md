@@ -13,20 +13,18 @@
 - **ホスティング**: Cloudflare Workers + Static Assets
 - **サーバーサイド**: Cloudflare Workers
 - **画像処理**: Cloudflare Image Service
-- **データベース**: Cloudflare KV（OGPキャッシュ用）
+- **データベース**: Cloudflare KV（OGP, PAAPIデータキャッシュ用）
 - **パッケージマネージャー**: pnpm
 
 ### スタック選定背景
 
 ドメイン管理費用を除き、「インフラ費用をほぼ無料枠のみで運用する」というテーマで選定。
 
-ブログというコンテンツの性質上、ほとんどのアセットを静的配信できるほか、新規記事のアップロードや編集と明確なイベントを基に更新できる。SSGとMarkdown管理をベースとするAstroをフレームワークとして採用し、Pull Requestがマージされたタイミングでビルド・デプロイを実施する構成となっている。
+ブログというコンテンツの性質上、ほとんどのアセットを静的配信できるほか、新規記事のアップロードや編集と明確なイベントを基に更新できる。SSGとMarkdown管理をベースとするAstroをフレームワークとして採用。
 
-例外的に、24時間以内の情報を配信する必要があるAmazon PAAPIデータのみ動的に配信する要件がある。ここについてはCSRコンポーネントとする必要があるが、AstroがReactコンポーネントを配信し、部分的にSPA構成とすることで解決している。外部サーバーへ問い合わせを複数件・すべてのアクセス毎に実施するとユ、ーザー体験が明確に損なわれるレベルで表示が遅くなるので、Cloudflare KVに24時間TTLでキャッシュして高速表示させている。サイト内検索についてもPagefindを用いた静的配信を使い、ユーザーアクセス時にサーバサイド処理をなるべく行わない構成としている。
+例外的に、Amazon PAAPIデータとリンクカードのOGPデータのみ動的に取得している。ここについてはAstroがReactコンポーネントを配信し、部分的にSPA構成としてCloudflare Workersで作成したAPIからフェッチすることで解決している。PAAPIデータは規約上24時間以内のデータを配信する必要があるので、Cloudflare KVに24時間TTLでキャッシュしている。サイト内検索についてもPagefindを用いた静的配信を使い、ユーザーアクセス時にサーバサイド処理をなるべく行わない構成としている。
 
-また、SSGという特性上ビルド時間の長期化（特に画像アセットを複数サイズレンダリングするケース）が顕在化したため、Cloudflare Imagesを用いてビルド時のリサイズなしに動的な複数画像サイズ配信を実装した。
-
-スタイリング等はシェアを見て決定。
+過去にビルド時間の長期化（特に画像アセットを複数サイズレンダリングするケース）が顕在化したため、Cloudflare Imagesを用いてビルド時のリサイズなしに動的な複数画像サイズ配信を実装した。
 
 ## 主要機能
 
@@ -85,10 +83,13 @@ SLACK_WEBHOOK_URL  # Slack webhook URL for logging
 
 ## デプロイフロー
 
-- Cloudflare Workers + Static Assetsでのビルド・デプロイ
-- 通常開発： `pnpm dev`（`pnpm astro dev` - Astroの開発サーバー）
-- Workers開発： `pnpm dev:cf`（`pnpm typegen && pnpm run build && wrangler dev` - Workers環境での開発）
-- 本番ビルド： `pnpm build`（`pnpm typegen && pnpm astro build`）
+Cloudflare Workers + Static AssetsでのGitHubリポジトリ連携でビルド・デプロイ。ローカルからデプロイは行わない。
+
+## 開発ワークフロー
+
+- 通常開発： `pnpm dev` Astro開発サーバーのみ起動、記事執筆中や外観の変更時に高速なフィードバックを得たい時に利用。バックエンドにアクセスするコンポーネントは機能せず、フォールバックされる。
+- Workers開発： `pnpm dev:cf` Wrangler CLIを使ってWorkers環境でのフル機能開発サーバーを起動。Astroのビルドを含むため起動時間が長い点に注意。
+- 本番ビルド： `pnpm build` フル機能開発時にAstro側の更新を反映したい場合に利用。
 
 ### 設定ファイル
 
