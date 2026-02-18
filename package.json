@@ -20,11 +20,9 @@
     "dev:cf": "pnpm typegen && pnpm run build && wrangler dev",
     "build": "pnpm typegen && pnpm astro build",
     "test": "pnpm typegen && vitest run",
-    "lint": "biome check ./src ./functions ./test",
-    "lint:fix": "biome check --write ./src ./functions ./test",
     "lint:unused": "knip",
-    "format": "biome check --write . && prettier --write \"**/*.astro\"",
-    "format:check": "biome check . && prettier --check \"**/*.astro\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "typegen": "pnpm wrangler types"
   },
   "dependencies": {
@@ -59,7 +57,6 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
-    "@biomejs/biome": "^2.3.15",
     "@cloudflare/vitest-pool-workers": "^0.11.1",
     "@cloudflare/workers-types": "^4.20260210.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
