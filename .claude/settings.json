@@ -11,7 +11,6 @@
       "Bash(git commit:*)",
       "Bash(mv:*)",
       "Bash(mkdir:*)",
-      "mcp__ide__getDiagnostics",
       "Bash(grep:*)",
       "Bash(gh run list:*)",
       "Bash(gh run view:*)",
@@ -24,7 +23,8 @@
       "Bash(gh pr checks:*)",
       "Bash(wrangler tail:*)",
       "Bash(wrangler deployments:*)",
-      "Bash(wrangler versions:*)"
+      "Bash(wrangler versions:*)",
+      "Skill(playwright-cli)"
     ],
     "defaultMode": "acceptEdits"
   },
