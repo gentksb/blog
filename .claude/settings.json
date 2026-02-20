@@ -4,7 +4,6 @@
       "WebSearch",
       "Bash(ls:*)",
       "Bash(pnpm:*)",
-      "WebFetch(domain:biomejs.dev)",
       "WebFetch(domain:astro-tips.dev)",
       "WebFetch(domain:developers.cloudflare.com)",
       "Bash(find:*)",
@@ -15,7 +14,17 @@
       "mcp__ide__getDiagnostics",
       "Bash(grep:*)",
       "Bash(gh run list:*)",
-      "Bash(gh run view:*)"
+      "Bash(gh run view:*)",
+      "Bash(git push:*)",
+      "Bash(git switch:*)",
+      "Bash(git checkout:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh pr checks:*)",
+      "Bash(wrangler tail:*)",
+      "Bash(wrangler deployments:*)",
+      "Bash(wrangler versions:*)"
     ],
     "defaultMode": "acceptEdits"
   },
