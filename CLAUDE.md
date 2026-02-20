@@ -146,7 +146,7 @@ playwright-cli skillを使用して視覚的に確認する。
 
 ```bash
 playwright-cli open https://<branch-preview-url>
-playwright-cli screenshot
+playwright-cli screenshot --filename=/tmp/preview.png
 playwright-cli close
 ```
 
