@@ -141,8 +141,14 @@ gh pr view --comments
 
 #### ステップ5: ブラウザでプレビュー確認
 
-chrome-devtools MCPサーバーを使用して視覚的に確認する。
+playwright-cli skillを使用して視覚的に確認する。
 `pnpm dev`は不要（プレビューURLは本番同等環境）。
+
+```bash
+playwright-cli open https://<branch-preview-url>
+playwright-cli screenshot
+playwright-cli close
+```
 
 #### ステップ6: Workers実行ログ確認（動的機能のデバッグ時）
 
