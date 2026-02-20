@@ -20,6 +20,7 @@
     "dev:cf": "pnpm typegen && pnpm run build && wrangler dev",
     "build": "pnpm typegen && pnpm astro build",
     "test": "pnpm typegen && vitest run",
+    "lint": "prettier --check .",
     "lint:unused": "knip",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
