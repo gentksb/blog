@@ -4,7 +4,6 @@
       "WebSearch",
       "Bash(ls:*)",
       "Bash(pnpm:*)",
-      "WebFetch(domain:biomejs.dev)",
       "WebFetch(domain:astro-tips.dev)",
       "WebFetch(domain:developers.cloudflare.com)",
       "Bash(find:*)",
@@ -12,10 +11,20 @@
       "Bash(git commit:*)",
       "Bash(mv:*)",
       "Bash(mkdir:*)",
-      "mcp__ide__getDiagnostics",
       "Bash(grep:*)",
       "Bash(gh run list:*)",
-      "Bash(gh run view:*)"
+      "Bash(gh run view:*)",
+      "Bash(git push:*)",
+      "Bash(git switch:*)",
+      "Bash(git checkout:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh pr checks:*)",
+      "Bash(wrangler tail:*)",
+      "Bash(wrangler deployments:*)",
+      "Bash(wrangler versions:*)",
+      "Skill(playwright-cli)"
     ],
     "defaultMode": "acceptEdits"
   },
@@ -27,7 +36,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pnpm lint:fix && pnpm format",
+            "command": "pnpm lint:fix",
             "timeout": 60
           }
         ]
@@ -37,7 +46,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pnpm lint:fix && pnpm format",
+            "command": "pnpm lint:fix",
             "timeout": 60
           }
         ]
@@ -46,7 +55,7 @@
   },
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true,
-    "github@claude-plugins-official": true,
+    "github@claude-plugins-official": false,
     "code-review@claude-plugins-official": true
   }
 }

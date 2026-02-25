@@ -30,3 +30,8 @@ kv.json
 
 # Claude code
 .claude/settings.local.json
+
+# playwright-cli 一時ファイル
+.playwright-cli/
+*.png
+*.webm
