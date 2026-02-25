@@ -36,7 +36,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pnpm lint:fix && pnpm format",
+            "command": "pnpm lint:fix",
             "timeout": 60
           }
         ]
@@ -46,7 +46,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pnpm lint:fix && pnpm format",
+            "command": "pnpm lint:fix",
             "timeout": 60
           }
         ]
@@ -55,7 +55,7 @@
   },
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true,
-    "github@claude-plugins-official": true,
+    "github@claude-plugins-official": false,
     "code-review@claude-plugins-official": true
   }
 }

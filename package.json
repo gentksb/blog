@@ -22,8 +22,7 @@
     "test": "pnpm typegen && vitest run",
     "lint": "prettier --check .",
     "lint:unused": "knip",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "lint:fix": "prettier --write .",
     "typegen": "pnpm wrangler types"
   },
   "dependencies": {
