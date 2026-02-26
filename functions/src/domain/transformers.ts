@@ -4,7 +4,7 @@
  */
 
 import type { OgpData } from "@type/ogpData-type"
-import type { AmazonItemsResponse } from "amazon-paapi"
+import type { CreatorsApiItemsResponse } from "../services/getAmazonProductInfo"
 
 /**
  * 適切なヘッダーを持つ標準化されたAmazon APIレスポンスを作成
@@ -12,7 +12,7 @@ import type { AmazonItemsResponse } from "amazon-paapi"
  * @returns JSONデータと適切なヘッダーを持つResponseオブジェクト
  */
 export const createAmazonResponse = (
-  productData: AmazonItemsResponse
+  productData: CreatorsApiItemsResponse
 ): Response => {
   return new Response(JSON.stringify(productData), {
     status: 200,

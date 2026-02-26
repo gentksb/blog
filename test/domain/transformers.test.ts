@@ -1,5 +1,5 @@
 import type { OgpData } from "@type/ogpData-type"
-import type { AmazonItemsResponse } from "amazon-paapi"
+import type { CreatorsApiItemsResponse } from "../../functions/src/services/getAmazonProductInfo"
 import { expect, test } from "vitest"
 import {
   createAmazonResponse,
@@ -15,41 +15,37 @@ import {
 // === Amazon API用変換関数のテスト ===
 
 test("Amazon response creation", () => {
-  const mockProductData: AmazonItemsResponse = {
-    ItemsResult: {
-      Items: [
+  const mockProductData: CreatorsApiItemsResponse = {
+    itemsResult: {
+      items: [
         {
-          ASIN: "B004N3APGO",
-          DetailPageURL: "https://www.amazon.com/dp/B004N3APGO",
-          ItemInfo: {
-            Title: {
-              DisplayValue: "Test Product",
-              Label: "Title",
-              Locale: "en_US"
+          asin: "B004N3APGO",
+          detailPageURL: "https://www.amazon.com/dp/B004N3APGO",
+          itemInfo: {
+            title: {
+              displayValue: "Test Product",
+              label: "Title",
+              locale: "en_US"
             }
           },
-          Images: {
-            Primary: {
-              Small: {
-                URL: "https://example.com/small.jpg",
-                Height: 75,
-                Width: 75
+          images: {
+            primary: {
+              small: {
+                url: "https://example.com/small.jpg",
+                height: 75,
+                width: 75
               },
-              Medium: {
-                URL: "https://example.com/medium.jpg",
-                Height: 160,
-                Width: 160
+              medium: {
+                url: "https://example.com/medium.jpg",
+                height: 160,
+                width: 160
               },
-              Large: {
-                URL: "https://example.com/large.jpg",
-                Height: 500,
-                Width: 500
+              large: {
+                url: "https://example.com/large.jpg",
+                height: 500,
+                width: 500
               }
             }
-          },
-          Offers: {
-            Summaries: [],
-            Listings: []
           }
         }
       ]
@@ -178,7 +174,7 @@ test("Method Not Allowed response creation", async () => {
 // === レスポンスヘッダーの一貫性テスト ===
 
 test("Response headers consistency", () => {
-  const amazonResponse = createAmazonResponse({} as AmazonItemsResponse)
+  const amazonResponse = createAmazonResponse({} as CreatorsApiItemsResponse)
   const ogpResponse = createOgpResponse({ ok: true } as OgpData)
 
   // Both should have cache-control headers

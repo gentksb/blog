@@ -3,7 +3,10 @@
  * モックデータを一元化して重複を減らし保守性を向上
  */
 
-import type { AmazonItem, AmazonItemsResponse } from "amazon-paapi"
+import type {
+  CreatorsApiItem,
+  CreatorsApiItemsResponse
+} from "../../functions/src/services/getAmazonProductInfo"
 import { vi } from "vitest"
 
 /**
@@ -11,58 +14,39 @@ import { vi } from "vitest"
  */
 export const createMockAmazonItem = (
   asin: string = "B004N3APGO"
-): AmazonItem => ({
-  ASIN: asin,
-  DetailPageURL: `https://amazon.com/dp/${asin}`,
-  Images: {
-    Primary: {
-      Small: {
-        URL: "https://example.com/small.jpg",
-        Height: 75,
-        Width: 75
+): CreatorsApiItem => ({
+  asin: asin,
+  detailPageURL: `https://amazon.com/dp/${asin}`,
+  images: {
+    primary: {
+      small: {
+        url: "https://example.com/small.jpg",
+        height: 75,
+        width: 75
       },
-      Medium: {
-        URL: "https://example.com/medium.jpg",
-        Height: 160,
-        Width: 160
+      medium: {
+        url: "https://example.com/medium.jpg",
+        height: 160,
+        width: 160
       },
-      Large: {
-        URL: "https://example.com/large.jpg",
-        Height: 500,
-        Width: 500
+      large: {
+        url: "https://example.com/large.jpg",
+        height: 500,
+        width: 500
       }
     }
   },
-  ItemInfo: {
-    Title: {
-      DisplayValue: "Test Product",
-      Label: "Title",
-      Locale: "en_US"
+  itemInfo: {
+    title: {
+      displayValue: "Test Product",
+      label: "Title",
+      locale: "en_US"
     },
-    Features: {
-      DisplayValues: ["Feature 1", "Feature 2"],
-      Label: "Features",
-      Locale: "en_US"
+    features: {
+      displayValues: ["Feature 1", "Feature 2"],
+      label: "Features",
+      locale: "en_US"
     }
-  },
-  Offers: {
-    Listings: [
-      {
-        Id: "test-offer",
-        Availability: {},
-        IsBuyboxWinner: true,
-        Price: {
-          Amount: 1000,
-          Currency: "JPY",
-          DisplayAmount: "¥1,000"
-        },
-        SavingBasis: {
-          Amount: 1200,
-          Currency: "JPY",
-          DisplayAmount: "¥1,200"
-        }
-      }
-    ]
   }
 })
 
@@ -71,9 +55,9 @@ export const createMockAmazonItem = (
  */
 export const createMockAmazonResponse = (
   asin: string = "B004N3APGO"
-): AmazonItemsResponse => ({
-  ItemsResult: {
-    Items: [createMockAmazonItem(asin)]
+): CreatorsApiItemsResponse => ({
+  itemsResult: {
+    items: [createMockAmazonItem(asin)]
   }
 })
 
@@ -95,10 +79,14 @@ export const createMockEnv = (overrides: Partial<Env> = {}): Env => ({
   SLACK_WEBHOOK_URL: "https://hooks.slack.com/test",
   PAAPI_DATASTORE: createMockKV() as KVNamespace,
   OGP_DATASTORE: createMockKV() as KVNamespace,
-  PAAPI_ACCESSKEY: "test-key",
-  PAAPI_SECRETKEY: "test-secret",
+  PAAPI_ACCESSKEY: "test-legacy-key",
+  PAAPI_SECRETKEY: "test-legacy-secret",
+  CREATORS_CREDENTIAL_ID: "test-credential-id",
+  CREATORS_CREDENTIAL_SECRET: "test-credential-secret",
   PARTNER_TAG: "test-tag",
-  NODE_VERSION: "22.14" as const,
   ASSETS: {} as Fetcher,
+  CLOUDFLARE_API_TOKEN: "test-cf-token",
+  CLOUDFLARE_ACCOUNT_ID: "test-cf-account",
+  GITHUB_TOKEN: "test-github-token",
   ...overrides
 })

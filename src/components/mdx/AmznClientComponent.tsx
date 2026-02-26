@@ -1,6 +1,6 @@
 import { LinkCardLayout } from "@layouts/LinkCardLayout"
 import { LinkCardSkeltonLayout } from "@layouts/LinkCardSkeletonLayout"
-import type { AmazonItemsResponse } from "amazon-paapi" // LinkCardLayout コンポーネントのパスを適宜調整してください
+import type { CreatorsApiItemsResponse } from "@type/creators-api-type"
 import type React from "react"
 import useSWR from "swr"
 
@@ -8,7 +8,7 @@ import useSWR from "swr"
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 export const AmznClientComponent: React.FC<{ asin: string }> = ({ asin }) => {
-  const { data, error, isLoading } = useSWR<AmazonItemsResponse>(
+  const { data, error, isLoading } = useSWR<CreatorsApiItemsResponse>(
     `/api/getAmznPa/${asin}`,
     fetcher
   )
@@ -30,19 +30,20 @@ export const AmznClientComponent: React.FC<{ asin: string }> = ({ asin }) => {
   }
   if (!data) return fallBackLayout
 
-  const product = data.ItemsResult.Items[0]
+  const product = data.itemsResult?.items?.[0]
+  if (!product) return fallBackLayout
 
   return (
     <LinkCardLayout
-      title={product.ItemInfo.Title?.DisplayValue ?? ""}
-      description={product.ItemInfo.Features?.DisplayValues[0] ?? ""}
+      title={product.itemInfo?.title?.displayValue ?? ""}
+      description={product.itemInfo?.features?.displayValues[0] ?? ""}
       imageSrc={
-        product.Images?.Primary?.Large?.URL ??
-        product.Images?.Primary?.Medium?.URL ??
+        product.images?.primary?.large?.url ??
+        product.images?.primary?.medium?.url ??
         ""
       }
       siteName="Amazon.co.jp"
-      url={product.DetailPageURL ?? `https://www.amazon.co.jp/dp/${asin}`}
+      url={product.detailPageURL ?? `https://www.amazon.co.jp/dp/${asin}`}
       theme="amazon"
     />
   )

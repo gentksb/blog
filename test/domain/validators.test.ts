@@ -37,16 +37,16 @@ test("ASIN URL extraction", () => {
 test("Amazon config validation", () => {
   expect(
     validateAmazonConfig({
-      accessKey: "test-key",
-      secretKey: "test-secret",
+      credentialId: "test-id",
+      credentialSecret: "test-secret",
       partnerTag: "test-tag"
     })
   ).toBe(true)
 
   expect(
     validateAmazonConfig({
-      accessKey: "",
-      secretKey: "test-secret",
+      credentialId: "",
+      credentialSecret: "test-secret",
       partnerTag: "test-tag"
     })
   ).toBe(false)
@@ -55,8 +55,8 @@ test("Amazon config validation", () => {
 
   expect(
     validateAmazonConfig({
-      accessKey: "key",
-      secretKey: "secret"
+      credentialId: "id",
+      credentialSecret: "secret"
     })
   ).toBe(false) // missing partnerTag
 })

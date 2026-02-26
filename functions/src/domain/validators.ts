@@ -36,16 +36,16 @@ export const extractAsinFromUrl = (url: string): string | null => {
  * @returns 全ての必要な変数が存在し有効な場合はtrue
  */
 export const validateAmazonConfig = (config: {
-  accessKey?: string
-  secretKey?: string
+  credentialId?: string
+  credentialSecret?: string
   partnerTag?: string
 }): boolean => {
   return !!(
-    config.accessKey &&
-    config.secretKey &&
+    config.credentialId &&
+    config.credentialSecret &&
     config.partnerTag &&
-    typeof config.accessKey === "string" &&
-    typeof config.secretKey === "string" &&
+    typeof config.credentialId === "string" &&
+    typeof config.credentialSecret === "string" &&
     typeof config.partnerTag === "string"
   )
 }
