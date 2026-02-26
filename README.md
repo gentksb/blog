@@ -32,14 +32,14 @@ wrangler deploy
 ### Environment Variables
 
 ```bash
-PAAPI_ACCESSKEY=your-pa-api-access-key
-PAAPI_SECRETKEY=your-pa-api-secret-key
+CREATORS_CREDENTIAL_ID=your-creators-credential-id
+CREATORS_CREDENTIAL_SECRET=your-creators-credential-secret
 PARTNER_TAG=your-amazon-associate-tag
 SLACK_WEBHOOK_URL=your-slack-webhook-url
 ```
 
-- **PAAPI_ACCESSKEY**: PA-API v5 Access Key ID
-- **PAAPI_SECRETKEY**: PA-API v5 Secret Key
+- **CREATORS_CREDENTIAL_ID**: Amazon Creators API Credential ID
+- **CREATORS_CREDENTIAL_SECRET**: Amazon Creators API Credential Secret
 - **PARTNER_TAG**: Amazon Associate Partner Tag
 - **SLACK_WEBHOOK_URL**: Slack webhook URL for error logging
 

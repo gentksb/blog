@@ -79,8 +79,6 @@ export const createMockEnv = (overrides: Partial<Env> = {}): Env => ({
   SLACK_WEBHOOK_URL: "https://hooks.slack.com/test",
   PAAPI_DATASTORE: createMockKV() as KVNamespace,
   OGP_DATASTORE: createMockKV() as KVNamespace,
-  PAAPI_ACCESSKEY: "test-legacy-key",
-  PAAPI_SECRETKEY: "test-legacy-secret",
   CREATORS_CREDENTIAL_ID: "test-credential-id",
   CREATORS_CREDENTIAL_SECRET: "test-credential-secret",
   PARTNER_TAG: "test-tag",

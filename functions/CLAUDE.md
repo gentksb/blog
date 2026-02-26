@@ -33,7 +33,7 @@ export async function handleOgpApi(
   env: Env,
   ctx: ExecutionContext
 ): Promise<Response> {
-  const key = env.PAAPI_ACCESSKEY // 環境変数アクセス
+  const id = env.CREATORS_CREDENTIAL_ID // 環境変数アクセス
   // ハンドラーロジック
 }
 ```
