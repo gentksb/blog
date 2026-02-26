@@ -30,7 +30,8 @@ export const AmznClientComponent: React.FC<{ asin: string }> = ({ asin }) => {
   }
   if (!data) return fallBackLayout
 
-  const product = data.itemsResult.items[0]
+  const product = data.itemsResult?.items?.[0]
+  if (!product) return fallBackLayout
 
   return (
     <LinkCardLayout

@@ -173,6 +173,13 @@ export const getAmazonProductInfo = async (
   }
 
   const responseBody = await response.json<CreatorsApiItemsResponse>()
+
+  if (responseBody.errors?.length) {
+    console.warn(
+      `Creators API returned errors for ASIN ${asin}:`,
+      JSON.stringify(responseBody.errors)
+    )
+  }
   console.dir(responseBody.itemsResult?.items, { depth: null, colors: true })
 
   return responseBody
