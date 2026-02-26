@@ -43,10 +43,10 @@
 ## 環境変数
 
 ```bash
-PAAPI_ACCESSKEY    # PA-API v5 Access key ID
-PAAPI_SECRETKEY    # PA-API v5 Secret key
-PARTNER_TAG        # Amazon Associate Partner Tag
-SLACK_WEBHOOK_URL  # Slack webhook URL for logging
+CREATORS_CREDENTIAL_ID      # Amazon Creators API Credential ID
+CREATORS_CREDENTIAL_SECRET  # Amazon Creators API Credential Secret
+PARTNER_TAG                 # Amazon Associate Partner Tag
+SLACK_WEBHOOK_URL           # Slack webhook URL for logging
 ```
 
 ## デプロイフロー
