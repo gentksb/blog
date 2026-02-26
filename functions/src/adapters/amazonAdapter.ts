@@ -3,24 +3,30 @@
  * 依存性注入を通じて外部依存を処理
  */
 
-import type { AmazonItemsResponse } from "amazon-paapi"
+import type { CreatorsApiItemsResponse } from "../services/getAmazonProductInfo"
 import { getAmazonProductInfo } from "../services/getAmazonProductInfo"
 
 /**
  * Amazon API用の設定インターフェース
  */
 export interface AmazonConfig {
-  accessKey: string
-  secretKey: string
+  credentialId: string
+  credentialSecret: string
+  credentialVersion: string
   partnerTag: string
+  marketplace: string
 }
 
 /**
  * Amazon商品データを保存するためのキャッシュインターフェース
  */
 export interface CacheAdapter {
-  get: (key: string) => Promise<AmazonItemsResponse | null>
-  put: (key: string, data: AmazonItemsResponse, ttl?: number) => Promise<void>
+  get: (key: string) => Promise<CreatorsApiItemsResponse | null>
+  put: (
+    key: string,
+    data: CreatorsApiItemsResponse,
+    ttl?: number
+  ) => Promise<void>
 }
 
 /**
@@ -34,37 +40,43 @@ export interface LoggerAdapter {
  * 全ての外部依存をカプセル化するAmazonサービスアダプター
  */
 export interface AmazonAdapter {
-  getProductInfo: (asin: string) => Promise<AmazonItemsResponse>
-  getCached: (asin: string) => Promise<AmazonItemsResponse | null>
-  cacheResult: (asin: string, data: AmazonItemsResponse) => Promise<void>
+  getProductInfo: (asin: string) => Promise<CreatorsApiItemsResponse>
+  getCached: (asin: string) => Promise<CreatorsApiItemsResponse | null>
+  cacheResult: (asin: string, data: CreatorsApiItemsResponse) => Promise<void>
   logError: (message: string, url: string) => Promise<void>
 }
 
 /**
  * 注入された依存関係を持つAmazonアダプターを作成
- * @param deps - キャッシュ、設定、ロガーを含む依存関係
+ * @param deps - キャッシュ、設定、ロガー、KVを含む依存関係
  * @returns Amazonアダプターインスタンス
  */
 export const createAmazonAdapter = (deps: {
   cache: CacheAdapter
   config: AmazonConfig
   logger: LoggerAdapter
+  kv: KVNamespace
 }): AmazonAdapter => {
   return {
-    async getProductInfo(asin: string): Promise<AmazonItemsResponse> {
-      return await getAmazonProductInfo(
-        asin,
-        deps.config.accessKey,
-        deps.config.secretKey,
-        deps.config.partnerTag
-      )
+    async getProductInfo(asin: string): Promise<CreatorsApiItemsResponse> {
+      return await getAmazonProductInfo(asin, {
+        credentialId: deps.config.credentialId,
+        credentialSecret: deps.config.credentialSecret,
+        credentialVersion: deps.config.credentialVersion,
+        partnerTag: deps.config.partnerTag,
+        marketplace: deps.config.marketplace,
+        kv: deps.kv
+      })
     },
 
-    async getCached(asin: string): Promise<AmazonItemsResponse | null> {
+    async getCached(asin: string): Promise<CreatorsApiItemsResponse | null> {
       return await deps.cache.get(asin)
     },
 
-    async cacheResult(asin: string, data: AmazonItemsResponse): Promise<void> {
+    async cacheResult(
+      asin: string,
+      data: CreatorsApiItemsResponse
+    ): Promise<void> {
       await deps.cache.put(asin, data, 60 * 60 * 24) // 24時間TTL
     },
 
@@ -81,13 +93,13 @@ export const createAmazonAdapter = (deps: {
  */
 export const createKVCacheAdapter = (kv: KVNamespace): CacheAdapter => {
   return {
-    async get(key: string): Promise<AmazonItemsResponse | null> {
+    async get(key: string): Promise<CreatorsApiItemsResponse | null> {
       return await kv.get(key, "json")
     },
 
     async put(
       key: string,
-      data: AmazonItemsResponse,
+      data: CreatorsApiItemsResponse,
       ttl = 86400
     ): Promise<void> {
       await kv.put(key, JSON.stringify(data), {

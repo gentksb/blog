@@ -84,9 +84,11 @@ export async function handleAmazonApi(
 ): Promise<Response> {
   // 設定を検証
   const config = {
-    accessKey: env.PAAPI_ACCESSKEY,
-    secretKey: env.PAAPI_SECRETKEY,
-    partnerTag: env.PARTNER_TAG
+    credentialId: env.CREATORS_CREDENTIAL_ID,
+    credentialSecret: env.CREATORS_CREDENTIAL_SECRET,
+    credentialVersion: "2.3",
+    partnerTag: env.PARTNER_TAG,
+    marketplace: "www.amazon.co.jp"
   }
 
   if (!validateAmazonConfig(config)) {
@@ -96,7 +98,12 @@ export async function handleAmazonApi(
   // 依存性注入でアダプターを作成
   const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
   const logger = createSlackLoggerAdapter(env.SLACK_WEBHOOK_URL)
-  const adapter = createAmazonAdapter({ cache, config, logger })
+  const adapter = createAmazonAdapter({
+    cache,
+    config,
+    logger,
+    kv: env.PAAPI_DATASTORE
+  })
 
   // ハンドラーを作成して実行
   const handler = createAmazonHandler(adapter)
