@@ -94,16 +94,7 @@ export const createAmazonAdapter = (deps: {
 export const createKVCacheAdapter = (kv: KVNamespace): CacheAdapter => {
   return {
     async get(key: string): Promise<CreatorsApiItemsResponse | null> {
-      const data = await kv.get<Record<string, unknown>>(key, "json")
-      if (!data) return null
-      // 旧 PA-API v5 形式（PascalCase: ItemsResult）は無効扱いにして再取得させる
-      if (!("itemsResult" in data)) {
-        console.log(
-          `KV cache for ${key} is in legacy PA-API v5 format, discarding`
-        )
-        return null
-      }
-      return data as unknown as CreatorsApiItemsResponse
+      return await kv.get(key, "json")
     },
 
     async put(
