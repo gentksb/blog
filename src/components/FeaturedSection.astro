@@ -1,0 +1,27 @@
+---
+import type { FeaturedGroup } from "~/config"
+import { timeOrderPosts } from "@lib/timeOrderPosts"
+import BlogPostCard from "./BlogPostCard.astro"
+
+type Props = FeaturedGroup
+
+const { title, description, slugs } = Astro.props
+
+const posts = slugs
+  .map((slug) => {
+    const found = timeOrderPosts.find((p) => p.slug === slug)
+    if (!found) console.warn(`[FeaturedSection] slug not found: ${slug}`)
+    return found
+  })
+  .filter((p) => p !== undefined)
+---
+
+<section class="my-8">
+  <div class="mb-4">
+    <h2 class="text-xl font-bold">{title}</h2>
+    {description && <p class="mt-1 text-sm text-gray-500">{description}</p>}
+  </div>
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+    {posts.map((post) => <BlogPostCard {...post} />)}
+  </div>
+</section>
