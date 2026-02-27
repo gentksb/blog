@@ -3,16 +3,26 @@ import { timeOrderPosts } from "@lib/timeOrderPosts"
 import BlogPostCard from "./BlogPostCard.astro"
 
 type Props = {
-  searchTag: string
+  tags: string[]
   selfSlug: string
 }
 
-const { searchTag, selfSlug } = Astro.props
-console.log(searchTag, selfSlug)
+const { tags, selfSlug } = Astro.props
+
 const showPosts = timeOrderPosts
   .filter((post) => post.slug !== selfSlug)
-  .filter((post) => post.data.tags.includes(searchTag))
+  .map((post) => ({
+    post,
+    score: post.data.tags.filter((t) => tags.includes(t)).length
+  }))
+  .filter(({ score }) => score > 0)
+  .sort(
+    (a, b) =>
+      b.score - a.score ||
+      b.post.data.date.valueOf() - a.post.data.date.valueOf()
+  )
   .slice(0, 6)
+  .map(({ post }) => post)
 ---
 
 <div class="w-full">

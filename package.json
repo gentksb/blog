@@ -44,18 +44,15 @@
     "astro-pagefind": "^1.8.5",
     "daisyui": "^4.12.24",
     "date-fns-tz": "^3.2.0",
-    "framer-motion": "^11.18.2",
     "next-share": "^0.27.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
     "sanitize-html": "^2.17.0",
     "swr": "^2.3.8",
-    "tailwindcss": "^3.4.19",
-    "unified": "^11.0.5"
+    "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.6",
     "@cloudflare/vitest-pool-workers": "^0.11.1",
     "@cloudflare/workers-types": "^4.20260210.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
@@ -65,7 +62,7 @@
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "textlint": "^14.8.4",
+    "textlint": "^15.5.2",
     "textlint-rule-ja-no-abusage": "^3.0.0",
     "textlint-rule-ja-no-redundant-expression": "^4.0.1",
     "textlint-rule-no-doubled-conjunction": "^3.0.0",
@@ -76,8 +73,7 @@
     "textlint-rule-no-mix-dearu-desumasu": "^6.0.4",
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
     "textlint-rule-no-todo": "^2.0.1",
-    "textlint-rule-preset-jtf-style": "^2.3.14",
-    "tsx": "^4.21.0",
+    "textlint-rule-preset-jtf-style": "^3.0.3",
     "typescript": "^5.9.3",
     "vitest": "2.1.9",
     "wrangler": "^4.64.0"

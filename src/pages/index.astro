@@ -1,19 +1,22 @@
 ---
 import About from "@components/About.astro"
 import BlogPostCard from "@components/BlogPostCard.astro"
+import FeaturedSection from "@components/FeaturedSection.astro"
 import Hero from "@components/Hero.astro"
 import Paginate from "@components/Paginate.astro"
 import TagCloud from "@components/TagCloud.astro"
 import Layout from "@layouts/Layout.astro"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
-import { pageSize } from "~/config"
+import { featuredGroups, pageSize } from "~/config"
 
 const posts = timeOrderPosts.slice(0, pageSize)
 ---
 
 <Layout title="幻想サイクル">
   <Hero />
+  {featuredGroups.map((group) => <FeaturedSection {...group} />)}
   <section>
+    <h2 class="mb-4 text-xl font-bold">最新記事</h2>
     <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
       {posts.map((post) => <BlogPostCard {...post} />)}
     </div>
