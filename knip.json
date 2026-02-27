@@ -3,12 +3,29 @@
   "entry": [
     "src/pages/**/*.{astro,ts,tsx}",
     "src/layouts/**/*.astro",
-    "astro.config.ts",
-    "tailwind.config.ts",
     "functions/_worker.ts"
   ],
   "project": ["src/**/*.{ts,tsx,astro}", "functions/**/*.ts"],
   "ignore": ["src/content/**", "**/*.d.ts", "dist/**", "node_modules/**"],
-  "ignoreDependencies": [],
+  "ignoreFiles": [
+    "src/components/mdx/Amzn.astro",
+    "src/components/mdx/AmznClientComponent.tsx",
+    "src/components/mdx/LinkCard.astro",
+    "src/components/mdx/LinkCardClientComponent.tsx",
+    "src/components/mdx/SimpleLinkCard.astro",
+    "src/components/mdx/positive.tsx",
+    "src/components/mdx/negative.tsx",
+    "src/entrypoint/cfImageService.ts",
+    "src/layouts/LinkCardLayout.tsx",
+    "src/layouts/LinkCardSkeletonLayout.tsx"
+  ],
+  "ignoreDependencies": [
+    "@iconify-json/mdi",
+    "@emotion/react",
+    "@cloudflare/pages-plugin-vercel-og",
+    "react-icons",
+    "swr",
+    "cloudflare"
+  ],
   "ignoreExportsUsedInFile": true
 }
