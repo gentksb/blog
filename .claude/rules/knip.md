@@ -1,3 +1,8 @@
+---
+paths:
+  - "knip.json"
+---
+
 # knip.json の ignoreFiles / ignoreDependencies について
 
 意図的に多数の除外設定が入っている。誤って削除しないこと。
