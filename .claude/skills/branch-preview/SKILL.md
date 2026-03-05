@@ -17,6 +17,8 @@ Cloudflare Workers + Static Assets 環境でのブランチプレビューを確
 
 ### ステップ1: ブランチ作成・変更・プッシュ
 
+> **ルール**: 1開発セッション = 1ブランチ。セッション内でフェーズを分ける場合もブランチを分けない。
+
 ```bash
 git switch -c <branch-name>
 git add <files>
