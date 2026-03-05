@@ -39,7 +39,7 @@ const ogpStaticImage = cover
   <div class="flex gap-8">
     <!-- メインコンテンツ -->
     <main class="flex-1">
-      <div class="mb-8 border border-gray-200 bg-white">
+      <div class="mb-8 rounded-lg bg-white shadow-sm">
         <article data-pagefind-body>
           <BlogTitle
             title={title}
@@ -55,7 +55,7 @@ const ogpStaticImage = cover
             </div>
 
             <div
-              class="prose prose-sm mx-auto max-w-none text-gray-700 md:prose-base [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
+              class="prose prose-base mx-auto max-w-none text-gray-700 prose-p:leading-relaxed prose-p:mb-6 md:prose-lg [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
             >
               <slot />
             </div>
