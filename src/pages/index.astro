@@ -15,15 +15,17 @@ const posts = timeOrderPosts.slice(0, pageSize)
 <Layout title="幻想サイクル">
   <Hero />
   {featuredGroups.map((group) => <FeaturedSection {...group} />)}
-  <section>
+  <section class="px-3 sm:px-0">
     <h2 class="mb-4 text-xl font-bold">最新記事</h2>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => <BlogPostCard {...post} />)}
     </div>
   </section>
   <Paginate currentPage={1} totalPages={5} />
-  <div class="my-8">
+  <div class="my-8 px-3 sm:px-0">
     <TagCloud />
   </div>
-  <About />
+  <div class="px-3 sm:px-0">
+    <About />
+  </div>
 </Layout>

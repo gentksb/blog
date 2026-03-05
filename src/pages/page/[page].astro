@@ -20,7 +20,7 @@ const posts = page.data
 ---
 
 <Layout title="幻想サイクル">
-  <section>
+  <section class="px-3 sm:px-0">
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => <BlogPostCard {...post} />)}
     </div>

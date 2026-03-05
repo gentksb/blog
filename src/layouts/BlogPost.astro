@@ -39,7 +39,7 @@ const ogpStaticImage = cover
   <div class="flex gap-8">
     <!-- メインコンテンツ -->
     <main class="flex-1">
-      <div class="mb-8 rounded-lg bg-white shadow-sm">
+      <div class="mb-8 overflow-hidden bg-white shadow-sm sm:rounded-lg">
         <article data-pagefind-body>
           <BlogTitle
             title={title}
@@ -69,7 +69,7 @@ const ogpStaticImage = cover
       </div>
 
       <!-- 関連記事 -->
-      <div class="my-8">
+      <div class="my-8 px-3 sm:px-0">
         <h2 class="mb-4 text-xl font-bold">関連記事</h2>
         <RelatedPosts tags={tags} selfSlug={slug} />
       </div>
