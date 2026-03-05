@@ -25,27 +25,27 @@ export const LinkCardLayout: React.FC<Props> = ({
     amazon: "border-amazon border-3",
     rakuten: "border-rakuten border-3",
     yahoo: "border-yahoo border-3",
-    singleLine: "border-base-300",
-    default: "border-base-300"
+    singleLine: "border-stone-200",
+    default: "border-stone-200"
   }
   const brandColorBackground: { [key: string]: string } = {
     amazon: "bg-amazon",
     rakuten: "bg-rakuten",
     yahoo: "bg-yahoo",
-    singleLine: "bg-base-300",
-    default: "bg-base-300"
+    singleLine: "bg-stone-200",
+    default: "bg-stone-200"
   }
   const defaultLayout = (
     <a
       href={url}
-      className="link-hover link"
+      className="hover:underline"
       target="_blank"
       rel="noopener noreferrer"
     >
       <div
-        className={`not-prose card card-side mx-2 mt-2 rounded-none border bg-base-100 ${brandColorBorder[theme]}`}
+        className={`not-prose relative mx-2 mt-2 flex overflow-hidden rounded-lg border bg-white shadow-sm ${brandColorBorder[theme]}`}
       >
-        <div className="card-body max-w-[70%] p-2">
+        <div className="flex max-w-[70%] flex-col justify-center p-2">
           {showBadge ? (
             <div
               className={`absolute right-0 top-0 ${brandColorBackground[theme]} rounded-bl px-2 py-1 text-xs text-white`}
@@ -55,14 +55,14 @@ export const LinkCardLayout: React.FC<Props> = ({
           ) : (
             ""
           )}
-          <div className="card-title line-clamp-2 text-sm leading-none text-secondary-content md:text-base">
+          <div className="line-clamp-2 text-sm font-bold leading-none text-stone-800 md:text-base">
             {isExternal ? <MdOpenInNew className="inline" /> : ""}
             {title}
           </div>
-          <div className="card-body line-clamp-2 max-h-[3em] p-0 text-xs font-normal text-secondary md:text-sm">
+          <div className="mt-1 line-clamp-2 max-h-[3em] text-xs font-normal text-secondary md:text-sm">
             {description}
           </div>
-          <div className="text-xs text-secondary md:text-sm">
+          <div className="mt-1 text-xs text-secondary md:text-sm">
             <MdWeb className="inline" />
             {siteName}
           </div>

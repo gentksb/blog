@@ -13,12 +13,13 @@ import { PROFILE, SITE_TITLE } from "~/consts"
     <div class="flex items-center space-x-4">
       <PageFind />
 
-      <div class="hidden space-x-2 md:flex">
+      <nav class="hidden space-x-2 md:flex" aria-label="ソーシャルリンク">
         <a
           href={`https://twitter.com/${PROFILE.social.twitter}`}
           class="p-2 text-gray-600 hover:text-black"
           target="_blank"
           rel="noreferrer"
+          aria-label="X (Twitter)"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +42,7 @@ import { PROFILE, SITE_TITLE } from "~/consts"
           class="p-2 text-gray-600 hover:text-black"
           target="_blank"
           rel="noreferrer"
+          aria-label="Instagram"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -63,6 +65,7 @@ import { PROFILE, SITE_TITLE } from "~/consts"
           class="p-2 text-gray-600 hover:text-black"
           target="_blank"
           rel="noreferrer"
+          aria-label="YouTube"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -87,6 +90,7 @@ import { PROFILE, SITE_TITLE } from "~/consts"
           class="p-2 text-gray-600 hover:text-black"
           target="_blank"
           rel="noreferrer"
+          aria-label="Webサイト"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +110,7 @@ import { PROFILE, SITE_TITLE } from "~/consts"
             ></path>
           </svg>
         </a>
-      </div>
+      </nav>
     </div>
   </div>
 </header>

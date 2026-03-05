@@ -32,7 +32,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
       <div className="flex gap-2">
         <button
           type="button"
-          className="rounded-full bg-accent p-2 text-accent-content"
+          className="rounded-full bg-accent p-2 text-white"
           onClick={async () => {
             await kickShareApi({
               title: shareTitle,
@@ -59,7 +59,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
           </svg>
         </button>
         <TwitterShareButton url={url} title={shareTitle} blankTarget>
-          <div className="rounded-full bg-accent p-2 text-accent-content">
+          <div className="rounded-full bg-accent p-2 text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -77,7 +77,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
           </div>
         </TwitterShareButton>
         <FacebookShareButton url={url} className="flex" blankTarget>
-          <div className="rounded-full bg-accent p-2 text-accent-content">
+          <div className="rounded-full bg-accent p-2 text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -95,7 +95,7 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
           </div>
         </FacebookShareButton>
         <LineShareButton url={url} title={shareTitle} blankTarget>
-          <div className="rounded-full bg-accent p-2 text-accent-content">
+          <div className="rounded-full bg-accent p-2 text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

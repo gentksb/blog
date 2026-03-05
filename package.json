@@ -42,7 +42,6 @@
     "astro-auto-import": "^0.4.5",
     "astro-icon": "^1.1.5",
     "astro-pagefind": "^1.8.5",
-    "daisyui": "^4.12.24",
     "date-fns-tz": "^3.2.0",
     "next-share": "^0.27.0",
     "react": "^18.3.1",

@@ -31,7 +31,7 @@ const getFontSize = (count: number) => {
       sortedTags.map(({ tag, count }) => (
         <a
           href={`/tag/${tag}/1`}
-          class="rounded-full bg-gray-100 px-3 py-1 transition hover:bg-accent hover:text-accent-content"
+          class="rounded-full bg-gray-100 px-3 py-1 transition hover:bg-accent hover:text-white"
           style={`font-size: ${getFontSize(count)}px`}
           title={`${tag} (${count}件)`}
         >

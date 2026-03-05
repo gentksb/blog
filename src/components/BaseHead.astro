@@ -25,7 +25,7 @@ const twitterImageUrl = new URL(twitterImage ?? image, Astro.url)
 
 const jsonLdType = isPostPage ? "Article" : "Blog"
 const jsonLd = {
-  "@context": "http://schema.org",
+  "@context": "https://schema.org",
   "@type": jsonLdType,
   mainEntityOfPage: { "@type": "WebPage", "@id": canonicalURL },
   headline: title,

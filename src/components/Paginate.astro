@@ -33,7 +33,7 @@ for (let i = startPage; i <= endPage; i++) {
 }
 ---
 
-<div class="my-8 flex justify-center">
+<nav aria-label="ページネーション" class="my-8 flex justify-center">
   <div class="flex rounded-md">
     <a
       href={previousPageLink}
@@ -72,9 +72,10 @@ for (let i = startPage; i <= endPage; i++) {
           class:list={[
             "px-4 py-2 border-t border-b border-gray-300 text-sm",
             currentPage === pageNum
-              ? "bg-accent text-accent-content font-medium"
+              ? "bg-accent text-white font-medium"
               : "hover:bg-gray-100 text-gray-700"
           ]}
+          aria-current={currentPage === pageNum ? "page" : undefined}
         >
           {pageNum}
         </a>
@@ -105,4 +106,4 @@ for (let i = startPage; i <= endPage; i++) {
       </svg>
     </a>
   </div>
-</div>
+</nav>
