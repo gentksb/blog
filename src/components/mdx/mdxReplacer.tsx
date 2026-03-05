@@ -32,7 +32,7 @@ export const MdxH4: React.FC<JSX.IntrinsicElements["h4"]> = (props) => {
 export const MdxBlockQuote: React.FC<JSX.IntrinsicElements["blockquote"]> = (
   props
 ) => {
-  return <blockquote {...props} className="mx-4 bg-base-300" />
+  return <blockquote {...props} className="mx-4 bg-stone-200" />
 }
 
 export const MdxA: React.FC<JSX.IntrinsicElements["a"]> = (props) => {

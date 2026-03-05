@@ -16,12 +16,14 @@ if (filteredHeadings.length === 0) {
 }
 ---
 
-<div class="collapse collapse-arrow mb-6 border border-gray-200 bg-base-100">
-  <input type="checkbox" aria-label="目次を展開" aria-controls="mobile-toc" />
-  <div class="collapse-title text-base font-medium" id="mobile-toc-heading">
+<details class="mb-6 rounded-lg border border-gray-200 bg-white">
+  <summary
+    class="cursor-pointer px-4 py-3 text-base font-medium select-none"
+    id="mobile-toc-heading"
+  >
     目次
-  </div>
-  <div class="collapse-content" id="mobile-toc">
+  </summary>
+  <div class="px-4 pb-4" id="mobile-toc">
     <nav class="toc-nav" aria-labelledby="mobile-toc-heading">
       <ul class="space-y-2 text-sm">
         {
@@ -29,7 +31,7 @@ if (filteredHeadings.length === 0) {
             <li class={getIndentClass(heading.depth)}>
               <a
                 href={`#${heading.slug}`}
-                class="text-gray-600 hover:text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:rounded"
+                class="rounded text-gray-600 hover:text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 {heading.text}
               </a>
@@ -39,4 +41,4 @@ if (filteredHeadings.length === 0) {
       </ul>
     </nav>
   </div>
-</div>
+</details>
