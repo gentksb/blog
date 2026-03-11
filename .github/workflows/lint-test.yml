@@ -5,7 +5,7 @@ on:
     branches:
       - "master"
     paths:
-      - "functions/**"
+      - "src/server/**"
       - "src/components/**"
       - "src/layouts/**"
       - "src/lib/**"
@@ -18,7 +18,7 @@ on:
       - ".github/workflows/**"
   pull_request:
     paths:
-      - "functions/**"
+      - "src/server/**"
       - "src/components/**"
       - "src/layouts/**"
       - "src/lib/**"
