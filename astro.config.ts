@@ -12,6 +12,15 @@ console.log(`process.env.NODE_ENV: ${process.env.NODE_ENV}`)
 console.log(`process.env.WORKERS_CI: ${process.env.WORKERS_CI}`)
 console.log(`process.env.WORKERS_CI_BRANCH: ${process.env.WORKERS_CI_BRANCH}`)
 
+// 本番環境かどうかの判定（本番ブランチかつCloudflare Workers CI環境）
+const isProduction =
+  process.env.WORKERS_CI_BRANCH === "master" &&
+  process.env.NODE_ENV === "production"
+
+// 本番のみCloudflare Image Resizingを使用（workers.devプレビューでは cdn-cgi/image が 404 になるため）
+const imageService = isProduction ? "cloudflare" : "passthrough"
+console.log(`imageService: ${imageService}`)
+
 // 本番環境のみ固定のURLをsiteに設定する
 const siteUrl = "https://blog.gensobunya.net/"
 
@@ -21,7 +30,7 @@ export default defineConfig({
   output: "server",
   outDir: "./dist/",
   adapter: cloudflare({
-    imageService: "cloudflare"
+    imageService
   }),
   integrations: [
     AutoImport({
