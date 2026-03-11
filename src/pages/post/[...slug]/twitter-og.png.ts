@@ -20,10 +20,9 @@ export const GET: APIRoute = async ({ params, url }) => {
     // カバー画像URLを取得（env.ASSETS.fetch() でアクセスできる静的アセットパスを使用）
     // getImage() は imageService モードによって /_image?href=... を返すことがあり、
     // env.ASSETS では静的ファイルのみアクセスできるため直接 .src を使う
-    let coverSrc = `${url.origin}/image/logo.jpg` // fallback
-    if (post.data.cover) {
-      coverSrc = `${url.origin}${post.data.cover.src}`
-    }
+    const coverSrc = post.data.cover
+      ? `${url.origin}${post.data.cover.src}`
+      : `${url.origin}/image/logo.jpg`
 
     const imageResponse = await ogImage(title, coverSrc, url.origin)
     // Cloudflare CDN にエッジキャッシュさせる（OGP画像は記事更新時以外変化しない）

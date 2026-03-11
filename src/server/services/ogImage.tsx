@@ -55,7 +55,6 @@ function detectImageFormat(buffer: Buffer): string {
 }
 
 async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
-  console.log("Fetching image from:", imageUrl)
   const response = await env.ASSETS.fetch(imageUrl)
   if (!response.ok) {
     throw new Error(
@@ -66,10 +65,10 @@ async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
   const arrayBuffer = await response.arrayBuffer()
   const declaredContentType = response.headers.get("content-type")
 
-  // メモリ使用量チェック
+  // メモリ使用量チェック（Workers 上限対策）
   if (arrayBuffer.byteLength > 5 * 1024 * 1024) {
-    console.warn(
-      `Large image detected: ${arrayBuffer.byteLength} bytes for ${imageUrl}`
+    throw new Error(
+      `Image too large: ${arrayBuffer.byteLength} bytes for ${imageUrl} (max 5MB)`
     )
   }
 
@@ -90,9 +89,6 @@ async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
     const base64String = buffer.toString("base64")
     const dataUrl = `data:${contentType};base64,${base64String}`
 
-    console.log(
-      `Image processed: ${imageUrl}, format: ${contentType}, size: ${arrayBuffer.byteLength}`
-    )
     return dataUrl
   } catch (error) {
     console.error("Image processing failed:", error)
@@ -107,7 +103,6 @@ async function fetchFontData(title: string) {
   const fontName = "Noto Sans JP"
   const subsetNotoSansJPUrl = `https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@${weight}&display=swap&text=${encodeURIComponent(`${title}幻想サイクル`)}`
 
-  console.log("Fetching font CSS from:", subsetNotoSansJPUrl)
   const cssResponse = await fetch(subsetNotoSansJPUrl)
   if (!cssResponse.ok) {
     throw new Error(
@@ -116,10 +111,8 @@ async function fetchFontData(title: string) {
   }
 
   const css = await cssResponse.text()
-  console.log("Font CSS fetched successfully, length:", css.length)
-
   const resource = css.match(
-    /src: url\((.+)\) format\('(opentype|truetype|woff2)'\)/
+    /src: url\((.+?)\) format\('(opentype|truetype|woff2)'\)/
   )
   if (!resource) {
     console.error("Font resource not found in CSS:", css.substring(0, 500))
@@ -127,9 +120,6 @@ async function fetchFontData(title: string) {
   }
 
   const fontUrl = resource[1]
-  console.log("Font URL extracted:", fontUrl)
-
-  console.log("Fetching font data from:", fontUrl)
   const fontResponse = await fetch(fontUrl)
   if (!fontResponse.ok) {
     throw new Error(
@@ -138,8 +128,6 @@ async function fetchFontData(title: string) {
   }
 
   const fontData = await fontResponse.arrayBuffer()
-  console.log("Font data fetched successfully, size:", fontData.byteLength)
-
   return { fontData, fontName, weight }
 }
 
@@ -151,8 +139,6 @@ async function createImageResponse(
   fontName: string,
   weight: number
 ) {
-  console.log("Starting ImageResponse generation")
-
   const imageResponse = await ImageResponse.async(
     <div
       style={{
@@ -236,7 +222,6 @@ async function createImageResponse(
     }
   )
 
-  console.log("ImageResponse generation completed successfully")
   return imageResponse
 }
 
@@ -245,17 +230,12 @@ async function createFallbackResponse(coverSrc: string) {
     return null
   }
 
-  console.log("Attempting fallback: returning coverSrc image directly")
   const imageResponse = await fetch(coverSrc)
 
   if (!imageResponse.ok) {
-    console.warn(
-      `Fallback failed: coverSrc fetch failed with status ${imageResponse.status}`
-    )
     return null
   }
 
-  console.log("Fallback successful: coverSrc image fetched")
   return new Response(imageResponse.body, {
     headers: {
       "Content-Type": imageResponse.headers.get("Content-Type") || "image/jpg",
@@ -269,8 +249,6 @@ export const ogImage = async (
   coverSrc: string,
   currentHost?: string
 ) => {
-  console.log("OG Image generation started", { title, coverSrc })
-
   try {
     // 並行してフォントデータ、カバー画像、ロゴ画像を取得
     const [fontResult, coverBase64, logoBase64] = await Promise.all([
