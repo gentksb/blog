@@ -5,6 +5,8 @@
 export function extractDescription(mdxBody: string, maxLength = 100): string {
   return (
     mdxBody
+      // 正規表現処理前に早期トランケートして処理量を削減
+      .slice(0, maxLength * 15)
       // MDXコンポーネント（自己閉じタグ）を除去
       .replace(/<[A-Z][^>]*\/>/g, "")
       // MDXコンポーネント（ブロックタグ）を除去

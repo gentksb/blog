@@ -45,7 +45,6 @@ let ogpTitle: string = url
 let ogpDescription: string = ""
 let ogpSiteName: string = ""
 let ogpImageUrl: string | undefined = undefined
-let fetchSuccess = false
 
 try {
   const runtime = (Astro.locals as App.Locals).runtime
@@ -73,15 +72,14 @@ try {
       ogpDescription = ogpData.ogpDescription ?? ""
       ogpSiteName = ogpData.ogpSiteName ?? ""
       ogpImageUrl = ogpData.ogpImageUrl
-      fetchSuccess = true
     }
   }
 } catch (e) {
   console.error(`LinkCard OGP fetch failed for ${url}:`, e)
 }
 
-const isExternal = new URL(targetUrl).hostname !== "blog.gensobunya.net"
-const showBadge = brandTheme !== null
+const parsedTargetUrl = new URL(targetUrl)
+const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
 ---
 
 <a
@@ -95,11 +93,11 @@ const showBadge = brandTheme !== null
   >
     <div class="flex max-w-[70%] flex-col justify-center p-2">
       {
-        showBadge && (
+        brandTheme && (
           <div
-            class={`absolute right-0 top-0 ${brandColorBackground[brandTheme!]} rounded-bl px-2 py-1 text-xs text-white`}
+            class={`absolute right-0 top-0 ${brandColorBackground[brandTheme]} rounded-bl px-2 py-1 text-xs text-white`}
           >
-            {brandTheme!.charAt(0).toUpperCase() + brandTheme!.slice(1)}
+            {brandTheme.charAt(0).toUpperCase() + brandTheme.slice(1)}
           </div>
         )
       }
