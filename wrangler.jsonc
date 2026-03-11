@@ -1,14 +1,13 @@
 {
   "name": "blog",
-  "compatibility_date": "2024-05-13",
-  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "compatibility_date": "2024-09-23",
+  "compatibility_flags": ["nodejs_compat_v2", "global_fetch_strictly_public"],
   "upload_source_maps": true,
   "preview_urls": true,
   "assets": {
-    "directory": "./dist/",
+    "directory": "./dist/client/",
     "binding": "ASSETS"
   },
-  "main": "./functions/_worker.ts",
   "routes": [
     {
       "pattern": "blog.gensobunya.net",

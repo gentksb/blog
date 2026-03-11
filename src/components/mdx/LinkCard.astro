@@ -1,5 +1,7 @@
 ---
-import { LinkCardClientComponent } from "./LinkCardClientComponent"
+import { Icon } from "astro-icon/components"
+import { createOgpKVCacheAdapter } from "../../../functions/src/adapters/ogpAdapter"
+import { getOgpMetaData } from "../../../functions/src/services/getOgpMetaData"
 
 interface Props {
   url: string
@@ -8,7 +10,7 @@ interface Props {
 
 const { url, linkUrl } = Astro.props
 
-// check if the url is valid
+// URLバリデーション
 try {
   new URL(url)
   if (linkUrl) {
@@ -17,6 +19,119 @@ try {
 } catch {
   throw new Error("Invalid URL")
 }
+
+const targetUrl = linkUrl ?? url
+
+// ブランドテーマ判定
+const brandTheme = url.includes("yahoo.co.jp")
+  ? "yahoo"
+  : url.includes("rakuten.co.jp")
+    ? "rakuten"
+    : null
+
+const brandColorBorder: Record<string, string> = {
+  amazon: "border-amazon border-3",
+  rakuten: "border-rakuten border-3",
+  yahoo: "border-yahoo border-3"
+}
+const brandColorBackground: Record<string, string> = {
+  amazon: "bg-amazon",
+  rakuten: "bg-rakuten",
+  yahoo: "bg-yahoo"
+}
+
+// OGPデータ取得（KVキャッシュ付き）
+let ogpTitle: string = url
+let ogpDescription: string = ""
+let ogpSiteName: string = ""
+let ogpImageUrl: string | undefined = undefined
+let fetchSuccess = false
+
+try {
+  const runtime = (Astro.locals as App.Locals).runtime
+  const env = runtime?.env
+
+  if (env?.OGP_DATASTORE) {
+    const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
+
+    // キャッシュ確認
+    const cached = await cache.get(url)
+    let ogpData = null
+
+    if (cached && typeof cached === "object") {
+      ogpData = cached
+    } else {
+      // キャッシュミス → 取得してキャッシュ保存
+      ogpData = await getOgpMetaData(url, env)
+      if (ogpData.ok) {
+        await cache.put(url, ogpData)
+      }
+    }
+
+    if (ogpData && ogpData.ok) {
+      ogpTitle = ogpData.ogpTitle ?? url
+      ogpDescription = ogpData.ogpDescription ?? ""
+      ogpSiteName = ogpData.ogpSiteName ?? ""
+      ogpImageUrl = ogpData.ogpImageUrl
+      fetchSuccess = true
+    }
+  }
+} catch (e) {
+  console.error(`LinkCard OGP fetch failed for ${url}:`, e)
+}
+
+const isExternal = new URL(targetUrl).hostname !== "blog.gensobunya.net"
+const showBadge = brandTheme !== null
 ---
 
-<LinkCardClientComponent url={url} linkUrl={linkUrl} client:only="react" />
+<a
+  href={targetUrl}
+  class="hover:underline"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div
+    class={`not-prose relative mx-2 mt-2 flex overflow-hidden rounded-lg border bg-white shadow-sm ${brandTheme ? brandColorBorder[brandTheme] : "border-stone-200"}`}
+  >
+    <div class="flex max-w-[70%] flex-col justify-center p-2">
+      {
+        showBadge && (
+          <div
+            class={`absolute right-0 top-0 ${brandColorBackground[brandTheme!]} rounded-bl px-2 py-1 text-xs text-white`}
+          >
+            {brandTheme!.charAt(0).toUpperCase() + brandTheme!.slice(1)}
+          </div>
+        )
+      }
+      <div
+        class="line-clamp-2 text-sm font-bold leading-none text-stone-800 md:text-base"
+      >
+        {isExternal && <Icon name="mdi:open-in-new" class="inline" />}
+        {ogpTitle}
+      </div>
+      <div
+        class="mt-1 line-clamp-2 max-h-[3em] text-xs font-normal text-secondary md:text-sm"
+      >
+        {ogpDescription}
+      </div>
+      <div class="mt-1 text-xs text-secondary md:text-sm">
+        <Icon name="mdi:web" class="inline" />
+        {ogpSiteName}
+      </div>
+    </div>
+    <div class="max-h-28 max-w-[30%] shrink md:max-h-36">
+      {
+        ogpImageUrl && (
+          <figure class="size-full object-contain">
+            <img
+              src={ogpImageUrl}
+              class="h-full"
+              alt="リンク先カバー画像"
+              loading="lazy"
+            />
+          </figure>
+        )
+      }
+    </div>
+  </div>
+</a>

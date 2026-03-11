@@ -1,6 +1,6 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "exclude": ["node_modules", "dist", "./functions/**/*"],
+  "exclude": ["node_modules", "dist", "./functions/_worker.ts"],
   "compilerOptions": {
     "baseUrl": ".",
     "moduleResolution": "Bundler",

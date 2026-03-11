@@ -1,5 +1,11 @@
 ---
-import { AmznClientComponent } from "./AmznClientComponent"
+import { Icon } from "astro-icon/components"
+import {
+  createAmazonAdapter,
+  createKVCacheAdapter,
+  createSlackLoggerAdapter
+} from "../../../functions/src/adapters/amazonAdapter"
+import { getAmazonProductInfo } from "../../../functions/src/services/getAmazonProductInfo"
 
 interface Props {
   asin: string
@@ -14,6 +20,108 @@ const isValidAsin = (asin: string): boolean => {
 if (!isValidAsin(asin)) {
   throw new Error("asin must be 10 characters of uppercase letters and numbers")
 }
+
+const fallbackUrl = `https://www.amazon.co.jp/dp/${asin}`
+
+// Amazon商品情報取得
+let productTitle = "Amazon.co.jp"
+let productDescription = "Amazon商品ページに移動する"
+let productImageUrl: string | undefined = undefined
+let productUrl = fallbackUrl
+
+try {
+  const runtime = (Astro.locals as App.Locals).runtime
+  const env = runtime?.env
+
+  if (
+    env?.PAAPI_DATASTORE &&
+    env?.CREATORS_CREDENTIAL_ID &&
+    env?.CREATORS_CREDENTIAL_SECRET &&
+    env?.PARTNER_TAG
+  ) {
+    const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
+    const logger = createSlackLoggerAdapter(env.SLACK_WEBHOOK_URL ?? "")
+    const adapter = createAmazonAdapter({
+      cache,
+      config: {
+        credentialId: env.CREATORS_CREDENTIAL_ID,
+        credentialSecret: env.CREATORS_CREDENTIAL_SECRET,
+        credentialVersion: "2.3",
+        partnerTag: env.PARTNER_TAG,
+        marketplace: "www.amazon.co.jp"
+      },
+      logger,
+      kv: env.PAAPI_DATASTORE
+    })
+
+    // キャッシュ確認 → API取得
+    let data = await adapter.getCached(asin)
+    if (!data) {
+      data = await adapter.getProductInfo(asin)
+      await adapter.cacheResult(asin, data)
+    }
+
+    const product = data.itemsResult?.items?.[0]
+    if (product) {
+      productTitle = product.itemInfo?.title?.displayValue ?? "Amazon.co.jp"
+      productDescription =
+        product.itemInfo?.features?.displayValues[0] ??
+        "Amazon商品ページに移動する"
+      productImageUrl =
+        product.images?.primary?.large?.url ??
+        product.images?.primary?.medium?.url
+      productUrl = product.detailPageURL ?? fallbackUrl
+    }
+  }
+} catch (e) {
+  console.error(`Amzn fetch failed for ASIN ${asin}:`, e)
+}
 ---
 
-<AmznClientComponent asin={asin} client:only="react" />
+<a
+  href={productUrl}
+  class="hover:underline"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div
+    class="not-prose relative mx-2 mt-2 flex overflow-hidden rounded-lg border border-amazon border-3 bg-white shadow-sm"
+  >
+    <div class="flex max-w-[70%] flex-col justify-center p-2">
+      <div
+        class="absolute right-0 top-0 bg-amazon rounded-bl px-2 py-1 text-xs text-white"
+      >
+        Amazon
+      </div>
+      <div
+        class="line-clamp-2 text-sm font-bold leading-none text-stone-800 md:text-base"
+      >
+        <Icon name="mdi:open-in-new" class="inline" />
+        {productTitle}
+      </div>
+      <div
+        class="mt-1 line-clamp-2 max-h-[3em] text-xs font-normal text-secondary md:text-sm"
+      >
+        {productDescription}
+      </div>
+      <div class="mt-1 text-xs text-secondary md:text-sm">
+        <Icon name="mdi:web" class="inline" />
+        Amazon.co.jp
+      </div>
+    </div>
+    <div class="max-h-28 max-w-[30%] shrink md:max-h-36">
+      {
+        productImageUrl && (
+          <figure class="size-full object-contain">
+            <img
+              src={productImageUrl}
+              class="h-full"
+              alt="Amazon商品画像"
+              loading="lazy"
+            />
+          </figure>
+        )
+      }
+    </div>
+  </div>
+</a>

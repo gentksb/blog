@@ -1,38 +1,22 @@
-import mdxRenderer from "@astrojs/mdx/server.js"
-import reactRenderer from "@astrojs/react/server.js"
+export const prerender = true
+
 import rss from "@astrojs/rss"
 import { timeOrderPosts as posts } from "@lib/timeOrderPosts"
-import { experimental_AstroContainer as AstroContainer } from "astro/container"
-import sanitizeHtml from "sanitize-html"
+import { extractDescription } from "@lib/extractDescription"
+import { slugFromId } from "@lib/postSlug"
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "~/consts"
-
-const container = await AstroContainer.create()
-container.addServerRenderer({ name: "mdx", renderer: mdxRenderer })
-container.addServerRenderer({ name: "react", renderer: reactRenderer })
-container.addClientRenderer({
-  name: "@astrojs/react",
-  entrypoint: "@astrojs/react/client.js"
-})
 
 export async function GET() {
   return rss({
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     site: SITE_URL,
-    items: await Promise.all(
-      posts.map(async (post) => {
-        const { Content } = await post.render()
-        const contentString = await container.renderToString(Content)
-        return {
-          title: `${post.data.title}`,
-          pubDate: post.data.date,
-          link: `/post/${post.slug}/`,
-          categories: post.data.tags,
-          description: `<![CDATA[${sanitizeHtml(contentString, {
-            allowedTags: [...sanitizeHtml.defaults.allowedTags, "img"]
-          })}]]>`
-        }
-      })
-    )
+    items: posts.map((post) => ({
+      title: `${post.data.title}`,
+      pubDate: post.data.date,
+      link: `/post/${slugFromId(post.id)}/`,
+      categories: post.data.tags,
+      description: extractDescription(post.body ?? "", 200)
+    }))
   })
 }
