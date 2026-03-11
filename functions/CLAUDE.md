@@ -2,48 +2,33 @@
 
 ## アーキテクチャ概要
 
-このプロジェクトは**Cloudflare Workers + Static Assets**アーキテクチャを使用し、統一されたWorkerエントリーポイントからAPI機能を提供します。
+このプロジェクトは**Cloudflare Workers + Static Assets**アーキテクチャを使用します。
 
-Astro内のReactコンポーネントからアクセスされるAPIをこのディレクトリで管理しています。
+Workerエントリーポイントは Astro adapter が `dist/server/entry.mjs` として自動生成します。このディレクトリ（`functions/`）には、AstroコンポーネントやAstroページから直接インポートされるサービス・アダプター・ドメインロジックのみを管理します。
 
 ## プロジェクト構成
 
-### メインエントリーポイント
+### アダプター層（`src/adapters/`）
 
-- **`_worker.ts`**: 統一Workerエントリーポイント
-  - プログラマティックルーティング
-  - 静的アセット配信（`env.ASSETS.fetch()`）
-  - APIエンドポイントのルーティング
+- **`ogpAdapter.ts`**: OGPメタデータ取得用アダプター（KVキャッシュ・Slackロガー含む）
+- **`amazonAdapter.ts`**: Amazon PA-API用アダプター（KVキャッシュ・Slackロガー含む）
 
-### ドメイン別ハンドラー（DDD アーキテクチャ）
+### サービス層（`src/services/`）
 
-- **`src/middleware.ts`**: セキュリティミドルウェア
-- **`src/ogpApi.ts`**: OGPメタデータAPI
-- **`src/amazonApi.ts`**: Amazon商品情報API
-- **`src/ogImageHandler.ts`**: OG画像生成
+- **`getOgpMetaData.ts`**: OGPメタデータ取得ロジック
+- **`getAmazonProductInfo.ts`**: Amazon商品情報取得ロジック
+- **`postLogToSlack.ts`**: Slackへのログ送信
+- **`ogImage.tsx`**: OG画像生成（`src/pages/post/[...slug]/twitter-og.png.ts` から使用）
 
-## API仕様
+### ドメイン層（`src/domain/`）
 
-### セキュリティミドルウェア
+- **`transformers.ts`**: レスポンス変換・生成ユーティリティ
+- **`validators.ts`**: 入力値バリデーション
 
-- `/api/*`への全リクエストを検証
-- `sec-fetch-mode`ヘッダー認証
+## 利用元
 
-### OGP取得API
+各モジュールは以下のAstroコンポーネント・ページから直接インポートされます：
 
-- **エンドポイント**: `GET /api/getOgp?url={URL}`
-- **機能**: 外部サイトOGPメタデータ取得・キャッシュ
-- **キャッシュ**: KV 1週間
-
-### Amazon商品情報API
-
-- **エンドポイント**: `GET /api/getAmznPa/{ASIN}`
-- **機能**: Creators API Amazon商品データ取得
-- **キャッシュ**: KV 24時間
-- **制約**: ASIN 10文字英数字のみ
-
-### OG画像生成
-
-- **エンドポイント**: `GET /post/*/twitter-og.png`
-- **機能**: ブログ記事用OG画像動的生成（1200x630px）
-- **フォント**: Noto Sans JP（日本語対応）
+- `src/components/mdx/LinkCard.astro` → OGPアダプター・サービス
+- `src/components/mdx/Amzn.astro` → Amazonアダプター・サービス
+- `src/pages/post/[...slug]/twitter-og.png.ts` → OG画像サービス

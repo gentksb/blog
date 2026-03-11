@@ -19,7 +19,7 @@ const workersConfig = defineWorkersConfig({
         wrangler: { configPath: "./wrangler.jsonc" },
         miniflare: {
           compatibilityDate: "2024-05-13",
-          compatibilityFlags: ["nodejs_compat"]
+          compatibilityFlags: ["nodejs_compat_v2"]
         }
       }
     }

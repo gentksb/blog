@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "pnpm astro dev",
-    "dev:cf": "pnpm typegen && pnpm run build && wrangler dev",
+    "dev:cf": "pnpm typegen && pnpm run build && wrangler dev --config dist/server/wrangler.json",
     "build": "pnpm typegen && pnpm astro build",
     "test": "pnpm typegen && vitest run",
     "lint": "prettier --check .",
