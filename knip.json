@@ -14,7 +14,6 @@
   ],
   "ignoreDependencies": [
     "@iconify-json/mdi",
-    "@cloudflare/pages-plugin-vercel-og",
     "cloudflare",
     "textlint",
     "@textlint-ja/textlint-rule-no-filler",

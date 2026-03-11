@@ -1,6 +1,6 @@
 import { env } from "cloudflare:workers"
 import { Buffer } from "node:buffer"
-import { ImageResponse } from "@cloudflare/pages-plugin-vercel-og/api"
+import { ImageResponse } from "@vercel/og"
 
 function detectImageFormat(buffer: Buffer): string {
   const uint8Array = new Uint8Array(buffer)
