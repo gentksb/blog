@@ -3,6 +3,7 @@ import { env } from "cloudflare:workers"
 import { Icon } from "astro-icon/components"
 import { createOgpKVCacheAdapter } from "../../server/adapters/ogpAdapter"
 import { getOgpMetaData } from "../../server/services/getOgpMetaData"
+import { isValidUrl } from "../../server/domain/validators"
 
 interface Props {
   url: string
@@ -11,14 +12,9 @@ interface Props {
 
 const { url, linkUrl } = Astro.props
 
-// URLバリデーション
-try {
-  new URL(url)
-  if (linkUrl) {
-    new URL(linkUrl)
-  }
-} catch {
-  throw new Error("Invalid URL")
+// URLバリデーション（HTTP(S)スキームのみ許可）
+if (!isValidUrl(url) || (linkUrl !== undefined && !isValidUrl(linkUrl))) {
+  throw new Error("Invalid URL: must be HTTP(S)")
 }
 
 const targetUrl = linkUrl ?? url
@@ -69,7 +65,10 @@ try {
       ogpTitle = ogpData.ogpTitle ?? url
       ogpDescription = ogpData.ogpDescription ?? ""
       ogpSiteName = ogpData.ogpSiteName ?? ""
-      ogpImageUrl = ogpData.ogpImageUrl
+      // 外部ドメインはCloudflare Image Resizingでプロキシできないため、HTTP(S)のみ許可
+      ogpImageUrl = isValidUrl(ogpData.ogpImageUrl ?? "")
+        ? ogpData.ogpImageUrl
+        : undefined
     }
   }
 } catch (e) {
