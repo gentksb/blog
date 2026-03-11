@@ -26,13 +26,12 @@ export const GET: APIRoute = async ({ params, url }) => {
 
     const imageResponse = await ogImage(title, coverSrc, url.origin)
     // Cloudflare CDN にエッジキャッシュさせる（OGP画像は記事更新時以外変化しない）
+    const headers = new Headers(imageResponse.headers)
+    headers.set("Cache-Control", "public, max-age=604800")
+    headers.set("CDN-Cache-Control", "public, max-age=2592000")
     return new Response(imageResponse.body, {
       status: imageResponse.status,
-      headers: {
-        ...Object.fromEntries(imageResponse.headers.entries()),
-        "Cache-Control": "public, max-age=604800",
-        "CDN-Cache-Control": "public, max-age=2592000"
-      }
+      headers
     })
   } catch (error) {
     console.error("twitter-og.png generation error:", error)

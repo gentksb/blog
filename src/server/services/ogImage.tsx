@@ -72,30 +72,18 @@ async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
     )
   }
 
-  try {
-    const buffer = Buffer.from(arrayBuffer)
+  const buffer = Buffer.from(arrayBuffer)
+  const detectedContentType = detectImageFormat(buffer)
 
-    // 実際のファイル形式を検出
-    const detectedContentType = detectImageFormat(buffer)
-
-    // Content-Typeが宣言されているものと異なる場合は警告
-    if (declaredContentType && declaredContentType !== detectedContentType) {
-      console.warn(
-        `Content-Type mismatch for ${imageUrl}: declared=${declaredContentType}, detected=${detectedContentType}`
-      )
-    }
-
-    const contentType = detectedContentType
-    const base64String = buffer.toString("base64")
-    const dataUrl = `data:${contentType};base64,${base64String}`
-
-    return dataUrl
-  } catch (error) {
-    console.error("Image processing failed:", error)
-    throw new Error(
-      `Image processing failed for ${imageUrl}: ${error instanceof Error ? error.message : String(error)}`
+  // Content-Typeが宣言されているものと異なる場合は警告
+  if (declaredContentType && declaredContentType !== detectedContentType) {
+    console.warn(
+      `Content-Type mismatch for ${imageUrl}: declared=${declaredContentType}, detected=${detectedContentType}`
     )
   }
+
+  const base64String = buffer.toString("base64")
+  return `data:${detectedContentType};base64,${base64String}`
 }
 
 async function fetchFontData(title: string) {
@@ -138,7 +126,7 @@ async function createImageResponse(
   fontData: ArrayBuffer,
   fontName: string,
   weight: number
-) {
+): Promise<Response> {
   const imageResponse = await ImageResponse.async(
     <div
       style={{
@@ -226,10 +214,6 @@ async function createImageResponse(
 }
 
 async function createFallbackResponse(coverSrc: string) {
-  if (!coverSrc) {
-    return null
-  }
-
   const imageResponse = await fetch(coverSrc)
 
   if (!imageResponse.ok) {
