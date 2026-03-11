@@ -1,5 +1,4 @@
 import { getCollection } from "astro:content"
-import { getImage } from "astro:assets"
 import { slugFromId } from "@lib/postSlug"
 import type { APIRoute } from "astro"
 import { ogImage } from "../../../server/services/ogImage"
@@ -18,11 +17,12 @@ export const GET: APIRoute = async ({ params, url }) => {
 
     const title = post.data.title
 
-    // カバー画像URLを取得（ASSETSから読み込める形式で）
+    // カバー画像URLを取得（env.ASSETS.fetch() でアクセスできる静的アセットパスを使用）
+    // getImage() は imageService モードによって /_image?href=... を返すことがあり、
+    // env.ASSETS では静的ファイルのみアクセスできるため直接 .src を使う
     let coverSrc = `${url.origin}/image/logo.jpg` // fallback
     if (post.data.cover) {
-      const img = await getImage({ src: post.data.cover, format: "jpeg" })
-      coverSrc = `${url.origin}${img.src}`
+      coverSrc = `${url.origin}${post.data.cover.src}`
     }
 
     const imageResponse = await ogImage(title, coverSrc, url.origin)
