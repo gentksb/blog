@@ -87,7 +87,7 @@ async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
 }
 
 async function fetchFontData(title: string) {
-  const weight = 600
+  const weight = 600 as const
   const fontName = "Noto Sans JP"
   const subsetNotoSansJPUrl = `https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@${weight}&display=swap&text=${encodeURIComponent(`${title}幻想サイクル`)}`
 
