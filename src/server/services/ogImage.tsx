@@ -1,6 +1,6 @@
 import { env } from "cloudflare:workers"
 import { Buffer } from "node:buffer"
-import { ImageResponse } from "@vercel/og"
+import { ImageResponse } from "@cf-wasm/og/workerd"
 
 function detectImageFormat(buffer: Buffer): string {
   const uint8Array = new Uint8Array(buffer)
@@ -153,7 +153,7 @@ async function createImageResponse(
 ) {
   console.log("Starting ImageResponse generation")
 
-  const imageResponse = new ImageResponse(
+  const imageResponse = await ImageResponse.async(
     <div
       style={{
         display: "flex",
