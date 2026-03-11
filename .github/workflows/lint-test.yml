@@ -60,7 +60,7 @@ jobs:
         run: pnpm run lint
 
       - name: Create dist directory for tests
-        run: mkdir -p dist
+        run: mkdir -p dist/client
 
       - name: Run Tests
         run: |
