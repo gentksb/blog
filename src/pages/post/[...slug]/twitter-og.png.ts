@@ -2,7 +2,7 @@ import { getCollection } from "astro:content"
 import { getImage } from "astro:assets"
 import { slugFromId } from "@lib/postSlug"
 import type { APIRoute } from "astro"
-import { ogImage } from "../../../../functions/src/services/ogImage"
+import { ogImage } from "../../../server/services/ogImage"
 
 export const prerender = false
 

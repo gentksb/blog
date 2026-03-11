@@ -1,5 +1,5 @@
 import { env } from "cloudflare:test"
-import { getAmazonProductInfo } from "functions/src/services/getAmazonProductInfo"
+import { getAmazonProductInfo } from "../../src/server/services/getAmazonProductInfo"
 import { expect, test } from "vitest"
 import { testAsin } from "../fixtures/testData"
 
