@@ -1,10 +1,16 @@
 import { env } from "cloudflare:workers"
-import { Buffer } from "node:buffer"
 import { ImageResponse } from "@cf-wasm/og/workerd"
 
-function detectImageFormat(buffer: Buffer): string {
-  const uint8Array = new Uint8Array(buffer)
+function arrayBufferToBase64(bytes: Uint8Array): string {
+  const chunkSize = 8192
+  let binary = ""
+  for (let i = 0; i < bytes.byteLength; i += chunkSize) {
+    binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize))
+  }
+  return btoa(binary)
+}
 
+function detectImageFormat(uint8Array: Uint8Array): string {
   // PNG: 89 50 4E 47
   if (
     uint8Array[0] === 0x89 &&
@@ -72,8 +78,8 @@ async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
     )
   }
 
-  const buffer = Buffer.from(arrayBuffer)
-  const detectedContentType = detectImageFormat(buffer)
+  const uint8Array = new Uint8Array(arrayBuffer)
+  const detectedContentType = detectImageFormat(uint8Array)
 
   // Content-Typeが宣言されているものと異なる場合は警告
   if (declaredContentType && declaredContentType !== detectedContentType) {
@@ -82,7 +88,7 @@ async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
     )
   }
 
-  const base64String = buffer.toString("base64")
+  const base64String = arrayBufferToBase64(uint8Array)
   return `data:${detectedContentType};base64,${base64String}`
 }
 
