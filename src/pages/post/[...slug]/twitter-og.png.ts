@@ -2,6 +2,7 @@ import { getCollection } from "astro:content"
 import { slugFromId } from "@lib/postSlug"
 import type { APIRoute } from "astro"
 import { ogImage } from "../../../server/services/ogImage"
+// `@vercel/og` は Workers 環境で使用不可
 
 export const prerender = false
 
