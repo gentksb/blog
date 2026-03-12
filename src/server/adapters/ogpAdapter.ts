@@ -4,6 +4,7 @@
  */
 
 import type { OgpData } from "@type/ogpData-type"
+import { getOgpMetaData } from "../services/getOgpMetaData"
 
 /**
  * OGP API用の設定インターフェース
@@ -129,8 +130,6 @@ export const createOgpSlackLoggerAdapter = (
 export const createOgpFetcherAdapter = (): OgpFetcherAdapter => {
   return {
     async fetchOgpData(url: string, env: Env): Promise<OgpData> {
-      // 循環依存を回避するために動的インポート
-      const { getOgpMetaData } = await import("../services/getOgpMetaData")
       return await getOgpMetaData(url, env)
     }
   }

@@ -1,5 +1,5 @@
 import type { OgpData } from "@type/ogpData-type"
-import type { CreatorsApiItemsResponse } from "../../functions/src/services/getAmazonProductInfo"
+import type { CreatorsApiItemsResponse } from "../../src/server/services/getAmazonProductInfo"
 import { expect, test } from "vitest"
 import {
   createAmazonResponse,
@@ -10,7 +10,7 @@ import {
   createOgImageErrorResponse,
   createOgpFetchErrorResponse,
   createOgpResponse
-} from "../../functions/src/domain/transformers"
+} from "../../src/server/domain/transformers"
 
 // === Amazon API用変換関数のテスト ===
 

@@ -1,22 +1,16 @@
 ---
-import { LinkCardClientComponent } from "./LinkCardClientComponent"
+import LinkCardServer from "./LinkCardServer.astro"
 
 interface Props {
   url: string
   linkUrl?: string
 }
-
-const { url, linkUrl } = Astro.props
-
-// check if the url is valid
-try {
-  new URL(url)
-  if (linkUrl) {
-    new URL(linkUrl)
-  }
-} catch {
-  throw new Error("Invalid URL")
-}
 ---
 
-<LinkCardClientComponent url={url} linkUrl={linkUrl} client:only="react" />
+<LinkCardServer {...Astro.props} server:defer>
+  <div
+    slot="fallback"
+    class="not-prose relative mx-2 mt-2 h-20 animate-pulse rounded-lg border border-stone-200 bg-stone-100"
+  >
+  </div>
+</LinkCardServer>

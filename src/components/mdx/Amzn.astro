@@ -1,19 +1,15 @@
 ---
-import { AmznClientComponent } from "./AmznClientComponent"
+import AmznServer from "./AmznServer.astro"
 
 interface Props {
   asin: string
 }
-
-const { asin } = Astro.props
-
-const isValidAsin = (asin: string): boolean => {
-  return /^[A-Z0-9]{10}$/.test(asin)
-}
-
-if (!isValidAsin(asin)) {
-  throw new Error("asin must be 10 characters of uppercase letters and numbers")
-}
 ---
 
-<AmznClientComponent asin={asin} client:only="react" />
+<AmznServer {...Astro.props} server:defer>
+  <div
+    slot="fallback"
+    class="not-prose relative mx-2 mt-2 h-20 animate-pulse rounded-lg border border-3 border-amazon bg-stone-100"
+  >
+  </div>
+</AmznServer>

@@ -5,7 +5,7 @@ on:
     branches:
       - "master"
     paths:
-      - "functions/**"
+      - "src/server/**"
       - "src/components/**"
       - "src/layouts/**"
       - "src/lib/**"
@@ -18,7 +18,7 @@ on:
       - ".github/workflows/**"
   pull_request:
     paths:
-      - "functions/**"
+      - "src/server/**"
       - "src/components/**"
       - "src/layouts/**"
       - "src/lib/**"
@@ -60,7 +60,7 @@ jobs:
         run: pnpm run lint
 
       - name: Create dist directory for tests
-        run: mkdir -p dist
+        run: mkdir -p dist/client
 
       - name: Run Tests
         run: |

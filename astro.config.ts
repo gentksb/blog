@@ -1,8 +1,9 @@
+import cloudflare from "@astrojs/cloudflare"
 import mdx from "@astrojs/mdx"
 import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
 import tailwind from "@astrojs/tailwind"
-import { defineConfig, passthroughImageService } from "astro/config"
+import { defineConfig } from "astro/config"
 import AutoImport from "astro-auto-import"
 import icon from "astro-icon"
 import pagefind from "astro-pagefind"
@@ -15,46 +16,30 @@ console.log(`process.env.WORKERS_CI_BRANCH: ${process.env.WORKERS_CI_BRANCH}`)
 const isProduction =
   process.env.WORKERS_CI_BRANCH === "master" &&
   process.env.NODE_ENV === "production"
-// Cloudflare Workers CI環境での実行かどうか
-const isCloudflareEnvironment = process.env.WORKERS_CI === "1"
 
-console.log(`isProduction: ${isProduction}`)
-console.log(`isCloudflareEnvironment: ${isCloudflareEnvironment}`)
-
-// Cloudflare本番環境でのみ画像サービスを使用
-const imageServiceConfig =
-  isProduction && isCloudflareEnvironment
-    ? {
-        entrypoint: "./src/entrypoint/cfImageService",
-        config: {
-          maxWidth: 800
-        }
-      }
-    : passthroughImageService()
+// 本番のみCloudflare Image Resizingを使用（workers.devプレビューでは cdn-cgi/image が 404 になるため）
+const imageService = isProduction ? "cloudflare" : "passthrough"
+console.log(`imageService: ${imageService}`)
 
 // 本番環境のみ固定のURLをsiteに設定する
-const siteUrl = isProduction
-  ? "https://blog.gensobunya.net/"
-  : "https://blog.gensobunya.net/"
+const siteUrl = "https://blog.gensobunya.net/"
 
 // https://astro.build/config
 export default defineConfig({
   site: siteUrl,
-  output: "static",
+  output: "server",
   outDir: "./dist/",
-  image: {
-    service: imageServiceConfig
-  },
+  adapter: cloudflare({
+    imageService
+  }),
   integrations: [
     AutoImport({
       imports: [
         "./src/components/mdx/LinkCard.astro",
         "./src/components/mdx/Amzn.astro",
         "./src/components/mdx/SimpleLinkCard.astro",
-        {
-          "./src/components/mdx/positive.tsx": ["PositiveBox"],
-          "./src/components/mdx/negative.tsx": ["NegativeBox"]
-        }
+        "./src/components/mdx/PositiveBox.astro",
+        "./src/components/mdx/NegativeBox.astro"
       ]
     }),
     mdx(),

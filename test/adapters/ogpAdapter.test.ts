@@ -9,14 +9,14 @@ import {
   type OgpCacheAdapter,
   type OgpFetcherAdapter,
   type OgpLoggerAdapter
-} from "../../functions/src/adapters/ogpAdapter"
+} from "../../src/server/adapters/ogpAdapter"
 
 // Mock external dependencies for Slack logger and OGP fetcher
-vi.mock("../../functions/src/services/postLogToSlack", () => ({
+vi.mock("../../src/server/services/postLogToSlack", () => ({
   postLogToSlack: vi.fn().mockResolvedValue(undefined)
 }))
 
-vi.mock("../../functions/src/services/getOgpMetaData", () => ({
+vi.mock("../../src/server/services/getOgpMetaData", () => ({
   getOgpMetaData: vi.fn().mockResolvedValue({
     ogpTitle: "Test Title",
     ogpImageUrl: "https://example.com/image.jpg",

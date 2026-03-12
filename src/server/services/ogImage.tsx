@@ -1,10 +1,16 @@
 import { env } from "cloudflare:workers"
-import { Buffer } from "node:buffer"
-import { ImageResponse } from "@cloudflare/pages-plugin-vercel-og/api"
+import { ImageResponse } from "@cf-wasm/og/workerd"
 
-function detectImageFormat(buffer: Buffer): string {
-  const uint8Array = new Uint8Array(buffer)
+function arrayBufferToBase64(bytes: Uint8Array): string {
+  const chunkSize = 8192
+  let binary = ""
+  for (let i = 0; i < bytes.byteLength; i += chunkSize) {
+    binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize))
+  }
+  return btoa(binary)
+}
 
+function detectImageFormat(uint8Array: Uint8Array): string {
   // PNG: 89 50 4E 47
   if (
     uint8Array[0] === 0x89 &&
@@ -55,7 +61,6 @@ function detectImageFormat(buffer: Buffer): string {
 }
 
 async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
-  console.log("Fetching image from:", imageUrl)
   const response = await env.ASSETS.fetch(imageUrl)
   if (!response.ok) {
     throw new Error(
@@ -66,48 +71,32 @@ async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
   const arrayBuffer = await response.arrayBuffer()
   const declaredContentType = response.headers.get("content-type")
 
-  // メモリ使用量チェック
+  // メモリ使用量チェック（Workers 上限対策）
   if (arrayBuffer.byteLength > 5 * 1024 * 1024) {
-    console.warn(
-      `Large image detected: ${arrayBuffer.byteLength} bytes for ${imageUrl}`
-    )
-  }
-
-  try {
-    const buffer = Buffer.from(arrayBuffer)
-
-    // 実際のファイル形式を検出
-    const detectedContentType = detectImageFormat(buffer)
-
-    // Content-Typeが宣言されているものと異なる場合は警告
-    if (declaredContentType && declaredContentType !== detectedContentType) {
-      console.warn(
-        `Content-Type mismatch for ${imageUrl}: declared=${declaredContentType}, detected=${detectedContentType}`
-      )
-    }
-
-    const contentType = detectedContentType
-    const base64String = buffer.toString("base64")
-    const dataUrl = `data:${contentType};base64,${base64String}`
-
-    console.log(
-      `Image processed: ${imageUrl}, format: ${contentType}, size: ${arrayBuffer.byteLength}`
-    )
-    return dataUrl
-  } catch (error) {
-    console.error("Image processing failed:", error)
     throw new Error(
-      `Image processing failed for ${imageUrl}: ${error instanceof Error ? error.message : String(error)}`
+      `Image too large: ${arrayBuffer.byteLength} bytes for ${imageUrl} (max 5MB)`
     )
   }
+
+  const uint8Array = new Uint8Array(arrayBuffer)
+  const detectedContentType = detectImageFormat(uint8Array)
+
+  // Content-Typeが宣言されているものと異なる場合は警告
+  if (declaredContentType && declaredContentType !== detectedContentType) {
+    console.warn(
+      `Content-Type mismatch for ${imageUrl}: declared=${declaredContentType}, detected=${detectedContentType}`
+    )
+  }
+
+  const base64String = arrayBufferToBase64(uint8Array)
+  return `data:${detectedContentType};base64,${base64String}`
 }
 
 async function fetchFontData(title: string) {
-  const weight = 600
+  const weight = 600 as const
   const fontName = "Noto Sans JP"
   const subsetNotoSansJPUrl = `https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@${weight}&display=swap&text=${encodeURIComponent(`${title}幻想サイクル`)}`
 
-  console.log("Fetching font CSS from:", subsetNotoSansJPUrl)
   const cssResponse = await fetch(subsetNotoSansJPUrl)
   if (!cssResponse.ok) {
     throw new Error(
@@ -116,10 +105,8 @@ async function fetchFontData(title: string) {
   }
 
   const css = await cssResponse.text()
-  console.log("Font CSS fetched successfully, length:", css.length)
-
   const resource = css.match(
-    /src: url\((.+)\) format\('(opentype|truetype|woff2)'\)/
+    /src: url\((.+?)\) format\('(opentype|truetype|woff2)'\)/
   )
   if (!resource) {
     console.error("Font resource not found in CSS:", css.substring(0, 500))
@@ -127,9 +114,6 @@ async function fetchFontData(title: string) {
   }
 
   const fontUrl = resource[1]
-  console.log("Font URL extracted:", fontUrl)
-
-  console.log("Fetching font data from:", fontUrl)
   const fontResponse = await fetch(fontUrl)
   if (!fontResponse.ok) {
     throw new Error(
@@ -138,8 +122,6 @@ async function fetchFontData(title: string) {
   }
 
   const fontData = await fontResponse.arrayBuffer()
-  console.log("Font data fetched successfully, size:", fontData.byteLength)
-
   return { fontData, fontName, weight }
 }
 
@@ -150,10 +132,8 @@ async function createImageResponse(
   fontData: ArrayBuffer,
   fontName: string,
   weight: number
-) {
-  console.log("Starting ImageResponse generation")
-
-  const imageResponse = new ImageResponse(
+): Promise<Response> {
+  const imageResponse = await ImageResponse.async(
     <div
       style={{
         display: "flex",
@@ -236,26 +216,16 @@ async function createImageResponse(
     }
   )
 
-  console.log("ImageResponse generation completed successfully")
   return imageResponse
 }
 
 async function createFallbackResponse(coverSrc: string) {
-  if (!coverSrc) {
-    return null
-  }
-
-  console.log("Attempting fallback: returning coverSrc image directly")
   const imageResponse = await fetch(coverSrc)
 
   if (!imageResponse.ok) {
-    console.warn(
-      `Fallback failed: coverSrc fetch failed with status ${imageResponse.status}`
-    )
     return null
   }
 
-  console.log("Fallback successful: coverSrc image fetched")
   return new Response(imageResponse.body, {
     headers: {
       "Content-Type": imageResponse.headers.get("Content-Type") || "image/jpg",
@@ -269,8 +239,6 @@ export const ogImage = async (
   coverSrc: string,
   currentHost?: string
 ) => {
-  console.log("OG Image generation started", { title, coverSrc })
-
   try {
     // 並行してフォントデータ、カバー画像、ロゴ画像を取得
     const [fontResult, coverBase64, logoBase64] = await Promise.all([

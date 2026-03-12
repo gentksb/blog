@@ -6,7 +6,7 @@
 import type {
   CreatorsApiItem,
   CreatorsApiItemsResponse
-} from "../../functions/src/services/getAmazonProductInfo"
+} from "../../src/server/services/getAmazonProductInfo"
 import { vi } from "vitest"
 
 /**

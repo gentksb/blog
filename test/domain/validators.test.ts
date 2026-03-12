@@ -8,7 +8,7 @@ import {
   isValidUrl,
   validateAmazonConfig,
   validateOgpConfig
-} from "../../functions/src/domain/validators"
+} from "../../src/server/domain/validators"
 
 test("ASIN validation", () => {
   expect(isValidAsin("B004N3APGO")).toBe(true)

@@ -36,3 +36,7 @@ kv.json
 .playwright-cli/
 *.png
 *.webm
+
+# playwright
+test-results/
+playwright-report/

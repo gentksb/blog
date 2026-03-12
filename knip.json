@@ -1,30 +1,19 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": [
-    "src/pages/**/*.{astro,ts,tsx}",
-    "src/layouts/**/*.astro",
-    "functions/_worker.ts"
-  ],
-  "project": ["src/**/*.{ts,tsx,astro}", "functions/**/*.ts"],
+  "entry": ["src/pages/**/*.{astro,ts,tsx}", "src/layouts/**/*.astro"],
+  "project": ["src/**/*.{ts,tsx,astro}"],
   "ignore": ["src/content/**", "**/*.d.ts", "dist/**", "node_modules/**"],
   "ignoreFiles": [
     "src/components/mdx/Amzn.astro",
-    "src/components/mdx/AmznClientComponent.tsx",
+    "src/components/mdx/AmznServer.astro",
     "src/components/mdx/LinkCard.astro",
-    "src/components/mdx/LinkCardClientComponent.tsx",
+    "src/components/mdx/LinkCardServer.astro",
     "src/components/mdx/SimpleLinkCard.astro",
-    "src/components/mdx/positive.tsx",
-    "src/components/mdx/negative.tsx",
-    "src/entrypoint/cfImageService.ts",
-    "src/layouts/LinkCardLayout.tsx",
-    "src/layouts/LinkCardSkeletonLayout.tsx"
+    "src/components/mdx/PositiveBox.astro",
+    "src/components/mdx/NegativeBox.astro"
   ],
   "ignoreDependencies": [
     "@iconify-json/mdi",
-    "@emotion/react",
-    "@cloudflare/pages-plugin-vercel-og",
-    "react-icons",
-    "swr",
     "cloudflare",
     "textlint",
     "@textlint-ja/textlint-rule-no-filler",

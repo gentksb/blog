@@ -17,7 +17,7 @@ type Props = CollectionEntry<"post"> & {
 }
 
 const { title, date, cover, tags } = Astro.props.data
-const { slug, description, headings } = Astro.props
+const { id, description, headings } = Astro.props
 // cloudflare上ではタイムゾーンが日本時間になる保証がないため、明示的に指定する
 const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
@@ -46,7 +46,7 @@ const ogpStaticImage = cover
             cover={cover}
             date={date}
             tags={tags}
-            slug={slug}
+            id={id}
           />
           <div class="p-6">
             <!-- 折りたたみ可能な目次（モバイル/タブレット向け） -->
@@ -71,7 +71,7 @@ const ogpStaticImage = cover
       <!-- 関連記事 -->
       <div class="my-8 px-3 sm:px-0">
         <h2 class="mb-4 text-xl font-bold">関連記事</h2>
-        <RelatedPosts tags={tags} selfSlug={slug} />
+        <RelatedPosts tags={tags} selfSlug={id} />
       </div>
     </main>
 
