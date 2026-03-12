@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@astrojs/cloudflare':
-        specifier: ^13.0.2
-        version: 13.0.2(@types/node@20.19.27)(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(jiti@1.21.7)(tsx@4.21.0)(workerd@1.20260310.1)(wrangler@4.72.0(@cloudflare/workers-types@4.20260310.1))(yaml@2.8.2)
+        specifier: ^13.1.0
+        version: 13.1.0(@types/node@20.19.27)(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(jiti@1.21.7)(tsx@4.21.0)(workerd@1.20260310.1)(wrangler@4.72.0(@cloudflare/workers-types@4.20260310.1))(yaml@2.8.2)
       '@astrojs/mdx':
         specifier: ^5.0.0
-        version: 5.0.0(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
+        version: 5.0.0(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
       '@astrojs/react':
         specifier: ^5.0.0
         version: 5.0.0(@types/node@20.19.27)(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(jiti@1.21.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tsx@4.21.0)(yaml@2.8.2)
@@ -25,7 +25,7 @@ importers:
         version: 3.7.1
       '@astrojs/tailwind':
         specifier: ^6.0.2
-        version: 6.0.2(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(tsx@4.21.0)(yaml@2.8.2))
+        version: 6.0.2(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(tsx@4.21.0)(yaml@2.8.2))
       '@braintree/sanitize-url':
         specifier: ^7.1.1
         version: 7.1.1
@@ -45,17 +45,17 @@ importers:
         specifier: ^18.3.7
         version: 18.3.7(@types/react@18.3.27)
       astro:
-        specifier: ^6.0.2
-        version: 6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+        specifier: ^6.0.3
+        version: 6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       astro-auto-import:
         specifier: ^0.4.5
-        version: 0.4.5(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
+        version: 0.4.5(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
       astro-pagefind:
         specifier: ^1.8.5
-        version: 1.8.5(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
+        version: 1.8.5(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
       date-fns-tz:
         specifier: ^3.2.0
         version: 3.2.0(date-fns@4.1.0)
@@ -157,8 +157,8 @@ packages:
   '@antfu/utils@8.1.1':
     resolution: {integrity: sha512-Mex9nXf9vR6AhcXmMrlz/HVgYYZpVGJ6YlPgwl7UnaFpnshXs6EK/oa5Gpf3CzENMjkvEx2tQtntGnb7UtSTOQ==}
 
-  '@astrojs/cloudflare@13.0.2':
-    resolution: {integrity: sha512-QXt3NefKuLCRPHW+/9TSUufv4trAehxJCCpRsUPNSsDPFHQQrlL6zNPTG6nqEeuFKB5fAegraC1i2xjZ4atoXw==}
+  '@astrojs/cloudflare@13.1.0':
+    resolution: {integrity: sha512-gnHD3XhBKRoQJc5OAp1g2blGKoxLW8X4VEmN30K/M3cNkyACAG1j8UdLHNb4wAjTwFTIJ7O2KmUNeg8GUJKjMA==}
     peerDependencies:
       astro: ^6.0.0-alpha.0
       wrangler: ^4.61.1
@@ -1962,8 +1962,8 @@ packages:
     peerDependencies:
       astro: ^2.0.4 || ^3 || ^4 || ^5
 
-  astro@6.0.2:
-    resolution: {integrity: sha512-aYCU9QcaV3QlOxO+JU2lR4xazVuPaH7oFhc990H/fhbWLMm1MWlRnjfnti1gYMm9N9l7gqPb3t7JsQBlUEQXIg==}
+  astro@6.0.3:
+    resolution: {integrity: sha512-M0s9KMmGeaLQPB0shVNqr3ZypEXBDFE/VsexBoA0nWVFwr84BnGxffXH8LG0KPxnVTRwpC3/zPjllVAlRLYJuw==}
     engines: {node: ^20.19.1 || >=22.12.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -5263,12 +5263,12 @@ snapshots:
 
   '@antfu/utils@8.1.1': {}
 
-  '@astrojs/cloudflare@13.0.2(@types/node@20.19.27)(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(jiti@1.21.7)(tsx@4.21.0)(workerd@1.20260310.1)(wrangler@4.72.0(@cloudflare/workers-types@4.20260310.1))(yaml@2.8.2)':
+  '@astrojs/cloudflare@13.1.0(@types/node@20.19.27)(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(jiti@1.21.7)(tsx@4.21.0)(workerd@1.20260310.1)(wrangler@4.72.0(@cloudflare/workers-types@4.20260310.1))(yaml@2.8.2)':
     dependencies:
       '@astrojs/internal-helpers': 0.8.0
       '@astrojs/underscore-redirects': 1.0.1
       '@cloudflare/vite-plugin': 1.27.0(vite@7.3.1(@types/node@20.19.27)(jiti@1.21.7)(tsx@4.21.0)(yaml@2.8.2))(workerd@1.20260310.1)(wrangler@4.72.0(@cloudflare/workers-types@4.20260310.1))
-      astro: 6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       piccolore: 0.1.3
       tinyglobby: 0.2.15
       vite: 7.3.1(@types/node@20.19.27)(jiti@1.21.7)(tsx@4.21.0)(yaml@2.8.2)
@@ -5322,12 +5322,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@5.0.0(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))':
+  '@astrojs/mdx@5.0.0(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 7.0.0
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
-      astro: 6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       es-module-lexer: 2.0.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -5382,9 +5382,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.3.6
 
-  '@astrojs/tailwind@6.0.2(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(tsx@4.21.0)(yaml@2.8.2))':
+  '@astrojs/tailwind@6.0.2(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(tsx@4.21.0)(yaml@2.8.2))':
     dependencies:
-      astro: 6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       autoprefixer: 10.4.23(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
@@ -6938,11 +6938,11 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-auto-import@0.4.5(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
+  astro-auto-import@0.4.5(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
     dependencies:
       '@types/node': 18.19.130
       acorn: 8.15.0
-      astro: 6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
 
   astro-icon@1.1.5:
     dependencies:
@@ -6952,14 +6952,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-pagefind@1.8.5(astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
+  astro-pagefind@1.8.5(astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
     dependencies:
       '@pagefind/default-ui': 1.4.0
-      astro: 6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       pagefind: 1.4.0
       sirv: 3.0.2
 
-  astro@6.0.2(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2):
+  astro@6.0.3(@types/node@20.19.27)(aws4fetch@1.0.20)(jiti@1.21.7)(rollup@4.54.0)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 3.0.0
       '@astrojs/internal-helpers': 0.8.0
