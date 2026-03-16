@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: sans-serif;
+  --font-relics: "Times New Roman", "MS PGothic";
+  --font-ui: system-ui, -apple-system;
+
+  --color-accent: #9a3412;
+  --color-primary: #b45309;
+  --color-secondary: #78716c;
+  --color-info: #2563eb;
+  --color-error: #dc2626;
+  --color-amazon: #ff9900;
+  --color-yahoo: #ff0033;
+  --color-rakuten: #bf0000;
+}

@@ -13,6 +13,8 @@
     "src/components/mdx/NegativeBox.astro"
   ],
   "ignoreDependencies": [
+    "tailwindcss",
+    "@tailwindcss/typography",
     "cloudflare",
     "textlint",
     "@textlint-ja/textlint-rule-no-filler",

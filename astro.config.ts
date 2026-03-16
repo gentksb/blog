@@ -2,10 +2,10 @@ import cloudflare from "@astrojs/cloudflare"
 import mdx from "@astrojs/mdx"
 import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
-import tailwind from "@astrojs/tailwind"
 import { defineConfig } from "astro/config"
 import AutoImport from "astro-auto-import"
 import pagefind from "astro-pagefind"
+import tailwindcss from "@tailwindcss/vite"
 
 // 本番ブランチのみ Cloudflare Image Resizing を使用
 // （プレビュードメインでは cdn-cgi/image が 404 になるため）
@@ -32,8 +32,10 @@ export default defineConfig({
     }),
     mdx(),
     sitemap(),
-    tailwind(),
     react(),
     pagefind()
-  ]
+  ],
+  vite: {
+    plugins: [tailwindcss()]
+  }
 })
