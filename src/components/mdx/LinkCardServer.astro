@@ -87,7 +87,7 @@ const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
   <div
     class={`not-prose relative mx-2 mt-2 flex overflow-hidden rounded-lg border bg-white shadow-sm ${brandTheme ? brandColorBorder[brandTheme] : "border-stone-200"}`}
   >
-    <div class="flex max-w-[70%] flex-col justify-center p-2">
+    <div class="flex flex-1 flex-col justify-center p-2 min-w-0">
       {
         brandTheme && (
           <div
@@ -140,7 +140,7 @@ const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
         {ogpSiteName}
       </div>
     </div>
-    <div class="max-h-28 max-w-[30%] shrink md:max-h-36">
+    <div class="max-h-28 w-[30%] flex-shrink-0 md:max-h-36">
       {
         ogpImageUrl && (
           <figure class="size-full object-contain">
