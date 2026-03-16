@@ -143,10 +143,10 @@ const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
     <div class="max-h-28 w-[30%] flex-shrink-0 md:max-h-36">
       {
         ogpImageUrl && (
-          <figure class="size-full">
+          <figure class="flex h-full justify-end">
             <img
               src={ogpImageUrl}
-              class="h-full w-full object-cover"
+              class="h-full w-auto"
               alt="リンク先カバー画像"
               loading="lazy"
             />
