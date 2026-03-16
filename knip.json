@@ -13,7 +13,6 @@
     "src/components/mdx/NegativeBox.astro"
   ],
   "ignoreDependencies": [
-    "@iconify-json/mdi",
     "cloudflare",
     "textlint",
     "@textlint-ja/textlint-rule-no-filler",

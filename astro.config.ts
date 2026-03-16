@@ -5,7 +5,6 @@ import sitemap from "@astrojs/sitemap"
 import tailwind from "@astrojs/tailwind"
 import { defineConfig } from "astro/config"
 import AutoImport from "astro-auto-import"
-import icon from "astro-icon"
 import pagefind from "astro-pagefind"
 
 console.log(`process.env.NODE_ENV: ${process.env.NODE_ENV}`)
@@ -46,18 +45,6 @@ export default defineConfig({
     sitemap(),
     tailwind(),
     react(),
-    icon({
-      include: {
-        mdi: [
-          "calendar",
-          "twitter",
-          "instagram",
-          "youtube",
-          "web",
-          "open-in-new"
-        ]
-      }
-    }),
     pagefind()
   ]
 })
