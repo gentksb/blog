@@ -22,9 +22,13 @@ test("postLogToSlack validates webhook URL parameter", async () => {
   // Should reject invalid webhook URLs
   const invalidWebhookUrl = "not-a-valid-url"
 
-  await expect(
-    postLogToSlack("test message", invalidWebhookUrl)
-  ).rejects.toThrow()
+  let caught = false
+  try {
+    await postLogToSlack("test message", invalidWebhookUrl)
+  } catch {
+    caught = true
+  }
+  expect(caught).toBe(true)
 })
 
 test("postLogToSlack handles various message types", async () => {

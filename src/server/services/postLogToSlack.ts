@@ -7,14 +7,19 @@ export const postLogToSlack = async (
   if (!url) {
     throw new Error("SLACK_WEBHOOK_URL is not defined")
   }
+  if (!URL.canParse(url)) {
+    throw new Error(`Invalid SLACK_WEBHOOK_URL: ${url}`)
+  }
   const payload = {
     text: log
   }
-  await fetch(url, {
-    method: "POST",
-    body: JSON.stringify(payload)
-  }).catch((e) => {
+  try {
+    await fetch(url, {
+      method: "POST",
+      body: JSON.stringify(payload)
+    })
+  } catch (e) {
     console.error(e)
-    throw new Error(e)
-  })
+    throw new Error(String(e))
+  }
 }
