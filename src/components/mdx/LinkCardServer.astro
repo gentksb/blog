@@ -74,18 +74,22 @@ try {
   console.error(`LinkCard OGP fetch failed for ${url}:`, e)
 }
 
+if (!ogpSiteName) {
+  ogpSiteName = new URL(url).hostname.replace(/^www\./, "")
+}
+
 const parsedTargetUrl = new URL(targetUrl)
 const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
 ---
 
 <a
   href={targetUrl}
-  class="hover:underline"
+  class="no-underline hover:opacity-90"
   target="_blank"
   rel="noopener noreferrer"
 >
   <div
-    class={`not-prose relative mx-2 mt-2 flex overflow-hidden rounded-lg border bg-white shadow-xs ${brandTheme ? brandColorBorder[brandTheme] : "border-stone-200"}`}
+    class={`not-prose relative my-4 flex overflow-hidden rounded-lg border bg-white shadow-xs ${brandTheme ? brandColorBorder[brandTheme] : "border-stone-200"}`}
   >
     <div class="flex flex-1 flex-col justify-center p-2 min-w-0">
       {
@@ -98,7 +102,7 @@ const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
         )
       }
       <div
-        class="line-clamp-2 text-sm font-bold leading-none text-stone-800 md:text-base"
+        class="line-clamp-2 text-sm font-bold leading-tight text-stone-800 md:text-base"
       >
         {
           isExternal && (
@@ -143,10 +147,10 @@ const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
     <div class="max-h-28 w-[30%] flex-shrink-0 md:max-h-36">
       {
         ogpImageUrl && (
-          <figure class="flex h-full justify-end">
+          <figure class="h-full">
             <img
               src={ogpImageUrl}
-              class="h-full w-auto"
+              class="h-full w-full object-cover"
               alt="リンク先カバー画像"
               loading="lazy"
             />

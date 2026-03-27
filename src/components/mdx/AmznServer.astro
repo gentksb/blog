@@ -6,16 +6,13 @@ import {
   createSlackLoggerAdapter
 } from "../../server/adapters/amazonAdapter"
 import { getAmazonProductInfo } from "../../server/services/getAmazonProductInfo"
+import { isValidAsin } from "../../server/domain/validators"
 
 interface Props {
   asin: string
 }
 
 const { asin } = Astro.props
-
-const isValidAsin = (asin: string): boolean => {
-  return /^[A-Z0-9]{10}$/.test(asin)
-}
 
 if (!isValidAsin(asin)) {
   throw new Error("asin must be 10 characters of uppercase letters and numbers")
@@ -25,9 +22,12 @@ const fallbackUrl = `https://www.amazon.co.jp/dp/${asin}`
 
 // Amazon商品情報取得
 let productTitle = "Amazon.co.jp"
-let productDescription = "Amazon商品ページに移動する"
 let productImageUrl: string | undefined = undefined
 let productUrl = fallbackUrl
+let brandName: string | undefined = undefined
+let priceDisplay: string | undefined = undefined
+let savingsPercentage: number | undefined = undefined
+let loyaltyPoints: number | undefined = undefined
 
 try {
   if (
@@ -61,13 +61,27 @@ try {
     const product = data.itemsResult?.items?.[0]
     if (product) {
       productTitle = product.itemInfo?.title?.displayValue ?? "Amazon.co.jp"
-      productDescription =
-        product.itemInfo?.features?.displayValues[0] ??
-        "Amazon商品ページに移動する"
       productImageUrl =
         product.images?.primary?.large?.url ??
         product.images?.primary?.medium?.url
       productUrl = product.detailPageURL ?? fallbackUrl
+
+      // ブランド/著者
+      const byLine = product.itemInfo?.byLineInfo
+      brandName =
+        byLine?.brand?.displayValue ??
+        byLine?.manufacturer?.displayValue ??
+        byLine?.contributors?.[0]?.name
+
+      // 価格（buy-box-winner優先）
+      const listing =
+        product.offersV2?.listings?.find((l) => l.isBuyBoxWinner) ??
+        product.offersV2?.listings?.[0]
+      if (listing) {
+        priceDisplay = listing.price?.money?.displayAmount
+        savingsPercentage = listing.price?.savings?.percentage
+        loyaltyPoints = listing.loyaltyPoints?.points
+      }
     }
   }
 } catch (e) {
@@ -77,21 +91,21 @@ try {
 
 <a
   href={productUrl}
-  class="hover:underline"
+  class="no-underline hover:opacity-90"
   target="_blank"
   rel="noopener noreferrer"
 >
   <div
-    class="not-prose relative mx-2 mt-2 flex overflow-hidden rounded-lg border border-amazon border-3 bg-white shadow-xs"
+    class="not-prose relative my-4 flex overflow-hidden rounded-lg border border-amazon border-3 bg-white shadow-xs"
   >
-    <div class="flex max-w-[70%] flex-col justify-center p-2">
+    <div class="flex min-w-0 flex-1 flex-col justify-center p-2">
       <div
         class="absolute right-0 top-0 bg-amazon rounded-bl px-2 py-1 text-xs text-white"
       >
         Amazon
       </div>
       <div
-        class="line-clamp-2 text-sm font-bold leading-none text-stone-800 md:text-base"
+        class="line-clamp-2 text-sm font-bold leading-tight text-stone-800 md:text-base"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -107,11 +121,30 @@ try {
         >
         {productTitle}
       </div>
-      <div
-        class="mt-1 line-clamp-2 max-h-[3em] text-xs font-normal text-secondary md:text-sm"
-      >
-        {productDescription}
-      </div>
+      {
+        brandName && (
+          <div class="mt-0.5 truncate text-xs text-secondary">{brandName}</div>
+        )
+      }
+      {
+        priceDisplay && (
+          <div class="mt-1 flex flex-wrap items-baseline gap-x-2">
+            <span class="text-sm font-bold text-stone-800 md:text-base">
+              {priceDisplay}
+            </span>
+            {savingsPercentage && (
+              <span class="text-xs text-error font-medium">
+                {savingsPercentage}%OFF
+              </span>
+            )}
+            {loyaltyPoints && (
+              <span class="text-xs text-primary font-medium">
+                +{loyaltyPoints}pt
+              </span>
+            )}
+          </div>
+        )
+      }
       <div class="mt-1 text-xs text-secondary md:text-sm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -128,13 +161,13 @@ try {
         Amazon.co.jp
       </div>
     </div>
-    <div class="max-h-28 max-w-[30%] shrink md:max-h-36">
+    <div class="flex w-[25%] shrink-0 items-center justify-center p-2">
       {
         productImageUrl && (
-          <figure class="size-full object-contain">
+          <figure class="flex items-center justify-center">
             <img
               src={productImageUrl}
-              class="h-full"
+              class="max-h-24 w-auto object-contain md:max-h-32"
               alt="Amazon商品画像"
               loading="lazy"
             />

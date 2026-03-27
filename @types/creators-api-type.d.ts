@@ -36,11 +36,37 @@ export interface CreatorsApiItem {
       label: string
       locale: string
     }
-    byLineInfo?: Record<string, unknown>
+    byLineInfo?: {
+      brand?: { displayValue: string; label: string; locale: string }
+      manufacturer?: { displayValue: string; label: string; locale: string }
+      contributors?: Array<{
+        name: string
+        role: string
+        roleType: string
+        locale: string
+      }>
+    }
     classifications?: Record<string, unknown>
     contentInfo?: Record<string, unknown>
     productInfo?: Record<string, unknown>
     technicalInfo?: Record<string, unknown>
+  }
+  offersV2?: {
+    listings?: Array<{
+      isBuyBoxWinner?: boolean
+      loyaltyPoints?: { points: number }
+      price?: {
+        money?: {
+          amount: number
+          currency: string
+          displayAmount: string
+        }
+        savings?: {
+          money?: { displayAmount: string }
+          percentage?: number
+        }
+      }
+    }>
   }
   parentASIN?: string
 }

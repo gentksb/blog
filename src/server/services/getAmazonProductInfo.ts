@@ -35,11 +35,37 @@ export interface CreatorsApiItem {
       label: string
       locale: string
     }
-    byLineInfo?: Record<string, unknown>
+    byLineInfo?: {
+      brand?: { displayValue: string; label: string; locale: string }
+      manufacturer?: { displayValue: string; label: string; locale: string }
+      contributors?: Array<{
+        name: string
+        role: string
+        roleType: string
+        locale: string
+      }>
+    }
     classifications?: Record<string, unknown>
     contentInfo?: Record<string, unknown>
     productInfo?: Record<string, unknown>
     technicalInfo?: Record<string, unknown>
+  }
+  offersV2?: {
+    listings?: Array<{
+      isBuyBoxWinner?: boolean
+      loyaltyPoints?: { points: number }
+      price?: {
+        money?: {
+          amount: number
+          currency: string
+          displayAmount: string
+        }
+        savings?: {
+          money?: { displayAmount: string }
+          percentage?: number
+        }
+      }
+    }>
   }
   parentASIN?: string
 }
@@ -147,8 +173,12 @@ export const getAmazonProductInfo = async (
     resources: [
       "images.primary.medium",
       "images.primary.large",
+      "itemInfo.byLineInfo",
       "itemInfo.features",
-      "itemInfo.title"
+      "itemInfo.title",
+      "offersV2.listings.price",
+      "offersV2.listings.isBuyBoxWinner",
+      "offersV2.listings.loyaltyPoints"
     ],
     condition: "New",
     marketplace: config.marketplace,
