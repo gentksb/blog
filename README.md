@@ -31,17 +31,7 @@ wrangler deploy
 
 ### Environment Variables
 
-```bash
-CREATORS_CREDENTIAL_ID=your-creators-credential-id
-CREATORS_CREDENTIAL_SECRET=your-creators-credential-secret
-PARTNER_TAG=your-amazon-associate-tag
-SLACK_WEBHOOK_URL=your-slack-webhook-url
-```
-
-- **CREATORS_CREDENTIAL_ID**: Amazon Creators API Credential ID
-- **CREATORS_CREDENTIAL_SECRET**: Amazon Creators API Credential Secret
-- **PARTNER_TAG**: Amazon Associate Partner Tag
-- **SLACK_WEBHOOK_URL**: Slack webhook URL for error logging
+See `wrangler.jsonc` (`secrets.required`) for the canonical list of required secrets.
 
 ## Operation
 

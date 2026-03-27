@@ -26,6 +26,16 @@
       "preview_id": "701470abdcbd43ae9c3d7a586684acf4"
     }
   ],
+  // Required secrets — set these via `wrangler secret put <NAME>` (production)
+  // or in `.dev.vars` (local development).
+  "secrets": {
+    "required": [
+      "CREATORS_CREDENTIAL_ID", // Amazon Creators API Credential ID
+      "CREATORS_CREDENTIAL_SECRET", // Amazon Creators API Credential Secret
+      "PARTNER_TAG", // Amazon Associate Partner Tag
+      "SLACK_WEBHOOK_URL" // Slack webhook URL for error logging
+    ]
+  },
   "observability": {
     "logs": {
       "enabled": true,
