@@ -50,6 +50,7 @@ export interface AmazonAdapter {
  * 注入された依存関係を持つAmazonアダプターを作成
  * @param deps - キャッシュ、設定、ロガー、KVを含む依存関係
  * @returns Amazonアダプターインスタンス
+ * @public
  */
 export const createAmazonAdapter = (deps: {
   cache: CacheAdapter

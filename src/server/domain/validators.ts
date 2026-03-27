@@ -138,7 +138,7 @@ export const isValidSecFetchMode = (secFetchMode: string | null): boolean => {
  * @param request - HTTPリクエストオブジェクト
  * @returns リクエストが許可される場合はtrue
  */
-export const isSecurityHeadersValid = (request: Request): boolean => {
+const isSecurityHeadersValid = (request: Request): boolean => {
   const headers = request.headers
   const secFetchSite = headers.get("sec-fetch-site")
   const secFetchMode = headers.get("sec-fetch-mode")
