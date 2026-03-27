@@ -5,7 +5,6 @@ import {
   createKVCacheAdapter,
   createSlackLoggerAdapter
 } from "../../server/adapters/amazonAdapter"
-import { getAmazonProductInfo } from "../../server/services/getAmazonProductInfo"
 import { isValidAsin } from "../../server/domain/validators"
 
 interface Props {
@@ -20,14 +19,13 @@ if (!isValidAsin(asin)) {
 
 const fallbackUrl = `https://www.amazon.co.jp/dp/${asin}`
 
-// Amazon商品情報取得
 let productTitle = "Amazon.co.jp"
-let productImageUrl: string | undefined = undefined
+let productImageUrl: string | undefined
 let productUrl = fallbackUrl
-let brandName: string | undefined = undefined
-let priceDisplay: string | undefined = undefined
-let savingsPercentage: number | undefined = undefined
-let loyaltyPoints: number | undefined = undefined
+let brandName: string | undefined
+let priceDisplay: string | undefined
+let savingsPercentage: number | undefined
+let loyaltyPoints: number | undefined
 
 try {
   if (
@@ -66,14 +64,12 @@ try {
         product.images?.primary?.medium?.url
       productUrl = product.detailPageURL ?? fallbackUrl
 
-      // ブランド/著者
       const byLine = product.itemInfo?.byLineInfo
       brandName =
         byLine?.brand?.displayValue ??
         byLine?.manufacturer?.displayValue ??
         byLine?.contributors?.[0]?.name
 
-      // 価格（buy-box-winner優先）
       const listing =
         product.offersV2?.listings?.find((l) => l.isBuyBoxWinner) ??
         product.offersV2?.listings?.[0]

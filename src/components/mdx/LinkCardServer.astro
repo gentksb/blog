@@ -74,11 +74,11 @@ try {
   console.error(`LinkCard OGP fetch failed for ${url}:`, e)
 }
 
-if (!ogpSiteName) {
-  ogpSiteName = new URL(url).hostname.replace(/^www\./, "")
-}
-
 const parsedTargetUrl = new URL(targetUrl)
+if (!ogpSiteName) {
+  const parsedSourceUrl = linkUrl ? new URL(url) : parsedTargetUrl
+  ogpSiteName = parsedSourceUrl.hostname.replace(/^www\./, "")
+}
 const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
 ---
 
