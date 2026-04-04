@@ -1,5 +1,6 @@
 ---
 import type { FeaturedGroup } from "~/config"
+import { slugFromId } from "@lib/postSlug"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
 import BlogPostCard from "./BlogPostCard.astro"
 
@@ -9,7 +10,7 @@ const { title, description, slugs } = Astro.props
 
 const posts = slugs
   .map((slug) => {
-    const found = timeOrderPosts.find((p) => p.slug === slug)
+    const found = timeOrderPosts.find((p) => slugFromId(p.id) === slug)
     if (!found) console.warn(`[FeaturedSection] slug not found: ${slug}`)
     return found
   })

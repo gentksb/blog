@@ -3,11 +3,11 @@ import { expect, test, vi } from "vitest"
 import {
   createKVCacheAdapter,
   createSlackLoggerAdapter
-} from "../../functions/src/adapters/amazonAdapter"
+} from "../../src/server/adapters/amazonAdapter"
 import { createMockAmazonResponse } from "../helpers/mockData"
 
 // Mock external dependencies only for Slack logger
-vi.mock("../../functions/src/services/postLogToSlack", () => ({
+vi.mock("../../src/server/services/postLogToSlack", () => ({
   postLogToSlack: vi.fn().mockResolvedValue(undefined)
 }))
 

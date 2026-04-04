@@ -4,7 +4,7 @@
 
 - KV は preview_id（本番KVとは分離）を使用
 - `WORKERS_CI_BRANCH` でブランチ名判定、`WORKERS_CI=1` で環境識別
-- master ブランチ以外では本番 Cloudflare Image Service は無効化される（astro.config.ts の設定）
+- Cloudflare Image Service は本番・プレビュー問わず常に有効（`imageService: "cloudflare"` を常時設定）
 
 ## OGP キャッシュ陳腐化
 

@@ -1,49 +1,33 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content"
-import mdxRenderer from "@astrojs/mdx/server.js"
-import reactRenderer from "@astrojs/react/server.js"
+export const prerender = true
+import { type CollectionEntry, getCollection, render } from "astro:content"
+import MdxA from "@components/mdx/MdxA.astro"
+import MdxBlockQuote from "@components/mdx/MdxBlockQuote.astro"
+import MdxH2 from "@components/mdx/MdxH2.astro"
+import MdxH3 from "@components/mdx/MdxH3.astro"
+import MdxH4 from "@components/mdx/MdxH4.astro"
 import MdxPicture from "@components/mdx/MdxPicture.astro"
-import {
-  MdxA,
-  MdxBlockQuote,
-  MdxH2,
-  MdxH3,
-  MdxH4,
-  MdxParagraph,
-  MdxStrong,
-  MdxTable
-} from "@components/mdx/mdxReplacer"
+import MdxStrong from "@components/mdx/MdxStrong.astro"
+import MdxTable from "@components/mdx/MdxTable.astro"
 import BlogPost from "@layouts/BlogPost.astro"
+import { extractDescription } from "@lib/extractDescription"
+import { slugFromId } from "@lib/postSlug"
 import type { GetStaticPaths } from "astro"
-// descriptionレンダリング用
-import { experimental_AstroContainer as AstroContainer } from "astro/container"
-import sanitizeHtml from "sanitize-html"
-
-const container = await AstroContainer.create()
-container.addServerRenderer({ name: "mdx", renderer: mdxRenderer })
-container.addServerRenderer({ name: "react", renderer: reactRenderer })
-container.addClientRenderer({
-  name: "@astrojs/react",
-  entrypoint: "@astrojs/react/client.js"
-})
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getCollection("post")
   return posts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: slugFromId(post.id) },
     props: post
   }))
 }
 type Props = CollectionEntry<"post">
 
 const post = Astro.props
-const { Content, headings } = await post.render()
+const { Content, headings } = await render(post)
 
-// descriptionレンダリング
-const contentString = await container.renderToString(Content)
-const description = sanitizeHtml(contentString, {
-  allowedTags: []
-}).slice(0, 100)
+// post.body から description を抽出（Container APIを使わず）
+const description = extractDescription(post.body ?? "")
 ---
 
 <BlogPost {...post} description={description} headings={headings}>
@@ -52,7 +36,6 @@ const description = sanitizeHtml(contentString, {
       h2: MdxH2,
       h3: MdxH3,
       h4: MdxH4,
-      p: MdxParagraph,
       blockquote: MdxBlockQuote,
       a: MdxA,
       table: MdxTable,

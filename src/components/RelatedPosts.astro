@@ -10,7 +10,7 @@ type Props = {
 const { tags, selfSlug } = Astro.props
 
 const showPosts = timeOrderPosts
-  .filter((post) => post.slug !== selfSlug)
+  .filter((post) => post.id !== selfSlug)
   .map((post) => ({
     post,
     score: post.data.tags.filter((t) => tags.includes(t)).length

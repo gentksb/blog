@@ -6,7 +6,7 @@
 import type {
   CreatorsApiItem,
   CreatorsApiItemsResponse
-} from "../../functions/src/services/getAmazonProductInfo"
+} from "../../src/server/services/getAmazonProductInfo"
 import { vi } from "vitest"
 
 /**
@@ -46,7 +46,29 @@ export const createMockAmazonItem = (
       displayValues: ["Feature 1", "Feature 2"],
       label: "Features",
       locale: "en_US"
+    },
+    byLineInfo: {
+      brand: { displayValue: "Test Brand", label: "Brand", locale: "en_US" }
     }
+  },
+  offersV2: {
+    listings: [
+      {
+        isBuyBoxWinner: true,
+        price: {
+          money: {
+            amount: 3980,
+            currency: "JPY",
+            displayAmount: "¥3,980"
+          },
+          savings: {
+            money: { displayAmount: "¥420" },
+            percentage: 10
+          }
+        },
+        loyaltyPoints: { points: 40 }
+      }
+    ]
   }
 })
 

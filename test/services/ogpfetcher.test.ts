@@ -1,6 +1,6 @@
 import { env } from "cloudflare:test"
 import { expect, test, vi } from "vitest"
-import { getOgpMetaData } from "../../functions/src/services/getOgpMetaData"
+import { getOgpMetaData } from "../../src/server/services/getOgpMetaData"
 import {
   normalLinkDataExpectedResponse,
   normalLinkUrl

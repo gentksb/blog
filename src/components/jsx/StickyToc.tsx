@@ -89,7 +89,7 @@ export default function StickyToc({ headings }: Props) {
             <li key={heading.slug} className={getIndentClass(heading.depth)}>
               <a
                 href={`#${heading.slug}`}
-                className={`block transition-colors focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                className={`block transition-colors focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isActive
                     ? "font-semibold text-primary"
                     : "text-gray-600 hover:text-primary"

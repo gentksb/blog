@@ -17,6 +17,9 @@ paths:
 
 ## ignoreDependencies
 
+- **`tailwindcss`, `@tailwindcss/typography`**:
+  Tailwind v4 では `src/styles/global.css` の `@import "tailwindcss"` と `@plugin "@tailwindcss/typography"` で使用される。CSS ファイル内参照のため knip が検出できない。
+
 - **`textlint-*`**:
   VS Code拡張（vscode-textlint）が直接参照する。scriptsやCIには登場しないがアンインストール不可。
 
