@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["entries"],
+  "properties": {
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "package",
+          "toVersion",
+          "reason",
+          "recheckAfter",
+          "observedAt"
+        ],
+        "properties": {
+          "package": {
+            "type": "string",
+            "description": "npm パッケージ名"
+          },
+          "fromVersion": {
+            "type": "string",
+            "description": "現在インストール済みのバージョン"
+          },
+          "toVersion": {
+            "type": "string",
+            "description": "更新候補バージョン"
+          },
+          "reason": {
+            "type": "string",
+            "enum": [
+              "minimumReleaseAge",
+              "breaking-change-unresolved",
+              "test-failure",
+              "manual-hold"
+            ],
+            "description": "保留理由"
+          },
+          "recheckAfter": {
+            "type": "string",
+            "format": "date-time",
+            "description": "この日時以降に再チェックする（ISO 8601 UTC）"
+          },
+          "observedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "この候補を最初に検出した日時（ISO 8601 UTC）"
+          },
+          "notes": {
+            "type": "string",
+            "description": "保留理由の詳細メモ"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

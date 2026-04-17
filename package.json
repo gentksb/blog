@@ -20,6 +20,7 @@
     "dev:cf": "pnpm typegen && pnpm run build && wrangler dev --config dist/server/wrangler.json",
     "build": "pnpm typegen && pnpm astro build",
     "test": "pnpm typegen && vitest run",
+    "test:light": "pnpm typegen && mkdir -p dist/client && vitest run test/unit test/domain test/adapters",
     "lint": "prettier --check .",
     "lint:unused": "knip",
     "lint:fix": "prettier --write .",
