@@ -11,10 +11,13 @@ on:
       - "src/lib/**"
       - "test/**"
       - "package.json"
+      - "pnpm-lock.yaml"
       - "tsconfig.json"
       - "vitest.config.ts"
       - "wrangler.jsonc"
       - ".assetsignore"
+      - ".npmrc"
+      - "knip.json"
       - ".github/workflows/**"
   pull_request:
     paths:
@@ -24,10 +27,13 @@ on:
       - "src/lib/**"
       - "test/**"
       - "package.json"
+      - "pnpm-lock.yaml"
       - "tsconfig.json"
       - "vitest.config.ts"
       - "wrangler.jsonc"
       - ".assetsignore"
+      - ".npmrc"
+      - "knip.json"
       - ".github/workflows/**"
 
 jobs:
@@ -58,6 +64,9 @@ jobs:
 
       - name: Run Lint
         run: pnpm run lint
+
+      - name: Run Lint unused (knip)
+        run: pnpm run lint:unused
 
       - name: Create dist directory for tests
         run: mkdir -p dist/client

@@ -42,6 +42,8 @@
       "WebFetch(domain:docs.astro.build)",
       "WebFetch(domain:astro.build)",
       "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:registry.npmjs.org)",
+      "WebFetch(domain:api.github.com)",
       "Bash(gh api:*)",
       "Bash(gh run:*)",
       "Bash(gh pr:*)",
