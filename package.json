@@ -50,7 +50,7 @@
     "@cloudflare/workers-types": "^4.20260404.1",
     "@tailwindcss/vite": "^4.2.2",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
-    "@types/node": "^24.12.2",
+    "@types/node": "^25.6.0",
     "knip": "^6.3.0",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
