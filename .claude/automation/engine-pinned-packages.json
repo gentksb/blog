@@ -1,0 +1,11 @@
+{
+  "$schema": "./engine-pinned-packages.schema.json",
+  "packages": [
+    {
+      "name": "@types/node",
+      "reason": "engines.node と連動",
+      "maxMajor": 24,
+      "linkedTo": "engines.node"
+    }
+  ]
+}
