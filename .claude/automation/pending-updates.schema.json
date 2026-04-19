@@ -33,7 +33,8 @@
               "minimumReleaseAge",
               "breaking-change-unresolved",
               "test-failure",
-              "manual-hold"
+              "manual-hold",
+              "engine-pinned"
             ],
             "description": "保留理由"
           },

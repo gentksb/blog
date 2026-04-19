@@ -1,0 +1,75 @@
+name: Relock deps PRs
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - pnpm-lock.yaml
+      - package.json
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  list-prs:
+    runs-on: ubuntu-latest
+    outputs:
+      prs: ${{ steps.list.outputs.prs }}
+    steps:
+      - uses: actions/checkout@v6
+      - id: list
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          prs=$(gh pr list --state open --search "head:deps/" \
+            --json number,headRefName --limit 20)
+          echo "prs=$prs" >> "$GITHUB_OUTPUT"
+
+  relock:
+    needs: list-prs
+    if: ${{ needs.list-prs.outputs.prs != '[]' }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        pr: ${{ fromJson(needs.list-prs.outputs.prs) }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ matrix.pr.headRefName }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: pnpm/action-setup@v5
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Merge master
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          if ! git merge origin/master --no-edit; then
+            git checkout --theirs pnpm-lock.yaml
+            git add pnpm-lock.yaml
+            git commit --no-edit
+          fi
+
+      - name: Regenerate lockfile
+        run: pnpm install --lockfile-only
+
+      - name: Commit and push
+        run: |
+          if ! git diff --quiet pnpm-lock.yaml; then
+            git add pnpm-lock.yaml
+            git commit -m "chore: relock after master merge [skip ci]"
+          fi
+          git push origin HEAD:${{ matrix.pr.headRefName }}

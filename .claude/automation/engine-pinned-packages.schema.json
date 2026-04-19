@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["packages"],
+  "properties": {
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "maxMajor", "reason"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "npm パッケージ名"
+          },
+          "maxMajor": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "許容する最大 major バージョン（これを超える major 更新は PR を作らず pending に積む）"
+          },
+          "reason": {
+            "type": "string",
+            "description": "major 固定の理由"
+          },
+          "linkedTo": {
+            "type": "string",
+            "description": "連動している engine/runtime の名前（例: engines.node）"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
