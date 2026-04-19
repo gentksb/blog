@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@astrojs/cloudflare':
-        specifier: ^13.1.7
-        version: 13.1.7(@types/node@24.12.2)(astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)(workerd@1.20260401.1)(wrangler@4.80.0(@cloudflare/workers-types@4.20260404.1))(yaml@2.8.3)
+        specifier: ^13.1.10
+        version: 13.1.10(@types/node@24.12.2)(astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)(workerd@1.20260401.1)(wrangler@4.80.0(@cloudflare/workers-types@4.20260404.1))(yaml@2.8.3)
       '@astrojs/mdx':
         specifier: ^5.0.3
-        version: 5.0.3(astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))
+        version: 5.0.3(astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))
       '@astrojs/react':
-        specifier: ^5.0.2
-        version: 5.0.2(@types/node@24.12.2)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tsx@4.21.0)(yaml@2.8.3)
+        specifier: ^5.0.3
+        version: 5.0.3(@types/node@24.12.2)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tsx@4.21.0)(yaml@2.8.3)
       '@astrojs/rss':
         specifier: ^4.0.18
         version: 4.0.18
@@ -39,14 +39,14 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.14)
       astro:
-        specifier: ^6.1.3
-        version: 6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
+        specifier: ^6.1.8
+        version: 6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
       astro-auto-import:
         specifier: ^0.5.1
-        version: 0.5.1(astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))
+        version: 0.5.1(astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))
       astro-pagefind:
         specifier: ^1.8.6
-        version: 1.8.6(astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))
+        version: 1.8.6(astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))
       date-fns-tz:
         specifier: ^3.2.0
         version: 3.2.0(date-fns@4.1.0)
@@ -141,8 +141,8 @@ importers:
 
 packages:
 
-  '@astrojs/cloudflare@13.1.7':
-    resolution: {integrity: sha512-bNgQ1rwieK4PBchwsRGk0TBXPZ0K+BMn7npn/qBW0LWgo707M5Js5Y7Qrr5Fn/5W6BvHWIcPyjEN/tWLEc//aA==}
+  '@astrojs/cloudflare@13.1.10':
+    resolution: {integrity: sha512-Ogl8p4MifPMHbpHKJL78eqEL+I3wbHrYmo83P/FkKZQ9VzzKi2A1RjnbaiiPAwrA8xQOqIUo4zlN7+Mse0aJAQ==}
     peerDependencies:
       astro: ^6.0.0
       wrangler: ^4.61.1
@@ -169,8 +169,8 @@ packages:
     resolution: {integrity: sha512-nksZQVjlferuWzhPsBpQ1JE5XuKAf1id1/9Hj4a9KG4+ofrlzxUUwX4YGQF/SuDiuiGKEnzopGOt38F3AnVWsQ==}
     engines: {node: '>=22.12.0'}
 
-  '@astrojs/react@5.0.2':
-    resolution: {integrity: sha512-BDpPrapV3Wgp9sD7aTMvP+ORH0jFEue9OmkBu98KcBbTlsQCnvisDW3m7PQrMptXwEDlX5HGfP/CHmkEVY2tZA==}
+  '@astrojs/react@5.0.3':
+    resolution: {integrity: sha512-z6JXjgADH4/7e0hqcRj+dO9UQlrKmsm2ZJoVT1GzOTYY0ThQ3Znpfr8tY8XKlEHWSTUlT9LP5u4v6QpEJwLz5A==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21 || ^19.0.0
@@ -184,8 +184,8 @@ packages:
   '@astrojs/sitemap@3.7.2':
     resolution: {integrity: sha512-PqkzkcZTb5ICiyIR8VoKbIAP/laNRXi5tw616N1Ckk+40oNB8Can1AzVV56lrbC5GKSZFCyJYUVYqVivMisvpA==}
 
-  '@astrojs/telemetry@3.3.0':
-    resolution: {integrity: sha512-UFBgfeldP06qu6khs/yY+q1cDAaArM2/7AEIqQ9Cuvf7B1hNLq0xDrZkct+QoIGyjq56y8IaE2I3CTvG99mlhQ==}
+  '@astrojs/telemetry@3.3.1':
+    resolution: {integrity: sha512-7fcIxXS9J4ls5tr8b3ww9rbAIz2+HrhNJYZdkAhhB4za/I5IZ/60g+Bs8q7zwG0tOIZfNB4JWhVJ1Qkl/OrNCw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
 
   '@astrojs/underscore-redirects@1.0.3':
@@ -1830,8 +1830,8 @@ packages:
     peerDependencies:
       astro: ^2.0.4 || ^3 || ^4 || ^5 || ^6
 
-  astro@6.1.3:
-    resolution: {integrity: sha512-FUKbBYOdYYrRNZwDd9I5CVSfR6Nj9aZeNzcjcvh1FgHwR0uXawkYFR3HiGxmdmAB2m8fs0iIkDdsiUfwGeO8qA==}
+  astro@6.1.8:
+    resolution: {integrity: sha512-6fT9M12U3fpi13DiPavNKDIoBflASTSxmKTEe+zXhWtlebQuOqfOnIrMWyRmlXp+mgDsojmw+fVFG9LUTzKSog==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2526,6 +2526,9 @@ packages:
   get-tsconfig@4.13.7:
     resolution: {integrity: sha512-7tN6rFgBlMgpBML5j8typ92BKFi2sFQvIdpAqLA2beia5avZDrMs0FLZiM5etShWq5irVyGcGMEA1jcDaK7A/Q==}
 
+  get-tsconfig@4.14.0:
+    resolution: {integrity: sha512-yTb+8DXzDREzgvYmh6s9vHsSVCHeC0G3PI5bEXNBHtmshPnO+S5O7qgLEOn0I5QvMy6kpZN8K1NKGyilLb93wA==}
+
   github-slugger@2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
 
@@ -2764,6 +2767,11 @@ packages:
   is-docker@3.0.0:
     resolution: {integrity: sha512-eljcgEDlEns/7AXFosB5K/2nCM4P7FQPkGc/DWLy5rmFEWvZayGrik1d9/QIY5nJ4f9YsVvBkA6kJpHn9rISdQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    hasBin: true
+
+  is-docker@4.0.0:
+    resolution: {integrity: sha512-LHE+wROyG/Y/0ZnbktRCoTix2c1RhgWaZraMZ8o1Q7zCh0VSrICJQO5oqIIISrcSBtrXv0o233w1IYwsWCjTzA==}
+    engines: {node: '>=20'}
     hasBin: true
 
   is-extendable@1.0.1:
@@ -4778,12 +4786,12 @@ packages:
 
 snapshots:
 
-  '@astrojs/cloudflare@13.1.7(@types/node@24.12.2)(astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)(workerd@1.20260401.1)(wrangler@4.80.0(@cloudflare/workers-types@4.20260404.1))(yaml@2.8.3)':
+  '@astrojs/cloudflare@13.1.10(@types/node@24.12.2)(astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)(workerd@1.20260401.1)(wrangler@4.80.0(@cloudflare/workers-types@4.20260404.1))(yaml@2.8.3)':
     dependencies:
       '@astrojs/internal-helpers': 0.8.0
       '@astrojs/underscore-redirects': 1.0.3
       '@cloudflare/vite-plugin': 1.31.0(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.3))(workerd@1.20260401.1)(wrangler@4.80.0(@cloudflare/workers-types@4.20260404.1))
-      astro: 6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
+      astro: 6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
       piccolore: 0.1.3
       tinyglobby: 0.2.15
       vite: 7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.8.3)
@@ -4838,12 +4846,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@5.0.3(astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))':
+  '@astrojs/mdx@5.0.3(astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3))':
     dependencies:
       '@astrojs/markdown-remark': 7.1.0
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
-      astro: 6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
+      astro: 6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
       es-module-lexer: 2.0.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -4861,7 +4869,7 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@5.0.2(@types/node@24.12.2)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tsx@4.21.0)(yaml@2.8.3)':
+  '@astrojs/react@5.0.3(@types/node@24.12.2)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tsx@4.21.0)(yaml@2.8.3)':
     dependencies:
       '@astrojs/internal-helpers': 0.8.0
       '@types/react': 19.2.14
@@ -4898,17 +4906,14 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.3.6
 
-  '@astrojs/telemetry@3.3.0':
+  '@astrojs/telemetry@3.3.1':
     dependencies:
       ci-info: 4.4.0
-      debug: 4.4.3
       dlv: 1.1.3
       dset: 3.1.4
-      is-docker: 3.0.0
+      is-docker: 4.0.0
       is-wsl: 3.1.1
       which-pm-runs: 1.1.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@astrojs/underscore-redirects@1.0.3': {}
 
@@ -6354,24 +6359,24 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-auto-import@0.5.1(astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)):
+  astro-auto-import@0.5.1(astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)):
     dependencies:
       acorn: 8.16.0
-      astro: 6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
+      astro: 6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
 
-  astro-pagefind@1.8.6(astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)):
+  astro-pagefind@1.8.6(astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)):
     dependencies:
       '@pagefind/default-ui': 1.4.0
-      astro: 6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
+      astro: 6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3)
       pagefind: 1.4.0
       sirv: 3.0.2
 
-  astro@6.1.3(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3):
+  astro@6.1.8(@types/node@24.12.2)(aws4fetch@1.0.20)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(tsx@4.21.0)(typescript@6.0.2)(yaml@2.8.3):
     dependencies:
       '@astrojs/compiler': 3.0.1
       '@astrojs/internal-helpers': 0.8.0
       '@astrojs/markdown-remark': 7.1.0
-      '@astrojs/telemetry': 3.3.0
+      '@astrojs/telemetry': 3.3.1
       '@capsizecss/unpack': 4.0.0
       '@clack/prompts': 1.2.0
       '@oslojs/encoding': 1.1.0
@@ -6384,7 +6389,6 @@ snapshots:
       cookie: 1.1.1
       devalue: 5.6.4
       diff: 8.0.4
-      dlv: 1.1.3
       dset: 3.1.4
       es-module-lexer: 2.0.0
       esbuild: 0.27.7
@@ -7241,6 +7245,11 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
+  get-tsconfig@4.14.0:
+    dependencies:
+      resolve-pkg-maps: 1.0.0
+    optional: true
+
   github-slugger@2.0.0: {}
 
   glob-parent@5.1.2:
@@ -7577,6 +7586,8 @@ snapshots:
       is-data-descriptor: 1.0.1
 
   is-docker@3.0.0: {}
+
+  is-docker@4.0.0: {}
 
   is-extendable@1.0.1:
     dependencies:
@@ -9659,7 +9670,7 @@ snapshots:
   tsx@4.21.0:
     dependencies:
       esbuild: 0.27.7
-      get-tsconfig: 4.13.7
+      get-tsconfig: 4.14.0
     optionalDependencies:
       fsevents: 2.3.3
     optional: true
