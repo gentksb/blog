@@ -64,11 +64,10 @@ Claude Code Web サンドボックスでは常に `pnpm test:light` を使用す
 
 `.claude/automation/dependency-update.md` に定義した手順を Claude Code Web の scheduled agent（週次 月曜 09:00 JST）が実行。
 
-- **グルーピング方針**: dev minor/patch / prod minor/patch / astro-ecosystem / cloudflare / textlint は各 1 PR にまとめ、メジャー更新のみ個別 PR
-- **自動マージ**: 既存 `gr2m/merge-schedule-action` を利用。PR 本文の `/schedule` で制御（メジャーは手動マージ）
+- **単一PR方針**: 全安全な更新を 1 ブランチ・1 PR（`deps/update-YYYYMMDD`）にまとめる。patch/minor はフェーズ1で一括、major は調査後フェーズ2で個別適用
+- **自動マージ**: 既存 `gr2m/merge-schedule-action` を利用。major なし → 次の月曜 22:00 UTC 自動マージ、major あり → 手動マージ
 - **待機中の更新**: `.claude/automation/pending-updates.json` に記録し、次回セッションで参照
 - **engine 連動ピン**: `.claude/automation/engine-pinned-packages.json` で宣言したパッケージ（現在 `@types/node` → `maxMajor: 24`）は major PR を作らず pending に積む。Node.js を 25 以上に上げる際はこのファイルの `maxMajor` を手動更新する
-- **lockfile conflict 緩和**: `relock-deps-prs.yml` が master push 時に open な `deps/*` PR を自動で `pnpm install --lockfile-only` して push する
 
 ## Project Level MCP Server
 
