@@ -1,4 +1,13 @@
 {
   "$schema": "./pending-updates.schema.json",
-  "entries": []
+  "entries": [
+    {
+      "name": "@types/node",
+      "current": "24.12.2",
+      "latest": "25.6.0",
+      "reason": "engine-pinned",
+      "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。",
+      "recheckAfter": "2099-01-01T00:00:00Z"
+    }
+  ]
 }
