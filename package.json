@@ -27,17 +27,17 @@
     "typegen": "pnpm wrangler types"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.2.2",
+    "@astrojs/cloudflare": "^13.3.0",
     "@astrojs/mdx": "^5.0.4",
     "@astrojs/react": "^5.0.4",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
     "@braintree/sanitize-url": "^7.1.2",
-    "@cf-wasm/og": "^0.3.7",
+    "@cf-wasm/og": "^0.3.8",
     "@tailwindcss/typography": "^0.5.19",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "astro": "^6.1.10",
+    "astro": "^6.2.1",
     "astro-auto-import": "^0.5.1",
     "astro-pagefind": "^1.8.6",
     "date-fns-tz": "^3.2.0",
@@ -46,15 +46,15 @@
     "react-dom": "^19.2.5"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.14.9",
-    "@cloudflare/workers-types": "^4.20260430.1",
+    "@cloudflare/vitest-pool-workers": "^0.15.2",
+    "@cloudflare/workers-types": "^4.20260503.1",
     "@tailwindcss/vite": "^4.2.4",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^24.12.2",
-    "knip": "^6.9.0",
+    "knip": "^6.11.0",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.4",
+    "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4.2.4",
     "textlint": "^15.6.0",
     "textlint-rule-ja-no-abusage": "^3.0.0",
@@ -70,6 +70,6 @@
     "textlint-rule-preset-jtf-style": "^3.0.3",
     "typescript": "^6.0.3",
     "vitest": "^4.1.5",
-    "wrangler": "^4.86.0"
+    "wrangler": "^4.87.0"
   }
 }
