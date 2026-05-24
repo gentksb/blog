@@ -35,9 +35,9 @@
     "@braintree/sanitize-url": "^7.1.2",
     "@cf-wasm/og": "^0.3.8",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/react": "^19.2.14",
+    "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
-    "astro": "^6.3.3",
+    "astro": "^6.3.7",
     "astro-auto-import": "^0.5.1",
     "astro-pagefind": "^2.0.0",
     "date-fns-tz": "^3.2.0",
@@ -46,17 +46,17 @@
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.16.6",
-    "@cloudflare/workers-types": "^4.20260517.1",
+    "@cloudflare/vitest-pool-workers": "^0.16.9",
+    "@cloudflare/workers-types": "^4.20260524.1",
     "@tailwindcss/vite": "^4.3.0",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^24.12.3",
-    "knip": "^6.14.1",
+    "knip": "^6.14.2",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4.3.0",
-    "textlint": "^15.7.0",
+    "textlint": "^15.7.1",
     "textlint-rule-ja-no-abusage": "^3.0.0",
     "textlint-rule-ja-no-redundant-expression": "^4.0.1",
     "textlint-rule-no-doubled-conjunction": "^3.0.0",
@@ -69,7 +69,7 @@
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^3.0.3",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.6",
-    "wrangler": "^4.92.0"
+    "vitest": "^4.1.7",
+    "wrangler": "^4.94.0"
   }
 }
