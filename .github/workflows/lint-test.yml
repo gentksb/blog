@@ -16,7 +16,7 @@ on:
       - "vitest.config.ts"
       - "wrangler.jsonc"
       - ".assetsignore"
-      - ".npmrc"
+      - "pnpm-workspace.yaml"
       - "knip.json"
       - ".github/workflows/**"
   pull_request:
@@ -32,7 +32,7 @@ on:
       - "vitest.config.ts"
       - "wrangler.jsonc"
       - ".assetsignore"
-      - ".npmrc"
+      - "pnpm-workspace.yaml"
       - "knip.json"
       - ".github/workflows/**"
 
