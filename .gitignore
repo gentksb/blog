@@ -34,8 +34,8 @@ kv.json
 
 # playwright-cli 一時ファイル
 .playwright-cli/
-*.png
-*.webm
+.playwright-cli/*.png
+.playwright-cli/*.webm
 
 # playwright
 test-results/
