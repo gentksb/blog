@@ -2,17 +2,9 @@
   "$schema": "./pending-updates.schema.json",
   "entries": [
     {
-      "name": "@astrojs/cloudflare",
-      "current": "13.3.0",
-      "latest": "13.5.0",
-      "reason": "test-failure",
-      "notes": "@astrojs/cloudflare@13.5.0 の wrangler.js で configCustomizer が既存 KV bindings 全体を返すよう変更され、@cloudflare/vite-plugin の defu マージで prerender wrangler.json に OGP_DATASTORE/PAAPI_DATASTORE が重複。wrangler@4.90.0 の重複バインディング検証で build 失敗。upstream 修正を待って再試行。",
-      "recheckAfter": "2026-06-01T00:00:00Z"
-    },
-    {
       "name": "@types/node",
-      "current": "24.12.2",
-      "latest": "25.6.0",
+      "current": "24.13.1",
+      "latest": "25.9.2",
       "reason": "engine-pinned",
       "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。",
       "recheckAfter": "2099-01-01T00:00:00Z"
