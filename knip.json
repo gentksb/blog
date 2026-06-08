@@ -1,6 +1,10 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
-  "entry": ["src/pages/**/*.{astro,ts,tsx}", "src/layouts/**/*.astro"],
+  "entry": [
+    "src/pages/**/*.{astro,ts,tsx}",
+    "src/layouts/**/*.astro",
+    "src/server/**/*.{ts,tsx}"
+  ],
   "project": ["src/**/*.{ts,tsx,astro}"],
   "ignore": ["src/content/**", "**/*.d.ts", "dist/**", "node_modules/**"],
   "ignoreFiles": [

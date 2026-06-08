@@ -12,7 +12,7 @@
       "@lib/*": ["./src/lib/*"],
       "@images/*": ["./src/images/*"],
       "~/*": ["./src/*"],
-      "@type/*": ["@types/*"]
+      "@type/*": ["./@types/*"]
     },
     "types": ["@cloudflare/vitest-pool-workers"]
   }
