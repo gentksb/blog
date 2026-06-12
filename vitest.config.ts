@@ -7,7 +7,7 @@ import * as path from "path"
 export default defineConfig({
   plugins: [
     cloudflareTest({
-      wrangler: { configPath: "./wrangler.jsonc" },
+      wrangler: { configPath: "./wrangler.test.jsonc" },
       miniflare: {
         compatibilityDate: "2024-05-13",
         compatibilityFlags: ["nodejs_compat_v2"]

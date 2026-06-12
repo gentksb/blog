@@ -7,6 +7,7 @@ interface Props {
   image?: string
   publishedDate?: string
   twitterImage?: string
+  markdownUrl?: string
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
@@ -16,7 +17,8 @@ const {
   description = "AJOCC ME1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです",
   image = "/image/logo.jpg",
   publishedDate,
-  twitterImage
+  twitterImage,
+  markdownUrl
 } = Astro.props
 const isPostPage = Astro.url.pathname.includes("/post/")
 const ogType = isPostPage ? "article" : "website"
@@ -76,6 +78,13 @@ const jsonLd = {
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={twitterImageUrl ?? metaImageUrl} />
+
+<!-- Markdown alternate (AIエージェント向け) -->
+{
+  markdownUrl && (
+    <link rel="alternate" type="text/markdown" href={markdownUrl} />
+  )
+}
 
 <!-- JSON-LD -->
 <script
