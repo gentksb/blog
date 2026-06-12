@@ -12,6 +12,7 @@ import MdxTable from "@components/mdx/MdxTable.astro"
 import BlogPost from "@layouts/BlogPost.astro"
 import { extractDescription } from "@lib/extractDescription"
 import { slugFromId } from "@lib/postSlug"
+import { SITE_URL } from "~/consts"
 import type { GetStaticPaths } from "astro"
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -28,9 +29,15 @@ const { Content, headings } = await render(post)
 
 // post.body から description を抽出（Container APIを使わず）
 const description = extractDescription(post.body ?? "")
+const markdownUrl = `${SITE_URL}post/${slugFromId(post.id)}.md`
 ---
 
-<BlogPost {...post} description={description} headings={headings}>
+<BlogPost
+  {...post}
+  description={description}
+  headings={headings}
+  markdownUrl={markdownUrl}
+>
   <Content
     components={{
       h2: MdxH2,

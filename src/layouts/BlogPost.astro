@@ -14,10 +14,11 @@ import Layout from "./Layout.astro"
 type Props = CollectionEntry<"post"> & {
   description: string
   headings: MarkdownHeading[]
+  markdownUrl?: string
 }
 
 const { title, date, cover, tags } = Astro.props.data
-const { id, description, headings } = Astro.props
+const { id, description, headings, markdownUrl } = Astro.props
 // cloudflare上ではタイムゾーンが日本時間になる保証がないため、明示的に指定する
 const publishedDate = formatInTimeZone(date, "Asia/Tokyo", "yyyy-MM-dd")
 const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
@@ -34,6 +35,7 @@ const ogpStaticImage = cover
   image={ogpStaticImage?.rawOptions.src.src ?? ogpStaticImage?.src}
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
+  markdownUrl={markdownUrl}
 >
   <!-- デスクトップビューで2カラムレイアウト -->
   <div class="flex gap-8">
