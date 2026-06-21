@@ -2,12 +2,22 @@
   "$schema": "./pending-updates.schema.json",
   "entries": [
     {
-      "name": "@types/node",
-      "current": "24.13.2",
-      "latest": "25.9.3",
+      "package": "@types/node",
+      "fromVersion": "24.13.2",
+      "toVersion": "26.0.0",
       "reason": "engine-pinned",
-      "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。",
-      "recheckAfter": "2099-01-01T00:00:00Z"
+      "recheckAfter": "2099-01-01T00:00:00Z",
+      "observedAt": "2026-06-21T18:44:01Z",
+      "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。"
+    },
+    {
+      "package": "wrangler",
+      "fromVersion": "4.100.0",
+      "toVersion": "4.103.0",
+      "reason": "test-failure",
+      "recheckAfter": "2026-06-28T00:00:00Z",
+      "observedAt": "2026-06-21T18:44:01Z",
+      "notes": "wrangler 4.103.0 は @cloudflare/vite-plugin@1.42.1（新しい vite ツールチェーン）を要求し、knip の tsconfig path alias 解決（@components/*, ~/* など）が壊れて pnpm lint:unused が失敗する。wrangler を除外すると全ゲート通過。knip / @cloudflare/vite-plugin の対応版が出るまで保留。"
     }
   ]
 }
