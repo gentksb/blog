@@ -33,11 +33,11 @@
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
     "@braintree/sanitize-url": "^7.1.2",
-    "@cf-wasm/og": "^0.3.8",
+    "@cf-wasm/og": "^0.4.0",
     "@tailwindcss/typography": "^0.5.20",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "astro": "^6.4.6",
+    "astro": "^6.4.8",
     "astro-auto-import": "^0.5.1",
     "astro-pagefind": "^2.0.0",
     "date-fns-tz": "^3.2.0",
@@ -46,12 +46,12 @@
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.16.15",
-    "@cloudflare/workers-types": "^4.20260613.1",
+    "@cloudflare/vitest-pool-workers": "^0.16.18",
+    "@cloudflare/workers-types": "^4.20260620.1",
     "@tailwindcss/vite": "^4.3.1",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^24.13.2",
-    "knip": "^6.16.1",
+    "knip": "^6.17.1",
     "prettier": "^3.8.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
@@ -69,7 +69,7 @@
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^3.0.3",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.8",
+    "vitest": "^4.1.9",
     "wrangler": "^4.100.0"
   }
 }
