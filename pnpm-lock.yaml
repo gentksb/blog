@@ -27,8 +27,8 @@ importers:
         specifier: ^7.1.2
         version: 7.1.2
       '@cf-wasm/og':
-        specifier: ^0.3.8
-        version: 0.3.8(react@19.2.7)
+        specifier: ^0.4.0
+        version: 0.4.0(react@19.2.7)
       '@tailwindcss/typography':
         specifier: ^0.5.20
         version: 0.5.20(tailwindcss@4.3.1)
@@ -297,11 +297,8 @@ packages:
     resolution: {integrity: sha512-CuNiSqg7+e1cO/GjffyMOm5Tt2jUF9CWHHnvQ/UkqvtkGfHdgwEC0wpmq7fkN3gxwpRnrAN0WzO3vREKmNolMQ==}
     engines: {node: '>=18'}
 
-  '@cf-wasm/internals@0.1.2':
-    resolution: {integrity: sha512-9d/I3JFv1IpQFYOrIw5RQShQPyuZRw9DyeBylF39Uj/MH7my8+EzKDPpUCHiqZ5O7tZS/A6zwP08egpeI5NBhA==}
-
-  '@cf-wasm/og@0.3.8':
-    resolution: {integrity: sha512-Kf5kDUWFNlJJziTSV86X9VHy85K8CAaSPKfKZMCeqLYkY0GRKMl0LKSxeAAXg+102bJFtTeHqbQ2T/3RkixuqA==}
+  '@cf-wasm/og@0.4.0':
+    resolution: {integrity: sha512-w5zhwEdZWGd4CEMqUxgCo4IOsxuaAC9utju2Yc5Lk1OqesxfouIdRDGrRiZBZwf0AJVq4Dg01+SpJV8gVcXn8g==}
 
   '@cf-wasm/resvg@0.3.4':
     resolution: {integrity: sha512-CMgV0ynRszZvTaHif5yPFFW4ibkopIfnaQZnklC5p80neJR/DCAUKGUgOFGhIVD8Biziiu86TFC0IQYRJyfWdw==}
@@ -5228,11 +5225,8 @@ snapshots:
     dependencies:
       fontkitten: 1.0.3
 
-  '@cf-wasm/internals@0.1.2': {}
-
-  '@cf-wasm/og@0.3.8(react@19.2.7)':
+  '@cf-wasm/og@0.4.0(react@19.2.7)':
     dependencies:
-      '@cf-wasm/internals': 0.1.2
       '@cf-wasm/resvg': 0.3.4
       '@cf-wasm/satori': 0.3.6
       '@hedgedoc/html-to-react': 2.1.1(react@19.2.7)

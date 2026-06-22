@@ -33,7 +33,7 @@
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
     "@braintree/sanitize-url": "^7.1.2",
-    "@cf-wasm/og": "^0.3.8",
+    "@cf-wasm/og": "^0.4.0",
     "@tailwindcss/typography": "^0.5.20",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
