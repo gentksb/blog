@@ -1,4 +1,5 @@
 import cloudflare from "@astrojs/cloudflare"
+import { satteri } from "@astrojs/markdown-satteri"
 import mdx from "@astrojs/mdx"
 import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
@@ -6,6 +7,8 @@ import { defineConfig } from "astro/config"
 import AutoImport from "astro-auto-import"
 import pagefind from "astro-pagefind"
 import tailwindcss from "@tailwindcss/vite"
+
+import { directiveComponentPlugin } from "./src/plugins/satteri-directive-components"
 
 // 本番ブランチのみ Cloudflare Image Resizing を使用
 // （プレビュードメインでは cdn-cgi/image が 404 になるため）
@@ -35,6 +38,12 @@ export default defineConfig({
     react(),
     pagefind()
   ],
+  markdown: {
+    processor: satteri({
+      features: { directive: true },
+      mdastPlugins: [directiveComponentPlugin()]
+    })
+  },
   vite: {
     plugins: [tailwindcss()]
   }
