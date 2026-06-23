@@ -44,9 +44,6 @@ importers:
       astro:
         specifier: ^7.0.0
         version: 7.0.0(@astrojs/markdown-remark@7.2.0)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)(aws4fetch@1.0.20)(jiti@2.7.0)(rollup@4.62.0)(tsx@4.21.0)(yaml@2.9.0)
-      astro-auto-import:
-        specifier: ^0.5.1
-        version: 0.5.1(astro@7.0.0(@astrojs/markdown-remark@7.2.0)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)(aws4fetch@1.0.20)(jiti@2.7.0)(rollup@4.62.0)(tsx@4.21.0)(yaml@2.9.0))
       astro-pagefind:
         specifier: ^2.0.0
         version: 2.0.0(astro@7.0.0(@astrojs/markdown-remark@7.2.0)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)(aws4fetch@1.0.20)(jiti@2.7.0)(rollup@4.62.0)(tsx@4.21.0)(yaml@2.9.0))
@@ -2071,12 +2068,6 @@ packages:
   astring@1.9.0:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
-
-  astro-auto-import@0.5.1:
-    resolution: {integrity: sha512-7YZKVA7LE5nLkopOM+KIHqnh6g2CfHrysj2JUXNBrC3FppHH42RSNBM7mgsEgaq2lgHVDt7hsDQIA0JKTwIN8A==}
-    engines: {node: '>=20.0.0'}
-    peerDependencies:
-      astro: ^5.0.0-beta || ^6.0.0-alpha
 
   astro-pagefind@2.0.0:
     resolution: {integrity: sha512-i270YlJ/8aX/eRkvtuAPANSk+WK1uyp9DEj/TuuWem4pA0xBUGQk7agNFdu71nRxtH0j7TZxee2qwQRlrfZa1g==}
@@ -6809,11 +6800,6 @@ snapshots:
   astral-regex@2.0.0: {}
 
   astring@1.9.0: {}
-
-  astro-auto-import@0.5.1(astro@7.0.0(@astrojs/markdown-remark@7.2.0)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)(aws4fetch@1.0.20)(jiti@2.7.0)(rollup@4.62.0)(tsx@4.21.0)(yaml@2.9.0)):
-    dependencies:
-      acorn: 8.17.0
-      astro: 7.0.0(@astrojs/markdown-remark@7.2.0)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)(aws4fetch@1.0.20)(jiti@2.7.0)(rollup@4.62.0)(tsx@4.21.0)(yaml@2.9.0)
 
   astro-pagefind@2.0.0(astro@7.0.0(@astrojs/markdown-remark@7.2.0)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(@types/node@24.13.2)(aws4fetch@1.0.20)(jiti@2.7.0)(rollup@4.62.0)(tsx@4.21.0)(yaml@2.9.0)):
     dependencies:

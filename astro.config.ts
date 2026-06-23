@@ -4,10 +4,10 @@ import mdx from "@astrojs/mdx"
 import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
 import { defineConfig } from "astro/config"
-import AutoImport from "astro-auto-import"
 import pagefind from "astro-pagefind"
 import tailwindcss from "@tailwindcss/vite"
 
+import { mdxAutoImport } from "./src/plugins/mdx-auto-import"
 import { directiveComponentPlugin } from "./src/plugins/satteri-directive-components"
 
 // 本番ブランチのみ Cloudflare Image Resizing を使用
@@ -23,21 +23,7 @@ export default defineConfig({
   adapter: cloudflare({
     imageService
   }),
-  integrations: [
-    AutoImport({
-      imports: [
-        "./src/components/mdx/LinkCard.astro",
-        "./src/components/mdx/Amzn.astro",
-        "./src/components/mdx/SimpleLinkCard.astro",
-        "./src/components/mdx/PositiveBox.astro",
-        "./src/components/mdx/NegativeBox.astro"
-      ]
-    }),
-    mdx(),
-    sitemap(),
-    react(),
-    pagefind()
-  ],
+  integrations: [mdx(), sitemap(), react(), pagefind()],
   markdown: {
     processor: satteri({
       features: { directive: true },
@@ -45,6 +31,15 @@ export default defineConfig({
     })
   },
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [
+      mdxAutoImport([
+        "./src/components/mdx/LinkCard.astro",
+        "./src/components/mdx/Amzn.astro",
+        "./src/components/mdx/SimpleLinkCard.astro",
+        "./src/components/mdx/PositiveBox.astro",
+        "./src/components/mdx/NegativeBox.astro"
+      ]),
+      tailwindcss()
+    ]
   }
 })
