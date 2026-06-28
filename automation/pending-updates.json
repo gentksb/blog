@@ -4,20 +4,47 @@
     {
       "package": "@types/node",
       "fromVersion": "24.13.2",
-      "toVersion": "26.0.0",
+      "toVersion": "26.0.1",
       "reason": "engine-pinned",
       "recheckAfter": "2099-01-01T00:00:00Z",
       "observedAt": "2026-06-21T18:44:01Z",
       "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。"
     },
     {
-      "package": "wrangler",
-      "fromVersion": "4.100.0",
-      "toVersion": "4.103.0",
-      "reason": "test-failure",
-      "recheckAfter": "2026-06-28T00:00:00Z",
-      "observedAt": "2026-06-21T18:44:01Z",
-      "notes": "wrangler 4.103.0 は @cloudflare/vite-plugin@1.42.1（新しい vite ツールチェーン）を要求し、knip の tsconfig path alias 解決（@components/*, ~/* など）が壊れて pnpm lint:unused が失敗する。wrangler を除外すると全ゲート通過。knip / @cloudflare/vite-plugin の対応版が出るまで保留。"
+      "package": "astro",
+      "fromVersion": "6.4.8",
+      "toVersion": "7.0.3",
+      "reason": "breaking-change-unresolved",
+      "recheckAfter": "2026-07-27T00:00:00Z",
+      "observedAt": "2026-06-28T18:32:00Z",
+      "notes": "Astro 7 系メジャー更新。@astrojs/cloudflare / @astrojs/mdx / @astrojs/react と協調したフレームワーク一括更新が必要なため、専用ブランチ feat/astro-7-upgrade で対応中。週次ルーチンからは除外する。"
+    },
+    {
+      "package": "@astrojs/cloudflare",
+      "fromVersion": "13.7.0",
+      "toVersion": "14.0.1",
+      "reason": "breaking-change-unresolved",
+      "recheckAfter": "2026-07-27T00:00:00Z",
+      "observedAt": "2026-06-28T18:32:00Z",
+      "notes": "Astro 7 と連動するメジャー更新。専用ブランチ feat/astro-7-upgrade で astro 本体と合わせて対応する。"
+    },
+    {
+      "package": "@astrojs/mdx",
+      "fromVersion": "6.0.3",
+      "toVersion": "7.0.0",
+      "reason": "breaking-change-unresolved",
+      "recheckAfter": "2026-07-27T00:00:00Z",
+      "observedAt": "2026-06-28T18:32:00Z",
+      "notes": "Astro 7 と連動するメジャー更新。専用ブランチ feat/astro-7-upgrade で astro 本体と合わせて対応する。"
+    },
+    {
+      "package": "@astrojs/react",
+      "fromVersion": "5.0.7",
+      "toVersion": "6.0.0",
+      "reason": "breaking-change-unresolved",
+      "recheckAfter": "2026-07-27T00:00:00Z",
+      "observedAt": "2026-06-28T18:32:00Z",
+      "notes": "Astro 7 と連動するメジャー更新。専用ブランチ feat/astro-7-upgrade で astro 本体と合わせて対応する。"
     }
   ]
 }
