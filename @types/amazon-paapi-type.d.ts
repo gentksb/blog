@@ -47,11 +47,7 @@ declare module "amazon-paapi" {
   export type AmazonMerchant = "All" | "Amazon"
 
   export type AmazonItemConditionStatus =
-    | "Any"
-    | "New"
-    | "Used"
-    | "Collectible"
-    | "Refurbished"
+    "Any" | "New" | "Used" | "Collectible" | "Refurbished"
 
   export type AmazonCurrency =
     | "USD"
@@ -74,10 +70,7 @@ declare module "amazon-paapi" {
   export type AmazonAvailability = "Available" | "IncludeOutOfStock"
 
   export type AmazonDeliveryType =
-    | "AmazonGlobal"
-    | "FreeShipping"
-    | "FulfilledByAmazon"
-    | "Prime"
+    "AmazonGlobal" | "FreeShipping" | "FulfilledByAmazon" | "Prime"
 
   export type AmazonSearchSortBy =
     | "AvgCustomerReviews"
@@ -88,8 +81,7 @@ declare module "amazon-paapi" {
     | "Relevance"
 
   export type BrowseNodesResourceType =
-    | "BrowseNodes.Ancestor"
-    | "BrowseNodes.Children"
+    "BrowseNodes.Ancestor" | "BrowseNodes.Children"
 
   export type ItemsResourceType =
     | "BrowseNodeInfo.BrowseNodes"
