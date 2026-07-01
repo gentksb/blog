@@ -1,1 +1,5 @@
 minimumReleaseAge: 1440
+
+peerDependencyRules:
+  allowedVersions:
+    "astro-pagefind>astro": "7"
