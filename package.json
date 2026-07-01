@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "version": "3.0.0",
+  "packageManager": "pnpm@10.34.3",
   "engines": {
     "node": ">=24.0.0",
     "pnpm": ">=10.16.0"
@@ -72,12 +73,5 @@
     "typescript": "^6.0.3",
     "vitest": "^4.1.9",
     "wrangler": "^4.105.0"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "astro-pagefind>astro": "7"
-      }
-    }
   }
 }
