@@ -11,40 +11,13 @@
       "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。"
     },
     {
-      "package": "astro",
-      "fromVersion": "6.4.8",
-      "toVersion": "7.0.3",
+      "package": "@cloudflare/workers-types",
+      "fromVersion": "4.20260702.1",
+      "toVersion": "5.20260705.1",
       "reason": "breaking-change-unresolved",
-      "recheckAfter": "2026-07-27T00:00:00Z",
-      "observedAt": "2026-06-28T18:32:00Z",
-      "notes": "Astro 7 系メジャー更新。@astrojs/cloudflare / @astrojs/mdx / @astrojs/react と協調したフレームワーク一括更新が必要なため、専用ブランチ feat/astro-7-upgrade で対応中。週次ルーチンからは除外する。"
-    },
-    {
-      "package": "@astrojs/cloudflare",
-      "fromVersion": "13.7.0",
-      "toVersion": "14.0.1",
-      "reason": "breaking-change-unresolved",
-      "recheckAfter": "2026-07-27T00:00:00Z",
-      "observedAt": "2026-06-28T18:32:00Z",
-      "notes": "Astro 7 と連動するメジャー更新。専用ブランチ feat/astro-7-upgrade で astro 本体と合わせて対応する。"
-    },
-    {
-      "package": "@astrojs/mdx",
-      "fromVersion": "6.0.3",
-      "toVersion": "7.0.0",
-      "reason": "breaking-change-unresolved",
-      "recheckAfter": "2026-07-27T00:00:00Z",
-      "observedAt": "2026-06-28T18:32:00Z",
-      "notes": "Astro 7 と連動するメジャー更新。専用ブランチ feat/astro-7-upgrade で astro 本体と合わせて対応する。"
-    },
-    {
-      "package": "@astrojs/react",
-      "fromVersion": "5.0.7",
-      "toVersion": "6.0.0",
-      "reason": "breaking-change-unresolved",
-      "recheckAfter": "2026-07-27T00:00:00Z",
-      "observedAt": "2026-06-28T18:32:00Z",
-      "notes": "Astro 7 と連動するメジャー更新。専用ブランチ feat/astro-7-upgrade で astro 本体と合わせて対応する。"
+      "recheckAfter": "2026-07-19T00:00:00Z",
+      "observedAt": "2026-07-05T18:46:11Z",
+      "notes": "workers-types v5 は compat-date 別エントリポイント体系を廃止し latest 型のみを提供する構成に変更。プロジェクト側では compat-date サブパス import は未使用のため実害はないが、wrangler@4.107.0 が peerDependencies で ^4.x を要求しており `pnpm add` 時に unmet peer 警告が出る。wrangler が v5 に対応してから再検討する。"
     }
   ]
 }
