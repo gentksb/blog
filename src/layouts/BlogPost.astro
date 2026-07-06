@@ -63,14 +63,14 @@ const ogpStaticImage = cover
               <slot />
             </div>
 
-            <!-- 愛用機材ストアフロント導線 -->
-            <div class="mt-8">
-              <StorefrontCard />
-            </div>
-
             <!-- シェアボタンエリア -->
             <div class="mt-8 border-t border-gray-200 py-4">
               <Share url={Astro.url.href} title={title} />
+            </div>
+
+            <!-- 愛用機材ストアフロント導線 -->
+            <div class="mt-4">
+              <StorefrontCard />
             </div>
           </div>
         </article>
