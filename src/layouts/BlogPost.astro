@@ -6,6 +6,7 @@ import CollapsibleToc from "@components/CollapsibleToc.astro"
 import StickyToc from "@components/jsx/StickyToc"
 import RelatedPosts from "@components/RelatedPosts.astro"
 import Share from "@components/Share.astro"
+import StorefrontCard from "@components/StorefrontCard.astro"
 import type { MarkdownHeading } from "astro"
 import { formatInTimeZone } from "date-fns-tz"
 import { SITE_TITLE } from "~/consts"
@@ -65,6 +66,11 @@ const ogpStaticImage = cover
             <!-- シェアボタンエリア -->
             <div class="mt-8 border-t border-gray-200 py-4">
               <Share url={Astro.url.href} title={title} />
+            </div>
+
+            <!-- 愛用機材ストアフロント導線 -->
+            <div class="mt-4">
+              <StorefrontCard />
             </div>
           </div>
         </article>
