@@ -6,6 +6,7 @@ import CollapsibleToc from "@components/CollapsibleToc.astro"
 import StickyToc from "@components/jsx/StickyToc"
 import RelatedPosts from "@components/RelatedPosts.astro"
 import Share from "@components/Share.astro"
+import StorefrontCard from "@components/StorefrontCard.astro"
 import type { MarkdownHeading } from "astro"
 import { formatInTimeZone } from "date-fns-tz"
 import { SITE_TITLE } from "~/consts"
@@ -60,6 +61,11 @@ const ogpStaticImage = cover
               class="prose prose-base mx-auto max-w-none text-gray-700 prose-p:leading-relaxed prose-p:mb-6 md:prose-lg [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
             >
               <slot />
+            </div>
+
+            <!-- 愛用機材ストアフロント導線 -->
+            <div class="mt-8">
+              <StorefrontCard />
             </div>
 
             <!-- シェアボタンエリア -->
