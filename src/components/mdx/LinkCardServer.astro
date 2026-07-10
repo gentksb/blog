@@ -25,15 +25,10 @@ const brandTheme = url.includes("yahoo.co.jp")
     ? "rakuten"
     : null
 
-const brandColorBorder: Record<string, string> = {
-  amazon: "border-amazon border-3",
-  rakuten: "border-rakuten border-3",
-  yahoo: "border-yahoo border-3"
-}
-const brandColorBackground: Record<string, string> = {
-  amazon: "bg-amazon",
-  rakuten: "bg-rakuten",
-  yahoo: "bg-yahoo"
+const brandColorText: Record<string, string> = {
+  amazon: "text-amazon",
+  rakuten: "text-rakuten",
+  yahoo: "text-yahoo"
 }
 
 // OGPデータ取得（KVキャッシュ付き）
@@ -89,13 +84,13 @@ const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
   rel="noopener noreferrer"
 >
   <div
-    class={`not-prose relative my-4 flex overflow-hidden rounded-lg border bg-white shadow-xs ${brandTheme ? brandColorBorder[brandTheme] : "border-stone-200"}`}
+    class="not-prose relative my-4 flex overflow-hidden rounded-lg border border-stone-200 bg-white shadow-xs"
   >
     <div class="flex flex-1 flex-col justify-center p-3 min-w-0">
       {
         brandTheme && (
           <div
-            class={`absolute right-0 top-0 ${brandColorBackground[brandTheme]} rounded-bl px-2 py-1 text-xs text-white`}
+            class={`absolute right-2 top-1 text-xs font-medium ${brandColorText[brandTheme]}`}
           >
             {brandTheme.charAt(0).toUpperCase() + brandTheme.slice(1)}
           </div>

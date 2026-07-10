@@ -37,12 +37,13 @@ const ogpStaticImage = cover
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
   markdownUrl={markdownUrl}
+  bodyBackground="bg-white"
 >
   <!-- デスクトップビューで2カラムレイアウト -->
   <div class="flex gap-8">
     <!-- メインコンテンツ -->
     <main class="min-w-0 flex-1">
-      <div class="mb-8 overflow-hidden bg-white shadow-xs sm:rounded-lg">
+      <div class="mb-8">
         <article data-pagefind-body>
           <BlogTitle
             title={title}
@@ -58,13 +59,13 @@ const ogpStaticImage = cover
             </div>
 
             <div
-              class="prose prose-base mx-auto max-w-none text-gray-700 prose-p:leading-relaxed prose-p:mb-6 md:prose-lg [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
+              class="prose prose-base mx-auto max-w-[40rem] text-gray-800 prose-p:leading-relaxed prose-p:mb-6 md:text-[1.0625rem] md:leading-[2] md:tracking-[0.015em] md:prose-p:leading-[2] md:prose-p:mb-8 [&_.twitter-tweet]:mx-auto [&_iframe]:mx-auto [&_iframe]:max-w-full"
             >
               <slot />
             </div>
 
             <!-- シェアボタンエリア -->
-            <div class="mt-8 border-t border-gray-200 py-4">
+            <div class="mt-8 border-t border-stone-200 py-4">
               <Share url={Astro.url.href} title={title} />
             </div>
 

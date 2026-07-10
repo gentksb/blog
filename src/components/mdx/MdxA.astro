@@ -7,6 +7,11 @@ interface Props {
 const { href, target, rel } = Astro.props
 ---
 
-<a href={href} target={target} rel={rel} class="text-primary hover:underline">
+<a
+  href={href}
+  target={target}
+  rel={rel}
+  class="underline decoration-stone-400 underline-offset-4 transition-colors hover:text-primary hover:decoration-primary"
+>
   <slot />
 </a>
