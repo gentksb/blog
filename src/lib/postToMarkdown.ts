@@ -37,9 +37,8 @@ const transformSegment = (segment: string, partnerTag: string): string => {
 
   // 4. <LinkCard ... /> → [<href>](<href>)
   segment = segment.replace(/<LinkCard\s([\s\S]*?)\/>/gs, (_, attrs) => {
-    const linkUrlMatch = attrs.match(/\blinkUrl="([^"]+)"/)
     const urlMatch = attrs.match(/\burl="([^"]+)"/)
-    const href = linkUrlMatch ? linkUrlMatch[1] : urlMatch ? urlMatch[1] : ""
+    const href = urlMatch ? urlMatch[1] : ""
     if (!href) return ""
     return `[${href}](${href})`
   })
@@ -47,9 +46,8 @@ const transformSegment = (segment: string, partnerTag: string): string => {
   // 5. <SimpleLinkCard ... /> → [<text>](<href>)
   segment = segment.replace(/<SimpleLinkCard\s([\s\S]*?)\/>/gs, (_, attrs) => {
     const titleMatch = attrs.match(/\btitle="([^"]+)"/)
-    const linkUrlMatch = attrs.match(/\blinkUrl="([^"]+)"/)
     const urlMatch = attrs.match(/\burl="([^"]+)"/)
-    const href = linkUrlMatch ? linkUrlMatch[1] : urlMatch ? urlMatch[1] : ""
+    const href = urlMatch ? urlMatch[1] : ""
     const text = titleMatch ? titleMatch[1] : href
     if (!href) return ""
     return `[${text}](${href})`
