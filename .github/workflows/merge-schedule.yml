@@ -8,8 +8,8 @@ on:
       - synchronize
   schedule:
     # https://crontab.guru/every-hour
-    # UTC
-    - cron: "*/30 0,3-4,10-12,22-23 * * *"
+    # cronはUTC固定（JSTでは 9, 12-13, 19-21, 23, 7-8 時台に相当）
+    - cron: "*/30 0,3-4,10-12,14,22-23 * * *"
 
 jobs:
   merge_schedule:
@@ -21,7 +21,9 @@ jobs:
           # rebase. Default is merge.
           merge_method: squash
           # Time zone to use. Default is UTC.
-          time_zone: "UTC"
+          # /schedule のオフセットなし日時はJSTとして解釈される
+          # （Z や +09:00 付きの明示指定はそのまま尊重される）
+          time_zone: "Asia/Tokyo"
           # Require all pull request statuses to be successful before
           # merging. Default is `false`.
           require_statuses_success: "true"
