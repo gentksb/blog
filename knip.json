@@ -10,6 +10,7 @@
   "ignoreFiles": [
     "src/components/mdx/Amzn.astro",
     "src/components/mdx/AmznServer.astro",
+    "src/components/mdx/cardStyles.ts",
     "src/components/mdx/LinkCard.astro",
     "src/components/mdx/LinkCardServer.astro",
     "src/components/mdx/SimpleLinkCard.astro",

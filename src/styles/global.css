@@ -7,7 +7,9 @@
     "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", Meiryo,
     sans-serif;
   --font-relics: "Times New Roman", "MS PGothic";
-  --font-ui: system-ui, -apple-system;
+
+  /* 記事本文の基準サイズ（デスクトップ17px相当）。BlogPost.astroとMdxH4で共有 */
+  --text-article: 1.0625rem;
 
   --color-accent: #9a3412;
   --color-primary: #b45309;

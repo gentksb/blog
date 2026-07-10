@@ -11,7 +11,7 @@ interface Props {
   datePublished?: string
   twitterImage?: string
   markdownUrl?: string
-  bodyBackground?: string
+  bodyBackground?: "bg-stone-50" | "bg-white"
 }
 
 const { bodyBackground = "bg-stone-50", ...props } = Astro.props
