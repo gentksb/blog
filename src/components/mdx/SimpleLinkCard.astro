@@ -2,15 +2,11 @@
 interface Props {
   url: string
   title?: string
-  linkUrl?: string
 }
 
-const { url, title, linkUrl } = Astro.props
+const { url, title } = Astro.props
 try {
   new URL(url)
-  if (linkUrl) {
-    new URL(linkUrl)
-  }
 } catch {
   throw new Error("Invalid URL")
 }
@@ -19,7 +15,7 @@ try {
 <div
   class="not-prose my-4 rounded-md border border-stone-300 bg-white px-2 py-1 shadow-xs"
 >
-  <a href={linkUrl ?? url}>
+  <a href={url}>
     <p class="text-sm font-bold text-primary">
       <svg
         xmlns="http://www.w3.org/2000/svg"

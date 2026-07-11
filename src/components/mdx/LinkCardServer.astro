@@ -6,24 +6,22 @@ import { isValidUrl } from "../../server/domain/validators"
 
 interface Props {
   url: string
-  linkUrl?: string
 }
 
-const { url, linkUrl } = Astro.props
+const { url } = Astro.props
 
 // URLバリデーション（HTTP(S)スキームのみ許可）
-if (!isValidUrl(url) || (linkUrl !== undefined && !isValidUrl(linkUrl))) {
+if (!isValidUrl(url)) {
   throw new Error("Invalid URL: must be HTTP(S)")
 }
 
-const targetUrl = linkUrl ?? url
-
-// ブランドテーマ判定
-const brandTheme = url.includes("yahoo.co.jp")
-  ? "yahoo"
-  : url.includes("rakuten.co.jp")
-    ? "rakuten"
-    : null
+// ブランドテーマ判定（yahoo.jpはアフィリエイト短縮URLドメイン）
+const brandTheme =
+  url.includes("yahoo.co.jp") || url.startsWith("https://yahoo.jp/")
+    ? "yahoo"
+    : url.includes("rakuten.co.jp")
+      ? "rakuten"
+      : null
 
 const brandColorBorder: Record<string, string> = {
   amazon: "border-amazon border-3",
@@ -74,16 +72,15 @@ try {
   console.error(`LinkCard OGP fetch failed for ${url}:`, e)
 }
 
-const parsedTargetUrl = new URL(targetUrl)
+const parsedUrl = new URL(url)
 if (!ogpSiteName) {
-  const parsedSourceUrl = linkUrl ? new URL(url) : parsedTargetUrl
-  ogpSiteName = parsedSourceUrl.hostname.replace(/^www\./, "")
+  ogpSiteName = parsedUrl.hostname.replace(/^www\./, "")
 }
-const isExternal = parsedTargetUrl.hostname !== "blog.gensobunya.net"
+const isExternal = parsedUrl.hostname !== "blog.gensobunya.net"
 ---
 
 <a
-  href={targetUrl}
+  href={url}
   class="no-underline hover:opacity-90"
   target="_blank"
   rel="noopener noreferrer"

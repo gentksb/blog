@@ -106,21 +106,12 @@ test("<LinkCard url='...' /> が [url](url) に変換される", () => {
   )
 })
 
-test("<LinkCard url='...' linkUrl='...' /> は linkUrl を使う", () => {
-  const result = postToMarkdown({
-    ...BASE_INPUT,
-    body: '<LinkCard url="https://example.com/" linkUrl="https://other.com/" />'
-  })
-  expect(result).toContain("[https://other.com/](https://other.com/)")
-})
-
 test("<LinkCard /> 複数行属性に対応", () => {
   const body = `<LinkCard
   url="https://example.com/"
-  linkUrl="https://other.com/"
 />`
   const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain("[https://other.com/](https://other.com/)")
+  expect(result).toContain("[https://example.com/](https://example.com/)")
 })
 
 // === ルール5: SimpleLinkCard ===
@@ -139,14 +130,6 @@ test("<SimpleLinkCard url='...' /> title なし → [url](url)", () => {
     body: '<SimpleLinkCard url="https://example.com/" />'
   })
   expect(result).toContain("[https://example.com/](https://example.com/)")
-})
-
-test("<SimpleLinkCard /> linkUrl あり → linkUrl を href に使う", () => {
-  const result = postToMarkdown({
-    ...BASE_INPUT,
-    body: '<SimpleLinkCard url="https://example.com/" title="Example" linkUrl="https://other.com/" />'
-  })
-  expect(result).toContain("[Example](https://other.com/)")
 })
 
 // === ルール6: PositiveBox / NegativeBox ===
