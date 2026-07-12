@@ -92,7 +92,7 @@ export default function StickyToc({ headings }: Props) {
                 className={`block transition-colors focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isActive
                     ? "font-semibold text-primary"
-                    : "text-gray-600 hover:text-primary"
+                    : "text-stone-400 hover:text-primary"
                 }`}
                 aria-current={isActive ? "location" : undefined}
               >

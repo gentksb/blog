@@ -27,7 +27,9 @@ const { Content } = await render(page)
 ---
 
 <Layout title={page.data.title}>
-  <div class="prose prose-sm mx-auto max-w-3xl md:prose-base">
+  <div
+    class="prose prose-sm mx-auto max-w-[40rem] text-stone-800 md:prose-base md:text-article md:leading-[2] md:tracking-[0.015em] md:prose-p:leading-[2] md:prose-p:mb-8"
+  >
     <Content
       components={{
         h2: MdxH2,

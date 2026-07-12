@@ -3,6 +3,7 @@ import { env } from "cloudflare:workers"
 import { createOgpKVCacheAdapter } from "../../server/adapters/ogpAdapter"
 import { getOgpMetaData } from "../../server/services/getOgpMetaData"
 import { isValidUrl } from "../../server/domain/validators"
+import { brandColorText, linkCardBadge, linkCardFrame } from "./cardStyles"
 
 interface Props {
   url: string
@@ -22,17 +23,6 @@ const brandTheme =
     : url.includes("rakuten.co.jp")
       ? "rakuten"
       : null
-
-const brandColorBorder: Record<string, string> = {
-  amazon: "border-amazon border-3",
-  rakuten: "border-rakuten border-3",
-  yahoo: "border-yahoo border-3"
-}
-const brandColorBackground: Record<string, string> = {
-  amazon: "bg-amazon",
-  rakuten: "bg-rakuten",
-  yahoo: "bg-yahoo"
-}
 
 // OGPデータ取得（KVキャッシュ付き）
 let ogpTitle: string = url
@@ -85,15 +75,11 @@ const isExternal = parsedUrl.hostname !== "blog.gensobunya.net"
   target="_blank"
   rel="noopener noreferrer"
 >
-  <div
-    class={`not-prose relative my-4 flex overflow-hidden rounded-lg border bg-white shadow-xs ${brandTheme ? brandColorBorder[brandTheme] : "border-stone-200"}`}
-  >
+  <div class={linkCardFrame}>
     <div class="flex flex-1 flex-col justify-center p-3 min-w-0">
       {
         brandTheme && (
-          <div
-            class={`absolute right-0 top-0 ${brandColorBackground[brandTheme]} rounded-bl px-2 py-1 text-xs text-white`}
-          >
+          <div class={`${linkCardBadge} ${brandColorText[brandTheme]}`}>
             {brandTheme.charAt(0).toUpperCase() + brandTheme.slice(1)}
           </div>
         )
