@@ -3,21 +3,30 @@
   "entries": [
     {
       "package": "@types/node",
-      "fromVersion": "24.13.2",
-      "toVersion": "26.0.1",
+      "fromVersion": "24.13.3",
+      "toVersion": "26.1.1",
       "reason": "engine-pinned",
       "recheckAfter": "2099-01-01T00:00:00Z",
-      "observedAt": "2026-06-21T18:44:01Z",
+      "observedAt": "2026-07-12T18:38:25Z",
       "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。"
     },
     {
       "package": "@cloudflare/workers-types",
       "fromVersion": "4.20260702.1",
-      "toVersion": "5.20260705.1",
+      "toVersion": "5.20260711.1",
       "reason": "breaking-change-unresolved",
       "recheckAfter": "2026-07-19T00:00:00Z",
       "observedAt": "2026-07-05T18:46:11Z",
-      "notes": "workers-types v5 は compat-date 別エントリポイント体系を廃止し latest 型のみを提供する構成に変更。プロジェクト側では compat-date サブパス import は未使用のため実害はないが、wrangler@4.107.0 が peerDependencies で ^4.x を要求しており `pnpm add` 時に unmet peer 警告が出る。wrangler が v5 に対応してから再検討する。"
+      "notes": "workers-types v5 は compat-date 別エントリポイント体系を廃止し latest 型のみを提供する構成に変更。プロジェクト側では compat-date サブパス import は未使用のため実害はないが、wrangler@4.107.0 が peerDependencies で ^4.x を要求しており `pnpm add` 時に unmet peer 警告が出る。wrangler が v5 に対応してから再検討する。追記(2026-07-12): wrangler を 4.110.0 に更新したところ peer 要求が @cloudflare/workers-types@^5.20260708.1 に変わり、unmet peer 警告が発生するようになった（動作には影響なし）。次回チェック時は優先的に再評価すること。"
+    },
+    {
+      "package": "typescript",
+      "fromVersion": "6.0.3",
+      "toVersion": "7.0.2",
+      "reason": "breaking-change-unresolved",
+      "recheckAfter": "2026-07-26T00:00:00Z",
+      "observedAt": "2026-07-12T18:38:25Z",
+      "notes": "TypeScript 7.0 は2026-07-08 GA。コンパイラ本体がGoによるネイティブ実装（tsgo）に置き換わり、パッケージ構成もプラットフォーム別ネイティブバイナリ配布に変更（純JSではなくなった）。主な破壊的変更: strict がデフォルト有効、rootDir のデフォルトが ./ に変更、types のデフォルトが空配列（自動的な @types 検出が廃止）、target: es5 / moduleResolution: node10 / baseUrl 等の旧オプションがビルドエラーに、JSDoc の @enum 等一部記法が非サポートに。knip は TypeScript の Compiler API を利用して未使用コードを検出しており、ネイティブ実装への対応状況が未確認。エコシステム（knip, astro, prettier-plugin-astro 等）の対応が追いつくまで様子見。"
     }
   ]
 }
