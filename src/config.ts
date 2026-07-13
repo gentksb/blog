@@ -10,7 +10,7 @@ export const featuredGroups: FeaturedGroup[] = [
   {
     title: "ガーミンウォッチ活用",
     description:
-      "Forerunnerシリーズを使ったサイクリング・筋トレへの活用法を紹介",
+      "Forerunnerシリーズを使ったサイクリング・筋トレ・ライフログの記録と活用",
     slugs: [
       "2024/09/forerunner965",
       "2023/04/garmin_gym_workout_detection",
@@ -18,8 +18,9 @@ export const featuredGroups: FeaturedGroup[] = [
     ]
   },
   {
-    title: "CXチューブラー沼",
-    description: "シクロクロスのタイヤ・ホイール・メンテナンスを徹底解説",
+    title: "CXチューブラータイヤ",
+    description:
+      "シクロクロス用チューブラータイヤのホイール・メンテナンス・維持運用",
     slugs: [
       "2023/02/cxtu-easy-mount-test",
       "2024/09/2024-vittoria-dugast",
@@ -28,9 +29,11 @@ export const featuredGroups: FeaturedGroup[] = [
     ]
   },
   {
-    title: "Zwiftトレーニング",
-    description: "インドアサイクリング機材やバーチャルシフト追求について",
+    title: "インドアトレーニング",
+    description:
+      "インドアサイクリング機材や子供持ち家庭での気兼ねないZwiftトレーニング",
     slugs: [
+      "2026/07/cycplus-t7",
       "2025/02/qz-virtual-shifting-in-zwift",
       "2025/10/kickr-core2-review",
       "2025/02/trainingpeaks-virtual-trial",

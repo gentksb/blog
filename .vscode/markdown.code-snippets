@@ -23,13 +23,13 @@
   "Link MDX": {
     "prefix": "linkbox",
     "scope": "markdown",
-    "body": "<LinkCard url=\"${1:url}\" ${2:linkurl?=\"\"} />",
+    "body": "<LinkCard url=\"${1:url}\" />",
     "description": "template of LinxBox MDX component"
   },
   "Simple Link liner box": {
     "prefix": "simplelink",
     "scope": "markdown",
-    "body": "<SimpleLinkCard url=\"${1:url}\" ${2:linkurl?=\"\"} ${3:title?=\"\"} />",
+    "body": "<SimpleLinkCard url=\"${1:url}\" ${2:title?=\"\"} />",
     "description": "template of LinxBox MDX component"
   },
   "Amazon": {
@@ -41,19 +41,7 @@
   "negaposi": {
     "prefix": "proscons",
     "scope": "markdown",
-    "body": [
-      "<PositiveBox>",
-      "",
-      "- ",
-      "",
-      "</PositiveBox>",
-      "",
-      "<NegativeBox>",
-      "",
-      "- ",
-      "",
-      "</NegativeBox>"
-    ],
+    "body": [":::positive", "- ", ":::", "", ":::negative", "- ", ":::"],
     "description": "template of Negative/Positive MDX component"
   }
 }
