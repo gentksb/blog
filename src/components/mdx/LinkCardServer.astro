@@ -3,8 +3,16 @@ import { env } from "cloudflare:workers"
 import { createOgpKVCacheAdapter } from "../../server/adapters/ogpAdapter"
 import { getOgpMetaData } from "../../server/services/getOgpMetaData"
 import { isValidUrl } from "../../server/domain/validators"
-import { formatProductPrice } from "../../server/domain/productPrice"
-import { brandColorText, linkCardBadge, linkCardFrame } from "./cardStyles"
+import {
+  buildProductPrice,
+  formatProductPrice
+} from "../../server/domain/productPrice"
+import {
+  brandColorText,
+  linkCardBadge,
+  linkCardFrame,
+  linkCardPrice
+} from "./cardStyles"
 
 interface Props {
   url: string
@@ -59,13 +67,12 @@ try {
         ? ogpData.ogpImageUrl
         : undefined
 
-      // 構造化データ由来の商品価格（キャッシュ済みデータは形式を検証してから使う）
-      const price = ogpData.productPrice
-      if (
-        price &&
-        typeof price.amount === "number" &&
-        typeof price.currency === "string"
-      ) {
+      // 構造化データ由来の商品価格（キャッシュ済みデータはドメイン層で再検証してから使う）
+      const price = buildProductPrice(
+        ogpData.productPrice?.amount,
+        ogpData.productPrice?.currency
+      )
+      if (price) {
         priceDisplay = formatProductPrice(price)
       }
     }
@@ -123,9 +130,7 @@ const isExternal = parsedUrl.hostname !== "blog.gensobunya.net"
       </div>
       {
         priceDisplay && (
-          <div class="mt-1.5 text-sm font-bold text-stone-800 md:text-base">
-            {priceDisplay}
-          </div>
+          <div class={`mt-1.5 ${linkCardPrice}`}>{priceDisplay}</div>
         )
       }
       <div class="mt-1.5 text-xs text-secondary">

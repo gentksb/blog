@@ -42,7 +42,6 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     result.ok = true
 
     // 商品価格の構造化データ収集用バッファ
-    const jsonLdBlocks: string[] = []
     let jsonLdBuffer = ""
     let metaPriceAmount: string | null = null
     let metaPriceCurrency: string | null = null
@@ -102,12 +101,22 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     })
 
     // JSON-LD の中身はテキストチャンクとして分割されて届くため、
-    // lastInTextNode までバッファに蓄積して script 要素単位で回収する
+    // lastInTextNode までバッファに蓄積して script 要素単位で抽出する
     rewriter.on('script[type="application/ld+json"]', {
       text(text) {
+        // 価格が確定したら以降のブロックはバッファリングごと省略する
+        if (result.productPrice) {
+          return
+        }
         jsonLdBuffer += text.text
         if (text.lastInTextNode) {
-          jsonLdBlocks.push(jsonLdBuffer)
+          // "Product" を含まないブロック（BreadcrumbList 等）は JSON.parse を省略
+          if (jsonLdBuffer.includes("Product")) {
+            const price = extractPriceFromJsonLd(jsonLdBuffer)
+            if (price) {
+              result.productPrice = price
+            }
+          }
           jsonLdBuffer = ""
         }
       }
@@ -116,14 +125,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     await rewriter.transform(httpResponse).arrayBuffer()
     // transformではなく抽出だが、一度Streamを動かさないと機能しないため、arrayBuffer()を使っている
 
-    // 価格は JSON-LD (schema.org Product) を優先し、無ければ価格メタタグにフォールバック
-    for (const block of jsonLdBlocks) {
-      const price = extractPriceFromJsonLd(block)
-      if (price) {
-        result.productPrice = price
-        break
-      }
-    }
+    // JSON-LD (schema.org Product) から価格が取れなかった場合のみ価格メタタグにフォールバック
     if (!result.productPrice) {
       const metaPrice = buildProductPrice(metaPriceAmount, metaPriceCurrency)
       if (metaPrice) {

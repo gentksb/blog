@@ -221,9 +221,8 @@ describe("formatProductPrice", () => {
     )
   })
 
-  test("未知の通貨コードでも例外を出さずフォールバック表記する", () => {
-    // "XXX" (無通貨) など Intl が解釈できるコードは Intl に任せ、
-    // 万一 RangeError が出る値でも文字列連結にフォールバックする
+  test("未知だが形式上有効な通貨コードは Intl がコード表記で整形する", () => {
+    // normalizeCurrency を通過した3文字コードは well-formed なので Intl は例外を出さない
     const formatted = formatProductPrice({ amount: 100, currency: "ZZZ" })
     expect(formatted).toContain("100")
   })

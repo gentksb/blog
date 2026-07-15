@@ -5,9 +5,6 @@
 
 import type { ProductPrice } from "@type/ogpData-type"
 
-// @graph やネストされた offers を辿る際の再帰上限（循環・巨大データ対策）
-const MAX_TRAVERSE_DEPTH = 6
-
 const isRecord = (value: unknown): value is Record<string, unknown> => {
   return typeof value === "object" && value !== null && !Array.isArray(value)
 }
@@ -112,13 +109,7 @@ const priceFromOffer = (offer: unknown): ProductPrice | undefined => {
 /**
  * offers プロパティ（単一 / 配列 / AggregateOffer 内のネスト）から価格を抽出
  */
-const priceFromOffers = (
-  offers: unknown,
-  depth: number
-): ProductPrice | undefined => {
-  if (depth > MAX_TRAVERSE_DEPTH) {
-    return undefined
-  }
+const priceFromOffers = (offers: unknown): ProductPrice | undefined => {
   const offerList = Array.isArray(offers) ? offers : [offers]
   for (const offer of offerList) {
     const price = priceFromOffer(offer)
@@ -127,7 +118,7 @@ const priceFromOffers = (
     }
     // AggregateOffer が個別 Offer をネストして持つケース
     if (isRecord(offer) && offer.offers) {
-      const nested = priceFromOffers(offer.offers, depth + 1)
+      const nested = priceFromOffers(offer.offers)
       if (nested) {
         return nested
       }
@@ -140,16 +131,10 @@ const priceFromOffers = (
  * JSON-LD のノードツリーを走査し、最初に見つかった Product の価格を返す
  * ルートが単一オブジェクト・配列・@graph のいずれでも対応する
  */
-const findProductPrice = (
-  node: unknown,
-  depth: number
-): ProductPrice | undefined => {
-  if (depth > MAX_TRAVERSE_DEPTH) {
-    return undefined
-  }
+const findProductPrice = (node: unknown): ProductPrice | undefined => {
   if (Array.isArray(node)) {
     for (const item of node) {
-      const price = findProductPrice(item, depth + 1)
+      const price = findProductPrice(item)
       if (price) {
         return price
       }
@@ -161,7 +146,7 @@ const findProductPrice = (
   }
 
   if (hasSchemaType(node, "Product") && node.offers) {
-    const price = priceFromOffers(node.offers, depth)
+    const price = priceFromOffers(node.offers)
     if (price) {
       return price
     }
@@ -170,7 +155,7 @@ const findProductPrice = (
   // @graph や mainEntity 等の入れ子構造を探索
   for (const value of Object.values(node)) {
     if (typeof value === "object" && value !== null) {
-      const price = findProductPrice(value, depth + 1)
+      const price = findProductPrice(value)
       if (price) {
         return price
       }
@@ -187,25 +172,30 @@ const findProductPrice = (
 export const extractPriceFromJsonLd = (
   jsonText: string
 ): ProductPrice | undefined => {
-  let parsed: unknown
+  // JSON.parse 由来のデータに循環参照は存在しないため走査に深度制限は不要だが、
+  // 病的に深いネストによるスタックオーバーフローはここで吸収する
   try {
-    parsed = JSON.parse(jsonText)
+    return findProductPrice(JSON.parse(jsonText))
   } catch {
     return undefined
   }
-  return findProductPrice(parsed, 0)
 }
+
+// Intl.NumberFormat はコンストラクタが高コストなため、isolate 生存中は通貨別に使い回す
+const formatterCache = new Map<string, Intl.NumberFormat>()
 
 /**
  * 価格を日本語ロケールの通貨表記に整形（例: ￥12,800 / $49.99）
+ * currency は normalizeCurrency 済みの ISO 4217 形式であること
  */
 export const formatProductPrice = (price: ProductPrice): string => {
-  try {
-    return new Intl.NumberFormat("ja-JP", {
+  let formatter = formatterCache.get(price.currency)
+  if (!formatter) {
+    formatter = new Intl.NumberFormat("ja-JP", {
       style: "currency",
       currency: price.currency
-    }).format(price.amount)
-  } catch {
-    return `${price.amount} ${price.currency}`
+    })
+    formatterCache.set(price.currency, formatter)
   }
+  return formatter.format(price.amount)
 }
