@@ -3,6 +3,7 @@ import { env } from "cloudflare:workers"
 import { createOgpKVCacheAdapter } from "../../server/adapters/ogpAdapter"
 import { getOgpMetaData } from "../../server/services/getOgpMetaData"
 import { isValidUrl } from "../../server/domain/validators"
+import { formatProductPrice } from "../../server/domain/productPrice"
 import { brandColorText, linkCardBadge, linkCardFrame } from "./cardStyles"
 
 interface Props {
@@ -29,6 +30,7 @@ let ogpTitle: string = url
 let ogpDescription: string = ""
 let ogpSiteName: string = ""
 let ogpImageUrl: string | undefined = undefined
+let priceDisplay: string | undefined = undefined
 
 try {
   if (env.OGP_DATASTORE) {
@@ -56,6 +58,16 @@ try {
       ogpImageUrl = isValidUrl(ogpData.ogpImageUrl ?? "")
         ? ogpData.ogpImageUrl
         : undefined
+
+      // 構造化データ由来の商品価格（キャッシュ済みデータは形式を検証してから使う）
+      const price = ogpData.productPrice
+      if (
+        price &&
+        typeof price.amount === "number" &&
+        typeof price.currency === "string"
+      ) {
+        priceDisplay = formatProductPrice(price)
+      }
     }
   }
 } catch (e) {
@@ -109,6 +121,13 @@ const isExternal = parsedUrl.hostname !== "blog.gensobunya.net"
       <div class="mt-1.5 line-clamp-2 text-sm font-normal text-secondary">
         {ogpDescription}
       </div>
+      {
+        priceDisplay && (
+          <div class="mt-1.5 text-sm font-bold text-stone-800 md:text-base">
+            {priceDisplay}
+          </div>
+        )
+      }
       <div class="mt-1.5 text-xs text-secondary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
