@@ -1,5 +1,9 @@
 import { sanitizeUrl } from "@braintree/sanitize-url"
 import type { OgpData } from "@type/ogpData-type"
+import {
+  buildProductPrice,
+  extractPriceFromJsonLd
+} from "../domain/productPrice"
 
 export const getOgpMetaData = async (queryUrl: string, _env: Env) => {
   const decodedUrl = decodeURIComponent(queryUrl)
@@ -36,6 +40,12 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     }
 
     result.ok = true
+
+    // 商品価格の構造化データ収集用バッファ
+    let jsonLdBuffer = ""
+    let metaPriceAmount: string | null = null
+    let metaPriceCurrency: string | null = null
+
     const rewriter = new HTMLRewriter()
     // rewriter.onしたハンドラーの順序性は保証されているが、解析先のWEBサイトにおいてmetaタグの後にtitleタグが来る保証
     // およびog:xxxとdescriptionのmetaタグ順序は保証されないため、titleとdescriptionはデータが無い場合の書き込み、ogで上書きされることで
@@ -54,6 +64,15 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
             break
           case "og:site_name":
             result.ogpSiteName = element.getAttribute("content")
+            break
+          // EC サイトが出力する OGP 拡張の価格メタタグ（Shopify 等）
+          case "product:price:amount":
+          case "og:price:amount":
+            metaPriceAmount ??= element.getAttribute("content")
+            break
+          case "product:price:currency":
+          case "og:price:currency":
+            metaPriceCurrency ??= element.getAttribute("content")
             break
           default:
             break
@@ -81,8 +100,39 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
       }
     })
 
+    // JSON-LD の中身はテキストチャンクとして分割されて届くため、
+    // lastInTextNode までバッファに蓄積して script 要素単位で抽出する
+    rewriter.on('script[type="application/ld+json"]', {
+      text(text) {
+        // 価格が確定したら以降のブロックはバッファリングごと省略する
+        if (result.productPrice) {
+          return
+        }
+        jsonLdBuffer += text.text
+        if (text.lastInTextNode) {
+          // "Product" を含まないブロック（BreadcrumbList 等）は JSON.parse を省略
+          if (jsonLdBuffer.includes("Product")) {
+            const price = extractPriceFromJsonLd(jsonLdBuffer)
+            if (price) {
+              result.productPrice = price
+            }
+          }
+          jsonLdBuffer = ""
+        }
+      }
+    })
+
     await rewriter.transform(httpResponse).arrayBuffer()
     // transformではなく抽出だが、一度Streamを動かさないと機能しないため、arrayBuffer()を使っている
+
+    // JSON-LD (schema.org Product) から価格が取れなかった場合のみ価格メタタグにフォールバック
+    if (!result.productPrice) {
+      const metaPrice = buildProductPrice(metaPriceAmount, metaPriceCurrency)
+      if (metaPrice) {
+        result.productPrice = metaPrice
+      }
+    }
+
     return result
   } catch (error) {
     console.error(`Error on fetch: ${error}`)

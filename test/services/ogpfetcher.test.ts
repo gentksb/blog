@@ -123,6 +123,98 @@ describe("getOgpMetaData", () => {
     expect(res.error).toBe("Query url is not found or invalid.")
   })
 
+  test("JSON-LD の Product 構造化データから商品価格を抽出する", async () => {
+    stubFetch(`<!DOCTYPE html>
+<html>
+<head>
+  <title>商品ページ</title>
+  <meta property="og:title" content="サイクルコンピューター">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "サイクルコンピューター",
+    "offers": {
+      "@type": "Offer",
+      "price": "24800",
+      "priceCurrency": "JPY"
+    }
+  }
+  </script>
+</head>
+<body></body>
+</html>`)
+
+    const res = await getOgpMetaData(normalLinkUrl, env)
+
+    expect(res.ok).toBe(true)
+    expect(res.ogpTitle).toBe("サイクルコンピューター")
+    expect(res.productPrice).toEqual({ amount: 24800, currency: "JPY" })
+  })
+
+  test("JSON-LD が無い場合は OGP 価格メタタグにフォールバックする", async () => {
+    stubFetch(`<!DOCTYPE html>
+<html>
+<head>
+  <title>商品ページ</title>
+  <meta property="og:price:amount" content="1980">
+  <meta property="og:price:currency" content="JPY">
+</head>
+<body></body>
+</html>`)
+
+    const res = await getOgpMetaData(normalLinkUrl, env)
+
+    expect(res.productPrice).toEqual({ amount: 1980, currency: "JPY" })
+  })
+
+  test("JSON-LD の価格が価格メタタグより優先される", async () => {
+    stubFetch(`<!DOCTYPE html>
+<html>
+<head>
+  <meta property="product:price:amount" content="9999">
+  <meta property="product:price:currency" content="JPY">
+  <script type="application/ld+json">
+  {
+    "@type": "Product",
+    "offers": { "@type": "Offer", "price": "12800", "priceCurrency": "JPY" }
+  }
+  </script>
+</head>
+<body></body>
+</html>`)
+
+    const res = await getOgpMetaData(normalLinkUrl, env)
+
+    expect(res.productPrice).toEqual({ amount: 12800, currency: "JPY" })
+  })
+
+  test("壊れた JSON-LD があっても他の OGP データは取得できる", async () => {
+    stubFetch(`<!DOCTYPE html>
+<html>
+<head>
+  <meta property="og:title" content="og title">
+  <script type="application/ld+json">{broken json</script>
+</head>
+<body></body>
+</html>`)
+
+    const res = await getOgpMetaData(normalLinkUrl, env)
+
+    expect(res.ok).toBe(true)
+    expect(res.ogpTitle).toBe("og title")
+    expect(res.productPrice).toBeUndefined()
+  })
+
+  test("価格構造化データが無いページでは productPrice を持たない", async () => {
+    stubFetch(normalLinkOgpHtml)
+
+    const res = await getOgpMetaData(normalLinkUrl, env)
+
+    expect(res.ok).toBe(true)
+    expect(res.productPrice).toBeUndefined()
+  })
+
   test("fetch が例外を投げた場合はエラーレスポンスを返す", async () => {
     const fetchMock = vi.fn().mockRejectedValue(new Error("network down"))
     vi.stubGlobal("fetch", fetchMock)

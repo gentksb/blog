@@ -3,6 +3,8 @@ export const linkCardFrame =
 
 export const linkCardBadge = "absolute right-2 top-1 text-xs font-medium"
 
+export const linkCardPrice = "text-sm font-bold text-stone-800 md:text-base"
+
 export const brandColorText = {
   rakuten: "text-rakuten",
   yahoo: "text-yahoo"
