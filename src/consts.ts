@@ -2,9 +2,22 @@ export const SITE_TITLE = "幻想サイクル"
 export const SITE_DESCRIPTION =
   "AJOCC C1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです"
 export const SITE_URL = "https://blog.gensobunya.net/"
-export const AMAZON_STOREFRONT_URL = "https://www.amazon.co.jp/shop/gensobunya"
-export const YAHOO_SHOPPING_FAVORITES_URL =
-  "https://shopping.yahoo.co.jp/share/wishlist/item/list/e12d808da83f64482b9f5bf5cc7dfa559?openExternalBrowser=1&affilink=1"
+export const STOREFRONT_LINKS = [
+  {
+    url: "https://www.amazon.co.jp/shop/gensobunya",
+    label: "Amazon ストアフロント",
+    colorClass: "bg-amazon",
+    iconSvg:
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true"><path fill="currentColor" d="M21.9 8.89l-1.05-4.37c-.22-.9-1-1.52-1.91-1.52H5.05c-.9 0-1.69.63-1.9 1.52L2.1 8.89c-.24 1.02-.02 2.06.62 2.88c.08.11.19.19.28.29V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6.94c.09-.09.2-.18.28-.28c.64-.82.87-1.87.62-2.89m-2.99-3.9l1.05 4.37c.1.42.01.84-.25 1.17c-.14.18-.44.47-.94.47c-.61 0-1.14-.49-1.21-1.14L16.98 5zM13 5h1.96l.54 4.52c.05.39-.07.78-.33 1.07c-.22.26-.54.41-.95.41c-.67 0-1.22-.59-1.22-1.31zM8.49 9.52L9.04 5H11v4.69c0 .72-.55 1.31-1.29 1.31c-.34 0-.65-.15-.89-.41c-.25-.29-.37-.68-.33-1.07m-4.45-.16L5.05 5h1.97l-.58 4.86c-.08.65-.6 1.14-1.21 1.14c-.49 0-.8-.29-.93-.47c-.27-.32-.36-.75-.26-1.17M4 19v-6.03c.08.01.15.03.23.03c.87 0 1.66-.36 2.24-.95c.6.6 1.4.95 2.31.95c.87 0 1.65-.36 2.23-.93c.59.57 1.39.93 2.29.93c.84 0 1.64-.35 2.24-.95c.58.6 1.37.95 2.24.95c.08 0 .15-.02.23-.03V19z"/></svg>'
+  },
+  {
+    url: "https://shopping.yahoo.co.jp/share/wishlist/item/list/e12d808da83f64482b9f5bf5cc7dfa559?openExternalBrowser=1&affilink=1",
+    label: "Yahoo!ショッピング",
+    colorClass: "bg-yahoo",
+    iconSvg:
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" aria-hidden="true"><path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2M1 2v2h2l3.6 7.59l-1.35 2.45c-.16.28-.25.61-.25.96c0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12l.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20.01 4H5.21l-.94-2zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2"/></svg>'
+  }
+]
 export const PROFILE = {
   social: {
     twitter: "gen_sobunya",
