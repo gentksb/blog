@@ -7,6 +7,7 @@ import StickyToc from "@components/jsx/StickyToc"
 import RelatedPosts from "@components/RelatedPosts.astro"
 import Share from "@components/Share.astro"
 import StorefrontCard from "@components/StorefrontCard.astro"
+import YahooShoppingCard from "@components/YahooShoppingCard.astro"
 import type { MarkdownHeading } from "astro"
 import { formatInTimeZone } from "date-fns-tz"
 import { SITE_TITLE } from "~/consts"
@@ -70,8 +71,9 @@ const ogpStaticImage = cover
             </div>
 
             <!-- 愛用機材ストアフロント導線 -->
-            <div class="mt-4">
+            <div class="mt-4 space-y-3">
               <StorefrontCard />
+              <YahooShoppingCard />
             </div>
           </div>
         </article>
