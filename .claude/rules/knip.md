@@ -5,23 +5,24 @@ paths:
 
 # knip.json の ignoreFiles / ignoreDependencies について
 
-意図的に多数の除外設定が入っている。誤って削除しないこと。
+意図的な除外設定であり、削除すると `pnpm lint:unused` が exit 1 になる。現在の全エントリ（ファイル8件・依存16件）が必要であることは、除外を外して knip を実行して確認済み。
+
+`ignore` の4パターンについて Configuration hints が出るが、基準状態の exit code は 0。このヒントを解消しようとしなくてよい。
 
 ## ignoreFiles
 
-- **MDXコンポーネント群**（`Amzn.astro`, `LinkCard.astro`, `SimpleLinkCard.astro`, `positive.tsx`, `negative.tsx` およびそれらが依存するファイル）:
-  `astro-auto-import` で全MDXファイルにビルド時注入される。knipにはastro-auto-importプラグインがなく、かつ `src/content/**` がignore対象のためknipが使用を検出できない。
+`src/components/mdx/` の8ファイル（`Amzn.astro`, `AmznServer.astro`, `LinkCard.astro`, `LinkCardServer.astro`, `SimpleLinkCard.astro`, `PositiveBox.astro`, `NegativeBox.astro`, `cardStyles.ts`）:
+自作 Vite プラグイン `src/plugins/mdx-auto-import.ts` が、`astro.config.ts` の `mdxAutoImport([...])` の指定に従って全 MDX へ import 文を注入する。knip はこのプラグインを解釈できず、かつ `src/content/**` が ignore 対象のため、除外を外すと8件すべてが Unused files として報告される。
 
-- **`cfImageService.ts`**:
-  `astro.config.ts` 内で文字列として参照されるため静的解析で検出不可。
+自動注入の対象を追加したときは、そのコンポーネントと専用の依存ファイルをここにも追加する。
 
 ## ignoreDependencies
 
+- **`cloudflare`**:
+  `import { env } from "cloudflare:workers"` を knip が `cloudflare` パッケージへの参照と解釈する。実体は Workers ランタイム組み込みで package.json には存在しない。除外を外すと Unlisted dependencies として5ファイル分（`src/pages/post/[...slug].md.ts`, `src/server/services/ogImage.tsx`, `test/adapters/` 2件, `test/services/paapi.test.ts`）報告される
+
 - **`tailwindcss`, `@tailwindcss/typography`**:
-  Tailwind v4 では `src/styles/global.css` の `@import "tailwindcss"` と `@plugin "@tailwindcss/typography"` で使用される。CSS ファイル内参照のため knip が検出できない。
+  Tailwind v4 では `src/styles/global.css` の `@import "tailwindcss"` と `@plugin "@tailwindcss/typography"` で参照する。CSS ファイル内の参照を knip が追跡できない
 
-- **`textlint-*`**:
-  VS Code拡張（vscode-textlint）が直接参照する。scriptsやCIには登場しないがアンインストール不可。
-
-- **`@iconify-json/mdi`, `swr`, `react-icons` 等**:
-  astro-iconやignoreFiles対象コンポーネントから使用されているが、knipのトレースが届かない。
+- **`textlint` と `textlint-rule-*` / `@textlint-ja/*`（計13パッケージ）**:
+  `.textlintrc` からのみ参照される。npm script も CI ジョブも持たず（実行は VS Code 拡張経由）knip からは未使用に見えるが、アンインストールすると textlint が動かなくなる
