@@ -14,6 +14,8 @@ paths:
 `src/components/mdx/` の8ファイル（`Amzn.astro`, `AmznServer.astro`, `LinkCard.astro`, `LinkCardServer.astro`, `SimpleLinkCard.astro`, `PositiveBox.astro`, `NegativeBox.astro`, `cardStyles.ts`）:
 自作 Vite プラグイン `src/plugins/mdx-auto-import.ts` が、`astro.config.ts` の `mdxAutoImport([...])` の指定に従って全 MDX へ import 文を注入する。knip はこのプラグインを解釈できず、かつ `src/content/**` が ignore 対象のため、除外を外すと8件すべてが Unused files として報告される。
 
+`PositiveBox.astro` / `NegativeBox.astro` はさらに間接的で、記事は `:::positive` / `:::negative` のディレクティブ記法で書き、`src/plugins/satteri-directive-components.ts` がコンポーネント名へ変換する。記事中にコンポーネント名の文字列すら現れない。
+
 自動注入の対象を追加したときは、そのコンポーネントと専用の依存ファイルをここにも追加する。
 
 ## ignoreDependencies

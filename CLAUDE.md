@@ -17,9 +17,14 @@ Prettier は Edit / Write の PostToolUse フック（`.claude/settings.json`）
 
 ## 実装の注意点
 
-### MDX のコンポーネント自動注入
+### 記事 MDX の拡張記法
 
-`src/plugins/mdx-auto-import.ts` が LinkCard / Amzn / SimpleLinkCard / PositiveBox / NegativeBox を全 MDX に注入する。MDX 側に import を書いてはいけない。自動注入対象を増やすときは `astro.config.ts` の `mdxAutoImport([...])` と `knip.json` の `ignoreFiles` を両方更新する。
+記事側に import は書かない。記法は 2 系統ある。
+
+- JSX 記法（`<LinkCard>` `<Amzn>` `<SimpleLinkCard>`）: `src/plugins/mdx-auto-import.ts` が全 MDX へ import 文を注入する。対象一覧は `astro.config.ts` の `mdxAutoImport([...])` が正。増やすときは `knip.json` の `ignoreFiles` も更新する
+- コンテナディレクティブ記法（`:::positive` / `:::negative`）: satteri の `features.directive` が解析し、`src/plugins/satteri-directive-components.ts` の `DIRECTIVE_TO_COMPONENT` がディレクティブ名をコンポーネント名へ変換する。対応表はこのファイルが正で、装飾は変換先の `.astro` が持つ
+
+記事本文で `<PositiveBox>` / `<NegativeBox>` を JSX として書くことはしない（既存記事の使用箇所はすべてディレクティブ記法）。
 
 MDX から `server:defer` 付きの Astro コンポーネントを直接使えないため、`LinkCard.astro` / `Amzn.astro` はラッパーで、KV と外部 API にアクセスする実体は `LinkCardServer.astro` / `AmznServer.astro`。PAAPI データは KV に 24 時間 TTL でキャッシュ。
 
