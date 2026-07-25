@@ -173,6 +173,13 @@ test("連続する2ブロックが個別に変換される", () => {
   expect(result).not.toContain(":::")
 })
 
+test("CRLF改行のディレクティブも変換される", () => {
+  const body = ":::positive\r\n本文です\r\n:::\r\n"
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain("> 😊")
+  expect(result).not.toContain(":::")
+})
+
 test("未定義のディレクティブ名は変換されない", () => {
   const body = ":::warning\n注意\n:::"
   const result = postToMarkdown({ ...BASE_INPUT, body })
