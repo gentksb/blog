@@ -1,3 +1,11 @@
+import { DIRECTIVES, type DirectiveName } from "./directives"
+
+// :::positive ... ::: の1ブロック。ディレクティブ名はレジストリから生成する
+const directiveFencePattern = new RegExp(
+  `^:::(${Object.keys(DIRECTIVES).join("|")})[ \\t]*\\r?\\n([\\s\\S]*?)\\r?\\n:::[ \\t]*$`,
+  "gm"
+)
+
 interface PostToMarkdownInput {
   slug: string
   title: string
@@ -53,29 +61,15 @@ const transformSegment = (segment: string, partnerTag: string): string => {
     return `[${text}](${href})`
   })
 
-  // 6. <PositiveBox>内容</PositiveBox> → 引用ブロック（> 😊）
+  // 6. コンテナディレクティブ（:::positive / :::negative）→ 絵文字付き引用ブロック
   segment = segment.replace(
-    /<PositiveBox>([\s\S]*?)<\/PositiveBox>/g,
-    (_, content) => {
-      const trimmed = content.trim()
-      const lines = trimmed.split("\n")
+    directiveFencePattern,
+    (_, name: string, content: string) => {
+      const lines = content.trim().split("\n")
       const quoted = lines.map((line) =>
         line.trim() === "" ? ">" : `> ${line}`
       )
-      return `> 😊\n${quoted.join("\n")}`
-    }
-  )
-
-  // <NegativeBox>内容</NegativeBox> → 引用ブロック（> 😞）
-  segment = segment.replace(
-    /<NegativeBox>([\s\S]*?)<\/NegativeBox>/g,
-    (_, content) => {
-      const trimmed = content.trim()
-      const lines = trimmed.split("\n")
-      const quoted = lines.map((line) =>
-        line.trim() === "" ? ">" : `> ${line}`
-      )
-      return `> 😞\n${quoted.join("\n")}`
+      return `${DIRECTIVES[name as DirectiveName].markdownPrefix}\n${quoted.join("\n")}`
     }
   )
 

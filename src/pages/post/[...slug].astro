@@ -9,6 +9,8 @@ import MdxH4 from "@components/mdx/MdxH4.astro"
 import MdxPicture from "@components/mdx/MdxPicture.astro"
 import MdxStrong from "@components/mdx/MdxStrong.astro"
 import MdxTable from "@components/mdx/MdxTable.astro"
+import NegativeBox from "@components/mdx/NegativeBox.astro"
+import PositiveBox from "@components/mdx/PositiveBox.astro"
 import BlogPost from "@layouts/BlogPost.astro"
 import { extractDescription } from "@lib/extractDescription"
 import { slugFromId } from "@lib/postSlug"
@@ -47,7 +49,9 @@ const markdownUrl = `${SITE_URL}post/${slugFromId(post.id)}.md`
       a: MdxA,
       table: MdxTable,
       strong: MdxStrong,
-      img: MdxPicture
+      img: MdxPicture,
+      PositiveBox,
+      NegativeBox
     }}
   />
 </BlogPost>

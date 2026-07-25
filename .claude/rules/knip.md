@@ -5,18 +5,18 @@ paths:
 
 # knip.json の ignoreFiles / ignoreDependencies について
 
-意図的な除外設定であり、削除すると `pnpm lint:unused` が exit 1 になる。現在の全エントリ（ファイル8件・依存16件）が必要であることは、除外を外して knip を実行して確認済み。
+意図的な除外設定であり、削除すると `pnpm lint:unused` が exit 1 になる。現在の全エントリ（ファイル6件・依存16件）が必要であることは、除外を外して knip を実行して確認済み。
 
 `ignore` の4パターンについて Configuration hints が出るが、基準状態の exit code は 0。このヒントを解消しようとしなくてよい。
 
 ## ignoreFiles
 
-`src/components/mdx/` の8ファイル（`Amzn.astro`, `AmznServer.astro`, `LinkCard.astro`, `LinkCardServer.astro`, `SimpleLinkCard.astro`, `PositiveBox.astro`, `NegativeBox.astro`, `cardStyles.ts`）:
-自作 Vite プラグイン `src/plugins/mdx-auto-import.ts` が、`astro.config.ts` の `mdxAutoImport([...])` の指定に従って全 MDX へ import 文を注入する。knip はこのプラグインを解釈できず、かつ `src/content/**` が ignore 対象のため、除外を外すと8件すべてが Unused files として報告される。
-
-`PositiveBox.astro` / `NegativeBox.astro` はさらに間接的で、記事は `:::positive` / `:::negative` のディレクティブ記法で書き、`src/plugins/satteri-directive-components.ts` がコンポーネント名へ変換する。記事中にコンポーネント名の文字列すら現れない。
+`src/components/mdx/` の6ファイル（`Amzn.astro`, `AmznServer.astro`, `LinkCard.astro`, `LinkCardServer.astro`, `SimpleLinkCard.astro`, `cardStyles.ts`）:
+自作 Vite プラグイン `src/plugins/mdx-auto-import.ts` が、`astro.config.ts` の `mdxAutoImport([...])` の指定に従って全 MDX へ import 文を注入する。knip はこのプラグインを解釈できず、かつ `src/content/**` が ignore 対象のため、除外を外すと6件すべてが Unused files として報告される。
 
 自動注入の対象を追加したときは、そのコンポーネントと専用の依存ファイルをここにも追加する。
+
+`PositiveBox.astro` / `NegativeBox.astro` は自動注入をやめ、`src/pages/post/[...slug].astro` と `src/pages/page/[slug].astro` の `<Content components={{...}}>` から渡す形にしたため除外不要になった。同様に import で辿れる形にできるコンポーネントは `ignoreFiles` に足さない。
 
 ## ignoreDependencies
 

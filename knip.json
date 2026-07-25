@@ -13,9 +13,7 @@
     "src/components/mdx/cardStyles.ts",
     "src/components/mdx/LinkCard.astro",
     "src/components/mdx/LinkCardServer.astro",
-    "src/components/mdx/SimpleLinkCard.astro",
-    "src/components/mdx/PositiveBox.astro",
-    "src/components/mdx/NegativeBox.astro"
+    "src/components/mdx/SimpleLinkCard.astro"
   ],
   "ignoreDependencies": [
     "tailwindcss",
