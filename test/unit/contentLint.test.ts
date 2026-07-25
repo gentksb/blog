@@ -1,5 +1,6 @@
 import { expect, test } from "vitest"
 import { DIRECTIVES, isDirectiveName } from "../../src/lib/directives"
+import { postToMarkdown } from "../../src/lib/postToMarkdown"
 
 // ビルド時(Vite)に全MDXソースを取り込む（workerd内ではfsを使えないため）
 const mdxSources = import.meta.glob("../../src/content/post/**/*.mdx", {
@@ -35,35 +36,45 @@ test("LinkCardのprop誤記（小文字linkurl=）がMDXコンテンツに存在
   expect(offenders).toEqual([])
 })
 
-// satteri は `::::name` / 字下げ / `:::name{...}` / `:::name[label]` / 名前直後の
-// 余分なテキスト / `::::` での閉じも container directive として受け付けるが、
-// postToMarkdown の変換は開始行・終了行ともに行頭・コロン3個の正規形しか拾わない。
-// 緩いパターンで両方を集め、正規形かつ DIRECTIVES 定義済みであることを要求する。
-// 開始行は名前あり、終了行は名前なしなので2つのパターンは重複しない。
-const directiveOpenerPattern = /^([ \t]*)(:{3,})([A-Za-z][A-Za-z0-9-]*)(.*)$/gm
-const directiveCloserPattern = /^([ \t]*)(:{3,})[ \t]*$/gm
+const stripCodeFences = (source: string): string =>
+  source.replace(/```[\s\S]*?```/g, "")
 
-test("MDXのディレクティブ開始行が正規形かつ DIRECTIVES に定義されている", () => {
+const stripFrontmatter = (source: string): string =>
+  source.replace(/^---\r?\n[\s\S]*?\r?\n---[ \t]*\r?\n/, "")
+
+// satteri は字下げ・コロン4個以上・ラベル・属性も container directive として
+// 受け付けるため、開始行の検出は緩いパターンで行う。終了行には名前がないので
+// このパターンとは重複しない
+const directiveOpenerPattern = /^[ \t]*:{3,}([A-Za-z][\w-]*)/gm
+
+test("MDXで使われているディレクティブ名が DIRECTIVES に定義されている", () => {
   const offenders = Object.entries(allMdxSources).flatMap(([path, source]) =>
-    [...source.matchAll(directiveOpenerPattern)]
-      .filter(
-        ([, indent, colons, name, rest]) =>
-          indent !== "" ||
-          colons !== ":::" ||
-          rest.trim() !== "" ||
-          !isDirectiveName(name)
-      )
+    [...stripCodeFences(source).matchAll(directiveOpenerPattern)]
+      .filter(([, name]) => !isDirectiveName(name))
       .map(([line]) => `${path}: ${JSON.stringify(line)}`)
   )
   expect(offenders).toEqual([])
 })
 
-test("MDXのディレクティブ終了行が正規形である", () => {
-  const offenders = Object.entries(allMdxSources).flatMap(([path, source]) =>
-    [...source.matchAll(directiveCloserPattern)]
-      .filter(([, indent, colons]) => indent !== "" || colons !== ":::")
-      .map(([line]) => `${path}: ${JSON.stringify(line)}`)
-  )
+// postToMarkdown はネストと閉じ忘れを変換できない。記法を禁止する代わりに、
+// 実際の記事を変換して ::: が残らないことで変換漏れを検出する
+test("全MDXを postToMarkdown で変換して ::: が残らない", () => {
+  const offenders = Object.entries(allMdxSources)
+    .map(([path, source]) => ({
+      path,
+      markdown: postToMarkdown({
+        slug: "test/slug",
+        title: "テスト",
+        date: new Date("2020-01-01T00:00:00Z"),
+        tags: ["TEST"],
+        body: stripFrontmatter(source),
+        siteUrl: "https://example.com/",
+        partnerTag: ""
+      })
+    }))
+    // コードフェンス内の ::: は変換対象外なので除外する
+    .filter(({ markdown }) => stripCodeFences(markdown).includes(":::"))
+    .map(({ path }) => path)
   expect(offenders).toEqual([])
 })
 

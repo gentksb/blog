@@ -1,10 +1,34 @@
 import { DIRECTIVES, type DirectiveName } from "./directives"
 
-// :::positive ... ::: の1ブロック。ディレクティブ名はレジストリから生成する
+// :::positive ... ::: の1ブロック。ディレクティブ名はレジストリから生成する。
+// satteri が受け付ける字下げ・コロン4個以上・開始終了のコロン数不一致・ラベル
+// `[...]`・属性 `{...}`・行末の余分なテキストをすべて拾う。
+// 本文が空のブロックにも対応するため、本文側のグループを省略可能にしている。
 const directiveFencePattern = new RegExp(
-  `^:::(${Object.keys(DIRECTIVES).join("|")})[ \\t]*\\r?\\n([\\s\\S]*?)\\r?\\n:::[ \\t]*$`,
+  `^[ \\t]*:{3,}(${Object.keys(DIRECTIVES).join("|")})(?![\\w-])[^\\n]*(?:\\r?\\n([\\s\\S]*?))?\\r?\\n[ \\t]*:{3,}[^\\n]*$`,
   "gm"
 )
+
+/**
+ * ディレクティブ本文を引用ブロックへ変換する。
+ * 字下げされたブロックの本文はそのまま引用すると4スペース以上のインデントで
+ * コードブロック扱いになるため、共通の字下げ幅を除去する。
+ */
+const toQuotedBlock = (content: string): string => {
+  const lines = content.split("\n").map((line) => line.replace(/\r$/, ""))
+  while (lines.length > 0 && lines[0].trim() === "") lines.shift()
+  while (lines.length > 0 && lines[lines.length - 1].trim() === "") lines.pop()
+
+  const indents = lines
+    .filter((line) => line.trim() !== "")
+    .map((line) => line.length - line.trimStart().length)
+  const commonIndent = indents.length > 0 ? Math.min(...indents) : 0
+
+  return lines
+    .map((line) => line.slice(commonIndent))
+    .map((line) => (line.trim() === "" ? ">" : `> ${line}`))
+    .join("\n")
+}
 
 interface PostToMarkdownInput {
   slug: string
@@ -64,12 +88,10 @@ const transformSegment = (segment: string, partnerTag: string): string => {
   // 6. コンテナディレクティブ（:::positive / :::negative）→ 絵文字付き引用ブロック
   segment = segment.replace(
     directiveFencePattern,
-    (_, name: string, content: string) => {
-      const lines = content.trim().split("\n")
-      const quoted = lines.map((line) =>
-        line.trim() === "" ? ">" : `> ${line}`
-      )
-      return `${DIRECTIVES[name as DirectiveName].markdownPrefix}\n${quoted.join("\n")}`
+    (_, name: string, content: string | undefined) => {
+      const prefix = DIRECTIVES[name as DirectiveName].markdownPrefix
+      const quoted = toQuotedBlock(content ?? "")
+      return quoted === "" ? prefix : `${prefix}\n${quoted}`
     }
   )
 
