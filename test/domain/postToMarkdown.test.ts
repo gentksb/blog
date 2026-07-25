@@ -1,4 +1,5 @@
 import { expect, test } from "vitest"
+import { DIRECTIVES, type DirectiveName } from "../../src/lib/directives"
 import { postToMarkdown } from "../../src/lib/postToMarkdown"
 
 const BASE_INPUT = {
@@ -132,35 +133,57 @@ test("<SimpleLinkCard url='...' /> title なし → [url](url)", () => {
   expect(result).toContain("[https://example.com/](https://example.com/)")
 })
 
-// === ルール6: PositiveBox / NegativeBox ===
+// === ルール6: コンテナディレクティブ ===
 
-test("<PositiveBox> が > 😊 引用ブロックに変換される", () => {
-  const body = `<PositiveBox>
-良い点です
-</PositiveBox>`
-  const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain("> 😊")
-  expect(result).toContain("> 良い点です")
-})
+const directiveNames = Object.keys(DIRECTIVES) as DirectiveName[]
 
-test("<PositiveBox> リスト入り", () => {
-  const body = `<PositiveBox>
+test.each(directiveNames)(
+  ":::%s が定義どおりの引用ブロックに変換され ::: が残らない",
+  (name) => {
+    const body = `:::${name}\n本文です\n:::`
+    const result = postToMarkdown({ ...BASE_INPUT, body })
+    expect(result).toContain(DIRECTIVES[name].markdownPrefix)
+    expect(result).toContain("> 本文です")
+    expect(result).not.toContain(":::")
+  }
+)
+
+test(":::positive リスト入り", () => {
+  const body = `:::positive
 - 軽い
 - 速い
-</PositiveBox>`
+:::`
   const result = postToMarkdown({ ...BASE_INPUT, body })
   expect(result).toContain("> 😊")
   expect(result).toContain("> - 軽い")
   expect(result).toContain("> - 速い")
 })
 
-test("<NegativeBox> が > 😞 引用ブロックに変換される", () => {
-  const body = `<NegativeBox>
-悪い点です
-</NegativeBox>`
+test("連続する2ブロックが個別に変換される", () => {
+  const body = `:::positive
+良い点
+:::
+
+:::negative
+悪い点
+:::`
   const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain("> 😞")
-  expect(result).toContain("> 悪い点です")
+  expect(result).toContain("> 😊\n> 良い点")
+  expect(result).toContain("> 😞\n> 悪い点")
+  expect(result).not.toContain(":::")
+})
+
+test("CRLF改行のディレクティブも変換される", () => {
+  const body = ":::positive\r\n本文です\r\n:::\r\n"
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain("> 😊")
+  expect(result).not.toContain(":::")
+})
+
+test("未定義のディレクティブ名は変換されない", () => {
+  const body = ":::warning\n注意\n:::"
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain(":::warning")
 })
 
 // === ルール7: 相対パス画像 ===
@@ -217,6 +240,13 @@ test("コードフェンス内の <Amzn /> は変換されない", () => {
   const result = postToMarkdown({ ...BASE_INPUT, body })
   expect(result).toContain('<Amzn asin="B0044BG93S" />')
   expect(result).not.toContain("Amazonで見る")
+})
+
+test("コードフェンス内の :::positive は変換されない", () => {
+  const body = "```\n:::positive\n良い点\n:::\n```"
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain(":::positive")
+  expect(result).not.toContain("> 😊")
 })
 
 test("コードフェンス内の相対パス画像は除去されない", () => {

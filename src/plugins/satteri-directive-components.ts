@@ -1,21 +1,17 @@
 import { defineMdastPlugin } from "satteri"
 import type { MdxJsxFlowElement } from "satteri"
 
-const DIRECTIVE_TO_COMPONENT: Record<string, string> = {
-  positive: "PositiveBox",
-  negative: "NegativeBox"
-}
+import { DIRECTIVES, isDirectiveName } from "../lib/directives"
 
 export function directiveComponentPlugin() {
   return defineMdastPlugin({
     name: "directive-components",
     containerDirective(node) {
-      const componentName = DIRECTIVE_TO_COMPONENT[node.name]
-      if (!componentName) return
+      if (!isDirectiveName(node.name)) return
 
       return {
         type: "mdxJsxFlowElement",
-        name: componentName,
+        name: DIRECTIVES[node.name].component,
         attributes: [],
         children: node.children
       } satisfies MdxJsxFlowElement

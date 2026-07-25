@@ -35,9 +35,7 @@ export default defineConfig({
       mdxAutoImport([
         "./src/components/mdx/LinkCard.astro",
         "./src/components/mdx/Amzn.astro",
-        "./src/components/mdx/SimpleLinkCard.astro",
-        "./src/components/mdx/PositiveBox.astro",
-        "./src/components/mdx/NegativeBox.astro"
+        "./src/components/mdx/SimpleLinkCard.astro"
       ]),
       tailwindcss()
     ]
