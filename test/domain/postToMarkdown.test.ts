@@ -186,6 +186,18 @@ test("未定義のディレクティブ名は変換されない", () => {
   expect(result).toContain(":::warning")
 })
 
+// satteri は以下も container directive として解釈するが postToMarkdown は変換しない。
+// この非対称は contentLint.test.ts の正規形チェックで記事側を縛ることで防ぐ。
+test.each([
+  ["4個以上のコロン", "::::positive\n本文\n::::"],
+  ["属性付き", ":::positive{.tight}\n本文\n:::"],
+  ["ラベル付き", ":::positive[見出し]\n本文\n:::"],
+  ["字下げ", "  :::positive\n  本文\n  :::"]
+])("正規形以外（%s）は変換されない", (_label, body) => {
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain(":::positive")
+})
+
 // === ルール7: 相対パス画像 ===
 
 test("相対パス画像 ![alt](./foo.jpg) が除去される", () => {
