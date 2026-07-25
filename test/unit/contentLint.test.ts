@@ -56,6 +56,18 @@ test("MDXで使われているディレクティブ名が DIRECTIVES に定義�
   expect(offenders).toEqual([])
 })
 
+// 下の変換テストが frontmatter を本文として扱っていないことの保証。
+// strip が空振りすると変換テストは緑のままカバレッジを失う
+test("全MDXから frontmatter を除去できている", () => {
+  const offenders = Object.entries(allMdxSources)
+    .filter(([, source]) => {
+      const stripped = stripFrontmatter(source)
+      return stripped === source || stripped.startsWith("---")
+    })
+    .map(([path]) => path)
+  expect(offenders).toEqual([])
+})
+
 // postToMarkdown はネストと閉じ忘れを変換できない。記法を禁止する代わりに、
 // 実際の記事を変換して ::: が残らないことで変換漏れを検出する
 test("全MDXを postToMarkdown で変換して ::: が残らない", () => {
