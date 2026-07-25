@@ -192,7 +192,9 @@ test.each([
   ["4個以上のコロン", "::::positive\n本文\n::::"],
   ["属性付き", ":::positive{.tight}\n本文\n:::"],
   ["ラベル付き", ":::positive[見出し]\n本文\n:::"],
-  ["字下げ", "  :::positive\n  本文\n  :::"]
+  ["字下げ", "  :::positive\n  本文\n  :::"],
+  ["終了行のコロンが4個", ":::positive\n本文\n::::"],
+  ["終了行が字下げ", ":::positive\n本文\n  :::"]
 ])("正規形以外（%s）は変換されない", (_label, body) => {
   const result = postToMarkdown({ ...BASE_INPUT, body })
   expect(result).toContain(":::positive")

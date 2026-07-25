@@ -36,12 +36,14 @@ test("LinkCardのprop誤記（小文字linkurl=）がMDXコンテンツに存在
 })
 
 // satteri は `::::name` / 字下げ / `:::name{...}` / `:::name[label]` / 名前直後の
-// 余分なテキストも container directive として受け付けるが、postToMarkdown の変換は
-// 行頭・コロン3個・名前のみの正規形しか拾わない。緩いパターンで開始行を集め、
-// 正規形かつ DIRECTIVES 定義済みであることを要求する。
+// 余分なテキスト / `::::` での閉じも container directive として受け付けるが、
+// postToMarkdown の変換は開始行・終了行ともに行頭・コロン3個の正規形しか拾わない。
+// 緩いパターンで両方を集め、正規形かつ DIRECTIVES 定義済みであることを要求する。
+// 開始行は名前あり、終了行は名前なしなので2つのパターンは重複しない。
 const directiveOpenerPattern = /^([ \t]*)(:{3,})([A-Za-z][A-Za-z0-9-]*)(.*)$/gm
+const directiveCloserPattern = /^([ \t]*)(:{3,})[ \t]*$/gm
 
-test("MDXのコンテナディレクティブが正規形かつ DIRECTIVES に定義されている", () => {
+test("MDXのディレクティブ開始行が正規形かつ DIRECTIVES に定義されている", () => {
   const offenders = Object.entries(allMdxSources).flatMap(([path, source]) =>
     [...source.matchAll(directiveOpenerPattern)]
       .filter(
@@ -51,6 +53,15 @@ test("MDXのコンテナディレクティブが正規形かつ DIRECTIVES に�
           rest.trim() !== "" ||
           !isDirectiveName(name)
       )
+      .map(([line]) => `${path}: ${JSON.stringify(line)}`)
+  )
+  expect(offenders).toEqual([])
+})
+
+test("MDXのディレクティブ終了行が正規形である", () => {
+  const offenders = Object.entries(allMdxSources).flatMap(([path, source]) =>
+    [...source.matchAll(directiveCloserPattern)]
+      .filter(([, indent, colons]) => indent !== "" || colons !== ":::")
       .map(([line]) => `${path}: ${JSON.stringify(line)}`)
   )
   expect(offenders).toEqual([])

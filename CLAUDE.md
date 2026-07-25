@@ -26,7 +26,7 @@ Prettier は Edit / Write の PostToolUse フック（`.claude/settings.json`）
 
 記事本文で `<PositiveBox>` / `<NegativeBox>` を JSX として書くことはしない。ディレクティブを追加するときは `DIRECTIVES` へ1エントリ足し、レンダリング用の `.astro` を作って両方の `components` マップへ渡す。マップへの追加を忘れるとビルドが `Expected component ... to be defined` で落ちる。`test/unit/contentLint.test.ts` が記事の `:::` 名を `DIRECTIVES` と突き合わせ、`test/domain/postToMarkdown.test.ts` が全エントリの Markdown 変換を検証する。
 
-記事に書けるのは行頭・コロン3個・名前のみの正規形（`:::positive`）だけ。satteri は `::::positive`・字下げ・`:::positive{.tight}`・`:::positive[label]` も解釈するが `postToMarkdown` は変換しないため、正規形以外は `/post/<slug>.md` に `:::` が露出する。非正規形は `test/unit/contentLint.test.ts` が検出して失敗する。
+記事に書けるのは開始行 `:::positive`・終了行 `:::` の正規形（どちらも行頭・コロン3個）だけ。satteri は `::::positive`・字下げ・`:::positive{.tight}`・`:::positive[label]`・`::::` での閉じも解釈するが `postToMarkdown` は変換しないため、正規形以外は `/post/<slug>.md` に `:::` が露出する。非正規形は `test/unit/contentLint.test.ts` が開始行・終了行の両方で検出して失敗する。
 
 MDX から `server:defer` 付きの Astro コンポーネントを直接使えないため、`LinkCard.astro` / `Amzn.astro` はラッパーで、KV と外部 API にアクセスする実体は `LinkCardServer.astro` / `AmznServer.astro`。PAAPI データは KV に 24 時間 TTL でキャッシュ。
 
