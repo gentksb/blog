@@ -12,15 +12,21 @@ interface Props {
   twitterImage?: string
   markdownUrl?: string
   bodyBackground?: "bg-stone-50" | "bg-white"
+  noindex?: boolean
 }
 
-const { bodyBackground = "bg-stone-50", ...props } = Astro.props
+const {
+  bodyBackground = "bg-stone-50",
+  noindex = false,
+  ...props
+} = Astro.props
 ---
 
 <!doctype html>
 <html lang="ja">
   <head>
     <BaseHead {...props} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
   </head>
   <body class={`flex min-h-screen flex-col ${bodyBackground}`}>
     <Header />

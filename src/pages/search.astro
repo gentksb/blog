@@ -39,6 +39,7 @@ const PLACEHOLDER_TEMPLATE = `<li class="hit hit-loading" aria-hidden="true">
 <Layout
   title="記事を検索 - 幻想サイクル"
   description="幻想サイクルの記事をキーワードで検索します。"
+  noindex
 >
   <div class="search-page mx-auto max-w-2xl px-4 pb-16">
     <PagefindConfig {...{ "excerpt-length": "40" }} preload />
@@ -198,7 +199,7 @@ const PLACEHOLDER_TEMPLATE = `<li class="hit hit-loading" aria-hidden="true">
   .search-page .hit-excerpt mark {
     padding: 0 1px;
     border-radius: 2px;
-    background: rgb(180 83 9 / 0.16);
+    background: color-mix(in srgb, var(--color-primary) 16%, transparent);
     color: #1c1917;
     font-weight: 700;
   }
@@ -224,7 +225,7 @@ const PLACEHOLDER_TEMPLATE = `<li class="hit hit-loading" aria-hidden="true">
   .search-page .hit-section {
     display: block;
     padding: 0.1875rem 0.5rem;
-    border: 1px solid rgb(154 52 18 / 0.3);
+    border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 700;
@@ -234,7 +235,7 @@ const PLACEHOLDER_TEMPLATE = `<li class="hit hit-loading" aria-hidden="true">
   }
 
   .search-page .hit-section:hover {
-    background: rgb(154 52 18 / 0.07);
+    background: color-mix(in srgb, var(--color-accent) 7%, transparent);
   }
 
   /* outline は要素自身の border-radius に追従するため、ここでは半径を指定しない */
