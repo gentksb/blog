@@ -14,7 +14,7 @@ Claude Code Web scheduled agent（週次 月曜 UTC 00:00）がこのファイ�
 4. `automation/pending-updates.json` を読み込み、`recheckAfter <= now` のエントリを「再チェック対象」として記録する。`recheckAfter > now` のエントリは今回スキップ（手順終了時に再書き込み）。
 5. `pnpm outdated --format json` を実行して更新可能な依存を取得する。
 6. リリース後待機（`pnpm-workspace.yaml` の `minimumReleaseAge: 1440`）は pnpm 10.16+ で `pnpm outdated` / `pnpm update` がネイティブに尊重する。公開から 24 時間未満のバージョンは `pnpm outdated` に現れず `pnpm update` でも採用されないため、手動判定は不要。公開から時間が経てば次回以降の実行で自動的に候補へ上がる。
-7. `automation/engine-pinned-packages.json` を読み込む。候補のうちこのリストに名前が載っているパッケージで、かつ `Latest` の major が `maxMajor` を超えるものは `pending-updates.json` の `entries` に `reason: "engine-pinned"` と `notes` に理由を記録して追記し、以降の手順から除外する。
+7. `automation/engine-pinned-packages.json` を読み込む。候補のうちこのリストに名前が載っているパッケージで、かつ `Latest` の major が `maxMajor` を超えるものは `pending-updates.json` の `entries` に `reason: "engine-pinned"` と `notes` に理由を記録して追記し、以降の手順から除外する。`typescript` は `@astrojs/check`（`pnpm typecheck` が依存する `astro check`）が TypeScript 7 の programmatic API に未対応のため `maxMajor: 6` で登録済み。`@astrojs/check` が TS7 対応したらこのエントリの `maxMajor` を上げて解除する。
 
 ここまでの除外後に残った候補を「処理対象リスト」とする。処理対象リストが空の場合は「終了処理」へ進む。
 

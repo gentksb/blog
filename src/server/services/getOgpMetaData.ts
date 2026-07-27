@@ -54,16 +54,16 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
       element(element) {
         switch (element.getAttribute("property")) {
           case "og:title":
-            result.ogpTitle = element.getAttribute("content")
+            result.ogpTitle = element.getAttribute("content") ?? undefined
             break
           case "og:description":
-            result.ogpDescription = element.getAttribute("content")
+            result.ogpDescription = element.getAttribute("content") ?? undefined
             break
           case "og:image":
-            result.ogpImageUrl = element.getAttribute("content")
+            result.ogpImageUrl = element.getAttribute("content") ?? undefined
             break
           case "og:site_name":
-            result.ogpSiteName = element.getAttribute("content")
+            result.ogpSiteName = element.getAttribute("content") ?? undefined
             break
           // EC サイトが出力する OGP 拡張の価格メタタグ（Shopify 等）
           case "product:price:amount":
@@ -91,7 +91,8 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
         switch (element.getAttribute("name")) {
           case "description":
             if (!result.ogpDescription || "") {
-              result.ogpDescription = element.getAttribute("content")
+              result.ogpDescription =
+                element.getAttribute("content") ?? undefined
             }
             break
           default:

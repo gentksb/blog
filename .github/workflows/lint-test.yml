@@ -9,7 +9,16 @@ on:
       - "src/components/**"
       - "src/layouts/**"
       - "src/lib/**"
+      - "src/pages/**"
+      - "src/plugins/**"
+      - "src/styles/**"
+      - "src/config.ts"
+      - "src/consts.ts"
+      - "src/env.d.ts"
+      - "src/worker.ts"
+      - "src/content.config.ts"
       - "test/**"
+      - "astro.config.ts"
       - "package.json"
       - "pnpm-lock.yaml"
       - "tsconfig.json"
@@ -25,7 +34,16 @@ on:
       - "src/components/**"
       - "src/layouts/**"
       - "src/lib/**"
+      - "src/pages/**"
+      - "src/plugins/**"
+      - "src/styles/**"
+      - "src/config.ts"
+      - "src/consts.ts"
+      - "src/env.d.ts"
+      - "src/worker.ts"
+      - "src/content.config.ts"
       - "test/**"
+      - "astro.config.ts"
       - "package.json"
       - "pnpm-lock.yaml"
       - "tsconfig.json"
@@ -63,6 +81,9 @@ jobs:
 
       - name: Run Lint
         run: pnpm run lint
+
+      - name: Run Typecheck
+        run: pnpm run typecheck
 
       - name: Run Lint unused (knip)
         run: pnpm run lint:unused

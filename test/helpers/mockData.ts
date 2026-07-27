@@ -105,8 +105,5 @@ export const createMockEnv = (overrides: Partial<Env> = {}): Env => ({
   CREATORS_CREDENTIAL_SECRET: "test-credential-secret",
   PARTNER_TAG: "test-tag",
   ASSETS: {} as Fetcher,
-  CLOUDFLARE_API_TOKEN: "test-cf-token",
-  CLOUDFLARE_ACCOUNT_ID: "test-cf-account",
-  GITHUB_TOKEN: "test-github-token",
   ...overrides
 })

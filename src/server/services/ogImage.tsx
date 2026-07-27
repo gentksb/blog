@@ -1,5 +1,5 @@
 import { env } from "cloudflare:workers"
-import { ImageResponse } from "@cf-wasm/og/workerd"
+import { ImageResponse, type FontWeight } from "@cf-wasm/og/workerd"
 
 function arrayBufferToBase64(bytes: Uint8Array): string {
   const chunkSize = 8192
@@ -131,7 +131,7 @@ async function createImageResponse(
   logoBase64: string,
   fontData: ArrayBuffer,
   fontName: string,
-  weight: number
+  weight: FontWeight
 ): Promise<Response> {
   const imageResponse = await ImageResponse.async(
     <div

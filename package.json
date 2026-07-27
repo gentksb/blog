@@ -22,6 +22,7 @@
     "build": "pnpm typegen && pnpm astro build",
     "test": "pnpm typegen && vitest run",
     "test:light": "pnpm typegen && mkdir -p dist/client && vitest run test/unit test/domain test/adapters",
+    "typecheck": "pnpm typegen && astro check",
     "lint": "prettier --check .",
     "lint:unused": "knip",
     "lint:fix": "prettier --write .",
@@ -48,6 +49,7 @@
     "satteri": "^0.9.5"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.9",
     "@cloudflare/vitest-pool-workers": "^0.18.8",
     "@cloudflare/workers-types": "^5.20260724.1",
     "@tailwindcss/vite": "^4.3.3",
@@ -70,7 +72,7 @@
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^3.0.3",
-    "typescript": "^7.0.2",
+    "typescript": "^6.0.3",
     "vitest": "^4.1.10",
     "wrangler": "^4.114.0"
   }
