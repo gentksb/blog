@@ -1,11 +1,10 @@
 ---
 export const prerender = true
-import type { CollectionEntry } from "astro:content"
 import BlogPostCard from "@components/BlogPostCard.astro"
 import Paginate from "@components/Paginate.astro"
 import Layout from "@layouts/Layout.astro"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
-import type { GetStaticPaths, Page } from "astro"
+import type { GetStaticPaths } from "astro"
 import { pageSize } from "~/config"
 
 export const getStaticPaths = (async ({ paginate }) => {
@@ -26,10 +25,6 @@ export const getStaticPaths = (async ({ paginate }) => {
     })
   })
 }) satisfies GetStaticPaths
-
-type Props = {
-  page: Page<CollectionEntry<"post">>
-}
 
 const { page } = Astro.props
 const { tag } = Astro.params as { tag: string }

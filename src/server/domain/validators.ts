@@ -132,30 +132,6 @@ export const isValidSecFetchMode = (secFetchMode: string | null): boolean => {
   return true
 }
 
-/**
- * セキュリティヘッダーに基づいたリクエストの検証
- * sec-fetch-siteとsec-fetch-modeを組み合わせた包括的な検証
- * @param request - HTTPリクエストオブジェクト
- * @returns リクエストが許可される場合はtrue
- */
-const isSecurityHeadersValid = (request: Request): boolean => {
-  const headers = request.headers
-  const secFetchSite = headers.get("sec-fetch-site")
-  const secFetchMode = headers.get("sec-fetch-mode")
-
-  // Sec-Fetch-Siteによる検証（主要な検証）
-  if (secFetchSite && !isValidSecFetchSite(secFetchSite)) {
-    return false
-  }
-
-  // Sec-Fetch-Modeによる追加検証
-  if (secFetchMode && !isValidSecFetchMode(secFetchMode)) {
-    return false
-  }
-
-  return true
-}
-
 // === OG画像生成用バリデーション関数 ===
 
 /**

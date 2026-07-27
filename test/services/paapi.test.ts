@@ -1,10 +1,9 @@
-import { env } from "cloudflare:test"
+import { env } from "cloudflare:workers"
 import { getAmazonProductInfo } from "../../src/server/services/getAmazonProductInfo"
 import { expect, test } from "vitest"
 import { testAsin } from "../fixtures/testData"
 
 const { CREATORS_CREDENTIAL_ID, CREATORS_CREDENTIAL_SECRET, PARTNER_TAG } = env
-console.dir(env, { depth: 3 })
 
 if (!CREATORS_CREDENTIAL_ID || !CREATORS_CREDENTIAL_SECRET || !PARTNER_TAG) {
   throw new Error("Environment variables are not valid")
