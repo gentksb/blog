@@ -1,5 +1,6 @@
 import { expect, test } from "vitest"
-import { DIRECTIVES } from "../../src/lib/directives"
+import { DIRECTIVES, isDirectiveName } from "../../src/lib/directives"
+import { postToMarkdown } from "../../src/lib/postToMarkdown"
 
 // ビルド時(Vite)に全MDXソースを取り込む（workerd内ではfsを使えないため）
 const mdxSources = import.meta.glob("../../src/content/post/**/*.mdx", {
@@ -22,6 +23,12 @@ test("MDXコンテンツを1件以上読み込めている", () => {
   expect(Object.keys(mdxSources).length).toBeGreaterThan(0)
 })
 
+test("singlePageのMDXコンテンツも読み込めている", () => {
+  expect(Object.keys(allMdxSources).length).toBeGreaterThan(
+    Object.keys(mdxSources).length
+  )
+})
+
 test("LinkCardのprop誤記（小文字linkurl=）がMDXコンテンツに存在しない", () => {
   const offenders = Object.entries(mdxSources)
     .filter(([, source]) => /\blinkurl=/.test(source))
@@ -29,13 +36,57 @@ test("LinkCardのprop誤記（小文字linkurl=）がMDXコンテンツに存在
   expect(offenders).toEqual([])
 })
 
-test("MDXで使われているコンテナディレクティブが全て DIRECTIVES に定義されている", () => {
+const stripCodeFences = (source: string): string =>
+  source.replace(/```[\s\S]*?```/g, "")
+
+const stripFrontmatter = (source: string): string =>
+  source.replace(/^---\r?\n[\s\S]*?\r?\n---[ \t]*\r?\n/, "")
+
+// satteri は字下げ・コロン4個以上・ラベル・属性も container directive として
+// 受け付けるため、開始行の検出は緩いパターンで行う。終了行には名前がないので
+// このパターンとは重複しない
+const directiveOpenerPattern = /^[ \t]*:{3,}([A-Za-z][\w-]*)/gm
+
+test("MDXで使われているディレクティブ名が DIRECTIVES に定義されている", () => {
   const offenders = Object.entries(allMdxSources).flatMap(([path, source]) =>
-    [...source.matchAll(/^:::([a-z][a-z0-9-]*)/gm)]
-      .map((match) => match[1])
-      .filter((name) => !(name in DIRECTIVES))
-      .map((name) => `${path}: :::${name}`)
+    [...stripCodeFences(source).matchAll(directiveOpenerPattern)]
+      .filter(([, name]) => !isDirectiveName(name))
+      .map(([line]) => `${path}: ${JSON.stringify(line)}`)
   )
+  expect(offenders).toEqual([])
+})
+
+// 下の変換テストが frontmatter を本文として扱っていないことの保証。
+// strip が空振りすると変換テストは緑のままカバレッジを失う
+test("全MDXから frontmatter を除去できている", () => {
+  const offenders = Object.entries(allMdxSources)
+    .filter(([, source]) => {
+      const stripped = stripFrontmatter(source)
+      return stripped === source || stripped.startsWith("---")
+    })
+    .map(([path]) => path)
+  expect(offenders).toEqual([])
+})
+
+// postToMarkdown はネストと閉じ忘れを変換できない。記法を禁止する代わりに、
+// 実際の記事を変換して ::: が残らないことで変換漏れを検出する
+test("全MDXを postToMarkdown で変換して ::: が残らない", () => {
+  const offenders = Object.entries(allMdxSources)
+    .map(([path, source]) => ({
+      path,
+      markdown: postToMarkdown({
+        slug: "test/slug",
+        title: "テスト",
+        date: new Date("2020-01-01T00:00:00Z"),
+        tags: ["TEST"],
+        body: stripFrontmatter(source),
+        siteUrl: "https://example.com/",
+        partnerTag: ""
+      })
+    }))
+    // コードフェンス内の ::: は変換対象外なので除外する
+    .filter(({ markdown }) => stripCodeFences(markdown).includes(":::"))
+    .map(({ path }) => path)
   expect(offenders).toEqual([])
 })
 
@@ -43,7 +94,7 @@ test("PositiveBox / NegativeBox がMDXでJSX記法として書かれていない
   const componentNames = Object.values(DIRECTIVES).map((d) => d.component)
   const offenders = Object.entries(allMdxSources).flatMap(([path, source]) =>
     componentNames
-      .filter((name) => new RegExp(`<${name}[\\s>]`).test(source))
+      .filter((name) => new RegExp(`<${name}[\\s/>]`).test(source))
       .map((name) => `${path}: <${name}>`)
   )
   expect(offenders).toEqual([])

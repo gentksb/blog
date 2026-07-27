@@ -186,6 +186,47 @@ test("未定義のディレクティブ名は変換されない", () => {
   expect(result).toContain(":::warning")
 })
 
+// satteri が container directive として解釈する記法は、記事側で禁止せず
+// postToMarkdown 側で受け付ける
+test.each([
+  ["コロン4個", "::::positive\n本文\n::::"],
+  ["開始終了のコロン数不一致", ":::positive\n本文\n::::"],
+  ["属性付き", ":::positive{.tight}\n本文\n:::"],
+  ["ラベル付き", ":::positive[見出し]\n本文\n:::"],
+  ["名前直後の余分なテキスト", ":::positive foo\n本文\n:::"],
+  ["字下げ", "  :::positive\n  本文\n  :::"],
+  ["終了行のみ字下げ", ":::positive\n本文\n  :::"],
+  ["終了行の余分なテキスト", ":::positive\n本文\n::: end"],
+  ["本文が空", ":::positive\n:::"]
+])("satteri が受け付ける記法（%s）も変換される", (_label, body) => {
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain("> 😊")
+  expect(result).not.toContain(":::")
+})
+
+test("字下げされたブロックの本文は共通の字下げを除去して引用される", () => {
+  const body = "    :::positive\n    本文です\n      入れ子\n    :::"
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain("> 本文です")
+  expect(result).toContain(">   入れ子")
+})
+
+test("ディレクティブ名の部分一致（:::positively）は変換されない", () => {
+  const body = ":::positively\n本文\n:::"
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain(":::positively")
+})
+
+// 正規表現では扱えない範囲。記事側に現れないことは contentLint.test.ts の
+// 「全記事を変換して ::: が残らない」テストが保証する
+test.each([
+  ["閉じ忘れ", ":::positive\n本文"],
+  ["ネスト", ":::positive\n外\n::::negative\n内\n::::\n:::"]
+])("既知の未対応記法（%s）は ::: が残る", (_label, body) => {
+  const result = postToMarkdown({ ...BASE_INPUT, body })
+  expect(result).toContain(":::")
+})
+
 // === ルール7: 相対パス画像 ===
 
 test("相対パス画像 ![alt](./foo.jpg) が除去される", () => {

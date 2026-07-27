@@ -11,4 +11,4 @@ export const DIRECTIVES = {
 export type DirectiveName = keyof typeof DIRECTIVES
 
 export const isDirectiveName = (name: string): name is DirectiveName =>
-  name in DIRECTIVES
+  Object.hasOwn(DIRECTIVES, name)
