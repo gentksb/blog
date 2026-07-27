@@ -5,6 +5,9 @@ export const linkCardBadge = "absolute right-2 top-1 text-xs font-medium"
 
 export const linkCardPrice = "text-sm font-bold text-stone-800 md:text-base"
 
+export const linkCardTitle =
+  "line-clamp-2 text-sm font-bold leading-tight text-stone-800 md:text-base"
+
 export const brandColorText = {
   rakuten: "text-rakuten",
   yahoo: "text-yahoo"

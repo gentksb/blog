@@ -9,16 +9,11 @@ type Props = {
 const { src, alt } = Astro.props
 ---
 
-{
-  typeof src === "string" ? (
-    <figure>
+<figure>
+  {
+    typeof src === "string" ? (
       <img class="mx-auto" src={src} alt={alt} />
-      <figcaption class="not-prose text-center text-xs text-stone-500 md:text-sm">
-        {alt}
-      </figcaption>
-    </figure>
-  ) : (
-    <figure>
+    ) : (
       <Picture
         formats={["webp"]}
         fallbackFormat="jpeg"
@@ -27,9 +22,9 @@ const { src, alt } = Astro.props
         {src}
         {alt}
       />
-      <figcaption class="not-prose text-center text-xs text-stone-500 md:text-sm">
-        {alt}
-      </figcaption>
-    </figure>
-  )
-}
+    )
+  }
+  <figcaption class="not-prose text-center text-xs text-stone-500 md:text-sm">
+    {alt}
+  </figcaption>
+</figure>
