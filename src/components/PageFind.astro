@@ -3,82 +3,30 @@ import Search from "astro-pagefind/components/Search.astro"
 ---
 
 <div class="search-container relative">
-  <Search className="pagefind-ui" />
+  <Search searchboxOptions={{ placeholder: "記事を検索" }} />
 </div>
 
-<style is:global>
-  /* ヘッダー内の検索コンテナスタイル */
+<style>
+  /*
+    astro-pagefind v2 の <pagefind-searchbox> は light DOM に .pf-* を描画し、
+    その CSS は :is(*, #\#) を3重に重ねた詳細度を持つ。クラスセレクタでの上書きは
+    通らないため、継承で内部へ届くカスタムプロパティだけでテーマを合わせる。
+    https://pagefind.app/docs/css-variables/
+  */
   .search-container {
     width: 220px;
-  }
 
-  /* Pagefindコンポーネントのカスタマイズ */
-  .pagefind-ui {
-    --pagefind-ui-scale: 0.8;
-    --pagefind-ui-primary: #b45309;
-    --pagefind-ui-text: #333;
-    --pagefind-ui-background: #fff;
-    --pagefind-ui-border: #eaeaea;
-    --pagefind-ui-border-width: 1px;
-    --pagefind-ui-border-radius: 0.5rem;
-    --pagefind-ui-font: inherit;
-    width: 100%;
-  }
-
-  /* 検索入力欄のカスタマイズ */
-  .pagefind-ui .pagefind-ui__search-input {
-    background-color: #f3f4f6;
-    padding: 0.5rem 2.5rem 0.5rem 1rem;
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    width: 100%;
-    border: none;
-    outline: none;
-    box-shadow: none;
-  }
-
-  .pagefind-ui .pagefind-ui__search-input::placeholder {
-    text-align: center;
-  }
-
-  .pagefind-ui .pagefind-ui__search-input:focus {
-    outline: none;
-    ring: 2px solid var(--accent, #0066cc);
-    ring-offset: 2px;
-  }
-
-  /* 検索結果ドロワーのスタイル */
-  .pagefind-ui .pagefind-ui__drawer:not(.pagefind-ui__hidden) {
-    position: fixed;
-    left: 50%;
-    top: 80px;
-    transform: translateX(-50%);
-    width: 90vw;
-    max-width: 800px;
-    z-index: 99999;
-    padding: 1em;
-    overflow-y: auto;
-    max-height: 80vh;
-    box-shadow:
-      0 10px 15px -5px rgba(0, 0, 0, 0.3),
-      0 2px 5px 0 rgba(0, 0, 0, 0.2);
-    border-radius: var(--pagefind-ui-border-radius);
-    background-color: var(--pagefind-ui-background);
-  }
-
-  /* 検索結果のリンクとテキストスタイル */
-  .pagefind-ui .pagefind-ui__result-link {
-    color: var(--pagefind-ui-primary);
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .pagefind-ui .pagefind-ui__result-link:hover {
-    text-decoration: underline;
-  }
-
-  .pagefind-ui .pagefind-ui__result-excerpt {
-    color: var(--pagefind-ui-text);
-    font-size: 0.875rem;
+    /* カスタムプロパティへの inherit は「親の同名変数」を指すため実フォントを渡す */
+    --pf-font: var(--font-sans);
+    --pf-border-radius: 0.5rem;
+    --pf-text: #333;
+    --pf-background: #fff;
+    --pf-border: #eaeaea;
+    --pf-mark: var(--color-primary);
+    --pf-border-focus: var(--color-primary);
+    --pf-outline-focus: var(--color-primary);
+    /* 既定の 480px ではなくヘッダーの枠幅に従わせる */
+    --pf-searchbox-max-width: 100%;
+    --pf-searchbox-dropdown-max-height: 60vh;
   }
 </style>
