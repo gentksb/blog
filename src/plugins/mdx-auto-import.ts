@@ -1,5 +1,4 @@
 import { parse, resolve } from "node:path"
-import type { Plugin } from "vite"
 
 function resolveModulePath(path: string): string {
   if (path.startsWith(".")) return resolve(path)
@@ -10,7 +9,7 @@ function getDefaultImportName(path: string): string {
   return parse(path).name.replaceAll(/[^\w\d]/g, "")
 }
 
-export function mdxAutoImport(imports: string[]): Plugin {
+export function mdxAutoImport(imports: string[]) {
   const importStatements = imports
     .map((p) => {
       const resolved = resolveModulePath(p)
@@ -21,8 +20,8 @@ export function mdxAutoImport(imports: string[]): Plugin {
 
   return {
     name: "mdx-auto-import",
-    enforce: "pre",
-    transform(code, id) {
+    enforce: "pre" as const,
+    transform(code: string, id: string) {
       if (!id.endsWith(".mdx")) return
       const firstFm = code.indexOf("---")
       if (firstFm === -1) return importStatements + "\n" + code

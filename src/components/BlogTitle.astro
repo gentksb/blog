@@ -9,7 +9,10 @@ type Props = CollectionEntry<"post">["data"] & { id: string }
 const { cover, title, date, tags } = Astro.props
 ---
 
-<div class="relative mb-6">
+<div
+  class="relative mb-6"
+  data-pagefind-meta={`date:${date.toLocaleDateString("ja-jp")}`}
+>
   <div class="aspect-video w-full bg-gray-300">
     <Picture
       src={cover ?? dummy}

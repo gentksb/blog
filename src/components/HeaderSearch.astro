@@ -1,0 +1,44 @@
+---
+const isSearchPage = Astro.url.pathname.replace(/\/$/, "") === "/search"
+---
+
+{
+  !isSearchPage && (
+    <Fragment>
+      <a
+        href="/search"
+        class="flex size-10 items-center justify-center rounded-full text-gray-600 transition hover:bg-stone-100 hover:text-black md:hidden"
+        aria-label="記事を検索"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="7" />
+          <line x1="21" y1="21" x2="16.5" y2="16.5" />
+        </svg>
+      </a>
+
+      <form action="/search" method="get" role="search" class="hidden md:block">
+        <label for="header-search" class="sr-only">
+          記事を検索
+        </label>
+        <input
+          id="header-search"
+          type="search"
+          name="q"
+          placeholder="記事を検索"
+          class="h-9 w-52 rounded-lg border border-stone-300 bg-white px-3 text-sm text-stone-900 placeholder:text-stone-500 focus:border-primary focus:outline-2 focus:outline-offset-2 focus:outline-primary"
+        />
+      </form>
+    </Fragment>
+  )
+}

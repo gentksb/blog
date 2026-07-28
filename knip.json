@@ -11,6 +11,8 @@
     "src/components/mdx/Amzn.astro",
     "src/components/mdx/AmznServer.astro",
     "src/components/mdx/cardStyles.ts",
+    "src/components/mdx/icons/ExternalLinkIcon.astro",
+    "src/components/mdx/icons/GlobeIcon.astro",
     "src/components/mdx/LinkCard.astro",
     "src/components/mdx/LinkCardServer.astro",
     "src/components/mdx/SimpleLinkCard.astro"

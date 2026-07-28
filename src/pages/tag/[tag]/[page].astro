@@ -1,14 +1,13 @@
 ---
 export const prerender = true
-import type { CollectionEntry } from "astro:content"
 import BlogPostCard from "@components/BlogPostCard.astro"
 import Paginate from "@components/Paginate.astro"
 import Layout from "@layouts/Layout.astro"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
-import type { GetStaticPaths, Page } from "astro"
+import type { GetStaticPaths } from "astro"
 import { pageSize } from "~/config"
 
-export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+export const getStaticPaths = (async ({ paginate }) => {
   // 全タグを収集
   const allTags = new Set<string>()
   timeOrderPosts.forEach((post) => {
@@ -25,11 +24,7 @@ export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
       pageSize: pageSize
     })
   })
-}
-
-type Props = {
-  page: Page<CollectionEntry<"post">>
-}
+}) satisfies GetStaticPaths
 
 const { page } = Astro.props
 const { tag } = Astro.params as { tag: string }

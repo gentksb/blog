@@ -14,6 +14,6 @@
       "~/*": ["./src/*"],
       "@type/*": ["./@types/*"]
     },
-    "types": ["@cloudflare/vitest-pool-workers"]
+    "types": ["@cloudflare/vitest-pool-workers/types"]
   }
 }

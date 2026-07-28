@@ -10,8 +10,8 @@ const isRecord = (value: unknown): value is Record<string, unknown> => {
 }
 
 /**
- * schema.org の @type が指定タイプを含むかどうかを判定
- * @type は文字列または文字列配列の両形式がある
+ * schema.org のタイププロパティが指定タイプを含むかどうかを判定
+ * 値は文字列・文字列配列の両形式がある
  */
 const hasSchemaType = (
   node: Record<string, unknown>,

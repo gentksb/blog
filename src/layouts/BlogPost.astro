@@ -28,12 +28,17 @@ const twitterOgpImageUrl = `${Astro.url}twitter-og.png`
 const ogpStaticImage = cover
   ? await getImage({ src: cover, format: "jpg" })
   : undefined
+// rawOptions.src は getImage() に渡した入力を保持するが、型上は string も含む
+// union のため、image() スキーマ由来（常に ImageMetadata）であることをここで絞り込む
+const ogpRawSrc = ogpStaticImage?.rawOptions.src
+const ogpOriginalImageUrl =
+  ogpRawSrc && typeof ogpRawSrc !== "string" ? ogpRawSrc.src : undefined
 ---
 
 <Layout
   title={`${title} | ${SITE_TITLE}`}
   datePublished={publishedDate}
-  image={ogpStaticImage?.rawOptions.src.src ?? ogpStaticImage?.src}
+  image={ogpOriginalImageUrl ?? ogpStaticImage?.src}
   description={description.trim()}
   twitterImage={twitterOgpImageUrl}
   markdownUrl={markdownUrl}

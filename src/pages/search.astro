@@ -1,0 +1,277 @@
+---
+export const prerender = true
+import Layout from "@layouts/Layout.astro"
+import PagefindConfig from "astro-pagefind/components/PagefindConfig.astro"
+
+const RESULT_TEMPLATE = `<li class="hit">
+  <a class="hit-main" href="{{ meta.url | default(url) | safeUrl }}">
+    {{#if meta.image}}<img class="hit-thumb" src="{{ meta.image | resolveUrl(meta.url | default(url)) }}" alt="" loading="lazy" decoding="async">{{/if}}
+    <span class="hit-body">
+      <span class="hit-title">{{ meta.title }}</span>
+      {{#if meta.date}}<span class="hit-date">{{ meta.date }}</span>{{/if}}
+      {{#if excerpt}}<span class="hit-excerpt">{{+ excerpt +}}</span>{{/if}}
+    </span>
+  </a>
+  {{#if sub_results}}
+  <p class="hit-sections-label">キーワードのあった章に移動する</p>
+  <ul class="hit-sections">
+    {{#each sub_results as sub}}
+    <li>
+      <a class="hit-section" href="{{ sub.url | safeUrl }}">{{ sub.title }}</a>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+</li>`
+
+const PLACEHOLDER_TEMPLATE = `<li class="hit hit-loading" aria-hidden="true">
+  <span class="hit-main">
+    <span class="hit-thumb"></span>
+    <span class="hit-body">
+      <span class="hit-bar hit-bar-title"></span>
+      <span class="hit-bar"></span>
+      <span class="hit-bar hit-bar-short"></span>
+    </span>
+  </span>
+</li>`
+---
+
+<Layout
+  title="記事を検索 - 幻想サイクル"
+  description="幻想サイクルの記事をキーワードで検索します。"
+  noindex
+>
+  <div class="search-page mx-auto max-w-2xl px-4 pb-16">
+    <PagefindConfig {...{ "excerpt-length": "40" }} preload />
+
+    <h1 class="px-1 pb-3 pt-5 text-lg font-bold text-stone-900">記事を検索</h1>
+
+    <div class="search-bar">
+      <pagefind-input placeholder="キーワードを入力"></pagefind-input>
+      <pagefind-summary
+        default-message="キーワードを入力すると、一致した記事が表示されます"
+      ></pagefind-summary>
+    </div>
+
+    <pagefind-results>
+      <script
+        type="text/pagefind-template"
+        is:inline
+        set:html={RESULT_TEMPLATE}
+      />
+      <script
+        type="text/pagefind-template"
+        data-template="placeholder"
+        is:inline
+        set:html={PLACEHOLDER_TEMPLATE}
+      />
+    </pagefind-results>
+  </div>
+</Layout>
+
+<script>
+  const params = new URLSearchParams(location.search)
+  const initialTerm = params.get("q")?.trim() ?? ""
+
+  await customElements.whenDefined("pagefind-input")
+  const input = document.querySelector<HTMLInputElement>("pagefind-input input")
+  if (input) {
+    if (initialTerm) {
+      input.value = initialTerm
+      input.dispatchEvent(new Event("input", { bubbles: true }))
+    } else {
+      input.focus()
+    }
+
+    let timer = 0
+    input.addEventListener("input", () => {
+      window.clearTimeout(timer)
+      timer = window.setTimeout(() => {
+        const url = new URL(location.href)
+        const term = input.value.trim()
+        if (term) url.searchParams.set("q", term)
+        else url.searchParams.delete("q")
+        history.replaceState(null, "", url)
+      }, 400)
+    })
+  }
+</script>
+
+<style is:global>
+  .search-page {
+    --pf-font: var(--font-sans);
+    --pf-background: #fff;
+    --pf-text: #1c1917;
+    --pf-text-muted: #78716c;
+    --pf-border: #d6d3d1;
+    --pf-border-radius: 0.625rem;
+    --pf-hover: #f5f5f4;
+    --pf-outline-focus: var(--color-primary);
+    --pf-input-height: 3rem;
+    /* iOS Safari はフォントサイズ 16px 未満の input でフォーカス時にズームする */
+    --pf-input-font-size: 1rem;
+    --pf-summary-font-size: 0.8125rem;
+    --pf-results-gap: 0.75rem;
+  }
+
+  .search-page .search-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin: 0 -1rem;
+    padding: 0.5rem 1rem 0.75rem;
+    background: #fafaf9;
+    border-bottom: 1px solid #e7e5e4;
+  }
+
+  /*
+    .pf-* を持つ要素は component-ui の `all: revert`（詳細度 0,2,0）で
+    著者スタイルを打ち消されるため、余白は要素セレクタ側へ寄せる。
+  */
+  .search-page pagefind-summary {
+    display: block;
+    padding-top: 0.5rem;
+  }
+
+  .search-page pagefind-results {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .search-page .hit {
+    background: #fff;
+    border: 1px solid #e7e5e4;
+    border-radius: 0.75rem;
+  }
+
+  .search-page .hit-main {
+    display: flex;
+    gap: 0.875rem;
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .search-page .hit-thumb {
+    flex: none;
+    width: 5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    background: #e7e5e4;
+  }
+
+  .search-page .hit-body {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .search-page .hit-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1c1917;
+  }
+
+  .search-page .hit-date {
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    color: #78716c;
+  }
+
+  .search-page .hit-excerpt {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 0.8125rem;
+    line-height: 1.7;
+    color: #44403c;
+  }
+
+  .search-page .hit-excerpt mark {
+    padding: 0 1px;
+    border-radius: 2px;
+    background: color-mix(in srgb, var(--color-primary) 16%, transparent);
+    color: #1c1917;
+    font-weight: 700;
+  }
+
+  .search-page .hit-sections-label {
+    margin: 0 0.875rem 0.25rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #78716c;
+  }
+
+  .search-page .hit-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin: 0 0.875rem 0.875rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* タグ（塗りつぶしのピル）と区別するため、見出しチップは線のみで描く */
+  .search-page .hit-section {
+    display: block;
+    padding: 0.1875rem 0.5rem;
+    border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  .search-page .hit-section:hover {
+    background: color-mix(in srgb, var(--color-accent) 7%, transparent);
+  }
+
+  /* outline は要素自身の border-radius に追従するため、ここでは半径を指定しない */
+  .search-page .hit a:focus-visible,
+  .search-page .hit a[data-pf-selected] {
+    outline: 2px solid var(--color-primary);
+    outline-offset: -2px;
+  }
+
+  .search-page .hit-loading .hit-thumb,
+  .search-page .hit-bar {
+    background: #f5f5f4;
+  }
+
+  .search-page .hit-bar {
+    height: 0.75rem;
+    border-radius: 0.25rem;
+  }
+
+  .search-page .hit-bar-title {
+    height: 1rem;
+    width: 70%;
+  }
+
+  .search-page .hit-bar-short {
+    width: 45%;
+  }
+
+  @media (min-width: 768px) {
+    .search-page .hit-thumb {
+      width: 7.5rem;
+      height: 5rem;
+    }
+
+    .search-page .hit-title {
+      font-size: 1.0625rem;
+    }
+  }
+</style>

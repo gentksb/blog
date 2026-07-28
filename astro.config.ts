@@ -23,7 +23,12 @@ export default defineConfig({
   adapter: cloudflare({
     imageService
   }),
-  integrations: [mdx(), sitemap(), react(), pagefind()],
+  integrations: [
+    mdx(),
+    sitemap({ filter: (page) => !page.includes("/search/") }),
+    react(),
+    pagefind()
+  ],
   markdown: {
     processor: satteri({
       features: { directive: true },

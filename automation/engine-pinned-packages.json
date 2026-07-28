@@ -6,6 +6,12 @@
       "reason": "engines.node と連動",
       "maxMajor": 24,
       "linkedTo": "engines.node"
+    },
+    {
+      "name": "typescript",
+      "reason": "astro check（@astrojs/check）が TypeScript 7 の programmatic API に未対応のため 6 系へ固定（上流: withastro/roadmap#1321）。@astrojs/check が TS7 に対応したら maxMajor を上げる",
+      "maxMajor": 6,
+      "linkedTo": "@astrojs/check"
     }
   ]
 }

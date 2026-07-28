@@ -11,9 +11,10 @@ React は `src/components/jsx/share.tsx` と `StickyToc.tsx` の 2 つだけ。�
 - `pnpm dev:cf` — `pnpm build` 後に `dist/server/wrangler.json` で serve。本番ビルドの確認用
 - `pnpm test:light` — シークレット不要。Claude Code Web サンドボックスでは常にこちらを使う
 - `pnpm test` — `test/services` を含み実 Amazon API を叩く。`PARTNER_TAG` / `CREATORS_CREDENTIAL_*` が必要で CI（lint-test.yml）専用
+- `pnpm typecheck` — `astro check`（`@astrojs/check`）。`.astro` / `.ts` / `.tsx` を横断して型検査する
 - `pnpm lint:unused` — knip。`git push` 前に必須
 
-Prettier は Edit / Write の PostToolUse フック（`.claude/settings.json`）で自動実行されるので手動実行は不要。`pnpm lint` は Prettier のみで、textlint は npm script を持たず VS Code 拡張から実行される。記事 MDX（`src/content/post`）は `.prettierignore` 対象で整形されない。
+Prettier は Edit / Write の PostToolUse フック（`.claude/settings.json`）で自動実行されるので手動実行は不要。`pnpm lint` は Prettier のみで、textlint は npm script を持たず VS Code 拡張から実行される。記事 MDX（`src/content/post`）は `.prettierignore` 対象で整形されない。`pnpm typecheck` はターン終了時の Stop フック（`.claude/settings.json`）で自動実行されるため、こちらも手動実行は基本不要。
 
 ## 実装の注意点
 

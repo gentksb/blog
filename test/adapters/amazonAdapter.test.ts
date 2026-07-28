@@ -1,4 +1,4 @@
-import { env } from "cloudflare:test"
+import { env } from "cloudflare:workers"
 import { expect, test, vi } from "vitest"
 import {
   createKVCacheAdapter,
