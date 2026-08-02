@@ -9,15 +9,6 @@
       "recheckAfter": "2099-01-01T00:00:00Z",
       "observedAt": "2026-07-12T18:38:25Z",
       "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。"
-    },
-    {
-      "package": "knip",
-      "fromVersion": "6.26.0",
-      "toVersion": "6.29.0",
-      "reason": "test-failure",
-      "recheckAfter": "2026-08-02T00:00:00Z",
-      "observedAt": "2026-07-26T18:43:00Z",
-      "notes": "knip 6.29.0 でも 6.27.0 と同じ `Unlisted dependencies (1) vite (src/plugins/mdx-auto-import.ts:2:29)` が再現し `pnpm lint:unused` が失敗する。typescript 7.0.2 との組み合わせでは再現せず、既知の TypeScript 7 対応状況とは無関係（knip 側の検出ロジックの問題）と切り分け済み。6.26.0 に戻すと再現しない。次回は 6.26.0 から 6.29.0 までの CHANGELOG を確認し、vite を dependencies に追加すべきか誤検知か判断する。"
     }
   ]
 }
