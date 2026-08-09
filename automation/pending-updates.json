@@ -9,6 +9,15 @@
       "recheckAfter": "2099-01-01T00:00:00Z",
       "observedAt": "2026-07-12T18:38:25Z",
       "notes": "maxMajor: 24 (engines.node と連動)。Node.js を 25 以上に上げる際は engine-pinned-packages.json の maxMajor を手動更新する。"
+    },
+    {
+      "package": "typescript",
+      "fromVersion": "6.0.3",
+      "toVersion": "7.0.2",
+      "reason": "engine-pinned",
+      "recheckAfter": "2099-01-01T00:00:00Z",
+      "observedAt": "2026-08-09T00:00:00Z",
+      "notes": "maxMajor: 6 (@astrojs/check 連動)。astro check が TypeScript 7 の programmatic API に対応したら engine-pinned-packages.json の maxMajor を上げて解除する。"
     }
   ]
 }
