@@ -40,6 +40,7 @@ try {
     env.PAAPI_DATASTORE &&
     env.CREATORS_CREDENTIAL_ID &&
     env.CREATORS_CREDENTIAL_SECRET &&
+    env.CREATORS_CREDENTIAL_VERSION &&
     env.PARTNER_TAG
   ) {
     const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
@@ -49,7 +50,7 @@ try {
       config: {
         credentialId: env.CREATORS_CREDENTIAL_ID,
         credentialSecret: env.CREATORS_CREDENTIAL_SECRET,
-        credentialVersion: "2.3",
+        credentialVersion: env.CREATORS_CREDENTIAL_VERSION,
         partnerTag: env.PARTNER_TAG,
         marketplace: "www.amazon.co.jp"
       },

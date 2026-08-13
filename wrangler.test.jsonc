@@ -23,6 +23,7 @@
     "required": [
       "CREATORS_CREDENTIAL_ID",
       "CREATORS_CREDENTIAL_SECRET",
+      "CREATORS_CREDENTIAL_VERSION",
       "PARTNER_TAG",
       "SLACK_WEBHOOK_URL"
     ]

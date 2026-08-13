@@ -36,6 +36,7 @@
     "required": [
       "CREATORS_CREDENTIAL_ID", // Amazon Creators API Credential ID
       "CREATORS_CREDENTIAL_SECRET", // Amazon Creators API Credential Secret
+      "CREATORS_CREDENTIAL_VERSION", // Amazon Creators API Credential Version（3.3 = Far East）
       "PARTNER_TAG", // Amazon Associate Partner Tag
       "SLACK_WEBHOOK_URL" // Slack webhook URL for error logging
     ]
