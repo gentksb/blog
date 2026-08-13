@@ -23,6 +23,7 @@ export default defineConfig({
   adapter: cloudflare({
     imageService
   }),
+  session: false,
   integrations: [
     mdx(),
     sitemap({ filter: (page) => !page.includes("/search/") }),

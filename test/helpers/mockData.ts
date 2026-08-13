@@ -103,6 +103,7 @@ export const createMockEnv = (overrides: Partial<Env> = {}): Env => ({
   OGP_DATASTORE: createMockKV() as KVNamespace,
   CREATORS_CREDENTIAL_ID: "test-credential-id",
   CREATORS_CREDENTIAL_SECRET: "test-credential-secret",
+  CREATORS_CREDENTIAL_VERSION: "3.3",
   PARTNER_TAG: "test-tag",
   ASSETS: {} as Fetcher,
   ...overrides
