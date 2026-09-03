@@ -9,8 +9,8 @@ React は `src/components/jsx/share.tsx` と `StickyToc.tsx` の 2 つだけ。�
 
 - `pnpm dev` — workerd（Miniflare）上で起動。KV バインディングもローカルシミュレーションされる
 - `pnpm dev:cf` — `pnpm build` 後に `dist/server/wrangler.json` で serve。本番ビルドの確認用
-- `pnpm test:light` — シークレット不要。Claude Code Web サンドボックスでは常にこちらを使う
-- `pnpm test` — `test/services` を含み実 Amazon API を叩く。`PARTNER_TAG` / `CREATORS_CREDENTIAL_*` が必要で CI（lint-test.yml）専用
+- `pnpm test:light` — シークレット不要。`*.credentialed.test.ts` だけを除外して残り全部を走らせる。Claude Code Web サンドボックスでは常にこちらを使う
+- `pnpm test` — `*.credentialed.test.ts` を含み実 Amazon API を叩く。`PARTNER_TAG` / `CREATORS_CREDENTIAL_*` が必要で CI（lint-test.yml）専用。実 API や認証情報を要するテストを追加する場合はファイル名へ `.credentialed.test.ts` を付ける
 - `pnpm typecheck` — `astro check`（`@astrojs/check`）。`.astro` / `.ts` / `.tsx` を横断して型検査する
 - `pnpm lint:unused` — knip。`git push` 前に必須
 
