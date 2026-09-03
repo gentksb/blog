@@ -80,6 +80,12 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
           default:
             break
         }
+        if (
+          element.getAttribute("name") === "description" &&
+          !result.ogpDescription
+        ) {
+          result.ogpDescription = element.getAttribute("content") ?? undefined
+        }
       }
     })
     // title のテキストもチャンク分割されて届くため lastInTextNode まで蓄積してから確定する
@@ -94,21 +100,6 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
         }
       }
     })
-    rewriter.on("meta", {
-      element(element) {
-        switch (element.getAttribute("name")) {
-          case "description":
-            if (!result.ogpDescription) {
-              result.ogpDescription =
-                element.getAttribute("content") ?? undefined
-            }
-            break
-          default:
-            break
-        }
-      }
-    })
-
     // JSON-LD の中身はテキストチャンクとして分割されて届くため、
     // lastInTextNode までバッファに蓄積して script 要素単位で抽出する
     rewriter.on('script[type="application/ld+json"]', {
