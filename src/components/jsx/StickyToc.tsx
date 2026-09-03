@@ -1,3 +1,4 @@
+import { getIndentClass } from "@lib/headings"
 import { useEffect, useMemo, useState } from "react"
 
 interface Heading {
@@ -66,10 +67,6 @@ export default function StickyToc({ headings }: Props) {
 
   if (filteredHeadings.length === 0) {
     return null
-  }
-
-  const getIndentClass = (depth: number): string => {
-    return depth === 3 ? "pl-4" : ""
   }
 
   return (

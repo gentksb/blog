@@ -1,7 +1,6 @@
 export const prerender = true
 
 import { timeOrderPosts as posts } from "@lib/timeOrderPosts"
-import { slugFromId } from "@lib/postSlug"
 import { SITE_TITLE, SITE_URL } from "~/consts"
 
 const SITE_DESCRIPTION_LLMS =
@@ -18,7 +17,7 @@ export function GET() {
   ]
 
   for (const post of posts) {
-    const slug = slugFromId(post.id)
+    const slug = post.id
     const dateStr = post.data.date.toISOString().slice(0, 10)
     const tagsStr = post.data.tags.join(", ")
     lines.push(

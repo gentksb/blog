@@ -1,9 +1,8 @@
 export const prerender = false
 
-import { getCollection } from "astro:content"
+import { getEntry } from "astro:content"
 import { env } from "cloudflare:workers"
 import type { APIContext } from "astro"
-import { slugFromId } from "@lib/postSlug"
 import { postToMarkdown } from "@lib/postToMarkdown"
 import { SITE_URL } from "~/consts"
 
@@ -17,8 +16,7 @@ export async function GET({ params, site }: APIContext) {
     })
   }
 
-  const posts = await getCollection("post")
-  const entry = posts.find((post) => slugFromId(post.id) === slug)
+  const entry = await getEntry("post", slug)
 
   if (!entry) {
     return new Response("Not Found", {

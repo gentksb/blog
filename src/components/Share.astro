@@ -8,4 +8,4 @@ interface Props {
 const props = Astro.props
 ---
 
-<SocialShare url={props.url} title={props.title} client:only="react" />
+<SocialShare url={props.url} title={props.title} client:load />

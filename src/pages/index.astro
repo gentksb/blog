@@ -11,6 +11,7 @@ import { timeOrderPosts } from "@lib/timeOrderPosts"
 import { featuredGroups, pageSize } from "~/config"
 
 const posts = timeOrderPosts.slice(0, pageSize)
+const totalPages = Math.ceil(timeOrderPosts.length / pageSize)
 ---
 
 <Layout title="幻想サイクル">
@@ -22,7 +23,7 @@ const posts = timeOrderPosts.slice(0, pageSize)
       {posts.map((post) => <BlogPostCard {...post} />)}
     </div>
   </section>
-  <Paginate currentPage={1} totalPages={5} />
+  <Paginate currentPage={1} totalPages={totalPages} />
   <div class="my-8 px-3 sm:px-0">
     <TagCloud />
   </div>

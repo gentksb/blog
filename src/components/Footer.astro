@@ -1,5 +1,7 @@
 ---
 import { PROFILE } from "~/consts"
+
+const currentYear = new Date().getFullYear()
 ---
 
 <footer class="bg-gray-900 py-8 text-white">
@@ -117,7 +119,7 @@ import { PROFILE } from "~/consts"
       </p>
     </div>
     <p class="text-center text-sm text-gray-500">
-      © 2026 幻想サイクル All Rights Reserved.
+      © {currentYear} 幻想サイクル All Rights Reserved.
     </p>
   </div>
 </footer>

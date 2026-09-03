@@ -35,34 +35,49 @@ let priceDisplay: string | undefined
 let savingsPercentage: number | undefined
 let loyaltyPoints: number | undefined
 
-try {
-  if (
-    env.PAAPI_DATASTORE &&
-    env.CREATORS_CREDENTIAL_ID &&
-    env.CREATORS_CREDENTIAL_SECRET &&
-    env.CREATORS_CREDENTIAL_VERSION &&
-    env.PARTNER_TAG
-  ) {
-    const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
-    const logger = createSlackLoggerAdapter(env.SLACK_WEBHOOK_URL ?? "")
-    const adapter = createAmazonAdapter({
-      cache,
-      config: {
-        credentialId: env.CREATORS_CREDENTIAL_ID,
-        credentialSecret: env.CREATORS_CREDENTIAL_SECRET,
-        credentialVersion: env.CREATORS_CREDENTIAL_VERSION,
-        partnerTag: env.PARTNER_TAG,
-        marketplace: "www.amazon.co.jp"
-      },
-      logger,
-      kv: env.PAAPI_DATASTORE
-    })
+if (
+  env.PAAPI_DATASTORE &&
+  env.CREATORS_CREDENTIAL_ID &&
+  env.CREATORS_CREDENTIAL_SECRET &&
+  env.CREATORS_CREDENTIAL_VERSION &&
+  env.PARTNER_TAG
+) {
+  const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
+  const logger = createSlackLoggerAdapter(env.SLACK_WEBHOOK_URL ?? "")
+  const adapter = createAmazonAdapter({
+    cache,
+    config: {
+      credentialId: env.CREATORS_CREDENTIAL_ID,
+      credentialSecret: env.CREATORS_CREDENTIAL_SECRET,
+      credentialVersion: env.CREATORS_CREDENTIAL_VERSION,
+      partnerTag: env.PARTNER_TAG,
+      marketplace: "www.amazon.co.jp"
+    },
+    logger,
+    kv: env.PAAPI_DATASTORE
+  })
 
+  // 通知の完了を待つとカードのレンダリングが止まるため、リクエスト外のタスクとして流す
+  const notifyError = (message: string) => {
+    Astro.locals.cfContext.waitUntil(
+      adapter.logError(message, fallbackUrl).catch((e) => {
+        console.error(`Slack notification failed for ASIN ${asin}:`, e)
+      })
+    )
+  }
+
+  try {
     // キャッシュ確認 → API取得
     let data = await adapter.getCached(asin)
     if (!data) {
-      data = await adapter.getProductInfo(asin)
-      await adapter.cacheResult(asin, data)
+      const result = await adapter.getProductInfo(asin)
+      data = result.data
+      if (result.ok) {
+        await adapter.cacheResult(asin, data)
+      } else {
+        console.warn(`Amzn lookup failed for ASIN ${asin}: ${result.error}`)
+        notifyError(result.error)
+      }
     }
 
     const product = data.itemsResult?.items?.[0]
@@ -88,9 +103,10 @@ try {
         loyaltyPoints = listing.loyaltyPoints?.points
       }
     }
+  } catch (e) {
+    console.error(`Amzn fetch failed for ASIN ${asin}:`, e)
+    notifyError(e instanceof Error ? e.message : String(e))
   }
-} catch (e) {
-  console.error(`Amzn fetch failed for ASIN ${asin}:`, e)
 }
 ---
 
@@ -116,12 +132,12 @@ try {
         priceDisplay && (
           <div class="mt-1 flex flex-wrap items-baseline gap-x-2">
             <span class={linkCardPrice}>{priceDisplay}</span>
-            {savingsPercentage && (
+            {savingsPercentage !== undefined && savingsPercentage > 0 && (
               <span class="text-xs text-error font-medium">
                 {savingsPercentage}%OFF
               </span>
             )}
-            {loyaltyPoints && (
+            {loyaltyPoints !== undefined && loyaltyPoints > 0 && (
               <span class="text-xs text-primary font-medium">
                 +{loyaltyPoints}pt
               </span>

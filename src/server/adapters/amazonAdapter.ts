@@ -4,7 +4,10 @@
  */
 
 import type { CreatorsApiItemsResponse } from "../services/getAmazonProductInfo"
-import { getAmazonProductInfo } from "../services/getAmazonProductInfo"
+import {
+  describeItemsResponseError,
+  getAmazonProductInfo
+} from "../services/getAmazonProductInfo"
 
 /**
  * Amazon API用の設定インターフェース
@@ -37,10 +40,18 @@ export interface LoggerAdapter {
 }
 
 /**
+ * 商品取得の結果。API がエラーや空 items を HTTP 200 で返すため、
+ * 呼び出し側がキャッシュ可否と通知要否を判断できるよう成否を分離する
+ */
+export type AmazonProductResult =
+  | { ok: true; data: CreatorsApiItemsResponse }
+  | { ok: false; data: CreatorsApiItemsResponse; error: string }
+
+/**
  * 全ての外部依存をカプセル化するAmazonサービスアダプター
  */
 export interface AmazonAdapter {
-  getProductInfo: (asin: string) => Promise<CreatorsApiItemsResponse>
+  getProductInfo: (asin: string) => Promise<AmazonProductResult>
   getCached: (asin: string) => Promise<CreatorsApiItemsResponse | null>
   cacheResult: (asin: string, data: CreatorsApiItemsResponse) => Promise<void>
   logError: (message: string, url: string) => Promise<void>
@@ -59,8 +70,8 @@ export const createAmazonAdapter = (deps: {
   kv: KVNamespace
 }): AmazonAdapter => {
   return {
-    async getProductInfo(asin: string): Promise<CreatorsApiItemsResponse> {
-      return await getAmazonProductInfo(asin, {
+    async getProductInfo(asin: string): Promise<AmazonProductResult> {
+      const data = await getAmazonProductInfo(asin, {
         credentialId: deps.config.credentialId,
         credentialSecret: deps.config.credentialSecret,
         credentialVersion: deps.config.credentialVersion,
@@ -68,6 +79,9 @@ export const createAmazonAdapter = (deps: {
         marketplace: deps.config.marketplace,
         kv: deps.kv
       })
+
+      const error = describeItemsResponseError(data)
+      return error ? { ok: false, data, error } : { ok: true, data }
     },
 
     async getCached(asin: string): Promise<CreatorsApiItemsResponse | null> {
@@ -112,12 +126,14 @@ export const createKVCacheAdapter = (kv: KVNamespace): CacheAdapter => {
 
 /**
  * Slackロガーアダプターを作成
- * @param webhookUrl - Slack Webhook URL
+ * @param webhookUrl - Slack Webhook URL。空文字の場合は通知しない
  * @returns ロガーアダプター実装
  */
 export const createSlackLoggerAdapter = (webhookUrl: string): LoggerAdapter => {
   return {
     async logError(message: string, url: string): Promise<void> {
+      if (!webhookUrl) return
+
       // 循環依存を回避するために動的インポート
       const { postLogToSlack } = await import("../services/postLogToSlack")
       await postLogToSlack(`Amazon API Error: ${url}\n${message}`, webhookUrl)
