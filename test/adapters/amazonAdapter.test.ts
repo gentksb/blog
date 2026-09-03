@@ -1,5 +1,5 @@
 import { env } from "cloudflare:workers"
-import { expect, test, vi } from "vitest"
+import { afterEach, expect, test, vi } from "vitest"
 import {
   createKVCacheAdapter,
   createSlackLoggerAdapter
@@ -11,15 +11,27 @@ vi.mock("../../src/server/services/postLogToSlack", () => ({
   postLogToSlack: vi.fn().mockResolvedValue(undefined)
 }))
 
+const writtenKeys: string[] = []
+
+const trackKey = (key: string) => {
+  writtenKeys.push(key)
+  return key
+}
+
+afterEach(async () => {
+  await Promise.all(writtenKeys.map((key) => env.PAAPI_DATASTORE.delete(key)))
+  writtenKeys.length = 0
+})
+
 test("KV cache adapter works correctly with real KV", async () => {
   // Use actual KV from test environment instead of mocking
-  const cache = createKVCacheAdapter(env.OGP_DATASTORE)
+  const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
 
   if (!cache) {
     throw new Error("KV namespace not available in test environment")
   }
 
-  const testKey = `test-key-${Date.now()}`
+  const testKey = trackKey(`test-key-${Date.now()}`)
   const testData = createMockAmazonResponse("TEST123")
 
   // Test put operation
@@ -31,7 +43,7 @@ test("KV cache adapter works correctly with real KV", async () => {
 })
 
 test("KV cache adapter handles missing keys gracefully", async () => {
-  const cache = createKVCacheAdapter(env.OGP_DATASTORE)
+  const cache = createKVCacheAdapter(env.PAAPI_DATASTORE)
 
   if (!cache) {
     throw new Error("KV namespace not available in test environment")

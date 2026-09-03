@@ -1,7 +1,8 @@
 ---
 import { Picture } from "astro:assets"
 import type { CollectionEntry } from "astro:content"
-import dummy from "@images/dummy.jpg"
+import authorIcon from "@images/author-icon.png"
+import { formatInTimeZone } from "date-fns-tz"
 import FormattedDate from "./FormattedDate.astro"
 
 type Props = CollectionEntry<"post">["data"] & { id: string }
@@ -11,11 +12,11 @@ const { cover, title, date, tags } = Astro.props
 
 <div
   class="relative mb-6"
-  data-pagefind-meta={`date:${date.toLocaleDateString("ja-jp")}`}
+  data-pagefind-meta={`date:${formatInTimeZone(date, "Asia/Tokyo", "yyyy/M/d")}`}
 >
   <div class="aspect-video w-full bg-gray-300">
     <Picture
-      src={cover ?? dummy}
+      src={cover ?? authorIcon}
       alt={title}
       formats={["webp"]}
       quality={30}

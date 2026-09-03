@@ -7,6 +7,7 @@ on:
     paths:
       - "src/server/**"
       - "src/components/**"
+      - "src/content/**"
       - "src/layouts/**"
       - "src/lib/**"
       - "src/pages/**"
@@ -24,6 +25,7 @@ on:
       - "tsconfig.json"
       - "vitest.config.ts"
       - "wrangler.jsonc"
+      - "wrangler.test.jsonc"
       - ".assetsignore"
       - "pnpm-workspace.yaml"
       - "knip.json"
@@ -32,6 +34,7 @@ on:
     paths:
       - "src/server/**"
       - "src/components/**"
+      - "src/content/**"
       - "src/layouts/**"
       - "src/lib/**"
       - "src/pages/**"
@@ -49,6 +52,7 @@ on:
       - "tsconfig.json"
       - "vitest.config.ts"
       - "wrangler.jsonc"
+      - "wrangler.test.jsonc"
       - ".assetsignore"
       - "pnpm-workspace.yaml"
       - "knip.json"
@@ -61,6 +65,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          # 変更範囲の差分を取るため全履歴が必要
+          fetch-depth: 0
 
       # pnpmキャッシュを利用して、高速に依存関係をインストールする
       # https://github.com/pnpm/action-setup/tree/v4/?tab=readme-ov-file#use-cache-to-reduce-installation-time
@@ -88,10 +95,32 @@ jobs:
       - name: Run Lint unused (knip)
         run: pnpm run lint:unused
 
+      - name: Detect content-only change
+        id: scope
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            range="origin/${{ github.base_ref }}...HEAD"
+          else
+            range="${{ github.event.before }}..${{ github.sha }}"
+          fi
+          changed=$(git diff --name-only "$range" 2>/dev/null) || changed=""
+          # 差分が取れなかった場合はフルテストへ倒す
+          if [ -z "$changed" ] || printf '%s\n' "$changed" | grep -qv '^src/content/'; then
+            echo "content_only=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "content_only=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Create dist directory for tests
         run: mkdir -p dist/client
 
+      # 記事だけの変更では Amazon Creators API を叩くテストを走らせない
+      - name: Run Tests (content only)
+        if: steps.scope.outputs.content_only == 'true'
+        run: pnpm run test:light
+
       - name: Run Tests
+        if: steps.scope.outputs.content_only != 'true'
         run: |
           touch .dev.vars
           echo "PARTNER_TAG=$PARTNER_TAG" >> .dev.vars

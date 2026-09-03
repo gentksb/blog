@@ -26,7 +26,10 @@ export default defineConfig({
   session: false,
   integrations: [
     mdx(),
-    sitemap({ filter: (page) => !page.includes("/search/") }),
+    sitemap({
+      filter: (page) =>
+        !page.includes("/search/") && !/\/page\/1\/?$/.test(page)
+    }),
     react(),
     pagefind()
   ],

@@ -13,14 +13,13 @@ import NegativeBox from "@components/mdx/NegativeBox.astro"
 import PositiveBox from "@components/mdx/PositiveBox.astro"
 import BlogPost from "@layouts/BlogPost.astro"
 import { extractDescription } from "@lib/extractDescription"
-import { slugFromId } from "@lib/postSlug"
 import { SITE_URL } from "~/consts"
 import type { GetStaticPaths } from "astro"
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = await getCollection("post")
   return posts.map((post) => ({
-    params: { slug: slugFromId(post.id) },
+    params: { slug: post.id },
     props: post
   }))
 }
@@ -31,7 +30,7 @@ const { Content, headings } = await render(post)
 
 // post.body から description を抽出（Container APIを使わず）
 const description = extractDescription(post.body ?? "")
-const markdownUrl = `${SITE_URL}post/${slugFromId(post.id)}.md`
+const markdownUrl = `${SITE_URL}post/${post.id}.md`
 ---
 
 <BlogPost

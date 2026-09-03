@@ -1,7 +1,11 @@
 ---
 import { env } from "cloudflare:workers"
-import { createOgpKVCacheAdapter } from "../../server/adapters/ogpAdapter"
-import { getOgpMetaData } from "../../server/services/getOgpMetaData"
+import {
+  createOgpAdapter,
+  createOgpFetcherAdapter,
+  createOgpKVCacheAdapter,
+  createOgpSlackLoggerAdapter
+} from "../../server/adapters/ogpAdapter"
 import { isValidUrl } from "../../server/domain/validators"
 import {
   buildProductPrice,
@@ -43,21 +47,40 @@ let ogpSiteName: string = ""
 let ogpImageUrl: string | undefined = undefined
 let priceDisplay: string | undefined = undefined
 
-try {
-  if (env.OGP_DATASTORE) {
-    const cache = createOgpKVCacheAdapter(env.OGP_DATASTORE)
+if (env.OGP_DATASTORE) {
+  const slackWebhookUrl = env.SLACK_WEBHOOK_URL ?? ""
+  const adapter = createOgpAdapter({
+    cache: createOgpKVCacheAdapter(env.OGP_DATASTORE),
+    config: { slackWebhookUrl },
+    logger: createOgpSlackLoggerAdapter(slackWebhookUrl),
+    fetcher: createOgpFetcherAdapter()
+  })
 
+  // 通知の完了を待つとカードのレンダリングが止まるため、リクエスト外のタスクとして流す
+  const notifyError = (message: string) => {
+    Astro.locals.cfContext.waitUntil(
+      adapter.logError(message, url).catch((e) => {
+        console.error(`Slack notification failed for ${url}:`, e)
+      })
+    )
+  }
+
+  try {
     // キャッシュ確認
-    const cached = await cache.get(url)
+    const cached = await adapter.getCached(url)
     let ogpData = null
 
     if (cached && typeof cached === "object") {
       ogpData = cached
     } else {
       // キャッシュミス → 取得してキャッシュ保存
-      ogpData = await getOgpMetaData(url, env)
+      ogpData = await adapter.getOgpData(url, env)
       if (ogpData.ok) {
-        await cache.put(url, ogpData)
+        await adapter.cacheResult(url, ogpData)
+      } else {
+        // 失敗も短時間キャッシュして、リンク先が落ちている間の再取得を抑える
+        await adapter.cacheFailure(url, ogpData)
+        notifyError(ogpData.error ?? "OGP fetch failed")
       }
     }
 
@@ -79,9 +102,10 @@ try {
         priceDisplay = formatProductPrice(price)
       }
     }
+  } catch (e) {
+    console.error(`LinkCard OGP fetch failed for ${url}:`, e)
+    notifyError(e instanceof Error ? e.message : String(e))
   }
-} catch (e) {
-  console.error(`LinkCard OGP fetch failed for ${url}:`, e)
 }
 
 const parsedUrl = new URL(url)

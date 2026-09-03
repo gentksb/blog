@@ -3,26 +3,42 @@ import {
   LineShareButton,
   TwitterShareButton
 } from "next-share"
-import type React from "react"
+import { useEffect, useState } from "react"
 
 interface Props {
   url: string
   title: string
 }
 
-export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
-  //モバイル端末で標準の共有APIをコールする
-  const kickShareApi = async (shareData: Props) => {
-    console.dir(shareData)
+const isAbortError = (error: unknown) =>
+  error instanceof DOMException && error.name === "AbortError"
+
+export function SocialShare({ title, url }: Props) {
+  const [copied, setCopied] = useState(false)
+  const shareTitle = `${title} - 幻想サイクル`
+
+  useEffect(() => {
+    if (!copied) return
+    const timer = setTimeout(() => setCopied(false), 2000)
+    return () => clearTimeout(timer)
+  }, [copied])
+
+  const shareOrCopy = async () => {
+    if (typeof navigator.share === "function") {
+      try {
+        await navigator.share({ title: shareTitle, url })
+        return
+      } catch (error) {
+        if (isAbortError(error)) return
+      }
+    }
     try {
-      await navigator.share(shareData)
-      console.info("Success sharing", shareData)
-    } catch (err) {
-      console.error(`Error: ${err}`)
+      await navigator.clipboard.writeText(url)
+      setCopied(true)
+    } catch {
+      // Why not: 共有もコピーも使えない環境では隣の SNS ボタンが代替経路になるため通知しない
     }
   }
-
-  const shareTitle = `${title} - 幻想サイクル`
 
   return (
     <div className="flex items-center justify-center gap-4">
@@ -33,30 +49,44 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
         <button
           type="button"
           className="rounded-full bg-accent p-2 text-white"
-          onClick={async () => {
-            await kickShareApi({
-              title: shareTitle,
-              url: url
-            })
-          }}
-          aria-label="share this page"
+          onClick={shareOrCopy}
+          aria-label={
+            copied ? "リンクをコピーしました" : "この記事のリンクを共有"
+          }
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-            <polyline points="16 6 12 2 8 6"></polyline>
-            <line x1="12" y1="2" x2="12" y2="15"></line>
-          </svg>
+          {copied ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+              <polyline points="16 6 12 2 8 6"></polyline>
+              <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+          )}
         </button>
         <TwitterShareButton url={url} title={shareTitle} blankTarget>
           <div className="rounded-full bg-accent p-2 text-white">
@@ -115,6 +145,9 @@ export const SocialShare: React.FunctionComponent<Props> = ({ title, url }) => {
           </div>
         </LineShareButton>
       </div>
+      <span role="status" className="sr-only">
+        {copied ? "リンクをコピーしました" : ""}
+      </span>
     </div>
   )
 }

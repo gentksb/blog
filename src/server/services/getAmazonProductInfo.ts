@@ -180,6 +180,24 @@ const getAccessToken = async (
   return accessToken
 }
 
+/**
+ * Creators API は商品を返せない場合も HTTP 200 で errors[] や空の items を返すため、
+ * レスポンス本文から失敗を判定する
+ * @param response - getItems のレスポンス
+ * @returns 失敗理由の文字列、成功時は null
+ */
+export const describeItemsResponseError = (
+  response: CreatorsApiItemsResponse
+): string | null => {
+  if (response.errors?.length) {
+    return response.errors.map((e) => `${e.code}: ${e.message}`).join(", ")
+  }
+  if (!response.itemsResult?.items?.length) {
+    return "Creators API returned no items"
+  }
+  return null
+}
+
 export const getAmazonProductInfo = async (
   asin: string,
   config: CreatorsApiConfig
@@ -219,8 +237,6 @@ export const getAmazonProductInfo = async (
     body: JSON.stringify(requestBody)
   })
 
-  console.log(`Creators API Response status: ${response.status}`)
-
   if (!response.ok) {
     const errorText = await response.text()
     throw new Error(`Creators API error: ${response.status} ${errorText}`)
@@ -234,7 +250,6 @@ export const getAmazonProductInfo = async (
       JSON.stringify(responseBody.errors)
     )
   }
-  console.dir(responseBody.itemsResult?.items, { depth: null, colors: true })
 
   return responseBody
 }

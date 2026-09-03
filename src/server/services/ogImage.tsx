@@ -92,37 +92,57 @@ async function fetchImageAssetAsBase64(imageUrl: string): Promise<string> {
   return `data:${detectedContentType};base64,${base64String}`
 }
 
+const FONT_FETCH_TIMEOUT_MS = 5000
+
+const fontDataCache = new Map<string, Promise<ArrayBuffer>>()
+
+function loadFontData(cssUrl: string): Promise<ArrayBuffer> {
+  const cached = fontDataCache.get(cssUrl)
+  if (cached) return cached
+
+  const loading = (async () => {
+    const cssResponse = await fetch(cssUrl, {
+      signal: AbortSignal.timeout(FONT_FETCH_TIMEOUT_MS)
+    })
+    if (!cssResponse.ok) {
+      throw new Error(
+        `Font CSS fetch failed: ${cssResponse.status} ${cssResponse.statusText}`
+      )
+    }
+
+    const css = await cssResponse.text()
+    const resource = css.match(
+      /src: url\((.+?)\) format\('(opentype|truetype|woff2)'\)/
+    )
+    if (!resource) {
+      console.error("Font resource not found in CSS:", css.substring(0, 500))
+      throw new Error("Font resource URL not found in CSS")
+    }
+
+    const fontResponse = await fetch(resource[1], {
+      signal: AbortSignal.timeout(FONT_FETCH_TIMEOUT_MS)
+    })
+    if (!fontResponse.ok) {
+      throw new Error(
+        `Font data fetch failed: ${fontResponse.status} ${fontResponse.statusText}`
+      )
+    }
+
+    return await fontResponse.arrayBuffer()
+  })()
+
+  // 失敗した Promise を残すと isolate が生きている間ずっと同じエラーを返すため保持しない
+  loading.catch(() => fontDataCache.delete(cssUrl))
+  fontDataCache.set(cssUrl, loading)
+  return loading
+}
+
 async function fetchFontData(title: string) {
   const weight = 600 as const
   const fontName = "Noto Sans JP"
   const subsetNotoSansJPUrl = `https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@${weight}&display=swap&text=${encodeURIComponent(`${title}幻想サイクル`)}`
 
-  const cssResponse = await fetch(subsetNotoSansJPUrl)
-  if (!cssResponse.ok) {
-    throw new Error(
-      `Font CSS fetch failed: ${cssResponse.status} ${cssResponse.statusText}`
-    )
-  }
-
-  const css = await cssResponse.text()
-  const resource = css.match(
-    /src: url\((.+?)\) format\('(opentype|truetype|woff2)'\)/
-  )
-  if (!resource) {
-    console.error("Font resource not found in CSS:", css.substring(0, 500))
-    throw new Error("Font resource URL not found in CSS")
-  }
-
-  const fontUrl = resource[1]
-  const fontResponse = await fetch(fontUrl)
-  if (!fontResponse.ok) {
-    throw new Error(
-      `Font data fetch failed: ${fontResponse.status} ${fontResponse.statusText}`
-    )
-  }
-
-  const fontData = await fontResponse.arrayBuffer()
-  return { fontData, fontName, weight }
+  return { fontData: await loadFontData(subsetNotoSansJPUrl), fontName, weight }
 }
 
 async function createImageResponse(
@@ -228,8 +248,7 @@ async function createFallbackResponse(coverSrc: string) {
 
   return new Response(imageResponse.body, {
     headers: {
-      "Content-Type": imageResponse.headers.get("Content-Type") || "image/jpg",
-      "Cache-Control": "public, max-age=31536000"
+      "Content-Type": imageResponse.headers.get("Content-Type") || "image/jpg"
     }
   })
 }
@@ -238,7 +257,7 @@ export const ogImage = async (
   title: string,
   coverSrc: string,
   currentHost?: string
-) => {
+): Promise<{ response: Response; fallback: boolean }> => {
   try {
     // 並行してフォントデータ、カバー画像、ロゴ画像を取得
     const [fontResult, coverBase64, logoBase64] = await Promise.all([
@@ -253,14 +272,17 @@ export const ogImage = async (
 
     const { fontData, fontName, weight } = fontResult
 
-    return await createImageResponse(
-      title,
-      coverBase64,
-      logoBase64,
-      fontData,
-      fontName,
-      weight
-    )
+    return {
+      response: await createImageResponse(
+        title,
+        coverBase64,
+        logoBase64,
+        fontData,
+        fontName,
+        weight
+      ),
+      fallback: false
+    }
   } catch (error) {
     console.error("OG Image generation failed:", {
       error: error instanceof Error ? error.message : String(error),
@@ -272,7 +294,7 @@ export const ogImage = async (
     try {
       const fallbackResponse = await createFallbackResponse(coverSrc)
       if (fallbackResponse) {
-        return fallbackResponse
+        return { response: fallbackResponse, fallback: true }
       }
     } catch (fallbackError) {
       console.error("Fallback also failed:", fallbackError)

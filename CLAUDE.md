@@ -22,7 +22,7 @@ Prettier は Edit / Write の PostToolUse フック（`.claude/settings.json`）
 
 記事側に import は書かない。記法は 2 系統ある。
 
-- JSX 記法（`<LinkCard>` `<Amzn>` `<SimpleLinkCard>`）: `src/plugins/mdx-auto-import.ts` が全 MDX へ import 文を注入する。対象一覧は `astro.config.ts` の `mdxAutoImport([...])` が正。増やすときは `knip.json` の `ignoreFiles` も更新する
+- JSX 記法（`<LinkCard>` `<Amzn>` `<SimpleLinkCard>`）: `src/plugins/mdx-auto-import.ts` が全 MDX へ import 文を注入する。対象一覧は `astro.config.ts` の `mdxAutoImport([...])` が正。増やすときは `knip.json` の `entry` も更新する
 - コンテナディレクティブ記法（`:::positive` / `:::negative`）: 定義は `src/lib/directives.ts` の `DIRECTIVES` が単一の正で、コンポーネント名と Markdown 配信時の引用プレフィックスを持つ。satteri の `features.directive` が解析し、`src/plugins/satteri-directive-components.ts` が `DIRECTIVES` を引いて JSX ノードへ変換、`src/pages/post/[...slug].astro` と `src/pages/page/[slug].astro` の `<Content components={{...}}>` がコンポーネントを解決する
 
 記事本文で `<PositiveBox>` / `<NegativeBox>` を JSX として書くことはしない。ディレクティブを追加するときは `DIRECTIVES` へ1エントリ足し、レンダリング用の `.astro` を作って両方の `components` マップへ渡す。マップへの追加を忘れるとビルドが `Expected component ... to be defined` で落ちる。`test/unit/contentLint.test.ts` が記事の `:::` 名を `DIRECTIVES` と突き合わせ、`test/domain/postToMarkdown.test.ts` が全エントリの Markdown 変換を検証する。

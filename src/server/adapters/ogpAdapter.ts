@@ -42,8 +42,12 @@ export interface OgpAdapter {
   getOgpData: (url: string, env: Env) => Promise<OgpData>
   getCached: (url: string) => Promise<OgpData | string | null>
   cacheResult: (url: string, data: OgpData) => Promise<void>
+  cacheFailure: (url: string, data: OgpData) => Promise<void>
   logError: (message: string, url: string) => Promise<void>
 }
+
+/** 取得失敗のネガティブキャッシュTTL。復旧を長く待たない範囲で再取得の連打を抑える */
+const FAILURE_CACHE_TTL_SECONDS = 60 * 10
 
 /**
  * 注入された依存関係を持つOGPアダプターを作成
@@ -67,6 +71,10 @@ export const createOgpAdapter = (deps: {
 
     async cacheResult(url: string, data: OgpData): Promise<void> {
       await deps.cache.put(url, data, 60 * 60 * 24 * 7) // 1週間TTL
+    },
+
+    async cacheFailure(url: string, data: OgpData): Promise<void> {
+      await deps.cache.put(url, data, FAILURE_CACHE_TTL_SECONDS)
     },
 
     async logError(message: string, url: string): Promise<void> {
@@ -108,7 +116,7 @@ export const createOgpKVCacheAdapter = (kv: KVNamespace): OgpCacheAdapter => {
 
 /**
  * Slackロガーアダプターを作成（OGP用）
- * @param webhookUrl - Slack Webhook URL
+ * @param webhookUrl - Slack Webhook URL。空文字の場合は通知しない
  * @returns ロガーアダプター実装
  */
 export const createOgpSlackLoggerAdapter = (
@@ -116,6 +124,8 @@ export const createOgpSlackLoggerAdapter = (
 ): OgpLoggerAdapter => {
   return {
     async logError(message: string, url: string): Promise<void> {
+      if (!webhookUrl) return
+
       // 循環依存を回避するために動的インポート
       const { postLogToSlack } = await import("../services/postLogToSlack")
       await postLogToSlack(`OGP API Error: ${url}\n${message}`, webhookUrl)

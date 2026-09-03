@@ -6,6 +6,7 @@ import Layout from "@layouts/Layout.astro"
 import { timeOrderPosts } from "@lib/timeOrderPosts"
 import type { GetStaticPaths } from "astro"
 import { pageSize } from "~/config"
+import { SITE_TITLE } from "~/consts"
 
 export const getStaticPaths = (({ paginate }) => {
   return paginate(timeOrderPosts, { pageSize: pageSize })
@@ -15,7 +16,10 @@ const { page } = Astro.props
 const posts = page.data
 ---
 
-<Layout title="幻想サイクル">
+<Layout
+  title={SITE_TITLE}
+  canonicalPath={page.currentPage === 1 ? "/" : undefined}
+>
   <section class="px-3 sm:px-0">
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => <BlogPostCard {...post} />)}

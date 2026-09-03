@@ -8,12 +8,13 @@ import {
 export const getOgpMetaData = async (queryUrl: string, _env: Env) => {
   const decodedUrl = decodeURIComponent(queryUrl)
   const safeUrl = sanitizeUrl(decodedUrl)
-  console.log(`safeUrl: ${safeUrl}`)
 
   const responseBody = await parseOgpTags(safeUrl)
 
   return responseBody
 }
+
+const FETCH_TIMEOUT_MS = 5000
 
 const parseOgpTags = async (href: string): Promise<OgpData> => {
   const result: OgpData = {
@@ -27,9 +28,9 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
 
   try {
     // global_fetch_strictly_publicフラグにより統一されたfetchを使用
-    const httpResponse = await fetch(href)
-
-    console.log(`fetching ${href} is done`, httpResponse.status)
+    const httpResponse = await fetch(href, {
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS)
+    })
 
     if (!httpResponse.ok) {
       const result: OgpData = {
@@ -40,6 +41,8 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     }
 
     result.ok = true
+
+    let titleBuffer = ""
 
     // 商品価格の構造化データ収集用バッファ
     let jsonLdBuffer = ""
@@ -79,10 +82,15 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
         }
       }
     })
+    // title のテキストもチャンク分割されて届くため lastInTextNode まで蓄積してから確定する
     rewriter.on("title", {
       text(text) {
-        if (!result.ogpTitle || "") {
-          result.ogpTitle = text.text ?? ""
+        titleBuffer += text.text
+        if (text.lastInTextNode) {
+          if (!result.ogpTitle) {
+            result.ogpTitle = titleBuffer
+          }
+          titleBuffer = ""
         }
       }
     })
@@ -90,7 +98,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
       element(element) {
         switch (element.getAttribute("name")) {
           case "description":
-            if (!result.ogpDescription || "") {
+            if (!result.ogpDescription) {
               result.ogpDescription =
                 element.getAttribute("content") ?? undefined
             }
@@ -136,10 +144,10 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
 
     return result
   } catch (error) {
-    console.error(`Error on fetch: ${error}`)
+    console.error("Error on fetch:", error)
     const result: OgpData = {
       ok: false,
-      error: JSON.stringify(error)
+      error: error instanceof Error ? error.message : String(error)
     }
     return result
   }

@@ -1,19 +1,30 @@
-import { getCollection } from "astro:content"
-import { slugFromId } from "@lib/postSlug"
+import { getEntry } from "astro:content"
 import type { APIRoute } from "astro"
 import { ogImage } from "../../../server/services/ogImage"
 // `@vercel/og` は Workers 環境で使用不可
 
 export const prerender = false
 
-export const GET: APIRoute = async ({ params, url }) => {
+// CDN-Cache-Control 単体では Worker 応答はエッジに載らないため Cache API を併用する
+const GENERATED_CACHE_CONTROL = "public, max-age=604800"
+const GENERATED_CDN_CACHE_CONTROL = "public, max-age=2592000"
+const FALLBACK_CACHE_CONTROL = "public, max-age=300"
+
+// caches.default は DOM の CacheStorage 型に無く、DOM lib が同名を先に解決するため使わない
+let ogCache: Promise<Cache> | undefined
+const getOgCache = () => (ogCache ??= caches.open("og-image"))
+
+export const GET: APIRoute = async ({ params, url, locals }) => {
   const slug = params.slug
   if (!slug) return new Response("Not Found", { status: 404 })
 
   try {
-    const posts = await getCollection("post")
-    const post = posts.find((p) => slugFromId(p.id) === slug)
+    const cache = await getOgCache()
+    const cacheKey = url.toString()
+    const cached = await cache.match(cacheKey)
+    if (cached) return cached
 
+    const post = await getEntry("post", slug)
     if (!post) return new Response("Not Found", { status: 404 })
 
     const title = post.data.title
@@ -25,15 +36,27 @@ export const GET: APIRoute = async ({ params, url }) => {
       ? `${url.origin}${post.data.cover.src}`
       : `${url.origin}/image/logo.jpg`
 
-    const imageResponse = await ogImage(title, coverSrc, url.origin)
-    // Cloudflare CDN にエッジキャッシュさせる（OGP画像は記事更新時以外変化しない）
-    const headers = new Headers(imageResponse.headers)
-    headers.set("Cache-Control", "public, max-age=604800")
-    headers.set("CDN-Cache-Control", "public, max-age=2592000")
-    return new Response(imageResponse.body, {
-      status: imageResponse.status,
+    const { response, fallback } = await ogImage(title, coverSrc, url.origin)
+
+    const headers = new Headers(response.headers)
+    if (fallback) {
+      headers.set("Cache-Control", FALLBACK_CACHE_CONTROL)
+    } else {
+      headers.set("Cache-Control", GENERATED_CACHE_CONTROL)
+      headers.set("CDN-Cache-Control", GENERATED_CDN_CACHE_CONTROL)
+    }
+
+    const result = new Response(response.body, {
+      status: response.status,
       headers
     })
+
+    // フォールバック画像を長期キャッシュするとフォント取得の復旧後も残るため載せない
+    if (!fallback && result.status === 200) {
+      locals.cfContext.waitUntil(cache.put(cacheKey, result.clone()))
+    }
+
+    return result
   } catch (error) {
     console.error("twitter-og.png generation error:", error)
     return new Response("Internal Server Error", { status: 500 })
