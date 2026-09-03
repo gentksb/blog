@@ -44,8 +44,11 @@ describe("getOgpMetaData", () => {
 
     const res = await getOgpMetaData(encodedUrl, env)
 
-    // デコード済みの URL で fetch されること
-    expect(fetchMock).toHaveBeenCalledWith(normalLinkUrl)
+    // デコード済みの URL で、タイムアウト用の signal 付きで fetch されること
+    expect(fetchMock).toHaveBeenCalledWith(
+      normalLinkUrl,
+      expect.objectContaining({ signal: expect.any(AbortSignal) })
+    )
     expect(res).deep.equal(normalLinkDataExpectedResponse)
   })
 
