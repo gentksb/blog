@@ -52,6 +52,19 @@ describe("getOgpMetaData", () => {
     expect(res).deep.equal(normalLinkDataExpectedResponse)
   })
 
+  test("UA 無しを弾く配信元に備えてリクエストヘッダを付与する", async () => {
+    const fetchMock = stubFetch(normalLinkOgpHtml)
+
+    await getOgpMetaData(normalLinkUrl, env)
+
+    const headers = fetchMock.mock.calls[0][1].headers as Record<string, string>
+    expect(headers["User-Agent"]).toBe(
+      "GensoCycleBot/1.0 (+https://blog.gensobunya.net)"
+    )
+    expect(headers.Accept).toContain("text/html")
+    expect(headers["Accept-Language"]).toContain("ja")
+  })
+
   test("og:title が無い場合は title タグにフォールバックする", async () => {
     stubFetch(`<!DOCTYPE html>
 <html>
@@ -111,19 +124,18 @@ describe("getOgpMetaData", () => {
 
     const res = await getOgpMetaData(normalLinkUrl, env)
 
-    expect(res).deep.equal({
-      ok: false,
-      error: "Query url is not found or invalid."
-    })
+    expect(res.ok).toBe(false)
+    // 403 / 404 / 429 を区別できるよう、ステータスと所要時間をエラー文へ含める
+    expect(res.error).toMatch(/^HTTP 403 from origin \(\d+ms\)$/)
   })
 
-  test("404 の場合はエラーレスポンスを返す", async () => {
+  test("404 の場合はステータス付きのエラーレスポンスを返す", async () => {
     stubFetch("Not Found", { status: 404 })
 
     const res = await getOgpMetaData(normalLinkUrl, env)
 
     expect(res.ok).toBe(false)
-    expect(res.error).toBe("Query url is not found or invalid.")
+    expect(res.error).toMatch(/^HTTP 404 from origin \(\d+ms\)$/)
   })
 
   test("JSON-LD の Product 構造化データから商品価格を抽出する", async () => {
@@ -225,6 +237,6 @@ describe("getOgpMetaData", () => {
     const res = await getOgpMetaData(normalLinkUrl, env)
 
     expect(res.ok).toBe(false)
-    expect(res.error).toBeDefined()
+    expect(res.error).toMatch(/^network down \(\d+ms\)$/)
   })
 })
