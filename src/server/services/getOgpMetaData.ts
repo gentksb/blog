@@ -16,7 +16,17 @@ export const getOgpMetaData = async (queryUrl: string, _env: Env) => {
 
 const FETCH_TIMEOUT_MS = 5000
 
+// Workers の fetch は Host 以外のリクエストヘッダを送らない。UA 無しのリクエストを
+// 弾く配信元（Shopify / BASE / Drupal 等）が 403 / 429 を返すため明示的に付与する。
+// ブラウザ UA を詐称しても通過先は増えなかったため、正体を示す UA を使う
+const OGP_FETCH_HEADERS = {
+  "User-Agent": "GensoCycleBot/1.0 (+https://blog.gensobunya.net)",
+  Accept: "text/html,application/xhtml+xml,*/*;q=0.8",
+  "Accept-Language": "ja,en;q=0.8"
+}
+
 const parseOgpTags = async (href: string): Promise<OgpData> => {
+  const startedAt = Date.now()
   const result: OgpData = {
     ogpTitle: undefined,
     ogpImageUrl: undefined,
@@ -29,15 +39,15 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
   try {
     // global_fetch_strictly_publicフラグにより統一されたfetchを使用
     const httpResponse = await fetch(href, {
-      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS)
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+      headers: OGP_FETCH_HEADERS
     })
 
     if (!httpResponse.ok) {
-      const result: OgpData = {
+      return {
         ok: false,
-        error: "Query url is not found or invalid."
+        error: `HTTP ${httpResponse.status} from origin (${Date.now() - startedAt}ms)`
       }
-      return result
     }
 
     result.ok = true
@@ -136,10 +146,10 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     return result
   } catch (error) {
     console.error("Error on fetch:", error)
-    const result: OgpData = {
+    const message = error instanceof Error ? error.message : String(error)
+    return {
       ok: false,
-      error: error instanceof Error ? error.message : String(error)
+      error: `${message} (${Date.now() - startedAt}ms)`
     }
-    return result
   }
 }
