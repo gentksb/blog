@@ -18,6 +18,15 @@
       "recheckAfter": "2099-01-01T00:00:00Z",
       "observedAt": "2026-08-09T00:00:00Z",
       "notes": "maxMajor: 6 (@astrojs/check 連動)。astro check が TypeScript 7 の programmatic API に対応したら engine-pinned-packages.json の maxMajor を上げて解除する。"
+    },
+    {
+      "package": "vitest",
+      "fromVersion": "4.1.11",
+      "toVersion": "5.0.0",
+      "reason": "breaking-change-unresolved",
+      "recheckAfter": "2026-09-20T00:00:00Z",
+      "observedAt": "2026-09-06T00:00:00Z",
+      "notes": "@cloudflare/vitest-pool-workers@0.22.0（最新）が peerDependencies で vitest: ^4.1.0 を要求しており、5系に上げると依存関係が壊れる。vitest-pool-workers が vitest 5 対応版を出すまで保留。"
     }
   ]
 }
