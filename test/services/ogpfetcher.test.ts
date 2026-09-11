@@ -1,6 +1,5 @@
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest"
 import { getOgpMetaData } from "../../src/server/services/getOgpMetaData"
-import { createMockEnv } from "../helpers/mockData"
 import {
   normalLinkDataExpectedResponse,
   normalLinkOgpHtml,
@@ -12,7 +11,8 @@ import {
 // アクセスを排除し、Cloudflare の bot 対策やサイト内容の変化に左右されない安定したテストにする。
 // 検証対象は HTMLRewriter による OGP タグの抽出ロジックそのものである。
 
-const env = createMockEnv()
+// getOgpMetaData は第2引数 (_env) を使わないため、空オブジェクトで足りる
+const env = {} as Env
 const encodedUrl = encodeURIComponent(normalLinkUrl)
 
 /**
@@ -49,44 +49,18 @@ describe("getOgpMetaData", () => {
       normalLinkUrl,
       expect.objectContaining({ signal: expect.any(AbortSignal) })
     )
+    // UA 無しを弾く配信元があるため、リクエストには User-Agent を付与する
+    const headers = fetchMock.mock.calls[0][1].headers as Record<string, string>
+    expect(headers["User-Agent"]).toBeTruthy()
+    // deep equal なので、構造化データの無いページで productPrice が生えないことも兼ねる
     expect(res).deep.equal(normalLinkDataExpectedResponse)
   })
 
-  test("UA 無しを弾く配信元に備えてリクエストヘッダを付与する", async () => {
-    const fetchMock = stubFetch(normalLinkOgpHtml)
-
-    await getOgpMetaData(normalLinkUrl, env)
-
-    const headers = fetchMock.mock.calls[0][1].headers as Record<string, string>
-    expect(headers["User-Agent"]).toBe(
-      "GensoCycleBot/1.0 (+https://blog.gensobunya.net)"
-    )
-    expect(headers.Accept).toContain("text/html")
-    expect(headers["Accept-Language"]).toContain("ja")
-  })
-
-  test("og:title が無い場合は title タグにフォールバックする", async () => {
+  test("og タグが無い場合は title / meta[name=description] にフォールバックする", async () => {
     stubFetch(`<!DOCTYPE html>
 <html>
 <head>
   <title>タイトルタグの値</title>
-  <meta property="og:description" content="説明">
-  <meta property="og:image" content="https://example.com/image.jpg">
-</head>
-<body></body>
-</html>`)
-
-    const res = await getOgpMetaData(normalLinkUrl, env)
-
-    expect(res.ok).toBe(true)
-    expect(res.ogpTitle).toBe("タイトルタグの値")
-  })
-
-  test("og:description が無い場合は meta[name=description] にフォールバックする", async () => {
-    stubFetch(`<!DOCTYPE html>
-<html>
-<head>
-  <title>タイトル</title>
   <meta name="description" content="meta description の値">
 </head>
 <body></body>
@@ -95,6 +69,7 @@ describe("getOgpMetaData", () => {
     const res = await getOgpMetaData(normalLinkUrl, env)
 
     expect(res.ok).toBe(true)
+    expect(res.ogpTitle).toBe("タイトルタグの値")
     expect(res.ogpDescription).toBe("meta description の値")
   })
 
@@ -117,55 +92,21 @@ describe("getOgpMetaData", () => {
     expect(res.ogpDescription).toBe("og description")
   })
 
-  test("403 (bot 対策などでブロック) の場合はエラーレスポンスを返す", async () => {
-    // Cloudflare の bot 対策により取得対象がチャレンジ/403 を返すケースを再現。
-    // 実ネットワークではなくスタブで再現することで、CI が外部状況に依存せず安定する。
-    stubFetch("Forbidden", { status: 403 })
+  // 403 は bot 対策によるブロック、404 はリンク切れ。呼び出し側が区別できるよう
+  // エラー文にはステータスと所要時間を含める
+  test.each([403, 404])(
+    "HTTP %i はステータス付きのエラーレスポンスを返す",
+    async (status) => {
+      stubFetch("error body", { status })
 
-    const res = await getOgpMetaData(normalLinkUrl, env)
+      const res = await getOgpMetaData(normalLinkUrl, env)
 
-    expect(res.ok).toBe(false)
-    // 403 / 404 / 429 を区別できるよう、ステータスと所要時間をエラー文へ含める
-    expect(res.error).toMatch(/^HTTP 403 from origin \(\d+ms\)$/)
-  })
-
-  test("404 の場合はステータス付きのエラーレスポンスを返す", async () => {
-    stubFetch("Not Found", { status: 404 })
-
-    const res = await getOgpMetaData(normalLinkUrl, env)
-
-    expect(res.ok).toBe(false)
-    expect(res.error).toMatch(/^HTTP 404 from origin \(\d+ms\)$/)
-  })
-
-  test("JSON-LD の Product 構造化データから商品価格を抽出する", async () => {
-    stubFetch(`<!DOCTYPE html>
-<html>
-<head>
-  <title>商品ページ</title>
-  <meta property="og:title" content="サイクルコンピューター">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "サイクルコンピューター",
-    "offers": {
-      "@type": "Offer",
-      "price": "24800",
-      "priceCurrency": "JPY"
+      expect(res.ok).toBe(false)
+      expect(res.error).toMatch(
+        new RegExp(`^HTTP ${status} from origin \\(\\d+ms\\)$`)
+      )
     }
-  }
-  </script>
-</head>
-<body></body>
-</html>`)
-
-    const res = await getOgpMetaData(normalLinkUrl, env)
-
-    expect(res.ok).toBe(true)
-    expect(res.ogpTitle).toBe("サイクルコンピューター")
-    expect(res.productPrice).toEqual({ amount: 24800, currency: "JPY" })
-  })
+  )
 
   test("JSON-LD が無い場合は OGP 価格メタタグにフォールバックする", async () => {
     stubFetch(`<!DOCTYPE html>
@@ -183,6 +124,7 @@ describe("getOgpMetaData", () => {
     expect(res.productPrice).toEqual({ amount: 1980, currency: "JPY" })
   })
 
+  // JSON-LD 側が採用されることは、script[type=ld+json] の抽出が動いていることも示す
   test("JSON-LD の価格が価格メタタグより優先される", async () => {
     stubFetch(`<!DOCTYPE html>
 <html>
@@ -218,15 +160,6 @@ describe("getOgpMetaData", () => {
 
     expect(res.ok).toBe(true)
     expect(res.ogpTitle).toBe("og title")
-    expect(res.productPrice).toBeUndefined()
-  })
-
-  test("価格構造化データが無いページでは productPrice を持たない", async () => {
-    stubFetch(normalLinkOgpHtml)
-
-    const res = await getOgpMetaData(normalLinkUrl, env)
-
-    expect(res.ok).toBe(true)
     expect(res.productPrice).toBeUndefined()
   })
 

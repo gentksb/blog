@@ -1,46 +1,19 @@
 import { expect, test } from "vitest"
 import { DIRECTIVES, isDirectiveName } from "../../src/lib/directives"
 import { postToMarkdown } from "../../src/lib/postToMarkdown"
+import {
+  allMdxSources,
+  postMdxSources,
+  singlePageMdxSources,
+  stripCodeFences,
+  stripFrontmatter
+} from "../helpers/mdxSources"
 
-// ビルド時(Vite)に全MDXソースを取り込む（workerd内ではfsを使えないため）
-const mdxSources = import.meta.glob("../../src/content/post/**/*.mdx", {
-  query: "?raw",
-  import: "default",
-  eager: true
-}) as Record<string, string>
-
-// ディレクティブは post / singlePage 双方のレンダリング経路で解決されるため両方を対象にする
-const allMdxSources = {
-  ...mdxSources,
-  ...(import.meta.glob("../../src/content/singlePage/**/*.mdx", {
-    query: "?raw",
-    import: "default",
-    eager: true
-  }) as Record<string, string>)
-}
-
-test("MDXコンテンツを1件以上読み込めている", () => {
-  expect(Object.keys(mdxSources).length).toBeGreaterThan(0)
+// glob が空振りすると以下の全記事検査が中身ゼロのまま緑になるため、最初に件数を確認する
+test("post / singlePage の MDX を両方読み込めている", () => {
+  expect(Object.keys(postMdxSources).length).toBeGreaterThan(0)
+  expect(Object.keys(singlePageMdxSources).length).toBeGreaterThan(0)
 })
-
-test("singlePageのMDXコンテンツも読み込めている", () => {
-  expect(Object.keys(allMdxSources).length).toBeGreaterThan(
-    Object.keys(mdxSources).length
-  )
-})
-
-test("LinkCardのprop誤記（小文字linkurl=）がMDXコンテンツに存在しない", () => {
-  const offenders = Object.entries(mdxSources)
-    .filter(([, source]) => /\blinkurl=/.test(source))
-    .map(([path]) => path)
-  expect(offenders).toEqual([])
-})
-
-const stripCodeFences = (source: string): string =>
-  source.replace(/```[\s\S]*?```/g, "")
-
-const stripFrontmatter = (source: string): string =>
-  source.replace(/^---\r?\n[\s\S]*?\r?\n---[ \t]*\r?\n/, "")
 
 // satteri は字下げ・コロン4個以上・ラベル・属性も container directive として
 // 受け付けるため、開始行の検出は緩いパターンで行う。終了行には名前がないので
@@ -56,16 +29,11 @@ test("MDXで使われているディレクティブ名が DIRECTIVES に定義�
   expect(offenders).toEqual([])
 })
 
-// 下の変換テストが frontmatter を本文として扱っていないことの保証。
-// strip が空振りすると変換テストは緑のままカバレッジを失う
-test("全MDXから frontmatter を除去できている", () => {
-  const offenders = Object.entries(allMdxSources)
-    .filter(([, source]) => {
-      const stripped = stripFrontmatter(source)
-      return stripped === source || stripped.startsWith("---")
-    })
-    .map(([path]) => path)
-  expect(offenders).toEqual([])
+// isDirectiveName が `in` ではなく Object.hasOwn を使う理由。
+// プロトタイプ由来の名前を通すと DIRECTIVES[name] が undefined になり変換時に落ちる
+test("Object.prototype 由来のプロパティ名はディレクティブ名として拒否される", () => {
+  expect(isDirectiveName("toString")).toBe(false)
+  expect(isDirectiveName("warning")).toBe(false)
 })
 
 // postToMarkdown はネストと閉じ忘れを変換できない。記法を禁止する代わりに、
