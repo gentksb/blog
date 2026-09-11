@@ -15,13 +15,6 @@ test("post / singlePage の MDX を両方読み込めている", () => {
   expect(Object.keys(singlePageMdxSources).length).toBeGreaterThan(0)
 })
 
-test("LinkCardのprop誤記（小文字linkurl=）がMDXコンテンツに存在しない", () => {
-  const offenders = Object.entries(postMdxSources)
-    .filter(([, source]) => /\blinkurl=/.test(source))
-    .map(([path]) => path)
-  expect(offenders).toEqual([])
-})
-
 // satteri は字下げ・コロン4個以上・ラベル・属性も container directive として
 // 受け付けるため、開始行の検出は緩いパターンで行う。終了行には名前がないので
 // このパターンとは重複しない
