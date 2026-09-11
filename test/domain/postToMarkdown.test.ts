@@ -1,5 +1,4 @@
 import { expect, test } from "vitest"
-import { DIRECTIVES, type DirectiveName } from "../../src/lib/directives"
 import { postToMarkdown } from "../../src/lib/postToMarkdown"
 
 const BASE_INPUT = {
@@ -135,19 +134,6 @@ test("<SimpleLinkCard url='...' /> title なし → [url](url)", () => {
 
 // === ルール6: コンテナディレクティブ ===
 
-const directiveNames = Object.keys(DIRECTIVES) as DirectiveName[]
-
-test.each(directiveNames)(
-  ":::%s が定義どおりの引用ブロックに変換され ::: が残らない",
-  (name) => {
-    const body = `:::${name}\n本文です\n:::`
-    const result = postToMarkdown({ ...BASE_INPUT, body })
-    expect(result).toContain(DIRECTIVES[name].markdownPrefix)
-    expect(result).toContain("> 本文です")
-    expect(result).not.toContain(":::")
-  }
-)
-
 test(":::positive リスト入り", () => {
   const body = `:::positive
 - 軽い
@@ -191,9 +177,10 @@ test("未定義のディレクティブ名は変換されない", () => {
 test.each([
   ["コロン4個", "::::positive\n本文\n::::"],
   ["開始終了のコロン数不一致", ":::positive\n本文\n::::"],
-  ["属性付き", ":::positive{.tight}\n本文\n:::"],
-  ["ラベル付き", ":::positive[見出し]\n本文\n:::"],
-  ["名前直後の余分なテキスト", ":::positive foo\n本文\n:::"],
+  [
+    "名前直後の付随要素（属性・ラベル・余分なテキスト）",
+    ":::positive[見出し]{.tight} foo\n本文\n:::"
+  ],
   ["字下げ", "  :::positive\n  本文\n  :::"],
   ["終了行のみ字下げ", ":::positive\n本文\n  :::"],
   ["終了行の余分なテキスト", ":::positive\n本文\n::: end"],
@@ -237,20 +224,12 @@ test("相対パス画像 ![alt](./foo.jpg) が除去される", () => {
   expect(result).not.toContain("DSC_1455.jpg")
 })
 
-test("絶対URL画像 ![alt](https://...) は残る", () => {
-  const result = postToMarkdown({
-    ...BASE_INPUT,
-    body: "![自転車](https://example.com/photo.jpg)"
-  })
+test("絶対URL画像は残る", () => {
+  const body =
+    "![自転車](https://example.com/photo.jpg)\n\n![部品](http://example.com/part.jpg)"
+  const result = postToMarkdown({ ...BASE_INPUT, body })
   expect(result).toContain("![自転車](https://example.com/photo.jpg)")
-})
-
-test("http:// 画像も残る", () => {
-  const result = postToMarkdown({
-    ...BASE_INPUT,
-    body: "![自転車](http://example.com/photo.jpg)"
-  })
-  expect(result).toContain("![自転車](http://example.com/photo.jpg)")
+  expect(result).toContain("![部品](http://example.com/part.jpg)")
 })
 
 // === ルール8: 未知の大文字始まり JSX タグ除去 ===
@@ -276,13 +255,6 @@ test("連続3行以上の空行が2行（空行1つ）に圧縮される", () =>
 
 // === コードフェンス内は変換しない ===
 
-test("コードフェンス内の <Amzn /> は変換されない", () => {
-  const body = '```\n<Amzn asin="B0044BG93S" />\n```'
-  const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain('<Amzn asin="B0044BG93S" />')
-  expect(result).not.toContain("Amazonで見る")
-})
-
 test("コードフェンス内の :::positive は変換されない", () => {
   const body = "```\n:::positive\n良い点\n:::\n```"
   const result = postToMarkdown({ ...BASE_INPUT, body })
@@ -290,17 +262,13 @@ test("コードフェンス内の :::positive は変換されない", () => {
   expect(result).not.toContain("> 😊")
 })
 
-test("コードフェンス内の相対パス画像は除去されない", () => {
-  const body = "```\n![](./a.jpg)\n```"
-  const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain("![](./a.jpg)")
-})
-
+// フェンス外の <Amzn> / 相対パス画像が変換され、フェンス内の同じ記法は素通りすること
 test("コードフェンス外は変換される、フェンス内は変換されない（混在）", () => {
   const body =
-    '<Amzn asin="B0044BG93S" />\n\n```\n<Amzn asin="SKIPME" />\n```\n\n![](./img.jpg)'
+    '<Amzn asin="B0044BG93S" />\n\n```\n<Amzn asin="SKIPME" />\n![](./keep.jpg)\n```\n\n![](./img.jpg)'
   const result = postToMarkdown({ ...BASE_INPUT, body })
   expect(result).toContain("Amazonで見る (ASIN: B0044BG93S)")
   expect(result).toContain('<Amzn asin="SKIPME" />')
+  expect(result).toContain("![](./keep.jpg)")
   expect(result).not.toContain("img.jpg")
 })

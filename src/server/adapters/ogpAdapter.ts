@@ -91,10 +91,15 @@ export const createOgpAdapter = (deps: {
 export const createOgpKVCacheAdapter = (kv: KVNamespace): OgpCacheAdapter => {
   return {
     async get(key: string): Promise<OgpData | string | null> {
-      // まずJSON形式で取得を試す
-      const jsonData = (await kv.get(key, "json")) as OgpData | null
-      if (jsonData) {
-        return jsonData
+      // まずJSON形式で取得を試す。JSON化前の生文字列で保存された旧データに対しては
+      // kv.get(key, "json") が SyntaxError を投げるため、テキスト形式へ落とす
+      try {
+        const jsonData = (await kv.get(key, "json")) as OgpData | null
+        if (jsonData) {
+          return jsonData
+        }
+      } catch {
+        // JSONとして解釈できない旧データ。下のテキスト取得で読み直す
       }
 
       // 次にテキスト形式で取得を試す（既存データとの互換性のため）

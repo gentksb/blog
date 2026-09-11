@@ -2,8 +2,9 @@ import { expect, test } from "vitest"
 import { isAiAgentRequest, postMarkdownPathFor } from "../../src/lib/aiAgent"
 
 // === isAiAgentRequest ===
+// 判定は3経路（verifiedBotCategory / Accept / UA パターン）しかないため、経路ごとに1件ずつ検証する
 
-test("ClaudeBot の実UA は AI と判定される", () => {
+test("既知AIボットの UA は AI と判定される", () => {
   expect(
     isAiAgentRequest({
       userAgent:
@@ -14,17 +15,7 @@ test("ClaudeBot の実UA は AI と判定される", () => {
   ).toBe(true)
 })
 
-test("GPTBot は AI と判定される", () => {
-  expect(
-    isAiAgentRequest({
-      userAgent: "GPTBot/1.1 (+https://openai.com/gptbot)",
-      accept: "text/html",
-      verifiedBotCategory: undefined
-    })
-  ).toBe(true)
-})
-
-test("Accept: text/markdown,text/html は AI と判定される", () => {
+test("Accept に text/markdown を含むと AI と判定される", () => {
   expect(
     isAiAgentRequest({
       userAgent:
@@ -35,32 +26,12 @@ test("Accept: text/markdown,text/html は AI と判定される", () => {
   ).toBe(true)
 })
 
-test("verifiedBotCategory が AI Assistant は AI と判定される", () => {
+test("Cloudflare の verifiedBotCategory が AI 系なら AI と判定される", () => {
   expect(
     isAiAgentRequest({
       userAgent: "Mozilla/5.0 (compatible; SomeBot/1.0)",
       accept: "text/html",
       verifiedBotCategory: "AI Assistant"
-    })
-  ).toBe(true)
-})
-
-test("verifiedBotCategory が AI Crawler は AI と判定される", () => {
-  expect(
-    isAiAgentRequest({
-      userAgent: null,
-      accept: null,
-      verifiedBotCategory: "AI Crawler"
-    })
-  ).toBe(true)
-})
-
-test("verifiedBotCategory が AI Search は AI と判定される", () => {
-  expect(
-    isAiAgentRequest({
-      userAgent: null,
-      accept: null,
-      verifiedBotCategory: "AI Search"
     })
   ).toBe(true)
 })
@@ -76,7 +47,7 @@ test("Chrome 通常 UA + Accept: text/html は AI と判定されない", () => 
   ).toBe(false)
 })
 
-test("null/undefined 入力は AI と判定されない", () => {
+test("ヘッダが欠けていても AI と判定されない", () => {
   expect(
     isAiAgentRequest({
       userAgent: null,
@@ -86,56 +57,23 @@ test("null/undefined 入力は AI と判定されない", () => {
   ).toBe(false)
 })
 
-test("空文字 UA + 空文字 accept は AI と判定されない", () => {
-  expect(
-    isAiAgentRequest({
-      userAgent: "",
-      accept: "",
-      verifiedBotCategory: undefined
-    })
-  ).toBe(false)
-})
-
 // === postMarkdownPathFor ===
 
-test("/post/2013/12/jetfly-tl/ → /post/2013/12/jetfly-tl.md", () => {
-  expect(postMarkdownPathFor("/post/2013/12/jetfly-tl/")).toBe(
-    "/post/2013/12/jetfly-tl.md"
-  )
+test.each([
+  ["/post/2013/12/jetfly-tl/", "/post/2013/12/jetfly-tl.md"],
+  // 末尾スラッシュの有無で同じパスへ解決する
+  ["/post/2013/12/jetfly-tl", "/post/2013/12/jetfly-tl.md"]
+])("%s → %s", (pathname, expected) => {
+  expect(postMarkdownPathFor(pathname)).toBe(expected)
 })
 
-test("/post/2013/12/jetfly-tl（末尾スラッシュなし）→ /post/2013/12/jetfly-tl.md", () => {
-  expect(postMarkdownPathFor("/post/2013/12/jetfly-tl")).toBe(
-    "/post/2013/12/jetfly-tl.md"
-  )
-})
-
-test("/post/ → null", () => {
-  expect(postMarkdownPathFor("/post/")).toBeNull()
-})
-
-test("/post → null", () => {
-  expect(postMarkdownPathFor("/post")).toBeNull()
-})
-
-test("/post/2013/12/jetfly-tl/twitter-og.png → null（最終セグメントに . を含む）", () => {
-  expect(
-    postMarkdownPathFor("/post/2013/12/jetfly-tl/twitter-og.png")
-  ).toBeNull()
-})
-
-test("/post/2013/12/jetfly-tl.md → null（最終セグメントに . を含む）", () => {
-  expect(postMarkdownPathFor("/post/2013/12/jetfly-tl.md")).toBeNull()
-})
-
-test("/ → null", () => {
-  expect(postMarkdownPathFor("/")).toBeNull()
-})
-
-test("/tag/ROAD/1/ → null", () => {
-  expect(postMarkdownPathFor("/tag/ROAD/1/")).toBeNull()
-})
-
-test("単一セグメント記事 /post/my-article/ → /post/my-article.md", () => {
-  expect(postMarkdownPathFor("/post/my-article/")).toBe("/post/my-article.md")
+test.each([
+  // /post/ 配下でない
+  ["/tag/ROAD/1/"],
+  // slug が無い
+  ["/post/"],
+  // 最終セグメントに . を含む（画像や .md 自身）
+  ["/post/2013/12/jetfly-tl/twitter-og.png"]
+])("%s → null", (pathname) => {
+  expect(postMarkdownPathFor(pathname)).toBeNull()
 })

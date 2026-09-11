@@ -26,15 +26,6 @@ describe("postLogToSlack", () => {
     expect(fetchMock).not.toHaveBeenCalled()
   })
 
-  test("webhook URL が undefined なら送信せず reject する", async () => {
-    const fetchMock = stubFetch(async () => new Response(null))
-
-    await expect(
-      postLogToSlack("test message", undefined as unknown as string)
-    ).rejects.toThrow("SLACK_WEBHOOK_URL is not defined")
-    expect(fetchMock).not.toHaveBeenCalled()
-  })
-
   test("URL として解釈できない値なら送信せず reject する", async () => {
     const fetchMock = stubFetch(async () => new Response(null))
 

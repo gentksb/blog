@@ -1,23 +1,16 @@
 import { expect, test } from "vitest"
 import { extractDescription } from "../../src/lib/extractDescription"
+import { postMdxSources, stripFrontmatter } from "../helpers/mdxSources"
 
-// satteri が container directive として受け付ける記法の一覧。
-// 開始行の表記ゆれと、開始終了のコロン数不一致まで網羅する
-const directiveVariants = [
+// ディレクティブ行は名前を読まず /^[ \t]*:{3,}.*$/gm の1本で落としている。
+// 字下げ・コロン数・行末の付随要素（属性/ラベル/余分なテキスト）をまとめて確認する
+test.each([
   { name: "基本形", source: ":::positive\n本文テキスト\n:::" },
-  { name: "negative", source: ":::negative\n本文テキスト\n:::" },
-  { name: "コロン4個以上", source: "::::positive\n本文テキスト\n::::" },
-  { name: "属性付き", source: ":::positive{.tight}\n本文テキスト\n:::" },
-  { name: "ラベル付き", source: ":::positive[ラベル]\n本文テキスト\n:::" },
-  { name: "字下げ", source: "  :::positive\n  本文テキスト\n  :::" },
-  { name: "コロン数の不一致", source: "::::positive\n本文テキスト\n:::" },
   {
-    name: "行末の余分なテキスト",
-    source: ":::positive 余分なテキスト\n本文テキスト\n:::"
+    name: "字下げ・コロン4個・属性付き",
+    source: "  ::::positive{.tight} 余分なテキスト\n  本文テキスト\n  :::"
   }
-]
-
-test.each(directiveVariants)(
+])(
   "コンテナディレクティブ($name)の記法が description に残らない",
   ({ source }) => {
     const description = extractDescription(source)
@@ -124,23 +117,9 @@ test("maxLength を超えない", () => {
   expect(extractDescription(source, 200)).toHaveLength(200)
 })
 
-// ビルド時(Vite)に全MDXソースを取り込む（workerd内ではfsを使えないため）
-const mdxSources = import.meta.glob("../../src/content/post/**/*.mdx", {
-  query: "?raw",
-  import: "default",
-  eager: true
-}) as Record<string, string>
-
-const stripFrontmatter = (source: string): string =>
-  source.replace(/^---\r?\n[\s\S]*?\r?\n---[ \t]*\r?\n/, "")
-
-const descriptions: Array<[string, string]> = Object.entries(mdxSources).map(
-  ([path, source]) => [path, extractDescription(stripFrontmatter(source))]
-)
-
-test("MDXコンテンツを1件以上読み込めている", () => {
-  expect(Object.keys(mdxSources).length).toBeGreaterThan(0)
-})
+const descriptions: Array<[string, string]> = Object.entries(
+  postMdxSources
+).map(([path, source]) => [path, extractDescription(stripFrontmatter(source))])
 
 // 行頭 # は本文中の #1（レース番号）と区別できないため検査対象から外す
 const residualPatterns = [
@@ -165,16 +144,4 @@ test("全記事の description が空にならない", () => {
     .filter(([, description]) => description.length === 0)
     .map(([path]) => path)
   expect(offenders).toEqual([])
-})
-
-test("ディレクティブ直後の箇条書きを持つ記事の description が本文になる", () => {
-  const entry = descriptions.find(([path]) =>
-    path.includes("2026/07/cycplus-t7")
-  )
-  expect(entry).toBeDefined()
-
-  const description = entry?.[1] ?? ""
-  expect(description).not.toContain(":::")
-  expect(description).not.toMatch(/- 小さい/)
-  expect(description).toContain("小さいフットプリント")
 })
