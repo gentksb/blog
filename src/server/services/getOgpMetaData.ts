@@ -18,9 +18,12 @@ const FETCH_TIMEOUT_MS = 5000
 
 // Workers の fetch は Host 以外のリクエストヘッダを送らない。UA 無しのリクエストを
 // 弾く配信元（Shopify / BASE / Drupal 等）が 403 / 429 を返すため明示的に付与する。
-// ブラウザ UA を詐称しても通過先は増えなかったため、正体を示す UA を使う
+// 自称 bot の UA だと Strava が 403 になるため Chromium UA を送る（ローカル workerd での実測）。
+// バージョンは Reduced UA 仕様に合わせてメジャーのみ実値、以下は 0.0.0 固定。
+// 本番の 403 には Cloudflare の egress IP を見た判定も混ざるため、UA だけでは通らない先が残る
 const OGP_FETCH_HEADERS = {
-  "User-Agent": "GensoCycleBot/1.0 (+https://blog.gensobunya.net)",
+  "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
   Accept: "text/html,application/xhtml+xml,*/*;q=0.8",
   "Accept-Language": "ja,en;q=0.8"
 }
