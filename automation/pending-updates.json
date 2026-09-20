@@ -22,20 +22,20 @@
     {
       "package": "vitest",
       "fromVersion": "4.1.11",
-      "toVersion": "5.0.0",
+      "toVersion": "5.0.1",
       "reason": "breaking-change-unresolved",
-      "recheckAfter": "2026-09-20T00:00:00Z",
-      "observedAt": "2026-09-06T00:00:00Z",
-      "notes": "@cloudflare/vitest-pool-workers@0.22.0（最新）が peerDependencies で vitest: ^4.1.0 を要求しており、5系に上げると依存関係が壊れる。vitest-pool-workers が vitest 5 対応版を出すまで保留。"
+      "recheckAfter": "2026-10-04T00:00:00Z",
+      "observedAt": "2026-09-20T00:00:00Z",
+      "notes": "@cloudflare/vitest-pool-workers@0.22.0（最新）が peerDependencies で vitest: ^4.1.0 を要求しており、5系に上げると依存関係が壊れる。再確認済み（バージョン変わらず）。vitest-pool-workers が vitest 5 対応版を出すまで保留。"
     },
     {
       "package": "prettier-plugin-astro",
       "fromVersion": "0.14.1",
-      "toVersion": "1.0.0",
+      "toVersion": "1.0.1",
       "reason": "test-failure",
-      "recheckAfter": "2026-09-20T00:00:00Z",
-      "observedAt": "2026-09-13T00:00:00Z",
-      "notes": "Astro 7 の新 Rust コンパイラ上へフルリライトされ、既存の .astro ファイルの整形結果が変わる（例: 長い属性を持つ要素の改行有無）。pnpm lint（prettier --check）が 31 ファイルで差分を検出し失敗。src/ 全体を再フォーマットする大きな diff を伴うため、依存更新のみのルーチン PR には含めず別途対応が必要。"
+      "recheckAfter": "2026-09-27T00:00:00Z",
+      "observedAt": "2026-09-20T00:00:00Z",
+      "notes": "Astro 7 の新 Rust コンパイラ上へフルリライトされ、既存の .astro ファイルの整形結果が変わる（例: 長い属性を持つ要素の改行有無）。1.0.1 でも同じ 31 ファイルで pnpm lint（prettier --check）が失敗することを実際にインストールして再確認。src/ 全体を再フォーマットする大きな diff を伴うため、依存更新のみのルーチン PR には含めず別途対応が必要。"
     }
   ]
 }
