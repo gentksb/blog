@@ -84,15 +84,13 @@ const jsonLd = {
 <meta property="twitter:image" content={twitterImageUrl ?? metaImageUrl} />
 
 <!-- Markdown alternate (AIエージェント向け) -->
-{
-  markdownUrl && (
-    <link rel="alternate" type="text/markdown" href={markdownUrl} />
-  )
-}
+{markdownUrl && (
+  <link rel="alternate" type="text/markdown" href={markdownUrl} />
+)}
 
 <!-- JSON-LD -->
 <script
   type="application/ld+json"
   set:html={JSON.stringify(jsonLd)}
   is:inline
-/>
+></script>

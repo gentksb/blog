@@ -22,6 +22,8 @@ const posts = slugs
     {description && <p class="mt-1 text-sm text-gray-500">{description}</p>}
   </div>
   <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-    {posts.map((post) => <BlogPostCard {...post} />)}
+    {posts.map((post) => (
+      <BlogPostCard {...post} />
+    ))}
   </div>
 </section>

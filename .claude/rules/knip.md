@@ -31,3 +31,6 @@ knip のプラグインが追加する entry もある。Astro プラグイン�
 
 - `textlint` と `textlint-rule-*` / `@textlint-ja/*`（計13パッケージ）:
   `.textlintrc` からのみ参照される。npm script も CI ジョブも持たず（実行は VS Code 拡張経由）knip からは未使用に見えるが、アンインストールすると textlint が動かなくなる
+
+- `@textlint/textlint-plugin-markdown`:
+  `.textlintrc` の `plugins` で `@textlint/markdown` として参照されるが、実体は `textlint` 本体の依存に同梱されており package.json には直接書かない。除外しないと Unlisted dependencies として報告され `pnpm lint:unused` が exit 1 になる。package.json へ直接足すと textlint 本体とバージョンが二重管理になるため、こちらで除外する

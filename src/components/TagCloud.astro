@@ -27,18 +27,16 @@ const getFontSize = (count: number) => {
 <div class="rounded-lg border border-gray-200 bg-white p-6">
   <h2 class="mb-4 text-xl font-bold">タグ一覧</h2>
   <div class="flex flex-wrap gap-3">
-    {
-      sortedTags.map(({ tag, count }) => (
-        <a
-          href={`/tag/${tag}/1`}
-          class="rounded-full bg-gray-100 px-3 py-1 transition hover:bg-accent hover:text-white"
-          style={`font-size: ${getFontSize(count)}px`}
-          title={`${tag} (${count}件)`}
-        >
-          {tag}
-          <span class="ml-1 text-xs text-gray-500">({count})</span>
-        </a>
-      ))
-    }
+    {sortedTags.map(({ tag, count }) => (
+      <a
+        href={`/tag/${tag}/1`}
+        class="rounded-full bg-gray-100 px-3 py-1 transition hover:bg-accent hover:text-white"
+        style={`font-size: ${getFontSize(count)}px`}
+        title={`${tag} (${count}件)`}
+      >
+        {tag}
+        <span class="ml-1 text-xs text-gray-500">({count})</span>
+      </a>
+    ))}
   </div>
 </div>

@@ -26,18 +26,16 @@ if (filteredHeadings.length === 0) {
   <div class="px-4 pb-4" id="mobile-toc">
     <nav class="toc-nav" aria-labelledby="mobile-toc-heading">
       <ul class="space-y-2 text-sm">
-        {
-          filteredHeadings.map((heading) => (
-            <li class={getIndentClass(heading.depth)}>
-              <a
-                href={`#${heading.slug}`}
-                class="rounded text-gray-600 hover:text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-              >
-                {heading.text}
-              </a>
-            </li>
-          ))
-        }
+        {filteredHeadings.map((heading) => (
+          <li class={getIndentClass(heading.depth)}>
+            <a
+              href={`#${heading.slug}`}
+              class="rounded text-gray-600 hover:text-primary hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              {heading.text}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   </div>

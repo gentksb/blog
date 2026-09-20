@@ -123,13 +123,11 @@ const isExternal = parsedUrl.hostname !== "blog.gensobunya.net"
 >
   <div class={linkCardFrame}>
     <div class="flex flex-1 flex-col justify-center p-3 min-w-0">
-      {
-        brandTheme && (
-          <div class={`${linkCardBadge} ${brandColorText[brandTheme]}`}>
-            {brandTheme.charAt(0).toUpperCase() + brandTheme.slice(1)}
-          </div>
-        )
-      }
+      {brandTheme && (
+        <div class={`${linkCardBadge} ${brandColorText[brandTheme]}`}>
+          {brandTheme.charAt(0).toUpperCase() + brandTheme.slice(1)}
+        </div>
+      )}
       <div class={linkCardTitle}>
         {isExternal && <ExternalLinkIcon />}
         {ogpTitle}
@@ -137,29 +135,25 @@ const isExternal = parsedUrl.hostname !== "blog.gensobunya.net"
       <div class="mt-1.5 line-clamp-2 text-sm font-normal text-secondary">
         {ogpDescription}
       </div>
-      {
-        priceDisplay && (
-          <div class={`mt-1.5 ${linkCardPrice}`}>{priceDisplay}</div>
-        )
-      }
+      {priceDisplay && (
+        <div class={`mt-1.5 ${linkCardPrice}`}>{priceDisplay}</div>
+      )}
       <div class="mt-1.5 text-xs text-secondary">
         <GlobeIcon />
         {ogpSiteName}
       </div>
     </div>
     <div class="min-h-24 max-h-32 w-[30%] flex-shrink-0 md:max-h-40">
-      {
-        ogpImageUrl && (
-          <figure class="h-full">
-            <img
-              src={ogpImageUrl}
-              class="h-full w-full object-cover"
-              alt="リンク先カバー画像"
-              loading="lazy"
-            />
-          </figure>
-        )
-      }
+      {ogpImageUrl && (
+        <figure class="h-full">
+          <img
+            src={ogpImageUrl}
+            class="h-full w-full object-cover"
+            alt="リンク先カバー画像"
+            loading="lazy"
+          />
+        </figure>
+      )}
     </div>
   </div>
 </a>

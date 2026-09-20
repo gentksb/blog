@@ -14,12 +14,11 @@ try {
 }
 ---
 
-<div
-  class="not-prose my-4 rounded-md border border-stone-300 bg-white px-2 py-1 shadow-xs"
->
+<div class="not-prose my-4 rounded-md border border-stone-300 bg-white px-2 py-1 shadow-xs">
   <a href={url}>
     <p class="text-sm font-bold text-primary">
-      <ExternalLinkIcon class="mr-1 inline" />{title ?? url}
+      <ExternalLinkIcon class="mr-1 inline" />
+      {title ?? url}
     </p>
   </a>
 </div>

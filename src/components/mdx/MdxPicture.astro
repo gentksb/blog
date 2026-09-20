@@ -10,20 +10,18 @@ const { src, alt } = Astro.props
 ---
 
 <figure>
-  {
-    typeof src === "string" ? (
-      <img class="mx-auto" src={src} alt={alt} />
-    ) : (
-      <Picture
-        formats={["webp"]}
-        fallbackFormat="jpeg"
-        widths={[450, 900]}
-        class="mx-auto max-h-[80vh] object-contain"
-        {src}
-        {alt}
-      />
-    )
-  }
+  {typeof src === "string" ? (
+    <img class="mx-auto" src={src} alt={alt} />
+  ) : (
+    <Picture
+      formats={["webp"]}
+      fallbackFormat="jpeg"
+      widths={[450, 900]}
+      class="mx-auto max-h-[80vh] object-contain"
+      {src}
+      {alt}
+    />
+  )}
   <figcaption class="not-prose text-center text-xs text-stone-500 md:text-sm">
     {alt}
   </figcaption>
