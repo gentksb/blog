@@ -6,6 +6,10 @@
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "upload_source_maps": true,
   "preview_urls": true,
+  // OGP 取得の subrequest を東京近傍から出す。国外 colo からだと Yahoo! JAPAN が遅延・500・403（EEA/英国）を返す
+  "placement": {
+    "region": "aws:ap-northeast-1"
+  },
   "assets": {
     "directory": "./dist/client/",
     "binding": "ASSETS",

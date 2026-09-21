@@ -38,6 +38,7 @@ MDX から `server:defer` 付きの Astro コンポーネントを直接使え�
 - Image Service は `WORKERS_CI_BRANCH === "master"` のときだけ有効（プレビュードメインでは `cdn-cgi/image` が 404 になるため）
 - vitest はカスタム Worker エントリを読み込めないため、テストは `main` を持たない `wrangler.test.jsonc` を参照する。`wrangler.jsonc` のバインディングを変えたら両方同期する
 - Astro のセッション機能は使わないため `astro.config.ts` で `session: false` を指定している（astro 7.2.0 / `@astrojs/cloudflare` 14.2.0 以降で有効）。これによりアダプタは SESSION KV バインディングを生成 `wrangler.json` へ注入せず、デプロイ時の KV 自動プロビジョニングも起きず、セッションランタイムが Worker バンドルから外れる。SESSION の namespace id を `wrangler.jsonc` へ直書きしてビルドログの差分 WARN を消す方法は採らない。直書きするとバインディングの管理がアダプタと wrangler の 2 箇所へ分かれるため。セッションを使う場合は `session: false` を外し、バインディング名を変えるときはアダプタの `sessionKVBindingName` オプションで指定する
+- `wrangler.jsonc` の `placement.region: "aws:ap-northeast-1"` で、Worker の fetch ハンドラを東京近傍のデータセンターで実行している。Worker はリクエストを受けた colo で動き、subrequest もその colo から出る。そのため米国・欧州の colo で OGP を取得すると、Yahoo! JAPAN の短縮 URL（4〜5 ホップのリダイレクト）が 1 ホップ 1〜2 秒かかってタイムアウトしたり、500 や 403（EEA・英国からの利用停止）が返ったりしていた。placement は fetch ハンドラ全体に効くので、国外からの `/post/*` と Server Islands も東京経由で処理される。`placement.mode: "smart"` は採らない。複数拠点からの安定したトラフィックがないと配置判定されず、1% のリクエストは転送されないため
 
 ### AIエージェント向け Markdown 配信
 
