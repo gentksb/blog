@@ -123,46 +123,40 @@ if (
         <ExternalLinkIcon />
         {productTitle}
       </div>
-      {
-        brandName && (
-          <div class="mt-0.5 truncate text-xs text-secondary">{brandName}</div>
-        )
-      }
-      {
-        priceDisplay && (
-          <div class="mt-1 flex flex-wrap items-baseline gap-x-2">
-            <span class={linkCardPrice}>{priceDisplay}</span>
-            {savingsPercentage !== undefined && savingsPercentage > 0 && (
-              <span class="text-xs text-error font-medium">
-                {savingsPercentage}%OFF
-              </span>
-            )}
-            {loyaltyPoints !== undefined && loyaltyPoints > 0 && (
-              <span class="text-xs text-primary font-medium">
-                +{loyaltyPoints}pt
-              </span>
-            )}
-          </div>
-        )
-      }
+      {brandName && (
+        <div class="mt-0.5 truncate text-xs text-secondary">{brandName}</div>
+      )}
+      {priceDisplay && (
+        <div class="mt-1 flex flex-wrap items-baseline gap-x-2">
+          <span class={linkCardPrice}>{priceDisplay}</span>
+          {savingsPercentage !== undefined && savingsPercentage > 0 && (
+            <span class="text-xs text-error font-medium">
+              {savingsPercentage}%OFF
+            </span>
+          )}
+          {loyaltyPoints !== undefined && loyaltyPoints > 0 && (
+            <span class="text-xs text-primary font-medium">
+              +{loyaltyPoints}pt
+            </span>
+          )}
+        </div>
+      )}
       <div class="mt-1 text-xs text-secondary md:text-sm">
         <GlobeIcon />
         Amazon.co.jp
       </div>
     </div>
     <div class="flex w-[25%] shrink-0 items-center justify-center p-2">
-      {
-        productImageUrl && (
-          <figure class="flex items-center justify-center">
-            <img
-              src={productImageUrl}
-              class="max-h-24 w-auto object-contain md:max-h-32"
-              alt="Amazon商品画像"
-              loading="lazy"
-            />
-          </figure>
-        )
-      }
+      {productImageUrl && (
+        <figure class="flex items-center justify-center">
+          <img
+            src={productImageUrl}
+            class="max-h-24 w-auto object-contain md:max-h-32"
+            alt="Amazon商品画像"
+            loading="lazy"
+          />
+        </figure>
+      )}
     </div>
   </div>
 </a>

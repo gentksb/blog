@@ -48,9 +48,7 @@ const PLACEHOLDER_TEMPLATE = `<li class="hit hit-loading" aria-hidden="true">
 
     <div class="search-bar">
       <pagefind-input placeholder="キーワードを入力"></pagefind-input>
-      <pagefind-summary
-        default-message="キーワードを入力すると、一致した記事が表示されます"
-      ></pagefind-summary>
+      <pagefind-summary default-message="キーワードを入力すると、一致した記事が表示されます"></pagefind-summary>
     </div>
 
     <pagefind-results>
@@ -58,13 +56,13 @@ const PLACEHOLDER_TEMPLATE = `<li class="hit hit-loading" aria-hidden="true">
         type="text/pagefind-template"
         is:inline
         set:html={RESULT_TEMPLATE}
-      />
+      ></script>
       <script
         type="text/pagefind-template"
         data-template="placeholder"
         is:inline
         set:html={PLACEHOLDER_TEMPLATE}
-      />
+      ></script>
     </pagefind-results>
   </div>
 </Layout>

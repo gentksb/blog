@@ -14,6 +14,7 @@
     "@tailwindcss/typography",
     "cloudflare",
     "textlint",
+    "@textlint/textlint-plugin-markdown",
     "@textlint-ja/textlint-rule-no-filler",
     "textlint-rule-ja-no-abusage",
     "textlint-rule-ja-no-redundant-expression",
