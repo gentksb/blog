@@ -1,59 +1,54 @@
 # 幻想サイクル（Genso Cycle）ブログ
 
 Astro + Cloudflare Workers（Static Assets + KV）で動く自転車ブログ。記事は `src/content/post/<年>/<月>/*.mdx`。
-フレームワーク・依存のバージョンは `package.json`、Workers 側の構成は `wrangler.jsonc` が正。
+フレームワーク・依存のバージョンは `package.json`、Workers側の構成は `wrangler.jsonc` が正。
 
-React は `src/components/jsx/share.tsx` と `StickyToc.tsx` の 2 つだけ。他は Astro コンポーネントで実装する。
+Reactは `src/components/jsx/share.tsx` と `StickyToc.tsx` の2つだけ。他はAstroコンポーネントで実装する。
 
 ## コマンド
 
-- `pnpm dev` — workerd（Miniflare）上で起動。KV バインディングもローカルシミュレーションされる
-- `pnpm dev:cf` — `pnpm build` 後に `dist/server/wrangler.json` で serve。本番ビルドの確認用
-- `pnpm test:light` — シークレット不要。`*.credentialed.test.ts` だけを除外して残り全部を走らせる。Claude Code Web サンドボックスでは常にこちらを使う
-- `pnpm test` — `*.credentialed.test.ts` を含み実 Amazon API を叩く。`PARTNER_TAG` / `CREATORS_CREDENTIAL_*` が必要で CI（lint-test.yml）専用。実 API や認証情報を要するテストを追加する場合はファイル名へ `.credentialed.test.ts` を付ける
+- `pnpm dev` — workerd（Miniflare）上で起動。KVバインディングもローカルシミュレーションされる
+- `pnpm dev:cf` — `pnpm build` 後に `dist/server/wrangler.json` でserve。本番ビルドの確認用
+- `pnpm test:light` — シークレット不要。`*.credentialed.test.ts` だけを除外して残り全部を走らせる。Claude Code Webサンドボックスでは常にこちらを使う
+- `pnpm test` — `*.credentialed.test.ts` を含み実Amazon APIを叩く。`PARTNER_TAG` / `CREATORS_CREDENTIAL_*` が必要でCI（lint-test.yml）専用。実APIや認証情報を要するテストを追加する場合はファイル名へ `.credentialed.test.ts` を付ける
 - `pnpm typecheck` — `astro check`（`@astrojs/check`）。`.astro` / `.ts` / `.tsx` を横断して型検査する
 - `pnpm lint:unused` — knip。`git push` 前に必須
 
-Prettier は Edit / Write の PostToolUse フック（`.claude/settings.json`）で自動実行されるので手動実行は不要。`pnpm lint` は Prettier のみで、textlint は npm script を持たず VS Code 拡張から実行される。記事 MDX（`src/content/post`）は `.prettierignore` 対象で整形されない。`pnpm typecheck` はターン終了時の Stop フック（`.claude/settings.json`）で自動実行されるため、こちらも手動実行は基本不要。
+PrettierはEdit / WriteのPostToolUseフック（`.claude/settings.json`）で自動実行されるので手動実行は不要。`pnpm lint` はPrettierのみで、textlintはnpm scriptを持たずVS Code拡張から実行される。記事MDX（`src/content/post`）は `.prettierignore` 対象で整形されない。`pnpm typecheck` はターン終了時のStopフック（`.claude/settings.json`）で自動実行されるため、こちらも手動実行は基本不要。
 
 ## 実装の注意点
 
 ### 記事 MDX の拡張記法
 
-記事側に import は書かない。記法は 2 系統ある。
+記事側にimportは書かない。記法は2通り。
 
-- JSX 記法（`<LinkCard>` `<Amzn>` `<SimpleLinkCard>`）: `src/plugins/mdx-auto-import.ts` が全 MDX へ import 文を注入する。対象一覧は `astro.config.ts` の `mdxAutoImport([...])` が正。増やすときは `knip.json` の `entry` も更新する
-- コンテナディレクティブ記法（`:::positive` / `:::negative`）: 定義は `src/lib/directives.ts` の `DIRECTIVES` が単一の正で、コンポーネント名と Markdown 配信時の引用プレフィックスを持つ。satteri の `features.directive` が解析し、`src/plugins/satteri-directive-components.ts` が `DIRECTIVES` を引いて JSX ノードへ変換、`src/pages/post/[...slug].astro` と `src/pages/page/[slug].astro` の `<Content components={{...}}>` がコンポーネントを解決する
+- JSX記法（`<LinkCard>` `<Amzn>` `<SimpleLinkCard>`）: `src/plugins/mdx-auto-import.ts` が全MDXへimport文を注入する。対象一覧は `astro.config.ts` の `mdxAutoImport([...])` が正。増やすときは `knip.json` の `entry` も更新する
+- コンテナディレクティブ記法（`:::positive` / `:::negative`）: 定義は `src/lib/directives.ts` の `DIRECTIVES` が単一の正で、コンポーネント名とMarkdown配信時の引用プレフィックスを持つ。satteriの `features.directive` が解析し、`src/plugins/satteri-directive-components.ts` が `DIRECTIVES` を引いてJSXノードへ変換、`src/pages/post/[...slug].astro` と `src/pages/page/[slug].astro` の `<Content components={{...}}>` がコンポーネントを解決する
 
-記事本文で `<PositiveBox>` / `<NegativeBox>` を JSX として書くことはしない。ディレクティブを追加するときは `DIRECTIVES` へ1エントリ足し、レンダリング用の `.astro` を作って両方の `components` マップへ渡す。マップへの追加を忘れるとビルドが `Expected component ... to be defined` で落ちる。`test/unit/contentLint.test.ts` が記事の `:::` 名を `DIRECTIVES` と突き合わせ、`test/domain/postToMarkdown.test.ts` が全エントリの Markdown 変換を検証する。
+記事本文で `<PositiveBox>` / `<NegativeBox>` をJSXとして書くことはしない。ディレクティブを追加するときは `DIRECTIVES` へ1エントリ足し、レンダリング用の `.astro` を作って両方の `components` マップへ渡す。マップへの追加を忘れるとビルドが `Expected component ... to be defined` で落ちる。`test/unit/contentLint.test.ts` が記事の `:::` 名を `DIRECTIVES` と突き合わせ、`test/domain/postToMarkdown.test.ts` が全エントリのMarkdown変換を検証する。
 
-satteri が受け付ける記法（字下げ・コロン4個以上・開始終了のコロン数不一致・`:::positive{.tight}`・`:::positive[label]`・行末の余分なテキスト）は `postToMarkdown` も変換する。ネストと閉じ忘れだけは正規表現で扱えず `/post/<slug>.md` に `:::` が露出するため、`test/unit/contentLint.test.ts` が全 MDX を実際に `postToMarkdown` で変換して `:::` の残存を検出する。記事側の記法を制限するのではなく、このテストが落ちたら `postToMarkdown` を直す。
-
-MDX から `server:defer` 付きの Astro コンポーネントを直接使えないため、`LinkCard.astro` / `Amzn.astro` はラッパーで、KV と外部 API にアクセスする実体は `LinkCardServer.astro` / `AmznServer.astro`。PAAPI データは KV に 24 時間 TTL でキャッシュ。
+MDXから `server:defer` 付きのAstroコンポーネントを直接使えないため、`LinkCard.astro` / `Amzn.astro` はラッパーで、KVと外部APIにアクセスする実体は `LinkCardServer.astro` / `AmznServer.astro`。PAAPIデータはKVに24時間TTLでキャッシュ。
 
 ### Cloudflare Workers
 
-- 環境変数は `import { env } from "cloudflare:workers"`。`Astro.locals.runtime.env` は廃止済みで使わない
-- ローカル開発のシークレットは `.dev.vars` に置く。必要なキーの正規定義は `wrangler.jsonc` の `secrets.required`
-- Image Service は `WORKERS_CI_BRANCH === "master"` のときだけ有効（プレビュードメインでは `cdn-cgi/image` が 404 になるため）
-- vitest はカスタム Worker エントリを読み込めないため、テストは `main` を持たない `wrangler.test.jsonc` を参照する。`wrangler.jsonc` のバインディングを変えたら両方同期する
-- Astro のセッション機能は使わないため `astro.config.ts` で `session: false` を指定している（astro 7.2.0 / `@astrojs/cloudflare` 14.2.0 以降で有効）。これによりアダプタは SESSION KV バインディングを生成 `wrangler.json` へ注入せず、デプロイ時の KV 自動プロビジョニングも起きず、セッションランタイムが Worker バンドルから外れる。SESSION の namespace id を `wrangler.jsonc` へ直書きしてビルドログの差分 WARN を消す方法は採らない。直書きするとバインディングの管理がアダプタと wrangler の 2 箇所へ分かれるため。セッションを使う場合は `session: false` を外し、バインディング名を変えるときはアダプタの `sessionKVBindingName` オプションで指定する
-- `wrangler.jsonc` の `placement.region: "aws:ap-northeast-1"` で、Worker の fetch ハンドラを東京近傍のデータセンターで実行している。Worker はリクエストを受けた colo で動き、subrequest もその colo から出る。そのため米国・欧州の colo で OGP を取得すると、Yahoo! JAPAN の短縮 URL（4〜5 ホップのリダイレクト）が 1 ホップ 0.5〜2.4 秒かかってタイムアウトしたり、500 や 403（EEA・英国での提供停止）が返ったりしていた。placement は fetch ハンドラ全体に効くので、国外からの `/post/*` と Server Islands も東京経由で処理される。`placement.mode: "smart"` は採らない。複数拠点からの安定したトラフィックがないと配置判定されず、1% のリクエストは転送されないため
+- vitestはカスタムWorkerエントリを読み込めないため、テストは `main` を持たない `wrangler.test.jsonc` を参照する。`wrangler.jsonc` のバインディングを変えたら両方同期する。機能開発の際、アップデートでこのワークアラウンドが不要になっていないか毎回確認する
+- Astroのセッション機能は使わないため `astro.config.ts` で `session: false` を指定している（astro 7.2.0 / `@astrojs/cloudflare` 14.2.0以降で有効）。これによりアダプタはSESSION KVバインディングを生成 `wrangler.json` へ注入せず、デプロイ時のKV自動プロビジョニングも起きず、セッションランタイムがWorkerバンドルから外れる
+- `wrangler.jsonc` の `placement.region: "aws:ap-northeast-1"` で、Workerのfetchハンドラを東京近傍のデータセンターで実行している。Workerはリクエストを受けたcoloで動き、subrequestもそのcoloから出る。そのため米国・欧州のcoloでOGPを取得すると、Yahoo! JAPANの短縮URL（4〜5ホップのリダイレクト）が1ホップ0.5〜2.4秒かかってタイムアウトしたり、500や403（EEA・英国での提供停止）が返ったりしていた。placementはfetchハンドラ全てに適用されるので、国外からの `/post/*` とServer Islandsも東京経由で処理される。`placement.mode: "smart"` は採らない。複数拠点からの安定したトラフィックがないと配置判定されず、1% のリクエストは転送されないため
 
 ### AIエージェント向け Markdown 配信
 
-`src/worker.ts` が `cf.verifiedBotCategory` / UA / `Accept: text/markdown` で AI エージェントを判定し、`/post/<slug>/` を SSR エンドポイント `/post/<slug>.md`（`src/pages/post/[...slug].md.ts`）へ内部リライトする。`wrangler.jsonc` の `assets.run_worker_first: ["/post/*"]` が前提。
+`src/worker.ts` が `cf.verifiedBotCategory` / UA / `Accept: text/markdown` でAIエージェントを判定し、`/post/<slug>/` をSSRエンドポイント `/post/<slug>.md`（`src/pages/post/[...slug].md.ts`）へ内部リライトする。`wrangler.jsonc` の `assets.run_worker_first: ["/post/*"]` が前提。
 
-MDX → Markdown の変換は `src/lib/postToMarkdown.ts`。レンダリング経路とは別実装なので、記事の拡張記法を増やしたらここも追随させる。
+MDX → Markdownの変換ロジックは `src/lib/postToMarkdown.ts`。レンダリング経路とは別実装なので、記事の拡張記法を増やしたらここも追随させる。
 
 ### タグと URL
 
-`src/content.config.ts` の tags は `z.string().array().min(1)` で enum 検証がない。`src/pages/tag/[tag]/[page].astro` が全記事からタグを集めてページを生成するため、表記を間違えると孤立した `/tag/*` ページが静的生成される。タグは既存記事の frontmatter にある表記から選び、新しいタグを勝手に追加しない。
+`src/content.config.ts` のtagsは `z.string().array().min(1)` でenum検証がない。`src/pages/tag/[tag]/[page].astro` が全記事からタグを集めてページを生成するため、表記を間違えると孤立した `/tag/*` ページが静的生成される。タグは既存記事のfrontmatterにある表記から選び、新しいタグを勝手に追加しない。
 
-レガシー URL（`/category/*`, `/categories/*`, `/search/label/*`、旧 Blogger の `.html`）のリダイレクトは `public/_redirects`。
+レガシー URL（`/category/*`, `/categories/*`, `/search/label/*`、旧Bloggerの `.html`）のリダイレクトは `public/_redirects`。
 
 ## デプロイと自動化
 
-- デプロイは GitHub リポジトリ連携で Cloudflare が実行。ローカルから `wrangler deploy` はしない
+- デプロイはGitHubリポジトリ連携でCloudflareが実行。ローカルから `wrangler deploy` はしない
 - 週次の依存更新ルーチンは `automation/dependency-update.md`。`.claude/` 配下に置くと許可ダイアログでルーチンが停止するため `automation/` に置いている
 - `knip.json` の除外設定を触る際の判断材料は `.claude/rules/knip.md`（`paths` 指定で自動読み込み）

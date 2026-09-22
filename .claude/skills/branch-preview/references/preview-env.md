@@ -2,11 +2,12 @@
 
 ## KV / 環境識別
 
-- KV は preview_id（本番KVとは分離）を使用
+- KVは本番用を共用している
+  - ローカル環境はpreview_id（本番KVとは分離）を使用
 - `WORKERS_CI_BRANCH` でブランチ名判定、`WORKERS_CI=1` で環境識別
-- Cloudflare Image Service は本番・プレビュー問わず常に有効（`imageService: "cloudflare"` を常時設定）
+- Cloudflare Image Serviceは本番・プレビュー問わず常に有効（`imageService: "cloudflare"` を常時設定）
 
 ## OGP キャッシュ陳腐化
 
 プレビュー環境でのOGPカード画像リンク切れは一時的なKVキャッシュ陳腐化が原因の可能性が高い。
-Cloudflare Dashboard でプレビューKV（`e77ae49b6b164fbe8a96c4c4cfad8f0d`）のエントリをパージで解消できる。
+Cloudflare DashboardでプレビューKV（`e77ae49b6b164fbe8a96c4c4cfad8f0d`）のエントリをパージで解消できる。
