@@ -32,10 +32,19 @@ const getItemsCalls = (fetchMock: ReturnType<typeof vi.fn>) =>
 
 let warnSpy: ReturnType<typeof vi.spyOn>
 let infoSpy: ReturnType<typeof vi.spyOn>
+let backoffDelays: number[]
 
 beforeEach(() => {
-  // Full Jitter の待ち時間を 0ms にして、テストが実時間で待たないようにする
-  vi.spyOn(Math, "random").mockReturnValue(0)
+  // 待ち時間だけ記録して即時に進め、テストが実時間で待たないようにする
+  backoffDelays = []
+  vi.spyOn(globalThis, "setTimeout").mockImplementation(((
+    handler: () => void,
+    ms?: number
+  ) => {
+    backoffDelays.push(ms ?? 0)
+    handler()
+    return 0
+  }) as typeof setTimeout)
   warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
   infoSpy = vi.spyOn(console, "info").mockImplementation(() => {})
 })
@@ -65,6 +74,9 @@ describe("getAmazonProductInfo の再試行", () => {
 
       expect(res.itemsResult.items[0].asin).toBe("B000000000")
       expect(getItemsCalls(fetchMock)).toHaveLength(2)
+      expect(backoffDelays).toHaveLength(1)
+      expect(backoffDelays[0]).toBeGreaterThanOrEqual(1000)
+      expect(backoffDelays[0]).toBeLessThanOrEqual(2000)
       expect(warnSpy).toHaveBeenCalledWith(
         expect.stringMatching(`^Creators API ${status} for ASIN B000000000`)
       )
@@ -74,7 +86,7 @@ describe("getAmazonProductInfo の再試行", () => {
     }
   )
 
-  test("429 が続くと再試行上限の後に再試行回数付きで失敗する", async () => {
+  test("429 が続くと 2 回再試行した後に再試行回数付きで失敗する", async () => {
     const fetchMock = vi
       .fn()
       .mockResolvedValueOnce(tokenResponse())
@@ -85,6 +97,9 @@ describe("getAmazonProductInfo の再試行", () => {
       /^Creators API error: 429 .*\(retries: 2\)$/
     )
     expect(getItemsCalls(fetchMock)).toHaveLength(3)
+    expect(backoffDelays).toHaveLength(2)
+    expect(backoffDelays[1]).toBeGreaterThanOrEqual(1000)
+    expect(backoffDelays[1]).toBeLessThanOrEqual(3000)
   })
 
   test("400 は再試行せずに失敗する", async () => {

@@ -203,9 +203,12 @@ export const describeItemsResponseError = (
 const isRetryableStatus = (status: number): boolean =>
   status === 429 || status >= 500
 
-/** 同時に 429 を受けた Server Island 同士が同じ間隔で再衝突しないよう、固定間隔ではなく Full Jitter で待つ */
+/**
+ * 秒間上限の同じ集計枠へ再送しないよう最低 1 秒空け、
+ * 同時に 429 を受けた Server Island 同士が再衝突しないよう固定間隔にはせず散らす
+ */
 const backoffDelayMs = (retry: number): number =>
-  Math.round(Math.random() * BACKOFF_BASE_MS * 2 ** retry)
+  BACKOFF_BASE_MS + Math.round(Math.random() * BACKOFF_BASE_MS * 2 ** retry)
 
 const fetchItemsWithBackoff = async (
   asin: string,
