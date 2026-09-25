@@ -148,7 +148,6 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
 
     return result
   } catch (error) {
-    console.error("Error on fetch:", error)
     const message = error instanceof Error ? error.message : String(error)
     return {
       ok: false,

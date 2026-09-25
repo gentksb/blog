@@ -94,6 +94,8 @@ const TOKEN_ENDPOINTS: Record<string, string> = {
 const TOKEN_SCOPE = "creatorsapi::default"
 const API_BASE_URL = "https://creatorsapi.amazon/catalog/v1"
 const TOKEN_CACHE_TTL_SECONDS = 3300
+const MAX_RETRIES = 2
+const BACKOFF_BASE_MS = 1000
 
 interface TokenCache {
   accessToken: string
@@ -198,6 +200,46 @@ export const describeItemsResponseError = (
   return null
 }
 
+const isRetryableStatus = (status: number): boolean =>
+  status === 429 || status >= 500
+
+/**
+ * 秒間上限の同じ集計枠へ再送しないよう最低 1 秒空け、
+ * 同時に 429 を受けた Server Island 同士が再衝突しないよう固定間隔にはせず散らす
+ */
+const backoffDelayMs = (retry: number): number =>
+  BACKOFF_BASE_MS + Math.round(Math.random() * BACKOFF_BASE_MS * 2 ** retry)
+
+const fetchItemsWithBackoff = async (
+  asin: string,
+  init: RequestInit
+): Promise<Response> => {
+  for (let retry = 0; ; retry++) {
+    const response = await fetch(`${API_BASE_URL}/getItems`, init)
+    if (response.ok) {
+      if (retry > 0) {
+        console.info(
+          `Creators API recovered for ASIN ${asin} after ${retry} retries`
+        )
+      }
+      return response
+    }
+
+    const errorText = await response.text()
+    if (!isRetryableStatus(response.status) || retry === MAX_RETRIES) {
+      throw new Error(
+        `Creators API error: ${response.status} ${errorText} (retries: ${retry})`
+      )
+    }
+
+    const delayMs = backoffDelayMs(retry)
+    console.warn(
+      `Creators API ${response.status} for ASIN ${asin}, retry ${retry + 1}/${MAX_RETRIES} in ${delayMs}ms: ${errorText}`
+    )
+    await new Promise((resolve) => setTimeout(resolve, delayMs))
+  }
+}
+
 export const getAmazonProductInfo = async (
   asin: string,
   config: CreatorsApiConfig
@@ -227,7 +269,7 @@ export const getAmazonProductInfo = async (
     partnerTag: config.partnerTag
   }
 
-  const response = await fetch(`${API_BASE_URL}/getItems`, {
+  const response = await fetchItemsWithBackoff(asin, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -236,11 +278,6 @@ export const getAmazonProductInfo = async (
     },
     body: JSON.stringify(requestBody)
   })
-
-  if (!response.ok) {
-    const errorText = await response.text()
-    throw new Error(`Creators API error: ${response.status} ${errorText}`)
-  }
 
   const responseBody = await response.json<CreatorsApiItemsResponse>()
 
