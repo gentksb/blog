@@ -6,7 +6,6 @@ import {
   createOgpKVCacheAdapter,
   createOgpSlackLoggerAdapter
 } from "../../server/adapters/ogpAdapter"
-import { shouldAlertOgpFailure } from "../../server/domain/alertPolicy"
 import { isValidUrl } from "../../server/domain/validators"
 import {
   buildProductPrice,
@@ -83,9 +82,7 @@ if (env.OGP_DATASTORE) {
         await adapter.cacheFailure(url, ogpData)
         const message = ogpData.error ?? "OGP fetch failed"
         console.warn(`LinkCard OGP fetch failed for ${url}: ${message}`)
-        if (shouldAlertOgpFailure(ogpData.status)) {
-          notifyError(message)
-        }
+        notifyError(message)
       }
     }
 

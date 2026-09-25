@@ -5,9 +5,7 @@ import {
   createKVCacheAdapter,
   createSlackLoggerAdapter
 } from "../../server/adapters/amazonAdapter"
-import { shouldAlertCreatorsApiStatus } from "../../server/domain/alertPolicy"
 import { isValidAsin } from "../../server/domain/validators"
-import { CreatorsApiHttpError } from "../../server/services/getAmazonProductInfo"
 import {
   linkCardBadge,
   linkCardFrame,
@@ -106,16 +104,8 @@ if (
       }
     }
   } catch (e) {
-    const message = e instanceof Error ? e.message : String(e)
-    if (
-      e instanceof CreatorsApiHttpError &&
-      !shouldAlertCreatorsApiStatus(e.status)
-    ) {
-      console.warn(`Amzn fetch failed for ASIN ${asin}: ${message}`)
-    } else {
-      console.error(`Amzn fetch failed for ASIN ${asin}:`, e)
-      notifyError(message)
-    }
+    console.error(`Amzn fetch failed for ASIN ${asin}:`, e)
+    notifyError(e instanceof Error ? e.message : String(e))
   }
 }
 ---
