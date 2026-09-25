@@ -6,6 +6,7 @@ import {
   createOgpKVCacheAdapter,
   createOgpSlackLoggerAdapter
 } from "../../server/adapters/ogpAdapter"
+import { shouldAlertOgpFailure } from "../../server/domain/alertPolicy"
 import { isValidUrl } from "../../server/domain/validators"
 import {
   buildProductPrice,
@@ -80,7 +81,11 @@ if (env.OGP_DATASTORE) {
       } else {
         // 失敗も短時間キャッシュして、リンク先が落ちている間の再取得を抑える
         await adapter.cacheFailure(url, ogpData)
-        notifyError(ogpData.error ?? "OGP fetch failed")
+        const message = ogpData.error ?? "OGP fetch failed"
+        console.warn(`LinkCard OGP fetch failed for ${url}: ${message}`)
+        if (shouldAlertOgpFailure(ogpData.status)) {
+          notifyError(message)
+        }
       }
     }
 

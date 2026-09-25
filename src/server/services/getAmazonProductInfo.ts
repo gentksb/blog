@@ -85,6 +85,17 @@ export interface CreatorsApiConfig {
   kv: KVNamespace
 }
 
+/** トークン取得・getItems の非 2xx 応答。呼び出し側がステータスで通知要否を判断する */
+export class CreatorsApiHttpError extends Error {
+  readonly status: number
+
+  constructor(message: string, status: number) {
+    super(message)
+    this.name = "CreatorsApiHttpError"
+    this.status = status
+  }
+}
+
 /** Credential Version がリージョンを兼ねるため、トークンエンドポイントはバージョンから引く */
 const TOKEN_ENDPOINTS: Record<string, string> = {
   "3.1": "https://api.amazon.com/auth/o2/token",
@@ -144,8 +155,9 @@ const fetchAccessToken = async (
 
   if (!response.ok) {
     const errorText = await response.text()
-    throw new Error(
-      `Failed to fetch access token: ${response.status} ${errorText}`
+    throw new CreatorsApiHttpError(
+      `Failed to fetch access token: ${response.status} ${errorText}`,
+      response.status
     )
   }
 
@@ -239,7 +251,10 @@ export const getAmazonProductInfo = async (
 
   if (!response.ok) {
     const errorText = await response.text()
-    throw new Error(`Creators API error: ${response.status} ${errorText}`)
+    throw new CreatorsApiHttpError(
+      `Creators API error: ${response.status} ${errorText}`,
+      response.status
+    )
   }
 
   const responseBody = await response.json<CreatorsApiItemsResponse>()

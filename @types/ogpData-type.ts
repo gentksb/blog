@@ -12,4 +12,6 @@ export interface OgpData {
   pageurl?: string
   ok: boolean
   error?: string
+  /** 取得失敗時のオリジンの HTTP ステータス。fetch 自体が失敗した場合は無い */
+  status?: number
 }

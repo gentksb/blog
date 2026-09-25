@@ -49,6 +49,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     if (!httpResponse.ok) {
       return {
         ok: false,
+        status: httpResponse.status,
         error: `HTTP ${httpResponse.status} from origin (${Date.now() - startedAt}ms)`
       }
     }
@@ -148,7 +149,6 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
 
     return result
   } catch (error) {
-    console.error("Error on fetch:", error)
     const message = error instanceof Error ? error.message : String(error)
     return {
       ok: false,
