@@ -51,11 +51,11 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@cloudflare/vitest-pool-workers": "^0.22.0",
-    "@cloudflare/workers-types": "^5.20260926.1",
+    "@cloudflare/workers-types": "^5.20261003.1",
     "@tailwindcss/vite": "^4.3.3",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
-    "@types/node": "^24.19.0",
-    "knip": "^6.38.0",
+    "@types/node": "^24.19.1",
+    "knip": "^6.39.0",
     "prettier": "^3.9.9",
     "prettier-plugin-astro": "^1.1.0",
     "prettier-plugin-tailwindcss": "^0.8.1",
@@ -74,6 +74,6 @@
     "textlint-rule-preset-jtf-style": "^3.0.3",
     "typescript": "^6.0.3",
     "vitest": "^4.1.11",
-    "wrangler": "^4.141.0"
+    "wrangler": "^4.147.0"
   }
 }
