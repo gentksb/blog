@@ -3,3 +3,11 @@ minimumReleaseAge: 1440
 peerDependencyRules:
   allowedVersions:
     "astro-pagefind>astro": "7"
+
+updateConfig:
+  # pnpm outdated に出さないパッケージ。range 内の patch / minor は pnpm update で上がり続ける。
+  # エントリには major を上げない理由と解除条件を書く。
+  # pnpm の major を上げるときはキー名を確認する（最新版のドキュメントでは update.ignoreDeps）。
+  ignoreDependencies:
+    # major を devEngines.runtime の Node major に合わせる。Node 本体を上げる変更で同時に上げる。
+    - "@types/node"

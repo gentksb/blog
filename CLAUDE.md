@@ -50,5 +50,6 @@ MDX → Markdownの変換ロジックは `src/lib/postToMarkdown.ts`。レンダ
 ## デプロイと自動化
 
 - デプロイはGitHubリポジトリ連携でCloudflareが実行。ローカルから `wrangler deploy` はしない
-- 週次の依存更新ルーチンは `automation/dependency-update.md`。`.claude/` 配下に置くと許可ダイアログでルーチンが停止するため `automation/` に置いている
+- 週次の依存更新はclaude.aiのルーチン「blog依存関係の更新」が実行する。手順はルーチンのプロンプトが正で、リポジトリには置かない。ルーチンは状態ファイルを持たず、見送ったmajor更新は毎週判定し直す
+- major更新の可否は `pnpm update --latest <pkg>` のpeer dependency警告で判定する（例: `@astrojs/check` が `typescript`、`@cloudflare/vitest-pool-workers` が `vitest` のmajorを制約する）。peerで判定できない保留だけを `pnpm-workspace.yaml` の `updateConfig.ignoreDependencies` へ理由と解除条件のコメント付きで書く。pnpm 10.34.3では、この設定は `pnpm outdated` には適用されるが、引数なしの `pnpm update --latest` には適用されない
 - `knip.json` の除外設定を触る際の判断材料は `.claude/rules/knip.md`（`paths` 指定で自動読み込み）
