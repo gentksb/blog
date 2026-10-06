@@ -34,7 +34,7 @@ export const GET: APIRoute = async ({ params, url, locals }) => {
     // env.ASSETS では静的ファイルのみアクセスできるため直接 .src を使う
     const coverSrc = post.data.cover
       ? `${url.origin}${post.data.cover.src}`
-      : `${url.origin}/image/logo.jpg`
+      : `${url.origin}/image/logo.png`
 
     const { response, fallback } = await ogImage(title, coverSrc, url.origin)
 

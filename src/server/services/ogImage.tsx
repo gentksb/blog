@@ -265,8 +265,8 @@ export const ogImage = async (
       fetchImageAssetAsBase64(coverSrc),
       fetchImageAssetAsBase64(
         currentHost
-          ? `${currentHost}/image/logo.jpg`
-          : "https://blog.gensobunya.net/image/logo.jpg"
+          ? `${currentHost}/image/logo.png`
+          : "https://blog.gensobunya.net/image/logo.png"
       )
     ])
 

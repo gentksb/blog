@@ -1,3 +1,4 @@
+/image/logo.jpg /image/logo.png 301
 /page/1 / 301
 /category/* /tag/:splat 301
 /categories/* /tag/:splat 301
