@@ -6,7 +6,7 @@
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22s-bullseye",
   "features": {
     "ghcr.io/devcontainers-extra/features/fzf:1": {},
-    "ghcr.io/devcontainers-extra/features/pnpm:2": {}
+    "ghcr.io/devcontainers-extra/features/pnpm:2": { "version": "11.28.2" }
     // wrangler, astroはnpxで実行できるため省略
   },
 
