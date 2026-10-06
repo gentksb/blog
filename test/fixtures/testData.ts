@@ -4,7 +4,7 @@ export const normalLinkUrl = "https://blog.gensobunya.net/"
 
 export const normalLinkDataExpectedResponse: OgpData = {
   ogpTitle: "幻想サイクル",
-  ogpImageUrl: "https://blog.gensobunya.net/image/logo.jpg",
+  ogpImageUrl: "https://blog.gensobunya.net/image/logo.png",
   ogpDescription:
     "AJOCC ME1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです",
   ogpSiteName: "幻想サイクル",
@@ -20,7 +20,7 @@ export const normalLinkOgpHtml = `<!DOCTYPE html>
 <head>
   <title>幻想サイクル</title>
   <meta property="og:title" content="幻想サイクル">
-  <meta property="og:image" content="https://blog.gensobunya.net/image/logo.jpg">
+  <meta property="og:image" content="https://blog.gensobunya.net/image/logo.png">
   <meta property="og:description" content="AJOCC ME1レーサーによるロード・MTB・CXの機材運用やレビュー、時々レースレポートを書くブログです">
   <meta property="og:site_name" content="幻想サイクル">
 </head>
