@@ -51,5 +51,6 @@ MDX → Markdownの変換ロジックは `src/lib/postToMarkdown.ts`。レンダ
 
 - デプロイはGitHubリポジトリ連携でCloudflareが実行。ローカルから `wrangler deploy` はしない
 - 週次の依存更新はclaude.aiのルーチン「blog依存関係の更新」が実行する。手順はルーチンのプロンプトが正で、リポジトリには置かない。ルーチンは状態ファイルを持たず、見送ったmajor更新は毎週判定し直す
-- major更新の可否は `pnpm update --latest <pkg>` のpeer dependency警告で判定する（例: `@astrojs/check` が `typescript`、`@cloudflare/vitest-pool-workers` が `vitest` のmajorを制約する）。peerで判定できない保留だけを `pnpm-workspace.yaml` の `updateConfig.ignoreDependencies` へ理由と解除条件のコメント付きで書く。pnpm 10.34.3では、この設定は `pnpm outdated` には適用されるが、引数なしの `pnpm update --latest` には適用されない
+- major更新の可否は `pnpm update --latest <pkg>` のpeer dependency警告で判定する（例: `@astrojs/check` が `typescript`、`@cloudflare/vitest-pool-workers` が `vitest` のmajorを制約する）。peerで判定できない保留だけを `pnpm-workspace.yaml` の `update.ignoreDeps` へ理由と解除条件のコメント付きで書く。pnpm 11.28.2では、この設定は `pnpm outdated` と引数なしの `pnpm update --latest` の両方に適用される
+- pnpmのバージョンは `package.json` の `packageManager` が正。上げるときは `engines.pnpm`、`.devcontainer/devcontainer.json` のpnpm featureの `version`を同じ変更で揃える。pnpm 11以降は、ビルドスクリプトを持つ依存が `pnpm-workspace.yaml` の `allowBuilds` に無いと `pnpm install` が `ERR_PNPM_IGNORED_BUILDS` で失敗する
 - `knip.json` の除外設定を触る際の判断材料は `.claude/rules/knip.md`（`paths` 指定で自動読み込み）

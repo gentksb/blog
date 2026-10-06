@@ -70,9 +70,9 @@ jobs:
           fetch-depth: 0
 
       # pnpmキャッシュを利用して、高速に依存関係をインストールする
-      # https://github.com/pnpm/action-setup/tree/v4/?tab=readme-ov-file#use-cache-to-reduce-installation-time
+      # https://github.com/pnpm/action-setup/tree/v6/?tab=readme-ov-file#use-cache-to-reduce-installation-time
 
-      - uses: pnpm/action-setup@v5
+      - uses: pnpm/action-setup@v6
         name: Install pnpm
         with:
           run_install: false

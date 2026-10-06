@@ -4,10 +4,17 @@ peerDependencyRules:
   allowedVersions:
     "astro-pagefind>astro": "7"
 
-updateConfig:
+update:
   # pnpm outdated に出さないパッケージ。range 内の patch / minor は pnpm update で上がり続ける。
   # エントリには major を上げない理由と解除条件を書く。
-  # pnpm の major を上げるときはキー名を確認する（最新版のドキュメントでは update.ignoreDeps）。
-  ignoreDependencies:
+  ignoreDeps:
     # major を devEngines.runtime の Node major に合わせる。Node 本体を上げる変更で同時に上げる。
     - "@types/node"
+    # devEngines.runtime の Node 本体。pnpm 11 は devDependencies として扱い outdated に出す。
+    - "node"
+
+# 一覧にない依存がビルドスクリプトを持つと pnpm install が ERR_PNPM_IGNORED_BUILDS で失敗する。
+# どちらもバイナリを optionalDependencies のプラットフォーム別パッケージから取得するので postinstall は実行しない。
+allowBuilds:
+  esbuild: false
+  workerd: false
