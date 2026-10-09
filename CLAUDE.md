@@ -31,7 +31,7 @@ MDXから `server:defer` 付きのAstroコンポーネントを直接使えな�
 
 ### Cloudflare Workers
 
-- vitestはカスタムWorkerエントリを読み込めないため、テストは `main` を持たない `wrangler.test.jsonc` を参照する。`wrangler.jsonc` のバインディングを変えたら両方同期する。機能開発の際、アップデートでこのワークアラウンドが不要になっていないか毎回確認する
+- vitestは `wrangler.jsonc` を直接参照する。`main` の `src/worker.ts` はAstroのビルド時生成モジュール（`virtual:astro-cloudflare:config`）に依存するため、テストから `exports.default.fetch()` などでWorkerを呼ぶとモジュールを解決できず失敗する。`@cloudflare/vitest-plugin` は `main` をWorkerが呼ばれた時点で読み込むので、Workerを呼ばないテストは影響を受けない。`@cloudflare/vitest-plugin` / `@astrojs/cloudflare` の更新時に、この制約が解消されていないか確認する
 - Astroのセッション機能は使わないため `astro.config.ts` で `session: false` を指定している（astro 7.2.0 / `@astrojs/cloudflare` 14.2.0以降で有効）。これによりアダプタはSESSION KVバインディングを生成 `wrangler.json` へ注入せず、デプロイ時のKV自動プロビジョニングも起きず、セッションランタイムがWorkerバンドルから外れる
 - `wrangler.jsonc` の `placement.region: "aws:ap-northeast-1"` で、Workerのfetchハンドラを東京近傍のデータセンターで実行している。Workerはリクエストを受けたcoloで動き、subrequestもそのcoloから出る。そのため米国・欧州のcoloでOGPを取得すると、Yahoo! JAPANの短縮URL（4〜5ホップのリダイレクト）が1ホップ0.5〜2.4秒かかってタイムアウトしたり、500や403（EEA・英国での提供停止）が返ったりしていた。placementはfetchハンドラ全てに適用されるので、国外からの `/post/*` とServer Islandsも東京経由で処理される。`placement.mode: "smart"` は採らない。複数拠点からの安定したトラフィックがないと配置判定されず、1% のリクエストは転送されないため
 
@@ -51,6 +51,6 @@ MDX → Markdownの変換ロジックは `src/lib/postToMarkdown.ts`。レンダ
 
 - デプロイはGitHubリポジトリ連携でCloudflareが実行。ローカルから `wrangler deploy` はしない
 - 週次の依存更新はclaude.aiのルーチン「blog依存関係の更新」が実行する。手順はルーチンのプロンプトが正で、リポジトリには置かない。ルーチンは状態ファイルを持たず、見送ったmajor更新は毎週判定し直す
-- major更新の可否は `pnpm update --latest <pkg>` のpeer dependency警告で判定する（例: `@astrojs/check` が `typescript`、`@cloudflare/vitest-pool-workers` が `vitest` のmajorを制約する）。peerで判定できない保留だけを `pnpm-workspace.yaml` の `update.ignoreDeps` へ理由と解除条件のコメント付きで書く。pnpm 11.28.2では、この設定は `pnpm outdated` と引数なしの `pnpm update --latest` の両方に適用される
+- major更新の可否は `pnpm update --latest <pkg>` のpeer dependency警告で判定する（例: `@astrojs/check` が `typescript`、`@cloudflare/vitest-plugin` が `vitest` のmajorを制約する）。peerで判定できない保留だけを `pnpm-workspace.yaml` の `update.ignoreDeps` へ理由と解除条件のコメント付きで書く。pnpm 11.28.2では、この設定は `pnpm outdated` と引数なしの `pnpm update --latest` の両方に適用される
 - pnpmのバージョンは `package.json` の `packageManager` が正。上げるときは `engines.pnpm`、`.devcontainer/devcontainer.json` のpnpm featureの `version`を同じ変更で揃える。pnpm 11以降は、ビルドスクリプトを持つ依存が `pnpm-workspace.yaml` の `allowBuilds` に無いと `pnpm install` が `ERR_PNPM_IGNORED_BUILDS` で失敗する
 - `knip.json` の除外設定を触る際の判断材料は `.claude/rules/knip.md`（`paths` 指定で自動読み込み）
