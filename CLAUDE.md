@@ -31,7 +31,6 @@ MDXから `server:defer` 付きのAstroコンポーネントを直接使えな�
 
 ### Cloudflare Workers
 
-- vitestはカスタムWorkerエントリを読み込めないため、テストは `main` を持たない `wrangler.test.jsonc` を参照する。`wrangler.jsonc` のバインディングを変えたら両方同期する。機能開発の際、アップデートでこのワークアラウンドが不要になっていないか毎回確認する
 - Astroのセッション機能は使わないため `astro.config.ts` で `session: false` を指定している（astro 7.2.0 / `@astrojs/cloudflare` 14.2.0以降で有効）。これによりアダプタはSESSION KVバインディングを生成 `wrangler.json` へ注入せず、デプロイ時のKV自動プロビジョニングも起きず、セッションランタイムがWorkerバンドルから外れる
 - `wrangler.jsonc` の `placement.region: "aws:ap-northeast-1"` で、Workerのfetchハンドラを東京近傍のデータセンターで実行している。Workerはリクエストを受けたcoloで動き、subrequestもそのcoloから出る。そのため米国・欧州のcoloでOGPを取得すると、Yahoo! JAPANの短縮URL（4〜5ホップのリダイレクト）が1ホップ0.5〜2.4秒かかってタイムアウトしたり、500や403（EEA・英国での提供停止）が返ったりしていた。placementはfetchハンドラ全てに適用されるので、国外からの `/post/*` とServer Islandsも東京経由で処理される。`placement.mode: "smart"` は採らない。複数拠点からの安定したトラフィックがないと配置判定されず、1% のリクエストは転送されないため
 
