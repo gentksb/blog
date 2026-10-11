@@ -73,7 +73,7 @@
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-preset-jtf-style": "^3.0.3",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.11",
+    "vitest": "^5.0.3",
     "wrangler": "^4.149.0"
   }
 }
