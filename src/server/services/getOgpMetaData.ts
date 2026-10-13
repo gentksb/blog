@@ -49,6 +49,7 @@ const parseOgpTags = async (href: string): Promise<OgpData> => {
     if (!httpResponse.ok) {
       return {
         ok: false,
+        status: httpResponse.status,
         error: `HTTP ${httpResponse.status} from origin (${Date.now() - startedAt}ms)`
       }
     }

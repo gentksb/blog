@@ -12,4 +12,6 @@ export interface OgpData {
   pageurl?: string
   ok: boolean
   error?: string
+  /** 配信元がHTTPエラーを返した場合のステータス。タイムアウトや接続失敗では入らない */
+  status?: number
 }
