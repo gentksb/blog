@@ -46,8 +46,21 @@ export interface OgpAdapter {
   logError: (message: string, url: string) => Promise<void>
 }
 
-/** 取得失敗のネガティブキャッシュTTL。復旧を長く待たない範囲で再取得の連打を抑える */
-const FAILURE_CACHE_TTL_SECONDS = 60 * 10
+const MINUTE = 60
+const DAY = 60 * 60 * 24
+
+/**
+ * 取得失敗のネガティブキャッシュTTL。
+ * 記事やコードを直すまで結果が変わらない失敗ほど長く保持し、再取得とSlack通知の繰り返しを抑える
+ * @param status - 配信元のHTTPステータス。タイムアウトや接続失敗では undefined
+ */
+const failureCacheTtlSeconds = (status?: number): number => {
+  if (status === 404 || status === 410) return 7 * DAY
+  // 408 / 429 は配信元の一時的な状態なので、5xx やタイムアウトと同じ短いTTLへ落とす
+  if (status === 408 || status === 429) return 10 * MINUTE
+  if (status !== undefined && status >= 400 && status < 500) return DAY
+  return 10 * MINUTE
+}
 
 /**
  * 注入された依存関係を持つOGPアダプターを作成
@@ -74,7 +87,7 @@ export const createOgpAdapter = (deps: {
     },
 
     async cacheFailure(url: string, data: OgpData): Promise<void> {
-      await deps.cache.put(url, data, FAILURE_CACHE_TTL_SECONDS)
+      await deps.cache.put(url, data, failureCacheTtlSeconds(data.status))
     },
 
     async logError(message: string, url: string): Promise<void> {
