@@ -102,6 +102,7 @@ describe("getOgpMetaData", () => {
       const res = await getOgpMetaData(normalLinkUrl, env)
 
       expect(res.ok).toBe(false)
+      expect(res.status).toBe(status)
       expect(res.error).toMatch(
         new RegExp(`^HTTP ${status} from origin \\(\\d+ms\\)$`)
       )
