@@ -50,6 +50,11 @@ MDX → Markdownの変換ロジックは `src/lib/postToMarkdown.ts`。レンダ
 ## デプロイと自動化
 
 - デプロイはGitHubリポジトリ連携でCloudflareが実行。ローカルから `wrangler deploy` はしない
+- 予約投稿・予約マージは、PR本文の行頭に `/schedule <ISO 8601日時>` を書く。マージ自体は `.github/workflows/merge-schedule.yml`（`gr2m/merge-schedule-action`）が行う。起動元は2つある
+  - 主経路: blog Workerの `scheduled`（`wrangler.jsonc` の `triggers.crons` で5分毎）が `src/lib/mergeSchedule.ts` で期日到来PRの有無を判定し、ある場合だけ `workflow_dispatch` で起動する。GitHub Actionsの `schedule` イベントは遅延・脱落が多く、指定時刻から1時間以上遅れていたため
+  - 予備: workflowの `schedule`（毎時17分、UTC）
+  - Worker側の判定はactionの `/(^|\n)\/schedule (.*)/` と `new Date()` 解釈、`time_zone: "UTC"` に揃えている。actionの入力や正規表現を変える場合は `mergeSchedule.ts` も合わせる
+  - Workerは `GITHUB_MERGE_SCHEDULE_TOKEN`（fine-grained PAT、gentksb/blog限定、Actions: write / Pull requests: read）でGitHub APIを呼ぶ。API失敗時は、毎時最初の起動（UTCの0〜4分）に限って `SLACK_WEBHOOK_URL` へ通知する
 - 週次の依存更新はclaude.aiのルーチン「blog依存関係の更新」が実行する。手順はルーチンのプロンプトが正で、リポジトリには置かない。ルーチンは状態ファイルを持たず、見送ったmajor更新は毎週判定し直す
 - major更新の可否は `pnpm update --latest <pkg>` のpeer dependency警告で判定する（例: `@astrojs/check` が `typescript`、`@cloudflare/vitest-plugin` が `vitest` のmajorを制約する）。peerで判定できない保留だけを `pnpm-workspace.yaml` の `update.ignoreDeps` へ理由と解除条件のコメント付きで書く。pnpm 11.28.2では、この設定は `pnpm outdated` と引数なしの `pnpm update --latest` の両方に適用される
 - pnpmのバージョンは `package.json` の `packageManager` が正。上げるときは `engines.pnpm`、`.devcontainer/devcontainer.json` のpnpm featureの `version`を同じ変更で揃える。pnpm 11以降は、ビルドスクリプトを持つ依存が `pnpm-workspace.yaml` の `allowBuilds` に無いと `pnpm install` が `ERR_PNPM_IGNORED_BUILDS` で失敗する
