@@ -6,10 +6,15 @@ on:
       - opened
       - edited
       - synchronize
+  # 主な起動元は blog Worker の Cron Trigger（5分毎）からの workflow_dispatch
+  workflow_dispatch:
+  # Cron Trigger が止まった場合の予備。毎時0分はGitHub側の高負荷で遅延・脱落しやすいため避ける（UTC）
   schedule:
-    # https://crontab.guru/every-hour
-    # UTC
-    - cron: "*/30 0,3-4,10-12,22-23 * * *"
+    - cron: "17 * * * *"
+
+concurrency:
+  group: merge-schedule-${{ github.event_name == 'pull_request' && github.event.pull_request.number || 'scheduled' }}
+  cancel-in-progress: false
 
 jobs:
   merge_schedule:
@@ -21,6 +26,7 @@ jobs:
           # rebase. Default is merge.
           merge_method: squash
           # Time zone to use. Default is UTC.
+          # src/lib/mergeSchedule.ts の期日判定がUTC前提のため変更しない
           time_zone: "UTC"
           # Require all pull request statuses to be successful before
           # merging. Default is `false`.

@@ -10,6 +10,10 @@
   "placement": {
     "region": "aws:ap-northeast-1"
   },
+  // 予約マージの判定。期日到来のPRがあれば merge-schedule.yml を workflow_dispatch で起動する
+  "triggers": {
+    "crons": ["*/5 * * * *"]
+  },
   "assets": {
     "directory": "./dist/client/",
     "binding": "ASSETS",
@@ -42,7 +46,8 @@
       "CREATORS_CREDENTIAL_SECRET", // Amazon Creators API Credential Secret
       "CREATORS_CREDENTIAL_VERSION", // Amazon Creators API Credential Version（3.3 = Far East）
       "PARTNER_TAG", // Amazon Associate Partner Tag
-      "SLACK_WEBHOOK_URL" // Slack webhook URL for error logging
+      "SLACK_WEBHOOK_URL", // Slack webhook URL for error logging
+      "GITHUB_MERGE_SCHEDULE_TOKEN" // Fine-grained PAT（gentksb/blog限定、Actions: write / Pull requests: read）
     ]
   },
   "observability": {
