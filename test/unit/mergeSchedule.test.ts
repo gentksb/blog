@@ -154,24 +154,38 @@ describe("runMergeSchedule", () => {
     expect(fetcher).toHaveBeenCalledTimes(1)
   })
 
-  test("APIが非2xxを返したら通知して例外を投げる", async () => {
-    const fetcher = mockFetcher([pr("/schedule 2026-10-14T22:00:00Z")], 401)
-    const notifyError = vi.fn(async () => {})
+  describe("失敗時", () => {
+    const hourlyTick = new Date("2026-10-14T22:01:00Z")
 
-    await expect(
-      runMergeSchedule({ token: "t", now, fetcher, notifyError })
-    ).rejects.toThrow("401")
-    expect(notifyError).toHaveBeenCalledWith(expect.stringContaining("401"))
-  })
+    test("APIが非2xxを返したら、毎時最初の5分間なら通知して例外を投げる", async () => {
+      const fetcher = mockFetcher([pr("/schedule 2026-10-14T21:50:00Z")], 401)
+      const notifyError = vi.fn(async () => {})
 
-  test("トークン未設定なら通知して例外を投げ、APIを呼ばない", async () => {
-    const fetcher = mockFetcher([])
-    const notifyError = vi.fn(async () => {})
+      await expect(
+        runMergeSchedule({ token: "t", now: hourlyTick, fetcher, notifyError })
+      ).rejects.toThrow("401")
+      expect(notifyError).toHaveBeenCalledWith(expect.stringContaining("401"))
+    })
 
-    await expect(
-      runMergeSchedule({ token: "", now, fetcher, notifyError })
-    ).rejects.toThrow("GITHUB_MERGE_SCHEDULE_TOKEN")
-    expect(notifyError).toHaveBeenCalledOnce()
-    expect(fetcher).not.toHaveBeenCalled()
+    test("毎時最初の5分間以外の失敗は通知せず例外だけ投げる", async () => {
+      const fetcher = mockFetcher([pr("/schedule 2026-10-14T22:00:00Z")], 401)
+      const notifyError = vi.fn(async () => {})
+
+      await expect(
+        runMergeSchedule({ token: "t", now, fetcher, notifyError })
+      ).rejects.toThrow("401")
+      expect(notifyError).not.toHaveBeenCalled()
+    })
+
+    test("トークン未設定なら例外を投げ、APIを呼ばない", async () => {
+      const fetcher = mockFetcher([])
+      const notifyError = vi.fn(async () => {})
+
+      await expect(
+        runMergeSchedule({ token: "", now: hourlyTick, fetcher, notifyError })
+      ).rejects.toThrow("GITHUB_MERGE_SCHEDULE_TOKEN")
+      expect(notifyError).toHaveBeenCalledOnce()
+      expect(fetcher).not.toHaveBeenCalled()
+    })
   })
 })

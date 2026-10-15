@@ -30,12 +30,15 @@ export const dueScheduledDates = (
     .map((pr) => scheduledDateOf(pr.body))
     .filter((date): date is Date => date !== undefined && date < now)
 
+const isHourlyTick = (now: Date): boolean =>
+  now.getUTCMinutes() < HOURLY_TICK_MINUTES
+
 export const shouldDispatch = (dueDates: Date[], now: Date): boolean => {
   if (dueDates.length === 0) return false
   const hasRecent = dueDates.some(
     (date) => now.getTime() - date.getTime() < RETRY_WINDOW_MS
   )
-  return hasRecent || now.getUTCMinutes() < HOURLY_TICK_MINUTES
+  return hasRecent || isHourlyTick(now)
 }
 
 const githubHeaders = (token: string): HeadersInit => ({
@@ -101,8 +104,13 @@ export const runMergeSchedule = async ({
     await dispatchMergeSchedule(token, fetcher)
     return true
   } catch (e) {
-    const message = e instanceof Error ? e.message : String(e)
-    await notifyError?.(`Merge Schedule Error\n${message}`).catch(console.error)
+    // 5分毎の起動ごとに通知すると、PAT失効のような継続的な失敗で1日288件になる
+    if (isHourlyTick(now)) {
+      const message = e instanceof Error ? e.message : String(e)
+      await notifyError?.(`Merge Schedule Error\n${message}`).catch(
+        console.error
+      )
+    }
     throw e
   }
 }
