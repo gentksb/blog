@@ -29,10 +29,10 @@
     "typegen": "pnpm wrangler types"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^14.4.0",
-    "@astrojs/markdown-satteri": "^0.4.4",
-    "@astrojs/mdx": "^8.1.0",
-    "@astrojs/react": "^7.1.0",
+    "@astrojs/cloudflare": "^14.4.2",
+    "@astrojs/markdown-satteri": "^0.4.5",
+    "@astrojs/mdx": "^8.1.1",
+    "@astrojs/react": "^7.1.1",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@braintree/sanitize-url": "^7.1.2",
@@ -40,7 +40,7 @@
     "@tailwindcss/typography": "^0.5.20",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "astro": "^7.4.0",
+    "astro": "^7.4.2",
     "astro-pagefind": "^2.0.1",
     "date-fns-tz": "^3.2.0",
     "next-share": "^0.27.0",
@@ -49,15 +49,15 @@
     "satteri": "^0.10.5"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
-    "@cloudflare/vitest-plugin": "^1.4.4",
-    "@cloudflare/workers-types": "^5.20261016.1",
+    "@astrojs/check": "^0.9.12",
+    "@cloudflare/vitest-plugin": "^1.4.7",
+    "@cloudflare/workers-types": "^5.20261024.1",
     "@tailwindcss/vite": "^4.3.3",
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^24.19.1",
-    "knip": "^6.41.0",
+    "knip": "^6.43.0",
     "prettier": "^3.9.10",
-    "prettier-plugin-astro": "^1.1.1",
+    "prettier-plugin-astro": "^1.1.2",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4.3.3",
     "textlint": "^15.8.0",
@@ -74,6 +74,6 @@
     "textlint-rule-preset-jtf-style": "^3.0.3",
     "typescript": "^6.0.3",
     "vitest": "^5.0.5",
-    "wrangler": "^4.151.1"
+    "wrangler": "^4.152.0"
   }
 }
