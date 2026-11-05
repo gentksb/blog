@@ -1,7 +1,7 @@
 ---
 name: branch-preview
 description: Cloudflare Workers のブランチプレビュー確認フロー。PRのプレビューURLを取得してブラウザで確認する。「ブランチプレビュー」「デプロイ確認」「プレビュー確認」と言われた時に使用。
-allowed-tools: Bash(gh pr view:*), Bash(gh pr checks:*), Bash(wrangler tail:*), Skill(playwright-cli)
+allowed-tools: Bash(gh pr view:*), Bash(gh pr checks:*), Skill(playwright-cli)
 ---
 
 # ブランチプレビュー確認フロー
@@ -9,7 +9,6 @@ allowed-tools: Bash(gh pr view:*), Bash(gh pr checks:*), Bash(wrangler tail:*), 
 ## 前提条件
 
 - PR が作成済みであること（未作成なら `branch-start` スキルを先に使用）
-- `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` 環境変数が設定済み（`wrangler tail` 使用時のみ）
 
 ## ステップ1: Workers Build の完了確認
 
@@ -25,12 +24,12 @@ gh pr checks
 gh pr view --comments
 ```
 
-- **Branch Preview URL**（例: `feature-xxx-blog.xxxx.workers.dev`）が推奨（ブランチ最新版）
-- Commit Preview URL も含まれるが Branch Preview URL を優先
+- Preview URL（例: `feature-xxx-blog.xxxx.workers.dev`）を使う。ブランチの最新デプロイを返す
+- デプロイ単位の Deployment URL（`<deployment-id>-blog.xxxx.workers.dev`）は特定コミットの確認時のみ使う
 
 ## ステップ3: ブラウザで視覚確認
 
-playwright-cli skill を使用。`pnpm dev` は不要（プレビューURLは本番同等環境）。
+playwright-cli skill を使用。`pnpm dev` は不要。KV とシークレットは本番と異なる（[references/preview-env.md](references/preview-env.md)）。
 
 ```bash
 playwright-cli open https://<branch-preview-url>
@@ -40,9 +39,7 @@ playwright-cli close
 
 ## ステップ4: Workers 実行ログ確認（動的機能のデバッグ時）
 
-```bash
-wrangler tail --format=pretty
-```
+`wrangler tail` は Preview に対応していない。Cloudflare Dashboard の Workers > blog > Previews から対象の Preview を開き、Observability タブでログとトレースを見る。
 
 ## 参考
 
