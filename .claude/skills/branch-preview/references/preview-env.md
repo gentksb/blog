@@ -1,13 +1,30 @@
 # プレビュー環境の特性
 
-## KV / 環境識別
+Worker Previews は本番の設定を引き継がず、`wrangler.jsonc` の `previews` ブロックの値で動く。
 
-- KVは本番用を共用している
-  - ローカル環境はpreview_id（本番KVとは分離）を使用
-- `WORKERS_CI_BRANCH` でブランチ名判定、`WORKERS_CI=1` で環境識別
-- Cloudflare Image Serviceは本番・プレビュー問わず常に有効（`imageService: "cloudflare"` を常時設定）
+## KV
+
+| バインディング    | Preview                                                       | ローカル（`pnpm dev`） |
+| ----------------- | ------------------------------------------------------------- | ---------------------- |
+| `OGP_DATASTORE`   | Preview専用（`blog-OGP_DATASTORE-previews`）を全Previewで共有 | `preview_id`           |
+| `PAAPI_DATASTORE` | 本番と共有                                                    | `preview_id`           |
+
+PAAPIを本番と共有するのは、空のキャッシュから Creators API を呼ぶと 429 が増えるため。キャッシュ形式を変えるPRでは、Previewが本番のPAAPIキャッシュへ書き込む点に注意する。
+
+## シークレット
+
+- Preview作成時に Base configuration のシークレットがコピーされる。後から Base を変えても既存の Preview には反映されない
+- Base には `PARTNER_TAG` と `CREATORS_CREDENTIAL_*` だけを登録する。`SLACK_WEBHOOK_URL` は未登録なので、Previewのエラーは Slack に通知されない
+
+## Previewで動かないもの
+
+- Cron Triggers（予約マージの判定）
+- `wrangler tail`
+
+## 環境識別
+
+- `astro.config.ts` は `WORKERS_CI_BRANCH === "master"` のときだけ Cloudflare Image Resizing を使い、それ以外は `passthrough`
 
 ## OGP キャッシュ陳腐化
 
-プレビュー環境でのOGPカード画像リンク切れは一時的なKVキャッシュ陳腐化が原因の可能性が高い。
-Cloudflare DashboardでプレビューKV（`e77ae49b6b164fbe8a96c4c4cfad8f0d`）のエントリをパージで解消できる。
+PreviewでのOGPカード画像リンク切れは、KVキャッシュの陳腐化が原因の可能性が高い。Cloudflare Dashboard で `blog-OGP_DATASTORE-previews`（`0f58f79f97954e50b2827ef25df87110`）のエントリを削除して解消する。

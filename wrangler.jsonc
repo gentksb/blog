@@ -38,6 +38,19 @@
       "preview_id": "701470abdcbd43ae9c3d7a586684acf4"
     }
   ],
+  // Worker Previews は本番の設定を引き継がない。PAAPI は Creators API の 429 を避けるため本番キャッシュを共有する
+  "previews": {
+    "kv_namespaces": [
+      {
+        "binding": "OGP_DATASTORE",
+        "id": "0f58f79f97954e50b2827ef25df87110"
+      },
+      {
+        "binding": "PAAPI_DATASTORE",
+        "id": "64fddb5e468e4954a9e2a2ee07d9b709"
+      }
+    ]
+  },
   // Required secrets — set these via `wrangler secret put <NAME>` (production)
   // or in `.dev.vars` (local development).
   "secrets": {
