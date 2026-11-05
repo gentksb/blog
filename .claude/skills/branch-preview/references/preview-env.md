@@ -4,10 +4,10 @@ Worker Previews は本番の設定を引き継がず、`wrangler.jsonc` の `pre
 
 ## KV
 
-| バインディング | Preview | ローカル（`pnpm dev`） |
-| --- | --- | --- |
-| `OGP_DATASTORE` | Preview専用（`blog-OGP_DATASTORE-previews`）を全Previewで共有 | `preview_id` |
-| `PAAPI_DATASTORE` | 本番と共有 | `preview_id` |
+| バインディング    | Preview                                                       | ローカル（`pnpm dev`） |
+| ----------------- | ------------------------------------------------------------- | ---------------------- |
+| `OGP_DATASTORE`   | Preview専用（`blog-OGP_DATASTORE-previews`）を全Previewで共有 | `preview_id`           |
+| `PAAPI_DATASTORE` | 本番と共有                                                    | `preview_id`           |
 
 PAAPIを本番と共有するのは、空のキャッシュから Creators API を呼ぶと 429 が増えるため。キャッシュ形式を変えるPRでは、Previewが本番のPAAPIキャッシュへ書き込む点に注意する。
 
