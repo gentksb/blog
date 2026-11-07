@@ -38,10 +38,10 @@ for (let i = startPage; i <= endPage; i++) {
     <a
       href={previousPageLink}
       class:list={[
-        "px-4 py-2 border border-gray-300 text-sm rounded-l-md flex items-center justify-center transition",
+        "flex items-center justify-center rounded-l-md border border-gray-300 px-4 py-2 text-sm transition",
         hasPreviousPage
-          ? "hover:bg-gray-100 text-gray-700"
-          : "opacity-50 cursor-not-allowed text-gray-400"
+          ? "text-gray-700 hover:bg-gray-100"
+          : "cursor-not-allowed text-gray-400 opacity-50"
       ]}
       aria-disabled={!hasPreviousPage}
     >
@@ -70,10 +70,10 @@ for (let i = startPage; i <= endPage; i++) {
               : `/page/${pageNum}`
         }
         class:list={[
-          "px-4 py-2 border-t border-b border-gray-300 text-sm",
+          "border-t border-b border-gray-300 px-4 py-2 text-sm",
           currentPage === pageNum
-            ? "bg-accent text-white font-medium"
-            : "hover:bg-gray-100 text-gray-700"
+            ? "bg-accent font-medium text-white"
+            : "text-gray-700 hover:bg-gray-100"
         ]}
         aria-current={currentPage === pageNum ? "page" : undefined}
       >
@@ -84,10 +84,10 @@ for (let i = startPage; i <= endPage; i++) {
     <a
       href={nextPageLink}
       class:list={[
-        "px-4 py-2 border border-gray-300 text-sm rounded-r-md flex items-center justify-center transition",
+        "flex items-center justify-center rounded-r-md border border-gray-300 px-4 py-2 text-sm transition",
         hasNextpage
-          ? "hover:bg-gray-100 text-gray-700"
-          : "opacity-50 cursor-not-allowed text-gray-400"
+          ? "text-gray-700 hover:bg-gray-100"
+          : "cursor-not-allowed text-gray-400 opacity-50"
       ]}
       aria-disabled={!hasNextpage}
     >
