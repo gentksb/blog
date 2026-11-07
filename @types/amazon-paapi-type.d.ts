@@ -265,7 +265,7 @@ declare module "amazon-paapi" {
     Locale: string
     Value: string
     SubCondition?: string
-    ConditionNote?: String
+    ConditionNote?: string
   }
 
   export type AmazonItemAvailability = {
