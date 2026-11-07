@@ -7,8 +7,7 @@
       "other": "on"
     },
     "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": "explicit",
-      "source.fixAll.eslint": "explicit"
+      "source.fixAll.markdownlint": "explicit"
     },
     "editor.snippetSuggestions": "top",
     "github.copilot.nextEditSuggestions.enabled": false
@@ -16,14 +15,6 @@
   "files.associations": {
     "*.mdx": "markdown"
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "markdown",
-    "astro"
-  ],
   "[astro]": {
     "editor.defaultFormatter": "oxc.oxc-vscode",
     "editor.formatOnSave": true
