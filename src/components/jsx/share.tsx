@@ -49,7 +49,7 @@ export function SocialShare({ title, url }: Props) {
         <button
           type="button"
           className="rounded-full bg-accent p-2 text-white"
-          onClick={shareOrCopy}
+          onClick={() => void shareOrCopy()}
           aria-label={
             copied ? "リンクをコピーしました" : "この記事のリンクを共有"
           }

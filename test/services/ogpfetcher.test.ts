@@ -52,8 +52,8 @@ describe("getOgpMetaData", () => {
     // UA 無しを弾く配信元があるため、リクエストには User-Agent を付与する
     const headers = fetchMock.mock.calls[0][1].headers as Record<string, string>
     expect(headers["User-Agent"]).toBeTruthy()
-    // deep equal なので、構造化データの無いページで productPrice が生えないことも兼ねる
-    expect(res).deep.equal(normalLinkDataExpectedResponse)
+    // toStrictEqual なので、構造化データの無いページで productPrice が生えないことも兼ねる
+    expect(res).toStrictEqual(normalLinkDataExpectedResponse)
   })
 
   test("og タグが無い場合は title / meta[name=description] にフォールバックする", async () => {

@@ -23,7 +23,7 @@
     "test": "pnpm typegen && vitest run",
     "test:light": "pnpm typegen && mkdir -p dist/client && vitest run --exclude \"**/*.credentialed.test.ts\"",
     "typecheck": "pnpm typegen && astro check",
-    "lint": "prettier --check .",
+    "lint": "prettier --check . && oxlint",
     "lint:unused": "knip",
     "lint:fix": "prettier --write .",
     "typegen": "pnpm wrangler types"
@@ -56,6 +56,8 @@
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^24.19.1",
     "knip": "^6.44.1",
+    "oxlint": "^1.91.0",
+    "oxlint-tsgolint": "^7.0.2006",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.2",
     "prettier-plugin-tailwindcss": "^0.8.1",

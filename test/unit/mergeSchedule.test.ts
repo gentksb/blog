@@ -117,7 +117,7 @@ describe("runMergeSchedule", () => {
 
   const mockFetcher = (pulls: PullRequestSummary[], dispatchStatus = 204) =>
     vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
-      const url = String(input)
+      const url = input instanceof Request ? input.url : input.toString()
       if (url.includes("/pulls?")) return Response.json(pulls)
       if (url.endsWith("/dispatches") && init?.method === "POST") {
         return new Response(dispatchStatus === 204 ? null : "error", {

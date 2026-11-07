@@ -12,9 +12,10 @@ Reactは `src/components/jsx/share.tsx` と `StickyToc.tsx` の2つだけ。他�
 - `pnpm test:light` — シークレット不要。`*.credentialed.test.ts` だけを除外して残り全部を走らせる。Claude Code Webサンドボックスでは常にこちらを使う
 - `pnpm test` — `*.credentialed.test.ts` を含み実Amazon APIを叩く。`PARTNER_TAG` / `CREATORS_CREDENTIAL_*` が必要でCI（lint-test.yml）専用。実APIや認証情報を要するテストを追加する場合はファイル名へ `.credentialed.test.ts` を付ける
 - `pnpm typecheck` — `astro check`（`@astrojs/check`）。`.astro` / `.ts` / `.tsx` を横断して型検査する
+- `pnpm lint` — Prettierのcheckとoxlint。oxlintは `.oxlintrc.json` で `typeAware` を有効にしており、`oxlint-tsgolint` が型情報付きのルールを実行する
 - `pnpm lint:unused` — knip。`git push` 前に必須
 
-PrettierはEdit / WriteのPostToolUseフック（`.claude/settings.json`）で自動実行されるので手動実行は不要。`pnpm lint` はPrettierのみで、textlintはnpm scriptを持たずVS Code拡張から実行される。記事MDX（`src/content/post`）は `.prettierignore` 対象で整形されない。`pnpm typecheck` はターン終了時のStopフック（`.claude/settings.json`）で自動実行されるため、こちらも手動実行は基本不要。
+PrettierはEdit / WriteのPostToolUseフック（`.claude/settings.json`）で自動実行されるので手動実行は不要。oxlintはフックの対象外のため、`.ts` / `.tsx` / `.astro` を変更したら `git push` 前に `pnpm lint` を実行する。oxlintが `.astro` で検査するのはfrontmatterと `<script>` だけで、テンプレート式は対象外。型情報付きのルールは `.astro` に適用されない。textlintはnpm scriptを持たずVS Code拡張から実行される。記事MDX（`src/content/post`）は `.prettierignore` 対象で整形されない。`pnpm typecheck` はターン終了時のStopフック（`.claude/settings.json`）で自動実行されるため、こちらも手動実行は基本不要。
 
 ## 実装の注意点
 
