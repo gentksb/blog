@@ -130,12 +130,12 @@ if (
         <div class="mt-1 flex flex-wrap items-baseline gap-x-2">
           <span class={linkCardPrice}>{priceDisplay}</span>
           {savingsPercentage !== undefined && savingsPercentage > 0 && (
-            <span class="text-xs text-error font-medium">
+            <span class="text-xs font-medium text-error">
               {savingsPercentage}%OFF
             </span>
           )}
           {loyaltyPoints !== undefined && loyaltyPoints > 0 && (
-            <span class="text-xs text-primary font-medium">
+            <span class="text-xs font-medium text-primary">
               +{loyaltyPoints}pt
             </span>
           )}

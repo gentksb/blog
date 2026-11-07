@@ -124,7 +124,7 @@ const isExternal = parsedUrl.hostname !== "blog.gensobunya.net"
   rel="noopener noreferrer"
 >
   <div class={linkCardFrame}>
-    <div class="flex flex-1 flex-col justify-center p-3 min-w-0">
+    <div class="flex min-w-0 flex-1 flex-col justify-center p-3">
       {brandTheme && (
         <div class={`${linkCardBadge} ${brandColorText[brandTheme]}`}>
           {brandTheme.charAt(0).toUpperCase() + brandTheme.slice(1)}
@@ -145,7 +145,7 @@ const isExternal = parsedUrl.hostname !== "blog.gensobunya.net"
         {ogpSiteName}
       </div>
     </div>
-    <div class="min-h-24 max-h-32 w-[30%] flex-shrink-0 md:max-h-40">
+    <div class="max-h-32 min-h-24 w-[30%] flex-shrink-0 md:max-h-40">
       {ogpImageUrl && (
         <figure class="h-full">
           <img
