@@ -57,7 +57,7 @@
     "@textlint-ja/textlint-rule-no-filler": "^1.1.0",
     "@types/node": "^24.19.2",
     "knip": "^6.44.2",
-    "oxfmt": "^0.76.0",
+    "oxfmt": "^0.77.0",
     "oxlint": "^1.92.0",
     "oxlint-tsgolint": "^7.0.2006",
     "tailwindcss": "^4.3.5",
