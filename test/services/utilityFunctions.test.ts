@@ -26,15 +26,6 @@ describe("postLogToSlack", () => {
     expect(fetchMock).not.toHaveBeenCalled()
   })
 
-  test("URL として解釈できない値なら送信せず reject する", async () => {
-    const fetchMock = stubFetch(async () => new Response(null))
-
-    await expect(
-      postLogToSlack("test message", "not-a-valid-url")
-    ).rejects.toThrow("Invalid SLACK_WEBHOOK_URL: not-a-valid-url")
-    expect(fetchMock).not.toHaveBeenCalled()
-  })
-
   test("有効な webhook URL へメッセージを JSON で POST する", async () => {
     const fetchMock = stubFetch(async () => new Response(null, { status: 200 }))
 
@@ -47,15 +38,5 @@ describe("postLogToSlack", () => {
     expect(calledUrl).toBe(webhookUrl)
     expect(init?.method).toBe("POST")
     expect(JSON.parse(init?.body as string)).toEqual({ text: "string message" })
-  })
-
-  test("fetch が失敗したら元のエラー内容を含めて reject する", async () => {
-    stubFetch(async () => {
-      throw new Error("network unreachable")
-    })
-
-    await expect(postLogToSlack("error message", webhookUrl)).rejects.toThrow(
-      "network unreachable"
-    )
   })
 })

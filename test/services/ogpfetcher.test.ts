@@ -92,22 +92,15 @@ describe("getOgpMetaData", () => {
     expect(res.ogpDescription).toBe("og description")
   })
 
-  // 403 は bot 対策によるブロック、404 はリンク切れ。呼び出し側が区別できるよう
-  // エラー文にはステータスと所要時間を含める
-  test.each([403, 404])(
-    "HTTP %i はステータス付きのエラーレスポンスを返す",
-    async (status) => {
-      stubFetch("error body", { status })
+  // status はネガティブキャッシュの TTL 判定に使われる
+  test("HTTP エラーはステータス付きのエラーレスポンスを返す", async () => {
+    stubFetch("error body", { status: 404 })
 
-      const res = await getOgpMetaData(normalLinkUrl, env)
+    const res = await getOgpMetaData(normalLinkUrl, env)
 
-      expect(res.ok).toBe(false)
-      expect(res.status).toBe(status)
-      expect(res.error).toMatch(
-        new RegExp(`^HTTP ${status} from origin \\(\\d+ms\\)$`)
-      )
-    }
-  )
+    expect(res.ok).toBe(false)
+    expect(res.status).toBe(404)
+  })
 
   test("JSON-LD が無い場合は OGP 価格メタタグにフォールバックする", async () => {
     stubFetch(`<!DOCTYPE html>

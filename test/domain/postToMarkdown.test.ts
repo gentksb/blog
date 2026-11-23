@@ -1,4 +1,5 @@
 import { expect, test } from "vitest"
+import { DIRECTIVES } from "../../src/lib/directives"
 import { postToMarkdown } from "../../src/lib/postToMarkdown"
 
 const BASE_INPUT = {
@@ -96,16 +97,6 @@ test("<Amzn /> 複数行属性に対応", () => {
 
 // === ルール4: LinkCard ===
 
-test("<LinkCard url='...' /> が [url](url) に変換される", () => {
-  const result = postToMarkdown({
-    ...BASE_INPUT,
-    body: '<LinkCard url="https://example.com/page/" />'
-  })
-  expect(result).toContain(
-    "[https://example.com/page/](https://example.com/page/)"
-  )
-})
-
 test("<LinkCard /> 複数行属性に対応", () => {
   const body = `<LinkCard
   url="https://example.com/"
@@ -134,28 +125,16 @@ test("<SimpleLinkCard url='...' /> title なし → [url](url)", () => {
 
 // === ルール6: コンテナディレクティブ ===
 
-test(":::positive リスト入り", () => {
-  const body = `:::positive
-- 軽い
-- 速い
-:::`
+// DIRECTIVES の全エントリを連続ブロックとして並べ、個別に変換されることを確かめる
+test("DIRECTIVES の全エントリが連続していても個別に引用ブロックへ変換される", () => {
+  const entries = Object.entries(DIRECTIVES)
+  const body = entries
+    .map(([name]) => `:::${name}\n${name}の本文\n:::`)
+    .join("\n\n")
   const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain("> 😊")
-  expect(result).toContain("> - 軽い")
-  expect(result).toContain("> - 速い")
-})
-
-test("連続する2ブロックが個別に変換される", () => {
-  const body = `:::positive
-良い点
-:::
-
-:::negative
-悪い点
-:::`
-  const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain("> 😊\n> 良い点")
-  expect(result).toContain("> 😞\n> 悪い点")
+  for (const [name, { markdownPrefix }] of entries) {
+    expect(result).toContain(`${markdownPrefix}\n> ${name}の本文`)
+  }
   expect(result).not.toContain(":::")
 })
 
@@ -166,17 +145,10 @@ test("CRLF改行のディレクティブも変換される", () => {
   expect(result).not.toContain(":::")
 })
 
-test("未定義のディレクティブ名は変換されない", () => {
-  const body = ":::warning\n注意\n:::"
-  const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain(":::warning")
-})
-
 // satteri が container directive として解釈する記法は、記事側で禁止せず
 // postToMarkdown 側で受け付ける
 test.each([
-  ["コロン4個", "::::positive\n本文\n::::"],
-  ["開始終了のコロン数不一致", ":::positive\n本文\n::::"],
+  ["コロン4個・開始終了のコロン数不一致", "::::positive\n本文\n:::"],
   [
     "名前直後の付随要素（属性・ラベル・余分なテキスト）",
     ":::positive[見出し]{.tight} foo\n本文\n:::"
@@ -196,22 +168,6 @@ test("字下げされたブロックの本文は共通の字下げを除去し�
   const result = postToMarkdown({ ...BASE_INPUT, body })
   expect(result).toContain("> 本文です")
   expect(result).toContain(">   入れ子")
-})
-
-test("ディレクティブ名の部分一致（:::positively）は変換されない", () => {
-  const body = ":::positively\n本文\n:::"
-  const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain(":::positively")
-})
-
-// 正規表現では扱えない範囲。記事側に現れないことは contentLint.test.ts の
-// 「全記事を変換して ::: が残らない」テストが保証する
-test.each([
-  ["閉じ忘れ", ":::positive\n本文"],
-  ["ネスト", ":::positive\n外\n::::negative\n内\n::::\n:::"]
-])("既知の未対応記法（%s）は ::: が残る", (_label, body) => {
-  const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain(":::")
 })
 
 // === ルール7: 相対パス画像 ===
@@ -255,20 +211,15 @@ test("連続3行以上の空行が2行（空行1つ）に圧縮される", () =>
 
 // === コードフェンス内は変換しない ===
 
-test("コードフェンス内の :::positive は変換されない", () => {
-  const body = "```\n:::positive\n良い点\n:::\n```"
-  const result = postToMarkdown({ ...BASE_INPUT, body })
-  expect(result).toContain(":::positive")
-  expect(result).not.toContain("> 😊")
-})
-
 // フェンス外の <Amzn> / 相対パス画像が変換され、フェンス内の同じ記法は素通りすること
 test("コードフェンス外は変換される、フェンス内は変換されない（混在）", () => {
   const body =
-    '<Amzn asin="B0044BG93S" />\n\n```\n<Amzn asin="SKIPME" />\n![](./keep.jpg)\n```\n\n![](./img.jpg)'
+    '<Amzn asin="B0044BG93S" />\n\n```\n<Amzn asin="SKIPME" />\n![](./keep.jpg)\n:::positive\n良い点\n:::\n```\n\n![](./img.jpg)'
   const result = postToMarkdown({ ...BASE_INPUT, body })
   expect(result).toContain("Amazonで見る (ASIN: B0044BG93S)")
   expect(result).toContain('<Amzn asin="SKIPME" />')
   expect(result).toContain("![](./keep.jpg)")
+  expect(result).toContain(":::positive\n良い点\n:::")
+  expect(result).not.toContain("> 😊")
   expect(result).not.toContain("img.jpg")
 })

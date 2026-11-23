@@ -33,7 +33,7 @@ const hasSchemaType = (
  * @param value - JSON-LD やメタタグから取得した価格値
  * @returns 0以上の有限数値、解釈できない場合は undefined
  */
-export const parsePriceAmount = (value: unknown): number | undefined => {
+const parsePriceAmount = (value: unknown): number | undefined => {
   if (typeof value === "number") {
     return Number.isFinite(value) && value >= 0 ? value : undefined
   }
@@ -53,7 +53,7 @@ export const parsePriceAmount = (value: unknown): number | undefined => {
  * @param value - JSON-LD やメタタグから取得した通貨値
  * @returns 正規化済み通貨コード、形式外の場合は undefined
  */
-export const normalizeCurrency = (value: unknown): string | undefined => {
+const normalizeCurrency = (value: unknown): string | undefined => {
   if (typeof value !== "string") {
     return undefined
   }

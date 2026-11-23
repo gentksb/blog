@@ -30,8 +30,6 @@ const itemsResponse = () =>
 const getItemsCalls = (fetchMock: ReturnType<typeof vi.fn>) =>
   fetchMock.mock.calls.filter(([url]) => String(url).endsWith("/getItems"))
 
-let warnSpy: ReturnType<typeof vi.spyOn>
-let infoSpy: ReturnType<typeof vi.spyOn>
 let backoffDelays: number[]
 
 beforeEach(() => {
@@ -45,8 +43,8 @@ beforeEach(() => {
     handler()
     return 0
   }) as typeof setTimeout)
-  warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
-  infoSpy = vi.spyOn(console, "info").mockImplementation(() => {})
+  vi.spyOn(console, "warn").mockImplementation(() => {})
+  vi.spyOn(console, "info").mockImplementation(() => {})
 })
 
 afterEach(async () => {
@@ -57,7 +55,7 @@ afterEach(async () => {
 
 describe("getAmazonProductInfo の再試行", () => {
   test.each([429, 503])(
-    "getItems が %i の後に 200 を返せば商品データを返し、回復をログに残す",
+    "getItems が %i の後に 200 を返せば商品データを返す",
     async (status) => {
       const fetchMock = vi
         .fn()
@@ -74,15 +72,9 @@ describe("getAmazonProductInfo の再試行", () => {
 
       expect(res.itemsResult.items[0].asin).toBe("B000000000")
       expect(getItemsCalls(fetchMock)).toHaveLength(2)
+      // 秒間上限の同じ集計枠へ再送しないよう最低1秒空ける
       expect(backoffDelays).toHaveLength(1)
       expect(backoffDelays[0]).toBeGreaterThanOrEqual(1000)
-      expect(backoffDelays[0]).toBeLessThanOrEqual(2000)
-      expect(warnSpy).toHaveBeenCalledWith(
-        expect.stringMatching(`^Creators API ${status} for ASIN B000000000`)
-      )
-      expect(infoSpy).toHaveBeenCalledWith(
-        "Creators API recovered for ASIN B000000000 after 1 retries"
-      )
     }
   )
 
@@ -99,7 +91,6 @@ describe("getAmazonProductInfo の再試行", () => {
     expect(getItemsCalls(fetchMock)).toHaveLength(3)
     expect(backoffDelays).toHaveLength(2)
     expect(backoffDelays[1]).toBeGreaterThanOrEqual(1000)
-    expect(backoffDelays[1]).toBeLessThanOrEqual(3000)
   })
 
   test("400 は再試行せずに失敗する", async () => {

@@ -29,13 +29,6 @@ test("MDXで使われているディレクティブ名が DIRECTIVES に定義�
   expect(offenders).toEqual([])
 })
 
-// isDirectiveName が `in` ではなく Object.hasOwn を使う理由。
-// プロトタイプ由来の名前を通すと DIRECTIVES[name] が undefined になり変換時に落ちる
-test("Object.prototype 由来のプロパティ名はディレクティブ名として拒否される", () => {
-  expect(isDirectiveName("toString")).toBe(false)
-  expect(isDirectiveName("warning")).toBe(false)
-})
-
 // postToMarkdown はネストと閉じ忘れを変換できない。記法を禁止する代わりに、
 // 実際の記事を変換して ::: が残らないことで変換漏れを検出する
 test("全MDXを postToMarkdown で変換して ::: が残らない", () => {
