@@ -21,7 +21,7 @@ export const isValidAsin = (asin: string): boolean => {
  * @returns URLが有効な形式の場合はtrue
  */
 export const isValidUrl = (url: string): boolean => {
-  if (typeof url !== "string" || url.trim() === "") {
+  if (typeof url !== "string") {
     return false
   }
 

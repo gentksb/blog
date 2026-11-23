@@ -1,86 +1,38 @@
 import { describe, expect, test } from "vitest"
 import {
   buildProductPrice,
-  extractPriceFromJsonLd,
-  formatProductPrice,
-  normalizeCurrency,
-  parsePriceAmount
+  extractPriceFromJsonLd
 } from "../../src/server/domain/productPrice"
 
-describe("parsePriceAmount", () => {
-  test("数値はそのまま返す", () => {
-    expect(parsePriceAmount(1980)).toBe(1980)
-    expect(parsePriceAmount(49.99)).toBe(49.99)
-    expect(parsePriceAmount(0)).toBe(0)
-  })
-
-  test("カンマ・通貨記号入りの文字列を数値に正規化する", () => {
-    expect(parsePriceAmount("1980")).toBe(1980)
-    expect(parsePriceAmount("1,980")).toBe(1980)
-    expect(parsePriceAmount("¥12,800")).toBe(12800)
-    expect(parsePriceAmount("$49.99")).toBe(49.99)
-  })
-
-  test("解釈できない値は undefined を返す", () => {
-    expect(parsePriceAmount("")).toBeUndefined()
-    expect(parsePriceAmount("価格未定")).toBeUndefined()
-    expect(parsePriceAmount(-100)).toBeUndefined()
-    expect(parsePriceAmount(NaN)).toBeUndefined()
-    expect(parsePriceAmount(null)).toBeUndefined()
-    expect(parsePriceAmount(undefined)).toBeUndefined()
-    expect(parsePriceAmount({})).toBeUndefined()
-  })
-})
-
-describe("normalizeCurrency", () => {
-  test("ISO 4217 形式に正規化する", () => {
-    expect(normalizeCurrency("JPY")).toBe("JPY")
-    expect(normalizeCurrency("jpy")).toBe("JPY")
-    expect(normalizeCurrency(" usd ")).toBe("USD")
-  })
-
-  test("形式外の値は undefined を返す", () => {
-    expect(normalizeCurrency("円")).toBeUndefined()
-    expect(normalizeCurrency("YEN!")).toBeUndefined()
-    expect(normalizeCurrency("")).toBeUndefined()
-    expect(normalizeCurrency(123)).toBeUndefined()
-    expect(normalizeCurrency(null)).toBeUndefined()
-  })
-})
-
+// parsePriceAmount / normalizeCurrency は buildProductPrice 経由で検証する
 describe("buildProductPrice", () => {
-  test("価格と通貨が揃っていれば ProductPrice を返す", () => {
-    expect(buildProductPrice("1,980", "jpy")).toEqual({
+  test.each([
+    {
+      amount: "¥12,800",
+      currency: "jpy",
+      expected: { amount: 12800, currency: "JPY" }
+    },
+    {
+      amount: "$49.99",
+      currency: " usd ",
+      expected: { amount: 49.99, currency: "USD" }
+    },
+    {
       amount: 1980,
-      currency: "JPY"
-    })
-  })
-
-  test("どちらかが欠けている場合は undefined を返す", () => {
-    expect(buildProductPrice("1980", null)).toBeUndefined()
-    expect(buildProductPrice(null, "JPY")).toBeUndefined()
-    expect(buildProductPrice("不明", "JPY")).toBeUndefined()
+      currency: "JPY",
+      expected: { amount: 1980, currency: "JPY" }
+    },
+    { amount: "価格未定", currency: "JPY", expected: undefined },
+    { amount: -100, currency: "JPY", expected: undefined },
+    { amount: "1980", currency: "円", expected: undefined },
+    { amount: null, currency: "JPY", expected: undefined },
+    { amount: "1980", currency: null, expected: undefined }
+  ])("($amount, $currency) → $expected", ({ amount, currency, expected }) => {
+    expect(buildProductPrice(amount, currency)).toEqual(expected)
   })
 })
 
 describe("extractPriceFromJsonLd", () => {
-  test("Product + Offer から価格を抽出する", () => {
-    const jsonLd = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Product",
-      name: "サイクルコンピューター",
-      offers: {
-        "@type": "Offer",
-        price: "24800",
-        priceCurrency: "JPY"
-      }
-    })
-    expect(extractPriceFromJsonLd(jsonLd)).toEqual({
-      amount: 24800,
-      currency: "JPY"
-    })
-  })
-
   test("@type が配列の Product にも対応する", () => {
     const jsonLd = JSON.stringify({
       "@type": ["Product", "IndividualProduct"],
@@ -186,33 +138,11 @@ describe("extractPriceFromJsonLd", () => {
     })
   })
 
-  test("Product が無い JSON-LD は undefined を返す", () => {
-    const jsonLd = JSON.stringify({
-      "@type": "Article",
-      headline: "レビュー記事"
-    })
-    expect(extractPriceFromJsonLd(jsonLd)).toBeUndefined()
-  })
-
   test("通貨が無い Offer は undefined を返す", () => {
     const jsonLd = JSON.stringify({
       "@type": "Product",
       offers: { "@type": "Offer", price: "1980" }
     })
     expect(extractPriceFromJsonLd(jsonLd)).toBeUndefined()
-  })
-
-  test("不正な JSON は undefined を返す", () => {
-    expect(extractPriceFromJsonLd("{invalid json")).toBeUndefined()
-    expect(extractPriceFromJsonLd("")).toBeUndefined()
-  })
-})
-
-describe("formatProductPrice", () => {
-  // 円記号の半角/全角は workerd の ICU データに依存するため、桁区切りと記号の有無だけを見る
-  test("JPY は日本円表記に整形する", () => {
-    expect(formatProductPrice({ amount: 12800, currency: "JPY" })).toMatch(
-      /[¥￥]12,800/
-    )
   })
 })

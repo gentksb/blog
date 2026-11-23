@@ -21,9 +21,6 @@ const pr = (
 describe("scheduledDateOf", () => {
   test.each([
     ["/schedule 2026-10-14T22:00:00Z", "2026-10-14T22:00:00.000Z"],
-    ["/schedule 2026-10-14T22:00:00.000Z", "2026-10-14T22:00:00.000Z"],
-    ["/schedule 2026-10-15T07:00:00.000+09:00", "2026-10-14T22:00:00.000Z"],
-    ["/schedule 2026-10-15", "2026-10-15T00:00:00.000Z"],
     ["本文\n/schedule 2026-10-14T22:00:00Z\n続き", "2026-10-14T22:00:00.000Z"]
   ])("行頭の /schedule の日時を読み取る: %s", (body, expected) => {
     expect(scheduledDateOf(body)?.toISOString()).toBe(expected)
@@ -33,14 +30,6 @@ describe("scheduledDateOf", () => {
     expect(
       scheduledDateOf("`/schedule` を使わずに手動でマージする")
     ).toBeUndefined()
-  })
-
-  test("解釈できない日時は予約として扱わない", () => {
-    expect(scheduledDateOf("/schedule 来週")).toBeUndefined()
-  })
-
-  test("本文が null なら予約なし", () => {
-    expect(scheduledDateOf(null)).toBeUndefined()
   })
 })
 

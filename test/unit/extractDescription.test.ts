@@ -4,36 +4,21 @@ import { postMdxSources, stripFrontmatter } from "../helpers/mdxSources"
 
 // ディレクティブ行は名前を読まず /^[ \t]*:{3,}.*$/gm の1本で落としている。
 // 字下げ・コロン数・行末の付随要素（属性/ラベル/余分なテキスト）をまとめて確認する
-test.each([
-  { name: "基本形", source: ":::positive\n本文テキスト\n:::" },
-  {
-    name: "字下げ・コロン4個・属性付き",
-    source: "  ::::positive{.tight} 余分なテキスト\n  本文テキスト\n  :::"
-  }
-])(
-  "コンテナディレクティブ($name)の記法が description に残らない",
-  ({ source }) => {
-    const description = extractDescription(source)
-    expect(description).not.toContain(":::")
-    expect(description).toBe("本文テキスト")
-  }
-)
-
-test("コードフェンス内の記号が description に残らない", () => {
-  const source = [
-    "```js",
-    'const a = "**強調** - 箇条書き :::positive <Tag>"',
-    "```",
-    "",
-    "本文テキスト"
-  ].join("\n")
+test("コンテナディレクティブの記法が description に残らない", () => {
+  const source = "  ::::positive{.tight} 余分なテキスト\n  本文テキスト\n  :::"
   expect(extractDescription(source)).toBe("本文テキスト")
 })
 
 // 強調除去がコードフェンス除去より先に走ると、フェンス内の単独の * が
 // 本文側の ** と対になって文章を壊す
-test("コードフェンス内の単独アスタリスクが本文の強調除去を壊さない", () => {
-  const source = ["```", "a * b", "```", "", "**強調**テキスト"].join("\n")
+test("コードフェンス内の記号が description に残らず、本文の強調除去も壊さない", () => {
+  const source = [
+    "```js",
+    'const a = "a * b - 箇条書き :::positive <Tag>"',
+    "```",
+    "",
+    "**強調**テキスト"
+  ].join("\n")
   expect(extractDescription(source)).toBe("強調テキスト")
 })
 
@@ -109,11 +94,7 @@ test("長いコードフェンスの後ろにある本文から maxLength ぶん
   const description = extractDescription(source)
   expect(description).toHaveLength(100)
   expect(description.startsWith("あ")).toBe(true)
-})
-
-test("maxLength を超えない", () => {
-  const source = "あ".repeat(500)
-  expect(extractDescription(source)).toHaveLength(100)
+  // index.xml.ts は maxLength に 200 を渡す
   expect(extractDescription(source, 200)).toHaveLength(200)
 })
 

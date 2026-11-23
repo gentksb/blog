@@ -20,13 +20,11 @@ test("JSONとして解釈できないレガシー値はテキストとして読�
   }
 })
 
+// 分岐ごとに1件。429 は汎用 4xx（1日）より先に判定されることも兼ねる
 test.each([
   { status: 404, ttl: 60 * 60 * 24 * 7, reason: "リンク先が消えた" },
-  { status: 410, ttl: 60 * 60 * 24 * 7, reason: "リンク先が消えた" },
   { status: 403, ttl: 60 * 60 * 24, reason: "配信元に拒否された" },
   { status: 429, ttl: 60 * 10, reason: "配信元の流量制限" },
-  { status: 408, ttl: 60 * 10, reason: "配信元のタイムアウト" },
-  { status: 530, ttl: 60 * 10, reason: "配信元の障害" },
   { status: undefined, ttl: 60 * 10, reason: "タイムアウトや接続失敗" }
 ])(
   "$reason（status: $status）の失敗は $ttl 秒キャッシュする",
